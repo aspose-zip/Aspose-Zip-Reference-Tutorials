@@ -1,6 +1,6 @@
 ---
 title: Decompress AES Encrypted File in Aspose.Zip for .NET
-linktitle: Decompress AES Encrypted File in Aspose.Zip for .NET
+linktitle: Decompress AES Encrypted File
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: 
 type: docs
@@ -24,7 +24,7 @@ namespace Aspose.ZIP.Examples.WorkingWithPasswordProtectedArchives
     {
         public static void Run()
         {
-            string dataDir = RunExamples.GetDataDir_Data();
+            string dataDir = "Your Document Directory"
 
             //ExStart: DecompressAESEncryptedFile
             using (FileStream fs = File.OpenRead(dataDir + "PasswordProtectWithAES256_out.zip"))

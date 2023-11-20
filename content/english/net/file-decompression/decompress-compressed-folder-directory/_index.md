@@ -1,6 +1,6 @@
 ---
 title: Decompress Compressed Folder to Directory in Aspose.Zip for .NET
-linktitle: Decompress Compressed Folder to Directory in Aspose.Zip for .NET
+linktitle: Decompress Compressed Folder to Directory
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: 
 type: docs

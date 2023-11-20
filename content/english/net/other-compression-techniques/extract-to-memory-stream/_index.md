@@ -1,6 +1,6 @@
 ---
 title: Extracting to Memory Stream with Aspose.Zip for .NET
-linktitle: Extracting to Memory Stream with Aspose.Zip for .NET
+linktitle: Extracting to Memory Stream 
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: 
 type: docs
@@ -24,7 +24,7 @@ namespace Aspose.ZIP.Examples.WorkingWithGZip
     {
         public static void Run()
         {
-            string dataDir = RunExamples.GetDataDir_Data();
+            string dataDir = "Your Document Directory"
 
             //ExStart: ExtractToMemoryStream
             //Open an archive from a stream and extract it to a MemoryStream

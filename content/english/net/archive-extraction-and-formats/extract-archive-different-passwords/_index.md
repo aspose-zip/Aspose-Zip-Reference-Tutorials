@@ -1,6 +1,6 @@
 ---
 title: Extracting Archive Entries with Different Passwords in Aspose.Zip for .NET
-linktitle: Extracting Archive Entries with Different Passwords in Aspose.Zip for .NET
+linktitle: Extracting Archive Entries with Different Passwords
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: 
 type: docs
@@ -19,7 +19,7 @@ namespace Aspose.ZIP.Examples.CompressingAndDecompressingFolders
     {
         public static void Run()
         {
-            string dataDir = RunExamples.GetDataDir_Data();
+            string dataDir = "Your Document Directory"
 
             //ExStart: ExtractArchiveWithEntriesHavingDifferentPasswords
             using (FileStream zipFile = File.Open(dataDir + "\\different_password.zip", FileMode.Open))

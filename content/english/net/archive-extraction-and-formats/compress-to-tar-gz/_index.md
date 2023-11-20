@@ -1,6 +1,6 @@
 ---
 title: Compressing to TarGz with Aspose.Zip for .NET
-linktitle: Compressing to TarGz with Aspose.Zip for .NET
+linktitle: Compressing to TarGz 
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: 
 type: docs
@@ -19,7 +19,7 @@ namespace Aspose.ZIP.Examples.CompressToTarXX
     {
         public static void Run()
         {
-            string dataDir = RunExamples.GetDataDir_Data();
+            string dataDir = "Your Document Directory"
 
             //ExStart: CompressFile
             using (TarArchive archive = new TarArchive())

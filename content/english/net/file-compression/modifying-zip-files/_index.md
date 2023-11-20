@@ -1,6 +1,6 @@
 ---
 title: Modifying Zip Files with Aspose.Zip for .NET
-linktitle: Modifying Zip Files with Aspose.Zip for .NET
+linktitle: Modifying Zip Files 
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: 
 type: docs
@@ -25,7 +25,7 @@ namespace Aspose.ZIP.Examples.CompressingAndDecompressingFiles
         public static void Run()
         {
             //ExStart: ModifyingZipFile
-            string dataDir = RunExamples.GetDataDir_Data();
+            string dataDir = "Your Document Directory"
             
             using (Archive outer = new Archive(dataDir + "outer.zip"))
             {

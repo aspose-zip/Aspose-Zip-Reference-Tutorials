@@ -1,6 +1,6 @@
 ---
 title: AES Encryption Settings in Aspose.Zip for .NET
-linktitle: AES Encryption Settings in Aspose.Zip for .NET
+linktitle: AES Encryption Settings
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: 
 type: docs
@@ -25,7 +25,7 @@ namespace Aspose.ZIP.Examples.WorkingWithSevenZip
     {
         public static void Run()
         {
-            string dataDir = RunExamples.GetDataDir_Data();
+            string dataDir = "Your Document Directory"
 
             //ExStart: AESEncryptionSettings
             using (var archive = new SevenZipArchive(new SevenZipEntrySettings(null, new SevenZipAESEncryptionSettings("p@s$"))))

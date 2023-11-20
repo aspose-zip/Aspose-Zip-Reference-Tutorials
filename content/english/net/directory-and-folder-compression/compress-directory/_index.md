@@ -1,6 +1,6 @@
 ---
 title: How to Compress a Directory with Aspose.Zip for .NET
-linktitle: How to Compress a Directory with Aspose.Zip for .NET
+linktitle: How to Compress a Directory 
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: 
 type: docs
@@ -20,7 +20,7 @@ namespace Aspose.ZIP.Examples.CompressingAndDecompressingFolders
         public static void Run()
         {
             //ExStart: DeCompressDirectory
-            string dataDir = RunExamples.GetDataDir_Data();
+            string dataDir = "Your Document Directory"
 
             using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", FileMode.Create))
             {

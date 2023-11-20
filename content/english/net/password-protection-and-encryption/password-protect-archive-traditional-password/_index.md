@@ -1,6 +1,6 @@
 ---
 title: Password Protect Archive with Traditional Password in Aspose.Zip for .NET
-linktitle: Password Protect Archive with Traditional Password in Aspose.Zip for .NET
+linktitle: Password Protect Archive with Traditional Password
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: 
 type: docs
@@ -20,7 +20,7 @@ namespace Aspose.ZIP.Examples.WorkingWithPasswordProtectedArchives
     {
         public static void Run()
         {
-            string dataDir = RunExamples.GetDataDir_Data();
+            string dataDir = "Your Document Directory"
 
             //ExStart: PasswordPrtoectArchiveWithTraditionalPassword
             using (FileStream zipFile = File.Open(dataDir + "CompressWithTraditionalEncryption_out.zip", FileMode.Create))

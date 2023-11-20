@@ -24,7 +24,7 @@ namespace Aspose.ZIP.Examples.CompressingAndDecompressingFiles
     {
         public static void Run()
         {
-            string dataDir = RunExamples.GetDataDir_Data();
+            string dataDir = "Your Document Directory"
 
             CompressMultipleFiles.Run();    //Create a compressed file with multiple files
             

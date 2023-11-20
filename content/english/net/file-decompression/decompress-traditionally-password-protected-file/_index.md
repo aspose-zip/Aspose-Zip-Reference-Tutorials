@@ -1,6 +1,6 @@
 ---
 title: Decompress Traditionally Password Protected File in Aspose.Zip for .NET
-linktitle: Decompress Traditionally Password Protected File in Aspose.Zip for .NET
+linktitle: Decompress Traditionally Password Protected File
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: 
 type: docs
@@ -19,7 +19,7 @@ namespace Aspose.ZIP.Examples.WorkingWithPasswordProtectedArchives
     {
         public static void Run()
         {
-            string dataDir = RunExamples.GetDataDir_Data();
+            string dataDir = "Your Document Directory"
             PasswordPrtoectArchiveWithTraditionalPassword.Run();    //run password protection a file example to use it later
             //ExStart: DecompressTraditionallyPasswordProtectedFile
             using (FileStream fs = File.OpenRead(dataDir + "CompressWithTraditionalEncryption_out.zip"))

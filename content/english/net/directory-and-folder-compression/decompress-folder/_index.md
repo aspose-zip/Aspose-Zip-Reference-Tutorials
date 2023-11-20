@@ -1,6 +1,6 @@
 ---
 title: Decompressing a Folder with Aspose.Zip for .NET
-linktitle: Decompressing a Folder with Aspose.Zip for .NET
+linktitle: Decompressing a Folder 
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: 
 type: docs
@@ -19,7 +19,7 @@ namespace Aspose.ZIP.Examples.CompressingAndDecompressingFolders
     {
         public static void Run()
         {
-            string dataDir = RunExamples.GetDataDir_Data();
+            string dataDir = "Your Document Directory"
 
             CompressDirectory.Run();    //Create a zip file from Directory to be decompressed later int this example
 

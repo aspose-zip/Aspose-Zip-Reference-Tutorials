@@ -1,6 +1,6 @@
 ---
 title: Password Protect Directory in Aspose.Zip for .NET
-linktitle: Password Protect Directory in Aspose.Zip for .NET
+linktitle: Password Protect Directory
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: 
 type: docs

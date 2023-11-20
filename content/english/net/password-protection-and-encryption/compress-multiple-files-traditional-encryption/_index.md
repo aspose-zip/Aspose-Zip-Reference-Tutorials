@@ -1,6 +1,6 @@
 ---
 title: Compress Multiple Files with Traditional Encryption in Aspose.Zip for .NET
-linktitle: Compress Multiple Files with Traditional Encryption in Aspose.Zip for .NET
+linktitle: Compress Multiple Files with Traditional Encryption
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: 
 type: docs
@@ -20,7 +20,7 @@ namespace Aspose.ZIP.Examples.WorkingWithPasswordProtectedArchives
     {
         public static void Run()
         {
-            string dataDir = RunExamples.GetDataDir_Data();
+            string dataDir = "Your Document Directory"
 
             //ExStart: CompressMultipleFilesWithTraditionalEncryption
             using (FileStream zipFile = File.Open(".\\CompressMultipleFilesWithTraditionalEncryption_out.zip", FileMode.Create))

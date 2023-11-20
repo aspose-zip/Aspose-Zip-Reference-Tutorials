@@ -19,7 +19,7 @@ namespace Aspose.ZIP.Examples.CompressingAndDecompressingFiles
     {
         public static void Run()
         {
-            string dataDir = RunExamples.GetDataDir_Data();
+            string dataDir = "Your Document Directory"
 
             StoreMultipleFilesWithoutCompression.Run(); //Create a stored file without compression to be used in decompression
 

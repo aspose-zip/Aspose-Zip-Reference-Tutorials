@@ -1,6 +1,6 @@
 ---
 title: Store Multiple Files Without Compression with Password in Aspose.Zip for .NET
-linktitle: Store Multiple Files Without Compression with Password in Aspose.Zip for .NET
+linktitle: Store Multiple Files Without Compression with Password
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: 
 type: docs
@@ -20,7 +20,7 @@ namespace Aspose.ZIP.Examples.WorkingWithPasswordProtectedArchives
     {
         public static void Run()
         {
-            string dataDir = RunExamples.GetDataDir_Data();
+            string dataDir = "Your Document Directory"
 
             //ExStart: StoreMutlipleFilesWithoutCompressionWithPassword
             using (FileStream zipFile = File.Open(dataDir + "StoreMutlipleFilesWithoutCompressionWithPassword_out.zip", FileMode.Create))

@@ -1,6 +1,6 @@
 ---
 title: Decompressing a RAR Entry with Aspose.Zip for .NET
-linktitle: Decompressing a RAR Entry with Aspose.Zip for .NET
+linktitle: Decompressing a RAR Entry 
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: 
 type: docs
@@ -21,7 +21,7 @@ namespace Aspose.ZIP.Examples.RarExtraction
     {
         public static void Run()
         {
-            string dataDir = RunExamples.GetDataDir_Data();
+            string dataDir = "Your Document Directory"
 
             //ExStart: DecompressRarEntry
             using (FileStream fs = File.OpenRead(dataDir + "plrabn12.rar"))

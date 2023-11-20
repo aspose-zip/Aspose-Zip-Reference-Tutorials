@@ -1,6 +1,6 @@
 ---
 title: Compressing to TarBz2 with Aspose.Zip for .NET
-linktitle: Compressing to TarBz2 with Aspose.Zip for .NET
+linktitle: Compressing to TarBz2 
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: 
 type: docs
@@ -21,7 +21,7 @@ namespace Aspose.ZIP.Examples.CompressToTarXX
     {
         public static void Run()
         {
-            string dataDir = RunExamples.GetDataDir_Data();
+            string dataDir = "Your Document Directory"
 
             //ExStart: CompressFile
             using (Bzip2Archive bz2 = new Bzip2Archive())

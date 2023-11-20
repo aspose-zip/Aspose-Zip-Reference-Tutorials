@@ -1,6 +1,6 @@
 ---
 title: Decompress Xar to Folder in Aspose.Zip for .NET
-linktitle: Decompress Xar to Folder in Aspose.Zip for .NET
+linktitle: Decompress Xar to Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: 
 type: docs
@@ -19,7 +19,7 @@ namespace Aspose.ZIP.Examples.WorkingWithXar
     {
         public static void Run()
         {
-            string dataDir = RunExamples.GetDataDir_Data();
+            string dataDir = "Your Document Directory"
 
             //ExStart: DecompressXarArchive
             using (FileStream fs = File.OpenRead(dataDir + "sample.xar"))

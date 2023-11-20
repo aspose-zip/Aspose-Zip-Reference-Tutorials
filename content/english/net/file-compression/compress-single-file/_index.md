@@ -1,6 +1,6 @@
 ---
 title: Compressing a Single File in Aspose.Zip for .NET
-linktitle: Compressing a Single File in Aspose.Zip for .NET
+linktitle: Compressing a Single File
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: 
 type: docs
@@ -20,7 +20,7 @@ namespace Aspose.ZIP.Examples.CompressingAndDecompressingFiles
     {
         public static void Run()
         {
-            string dataDir = RunExamples.GetDataDir_Data();
+            string dataDir = "Your Document Directory"
             //ExStart: CompressSingleFile
             using (FileStream zipFile = File.Open(dataDir + "CompressSingleFile_out.zip", FileMode.Create))
             {

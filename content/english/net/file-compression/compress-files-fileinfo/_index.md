@@ -1,6 +1,6 @@
 ---
 title: Compress Files using FileInfo in Aspose.Zip for .NET
-linktitle: Compress Files using FileInfo in Aspose.Zip for .NET
+linktitle: Compress Files using FileInfo
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: 
 type: docs
@@ -22,7 +22,7 @@ namespace Aspose.ZIP.Examples.CompressingAndDecompressingFiles
     {
         public static void Run()
         {
-            string dataDir  = RunExamples.GetDataDir_Data();
+            string dataDir  = "Your Document Directory"
 
             //ExStart: CompressFilesByFileInfo
             using (FileStream zipFile = File.Open(dataDir + "CompressFilesByFileInfo_out.zip", FileMode.Create))

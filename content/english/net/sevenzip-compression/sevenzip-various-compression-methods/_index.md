@@ -1,6 +1,6 @@
 ---
 title: SevenZip with Various Compression Methods in Aspose.Zip for .NET
-linktitle: SevenZip with Various Compression Methods in Aspose.Zip for .NET
+linktitle: SevenZip with Various Compression Methods
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: 
 type: docs
@@ -20,7 +20,7 @@ namespace Aspose.ZIP.Examples.WorkingWithSevenZip
     {
         public static void Run()
         {
-            string dataDir = RunExamples.GetDataDir_Data();
+            string dataDir = "Your Document Directory"
 
             //ExStart: SevenZipWithVariousCompressionMethods
             
