@@ -2,7 +2,7 @@
 title: Extracting to Memory Stream with Aspose.Zip for .NET
 linktitle: Extracting to Memory Stream 
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-description: Explore Aspose.Zip for .NET: Effortlessly extract archives to a MemoryStream in this step-by-step guide. Elevate your .NET development with ease.
+description: Explore Aspose.Zip for .NET Effortlessly extract archives to a MemoryStream in this step-by-step guide. Elevate your .NET development with ease.
 type: docs
 weight: 10
 url: /net/other-compression-techniques/extract-to-memory-stream/
