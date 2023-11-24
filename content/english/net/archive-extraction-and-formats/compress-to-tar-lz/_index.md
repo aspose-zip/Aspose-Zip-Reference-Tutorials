@@ -90,7 +90,7 @@ A2: Yes, the code is designed to work with the latest version. Always ensure you
 
 ### Q3: Are there any licensing considerations for using Aspose.Zip for .NET?
 
-A3: Yes, make sure to check the licensing details on the [official Aspose website](https://purchase.aspose.com/buy).
+A3: Yes, make sure to check the licensing details on the [Aspose website](https://purchase.aspose.com/buy).
 
 ### Q4: Can I use Aspose.Zip for .NET in commercial projects?
 

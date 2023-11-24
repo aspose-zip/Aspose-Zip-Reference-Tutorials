@@ -93,5 +93,5 @@ Yes, temporary licenses can be obtained from [here](https://purchase.aspose.com/
 
 ### 5. Where can I find detailed documentation for Aspose.Zip for .NET?
 
-Refer to the official documentation [here](https://reference.aspose.com/zip/net/) for in-depth information.
+Refer to the documentation [here](https://reference.aspose.com/zip/net/) for in-depth information.
 

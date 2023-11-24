@@ -65,7 +65,7 @@ In these three simple steps, you've successfully decompressed a RAR archive usin
 
 ## Conclusion
 
-Congratulations! You've just added a valuable tool to your programming toolkit by mastering the art of decompressing RAR archives with Aspose.Zip for .NET. Feel free to explore more features and functionalities offered by Aspose.Zip for .NET in the [official documentation](https://reference.aspose.com/zip/net/).
+Congratulations! You've just added a valuable tool to your programming toolkit by mastering the art of decompressing RAR archives with Aspose.Zip for .NET. Feel free to explore more features and functionalities offered by Aspose.Zip for .NET in the [documentation](https://reference.aspose.com/zip/net/).
 
 ## FAQs
 

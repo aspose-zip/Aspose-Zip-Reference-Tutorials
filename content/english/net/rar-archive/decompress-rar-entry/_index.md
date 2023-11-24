@@ -16,7 +16,7 @@ In the ever-evolving world of software development, efficiency and simplicity ar
 
 Before diving into the tutorial, ensure you have the following prerequisites:
 
-1. Aspose.Zip for .NET: Download and install the library from the official [Aspose.Zip for .NET documentation](https://reference.aspose.com/zip/net/).
+1. Aspose.Zip for .NET: Download and install the library from the [Aspose.Zip for .NET documentation](https://reference.aspose.com/zip/net/).
 
 2. Document Directory: Set up a directory where your RAR file and extracted content will be stored.
 

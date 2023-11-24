@@ -37,11 +37,11 @@ Begin by specifying the directory where your documents are located. This will be
 string dataDir = "Your Document Directory";
 ```
 
-### Step 2: Create a TarGz Archive
+## Step 2: Create a TarGz Archive
 
 Now, let's create a TarGz archive using Aspose.Zip for .NET. This involves the following steps:
 
-#### Step 2.1: Initialize TarArchive
+### Step 2.1: Initialize TarArchive
 
 ```csharp
 using (TarArchive archive = new TarArchive())
@@ -50,7 +50,7 @@ using (TarArchive archive = new TarArchive())
 }
 ```
 
-#### Step 2.2: Create Entries
+### Step 2.2: Create Entries
 
 Add files to the archive using the `CreateEntry` method. In this example, "alice29.txt" and "lcet10.txt" are added:
 
@@ -59,7 +59,7 @@ archive.CreateEntry("alice29.txt", dataDir + "alice29.txt");
 archive.CreateEntry("lcet10.txt", dataDir + "lcet10.txt");
 ```
 
-#### Step 2.3: Save as Gzipped Tar
+### Step 2.3: Save as Gzipped Tar
 
 Save the archive in TarGz format using the `SaveGzipped` method:
 

@@ -16,7 +16,7 @@ Unlocking the contents of a password-protected RAR archive can be a daunting tas
 
 Before diving into the tutorial, make sure you have the following prerequisites in place:
 
-1. Aspose.Zip for .NET Library: Ensure that you have the Aspose.Zip library installed in your .NET project. You can download it from the [official Aspose.Zip documentation](https://reference.aspose.com/zip/net/).
+1. Aspose.Zip for .NET Library: Ensure that you have the Aspose.Zip library installed in your .NET project. You can download it from the [Aspose.Zip documentation](https://reference.aspose.com/zip/net/).
 
 2. Document Directory: Set up a directory where your encrypted RAR archive is located. Replace "Your Document Directory" in the example code with the actual path to this directory.
 
@@ -87,6 +87,6 @@ Yes, you can obtain a temporary license for testing from [here](https://purchase
 ### Where can I find additional support or community discussions?
 Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for support and community discussions.
 
-### How do I access the official documentation for Aspose.Zip for .NET?
-The [official documentation](https://reference.aspose.com/zip/net/) provides comprehensive information on using Aspose.Zip for .NET.
+### How do I access the documentation for Aspose.Zip for .NET?
+The [documentation](https://reference.aspose.com/zip/net/) provides comprehensive information on using Aspose.Zip for .NET.
 

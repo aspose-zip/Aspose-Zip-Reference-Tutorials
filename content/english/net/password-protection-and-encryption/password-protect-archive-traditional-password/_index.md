@@ -79,6 +79,6 @@ Yes, traditional password protection provided by Aspose.Zip for .NET ensures a h
 Aspose.Zip for .NET is optimized for efficient performance, handling archives of varying sizes effectively.
 
 ### How can I get support for Aspose.Zip for .NET?
-Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for community support or explore the [official documentation](https://reference.aspose.com/zip/net/) for detailed information.
+Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for community support or explore the [documentation](https://reference.aspose.com/zip/net/) for detailed information.
 
 

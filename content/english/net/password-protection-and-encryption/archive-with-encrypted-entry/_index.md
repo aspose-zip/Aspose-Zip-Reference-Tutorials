@@ -31,16 +31,14 @@ using Aspose.Zip.Saving;
 using Aspose.Zip.SevenZip;
 ```
 
-## Step-by-Step Guide
-
-### Step 1: Set the Resource Directory Path
+## Step 1: Set the Resource Directory Path
 
 ```csharp
 // The path to the resource directory.
 string dataDir = "Your Document Directory";
 ```
 
-### Step 2: Create a Seven Zip File with AES Encryption
+## Step 2: Create a Seven Zip File with AES Encryption
 
 ```csharp
 //ExStart: ArchiveWithEncryptedEntry

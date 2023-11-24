@@ -31,9 +31,7 @@ using System.IO;
 using Aspose.Zip;
 ```
 
-## Step-by-Step Guide
-
-### Step 1: Define the Resource Directory
+## Step 1: Define the Resource Directory
 
 Ensure that you specify the path to your resource directory. In the example, replace "Your Document Directory" with the actual path.
 
@@ -41,7 +39,7 @@ Ensure that you specify the path to your resource directory. In the example, rep
 string dataDir = "Your Document Directory";
 ```
 
-### Step 2: Open the Encrypted Archive
+## Step 2: Open the Encrypted Archive
 
 ```csharp
 using (FileStream fs = File.OpenRead(dataDir + "StoreMutlipleFilesWithoutCompressionWithPassword_out.zip"))
@@ -56,7 +54,7 @@ using (FileStream fs = File.OpenRead(dataDir + "StoreMutlipleFilesWithoutCompres
 }
 ```
 
-### Step 3: Decompress the Encrypted Entry
+## Step 3: Decompress the Encrypted Entry
 
 ```csharp
 using (var decompressed = archive.Entries[0].Open())

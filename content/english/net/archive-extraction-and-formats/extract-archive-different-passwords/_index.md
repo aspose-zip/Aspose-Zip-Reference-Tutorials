@@ -88,4 +88,4 @@ A4: For a temporary license, visit [this link](https://purchase.aspose.com/tempo
 
 ### Q5: Where can I purchase Aspose.Zip?
 
-A5: To purchase Aspose.Zip, visit the [official purchase page](https://purchase.aspose.com/buy).
+A5: To purchase Aspose.Zip, visit the [purchase page](https://purchase.aspose.com/buy).
