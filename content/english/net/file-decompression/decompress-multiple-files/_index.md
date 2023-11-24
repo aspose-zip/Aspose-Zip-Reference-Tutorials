@@ -1,6 +1,6 @@
 ---
 title: Decompressing Multiple Files using Aspose.Zip for .NET
-linktitle: Decompressing Multiple Files using Aspose.Zip for .NET
+linktitle: Decompressing Multiple Files
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: Learn how to decompress multiple files using Aspose.Zip for .NET. Follow our step-by-step guide for efficient file management.
 type: docs
