@@ -2,7 +2,7 @@
 title: قم بإنشاء إدخال SevenZip في Aspose.Zip لـ .NET
 linktitle: إنشاء إدخال SevenZip
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
-description: Master Aspose.Zip for .NET - قم بإنشاء إدخالات SevenZip دون عناء. قم بتحسين تطبيقات .NET الخاصة بك من خلال المعالجة الفعالة لأرشيف Zip.
+description: Master Aspose.Zip for .NET - قم بإنشاء إدخالات SevenZip دون عناء. قم بتحسين تطبيقات .NET الخاصة بك من خلال المعالجة الفعالة لأرشيف ZIP.
 type: docs
 weight: 11
 url: /ar/net/sevenzip-compression/create-sevenzip-entry/
@@ -10,7 +10,7 @@ url: /ar/net/sevenzip-compression/create-sevenzip-entry/
 
 ## مقدمة
 
-مرحبًا بك في عالم Aspose.Zip for .NET، وهي مكتبة قوية تمكّن المطورين من العمل بسلاسة مع أرشيفات Zip في تطبيقات .NET الخاصة بهم. في هذا الدليل التفصيلي خطوة بخطوة، سنتعمق في إنشاء إدخال SevenZip باستخدام Aspose.Zip، مما يسمح لك بإدارة ملفاتك المضغوطة ومعالجتها بكفاءة. لذا، اربطوا أحزمة الأمان بينما نبدأ معًا رحلة البرمجة هذه!
+مرحبًا بك في عالم Aspose.Zip for .NET، وهي مكتبة قوية تمكّن المطورين من العمل بسلاسة مع أرشيفات Zip في تطبيقات .NET الخاصة بهم. في هذا الدليل التفصيلي خطوة بخطوة، سنتعمق في إنشاء إدخال SevenZip باستخدام Aspose.Zip، مما يسمح لك بإدارة ملفاتك المضغوطة ومعالجتها بكفاءة. لذا، اربطوا أحزمة الأمان بينما نبدأ رحلة البرمجة معًا!
 
 ## المتطلبات الأساسية
 

@@ -1,5 +1,5 @@
 ---
-title: Descomprimir un único archivo con Aspose.Zip para .NET
+title: Descomprimir un solo archivo con Aspose.Zip para .NET
 linktitle: Descomprimir un solo archivo
 second_title: API Aspose.Zip .NET para compresión y archivado de archivos
 description: Explore el perfecto mundo de la descompresión de archivos con Aspose.Zip para .NET. Maneje sin esfuerzo archivos comprimidos en sus proyectos de C#.
@@ -33,7 +33,7 @@ using System;
 using System.IO;
 ```
 
-## Descomprimir un solo archivo con Aspose.Zip para .NET
+## Descomprimir un único archivo con Aspose.Zip para .NET
 
 ### Paso 1: configure su directorio de documentos
 

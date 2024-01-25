@@ -13,13 +13,13 @@ url: /zh/net/file-decompression/
 
 文件压缩是软件开发的一个重要方面，可实现高效的数据存储和传输。 Aspose.Zip for .NET 成为一个强大的工具，简化了 .NET 环境中文件解压缩的复杂任务。在这份综合指南中，我们深入研究了各种场景，演示了如何利用 Aspose.Zip for .NET 进行无缝文件解压缩。
 
-## 使用 Aspose.Zip for .NET 解压文件
+## 使用 Aspose.Zip for .NET 解压缩文件
 
-通过掌握解压缩单个文件的技巧，解锁 .NET 中的文件压缩世界。教程关于[使用 Aspose.Zip for .NET 解压文件](./decompress-file/)提供分步指南，确保即使是初学者也能轻松完成整个过程。深入了解 Aspose.Zip for .NET 的复杂性，并增强您在 C# 项目中处理压缩文件的技能。
+通过掌握解压缩单个文件的技巧，解锁 .NET 中的文件压缩世界。教程关于[使用 Aspose.Zip for .NET 解压缩文件](./decompress-file/)提供分步指南，确保即使是初学者也能轻松完成整个过程。深入了解 Aspose.Zip for .NET 的复杂性，并增强您在 C# 项目中处理压缩文件的技能。
 
-## 使用 Aspose.Zip for .NET 解压多个文件
+## 使用 Aspose.Zip for .NET 解压缩多个文件
 
-使用 Aspose.Zip for .NET，高效的文件管理变得轻而易举。在[使用 Aspose.Zip for .NET 解压多个文件](./decompress-multiple-files/)，我们指导您完成解压缩多个文件的过程，优化您的工作流程。按照我们的详细步骤来简化您的文件处理并增强您的整体开发体验。
+使用 Aspose.Zip for .NET，高效的文件管理变得轻而易举。在[使用 Aspose.Zip for .NET 解压缩多个文件](./decompress-multiple-files/)，我们指导您完成解压缩多个文件的过程，优化您的工作流程。按照我们的详细步骤来简化您的文件处理并增强您的整体开发体验。
 
 ## 使用 Aspose.Zip for .NET 解压缩存储的文件
 
@@ -29,9 +29,9 @@ url: /zh/net/file-decompression/
 
 Aspose.Zip for .NET 被证明是文件解压缩领域的游戏规则改变者。无论您是处理单个文件、多个文件还是存储的文件，该库都简化了流程，使各个级别的开发人员都可以使用它。深入研究教程，释放 Aspose.Zip for .NET 的潜力，并将您的软件开发技能提升到新的高度。自信而高效地探索无缝压缩和提取的世界。
 ## 文件解压教程
-### [使用 Aspose.Zip for .NET 解压文件](./decompress-file/)
+### [使用 Aspose.Zip for .NET 解压缩文件](./decompress-file/)
 使用 Aspose.Zip 探索 .NET 中的文件压缩世界。学习轻松解压缩文件的艺术。
-### [使用 Aspose.Zip for .NET 解压多个文件](./decompress-multiple-files/)
+### [使用 Aspose.Zip for .NET 解压缩多个文件](./decompress-multiple-files/)
 了解如何使用 Aspose.Zip for .NET 解压缩多个文件。请按照我们的分步指南进行高效的文件管理。
 ### [使用 Aspose.Zip for .NET 解压缩单个文件](./decompress-single-file/)
 使用 Aspose.Zip for .NET 探索文件解压缩的无缝世界。轻松处理 C# 项目中的压缩文件。

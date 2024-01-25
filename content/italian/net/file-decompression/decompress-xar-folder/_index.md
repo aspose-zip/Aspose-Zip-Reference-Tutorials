@@ -62,7 +62,7 @@ Con Aspose.Zip per .NET, la decompressione degli archivi Xar diventa un compito 
 
 ### Q1: Aspose.Zip è compatibile con le ultime versioni di .NET framework?
 
- A1: Sì, Aspose.Zip viene regolarmente aggiornato per garantire la compatibilità con le ultime versioni di .NET framework. Fare riferimento al[documentazione](https://reference.aspose.com/zip/net/) per dettagli specifici.
+ A1: Sì, Aspose.Zip viene regolarmente aggiornato per garantire la compatibilità con le ultime versioni di .NET Framework. Fare riferimento al[documentazione](https://reference.aspose.com/zip/net/) per dettagli specifici.
 
 ### Q2: Posso provare Aspose.Zip prima di effettuare un acquisto?
 

@@ -9,7 +9,7 @@ url: /zh/net/archive-extraction-and-formats/compress-to-tar-xz/
 ---
 ## 介绍
 
-在 .NET 开发领域，有效的文件压缩是优化数据存储和传输的一个重要方面。 Aspose.Zip for .NET 是一个功能强大的工具，可促进文件压缩，在本教程中，我们将深入研究使用 Aspose.Zip 将文件压缩为 TarXz 格式。本分步指南旨在让您全面了解该过程，使您能够将此功能无缝集成到您的 .NET 项目中。
+在 .NET 开发领域，有效的文件压缩是优化数据存储和传输的一个重要方面。 Aspose.Zip for .NET 是一个强大的工具，可以促进文件压缩，在本教程中，我们将深入研究使用 Aspose.Zip 将文件压缩为 TarXz 格式。本分步指南旨在让您全面了解该过程，使您能够将此功能无缝集成到您的 .NET 项目中。
 
 ## 先决条件
 

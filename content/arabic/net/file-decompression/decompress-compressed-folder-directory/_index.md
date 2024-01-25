@@ -15,7 +15,7 @@ url: /ar/net/file-decompression/decompress-compressed-folder-directory/
 
 قبل أن نبدأ هذه الرحلة، تأكد من توفر المتطلبات الأساسية التالية:
 
--  Aspose.Zip for .NET Library: قم بتنزيل المكتبة وتثبيتها من[Aspose.Zip لوثائق .NET](https://reference.aspose.com/zip/net/).
+-  Aspose.Zip for .NET Library: قم بتنزيل المكتبة وتثبيتها من ملف[Aspose.Zip لوثائق .NET](https://reference.aspose.com/zip/net/).
 
 ## استيراد مساحات الأسماء
 

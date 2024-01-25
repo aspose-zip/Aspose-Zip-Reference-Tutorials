@@ -1,6 +1,6 @@
 ---
 title: Aspose.Zip — Учебники по мастерству сжатия
-linktitle: Учебные пособия по Aspose.Zip
+linktitle: Учебники по Aspose.Zip
 additionalTitle: Ссылки на API Aspose
 description: Раскройте весь потенциал сжатия с помощью Aspose.Zip! Ознакомьтесь с нашими подробными руководствами, чтобы получить экспертную информацию и эффективную обработку файлов.
 type: docs

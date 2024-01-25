@@ -70,7 +70,7 @@ Congratulazioni! Hai compresso con successo un file utilizzando Aspose.Zip per .
 
 A1: Sì, Aspose.Zip per .NET supporta vari algoritmi di compressione, inclusi Lzma, Deflate e BZip2.
 
-### Q2: dove posso trovare la documentazione per Aspose.Zip per .NET?
+### Q2: Dove posso trovare la documentazione per Aspose.Zip per .NET?
 
  A2: La documentazione è disponibile[Qui](https://reference.aspose.com/zip/net/).
 

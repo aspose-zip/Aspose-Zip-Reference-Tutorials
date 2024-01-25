@@ -23,7 +23,7 @@ Tek dosyaların sıkıştırmasını açma sanatında ustalaşarak .NET'te dosya
 
 ## Aspose.Zip for .NET kullanarak Saklanan Dosyanın Sıkıştırılmış Dosyasını Açma
 
- Aspose.Zip for .NET'in gücünü keşfedin[Aspose.Zip for .NET kullanarak Saklanan Dosyanın Sıkıştırılmış Dosyasını Açma](./decompress-stored-file/). Bu eğitim, depolanan dosyaların sıkıştırmasını etkili bir şekilde açma konusunda adım adım bir kılavuz sunarak projelerinizde etkili dosya yönetimi için güçlü bir çözüm sunar.
+ Aspose.Zip for .NET'in gücünü keşfedin[Aspose.Zip for .NET kullanarak Saklanan Dosyanın Sıkıştırılmış Dosyasını Açma](./decompress-stored-file/). Bu eğitim, depolanan dosyaların sıkıştırmasını verimli bir şekilde açma konusunda adım adım bir kılavuz sunarak projelerinizde etkili dosya yönetimi için güçlü bir çözüm sunar.
 
 ## Çözüm
 

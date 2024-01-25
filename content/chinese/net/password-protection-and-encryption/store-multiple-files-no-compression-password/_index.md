@@ -67,7 +67,7 @@ archive.CreateEntry("alice29.txt", source1);
 archive.Save(zipFile);
 ```
 
-最后一步涉及在存档中创建“alice29.txt”条目并保存存档，从而完成不压缩且具有密码保护的存储文件的过程。
+最后一步涉及在存档中创建“alice29.txt”条目并保存存档，完成不压缩且具有密码保护的存储文件的过程。
 
 通过总结要点并鼓励读者探索 Aspose.Zip for .NET 的更多可能性来结束您的教程。
 

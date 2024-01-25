@@ -33,7 +33,7 @@ Aspose.Zip para .NET demuestra ser un punto de inflexión en el ámbito de la de
 Explore el mundo de la compresión de archivos en .NET con Aspose.Zip. Aprenda el arte de descomprimir archivos sin esfuerzo.
 ### [Descomprimir varios archivos usando Aspose.Zip para .NET](./decompress-multiple-files/)
 Aprenda a descomprimir varios archivos usando Aspose.Zip para .NET. Siga nuestra guía paso a paso para una gestión eficiente de archivos.
-### [Descomprimir un solo archivo con Aspose.Zip para .NET](./decompress-single-file/)
+### [Descomprimir un único archivo con Aspose.Zip para .NET](./decompress-single-file/)
 Explore el perfecto mundo de la descompresión de archivos con Aspose.Zip para .NET. Maneje sin esfuerzo archivos comprimidos en sus proyectos de C#.
 ### [Descomprimir un archivo almacenado usando Aspose.Zip para .NET](./decompress-stored-file/)
 Explore el poder de Aspose.Zip para .NET en esta guía paso a paso sobre cómo descomprimir archivos almacenados. Mejore sus habilidades de desarrollo de software con una solución sólida para el manejo eficiente de archivos.

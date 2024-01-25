@@ -100,7 +100,7 @@ using (var extracted = File.Create(dataDir + "alice_extracted_out.txt"))
 archive.Entries[1].Extract(dataDir + "asyoulik_extracted_out.txt");
 ```
 
-现在你就得到了它！您已使用 Aspose.Zip for .NET 成功解压多个文件。
+现在你就拥有了！您已使用 Aspose.Zip for .NET 成功解压多个文件。
 
 ## 结论
 

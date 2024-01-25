@@ -9,7 +9,7 @@ url: /tr/net/file-compression/store-multiple-files-no-compression/
 ---
 ## giriiş
 
-.NET geliştirmenin dinamik dünyasında, verilerin depolanmasını ve aktarımını optimize etmek için etkili dosya sıkıştırma çok önemlidir. Aspose.Zip for .NET, bu süreci basitleştiren, geliştiricilerin birden fazla dosyayı sıkıştırmaya gerek kalmadan verimli bir şekilde saklamasına olanak tanıyan güçlü bir araçtır. Bu eğitimde, süreç boyunca size adım adım rehberlik ederek Aspose.Zip for .NET'in tüm potansiyelinden faydalanmanızı sağlayacağız.
+.NET geliştirmenin dinamik dünyasında, verilerin depolanmasını ve aktarımını optimize etmek için etkili dosya sıkıştırma çok önemlidir. Aspose.Zip for .NET, bu süreci basitleştiren, geliştiricilerin birden fazla dosyayı sıkıştırma olmadan verimli bir şekilde saklamasına olanak tanıyan güçlü bir araçtır. Bu eğitimde, süreç boyunca size adım adım rehberlik ederek Aspose.Zip for .NET'in tüm potansiyelinden faydalanmanızı sağlayacağız.
 
 ## Önkoşullar
 

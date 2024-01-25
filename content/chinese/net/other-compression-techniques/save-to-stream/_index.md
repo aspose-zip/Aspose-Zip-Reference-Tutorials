@@ -16,7 +16,7 @@ url: /zh/net/other-compression-techniques/save-to-stream/
 在我们深入学习本教程之前，请确保您具备以下先决条件：
 
 - 具备 C# 和 .NET 开发的实用知识。
-- 安装了 Aspose.Zip for .NET 库。如果您还没有安装，可以找到所需的资源[这里](https://releases.aspose.com/zip/net/).
+- 安装了 Aspose.Zip for .NET 库。如果您还没有安装，可以找到必要的资源[这里](https://releases.aspose.com/zip/net/).
 - 代码编辑器，例如 Visual Studio。
 
 ## 导入命名空间

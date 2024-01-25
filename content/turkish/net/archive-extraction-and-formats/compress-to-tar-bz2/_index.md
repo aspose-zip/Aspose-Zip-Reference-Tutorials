@@ -87,6 +87,6 @@ C2: Evet, verilen örnekte Tar arşivine girişler ekleyerek birden fazla dosyay
 
  Cevap4: Geçici bir lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
 
-### S5: Ücretsiz deneme sürümü var mı?
+### S5: Ücretsiz deneme sürümü mevcut mu?
 
  C5: Evet, ücretsiz deneme sürümüne erişebilirsiniz[Burada](https://releases.aspose.com/).

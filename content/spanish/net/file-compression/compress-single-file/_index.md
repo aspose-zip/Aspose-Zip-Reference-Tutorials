@@ -88,7 +88,7 @@ R1: ¡Absolutamente! Puede adaptar el código proporcionado para comprimir vario
 
 ### P3: ¿Hay una prueba gratuita disponible para Aspose.Zip para .NET?
 
- A3: Sí, puedes obtener un[prueba gratis](https://releases.aspose.com/) para explorar las funciones antes de realizar una compra.
+ A3: Sí, puedes conseguir un[prueba gratis](https://releases.aspose.com/) para explorar las funciones antes de realizar una compra.
 
 ### P4: ¿Cómo puedo obtener una licencia temporal de Aspose.Zip para .NET?
 

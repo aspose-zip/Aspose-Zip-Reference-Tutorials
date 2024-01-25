@@ -15,7 +15,7 @@ Om du arbetar med komprimerade arkiv i .NET är Aspose.Zip din bästa lösning f
 
 Innan vi dyker in i handledningen, se till att du har följande på plats:
 
--  Aspose.Zip för .NET: Ladda ner och installera biblioteket från[Aspose.Zip-dokumentation](https://reference.aspose.com/zip/net/).
+-  Aspose.Zip för .NET: Ladda ner och installera biblioteket från[Aspose.Zip dokumentation](https://reference.aspose.com/zip/net/).
 - Dokumentkatalog: Se till att du har en angiven katalog för dina dokument.
 
 ## Importera namnområden

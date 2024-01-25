@@ -1,5 +1,5 @@
 ---
-title: 使用 Aspose.Zip for .NET 解压文件
+title: 使用 Aspose.Zip for .NET 解压缩文件
 linktitle: 解压文件
 second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
 description: 使用 Aspose.Zip 探索 .NET 中的文件压缩世界。学习轻松解压缩文件的艺术。

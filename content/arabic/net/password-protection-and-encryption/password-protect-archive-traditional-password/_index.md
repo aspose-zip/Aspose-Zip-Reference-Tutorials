@@ -2,7 +2,7 @@
 title: Aspose.Zip for .NET - البرنامج التعليمي لحماية كلمة المرور للأرشيف
 linktitle: حماية كلمة المرور للأرشيف بكلمة مرور تقليدية
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
-description: تعرف على كيفية تأمين أرشيفات .NET الخاصة بك باستخدام الحماية التقليدية بكلمة المرور باستخدام Aspose.Zip. اتبع دليلنا خطوة بخطوة لتعزيز سرية البيانات.
+description: تعرف على كيفية تأمين أرشيفات .NET الخاصة بك باستخدام الحماية التقليدية بكلمة مرور باستخدام Aspose.Zip. اتبع دليلنا خطوة بخطوة لتعزيز سرية البيانات.
 type: docs
 weight: 12
 url: /ar/net/password-protection-and-encryption/password-protect-archive-traditional-password/
