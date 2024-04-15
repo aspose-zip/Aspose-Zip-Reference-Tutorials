@@ -53,7 +53,7 @@ using (SevenZipArchive archive = new SevenZipArchive())
 //ExEnd: CreateSevenZipEntries
 ```
 
-يقوم هذا الرمز بتهيئة SevenZipArchive، وإنشاء إدخالات من الدليل المحدد، وحفظ الملف المضغوط باسم "SevenZip.7z."
+يقوم هذا الرمز بتهيئة SevenZipArchive، وإنشاء إدخالات من الدليل المحدد، وحفظ الملف المضغوط باسم "SevenZip.7z".
 
 ## الخطوة 3: عرض رسالة النجاح
 

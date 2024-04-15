@@ -28,7 +28,7 @@ using System.IO;
 
 ## Adım 1: Dizini Sıkıştırın
 
- Daha sonra açmayı düşündüğünüz dizinden bir zip dosyası oluşturarak başlayın. Kullanın`CompressDirectory.Run()` yöntem, kod parçacığında gösterildiği gibi:
+ Daha sonra açmayı düşündüğünüz dizinden bir zip dosyası oluşturarak başlayın. Kullanın`CompressDirectory.Run()` yöntem, kod pasajında gösterildiği gibi:
 
 ```csharp
 string dataDir = "Your Document Directory";

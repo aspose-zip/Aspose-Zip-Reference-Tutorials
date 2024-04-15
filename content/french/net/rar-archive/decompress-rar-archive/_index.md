@@ -41,7 +41,7 @@ using Aspose.Zip.Rar;
 string dataDir = "Your Document Directory";
 ```
 
-## Étape 2 : ouvrez l'archive RAR
+## Étape 2 : ouvrez l’archive RAR
 
 ```csharp
 //ExStart : DécompresserRarArchive

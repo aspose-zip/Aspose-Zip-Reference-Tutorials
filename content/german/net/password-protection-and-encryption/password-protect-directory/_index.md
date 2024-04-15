@@ -82,7 +82,7 @@ Ja, Aspose.Zip für .NET ist für die effiziente Handhabung großer Verzeichniss
  Ja, Sie können das Passwort ändern, indem Sie das anpassen`TraditionalEncryptionSettings` im Code entsprechend eintragen.
 
 ### Gibt es Lizenzanforderungen für die Verwendung von Aspose.Zip für .NET?
- Ja, für die Verwendung von Aspose.Zip für .NET in einer Produktionsumgebung ist eine gültige Lizenz erforderlich. Sie können eine Lizenz erhalten[Hier](https://purchase.aspose.com/buy).
+ Ja, für die Verwendung von Aspose.Zip für .NET in einer Produktionsumgebung ist eine gültige Lizenz erforderlich. Sie können eine Lizenz erwerben[Hier](https://purchase.aspose.com/buy).
 
 ### Gibt es eine kostenlose Testversion für Aspose.Zip für .NET?
  Ja, Sie können auf eine kostenlose Testversion zugreifen[Hier](https://releases.aspose.com/).

@@ -1,5 +1,5 @@
 ---
-title:Proteja sus archivos: cifrado AES con Aspose.Zip
+title: Proteja sus archivos cifrado AES con Aspose.Zip
 linktitle: Proteger con contraseña con AES
 second_title: API Aspose.Zip .NET para compresión y archivado de archivos
 description: Aprenda cómo mejorar la seguridad de sus archivos usando Aspose.Zip para .NET con cifrado AES. Siga nuestra guía paso a paso para una protección óptima.

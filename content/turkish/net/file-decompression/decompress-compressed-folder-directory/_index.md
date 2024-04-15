@@ -9,7 +9,7 @@ url: /tr/net/file-decompression/decompress-compressed-folder-directory/
 ---
 ## giriiş
 
-Geliştiricilerin sıkıştırılmış klasörleri zahmetsizce kullanmasını sağlayan güçlü bir kütüphane olan Aspose.Zip for .NET dünyasına hoş geldiniz. Bu eğitimde, sıkıştırılmış bir klasörü Aspose.Zip for .NET kullanarak bir dizine açma sürecini inceleyeceğiz. Bu güçlü aracın karmaşıklıklarını açığa çıkararak her adımı size ayrıntılı olarak anlatırken kemerlerinizi bağlayın.
+Geliştiricilerin sıkıştırılmış klasörleri zahmetsizce kullanmasını sağlayan güçlü bir kütüphane olan Aspose.Zip for .NET dünyasına hoş geldiniz. Bu eğitimde, sıkıştırılmış bir klasörü Aspose.Zip for .NET kullanarak bir dizine açma sürecini inceleyeceğiz. Bu güçlü aracın inceliklerini açığa çıkararak her adımı size ayrıntılı olarak anlatırken kemerlerinizi bağlayın.
 
 ## Önkoşullar
 

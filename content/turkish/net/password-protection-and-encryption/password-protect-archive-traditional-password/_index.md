@@ -12,7 +12,7 @@ url: /tr/net/password-protection-and-encryption/password-protect-archive-traditi
 
 ## giriiş
 
-Arşivlerinize bir güvenlik katmanı eklemek, hassas bilgilerin korunması açısından çok önemlidir. Aspose.Zip for .NET, geliştiricilerin geleneksel şifre korumasını zahmetsizce uygulamasına olanak tanır. Bu eğitimde, Aspose.Zip kullanarak bir arşivin içeriğine yalnızca yetkili kişilerin erişebilmesini sağlayacak şekilde parolayla nasıl korunacağını keşfedeceğiz.
+Arşivlerinize bir güvenlik katmanı eklemek, hassas bilgilerin korunması açısından çok önemlidir. Aspose.Zip for .NET, geliştiricilerin geleneksel şifre korumasını zahmetsizce uygulamasına olanak tanır. Bu eğitimde, Aspose.Zip kullanarak bir arşivi nasıl şifreyle koruyabileceğimizi ve içeriğine yalnızca yetkili kişilerin erişmesini sağlayacağımızı keşfedeceğiz.
 
 ## Önkoşullar
 

@@ -61,7 +61,7 @@ using (FileStream fs = File.OpenRead(dataDir + "your_archive.rar"))
 archive.ExtractToDirectory(dataDir + "DecompressRar_out");
 ```
 
-في هذه الخطوات الثلاث البسيطة، نجحت في فك ضغط أرشيف RAR باستخدام Aspose.Zip for .NET! تأكد من تعديل مسارات الملفات وأسماءها وفقًا لإعدادك.
+في هذه الخطوات الثلاث البسيطة، نجحت في فك ضغط أرشيف RAR باستخدام Aspose.Zip for .NET! تأكد من تعديل مسارات الملفات وأسماءها وفقًا لإعداداتك.
 
 ## خاتمة
 

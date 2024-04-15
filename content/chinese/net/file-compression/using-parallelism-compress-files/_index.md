@@ -78,7 +78,7 @@ using (var archive = new Archive())
 
 ## 第 5 步：定义并行性标准
 
-使用定义并行度标准`ParallelOptions`:
+使用定义并行度标准`ParallelOptions`：
 
 ```csharp
 var parallelOptions = new ParallelOptions

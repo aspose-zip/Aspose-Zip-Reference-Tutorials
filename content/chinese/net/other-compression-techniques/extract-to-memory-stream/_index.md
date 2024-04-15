@@ -43,7 +43,7 @@ string dataDir = "Your Document Directory";
 
 ## 第2步：提取到MemoryStream
 
-现在，让我们深入研究一下提取过程。按着这些次序：
+现在，让我们深入研究提取过程。按着这些次序：
 
 ### 步骤2.1：初始化MemoryStream
 

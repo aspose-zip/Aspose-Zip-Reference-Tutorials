@@ -97,7 +97,7 @@ A2：当然，Aspose.Zip for .NET 旨在轻松处理小型和大型文件压缩�
 
  A3：访问[Aspose.Zip 论坛](https://forum.aspose.com/c/zip/37)以获得社区支持，或考虑购买[临时执照](https://purchase.aspose.com/temporary-license/)寻求专门帮助。
 
-### 问题 4：Aspose.Zip for .NET 是否有免费试用版？
+### 问题 4：Aspose.Zip for .NET 有免费试用版吗？
 
  A4：是的，您可以通过[免费试用](https://releases.aspose.com/zip/net)在购买之前。
 

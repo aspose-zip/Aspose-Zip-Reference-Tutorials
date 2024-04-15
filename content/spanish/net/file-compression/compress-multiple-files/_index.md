@@ -2,7 +2,7 @@
 title: Compresión de múltiples archivos sin esfuerzo con Aspose.Zip para .NET
 linktitle: Cómo comprimir varios archivos
 second_title: API Aspose.Zip .NET para compresión y archivado de archivos
-description: Aprenda a comprimir varios archivos sin esfuerzo utilizando Aspose.Zip para .NET. Optimice el almacenamiento y mejore la administración de archivos con esta guía completa.
+description: Aprenda a comprimir varios archivos sin esfuerzo usando Aspose.Zip para .NET. Optimice el almacenamiento y mejore la administración de archivos con esta guía completa.
 type: docs
 weight: 13
 url: /es/net/file-compression/compress-multiple-files/

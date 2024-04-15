@@ -10,7 +10,7 @@ url: /es/net/password-protection-and-encryption/aes-encryption-settings/
 
 ## Introducción
 
-Bienvenido a nuestra guía paso a paso sobre cómo implementar la configuración de cifrado AES en Aspose.Zip para .NET. Aspose.Zip es una poderosa biblioteca que te permite comprimir y descomprimir archivos con facilidad. En este tutorial, nos centraremos en la configuración del Estándar de cifrado avanzado (AES), que proporciona una forma segura de proteger sus datos comprimidos.
+Bienvenido a nuestra guía paso a paso sobre cómo implementar la configuración de cifrado AES en Aspose.Zip para .NET. Aspose.Zip es una poderosa biblioteca que le permite comprimir y descomprimir archivos con facilidad. En este tutorial, nos centraremos en la configuración del Estándar de cifrado avanzado (AES), que proporciona una forma segura de proteger sus datos comprimidos.
 
 ## Requisitos previos
 

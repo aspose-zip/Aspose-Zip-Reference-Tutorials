@@ -71,7 +71,7 @@ Repita estos pasos para cada archivo RAR que necesite descifrar, asegurando una 
 
 ## Conclusión
 
-¡Felicidades! Ha descifrado con éxito un archivo RAR utilizando Aspose.Zip para .NET. Esta poderosa biblioteca simplifica el complejo proceso de desbloquear archivos protegidos con contraseña, lo que la convierte en una herramienta invaluable para los desarrolladores que trabajan con aplicaciones .NET.
+¡Felicidades! Ha descifrado con éxito un archivo RAR usando Aspose.Zip para .NET. Esta poderosa biblioteca simplifica el complejo proceso de desbloquear archivos protegidos con contraseña, lo que la convierte en una herramienta invaluable para los desarrolladores que trabajan con aplicaciones .NET.
 
 ## Preguntas frecuentes (FAQ)
 

@@ -98,7 +98,7 @@ A3: Aspose.Zip bietet Methoden zum Arbeiten mit passwortgeschützten Archiven. W
 
 ### F4: Gibt es lizenzrechtliche Überlegungen für die Verwendung von Aspose.Zip?
 
- A4: Sehen Sie sich die Lizenzinformationen an[Aspose-Website](https://purchase.aspose.com/buy).
+ A4: Überprüfen Sie die Lizenzinformationen auf der[Aspose-Website](https://purchase.aspose.com/buy).
 
 ### F5: Wo kann ich Hilfe suchen, wenn ich auf Probleme stoße?
 

@@ -52,7 +52,7 @@ using (FileStream fs = File.OpenRead(dataDir + "your_file.rar"))
 //ExEnd : DécompresserRarEntry
 ```
 
-Explication : L'extrait de code ouvre le fichier RAR, extrait la première entrée et l'enregistre sous "extracted_file.txt" dans le répertoire spécifié.
+Explication : L'extrait de code ouvre le fichier RAR, extrait la première entrée et l'enregistre sous « extracted_file.txt » dans le répertoire spécifié.
 
 ### Conclusion
 

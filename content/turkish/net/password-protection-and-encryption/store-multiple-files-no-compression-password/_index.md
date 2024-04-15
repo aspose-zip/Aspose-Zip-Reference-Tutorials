@@ -8,7 +8,7 @@ weight: 13
 url: /tr/net/password-protection-and-encryption/store-multiple-files-no-compression-password/
 ---
 
-.NET geliştirme dünyasında dosyaları yönetmek ve değiştirmek ortak bir görevdir. Aspose.Zip for .NET, geliştiricilere zip arşivlerini sorunsuz bir şekilde sıkıştırma, sıkıştırmayı açma ve yönetme yeteneği sağlayan güçlü bir kitaplıktır. Bu eğitimde belirli bir senaryoyu inceleyeceğiz: birden fazla dosyayı sıkıştırmadan depolamak ve bunları bir parolayla korumak. Bu kılavuzun sonunda, Aspose.Zip for .NET kullanarak bu işlevselliği uygulayacak bilgiyle donatılmış olacaksınız.
+.NET geliştirme dünyasında dosyaları yönetmek ve değiştirmek ortak bir görevdir. Aspose.Zip for .NET, geliştiricilere zip arşivlerini sorunsuz bir şekilde sıkıştırma, açma ve yönetme yeteneği sağlayan güçlü bir kitaplıktır. Bu eğitimde belirli bir senaryoyu inceleyeceğiz: birden fazla dosyayı sıkıştırmadan depolamak ve bunları bir parolayla korumak. Bu kılavuzun sonunda, Aspose.Zip for .NET kullanarak bu işlevselliği uygulayacak bilgiyle donatılmış olacaksınız.
 
 ## Önkoşullar
 

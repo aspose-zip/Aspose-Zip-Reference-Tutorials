@@ -63,7 +63,7 @@ Erfahren Sie, wie Sie Ihre .NET-Archive mit herkömmlichem Passwortschutz mit As
 ### [Speichern Sie mehrere Dateien ohne Komprimierung mit Passwort in Aspose.Zip für .NET](./store-multiple-files-no-compression-password/)
 Erfahren Sie, wie Sie mit Aspose.Zip für .NET mehrere Dateien ohne Komprimierung sicher speichern können. Einfache Schritte zum Passwortschutz. Nutzen Sie die Macht der Dateiverwaltung!
 ### [AES-Verschlüsselungseinstellungen in Aspose.Zip für .NET](./aes-encryption-settings/)
-Entdecken Sie Aspose.Zip für .NET, um Ihre komprimierten Dateien mit AES-Verschlüsselung zu sichern. Jetzt herunterladen für effizienten Datenschutz.
+Entdecken Sie Aspose.Zip für .NET, um Ihre komprimierten Dateien mit AES-Verschlüsselung zu schützen. Jetzt herunterladen für effizienten Datenschutz.
 ### [Archiv mit verschlüsseltem Eintrag in Aspose.Zip für .NET](./archive-with-encrypted-entry/)
 Entdecken Sie die Welt der sicheren Archivierung in .NET mit Aspose.Zip. Erstellen Sie mühelos sieben Zip-Dateien mit AES-Verschlüsselung. Steigern Sie jetzt Ihre Entwicklungsfähigkeiten!
 ### [Komprimieren Sie Dateien mit individuellen Passwörtern in Aspose.Zip für .NET](./compress-files-individual-passwords/)

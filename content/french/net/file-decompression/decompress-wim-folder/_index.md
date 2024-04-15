@@ -60,7 +60,7 @@ Toutes nos félicitations! Vous avez appris avec succès comment décompresser u
 
 ### Q1 : Puis-je utiliser Aspose.Zip pour .NET avec d’autres formats d’archives ?
 
-A1 : Oui, Aspose.Zip prend en charge divers formats d'archives, notamment ZIP, TAR, GZIP, etc.
+R1 : Oui, Aspose.Zip prend en charge divers formats d'archives, notamment ZIP, TAR, GZIP, etc.
 
 ### Q2 : Où puis-je trouver plus d’exemples et de documentation pour Aspose.Zip ?
 

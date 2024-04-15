@@ -10,7 +10,7 @@ url: /zh/net/password-protection-and-encryption/aes-encryption-settings/
 
 ## 介绍
 
-欢迎阅读我们关于在 Aspose.Zip for .NET 中实施 AES 加密设置的分步指南。 Aspose.Zip 是一个功能强大的库，可让您轻松压缩和解压缩文件。在本教程中，我们将重点介绍高级加密标准 (AES) 设置，提供一种保护压缩数据的安全方法。
+欢迎阅读我们关于在 Aspose.Zip for .NET 中实施 AES 加密设置的分步指南。 Aspose.Zip 是一个功能强大的库，可让您轻松压缩和解压缩文件。在本教程中，我们将重点介绍高级加密标准 (AES) 设置，它提供了一种保护压缩数据的安全方法。
 
 ## 先决条件
 

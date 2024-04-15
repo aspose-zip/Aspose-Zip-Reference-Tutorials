@@ -112,7 +112,7 @@ using (FileStream zipFile = File.Open(dataDir + "EnhancedDeflateCompression_out.
 
 ## Uso de la configuración de compresión de la tienda
 
-### Paso 1: inicializar la compresión de la tienda
+### Paso 1: Inicializar la compresión de la tienda
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "StoreCompression_out.zip", FileMode.Create))

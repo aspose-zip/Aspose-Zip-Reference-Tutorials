@@ -78,7 +78,7 @@ A1 : Oui, Aspose.Zip pour .NET est conçu pour s'intégrer de manière transpare
 
 ### Q2 : Comment puis-je obtenir une licence temporaire pour Aspose.Zip pour .NET ?
 
- A2 : Visite[ce lien](https://purchase.aspose.com/temporary-license/) pour acquérir une licence temporaire pour Aspose.Zip.
+ A2 : Visite[ce lien](https://purchase.aspose.com/temporary-license/) pour acquérir une licence temporaire pour Aspose.Zip.
 
 ### Q3 : Existe-t-il des limites de taille de fichier lors de l'utilisation d'Aspose.Zip pour .NET ?
 

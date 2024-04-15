@@ -15,7 +15,7 @@ url: /ar/net/file-decompression/decompress-single-file/
 
 قبل الغوص في البرنامج التعليمي، تأكد من توفر المتطلبات الأساسية التالية:
 
--  Aspose.Zip for .NET Library: قم بتنزيل المكتبة وتثبيتها من[Aspose.Zip لتوثيق .NET](https://reference.aspose.com/zip/net/).
+-  Aspose.Zip for .NET Library: قم بتنزيل المكتبة وتثبيتها من ملف[Aspose.Zip لتوثيق .NET](https://reference.aspose.com/zip/net/).
 
 - بيئة التطوير: جهز بيئة تطوير .NET وظيفية، بما في ذلك Visual Studio أو أي بيئة تطوير متكاملة أخرى متوافقة.
 

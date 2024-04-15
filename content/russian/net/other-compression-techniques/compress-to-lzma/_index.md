@@ -72,7 +72,7 @@ Console.WriteLine("Successfully Compressed a File");
 
 ### Вопрос 2. Где я могу найти документацию по Aspose.Zip для .NET?
 
- A2: документация доступна.[здесь](https://reference.aspose.com/zip/net/).
+ A2: документация доступна[здесь](https://reference.aspose.com/zip/net/).
 
 ### В3: Как я могу получить временную лицензию для Aspose.Zip?
 
