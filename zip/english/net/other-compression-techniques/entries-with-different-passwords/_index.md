@@ -3,10 +3,16 @@ title: Entries with Different Passwords in Aspose.Zip for .NET
 linktitle: Entries with Different Passwords
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: Explore the power of Aspose.Zip for .NET with our step-by-step guide on managing ZIP archives with different passwords. Enhance security and flexibility in your applications. 
-type: docs
 weight: 13
 url: /net/other-compression-techniques/entries-with-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Entries with Different Passwords in Aspose.Zip for .NET
+
 ## Introduction
 
 Welcome to the world of Aspose.Zip for .NET, a powerful library that empowers developers to manage and manipulate ZIP archives seamlessly. In this tutorial, we'll delve into a specific feature: working with entries with different passwords. Whether you're a seasoned developer or just starting, this step-by-step guide will walk you through the process, unlocking the potential of Aspose.Zip for .NET.
@@ -97,3 +103,10 @@ A4: For any queries or assistance, visit the [Aspose.Zip Forum](https://forum.as
 ### Q5: Can I use Aspose.Zip for .NET without a permanent license?
 
 A5: Yes, you can obtain a temporary license for your short-term needs. Find more details [here](https://purchase.aspose.com/temporary-license/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

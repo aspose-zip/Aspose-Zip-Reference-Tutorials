@@ -3,10 +3,16 @@ title: 기타 압축 기술
 linktitle: 기타 압축 기술
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: Aspose.Zip으로 고급 압축 기술을 마스터하세요. 추출부터 메모리 스트림, Lzma 압축을 통한 스토리지 최적화까지 개발 기술을 향상하세요.
-type: docs
 weight: 27
 url: /ko/net/other-compression-techniques/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 기타 압축 기술
+
 
 ## 소개
 
@@ -44,3 +50,9 @@ Aspose.Zip을 사용하여 .NET에서 GZip 아카이브를 쉽게 여는 방법�
 다양한 비밀번호로 ZIP 아카이브를 관리하는 방법에 대한 단계별 가이드를 통해 .NET용 Aspose.Zip의 강력한 기능을 살펴보세요. 애플리케이션의 보안과 유연성을 강화하세요. 
 ### [.NET용 Aspose.Zip에서 Lzma로 압축](./compress-to-lzma/)
 강력한 Lzma 알고리즘과 함께 .NET용 Aspose.Zip을 사용하여 파일을 압축하는 방법을 알아보세요. 손쉽게 스토리지를 최적화하고 데이터 전송 효율성을 향상하세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

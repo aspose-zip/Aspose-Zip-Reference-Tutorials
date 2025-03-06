@@ -3,10 +3,16 @@ title: Compresión segura de archivos en .NET con Aspose.Zip
 linktitle: Comprimir archivos con contraseñas individuales
 second_title: API Aspose.Zip .NET para compresión y archivado de archivos
 description: ¡Aprenda cómo mejorar la seguridad de los archivos en aplicaciones .NET! Siga nuestra guía paso a paso sobre cómo comprimir archivos con contraseñas individuales usando Aspose.Zip para .NET.
-type: docs
 weight: 16
 url: /es/net/password-protection-and-encryption/compress-files-individual-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Compresión segura de archivos en .NET con Aspose.Zip
+
 
 ## Introducción
 
@@ -84,3 +90,10 @@ Sí, Aspose.Zip para .NET le permite utilizar diferentes métodos de cifrado par
 
 ### ¿Puedo comprar una licencia temporal para realizar pruebas?
  Sí, puedes adquirir una licencia temporal.[aquí](https://purchase.aspose.com/temporary-license/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

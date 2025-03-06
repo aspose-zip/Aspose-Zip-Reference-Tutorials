@@ -3,10 +3,16 @@ title: Descompactação de arquivo
 linktitle: Descompactação de arquivo
 second_title: API Aspose.Zip .NET para compactação e arquivamento de arquivos
 description: Domine a descompactação de arquivos sem esforço em .NET com os tutoriais Aspose.Zip para .NET. Aprenda a lidar com arquivos compactados de maneira eficiente com guias passo a passo.
-type: docs
 weight: 21
 url: /pt/net/file-decompression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Descompactação de arquivo
+
 
 
 ## Introdução
@@ -45,3 +51,9 @@ Aprenda como descompactar arquivos tradicionalmente protegidos por senha usando 
 Explore o guia passo a passo sobre como descompactar arquivos Wim usando Aspose.Zip para .NET. Baixe a biblioteca, siga o tutorial e gerencie arquivos compactados com eficiência em seus aplicativos .NET.
 ### [Descompacte Xar para pasta em Aspose.Zip para .NET](./decompress-xar-folder/)
 Explore o poder do Aspose.Zip para .NET! Descompacte arquivos Xar sem esforço com este tutorial fácil de usar. Aprimore sua experiência de desenvolvimento .NET.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

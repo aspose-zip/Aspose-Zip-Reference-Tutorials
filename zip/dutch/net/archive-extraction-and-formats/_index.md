@@ -3,10 +3,16 @@ title: Archiefextractie en formaten
 linktitle: Archiefextractie en formaten
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Ontgrendel de kracht van bestandscompressie in .NET met Aspose.Zip. Leer hoe u bestanden comprimeert naar verschillende formaten zoals TarBz2, TarGz en TarZ voor efficiënte opslag.
-type: docs
 weight: 23
 url: /nl/net/archive-extraction-and-formats/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Archiefextractie en formaten
+
 
 ## Invoering
 
@@ -53,3 +59,9 @@ Leer hoe u bestanden comprimeert naar TarXz-indeling in .NET met behulp van Aspo
 Ontdek stapsgewijze compressie naar TarZ met Aspose.Zip voor .NET. Efficiënte bestandsverwerking voor uw .NET-projecten.
 ### [Archiefvermeldingen met verschillende wachtwoorden extraheren in Aspose.Zip voor .NET](./extract-archive-different-passwords/)
 Leer hoe u archiefvermeldingen met verschillende wachtwoorden uitpakt in Aspose.Zip voor .NET. Verhoog de veiligheid en flexibiliteit in uw applicaties.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

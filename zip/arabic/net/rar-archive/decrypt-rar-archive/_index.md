@@ -3,10 +3,16 @@ title: فك تشفير أرشيف RAR باستخدام Aspose.Zip لـ .NET
 linktitle: فك تشفير أرشيف RAR
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: افتح أرشيفات RAR المشفرة بسهولة باستخدام Aspose.Zip لـ .NET. اتبع دليلنا خطوة بخطوة للتكامل السلس وفك التشفير الفعال.
-type: docs
 weight: 12
 url: /ar/net/rar-archive/decrypt-rar-archive/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# فك تشفير أرشيف RAR باستخدام Aspose.Zip لـ .NET
+
 
 ## مقدمة
 
@@ -89,3 +95,10 @@ archive.ExtractToDirectory(dataDir + "DecompressRar_out");
 
 ### كيف يمكنني الوصول إلى الوثائق الخاصة بـ Aspose.Zip لـ .NET؟
  ال[توثيق](https://reference.aspose.com/zip/net/) يوفر معلومات شاملة حول استخدام Aspose.Zip لـ .NET.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Compactar vários arquivos com criptografia em Aspose.Zip .NET
 linktitle: Compacte vários arquivos com criptografia tradicional
 second_title: API Aspose.Zip .NET para compactação e arquivamento de arquivos
 description: Aprenda como compactar vários arquivos com segurança usando criptografia tradicional em Aspose.Zip para .NET. Aprimore a proteção de dados em seus aplicativos .NET.
-type: docs
 weight: 17
 url: /pt/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Compactar vários arquivos com criptografia em Aspose.Zip .NET
+
 
 ## Introdução
 
@@ -94,3 +100,10 @@ Sim, o Aspose.Zip for .NET é compatível com ambientes Windows e Linux, proporc
 ### 5. Onde posso encontrar documentação detalhada do Aspose.Zip for .NET?
 
 Consulte a documentação[aqui](https://reference.aspose.com/zip/net/) para obter informações detalhadas.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Nén tệp bằng Aspose.Zip cho .NET
 linktitle: Nén một tập tin
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Tìm hiểu cách nén tệp dễ dàng bằng Aspose.Zip cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để quản lý tệp hiệu quả.
-type: docs
 weight: 10
 url: /vi/net/file-compression/compress-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Nén tệp bằng Aspose.Zip cho .NET
+
 ## Giới thiệu
 
 Chào mừng bạn đến với thế giới của Aspose.Zip dành cho .NET - một thư viện mạnh mẽ cho phép bạn nén tệp một cách dễ dàng. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình nén tệp bằng Aspose.Zip cho .NET. Nếu bạn muốn tối ưu hóa việc lưu trữ tệp, giảm thời gian truyền hoặc đơn giản là sắp xếp dữ liệu của mình hiệu quả hơn thì hướng dẫn này là dành cho bạn.
@@ -88,3 +94,9 @@ Chúc mừng! Bạn đã nén thành công các tệp bằng Aspose.Zip cho .NET
 ### Câu hỏi 5: Có giấy phép tạm thời không?
 
  Câu trả lời 5: Có, bạn có thể xin giấy phép tạm thời[đây](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

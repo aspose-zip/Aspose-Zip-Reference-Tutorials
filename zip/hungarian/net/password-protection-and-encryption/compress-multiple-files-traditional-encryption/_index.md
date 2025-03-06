@@ -3,10 +3,16 @@ title: Több fájl tömörítése titkosítással az Aspose.Zip .NET-ben
 linktitle: Több fájl tömörítése hagyományos titkosítással
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Ismerje meg, hogyan tömöríthet biztonságosan több fájlt hagyományos titkosítással az Aspose.Zip for .NET-ben. Növelje az adatvédelmet .NET-alkalmazásaiban.
-type: docs
 weight: 17
 url: /hu/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Több fájl tömörítése titkosítással az Aspose.Zip .NET-ben
+
 
 ## Bevezetés
 
@@ -94,3 +100,10 @@ Igen, az Aspose.Zip for .NET Windows és Linux környezetekkel is kompatibilis, 
 ### 5. Hol találom az Aspose.Zip for .NET részletes dokumentációját?
 
 Lásd a dokumentációt[itt](https://reference.aspose.com/zip/net/) mélyreható tájékoztatásért.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

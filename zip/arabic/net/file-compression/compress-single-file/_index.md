@@ -3,10 +3,16 @@ title: ضغط ملف واحد في Aspose.Zip لـ .NET
 linktitle: ضغط ملف واحد
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: قم بضغط ملفات واحدة بسهولة في .NET باستخدام Aspose.Zip. اتبع دليلنا خطوة بخطوة لإدارة الملفات بكفاءة.
-type: docs
 weight: 14
 url: /ar/net/file-compression/compress-single-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ضغط ملف واحد في Aspose.Zip لـ .NET
+
 ## مقدمة
 
 في المشهد الديناميكي لتطوير البرمجيات، تعد المعالجة الفعالة للملفات وضغطها أمرًا بالغ الأهمية. يوفر Aspose.Zip for .NET حلاً قويًا لضغط الملفات بسلاسة في تطبيقات .NET الخاصة بك. في هذا البرنامج التعليمي، سنتعرف على عملية ضغط ملف واحد باستخدام Aspose.Zip، مما يتيح لك تحسين قدرات إدارة ملفات تطبيقك.
@@ -97,3 +103,9 @@ using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, Fi
 ### س5: أين يمكنني طلب الدعم أو التواصل مع مجتمع Aspose.Zip for .NET؟
 
  ج5: انضم إلى مجتمع Aspose.Zip على[منتدى الدعم](https://forum.aspose.com/c/zip/37) للحصول على المساعدة من الخبراء وزملائهم المطورين.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

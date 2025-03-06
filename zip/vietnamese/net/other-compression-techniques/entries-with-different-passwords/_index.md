@@ -3,10 +3,16 @@ title: Các mục có mật khẩu khác nhau trong Aspose.Zip cho .NET
 linktitle: Các mục có mật khẩu khác nhau
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Khám phá sức mạnh của Aspose.Zip dành cho .NET với hướng dẫn từng bước của chúng tôi về cách quản lý kho lưu trữ ZIP bằng các mật khẩu khác nhau. Tăng cường bảo mật và tính linh hoạt trong các ứng dụng của bạn.
-type: docs
 weight: 13
 url: /vi/net/other-compression-techniques/entries-with-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Các mục có mật khẩu khác nhau trong Aspose.Zip cho .NET
+
 ## Giới thiệu
 
 Chào mừng bạn đến với thế giới của Aspose.Zip dành cho .NET, một thư viện mạnh mẽ trao quyền cho các nhà phát triển quản lý và thao tác các kho lưu trữ ZIP một cách liền mạch. Trong hướng dẫn này, chúng ta sẽ đi sâu vào một tính năng cụ thể: làm việc với các mục có mật khẩu khác nhau. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, hướng dẫn từng bước này sẽ hướng dẫn bạn qua quy trình, mở khóa tiềm năng của Aspose.Zip cho .NET.
@@ -97,3 +103,9 @@ A2: Chắc chắn rồi! Aspose.Zip cho .NET cung cấp giấy phép thương m�
 ### Câu hỏi 5: Tôi có thể sử dụng Aspose.Zip cho .NET mà không có giấy phép vĩnh viễn không?
 
  Câu trả lời 5: Có, bạn có thể xin giấy phép tạm thời cho nhu cầu ngắn hạn của mình. Tìm thêm chi tiết[đây](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

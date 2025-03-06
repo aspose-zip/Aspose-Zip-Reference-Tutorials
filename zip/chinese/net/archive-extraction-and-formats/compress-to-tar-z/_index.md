@@ -3,10 +3,16 @@ title: 使用 Aspose.Zip for .NET 压缩为 TarZ
 linktitle: 压缩为 TarZ
 second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
 description: 探索使用 Aspose.Zip for .NET 逐步压缩到 TarZ。 .NET 项目的高效文件处理。
-type: docs
 weight: 15
 url: /zh/net/archive-extraction-and-formats/compress-to-tar-z/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Zip for .NET 压缩为 TarZ
+
 ## 介绍
 
 如果您希望使用 Aspose.Zip for .NET 将文件高效地压缩为 TarZ 格式，那么您来对地方了。本分步指南将引导您完成整个过程，确保您充分利用 Aspose.Zip for .NET 的全部潜力来无缝处理您的压缩需求。
@@ -91,3 +97,9 @@ A1：当然！ Aspose.Zip for .NET 允许您轻松压缩单个文件和整个文
 ### Q5：我可以获得 Aspose.Zip for .NET 的临时许可证吗？
 
 A5：是的，如果您需要临时许可证，您可以获得一个[这里](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: แตกไฟล์หลายไฟล์โดยใช้ Aspose.Zi
 linktitle: การขยายขนาดไฟล์หลายไฟล์
 second_title: Aspose.Zip .NET API สำหรับการบีบอัดไฟล์และการเก็บถาวร
 description: เรียนรู้วิธีขยายขนาดไฟล์หลายไฟล์โดยใช้ Aspose.Zip สำหรับ .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนของเราเพื่อการจัดการไฟล์ที่มีประสิทธิภาพ
-type: docs
 weight: 11
 url: /th/net/file-decompression/decompress-multiple-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# แตกไฟล์หลายไฟล์โดยใช้ Aspose.Zip สำหรับ .NET
+
 ## การแนะนำ
 
 ยินดีต้อนรับสู่บทช่วยสอนที่ครอบคลุมของเราเกี่ยวกับการขยายขนาดไฟล์หลายไฟล์โดยใช้ Aspose.Zip สำหรับ .NET! หากคุณต้องการจัดการไฟล์บีบอัดที่มีหลายรายการอย่างมีประสิทธิภาพ คุณมาถูกที่แล้ว ในคู่มือนี้ เราจะแนะนำคุณตลอดกระบวนการทีละขั้นตอน โดยใช้ Aspose.Zip สำหรับ .NET
@@ -127,3 +133,9 @@ archive.Entries[1].Extract(dataDir + "asyoulik_extracted_out.txt");
 ### คำถามที่ 5: มีข้อกำหนดระบบเฉพาะสำหรับการใช้ Aspose.Zip สำหรับ .NET หรือไม่
 
  A5: โปรดดูที่[เอกสารประกอบ](https://reference.aspose.com/zip/net/) สำหรับความต้องการของระบบโดยละเอียด
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

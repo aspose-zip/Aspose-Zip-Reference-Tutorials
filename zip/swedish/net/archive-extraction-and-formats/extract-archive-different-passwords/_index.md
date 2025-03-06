@@ -3,10 +3,16 @@ title: Extrahera arkivposter med olika lösenord i Aspose.Zip för .NET
 linktitle: Extrahera arkivposter med olika lösenord
 second_title: Aspose.Zip .NET API för filkomprimering och arkivering
 description: Lär dig hur du extraherar arkivposter med olika lösenord i Aspose.Zip för .NET. Öka säkerheten och flexibiliteten i dina applikationer.
-type: docs
 weight: 10
 url: /sv/net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extrahera arkivposter med olika lösenord i Aspose.Zip för .NET
+
 ## Introduktion
 
 I det ständigt föränderliga landskapet av .NET-utveckling framstår Aspose.Zip som ett kraftfullt verktyg för att arbeta med komprimerade arkiv. Bland dess många funktioner, extrahering av arkivposter med olika lösenord ger ett extra lager av säkerhet och mångsidighet till dina applikationer. I den här steg-för-steg-guiden kommer vi att utforska hur du uppnår detta med Aspose.Zip för .NET.
@@ -89,3 +95,9 @@ S1: Ja, Aspose.Zip stöder både .NET Core och .NET Framework, vilket ger flexib
 ### F5: Var kan jag köpa Aspose.Zip?
 
  S5: För att köpa Aspose.Zip, besök[köpsidan](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

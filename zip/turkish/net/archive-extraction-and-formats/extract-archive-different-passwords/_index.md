@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET'te Arşiv Girişlerini Farklı Parolalarla Çıkarma
 linktitle: Farklı Parolalara Sahip Arşiv Girişlerini Çıkarma
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Aspose.Zip for .NET'te arşiv girişlerini farklı şifrelerle nasıl çıkaracağınızı öğrenin. Uygulamalarınızda güvenliği ve esnekliği artırın.
-type: docs
 weight: 10
 url: /tr/net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET'te Arşiv Girişlerini Farklı Parolalarla Çıkarma
+
 ## giriiş
 
 Sürekli gelişen .NET geliştirme ortamında Aspose.Zip, sıkıştırılmış arşivlerle çalışmak için güçlü bir araç olarak öne çıkıyor. Pek çok özelliğinin yanı sıra, arşiv girişlerini farklı şifrelerle çıkarmak, uygulamalarınıza ekstra bir güvenlik katmanı ve çok yönlülük katar. Bu adım adım kılavuzda bunu Aspose.Zip for .NET kullanarak nasıl başaracağımızı keşfedeceğiz.
@@ -89,3 +95,9 @@ Cevap1: Evet, Aspose.Zip hem .NET Core hem de .NET Framework'ü destekleyerek ç
 ### S5: Aspose.Zip'i nereden satın alabilirim?
 
  Cevap5: Aspose.Zip'i satın almak için şu adresi ziyaret edin:[satın alma sayfası](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

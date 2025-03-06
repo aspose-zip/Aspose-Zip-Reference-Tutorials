@@ -3,10 +3,16 @@ title: Amankan File Anda - Enkripsi AES dengan Aspose.Zip
 linktitle: Perlindungan Kata Sandi dengan AES
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Pelajari cara meningkatkan keamanan file Anda menggunakan Aspose.Zip untuk .NET dengan enkripsi AES. Ikuti panduan langkah demi langkah kami untuk perlindungan optimal.
-type: docs
 weight: 11
 url: /id/net/password-protection-and-encryption/password-protect-with-aes/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Amankan File Anda - Enkripsi AES dengan Aspose.Zip
+
 
 ## Perkenalan
 
@@ -108,3 +114,10 @@ Aspose.Zip mendukung enkripsi berbagai jenis file, memastikan fleksibilitas dala
 
 ### Apa yang terjadi jika saya lupa kata sandi untuk arsip terenkripsi?
 Sayangnya, tidak ada cara untuk memulihkan kata sandi arsip terenkripsi. Sangat penting untuk menyimpan kata sandi di lokasi yang aman.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

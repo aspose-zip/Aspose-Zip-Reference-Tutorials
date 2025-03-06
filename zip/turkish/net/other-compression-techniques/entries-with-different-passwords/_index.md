@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET'te Farklı Şifreli Girişler
 linktitle: Farklı Şifreli Girişler
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: ZIP arşivlerini farklı şifrelerle yönetmeye yönelik adım adım kılavuzumuzla Aspose.Zip for .NET'in gücünü keşfedin. Uygulamalarınızda güvenliği ve esnekliği artırın.
-type: docs
 weight: 13
 url: /tr/net/other-compression-techniques/entries-with-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET'te Farklı Şifreli Girişler
+
 ## giriiş
 
 Geliştiricilerin ZIP arşivlerini sorunsuz bir şekilde yönetmesine ve işlemesine olanak tanıyan güçlü bir kütüphane olan Aspose.Zip for .NET dünyasına hoş geldiniz. Bu eğitimde belirli bir özelliği inceleyeceğiz: farklı şifrelere sahip girişlerle çalışmak. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu adım adım kılavuz süreç boyunca size yol gösterecek ve Aspose.Zip for .NET'in potansiyelini ortaya çıkaracaktır.
@@ -97,3 +103,9 @@ A2: Kesinlikle! Aspose.Zip for .NET ticari lisanslar sunar ve nasıl satın alac
 ### S5: Aspose.Zip for .NET'i kalıcı lisans olmadan kullanabilir miyim?
 
  Cevap5: Evet, kısa süreli ihtiyaçlarınız için geçici lisans alabilirsiniz. Daha fazla ayrıntı bulun[Burada](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

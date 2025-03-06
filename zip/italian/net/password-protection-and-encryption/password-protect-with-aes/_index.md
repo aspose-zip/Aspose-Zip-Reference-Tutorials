@@ -3,10 +3,16 @@ title: Proteggi i tuoi file crittografia AES con Aspose.Zip
 linktitle: Proteggi con password con AES
 second_title: Aspose.Zip .NET API per la compressione e l'archiviazione dei file
 description: Scopri come migliorare la sicurezza dei tuoi file utilizzando Aspose.Zip per .NET con crittografia AES. Segui la nostra guida passo passo per una protezione ottimale.
-type: docs
 weight: 11
 url: /it/net/password-protection-and-encryption/password-protect-with-aes/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Proteggi i tuoi file crittografia AES con Aspose.Zip
+
 
 ## introduzione
 
@@ -108,3 +114,10 @@ Aspose.Zip supporta la crittografia di vari tipi di file, garantendo flessibilit
 
 ### Cosa succede se dimentico la password per un archivio crittografato?
 Sfortunatamente, non è possibile recuperare la password di un archivio crittografato. È fondamentale conservare la password in un luogo sicuro.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Secure Your Files - AES Encryption with Aspose.Zip
 linktitle: Password Protect with AES
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: Learn how to enhance your file security using Aspose.Zip for .NET with AES encryption. Follow our step-by-step guide for optimal protection.
-type: docs
 weight: 11
 url: /net/password-protection-and-encryption/password-protect-with-aes/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Secure Your Files - AES Encryption with Aspose.Zip
+
 
 ## Introduction
 
@@ -109,3 +115,10 @@ Aspose.Zip supports the encryption of various file types, ensuring flexibility i
 ### What happens if I forget the password for an encrypted archive?
 Unfortunately, there is no way to recover an encrypted archive's password. It's crucial to keep the password in a secure location.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

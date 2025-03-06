@@ -3,10 +3,16 @@ title: Tömörítse ki az Xar-t mappába az Aspose.Zip for .NET-ben
 linktitle: A Xar kibontása mappába
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Fedezze fel az Aspose.Zip erejét .NET-hez! Könnyedén kicsomagolja a Xar archívumokat ezzel a felhasználóbarát oktatóanyaggal. Növelje .NET fejlesztési élményét.
-type: docs
 weight: 17
 url: /hu/net/file-decompression/decompress-xar-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tömörítse ki az Xar-t mappába az Aspose.Zip for .NET-ben
+
 ## Bevezetés
 
 Ha elmélyül a .NET-fejlesztés világában, és megbízható megoldást keres Xar-archívumok kibontására, az Aspose.Zip for .NET megoldást kínál Önnek. Ebben a részletes útmutatóban végigvezetjük a Xar mappába való kibontásának folyamatán az Aspose.Zip segítségével, amely egy hatékony könyvtár, amely leegyszerűsíti az archívumok kezelését a .NET-alkalmazásokban.
@@ -79,3 +85,9 @@ Az Aspose.Zip for .NET segítségével az Xar archívumok kicsomagolása egyszer
 ### 5. kérdés: Hol vásárolhatom meg az Aspose.Zip-et .NET-hez?
 
  5. válasz: Megvásárolhatja az Aspose.Zip-et .NET-hez[itt](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

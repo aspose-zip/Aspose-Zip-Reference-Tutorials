@@ -3,10 +3,16 @@ title: 保护您的文件 - 使用 Aspose.Zip 进行 AES 加密
 linktitle: 使用 AES 进行密码保护
 second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
 description: 了解如何使用 Aspose.Zip for .NET 和 AES 加密来增强文件安全性。请遵循我们的分步指南以获得最佳保护。
-type: docs
 weight: 11
 url: /zh/net/password-protection-and-encryption/password-protect-with-aes/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 保护您的文件 - 使用 Aspose.Zip 进行 AES 加密
+
 
 ## 介绍
 
@@ -108,3 +114,10 @@ Aspose.Zip 支持各种文件类型的加密，确保保护不同类型数据的
 
 ### 如果我忘记加密存档的密码会怎样？
 不幸的是，没有办法恢复加密存档的密码。将密码保存在安全的位置至关重要。
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

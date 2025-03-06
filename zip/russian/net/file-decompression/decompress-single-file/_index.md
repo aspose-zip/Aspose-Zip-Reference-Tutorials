@@ -3,10 +3,16 @@ title: Распаковка одного файла с помощью Aspose.Zip
 linktitle: Распаковка одного файла
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Исследуйте беспрепятственный мир распаковки файлов с помощью Aspose.Zip для .NET. Легко обрабатывайте сжатые файлы в своих проектах C#.
-type: docs
 weight: 12
 url: /ru/net/file-decompression/decompress-single-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Распаковка одного файла с помощью Aspose.Zip для .NET
+
 ## Введение
 
 В сфере разработки .NET Aspose.Zip представляет собой надежное решение для точной обработки сжатых файлов. Это руководство проведет вас через процесс распаковки одного файла с помощью Aspose.Zip для .NET. Пристегнитесь, шаг за шагом мы раскрываем возможности этой мощной библиотеки.
@@ -103,3 +109,9 @@ A3: Aspose.Zip предоставляет методы для работы с а
 ### Вопрос 5. Куда я могу обратиться за помощью, если у меня возникнут проблемы?
 
  A5: Посетите[Форум Aspose.Zip](https://forum.aspose.com/c/zip/37) для поддержки сообщества.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

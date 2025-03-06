@@ -3,10 +3,16 @@ title: Aspose.Zip dla .NET — samouczek dotyczący ochrony archiwów hasłem
 linktitle: Archiwum chroń hasłem tradycyjnym hasłem
 second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
 description: Dowiedz się, jak zabezpieczyć swoje archiwa .NET tradycyjną ochroną hasłem przy użyciu Aspose.Zip. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby zwiększyć poufność danych.
-type: docs
 weight: 12
 url: /pl/net/password-protection-and-encryption/password-protect-archive-traditional-password/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip dla .NET — samouczek dotyczący ochrony archiwów hasłem
+
 
 dziedzinie rozwoju .NET zabezpieczanie wrażliwych danych w archiwach jest kluczowym aspektem projektowania aplikacji. Aspose.Zip dla .NET oferuje solidne rozwiązanie do ochrony archiwów hasłem przy użyciu tradycyjnego szyfrowania hasłem. Ten przewodnik krok po kroku przeprowadzi Cię przez cały proces, zapewniając, że Twoje zarchiwizowane dane pozostaną poufne i bezpieczne.
 
@@ -81,3 +87,10 @@ Aspose.Zip dla .NET jest zoptymalizowany pod kątem wydajnej wydajności i efekt
 ### Jak mogę uzyskać wsparcie dla Aspose.Zip dla .NET?
  Odwiedzić[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37)uzyskać wsparcie społeczności lub poznać[dokumentacja](https://reference.aspose.com/zip/net/) aby uzyskać szczegółowe informacje.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

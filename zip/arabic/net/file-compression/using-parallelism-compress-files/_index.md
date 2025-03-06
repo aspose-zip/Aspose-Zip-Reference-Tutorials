@@ -3,10 +3,16 @@ title: استخدام التوازي لضغط الملفات في Aspose.Zip ل�
 linktitle: استخدام التوازي لضغط الملفات
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: تعلم كيفية ضغط الملفات بكفاءة في .NET باستخدام Aspose.Zip. استفد من قوة التوازي من خلال برنامجنا التعليمي خطوة بخطوة.
-type: docs
 weight: 17
 url: /ar/net/file-compression/using-parallelism-compress-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# استخدام التوازي لضغط الملفات في Aspose.Zip لـ .NET
+
 ## مقدمة
 
 في عالم تطوير .NET، يعد ضغط الملفات بكفاءة أمرًا بالغ الأهمية لتحسين التخزين والنقل. يوفر Aspose.Zip for .NET حلاً قويًا، وإحدى ميزاته البارزة هي القدرة على الاستفادة من التوازي لضغط الملفات. في هذا البرنامج التعليمي، سنرشدك خلال عملية استخدام التوازي لضغط الملفات باستخدام Aspose.Zip لـ .NET.
@@ -128,3 +134,9 @@ A1: نعم، تم تصميم Aspose.Zip for .NET للتكامل بسلاسة م�
 ### س5: كيف يمكنني شراء Aspose.Zip لـ .NET؟
 
  ج5: يمكنك شراء Aspose.Zip لـ .NET[هنا](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Dosyalarınızı Güvenceye Alın - Aspose.Zip ile AES Şifreleme
 linktitle: AES ile Şifre Koruması
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: AES şifrelemeli Aspose.Zip for .NET kullanarak dosya güvenliğinizi nasıl artıracağınızı öğrenin. Optimum koruma için adım adım kılavuzumuzu izleyin.
-type: docs
 weight: 11
 url: /tr/net/password-protection-and-encryption/password-protect-with-aes/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dosyalarınızı Güvenceye Alın - Aspose.Zip ile AES Şifreleme
+
 
 ## giriiş
 
@@ -108,3 +114,10 @@ Aspose.Zip çeşitli dosya türlerinin şifrelenmesini destekleyerek farklı tü
 
 ### Şifrelenmiş bir arşivin şifresini unutursam ne olur?
 Maalesef şifrelenmiş bir arşivin şifresini kurtarmanın bir yolu yoktur. Şifreyi güvenli bir yerde tutmak çok önemlidir.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

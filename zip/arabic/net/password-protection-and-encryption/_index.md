@@ -3,10 +3,16 @@ title: الحماية بكلمة المرور والتشفير
 linktitle: الحماية بكلمة المرور والتشفير
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: قم بتأمين ملفاتك باستخدام Aspose.Zip لـ .NET! تعرف على البرامج التعليمية خطوة بخطوة حول حماية كلمة المرور والتشفير، بدءًا من AES وحتى الطرق التقليدية.
-type: docs
 weight: 26
 url: /ar/net/password-protection-and-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# الحماية بكلمة المرور والتشفير
+
 
 ## مقدمة
 
@@ -74,3 +80,9 @@ url: /ar/net/password-protection-and-encryption/
 تعلم كيفية فك ضغط الملفات المشفرة AES في لغة C# باستخدام Aspose.Zip لـ .NET. اتبع دليلنا خطوة بخطوة للتعامل بكفاءة مع الملفات.
 ### [قم بفك ضغط الملف المخزن المشفر AES في Aspose.Zip لـ .NET](./decompress-aes-encrypted-stored-file/)
 تعرف على كيفية فك ضغط الملفات المخزنة المشفرة بتقنية AES في Aspose.Zip لـ .NET باستخدام هذا الدليل الشامل خطوة بخطوة. عزز مهاراتك في تطوير .NET اليوم!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

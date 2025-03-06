@@ -3,10 +3,16 @@ title: .NET용 Aspose.Zip을 사용하여 여러 파일 압축 풀기
 linktitle: 여러 파일 압축 풀기
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: .NET용 Aspose.Zip을 사용하여 여러 파일의 압축을 푸는 방법을 알아보세요. 효율적인 파일 관리를 위한 단계별 가이드를 따르세요.
-type: docs
 weight: 11
 url: /ko/net/file-decompression/decompress-multiple-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.Zip을 사용하여 여러 파일 압축 풀기
+
 ## 소개
 
 .NET용 Aspose.Zip을 사용하여 여러 파일의 압축을 푸는 방법에 대한 포괄적인 튜토리얼에 오신 것을 환영합니다! 여러 항목이 포함된 압축 파일을 효율적으로 처리하려는 경우 올바른 위치에 있습니다. 이 가이드에서는 .NET용 Aspose.Zip을 사용하여 프로세스를 단계별로 안내합니다.
@@ -127,3 +133,9 @@ archive.Entries[1].Extract(dataDir + "asyoulik_extracted_out.txt");
 ### Q5: .NET용 Aspose.Zip을 사용하기 위한 특정 시스템 요구 사항이 있습니까?
 
  A5: 다음을 참조하세요.[선적 서류 비치](https://reference.aspose.com/zip/net/) 자세한 시스템 요구사항을 확인하세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET - Güvenli Dosya Depolama Eğitimi
 linktitle: Birden Fazla Dosyayı Şifreyle Sıkıştırmadan Saklayın
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Birden fazla dosyayı sıkıştırma olmadan güvenli bir şekilde depolamak için Aspose.Zip for .NET'in nasıl kullanılacağını keşfedin. Parola koruması için kolay adımlar. Dosya yönetiminin gücünün kilidini açın!
-type: docs
 weight: 13
 url: /tr/net/password-protection-and-encryption/store-multiple-files-no-compression-password/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET - Güvenli Dosya Depolama Eğitimi
+
 
 .NET geliştirme dünyasında dosyaları yönetmek ve değiştirmek ortak bir görevdir. Aspose.Zip for .NET, geliştiricilere zip arşivlerini sorunsuz bir şekilde sıkıştırma, açma ve yönetme yeteneği sağlayan güçlü bir kitaplıktır. Bu eğitimde belirli bir senaryoyu inceleyeceğiz: birden fazla dosyayı sıkıştırmadan depolamak ve bunları bir parolayla korumak. Bu kılavuzun sonunda, Aspose.Zip for .NET kullanarak bu işlevselliği uygulayacak bilgiyle donatılmış olacaksınız.
 
@@ -93,3 +99,10 @@ Bu eğitimde, Aspose.Zip for .NET'in birden fazla dosyayı sıkıştırmadan dep
 
 ### Aspose.Zip for .NET'i nereden satın alabilirim?
  .NET için Aspose.Zip'i satın alabilirsiniz[Burada](https://purchase.aspose.com/buy).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

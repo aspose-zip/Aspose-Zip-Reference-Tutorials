@@ -3,10 +3,16 @@ title: Защитите свои файлы шифрование AES с помо
 linktitle: Защита паролем с помощью AES
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Узнайте, как повысить безопасность ваших файлов с помощью Aspose.Zip для .NET с шифрованием AES. Следуйте нашему пошаговому руководству для оптимальной защиты.
-type: docs
 weight: 11
 url: /ru/net/password-protection-and-encryption/password-protect-with-aes/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Защитите свои файлы шифрование AES с помощью Aspose.Zip
+
 
 ## Введение
 
@@ -108,3 +114,10 @@ Aspose.Zip поддерживает шифрование различных ти
 
 ### Что произойдет, если я забуду пароль от зашифрованного архива?
 К сожалению, восстановить пароль зашифрованного архива невозможно. Крайне важно хранить пароль в безопасном месте.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

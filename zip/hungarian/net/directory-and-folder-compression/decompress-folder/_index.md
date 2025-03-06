@@ -3,10 +3,16 @@ title: Mappa kicsomagolása az Aspose.Zip for .NET segítségével
 linktitle: Mappa kicsomagolása
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Sajátítsa el a mappák kibontásának művészetét az Aspose.Zip for .NET segítségével. Könnyedén kezelheti a tömörítési feladatokat a projektekben.
-type: docs
 weight: 11
 url: /hu/net/directory-and-folder-compression/decompress-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mappa kicsomagolása az Aspose.Zip for .NET segítségével
+
 Szeretné zökkenőmentesen kicsomagolni a mappákat az Aspose.Zip for .NET segítségével? Ne keressen tovább! Ez a lépésenkénti útmutató végigvezeti a folyamaton, és biztosítja, hogy könnyedén elsajátítsa a mappák kitömörítésének művészetét.
 
 ## Előfeltételek
@@ -88,3 +94,9 @@ A2: Abszolút! Az Aspose.Zip for .NET célja a nagyméretű alkalmazások egysze
 ### 5. kérdés: Hogyan kaphatok támogatást az Aspose.Zip for .NET-hez?
 
  5. válasz: Ha kérdése vagy segítsége van, keresse fel a[Aspose.Zip fórum](https://forum.aspose.com/c/zip/37) ahol kapcsolatba léphet a közösséggel, és szakértői tanácsot kérhet.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

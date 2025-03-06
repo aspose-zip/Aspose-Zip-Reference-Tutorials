@@ -3,10 +3,16 @@ title: Aspose.Zip для .NET — Учебное пособие по шифро�
 linktitle: Настройки шифрования AES
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Изучите Aspose.Zip для .NET, чтобы защитить сжатые файлы с помощью шифрования AES. Загрузите сейчас для эффективной защиты данных.
-type: docs
 weight: 14
 url: /ru/net/password-protection-and-encryption/aes-encryption-settings/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip для .NET — Учебное пособие по шифрованию AES
+
 
 ## Введение
 
@@ -87,3 +93,10 @@ Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Set
 ### Вопрос: Могу ли я получить временные лицензии для тестирования?
  О: Да, вы можете получить временную лицензию.[здесь](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

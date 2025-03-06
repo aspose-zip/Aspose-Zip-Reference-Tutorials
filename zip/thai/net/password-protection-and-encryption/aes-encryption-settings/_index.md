@@ -3,10 +3,16 @@ title: Aspose.Zip สำหรับ .NET - บทช่วยสอนการ
 linktitle: การตั้งค่าการเข้ารหัส AES
 second_title: Aspose.Zip .NET API สำหรับการบีบอัดไฟล์และการเก็บถาวร
 description: สำรวจ Aspose.Zip สำหรับ .NET เพื่อรักษาความปลอดภัยไฟล์บีบอัดของคุณด้วยการเข้ารหัส AES ดาวน์โหลดทันทีเพื่อการปกป้องข้อมูลที่มีประสิทธิภาพ
-type: docs
 weight: 14
 url: /th/net/password-protection-and-encryption/aes-encryption-settings/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip สำหรับ .NET - บทช่วยสอนการเข้ารหัส AES
+
 
 ## การแนะนำ
 
@@ -87,3 +93,10 @@ Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Set
 ### ถาม: ฉันสามารถรับใบอนุญาตชั่วคราวสำหรับการทดสอบได้หรือไม่
  ตอบ: ได้ คุณสามารถขอรับใบอนุญาตชั่วคราวได้[ที่นี่](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

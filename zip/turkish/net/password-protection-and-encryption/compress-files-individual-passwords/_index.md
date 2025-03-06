@@ -3,10 +3,16 @@ title: Aspose.Zip ile .NET'te Güvenli Dosya Sıkıştırma
 linktitle: Dosyaları Bireysel Şifrelerle Sıkıştırın
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: .NET uygulamalarında dosya güvenliğini nasıl geliştireceğinizi öğrenin! Aspose.Zip for .NET kullanarak dosyaları ayrı şifrelerle sıkıştırmaya ilişkin adım adım kılavuzumuzu izleyin.
-type: docs
 weight: 16
 url: /tr/net/password-protection-and-encryption/compress-files-individual-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip ile .NET'te Güvenli Dosya Sıkıştırma
+
 
 ## giriiş
 
@@ -84,3 +90,10 @@ Evet, Aspose.Zip for .NET, sıkıştırma sırasında her dosya için farklı ş
 
 ### Test amacıyla geçici bir lisans satın alabilir miyim?
  Evet, geçici lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

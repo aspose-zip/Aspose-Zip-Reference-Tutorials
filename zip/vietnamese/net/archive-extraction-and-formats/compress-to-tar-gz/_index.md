@@ -3,10 +3,16 @@ title: Nén vào TarGz bằng Aspose.Zip cho .NET
 linktitle: Nén vào TarGz
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Khám phá tính năng nén tệp hiệu quả trong .NET với Aspose.Zip. Nén vào TarGz một cách dễ dàng.
-type: docs
 weight: 12
 url: /vi/net/archive-extraction-and-formats/compress-to-tar-gz/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Nén vào TarGz bằng Aspose.Zip cho .NET
+
 ## Giới thiệu
 
 Trong bối cảnh phát triển .NET ngày càng phát triển, nén tệp hiệu quả là một khía cạnh quan trọng của việc tối ưu hóa việc lưu trữ và truyền dữ liệu. Aspose.Zip cho .NET nổi lên như một công cụ mạnh mẽ dành cho các nhà phát triển đang tìm kiếm khả năng nén mạnh mẽ. Hướng dẫn này sẽ hướng dẫn bạn quy trình nén tệp sang định dạng TarGz bằng Aspose.Zip cho .NET, cung cấp hướng dẫn từng bước.
@@ -91,3 +97,9 @@ Câu trả lời 3: Aspose.Zip dành cho .NET được tối ưu hóa để xử
 ### Câu hỏi 5: Tôi có thể dùng thử Aspose.Zip miễn phí cho .NET trước khi mua không?
 
  A5: Chắc chắn rồi! Truy cập phiên bản dùng thử miễn phí[đây](https://releases.aspose.com/zip/net) để khám phá các khả năng của Aspose.Zip cho .NET.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

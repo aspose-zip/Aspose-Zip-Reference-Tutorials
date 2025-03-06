@@ -3,10 +3,16 @@ title: Ασφαλής συμπίεση αρχείων σε .NET με Aspose.Zip
 linktitle: Συμπίεση αρχείων με μεμονωμένους κωδικούς πρόσβασης
 second_title: Aspose.Zip .NET API για συμπίεση και αρχειοθέτηση αρχείων
 description: Μάθετε πώς να βελτιώσετε την ασφάλεια αρχείων σε εφαρμογές .NET! Ακολουθήστε τον βήμα προς βήμα οδηγό μας για τη συμπίεση αρχείων με μεμονωμένους κωδικούς πρόσβασης χρησιμοποιώντας το Aspose.Zip για .NET.
-type: docs
 weight: 16
 url: /el/net/password-protection-and-encryption/compress-files-individual-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ασφαλής συμπίεση αρχείων σε .NET με Aspose.Zip
+
 
 ## Εισαγωγή
 
@@ -84,3 +90,10 @@ using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPass
 
 ### Μπορώ να αγοράσω μια προσωρινή άδεια για δοκιμαστικούς σκοπούς;
  Ναι, μπορείτε να αποκτήσετε προσωρινή άδεια[εδώ](https://purchase.aspose.com/temporary-license/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

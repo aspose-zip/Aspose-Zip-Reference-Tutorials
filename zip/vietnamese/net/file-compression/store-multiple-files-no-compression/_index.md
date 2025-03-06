@@ -3,10 +3,16 @@ title: Lưu trữ nhiều tệp không nén trong Aspose.Zip cho .NET
 linktitle: Lưu trữ nhiều tệp mà không cần nén
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Khám phá khả năng lưu trữ liền mạch của nhiều tệp mà không cần nén trong Aspose.Zip dành cho .NET. Tối ưu hóa các ứng dụng .NET của bạn để quản lý tệp hiệu quả với hướng dẫn từng bước này.
-type: docs
 weight: 16
 url: /vi/net/file-compression/store-multiple-files-no-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Lưu trữ nhiều tệp không nén trong Aspose.Zip cho .NET
+
 ## Giới thiệu
 
 Trong thế giới phát triển .NET năng động, việc nén tệp hiệu quả là rất quan trọng để tối ưu hóa việc lưu trữ và truyền dữ liệu. Aspose.Zip cho .NET là một công cụ mạnh mẽ giúp đơn giản hóa quá trình này, cho phép các nhà phát triển lưu trữ nhiều tệp một cách hiệu quả mà không cần nén. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn thực hiện quy trình, từng bước một, đảm bảo bạn khai thác toàn bộ tiềm năng của Aspose.Zip cho .NET.
@@ -84,3 +90,9 @@ Câu trả lời 4: Có, Aspose.Zip cho .NET hỗ trợ đa luồng, cho phép b
 ### Câu hỏi 5: Tôi có thể tích hợp Aspose.Zip cho .NET vào dự án hiện tại của mình mà không cần sửa đổi lớn về mã không?
 
  Câu trả lời 5: Có, Aspose.Zip dành cho .NET được thiết kế để tích hợp dễ dàng và[tài liệu](https://reference.aspose.com/zip/net/) cung cấp hướng dẫn toàn diện cho một quá trình tích hợp liền mạch.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

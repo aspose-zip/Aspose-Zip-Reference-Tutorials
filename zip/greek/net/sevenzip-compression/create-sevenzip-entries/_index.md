@@ -3,10 +3,16 @@ title: Δημιουργία καταχωρήσεων SevenZip με το Aspose.Z
 linktitle: Δημιουργήστε SevenZip Entries
 second_title: Aspose.Zip .NET API για συμπίεση και αρχειοθέτηση αρχείων
 description: Εξερευνήστε τη δύναμη του Aspose.Zip για .NET! Μάθετε να δημιουργείτε καταχωρήσεις SevenZip βήμα προς βήμα. Συμπίεση αρχείων χωρίς κόπο. Κάντε λήψη τώρα για μια απρόσκοπτη εμπειρία ανάπτυξης.
-type: docs
 weight: 10
 url: /el/net/sevenzip-compression/create-sevenzip-entries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Δημιουργία καταχωρήσεων SevenZip με το Aspose.Zip για .NET
+
 
 ## Εισαγωγή
 
@@ -83,3 +89,10 @@ Console.WriteLine("Successfully Created a Seven Zip File");
 
 ### Υπάρχει διαθέσιμη δωρεάν δοκιμή πριν από την αγορά;
  Ναι, μπορείτε να έχετε πρόσβαση στη δωρεάν δοκιμή[εδώ](https://releases.aspose.com/) για να εξερευνήσετε τα χαρακτηριστικά πριν αναλάβετε δέσμευση.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

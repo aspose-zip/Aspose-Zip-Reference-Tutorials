@@ -3,10 +3,16 @@ title: Bejegyzések különböző jelszavakkal az Aspose.Zip for .NET-ben
 linktitle: Bejegyzések különböző jelszavakkal
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Fedezze fel az Aspose.Zip for .NET erejét a ZIP-archívumok különböző jelszavakkal történő kezeléséről szóló, lépésről lépésre szóló útmutatónkkal. Növelje alkalmazásai biztonságát és rugalmasságát.
-type: docs
 weight: 13
 url: /hu/net/other-compression-techniques/entries-with-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bejegyzések különböző jelszavakkal az Aspose.Zip for .NET-ben
+
 ## Bevezetés
 
 Üdvözöljük az Aspose.Zip for .NET világában. Ez egy hatékony könyvtár, amely képessé teszi a fejlesztőket a ZIP-archívumok zökkenőmentes kezelésére és manipulálására. Ebben az oktatóanyagban egy sajátos funkcióval foglalkozunk: a különböző jelszavas bejegyzésekkel való munkavégzéssel. Akár tapasztalt fejlesztő, akár csak most kezdi, ez a részletes útmutató végigvezeti a folyamaton, felszabadítva az Aspose.Zip for .NET-ben rejlő lehetőségeit.
@@ -97,3 +103,9 @@ A2: Abszolút! Az Aspose.Zip for .NET kereskedelmi licenceket kínál, és tová
 ### 5. kérdés: Használhatom az Aspose.Zip-et .NET-hez állandó licenc nélkül?
 
  5. válasz: Igen, rövid távú szükségleteihez ideiglenes engedélyt kaphat. További részletek[itt](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

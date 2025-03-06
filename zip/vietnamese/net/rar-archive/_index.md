@@ -3,10 +3,16 @@ title: Lưu trữ RAR
 linktitle: Lưu trữ RAR
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Mở khóa bí mật quản lý kho lưu trữ RAR với Aspose.Zip cho .NET! Dễ dàng giải nén, giải mã và xử lý các tệp nén. Tải xuống ngay để xử lý tập tin hiệu quả.
-type: docs
 weight: 24
 url: /vi/net/rar-archive/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Lưu trữ RAR
+
 
 ## Giới thiệu
 
@@ -29,3 +35,9 @@ Làm chủ việc giải nén các kho lưu trữ RAR trong .NET bằng Aspose.Z
 Khám phá sự đơn giản của việc giải nén các mục RAR trong .NET bằng Aspose.Zip. Dễ dàng xử lý các tệp nén với thư viện mạnh mẽ này.
 ### [Giải mã kho lưu trữ RAR bằng Aspose.Zip cho .NET](./decrypt-rar-archive/)
 Mở khóa các kho lưu trữ RAR được mã hóa một cách dễ dàng bằng Aspose.Zip cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để tích hợp liền mạch và giải mã hiệu quả.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

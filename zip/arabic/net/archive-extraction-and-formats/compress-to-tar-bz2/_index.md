@@ -3,10 +3,16 @@ title: ضغط الملفات إلى TarBz2 باستخدام Aspose.Zip لـ .NET
 linktitle: الضغط على TarBz2
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: تعرف على كيفية ضغط الملفات إلى تنسيق TarBz2 في .NET باستخدام Aspose.Zip. اتبع دليلنا خطوة بخطوة لضغط الملفات بكفاءة.
-type: docs
 weight: 11
 url: /ar/net/archive-extraction-and-formats/compress-to-tar-bz2/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ضغط الملفات إلى TarBz2 باستخدام Aspose.Zip لـ .NET
+
 ## مقدمة
 
 مرحبًا بك في دليلنا الشامل حول ضغط الملفات إلى تنسيق TarBz2 باستخدام Aspose.Zip لـ .NET. Aspose.Zip هي مكتبة قوية ومتعددة الاستخدامات توفر للمطورين الأدوات التي يحتاجونها للعمل بكفاءة مع تنسيقات الملفات المضغوطة في تطبيقات .NET الخاصة بهم.
@@ -90,3 +96,9 @@ using (Bzip2Archive bz2 = new Bzip2Archive())
 ### س5: هل هناك نسخة تجريبية مجانية متاحة؟
 
  ج5: نعم، يمكنك الوصول إلى النسخة التجريبية المجانية[هنا](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

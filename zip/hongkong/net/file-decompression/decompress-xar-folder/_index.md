@@ -3,10 +3,16 @@ title: 將 Xar 解壓縮到 Aspose.Zip for .NET 中的資料夾
 linktitle: 將Xar解壓縮到資料夾
 second_title: 用於檔案壓縮和歸檔的 Aspose.Zip .NET API
 description: 探索 Aspose.Zip for .NET 的強大功能！透過這個用戶友好的教程輕鬆解壓縮 Xar 檔案。增強您的 .NET 開發體驗。
-type: docs
 weight: 17
 url: /zh-hant/net/file-decompression/decompress-xar-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 將 Xar 解壓縮到 Aspose.Zip for .NET 中的資料夾
+
 ## 介紹
 
 如果您正在深入研究 .NET 開發世界並尋找可靠的解決方案來解壓縮 Xar 檔案，Aspose.Zip for .NET 可以滿足您的需求。在本逐步指南中，我們將引導您完成使用 Aspose.Zip 將 Xar 解壓縮到資料夾的過程，Aspose.Zip 是一個功能強大的函式庫，可以簡化 .NET 應用程式中的存檔操作。
@@ -79,3 +85,9 @@ A3：如有任何疑問或幫助，請訪問[Aspose.Zip 論壇](https://forum.as
 ### Q5：哪裡可以購買 Aspose.Zip for .NET？
 
  A5：您可以購買 Aspose.Zip for .NET[這裡](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

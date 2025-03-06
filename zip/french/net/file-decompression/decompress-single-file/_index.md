@@ -3,10 +3,16 @@ title: Décompresser un seul fichier avec Aspose.Zip pour .NET
 linktitle: Décompresser un seul fichier
 second_title: API Aspose.Zip .NET pour la compression et l'archivage de fichiers
 description: Explorez le monde transparent de la décompression de fichiers avec Aspose.Zip pour .NET. Gérez sans effort les fichiers compressés dans vos projets C#.
-type: docs
 weight: 12
 url: /fr/net/file-decompression/decompress-single-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Décompresser un seul fichier avec Aspose.Zip pour .NET
+
 ## Introduction
 
 Dans le domaine du développement .NET, Aspose.Zip constitue une solution robuste pour gérer les fichiers compressés avec finesse. Ce didacticiel vous guidera tout au long du processus de décompression d'un seul fichier à l'aide d'Aspose.Zip pour .NET. Attachez-vous et découvrez étape par étape les capacités de cette puissante bibliothèque.
@@ -103,3 +109,9 @@ A3 : Aspose.Zip fournit des méthodes pour travailler avec des archives protég�
 ### Q5 : Où puis-je demander de l'aide si je rencontre des problèmes ?
 
  A5 : Visitez le[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) pour le soutien de la communauté.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

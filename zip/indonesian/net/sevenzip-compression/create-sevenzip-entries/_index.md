@@ -3,10 +3,16 @@ title: Membuat Entri SevenZip dengan Aspose.Zip untuk .NET
 linktitle: Buat Entri SevenZip
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Jelajahi kekuatan Aspose.Zip untuk .NET! Pelajari cara membuat entri SevenZip langkah demi langkah. Kompres file dengan mudah. Unduh sekarang untuk pengalaman pengembangan yang lancar.
-type: docs
 weight: 10
 url: /id/net/sevenzip-compression/create-sevenzip-entries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Membuat Entri SevenZip dengan Aspose.Zip untuk .NET
+
 
 ## Perkenalan
 
@@ -83,3 +89,10 @@ Ya, Aspose.Zip untuk .NET bersifat lintas platform dan dapat digunakan di lingku
 
 ### Apakah ada uji coba gratis yang tersedia sebelum melakukan pembelian?
  Ya, Anda dapat mengakses uji coba gratis[Di Sini](https://releases.aspose.com/) untuk mengeksplorasi fitur sebelum membuat komitmen.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

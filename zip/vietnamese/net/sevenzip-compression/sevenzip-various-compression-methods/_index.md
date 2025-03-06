@@ -3,10 +3,16 @@ title: Tạo bảy tệp Zip - Hướng dẫn Aspose.Zip cho .NET
 linktitle: SevenZip với nhiều phương pháp nén khác nhau
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Tìm hiểu cách tạo bảy tệp Zip bằng Aspose.Zip cho .NET bằng các phương pháp nén khác nhau. Các bước dễ dàng cho LZMA2, BZip2 và Store (không nén).
-type: docs
 weight: 12
 url: /vi/net/sevenzip-compression/sevenzip-various-compression-methods/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tạo bảy tệp Zip - Hướng dẫn Aspose.Zip cho .NET
+
 
 ## Giới thiệu
 
@@ -89,3 +95,10 @@ Có, Aspose.Zip for .NET hỗ trợ nhiều loại tệp, cho phép bạn nén v
 
 ### Tôi có thể nhận hỗ trợ cho Aspose.Zip cho .NET ở đâu?
  Bạn có thể tìm kiếm sự hỗ trợ trên[Diễn đàn Aspose.Zip](https://forum.aspose.com/c/zip/37).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

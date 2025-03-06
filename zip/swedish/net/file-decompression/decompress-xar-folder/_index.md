@@ -3,10 +3,16 @@ title: Dekomprimera Xar till mapp i Aspose.Zip för .NET
 linktitle: Dekomprimera Xar till mapp
 second_title: Aspose.Zip .NET API för filkomprimering och arkivering
 description: Utforska kraften i Aspose.Zip för .NET! Dekomprimera Xar-arkiv utan ansträngning med denna användarvänliga handledning. Förbättra din .NET-utvecklingsupplevelse.
-type: docs
 weight: 17
 url: /sv/net/file-decompression/decompress-xar-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekomprimera Xar till mapp i Aspose.Zip för .NET
+
 ## Introduktion
 
 Om du fördjupar dig i världen av .NET-utveckling och letar efter en pålitlig lösning för att dekomprimera Xar-arkiv, har Aspose.Zip för .NET dig täckt. I den här steg-för-steg-guiden går vi igenom processen att dekomprimera Xar till en mapp med Aspose.Zip, ett kraftfullt bibliotek som förenklar arkivhantering i dina .NET-applikationer.
@@ -79,3 +85,9 @@ Med Aspose.Zip för .NET blir dekomprimering av Xar-arkiv en enkel uppgift i din
 ### F5: Var kan jag köpa Aspose.Zip för .NET?
 
  S5: Du kan köpa Aspose.Zip för .NET[här](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

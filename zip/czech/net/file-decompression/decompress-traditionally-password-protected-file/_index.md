@@ -3,10 +3,16 @@ title: Dekomprimujte tradičně heslem chráněný soubor v Aspose.Zip pro .NET
 linktitle: Dekomprimujte tradičně heslem chráněný soubor
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Naučte se, jak dekomprimovat tradičně heslem chráněné soubory pomocí Aspose.Zip pro .NET. Podrobný průvodce pro bezproblémovou integraci.
-type: docs
 weight: 15
 url: /cs/net/file-decompression/decompress-traditionally-password-protected-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekomprimujte tradičně heslem chráněný soubor v Aspose.Zip pro .NET
+
 oblasti vývoje .NET vyniká Aspose.Zip jako robustní řešení pro manipulaci s komprimovanými soubory. Mezi jeho nesčetnými funkcemi je jednou z prominentních schopností schopnost dekomprimovat tradičně heslem chráněné soubory. V tomto tutoriálu se ponoříme do procesu dekomprimace souboru zašifrovaného tradičním heslem pomocí Aspose.Zip for .NET. Než se vydáme na tuto cestu, ujistěte se, že máme připravené předpoklady.
 
 ## Předpoklady
@@ -96,3 +102,9 @@ Odpověď 3: Ano, Aspose.Zip podporuje různé metody šifrování a poskytuje f
 ### Q5: Jak mohu získat dočasnou licenci pro Aspose.Zip?
 
  A5: Můžete získat dočasnou licenci od[Aspose.Purchase](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

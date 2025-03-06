@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET – kurz šifrování AES
 linktitle: Nastavení šifrování AES
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Prozkoumejte Aspose.Zip for .NET a zabezpečte své komprimované soubory pomocí šifrování AES. Stáhněte si nyní pro účinnou ochranu dat.
-type: docs
 weight: 14
 url: /cs/net/password-protection-and-encryption/aes-encryption-settings/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET – kurz šifrování AES
+
 
 ## Úvod
 
@@ -87,3 +93,10 @@ Gratulujeme! Úspěšně jste implementovali nastavení šifrování AES pomocí
 ### Otázka: Mohu získat dočasné licence pro testování?
  Odpověď: Ano, můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

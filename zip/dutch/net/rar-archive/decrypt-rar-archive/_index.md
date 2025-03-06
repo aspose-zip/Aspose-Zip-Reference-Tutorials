@@ -3,10 +3,16 @@ title: Een RAR-archief decoderen met Aspose.Zip voor .NET
 linktitle: Een RAR-archief decoderen
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Ontgrendel gecodeerde RAR-archieven moeiteloos met Aspose.Zip voor .NET. Volg onze stapsgewijze handleiding voor naadloze integratie en efficiënte decodering.
-type: docs
 weight: 12
 url: /nl/net/rar-archive/decrypt-rar-archive/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Een RAR-archief decoderen met Aspose.Zip voor .NET
+
 
 ## Invoering
 
@@ -89,3 +95,10 @@ Aspose.Zip voor .NET ondersteunt verschillende RAR-archiefversies, waardoor comp
 
 ### Hoe krijg ik toegang tot de documentatie voor Aspose.Zip voor .NET?
  De[documentatie](https://reference.aspose.com/zip/net/) biedt uitgebreide informatie over het gebruik van Aspose.Zip voor .NET.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

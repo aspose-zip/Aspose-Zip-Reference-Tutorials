@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET – kurz bezpečného ukládání souborů
 linktitle: Ukládejte více souborů bez komprese pomocí hesla
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Prozkoumejte, jak používat Aspose.Zip pro .NET k bezpečnému ukládání více souborů bez komprese. Snadné kroky pro ochranu heslem. Odemkněte sílu správy souborů!
-type: docs
 weight: 13
 url: /cs/net/password-protection-and-encryption/store-multiple-files-no-compression-password/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET – kurz bezpečného ukládání souborů
+
 
 Ve světě vývoje .NET je správa a manipulace se soubory běžným úkolem. Aspose.Zip for .NET je výkonná knihovna, která poskytuje vývojářům možnost bezproblémově komprimovat, dekomprimovat a manipulovat s archivy zip. V tomto tutoriálu se ponoříme do konkrétního scénáře: ukládání více souborů bez komprese a jejich ochrana heslem. Na konci této příručky budete vybaveni znalostmi pro implementaci této funkce pomocí Aspose.Zip pro .NET.
 
@@ -93,3 +99,10 @@ V tomto tutoriálu jsme prozkoumali, jak používat Aspose.Zip pro .NET k uklád
 
 ### Kde mohu zakoupit Aspose.Zip pro .NET?
  Můžete si koupit Aspose.Zip pro .NET[tady](https://purchase.aspose.com/buy).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

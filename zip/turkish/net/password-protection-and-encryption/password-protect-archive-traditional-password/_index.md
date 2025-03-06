@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET - Arşivleri Parola Koruma Eğitimi
 linktitle: Geleneksel Şifreyle Şifre Korumalı Arşiv
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Aspose.Zip kullanarak .NET arşivlerinizi geleneksel şifre korumasıyla nasıl güvence altına alacağınızı öğrenin. Gelişmiş veri gizliliği için adım adım kılavuzumuzu izleyin.
-type: docs
 weight: 12
 url: /tr/net/password-protection-and-encryption/password-protect-archive-traditional-password/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET - Arşivleri Parola Koruma Eğitimi
+
 
 .NET geliştirme alanında, arşivlerdeki hassas verilerin güvenliğinin sağlanması uygulama tasarımının çok önemli bir yönüdür. Aspose.Zip for .NET, geleneksel şifre şifrelemeyi kullanarak arşivleri şifreyle korumak için güçlü bir çözüm sunar. Bu adım adım kılavuz, arşivlenen verilerinizin gizli ve güvende kalmasını sağlayarak süreç boyunca size yol gösterecektir.
 
@@ -81,3 +87,10 @@ Aspose.Zip for .NET, çeşitli boyutlardaki arşivleri etkili bir şekilde yöne
 ### Aspose.Zip for .NET için nasıl destek alabilirim?
  Ziyaret edin[Aspose.Zip forumu](https://forum.aspose.com/c/zip/37)topluluk desteği için veya[dokümantasyon](https://reference.aspose.com/zip/net/) detaylı bilgi için.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

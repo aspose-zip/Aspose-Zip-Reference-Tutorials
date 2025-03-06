@@ -3,10 +3,16 @@ title: Décompresser un dossier avec Aspose.Zip pour .NET
 linktitle: Décompresser un dossier
 second_title: API Aspose.Zip .NET pour la compression et l'archivage de fichiers
 description: Maîtrisez l'art de la décompression de dossiers avec Aspose.Zip pour .NET. Gérez sans effort les tâches de compression dans vos projets.
-type: docs
 weight: 11
 url: /fr/net/directory-and-folder-compression/decompress-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Décompresser un dossier avec Aspose.Zip pour .NET
+
 Cherchez-vous à décompresser des dossiers de manière transparente à l’aide d’Aspose.Zip pour .NET ? Cherchez pas plus loin! Ce guide étape par étape vous guidera tout au long du processus, garantissant que vous maîtrisez l'art de décompresser des dossiers sans effort.
 
 ## Conditions préalables
@@ -88,3 +94,9 @@ A2 : Absolument ! Aspose.Zip pour .NET est conçu pour gérer facilement des app
 ### Q5 : Comment puis-je obtenir une assistance pour Aspose.Zip pour .NET ?
 
  A5 : Pour toute question ou assistance, visitez le[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) où vous pouvez interagir avec la communauté et demander des conseils d’experts.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

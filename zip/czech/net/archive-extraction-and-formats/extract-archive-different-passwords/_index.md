@@ -3,10 +3,16 @@ title: Extrahování položek archivu s různými hesly v Aspose.Zip pro .NET
 linktitle: Extrahování archivních záznamů s různými hesly
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Naučte se, jak extrahovat archivní položky s různými hesly v Aspose.Zip pro .NET. Zvyšte bezpečnost a flexibilitu ve svých aplikacích.
-type: docs
 weight: 10
 url: /cs/net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extrahování položek archivu s různými hesly v Aspose.Zip pro .NET
+
 ## Úvod
 
 V neustále se vyvíjejícím prostředí vývoje .NET vyniká Aspose.Zip jako výkonný nástroj pro práci s komprimovanými archivy. Mezi jeho mnoha funkcemi přidává extrahování archivních záznamů s různými hesly další vrstvu zabezpečení a všestrannost vašim aplikacím. V tomto podrobném průvodci prozkoumáme, jak toho dosáhnout pomocí Aspose.Zip pro .NET.
@@ -89,3 +95,9 @@ Odpověď 1: Ano, Aspose.Zip podporuje .NET Core i .NET Framework, což poskytuj
 ### Q5: Kde mohu zakoupit Aspose.Zip?
 
  A5: Chcete-li zakoupit Aspose.Zip, navštivte[nákupní stránku](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

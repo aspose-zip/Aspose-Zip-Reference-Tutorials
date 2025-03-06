@@ -3,10 +3,16 @@ title: قم بتأمين ملفاتك - تشفير AES باستخدام Aspose.Z
 linktitle: حماية كلمة المرور مع AES
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: تعرف على كيفية تحسين أمان ملفاتك باستخدام Aspose.Zip لـ .NET مع تشفير AES. اتبع دليلنا خطوة بخطوة للحصول على الحماية المثلى.
-type: docs
 weight: 11
 url: /ar/net/password-protection-and-encryption/password-protect-with-aes/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# قم بتأمين ملفاتك - تشفير AES باستخدام Aspose.Zip
+
 
 ## مقدمة
 
@@ -108,3 +114,10 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES256_out.z
 
 ### ماذا يحدث إذا نسيت كلمة المرور لأرشيف مشفر؟
 لسوء الحظ، لا توجد طريقة لاستعادة كلمة مرور الأرشيف المشفر. من الضروري الاحتفاظ بكلمة المرور في مكان آمن.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

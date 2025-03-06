@@ -3,10 +3,16 @@ title: Menyimpan ke Streaming dengan Aspose.Zip untuk .NET
 linktitle: Menyimpan ke Streaming
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Pelajari cara menyimpan data terkompresi ke aliran dengan Aspose.Zip untuk .NET. Tingkatkan keterampilan pengembangan .NET Anda dengan panduan langkah demi langkah ini.
-type: docs
 weight: 12
 url: /id/net/other-compression-techniques/save-to-stream/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Menyimpan ke Streaming dengan Aspose.Zip untuk .NET
+
 ## Perkenalan
 
 Selamat datang di panduan komprehensif kami tentang menyimpan data terkompresi ke aliran menggunakan Aspose.Zip untuk .NET! Dalam tutorial ini, kita akan mempelajari langkah-langkah penting dalam memanfaatkan Aspose.Zip untuk mengelola dan mengompresi data secara efisien di aplikasi .NET Anda.
@@ -100,3 +106,9 @@ A1: Aspose.Zip terutama dirancang untuk aplikasi .NET. Namun, Anda dapat menjela
 ### Q5: Butuh bantuan atau memiliki pertanyaan lebih lanjut?
 
  A5: Kunjungi[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) untuk mendapatkan bantuan dari masyarakat.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

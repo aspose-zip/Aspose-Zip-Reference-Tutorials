@@ -3,10 +3,16 @@ title: Распаковка файлов AES — Учебное пособие �
 linktitle: Распаковать зашифрованный файл AES
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Научитесь распаковывать зашифрованные AES файлы на C# с помощью Aspose.Zip для .NET. Следуйте нашему пошаговому руководству для эффективной обработки файлов.
-type: docs
 weight: 18
 url: /ru/net/password-protection-and-encryption/decompress-aes-encrypted-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Распаковка файлов AES — Учебное пособие по Aspose.Zip .NET
+
 
 ## Введение
 
@@ -92,3 +98,10 @@ using (FileStream fs = File.OpenRead(dataDir + "PasswordProtectWithAES256_out.zi
 ### Что делать, если мне нужна временная лицензия?
  Вы можете получить временную лицензию[здесь](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

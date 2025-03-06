@@ -3,10 +3,16 @@ title: Giải nén mục RAR bằng Aspose.Zip cho .NET
 linktitle: Giải nén một mục RAR
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Khám phá sự đơn giản của việc giải nén các mục RAR trong .NET bằng Aspose.Zip. Dễ dàng xử lý các tệp nén với thư viện mạnh mẽ này.
-type: docs
 weight: 11
 url: /vi/net/rar-archive/decompress-rar-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Giải nén mục RAR bằng Aspose.Zip cho .NET
+
 
 ## Giới thiệu
 
@@ -74,3 +80,9 @@ Có, Aspose.Zip cung cấp giấy phép thương mại cho nhà phát triển, �
 
 ### Câu hỏi: Tôi có thể tìm trợ giúp ở đâu nếu gặp sự cố với Aspose.Zip dành cho .NET?
  Tham quan[Diễn đàn Aspose.Zip](https://forum.aspose.com/c/zip/37) để được cộng đồng hỗ trợ và thảo luận.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

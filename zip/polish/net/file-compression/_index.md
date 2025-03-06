@@ -3,10 +3,16 @@ title: Kompresja pliku
 linktitle: Kompresja pliku
 second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
 description: Bez wysiłku kompresuj pliki w .NET za pomocą Aspose.Zip! Dowiedz się, jak krok po kroku zarządzać plikami przy użyciu metod Bzip2, LZMA, PPMd, Deflate i Store w celu uzyskania optymalnych ustawień kompresji.
-type: docs
 weight: 20
 url: /pl/net/file-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Kompresja pliku
+
 
 ## Wstęp
 
@@ -47,3 +53,9 @@ Naucz się efektywnie kompresować pliki w .NET przy użyciu Aspose.Zip. Wykorzy
 
 ## Wniosek
 dziedzinie kompresji plików Aspose.Zip dla .NET wyróżnia się jako wszechstronne i potężne narzędzie. Od kompresowania pojedynczych plików po zarządzanie wieloma plikami bez kompresji i optymalizację ustawień w celu uzyskania najwyższej wydajności – ten zestaw samouczków obejmuje wszystko. Podnieś swoje umiejętności zarządzania plikami i ulepsz swoje aplikacje .NET dzięki Aspose.Zip!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

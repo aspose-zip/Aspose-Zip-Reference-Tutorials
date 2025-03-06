@@ -3,10 +3,16 @@ title: Mendekompresi File Tunggal dengan Aspose.Zip untuk .NET
 linktitle: Mendekompresi Satu File
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Jelajahi dunia dekompresi file yang lancar dengan Aspose.Zip untuk .NET. Tangani file terkompresi dengan mudah di proyek C# Anda.
-type: docs
 weight: 12
 url: /id/net/file-decompression/decompress-single-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mendekompresi File Tunggal dengan Aspose.Zip untuk .NET
+
 ## Perkenalan
 
 Dalam bidang pengembangan .NET, Aspose.Zip berdiri sebagai solusi tangguh untuk menangani file terkompresi dengan kemahiran. Tutorial ini akan memandu Anda melalui proses dekompresi satu file menggunakan Aspose.Zip untuk .NET. Bergabunglah saat kami mengungkap kemampuan perpustakaan canggih ini selangkah demi selangkah.
@@ -103,3 +109,9 @@ A3: Aspose.Zip menyediakan metode untuk bekerja dengan arsip yang dilindungi kat
 ### Q5: Di mana saya bisa mencari bantuan jika saya mengalami masalah?
 
  A5: Kunjungi[Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) untuk dukungan masyarakat.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

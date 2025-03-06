@@ -3,10 +3,16 @@ title: Proteja sus archivos cifrado AES con Aspose.Zip
 linktitle: Proteger con contraseña con AES
 second_title: API Aspose.Zip .NET para compresión y archivado de archivos
 description: Aprenda cómo mejorar la seguridad de sus archivos usando Aspose.Zip para .NET con cifrado AES. Siga nuestra guía paso a paso para una protección óptima.
-type: docs
 weight: 11
 url: /es/net/password-protection-and-encryption/password-protect-with-aes/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Proteja sus archivos cifrado AES con Aspose.Zip
+
 
 ## Introducción
 
@@ -108,3 +114,10 @@ Aspose.Zip admite el cifrado de varios tipos de archivos, lo que garantiza flexi
 
 ### ¿Qué sucede si olvido la contraseña de un archivo cifrado?
 Lamentablemente, no hay forma de recuperar la contraseña de un archivo cifrado. Es fundamental mantener la contraseña en un lugar seguro.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 使用 Aspose.Zip for .NET 解压缩 RAR 条目
 linktitle: 解压 RAR 条目
 second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
 description: 发现使用 Aspose.Zip 在 .NET 中解压缩 RAR 条目的简单性。使用这个强大的库轻松处理压缩文件。
-type: docs
 weight: 11
 url: /zh/net/rar-archive/decompress-rar-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Zip for .NET 解压缩 RAR 条目
+
 
 ## 介绍
 
@@ -74,3 +80,9 @@ using (FileStream fs = File.OpenRead(dataDir + "your_file.rar"))
 
 ### 问：如果遇到 Aspose.Zip for .NET 问题，我可以在哪里寻求帮助？
 参观[Aspose.Zip 论坛](https://forum.aspose.com/c/zip/37)以获得社区支持和讨论。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: .NET용 Aspose.Zip에서 Xar를 폴더로 압축 해제
 linktitle: Xar를 폴더로 압축 해제
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: .NET용 Aspose.Zip의 강력한 기능을 살펴보세요! 이 사용자 친화적인 튜토리얼을 통해 Xar 아카이브의 압축을 쉽게 풀 수 있습니다. .NET 개발 경험을 향상시키세요.
-type: docs
 weight: 17
 url: /ko/net/file-decompression/decompress-xar-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.Zip에서 Xar를 폴더로 압축 해제
+
 ## 소개
 
 .NET 개발 세계를 탐구하고 Xar 아카이브의 압축을 풀 수 있는 안정적인 솔루션을 찾고 있다면 Aspose.Zip for .NET이 도움이 될 것입니다. 이 단계별 가이드에서는 .NET 애플리케이션에서 아카이브 조작을 단순화하는 강력한 라이브러리인 Aspose.Zip을 사용하여 Xar를 폴더에 압축 해제하는 과정을 안내합니다.
@@ -79,3 +85,9 @@ using (FileStream fs = File.OpenRead(dataDir + "sample.xar"))
 ### Q5: .NET용 Aspose.Zip을 어디서 구입할 수 있나요?
 
  A5: .NET용 Aspose.Zip을 구입할 수 있습니다.[여기](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

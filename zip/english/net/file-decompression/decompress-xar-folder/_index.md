@@ -3,10 +3,16 @@ title: Decompress Xar to Folder in Aspose.Zip for .NET
 linktitle: Decompress Xar to Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: Explore the power of Aspose.Zip for .NET! Effortlessly decompress Xar archives with this user-friendly tutorial. Enhance your .NET development experience.
-type: docs
 weight: 17
 url: /net/file-decompression/decompress-xar-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Decompress Xar to Folder in Aspose.Zip for .NET
+
 ## Introduction
 
 If you're delving into the world of .NET development and looking for a reliable solution to decompress Xar archives, Aspose.Zip for .NET has got you covered. In this step-by-step guide, we'll walk you through the process of decompressing Xar to a folder using Aspose.Zip, a powerful library that simplifies archive manipulation in your .NET applications.
@@ -79,3 +85,10 @@ A4: Yes, temporary licenses can be obtained from [here](https://purchase.aspose.
 ### Q5: Where can I purchase Aspose.Zip for .NET?
 
 A5: You can purchase Aspose.Zip for .NET [here](https://purchase.aspose.com/buy).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

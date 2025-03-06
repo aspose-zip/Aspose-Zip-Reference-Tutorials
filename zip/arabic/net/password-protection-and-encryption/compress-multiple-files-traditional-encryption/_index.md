@@ -3,10 +3,16 @@ title: ضغط ملفات متعددة بالتشفير في Aspose.Zip .NET
 linktitle: ضغط ملفات متعددة باستخدام التشفير التقليدي
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: تعرف على كيفية ضغط ملفات متعددة بشكل آمن باستخدام التشفير التقليدي في Aspose.Zip لـ .NET. تعزيز حماية البيانات في تطبيقات .NET الخاصة بك.
-type: docs
 weight: 17
 url: /ar/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ضغط ملفات متعددة بالتشفير في Aspose.Zip .NET
+
 
 ## مقدمة
 
@@ -94,3 +100,10 @@ archive.Save(zipFile);
 ### 5. أين يمكنني العثور على الوثائق التفصيلية لـ Aspose.Zip for .NET؟
 
 الرجوع إلى الوثائق[هنا](https://reference.aspose.com/zip/net/) للحصول على معلومات متعمقة.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

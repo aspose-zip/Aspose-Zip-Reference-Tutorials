@@ -3,10 +3,16 @@ title: Descompacte arquivo tradicionalmente protegido por senha em Aspose.Zip pa
 linktitle: Descompacte arquivo tradicionalmente protegido por senha
 second_title: API Aspose.Zip .NET para compactação e arquivamento de arquivos
 description: Aprenda como descompactar arquivos tradicionalmente protegidos por senha usando Aspose.Zip for .NET. Um guia passo a passo para integração perfeita.
-type: docs
 weight: 15
 url: /pt/net/file-decompression/decompress-traditionally-password-protected-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Descompacte arquivo tradicionalmente protegido por senha em Aspose.Zip para .NET
+
 No domínio do desenvolvimento .NET, Aspose.Zip se destaca como uma solução robusta para lidar com arquivos compactados. Entre seus inúmeros recursos, um recurso proeminente é a capacidade de descompactar arquivos tradicionalmente protegidos por senha. Neste tutorial, nos aprofundaremos no processo de descompactação de um arquivo criptografado com uma senha tradicional usando Aspose.Zip para .NET. Antes de embarcarmos nesta jornada, vamos garantir que temos os pré-requisitos em vigor.
 
 ## Pré-requisitos
@@ -96,3 +102,9 @@ A3: Sim, Aspose.Zip oferece suporte a vários métodos de criptografia, fornecen
 ### P5: Como posso obter uma licença temporária do Aspose.Zip?
 
  A5: Você pode adquirir uma licença temporária de[Aspose.Compra](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

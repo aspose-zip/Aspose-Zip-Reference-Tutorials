@@ -3,10 +3,16 @@ title: Aspose.Zip สำหรับ .NET - บทแนะนำการป้
 linktitle: รหัสผ่านป้องกันการเก็บถาวรด้วยรหัสผ่านแบบดั้งเดิม
 second_title: Aspose.Zip .NET API สำหรับการบีบอัดไฟล์และการเก็บถาวร
 description: เรียนรู้วิธีรักษาความปลอดภัยไฟล์เก็บถาวร .NET ของคุณด้วยการป้องกันด้วยรหัสผ่านแบบเดิมโดยใช้ Aspose.Zip ปฏิบัติตามคำแนะนำทีละขั้นตอนของเราเพื่อเพิ่มการรักษาความลับของข้อมูล
-type: docs
 weight: 12
 url: /th/net/password-protection-and-encryption/password-protect-archive-traditional-password/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip สำหรับ .NET - บทแนะนำการป้องกันไฟล์เก็บถาวรด้วยรหัสผ่าน
+
 
 ในขอบเขตของการพัฒนา .NET การรักษาความปลอดภัยข้อมูลที่ละเอียดอ่อนภายในอาร์ไคฟ์ถือเป็นส่วนสำคัญของการออกแบบแอปพลิเคชัน Aspose.Zip สำหรับ .NET นำเสนอโซลูชันที่มีประสิทธิภาพสำหรับการป้องกันไฟล์เก็บถาวรด้วยรหัสผ่านโดยใช้การเข้ารหัสรหัสผ่านแบบเดิม คำแนะนำทีละขั้นตอนนี้จะแนะนำคุณตลอดกระบวนการ เพื่อให้มั่นใจว่าข้อมูลที่จัดเก็บถาวรของคุณยังคงเป็นความลับและปลอดภัย
 
@@ -81,3 +87,10 @@ Aspose.Zip สำหรับ .NET ได้รับการปรับให
 ### ฉันจะรับการสนับสนุน Aspose.Zip สำหรับ .NET ได้อย่างไร
  เยี่ยมชม[ฟอรั่ม Aspose.Zip](https://forum.aspose.com/c/zip/37)สำหรับการสนับสนุนชุมชนหรือการสำรวจ[เอกสารประกอบ](https://reference.aspose.com/zip/net/) สำหรับข้อมูลโดยละเอียด
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

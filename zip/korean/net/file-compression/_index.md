@@ -3,10 +3,16 @@ title: 파일 압축
 linktitle: 파일 압축
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: Aspose.Zip을 사용하여 .NET의 파일을 손쉽게 압축하세요! 최적의 압축 설정을 위해 Bzip2, LZMA, PPMd, Deflate 및 Store 방법을 사용하여 단계별 파일 관리를 알아보세요.
-type: docs
 weight: 20
 url: /ko/net/file-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 파일 압축
+
 
 ## 소개
 
@@ -47,3 +53,9 @@ Aspose.Zip을 사용하여 .NET에서 파일을 효율적으로 압축하는 방
 
 ## 결론
 파일 압축 영역에서 Aspose.Zip for .NET은 다양하고 강력한 도구로 돋보입니다. 단일 파일 압축부터 압축 없이 여러 파일 관리, 뛰어난 성능을 위한 설정 최적화에 이르기까지 이 튜토리얼 모음에서는 모든 내용을 다룹니다. Aspose.Zip으로 파일 관리 기술을 향상하고 .NET 애플리케이션을 향상하세요!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -1,12 +1,17 @@
 ---
 title: Hướng dẫn toàn diện và ví dụ về Aspose.Zip cho .NET
 linktitle: Hướng dẫn Aspose.Zip cho .NET
-type: docs
 weight: 10
 url: /vi/net/
 description:
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hướng dẫn toàn diện và ví dụ về Aspose.Zip cho .NET
+
 
 ### [Nén tập tin](./file-compression/)
 Dễ dàng nén các tệp trong .NET bằng Aspose.Zip! Tìm hiểu cách quản lý tệp từng bước bằng các phương pháp Bzip2, LZMA, PPMd, Deflate và Store để có cài đặt nén tối ưu.
@@ -24,3 +29,9 @@ Khai phá tiềm năng của Aspose.Zip cho .NET với Hướng dẫn nén Seven
 Bảo mật tệp của bạn bằng Aspose.Zip cho .NET! Tìm hiểu hướng dẫn từng bước về bảo vệ và mã hóa mật khẩu, từ AES đến các phương pháp truyền thống. 
 ### [Kỹ thuật nén khác](./other-compression-techniques/)
 Dễ dàng nắm vững các kỹ thuật nén nâng cao với Aspose.Zip cho .NET. Nâng cao kỹ năng phát triển của bạn, từ trích xuất sang luồng bộ nhớ đến tối ưu hóa lưu trữ bằng tính năng nén Lzma.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -1,12 +1,17 @@
 ---
 title: Komplexní návody a příklady Aspose.Zip pro .NET
 linktitle: Výukové programy Aspose.Zip pro .NET
-type: docs
 weight: 10
 url: /cs/net/
 description:
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Komplexní návody a příklady Aspose.Zip pro .NET
+
 
 ### [Komprese souborů](./file-compression/)
 Bez námahy komprimujte soubory v .NET pomocí Aspose.Zip! Naučte se krok za krokem spravovat soubory pomocí metod Bzip2, LZMA, PPMd, Deflate a Store pro optimální nastavení komprese.
@@ -24,3 +29,9 @@ Odemkněte potenciál Aspose.Zip pro .NET pomocí našich výukových programů 
 Zabezpečte své soubory pomocí Aspose.Zip pro .NET! Naučte se krok za krokem návody na ochranu heslem a šifrování, od AES po tradiční metody. 
 ### [Jiné kompresní techniky](./other-compression-techniques/)
 Zvládněte bez námahy pokročilé kompresní techniky s Aspose.Zip pro .NET. Zvyšte své vývojové dovednosti, od extrakce přes paměťový stream až po optimalizaci úložiště pomocí komprese Lzma.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

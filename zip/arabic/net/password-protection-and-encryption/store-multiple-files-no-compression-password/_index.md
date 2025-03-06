@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET - برنامج تعليمي لتخزين الملفا
 linktitle: تخزين ملفات متعددة بدون ضغط باستخدام كلمة المرور
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: اكتشف كيفية استخدام Aspose.Zip لـ .NET لتخزين ملفات متعددة بشكل آمن دون ضغط. خطوات سهلة لحماية كلمة المرور. إطلاق العنان لقوة إدارة الملفات!
-type: docs
 weight: 13
 url: /ar/net/password-protection-and-encryption/store-multiple-files-no-compression-password/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET - برنامج تعليمي لتخزين الملفات الآمنة
+
 
 في عالم تطوير .NET، تعد إدارة الملفات ومعالجتها مهمة شائعة. Aspose.Zip for .NET هي مكتبة قوية توفر للمطورين القدرة على ضغط أرشيفات Zip وفك ضغطها ومعالجتها بسلاسة. في هذا البرنامج التعليمي، سوف نتعمق في سيناريو محدد: تخزين ملفات متعددة دون ضغط وحمايتها بكلمة مرور. بحلول نهاية هذا الدليل، ستكون مجهزًا بالمعرفة اللازمة لتنفيذ هذه الوظيفة باستخدام Aspose.Zip for .NET.
 
@@ -93,3 +99,10 @@ archive.Save(zipFile);
 
 ### أين يمكنني شراء Aspose.Zip لـ .NET؟
  يمكنك شراء Aspose.Zip لـ .NET[هنا](https://purchase.aspose.com/buy).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

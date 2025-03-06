@@ -3,10 +3,16 @@ title: Распаковка файлов
 linktitle: Распаковка файлов
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: С легкостью освойте распаковку файлов в .NET с помощью учебных пособий Aspose.Zip для .NET. Научитесь эффективно обрабатывать сжатые файлы с помощью пошаговых руководств.
-type: docs
 weight: 21
 url: /ru/net/file-decompression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Распаковка файлов
+
 
 
 ## Введение
@@ -45,3 +51,9 @@ Aspose.Zip для .NET меняет правила игры в области р
 Изучите пошаговое руководство по распаковке архивов Wim с помощью Aspose.Zip для .NET. Загрузите библиотеку, следуйте инструкциям и эффективно управляйте архивными файлами в своих приложениях .NET.
 ### [Распакуйте Xar в папку в Aspose.Zip для .NET](./decompress-xar-folder/)
 Откройте для себя возможности Aspose.Zip для .NET! С легкостью распаковывайте архивы Xar с помощью этого удобного руководства. Расширьте свой опыт разработки .NET.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

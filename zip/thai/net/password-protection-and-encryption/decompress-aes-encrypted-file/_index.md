@@ -3,10 +3,16 @@ title: ขยายขนาดไฟล์ AES - บทช่วยสอน As
 linktitle: คลายการบีบอัดไฟล์ที่เข้ารหัส AES
 second_title: Aspose.Zip .NET API สำหรับการบีบอัดไฟล์และการเก็บถาวร
 description: เรียนรู้วิธีขยายขนาดไฟล์ที่เข้ารหัส AES ใน C# โดยใช้ Aspose.Zip สำหรับ .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนของเราเพื่อการจัดการไฟล์ที่มีประสิทธิภาพ
-type: docs
 weight: 18
 url: /th/net/password-protection-and-encryption/decompress-aes-encrypted-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ขยายขนาดไฟล์ AES - บทช่วยสอน Aspose.Zip .NET
+
 
 ## การแนะนำ
 
@@ -92,3 +98,10 @@ using (FileStream fs = File.OpenRead(dataDir + "PasswordProtectWithAES256_out.zi
 ### จะทำอย่างไรหากฉันต้องการใบอนุญาตชั่วคราว
  คุณสามารถขอรับใบอนุญาตชั่วคราวได้[ที่นี่](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

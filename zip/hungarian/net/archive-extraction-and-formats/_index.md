@@ -3,10 +3,16 @@ title: Archívum kibontása és formátumok
 linktitle: Archívum kibontása és formátumok
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Az Aspose.Zip segítségével felszabadíthatja a .NET fájltömörítésének erejét. Tanulja meg a fájlok tömörítését különböző formátumokba, például TarBz2, TarGz és TarZ a hatékony tárolás érdekében.
-type: docs
 weight: 23
 url: /hu/net/archive-extraction-and-formats/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Archívum kibontása és formátumok
+
 
 ## Bevezetés
 
@@ -53,3 +59,9 @@ Ismerje meg a fájlok TarXz formátumba való tömörítését .NET-ben az Aspos
 Fedezze fel a lépésről lépésre történő tömörítést a TarZ-be az Aspose.Zip for .NET használatával. Hatékony fájlkezelés a .NET projektekhez.
 ### [Archívum bejegyzések kibontása különböző jelszavakkal az Aspose.Zip for .NET fájlban](./extract-archive-different-passwords/)
 Ismerje meg, hogyan bonthatja ki az archívum bejegyzéseit különböző jelszavakkal az Aspose.Zip for .NET alkalmazásban. Növelje alkalmazásai biztonságát és rugalmasságát.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

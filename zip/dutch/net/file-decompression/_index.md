@@ -3,10 +3,16 @@ title: Bestandsdecompressie
 linktitle: Bestandsdecompressie
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Beheers moeiteloos de decompressie van bestanden in .NET met Aspose.Zip voor .NET-tutorials. Leer efficiënt omgaan met gecomprimeerde bestanden met stapsgewijze handleidingen.
-type: docs
 weight: 21
 url: /nl/net/file-decompression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bestandsdecompressie
+
 
 
 ## Invoering
@@ -45,3 +51,9 @@ Leer hoe u traditioneel met een wachtwoord beveiligde bestanden kunt decomprimer
 Ontdek de stapsgewijze handleiding voor het decomprimeren van Wim-archieven met Aspose.Zip voor .NET. Download de bibliotheek, volg de tutorial en beheer archiefbestanden efficiënt in uw .NET-applicaties.
 ### [Decomprimeer Xar naar map in Aspose.Zip voor .NET](./decompress-xar-folder/)
 Ontdek de kracht van Aspose.Zip voor .NET! Decomprimeer Xar-archieven moeiteloos met deze gebruiksvriendelijke tutorial. Verbeter uw .NET-ontwikkelervaring.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

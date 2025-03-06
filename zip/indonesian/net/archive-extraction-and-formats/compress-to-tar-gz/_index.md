@@ -3,10 +3,16 @@ title: Mengompresi ke TarGz dengan Aspose.Zip untuk .NET
 linktitle: Mengompresi ke TarGz
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Jelajahi kompresi file yang efisien di .NET dengan Aspose.Zip. Kompres ke TarGz dengan mudah.
-type: docs
 weight: 12
 url: /id/net/archive-extraction-and-formats/compress-to-tar-gz/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mengompresi ke TarGz dengan Aspose.Zip untuk .NET
+
 ## Perkenalan
 
 Dalam lanskap pengembangan .NET yang terus berkembang, kompresi file yang efisien merupakan aspek penting dalam mengoptimalkan penyimpanan dan transfer data. Aspose.Zip untuk .NET muncul sebagai alat yang ampuh bagi pengembang yang mencari kemampuan kompresi yang kuat. Tutorial ini akan memandu Anda melalui proses mengompresi file ke format TarGz menggunakan Aspose.Zip untuk .NET, memberikan panduan langkah demi langkah.
@@ -91,3 +97,9 @@ A3: Aspose.Zip untuk .NET dioptimalkan untuk menangani file besar, dan tidak ada
 ### Q5: Dapatkah saya mencoba Aspose.Zip untuk .NET secara gratis sebelum membeli?
 
  A5: Tentu saja! Akses versi uji coba gratis[Di Sini](https://releases.aspose.com/zip/net) untuk mengeksplorasi kemampuan Aspose.Zip untuk .NET.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

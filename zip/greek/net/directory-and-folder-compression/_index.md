@@ -3,10 +3,16 @@ title: Συμπίεση καταλόγου και φακέλων
 linktitle: Συμπίεση καταλόγου και φακέλων
 second_title: Aspose.Zip .NET API για συμπίεση και αρχειοθέτηση αρχείων
 description: Βελτιστοποιήστε χωρίς κόπο τον αποθηκευτικό χώρο με το Aspose.Zip για .NET. Μάθετε τεχνικές συμπίεσης και αποσυμπίεσης καταλόγου για να βελτιώσετε τα έργα ανάπτυξης .NET.
-type: docs
 weight: 22
 url: /el/net/directory-and-folder-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Συμπίεση καταλόγου και φακέλων
+
 
 ## Εισαγωγή
 
@@ -38,3 +44,9 @@ url: /el/net/directory-and-folder-compression/
 Μάθετε να συμπιέζετε καταλόγους χωρίς κόπο με το Aspose.Zip για .NET. Ενισχύστε την ανάπτυξη του .NET σας βελτιστοποιώντας αποτελεσματικά τον αποθηκευτικό χώρο.
 ### [Αποσυμπίεση φακέλου με Aspose.Zip για .NET](./decompress-folder/)
 Κατακτήστε την τέχνη της αποσυμπίεσης φακέλων με το Aspose.Zip για .NET. Χειριστείτε χωρίς κόπο εργασίες συμπίεσης στα έργα σας.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

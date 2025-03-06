@@ -3,10 +3,16 @@ title: فك ضغط ملف باستخدام Aspose.Zip لـ .NET
 linktitle: فك ضغط ملف
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: استكشف عالم ضغط الملفات في .NET باستخدام Aspose.Zip. تعلم فن فك ضغط الملفات دون عناء.
-type: docs
 weight: 10
 url: /ar/net/file-decompression/decompress-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# فك ضغط ملف باستخدام Aspose.Zip لـ .NET
+
 ## مقدمة
 
 في عالم تطوير .NET، تعد إدارة الملفات المضغوطة بكفاءة أمرًا بالغ الأهمية. يوفر Aspose.Zip for .NET حلاً قويًا للتعامل مع ضغط الملفات وإلغاء ضغطها بسلاسة. في هذا البرنامج التعليمي، سوف نتعمق في عملية فك ضغط الملف باستخدام Aspose.Zip لـ .NET. تابع معنا لفتح إمكانات هذه المكتبة القوية.
@@ -83,3 +89,9 @@ Console.WriteLine("Successfully Opened Lzip Archive");
 ### س5: أين يمكنني شراء Aspose.Zip لـ .NET؟
 
  ج5: لشراء Aspose.Zip لـ .NET، قم بزيارة[صفحة الشراء](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

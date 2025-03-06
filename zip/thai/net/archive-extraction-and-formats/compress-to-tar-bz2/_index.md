@@ -3,10 +3,16 @@ title: การบีบอัดไฟล์เป็น TarBz2 ด้วย A
 linktitle: บีบอัดเป็น TarBz2
 second_title: Aspose.Zip .NET API สำหรับการบีบอัดไฟล์และการเก็บถาวร
 description: เรียนรู้วิธีบีบอัดไฟล์เป็นรูปแบบ TarBz2 ใน .NET โดยใช้ Aspose.Zip ปฏิบัติตามคำแนะนำทีละขั้นตอนของเราเพื่อการบีบอัดไฟล์ที่มีประสิทธิภาพ
-type: docs
 weight: 11
 url: /th/net/archive-extraction-and-formats/compress-to-tar-bz2/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# การบีบอัดไฟล์เป็น TarBz2 ด้วย Aspose.Zip สำหรับ .NET
+
 ## การแนะนำ
 
 ยินดีต้อนรับสู่คำแนะนำที่ครอบคลุมเกี่ยวกับการบีบอัดไฟล์เป็นรูปแบบ TarBz2 โดยใช้ Aspose.Zip สำหรับ .NET Aspose.Zip เป็นไลบรารี่ที่ทรงพลังและอเนกประสงค์ซึ่งมอบเครื่องมือที่จำเป็นสำหรับนักพัฒนาในการทำงานกับรูปแบบไฟล์บีบอัดในแอปพลิเคชัน .NET ของตนอย่างมีประสิทธิภาพ
@@ -90,3 +96,9 @@ A2: ได้ คุณสามารถบีบอัดไฟล์ได้
 ### คำถามที่ 5: มีการทดลองใช้ฟรีหรือไม่?
 
  A5: ได้ คุณสามารถเข้าถึงรุ่นทดลองใช้ฟรีได้[ที่นี่](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

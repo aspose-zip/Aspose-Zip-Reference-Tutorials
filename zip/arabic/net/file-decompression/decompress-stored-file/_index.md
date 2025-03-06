@@ -3,10 +3,16 @@ title: فك ضغط الملفات المخزنة باستخدام Aspose.Zip ل�
 linktitle: فك ضغط ملف مخزن
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: اكتشف قوة Aspose.Zip لـ .NET في هذا الدليل التفصيلي خطوة بخطوة حول فك ضغط الملفات المخزنة. عزز مهاراتك في تطوير البرامج من خلال حل قوي لمعالجة الملفات بكفاءة.
-type: docs
 weight: 13
 url: /ar/net/file-decompression/decompress-stored-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# فك ضغط الملفات المخزنة باستخدام Aspose.Zip لـ .NET
+
 ## مقدمة
 
 في المشهد المتطور باستمرار لتطوير البرمجيات، يعد التعامل مع الملفات المضغوطة بكفاءة جانبًا بالغ الأهمية. يظهر Aspose.Zip for .NET كحل قوي، حيث يوفر للمطورين أدوات قوية لفك ضغط الملفات المخزنة بسلاسة. في هذا البرنامج التعليمي، سوف نتعمق في عملية فك ضغط الملف المخزن باستخدام Aspose.Zip for .NET.
@@ -120,3 +126,9 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 ### س5: هل يمكنني الحصول على ترخيص مؤقت لـ Aspose.Zip لـ .NET؟
 
  ج5: نعم قم بالزيارة[هذا الرابط](https://purchase.aspose.com/temporary-license/) للحصول على ترخيص مؤقت لأغراض الاختبار.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

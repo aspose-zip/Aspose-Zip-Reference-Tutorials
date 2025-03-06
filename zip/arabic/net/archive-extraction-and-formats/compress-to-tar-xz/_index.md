@@ -3,10 +3,16 @@ title: الضغط على TarXz باستخدام Aspose.Zip لـ .NET
 linktitle: الضغط على TarXz
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: تعلم كيفية ضغط الملفات إلى تنسيق TarXz في .NET باستخدام Aspose.Zip. اتبع دليلنا خطوة بخطوة لتخزين الملفات ونقلها بكفاءة.
-type: docs
 weight: 14
 url: /ar/net/archive-extraction-and-formats/compress-to-tar-xz/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# الضغط على TarXz باستخدام Aspose.Zip لـ .NET
+
 ## مقدمة
 
 في مجال تطوير .NET، يعد الضغط الفعال للملفات جانبًا حاسمًا لتحسين تخزين البيانات ونقلها. يعد Aspose.Zip for .NET أداة قوية تسهل ضغط الملفات، وفي هذا البرنامج التعليمي، سنتعمق في ضغط الملفات إلى تنسيق TarXz باستخدام Aspose.Zip. يهدف هذا الدليل التفصيلي خطوة بخطوة إلى تزويدك بفهم شامل للعملية، مما يسمح لك بدمج هذه الوظيفة بسلاسة في مشاريع .NET الخاصة بك.
@@ -84,3 +90,9 @@ using (TarArchive archive = new TarArchive())
 ### س5: هل يمكنني تجربة Aspose.Zip مجانًا قبل إجراء عملية الشراء؟
 
  ج5: نعم، يمكنك استكشاف النسخة التجريبية المجانية[هنا](https://releases.aspose.com/zip/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

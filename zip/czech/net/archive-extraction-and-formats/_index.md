@@ -3,10 +3,16 @@ title: Extrakce a formáty archivu
 linktitle: Extrakce a formáty archivu
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Odemkněte sílu komprese souborů v .NET s Aspose.Zip. Naučte se komprimovat soubory do různých formátů, jako jsou TarBz2, TarGz a TarZ pro efektivní ukládání.
-type: docs
 weight: 23
 url: /cs/net/archive-extraction-and-formats/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extrakce a formáty archivu
+
 
 ## Úvod
 
@@ -53,3 +59,9 @@ Naučte se komprimovat soubory do formátu TarXz v .NET pomocí Aspose.Zip. Post
 Prozkoumejte krok za krokem kompresi do TarZ pomocí Aspose.Zip pro .NET. Efektivní zpracování souborů pro vaše projekty .NET.
 ### [Extrahování položek archivu s různými hesly v Aspose.Zip pro .NET](./extract-archive-different-passwords/)
 Naučte se, jak extrahovat archivní položky s různými hesly v Aspose.Zip pro .NET. Zvyšte bezpečnost a flexibilitu ve svých aplikacích.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

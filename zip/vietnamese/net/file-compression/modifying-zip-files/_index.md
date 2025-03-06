@@ -3,10 +3,16 @@ title: Sửa đổi tệp Zip bằng Aspose.Zip cho .NET
 linktitle: Sửa đổi tập tin Zip
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Khám phá sức mạnh của Aspose.Zip dành cho .NET trong hướng dẫn toàn diện này. Tìm hiểu cách sửa đổi tệp zip một cách liền mạch bằng C#.
-type: docs
 weight: 15
 url: /vi/net/file-compression/modifying-zip-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Sửa đổi tệp Zip bằng Aspose.Zip cho .NET
+
 ## Giới thiệu
 
 Tệp zip đóng vai trò quan trọng trong việc tổ chức và nén dữ liệu, nhưng nếu bạn cần sửa đổi nội dung của tệp zip theo chương trình thì sao? Đó là lúc Aspose.Zip dành cho .NET phát huy tác dụng. Thư viện mạnh mẽ này cung cấp một cách liền mạch để thao tác với các tệp zip bằng C#.
@@ -129,3 +135,9 @@ Câu trả lời 1: Aspose.Zip được thiết kế chủ yếu cho các ứng 
 ### Câu hỏi 5: Tôi có thể tìm tài liệu về Aspose.Zip cho .NET ở đâu?
 
  A5: Tài liệu có sẵn[đây](https://reference.aspose.com/zip/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET - AES Şifreli Dosyaların Şifresini Çözme
 linktitle: AES Şifreli Saklanan Dosyanın Sıkıştırmasını Aç
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Bu kapsamlı adım adım kılavuzla Aspose.Zip for .NET'te AES şifreli depolanan dosyaların sıkıştırmasını nasıl açacağınızı öğrenin. .NET geliştirme becerilerinizi bugün geliştirin!
-type: docs
 weight: 19
 url: /tr/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET - AES Şifreli Dosyaların Şifresini Çözme
+
 
 ## giriiş
 
@@ -89,3 +95,10 @@ Aspose.Zip, ZIP, 7z ve TAR dahil çeşitli formatları destekler. Kapsamlı bir 
 ### Aspose.Zip'i ticari amaçlarla kullanabilir miyim?
  Evet, lisans satın alabilirsiniz[Burada](https://purchase.aspose.com/buy) ticari kullanım için.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

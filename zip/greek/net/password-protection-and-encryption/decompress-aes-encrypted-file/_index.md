@@ -3,10 +3,16 @@ title: Αποσυμπίεση αρχείων AES - Εκμάθηση Aspose.Zip .
 linktitle: Αποσυμπιέστε το κρυπτογραφημένο αρχείο AES
 second_title: Aspose.Zip .NET API για συμπίεση και αρχειοθέτηση αρχείων
 description: Μάθετε να αποσυμπιέζετε κρυπτογραφημένα αρχεία AES σε C# χρησιμοποιώντας το Aspose.Zip για .NET. Ακολουθήστε τον βήμα προς βήμα οδηγό μας για αποτελεσματικό χειρισμό αρχείων.
-type: docs
 weight: 18
 url: /el/net/password-protection-and-encryption/decompress-aes-encrypted-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Αποσυμπίεση αρχείων AES - Εκμάθηση Aspose.Zip .NET
+
 
 ## Εισαγωγή
 
@@ -92,3 +98,10 @@ using (FileStream fs = File.OpenRead(dataDir + "PasswordProtectWithAES256_out.zi
 ### Τι γίνεται αν χρειάζομαι μια προσωρινή άδεια;
  Μπορείτε να αποκτήσετε μια προσωρινή άδεια[εδώ](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

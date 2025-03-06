@@ -3,10 +3,16 @@ title: Komprese SevenZip
 linktitle: Komprese SevenZip
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Odemkněte potenciál Aspose.Zip pro .NET pomocí našich výukových programů komprese SevenZip. Bez námahy vytvořte položky SevenZip a prozkoumejte různé metody komprese.
-type: docs
 weight: 25
 url: /cs/net/sevenzip-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Komprese SevenZip
+
 
 
 Vítejte v našem komplexním průvodci výukovými programy komprese SevenZip pomocí Aspose.Zip pro .NET. V této sérii výukových programů se ponoříme do síly Aspose.Zip, provedeme vás procesem vytváření záznamů SevenZip a prozkoumáme různé metody komprese. Vydejme se na tuto cestu, abychom vylepšili vaše zkušenosti s vývojem .NET.
@@ -31,3 +37,9 @@ Prozkoumejte sílu Aspose.Zip pro .NET! Naučte se vytvářet položky SevenZip 
 Master Aspose.Zip for .NET – Vytvářejte položky SevenZip bez námahy. Vylepšete své aplikace .NET pomocí efektivní manipulace s archivy zip.
 ### [SevenZip s různými metodami komprese v Aspose.Zip pro .NET](./sevenzip-various-compression-methods/)
 Naučte se vytvářet soubory Seven Zip pomocí Aspose.Zip pro .NET pomocí různých kompresních metod. Snadné kroky pro LZMA2, BZip2 a Store (bez komprese).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

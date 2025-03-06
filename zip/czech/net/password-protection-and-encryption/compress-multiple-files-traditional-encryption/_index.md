@@ -3,10 +3,16 @@ title: Komprimujte více souborů pomocí šifrování v Aspose.Zip .NET
 linktitle: Komprimujte více souborů pomocí tradičního šifrování
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Naučte se, jak bezpečně komprimovat více souborů pomocí tradičního šifrování v Aspose.Zip pro .NET. Vylepšete ochranu dat ve svých aplikacích .NET.
-type: docs
 weight: 17
 url: /cs/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Komprimujte více souborů pomocí šifrování v Aspose.Zip .NET
+
 
 ## Úvod
 
@@ -94,3 +100,10 @@ Ano, Aspose.Zip for .NET je kompatibilní s prostředím Windows i Linux a posky
 ### 5. Kde najdu podrobnou dokumentaci k Aspose.Zip pro .NET?
 
 Viz dokumentace[tady](https://reference.aspose.com/zip/net/) pro podrobné informace.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

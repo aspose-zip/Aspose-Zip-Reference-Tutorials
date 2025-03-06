@@ -3,10 +3,16 @@ title: 在 Aspose.Zip for .NET 中存储多个不压缩的文件
 linktitle: 存储多个文件而不压缩
 second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
 description: 在 Aspose.Zip for .NET 中探索多个文件的无缝存储，无需压缩。通过此分步指南优化您的 .NET 应用程序以实现高效的文件管理。
-type: docs
 weight: 16
 url: /zh/net/file-compression/store-multiple-files-no-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 在 Aspose.Zip for .NET 中存储多个不压缩的文件
+
 ## 介绍
 
 在 .NET 开发的动态世界中，有效的文件压缩对于优化数据存储和传输至关重要。 Aspose.Zip for .NET 是一个功能强大的工具，可以简化此过程，使开发人员能够高效地存储多个文件而无需压缩。在本教程中，我们将逐步指导您完成整个过程，确保您充分利用 Aspose.Zip for .NET 的全部潜力。
@@ -84,3 +90,9 @@ A4：是的，Aspose.Zip for .NET 支持多线程，允许您增强文件压缩�
 ### Q5：我可以将 Aspose.Zip for .NET 集成到我现有的项目中，而无需进行重大代码修改吗？
 
  A5：是的，Aspose.Zip for .NET 专为轻松集成而设计，并且[文档](https://reference.aspose.com/zip/net/)为无缝集成过程提供全面的指导。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: ファイルを保護 - Aspose.Zip による AES 暗号化
 linktitle: AES によるパスワード保護
 second_title: ファイルの圧縮とアーカイブのための Aspose.Zip .NET API
 description: AES 暗号化を備えた Aspose.Zip for .NET を使用してファイルのセキュリティを強化する方法を学びます。最適な保護を実現するには、段階的なガイドに従ってください。
-type: docs
 weight: 11
 url: /ja/net/password-protection-and-encryption/password-protect-with-aes/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ファイルを保護 - Aspose.Zip による AES 暗号化
+
 
 ## 導入
 
@@ -108,3 +114,10 @@ Aspose.Zip はさまざまな種類のファイルの暗号化をサポートし
 
 ### 暗号化されたアーカイブのパスワードを忘れた場合はどうなりますか?
 残念ながら、暗号化されたアーカイブのパスワードを回復する方法はありません。パスワードを安全な場所に保管することが重要です。
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

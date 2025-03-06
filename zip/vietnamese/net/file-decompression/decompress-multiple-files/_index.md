@@ -3,10 +3,16 @@ title: Giải nén nhiều tệp bằng Aspose.Zip cho .NET
 linktitle: Giải nén nhiều tập tin
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Tìm hiểu cách giải nén nhiều tệp bằng Aspose.Zip cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để quản lý tệp hiệu quả.
-type: docs
 weight: 11
 url: /vi/net/file-decompression/decompress-multiple-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Giải nén nhiều tệp bằng Aspose.Zip cho .NET
+
 ## Giới thiệu
 
 Chào mừng bạn đến với hướng dẫn toàn diện của chúng tôi về cách giải nén nhiều tệp bằng Aspose.Zip cho .NET! Nếu bạn đang tìm cách xử lý hiệu quả các tệp nén chứa nhiều mục nhập thì bạn đã đến đúng nơi. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn từng bước thực hiện quy trình bằng cách sử dụng Aspose.Zip cho .NET.
@@ -127,3 +133,9 @@ Trong hướng dẫn này, chúng tôi đã trình bày các bước cần thi�
 ### Câu hỏi 5: Có bất kỳ yêu cầu hệ thống cụ thể nào khi sử dụng Aspose.Zip cho .NET không?
 
  A5: Hãy tham khảo[tài liệu](https://reference.aspose.com/zip/net/) để biết các yêu cầu chi tiết của hệ thống.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

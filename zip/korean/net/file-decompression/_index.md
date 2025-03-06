@@ -3,10 +3,16 @@ title: 파일 압축 해제
 linktitle: 파일 압축 해제
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: .NET용 Aspose.Zip 튜토리얼을 사용하여 .NET에서 파일 압축 풀기를 손쉽게 마스터하세요. 단계별 가이드를 통해 압축 파일을 효율적으로 처리하는 방법을 알아보세요.
-type: docs
 weight: 21
 url: /ko/net/file-decompression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 파일 압축 해제
+
 
 
 ## 소개
@@ -45,3 +51,9 @@ Aspose.Zip을 사용하여 .NET에서 파일 압축의 세계를 탐험해보세
 .NET용 Aspose.Zip을 사용하여 Wim 아카이브 압축을 푸는 방법에 대한 단계별 가이드를 살펴보세요. 라이브러리를 다운로드하고 튜토리얼을 따라 .NET 애플리케이션에서 아카이브 파일을 효율적으로 관리하세요.
 ### [.NET용 Aspose.Zip에서 Xar를 폴더로 압축 해제](./decompress-xar-folder/)
 .NET용 Aspose.Zip의 강력한 기능을 살펴보세요! 이 사용자 친화적인 튜토리얼을 통해 Xar 아카이브의 압축을 쉽게 풀 수 있습니다. .NET 개발 경험을 향상시키세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: AES fájlok kibontása – Aspose.Zip .NET oktatóanyag
 linktitle: Az AES titkosított fájl kibontása
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Ismerje meg az AES-titkosított fájlok kibontását C# nyelven az Aspose.Zip for .NET használatával. Kövesse lépésről lépésre útmutatónkat a hatékony fájlkezelés érdekében.
-type: docs
 weight: 18
 url: /hu/net/password-protection-and-encryption/decompress-aes-encrypted-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# AES fájlok kibontása – Aspose.Zip .NET oktatóanyag
+
 
 ## Bevezetés
 
@@ -92,3 +98,10 @@ Igen, az Aspose.Zip támogatja az AES titkosítást 128, 192 és 256 bites kulcs
 ### Mi van, ha ideiglenes engedélyre van szükségem?
  Kaphat ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

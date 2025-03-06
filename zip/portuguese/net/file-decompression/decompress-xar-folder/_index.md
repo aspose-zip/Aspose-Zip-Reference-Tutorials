@@ -3,10 +3,16 @@ title: Descompacte Xar para pasta em Aspose.Zip para .NET
 linktitle: Descompacte Xar para pasta
 second_title: API Aspose.Zip .NET para compactação e arquivamento de arquivos
 description: Explore o poder do Aspose.Zip para .NET! Descompacte arquivos Xar sem esforço com este tutorial fácil de usar. Aprimore sua experiência de desenvolvimento .NET.
-type: docs
 weight: 17
 url: /pt/net/file-decompression/decompress-xar-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Descompacte Xar para pasta em Aspose.Zip para .NET
+
 ## Introdução
 
 Se você está mergulhando no mundo do desenvolvimento .NET e procurando uma solução confiável para descompactar arquivos Xar, o Aspose.Zip for .NET tem o que você precisa. Neste guia passo a passo, orientaremos você no processo de descompactação do Xar em uma pasta usando Aspose.Zip, uma biblioteca poderosa que simplifica a manipulação de arquivos em seus aplicativos .NET.
@@ -79,3 +85,9 @@ Com Aspose.Zip for .NET, descompactar arquivos Xar se torna uma tarefa simples e
 ### Q5: Onde posso comprar Aspose.Zip para .NET?
 
  A5: Você pode comprar Aspose.Zip para .NET[aqui](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

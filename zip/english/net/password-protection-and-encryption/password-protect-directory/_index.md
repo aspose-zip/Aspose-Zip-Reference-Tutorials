@@ -3,10 +3,16 @@ title: Password Protect Directories in .NET with Aspose.Zip Tutorial
 linktitle: Password Protect Directory
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: Learn how to password protect directories in .NET using Aspose.Zip. Secure your files effortlessly with this step-by-step tutorial.
-type: docs
 weight: 10
 url: /net/password-protection-and-encryption/password-protect-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Password Protect Directories in .NET with Aspose.Zip Tutorial
+
 
 ## Introduction
 
@@ -91,3 +97,10 @@ Yes, you can access a free trial [here](https://releases.aspose.com/).
 You can visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for any support or queries.
 
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

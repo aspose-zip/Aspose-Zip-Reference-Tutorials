@@ -3,10 +3,16 @@ title: Altre tecniche di compressione
 linktitle: Altre tecniche di compressione
 second_title: Aspose.Zip .NET API per la compressione e l'archiviazione dei file
 description: Padroneggia le tecniche di compressione avanzate con Aspose.Zip. Migliora le tue capacità di sviluppo, dall'estrazione al flusso di memoria all'ottimizzazione dello storage con la compressione Lzma.
-type: docs
 weight: 27
 url: /it/net/other-compression-techniques/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Altre tecniche di compressione
+
 
 ## introduzione
 
@@ -44,3 +50,9 @@ Impara a salvare i dati compressi in un flusso con Aspose.Zip per .NET. Migliora
 Esplora la potenza di Aspose.Zip per .NET con la nostra guida passo passo sulla gestione degli archivi ZIP con password diverse. Migliora la sicurezza e la flessibilità delle tue applicazioni. 
 ### [Comprimi in Lzma in Aspose.Zip per .NET](./compress-to-lzma/)
 Scopri come comprimere i file utilizzando Aspose.Zip per .NET con il potente algoritmo Lzma. Ottimizza l'archiviazione e migliora l'efficienza del trasferimento dei dati senza sforzo.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Descomprimir una carpeta con Aspose.Zip para .NET
 linktitle: Descomprimir una carpeta
 second_title: API Aspose.Zip .NET para compresión y archivado de archivos
 description: Domina el arte de descomprimir carpetas con Aspose.Zip para .NET. Maneje sin esfuerzo las tareas de compresión en sus proyectos.
-type: docs
 weight: 11
 url: /es/net/directory-and-folder-compression/decompress-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Descomprimir una carpeta con Aspose.Zip para .NET
+
 ¿Está buscando descomprimir carpetas sin problemas usando Aspose.Zip para .NET? ¡No busque más! Esta guía paso a paso lo guiará a través del proceso, asegurándose de que domine el arte de descomprimir carpetas sin esfuerzo.
 
 ## Requisitos previos
@@ -88,3 +94,9 @@ R2: ¡Absolutamente! Aspose.Zip para .NET está diseñado para manejar aplicacio
 ### P5: ¿Cómo puedo obtener soporte para Aspose.Zip para .NET?
 
  R5: Para cualquier consulta o ayuda, visite el[Foro Aspose.Zip](https://forum.aspose.com/c/zip/37) donde puede interactuar con la comunidad y buscar asesoramiento de expertos.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

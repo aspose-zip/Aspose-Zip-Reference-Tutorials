@@ -3,10 +3,16 @@ title: Ασφαλίστε τα αρχεία σας - Κρυπτογράφηση 
 linktitle: Προστασία με κωδικό πρόσβασης με AES
 second_title: Aspose.Zip .NET API για συμπίεση και αρχειοθέτηση αρχείων
 description: Μάθετε πώς να βελτιώσετε την ασφάλεια των αρχείων σας χρησιμοποιώντας το Aspose.Zip για .NET με κρυπτογράφηση AES. Ακολουθήστε τον βήμα προς βήμα οδηγό μας για βέλτιστη προστασία.
-type: docs
 weight: 11
 url: /el/net/password-protection-and-encryption/password-protect-with-aes/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ασφαλίστε τα αρχεία σας - Κρυπτογράφηση AES με το Aspose.Zip
+
 
 ## Εισαγωγή
 
@@ -108,3 +114,10 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES256_out.z
 
 ### Τι θα συμβεί αν ξεχάσω τον κωδικό πρόσβασης για ένα κρυπτογραφημένο αρχείο;
 Δυστυχώς, δεν υπάρχει τρόπος να ανακτήσετε τον κωδικό πρόσβασης ενός κρυπτογραφημένου αρχείου. Είναι σημαντικό να διατηρείτε τον κωδικό πρόσβασης σε ασφαλή τοποθεσία.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

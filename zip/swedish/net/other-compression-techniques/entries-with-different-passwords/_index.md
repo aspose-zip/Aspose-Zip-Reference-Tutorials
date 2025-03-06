@@ -3,10 +3,16 @@ title: Poster med olika lösenord i Aspose.Zip för .NET
 linktitle: Poster med olika lösenord
 second_title: Aspose.Zip .NET API för filkomprimering och arkivering
 description: Utforska kraften i Aspose.Zip för .NET med vår steg-för-steg-guide om hur du hanterar ZIP-arkiv med olika lösenord. Förbättra säkerheten och flexibiliteten i dina applikationer.
-type: docs
 weight: 13
 url: /sv/net/other-compression-techniques/entries-with-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Poster med olika lösenord i Aspose.Zip för .NET
+
 ## Introduktion
 
 Välkommen till världen av Aspose.Zip för .NET, ett kraftfullt bibliotek som ger utvecklare möjlighet att hantera och manipulera ZIP-arkiv sömlöst. I den här handledningen kommer vi att fördjupa oss i en specifik funktion: att arbeta med poster med olika lösenord. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer denna steg-för-steg-guide att leda dig genom processen och frigöra potentialen hos Aspose.Zip för .NET.
@@ -97,3 +103,9 @@ A2: Absolut! Aspose.Zip för .NET erbjuder kommersiella licenser, och du kan hit
 ### F5: Kan jag använda Aspose.Zip för .NET utan en permanent licens?
 
  S5: Ja, du kan få en tillfällig licens för dina kortsiktiga behov. Hitta mer information[här](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

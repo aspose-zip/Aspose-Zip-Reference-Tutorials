@@ -3,10 +3,16 @@ title: ファイルの解凍
 linktitle: ファイルの解凍
 second_title: ファイルの圧縮とアーカイブのための Aspose.Zip .NET API
 description: Aspose.Zip for .NET チュートリアルを使用して、.NET でのファイル解凍を簡単にマスターします。ステップバイステップのガイドで、圧縮ファイルを効率的に処理する方法を学びましょう。
-type: docs
 weight: 21
 url: /ja/net/file-decompression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ファイルの解凍
+
 
 
 ## 導入
@@ -45,3 +51,9 @@ Aspose.Zip for .NET を使用して、従来パスワードで保護されたフ
 Aspose.Zip for .NET を使用して Wim アーカイブを解凍するためのステップバイステップ ガイドをご覧ください。ライブラリをダウンロードしてチュートリアルに従い、.NET アプリケーションのアーカイブ ファイルを効率的に管理します。
 ### [Xar を Aspose.Zip for .NET のフォルダーに解凍します](./decompress-xar-folder/)
 Aspose.Zip for .NET の威力を試してください!このユーザーフレンドリーなチュートリアルを使用して、Xar アーカイブを簡単に解凍します。 .NET 開発エクスペリエンスを強化します。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

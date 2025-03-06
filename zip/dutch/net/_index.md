@@ -1,12 +1,17 @@
 ---
 title: Uitgebreide tutorials en voorbeelden van Aspose.Zip voor .NET
 linktitle: Aspose.Zip voor .NET-tutorials
-type: docs
 weight: 10
 url: /nl/net/
 description:
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Uitgebreide tutorials en voorbeelden van Aspose.Zip voor .NET
+
 
 ### [Bestandscompressie](./file-compression/)
 Comprimeer bestanden moeiteloos in .NET met Aspose.Zip! Leer stapsgewijs bestandsbeheer met behulp van de methoden Bzip2, LZMA, PPMd, Deflate en Store voor optimale compressie-instellingen.
@@ -24,3 +29,9 @@ Ontgrendel het potentieel van Aspose.Zip voor .NET met onze SevenZip-compressie-
 Beveilig uw bestanden met Aspose.Zip voor .NET! Leer stapsgewijze tutorials over wachtwoordbeveiliging en encryptie, van AES tot traditionele methoden. 
 ### [Andere compressietechnieken](./other-compression-techniques/)
 Beheers moeiteloos geavanceerde compressietechnieken met Aspose.Zip voor .NET. Verbeter uw ontwikkelingsvaardigheden, van extraheren tot geheugenstream tot het optimaliseren van opslag met Lzma-compressie.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

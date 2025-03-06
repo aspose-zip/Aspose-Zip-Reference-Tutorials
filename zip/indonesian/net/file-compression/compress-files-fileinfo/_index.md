@@ -3,10 +3,16 @@ title: Kompres File menggunakan FileInfo di Aspose.Zip untuk .NET
 linktitle: Kompres File menggunakan FileInfo
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Pelajari cara mengompresi file menggunakan fileinfo dengan Aspose.Zip untuk .NET. Ikuti panduan langkah demi langkah kami untuk pengelolaan file yang efisien.
-type: docs
 weight: 11
 url: /id/net/file-compression/compress-files-fileinfo/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Kompres File menggunakan FileInfo di Aspose.Zip untuk .NET
+
 ## Perkenalan
 
 Selamat datang di panduan komprehensif kami tentang mengompresi file menggunakan Aspose.Zip untuk .NET! Jika Anda ingin mengoptimalkan penyimpanan atau transmisi file Anda, Aspose.Zip adalah solusi tepat Anda. Dalam tutorial ini, kami akan memandu Anda melalui proses mengompresi file menggunakan kelas FileInfo, memberikan panduan langkah demi langkah yang mendetail. Ayo selami!
@@ -102,3 +108,9 @@ A1: Aspose.Zip mendukung berbagai jenis file, memastikan fleksibilitas dalam kom
 ### Q5: Bagaimana cara mendapatkan lisensi sementara untuk Aspose.Zip?
 
  A5: Kunjungi[Link ini](https://purchase.aspose.com/temporary-license/) untuk informasi tentang cara memperoleh izin sementara.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

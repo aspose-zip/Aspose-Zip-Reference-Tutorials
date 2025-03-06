@@ -3,10 +3,16 @@ title: استخراج الأرشيف والتنسيقات
 linktitle: استخراج الأرشيف والتنسيقات
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: أطلق العنان لقوة ضغط الملفات في .NET باستخدام Aspose.Zip. تعلم كيفية ضغط الملفات إلى تنسيقات مختلفة مثل TarBz2 وTarGz وTarZ للتخزين الفعال.
-type: docs
 weight: 23
 url: /ar/net/archive-extraction-and-formats/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# استخراج الأرشيف والتنسيقات
+
 
 ## مقدمة
 
@@ -53,3 +59,9 @@ url: /ar/net/archive-extraction-and-formats/
 استكشف الضغط خطوة بخطوة على TarZ باستخدام Aspose.Zip لـ .NET. معالجة فعالة للملفات لمشاريع .NET الخاصة بك.
 ### [استخراج إدخالات الأرشيف بكلمات مرور مختلفة في Aspose.Zip لـ .NET](./extract-archive-different-passwords/)
 تعرف على كيفية استخراج إدخالات الأرشيف بكلمات مرور مختلفة في Aspose.Zip لـ .NET. تعزيز الأمان والمرونة في تطبيقاتك.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

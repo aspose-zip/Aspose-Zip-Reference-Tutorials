@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET - Οδηγός κρυπτογράφησης AES
 linktitle: Ρυθμίσεις κρυπτογράφησης AES
 second_title: Aspose.Zip .NET API για συμπίεση και αρχειοθέτηση αρχείων
 description: Εξερευνήστε το Aspose.Zip για .NET για να ασφαλίσετε τα συμπιεσμένα αρχεία σας με κρυπτογράφηση AES. Κάντε λήψη τώρα για αποτελεσματική προστασία δεδομένων.
-type: docs
 weight: 14
 url: /el/net/password-protection-and-encryption/aes-encryption-settings/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET - Οδηγός κρυπτογράφησης AES
+
 
 ## Εισαγωγή
 
@@ -87,3 +93,10 @@ Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Set
 ### Ε: Μπορώ να πάρω προσωρινές άδειες για δοκιμή;
  Α: Ναι, μπορείτε να αποκτήσετε προσωρινή άδεια[εδώ](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET で SevenZip エントリを作成する
 linktitle: SevenZip エントリの作成
 second_title: ファイルの圧縮とアーカイブのための Aspose.Zip .NET API
 description: Aspose.Zip for .NET をマスター - SevenZip エントリを簡単に作成します。効率的な zip アーカイブ操作により .NET アプリケーションを強化します。
-type: docs
 weight: 11
 url: /ja/net/sevenzip-compression/create-sevenzip-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET で SevenZip エントリを作成する
+
 
 ## 導入
 
@@ -83,3 +89,10 @@ Aspose.Zip は主に zip および 7z 形式に焦点を当てています。他
 
 ### Q: Aspose.Zip に関するサポートを求めたり、コミュニティに連絡したりするには、どこを利用すればよいですか?
 訪問[Aspose.Zip フォーラム](https://forum.aspose.com/c/zip/37)サポートを求め、質問し、コミュニティとつながることができます。
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

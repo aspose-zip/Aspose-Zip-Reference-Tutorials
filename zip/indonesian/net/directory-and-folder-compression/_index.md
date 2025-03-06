@@ -3,10 +3,16 @@ title: Kompresi Direktori dan Folder
 linktitle: Kompresi Direktori dan Folder
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Optimalkan ruang penyimpanan dengan mudah menggunakan Aspose.Zip untuk .NET. Pelajari teknik kompresi dan dekompresi direktori untuk meningkatkan proyek pengembangan .NET Anda.
-type: docs
 weight: 22
 url: /id/net/directory-and-folder-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Kompresi Direktori dan Folder
+
 
 ## Perkenalan
 
@@ -38,3 +44,9 @@ Kesimpulannya, tutorial kompresi direktori dan folder ini adalah pintu gerbang A
 Pelajari cara mengompresi direktori dengan mudah dengan Aspose.Zip untuk .NET. Tingkatkan pengembangan .NET Anda dengan mengoptimalkan ruang penyimpanan secara efisien.
 ### [Mendekompresi Folder dengan Aspose.Zip untuk .NET](./decompress-folder/)
 Kuasai seni mendekompresi folder dengan Aspose.Zip untuk .NET. Tangani tugas kompresi di proyek Anda dengan mudah.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

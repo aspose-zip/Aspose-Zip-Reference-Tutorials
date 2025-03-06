@@ -3,10 +3,16 @@ title: การบีบอัดไฟล์
 linktitle: การบีบอัดไฟล์
 second_title: Aspose.Zip .NET API สำหรับการบีบอัดไฟล์และการเก็บถาวร
 description: คลายการบีบอัดไฟล์หลักใน .NET ได้อย่างง่ายดายด้วย Aspose.Zip สำหรับบทช่วยสอน .NET เรียนรู้การจัดการไฟล์บีบอัดอย่างมีประสิทธิภาพพร้อมคำแนะนำทีละขั้นตอน
-type: docs
 weight: 21
 url: /th/net/file-decompression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# การบีบอัดไฟล์
+
 
 
 ## การแนะนำ
@@ -45,3 +51,9 @@ Aspose.Zip สำหรับ .NET พิสูจน์ให้เห็นแ
 สำรวจคำแนะนำทีละขั้นตอนเกี่ยวกับการขยายขนาดไฟล์เก็บถาวร Wim โดยใช้ Aspose.Zip สำหรับ .NET ดาวน์โหลดไลบรารี ปฏิบัติตามบทช่วยสอน และจัดการไฟล์เก็บถาวรในแอปพลิเคชัน .NET ของคุณอย่างมีประสิทธิภาพ
 ### [คลายการบีบอัด Xar ไปยังโฟลเดอร์ใน Aspose.Zip สำหรับ .NET](./decompress-xar-folder/)
 สำรวจพลังของ Aspose.Zip สำหรับ .NET! ขยายขนาดไฟล์เก็บถาวร Xar ได้อย่างง่ายดายด้วยบทช่วยสอนที่ใช้งานง่ายนี้ ยกระดับประสบการณ์การพัฒนา .NET ของคุณ
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

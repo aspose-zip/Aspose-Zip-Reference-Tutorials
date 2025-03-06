@@ -3,10 +3,16 @@ title: Dekompresi File
 linktitle: Dekompresi File
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Dekompresi file master dengan mudah di .NET dengan Aspose.Zip untuk tutorial .NET. Pelajari cara menangani file terkompresi secara efisien dengan panduan langkah demi langkah.
-type: docs
 weight: 21
 url: /id/net/file-decompression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekompresi File
+
 
 
 ## Perkenalan
@@ -45,3 +51,9 @@ Pelajari cara mendekompresi file yang biasanya dilindungi kata sandi menggunakan
 Jelajahi panduan langkah demi langkah tentang mendekompresi arsip Wim menggunakan Aspose.Zip untuk .NET. Unduh perpustakaan, ikuti tutorial, dan kelola file arsip di aplikasi .NET Anda secara efisien.
 ### [Dekompresi Xar ke Folder di Aspose.Zip untuk .NET](./decompress-xar-folder/)
 Jelajahi kekuatan Aspose.Zip untuk .NET! Dekompresi arsip Xar dengan mudah menggunakan tutorial yang mudah digunakan ini. Tingkatkan pengalaman pengembangan .NET Anda.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

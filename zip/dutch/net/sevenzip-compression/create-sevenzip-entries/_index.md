@@ -3,10 +3,16 @@ title: SevenZip-vermeldingen maken met Aspose.Zip voor .NET
 linktitle: Maak SevenZip-vermeldingen
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Ontdek de kracht van Aspose.Zip voor .NET! Leer stap voor stap SevenZip-vermeldingen maken. Bestanden moeiteloos comprimeren. Download nu voor een naadloze ontwikkelingservaring.
-type: docs
 weight: 10
 url: /nl/net/sevenzip-compression/create-sevenzip-entries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# SevenZip-vermeldingen maken met Aspose.Zip voor .NET
+
 
 ## Invoering
 
@@ -83,3 +89,10 @@ Ja, Aspose.Zip voor .NET is platformonafhankelijk en kan naadloos worden gebruik
 
 ### Is er een gratis proefperiode beschikbaar voordat u een aankoop doet?
  Ja, u heeft toegang tot de gratis proefperiode[hier](https://releases.aspose.com/) om de functies te verkennen voordat u een verbintenis aangaat.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.Zip для .NET — расшифровка файлов, заши�
 linktitle: Распаковать сохраненный файл, зашифрованный AES
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Узнайте, как распаковать сохраненные файлы, зашифрованные AES, в Aspose.Zip для .NET с помощью этого подробного пошагового руководства. Совершенствуйте свои навыки разработки .NET уже сегодня!
-type: docs
 weight: 19
 url: /ru/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip для .NET — расшифровка файлов, зашифрованных AES
+
 
 ## Введение
 
@@ -89,3 +95,10 @@ Aspose.Zip поддерживает различные форматы, вклю�
 ### Могу ли я использовать Aspose.Zip в коммерческих целях?
  Да, вы можете приобрести лицензию[здесь](https://purchase.aspose.com/buy) для коммерческого использования.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

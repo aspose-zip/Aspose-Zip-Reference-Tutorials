@@ -3,10 +3,16 @@ title: Распаковка папки с помощью Aspose.Zip для .NET
 linktitle: Распаковка папки
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Овладейте искусством распаковки папок с помощью Aspose.Zip для .NET. Легко справляйтесь с задачами сжатия в своих проектах.
-type: docs
 weight: 11
 url: /ru/net/directory-and-folder-compression/decompress-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Распаковка папки с помощью Aspose.Zip для .NET
+
 Вы хотите легко распаковывать папки с помощью Aspose.Zip для .NET? Не смотрите дальше! Это пошаговое руководство проведет вас через весь процесс, гарантируя, что вы овладеете искусством распаковки папок без особых усилий.
 
 ## Предварительные условия
@@ -88,3 +94,9 @@ using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", Fil
 ### Вопрос 5: Как я могу получить поддержку Aspose.Zip для .NET?
 
  A5: По любым вопросам или помощи посетите[Форум Aspose.Zip](https://forum.aspose.com/c/zip/37) где вы можете пообщаться с сообществом и получить совет эксперта.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Создание семи Zip-файлов - Учебное пособи�
 linktitle: SevenZip с различными методами сжатия
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Научитесь создавать файлы Seven Zip с помощью Aspose.Zip для .NET, используя различные методы сжатия. Простые шаги для LZMA2, BZip2 и Store (без сжатия).
-type: docs
 weight: 12
 url: /ru/net/sevenzip-compression/sevenzip-various-compression-methods/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Создание семи Zip-файлов - Учебное пособие по Aspose.Zip для .NET
+
 
 ## Введение
 
@@ -89,3 +95,10 @@ Console.WriteLine("Successfully Created a Seven Zip File with No Compression (St
 
 ### Где я могу получить поддержку Aspose.Zip для .NET?
  Вы можете обратиться за поддержкой на[Форум Aspose.Zip](https://forum.aspose.com/c/zip/37).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Compress to Lzma in Aspose.Zip for .NET
 linktitle: Compress to Lzma
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: Learn how to compress files using Aspose.Zip for .NET with the powerful Lzma algorithm. Optimize storage and enhance data transfer efficiency effortlessly.
-type: docs
 weight: 14
 url: /net/other-compression-techniques/compress-to-lzma/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Compress to Lzma in Aspose.Zip for .NET
+
 ## Introduction
 
 In the world of .NET development, effective file compression is crucial for optimizing storage space and enhancing data transfer efficiency. Aspose.Zip for .NET provides a powerful solution for file compression, offering various compression algorithms, including Lzma. In this tutorial, we will guide you through the process of compressing files using Aspose.Zip for .NET with a focus on the Lzma compression algorithm.
@@ -85,3 +91,10 @@ A4: Yes, you can find code samples in the documentation for different compressio
 ### Q5: Where can I seek support or ask questions about Aspose.Zip for .NET?
 
 A5: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for support and discussions.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

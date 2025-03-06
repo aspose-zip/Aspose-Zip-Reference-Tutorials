@@ -3,10 +3,16 @@ title: Descompactando um arquivo com Aspose.Zip para .NET
 linktitle: Descompactando um arquivo
 second_title: API Aspose.Zip .NET para compactação e arquivamento de arquivos
 description: Explore o mundo da compactação de arquivos em .NET com Aspose.Zip. Aprenda a arte de descompactar arquivos sem esforço.
-type: docs
 weight: 10
 url: /pt/net/file-decompression/decompress-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Descompactando um arquivo com Aspose.Zip para .NET
+
 ## Introdução
 
 No mundo do desenvolvimento .NET, o gerenciamento eficiente de arquivos compactados é crucial. Aspose.Zip for .NET fornece uma solução poderosa para lidar com compactação e descompactação de arquivos perfeitamente. Neste tutorial, nos aprofundaremos no processo de descompactação de um arquivo usando Aspose.Zip para .NET. Acompanhe para desbloquear o potencial desta poderosa biblioteca.
@@ -83,3 +89,9 @@ A3: Para qualquer dúvida ou assistência, você pode visitar o[Fórum Aspose.Zi
 ### Q5: Onde posso comprar Aspose.Zip para .NET?
 
  A5: Para adquirir o Aspose.Zip para .NET, visite o[página de compra](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

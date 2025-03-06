@@ -3,10 +3,16 @@ title: Dekompresuj Wima do folderu w Aspose.Zip dla .NET
 linktitle: Dekompresuj Wima do folderu
 second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
 description: Zapoznaj się z przewodnikiem krok po kroku dotyczącym dekompresji archiwów Wim przy użyciu Aspose.Zip dla .NET. Pobierz bibliotekę, postępuj zgodnie z tutorialem i wydajnie zarządzaj plikami archiwalnymi w swoich aplikacjach .NET.
-type: docs
 weight: 16
 url: /pl/net/file-decompression/decompress-wim-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekompresuj Wima do folderu w Aspose.Zip dla .NET
+
 ## Wstęp
 
 Witamy w tym kompleksowym samouczku na temat dekompresji archiwów Wima do folderu przy użyciu Aspose.Zip dla .NET. Aspose.Zip to potężna biblioteka zapewniająca płynne możliwości pracy z różnymi formatami archiwów w aplikacjach .NET. W tym samouczku przeprowadzimy Cię krok po kroku przez proces dekompresji archiwum Wim do określonego folderu.
@@ -77,3 +83,9 @@ Odpowiedź 1: Tak, Aspose.Zip obsługuje różne formaty archiwów, w tym ZIP, T
 ### P5: Gdzie mogę uzyskać pomoc lub zadać pytania dotyczące Aspose.Zip dla .NET?
 
  A5: Odwiedź[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) za wsparcie i dyskusję.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

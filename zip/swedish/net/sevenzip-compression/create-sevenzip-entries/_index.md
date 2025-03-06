@@ -3,10 +3,16 @@ title: Skapa SevenZip-poster med Aspose.Zip för .NET
 linktitle: Skapa SevenZip-poster
 second_title: Aspose.Zip .NET API för filkomprimering och arkivering
 description: Utforska kraften i Aspose.Zip för .NET! Lär dig att skapa SevenZip-poster steg för steg. Komprimera filer utan ansträngning. Ladda ner nu för en sömlös utvecklingsupplevelse.
-type: docs
 weight: 10
 url: /sv/net/sevenzip-compression/create-sevenzip-entries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Skapa SevenZip-poster med Aspose.Zip för .NET
+
 
 ## Introduktion
 
@@ -83,3 +89,10 @@ Ja, Aspose.Zip för .NET är plattformsoberoende och kan användas i både Windo
 
 ### Finns det en gratis provperiod innan du gör ett köp?
  Ja, du kan komma åt den kostnadsfria provperioden[här](https://releases.aspose.com/) att utforska funktionerna innan du gör ett åtagande.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

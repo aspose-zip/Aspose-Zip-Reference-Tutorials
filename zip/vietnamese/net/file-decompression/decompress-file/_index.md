@@ -3,10 +3,16 @@ title: Giải nén tệp bằng Aspose.Zip cho .NET
 linktitle: Giải nén một tập tin
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Khám phá thế giới nén tệp trong .NET với Aspose.Zip. Tìm hiểu nghệ thuật giải nén tập tin một cách dễ dàng.
-type: docs
 weight: 10
 url: /vi/net/file-decompression/decompress-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Giải nén tệp bằng Aspose.Zip cho .NET
+
 ## Giới thiệu
 
 Trong thế giới phát triển .NET, việc quản lý các tệp nén một cách hiệu quả là rất quan trọng. Aspose.Zip for .NET cung cấp một giải pháp mạnh mẽ để xử lý việc nén và giải nén tệp một cách liền mạch. Trong hướng dẫn này, chúng ta sẽ đi sâu vào quy trình giải nén tệp bằng Aspose.Zip cho .NET. Hãy làm theo để mở khóa tiềm năng của thư viện mạnh mẽ này.
@@ -83,3 +89,9 @@ A3: Nếu có bất kỳ thắc mắc hoặc hỗ trợ nào, bạn có thể tr
 ### Câu hỏi 5: Tôi có thể mua Aspose.Zip cho .NET ở đâu?
 
  Câu trả lời 5: Để mua Aspose.Zip cho .NET, hãy truy cập[trang mua hàng](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Nén vào TarXz bằng Aspose.Zip cho .NET
 linktitle: Nén thành TarXz
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Tìm hiểu cách nén tệp sang định dạng TarXz trong .NET bằng Aspose.Zip. Hãy làm theo hướng dẫn từng bước của chúng tôi để lưu trữ và truyền tệp hiệu quả.
-type: docs
 weight: 14
 url: /vi/net/archive-extraction-and-formats/compress-to-tar-xz/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Nén vào TarXz bằng Aspose.Zip cho .NET
+
 ## Giới thiệu
 
 Trong lĩnh vực phát triển .NET, nén tệp hiệu quả là một khía cạnh quan trọng của việc tối ưu hóa việc lưu trữ và truyền dữ liệu. Aspose.Zip cho .NET là một công cụ mạnh mẽ hỗ trợ nén tệp và trong hướng dẫn này, chúng tôi sẽ đi sâu vào việc nén tệp sang định dạng TarXz bằng Aspose.Zip. Hướng dẫn từng bước này nhằm mục đích cung cấp cho bạn sự hiểu biết toàn diện về quy trình, cho phép bạn tích hợp liền mạch chức năng này vào các dự án .NET của mình.
@@ -84,3 +90,9 @@ Trong hướng dẫn này, chúng tôi đã khám phá quy trình nén tệp san
 ### Câu hỏi 5: Tôi có thể dùng thử Aspose.Zip miễn phí trước khi mua hàng không?
 
  Câu trả lời 5: Có, bạn có thể khám phá bản dùng thử miễn phí[đây](https://releases.aspose.com/zip/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

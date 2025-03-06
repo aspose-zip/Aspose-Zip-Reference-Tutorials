@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET - パスワード保護アーカイブのチュート
 linktitle: 従来のパスワードでアーカイブをパスワード保護する
 second_title: ファイルの圧縮とアーカイブのための Aspose.Zip .NET API
 description: Aspose.Zip を使用した従来のパスワード保護で .NET アーカイブを保護する方法を学びます。データの機密性を強化するには、ステップバイステップのガイドに従ってください。
-type: docs
 weight: 12
 url: /ja/net/password-protection-and-encryption/password-protect-archive-traditional-password/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET - パスワード保護アーカイブのチュートリアル
+
 
 .NET 開発の分野では、アーカイブ内の機密データを保護することは、アプリケーション設計の重要な側面です。 Aspose.Zip for .NET は、従来のパスワード暗号化を使用してアーカイブをパスワードで保護するための堅牢なソリューションを提供します。このステップバイステップのガイドでは、アーカイブされたデータの機密性と安全性を確保するプロセスを順を追って説明します。
 
@@ -81,3 +87,10 @@ Aspose.Zip for .NET は、効率的なパフォーマンスを実現するため
 ### Aspose.Zip for .NET のサポートを受けるにはどうすればよいですか?
 訪問[Aspose.Zip フォーラム](https://forum.aspose.com/c/zip/37)コミュニティのサポートを求めたり、[ドキュメンテーション](https://reference.aspose.com/zip/net/)詳細については。
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

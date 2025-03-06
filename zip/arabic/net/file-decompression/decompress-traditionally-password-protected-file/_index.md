@@ -3,10 +3,16 @@ title: قم بفك ضغط الملفات المحمية بكلمة مرور بش
 linktitle: قم بفك ضغط الملفات المحمية بكلمة مرور بشكل تقليدي
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: تعرف على كيفية فك ضغط الملفات المحمية بكلمة مرور تقليديًا باستخدام Aspose.Zip لـ .NET. دليل خطوة بخطوة للتكامل السلس.
-type: docs
 weight: 15
 url: /ar/net/file-decompression/decompress-traditionally-password-protected-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# قم بفك ضغط الملفات المحمية بكلمة مرور بشكل تقليدي في Aspose.Zip لـ .NET
+
 في مجال تطوير .NET، يبرز Aspose.Zip كحل قوي للتعامل مع الملفات المضغوطة. من بين ميزاته التي لا تعد ولا تحصى، إحدى الإمكانيات البارزة هي القدرة على فك ضغط الملفات التقليدية المحمية بكلمة مرور. في هذا البرنامج التعليمي، سنتعمق في عملية فك ضغط ملف مشفر بكلمة مرور تقليدية باستخدام Aspose.Zip for .NET. قبل أن نبدأ هذه الرحلة، دعونا نتأكد من أن لدينا المتطلبات الأساسية في مكانها الصحيح.
 
 ## المتطلبات الأساسية
@@ -96,3 +102,9 @@ using (FileStream fs = File.OpenRead(dataDir + "CompressWithTraditionalEncryptio
 ### س5: كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.Zip؟
 
  ج5: يمكنك الحصول على ترخيص مؤقت من[Aspose.Purchase](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

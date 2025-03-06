@@ -3,10 +3,16 @@ title: Decompressing a Folder with Aspose.Zip for .NET
 linktitle: Decompressing a Folder 
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: Master the art of decompressing folders with Aspose.Zip for .NET. Effortlessly handle compression tasks in your projects.
-type: docs
 weight: 11
 url: /net/directory-and-folder-compression/decompress-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Decompressing a Folder with Aspose.Zip for .NET
+
 Are you looking to seamlessly decompress folders using Aspose.Zip for .NET? Look no further! This step-by-step guide will walk you through the process, ensuring that you master the art of decompressing folders effortlessly.
 
 ## Prerequisites
@@ -88,3 +94,10 @@ A4: Certainly! Take advantage of the [free trial](https://releases.aspose.com/) 
 ### Q5: How can I get support for Aspose.Zip for .NET?
 
 A5: For any queries or assistance, visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) where you can engage with the community and seek expert advice.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

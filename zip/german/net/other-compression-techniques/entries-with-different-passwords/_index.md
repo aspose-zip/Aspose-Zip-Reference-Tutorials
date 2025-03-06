@@ -3,10 +3,16 @@ title: Einträge mit unterschiedlichen Passwörtern in Aspose.Zip für .NET
 linktitle: Einträge mit unterschiedlichen Passwörtern
 second_title: Aspose.Zip .NET API für Dateikomprimierung und -archivierung
 description: Entdecken Sie die Leistungsfähigkeit von Aspose.Zip für .NET mit unserer Schritt-für-Schritt-Anleitung zur Verwaltung von ZIP-Archiven mit unterschiedlichen Passwörtern. Erhöhen Sie die Sicherheit und Flexibilität Ihrer Anwendungen.
-type: docs
 weight: 13
 url: /de/net/other-compression-techniques/entries-with-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Einträge mit unterschiedlichen Passwörtern in Aspose.Zip für .NET
+
 ## Einführung
 
 Willkommen in der Welt von Aspose.Zip für .NET, einer leistungsstarken Bibliothek, die Entwicklern die nahtlose Verwaltung und Bearbeitung von ZIP-Archiven ermöglicht. In diesem Tutorial befassen wir uns mit einer bestimmten Funktion: dem Arbeiten mit Einträgen mit unterschiedlichen Passwörtern. Egal, ob Sie ein erfahrener Entwickler sind oder gerade erst anfangen, diese Schritt-für-Schritt-Anleitung führt Sie durch den Prozess und erschließt das Potenzial von Aspose.Zip für .NET.
@@ -97,3 +103,9 @@ A2: Auf jeden Fall! Aspose.Zip für .NET bietet kommerzielle Lizenzen an. Weiter
 ### F5: Kann ich Aspose.Zip für .NET ohne eine permanente Lizenz verwenden?
 
  A5: Ja, Sie können eine temporäre Lizenz für Ihren kurzfristigen Bedarf erhalten. Weitere Details finden Sie hier[Hier](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

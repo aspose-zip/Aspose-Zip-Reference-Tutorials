@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET を使用したファイルの圧縮
 linktitle: ファイルの圧縮
 second_title: ファイルの圧縮とアーカイブのための Aspose.Zip .NET API
 description: Aspose.Zip for .NET を使用してファイルを簡単に圧縮する方法を学びます。効率的なファイル管理については、段階的なチュートリアルに従ってください。
-type: docs
 weight: 10
 url: /ja/net/file-compression/compress-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET を使用したファイルの圧縮
+
 ## 導入
 
 Aspose.Zip for .NET の世界へようこそ。これは、ファイルを簡単に圧縮できる強力なライブラリです。このチュートリアルでは、Aspose.Zip for .NET を使用してファイルを圧縮するプロセスを説明します。ファイル ストレージを最適化したい、転送時間を短縮したい、または単にデータをより効率的に整理したい場合は、このチュートリアルが最適です。
@@ -88,3 +94,9 @@ A2: はい、無料トライアルでライブラリを探索できます。[こ
 ### Q5: 一時ライセンスは利用できますか?
 
  A5: はい、一時ライセンスを取得できます。[ここ](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

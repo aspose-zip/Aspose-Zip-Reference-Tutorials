@@ -3,10 +3,16 @@ title: Распакуйте Wim в папку в Aspose.Zip для .NET
 linktitle: Распаковать Wim в папку
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Изучите пошаговое руководство по распаковке архивов Wim с помощью Aspose.Zip для .NET. Загрузите библиотеку, следуйте инструкциям и эффективно управляйте архивными файлами в своих приложениях .NET.
-type: docs
 weight: 16
 url: /ru/net/file-decompression/decompress-wim-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Распакуйте Wim в папку в Aspose.Zip для .NET
+
 ## Введение
 
 Добро пожаловать в это подробное руководство по распаковке архивов Wim в папку с помощью Aspose.Zip для .NET. Aspose.Zip — мощная библиотека, предоставляющая широкие возможности для работы с различными форматами архивов в приложениях .NET. В этом руководстве мы шаг за шагом проведем вас через процесс распаковки архива Wim в указанную папку.
@@ -77,3 +83,9 @@ using (FileStream fs = File.OpenRead(dataDir + "corpus.wim"))
 ### Вопрос 5: Где я могу получить поддержку или задать вопросы об Aspose.Zip для .NET?
 
  A5: Посетите[Форум Aspose.Zip](https://forum.aspose.com/c/zip/37) за поддержку и обсуждения.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

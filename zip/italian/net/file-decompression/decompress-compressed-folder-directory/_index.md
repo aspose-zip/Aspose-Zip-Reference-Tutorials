@@ -3,10 +3,16 @@ title: Decomprimi la cartella compressa nella directory in Aspose.Zip per .NET
 linktitle: Decomprimi la cartella compressa nella directory
 second_title: Aspose.Zip .NET API per la compressione e l'archiviazione dei file
 description: Sblocca il potenziale di Aspose.Zip per .NET! Scopri come decomprimere facilmente le cartelle con questa guida passo passo. Immergiti nel mondo della compressione ed estrazione senza soluzione di continuità.
-type: docs
 weight: 14
 url: /it/net/file-decompression/decompress-compressed-folder-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Decomprimi la cartella compressa nella directory in Aspose.Zip per .NET
+
 ## introduzione
 
 Benvenuti nel mondo di Aspose.Zip per .NET, una solida libreria che consente agli sviluppatori di gestire le cartelle compresse senza sforzo. In questo tutorial, approfondiremo il processo di decompressione di una cartella compressa in una directory utilizzando Aspose.Zip per .NET. Allaccia le cinture mentre ti guidiamo attraverso ogni passaggio in dettaglio, demistificando le complessità di questo potente strumento.
@@ -79,3 +85,9 @@ A2: Assolutamente, puoi utilizzare Aspose.Zip per .NET sia in applicazioni comme
 ### Q5: ho bisogno di una licenza temporanea per testare Aspose.Zip per .NET?
 
  R5: Sì, puoi ottenere una licenza temporanea da[Qui](https://purchase.aspose.com/temporary-license/) a scopo di test.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

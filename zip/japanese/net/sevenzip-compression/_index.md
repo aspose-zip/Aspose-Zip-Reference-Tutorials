@@ -3,10 +3,16 @@ title: セブンジップ圧縮
 linktitle: セブンジップ圧縮
 second_title: ファイルの圧縮とアーカイブのための Aspose.Zip .NET API
 description: SevenZip 圧縮チュートリアルを使用して、Aspose.Zip for .NET の可能性を解き放ちます。 SevenZip エントリを簡単に作成し、さまざまな圧縮方法を検討します。
-type: docs
 weight: 25
 url: /ja/net/sevenzip-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# セブンジップ圧縮
+
 
 
 Aspose.Zip for .NET を使用した SevenZip 圧縮チュートリアルの包括的なガイドへようこそ。このチュートリアル シリーズでは、Aspose.Zip の機能を詳しく説明し、SevenZip エントリを作成し、さまざまな圧縮方法を検討するプロセスを案内します。 .NET 開発エクスペリエンスを向上させるために、この旅に乗り出しましょう。
@@ -31,3 +37,9 @@ Aspose.Zip for .NET の威力を試してください! SevenZip エントリの�
 Aspose.Zip for .NET をマスター - SevenZip エントリを簡単に作成します。効率的な zip アーカイブ操作により .NET アプリケーションを強化します。
 ### [Aspose.Zip for .NET のさまざまな圧縮方法を備えた SevenZip](./sevenzip-various-compression-methods/)
 Aspose.Zip for .NET を使用して、さまざまな圧縮方法を使用して Seven Zip ファイルを作成する方法を学びます。 LZMA2、BZip2、およびストア (圧縮なし) の簡単な手順。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

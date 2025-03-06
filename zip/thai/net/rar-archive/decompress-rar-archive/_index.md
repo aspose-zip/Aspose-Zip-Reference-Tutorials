@@ -3,10 +3,16 @@ title: คลายการบีบอัดไฟล์ RAR ด้วย Aspo
 linktitle: คลายการบีบอัดไฟล์ RAR
 second_title: Aspose.Zip .NET API สำหรับการบีบอัดไฟล์และการเก็บถาวร
 description: เชี่ยวชาญการขยายขนาดไฟล์ RAR ใน .NET ด้วย Aspose.Zip คำแนะนำทีละขั้นตอนเพื่อการจัดการไฟล์อย่างมีประสิทธิภาพ ดาวน์โหลดเดี๋ยวนี้!
-type: docs
 weight: 10
 url: /th/net/rar-archive/decompress-rar-archive/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# คลายการบีบอัดไฟล์ RAR ด้วย Aspose.Zip สำหรับ .NET
+
 
 ## การแนะนำ
 
@@ -83,3 +89,10 @@ archive.ExtractToDirectory(dataDir + "DecompressRar_out");
 
 ### มีใบอนุญาตชั่วคราวหรือไม่
  ใช่ คุณสามารถขอรับใบอนุญาตชั่วคราวได้[ที่นี่](https://purchase.aspose.com/temporary-license/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

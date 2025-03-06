@@ -3,10 +3,16 @@ title: Kompresi File ke TarBz2 dengan Aspose.Zip untuk .NET
 linktitle: Mengompresi ke TarBz2
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Pelajari cara mengompresi file ke format TarBz2 di .NET menggunakan Aspose.Zip. Ikuti panduan langkah demi langkah kami untuk kompresi file yang efisien.
-type: docs
 weight: 11
 url: /id/net/archive-extraction-and-formats/compress-to-tar-bz2/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Kompresi File ke TarBz2 dengan Aspose.Zip untuk .NET
+
 ## Perkenalan
 
 Selamat datang di panduan komprehensif kami tentang mengompresi file ke format TarBz2 menggunakan Aspose.Zip untuk .NET. Aspose.Zip adalah perpustakaan yang kuat dan serbaguna yang menyediakan alat yang dibutuhkan pengembang untuk bekerja secara efisien dengan format file terkompresi dalam aplikasi .NET mereka.
@@ -90,3 +96,9 @@ A2: Ya, Anda dapat mengompresi banyak file dengan menambahkan entri ke arsip Tar
 ### Q5: Apakah tersedia uji coba gratis?
 
  A5: Ya, Anda dapat mengakses uji coba gratis[Di Sini](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

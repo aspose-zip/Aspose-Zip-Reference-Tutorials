@@ -3,10 +3,16 @@ title: Decompress Wim to Folder in Aspose.Zip for .NET
 linktitle: Decompress Wim to Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: Explore the step-by-step guide on decompressing Wim archives using Aspose.Zip for .NET. Download the library, follow the tutorial, and efficiently manage archive files in your .NET applications.
-type: docs
 weight: 16
 url: /net/file-decompression/decompress-wim-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Decompress Wim to Folder in Aspose.Zip for .NET
+
 ## Introduction
 
 Welcome to this comprehensive tutorial on decompressing Wim archives to a folder using Aspose.Zip for .NET. Aspose.Zip is a powerful library that provides seamless capabilities for working with various archive formats in .NET applications. In this tutorial, we'll guide you through the process of decompressing a Wim archive to a specified folder step by step.
@@ -77,3 +83,10 @@ A4: Obtain temporary licenses from [this link](https://purchase.aspose.com/tempo
 ### Q5: Where can I get support or ask questions about Aspose.Zip for .NET?
 
 A5: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for support and discussions.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

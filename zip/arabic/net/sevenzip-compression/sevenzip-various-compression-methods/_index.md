@@ -3,10 +3,16 @@ title: إنشاء سبعة ملفات مضغوطة - البرنامج التعل
 linktitle: SevenZip مع طرق ضغط مختلفة
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: تعلم كيفية إنشاء ملفات Seven Zip باستخدام Aspose.Zip لـ .NET باستخدام طرق ضغط مختلفة. خطوات سهلة لـ LZMA2 وBZip2 وStore (بدون ضغط).
-type: docs
 weight: 12
 url: /ar/net/sevenzip-compression/sevenzip-various-compression-methods/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إنشاء سبعة ملفات مضغوطة - البرنامج التعليمي Aspose.Zip لـ .NET
+
 
 ## مقدمة
 
@@ -89,3 +95,10 @@ Console.WriteLine("Successfully Created a Seven Zip File with No Compression (St
 
 ### أين يمكنني الحصول على الدعم لـ Aspose.Zip لـ .NET؟
  يمكنك طلب الدعم على[منتدى Aspose.Zip](https://forum.aspose.com/c/zip/37).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

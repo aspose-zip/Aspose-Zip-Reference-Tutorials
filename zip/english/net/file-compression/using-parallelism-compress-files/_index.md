@@ -3,10 +3,16 @@ title: Using Parallelism to Compress Files in Aspose.Zip for .NET
 linktitle: Using Parallelism to Compress Files
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: Learn to compress files efficiently in .NET using Aspose.Zip. Harness the power of parallelism with our step-by-step tutorial.
-type: docs
 weight: 17
 url: /net/file-compression/using-parallelism-compress-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Using Parallelism to Compress Files in Aspose.Zip for .NET
+
 ## Introduction
 
 In the world of .NET development, efficiently compressing files is crucial for optimizing storage and transmission. Aspose.Zip for .NET provides a powerful solution, and one of its standout features is the ability to leverage parallelism for file compression. In this tutorial, we'll guide you through the process of using parallelism to compress files using Aspose.Zip for .NET.
@@ -128,3 +134,10 @@ A4: Explore the [Aspose.Zip documentation](https://reference.aspose.com/zip/net/
 ### Q5: How can I purchase Aspose.Zip for .NET?
 
 A5: You can purchase Aspose.Zip for .NET [here](https://purchase.aspose.com/buy).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

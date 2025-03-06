@@ -3,10 +3,16 @@ title: Beheers veilig archiveren in .NET met Aspose.Zip
 linktitle: Archief met gecodeerde invoer
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Ontdek de wereld van veilige archivering in .NET met Aspose.Zip. Creëer moeiteloos zeven zip-bestanden met AES-codering. Geef nu uw ontwikkelingsvaardigheden een boost!
-type: docs
 weight: 15
 url: /nl/net/password-protection-and-encryption/archive-with-encrypted-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Beheers veilig archiveren in .NET met Aspose.Zip
+
 
 ## Invoering
 
@@ -81,3 +87,10 @@ Aspose.Zip voor .NET ondersteunt verschillende compressie-algoritmen. Raadpleeg 
 ### Kan ik de coderingsinstellingen verder aanpassen?
 Absoluut! Bekijk de documentatie voor geavanceerde aanpassingsopties voor encryptie.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

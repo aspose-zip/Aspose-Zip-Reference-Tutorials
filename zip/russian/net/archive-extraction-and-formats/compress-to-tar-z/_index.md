@@ -3,10 +3,16 @@ title: Сжатие в TarZ с помощью Aspose.Zip для .NET
 linktitle: Сжатие в TarZ
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Изучите пошаговое сжатие в TarZ с помощью Aspose.Zip для .NET. Эффективная обработка файлов для ваших проектов .NET.
-type: docs
 weight: 15
 url: /ru/net/archive-extraction-and-formats/compress-to-tar-z/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Сжатие в TarZ с помощью Aspose.Zip для .NET
+
 ## Введение
 
 Если вы хотите эффективно сжимать файлы в формат TarZ с помощью Aspose.Zip для .NET, вы попали по адресу. Это пошаговое руководство проведет вас через весь процесс, гарантируя, что вы сможете использовать весь потенциал Aspose.Zip для .NET для беспрепятственного решения ваших задач по сжатию.
@@ -91,3 +97,9 @@ archive.SaveZCompressed(dataDir + "archive.tar.z");
 ### Вопрос 5: Могу ли я получить временную лицензию на Aspose.Zip для .NET?
 
 О5: Да, если вам нужна временная лицензия, вы можете ее получить.[здесь](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

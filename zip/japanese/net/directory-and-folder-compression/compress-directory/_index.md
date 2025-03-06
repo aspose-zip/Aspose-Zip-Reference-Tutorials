@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET による簡単なディレクトリ圧縮
 linktitle: ディレクトリを圧縮する方法
 second_title: ファイルの圧縮とアーカイブのための Aspose.Zip .NET API
 description: Aspose.Zip for .NET を使用してディレクトリを簡単に圧縮する方法を学びます。ストレージスペースを効率的に最適化することで、.NET 開発を促進します。
-type: docs
 weight: 10
 url: /ja/net/directory-and-folder-compression/compress-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET による簡単なディレクトリ圧縮
+
 進化し続ける .NET 開発環境では、ディレクトリを管理および圧縮する効率的な方法を見つけることが重要です。 Aspose.Zip for .NET を使用すると、このプロセスを合理化し、アプリケーションのパフォーマンスを向上させることができます。このステップバイステップ ガイドでは、Aspose.Zip を使用してディレクトリを圧縮するプロセスを順を追って説明し、各概念を明確に理解できるようにします。
 
 ## 導入
@@ -94,3 +100,9 @@ A1: はい、Aspose.Zip for .NET は商用および個人使用の両方にラ�
 ### Q5: Aspose.Zip for .NET を購入できますか?
 
  A5: もちろんご購入いただけます。[ここ](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: تخزين ملفات متعددة بدون ضغط في Aspose.Zip لـ .
 linktitle: تخزين ملفات متعددة بدون ضغط
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: استكشف التخزين السلس لملفات متعددة دون ضغط في Aspose.Zip لـ .NET. قم بتحسين تطبيقات .NET الخاصة بك لإدارة الملفات بكفاءة باستخدام هذا الدليل التفصيلي خطوة بخطوة.
-type: docs
 weight: 16
 url: /ar/net/file-compression/store-multiple-files-no-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تخزين ملفات متعددة بدون ضغط في Aspose.Zip لـ .NET
+
 ## مقدمة
 
 في العالم الديناميكي لتطوير .NET، يعد الضغط الفعال للملفات أمرًا بالغ الأهمية لتحسين تخزين البيانات ونقلها. Aspose.Zip for .NET هي أداة قوية تعمل على تبسيط هذه العملية، مما يسمح للمطورين بتخزين ملفات متعددة بكفاءة دون ضغط. في هذا البرنامج التعليمي، سنرشدك خلال العملية خطوة بخطوة، مما يضمن لك الاستفادة الكاملة من إمكانات Aspose.Zip لـ .NET.
@@ -84,3 +90,9 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 ### س5: هل يمكنني دمج Aspose.Zip for .NET في مشروعي الحالي دون إجراء تعديلات كبيرة على التعليمات البرمجية؟
 
  ج5: نعم، لقد تم تصميم Aspose.Zip for .NET لسهولة التكامل، كما أن[توثيق](https://reference.aspose.com/zip/net/) يوفر إرشادات شاملة لعملية التكامل السلس.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

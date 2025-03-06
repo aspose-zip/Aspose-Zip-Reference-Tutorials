@@ -3,10 +3,16 @@ title: Καταχωρήσεις με διαφορετικούς κωδικούς
 linktitle: Καταχωρήσεις με διαφορετικούς κωδικούς πρόσβασης
 second_title: Aspose.Zip .NET API για συμπίεση και αρχειοθέτηση αρχείων
 description: Εξερευνήστε τη δύναμη του Aspose.Zip για .NET με τον αναλυτικό οδηγό μας για τη διαχείριση αρχείων ZIP με διαφορετικούς κωδικούς πρόσβασης. Βελτιώστε την ασφάλεια και την ευελιξία στις εφαρμογές σας.
-type: docs
 weight: 13
 url: /el/net/other-compression-techniques/entries-with-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Καταχωρήσεις με διαφορετικούς κωδικούς πρόσβασης στο Aspose.Zip για .NET
+
 ## Εισαγωγή
 
 Καλώς ήρθατε στον κόσμο του Aspose.Zip για .NET, μιας ισχυρής βιβλιοθήκης που δίνει τη δυνατότητα στους προγραμματιστές να διαχειρίζονται και να χειρίζονται τα αρχεία ZIP απρόσκοπτα. Σε αυτό το σεμινάριο, θα εμβαθύνουμε σε ένα συγκεκριμένο χαρακτηριστικό: την εργασία με καταχωρήσεις με διαφορετικούς κωδικούς πρόσβασης. Είτε είστε έμπειρος προγραμματιστής είτε μόλις ξεκινάτε, αυτός ο οδηγός βήμα προς βήμα θα σας καθοδηγήσει στη διαδικασία, ξεκλειδώνοντας τις δυνατότητες του Aspose.Zip για .NET.
@@ -97,3 +103,9 @@ A1: Ναι, το Aspose.Zip για .NET έχει σχεδιαστεί για ν�
 ### Ε5: Μπορώ να χρησιμοποιήσω το Aspose.Zip για .NET χωρίς μόνιμη άδεια χρήσης;
 
  A5: Ναι, μπορείτε να αποκτήσετε μια προσωρινή άδεια για τις βραχυπρόθεσμες ανάγκες σας. Βρείτε περισσότερες λεπτομέρειες[εδώ](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

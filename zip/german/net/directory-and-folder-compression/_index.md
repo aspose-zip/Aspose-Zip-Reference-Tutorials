@@ -3,10 +3,16 @@ title: Verzeichnis- und Ordnerkomprimierung
 linktitle: Verzeichnis- und Ordnerkomprimierung
 second_title: Aspose.Zip .NET API für Dateikomprimierung und -archivierung
 description: Optimieren Sie mühelos den Speicherplatz mit Aspose.Zip für .NET. Lernen Sie Techniken zur Verzeichniskomprimierung und -dekomprimierung kennen, um Ihre .NET-Entwicklungsprojekte zu verbessern.
-type: docs
 weight: 22
 url: /de/net/directory-and-folder-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Verzeichnis- und Ordnerkomprimierung
+
 
 ## Einführung
 
@@ -38,3 +44,9 @@ Zusammenfassend lässt sich sagen, dass diese Tutorials zur Verzeichnis- und Ord
 Erfahren Sie, wie Sie mit Aspose.Zip für .NET Verzeichnisse mühelos komprimieren. Steigern Sie Ihre .NET-Entwicklung durch effiziente Optimierung des Speicherplatzes.
 ### [Dekomprimieren eines Ordners mit Aspose.Zip für .NET](./decompress-folder/)
 Meistern Sie die Kunst des Dekomprimierens von Ordnern mit Aspose.Zip für .NET. Erledigen Sie Komprimierungsaufgaben in Ihren Projekten mühelos.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

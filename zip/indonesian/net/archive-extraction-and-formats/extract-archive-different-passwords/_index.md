@@ -3,10 +3,16 @@ title: Mengekstrak Entri Arsip dengan Kata Sandi Berbeda di Aspose.Zip untuk .NE
 linktitle: Mengekstrak Entri Arsip dengan Kata Sandi Berbeda
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Pelajari cara mengekstrak entri arsip dengan kata sandi berbeda di Aspose.Zip untuk .NET. Tingkatkan keamanan dan fleksibilitas dalam aplikasi Anda.
-type: docs
 weight: 10
 url: /id/net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mengekstrak Entri Arsip dengan Kata Sandi Berbeda di Aspose.Zip untuk .NET
+
 ## Perkenalan
 
 Dalam lanskap pengembangan .NET yang terus berkembang, Aspose.Zip menonjol sebagai alat yang ampuh untuk bekerja dengan arsip terkompresi. Di antara banyak fiturnya, mengekstrak entri arsip dengan kata sandi berbeda menambahkan lapisan keamanan ekstra dan fleksibilitas pada aplikasi Anda. Dalam panduan langkah demi langkah ini, kita akan mempelajari cara mencapainya menggunakan Aspose.Zip untuk .NET.
@@ -89,3 +95,9 @@ A1: Ya, Aspose.Zip mendukung .NET Core dan .NET Framework, memberikan fleksibili
 ### Q5: Dimana saya bisa membeli Aspose.Zip?
 
  A5: Untuk membeli Aspose.Zip, kunjungi[halaman pembelian](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

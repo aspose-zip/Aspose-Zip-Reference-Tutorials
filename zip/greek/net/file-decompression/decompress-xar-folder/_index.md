@@ -3,10 +3,16 @@ title: Αποσυμπιέστε το Xar σε φάκελο στο Aspose.Zip γ�
 linktitle: Αποσυμπιέστε το Xar σε Φάκελο
 second_title: Aspose.Zip .NET API για συμπίεση και αρχειοθέτηση αρχείων
 description: Εξερευνήστε τη δύναμη του Aspose.Zip για .NET! Αποσυμπιέστε χωρίς κόπο τα αρχεία Xar με αυτό το φιλικό προς το χρήστη σεμινάριο. Βελτιώστε την εμπειρία ανάπτυξης .NET.
-type: docs
 weight: 17
 url: /el/net/file-decompression/decompress-xar-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Αποσυμπιέστε το Xar σε φάκελο στο Aspose.Zip για .NET
+
 ## Εισαγωγή
 
 Αν ψάχνετε στον κόσμο της ανάπτυξης .NET και αναζητάτε μια αξιόπιστη λύση για την αποσυμπίεση των αρχείων Xar, το Aspose.Zip για .NET σας έχει καλύψει. Σε αυτόν τον οδηγό βήμα προς βήμα, θα σας καθοδηγήσουμε στη διαδικασία αποσυμπίεσης του Xar σε έναν φάκελο χρησιμοποιώντας το Aspose.Zip, μια ισχυρή βιβλιοθήκη που απλοποιεί τον χειρισμό αρχείων στις εφαρμογές σας .NET.
@@ -79,3 +85,9 @@ using (FileStream fs = File.OpenRead(dataDir + "sample.xar"))
 ### Ε5: Πού μπορώ να αγοράσω το Aspose.Zip για .NET;
 
  A5: Μπορείτε να αγοράσετε το Aspose.Zip για .NET[εδώ](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

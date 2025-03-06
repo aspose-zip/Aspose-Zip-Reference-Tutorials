@@ -3,10 +3,16 @@ title: Lösenordsskydd och kryptering
 linktitle: Lösenordsskydd och kryptering
 second_title: Aspose.Zip .NET API för filkomprimering och arkivering
 description: Säkra dina filer med Aspose.Zip för .NET! Lär dig steg-för-steg handledning om lösenordsskydd och kryptering, från AES till traditionella metoder.
-type: docs
 weight: 26
 url: /sv/net/password-protection-and-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Lösenordsskydd och kryptering
+
 
 ## Introduktion
 
@@ -74,3 +80,9 @@ Lär dig hur du komprimerar flera filer säkert med traditionell kryptering i As
 Lär dig att dekomprimera AES-krypterade filer i C# med Aspose.Zip för .NET. Följ vår steg-för-steg-guide för effektiv filhantering.
 ### [Dekomprimera AES-krypterad lagrad fil i Aspose.Zip för .NET](./decompress-aes-encrypted-stored-file/)
 Lär dig hur du dekomprimerar AES-krypterade lagrade filer i Aspose.Zip för .NET med den här omfattande steg-för-steg-guiden. Förbättra dina .NET-utvecklingsfärdigheter idag!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

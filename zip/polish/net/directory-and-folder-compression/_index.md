@@ -3,10 +3,16 @@ title: Kompresja katalogów i folderów
 linktitle: Kompresja katalogów i folderów
 second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
 description: Bez wysiłku optymalizuj przestrzeń dyskową dzięki Aspose.Zip dla .NET. Poznaj techniki kompresji i dekompresji katalogów, aby ulepszyć swoje projekty programistyczne .NET.
-type: docs
 weight: 22
 url: /pl/net/directory-and-folder-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Kompresja katalogów i folderów
+
 
 ## Wstęp
 
@@ -38,3 +44,9 @@ Podsumowując, te samouczki dotyczące kompresji katalogów i folderów stanowi�
 Naucz się bez wysiłku kompresować katalogi za pomocą Aspose.Zip dla .NET. Przyspiesz rozwój swojej platformy .NET poprzez efektywną optymalizację przestrzeni dyskowej.
 ### [Dekompresja folderu za pomocą Aspose.Zip dla .NET](./decompress-folder/)
 Opanuj sztukę dekompresji folderów za pomocą Aspose.Zip dla .NET. Bez wysiłku obsługuj zadania kompresji w swoich projektach.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

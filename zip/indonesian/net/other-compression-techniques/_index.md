@@ -3,10 +3,16 @@ title: Teknik Kompresi Lainnya
 linktitle: Teknik Kompresi Lainnya
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Kuasai teknik kompresi tingkat lanjut dengan Aspose.Zip. Tingkatkan keterampilan pengembangan Anda, mulai dari mengekstraksi ke aliran memori hingga mengoptimalkan penyimpanan dengan kompresi Lzma.
-type: docs
 weight: 27
 url: /id/net/other-compression-techniques/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Teknik Kompresi Lainnya
+
 
 ## Perkenalan
 
@@ -44,3 +50,9 @@ Pelajari cara menyimpan data terkompresi ke aliran dengan Aspose.Zip untuk .NET.
 Jelajahi kekuatan Aspose.Zip untuk .NET dengan panduan langkah demi langkah kami dalam mengelola arsip ZIP dengan kata sandi berbeda. Tingkatkan keamanan dan fleksibilitas dalam aplikasi Anda. 
 ### [Kompres ke Lzma di Aspose.Zip untuk .NET](./compress-to-lzma/)
 Pelajari cara mengompres file menggunakan Aspose.Zip untuk .NET dengan algoritma Lzma yang canggih. Optimalkan penyimpanan dan tingkatkan efisiensi transfer data dengan mudah.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

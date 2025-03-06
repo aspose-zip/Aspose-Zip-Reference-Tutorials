@@ -3,10 +3,16 @@ title: 在 Aspose.Zip for .NET 中解壓縮傳統密碼保護的文件
 linktitle: 解壓縮傳統密碼保護的文件
 second_title: 用於檔案壓縮和歸檔的 Aspose.Zip .NET API
 description: 了解如何使用 Aspose.Zip for .NET 解壓縮傳統上受密碼保護的檔案。無縫整合的逐步指南。
-type: docs
 weight: 15
 url: /zh-hant/net/file-decompression/decompress-traditionally-password-protected-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 在 Aspose.Zip for .NET 中解壓縮傳統密碼保護的文件
+
 在 .NET 開發領域，Aspose.Zip 作為處理壓縮檔案的強大解決方案脫穎而出。在其眾多功能中，一項突出的功能是能夠解壓縮傳統上受密碼保護的檔案。在本教程中，我們將深入研究使用 Aspose.Zip for .NET 解壓縮使用傳統密碼加密的檔案的過程。在踏上這趟旅程之前，讓我們確保我們已具備先決條件。
 
 ## 先決條件
@@ -96,3 +102,9 @@ A3：是的，Aspose.Zip 支援各種加密方法，根據您的安全要求提�
 ### Q5：如何取得 Aspose.Zip 的臨時授權？
 
  A5：您可以從以下機構取得臨時許可證：[Aspose.購買](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

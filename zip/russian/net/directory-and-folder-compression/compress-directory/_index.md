@@ -3,10 +3,16 @@ title: Легкое сжатие каталогов с помощью Aspose.Zip
 linktitle: Как сжать каталог
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Научитесь легко сжимать каталоги с помощью Aspose.Zip для .NET. Ускорьте разработку .NET за счет эффективной оптимизации места хранения.
-type: docs
 weight: 10
 url: /ru/net/directory-and-folder-compression/compress-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Легкое сжатие каталогов с помощью Aspose.Zip для .NET
+
 В постоянно меняющейся среде разработки .NET поиск эффективных способов управления каталогами и их сжатия имеет решающее значение. С помощью Aspose.Zip для .NET вы можете упростить этот процесс и повысить производительность ваших приложений. В этом пошаговом руководстве мы проведем вас через процесс сжатия каталога с помощью Aspose.Zip, гарантируя, что вы четко поймете каждую концепцию.
 
 ## Введение
@@ -94,3 +100,9 @@ using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", Fil
 ### Вопрос 5: Могу ли я приобрести Aspose.Zip для .NET?
 
  A5: Конечно, вы можете совершить покупку.[здесь](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

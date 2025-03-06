@@ -3,10 +3,16 @@ title: เทคนิคการบีบอัดอื่นๆ
 linktitle: เทคนิคการบีบอัดอื่นๆ
 second_title: Aspose.Zip .NET API สำหรับการบีบอัดไฟล์และการเก็บถาวร
 description: ฝึกฝนเทคนิคการบีบอัดขั้นสูงด้วย Aspose.Zip ยกระดับทักษะการพัฒนาของคุณ ตั้งแต่การแยกข้อมูลไปจนถึงสตรีมหน่วยความจำไปจนถึงการปรับพื้นที่จัดเก็บข้อมูลให้เหมาะสมด้วยการบีบอัด Lzma
-type: docs
 weight: 27
 url: /th/net/other-compression-techniques/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# เทคนิคการบีบอัดอื่นๆ
+
 
 ## การแนะนำ
 
@@ -44,3 +50,9 @@ url: /th/net/other-compression-techniques/
 สำรวจพลังของ Aspose.Zip สำหรับ .NET ด้วยคำแนะนำทีละขั้นตอนเกี่ยวกับการจัดการไฟล์ ZIP ด้วยรหัสผ่านที่แตกต่างกัน เพิ่มความปลอดภัยและความยืดหยุ่นในแอปพลิเคชันของคุณ 
 ### [บีบอัดเป็น Lzma ใน Aspose.Zip สำหรับ .NET](./compress-to-lzma/)
 เรียนรู้วิธีบีบอัดไฟล์โดยใช้ Aspose.Zip สำหรับ .NET พร้อมด้วยอัลกอริทึม Lzma อันทรงพลัง เพิ่มประสิทธิภาพการจัดเก็บข้อมูลและเพิ่มประสิทธิภาพการถ่ายโอนข้อมูลได้อย่างง่ายดาย
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

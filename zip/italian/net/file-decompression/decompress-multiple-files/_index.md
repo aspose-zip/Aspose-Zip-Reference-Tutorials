@@ -3,10 +3,16 @@ title: Decompressione di più file utilizzando Aspose.Zip per .NET
 linktitle: Decompressione di più file
 second_title: Aspose.Zip .NET API per la compressione e l'archiviazione dei file
 description: Scopri come decomprimere più file utilizzando Aspose.Zip per .NET. Segui la nostra guida passo passo per una gestione efficiente dei file.
-type: docs
 weight: 11
 url: /it/net/file-decompression/decompress-multiple-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Decompressione di più file utilizzando Aspose.Zip per .NET
+
 ## introduzione
 
 Benvenuti nel nostro tutorial completo sulla decompressione di più file utilizzando Aspose.Zip per .NET! Se stai cercando di gestire in modo efficiente file compressi contenenti più voci, sei nel posto giusto. In questa guida ti guideremo attraverso il processo passo dopo passo, utilizzando Aspose.Zip per .NET.
@@ -127,3 +133,9 @@ In questo tutorial, abbiamo coperto i passaggi essenziali per decomprimere più 
 ### Q5: Esistono requisiti di sistema specifici per l'utilizzo di Aspose.Zip per .NET?
 
  A5: Fare riferimento a[documentazione](https://reference.aspose.com/zip/net/) per i requisiti di sistema dettagliati.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: .NET용 Aspose.Zip을 사용하여 TarLz로 압축
 linktitle: TarLz로 압축
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: Aspose.Zip을 사용하여 .NET의 파일을 손쉽게 압축하세요. TarLz 아카이브를 단계별로 생성하는 방법을 알아보세요.
-type: docs
 weight: 13
 url: /ko/net/archive-extraction-and-formats/compress-to-tar-lz/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.Zip을 사용하여 TarLz로 압축
+
 ## 소개
 
 끊임없이 진화하는 .NET 개발 환경에서는 파일을 효율적으로 처리하고 압축하는 것이 무엇보다 중요합니다. .NET용 Aspose.Zip은 원활한 파일 압축 기능을 제공하는 강력한 도구로 등장합니다. 이 튜토리얼에서는 Aspose.Zip을 사용하여 TarLz로 압축하는 특정 측면을 살펴보겠습니다. 모든 수준의 개발자가 프로세스를 쉽게 이해할 수 있도록 각 단계를 세분화하여 따라해보세요.
@@ -99,3 +105,9 @@ A4: 예, .NET용 Aspose.Zip은 상업용 및 개인 프로젝트 모두에서 �
 ### Q5: 문제가 발생하면 어디서 지원을 받을 수 있나요?
 
  A5: 다음을 방문하세요.[Aspose.Zip 포럼](https://forum.aspose.com/c/zip/37) 커뮤니티 지원 및 문제 해결을 위해.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

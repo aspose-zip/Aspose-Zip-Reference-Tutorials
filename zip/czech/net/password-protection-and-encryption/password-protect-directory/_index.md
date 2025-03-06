@@ -3,10 +3,16 @@ title: Heslo chránit adresáře v. NET s Aspose.Zip Tutorial
 linktitle: Adresář chráněný heslem
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Naučte se, jak chránit heslem adresáře v .NET pomocí Aspose.Zip. Zabezpečte své soubory bez námahy s tímto návodem krok za krokem.
-type: docs
 weight: 10
 url: /cs/net/password-protection-and-encryption/password-protect-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Heslo chránit adresáře v. NET s Aspose.Zip Tutorial
+
 
 ## Úvod
 
@@ -90,3 +96,10 @@ Ano, Aspose.Zip for .NET je navržen tak, aby efektivně zpracovával velké adr
 ### Kde najdu další podporu pro Aspose.Zip pro .NET?
  Můžete navštívit[Fórum Aspose.Zip](https://forum.aspose.com/c/zip/37) pro jakoukoli podporu nebo dotazy.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

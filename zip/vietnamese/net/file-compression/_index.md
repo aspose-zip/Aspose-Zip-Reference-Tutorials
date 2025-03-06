@@ -3,10 +3,16 @@ title: Nén tập tin
 linktitle: Nén tập tin
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Dễ dàng nén các tệp trong .NET bằng Aspose.Zip! Tìm hiểu cách quản lý tệp từng bước bằng các phương pháp Bzip2, LZMA, PPMd, Deflate và Store để có cài đặt nén tối ưu.
-type: docs
 weight: 20
 url: /vi/net/file-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Nén tập tin
+
 
 ## Giới thiệu
 
@@ -47,3 +53,9 @@ Tìm hiểu cách nén tệp hiệu quả trong .NET bằng Aspose.Zip. Khai th�
 
 ## Phần kết luận
 Trong lĩnh vực nén tệp, Aspose.Zip cho .NET nổi bật như một công cụ linh hoạt và mạnh mẽ. Từ nén các tệp đơn lẻ đến quản lý nhiều tệp mà không cần nén và tối ưu hóa cài đặt để có hiệu suất vượt trội, bộ hướng dẫn này đề cập đến tất cả. Nâng cao kỹ năng quản lý tệp của bạn và nâng cao các ứng dụng .NET của bạn với Aspose.Zip!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

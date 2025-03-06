@@ -3,10 +3,16 @@ title: Tömörítse ki a Wim-et mappába az Aspose.Zip for .NET-ben
 linktitle: A Wim kibontása mappába
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Fedezze fel a Wim-archívumok Aspose.Zip for .NET használatával történő kicsomagolásáról szóló, lépésről lépésre szóló útmutatót. Töltse le a könyvtárat, kövesse az oktatóanyagot, és hatékonyan kezelje az archív fájlokat .NET-alkalmazásaiban.
-type: docs
 weight: 16
 url: /hu/net/file-decompression/decompress-wim-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tömörítse ki a Wim-et mappába az Aspose.Zip for .NET-ben
+
 ## Bevezetés
 
 Üdvözöljük ebben az átfogó oktatóanyagban, amely a Wim-archívumok kicsomagolásáról szól egy mappába az Aspose.Zip for .NET használatával. Az Aspose.Zip egy hatékony könyvtár, amely zökkenőmentes képességeket biztosít a .NET-alkalmazások különféle archív formátumaival való munkavégzéshez. Ebben az oktatóanyagban lépésről lépésre végigvezetjük a Wim-archívum egy meghatározott mappába történő kicsomagolásának folyamatán.
@@ -77,3 +83,9 @@ Gratulálunk! Sikeresen megtanulta, hogyan lehet kicsomagolni egy Wim-archívumo
 ### 5. kérdés: Hol kaphatok támogatást, vagy hol tehetek fel kérdéseket az Aspose.Zip for .NET-hez kapcsolódóan?
 
  A5: Látogassa meg a[Aspose.Zip fórum](https://forum.aspose.com/c/zip/37) támogatásért és megbeszélésekért.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

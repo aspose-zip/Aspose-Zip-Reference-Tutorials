@@ -3,10 +3,16 @@ title: Dekomprimieren Sie Wim in einen Ordner in Aspose.Zip für .NET
 linktitle: Wim in Ordner entpacken
 second_title: Aspose.Zip .NET API für Dateikomprimierung und -archivierung
 description: Entdecken Sie die Schritt-für-Schritt-Anleitung zum Dekomprimieren von Wim-Archiven mit Aspose.Zip für .NET. Laden Sie die Bibliothek herunter, befolgen Sie das Tutorial und verwalten Sie Archivdateien in Ihren .NET-Anwendungen effizient.
-type: docs
 weight: 16
 url: /de/net/file-decompression/decompress-wim-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekomprimieren Sie Wim in einen Ordner in Aspose.Zip für .NET
+
 ## Einführung
 
 Willkommen zu diesem umfassenden Tutorial zum Dekomprimieren von Wim-Archiven in einen Ordner mit Aspose.Zip für .NET. Aspose.Zip ist eine leistungsstarke Bibliothek, die nahtlose Funktionen für die Arbeit mit verschiedenen Archivformaten in .NET-Anwendungen bietet. In diesem Tutorial führen wir Sie Schritt für Schritt durch den Prozess der Dekomprimierung eines Wim-Archivs in einen bestimmten Ordner.
@@ -77,3 +83,9 @@ A1: Ja, Aspose.Zip unterstützt verschiedene Archivformate, darunter ZIP, TAR, G
 ### F5: Wo kann ich Unterstützung erhalten oder Fragen zu Aspose.Zip für .NET stellen?
 
  A5: Besuchen Sie die[Aspose.Zip-Forum](https://forum.aspose.com/c/zip/37) für Unterstützung und Diskussionen.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.Zip für .NET – AES-Verschlüsselungs-Tutorial
 linktitle: AES-Verschlüsselungseinstellungen
 second_title: Aspose.Zip .NET API für Dateikomprimierung und -archivierung
 description: Entdecken Sie Aspose.Zip für .NET, um Ihre komprimierten Dateien mit AES-Verschlüsselung zu sichern. Jetzt herunterladen für effizienten Datenschutz.
-type: docs
 weight: 14
 url: /de/net/password-protection-and-encryption/aes-encryption-settings/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip für .NET – AES-Verschlüsselungs-Tutorial
+
 
 ## Einführung
 
@@ -87,3 +93,10 @@ Glückwunsch! Sie haben die AES-Verschlüsselungseinstellungen mit Aspose.Zip f�
 ### F: Kann ich temporäre Lizenzen zum Testen erhalten?
  A: Ja, Sie können eine temporäre Lizenz erhalten[Hier](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

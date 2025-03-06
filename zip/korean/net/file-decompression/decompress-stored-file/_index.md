@@ -3,10 +3,16 @@ title: .NET용 Aspose.Zip을 사용하여 저장된 파일 압축 풀기
 linktitle: 저장된 파일 압축 풀기
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: 저장된 파일 압축 해제에 대한 단계별 가이드에서 .NET용 Aspose.Zip의 강력한 기능을 살펴보세요. 효율적인 파일 처리를 위한 강력한 솔루션으로 소프트웨어 개발 기술을 강화하세요.
-type: docs
 weight: 13
 url: /ko/net/file-decompression/decompress-stored-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.Zip을 사용하여 저장된 파일 압축 풀기
+
 ## 소개
 
 끊임없이 진화하는 소프트웨어 개발 환경에서 압축 파일을 효율적으로 처리하는 것은 중요한 측면입니다. .NET용 Aspose.Zip은 개발자에게 저장된 파일의 압축을 원활하게 풀 수 있는 강력한 도구를 제공하는 강력한 솔루션으로 등장합니다. 이 튜토리얼에서는 .NET용 Aspose.Zip을 사용하여 저장된 파일의 압축을 푸는 과정을 자세히 살펴보겠습니다.
@@ -120,3 +126,9 @@ A1: 예, Aspose.Zip for .NET은 다양한 .NET 프레임워크와 호환되도�
 ### Q5: Aspose.Zip for .NET에 대한 임시 라이선스를 얻을 수 있나요?
 
  A5: 그렇습니다, 방문하십시오[이 링크](https://purchase.aspose.com/temporary-license/) 테스트 목적으로 임시 라이센스를 취득합니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

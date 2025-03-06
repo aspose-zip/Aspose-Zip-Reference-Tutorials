@@ -3,10 +3,16 @@ title: Mengompresi File dengan Aspose.Zip untuk .NET
 linktitle: Mengompresi File
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Pelajari cara mengompresi file dengan mudah menggunakan Aspose.Zip untuk .NET. Ikuti tutorial langkah demi langkah kami untuk manajemen file yang efisien.
-type: docs
 weight: 10
 url: /id/net/file-compression/compress-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mengompresi File dengan Aspose.Zip untuk .NET
+
 ## Perkenalan
 
 Selamat datang di dunia Aspose.Zip untuk .NET – perpustakaan canggih yang memungkinkan Anda mengompresi file dengan mudah. Dalam tutorial ini, kami akan memandu Anda melalui proses mengompresi file menggunakan Aspose.Zip untuk .NET. Jika Anda ingin mengoptimalkan penyimpanan file, mengurangi waktu transfer, atau sekadar mengatur data dengan lebih efisien, tutorial ini cocok untuk Anda.
@@ -88,3 +94,9 @@ Selamat! Anda telah berhasil mengompresi file menggunakan Aspose.Zip untuk .NET.
 ### Q5: Apakah lisensi sementara tersedia?
 
  A5: Ya, Anda bisa mendapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

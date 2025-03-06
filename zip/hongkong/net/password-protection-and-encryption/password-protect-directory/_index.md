@@ -3,10 +3,16 @@ title: 使用 Aspose.Zip 教學密碼保護 .NET 中的目錄
 linktitle: 密碼保護目錄
 second_title: 用於檔案壓縮和歸檔的 Aspose.Zip .NET API
 description: 了解如何使用 Aspose.Zip 對 .NET 中的目錄進行密碼保護。透過此逐步教學輕鬆保護您的檔案。
-type: docs
 weight: 10
 url: /zh-hant/net/password-protection-and-encryption/password-protect-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Zip 教學密碼保護 .NET 中的目錄
+
 
 ## 介紹
 
@@ -90,3 +96,10 @@ using (FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", 
 ### 在哪裡可以找到 Aspose.Zip for .NET 的其他支援？
 您可以訪問[Aspose.Zip 論壇](https://forum.aspose.com/c/zip/37)如有任何支持或疑問。
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

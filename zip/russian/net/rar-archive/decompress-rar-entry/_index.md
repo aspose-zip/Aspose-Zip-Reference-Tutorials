@@ -3,10 +3,16 @@ title: Распаковка записи RAR с помощью Aspose.Zip для
 linktitle: Распаковка записи RAR
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Откройте для себя простоту распаковки записей RAR в .NET с помощью Aspose.Zip. Эта мощная библиотека позволяет легко обрабатывать сжатые файлы.
-type: docs
 weight: 11
 url: /ru/net/rar-archive/decompress-rar-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Распаковка записи RAR с помощью Aspose.Zip для .NET
+
 
 ## Введение
 
@@ -74,3 +80,9 @@ using (FileStream fs = File.OpenRead(dataDir + "your_file.rar"))
 
 ### Вопрос: Куда я могу обратиться за помощью, если у меня возникнут проблемы с Aspose.Zip for .NET?
  Посетить[Форум Aspose.Zip](https://forum.aspose.com/c/zip/37) за поддержку сообщества и обсуждения.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

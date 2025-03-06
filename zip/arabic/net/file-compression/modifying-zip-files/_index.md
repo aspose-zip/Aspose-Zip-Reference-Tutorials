@@ -3,10 +3,16 @@ title: تعديل الملفات المضغوطة باستخدام Aspose.Zip ل
 linktitle: تعديل الملفات المضغوطة
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: اكتشف قوة Aspose.Zip لـ .NET في هذا البرنامج التعليمي الشامل. تعلم كيفية تعديل الملفات المضغوطة بسهولة باستخدام لغة C#.
-type: docs
 weight: 15
 url: /ar/net/file-compression/modifying-zip-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تعديل الملفات المضغوطة باستخدام Aspose.Zip لـ .NET
+
 ## مقدمة
 
 تلعب الملفات المضغوطة دورًا حاسمًا في تنظيم البيانات وضغطها، ولكن ماذا لو كنت بحاجة إلى تعديل محتويات ملف مضغوط برمجيًا؟ وهنا يأتي دور Aspose.Zip for .NET. توفر هذه المكتبة القوية طريقة سلسة للتعامل مع الملفات المضغوطة باستخدام لغة C#.
@@ -129,3 +135,9 @@ A1: تم تصميم Aspose.Zip بشكل أساسي لتطبيقات .NET. ومع
 ### س5: أين يمكنني العثور على الوثائق الخاصة بـ Aspose.Zip لـ .NET؟
 
  ج5: الوثائق متاحة[هنا](https://reference.aspose.com/zip/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

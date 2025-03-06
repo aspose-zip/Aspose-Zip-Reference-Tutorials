@@ -3,10 +3,16 @@ title: Hét ZIP-fájl létrehozása – Aspose.Zip for .NET oktatóanyag
 linktitle: SevenZip különféle tömörítési módszerekkel
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Ismerje meg, hogyan hozhat létre hét Zip fájlt az Aspose.Zip for .NET segítségével különböző tömörítési módszerek használatával. Könnyű lépések az LZMA2, BZip2 és Store esetében (tömörítés nélkül).
-type: docs
 weight: 12
 url: /hu/net/sevenzip-compression/sevenzip-various-compression-methods/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hét ZIP-fájl létrehozása – Aspose.Zip for .NET oktatóanyag
+
 
 ## Bevezetés
 
@@ -89,3 +95,10 @@ Igen, az Aspose.Zip for .NET a fájltípusok széles skáláját támogatja, leh
 
 ### Hol kaphatok támogatást az Aspose.Zip for .NET-hez?
  Támogatást kérhetsz a[Aspose.Zip fórum](https://forum.aspose.com/c/zip/37).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

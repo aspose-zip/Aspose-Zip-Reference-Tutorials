@@ -3,10 +3,16 @@ title: Защита паролем и шифрование
 linktitle: Защита паролем и шифрование
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Защитите свои файлы с помощью Aspose.Zip для .NET! Изучите пошаговые руководства по защите паролем и шифрованию, от AES до традиционных методов.
-type: docs
 weight: 26
 url: /ru/net/password-protection-and-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Защита паролем и шифрование
+
 
 ## Введение
 
@@ -74,3 +80,9 @@ url: /ru/net/password-protection-and-encryption/
 Научитесь распаковывать зашифрованные AES файлы на C# с помощью Aspose.Zip для .NET. Следуйте нашему пошаговому руководству для эффективной обработки файлов.
 ### [Распакуйте сохраненный файл, зашифрованный AES, в Aspose.Zip для .NET](./decompress-aes-encrypted-stored-file/)
 Узнайте, как распаковать сохраненные файлы, зашифрованные AES, в Aspose.Zip для .NET с помощью этого подробного пошагового руководства. Совершенствуйте свои навыки разработки .NET уже сегодня!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

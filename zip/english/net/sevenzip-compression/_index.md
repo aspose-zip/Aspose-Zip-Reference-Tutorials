@@ -3,10 +3,16 @@ title: SevenZip Compression
 linktitle: SevenZip Compression
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: Unlock the potential of Aspose.Zip for .NET with our SevenZip Compression Tutorials. Effortlessly create SevenZip entries and explore various compression methods.
-type: docs
 weight: 25
 url: /net/sevenzip-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# SevenZip Compression
+
 
 
 Welcome to our comprehensive guide on SevenZip Compression Tutorials using Aspose.Zip for .NET. In this tutorial series, we'll delve into the power of Aspose.Zip, guiding you through the process of creating SevenZip entries and exploring various compression methods. Let's embark on this journey to enhance your .NET development experience.
@@ -31,3 +37,9 @@ Explore the power of Aspose.Zip for .NET! Learn to create SevenZip entries step-
 Master Aspose.Zip for .NET - Create SevenZip entries effortlessly. Enhance your .NET applications with efficient zip archive manipulation.
 ### [SevenZip with Various Compression Methods in Aspose.Zip for .NET](./sevenzip-various-compression-methods/)
 Learn to create Seven Zip files with Aspose.Zip for .NET using different compression methods. Easy steps for LZMA2, BZip2, and Store (no compression).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

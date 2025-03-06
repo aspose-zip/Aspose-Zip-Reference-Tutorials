@@ -3,10 +3,16 @@ title: Creating SevenZip Entries with Aspose.Zip for .NET
 linktitle: Create SevenZip Entries
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: Explore the power of Aspose.Zip for .NET! Learn to create SevenZip entries step-by-step. Compress files effortlessly. Download now for a seamless development experience.
-type: docs
 weight: 10
 url: /net/sevenzip-compression/create-sevenzip-entries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Creating SevenZip Entries with Aspose.Zip for .NET
+
 
 ## Introduction
 
@@ -84,3 +90,10 @@ Feel free to seek assistance in the [Aspose.Zip Forum](https://forum.aspose.com/
 ### Is there a free trial available before making a purchase?
 Yes, you can access the free trial [here](https://releases.aspose.com/) to explore the features before making a commitment.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

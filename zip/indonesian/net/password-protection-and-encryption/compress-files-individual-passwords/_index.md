@@ -3,10 +3,16 @@ title: Amankan Kompresi File di .NET dengan Aspose.Zip
 linktitle: Kompres File dengan Kata Sandi Individual
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Pelajari cara meningkatkan keamanan file di aplikasi .NET! Ikuti panduan langkah demi langkah kami tentang mengompresi file dengan kata sandi individual menggunakan Aspose.Zip untuk .NET.
-type: docs
 weight: 16
 url: /id/net/password-protection-and-encryption/compress-files-individual-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Amankan Kompresi File di .NET dengan Aspose.Zip
+
 
 ## Perkenalan
 
@@ -84,3 +90,10 @@ Ya, Aspose.Zip untuk .NET memungkinkan Anda menggunakan metode enkripsi berbeda 
 
 ### Bisakah saya membeli lisensi sementara untuk tujuan pengujian?
  Ya, Anda bisa mendapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

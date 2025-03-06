@@ -3,10 +3,16 @@ title: Aspose.Zip .NET'te Birden Fazla Dosyayı Şifrelemeyle Sıkıştırın
 linktitle: Birden Fazla Dosyayı Geleneksel Şifrelemeyle Sıkıştırın
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Aspose.Zip for .NET'te geleneksel şifrelemeyi kullanarak birden fazla dosyayı güvenli bir şekilde nasıl sıkıştıracağınızı öğrenin. .NET uygulamalarınızda veri korumasını geliştirin.
-type: docs
 weight: 17
 url: /tr/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip .NET'te Birden Fazla Dosyayı Şifrelemeyle Sıkıştırın
+
 
 ## giriiş
 
@@ -94,3 +100,10 @@ Evet, Aspose.Zip for .NET hem Windows hem de Linux ortamlarıyla uyumludur ve ge
 ### 5. Aspose.Zip for .NET'in ayrıntılı belgelerini nerede bulabilirim?
 
 Belgelere bakın[Burada](https://reference.aspose.com/zip/net/) derinlemesine bilgi için.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET'te Sıkıştırılmış Klasörü Dizine Çıkarın
 linktitle: Sıkıştırılmış Klasörü Dizine Aç
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Aspose.Zip for .NET'in potansiyelini ortaya çıkarın! Bu adım adım kılavuzla klasörlerin sıkıştırmasını zahmetsizce nasıl açacağınızı öğrenin. Sorunsuz sıkıştırma ve çıkarma dünyasına dalın.
-type: docs
 weight: 14
 url: /tr/net/file-decompression/decompress-compressed-folder-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET'te Sıkıştırılmış Klasörü Dizine Çıkarın
+
 ## giriiş
 
 Geliştiricilerin sıkıştırılmış klasörleri zahmetsizce kullanmasını sağlayan güçlü bir kütüphane olan Aspose.Zip for .NET dünyasına hoş geldiniz. Bu eğitimde, sıkıştırılmış bir klasörü Aspose.Zip for .NET kullanarak bir dizine açma sürecini inceleyeceğiz. Bu güçlü aracın inceliklerini açığa çıkararak her adımı size ayrıntılı olarak anlatırken kemerlerinizi bağlayın.
@@ -79,3 +85,9 @@ Cevap2: Aspose.Zip for .NET'i kesinlikle hem ticari hem de ticari olmayan uygula
 ### S5: Aspose.Zip for .NET'i test etmek için geçici bir lisansa ihtiyacım var mı?
 
  Cevap5: Evet, adresinden geçici lisans alabilirsiniz.[Burada](https://purchase.aspose.com/temporary-license/) test amaçlı.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

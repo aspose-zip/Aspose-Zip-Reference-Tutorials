@@ -3,10 +3,16 @@ title: 建立七個 Zip 檔案 - Aspose.Zip for .NET 教學課程
 linktitle: SevenZip 具有多種壓縮方法
 second_title: 用於檔案壓縮和歸檔的 Aspose.Zip .NET API
 description: 了解如何使用不同的壓縮方法透過 Aspose.Zip for .NET 建立七個 Zip 檔案。 LZMA2、BZip2 和 Store（無壓縮）的簡單步驟。
-type: docs
 weight: 12
 url: /zh-hant/net/sevenzip-compression/sevenzip-various-compression-methods/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 建立七個 Zip 檔案 - Aspose.Zip for .NET 教學課程
+
 
 ## 介紹
 
@@ -89,3 +95,10 @@ Console.WriteLine("Successfully Created a Seven Zip File with No Compression (St
 
 ### 在哪裡可以獲得 Aspose.Zip for .NET 支援？
 您可以透過以下方式尋求支持[Aspose.Zip 論壇](https://forum.aspose.com/c/zip/37).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: .NET के लिए Aspose.Zip - एईएस एन्क्रिप�
 linktitle: एईएस एन्क्रिप्शन सेटिंग्स
 second_title: फ़ाइलें संपीड़न और संग्रहण के लिए Aspose.Zip .NET API
 description: अपनी संपीड़ित फ़ाइलों को AES एन्क्रिप्शन के साथ सुरक्षित करने के लिए .NET के लिए Aspose.Zip का अन्वेषण करें। कुशल डेटा सुरक्षा के लिए अभी डाउनलोड करें।
-type: docs
 weight: 14
 url: /hi/net/password-protection-and-encryption/aes-encryption-settings/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET के लिए Aspose.Zip - एईएस एन्क्रिप्शन ट्यूटोरियल
+
 
 ## परिचय
 
@@ -87,3 +93,10 @@ Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Set
 ### प्रश्न: क्या मुझे परीक्षण के लिए अस्थायी लाइसेंस मिल सकता है?
  उत्तर: हां, आप अस्थायी लाइसेंस प्राप्त कर सकते हैं[यहाँ](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Opanuj bezpieczną archiwizację w .NET dzięki Aspose.Zip
 linktitle: Archiwum z zaszyfrowanym wpisem
 second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
 description: Poznaj świat bezpiecznej archiwizacji w .NET dzięki Aspose.Zip. Twórz pliki Seven Zip z szyfrowaniem AES bez wysiłku. Zwiększ swoje umiejętności rozwojowe już teraz!
-type: docs
 weight: 15
 url: /pl/net/password-protection-and-encryption/archive-with-encrypted-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Opanuj bezpieczną archiwizację w .NET dzięki Aspose.Zip
+
 
 ## Wstęp
 
@@ -81,3 +87,10 @@ Aspose.Zip dla .NET obsługuje różne algorytmy kompresji. Szczegółowe inform
 ### Czy mogę bardziej dostosować ustawienia szyfrowania?
 Absolutnie! Zapoznaj się z dokumentacją dotyczącą zaawansowanych opcji dostosowywania szyfrowania.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

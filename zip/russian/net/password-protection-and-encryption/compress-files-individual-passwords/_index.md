@@ -3,10 +3,16 @@ title: Безопасное сжатие файлов в .NET с помощью 
 linktitle: Сжатие файлов с индивидуальными паролями
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Узнайте, как повысить безопасность файлов в приложениях .NET! Следуйте нашему пошаговому руководству по сжатию файлов с отдельными паролями с помощью Aspose.Zip для .NET.
-type: docs
 weight: 16
 url: /ru/net/password-protection-and-encryption/compress-files-individual-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Безопасное сжатие файлов в .NET с помощью Aspose.Zip
+
 
 ## Введение
 
@@ -84,3 +90,10 @@ using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPass
 
 ### Могу ли я приобрести временную лицензию для тестирования?
  Да, вы можете приобрести временную лицензию[здесь](https://purchase.aspose.com/temporary-license/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

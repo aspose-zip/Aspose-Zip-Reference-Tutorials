@@ -3,10 +3,16 @@ title: Aspose.Zip voor .NET - AES-gecodeerde bestanden decoderen
 linktitle: Decomprimeer AES-gecodeerd opgeslagen bestand
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Leer hoe u met AES gecodeerde opgeslagen bestanden in Aspose.Zip voor .NET kunt decomprimeren met deze uitgebreide stapsgewijze handleiding. Verbeter vandaag nog uw .NET-ontwikkelingsvaardigheden!
-type: docs
 weight: 19
 url: /nl/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip voor .NET - AES-gecodeerde bestanden decoderen
+
 
 ## Invoering
 
@@ -89,3 +95,10 @@ Aspose.Zip ondersteunt verschillende formaten, waaronder ZIP, 7z en TAR. Raadple
 ### Kan ik Aspose.Zip gebruiken voor commerciële doeleinden?
  Ja, u kunt een licentie kopen[hier](https://purchase.aspose.com/buy) voor commercieel gebruik.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

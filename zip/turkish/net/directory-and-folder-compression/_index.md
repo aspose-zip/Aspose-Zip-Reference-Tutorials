@@ -3,10 +3,16 @@ title: Dizin ve Klasör Sıkıştırma
 linktitle: Dizin ve Klasör Sıkıştırma
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Aspose.Zip for .NET ile depolama alanını zahmetsizce optimize edin. .NET geliştirme projelerinizi geliştirmek için dizin sıkıştırma ve açma tekniklerini öğrenin.
-type: docs
 weight: 22
 url: /tr/net/directory-and-folder-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dizin ve Klasör Sıkıştırma
+
 
 ## giriiş
 
@@ -38,3 +44,9 @@ Sonuç olarak, bu dizin ve klasör sıkıştırma eğitimleri, daha verimli ve a
 Aspose.Zip for .NET ile dizinleri zahmetsizce sıkıştırmayı öğrenin. Depolama alanını verimli bir şekilde optimize ederek .NET gelişiminizi artırın.
 ### [Aspose.Zip for .NET ile Bir Klasörün Sıkıştırılmış Dosyasını Açma](./decompress-folder/)
 Aspose.Zip for .NET ile klasörlerin sıkıştırmasını açma sanatında ustalaşın. Projelerinizdeki sıkıştırma görevlerini zahmetsizce gerçekleştirin.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

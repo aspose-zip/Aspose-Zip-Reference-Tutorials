@@ -1,12 +1,17 @@
 ---
 title: บทช่วยสอนที่ครอบคลุมและตัวอย่างของ Aspose.Zip สำหรับ .NET
 linktitle: Aspose.Zip สำหรับบทช่วยสอน .NET
-type: docs
 weight: 10
 url: /th/net/
 description:
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# บทช่วยสอนที่ครอบคลุมและตัวอย่างของ Aspose.Zip สำหรับ .NET
+
 
 ### [การบีบอัดไฟล์](./file-compression/)
 บีบอัดไฟล์ใน .NET ได้อย่างง่ายดายด้วย Aspose.Zip! เรียนรู้การจัดการไฟล์ทีละขั้นตอนโดยใช้วิธี Bzip2, LZMA, PPMd, Deflate และ Store เพื่อการตั้งค่าการบีบอัดที่เหมาะสมที่สุด
@@ -24,3 +29,9 @@ is_root: true
 รักษาความปลอดภัยไฟล์ของคุณด้วย Aspose.Zip สำหรับ .NET! เรียนรู้บทช่วยสอนทีละขั้นตอนเกี่ยวกับการป้องกันด้วยรหัสผ่านและการเข้ารหัส ตั้งแต่ AES ไปจนถึงวิธีการแบบดั้งเดิม 
 ### [เทคนิคการบีบอัดอื่นๆ](./other-compression-techniques/)
 เชี่ยวชาญเทคนิคการบีบอัดขั้นสูงอย่างง่ายดายด้วย Aspose.Zip สำหรับ .NET ยกระดับทักษะการพัฒนาของคุณ ตั้งแต่การแยกข้อมูลไปจนถึงสตรีมหน่วยความจำไปจนถึงการปรับพื้นที่จัดเก็บข้อมูลให้เหมาะสมด้วยการบีบอัด Lzma
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

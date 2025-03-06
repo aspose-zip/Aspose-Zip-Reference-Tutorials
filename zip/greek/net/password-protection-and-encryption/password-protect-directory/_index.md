@@ -3,10 +3,16 @@ title: Προστασία καταλόγων με κωδικό πρόσβαση�
 linktitle: Κατάλογος προστασίας κωδικών πρόσβασης
 second_title: Aspose.Zip .NET API για συμπίεση και αρχειοθέτηση αρχείων
 description: Μάθετε πώς να προστατεύετε τους καταλόγους με κωδικό πρόσβασης στο .NET χρησιμοποιώντας το Aspose.Zip. Ασφαλίστε τα αρχεία σας χωρίς κόπο με αυτό το βήμα προς βήμα σεμινάριο.
-type: docs
 weight: 10
 url: /el/net/password-protection-and-encryption/password-protect-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Προστασία καταλόγων με κωδικό πρόσβασης στο .NET με Εκμάθηση Aspose.Zip
+
 
 ## Εισαγωγή
 
@@ -90,3 +96,10 @@ using (FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", 
 ### Πού μπορώ να βρω πρόσθετη υποστήριξη για το Aspose.Zip για .NET;
  Μπορείτε να επισκεφθείτε το[Aspose.Zip φόρουμ](https://forum.aspose.com/c/zip/37) για οποιαδήποτε υποστήριξη ή απορία.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

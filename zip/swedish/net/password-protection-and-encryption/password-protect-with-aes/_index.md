@@ -3,10 +3,16 @@ title: Säkra dina filer - AES-kryptering med Aspose.Zip
 linktitle: Lösenordsskydd med AES
 second_title: Aspose.Zip .NET API för filkomprimering och arkivering
 description: Lär dig hur du förbättrar din filsäkerhet med Aspose.Zip för .NET med AES-kryptering. Följ vår steg-för-steg-guide för optimalt skydd.
-type: docs
 weight: 11
 url: /sv/net/password-protection-and-encryption/password-protect-with-aes/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Säkra dina filer - AES-kryptering med Aspose.Zip
+
 
 ## Introduktion
 
@@ -108,3 +114,10 @@ Aspose.Zip stöder kryptering av olika filtyper, vilket säkerställer flexibili
 
 ### Vad händer om jag glömmer lösenordet för ett krypterat arkiv?
 Tyvärr finns det inget sätt att återställa ett krypterat arkivs lösenord. Det är viktigt att förvara lösenordet på en säker plats.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

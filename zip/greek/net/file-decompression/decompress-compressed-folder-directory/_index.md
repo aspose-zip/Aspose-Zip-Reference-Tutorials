@@ -3,10 +3,16 @@ title: Αποσυμπιέστε τον συμπιεσμένο φάκελο στ�
 linktitle: Αποσυμπιέστε τον συμπιεσμένο φάκελο στον κατάλογο
 second_title: Aspose.Zip .NET API για συμπίεση και αρχειοθέτηση αρχείων
 description: Ξεκλειδώστε τις δυνατότητες του Aspose.Zip για .NET! Μάθετε πώς να αποσυμπιέζετε εύκολα φακέλους με αυτόν τον οδηγό βήμα προς βήμα. Βουτήξτε στον κόσμο της απρόσκοπτης συμπίεσης και εξαγωγής.
-type: docs
 weight: 14
 url: /el/net/file-decompression/decompress-compressed-folder-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Αποσυμπιέστε τον συμπιεσμένο φάκελο στον κατάλογο στο Aspose.Zip για .NET
+
 ## Εισαγωγή
 
 Καλώς ήρθατε στον κόσμο του Aspose.Zip για .NET, μια ισχυρή βιβλιοθήκη που δίνει τη δυνατότητα στους προγραμματιστές να χειρίζονται συμπιεσμένους φακέλους χωρίς κόπο. Σε αυτό το σεμινάριο, θα εμβαθύνουμε στη διαδικασία αποσυμπίεσης ενός συμπιεσμένου φακέλου σε έναν κατάλογο χρησιμοποιώντας το Aspose.Zip για .NET. Κουμπώστε καθώς σας καθοδηγούμε λεπτομερώς σε κάθε βήμα, απομυθοποιώντας τις περιπλοκές αυτού του ισχυρού εργαλείου.
@@ -79,3 +85,9 @@ A2: Οπωσδήποτε, μπορείτε να χρησιμοποιήσετε �
 ### Ε5: Χρειάζομαι μια προσωρινή άδεια για τη δοκιμή του Aspose.Zip για .NET;
 
  A5: Ναι, μπορείτε να αποκτήσετε προσωρινή άδεια από[εδώ](https://purchase.aspose.com/temporary-license/) για δοκιμαστικούς σκοπούς.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Dekompresuj plik tradycyjnie chroniony hasłem w Aspose.Zip dla .NET
 linktitle: Dekompresuj plik tradycyjnie chroniony hasłem
 second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
 description: Dowiedz się, jak dekompresować pliki tradycyjnie chronione hasłem przy użyciu Aspose.Zip dla .NET. Przewodnik krok po kroku dotyczący bezproblemowej integracji.
-type: docs
 weight: 15
 url: /pl/net/file-decompression/decompress-traditionally-password-protected-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekompresuj plik tradycyjnie chroniony hasłem w Aspose.Zip dla .NET
+
 dziedzinie rozwoju .NET Aspose.Zip wyróżnia się jako solidne rozwiązanie do obsługi skompresowanych plików. Wśród niezliczonych funkcji jedną z najważniejszych jest możliwość dekompresji plików tradycyjnie chronionych hasłem. W tym samouczku zagłębimy się w proces dekompresji pliku zaszyfrowanego tradycyjnym hasłem przy użyciu Aspose.Zip dla .NET. Zanim wyruszymy w tę podróż, upewnijmy się, że mamy spełnione warunki wstępne.
 
 ## Warunki wstępne
@@ -96,3 +102,9 @@ O3: Tak, Aspose.Zip obsługuje różne metody szyfrowania, zapewniając elastycz
 ### P5: Jak mogę uzyskać tymczasową licencję na Aspose.Zip?
 
  Odpowiedź 5: Możesz nabyć licencję tymczasową od[Złóż. Kup](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

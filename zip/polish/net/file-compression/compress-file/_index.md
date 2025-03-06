@@ -3,10 +3,16 @@ title: Kompresowanie pliku za pomocą Aspose.Zip dla .NET
 linktitle: Kompresja pliku
 second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
 description: Dowiedz się, jak bez wysiłku kompresować pliki za pomocą Aspose.Zip dla .NET. Postępuj zgodnie z naszym samouczkiem krok po kroku, aby efektywnie zarządzać plikami.
-type: docs
 weight: 10
 url: /pl/net/file-compression/compress-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Kompresowanie pliku za pomocą Aspose.Zip dla .NET
+
 ## Wstęp
 
 Witamy w świecie Aspose.Zip dla .NET – potężnej biblioteki, która pozwala na bezproblemową kompresję plików. W tym samouczku przeprowadzimy Cię przez proces kompresji plików przy użyciu Aspose.Zip dla .NET. Jeśli chcesz zoptymalizować przechowywanie plików, skrócić czas przesyłania lub po prostu efektywniej organizować dane, ten poradnik jest dla Ciebie.
@@ -88,3 +94,9 @@ Gratulacje! Pomyślnie skompresowałeś pliki przy użyciu Aspose.Zip dla .NET. 
 ### P5: Czy dostępne są licencje tymczasowe?
 
  Odpowiedź 5: Tak, możesz uzyskać licencje tymczasowe[Tutaj](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

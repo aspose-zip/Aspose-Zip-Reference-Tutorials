@@ -3,10 +3,16 @@ title: Úprava souborů ZIP pomocí Aspose.Zip pro .NET
 linktitle: Úprava souborů ZIP
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Prozkoumejte sílu Aspose.Zip pro .NET v tomto komplexním tutoriálu. Naučte se bezproblémově upravovat soubory zip pomocí C#.
-type: docs
 weight: 15
 url: /cs/net/file-compression/modifying-zip-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Úprava souborů ZIP pomocí Aspose.Zip pro .NET
+
 ## Úvod
 
 Soubory ZIP hrají zásadní roli při organizování a kompresi dat, ale co když potřebujete upravit obsah souboru zip programově? To je místo, kde Aspose.Zip pro .NET přichází do hry. Tato výkonná knihovna poskytuje bezproblémový způsob manipulace se soubory zip pomocí C#.
@@ -129,3 +135,9 @@ A1: Aspose.Zip je primárně určen pro aplikace .NET. Aspose však poskytuje kn
 ### Q5: Kde najdu dokumentaci pro Aspose.Zip pro .NET?
 
  A5: Dokumentace je k dispozici[tady](https://reference.aspose.com/zip/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

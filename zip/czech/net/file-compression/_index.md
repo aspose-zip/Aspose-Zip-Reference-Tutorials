@@ -3,10 +3,16 @@ title: Komprese souborů
 linktitle: Komprese souborů
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Bez námahy komprimujte soubory v .NET pomocí Aspose.Zip! Naučte se krok za krokem spravovat soubory pomocí metod Bzip2, LZMA, PPMd, Deflate a Store pro optimální nastavení komprese.
-type: docs
 weight: 20
 url: /cs/net/file-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Komprese souborů
+
 
 ## Úvod
 
@@ -47,3 +53,9 @@ Naučte se efektivně komprimovat soubory v .NET pomocí Aspose.Zip. Využijte s
 
 ## Závěr
 oblasti komprese souborů vyniká Aspose.Zip for .NET jako všestranný a výkonný nástroj. Tato sada výukových programů pokrývá vše od komprimace jednotlivých souborů po správu více souborů bez komprese a optimalizaci nastavení pro vynikající výkon. Zvyšte své dovednosti v oblasti správy souborů a vylepšete své aplikace .NET pomocí Aspose.Zip!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

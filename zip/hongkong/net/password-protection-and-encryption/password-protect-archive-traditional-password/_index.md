@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET - 密碼保護檔案教學
 linktitle: 使用傳統密碼保護存檔
 second_title: 用於檔案壓縮和歸檔的 Aspose.Zip .NET API
 description: 了解如何使用 Aspose.Zip 透過傳統密碼保護來保護您的 .NET 檔案。請遵循我們的逐步指南以增強資料機密性。
-type: docs
 weight: 12
 url: /zh-hant/net/password-protection-and-encryption/password-protect-archive-traditional-password/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET - 密碼保護檔案教學
+
 
 在 .NET 開發領域，保護檔案中的敏感資料是應用程式設計的重要面向。 Aspose.Zip for .NET 提供了一個強大的解決方案，使用傳統密碼加密來保護檔案。本逐步指南將引導您完成整個過程，確保您的存檔資料保持機密和安全。
 
@@ -81,3 +87,10 @@ Aspose.Zip for .NET 針對高效能效能進行了最佳化，可有效處理不
 ### 如何獲得 Aspose.Zip for .NET 支援？
 參觀[Aspose.Zip 論壇](https://forum.aspose.com/c/zip/37)尋求社區支持或探索[文件](https://reference.aspose.com/zip/net/)獲取詳細資訊。
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Katalogi chronione hasłem w .NET za pomocą samouczka Aspose.Zip
 linktitle: Katalog chroniony hasłem
 second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
 description: Dowiedz się, jak chronić katalogi hasłem w .NET przy użyciu Aspose.Zip. Zabezpiecz swoje pliki bez wysiłku, korzystając z tego samouczka krok po kroku.
-type: docs
 weight: 10
 url: /pl/net/password-protection-and-encryption/password-protect-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Katalogi chronione hasłem w .NET za pomocą samouczka Aspose.Zip
+
 
 ## Wstęp
 
@@ -90,3 +96,10 @@ Tak, Aspose.Zip dla .NET został zaprojektowany do wydajnej obsługi dużych kat
 ### Gdzie mogę znaleźć dodatkowe wsparcie dla Aspose.Zip dla .NET?
  Możesz odwiedzić[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) w celu uzyskania wsparcia lub zapytań.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

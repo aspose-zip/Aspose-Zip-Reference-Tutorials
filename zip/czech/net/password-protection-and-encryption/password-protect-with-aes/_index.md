@@ -3,10 +3,16 @@ title: Zabezpečte své soubory – šifrování AES pomocí Aspose.Zip
 linktitle: Ochrana heslem pomocí AES
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Zjistěte, jak zvýšit zabezpečení souborů pomocí Aspose.Zip for .NET se šifrováním AES. Pro optimální ochranu postupujte podle našeho podrobného průvodce.
-type: docs
 weight: 11
 url: /cs/net/password-protection-and-encryption/password-protect-with-aes/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Zabezpečte své soubory – šifrování AES pomocí Aspose.Zip
+
 
 ## Úvod
 
@@ -108,3 +114,10 @@ Aspose.Zip podporuje šifrování různých typů souborů a zajišťuje flexibi
 
 ### Co se stane, když zapomenu heslo k šifrovanému archivu?
 Bohužel neexistuje způsob, jak obnovit heslo zašifrovaného archivu. Je důležité uchovávat heslo na bezpečném místě.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

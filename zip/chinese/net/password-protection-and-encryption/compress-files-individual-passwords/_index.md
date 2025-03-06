@@ -3,10 +3,16 @@ title: 使用 Aspose.Zip 在 .NET 中进行安全文件压缩
 linktitle: 使用单独的密码压缩文件
 second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
 description: 了解如何增强 .NET 应用程序中的文件安全性！请按照我们的分步指南使用 Aspose.Zip for .NET 压缩具有单独密码的文件。
-type: docs
 weight: 16
 url: /zh/net/password-protection-and-encryption/compress-files-individual-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Zip 在 .NET 中进行安全文件压缩
+
 
 ## 介绍
 
@@ -84,3 +90,10 @@ using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPass
 
 ### 我可以购买临时许可证用于测试目的吗？
 是的，您可以获得临时许可证[这里](https://purchase.aspose.com/temporary-license/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

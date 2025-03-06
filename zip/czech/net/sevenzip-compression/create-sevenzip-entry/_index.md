@@ -3,10 +3,16 @@ title: Vytvořte položku SevenZip v Aspose.Zip pro .NET
 linktitle: Vytvořte položku SevenZip
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Master Aspose.Zip for .NET – Vytvářejte položky SevenZip bez námahy. Vylepšete své aplikace .NET pomocí efektivní manipulace s archivy zip.
-type: docs
 weight: 11
 url: /cs/net/sevenzip-compression/create-sevenzip-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Vytvořte položku SevenZip v Aspose.Zip pro .NET
+
 
 ## Úvod
 
@@ -83,3 +89,10 @@ Absolutně! Aspose.Zip je navržen pro práci s rozsáhlými aplikacemi a poskyt
 
 ### Otázka: Kde mohu vyhledat pomoc nebo se spojit s komunitou pro Aspose.Zip?
  Navštivte[Fórum Aspose.Zip](https://forum.aspose.com/c/zip/37) hledat podporu, klást otázky a spojit se s komunitou.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

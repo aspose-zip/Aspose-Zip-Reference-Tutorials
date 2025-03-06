@@ -3,10 +3,16 @@ title: Trích xuất vào luồng bộ nhớ bằng Aspose.Zip cho .NET
 linktitle: Giải nén vào luồng bộ nhớ
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Khám phá Aspose.Zip cho .NET Trích xuất dễ dàng các kho lưu trữ vào MemoryStream trong hướng dẫn từng bước này. Nâng cao sự phát triển .NET của bạn một cách dễ dàng.
-type: docs
 weight: 10
 url: /vi/net/other-compression-techniques/extract-to-memory-stream/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Trích xuất vào luồng bộ nhớ bằng Aspose.Zip cho .NET
+
 ## Giới thiệu
 
 Trong lĩnh vực phát triển .NET, Aspose.Zip nổi bật như một công cụ mạnh mẽ để quản lý và thao tác các kho lưu trữ ZIP và GZIP. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, hướng dẫn này sẽ hướng dẫn bạn quy trình trích xuất các kho lưu trữ vào MemoryStream bằng Aspose.Zip cho .NET.
@@ -96,3 +102,9 @@ A2: Chắc chắn rồi! Aspose.Zip hỗ trợ cả giải nén và tạo kho l�
 ### Câu hỏi 5: Làm cách nào để có được giấy phép tạm thời?
 
  Câu trả lời 5: Nếu bạn yêu cầu giấy phép tạm thời, hãy truy cập[đây](https://purchase.aspose.com/temporary-license/) cho một quá trình liền mạch.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

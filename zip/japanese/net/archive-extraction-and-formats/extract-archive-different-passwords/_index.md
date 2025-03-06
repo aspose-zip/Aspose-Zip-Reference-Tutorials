@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET での異なるパスワードを持つアーカイ�
 linktitle: 異なるパスワードを持つアーカイブ エントリの抽出
 second_title: ファイルの圧縮とアーカイブのための Aspose.Zip .NET API
 description: Aspose.Zip for .NET でさまざまなパスワードを使用してアーカイブ エントリを抽出する方法を学びます。アプリケーションのセキュリティと柔軟性を強化します。
-type: docs
 weight: 10
 url: /ja/net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET での異なるパスワードを持つアーカイブ エントリの抽出
+
 ## 導入
 
 進化し続ける .NET 開発環境において、Aspose.Zip は圧縮アーカイブを操作するための強力なツールとして際立っています。その多くの機能の中でも、異なるパスワードを持つアーカイブ エントリを抽出すると、アプリケーションにセキュリティと汎用性の追加層が追加されます。このステップバイステップ ガイドでは、Aspose.Zip for .NET を使用してこれを実現する方法を説明します。
@@ -89,3 +95,9 @@ A1: はい、Aspose.Zip は .NET Core と .NET Framework の両方をサポー�
 ### Q5: Aspose.Zip はどこで購入できますか?
 
  A5: Aspose.Zip を購入するには、次のサイトにアクセスしてください。[購入ページ](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

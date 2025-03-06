@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET – dešifrování AES šifrovaných souborů
 linktitle: Dekomprimujte uložený soubor šifrovaný AES
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Naučte se, jak dekomprimovat AES zašifrované uložené soubory v Aspose.Zip pro .NET pomocí tohoto komplexního průvodce krok za krokem. Vylepšete své vývojové dovednosti .NET ještě dnes!
-type: docs
 weight: 19
 url: /cs/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET – dešifrování AES šifrovaných souborů
+
 
 ## Úvod
 
@@ -89,3 +95,10 @@ Aspose.Zip podporuje různé formáty, včetně ZIP, 7z a TAR. Úplný seznam na
 ### Mohu používat Aspose.Zip pro komerční účely?
  Ano, můžete si zakoupit licenci[tady](https://purchase.aspose.com/buy) pro komerční využití.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

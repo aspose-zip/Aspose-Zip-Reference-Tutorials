@@ -3,10 +3,16 @@ title: Descomprima Wim en una carpeta en Aspose.Zip para .NET
 linktitle: Descomprimir Wim a la carpeta
 second_title: API Aspose.Zip .NET para compresión y archivado de archivos
 description: Explore la guía paso a paso sobre cómo descomprimir archivos Wim usando Aspose.Zip para .NET. Descargue la biblioteca, siga el tutorial y administre de manera eficiente los archivos comprimidos en sus aplicaciones .NET.
-type: docs
 weight: 16
 url: /es/net/file-decompression/decompress-wim-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Descomprima Wim en una carpeta en Aspose.Zip para .NET
+
 ## Introducción
 
 Bienvenido a este tutorial completo sobre cómo descomprimir archivos Wim en una carpeta usando Aspose.Zip para .NET. Aspose.Zip es una biblioteca poderosa que proporciona capacidades perfectas para trabajar con varios formatos de archivo en aplicaciones .NET. En este tutorial, lo guiaremos paso a paso a través del proceso de descomprimir un archivo Wim en una carpeta específica.
@@ -77,3 +83,9 @@ R1: Sí, Aspose.Zip admite varios formatos de archivo, incluidos ZIP, TAR, GZIP 
 ### P5: ¿Dónde puedo obtener soporte o hacer preguntas sobre Aspose.Zip para .NET?
 
  A5: Visita el[Foro Aspose.Zip](https://forum.aspose.com/c/zip/37) para apoyo y discusiones.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: فك ضغط مجلد باستخدام Aspose.Zip لـ .NET
 linktitle: فك ضغط مجلد
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: أتقن فن فك ضغط المجلدات باستخدام Aspose.Zip لـ .NET. التعامل بسهولة مع مهام الضغط في مشاريعك.
-type: docs
 weight: 11
 url: /ar/net/directory-and-folder-compression/decompress-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# فك ضغط مجلد باستخدام Aspose.Zip لـ .NET
+
 هل تتطلع إلى فك ضغط المجلدات بسلاسة باستخدام Aspose.Zip لـ .NET؟ لا مزيد من البحث! سيرشدك هذا الدليل خطوة بخطوة خلال العملية، مما يضمن إتقانك لفن فك ضغط المجلدات دون عناء.
 
 ## المتطلبات الأساسية
@@ -88,3 +94,9 @@ using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", Fil
 ### س5: كيف يمكنني الحصول على دعم Aspose.Zip لـ .NET؟
 
  ج5: لأية استفسارات أو مساعدة، قم بزيارة[منتدى Aspose.Zip](https://forum.aspose.com/c/zip/37) حيث يمكنك التفاعل مع المجتمع وطلب مشورة الخبراء.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

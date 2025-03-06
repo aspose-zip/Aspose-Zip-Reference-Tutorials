@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET'te FileInfo kullanarak Dosyaları Sıkıştırın
 linktitle: FileInfo'yu Kullanarak Dosyaları Sıkıştırın
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Aspose.Zip for .NET ile dosya bilgilerini kullanarak dosyaları sıkıştırmayı öğrenin. Verimli dosya yönetimi için adım adım kılavuzumuzu izleyin.
-type: docs
 weight: 11
 url: /tr/net/file-compression/compress-files-fileinfo/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET'te FileInfo kullanarak Dosyaları Sıkıştırın
+
 ## giriiş
 
 Aspose.Zip for .NET kullanarak dosyaları sıkıştırmaya ilişkin kapsamlı kılavuzumuza hoş geldiniz! Dosya depolamanızı veya aktarımınızı optimize etmek istiyorsanız Aspose.Zip sizin çözümünüzdür. Bu eğitimde, FileInfo sınıfını kullanarak dosyaları sıkıştırma sürecinde size ayrıntılı bir adım adım kılavuz sağlayarak yol göstereceğiz. Hadi dalalım!
@@ -102,3 +108,9 @@ Cevap1: Aspose.Zip çok çeşitli dosya türlerini destekleyerek sıkıştırmad
 ### S5: Aspose.Zip için nasıl geçici lisans alabilirim?
 
  A5: Ziyaret edin[bu bağlantı](https://purchase.aspose.com/temporary-license/) Geçici lisans alma konusunda bilgi için.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

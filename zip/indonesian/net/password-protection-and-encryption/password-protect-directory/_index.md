@@ -3,10 +3,16 @@ title: Direktori Perlindungan Kata Sandi di .NET dengan Tutorial Aspose.Zip
 linktitle: Direktori Perlindungan Kata Sandi
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Pelajari cara melindungi direktori dengan kata sandi di .NET menggunakan Aspose.Zip. Amankan file Anda dengan mudah dengan tutorial langkah demi langkah ini.
-type: docs
 weight: 10
 url: /id/net/password-protection-and-encryption/password-protect-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Direktori Perlindungan Kata Sandi di .NET dengan Tutorial Aspose.Zip
+
 
 ## Perkenalan
 
@@ -90,3 +96,10 @@ Ya, Aspose.Zip untuk .NET dirancang untuk menangani direktori besar secara efisi
 ### Di mana saya dapat menemukan dukungan tambahan untuk Aspose.Zip untuk .NET?
  Anda dapat mengunjungi[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) untuk dukungan atau pertanyaan apa pun.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

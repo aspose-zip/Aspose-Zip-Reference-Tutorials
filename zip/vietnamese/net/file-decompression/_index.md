@@ -3,10 +3,16 @@ title: Giải nén tập tin
 linktitle: Giải nén tập tin
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Làm chủ việc giải nén tệp trong .NET một cách dễ dàng với hướng dẫn Aspose.Zip for .NET. Tìm hiểu cách xử lý tệp nén hiệu quả với hướng dẫn từng bước.
-type: docs
 weight: 21
 url: /vi/net/file-decompression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Giải nén tập tin
+
 
 
 ## Giới thiệu
@@ -45,3 +51,9 @@ Tìm hiểu cách giải nén các tệp được bảo vệ bằng mật khẩu
 Khám phá hướng dẫn từng bước về giải nén kho lưu trữ Wim bằng Aspose.Zip cho .NET. Tải xuống thư viện, làm theo hướng dẫn và quản lý hiệu quả các tệp lưu trữ trong ứng dụng .NET của bạn.
 ### [Giải nén Xar vào thư mục trong Aspose.Zip cho .NET](./decompress-xar-folder/)
 Khám phá sức mạnh của Aspose.Zip dành cho .NET! Giải nén dễ dàng các kho lưu trữ Xar với hướng dẫn thân thiện với người dùng này. Nâng cao trải nghiệm phát triển .NET của bạn.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

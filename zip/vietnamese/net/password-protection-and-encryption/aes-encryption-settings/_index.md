@@ -3,10 +3,16 @@ title: Aspose.Zip cho .NET - Hướng dẫn mã hóa AES
 linktitle: Cài đặt mã hóa AES
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Khám phá Aspose.Zip cho .NET để bảo mật các tệp nén của bạn bằng mã hóa AES. Tải xuống ngay để bảo vệ dữ liệu hiệu quả.
-type: docs
 weight: 14
 url: /vi/net/password-protection-and-encryption/aes-encryption-settings/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip cho .NET - Hướng dẫn mã hóa AES
+
 
 ## Giới thiệu
 
@@ -87,3 +93,10 @@ Chúc mừng! Bạn đã triển khai thành công cài đặt mã hóa AES bằ
 ### Hỏi: Tôi có thể xin giấy phép tạm thời để thử nghiệm không?
  A: Có, bạn có thể xin giấy phép tạm thời[đây](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

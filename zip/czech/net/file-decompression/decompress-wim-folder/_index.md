@@ -3,10 +3,16 @@ title: Dekomprimujte Wim do složky v Aspose.Zip pro .NET
 linktitle: Dekomprimujte Wim do složky
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Prozkoumejte podrobného průvodce dekompresí Wim archivů pomocí Aspose.Zip pro .NET. Stáhněte si knihovnu, postupujte podle výukového programu a efektivně spravujte archivní soubory ve svých aplikacích .NET.
-type: docs
 weight: 16
 url: /cs/net/file-decompression/decompress-wim-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekomprimujte Wim do složky v Aspose.Zip pro .NET
+
 ## Úvod
 
 Vítejte v tomto komplexním tutoriálu o dekompresi Wim archivů do složky pomocí Aspose.Zip pro .NET. Aspose.Zip je výkonná knihovna, která poskytuje bezproblémové funkce pro práci s různými archivními formáty v aplikacích .NET. V tomto tutoriálu vás krok za krokem provedeme procesem dekomprimace Wim archivu do zadané složky.
@@ -77,3 +83,9 @@ Odpověď 1: Ano, Aspose.Zip podporuje různé archivní formáty, včetně ZIP,
 ### Q5: Kde mohu získat podporu nebo klást otázky týkající se Aspose.Zip pro .NET?
 
  A5: Navštivte[Fórum Aspose.Zip](https://forum.aspose.com/c/zip/37) za podporu a diskuze.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

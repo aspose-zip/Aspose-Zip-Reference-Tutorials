@@ -3,10 +3,16 @@ title: Dosya Sıkıştırması
 linktitle: Dosya Sıkıştırması
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Aspose.Zip ile .NET'teki dosyaları zahmetsizce sıkıştırın! Optimum sıkıştırma ayarları için Bzip2, LZMA, PPMd, Deflate ve Store yöntemlerini kullanarak adım adım dosya yönetimini öğrenin.
-type: docs
 weight: 20
 url: /tr/net/file-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dosya Sıkıştırması
+
 
 ## giriiş
 
@@ -47,3 +53,9 @@ Aspose.Zip kullanarak dosyaları .NET'te verimli bir şekilde sıkıştırmayı 
 
 ## Çözüm
 Dosya sıkıştırma alanında Aspose.Zip for .NET çok yönlü ve güçlü bir araç olarak öne çıkıyor. Tek dosyaları sıkıştırmaktan birden fazla dosyayı sıkıştırmadan yönetmeye ve üstün performans için ayarları optimize etmeye kadar bu eğitim paketi her şeyi kapsar. Aspose.Zip ile dosya yönetimi becerilerinizi geliştirin ve .NET uygulamalarınızı geliştirin!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

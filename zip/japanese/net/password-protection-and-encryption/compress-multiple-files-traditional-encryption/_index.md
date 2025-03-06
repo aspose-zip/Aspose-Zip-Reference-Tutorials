@@ -3,10 +3,16 @@ title: Aspose.Zip .NET で暗号化を使用して複数のファイルを圧縮
 linktitle: 従来の暗号化を使用して複数のファイルを圧縮する
 second_title: ファイルの圧縮とアーカイブのための Aspose.Zip .NET API
 description: Aspose.Zip for .NET で従来の暗号化を使用して複数のファイルを安全に圧縮する方法を学びます。 .NET アプリケーションのデータ保護を強化します。
-type: docs
 weight: 17
 url: /ja/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip .NET で暗号化を使用して複数のファイルを圧縮する
+
 
 ## 導入
 
@@ -94,3 +100,10 @@ archive.Save(zipFile);
 ### 5. Aspose.Zip for .NET の詳細なドキュメントはどこで見つけられますか?
 
 ドキュメントを参照してください[ここ](https://reference.aspose.com/zip/net/)詳細な情報については。
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

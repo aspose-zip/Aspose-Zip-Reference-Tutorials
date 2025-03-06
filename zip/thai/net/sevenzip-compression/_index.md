@@ -3,10 +3,16 @@ title: การบีบอัด SevenZip
 linktitle: การบีบอัด SevenZip
 second_title: Aspose.Zip .NET API สำหรับการบีบอัดไฟล์และการเก็บถาวร
 description: ปลดล็อกศักยภาพของ Aspose.Zip สำหรับ .NET ด้วยบทช่วยสอนการบีบอัด SevenZip ของเรา สร้างรายการ SevenZip ได้อย่างง่ายดายและสำรวจวิธีการบีบอัดต่างๆ
-type: docs
 weight: 25
 url: /th/net/sevenzip-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# การบีบอัด SevenZip
+
 
 
 ยินดีต้อนรับสู่คำแนะนำที่ครอบคลุมของเราเกี่ยวกับบทช่วยสอนการบีบอัด SevenZip โดยใช้ Aspose.Zip สำหรับ .NET ในชุดบทช่วยสอนนี้ เราจะเจาะลึกถึงประสิทธิภาพของ Aspose.Zip ซึ่งจะแนะนำคุณตลอดกระบวนการสร้างรายการ SevenZip และสำรวจวิธีการบีบอัดต่างๆ มาร่วมเริ่มต้นการเดินทางครั้งนี้เพื่อยกระดับประสบการณ์การพัฒนา .NET ของคุณ
@@ -31,3 +37,9 @@ url: /th/net/sevenzip-compression/
 Master Aspose.Zip สำหรับ .NET - สร้างรายการ SevenZip ได้อย่างง่ายดาย ปรับปรุงแอปพลิเคชัน .NET ของคุณด้วยการจัดการไฟล์ zip ที่มีประสิทธิภาพ
 ### [SevenZip พร้อมวิธีการบีบอัดที่หลากหลายใน Aspose.Zip สำหรับ .NET](./sevenzip-various-compression-methods/)
 เรียนรู้วิธีสร้างไฟล์ Seven Zip ด้วย Aspose.Zip สำหรับ .NET โดยใช้วิธีการบีบอัดแบบต่างๆ ขั้นตอนง่ายๆ สำหรับ LZMA2, BZip2 และ Store (ไม่มีการบีบอัด)
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

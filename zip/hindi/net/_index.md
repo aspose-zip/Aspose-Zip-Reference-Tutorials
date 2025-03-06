@@ -1,12 +1,17 @@
 ---
 title: .NET के लिए Aspose.Zip के व्यापक ट्यूटोरियल और उदाहरण
 linktitle: .NET ट्यूटोरियल के लिए Aspose.Zip
-type: docs
 weight: 10
 url: /hi/net/
 description:
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET के लिए Aspose.Zip के व्यापक ट्यूटोरियल और उदाहरण
+
 
 ### [फ़ाइल संपीड़न](./file-compression/)
 Aspose.Zip के साथ .NET में फ़ाइलों को आसानी से संपीड़ित करें! इष्टतम संपीड़न सेटिंग्स के लिए Bzip2, LZMA, PPMd, Deflate और Store विधियों का उपयोग करके चरण-दर-चरण फ़ाइल प्रबंधन सीखें।
@@ -24,3 +29,9 @@ Aspose.Zip के साथ .NET में फ़ाइल संपीड़न
 .NET के लिए Aspose.Zip से अपनी फ़ाइलें सुरक्षित करें! एईएस से लेकर पारंपरिक तरीकों तक, पासवर्ड सुरक्षा और एन्क्रिप्शन पर चरण-दर-चरण ट्यूटोरियल सीखें। 
 ### [अन्य संपीड़न तकनीकें](./other-compression-techniques/)
 .NET के लिए Aspose.Zip के साथ उन्नत संपीड़न तकनीकों में सहजता से महारत हासिल करें। मेमोरी स्ट्रीम को निकालने से लेकर Lzma कम्प्रेशन के साथ स्टोरेज को अनुकूलित करने तक, अपने विकास कौशल को उन्नत करें।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

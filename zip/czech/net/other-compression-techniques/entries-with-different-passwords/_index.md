@@ -3,10 +3,16 @@ title: Položky s různými hesly v Aspose.Zip pro .NET
 linktitle: Záznamy s různými hesly
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Prozkoumejte sílu Aspose.Zip pro .NET pomocí našeho podrobného průvodce správou archivů ZIP s různými hesly. Zvyšte bezpečnost a flexibilitu ve svých aplikacích.
-type: docs
 weight: 13
 url: /cs/net/other-compression-techniques/entries-with-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Položky s různými hesly v Aspose.Zip pro .NET
+
 ## Úvod
 
 Vítejte ve světě Aspose.Zip for .NET, výkonné knihovny, která umožňuje vývojářům bezproblémově spravovat a manipulovat s archivy ZIP. V tomto tutoriálu se ponoříme do specifické funkce: práce se záznamy s různými hesly. Ať už jste zkušený vývojář nebo teprve začínáte, tento podrobný průvodce vás provede celým procesem a odemkne potenciál Aspose.Zip pro .NET.
@@ -97,3 +103,9 @@ A2: Rozhodně! Aspose.Zip for .NET nabízí komerční licence a můžete najít
 ### Q5: Mohu používat Aspose.Zip pro .NET bez trvalé licence?
 
  A5: Ano, můžete získat dočasnou licenci pro vaše krátkodobé potřeby. Najděte další podrobnosti[tady](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

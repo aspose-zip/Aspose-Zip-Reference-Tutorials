@@ -3,10 +3,16 @@ title: فك ضغط ملفات AES - البرنامج التعليمي Aspose.Zip
 linktitle: فك ضغط الملف المشفر AES
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: تعلم كيفية فك ضغط الملفات المشفرة AES في لغة C# باستخدام Aspose.Zip لـ .NET. اتبع دليلنا خطوة بخطوة للتعامل بكفاءة مع الملفات.
-type: docs
 weight: 18
 url: /ar/net/password-protection-and-encryption/decompress-aes-encrypted-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# فك ضغط ملفات AES - البرنامج التعليمي Aspose.Zip .NET
+
 
 ## مقدمة
 
@@ -92,3 +98,10 @@ using (FileStream fs = File.OpenRead(dataDir + "PasswordProtectWithAES256_out.zi
 ### ماذا لو كنت بحاجة إلى ترخيص مؤقت؟
  يمكنك الحصول على ترخيص مؤقت[هنا](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

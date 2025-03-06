@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET を使用した TarBz2 へのファイル圧縮
 linktitle: TarBz2 への圧縮
 second_title: ファイルの圧縮とアーカイブのための Aspose.Zip .NET API
 description: Aspose.Zip を使用して .NET でファイルを TarBz2 形式に圧縮する方法を学びます。効率的にファイルを圧縮するには、ステップバイステップのガイドに従ってください。
-type: docs
 weight: 11
 url: /ja/net/archive-extraction-and-formats/compress-to-tar-bz2/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET を使用した TarBz2 へのファイル圧縮
+
 ## 導入
 
 Aspose.Zip for .NET を使用してファイルを TarBz2 形式に圧縮するための包括的なガイドへようこそ。 Aspose.Zip は、.NET アプリケーションで圧縮ファイル形式を効率的に処理するために必要なツールを開発者に提供する強力で多用途のライブラリです。
@@ -90,3 +96,9 @@ A2: はい、提供された例内の Tar アーカイブにエントリを追�
 ### Q5: 無料トライアルはありますか?
 
  A5: はい、無料トライアルにアクセスできます。[ここ](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET - البرنامج التعليمي لتشفير AES
 linktitle: إعدادات تشفير AES
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: استكشف Aspose.Zip for .NET لتأمين ملفاتك المضغوطة باستخدام تشفير AES. قم بالتنزيل الآن لحماية البيانات بكفاءة.
-type: docs
 weight: 14
 url: /ar/net/password-protection-and-encryption/aes-encryption-settings/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET - البرنامج التعليمي لتشفير AES
+
 
 ## مقدمة
 
@@ -87,3 +93,10 @@ Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Set
 ### س: هل يمكنني الحصول على تراخيص مؤقتة للاختبار؟
  ج: نعم، يمكنك الحصول على ترخيص مؤقت[هنا](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

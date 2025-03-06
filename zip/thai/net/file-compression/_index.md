@@ -3,10 +3,16 @@ title: การบีบอัดไฟล์
 linktitle: การบีบอัดไฟล์
 second_title: Aspose.Zip .NET API สำหรับการบีบอัดไฟล์และการเก็บถาวร
 description: บีบอัดไฟล์ใน .NET ได้อย่างง่ายดายด้วย Aspose.Zip! เรียนรู้การจัดการไฟล์ทีละขั้นตอนโดยใช้วิธี Bzip2, LZMA, PPMd, Deflate และ Store เพื่อการตั้งค่าการบีบอัดที่เหมาะสมที่สุด
-type: docs
 weight: 20
 url: /th/net/file-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# การบีบอัดไฟล์
+
 
 ## การแนะนำ
 
@@ -47,3 +53,9 @@ url: /th/net/file-compression/
 
 ## บทสรุป
 ในด้านการบีบอัดไฟล์ Aspose.Zip สำหรับ .NET มีความโดดเด่นในฐานะเครื่องมืออเนกประสงค์และทรงประสิทธิภาพ ตั้งแต่การบีบอัดไฟล์เดียวไปจนถึงการจัดการหลายไฟล์โดยไม่มีการบีบอัด และการเพิ่มประสิทธิภาพการตั้งค่าเพื่อประสิทธิภาพที่เหนือกว่า ชุดบทช่วยสอนนี้ครอบคลุมทั้งหมด ยกระดับทักษะการจัดการไฟล์ของคุณและปรับปรุงแอปพลิเคชัน .NET ของคุณด้วย Aspose.Zip!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

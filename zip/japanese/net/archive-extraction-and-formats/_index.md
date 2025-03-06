@@ -3,10 +3,16 @@ title: アーカイブの抽出と形式
 linktitle: アーカイブの抽出と形式
 second_title: ファイルの圧縮とアーカイブのための Aspose.Zip .NET API
 description: Aspose.Zip を使用して、.NET でのファイル圧縮の能力を解放します。効率的に保存するために、ファイルを TarBz2、TarGz、TarZ などのさまざまな形式に圧縮する方法を学びます。
-type: docs
 weight: 23
 url: /ja/net/archive-extraction-and-formats/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# アーカイブの抽出と形式
+
 
 ## 導入
 
@@ -53,3 +59,9 @@ Aspose.Zip を使用して .NET でファイルを TarXz 形式に圧縮する�
 Aspose.Zip for .NET を使用して、TarZ への段階的な圧縮を検討します。 .NET プロジェクトの効率的なファイル処理。
 ### [Aspose.Zip for .NET での異なるパスワードを持つアーカイブ エントリの抽出](./extract-archive-different-passwords/)
 Aspose.Zip for .NET でさまざまなパスワードを使用してアーカイブ エントリを抽出する方法を学びます。アプリケーションのセキュリティと柔軟性を強化します。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

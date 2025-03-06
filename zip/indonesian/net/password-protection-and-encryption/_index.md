@@ -3,10 +3,16 @@ title: Perlindungan Kata Sandi dan Enkripsi
 linktitle: Perlindungan Kata Sandi dan Enkripsi
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Amankan file Anda dengan Aspose.Zip untuk .NET! Pelajari tutorial langkah demi langkah tentang perlindungan kata sandi dan enkripsi, dari AES hingga metode tradisional.
-type: docs
 weight: 26
 url: /id/net/password-protection-and-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Perlindungan Kata Sandi dan Enkripsi
+
 
 ## Perkenalan
 
@@ -74,3 +80,9 @@ Pelajari cara mengompresi banyak file dengan aman menggunakan enkripsi tradision
 Pelajari cara mendekompresi file terenkripsi AES di C# menggunakan Aspose.Zip untuk .NET. Ikuti panduan langkah demi langkah kami untuk penanganan file yang efisien.
 ### [Dekompresi File Terenkripsi AES yang Tersimpan di Aspose.Zip untuk .NET](./decompress-aes-encrypted-stored-file/)
 Pelajari cara mendekompresi file tersimpan terenkripsi AES di Aspose.Zip untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. Tingkatkan keterampilan pengembangan .NET Anda hari ini!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

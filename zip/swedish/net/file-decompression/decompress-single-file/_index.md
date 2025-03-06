@@ -3,10 +3,16 @@ title: Dekomprimera en enda fil med Aspose.Zip för .NET
 linktitle: Dekomprimera en enskild fil
 second_title: Aspose.Zip .NET API för filkomprimering och arkivering
 description: Utforska den sömlösa världen av fildekomprimering med Aspose.Zip för .NET. Hantera komprimerade filer enkelt i dina C#-projekt.
-type: docs
 weight: 12
 url: /sv/net/file-decompression/decompress-single-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekomprimera en enda fil med Aspose.Zip för .NET
+
 ## Introduktion
 
 Inom området .NET-utveckling står Aspose.Zip som en robust lösning för att hantera komprimerade filer med finess. Denna handledning guidar dig genom processen att dekomprimera en enda fil med Aspose.Zip för .NET. Spänn in när vi reder ut funktionerna i detta kraftfulla bibliotek steg för steg.
@@ -103,3 +109,9 @@ S3: Aspose.Zip tillhandahåller metoder för att arbeta med lösenordsskyddade a
 ### F5: Var kan jag söka hjälp om jag stöter på problem?
 
  A5: Besök[Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) för samhällsstöd.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Decomprimeer traditioneel met een wachtwoord beveiligd bestand in Aspose.
 linktitle: Decomprimeer traditioneel met een wachtwoord beveiligd bestand
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Leer hoe u traditioneel met een wachtwoord beveiligde bestanden kunt decomprimeren met Aspose.Zip voor .NET. Een stapsgewijze handleiding voor naadloze integratie.
-type: docs
 weight: 15
 url: /nl/net/file-decompression/decompress-traditionally-password-protected-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Decomprimeer traditioneel met een wachtwoord beveiligd bestand in Aspose.Zip voor .NET
+
 Op het gebied van .NET-ontwikkeling onderscheidt Aspose.Zip zich als een robuuste oplossing voor het verwerken van gecomprimeerde bestanden. Onder de talloze functies is een prominente mogelijkheid de mogelijkheid om traditioneel met een wachtwoord beveiligde bestanden te decomprimeren. In deze zelfstudie verdiepen we ons in het proces van het decomprimeren van een bestand dat is gecodeerd met een traditioneel wachtwoord met behulp van Aspose.Zip voor .NET. Voordat we aan deze reis beginnen, moeten we ervoor zorgen dat we aan de voorwaarden voldoen.
 
 ## Vereisten
@@ -96,3 +102,9 @@ A3: Ja, Aspose.Zip ondersteunt verschillende versleutelingsmethoden en biedt fle
 ### V5: Hoe kan ik een tijdelijke licentie voor Aspose.Zip verkrijgen?
 
  A5: U kunt een tijdelijke licentie verkrijgen bij[Aspose.Aankoop](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

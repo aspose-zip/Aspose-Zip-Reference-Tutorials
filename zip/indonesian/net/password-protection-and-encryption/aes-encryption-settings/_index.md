@@ -3,10 +3,16 @@ title: Aspose.Zip untuk .NET - Tutorial Enkripsi AES
 linktitle: Pengaturan Enkripsi AES
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Jelajahi Aspose.Zip untuk .NET untuk mengamankan file terkompresi Anda dengan enkripsi AES. Unduh sekarang untuk perlindungan data yang efisien.
-type: docs
 weight: 14
 url: /id/net/password-protection-and-encryption/aes-encryption-settings/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip untuk .NET - Tutorial Enkripsi AES
+
 
 ## Perkenalan
 
@@ -87,3 +93,10 @@ Selamat! Anda telah berhasil menerapkan pengaturan enkripsi AES menggunakan Aspo
 ### T: Bisakah saya mendapatkan lisensi sementara untuk pengujian?
  A: Ya, Anda bisa mendapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Dekomprimovat soubory AES – výukový program Aspose.Zip .NET
 linktitle: Dekomprimujte šifrovaný soubor AES
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Naučte se dekomprimovat AES šifrované soubory v C# pomocí Aspose.Zip pro .NET. Postupujte podle našeho podrobného průvodce pro efektivní práci se soubory.
-type: docs
 weight: 18
 url: /cs/net/password-protection-and-encryption/decompress-aes-encrypted-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekomprimovat soubory AES – výukový program Aspose.Zip .NET
+
 
 ## Úvod
 
@@ -92,3 +98,10 @@ Ano, Aspose.Zip podporuje šifrování AES s délkou klíče 128, 192 a 256 bit�
 ### Co když potřebuji dočasnou licenci?
  Můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

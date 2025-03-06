@@ -3,10 +3,16 @@ title: Estrazione di voci di archivio con password diverse in Aspose.Zip per .NE
 linktitle: Estrazione di voci di archivio con password diverse
 second_title: Aspose.Zip .NET API per la compressione e l'archiviazione dei file
 description: Scopri come estrarre voci di archivio con password diverse in Aspose.Zip per .NET. Aumenta la sicurezza e la flessibilità delle tue applicazioni.
-type: docs
 weight: 10
 url: /it/net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Estrazione di voci di archivio con password diverse in Aspose.Zip per .NET
+
 ## introduzione
 
 Nel panorama in continua evoluzione dello sviluppo .NET, Aspose.Zip si distingue come un potente strumento per lavorare con archivi compressi. Tra le sue numerose funzionalità, l'estrazione di voci di archivio con password diverse aggiunge un ulteriore livello di sicurezza e versatilità alle tue applicazioni. In questa guida passo passo, esploreremo come raggiungere questo obiettivo utilizzando Aspose.Zip per .NET.
@@ -89,3 +95,9 @@ A1: Sì, Aspose.Zip supporta sia .NET Core che .NET Framework, offrendo flessibi
 ### Q5: Dove posso acquistare Aspose.Zip?
 
  A5: Per acquistare Aspose.Zip, visitare il sito[pagina di acquisto](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

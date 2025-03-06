@@ -3,10 +3,16 @@ title: Maîtrisez l’archivage sécurisé dans .NET avec Aspose.Zip
 linktitle: Archiver avec entrée cryptée
 second_title: API Aspose.Zip .NET pour la compression et l'archivage de fichiers
 description: Explorez le monde de l'archivage sécurisé dans .NET avec Aspose.Zip. Créez facilement sept fichiers Zip avec cryptage AES. Boostez vos compétences en développement dès maintenant !
-type: docs
 weight: 15
 url: /fr/net/password-protection-and-encryption/archive-with-encrypted-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Maîtrisez l’archivage sécurisé dans .NET avec Aspose.Zip
+
 
 ## Introduction
 
@@ -81,3 +87,10 @@ Aspose.Zip pour .NET prend en charge divers algorithmes de compression. Reportez
 ### Puis-je personnaliser davantage les paramètres de cryptage ?
 Absolument! Explorez la documentation pour connaître les options avancées de personnalisation du chiffrement.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

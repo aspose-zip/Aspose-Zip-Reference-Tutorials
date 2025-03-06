@@ -3,10 +3,16 @@ title: Συμπίεση αρχείων χρησιμοποιώντας το FileI
 linktitle: Συμπίεση αρχείων χρησιμοποιώντας το FileInfo
 second_title: Aspose.Zip .NET API για συμπίεση και αρχειοθέτηση αρχείων
 description: Μάθετε να συμπιέζετε αρχεία χρησιμοποιώντας το αρχείο πληροφοριών με το Aspose.Zip για .NET. Ακολουθήστε τον βήμα προς βήμα οδηγό μας για αποτελεσματική διαχείριση αρχείων.
-type: docs
 weight: 11
 url: /el/net/file-compression/compress-files-fileinfo/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Συμπίεση αρχείων χρησιμοποιώντας το FileInfo στο Aspose.Zip για .NET
+
 ## Εισαγωγή
 
 Καλώς ήρθατε στον περιεκτικό μας οδηγό για τη συμπίεση αρχείων χρησιμοποιώντας το Aspose.Zip για .NET! Αν θέλετε να βελτιστοποιήσετε την αποθήκευση ή τη μετάδοση των αρχείων σας, το Aspose.Zip είναι η λύση που προτιμάτε. Σε αυτό το σεμινάριο, θα σας καθοδηγήσουμε στη διαδικασία συμπίεσης αρχείων χρησιμοποιώντας την κλάση FileInfo, παρέχοντας έναν λεπτομερή οδηγό βήμα προς βήμα. Ας βουτήξουμε!
@@ -102,3 +108,9 @@ A1: Το Aspose.Zip υποστηρίζει ένα ευρύ φάσμα τύπων
 ### Ε5: Πώς μπορώ να αποκτήσω μια προσωρινή άδεια για το Aspose.Zip;
 
  Α5: Επίσκεψη[αυτός ο σύνδεσμος](https://purchase.aspose.com/temporary-license/) για πληροφορίες σχετικά με την απόκτηση προσωρινής άδειας.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

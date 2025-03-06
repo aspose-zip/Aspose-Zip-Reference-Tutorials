@@ -3,10 +3,16 @@ title: Protección y cifrado de contraseña
 linktitle: Protección y cifrado de contraseña
 second_title: API Aspose.Zip .NET para compresión y archivado de archivos
 description: ¡Asegure sus archivos con Aspose.Zip para .NET! Aprenda tutoriales paso a paso sobre protección y cifrado con contraseña, desde AES hasta métodos tradicionales.
-type: docs
 weight: 26
 url: /es/net/password-protection-and-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Protección y cifrado de contraseña
+
 
 ## Introducción
 
@@ -74,3 +80,9 @@ Aprenda a comprimir varios archivos de forma segura utilizando el cifrado tradic
 Aprenda a descomprimir archivos cifrados AES en C# usando Aspose.Zip para .NET. Siga nuestra guía paso a paso para un manejo eficiente de archivos.
 ### [Descomprima el archivo almacenado cifrado AES en Aspose.Zip para .NET](./decompress-aes-encrypted-stored-file/)
 Aprenda cómo descomprimir archivos almacenados cifrados AES en Aspose.Zip para .NET con esta guía completa paso a paso. ¡Mejore sus habilidades de desarrollo .NET hoy!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

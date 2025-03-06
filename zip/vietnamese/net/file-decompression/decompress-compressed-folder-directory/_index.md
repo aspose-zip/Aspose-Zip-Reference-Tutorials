@@ -3,10 +3,16 @@ title: Giải nén thư mục nén vào thư mục trong Aspose.Zip cho .NET
 linktitle: Giải nén thư mục nén vào thư mục
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Khai phá tiềm năng của Aspose.Zip cho .NET! Tìm hiểu cách giải nén thư mục một cách dễ dàng với hướng dẫn từng bước này. Đi sâu vào thế giới nén và trích xuất liền mạch.
-type: docs
 weight: 14
 url: /vi/net/file-decompression/decompress-compressed-folder-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Giải nén thư mục nén vào thư mục trong Aspose.Zip cho .NET
+
 ## Giới thiệu
 
 Chào mừng bạn đến với thế giới của Aspose.Zip dành cho .NET, một thư viện mạnh mẽ cho phép các nhà phát triển xử lý các thư mục nén một cách dễ dàng. Trong hướng dẫn này, chúng ta sẽ đi sâu vào quá trình giải nén một thư mục nén vào một thư mục bằng Aspose.Zip cho .NET. Hãy thắt dây an toàn khi chúng tôi hướng dẫn bạn chi tiết từng bước, làm sáng tỏ sự phức tạp của công cụ mạnh mẽ này.
@@ -79,3 +85,9 @@ Câu trả lời 2: Hoàn toàn có thể, bạn có thể sử dụng Aspose.Zi
 ### Câu hỏi 5: Tôi có cần giấy phép tạm thời để thử nghiệm Aspose.Zip cho .NET không?
 
  Câu trả lời 5: Có, bạn có thể xin giấy phép tạm thời từ[đây](https://purchase.aspose.com/temporary-license/) cho mục đích thử nghiệm.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

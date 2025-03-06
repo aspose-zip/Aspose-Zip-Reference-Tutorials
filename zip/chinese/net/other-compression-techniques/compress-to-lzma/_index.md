@@ -3,10 +3,16 @@ title: 在 Aspose.Zip for .NET 中压缩为 Lzma
 linktitle: 压缩为 Lzma
 second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
 description: 了解如何使用 Aspose.Zip for .NET 和强大的 Lzma 算法来压缩文件。轻松优化存储并提高数据传输效率。
-type: docs
 weight: 14
 url: /zh/net/other-compression-techniques/compress-to-lzma/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 在 Aspose.Zip for .NET 中压缩为 Lzma
+
 ## 介绍
 
 在 .NET 开发领域，有效的文件压缩对于优化存储空间和提高数据传输效率至关重要。 Aspose.Zip for .NET 提供了强大的文件压缩解决方案，提供了各种压缩算法，包括 Lzma。在本教程中，我们将指导您完成使用 Aspose.Zip for .NET 压缩文件的过程，重点是 Lzma 压缩算法。
@@ -85,3 +91,9 @@ A4：是的，您可以在不同压缩算法的文档中找到代码示例。
 ### 问题 5：我可以在哪里寻求有关 Aspose.Zip for .NET 的支持或提出问题？
 
  A5：访问[Aspose.Zip 论坛](https://forum.aspose.com/c/zip/37)以寻求支持和讨论。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

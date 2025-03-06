@@ -3,10 +3,16 @@ title: Dekomprese více souborů pomocí Aspose.Zip pro .NET
 linktitle: Dekomprese více souborů
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Naučte se, jak dekomprimovat více souborů pomocí Aspose.Zip pro .NET. Postupujte podle našeho podrobného průvodce pro efektivní správu souborů.
-type: docs
 weight: 11
 url: /cs/net/file-decompression/decompress-multiple-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekomprese více souborů pomocí Aspose.Zip pro .NET
+
 ## Úvod
 
 Vítejte v našem komplexním návodu na dekompresi více souborů pomocí Aspose.Zip pro .NET! Pokud hledáte efektivní zpracování komprimovaných souborů obsahujících více položek, jste na správném místě. V této příručce vás provedeme procesem krok za krokem pomocí Aspose.Zip pro .NET.
@@ -127,3 +133,9 @@ tomto tutoriálu jsme probrali základní kroky k dekomprimaci více souborů po
 ### Q5: Existují nějaké specifické systémové požadavky pro používání Aspose.Zip pro .NET?
 
  A5: Viz[dokumentace](https://reference.aspose.com/zip/net/) pro podrobné systémové požadavky.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

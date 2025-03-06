@@ -3,10 +3,16 @@ title: قم بفك ضغط Wim إلى مجلد في Aspose.Zip لـ .NET
 linktitle: قم بفك ضغط Wim إلى مجلد
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: استكشف الدليل التفصيلي خطوة بخطوة حول فك ضغط أرشيفات Wim باستخدام Aspose.Zip لـ .NET. قم بتنزيل المكتبة، واتبع البرنامج التعليمي، وقم بإدارة ملفات الأرشيف بكفاءة في تطبيقات .NET الخاصة بك.
-type: docs
 weight: 16
 url: /ar/net/file-decompression/decompress-wim-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# قم بفك ضغط Wim إلى مجلد في Aspose.Zip لـ .NET
+
 ## مقدمة
 
 مرحبًا بك في هذا البرنامج التعليمي الشامل حول فك ضغط أرشيفات Wim إلى مجلد باستخدام Aspose.Zip لـ .NET. Aspose.Zip هي مكتبة قوية توفر إمكانات سلسة للعمل مع تنسيقات الأرشيف المختلفة في تطبيقات .NET. في هذا البرنامج التعليمي، سنرشدك خلال عملية فك ضغط أرشيف Wim إلى مجلد محدد خطوة بخطوة.
@@ -77,3 +83,9 @@ using (FileStream fs = File.OpenRead(dataDir + "corpus.wim"))
 ### س5: أين يمكنني الحصول على الدعم أو طرح الأسئلة حول Aspose.Zip for .NET؟
 
  ج5: قم بزيارة[منتدى Aspose.Zip](https://forum.aspose.com/c/zip/37) للدعم والمناقشات.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

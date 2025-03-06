@@ -3,10 +3,16 @@ title: Αποσυμπίεση φακέλου με Aspose.Zip για .NET
 linktitle: Αποσυμπίεση φακέλου
 second_title: Aspose.Zip .NET API για συμπίεση και αρχειοθέτηση αρχείων
 description: Κατακτήστε την τέχνη της αποσυμπίεσης φακέλων με το Aspose.Zip για .NET. Χειριστείτε χωρίς κόπο εργασίες συμπίεσης στα έργα σας.
-type: docs
 weight: 11
 url: /el/net/directory-and-folder-compression/decompress-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Αποσυμπίεση φακέλου με Aspose.Zip για .NET
+
 Θέλετε να αποσυμπιέσετε απρόσκοπτα φακέλους χρησιμοποιώντας το Aspose.Zip για .NET; Μην ψάχνετε άλλο! Αυτός ο οδηγός βήμα προς βήμα θα σας καθοδηγήσει στη διαδικασία, διασφαλίζοντας ότι θα κατακτήσετε την τέχνη της αποσυμπίεσης φακέλων χωρίς κόπο.
 
 ## Προαπαιτούμενα
@@ -88,3 +94,9 @@ A1: Ναι, το Aspose.Zip για .NET υποστηρίζει τη συμπίε
 ### Ε5: Πώς μπορώ να λάβω υποστήριξη για το Aspose.Zip για .NET;
 
  A5: Για οποιαδήποτε απορία ή βοήθεια, επισκεφθείτε τη διεύθυνση[Aspose.Zip φόρουμ](https://forum.aspose.com/c/zip/37) όπου μπορείτε να συνεργαστείτε με την κοινότητα και να ζητήσετε συμβουλές από ειδικούς.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

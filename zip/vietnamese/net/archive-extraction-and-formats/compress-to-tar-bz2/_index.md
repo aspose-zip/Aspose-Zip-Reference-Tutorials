@@ -3,10 +3,16 @@ title: Nén tệp vào TarBz2 bằng Aspose.Zip cho .NET
 linktitle: Nén vào TarBz2
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Tìm hiểu cách nén tệp sang định dạng TarBz2 trong .NET bằng Aspose.Zip. Hãy làm theo hướng dẫn từng bước của chúng tôi để nén tệp hiệu quả.
-type: docs
 weight: 11
 url: /vi/net/archive-extraction-and-formats/compress-to-tar-bz2/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Nén tệp vào TarBz2 bằng Aspose.Zip cho .NET
+
 ## Giới thiệu
 
 Chào mừng bạn đến với hướng dẫn toàn diện của chúng tôi về cách nén tệp sang định dạng TarBz2 bằng Aspose.Zip cho .NET. Aspose.Zip là một thư viện mạnh mẽ và linh hoạt cung cấp cho các nhà phát triển những công cụ họ cần để làm việc hiệu quả với các định dạng tệp nén trong ứng dụng .NET của họ.
@@ -90,3 +96,9 @@ Câu trả lời 2: Có, bạn có thể nén nhiều tệp bằng cách thêm c
 ### Câu 5: Có bản dùng thử miễn phí không?
 
  Câu trả lời 5: Có, bạn có thể truy cập bản dùng thử miễn phí[đây](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -1,12 +1,17 @@
 ---
 title: دروس وأمثلة شاملة لـ Aspose.Zip لـ .NET
 linktitle: Aspose.Zip لبرامج .NET التعليمية
-type: docs
 weight: 10
 url: /ar/net/
 description:
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# دروس وأمثلة شاملة لـ Aspose.Zip لـ .NET
+
 
 ### [ضغط الملفات](./file-compression/)
 قم بضغط الملفات في .NET بسهولة باستخدام Aspose.Zip! تعرف على إدارة الملفات خطوة بخطوة باستخدام طرق Bzip2 وLZMA وPPMd وDeflate وStore لإعدادات الضغط المثالية.
@@ -24,3 +29,9 @@ is_root: true
 قم بتأمين ملفاتك باستخدام Aspose.Zip لـ .NET! تعرف على البرامج التعليمية خطوة بخطوة حول حماية كلمة المرور والتشفير، بدءًا من AES وحتى الطرق التقليدية. 
 ### [تقنيات الضغط الأخرى](./other-compression-techniques/)
 إتقان تقنيات الضغط المتقدمة بسهولة باستخدام Aspose.Zip for .NET. ارفع مهاراتك التطويرية، بدءًا من الاستخراج إلى تدفق الذاكرة وحتى تحسين التخزين باستخدام ضغط Lzma.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

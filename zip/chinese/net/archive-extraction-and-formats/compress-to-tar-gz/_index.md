@@ -3,10 +3,16 @@ title: 使用 Aspose.Zip for .NET 压缩为 TarGz
 linktitle: 压缩为 TarGz
 second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
 description: 使用 Aspose.Zip 在 .NET 中探索高效的文件压缩。轻松压缩为 TarGz。
-type: docs
 weight: 12
 url: /zh/net/archive-extraction-and-formats/compress-to-tar-gz/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Zip for .NET 压缩为 TarGz
+
 ## 介绍
 
 在不断发展的 .NET 开发环境中，高效的文件压缩是优化数据存储和传输的一个重要方面。 Aspose.Zip for .NET 成为寻求强大压缩功能的开发人员的强大工具。本教程将指导您完成使用 Aspose.Zip for .NET 将文件压缩为 TarGz 格式的过程，并提供分步演练。
@@ -91,3 +97,9 @@ A3：Aspose.Zip for .NET 针对处理大文件进行了优化，并且对文件�
 ### Q5：我可以在购买前免费试用 Aspose.Zip for .NET 吗？
 
  A5：当然！访问免费试用版[这里](https://releases.aspose.com/zip/net)探索 Aspose.Zip for .NET 的功能。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Wyodrębnianie wpisów archiwalnych z różnymi hasłami w Aspose.Zip dla
 linktitle: Wyodrębnianie wpisów archiwalnych z różnymi hasłami
 second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
 description: Dowiedz się, jak wyodrębnić wpisy archiwalne z różnymi hasłami w Aspose.Zip dla .NET. Zwiększ bezpieczeństwo i elastyczność swoich aplikacji.
-type: docs
 weight: 10
 url: /pl/net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Wyodrębnianie wpisów archiwalnych z różnymi hasłami w Aspose.Zip dla .NET
+
 ## Wstęp
 
 W stale rozwijającym się środowisku rozwoju .NET Aspose.Zip wyróżnia się jako potężne narzędzie do pracy ze skompresowanymi archiwami. Wśród wielu funkcji wyodrębnianie wpisów archiwalnych za pomocą różnych haseł dodaje dodatkową warstwę bezpieczeństwa i wszechstronności Twoim aplikacjom. W tym przewodniku krok po kroku odkryjemy, jak to osiągnąć za pomocą Aspose.Zip dla .NET.
@@ -89,3 +95,9 @@ Odpowiedź 1: Tak, Aspose.Zip obsługuje zarówno .NET Core, jak i .NET Framewor
 ### P5: Gdzie mogę kupić Aspose.Zip?
 
  O5: Aby kupić Aspose.Zip, odwiedź stronę[strona zakupu](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

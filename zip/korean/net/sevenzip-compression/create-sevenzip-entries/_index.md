@@ -3,10 +3,16 @@ title: .NET용 Aspose.Zip을 사용하여 SevenZip 항목 만들기
 linktitle: SevenZip 항목 만들기
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: .NET용 Aspose.Zip의 강력한 기능을 살펴보세요! SevenZip 항목을 단계별로 생성하는 방법을 알아보세요. 손쉽게 파일을 압축하세요. 원활한 개발 경험을 위해 지금 다운로드하세요.
-type: docs
 weight: 10
 url: /ko/net/sevenzip-compression/create-sevenzip-entries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.Zip을 사용하여 SevenZip 항목 만들기
+
 
 ## 소개
 
@@ -83,3 +89,10 @@ Console.WriteLine("Successfully Created a Seven Zip File");
 
 ### 구매하기 전에 무료 평가판을 이용할 수 있나요?
  예, 무료 평가판에 액세스할 수 있습니다[여기](https://releases.aspose.com/) 약속을 하기 전에 기능을 살펴보세요.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

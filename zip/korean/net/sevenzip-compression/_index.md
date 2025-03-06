@@ -3,10 +3,16 @@ title: SevenZip 압축
 linktitle: SevenZip 압축
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: SevenZip 압축 튜토리얼을 통해 .NET용 Aspose.Zip의 잠재력을 활용해 보세요. SevenZip 항목을 손쉽게 생성하고 다양한 압축 방법을 탐색해 보세요.
-type: docs
 weight: 25
 url: /ko/net/sevenzip-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# SevenZip 압축
+
 
 
 .NET용 Aspose.Zip을 사용하는 SevenZip 압축 튜토리얼에 대한 종합 가이드에 오신 것을 환영합니다. 이 튜토리얼 시리즈에서는 Aspose.Zip의 기능을 자세히 살펴보고 SevenZip 항목을 생성하고 다양한 압축 방법을 탐색하는 과정을 안내합니다. .NET 개발 경험을 향상하기 위한 여정을 시작해 보세요.
@@ -31,3 +37,9 @@ SevenZip 항목 생성에 익숙해지면 이제 기술을 마스터할 시간�
 .NET용 Master Aspose.Zip - SevenZip 항목을 손쉽게 생성하세요. 효율적인 zip 아카이브 조작으로 .NET 애플리케이션을 강화하세요.
 ### [.NET용 Aspose.Zip의 다양한 압축 방법을 갖춘 SevenZip](./sevenzip-various-compression-methods/)
 다양한 압축 방법을 사용하여 .NET용 Aspose.Zip으로 Seven Zip 파일을 만드는 방법을 알아보세요. LZMA2, BZip2 및 Store(압축 없음)를 위한 쉬운 단계입니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

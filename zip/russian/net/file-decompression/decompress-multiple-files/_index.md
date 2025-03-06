@@ -3,10 +3,16 @@ title: Распаковка нескольких файлов с помощью 
 linktitle: Распаковка нескольких файлов
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Узнайте, как распаковать несколько файлов с помощью Aspose.Zip для .NET. Следуйте нашему пошаговому руководству для эффективного управления файлами.
-type: docs
 weight: 11
 url: /ru/net/file-decompression/decompress-multiple-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Распаковка нескольких файлов с помощью Aspose.Zip для .NET
+
 ## Введение
 
 Добро пожаловать в наше подробное руководство по распаковке нескольких файлов с помощью Aspose.Zip для .NET! Если вы хотите эффективно обрабатывать сжатые файлы, содержащие несколько записей, вы попали по адресу. В этом руководстве мы шаг за шагом проведем вас через весь процесс, используя Aspose.Zip для .NET.
@@ -127,3 +133,9 @@ archive.Entries[1].Extract(dataDir + "asyoulik_extracted_out.txt");
 ### Вопрос 5: Существуют ли какие-либо особые системные требования для использования Aspose.Zip для .NET?
 
  A5: См.[документация](https://reference.aspose.com/zip/net/) подробные системные требования.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

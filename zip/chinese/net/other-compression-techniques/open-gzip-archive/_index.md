@@ -3,10 +3,16 @@ title: 使用 Aspose.Zip for .NET 打开 GZip 存档
 linktitle: 打开 GZip 存档
 second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
 description: 了解如何使用 Aspose.Zip 在 .NET 中轻松打开 GZip 档案。请按照我们的分步指南进行高效、无缝的文件处理。
-type: docs
 weight: 11
 url: /zh/net/other-compression-techniques/open-gzip-archive/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Zip for .NET 打开 GZip 存档
+
 ## 介绍
 
 如果您在 .NET 中处理压缩档案，Aspose.Zip 是您高效、无缝处理的首选解决方案。在本教程中，我们将深入研究使用 Aspose.Zip for .NET 打开 GZip 存档的过程。无论您是经验丰富的开发人员还是新手，本分步指南都将清晰准确地引导您完成整个过程。
@@ -87,3 +93,9 @@ A2：当然！ Aspose.Zip 提供全面的功能，包括创建 GZip 档案。
 ### Q5：如何购买 Aspose.Zip for .NET？
 
  A5：参观[Aspose.Zip 购买](https://purchase.aspose.com/buy)有关许可和购买选项的信息。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

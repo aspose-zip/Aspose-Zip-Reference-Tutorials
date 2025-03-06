@@ -3,10 +3,16 @@ title: 使用 Aspose.Zip for .NET 轻松进行目录压缩
 linktitle: 如何压缩目录
 second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
 description: 学习使用 Aspose.Zip for .NET 轻松压缩目录。通过有效优化存储空间来促进您的 .NET 开发。
-type: docs
 weight: 10
 url: /zh/net/directory-and-folder-compression/compress-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Zip for .NET 轻松进行目录压缩
+
 在不断发展的 .NET 开发环境中，找到管理和压缩目录的有效方法至关重要。借助 Aspose.Zip for .NET，您可以简化此过程并增强应用程序的性能。在本分步指南中，我们将引导您完成使用 Aspose.Zip 压缩目录的过程，确保您清楚地掌握每个概念。
 
 ## 介绍
@@ -94,3 +100,9 @@ A1：是的，Aspose.Zip for .NET 已获得商业和个人使用许可。
 ### Q5：我可以购买 Aspose.Zip for .NET 吗？
 
  A5: 当然，您可以购买[这里](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

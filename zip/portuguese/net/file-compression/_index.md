@@ -3,10 +3,16 @@ title: Compactação de arquivo
 linktitle: Compactação de arquivo
 second_title: API Aspose.Zip .NET para compactação e arquivamento de arquivos
 description: Compacte arquivos .NET sem esforço com Aspose.Zip! Aprenda o gerenciamento de arquivos passo a passo usando os métodos Bzip2, LZMA, PPMd, Deflate e Store para obter configurações de compactação ideais.
-type: docs
 weight: 20
 url: /pt/net/file-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Compactação de arquivo
+
 
 ## Introdução
 
@@ -47,3 +53,9 @@ Aprenda a compactar arquivos com eficiência em .NET usando Aspose.Zip. Aproveit
 
 ## Conclusão
 No domínio da compactação de arquivos, Aspose.Zip for .NET se destaca como uma ferramenta versátil e poderosa. Da compactação de arquivos únicos ao gerenciamento de vários arquivos sem compactação e otimização das configurações para desempenho superior, este conjunto de tutoriais cobre tudo. Aumente suas habilidades de gerenciamento de arquivos e aprimore seus aplicativos .NET com Aspose.Zip!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

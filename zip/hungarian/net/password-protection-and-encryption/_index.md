@@ -3,10 +3,16 @@ title: Jelszavas védelem és titkosítás
 linktitle: Jelszavas védelem és titkosítás
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Biztosítsa fájljait az Aspose.Zip for .NET segítségével! Tanuljon meg lépésről lépésre útmutatókat a jelszavas védelemről és titkosításról, az AES-től a hagyományos módszerekig.
-type: docs
 weight: 26
 url: /hu/net/password-protection-and-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Jelszavas védelem és titkosítás
+
 
 ## Bevezetés
 
@@ -74,3 +80,9 @@ Ismerje meg, hogyan tömöríthet biztonságosan több fájlt hagyományos titko
 Ismerje meg az AES-titkosított fájlok kibontását C# nyelven az Aspose.Zip for .NET használatával. Kövesse lépésről lépésre útmutatónkat a hatékony fájlkezelés érdekében.
 ### [Tömörítse ki az AES-titkosított tárolt fájlt az Aspose.Zip for .NET-ben](./decompress-aes-encrypted-stored-file/)
 Ebből az átfogó, lépésenkénti útmutatóból megtudhatja, hogyan lehet kicsomagolni az AES-titkosított tárolt fájlokat az Aspose.Zip for .NET-ben. Növelje .NET fejlesztési készségeit még ma!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

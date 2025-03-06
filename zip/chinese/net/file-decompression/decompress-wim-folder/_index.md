@@ -3,10 +3,16 @@ title: 将 Wim 解压缩到 Aspose.Zip for .NET 中的文件夹
 linktitle: 解压Wim到文件夹
 second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
 description: 探索有关使用 Aspose.Zip for .NET 解压缩 Wim 存档的分步指南。下载该库，按照教程操作，并有效管理 .NET 应用程序中的存档文件。
-type: docs
 weight: 16
 url: /zh/net/file-decompression/decompress-wim-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 将 Wim 解压缩到 Aspose.Zip for .NET 中的文件夹
+
 ## 介绍
 
 欢迎来到这个关于使用 Aspose.Zip for .NET 将 Wim 存档解压到文件夹的综合教程。 Aspose.Zip 是一个功能强大的库，提供在 .NET 应用程序中处理各种存档格式的无缝功能。在本教程中，我们将引导您逐步完成将 Wim 存档解压到指定文件夹的过程。
@@ -77,3 +83,9 @@ A1：是的，Aspose.Zip 支持各种存档格式，包括 ZIP、TAR、GZIP 等�
 ### 问题 5：我在哪里可以获得有关 Aspose.Zip for .NET 的支持或提出问题？
 
  A5：访问[Aspose.Zip 论坛](https://forum.aspose.com/c/zip/37)以寻求支持和讨论。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

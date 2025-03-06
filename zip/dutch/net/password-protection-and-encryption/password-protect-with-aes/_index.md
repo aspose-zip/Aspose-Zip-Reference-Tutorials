@@ -3,10 +3,16 @@ title: Beveilig uw bestanden - AES-codering met Aspose.Zip
 linktitle: Wachtwoordbeveiliging met AES
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Leer hoe u uw bestandsbeveiliging kunt verbeteren met Aspose.Zip voor .NET met AES-codering. Volg onze stap-voor-stap handleiding voor optimale bescherming.
-type: docs
 weight: 11
 url: /nl/net/password-protection-and-encryption/password-protect-with-aes/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Beveilig uw bestanden - AES-codering met Aspose.Zip
+
 
 ## Invoering
 
@@ -108,3 +114,10 @@ Aspose.Zip ondersteunt de codering van verschillende bestandstypen, waardoor fle
 
 ### Wat gebeurt er als ik het wachtwoord voor een gecodeerd archief vergeet?
 Helaas is er geen manier om het wachtwoord van een gecodeerd archief te herstellen. Het is van cruciaal belang om het wachtwoord op een veilige locatie te bewaren.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

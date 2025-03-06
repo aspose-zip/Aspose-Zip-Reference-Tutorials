@@ -3,10 +3,16 @@ title: Ochrana heslem a šifrování
 linktitle: Ochrana heslem a šifrování
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Zabezpečte své soubory pomocí Aspose.Zip pro .NET! Naučte se krok za krokem návody na ochranu heslem a šifrování, od AES po tradiční metody.
-type: docs
 weight: 26
 url: /cs/net/password-protection-and-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ochrana heslem a šifrování
+
 
 ## Úvod
 
@@ -74,3 +80,9 @@ Naučte se, jak bezpečně komprimovat více souborů pomocí tradičního šifr
 Naučte se dekomprimovat AES šifrované soubory v C# pomocí Aspose.Zip pro .NET. Postupujte podle našeho podrobného průvodce pro efektivní práci se soubory.
 ### [Dekomprimujte AES šifrovaný uložený soubor v Aspose.Zip pro .NET](./decompress-aes-encrypted-stored-file/)
 Naučte se, jak dekomprimovat AES zašifrované uložené soubory v Aspose.Zip pro .NET pomocí tohoto komplexního průvodce krok za krokem. Vylepšete své vývojové dovednosti .NET ještě dnes!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

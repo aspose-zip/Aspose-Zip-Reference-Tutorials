@@ -3,10 +3,16 @@ title: Dekomprimieren Sie den komprimierten Ordner in einem Verzeichnis in Aspos
 linktitle: Komprimierten Ordner in Verzeichnis dekomprimieren
 second_title: Aspose.Zip .NET API für Dateikomprimierung und -archivierung
 description: Nutzen Sie das Potenzial von Aspose.Zip für .NET! Erfahren Sie mit dieser Schritt-für-Schritt-Anleitung, wie Sie Ordner mühelos dekomprimieren. Tauchen Sie ein in die Welt der nahtlosen Komprimierung und Extraktion.
-type: docs
 weight: 14
 url: /de/net/file-decompression/decompress-compressed-folder-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekomprimieren Sie den komprimierten Ordner in einem Verzeichnis in Aspose.Zip für .NET
+
 ## Einführung
 
 Willkommen in der Welt von Aspose.Zip für .NET, einer robusten Bibliothek, die Entwicklern den mühelosen Umgang mit komprimierten Ordnern ermöglicht. In diesem Tutorial befassen wir uns mit dem Prozess der Dekomprimierung eines komprimierten Ordners in ein Verzeichnis mithilfe von Aspose.Zip für .NET. Schnall dich an, während wir dich durch jeden Schritt im Detail führen und die Feinheiten dieses leistungsstarken Werkzeugs entmystifizieren.
@@ -79,3 +85,9 @@ A2: Auf jeden Fall können Sie Aspose.Zip für .NET sowohl in kommerziellen als 
 ### F5: Benötige ich eine temporäre Lizenz zum Testen von Aspose.Zip für .NET?
 
  A5: Ja, Sie können eine temporäre Lizenz erhalten von[Hier](https://purchase.aspose.com/temporary-license/) zu Testzwecken.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

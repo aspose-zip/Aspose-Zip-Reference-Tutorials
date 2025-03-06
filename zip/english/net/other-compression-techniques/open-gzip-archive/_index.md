@@ -3,10 +3,16 @@ title: Opening a GZip Archive with Aspose.Zip for .NET
 linktitle: Opening a GZip Archive 
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: Learn how to open GZip archives in .NET effortlessly using Aspose.Zip. Follow our step-by-step guide for efficient and seamless file handling.
-type: docs
 weight: 11
 url: /net/other-compression-techniques/open-gzip-archive/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Opening a GZip Archive with Aspose.Zip for .NET
+
 ## Introduction
 
 If you're working with compressed archives in .NET, Aspose.Zip is your go-to solution for efficient and seamless handling. In this tutorial, we'll delve into the process of opening a GZip archive using Aspose.Zip for .NET. Whether you're a seasoned developer or just starting, this step-by-step guide will walk you through the process with clarity and precision.
@@ -87,3 +93,10 @@ A4: Yes, you can explore the features of Aspose.Zip with a [free trial](https://
 ### Q5: How do I purchase Aspose.Zip for .NET?
 
 A5: Visit [Aspose.Zip Purchase](https://purchase.aspose.com/buy) for information on licensing and purchasing options.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

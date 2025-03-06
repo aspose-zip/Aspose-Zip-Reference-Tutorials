@@ -3,10 +3,16 @@ title: SevenZip bejegyzések létrehozása az Aspose.Zip segítségével .NET-he
 linktitle: Hozzon létre SevenZip bejegyzéseket
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Fedezze fel az Aspose.Zip erejét .NET-hez! Ismerje meg a SevenZip bejegyzések létrehozását lépésről lépésre. Fájlok tömörítése könnyedén. Töltse le most a zökkenőmentes fejlesztési élményért.
-type: docs
 weight: 10
 url: /hu/net/sevenzip-compression/create-sevenzip-entries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# SevenZip bejegyzések létrehozása az Aspose.Zip segítségével .NET-hez
+
 
 ## Bevezetés
 
@@ -83,3 +89,10 @@ Igen, az Aspose.Zip for .NET többplatformos, és Windows és Linux környezetbe
 
 ### Van-e ingyenes próbaverzió a vásárlás előtt?
  Igen, hozzáférhet az ingyenes próbaverzióhoz[itt](https://releases.aspose.com/) hogy fedezze fel a funkciókat, mielőtt kötelezettséget vállalna.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

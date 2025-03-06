@@ -3,10 +3,16 @@ title: การสร้างรายการ SevenZip ด้วย Aspose.Z
 linktitle: สร้างรายการ SevenZip
 second_title: Aspose.Zip .NET API สำหรับการบีบอัดไฟล์และการเก็บถาวร
 description: สำรวจพลังของ Aspose.Zip สำหรับ .NET! เรียนรู้การสร้างรายการ SevenZip ทีละขั้นตอน บีบอัดไฟล์ได้อย่างง่ายดาย ดาวน์โหลดตอนนี้เพื่อประสบการณ์การพัฒนาที่ราบรื่น
-type: docs
 weight: 10
 url: /th/net/sevenzip-compression/create-sevenzip-entries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# การสร้างรายการ SevenZip ด้วย Aspose.Zip สำหรับ .NET
+
 
 ## การแนะนำ
 
@@ -83,3 +89,10 @@ Console.WriteLine("Successfully Created a Seven Zip File");
 
 ### มีการทดลองใช้ฟรีก่อนตัดสินใจซื้อหรือไม่?
  ใช่ คุณสามารถเข้าถึงการทดลองใช้ฟรีได้[ที่นี่](https://releases.aspose.com/) เพื่อสำรวจคุณสมบัติต่างๆ ก่อนตัดสินใจ
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Passwortschutz und Verschlüsselung
 linktitle: Passwortschutz und Verschlüsselung
 second_title: Aspose.Zip .NET API für Dateikomprimierung und -archivierung
 description: Sichern Sie Ihre Dateien mit Aspose.Zip für .NET! Erfahren Sie Schritt-für-Schritt-Anleitungen zum Passwortschutz und zur Verschlüsselung, von AES bis hin zu herkömmlichen Methoden.
-type: docs
 weight: 26
 url: /de/net/password-protection-and-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Passwortschutz und Verschlüsselung
+
 
 ## Einführung
 
@@ -74,3 +80,9 @@ Erfahren Sie, wie Sie mehrere Dateien mithilfe der herkömmlichen Verschlüsselu
 Erfahren Sie, wie Sie AES-verschlüsselte Dateien in C# mit Aspose.Zip für .NET dekomprimieren. Befolgen Sie unsere Schritt-für-Schritt-Anleitung für eine effiziente Dateiverwaltung.
 ### [Dekomprimieren Sie die mit AES verschlüsselte gespeicherte Datei in Aspose.Zip für .NET](./decompress-aes-encrypted-stored-file/)
 Erfahren Sie mit dieser umfassenden Schritt-für-Schritt-Anleitung, wie Sie mit AES verschlüsselte gespeicherte Dateien in Aspose.Zip für .NET dekomprimieren. Verbessern Sie noch heute Ihre .NET-Entwicklungsfähigkeiten!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

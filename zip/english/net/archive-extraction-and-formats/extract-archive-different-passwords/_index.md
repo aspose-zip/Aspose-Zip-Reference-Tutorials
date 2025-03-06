@@ -3,10 +3,16 @@ title: Extracting Archive Entries with Different Passwords in Aspose.Zip for .NE
 linktitle: Extracting Archive Entries with Different Passwords
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: Learn how to extract archive entries with different passwords in Aspose.Zip for .NET. Boost security and flexibility in your applications.
-type: docs
 weight: 10
 url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extracting Archive Entries with Different Passwords in Aspose.Zip for .NET
+
 ## Introduction
 
 In the ever-evolving landscape of .NET development, Aspose.Zip stands out as a powerful tool for working with compressed archives. Among its many features, extracting archive entries with different passwords adds an extra layer of security and versatility to your applications. In this step-by-step guide, we'll explore how to achieve this using Aspose.Zip for .NET.
@@ -89,3 +95,10 @@ A4: For a temporary license, visit [this link](https://purchase.aspose.com/tempo
 ### Q5: Where can I purchase Aspose.Zip?
 
 A5: To purchase Aspose.Zip, visit the [purchase page](https://purchase.aspose.com/buy).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

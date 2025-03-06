@@ -3,10 +3,16 @@ title: Сжатие файлов
 linktitle: Сжатие файлов
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Легко сжимайте файлы .NET с помощью Aspose.Zip! Изучите пошаговое управление файлами с использованием методов Bzip2, LZMA, PPMd, Deflate и Store для оптимальных настроек сжатия.
-type: docs
 weight: 20
 url: /ru/net/file-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Сжатие файлов
+
 
 ## Введение
 
@@ -47,3 +53,9 @@ url: /ru/net/file-compression/
 
 ## Заключение
 В области сжатия файлов Aspose.Zip для .NET выделяется как универсальный и мощный инструмент. Этот набор учебных пособий охватывает все: от сжатия отдельных файлов до управления несколькими файлами без сжатия и оптимизации настроек для повышения производительности. Повысьте свои навыки управления файлами и улучшите свои .NET-приложения с помощью Aspose.Zip!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 使用 Aspose.Zip for .NET 解压缩存储的文件
 linktitle: 解压存储的文件
 second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
 description: 在本关于解压缩存储文件的分步指南中探索 Aspose.Zip for .NET 的强大功能。通过用于高效文件处理的强大解决方案来增强您的软件开发技能。
-type: docs
 weight: 13
 url: /zh/net/file-decompression/decompress-stored-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Zip for .NET 解压缩存储的文件
+
 ## 介绍
 
 在不断发展的软件开发领域，有效处理压缩文件是一个关键方面。 Aspose.Zip for .NET 作为一个强大的解决方案出现，为开发人员提供了强大的工具来无缝解压缩存储的文件。在本教程中，我们将深入研究使用 Aspose.Zip for .NET 解压存储文件的过程。
@@ -120,3 +126,9 @@ A1：是的，Aspose.Zip for .NET 旨在与各种 .NET 框架兼容，为开发�
 ### Q5：我可以获得 Aspose.Zip for .NET 的临时许可证吗？
 
 A5：是的，请访问[这个链接](https://purchase.aspose.com/temporary-license/)获得用于测试目的的临时许可证。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

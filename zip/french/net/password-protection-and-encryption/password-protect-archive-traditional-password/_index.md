@@ -3,10 +3,16 @@ title: Aspose.Zip pour .NET - Tutoriel sur la protection des archives par mot de
 linktitle: Archive protégée par mot de passe avec un mot de passe traditionnel
 second_title: API Aspose.Zip .NET pour la compression et l'archivage de fichiers
 description: Découvrez comment sécuriser vos archives .NET avec une protection par mot de passe traditionnelle à l'aide d'Aspose.Zip. Suivez notre guide étape par étape pour améliorer la confidentialité des données.
-type: docs
 weight: 12
 url: /fr/net/password-protection-and-encryption/password-protect-archive-traditional-password/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip pour .NET - Tutoriel sur la protection des archives par mot de passe
+
 
 Dans le domaine du développement .NET, la sécurisation des données sensibles dans les archives est un aspect crucial de la conception d'applications. Aspose.Zip pour .NET offre une solution robuste pour protéger les archives par mot de passe à l'aide du cryptage par mot de passe traditionnel. Ce guide étape par étape vous guidera tout au long du processus, garantissant que vos données archivées restent confidentielles et sécurisées.
 
@@ -81,3 +87,10 @@ Aspose.Zip pour .NET est optimisé pour des performances efficaces, gérant effi
 ### Comment puis-je obtenir de l’assistance pour Aspose.Zip pour .NET ?
  Visiter le[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37)pour le soutien de la communauté ou explorez les[Documentation](https://reference.aspose.com/zip/net/) pour des informations détaillées.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

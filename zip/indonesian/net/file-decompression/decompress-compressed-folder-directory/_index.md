@@ -3,10 +3,16 @@ title: Dekompresi Folder Terkompresi ke Direktori di Aspose.Zip untuk .NET
 linktitle: Dekompresi Folder Terkompresi ke Direktori
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Buka potensi Aspose.Zip untuk .NET! Pelajari cara mendekompresi folder dengan mudah menggunakan panduan langkah demi langkah ini. Selami dunia kompresi dan ekstraksi yang mulus.
-type: docs
 weight: 14
 url: /id/net/file-decompression/decompress-compressed-folder-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekompresi Folder Terkompresi ke Direktori di Aspose.Zip untuk .NET
+
 ## Perkenalan
 
 Selamat datang di dunia Aspose.Zip untuk .NET, perpustakaan tangguh yang memberdayakan pengembang untuk menangani folder terkompresi dengan mudah. Dalam tutorial ini, kita akan mempelajari proses mendekompresi folder terkompresi ke direktori menggunakan Aspose.Zip untuk .NET. Bersiaplah saat kami membawa Anda melalui setiap langkah secara mendetail, mengungkap seluk-beluk alat canggih ini.
@@ -79,3 +85,9 @@ A2: Tentu saja, Anda dapat menggunakan Aspose.Zip untuk .NET baik dalam aplikasi
 ### Q5: Apakah saya memerlukan lisensi sementara untuk menguji Aspose.Zip untuk .NET?
 
  A5: Ya, Anda bisa mendapatkan lisensi sementara dari[Di Sini](https://purchase.aspose.com/temporary-license/) untuk tujuan pengujian.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

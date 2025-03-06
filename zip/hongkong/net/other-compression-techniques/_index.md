@@ -3,10 +3,16 @@ title: 其他壓縮技術
 linktitle: 其他壓縮技術
 second_title: 用於檔案壓縮和歸檔的 Aspose.Zip .NET API
 description: 使用 Aspose.Zip 掌握進階壓縮技術。提升您的開發技能，從提取記憶體流到使用 Lzma 壓縮優化儲存。
-type: docs
 weight: 27
 url: /zh-hant/net/other-compression-techniques/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 其他壓縮技術
+
 
 ## 介紹
 
@@ -44,3 +50,9 @@ GZip 檔案在數位領域很普遍，而 Aspose.Zip for .NET 讓處理它們變
 透過我們關於使用不同密碼管理 ZIP 檔案的逐步指南，探索 Aspose.Zip for .NET 的強大功能。增強應用程式的安全性和靈活性。 
 ### [在 Aspose.Zip for .NET 中壓縮為 Lzma](./compress-to-lzma/)
 了解如何使用 Aspose.Zip for .NET 和強大的 Lzma 演算法來壓縮檔案。輕鬆優化儲存並提高資料傳輸效率。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

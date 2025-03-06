@@ -3,10 +3,16 @@ title: Kompres Banyak File dengan Enkripsi di Aspose.Zip .NET
 linktitle: Kompres Banyak File dengan Enkripsi Tradisional
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Pelajari cara mengompresi banyak file dengan aman menggunakan enkripsi tradisional di Aspose.Zip untuk .NET. Tingkatkan perlindungan data di aplikasi .NET Anda.
-type: docs
 weight: 17
 url: /id/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Kompres Banyak File dengan Enkripsi di Aspose.Zip .NET
+
 
 ## Perkenalan
 
@@ -94,3 +100,10 @@ Ya, Aspose.Zip untuk .NET kompatibel dengan lingkungan Windows dan Linux, member
 ### 5. Di mana saya dapat menemukan dokumentasi terperinci untuk Aspose.Zip untuk .NET?
 
 Lihat dokumentasi[Di Sini](https://reference.aspose.com/zip/net/) untuk informasi mendalam.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

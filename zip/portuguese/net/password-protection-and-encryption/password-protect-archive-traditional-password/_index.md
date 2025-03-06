@@ -3,10 +3,16 @@ title: Aspose.Zip para .NET - Tutorial de arquivos protegidos por senha
 linktitle: Arquivo protegido por senha com senha tradicional
 second_title: API Aspose.Zip .NET para compactação e arquivamento de arquivos
 description: Aprenda como proteger seus arquivos .NET com proteção de senha tradicional usando Aspose.Zip. Siga nosso guia passo a passo para aumentar a confidencialidade dos dados.
-type: docs
 weight: 12
 url: /pt/net/password-protection-and-encryption/password-protect-archive-traditional-password/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip para .NET - Tutorial de arquivos protegidos por senha
+
 
 No domínio do desenvolvimento .NET, proteger dados confidenciais em arquivos é um aspecto crucial do design de aplicativos. Aspose.Zip for .NET oferece uma solução robusta para proteger arquivos com senha usando criptografia de senha tradicional. Este guia passo a passo orientará você durante o processo, garantindo que seus dados arquivados permaneçam confidenciais e seguros.
 
@@ -81,3 +87,10 @@ Aspose.Zip for .NET é otimizado para desempenho eficiente, manipulando arquivos
 ### Como posso obter suporte para Aspose.Zip para .NET?
  Visite a[Fórum Aspose.Zip](https://forum.aspose.com/c/zip/37)para obter apoio comunitário ou explorar o[documentação](https://reference.aspose.com/zip/net/) para obter informações detalhadas.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

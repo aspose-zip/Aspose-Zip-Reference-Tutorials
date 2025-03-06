@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET - Výukový program pro ochranu archivů heslem
 linktitle: Archiv chráněný heslem s tradičním heslem
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Naučte se, jak zabezpečit své archivy .NET pomocí tradiční ochrany heslem pomocí Aspose.Zip. Postupujte podle našeho podrobného průvodce pro lepší důvěrnost dat.
-type: docs
 weight: 12
 url: /cs/net/password-protection-and-encryption/password-protect-archive-traditional-password/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET - Výukový program pro ochranu archivů heslem
+
 
 oblasti vývoje .NET je zabezpečení citlivých dat v archivech zásadním aspektem návrhu aplikací. Aspose.Zip for .NET nabízí robustní řešení pro ochranu archivů heslem pomocí tradičního šifrování heslem. Tento podrobný průvodce vás provede celým procesem a zajistí, že vaše archivovaná data zůstanou důvěrná a bezpečná.
 
@@ -81,3 +87,10 @@ Aspose.Zip for .NET je optimalizován pro efektivní výkon a efektivně zpracov
 ### Jak mohu získat podporu pro Aspose.Zip pro .NET?
  Navštivte[Fórum Aspose.Zip](https://forum.aspose.com/c/zip/37)pro podporu komunity nebo prozkoumejte[dokumentace](https://reference.aspose.com/zip/net/) pro podrobné informace.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

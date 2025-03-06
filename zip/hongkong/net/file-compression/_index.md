@@ -3,10 +3,16 @@ title: 文件壓縮
 linktitle: 文件壓縮
 second_title: 用於檔案壓縮和歸檔的 Aspose.Zip .NET API
 description: 使用 Aspose.Zip 輕鬆壓縮 .NET 中的檔案！了解使用 Bzip2、LZMA、PPMd、Deflate 和儲存方法進行逐步檔案管理，以獲得最佳壓縮設定。
-type: docs
 weight: 20
 url: /zh-hant/net/file-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 文件壓縮
+
 
 ## 介紹
 
@@ -47,3 +53,9 @@ Aspose.Zip for .NET 提供了大量的壓縮方法，例如 Bzip2、LZMA、PPMd�
 
 ## 結論
 在檔案壓縮領域，Aspose.Zip for .NET 是一款多功能且功能強大的工具。從壓縮單個文件到在不壓縮的情況下管理多個文件，以及優化設定以獲得卓越的性能，這套教程涵蓋了所有內容。使用 Aspose.Zip 提高您的檔案管理技能並增強您的 .NET 應用程式！
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

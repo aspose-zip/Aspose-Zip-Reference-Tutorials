@@ -3,10 +3,16 @@ title: قم بفك ضغط المجلد المضغوط إلى الدليل في A
 linktitle: قم بفك ضغط المجلد المضغوط إلى الدليل
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: أطلق العنان لإمكانات Aspose.Zip لـ .NET! تعرف على كيفية فك ضغط المجلدات بسهولة باستخدام هذا الدليل التفصيلي خطوة بخطوة. انغمس في عالم الضغط والاستخراج السلس.
-type: docs
 weight: 14
 url: /ar/net/file-decompression/decompress-compressed-folder-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# قم بفك ضغط المجلد المضغوط إلى الدليل في Aspose.Zip لـ .NET
+
 ## مقدمة
 
 مرحبًا بك في عالم Aspose.Zip for .NET، وهي مكتبة قوية تمكّن المطورين من التعامل مع المجلدات المضغوطة دون عناء. في هذا البرنامج التعليمي، سوف نتعمق في عملية فك ضغط مجلد مضغوط إلى دليل باستخدام Aspose.Zip for .NET. اربط حزام الأمان بينما نأخذك خلال كل خطوة بالتفصيل، ونزيل الغموض عن تعقيدات هذه الأداة القوية.
@@ -79,3 +85,9 @@ new Archive(zipFile, new ArchiveLoadOptions() { DecryptionPassword = "p@s$" })
 ### س5: هل أحتاج إلى ترخيص مؤقت لاختبار Aspose.Zip لـ .NET؟
 
  ج5: نعم، يمكنك الحصول على ترخيص مؤقت من[هنا](https://purchase.aspose.com/temporary-license/) لأغراض تجريبية.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

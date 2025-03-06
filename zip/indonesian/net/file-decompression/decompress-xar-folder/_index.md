@@ -3,10 +3,16 @@ title: Dekompresi Xar ke Folder di Aspose.Zip untuk .NET
 linktitle: Dekompresi Xar ke Folder
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Jelajahi kekuatan Aspose.Zip untuk .NET! Dekompresi arsip Xar dengan mudah menggunakan tutorial yang mudah digunakan ini. Tingkatkan pengalaman pengembangan .NET Anda.
-type: docs
 weight: 17
 url: /id/net/file-decompression/decompress-xar-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekompresi Xar ke Folder di Aspose.Zip untuk .NET
+
 ## Perkenalan
 
 Jika Anda mendalami dunia pengembangan .NET dan mencari solusi andal untuk mendekompresi arsip Xar, Aspose.Zip untuk .NET siap membantu Anda. Dalam panduan langkah demi langkah ini, kami akan memandu Anda melalui proses mendekompresi Xar ke folder menggunakan Aspose.Zip, pustaka canggih yang menyederhanakan manipulasi arsip di aplikasi .NET Anda.
@@ -79,3 +85,9 @@ Dengan Aspose.Zip untuk .NET, mendekompresi arsip Xar menjadi tugas yang mudah d
 ### Q5: Di mana saya dapat membeli Aspose.Zip untuk .NET?
 
  A5: Anda dapat membeli Aspose.Zip untuk .NET[Di Sini](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

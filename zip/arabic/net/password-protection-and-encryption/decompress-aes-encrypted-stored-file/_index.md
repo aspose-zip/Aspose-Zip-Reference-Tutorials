@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET - فك تشفير الملفات المشفرة AES
 linktitle: قم بفك ضغط الملف المخزن المشفر AES
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: تعرف على كيفية فك ضغط الملفات المخزنة المشفرة بتقنية AES في Aspose.Zip لـ .NET باستخدام هذا الدليل الشامل خطوة بخطوة. عزز مهاراتك في تطوير .NET اليوم!
-type: docs
 weight: 19
 url: /ar/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET - فك تشفير الملفات المشفرة AES
+
 
 ## مقدمة
 
@@ -89,3 +95,10 @@ using (var decompressed = archive.Entries[0].Open())
 ### هل يمكنني استخدام Aspose.Zip لأغراض تجارية؟
  نعم، يمكنك شراء ترخيص[هنا](https://purchase.aspose.com/buy) للاستخدام التجاري.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

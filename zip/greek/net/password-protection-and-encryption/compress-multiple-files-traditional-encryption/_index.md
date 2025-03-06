@@ -3,10 +3,16 @@ title: Συμπίεση πολλών αρχείων με κρυπτογράφη�
 linktitle: Συμπίεση πολλών αρχείων με παραδοσιακή κρυπτογράφηση
 second_title: Aspose.Zip .NET API για συμπίεση και αρχειοθέτηση αρχείων
 description: Μάθετε πώς να συμπιέσετε πολλά αρχεία με ασφάλεια χρησιμοποιώντας την παραδοσιακή κρυπτογράφηση στο Aspose.Zip για .NET. Βελτιώστε την προστασία δεδομένων στις εφαρμογές σας .NET.
-type: docs
 weight: 17
 url: /el/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Συμπίεση πολλών αρχείων με κρυπτογράφηση στο Aspose.Zip .NET
+
 
 ## Εισαγωγή
 
@@ -94,3 +100,10 @@ archive.Save(zipFile);
 ### 5. Πού μπορώ να βρω αναλυτική τεκμηρίωση για το Aspose.Zip για .NET;
 
 Ανατρέξτε στην τεκμηρίωση[εδώ](https://reference.aspose.com/zip/net/) για εις βάθος πληροφορίες.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

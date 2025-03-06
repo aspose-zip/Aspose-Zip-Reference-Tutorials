@@ -3,10 +3,16 @@ title: Diğer Sıkıştırma Teknikleri
 linktitle: Diğer Sıkıştırma Teknikleri
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Aspose.Zip ile gelişmiş sıkıştırma tekniklerinde ustalaşın. Lzma sıkıştırmasıyla bellek akışı ayıklamadan depolamayı optimize etmeye kadar geliştirme becerilerinizi geliştirin.
-type: docs
 weight: 27
 url: /tr/net/other-compression-techniques/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Diğer Sıkıştırma Teknikleri
+
 
 ## giriiş
 
@@ -44,3 +50,9 @@ Aspose.Zip for .NET ile sıkıştırılmış verileri bir akışa kaydetmeyi ö�
 ZIP arşivlerini farklı şifrelerle yönetmeye yönelik adım adım kılavuzumuzla Aspose.Zip for .NET'in gücünü keşfedin. Uygulamalarınızda güvenliği ve esnekliği artırın. 
 ### [Aspose.Zip for .NET'te Lzma'ya sıkıştır](./compress-to-lzma/)
 Aspose.Zip for .NET'i güçlü Lzma algoritmasıyla kullanarak dosyaları nasıl sıkıştıracağınızı öğrenin. Depolamayı optimize edin ve veri aktarım verimliliğini zahmetsizce artırın.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

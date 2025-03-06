@@ -3,10 +3,16 @@ title: Mengompresi ke TarZ dengan Aspose.Zip untuk .NET
 linktitle: Mengompresi ke TarZ
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Jelajahi kompresi langkah demi langkah ke TarZ menggunakan Aspose.Zip untuk .NET. Penanganan file yang efisien untuk proyek .NET Anda.
-type: docs
 weight: 15
 url: /id/net/archive-extraction-and-formats/compress-to-tar-z/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mengompresi ke TarZ dengan Aspose.Zip untuk .NET
+
 ## Perkenalan
 
 Jika Anda ingin mengompresi file secara efisien ke dalam format TarZ menggunakan Aspose.Zip untuk .NET, Anda berada di tempat yang tepat. Panduan langkah demi langkah ini akan memandu Anda melalui proses tersebut, memastikan Anda memanfaatkan potensi penuh Aspose.Zip untuk .NET untuk menangani kebutuhan kompresi Anda dengan lancar.
@@ -91,3 +97,9 @@ A1: Tentu saja! Aspose.Zip untuk .NET memungkinkan Anda mengompresi file individ
 ### Q5: Bisakah saya mendapatkan lisensi sementara untuk Aspose.Zip untuk .NET?
 
 A5: Ya, jika Anda memerlukan lisensi sementara, Anda bisa mendapatkannya[Di Sini](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

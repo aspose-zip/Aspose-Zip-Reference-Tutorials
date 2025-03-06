@@ -3,10 +3,16 @@ title: 使用 Aspose.Zip 在 .NET 中掌握安全归档
 linktitle: 带有加密条目的存档
 second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
 description: 使用 Aspose.Zip 探索 .NET 中的安全归档世界。轻松创建七个采用 AES 加密的 Zip 文件。立即提升您的开发技能！
-type: docs
 weight: 15
 url: /zh/net/password-protection-and-encryption/archive-with-encrypted-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Zip 在 .NET 中掌握安全归档
+
 
 ## 介绍
 
@@ -81,3 +87,10 @@ Aspose.Zip for .NET 支持各种压缩算法。有关详细信息，请参阅文
 ### 我可以进一步自定义加密设置吗？
 绝对地！浏览高级加密自定义选项的文档。
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

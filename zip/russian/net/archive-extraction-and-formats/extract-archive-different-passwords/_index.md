@@ -3,10 +3,16 @@ title: Извлечение записей архива с разными пар
 linktitle: Извлечение записей архива с разными паролями
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Узнайте, как извлечь записи из архива с разными паролями в Aspose.Zip для .NET. Повысьте безопасность и гибкость ваших приложений.
-type: docs
 weight: 10
 url: /ru/net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Извлечение записей архива с разными паролями в Aspose.Zip для .NET
+
 ## Введение
 
 В постоянно развивающемся мире разработки .NET Aspose.Zip выделяется как мощный инструмент для работы со сжатыми архивами. Среди множества функций извлечение записей из архива с разными паролями добавляет дополнительный уровень безопасности и универсальности вашим приложениям. В этом пошаговом руководстве мы рассмотрим, как этого добиться с помощью Aspose.Zip для .NET.
@@ -89,3 +95,9 @@ archive.Entries[1].Extract(dataDir + "asyoulik_extracted_pass_out.txt", "second_
 ### Вопрос 5: Где я могу приобрести Aspose.Zip?
 
  A5: Чтобы приобрести Aspose.Zip, посетите[страница покупки](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

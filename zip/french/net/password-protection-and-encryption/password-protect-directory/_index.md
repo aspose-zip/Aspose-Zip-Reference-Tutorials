@@ -3,10 +3,16 @@ title: Répertoires de protection par mot de passe dans .NET avec le didacticiel
 linktitle: Répertoire protégé par mot de passe
 second_title: API Aspose.Zip .NET pour la compression et l'archivage de fichiers
 description: Découvrez comment protéger par mot de passe les répertoires dans .NET à l'aide d'Aspose.Zip. Sécurisez vos fichiers sans effort avec ce didacticiel étape par étape.
-type: docs
 weight: 10
 url: /fr/net/password-protection-and-encryption/password-protect-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Répertoires de protection par mot de passe dans .NET avec le didacticiel Aspose.Zip
+
 
 ## Introduction
 
@@ -90,3 +96,10 @@ Oui, Aspose.Zip pour .NET est conçu pour gérer efficacement de grands réperto
 ### Où puis-je trouver une assistance supplémentaire pour Aspose.Zip pour .NET ?
  Vous pouvez visiter le[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) pour toute assistance ou question.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

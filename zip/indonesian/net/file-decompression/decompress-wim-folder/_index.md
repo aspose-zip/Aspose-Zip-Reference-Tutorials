@@ -3,10 +3,16 @@ title: Dekompresi Wim ke Folder di Aspose.Zip untuk .NET
 linktitle: Dekompresi Wim ke Folder
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Jelajahi panduan langkah demi langkah tentang mendekompresi arsip Wim menggunakan Aspose.Zip untuk .NET. Unduh perpustakaan, ikuti tutorial, dan kelola file arsip di aplikasi .NET Anda secara efisien.
-type: docs
 weight: 16
 url: /id/net/file-decompression/decompress-wim-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekompresi Wim ke Folder di Aspose.Zip untuk .NET
+
 ## Perkenalan
 
 Selamat datang di tutorial komprehensif tentang mendekompresi arsip Wim ke folder menggunakan Aspose.Zip untuk .NET. Aspose.Zip adalah perpustakaan canggih yang menyediakan kemampuan mulus untuk bekerja dengan berbagai format arsip dalam aplikasi .NET. Dalam tutorial ini, kami akan memandu Anda melalui proses dekompresi arsip Wim ke folder tertentu langkah demi langkah.
@@ -77,3 +83,9 @@ A1: Ya, Aspose.Zip mendukung berbagai format arsip, termasuk ZIP, TAR, GZIP, dan
 ### Q5: Di mana saya bisa mendapatkan dukungan atau mengajukan pertanyaan tentang Aspose.Zip untuk .NET?
 
  A5: Kunjungi[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) untuk dukungan dan diskusi.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

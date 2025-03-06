@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET 中具有不同密碼的項目
 linktitle: 具有不同密碼的條目
 second_title: 用於檔案壓縮和歸檔的 Aspose.Zip .NET API
 description: 透過我們關於使用不同密碼管理 ZIP 檔案的逐步指南，探索 Aspose.Zip for .NET 的強大功能。增強應用程式的安全性和靈活性。
-type: docs
 weight: 13
 url: /zh-hant/net/other-compression-techniques/entries-with-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET 中具有不同密碼的項目
+
 ## 介紹
 
 歡迎來到 Aspose.Zip for .NET 的世界，這是一個功能強大的程式庫，使開發人員能夠無縫管理和操作 ZIP 檔案。在本教程中，我們將深入研究一個特定功能：使用不同密碼的條目。無論您是經驗豐富的開發人員還是新手，本逐步指南都將引導您完成整個過程，釋放 Aspose.Zip for .NET 的潛力。
@@ -97,3 +103,9 @@ A4：如有任何疑問或幫助，請訪問[Aspose.Zip 論壇](https://forum.as
 ### Q5：我可以在沒有永久授權的情況下使用 Aspose.Zip for .NET 嗎？
 
  A5：是的，您可以獲得臨時許可證以滿足您的短期需求。尋找更多詳情[這裡](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

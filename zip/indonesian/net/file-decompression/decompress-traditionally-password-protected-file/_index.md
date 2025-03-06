@@ -3,10 +3,16 @@ title: Dekompresi File yang Dilindungi Kata Sandi Secara Tradisional di Aspose.Z
 linktitle: Dekompresi File yang Secara Tradisional Dilindungi Kata Sandi
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Pelajari cara mendekompresi file yang biasanya dilindungi kata sandi menggunakan Aspose.Zip untuk .NET. Panduan langkah demi langkah untuk integrasi yang lancar.
-type: docs
 weight: 15
 url: /id/net/file-decompression/decompress-traditionally-password-protected-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekompresi File yang Dilindungi Kata Sandi Secara Tradisional di Aspose.Zip untuk .NET
+
 Dalam bidang pengembangan .NET, Aspose.Zip menonjol sebagai solusi tangguh untuk menangani file terkompresi. Di antara segudang fiturnya, salah satu kemampuan yang menonjol adalah kemampuan untuk mendekompresi file tradisional yang dilindungi kata sandi. Dalam tutorial ini, kita akan mempelajari proses mendekompresi file yang dienkripsi dengan kata sandi tradisional menggunakan Aspose.Zip untuk .NET. Sebelum kita memulai perjalanan ini, mari pastikan kita memiliki prasyaratnya.
 
 ## Prasyarat
@@ -96,3 +102,9 @@ A3: Ya, Aspose.Zip mendukung berbagai metode enkripsi, memberikan fleksibilitas 
 ### Q5: Bagaimana cara mendapatkan lisensi sementara untuk Aspose.Zip?
 
  A5: Anda dapat memperoleh lisensi sementara dari[Aspose. Pembelian](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Decomprimere il file tradizionalmente protetto da password in Aspose.Zip 
 linktitle: Decomprimere file tradizionalmente protetti da password
 second_title: Aspose.Zip .NET API per la compressione e l'archiviazione dei file
 description: Scopri come decomprimere i file tradizionalmente protetti da password utilizzando Aspose.Zip per .NET. Una guida passo passo per un'integrazione perfetta.
-type: docs
 weight: 15
 url: /it/net/file-decompression/decompress-traditionally-password-protected-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Decomprimere il file tradizionalmente protetto da password in Aspose.Zip per .NET
+
 Nell'ambito dello sviluppo .NET, Aspose.Zip si distingue come una soluzione solida per la gestione dei file compressi. Tra le sue miriadi di funzionalità, una caratteristica importante è la capacità di decomprimere file tradizionalmente protetti da password. In questo tutorial, approfondiremo il processo di decompressione di un file crittografato con una password tradizionale utilizzando Aspose.Zip per .NET. Prima di intraprendere questo viaggio, assicuriamoci di disporre dei prerequisiti.
 
 ## Prerequisiti
@@ -96,3 +102,9 @@ A3: Sì, Aspose.Zip supporta vari metodi di crittografia, fornendo flessibilità
 ### Q5: Come posso ottenere una licenza temporanea per Aspose.Zip?
 
  A5: È possibile acquisire una licenza temporanea da[Aspose.Acquisto](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

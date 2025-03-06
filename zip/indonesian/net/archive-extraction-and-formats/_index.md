@@ -3,10 +3,16 @@ title: Ekstraksi dan Format Arsip
 linktitle: Ekstraksi dan Format Arsip
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Buka kekuatan kompresi file di .NET dengan Aspose.Zip. Pelajari cara mengompresi file ke berbagai format seperti TarBz2, TarGz, dan TarZ untuk penyimpanan yang efisien.
-type: docs
 weight: 23
 url: /id/net/archive-extraction-and-formats/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ekstraksi dan Format Arsip
+
 
 ## Perkenalan
 
@@ -53,3 +59,9 @@ Pelajari cara mengompres file ke format TarXz di .NET menggunakan Aspose.Zip. Ik
 Jelajahi kompresi langkah demi langkah ke TarZ menggunakan Aspose.Zip untuk .NET. Penanganan file yang efisien untuk proyek .NET Anda.
 ### [Mengekstrak Entri Arsip dengan Kata Sandi Berbeda di Aspose.Zip untuk .NET](./extract-archive-different-passwords/)
 Pelajari cara mengekstrak entri arsip dengan kata sandi berbeda di Aspose.Zip untuk .NET. Tingkatkan keamanan dan fleksibilitas dalam aplikasi Anda.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

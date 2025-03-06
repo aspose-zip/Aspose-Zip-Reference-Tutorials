@@ -3,10 +3,16 @@ title: Aspose.Zip Eğitimi ile .NET'te Dizinleri Parolayla Koruyun
 linktitle: Şifre Korumalı Dizin
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Aspose.Zip kullanarak .NET'te dizinleri nasıl parolayla koruyacağınızı öğrenin. Bu adım adım eğitimle dosyalarınızı zahmetsizce koruyun.
-type: docs
 weight: 10
 url: /tr/net/password-protection-and-encryption/password-protect-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip Eğitimi ile .NET'te Dizinleri Parolayla Koruyun
+
 
 ## giriiş
 
@@ -90,3 +96,10 @@ Evet, Aspose.Zip for .NET büyük dizinleri verimli bir şekilde yönetecek ve o
 ### Aspose.Zip for .NET için ek desteği nerede bulabilirim?
  Ziyaret edebilirsiniz[Aspose.Zip forumu](https://forum.aspose.com/c/zip/37) herhangi bir destek veya sorularınız için.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

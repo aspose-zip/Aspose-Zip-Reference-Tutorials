@@ -3,10 +3,16 @@ title: الضغط على TarLz باستخدام Aspose.Zip لـ .NET
 linktitle: الضغط على TarLz
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: يمكنك ضغط الملفات في .NET بسهولة باستخدام Aspose.Zip. تعلم كيفية إنشاء أرشيفات TarLz خطوة بخطوة.
-type: docs
 weight: 13
 url: /ar/net/archive-extraction-and-formats/compress-to-tar-lz/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# الضغط على TarLz باستخدام Aspose.Zip لـ .NET
+
 ## مقدمة
 
 في المشهد المتطور باستمرار لتطوير .NET، تعد الحاجة إلى التعامل مع الملفات وضغطها بكفاءة أمرًا بالغ الأهمية. يظهر Aspose.Zip for .NET كأداة قوية توفر إمكانات ضغط الملفات بشكل سلس. في هذا البرنامج التعليمي، سوف نتعمق في جانب واحد محدد – الضغط إلى TarLz باستخدام Aspose.Zip. تابع معنا بينما نقوم بتفصيل كل خطوة، مما يجعل العملية سهلة الفهم للمطورين من جميع المستويات.
@@ -99,3 +105,9 @@ A2: نعم، تم تصميم التعليمات البرمجية للعمل مع
 ### س5: أين يمكنني الحصول على الدعم إذا واجهت مشكلات؟
 
  ج5: قم بزيارة[منتدى Aspose.Zip](https://forum.aspose.com/c/zip/37) لدعم المجتمع واستكشاف الأخطاء وإصلاحها.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

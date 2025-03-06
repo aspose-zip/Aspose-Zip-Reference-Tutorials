@@ -1,12 +1,17 @@
 ---
 title: Aspose.Zip for .NET ile ilgili Kapsamlı Eğitimler ve Örnekler
 linktitle: .NET Eğitimleri için Aspose.Zip
-type: docs
 weight: 10
 url: /tr/net/
 description:
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET ile ilgili Kapsamlı Eğitimler ve Örnekler
+
 
 ### [Dosya Sıkıştırması](./file-compression/)
 Aspose.Zip ile .NET'teki dosyaları zahmetsizce sıkıştırın! Optimum sıkıştırma ayarları için Bzip2, LZMA, PPMd, Deflate ve Store yöntemlerini kullanarak adım adım dosya yönetimini öğrenin.
@@ -24,3 +29,9 @@ SevenZip Sıkıştırma Derslerimiz ile Aspose.Zip for .NET'in potansiyelini ort
 Aspose.Zip for .NET ile dosyalarınızı güvence altına alın! AES'ten geleneksel yöntemlere kadar parola koruması ve şifrelemeyle ilgili adım adım eğitimleri öğrenin. 
 ### [Diğer Sıkıştırma Teknikleri](./other-compression-techniques/)
 Aspose.Zip for .NET ile gelişmiş sıkıştırma tekniklerinde zahmetsizce ustalaşın. Lzma sıkıştırmasıyla bellek akışı ayıklamadan depolamayı optimize etmeye kadar geliştirme becerilerinizi geliştirin.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

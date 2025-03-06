@@ -3,10 +3,16 @@ title: สร้างรายการ SevenZip ใน Aspose.Zip สำหร
 linktitle: สร้างรายการ SevenZip
 second_title: Aspose.Zip .NET API สำหรับการบีบอัดไฟล์และการเก็บถาวร
 description: Master Aspose.Zip สำหรับ .NET - สร้างรายการ SevenZip ได้อย่างง่ายดาย ปรับปรุงแอปพลิเคชัน .NET ของคุณด้วยการจัดการไฟล์ zip ที่มีประสิทธิภาพ
-type: docs
 weight: 11
 url: /th/net/sevenzip-compression/create-sevenzip-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# สร้างรายการ SevenZip ใน Aspose.Zip สำหรับ .NET
+
 
 ## การแนะนำ
 
@@ -83,3 +89,10 @@ Aspose.Zip เน้นที่รูปแบบ zip และ 7z เป็น
 
 ### ถาม: ฉันจะขอความช่วยเหลือหรือเชื่อมต่อกับชุมชนสำหรับ Aspose.Zip ได้ที่ไหน
  เยี่ยมชม[ฟอรั่ม Aspose.Zip](https://forum.aspose.com/c/zip/37) เพื่อขอรับการสนับสนุน ถามคำถาม และเชื่อมต่อกับชุมชน
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

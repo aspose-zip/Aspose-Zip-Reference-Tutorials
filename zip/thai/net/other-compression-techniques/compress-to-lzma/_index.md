@@ -3,10 +3,16 @@ title: บีบอัดเป็น Lzma ใน Aspose.Zip สำหรับ 
 linktitle: บีบอัดเป็น Lzma
 second_title: Aspose.Zip .NET API สำหรับการบีบอัดไฟล์และการเก็บถาวร
 description: เรียนรู้วิธีบีบอัดไฟล์โดยใช้ Aspose.Zip สำหรับ .NET พร้อมด้วยอัลกอริทึม Lzma อันทรงพลัง เพิ่มประสิทธิภาพการจัดเก็บข้อมูลและเพิ่มประสิทธิภาพการถ่ายโอนข้อมูลได้อย่างง่ายดาย
-type: docs
 weight: 14
 url: /th/net/other-compression-techniques/compress-to-lzma/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# บีบอัดเป็น Lzma ใน Aspose.Zip สำหรับ .NET
+
 ## การแนะนำ
 
 ในโลกของการพัฒนา .NET การบีบอัดไฟล์ที่มีประสิทธิภาพถือเป็นสิ่งสำคัญในการเพิ่มประสิทธิภาพพื้นที่จัดเก็บข้อมูลและเพิ่มประสิทธิภาพการถ่ายโอนข้อมูล Aspose.Zip สำหรับ .NET มอบโซลูชันอันทรงพลังสำหรับการบีบอัดไฟล์ โดยมีอัลกอริธึมการบีบอัดที่หลากหลาย รวมถึง Lzma ในบทช่วยสอนนี้ เราจะแนะนำคุณตลอดขั้นตอนการบีบอัดไฟล์โดยใช้ Aspose.Zip สำหรับ .NET โดยเน้นที่อัลกอริธึมการบีบอัด Lzma
@@ -85,3 +91,9 @@ A4: ใช่ คุณสามารถค้นหาตัวอย่าง
 ### คำถามที่ 5: ฉันจะขอรับการสนับสนุนหรือถามคำถามเกี่ยวกับ Aspose.Zip สำหรับ .NET ได้ที่ไหน
 
  A5: เยี่ยมชม[ฟอรั่ม Aspose.Zip](https://forum.aspose.com/c/zip/37) สำหรับการสนับสนุนและการอภิปราย
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

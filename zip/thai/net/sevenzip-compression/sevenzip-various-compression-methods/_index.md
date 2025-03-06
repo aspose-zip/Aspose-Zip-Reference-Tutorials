@@ -3,10 +3,16 @@ title: การสร้างไฟล์ ZIP 7 ไฟล์ - Aspose.Zip ส�
 linktitle: SevenZip พร้อมวิธีการบีบอัดที่หลากหลาย
 second_title: Aspose.Zip .NET API สำหรับการบีบอัดไฟล์และการเก็บถาวร
 description: เรียนรู้วิธีสร้างไฟล์ Seven Zip ด้วย Aspose.Zip สำหรับ .NET โดยใช้วิธีการบีบอัดแบบต่างๆ ขั้นตอนง่ายๆ สำหรับ LZMA2, BZip2 และ Store (ไม่มีการบีบอัด)
-type: docs
 weight: 12
 url: /th/net/sevenzip-compression/sevenzip-various-compression-methods/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# การสร้างไฟล์ ZIP 7 ไฟล์ - Aspose.Zip สำหรับ .NET Tutorial
+
 
 ## การแนะนำ
 
@@ -89,3 +95,10 @@ Console.WriteLine("Successfully Created a Seven Zip File with No Compression (St
 
 ### ฉันจะรับการสนับสนุนสำหรับ Aspose.Zip สำหรับ .NET ได้ที่ไหน
  คุณสามารถขอรับการสนับสนุนได้ที่[ฟอรั่ม Aspose.Zip](https://forum.aspose.com/c/zip/37).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

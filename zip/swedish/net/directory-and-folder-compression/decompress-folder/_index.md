@@ -3,10 +3,16 @@ title: Dekomprimera en mapp med Aspose.Zip för .NET
 linktitle: Dekomprimera en mapp
 second_title: Aspose.Zip .NET API för filkomprimering och arkivering
 description: Bemästra konsten att dekomprimera mappar med Aspose.Zip för .NET. Hantera enkelt komprimeringsuppgifter i dina projekt.
-type: docs
 weight: 11
 url: /sv/net/directory-and-folder-compression/decompress-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekomprimera en mapp med Aspose.Zip för .NET
+
 Vill du sömlöst dekomprimera mappar med Aspose.Zip för .NET? Kolla inte vidare! Den här steg-för-steg-guiden leder dig genom processen och säkerställer att du behärskar konsten att dekomprimera mappar utan ansträngning.
 
 ## Förutsättningar
@@ -88,3 +94,9 @@ A2: Absolut! Aspose.Zip för .NET är designad för att hantera storskaliga appl
 ### F5: Hur kan jag få support för Aspose.Zip för .NET?
 
  S5: För eventuella frågor eller hjälp, besök[Aspose.Zip forum](https://forum.aspose.com/c/zip/37) där du kan engagera dig i samhället och söka expertråd.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET'te Xar'ı Klasöre Çıkarın
 linktitle: Xar'ı Klasöre Aç
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Aspose.Zip for .NET'in gücünü keşfedin! Bu kullanıcı dostu eğitimle Xar arşivlerinin sıkıştırmasını zahmetsizce açın. .NET geliştirme deneyiminizi geliştirin.
-type: docs
 weight: 17
 url: /tr/net/file-decompression/decompress-xar-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET'te Xar'ı Klasöre Çıkarın
+
 ## giriiş
 
 .NET geliştirme dünyasına giriyorsanız ve Xar arşivlerinin sıkıştırmasını açmak için güvenilir bir çözüm arıyorsanız, Aspose.Zip for .NET size yardımcı olacaktır. Bu adım adım kılavuzda, .NET uygulamalarınızda arşiv işlemlerini kolaylaştıran güçlü bir kütüphane olan Aspose.Zip'i kullanarak Xar'ı bir klasöre açma sürecinde size yol göstereceğiz.
@@ -79,3 +85,9 @@ Aspose.Zip for .NET ile Xar arşivlerinin sıkıştırmasını açmak, .NET uygu
 ### S5: Aspose.Zip for .NET'i nereden satın alabilirim?
 
  Cevap5: .NET için Aspose.Zip'i satın alabilirsiniz[Burada](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

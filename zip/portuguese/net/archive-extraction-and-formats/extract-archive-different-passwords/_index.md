@@ -3,10 +3,16 @@ title: Extraindo entradas de arquivo com senhas diferentes em Aspose.Zip para .N
 linktitle: Extraindo entradas de arquivo com senhas diferentes
 second_title: API Aspose.Zip .NET para compactação e arquivamento de arquivos
 description: Aprenda como extrair entradas de arquivo com senhas diferentes em Aspose.Zip for .NET. Aumente a segurança e a flexibilidade em suas aplicações.
-type: docs
 weight: 10
 url: /pt/net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extraindo entradas de arquivo com senhas diferentes em Aspose.Zip para .NET
+
 ## Introdução
 
 No cenário em constante evolução do desenvolvimento .NET, Aspose.Zip se destaca como uma ferramenta poderosa para trabalhar com arquivos compactados. Entre seus diversos recursos, a extração de entradas de arquivo com senhas diferentes adiciona uma camada extra de segurança e versatilidade às suas aplicações. Neste guia passo a passo, exploraremos como fazer isso usando Aspose.Zip for .NET.
@@ -89,3 +95,9 @@ R1: Sim, o Aspose.Zip oferece suporte a .NET Core e .NET Framework, proporcionan
 ### Q5: Onde posso comprar o Aspose.Zip?
 
  A5: Para adquirir o Aspose.Zip, visite o[página de compra](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Dosya Sıkıştırmasını Açma
 linktitle: Dosya Sıkıştırmasını Açma
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Aspose.Zip for .NET eğitimleriyle .NET'te dosya açma işlemini zahmetsizce öğrenin. Adım adım kılavuzlarla sıkıştırılmış dosyaları verimli bir şekilde kullanmayı öğrenin.
-type: docs
 weight: 21
 url: /tr/net/file-decompression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dosya Sıkıştırmasını Açma
+
 
 
 ## giriiş
@@ -45,3 +51,9 @@ Aspose.Zip for .NET kullanarak geleneksel olarak parola korumalı dosyaların s�
 Aspose.Zip for .NET kullanarak Wim arşivlerinin sıkıştırmasını açmaya ilişkin adım adım kılavuzu keşfedin. Kitaplığı indirin, öğreticiyi takip edin ve .NET uygulamalarınızdaki arşiv dosyalarını verimli bir şekilde yönetin.
 ### [Aspose.Zip for .NET'te Xar'ı Klasöre Çıkarın](./decompress-xar-folder/)
 Aspose.Zip for .NET'in gücünü keşfedin! Bu kullanıcı dostu eğitimle Xar arşivlerinin sıkıştırmasını zahmetsizce açın. .NET geliştirme deneyiminizi geliştirin.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

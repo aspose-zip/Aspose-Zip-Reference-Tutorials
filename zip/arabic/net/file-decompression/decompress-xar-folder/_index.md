@@ -3,10 +3,16 @@ title: قم بفك ضغط Xar إلى مجلد في Aspose.Zip لـ .NET
 linktitle: قم بفك ضغط Xar إلى المجلد
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: اكتشف قوة Aspose.Zip لـ .NET! قم بفك ضغط أرشيفات Xar بسهولة باستخدام هذا البرنامج التعليمي سهل الاستخدام. تعزيز تجربة تطوير .NET الخاصة بك.
-type: docs
 weight: 17
 url: /ar/net/file-decompression/decompress-xar-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# قم بفك ضغط Xar إلى مجلد في Aspose.Zip لـ .NET
+
 ## مقدمة
 
 إذا كنت تتعمق في عالم تطوير .NET وتبحث عن حل موثوق لفك ضغط أرشيفات Xar، فإن Aspose.Zip for .NET هو ما تحتاجه. في هذا الدليل التفصيلي، سنرشدك خلال عملية فك ضغط Xar إلى مجلد باستخدام Aspose.Zip، وهي مكتبة قوية تعمل على تبسيط معالجة الأرشيف في تطبيقات .NET الخاصة بك.
@@ -79,3 +85,9 @@ using (FileStream fs = File.OpenRead(dataDir + "sample.xar"))
 ### س5: أين يمكنني شراء Aspose.Zip لـ .NET؟
 
  ج5: يمكنك شراء Aspose.Zip لـ .NET[هنا](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

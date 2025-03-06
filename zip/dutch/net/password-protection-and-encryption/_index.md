@@ -3,10 +3,16 @@ title: Wachtwoordbeveiliging en codering
 linktitle: Wachtwoordbeveiliging en codering
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Beveilig uw bestanden met Aspose.Zip voor .NET! Leer stapsgewijze tutorials over wachtwoordbeveiliging en encryptie, van AES tot traditionele methoden.
-type: docs
 weight: 26
 url: /nl/net/password-protection-and-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Wachtwoordbeveiliging en codering
+
 
 ## Invoering
 
@@ -74,3 +80,9 @@ Leer hoe u meerdere bestanden veilig kunt comprimeren met behulp van traditionel
 Leer hoe u met AES gecodeerde bestanden in C# kunt decomprimeren met Aspose.Zip voor .NET. Volg onze stapsgewijze handleiding voor een efficiënte bestandsverwerking.
 ### [Decomprimeer het AES-gecodeerde opgeslagen bestand in Aspose.Zip voor .NET](./decompress-aes-encrypted-stored-file/)
 Leer hoe u met AES gecodeerde opgeslagen bestanden in Aspose.Zip voor .NET kunt decomprimeren met deze uitgebreide stapsgewijze handleiding. Verbeter vandaag nog uw .NET-ontwikkelingsvaardigheden!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

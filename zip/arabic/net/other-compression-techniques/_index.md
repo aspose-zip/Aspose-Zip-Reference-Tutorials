@@ -3,10 +3,16 @@ title: تقنيات الضغط الأخرى
 linktitle: تقنيات الضغط الأخرى
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: إتقان تقنيات الضغط المتقدمة باستخدام Aspose.Zip. ارفع مهاراتك التطويرية، بدءًا من الاستخراج إلى تدفق الذاكرة وحتى تحسين التخزين باستخدام ضغط Lzma.
-type: docs
 weight: 27
 url: /ar/net/other-compression-techniques/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تقنيات الضغط الأخرى
+
 
 ## مقدمة
 
@@ -44,3 +50,9 @@ url: /ar/net/other-compression-techniques/
 اكتشف قوة Aspose.Zip لـ .NET من خلال دليلنا المفصّل خطوة بخطوة حول إدارة أرشيفات ZIP باستخدام كلمات مرور مختلفة. تعزيز الأمان والمرونة في تطبيقاتك. 
 ### [اضغط إلى Lzma في Aspose.Zip لـ .NET](./compress-to-lzma/)
 تعرف على كيفية ضغط الملفات باستخدام Aspose.Zip لـ .NET باستخدام خوارزمية Lzma القوية. تحسين التخزين وتعزيز كفاءة نقل البيانات دون عناء.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

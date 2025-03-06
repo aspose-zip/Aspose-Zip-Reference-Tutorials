@@ -3,10 +3,16 @@ title: Другие методы сжатия
 linktitle: Другие методы сжатия
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Освойте передовые методы сжатия с помощью Aspose.Zip. Повысьте свои навыки разработки от извлечения в поток памяти до оптимизации хранилища с помощью сжатия Lzma.
-type: docs
 weight: 27
 url: /ru/net/other-compression-techniques/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Другие методы сжатия
+
 
 ## Введение
 
@@ -44,3 +50,9 @@ url: /ru/net/other-compression-techniques/
 Изучите возможности Aspose.Zip для .NET с помощью нашего пошагового руководства по управлению ZIP-архивами с разными паролями. Повысьте безопасность и гибкость ваших приложений. 
 ### [Сжать в Lzma в Aspose.Zip для .NET](./compress-to-lzma/)
 Узнайте, как сжимать файлы с помощью Aspose.Zip для .NET с помощью мощного алгоритма Lzma. Оптимизируйте хранилище и повысьте эффективность передачи данных без особых усилий.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

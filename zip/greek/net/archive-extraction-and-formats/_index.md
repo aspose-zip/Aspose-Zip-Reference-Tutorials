@@ -3,10 +3,16 @@ title: Εξαγωγή αρχείων και Μορφές
 linktitle: Εξαγωγή αρχείων και Μορφές
 second_title: Aspose.Zip .NET API για συμπίεση και αρχειοθέτηση αρχείων
 description: Ξεκλειδώστε τη δύναμη της συμπίεσης αρχείων στο .NET με το Aspose.Zip. Μάθετε να συμπιέζετε αρχεία σε διάφορες μορφές όπως TarBz2, TarGz και TarZ για αποτελεσματική αποθήκευση.
-type: docs
 weight: 23
 url: /el/net/archive-extraction-and-formats/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Εξαγωγή αρχείων και Μορφές
+
 
 ## Εισαγωγή
 
@@ -53,3 +59,9 @@ url: /el/net/archive-extraction-and-formats/
 Εξερευνήστε τη συμπίεση βήμα προς βήμα στο TarZ χρησιμοποιώντας το Aspose.Zip για .NET. Αποτελεσματικός χειρισμός αρχείων για τα έργα σας .NET.
 ### [Εξαγωγή καταχωρήσεων αρχείου με διαφορετικούς κωδικούς πρόσβασης στο Aspose.Zip για .NET](./extract-archive-different-passwords/)
 Μάθετε πώς να εξαγάγετε καταχωρήσεις αρχειοθέτησης με διαφορετικούς κωδικούς πρόσβασης στο Aspose.Zip για .NET. Ενισχύστε την ασφάλεια και την ευελιξία στις εφαρμογές σας.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

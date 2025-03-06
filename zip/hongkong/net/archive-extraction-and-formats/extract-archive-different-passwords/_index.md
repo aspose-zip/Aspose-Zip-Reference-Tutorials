@@ -3,10 +3,16 @@ title: 在 Aspose.Zip for .NET 中使用不同密碼提取存檔項目
 linktitle: 使用不同密碼提取存檔條目
 second_title: 用於檔案壓縮和歸檔的 Aspose.Zip .NET API
 description: 了解如何在 Aspose.Zip for .NET 中提取具有不同密碼的存檔項目。提高應用程式的安全性和靈活性。
-type: docs
 weight: 10
 url: /zh-hant/net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 在 Aspose.Zip for .NET 中使用不同密碼提取存檔項目
+
 ## 介紹
 
 在不斷發展的 .NET 開發領域，Aspose.Zip 作為處理壓縮檔案的強大工具脫穎而出。在其眾多功能中，使用不同密碼提取存檔條目為您的應用程式增加了一層額外的安全性和多功能性。在本逐步指南中，我們將探索如何使用 Aspose.Zip for .NET 來實現這一目標。
@@ -89,3 +95,9 @@ A1：是的，Aspose.Zip 同時支援 .NET Core 和 .NET Framework，為在各�
 ### Q5：哪裡可以購買Aspose.Zip？
 
  A5：要購買 Aspose.Zip，請訪問[購買頁面](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

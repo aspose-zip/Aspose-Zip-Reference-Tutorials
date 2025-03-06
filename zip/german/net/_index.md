@@ -1,12 +1,17 @@
 ---
 title: Umfassende Tutorials und Beispiele von Aspose.Zip für .NET
 linktitle: Aspose.Zip für .NET-Tutorials
-type: docs
 weight: 10
 url: /de/net/
 description:
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Umfassende Tutorials und Beispiele von Aspose.Zip für .NET
+
 
 ### [Dateikomprimierung](./file-compression/)
 Komprimieren Sie mühelos Dateien in .NET mit Aspose.Zip! Lernen Sie Schritt für Schritt die Dateiverwaltung mit den Methoden Bzip2, LZMA, PPMd, Deflate und Store für optimale Komprimierungseinstellungen.
@@ -24,3 +29,9 @@ Nutzen Sie das Potenzial von Aspose.Zip für .NET mit unseren SevenZip-Komprimie
 Sichern Sie Ihre Dateien mit Aspose.Zip für .NET! Erfahren Sie Schritt-für-Schritt-Anleitungen zum Passwortschutz und zur Verschlüsselung, von AES bis hin zu herkömmlichen Methoden. 
 ### [Andere Komprimierungstechniken](./other-compression-techniques/)
 Beherrschen Sie mühelos fortgeschrittene Komprimierungstechniken mit Aspose.Zip für .NET. Erweitern Sie Ihre Entwicklungskompetenzen, vom Extrahieren in den Speicherstream bis zur Speicheroptimierung mit Lzma-Komprimierung.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

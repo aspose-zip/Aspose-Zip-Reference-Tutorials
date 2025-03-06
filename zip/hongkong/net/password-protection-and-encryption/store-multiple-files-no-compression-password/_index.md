@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET - 安全文件儲存教學課程
 linktitle: 使用密碼儲存多個檔案而不進行壓縮
 second_title: 用於檔案壓縮和歸檔的 Aspose.Zip .NET API
 description: 探索如何使用 Aspose.Zip for .NET 安全地儲存多個檔案而不進行壓縮。密碼保護的簡單步驟。釋放文件管理的力量！
-type: docs
 weight: 13
 url: /zh-hant/net/password-protection-and-encryption/store-multiple-files-no-compression-password/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET - 安全文件儲存教學課程
+
 
 在 .NET 開發領域，管理和操作文件是一項常見任務。 Aspose.Zip for .NET 是一個功能強大的函式庫，為開發人員提供無縫壓縮、解壓縮和操作 zip 檔案的功能。在本教程中，我們將深入研究一個特定的場景：儲存多個檔案而不壓縮並使用密碼保護它們。在本指南結束時，您將具備使用 Aspose.Zip for .NET 實作此功能的知識。
 
@@ -93,3 +99,10 @@ archive.Save(zipFile);
 
 ### 在哪裡可以購買 Aspose.Zip for .NET？
 您可以購買 Aspose.Zip for .NET[這裡](https://purchase.aspose.com/buy).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

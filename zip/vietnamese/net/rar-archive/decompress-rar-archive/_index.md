@@ -3,10 +3,16 @@ title: Giải nén kho lưu trữ RAR bằng Aspose.Zip cho .NET
 linktitle: Giải nén kho lưu trữ RAR
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Làm chủ việc giải nén các kho lưu trữ RAR trong .NET bằng Aspose.Zip. Hướng dẫn từng bước để xử lý tập tin hiệu quả. Tải ngay!
-type: docs
 weight: 10
 url: /vi/net/rar-archive/decompress-rar-archive/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Giải nén kho lưu trữ RAR bằng Aspose.Zip cho .NET
+
 
 ## Giới thiệu
 
@@ -83,3 +89,10 @@ Tính đến thời điểm hiện tại, Aspose.Zip cho .NET chủ yếu hỗ t
 
 ### Giấy phép tạm thời có sẵn không?
  Có, bạn có thể có được giấy phép tạm thời[đây](https://purchase.aspose.com/temporary-license/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

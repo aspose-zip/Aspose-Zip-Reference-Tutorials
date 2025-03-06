@@ -3,10 +3,16 @@ title: Membuat Tujuh File Zip - Aspose.Zip untuk Tutorial .NET
 linktitle: SevenZip dengan Berbagai Metode Kompresi
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Pelajari cara membuat file Seven Zip dengan Aspose.Zip untuk .NET menggunakan metode kompresi yang berbeda. Langkah mudah untuk LZMA2, BZip2, dan Store (tanpa kompresi).
-type: docs
 weight: 12
 url: /id/net/sevenzip-compression/sevenzip-various-compression-methods/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Membuat Tujuh File Zip - Aspose.Zip untuk Tutorial .NET
+
 
 ## Perkenalan
 
@@ -89,3 +95,10 @@ Ya, Aspose.Zip untuk .NET mendukung berbagai jenis file, memungkinkan Anda mengo
 
 ### Di mana saya bisa mendapatkan dukungan untuk Aspose.Zip untuk .NET?
  Anda dapat mencari dukungan di[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

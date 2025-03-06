@@ -3,10 +3,16 @@ title: Compactando para TarZ com Aspose.Zip para .NET
 linktitle: Comprimindo para TarZ
 second_title: API Aspose.Zip .NET para compactação e arquivamento de arquivos
 description: Explore a compactação passo a passo para TarZ usando Aspose.Zip para .NET. Manipulação eficiente de arquivos para seus projetos .NET.
-type: docs
 weight: 15
 url: /pt/net/archive-extraction-and-formats/compress-to-tar-z/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Compactando para TarZ com Aspose.Zip para .NET
+
 ## Introdução
 
 Se você deseja compactar arquivos no formato TarZ com eficiência usando Aspose.Zip for .NET, você está no lugar certo. Este guia passo a passo orientará você durante o processo, garantindo que você aproveite todo o potencial do Aspose.Zip for .NET para lidar perfeitamente com suas necessidades de compactação.
@@ -91,3 +97,9 @@ A1: Com certeza! Aspose.Zip for .NET permite compactar arquivos individuais e pa
 ### Q5: Posso obter uma licença temporária do Aspose.Zip for .NET?
 
 A5: Sim, se precisar de uma licença temporária, você pode obter uma[aqui](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

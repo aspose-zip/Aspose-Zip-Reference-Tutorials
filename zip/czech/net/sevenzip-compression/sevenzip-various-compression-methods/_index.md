@@ -3,10 +3,16 @@ title: Vytváření sedmi souborů ZIP – výukový program Aspose.Zip pro .NET
 linktitle: SevenZip s různými metodami komprese
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Naučte se vytvářet soubory Seven Zip pomocí Aspose.Zip pro .NET pomocí různých kompresních metod. Snadné kroky pro LZMA2, BZip2 a Store (bez komprese).
-type: docs
 weight: 12
 url: /cs/net/sevenzip-compression/sevenzip-various-compression-methods/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Vytváření sedmi souborů ZIP – výukový program Aspose.Zip pro .NET
+
 
 ## Úvod
 
@@ -89,3 +95,10 @@ Ano, Aspose.Zip for .NET podporuje širokou škálu typů souborů, což vám um
 
 ### Kde mohu získat podporu pro Aspose.Zip pro .NET?
  Podporu můžete hledat na[Fórum Aspose.Zip](https://forum.aspose.com/c/zip/37).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

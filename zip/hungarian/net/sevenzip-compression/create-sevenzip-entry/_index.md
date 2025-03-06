@@ -3,10 +3,16 @@ title: Hozzon létre SevenZip bejegyzést az Aspose.Zip fájlban a .NET számár
 linktitle: Hozzon létre SevenZip bejegyzést
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Master Aspose.Zip for .NET – SevenZip bejegyzéseket hozhat létre könnyedén. Bővítse .NET-alkalmazásait hatékony zip archívumkezeléssel.
-type: docs
 weight: 11
 url: /hu/net/sevenzip-compression/create-sevenzip-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Hozzon létre SevenZip bejegyzést az Aspose.Zip fájlban a .NET számára
+
 
 ## Bevezetés
 
@@ -83,3 +89,10 @@ Teljesen! Az Aspose.Zip nagyszabású alkalmazások kezelésére készült, hat�
 
 ### K: Hol kérhetek segítséget, vagy csatlakozhatok az Aspose.Zip közösségéhez?
  Meglátogatni a[Aspose.Zip fórum](https://forum.aspose.com/c/zip/37) támogatást kérni, kérdéseket feltenni, és kapcsolatba lépni a közösséggel.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

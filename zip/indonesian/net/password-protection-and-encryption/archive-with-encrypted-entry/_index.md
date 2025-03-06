@@ -3,10 +3,16 @@ title: Kuasai Pengarsipan Aman di .NET dengan Aspose.Zip
 linktitle: Arsip dengan Entri Terenkripsi
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Jelajahi dunia pengarsipan aman di .NET dengan Aspose.Zip. Buat file Seven Zip dengan enkripsi AES dengan mudah. Tingkatkan keterampilan pengembangan Anda sekarang!
-type: docs
 weight: 15
 url: /id/net/password-protection-and-encryption/archive-with-encrypted-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Kuasai Pengarsipan Aman di .NET dengan Aspose.Zip
+
 
 ## Perkenalan
 
@@ -81,3 +87,10 @@ Aspose.Zip untuk .NET mendukung berbagai algoritma kompresi. Lihat dokumentasi u
 ### Bisakah saya menyesuaikan pengaturan enkripsi lebih lanjut?
 Sangat! Jelajahi dokumentasi untuk opsi penyesuaian enkripsi tingkat lanjut.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

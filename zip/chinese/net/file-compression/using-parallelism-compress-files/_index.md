@@ -3,10 +3,16 @@ title: 在 Aspose.Zip for .NET 中使用并行性压缩文件
 linktitle: 使用并行性来压缩文件
 second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
 description: 学习使用 Aspose.Zip 在 .NET 中高效压缩文件。通过我们的分步教程来利用并行性的力量。
-type: docs
 weight: 17
 url: /zh/net/file-compression/using-parallelism-compress-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 在 Aspose.Zip for .NET 中使用并行性压缩文件
+
 ## 介绍
 
 在 .NET 开发领域，有效压缩文件对于优化存储和传输至关重要。 Aspose.Zip for .NET 提供了一个强大的解决方案，其突出的功能之一是能够利用并行性进行文件压缩。在本教程中，我们将指导您完成使用 Aspose.Zip for .NET 使用并行性来压缩文件的过程。
@@ -128,3 +134,9 @@ A1：是的，Aspose.Zip for .NET 旨在与其他 .NET 库无缝集成。
 ### Q5：如何购买 Aspose.Zip for .NET？
 
  A5：您可以购买 Aspose.Zip for .NET[这里](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

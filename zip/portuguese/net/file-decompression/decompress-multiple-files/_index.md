@@ -3,10 +3,16 @@ title: Descompactando vários arquivos usando Aspose.Zip para .NET
 linktitle: Descompactando vários arquivos
 second_title: API Aspose.Zip .NET para compactação e arquivamento de arquivos
 description: Aprenda como descompactar vários arquivos usando Aspose.Zip para .NET. Siga nosso guia passo a passo para um gerenciamento eficiente de arquivos.
-type: docs
 weight: 11
 url: /pt/net/file-decompression/decompress-multiple-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Descompactando vários arquivos usando Aspose.Zip para .NET
+
 ## Introdução
 
 Bem-vindo ao nosso tutorial abrangente sobre como descompactar vários arquivos usando Aspose.Zip para .NET! Se você deseja lidar com arquivos compactados contendo várias entradas de maneira eficiente, você está no lugar certo. Neste guia, orientaremos você no processo passo a passo, usando Aspose.Zip para .NET.
@@ -127,3 +133,9 @@ Neste tutorial, cobrimos as etapas essenciais para descompactar vários arquivos
 ### Q5: Há algum requisito de sistema específico para usar o Aspose.Zip for .NET?
 
  A5: Consulte o[documentação](https://reference.aspose.com/zip/net/) para requisitos detalhados do sistema.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

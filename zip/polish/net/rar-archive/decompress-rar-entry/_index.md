@@ -3,10 +3,16 @@ title: Dekompresja wpisu RAR za pomocą Aspose.Zip dla .NET
 linktitle: Dekompresja wpisu RAR
 second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
 description: Odkryj prostotę dekompresji wpisów RAR w .NET przy użyciu Aspose.Zip. Ta potężna biblioteka umożliwia bezproblemową obsługę skompresowanych plików.
-type: docs
 weight: 11
 url: /pl/net/rar-archive/decompress-rar-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekompresja wpisu RAR za pomocą Aspose.Zip dla .NET
+
 
 ## Wstęp
 
@@ -74,3 +80,9 @@ Tak, Aspose.Zip oferuje licencje komercyjne dla programistów, zapewniając elas
 
 ### P: Gdzie mogę szukać pomocy, jeśli napotkam problemy z Aspose.Zip dla .NET?
  Odwiedzić[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) za wsparcie społeczności i dyskusje.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

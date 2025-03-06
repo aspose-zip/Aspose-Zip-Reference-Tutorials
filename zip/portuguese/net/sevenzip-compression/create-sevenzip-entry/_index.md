@@ -3,10 +3,16 @@ title: Crie uma entrada SevenZip em Aspose.Zip para .NET
 linktitle: Criar entrada SevenZip
 second_title: API Aspose.Zip .NET para compactação e arquivamento de arquivos
 description: Domine Aspose.Zip for .NET - Crie entradas SevenZip sem esforço. Aprimore seus aplicativos .NET com manipulação eficiente de arquivos zip.
-type: docs
 weight: 11
 url: /pt/net/sevenzip-compression/create-sevenzip-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Crie uma entrada SevenZip em Aspose.Zip para .NET
+
 
 ## Introdução
 
@@ -83,3 +89,10 @@ Absolutamente! Aspose.Zip foi projetado para lidar com aplicativos de grande esc
 
 ### P: Onde posso procurar assistência ou me conectar com a comunidade do Aspose.Zip?
  Visite a[Fórum Aspose.Zip](https://forum.aspose.com/c/zip/37) para buscar apoio, fazer perguntas e se conectar com a comunidade.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

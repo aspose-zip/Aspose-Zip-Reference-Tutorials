@@ -3,10 +3,16 @@ title: Extraction vers un flux mémoire avec Aspose.Zip pour .NET
 linktitle: Extraction vers le flux de mémoire
 second_title: API Aspose.Zip .NET pour la compression et l'archivage de fichiers
 description: Explorez Aspose.Zip pour .NET Extrayez sans effort des archives vers un MemoryStream dans ce guide étape par étape. Améliorez facilement votre développement .NET.
-type: docs
 weight: 10
 url: /fr/net/other-compression-techniques/extract-to-memory-stream/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extraction vers un flux mémoire avec Aspose.Zip pour .NET
+
 ## Introduction
 
 Dans le domaine du développement .NET, Aspose.Zip s'impose comme un outil puissant pour gérer et manipuler les archives ZIP et GZIP. Que vous soyez un développeur chevronné ou tout juste débutant, ce didacticiel vous guidera tout au long du processus d'extraction d'archives vers un MemoryStream à l'aide d'Aspose.Zip pour .NET.
@@ -96,3 +102,9 @@ A2 : Certainement ! Aspose.Zip prend en charge à la fois l'extraction et la cr�
 ### Q5 : Comment puis-je obtenir une licence temporaire ?
 
  A5 : Si vous avez besoin d'un permis temporaire, visitez[ici](https://purchase.aspose.com/temporary-license/) pour un processus fluide.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

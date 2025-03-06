@@ -3,10 +3,16 @@ title: ضغط SevenZip
 linktitle: ضغط SevenZip
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: أطلق العنان لإمكانات Aspose.Zip لـ .NET من خلال برامج الضغط الخاصة بـ SevenZip. قم بإنشاء إدخالات SevenZip بسهولة واستكشف طرق الضغط المختلفة.
-type: docs
 weight: 25
 url: /ar/net/sevenzip-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ضغط SevenZip
+
 
 
 مرحبًا بك في دليلنا الشامل حول دروس ضغط SevenZip باستخدام Aspose.Zip لـ .NET. في هذه السلسلة التعليمية، سوف نتعمق في قوة Aspose.Zip، ونرشدك خلال عملية إنشاء إدخالات SevenZip واستكشاف طرق الضغط المختلفة. فلنبدأ هذه الرحلة لتحسين تجربة تطوير .NET الخاصة بك.
@@ -31,3 +37,9 @@ url: /ar/net/sevenzip-compression/
 Master Aspose.Zip for .NET - قم بإنشاء إدخالات SevenZip دون عناء. قم بتحسين تطبيقات .NET الخاصة بك من خلال المعالجة الفعالة لأرشيف Zip.
 ### [SevenZip مع طرق ضغط مختلفة في Aspose.Zip لـ .NET](./sevenzip-various-compression-methods/)
 تعلم كيفية إنشاء ملفات Seven Zip باستخدام Aspose.Zip لـ .NET باستخدام طرق ضغط مختلفة. خطوات سهلة لـ LZMA2 وBZip2 وStore (بدون ضغط).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

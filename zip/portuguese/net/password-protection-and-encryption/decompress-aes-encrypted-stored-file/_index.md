@@ -3,10 +3,16 @@ title: Aspose.Zip para .NET - Descriptografando arquivos criptografados AES
 linktitle: Descompacte arquivo armazenado criptografado AES
 second_title: API Aspose.Zip .NET para compactação e arquivamento de arquivos
 description: Aprenda como descompactar arquivos armazenados criptografados AES no Aspose.Zip for .NET com este guia passo a passo abrangente. Aprimore suas habilidades de desenvolvimento .NET hoje mesmo!
-type: docs
 weight: 19
 url: /pt/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip para .NET - Descriptografando arquivos criptografados AES
+
 
 ## Introdução
 
@@ -89,3 +95,10 @@ Aspose.Zip suporta vários formatos, incluindo ZIP, 7z e TAR. Consulte a documen
 ### Posso usar o Aspose.Zip para fins comerciais?
  Sim, você pode comprar uma licença[aqui](https://purchase.aspose.com/buy) para uso comercial.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

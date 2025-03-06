@@ -3,10 +3,16 @@ title: Master Secure archiválás .NET-ben az Aspose.Zip segítségével
 linktitle: Archívum titkosított bejegyzéssel
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Fedezze fel a biztonságos archiválás világát .NET-ben az Aspose.Zip segítségével. Hozzon létre Hét Zip fájlt AES titkosítással könnyedén. Növelje fejlesztési készségeit most!
-type: docs
 weight: 15
 url: /hu/net/password-protection-and-encryption/archive-with-encrypted-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Master Secure archiválás .NET-ben az Aspose.Zip segítségével
+
 
 ## Bevezetés
 
@@ -81,3 +87,10 @@ Az Aspose.Zip for .NET különféle tömörítési algoritmusokat támogat. A r�
 ### Testreszabhatom a titkosítási beállításokat?
 Teljesen! Tekintse meg a dokumentációt a speciális titkosítási testreszabási lehetőségekről.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

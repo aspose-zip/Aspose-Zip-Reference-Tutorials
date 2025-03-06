@@ -3,10 +3,16 @@ title: .NET용 Aspose.Zip을 사용하여 메모리 스트림으로 추출
 linktitle: 메모리 스트림으로 추출
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: .NET용 Aspose.Zip 살펴보기 이 단계별 가이드를 통해 아카이브를 MemoryStream으로 손쉽게 추출하세요. .NET 개발을 쉽게 향상시키세요.
-type: docs
 weight: 10
 url: /ko/net/other-compression-techniques/extract-to-memory-stream/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.Zip을 사용하여 메모리 스트림으로 추출
+
 ## 소개
 
 .NET 개발 영역에서 Aspose.Zip은 ZIP 및 GZIP 아카이브를 관리하고 조작하기 위한 강력한 도구로 돋보입니다. 숙련된 개발자이든 이제 막 시작하는 개발자이든 이 튜토리얼은 .NET용 Aspose.Zip을 사용하여 아카이브를 MemoryStream으로 추출하는 과정을 안내합니다.
@@ -96,3 +102,9 @@ A2: 물론이죠! Aspose.Zip은 ZIP 아카이브 추출 및 생성을 모두 지
 ### Q5: 임시 라이센스는 어떻게 얻을 수 있나요?
 
  A5: 임시 라이센스가 필요한 경우 다음을 방문하세요.[여기](https://purchase.aspose.com/temporary-license/) 원활한 프로세스를 위해
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: .NET용 Aspose.Zip에서 비밀번호가 다른 항목
 linktitle: 비밀번호가 다른 항목
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: 다양한 비밀번호로 ZIP 아카이브를 관리하는 방법에 대한 단계별 가이드를 통해 .NET용 Aspose.Zip의 강력한 기능을 살펴보세요. 애플리케이션의 보안과 유연성을 강화하세요.
-type: docs
 weight: 13
 url: /ko/net/other-compression-techniques/entries-with-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.Zip에서 비밀번호가 다른 항목
+
 ## 소개
 
 개발자가 ZIP 아카이브를 원활하게 관리하고 조작할 수 있도록 지원하는 강력한 라이브러리인 .NET용 Aspose.Zip의 세계에 오신 것을 환영합니다. 이 튜토리얼에서는 다양한 비밀번호를 사용하는 항목 작업이라는 특정 기능을 자세히 살펴보겠습니다. 숙련된 개발자이든 이제 막 시작하는 개발자이든 이 단계별 가이드는 프로세스를 안내하여 .NET용 Aspose.Zip의 잠재력을 열어줍니다.
@@ -97,3 +103,9 @@ A2: 물론이죠! Aspose.Zip for .NET은 상업용 라이선스를 제공하며 
 ### Q5: 영구 라이선스 없이 .NET용 Aspose.Zip을 사용할 수 있나요?
 
  A5: 예, 단기적인 필요에 따라 임시 라이센스를 얻을 수 있습니다. 자세한 내용 찾기[여기](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

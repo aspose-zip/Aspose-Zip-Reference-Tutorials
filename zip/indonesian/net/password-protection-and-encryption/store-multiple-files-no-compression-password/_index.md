@@ -3,10 +3,16 @@ title: Aspose.Zip untuk .NET - Tutorial Penyimpanan File Aman
 linktitle: Simpan Banyak File Tanpa Kompresi dengan Kata Sandi
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Jelajahi cara menggunakan Aspose.Zip untuk .NET untuk menyimpan banyak file dengan aman tanpa kompresi. Langkah mudah untuk perlindungan kata sandi. Buka kekuatan manajemen file!
-type: docs
 weight: 13
 url: /id/net/password-protection-and-encryption/store-multiple-files-no-compression-password/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip untuk .NET - Tutorial Penyimpanan File Aman
+
 
 Dalam dunia pengembangan .NET, mengelola dan memanipulasi file adalah tugas yang umum. Aspose.Zip untuk .NET adalah perpustakaan canggih yang memberi pengembang kemampuan untuk mengompresi, mendekompresi, dan memanipulasi arsip zip dengan lancar. Dalam tutorial ini, kita akan mempelajari skenario spesifik: menyimpan banyak file tanpa kompresi dan melindunginya dengan kata sandi. Di akhir panduan ini, Anda akan dibekali dengan pengetahuan untuk mengimplementasikan fungsi ini menggunakan Aspose.Zip untuk .NET.
 
@@ -93,3 +99,10 @@ Dalam tutorial ini, kita mempelajari cara menggunakan Aspose.Zip untuk .NET untu
 
 ### Di mana saya dapat membeli Aspose.Zip untuk .NET?
  Anda dapat membeli Aspose.Zip untuk .NET[Di Sini](https://purchase.aspose.com/buy).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

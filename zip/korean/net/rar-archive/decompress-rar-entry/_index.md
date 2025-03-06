@@ -3,10 +3,16 @@ title: .NET용 Aspose.Zip을 사용하여 RAR 항목 압축 풀기
 linktitle: RAR 항목 압축 풀기
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: Aspose.Zip을 사용하여 .NET에서 RAR 항목의 압축을 푸는 단순성을 알아보세요. 이 강력한 라이브러리를 사용하면 압축 파일을 쉽게 처리할 수 있습니다.
-type: docs
 weight: 11
 url: /ko/net/rar-archive/decompress-rar-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.Zip을 사용하여 RAR 항목 압축 풀기
+
 
 ## 소개
 
@@ -74,3 +80,9 @@ using (FileStream fs = File.OpenRead(dataDir + "your_file.rar"))
 
 ### Q: Aspose.Zip for .NET에 문제가 발생하면 어디서 도움을 받을 수 있나요?
  방문하다[Aspose.Zip 포럼](https://forum.aspose.com/c/zip/37) 커뮤니티 지원 및 토론을 위해.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

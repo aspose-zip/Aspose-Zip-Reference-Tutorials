@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET – AES titkosítási oktatóanyag
 linktitle: AES titkosítási beállítások
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Fedezze fel az Aspose.Zip for .NET-et, hogy AES titkosítással védje tömörített fájljait. Töltse le most a hatékony adatvédelem érdekében.
-type: docs
 weight: 14
 url: /hu/net/password-protection-and-encryption/aes-encryption-settings/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET – AES titkosítási oktatóanyag
+
 
 ## Bevezetés
 
@@ -87,3 +93,10 @@ Gratulálunk! Sikeresen implementálta az AES titkosítási beállításokat az 
 ### K: Kaphatok ideiglenes licenceket teszteléshez?
  V: Igen, beszerezhet ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

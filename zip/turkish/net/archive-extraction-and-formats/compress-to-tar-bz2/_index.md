@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET ile TarBz2'ye Dosya Sıkıştırma
 linktitle: TarBz2'ye sıkıştırma
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Aspose.Zip kullanarak dosyaları .NET'te TarBz2 formatına nasıl sıkıştıracağınızı öğrenin. Verimli dosya sıkıştırma için adım adım kılavuzumuzu izleyin.
-type: docs
 weight: 11
 url: /tr/net/archive-extraction-and-formats/compress-to-tar-bz2/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET ile TarBz2'ye Dosya Sıkıştırma
+
 ## giriiş
 
 Aspose.Zip for .NET kullanarak dosyaları TarBz2 formatına sıkıştırmaya ilişkin kapsamlı kılavuzumuza hoş geldiniz. Aspose.Zip, geliştiricilere .NET uygulamalarında sıkıştırılmış dosya formatlarıyla verimli bir şekilde çalışmak için ihtiyaç duydukları araçları sağlayan güçlü ve çok yönlü bir kütüphanedir.
@@ -90,3 +96,9 @@ C2: Evet, verilen örnekte Tar arşivine girişler ekleyerek birden fazla dosyay
 ### S5: Ücretsiz deneme sürümü mevcut mu?
 
  C5: Evet, ücretsiz deneme sürümüne erişebilirsiniz[Burada](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

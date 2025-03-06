@@ -3,10 +3,16 @@ title: استخراج إدخالات الأرشيف بكلمات مرور مخت
 linktitle: استخراج إدخالات الأرشيف بكلمات مرور مختلفة
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: تعرف على كيفية استخراج إدخالات الأرشيف بكلمات مرور مختلفة في Aspose.Zip لـ .NET. تعزيز الأمان والمرونة في تطبيقاتك.
-type: docs
 weight: 10
 url: /ar/net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# استخراج إدخالات الأرشيف بكلمات مرور مختلفة في Aspose.Zip لـ .NET
+
 ## مقدمة
 
 في المشهد المتطور باستمرار لتطوير .NET، يبرز Aspose.Zip كأداة قوية للعمل مع الأرشيفات المضغوطة. من بين ميزاته العديدة، يضيف استخراج إدخالات الأرشيف بكلمات مرور مختلفة طبقة إضافية من الأمان وتعدد الاستخدامات لتطبيقاتك. في هذا الدليل التفصيلي، سنستكشف كيفية تحقيق ذلك باستخدام Aspose.Zip for .NET.
@@ -89,3 +95,9 @@ archive.Entries[1].Extract(dataDir + "asyoulik_extracted_pass_out.txt", "second_
 ### س5: أين يمكنني شراء Aspose.Zip؟
 
  ج5: لشراء Aspose.Zip، قم بزيارة[صفحة الشراء](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

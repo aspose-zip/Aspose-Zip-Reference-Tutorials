@@ -3,10 +3,16 @@ title: Extração e formatos de arquivos
 linktitle: Extração e formatos de arquivos
 second_title: API Aspose.Zip .NET para compactação e arquivamento de arquivos
 description: Desbloqueie o poder da compactação de arquivos no .NET com Aspose.Zip. Aprenda a compactar arquivos em vários formatos como TarBz2, TarGz e TarZ para armazenamento eficiente.
-type: docs
 weight: 23
 url: /pt/net/archive-extraction-and-formats/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extração e formatos de arquivos
+
 
 ## Introdução
 
@@ -53,3 +59,9 @@ Aprenda a compactar arquivos para o formato TarXz em .NET usando Aspose.Zip. Sig
 Explore a compactação passo a passo para TarZ usando Aspose.Zip para .NET. Manipulação eficiente de arquivos para seus projetos .NET.
 ### [Extraindo entradas de arquivo com senhas diferentes em Aspose.Zip para .NET](./extract-archive-different-passwords/)
 Aprenda como extrair entradas de arquivo com senhas diferentes em Aspose.Zip for .NET. Aumente a segurança e a flexibilidade em suas aplicações.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

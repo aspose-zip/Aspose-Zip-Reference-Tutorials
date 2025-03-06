@@ -3,10 +3,16 @@ title: ضغط الدليل والمجلدات
 linktitle: ضغط الدليل والمجلدات
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: قم بتحسين مساحة التخزين بسهولة باستخدام Aspose.Zip لـ .NET. تعلم تقنيات ضغط الدليل وإلغاء ضغطه لتحسين مشاريع تطوير .NET الخاصة بك.
-type: docs
 weight: 22
 url: /ar/net/directory-and-folder-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ضغط الدليل والمجلدات
+
 
 ## مقدمة
 
@@ -38,3 +44,9 @@ url: /ar/net/directory-and-folder-compression/
 تعلم كيفية ضغط الأدلة بسهولة باستخدام Aspose.Zip لـ .NET. عزز تطوير .NET الخاص بك عن طريق تحسين مساحة التخزين بكفاءة.
 ### [فك ضغط مجلد باستخدام Aspose.Zip لـ .NET](./decompress-folder/)
 أتقن فن فك ضغط المجلدات باستخدام Aspose.Zip لـ .NET. التعامل بسهولة مع مهام الضغط في مشاريعك.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

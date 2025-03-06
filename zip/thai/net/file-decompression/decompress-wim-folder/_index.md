@@ -3,10 +3,16 @@ title: ขยาย Wim ไปยังโฟลเดอร์ใน Aspose.Zip
 linktitle: คลายการบีบอัด Wim ไปยังโฟลเดอร์
 second_title: Aspose.Zip .NET API สำหรับการบีบอัดไฟล์และการเก็บถาวร
 description: สำรวจคำแนะนำทีละขั้นตอนเกี่ยวกับการขยายขนาดไฟล์เก็บถาวร Wim โดยใช้ Aspose.Zip สำหรับ .NET ดาวน์โหลดไลบรารี ปฏิบัติตามบทช่วยสอน และจัดการไฟล์เก็บถาวรในแอปพลิเคชัน .NET ของคุณอย่างมีประสิทธิภาพ
-type: docs
 weight: 16
 url: /th/net/file-decompression/decompress-wim-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ขยาย Wim ไปยังโฟลเดอร์ใน Aspose.Zip สำหรับ .NET
+
 ## การแนะนำ
 
 ยินดีต้อนรับสู่บทช่วยสอนที่ครอบคลุมเกี่ยวกับการขยายขนาดไฟล์เก็บถาวร Wim ไปยังโฟลเดอร์โดยใช้ Aspose.Zip สำหรับ .NET Aspose.Zip เป็นไลบรารีที่มีประสิทธิภาพซึ่งมอบความสามารถที่ราบรื่นสำหรับการทำงานกับรูปแบบไฟล์เก็บถาวรต่างๆ ในแอปพลิเคชัน .NET ในบทช่วยสอนนี้ เราจะแนะนำคุณตลอดกระบวนการขยายไฟล์เก็บถาวร Wim ไปยังโฟลเดอร์ที่ระบุทีละขั้นตอน
@@ -77,3 +83,9 @@ using (FileStream fs = File.OpenRead(dataDir + "corpus.wim"))
 ### คำถามที่ 5: ฉันจะรับการสนับสนุนหรือถามคำถามเกี่ยวกับ Aspose.Zip สำหรับ .NET ได้ที่ไหน
 
  A5: เยี่ยมชม[ฟอรั่ม Aspose.Zip](https://forum.aspose.com/c/zip/37) สำหรับการสนับสนุนและการอภิปราย
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

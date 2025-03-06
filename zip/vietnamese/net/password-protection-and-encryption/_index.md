@@ -3,10 +3,16 @@ title: Bảo vệ và mã hóa bằng mật khẩu
 linktitle: Bảo vệ và mã hóa bằng mật khẩu
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Bảo mật tệp của bạn bằng Aspose.Zip cho .NET! Tìm hiểu hướng dẫn từng bước về bảo vệ và mã hóa mật khẩu, từ AES đến các phương pháp truyền thống.
-type: docs
 weight: 26
 url: /vi/net/password-protection-and-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bảo vệ và mã hóa bằng mật khẩu
+
 
 ## Giới thiệu
 
@@ -74,3 +80,9 @@ Tìm hiểu cách nén nhiều tệp một cách an toàn bằng cách sử dụ
 Tìm hiểu cách giải nén các tệp được mã hóa AES trong C# bằng Aspose.Zip cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để xử lý tệp hiệu quả.
 ### [Giải nén tệp được lưu trữ được mã hóa AES trong Aspose.Zip cho .NET](./decompress-aes-encrypted-stored-file/)
 Tìm hiểu cách giải nén các tệp được lưu trữ được mã hóa AES trong Aspose.Zip cho .NET với hướng dẫn từng bước toàn diện này. Nâng cao kỹ năng phát triển .NET của bạn ngay hôm nay!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

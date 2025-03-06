@@ -3,10 +3,16 @@ title: การใช้ Parallelism เพื่อบีบอัดไฟล
 linktitle: การใช้ความเท่าเทียมในการบีบอัดไฟล์
 second_title: Aspose.Zip .NET API สำหรับการบีบอัดไฟล์และการเก็บถาวร
 description: เรียนรู้การบีบอัดไฟล์อย่างมีประสิทธิภาพใน .NET โดยใช้ Aspose.Zip ควบคุมพลังแห่งความเท่าเทียมด้วยบทช่วยสอนแบบทีละขั้นตอนของเรา
-type: docs
 weight: 17
 url: /th/net/file-compression/using-parallelism-compress-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# การใช้ Parallelism เพื่อบีบอัดไฟล์ใน Aspose.Zip สำหรับ .NET
+
 ## การแนะนำ
 
 ในโลกของการพัฒนา .NET การบีบอัดไฟล์อย่างมีประสิทธิภาพเป็นสิ่งสำคัญสำหรับการเพิ่มประสิทธิภาพการจัดเก็บและการส่งข้อมูล Aspose.Zip สำหรับ .NET มอบโซลูชันที่ทรงพลัง และหนึ่งในคุณสมบัติที่โดดเด่นคือความสามารถในการใช้ประโยชน์จากการทำงานแบบขนานสำหรับการบีบอัดไฟล์ ในบทช่วยสอนนี้ เราจะแนะนำคุณตลอดกระบวนการใช้การทำงานแบบขนานเพื่อบีบอัดไฟล์โดยใช้ Aspose.Zip สำหรับ .NET
@@ -128,3 +134,9 @@ archive.Save(zipFile,
 ### คำถามที่ 5: ฉันจะซื้อ Aspose.Zip สำหรับ .NET ได้อย่างไร
 
  A5: คุณสามารถซื้อ Aspose.Zip สำหรับ .NET ได้[ที่นี่](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

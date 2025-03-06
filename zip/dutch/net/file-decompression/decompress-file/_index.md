@@ -3,10 +3,16 @@ title: Een bestand decomprimeren met Aspose.Zip voor .NET
 linktitle: Een bestand decomprimeren
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Ontdek de wereld van bestandscompressie in .NET met Aspose.Zip. Leer de kunst van het moeiteloos decomprimeren van bestanden.
-type: docs
 weight: 10
 url: /nl/net/file-decompression/decompress-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Een bestand decomprimeren met Aspose.Zip voor .NET
+
 ## Invoering
 
 In de wereld van .NET-ontwikkeling is het efficiënt beheren van gecomprimeerde bestanden cruciaal. Aspose.Zip voor .NET biedt een krachtige oplossing om bestandscompressie en decompressie naadloos af te handelen. In deze zelfstudie verdiepen we ons in het proces van het decomprimeren van een bestand met Aspose.Zip voor .NET. Volg mee en ontgrendel het potentieel van deze krachtige bibliotheek.
@@ -83,3 +89,9 @@ A3: Voor vragen of hulp kunt u terecht op de[Aspose.Zip-forum](https://forum.asp
 ### V5: Waar kan ik Aspose.Zip voor .NET kopen?
 
  A5: Om Aspose.Zip voor .NET te kopen, gaat u naar de[aankooppagina](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

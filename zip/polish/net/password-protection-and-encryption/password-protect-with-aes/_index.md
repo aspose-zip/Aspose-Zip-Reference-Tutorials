@@ -3,10 +3,16 @@ title: Zabezpiecz swoje pliki — szyfrowanie AES za pomocą Aspose.Zip
 linktitle: Ochrona hasłem za pomocą AES
 second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
 description: Dowiedz się, jak zwiększyć bezpieczeństwo plików za pomocą Aspose.Zip dla .NET z szyfrowaniem AES. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby uzyskać optymalną ochronę.
-type: docs
 weight: 11
 url: /pl/net/password-protection-and-encryption/password-protect-with-aes/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Zabezpiecz swoje pliki — szyfrowanie AES za pomocą Aspose.Zip
+
 
 ## Wstęp
 
@@ -108,3 +114,10 @@ Aspose.Zip obsługuje szyfrowanie różnych typów plików, zapewniając elastyc
 
 ### Co się stanie, jeśli zapomnę hasła do zaszyfrowanego archiwum?
 Niestety nie ma możliwości odzyskania hasła do zaszyfrowanego archiwum. Trzymanie hasła w bezpiecznym miejscu jest niezwykle istotne.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

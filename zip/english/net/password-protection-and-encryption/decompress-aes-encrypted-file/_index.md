@@ -3,10 +3,16 @@ title: Decompress AES Files - Aspose.Zip .NET Tutorial
 linktitle: Decompress AES Encrypted File
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: Learn to decompress AES encrypted files in C# using Aspose.Zip for .NET. Follow our step-by-step guide for efficient file handling.
-type: docs
 weight: 18
 url: /net/password-protection-and-encryption/decompress-aes-encrypted-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Decompress AES Files - Aspose.Zip .NET Tutorial
+
 
 ## Introduction
 
@@ -93,3 +99,10 @@ Visit the [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) for community su
 You can obtain a temporary license [here](https://purchase.aspose.com/temporary-license/).
 
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

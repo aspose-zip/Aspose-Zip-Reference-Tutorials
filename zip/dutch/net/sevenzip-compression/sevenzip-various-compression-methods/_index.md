@@ -3,10 +3,16 @@ title: Zeven zip-bestanden maken - Aspose.Zip voor .NET-zelfstudie
 linktitle: SevenZip met verschillende compressiemethoden
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Leer zeven zip-bestanden maken met Aspose.Zip voor .NET met behulp van verschillende compressiemethoden. Eenvoudige stappen voor LZMA2, BZip2 en Store (geen compressie).
-type: docs
 weight: 12
 url: /nl/net/sevenzip-compression/sevenzip-various-compression-methods/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Zeven zip-bestanden maken - Aspose.Zip voor .NET-zelfstudie
+
 
 ## Invoering
 
@@ -89,3 +95,10 @@ Ja, Aspose.Zip voor .NET ondersteunt een breed scala aan bestandstypen, waardoor
 
 ### Waar kan ik ondersteuning krijgen voor Aspose.Zip voor .NET?
  U kunt ondersteuning zoeken op de[Aspose.Zip-forum](https://forum.aspose.com/c/zip/37).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

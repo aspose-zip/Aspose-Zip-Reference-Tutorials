@@ -3,10 +3,16 @@ title: .NET용 Aspose.Zip - AES 암호화 튜토리얼
 linktitle: AES 암호화 설정
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: AES 암호화로 압축 파일을 보호하려면 .NET용 Aspose.Zip을 살펴보세요. 효율적인 데이터 보호를 위해 지금 다운로드하세요.
-type: docs
 weight: 14
 url: /ko/net/password-protection-and-encryption/aes-encryption-settings/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.Zip - AES 암호화 튜토리얼
+
 
 ## 소개
 
@@ -87,3 +93,10 @@ Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Set
 ### Q: 테스트용 임시 라이센스를 얻을 수 있나요?
  A: 네, 임시 면허를 취득할 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

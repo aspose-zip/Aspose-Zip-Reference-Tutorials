@@ -3,10 +3,16 @@ title: Extraction d'entrées d'archive avec différents mots de passe dans Aspos
 linktitle: Extraction des entrées d'archive avec différents mots de passe
 second_title: API Aspose.Zip .NET pour la compression et l'archivage de fichiers
 description: Découvrez comment extraire des entrées d'archive avec différents mots de passe dans Aspose.Zip pour .NET. Renforcez la sécurité et la flexibilité de vos applications.
-type: docs
 weight: 10
 url: /fr/net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extraction d'entrées d'archive avec différents mots de passe dans Aspose.Zip pour .NET
+
 ## Introduction
 
 Dans le paysage en constante évolution du développement .NET, Aspose.Zip se distingue comme un outil puissant pour travailler avec des archives compressées. Parmi ses nombreuses fonctionnalités, l'extraction d'entrées d'archives avec différents mots de passe ajoute une couche supplémentaire de sécurité et de polyvalence à vos applications. Dans ce guide étape par étape, nous explorerons comment y parvenir en utilisant Aspose.Zip pour .NET.
@@ -89,3 +95,9 @@ R1 : Oui, Aspose.Zip prend en charge à la fois .NET Core et .NET Framework, of
 ### Q5 : Où puis-je acheter Aspose.Zip ?
 
  A5 : Pour acheter Aspose.Zip, visitez le[page d'achat](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

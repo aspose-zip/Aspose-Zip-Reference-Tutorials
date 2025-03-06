@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET - AES 加密教學
 linktitle: AES 加密設定
 second_title: 用於檔案壓縮和歸檔的 Aspose.Zip .NET API
 description: 探索 Aspose.Zip for .NET，透過 AES 加密保護您的壓縮檔案。立即下載以實現高效的資料保護。
-type: docs
 weight: 14
 url: /zh-hant/net/password-protection-and-encryption/aes-encryption-settings/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET - AES 加密教學
+
 
 ## 介紹
 
@@ -87,3 +93,10 @@ Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Set
 ### Q：我可以獲得臨時測試許可證嗎？
 答：是的，您可以獲得臨時許可證[這裡](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

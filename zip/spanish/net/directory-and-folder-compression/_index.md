@@ -3,10 +3,16 @@ title: Compresión de directorios y carpetas
 linktitle: Compresión de directorios y carpetas
 second_title: API Aspose.Zip .NET para compresión y archivado de archivos
 description: Optimice sin esfuerzo el espacio de almacenamiento con Aspose.Zip para .NET. Aprenda técnicas de compresión y descompresión de directorios para mejorar sus proyectos de desarrollo .NET.
-type: docs
 weight: 22
 url: /es/net/directory-and-folder-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Compresión de directorios y carpetas
+
 
 ## Introducción
 
@@ -38,3 +44,9 @@ En conclusión, estos tutoriales sobre compresión de directorios y carpetas son
 Aprenda a comprimir directorios sin esfuerzo con Aspose.Zip para .NET. Impulsa tu desarrollo .NET optimizando el espacio de almacenamiento de manera eficiente.
 ### [Descomprimir una carpeta con Aspose.Zip para .NET](./decompress-folder/)
 Domina el arte de descomprimir carpetas con Aspose.Zip para .NET. Maneje sin esfuerzo las tareas de compresión en sus proyectos.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

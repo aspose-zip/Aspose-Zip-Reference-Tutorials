@@ -3,10 +3,16 @@ title: حماية الدلائل بكلمة مرور في .NET باستخدام 
 linktitle: دليل حماية كلمة المرور
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: تعرف على كيفية حماية الدلائل بكلمة مرور في .NET باستخدام Aspose.Zip. قم بتأمين ملفاتك بسهولة من خلال هذا البرنامج التعليمي خطوة بخطوة.
-type: docs
 weight: 10
 url: /ar/net/password-protection-and-encryption/password-protect-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# حماية الدلائل بكلمة مرور في .NET باستخدام البرنامج التعليمي Aspose.Zip
+
 
 ## مقدمة
 
@@ -90,3 +96,10 @@ using (FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", 
 ### أين يمكنني العثور على دعم إضافي لـ Aspose.Zip لـ .NET؟
  يمكنك زيارة[منتدى Aspose.Zip](https://forum.aspose.com/c/zip/37) لأي دعم أو استفسار.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

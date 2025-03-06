@@ -3,10 +3,16 @@ title: Сжатие файлов в TarBz2 с помощью Aspose.Zip для .
 linktitle: Сжатие в TarBz2
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Узнайте, как сжимать файлы в формат TarBz2 в .NET с помощью Aspose.Zip. Следуйте нашему пошаговому руководству для эффективного сжатия файлов.
-type: docs
 weight: 11
 url: /ru/net/archive-extraction-and-formats/compress-to-tar-bz2/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Сжатие файлов в TarBz2 с помощью Aspose.Zip для .NET
+
 ## Введение
 
 Добро пожаловать в наше подробное руководство по сжатию файлов в формат TarBz2 с помощью Aspose.Zip для .NET. Aspose.Zip — это мощная и универсальная библиотека, предоставляющая разработчикам инструменты, необходимые для эффективной работы со сжатыми форматами файлов в их .NET-приложениях.
@@ -90,3 +96,9 @@ A2: Да, вы можете сжать несколько файлов, доба
 ### В5: Есть ли бесплатная пробная версия?
 
  О5: Да, вы можете получить доступ к бесплатной пробной версии.[здесь](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

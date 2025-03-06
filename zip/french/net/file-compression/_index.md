@@ -3,10 +3,16 @@ title: Compression de fichiers
 linktitle: Compression de fichiers
 second_title: API Aspose.Zip .NET pour la compression et l'archivage de fichiers
 description: Compressez sans effort des fichiers dans .NET avec Aspose.Zip ! Apprenez la gestion de fichiers étape par étape à l'aide des méthodes Bzip2, LZMA, PPMd, Deflate et Store pour des paramètres de compression optimaux.
-type: docs
 weight: 20
 url: /fr/net/file-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Compression de fichiers
+
 
 ## Introduction
 
@@ -47,3 +53,9 @@ Apprenez à compresser efficacement des fichiers dans .NET à l'aide d'Aspose.Zi
 
 ## Conclusion
 Dans le domaine de la compression de fichiers, Aspose.Zip pour .NET se distingue comme un outil polyvalent et puissant. De la compression de fichiers uniques à la gestion de plusieurs fichiers sans compression, en passant par l'optimisation des paramètres pour des performances supérieures, cette suite de didacticiels couvre tout. Améliorez vos compétences en gestion de fichiers et améliorez vos applications .NET avec Aspose.Zip !
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

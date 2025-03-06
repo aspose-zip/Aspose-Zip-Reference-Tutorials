@@ -3,10 +3,16 @@ title: Mật khẩu bảo vệ thư mục trong .NET với Hướng dẫn Aspose
 linktitle: Thư mục bảo vệ bằng mật khẩu
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Tìm hiểu cách bảo vệ mật khẩu các thư mục trong .NET bằng Aspose.Zip. Bảo mật các tập tin của bạn một cách dễ dàng với hướng dẫn từng bước này.
-type: docs
 weight: 10
 url: /vi/net/password-protection-and-encryption/password-protect-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mật khẩu bảo vệ thư mục trong .NET với Hướng dẫn Aspose.Zip
+
 
 ## Giới thiệu
 
@@ -90,3 +96,10 @@ Có, Aspose.Zip dành cho .NET được thiết kế để xử lý các thư m�
 ### Tôi có thể tìm hỗ trợ bổ sung cho Aspose.Zip cho .NET ở đâu?
  Bạn có thể ghé thăm[Diễn đàn Aspose.Zip](https://forum.aspose.com/c/zip/37) cho bất kỳ hỗ trợ hoặc truy vấn.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

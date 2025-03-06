@@ -1,12 +1,17 @@
 ---
 title: Aspose.Zip for .NET 的綜合教學與範例
 linktitle: Aspose.Zip for .NET 教學課程
-type: docs
 weight: 10
 url: /zh-hant/net/
 description:
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET 的綜合教學與範例
+
 
 ### [文件壓縮](./file-compression/)
 使用 Aspose.Zip 輕鬆壓縮 .NET 中的檔案！了解使用 Bzip2、LZMA、PPMd、Deflate 和儲存方法進行逐步檔案管理，以獲得最佳壓縮設定。
@@ -24,3 +29,9 @@ is_root: true
 使用 Aspose.Zip for .NET 保護您的檔案！學習有關密碼保護和加密（從 AES 到傳統方法）的逐步教程。 
 ### [其他壓縮技術](./other-compression-techniques/)
 使用 Aspose.Zip for .NET 輕鬆掌握進階壓縮技術。提升您的開發技能，從提取記憶體流到使用 Lzma 壓縮優化儲存。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: .NET용 Aspose.Zip에 압축하지 않고 여러 파일 저장
 linktitle: 압축하지 않고 여러 파일 저장
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: .NET용 Aspose.Zip에서 압축 없이 여러 파일을 원활하게 저장하는 방법을 알아보세요. 이 단계별 가이드를 통해 효율적인 파일 관리를 위해 .NET 애플리케이션을 최적화하세요.
-type: docs
 weight: 16
 url: /ko/net/file-compression/store-multiple-files-no-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.Zip에 압축하지 않고 여러 파일 저장
+
 ## 소개
 
 .NET 개발의 역동적인 세계에서 효과적인 파일 압축은 데이터 저장 및 전송을 최적화하는 데 매우 중요합니다. Aspose.Zip for .NET은 이 프로세스를 단순화하는 강력한 도구로, 개발자는 압축 없이 여러 파일을 효율적으로 저장할 수 있습니다. 이 튜토리얼에서는 .NET용 Aspose.Zip의 잠재력을 최대한 활용할 수 있도록 프로세스를 단계별로 안내합니다.
@@ -84,3 +90,9 @@ A4: 예, .NET용 Aspose.Zip은 멀티스레딩을 지원하므로 파일 압축 
 ### Q5: 주요 코드 수정 없이 Aspose.Zip for .NET을 기존 프로젝트에 통합할 수 있습니까?
 
  A5: 예, Aspose.Zip for .NET은 쉽게 통합할 수 있도록 설계되었습니다.[선적 서류 비치](https://reference.aspose.com/zip/net/) 원활한 통합 프로세스에 대한 포괄적인 지침을 제공합니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

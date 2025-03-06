@@ -3,10 +3,16 @@ title: Comprimeer meerdere bestanden met codering in Aspose.Zip .NET
 linktitle: Comprimeer meerdere bestanden met traditionele codering
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Leer hoe u meerdere bestanden veilig kunt comprimeren met behulp van traditionele codering in Aspose.Zip voor .NET. Verbeter de gegevensbescherming in uw .NET-applicaties.
-type: docs
 weight: 17
 url: /nl/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Comprimeer meerdere bestanden met codering in Aspose.Zip .NET
+
 
 ## Invoering
 
@@ -94,3 +100,10 @@ Ja, Aspose.Zip voor .NET is compatibel met zowel Windows- als Linux-omgevingen e
 ### 5. Waar kan ik gedetailleerde documentatie vinden voor Aspose.Zip voor .NET?
 
 Raadpleeg de documentatie[hier](https://reference.aspose.com/zip/net/) voor diepgaande informatie.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

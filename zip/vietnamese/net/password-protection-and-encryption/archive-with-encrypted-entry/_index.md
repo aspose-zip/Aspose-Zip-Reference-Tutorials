@@ -3,10 +3,16 @@ title: Làm chủ việc lưu trữ an toàn trong .NET với Aspose.Zip
 linktitle: Lưu trữ với mục nhập được mã hóa
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Khám phá thế giới lưu trữ an toàn trong .NET với Aspose.Zip. Tạo tập tin Seven Zip với mã hóa AES một cách dễ dàng. Tăng cường kỹ năng phát triển của bạn bây giờ!
-type: docs
 weight: 15
 url: /vi/net/password-protection-and-encryption/archive-with-encrypted-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Làm chủ việc lưu trữ an toàn trong .NET với Aspose.Zip
+
 
 ## Giới thiệu
 
@@ -81,3 +87,10 @@ Aspose.Zip for .NET hỗ trợ nhiều thuật toán nén khác nhau. Tham khả
 ### Tôi có thể tùy chỉnh thêm cài đặt mã hóa không?
 Tuyệt đối! Khám phá tài liệu về các tùy chọn tùy chỉnh mã hóa nâng cao.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

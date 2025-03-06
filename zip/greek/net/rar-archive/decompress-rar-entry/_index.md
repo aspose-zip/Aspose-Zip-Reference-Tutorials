@@ -3,10 +3,16 @@ title: Αποσυμπίεση καταχώρισης RAR με το Aspose.Zip γ
 linktitle: Αποσυμπίεση καταχώρησης RAR
 second_title: Aspose.Zip .NET API για συμπίεση και αρχειοθέτηση αρχείων
 description: Ανακαλύψτε την απλότητα της αποσυμπίεσης καταχωρήσεων RAR στο .NET χρησιμοποιώντας το Aspose.Zip. Χειριστείτε χωρίς κόπο συμπιεσμένα αρχεία με αυτήν την ισχυρή βιβλιοθήκη.
-type: docs
 weight: 11
 url: /el/net/rar-archive/decompress-rar-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Αποσυμπίεση καταχώρισης RAR με το Aspose.Zip για .NET
+
 
 ## Εισαγωγή
 
@@ -74,3 +80,9 @@ using (FileStream fs = File.OpenRead(dataDir + "your_file.rar"))
 
 ### Ε: Πού μπορώ να αναζητήσω βοήθεια εάν αντιμετωπίσω προβλήματα με το Aspose.Zip για .NET;
  Επισκέψου το[Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) για κοινοτική υποστήριξη και συζητήσεις.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

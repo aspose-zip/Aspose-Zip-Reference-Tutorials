@@ -3,10 +3,16 @@ title: Archiefvermeldingen met verschillende wachtwoorden extraheren in Aspose.Z
 linktitle: Archiefitems met verschillende wachtwoorden extraheren
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Leer hoe u archiefvermeldingen met verschillende wachtwoorden uitpakt in Aspose.Zip voor .NET. Verhoog de veiligheid en flexibiliteit in uw applicaties.
-type: docs
 weight: 10
 url: /nl/net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Archiefvermeldingen met verschillende wachtwoorden extraheren in Aspose.Zip voor .NET
+
 ## Invoering
 
 In het voortdurend evoluerende landschap van .NET-ontwikkeling onderscheidt Aspose.Zip zich als een krachtig hulpmiddel voor het werken met gecomprimeerde archieven. Naast de vele functies voegt het extraheren van archiefitems met verschillende wachtwoorden een extra beveiligingslaag en veelzijdigheid toe aan uw toepassingen. In deze stapsgewijze handleiding onderzoeken we hoe u dit kunt bereiken met Aspose.Zip voor .NET.
@@ -89,3 +95,9 @@ A1: Ja, Aspose.Zip ondersteunt zowel .NET Core als .NET Framework, wat flexibili
 ### Vraag 5: Waar kan ik Aspose.Zip kopen?
 
  A5: Om Aspose.Zip te kopen, gaat u naar de[aankooppagina](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Αποσυμπίεση αρχείων
 linktitle: Αποσυμπίεση αρχείων
 second_title: Aspose.Zip .NET API για συμπίεση και αρχειοθέτηση αρχείων
 description: Κατακτήστε χωρίς κόπο την αποσυμπίεση αρχείων στο .NET με εκπαιδευτικά προγράμματα Aspose.Zip για .NET. Μάθετε να χειρίζεστε αποτελεσματικά τα συμπιεσμένα αρχεία με οδηγούς βήμα προς βήμα.
-type: docs
 weight: 21
 url: /el/net/file-decompression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Αποσυμπίεση αρχείων
+
 
 
 ## Εισαγωγή
@@ -45,3 +51,9 @@ url: /el/net/file-decompression/
 Εξερευνήστε τον οδηγό βήμα προς βήμα για την αποσυμπίεση των αρχείων Wim χρησιμοποιώντας το Aspose.Zip για .NET. Κατεβάστε τη βιβλιοθήκη, ακολουθήστε το σεμινάριο και διαχειριστείτε αποτελεσματικά τα αρχεία αρχειοθέτησης στις εφαρμογές σας .NET.
 ### [Αποσυμπιέστε το Xar σε φάκελο στο Aspose.Zip για .NET](./decompress-xar-folder/)
 Εξερευνήστε τη δύναμη του Aspose.Zip για .NET! Αποσυμπιέστε χωρίς κόπο τα αρχεία Xar με αυτό το φιλικό προς το χρήστη σεμινάριο. Βελτιώστε την εμπειρία ανάπτυξης .NET.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -1,12 +1,17 @@
 ---
 title: .NET용 Aspose.Zip의 포괄적인 튜토리얼 및 예
 linktitle: .NET 튜토리얼용 Aspose.Zip
-type: docs
 weight: 10
 url: /ko/net/
 description:
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.Zip의 포괄적인 튜토리얼 및 예
+
 
 ### [파일 압축](./file-compression/)
 Aspose.Zip을 사용하여 .NET의 파일을 손쉽게 압축하세요! 최적의 압축 설정을 위해 Bzip2, LZMA, PPMd, Deflate 및 Store 방법을 사용하여 단계별 파일 관리를 알아보세요.
@@ -24,3 +29,9 @@ SevenZip 압축 튜토리얼을 통해 .NET용 Aspose.Zip의 잠재력을 활용
 .NET용 Aspose.Zip으로 파일을 보호하세요! AES부터 기존 방법까지 비밀번호 보호 및 암호화에 대한 단계별 튜토리얼을 알아보세요. 
 ### [기타 압축 기술](./other-compression-techniques/)
 .NET용 Aspose.Zip을 사용하여 고급 압축 기술을 쉽게 익힐 수 있습니다. 추출부터 메모리 스트림, Lzma 압축을 통한 스토리지 최적화까지 개발 기술을 향상하세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

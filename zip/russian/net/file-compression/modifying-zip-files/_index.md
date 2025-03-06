@@ -3,10 +3,16 @@ title: Изменение ZIP-файлов с помощью Aspose.Zip для .
 linktitle: Изменение ZIP-файлов
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Изучите возможности Aspose.Zip для .NET в этом подробном руководстве. Научитесь легко изменять zip-файлы с помощью C#.
-type: docs
 weight: 15
 url: /ru/net/file-compression/modifying-zip-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Изменение ZIP-файлов с помощью Aspose.Zip для .NET
+
 ## Введение
 
 Zip-файлы играют решающую роль в организации и сжатии данных, но что, если вам нужно изменить содержимое ZIP-файла программным способом? Именно здесь в игру вступает Aspose.Zip для .NET. Эта мощная библиотека обеспечивает простой способ манипулирования zip-файлами с помощью C#.
@@ -129,3 +135,9 @@ A1: Aspose.Zip в первую очередь разработан для при
 ### Вопрос 5: Где я могу найти документацию по Aspose.Zip для .NET?
 
  A5: документация доступна.[здесь](https://reference.aspose.com/zip/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

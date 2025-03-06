@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET - AES Şifreleme Eğitimi
 linktitle: AES Şifreleme Ayarları
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Sıkıştırılmış dosyalarınızı AES şifrelemeyle güvenceye almak için Aspose.Zip for .NET'i keşfedin. Verimli veri koruması için hemen indirin.
-type: docs
 weight: 14
 url: /tr/net/password-protection-and-encryption/aes-encryption-settings/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET - AES Şifreleme Eğitimi
+
 
 ## giriiş
 
@@ -87,3 +93,10 @@ Tebrikler! Aspose.Zip for .NET'i kullanarak AES şifreleme ayarlarını başarı
 ### S: Test için geçici lisans alabilir miyim?
  C: Evet, geçici lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

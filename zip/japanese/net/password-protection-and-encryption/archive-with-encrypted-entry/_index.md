@@ -3,10 +3,16 @@ title: Aspose.Zip を使用して .NET で安全なアーカイブをマスタ�
 linktitle: 暗号化されたエントリを含むアーカイブ
 second_title: ファイルの圧縮とアーカイブのための Aspose.Zip .NET API
 description: Aspose.Zip を使用して、.NET での安全なアーカイブの世界を探索してください。 AES 暗号化を使用して Seven Zip ファイルを簡単に作成できます。今すぐ開発スキルを高めましょう!
-type: docs
 weight: 15
 url: /ja/net/password-protection-and-encryption/archive-with-encrypted-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip を使用して .NET で安全なアーカイブをマスターする
+
 
 ## 導入
 
@@ -81,3 +87,10 @@ Aspose.Zip for .NET は、さまざまな圧縮アルゴリズムをサポート
 ### 暗号化設定をさらにカスタマイズできますか?
 絶対に！高度な暗号化カスタマイズ オプションについてはドキュメントを参照してください。
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

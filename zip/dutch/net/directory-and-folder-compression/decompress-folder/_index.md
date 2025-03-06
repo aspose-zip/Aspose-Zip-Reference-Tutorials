@@ -3,10 +3,16 @@ title: Een map decomprimeren met Aspose.Zip voor .NET
 linktitle: Een map decomprimeren
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Beheers de kunst van het decomprimeren van mappen met Aspose.Zip voor .NET. Verwerk moeiteloos compressietaken in uw projecten.
-type: docs
 weight: 11
 url: /nl/net/directory-and-folder-compression/decompress-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Een map decomprimeren met Aspose.Zip voor .NET
+
 Wilt u mappen naadloos decomprimeren met Aspose.Zip voor .NET? Zoek niet verder! Deze stapsgewijze handleiding leidt u door het proces en zorgt ervoor dat u de kunst van het moeiteloos decomprimeren van mappen onder de knie krijgt.
 
 ## Vereisten
@@ -88,3 +94,9 @@ A2: Absoluut! Aspose.Zip voor .NET is ontworpen om grootschalige applicaties gem
 ### V5: Hoe kan ik ondersteuning krijgen voor Aspose.Zip voor .NET?
 
  A5: Ga voor vragen of hulp naar de[Aspose.Zip-forum](https://forum.aspose.com/c/zip/37) waar u met de gemeenschap in contact kunt komen en deskundig advies kunt inwinnen.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

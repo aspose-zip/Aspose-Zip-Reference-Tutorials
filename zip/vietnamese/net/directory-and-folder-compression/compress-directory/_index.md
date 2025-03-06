@@ -3,10 +3,16 @@ title: Nén thư mục dễ dàng với Aspose.Zip cho .NET
 linktitle: Cách nén thư mục
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Tìm hiểu cách nén thư mục dễ dàng với Aspose.Zip cho .NET. Thúc đẩy sự phát triển .NET của bạn bằng cách tối ưu hóa không gian lưu trữ một cách hiệu quả.
-type: docs
 weight: 10
 url: /vi/net/directory-and-folder-compression/compress-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Nén thư mục dễ dàng với Aspose.Zip cho .NET
+
 Trong bối cảnh phát triển .NET ngày càng phát triển, việc tìm ra những cách hiệu quả để quản lý và nén các thư mục là rất quan trọng. Với sự trợ giúp của Aspose.Zip dành cho .NET, bạn có thể hợp lý hóa quy trình này và nâng cao hiệu suất của các ứng dụng của mình. Trong hướng dẫn từng bước này, chúng tôi sẽ hướng dẫn bạn quy trình nén thư mục bằng Aspose.Zip, đảm bảo rằng bạn nắm bắt rõ ràng từng khái niệm.
 
 ## Giới thiệu
@@ -94,3 +100,9 @@ Câu trả lời 1: Có, Aspose.Zip dành cho .NET được cấp phép cho cả
 ### Câu hỏi 5: Tôi có thể mua Aspose.Zip cho .NET không?
 
  A5: Chắc chắn, bạn có thể mua hàng[đây](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

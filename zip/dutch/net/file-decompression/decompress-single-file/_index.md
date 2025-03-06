@@ -3,10 +3,16 @@ title: Een enkel bestand decomprimeren met Aspose.Zip voor .NET
 linktitle: Een enkel bestand decomprimeren
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Ontdek de naadloze wereld van bestandsdecompressie met Aspose.Zip voor .NET. Verwerk moeiteloos gecomprimeerde bestanden in uw C#-projecten.
-type: docs
 weight: 12
 url: /nl/net/file-decompression/decompress-single-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Een enkel bestand decomprimeren met Aspose.Zip voor .NET
+
 ## Invoering
 
 Op het gebied van .NET-ontwikkeling staat Aspose.Zip als een robuuste oplossing voor het met finesse verwerken van gecomprimeerde bestanden. Deze tutorial begeleidt u bij het decomprimeren van een enkel bestand met Aspose.Zip voor .NET. Doe mee terwijl we stap voor stap de mogelijkheden van deze krachtige bibliotheek ontrafelen.
@@ -103,3 +109,9 @@ A3: Aspose.Zip biedt methoden om met met een wachtwoord beveiligde archieven te 
 ### Vraag 5: Waar kan ik hulp zoeken als ik problemen tegenkom?
 
  A5: Bezoek de[Aspose.Zip-forum](https://forum.aspose.com/c/zip/37) voor gemeenschapssteun.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

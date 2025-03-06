@@ -3,10 +3,16 @@ title: Aspose.Zip dla .NET - samouczek szyfrowania AES
 linktitle: Ustawienia szyfrowania AES
 second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
 description: Przeglądaj Aspose.Zip dla .NET, aby zabezpieczyć skompresowane pliki za pomocą szyfrowania AES. Pobierz teraz, aby zapewnić skuteczną ochronę danych.
-type: docs
 weight: 14
 url: /pl/net/password-protection-and-encryption/aes-encryption-settings/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip dla .NET - samouczek szyfrowania AES
+
 
 ## Wstęp
 
@@ -87,3 +93,10 @@ Gratulacje! Pomyślnie zaimplementowałeś ustawienia szyfrowania AES przy użyc
 ### P: Czy mogę uzyskać tymczasowe licencje na potrzeby testowania?
  Odpowiedź: Tak, możesz uzyskać licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

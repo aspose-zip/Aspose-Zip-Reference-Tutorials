@@ -3,10 +3,16 @@ title: 檔案擷取與格式
 linktitle: 檔案擷取與格式
 second_title: 用於檔案壓縮和歸檔的 Aspose.Zip .NET API
 description: 使用 Aspose.Zip 釋放 .NET 中檔案壓縮的強大功能。了解將檔案壓縮為各種格式（例如 TarBz2、TarGz 和 TarZ）以實現高效儲存。
-type: docs
 weight: 23
 url: /zh-hant/net/archive-extraction-and-formats/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 檔案擷取與格式
+
 
 ## 介紹
 
@@ -53,3 +59,9 @@ url: /zh-hant/net/archive-extraction-and-formats/
 探索使用 Aspose.Zip for .NET 逐步壓縮到 TarZ。 .NET 專案的高效文件處理。
 ### [在 Aspose.Zip for .NET 中使用不同密碼提取存檔項目](./extract-archive-different-passwords/)
 了解如何在 Aspose.Zip for .NET 中提取具有不同密碼的存檔項目。提高應用程式的安全性和靈活性。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

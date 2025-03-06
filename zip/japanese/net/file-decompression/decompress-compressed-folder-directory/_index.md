@@ -3,10 +3,16 @@ title: 圧縮フォルダーを Aspose.Zip for .NET のディレクトリに解�
 linktitle: 圧縮フォルダーをディレクトリに解凍します
 second_title: ファイルの圧縮とアーカイブのための Aspose.Zip .NET API
 description: Aspose.Zip for .NET の可能性を解き放ちましょう!このステップバイステップのガイドで、フォルダーを簡単に解凍する方法を学びましょう。シームレスな圧縮と抽出の世界に飛び込んでください。
-type: docs
 weight: 14
 url: /ja/net/file-decompression/decompress-compressed-folder-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 圧縮フォルダーを Aspose.Zip for .NET のディレクトリに解凍します
+
 ## 導入
 
 Aspose.Zip for .NET の世界へようこそ。これは、開発者が圧縮フォルダーを簡単に処理できるようにする堅牢なライブラリです。このチュートリアルでは、Aspose.Zip for .NET を使用して圧縮フォルダーをディレクトリに解凍するプロセスを詳しく説明します。この強力なツールの複雑さをわかりやすくしながら、各ステップを詳しく説明しますので、しっかりと準備を整えてください。
@@ -79,3 +85,9 @@ A2: もちろん、Aspose.Zip for .NET は商用アプリケーションと非�
 ### Q5: Aspose.Zip for .NET をテストするには一時ライセンスが必要ですか?
 
  A5: はい、次のサイトから一時ライセンスを取得できます。[ここ](https://purchase.aspose.com/temporary-license/)テスト目的のため。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

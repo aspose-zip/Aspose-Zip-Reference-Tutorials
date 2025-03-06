@@ -3,10 +3,16 @@ title: Aspose.Zip cho .NET - Hướng dẫn lưu trữ bảo vệ bằng mật k
 linktitle: Lưu trữ bảo vệ mật khẩu bằng mật khẩu truyền thống
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Tìm hiểu cách bảo mật kho lưu trữ .NET của bạn bằng tính năng bảo vệ bằng mật khẩu truyền thống bằng Aspose.Zip. Hãy làm theo hướng dẫn từng bước của chúng tôi để nâng cao tính bảo mật dữ liệu.
-type: docs
 weight: 12
 url: /vi/net/password-protection-and-encryption/password-protect-archive-traditional-password/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip cho .NET - Hướng dẫn lưu trữ bảo vệ bằng mật khẩu
+
 
 Trong lĩnh vực phát triển .NET, việc bảo mật dữ liệu nhạy cảm trong kho lưu trữ là một khía cạnh quan trọng của thiết kế ứng dụng. Aspose.Zip cho .NET cung cấp một giải pháp mạnh mẽ để bảo vệ mật khẩu cho các kho lưu trữ bằng cách sử dụng mã hóa mật khẩu truyền thống. Hướng dẫn từng bước này sẽ hướng dẫn bạn thực hiện quy trình, đảm bảo rằng dữ liệu lưu trữ của bạn luôn được giữ bí mật và an toàn.
 
@@ -81,3 +87,10 @@ Aspose.Zip cho .NET được tối ưu hóa để có hiệu suất hiệu quả
 ### Làm cách nào tôi có thể nhận được hỗ trợ cho Aspose.Zip cho .NET?
  Tham quan[Diễn đàn Aspose.Zip](https://forum.aspose.com/c/zip/37)để được hỗ trợ cộng đồng hoặc khám phá[tài liệu](https://reference.aspose.com/zip/net/) để biết thông tin chi tiết.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

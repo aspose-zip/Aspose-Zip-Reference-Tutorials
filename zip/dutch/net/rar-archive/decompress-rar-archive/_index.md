@@ -3,10 +3,16 @@ title: Een RAR-archief decomprimeren met Aspose.Zip voor .NET
 linktitle: Een RAR-archief decomprimeren
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Beheers het decomprimeren van RAR-archieven in .NET met Aspose.Zip. Stap-voor-stap handleiding voor een efficiënte dossierverwerking. Download nu!
-type: docs
 weight: 10
 url: /nl/net/rar-archive/decompress-rar-archive/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Een RAR-archief decomprimeren met Aspose.Zip voor .NET
+
 
 ## Invoering
 
@@ -83,3 +89,10 @@ Vanaf nu ondersteunt Aspose.Zip voor .NET voornamelijk de archiefformaten ZIP en
 
 ### Zijn er tijdelijke licenties beschikbaar?
  Ja, u kunt een tijdelijke licentie verkrijgen[hier](https://purchase.aspose.com/temporary-license/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

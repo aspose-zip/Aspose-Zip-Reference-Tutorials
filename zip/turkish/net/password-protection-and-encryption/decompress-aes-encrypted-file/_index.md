@@ -3,10 +3,16 @@ title: AES Dosyalarının Sıkıştırmasını Açma - Aspose.Zip .NET Eğitimi
 linktitle: AES Şifreli Dosyanın Sıkıştırmasını Aç
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Aspose.Zip for .NET kullanarak C#'ta AES şifreli dosyaların sıkıştırmasını açmayı öğrenin. Verimli dosya işleme için adım adım kılavuzumuzu izleyin.
-type: docs
 weight: 18
 url: /tr/net/password-protection-and-encryption/decompress-aes-encrypted-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# AES Dosyalarının Sıkıştırmasını Açma - Aspose.Zip .NET Eğitimi
+
 
 ## giriiş
 
@@ -92,3 +98,10 @@ Evet, Aspose.Zip 128, 192 ve 256 bit anahtar uzunluklarıyla AES şifrelemesini 
 ### Geçici bir lisansa ihtiyacım olursa ne olur?
  Geçici lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

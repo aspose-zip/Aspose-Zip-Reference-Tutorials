@@ -3,10 +3,16 @@ title: Dekomprimera AES-filer - Aspose.Zip .NET Tutorial
 linktitle: Dekomprimera AES-krypterad fil
 second_title: Aspose.Zip .NET API för filkomprimering och arkivering
 description: Lär dig att dekomprimera AES-krypterade filer i C# med Aspose.Zip för .NET. Följ vår steg-för-steg-guide för effektiv filhantering.
-type: docs
 weight: 18
 url: /sv/net/password-protection-and-encryption/decompress-aes-encrypted-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekomprimera AES-filer - Aspose.Zip .NET Tutorial
+
 
 ## Introduktion
 
@@ -92,3 +98,10 @@ Ja, Aspose.Zip stöder AES-kryptering med 128, 192 och 256-bitars nyckellängder
 ### Vad händer om jag behöver en tillfällig licens?
  Du kan få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

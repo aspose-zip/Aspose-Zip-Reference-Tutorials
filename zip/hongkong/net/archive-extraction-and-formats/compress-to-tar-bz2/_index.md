@@ -3,10 +3,16 @@ title: 使用 Aspose.Zip for .NET 將檔案壓縮為 TarBz2
 linktitle: 壓縮為 TarBz2
 second_title: 用於檔案壓縮和歸檔的 Aspose.Zip .NET API
 description: 了解如何使用 Aspose.Zip 將 .NET 中的檔案壓縮為 TarBz2 格式。請按照我們的逐步指南進行高效率的檔案壓縮。
-type: docs
 weight: 11
 url: /zh-hant/net/archive-extraction-and-formats/compress-to-tar-bz2/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Zip for .NET 將檔案壓縮為 TarBz2
+
 ## 介紹
 
 歡迎閱讀我們有關使用 Aspose.Zip for .NET 將檔案壓縮為 TarBz2 格式的綜合指南。 Aspose.Zip 是一個功能強大且多功能的程式庫，為開發人員提供了在 .NET 應用程式中高效處理壓縮檔案格式所需的工具。
@@ -90,3 +96,9 @@ A2：是的，您可以透過在提供的範例中向 Tar 存檔新增條目來�
 ### Q5: 有免費試用嗎？
 
  A5：是的，您可以免費試用[這裡](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Archívum bejegyzések kibontása különböző jelszavakkal az Aspose.Zi
 linktitle: Archívum bejegyzések kibontása különböző jelszavakkal
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Ismerje meg, hogyan bonthatja ki az archívum bejegyzéseit különböző jelszavakkal az Aspose.Zip for .NET alkalmazásban. Növelje alkalmazásai biztonságát és rugalmasságát.
-type: docs
 weight: 10
 url: /hu/net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Archívum bejegyzések kibontása különböző jelszavakkal az Aspose.Zip for .NET fájlban
+
 ## Bevezetés
 
 A .NET-fejlesztés folyamatosan fejlődő környezetében az Aspose.Zip a tömörített archívumokkal végzett munka hatékony eszközeként tűnik ki. Számos funkciója mellett az archív bejegyzések különböző jelszavakkal történő kibontása további biztonsági és sokoldalúbb réteget ad az alkalmazásokhoz. Ebben a lépésenkénti útmutatóban megvizsgáljuk, hogyan érhető el ez az Aspose.Zip for .NET használatával.
@@ -89,3 +95,9 @@ Ebben az oktatóanyagban megvizsgáltuk, hogyan használhatjuk az Aspose.Zip for
 ### 5. kérdés: Hol vásárolhatom meg az Aspose.Zip-et?
 
  5. válasz: Az Aspose.Zip megvásárlásához keresse fel a[vásárlási oldal](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

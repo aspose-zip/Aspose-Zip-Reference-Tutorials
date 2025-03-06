@@ -3,10 +3,16 @@ title: الاستخراج إلى تدفق الذاكرة باستخدام Aspose
 linktitle: استخراج إلى دفق الذاكرة
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: استكشف Aspose.Zip for .NET واستخرج الأرشيفات بسهولة إلى MemoryStream في هذا الدليل التفصيلي خطوة بخطوة. ارفع مستوى تطوير .NET الخاص بك بسهولة.
-type: docs
 weight: 10
 url: /ar/net/other-compression-techniques/extract-to-memory-stream/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# الاستخراج إلى تدفق الذاكرة باستخدام Aspose.Zip لـ .NET
+
 ## مقدمة
 
 في مجال تطوير .NET، يبرز Aspose.Zip كأداة قوية لإدارة ومعالجة أرشيفات ZIP وGZIP. سواء كنت مطورًا متمرسًا أو بدأت للتو، سيرشدك هذا البرنامج التعليمي خلال عملية استخراج الأرشيفات إلى MemoryStream باستخدام Aspose.Zip for .NET.
@@ -96,3 +102,9 @@ Console.WriteLine("Successfully Extracted to Memory Stream");
 ### س5: كيف يمكنني الحصول على ترخيص مؤقت؟
 
  ج5: إذا كنت بحاجة إلى ترخيص مؤقت، قم بزيارة[هنا](https://purchase.aspose.com/temporary-license/) لعملية سلسة.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

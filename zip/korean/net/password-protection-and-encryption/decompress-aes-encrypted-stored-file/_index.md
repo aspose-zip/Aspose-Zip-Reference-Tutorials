@@ -3,10 +3,16 @@ title: .NET용 Aspose.Zip - AES 암호화 파일 해독
 linktitle: AES 암호화 저장 파일 압축 해제
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: 이 포괄적인 단계별 가이드를 통해 .NET용 Aspose.Zip에서 AES 암호화 저장 파일의 압축을 푸는 방법을 알아보세요. 지금 .NET 개발 기술을 향상시키세요!
-type: docs
 weight: 19
 url: /ko/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.Zip - AES 암호화 파일 해독
+
 
 ## 소개
 
@@ -89,3 +95,10 @@ Aspose.Zip은 ZIP, 7z 및 TAR을 포함한 다양한 형식을 지원합니다. 
 ### Aspose.Zip을 상업적 목적으로 사용할 수 있나요?
  예, 라이센스를 구매할 수 있습니다[여기](https://purchase.aspose.com/buy) 상업적인 용도로.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Proteggi con password le directory in .NET con Aspose.Zip Tutorial
 linktitle: Directory protetta da password
 second_title: Aspose.Zip .NET API per la compressione e l'archiviazione dei file
 description: Scopri come proteggere con password le directory in .NET utilizzando Aspose.Zip. Proteggi i tuoi file senza sforzo con questo tutorial passo passo.
-type: docs
 weight: 10
 url: /it/net/password-protection-and-encryption/password-protect-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Proteggi con password le directory in .NET con Aspose.Zip Tutorial
+
 
 ## introduzione
 
@@ -90,3 +96,10 @@ Sì, Aspose.Zip per .NET è progettato per gestire directory di grandi dimension
 ### Dove posso trovare ulteriore supporto per Aspose.Zip per .NET?
  Puoi visitare il[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) per qualsiasi supporto o domanda.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

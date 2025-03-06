@@ -3,10 +3,16 @@ title: .NET용 Aspose.Zip에서 전통적으로 비밀번호로 보호된 파일
 linktitle: 기존에 비밀번호로 보호된 파일 압축 풀기
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: .NET용 Aspose.Zip을 사용하여 기존에 비밀번호로 보호된 파일의 압축을 푸는 방법을 알아보세요. 원활한 통합을 위한 단계별 가이드입니다.
-type: docs
 weight: 15
 url: /ko/net/file-decompression/decompress-traditionally-password-protected-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.Zip에서 전통적으로 비밀번호로 보호된 파일의 압축 풀기
+
 .NET 개발 영역에서 Aspose.Zip은 압축 파일 처리를 위한 강력한 솔루션으로 돋보입니다. 수많은 기능 중에서 눈에 띄는 기능 중 하나는 전통적으로 비밀번호로 보호된 파일의 압축을 풀 수 있는 기능입니다. 이 튜토리얼에서는 Aspose.Zip for .NET을 사용하여 기존 비밀번호로 암호화된 파일의 압축을 푸는 과정을 자세히 살펴보겠습니다. 이 여정을 시작하기 전에 전제 조건이 갖추어져 있는지 확인하겠습니다.
 
 ## 전제 조건
@@ -96,3 +102,9 @@ A3: 예, Aspose.Zip은 다양한 암호화 방법을 지원하여 보안 요구 
 ### Q5: Aspose.Zip에 대한 임시 라이선스를 어떻게 얻을 수 있나요?
 
  A5: 다음에서 임시 라이센스를 취득할 수 있습니다.[Aspose.구매](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

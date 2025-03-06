@@ -3,10 +3,16 @@ title: फ़ाइल डीकंप्रेसन
 linktitle: फ़ाइल डीकंप्रेसन
 second_title: फ़ाइलें संपीड़न और संग्रहण के लिए Aspose.Zip .NET API
 description: .NET ट्यूटोरियल के लिए Aspose.Zip के साथ .NET में फ़ाइल डिकंप्रेशन को आसानी से मास्टर करें। चरण-दर-चरण मार्गदर्शिकाओं के साथ संपीड़ित फ़ाइलों को कुशलतापूर्वक संभालना सीखें।
-type: docs
 weight: 21
 url: /hi/net/file-decompression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# फ़ाइल डीकंप्रेसन
+
 
 
 ## परिचय
@@ -45,3 +51,9 @@ Aspose.Zip के साथ .NET में फ़ाइल संपीड़न
 .NET के लिए Aspose.Zip का उपयोग करके Wim अभिलेखागार को डीकंप्रेस करने पर चरण-दर-चरण मार्गदर्शिका देखें। लाइब्रेरी डाउनलोड करें, ट्यूटोरियल का पालन करें, और अपने .NET अनुप्रयोगों में संग्रह फ़ाइलों को कुशलतापूर्वक प्रबंधित करें।
 ### [.NET के लिए Aspose.Zip में Xar को फ़ोल्डर में डीकंप्रेस करें](./decompress-xar-folder/)
 .NET के लिए Aspose.Zip की शक्ति का अन्वेषण करें! इस उपयोगकर्ता-अनुकूल ट्यूटोरियल के साथ Xar अभिलेखागार को आसानी से डीकंप्रेस करें। अपने .NET विकास अनुभव को बढ़ाएँ।
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

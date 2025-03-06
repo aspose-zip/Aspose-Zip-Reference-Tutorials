@@ -3,10 +3,16 @@ title: .NET용 Aspose.Zip에서 Wim을 폴더로 압축 해제
 linktitle: Wim을 폴더로 압축 해제
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: .NET용 Aspose.Zip을 사용하여 Wim 아카이브 압축을 푸는 방법에 대한 단계별 가이드를 살펴보세요. 라이브러리를 다운로드하고 튜토리얼을 따라 .NET 애플리케이션에서 아카이브 파일을 효율적으로 관리하세요.
-type: docs
 weight: 16
 url: /ko/net/file-decompression/decompress-wim-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.Zip에서 Wim을 폴더로 압축 해제
+
 ## 소개
 
 .NET용 Aspose.Zip을 사용하여 Wim 아카이브를 폴더에 압축 해제하는 방법에 대한 포괄적인 튜토리얼에 오신 것을 환영합니다. Aspose.Zip은 .NET 애플리케이션에서 다양한 아카이브 형식으로 작업하기 위한 원활한 기능을 제공하는 강력한 라이브러리입니다. 이 튜토리얼에서는 Wim 아카이브를 지정된 폴더에 압축 해제하는 과정을 단계별로 안내합니다.
@@ -77,3 +83,9 @@ A1: 예, Aspose.Zip은 ZIP, TAR, GZIP 등을 포함한 다양한 아카이브 �
 ### Q5: Aspose.Zip for .NET에 대한 지원을 받거나 질문을 할 수 있는 곳은 어디입니까?
 
  A5: 다음을 방문하세요.[Aspose.Zip 포럼](https://forum.aspose.com/c/zip/37) 지원과 토론을 위해.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

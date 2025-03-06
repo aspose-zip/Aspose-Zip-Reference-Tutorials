@@ -3,10 +3,16 @@ title: Aspose.Zip .NET में एन्क्रिप्शन के सा
 linktitle: पारंपरिक एन्क्रिप्शन के साथ एकाधिक फ़ाइलों को संपीड़ित करें
 second_title: फ़ाइलें संपीड़न और संग्रहण के लिए Aspose.Zip .NET API
 description: .NET के लिए Aspose.Zip में पारंपरिक एन्क्रिप्शन का उपयोग करके एकाधिक फ़ाइलों को सुरक्षित रूप से संपीड़ित करना सीखें। अपने .NET अनुप्रयोगों में डेटा सुरक्षा बढ़ाएँ।
-type: docs
 weight: 17
 url: /hi/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip .NET में एन्क्रिप्शन के साथ एकाधिक फ़ाइलों को संपीड़ित करें
+
 
 ## परिचय
 
@@ -94,3 +100,10 @@ archive.Save(zipFile);
 ### 5. मुझे .NET के लिए Aspose.Zip के लिए विस्तृत दस्तावेज़ कहां मिल सकते हैं?
 
 दस्तावेज़ देखें[यहाँ](https://reference.aspose.com/zip/net/) गहन जानकारी के लिए.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

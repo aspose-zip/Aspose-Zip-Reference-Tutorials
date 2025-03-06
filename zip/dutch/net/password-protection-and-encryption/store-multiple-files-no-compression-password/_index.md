@@ -3,10 +3,16 @@ title: Aspose.Zip voor .NET - Zelfstudie voor veilige bestandsopslag
 linktitle: Bewaar meerdere bestanden zonder compressie met wachtwoord
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Ontdek hoe u Aspose.Zip voor .NET kunt gebruiken om meerdere bestanden veilig op te slaan zonder compressie. Eenvoudige stappen voor wachtwoordbeveiliging. Ontgrendel de kracht van bestandsbeheer!
-type: docs
 weight: 13
 url: /nl/net/password-protection-and-encryption/store-multiple-files-no-compression-password/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip voor .NET - Zelfstudie voor veilige bestandsopslag
+
 
 In de wereld van .NET-ontwikkeling is het beheren en manipuleren van bestanden een veel voorkomende taak. Aspose.Zip voor .NET is een krachtige bibliotheek die ontwikkelaars de mogelijkheid biedt om zip-archieven naadloos te comprimeren, decomprimeren en manipuleren. In deze tutorial gaan we dieper in op een specifiek scenario: meerdere bestanden opslaan zonder compressie en deze beveiligen met een wachtwoord. Aan het einde van deze handleiding beschikt u over de kennis om deze functionaliteit te implementeren met Aspose.Zip voor .NET.
 
@@ -93,3 +99,10 @@ In deze zelfstudie hebben we onderzocht hoe u Aspose.Zip voor .NET kunt gebruike
 
 ### Waar kan ik Aspose.Zip voor .NET kopen?
  U kunt Aspose.Zip voor .NET kopen[hier](https://purchase.aspose.com/buy).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

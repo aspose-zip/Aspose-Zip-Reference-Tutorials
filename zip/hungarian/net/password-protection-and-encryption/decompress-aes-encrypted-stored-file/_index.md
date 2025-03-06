@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET – AES titkosított fájlok visszafejtése
 linktitle: Az AES titkosított tárolt fájl kibontása
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Ebből az átfogó, lépésenkénti útmutatóból megtudhatja, hogyan lehet kicsomagolni az AES-titkosított tárolt fájlokat az Aspose.Zip for .NET-ben. Növelje .NET fejlesztési készségeit még ma!
-type: docs
 weight: 19
 url: /hu/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET – AES titkosított fájlok visszafejtése
+
 
 ## Bevezetés
 
@@ -89,3 +95,10 @@ Az Aspose.Zip különféle formátumokat támogat, beleértve a ZIP-t, a 7z-t é
 ### Használhatom az Aspose.Zip-et kereskedelmi célokra?
  Igen, vásárolhat licencet[itt](https://purchase.aspose.com/buy) kereskedelmi használatra.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Compactação de arquivos para TarBz2 com Aspose.Zip para .NET
 linktitle: Comprimindo para TarBz2
 second_title: API Aspose.Zip .NET para compactação e arquivamento de arquivos
 description: Aprenda como compactar arquivos para o formato TarBz2 em .NET usando Aspose.Zip. Siga nosso guia passo a passo para compactação eficiente de arquivos.
-type: docs
 weight: 11
 url: /pt/net/archive-extraction-and-formats/compress-to-tar-bz2/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Compactação de arquivos para TarBz2 com Aspose.Zip para .NET
+
 ## Introdução
 
 Bem-vindo ao nosso guia completo sobre compactação de arquivos no formato TarBz2 usando Aspose.Zip para .NET. Aspose.Zip é uma biblioteca poderosa e versátil que fornece aos desenvolvedores as ferramentas necessárias para trabalhar de forma eficiente com formatos de arquivo compactados em seus aplicativos .NET.
@@ -90,3 +96,9 @@ A2: Sim, você pode compactar vários arquivos adicionando entradas ao arquivo T
 ### Q5: Existe um teste gratuito disponível?
 
  A5: Sim, você pode acessar a avaliação gratuita[aqui](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

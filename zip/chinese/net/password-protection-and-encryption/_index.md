@@ -3,10 +3,16 @@ title: 密码保护和加密
 linktitle: 密码保护和加密
 second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
 description: 使用 Aspose.Zip for .NET 保护您的文件！学习有关密码保护和加密（从 AES 到传统方法）的分步教程。
-type: docs
 weight: 26
 url: /zh/net/password-protection-and-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 密码保护和加密
+
 
 ## 介绍
 
@@ -74,3 +80,9 @@ url: /zh/net/password-protection-and-encryption/
 了解使用 Aspose.Zip for .NET 在 C# 中解压缩 AES 加密文件。请按照我们的分步指南进行高效的文件处理。
 ### [在 Aspose.Zip for .NET 中解压 AES 加密存储文件](./decompress-aes-encrypted-stored-file/)
 通过这份全面的分步指南，了解如何在 Aspose.Zip for .NET 中解压缩 AES 加密的存储文件。立即增强您的 .NET 开发技能！
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Kỹ thuật nén khác
 linktitle: Kỹ thuật nén khác
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Nắm vững các kỹ thuật nén nâng cao với Aspose.Zip. Nâng cao kỹ năng phát triển của bạn, từ trích xuất sang luồng bộ nhớ đến tối ưu hóa lưu trữ bằng tính năng nén Lzma.
-type: docs
 weight: 27
 url: /vi/net/other-compression-techniques/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Kỹ thuật nén khác
+
 
 ## Giới thiệu
 
@@ -44,3 +50,9 @@ Tìm hiểu cách lưu dữ liệu nén vào luồng bằng Aspose.Zip cho .NET.
 Khám phá sức mạnh của Aspose.Zip dành cho .NET với hướng dẫn từng bước của chúng tôi về cách quản lý kho lưu trữ ZIP bằng các mật khẩu khác nhau. Tăng cường bảo mật và tính linh hoạt trong các ứng dụng của bạn. 
 ### [Nén sang Lzma trong Aspose.Zip cho .NET](./compress-to-lzma/)
 Tìm hiểu cách nén tệp bằng Aspose.Zip cho .NET bằng thuật toán Lzma mạnh mẽ. Tối ưu hóa lưu trữ và nâng cao hiệu quả truyền dữ liệu một cách dễ dàng.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

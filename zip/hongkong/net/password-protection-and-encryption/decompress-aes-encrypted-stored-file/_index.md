@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET - 解密 AES 加密文件
 linktitle: 解壓縮 AES 加密儲存文件
 second_title: 用於檔案壓縮和歸檔的 Aspose.Zip .NET API
 description: 透過這份全面的逐步指南，了解如何在 Aspose.Zip for .NET 中解壓縮 AES 加密的儲存檔案。立即增強您的 .NET 開發技能！
-type: docs
 weight: 19
 url: /zh-hant/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET - 解密 AES 加密文件
+
 
 ## 介紹
 
@@ -89,3 +95,10 @@ Aspose.Zip 支援多種格式，包括 ZIP、7z 和 TAR。請參閱文件以取�
 ### 我可以將 Aspose.Zip 用於商業目的嗎？
 是的，您可以購買許可證[這裡](https://purchase.aspose.com/buy)用於商業用途。
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 使用 Aspose.Zip for .NET 修改 Zip 文件
 linktitle: 修改 Zip 文件
 second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
 description: 在这个综合教程中探索 Aspose.Zip for .NET 的强大功能。学习使用 C# 无缝修改 zip 文件。
-type: docs
 weight: 15
 url: /zh/net/file-compression/modifying-zip-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Zip for .NET 修改 Zip 文件
+
 ## 介绍
 
 Zip 文件在组织和压缩数据方面发挥着至关重要的作用，但如果您需要以编程方式修改 zip 文件的内容该怎么办？这就是 Aspose.Zip for .NET 发挥作用的地方。这个功能强大的库提供了一种使用 C# 操作 zip 文件的无缝方法。
@@ -129,3 +135,9 @@ A3： 如需支持和讨论，请访问[Aspose.Zip 论坛](https://forum.aspose.
 ### Q5：在哪里可以找到 Aspose.Zip for .NET 的文档？
 
 A5：文档可用[这里](https://reference.aspose.com/zip/net/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

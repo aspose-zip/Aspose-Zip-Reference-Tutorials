@@ -3,10 +3,16 @@ title: Giải nén Xar vào thư mục trong Aspose.Zip cho .NET
 linktitle: Giải nén Xar vào thư mục
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Khám phá sức mạnh của Aspose.Zip dành cho .NET! Giải nén dễ dàng các kho lưu trữ Xar với hướng dẫn thân thiện với người dùng này. Nâng cao trải nghiệm phát triển .NET của bạn.
-type: docs
 weight: 17
 url: /vi/net/file-decompression/decompress-xar-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Giải nén Xar vào thư mục trong Aspose.Zip cho .NET
+
 ## Giới thiệu
 
 Nếu bạn đang tìm hiểu thế giới phát triển .NET và đang tìm kiếm một giải pháp đáng tin cậy để giải nén các kho lưu trữ Xar, Aspose.Zip cho .NET sẽ giúp bạn. Trong hướng dẫn từng bước này, chúng tôi sẽ hướng dẫn bạn quy trình giải nén Xar vào một thư mục bằng Aspose.Zip, một thư viện mạnh mẽ giúp đơn giản hóa thao tác lưu trữ trong các ứng dụng .NET của bạn.
@@ -79,3 +85,9 @@ Với Aspose.Zip dành cho .NET, việc giải nén các kho lưu trữ Xar tr�
 ### Câu hỏi 5: Tôi có thể mua Aspose.Zip cho .NET ở đâu?
 
  Câu trả lời 5: Bạn có thể mua Aspose.Zip cho .NET[đây](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

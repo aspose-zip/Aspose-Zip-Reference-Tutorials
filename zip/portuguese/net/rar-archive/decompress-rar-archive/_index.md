@@ -3,10 +3,16 @@ title: Descompactando um arquivo RAR com Aspose.Zip para .NET
 linktitle: Descompactando um arquivo RAR
 second_title: API Aspose.Zip .NET para compactação e arquivamento de arquivos
 description: Domine a descompactação de arquivos RAR em .NET com Aspose.Zip. Guia passo a passo para manuseio eficiente de arquivos. Baixe Agora!
-type: docs
 weight: 10
 url: /pt/net/rar-archive/decompress-rar-archive/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Descompactando um arquivo RAR com Aspose.Zip para .NET
+
 
 ## Introdução
 
@@ -83,3 +89,10 @@ partir de agora, Aspose.Zip for .NET oferece suporte principalmente aos formatos
 
 ### Existem licenças temporárias disponíveis?
  Sim, você pode obter uma licença temporária[aqui](https://purchase.aspose.com/temporary-license/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

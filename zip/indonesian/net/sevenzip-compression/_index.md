@@ -3,10 +3,16 @@ title: Kompresi SevenZip
 linktitle: Kompresi SevenZip
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Buka potensi Aspose.Zip untuk .NET dengan Tutorial Kompresi SevenZip kami. Buat entri SevenZip dengan mudah dan jelajahi berbagai metode kompresi.
-type: docs
 weight: 25
 url: /id/net/sevenzip-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Kompresi SevenZip
+
 
 
 Selamat datang di panduan komprehensif kami tentang Tutorial Kompresi SevenZip menggunakan Aspose.Zip untuk .NET. Dalam seri tutorial ini, kita akan mempelajari kekuatan Aspose.Zip, memandu Anda melalui proses pembuatan entri SevenZip dan menjelajahi berbagai metode kompresi. Mari memulai perjalanan ini untuk meningkatkan pengalaman pengembangan .NET Anda.
@@ -31,3 +37,9 @@ Jelajahi kekuatan Aspose.Zip untuk .NET! Pelajari cara membuat entri SevenZip la
 Master Aspose.Zip untuk .NET - Buat entri SevenZip dengan mudah. Tingkatkan aplikasi .NET Anda dengan manipulasi arsip zip yang efisien.
 ### [SevenZip dengan Berbagai Metode Kompresi di Aspose.Zip untuk .NET](./sevenzip-various-compression-methods/)
 Pelajari cara membuat file Seven Zip dengan Aspose.Zip untuk .NET menggunakan metode kompresi yang berbeda. Langkah mudah untuk LZMA2, BZip2, dan Store (tanpa kompresi).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: .NET용 Aspose.Zip을 사용하여 폴더 압축 풀기
 linktitle: 폴더 압축 풀기
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: .NET용 Aspose.Zip을 사용하여 폴더 압축 해제 기술을 마스터하세요. 프로젝트의 압축 작업을 손쉽게 처리하세요.
-type: docs
 weight: 11
 url: /ko/net/directory-and-folder-compression/decompress-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.Zip을 사용하여 폴더 압축 풀기
+
 .NET용 Aspose.Zip을 사용하여 폴더의 압축을 원활하게 풀고 싶으십니까? 더 이상 보지 마십시오! 이 단계별 가이드는 프로세스를 안내하여 폴더 압축을 쉽게 풀 수 있는 방법을 익힐 수 있도록 도와줍니다.
 
 ## 전제 조건
@@ -88,3 +94,9 @@ A2: 물론이죠! Aspose.Zip for .NET은 대규모 애플리케이션을 쉽게 
 ### Q5: .NET용 Aspose.Zip에 대한 지원을 어떻게 받을 수 있나요?
 
  A5: 질문이나 도움이 필요하면 다음을 방문하세요.[Aspose.Zip 포럼](https://forum.aspose.com/c/zip/37) 커뮤니티에 참여하고 전문가의 조언을 구할 수 있는 곳입니다.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

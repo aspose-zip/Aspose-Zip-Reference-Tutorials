@@ -3,10 +3,16 @@ title: Passwortschutz für Verzeichnisse in .NET mit dem Aspose.Zip-Tutorial
 linktitle: Passwortgeschütztes Verzeichnis
 second_title: Aspose.Zip .NET API für Dateikomprimierung und -archivierung
 description: Erfahren Sie, wie Sie Verzeichnisse in .NET mit Aspose.Zip mit einem Passwort schützen. Sichern Sie Ihre Dateien mühelos mit dieser Schritt-für-Schritt-Anleitung.
-type: docs
 weight: 10
 url: /de/net/password-protection-and-encryption/password-protect-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Passwortschutz für Verzeichnisse in .NET mit dem Aspose.Zip-Tutorial
+
 
 ## Einführung
 
@@ -90,3 +96,10 @@ Ja, Aspose.Zip für .NET ist für die effiziente Handhabung großer Verzeichniss
 ### Wo finde ich zusätzliche Unterstützung für Aspose.Zip für .NET?
  Sie können die besuchen[Aspose.Zip-Forum](https://forum.aspose.com/c/zip/37) für jegliche Unterstützung oder Fragen.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

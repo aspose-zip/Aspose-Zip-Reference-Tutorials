@@ -3,10 +3,16 @@ title: Een opgeslagen bestand decomprimeren met Aspose.Zip voor .NET
 linktitle: Een opgeslagen bestand decomprimeren
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Ontdek de kracht van Aspose.Zip voor .NET in deze stapsgewijze handleiding voor het decomprimeren van opgeslagen bestanden. Verbeter uw softwareontwikkelingsvaardigheden met een robuuste oplossing voor efficiënte bestandsverwerking.
-type: docs
 weight: 13
 url: /nl/net/file-decompression/decompress-stored-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Een opgeslagen bestand decomprimeren met Aspose.Zip voor .NET
+
 ## Invoering
 
 In het voortdurend evoluerende landschap van softwareontwikkeling is het efficiënt omgaan met gecomprimeerde bestanden een cruciaal aspect. Aspose.Zip voor .NET komt naar voren als een robuuste oplossing en biedt ontwikkelaars krachtige tools om opgeslagen bestanden naadloos te decomprimeren. In deze zelfstudie verdiepen we ons in het proces van het decomprimeren van een opgeslagen bestand met Aspose.Zip voor .NET.
@@ -120,3 +126,9 @@ A1: Ja, Aspose.Zip voor .NET is ontworpen om compatibel te zijn met verschillend
 ### V5: Kan ik een tijdelijke licentie verkrijgen voor Aspose.Zip voor .NET?
 
  A5: Ja, bezoek[deze link](https://purchase.aspose.com/temporary-license/) om een tijdelijke licentie voor testdoeleinden te verkrijgen.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

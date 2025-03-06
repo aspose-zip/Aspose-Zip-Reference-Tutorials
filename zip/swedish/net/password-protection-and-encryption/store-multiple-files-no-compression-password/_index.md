@@ -3,10 +3,16 @@ title: Aspose.Zip för .NET - Handledning för säker fillagring
 linktitle: Lagra flera filer utan komprimering med lösenord
 second_title: Aspose.Zip .NET API för filkomprimering och arkivering
 description: Utforska hur du använder Aspose.Zip för .NET för att säkert lagra flera filer utan komprimering. Enkla steg för lösenordsskydd. Lås upp kraften med filhantering!
-type: docs
 weight: 13
 url: /sv/net/password-protection-and-encryption/store-multiple-files-no-compression-password/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip för .NET - Handledning för säker fillagring
+
 
 I en värld av .NET-utveckling är hantering och manipulering av filer en vanlig uppgift. Aspose.Zip för .NET är ett kraftfullt bibliotek som ger utvecklare möjlighet att komprimera, dekomprimera och manipulera zip-arkiv sömlöst. I den här handledningen kommer vi att fördjupa oss i ett specifikt scenario: lagra flera filer utan komprimering och skydda dem med ett lösenord. I slutet av den här guiden kommer du att vara utrustad med kunskapen för att implementera denna funktionalitet med Aspose.Zip för .NET.
 
@@ -93,3 +99,10 @@ I den här handledningen undersökte vi hur man använder Aspose.Zip för .NET f
 
 ### Var kan jag köpa Aspose.Zip för .NET?
  Du kan köpa Aspose.Zip för .NET[här](https://purchase.aspose.com/buy).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

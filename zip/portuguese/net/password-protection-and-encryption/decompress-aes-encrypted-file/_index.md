@@ -3,10 +3,16 @@ title: Descompactar arquivos AES - Tutorial Aspose.Zip .NET
 linktitle: Descompacte arquivo criptografado AES
 second_title: API Aspose.Zip .NET para compactação e arquivamento de arquivos
 description: Aprenda a descompactar arquivos criptografados AES em C# usando Aspose.Zip para .NET. Siga nosso guia passo a passo para um manuseio eficiente de arquivos.
-type: docs
 weight: 18
 url: /pt/net/password-protection-and-encryption/decompress-aes-encrypted-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Descompactar arquivos AES - Tutorial Aspose.Zip .NET
+
 
 ## Introdução
 
@@ -92,3 +98,10 @@ Sim, Aspose.Zip suporta criptografia AES com comprimentos de chave de 128, 192 e
 ### E se eu precisar de uma licença temporária?
  Você pode obter uma licença temporária[aqui](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

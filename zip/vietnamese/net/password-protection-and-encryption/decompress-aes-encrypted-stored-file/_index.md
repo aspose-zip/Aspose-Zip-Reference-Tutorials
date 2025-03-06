@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET - Giải mã các tệp được mã hóa AES
 linktitle: Giải nén tệp được lưu trữ được mã hóa AES
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Tìm hiểu cách giải nén các tệp được lưu trữ được mã hóa AES trong Aspose.Zip cho .NET với hướng dẫn từng bước toàn diện này. Nâng cao kỹ năng phát triển .NET của bạn ngay hôm nay!
-type: docs
 weight: 19
 url: /vi/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET - Giải mã các tệp được mã hóa AES
+
 
 ## Giới thiệu
 
@@ -89,3 +95,10 @@ Aspose.Zip hỗ trợ nhiều định dạng khác nhau, bao gồm ZIP, 7z và T
 ### Tôi có thể sử dụng Aspose.Zip cho mục đích thương mại không?
  Có, bạn có thể mua giấy phép[đây](https://purchase.aspose.com/buy) cho mục đích thương mại.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Nén tệp an toàn trong .NET với Aspose.Zip
 linktitle: Nén tệp bằng mật khẩu riêng
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Tìm hiểu cách tăng cường bảo mật tệp trong ứng dụng .NET! Làm theo hướng dẫn từng bước của chúng tôi về cách nén tệp bằng mật khẩu riêng lẻ bằng Aspose.Zip cho .NET.
-type: docs
 weight: 16
 url: /vi/net/password-protection-and-encryption/compress-files-individual-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Nén tệp an toàn trong .NET với Aspose.Zip
+
 
 ## Giới thiệu
 
@@ -84,3 +90,10 @@ Có, Aspose.Zip for .NET cho phép bạn sử dụng các phương thức mã h�
 
 ### Tôi có thể mua giấy phép tạm thời cho mục đích thử nghiệm không?
  Có, bạn có thể có được giấy phép tạm thời[đây](https://purchase.aspose.com/temporary-license/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

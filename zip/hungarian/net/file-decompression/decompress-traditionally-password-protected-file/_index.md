@@ -3,10 +3,16 @@ title: Tömörítse ki a hagyományosan jelszóval védett fájlt az Aspose.Zip 
 linktitle: A hagyományosan jelszóval védett fájl kibontása
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Ismerje meg, hogyan bonthatja ki a hagyományosan jelszóval védett fájlokat az Aspose.Zip for .NET segítségével. Lépésről lépésre szóló útmutató a zökkenőmentes integrációhoz.
-type: docs
 weight: 15
 url: /hu/net/file-decompression/decompress-traditionally-password-protected-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tömörítse ki a hagyományosan jelszóval védett fájlt az Aspose.Zip for .NET-ben
+
 .NET fejlesztés területén az Aspose.Zip robusztus megoldásként tűnik ki a tömörített fájlok kezelésére. Számtalan funkciója közül az egyik kiemelkedő képesség a hagyományosan jelszóval védett fájlok kicsomagolása. Ebben az oktatóanyagban a hagyományos jelszóval titkosított fájlok Aspose.Zip for .NET használatával történő kitömörítésének folyamatát mutatjuk be. Mielőtt nekivágnánk ennek az útnak, győződjön meg arról, hogy megvannak az előfeltételeink.
 
 ## Előfeltételek
@@ -96,3 +102,9 @@ Gratulálunk! Sikeresen kicsomagolt egy hagyományosan jelszóval védett fájlt
 ### 5. kérdés: Hogyan szerezhetek ideiglenes licencet az Aspose.Zip számára?
 
  V5: Ideiglenes licencet szerezhet be[Aspose.Vásároljon](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

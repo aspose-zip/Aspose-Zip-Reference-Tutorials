@@ -3,10 +3,16 @@ title: Biztonságos fájltömörítés .NET-ben az Aspose.Zip segítségével
 linktitle: Fájlok tömörítése egyéni jelszavakkal
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Ismerje meg, hogyan javíthatja a fájlbiztonságot .NET-alkalmazásokban! Kövesse lépésenkénti útmutatónkat a fájlok egyéni jelszavakkal történő tömörítéséhez az Aspose.Zip for .NET használatával.
-type: docs
 weight: 16
 url: /hu/net/password-protection-and-encryption/compress-files-individual-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Biztonságos fájltömörítés .NET-ben az Aspose.Zip segítségével
+
 
 ## Bevezetés
 
@@ -84,3 +90,10 @@ Igen, az Aspose.Zip for .NET lehetővé teszi az egyes fájlokhoz különböző 
 
 ### Vásárolhatok ideiglenes licencet tesztelési célból?
  Igen, szerezhet ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

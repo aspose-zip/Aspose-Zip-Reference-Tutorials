@@ -3,10 +3,16 @@ title: Effortless Directory Compression with Aspose.Zip for .NET
 linktitle: How to Compress a Directory 
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: Learn to compress directories effortlessly with Aspose.Zip for .NET. Boost your .NET development by optimizing storage space efficiently.
-type: docs
 weight: 10
 url: /net/directory-and-folder-compression/compress-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Effortless Directory Compression with Aspose.Zip for .NET
+
 In the ever-evolving landscape of .NET development, finding efficient ways to manage and compress directories is crucial. With the help of Aspose.Zip for .NET, you can streamline this process and enhance the performance of your applications. In this step-by-step guide, we will walk you through the process of compressing a directory using Aspose.Zip, ensuring that you grasp each concept clearly.
 
 ## Introduction
@@ -94,3 +100,10 @@ A4: Yes, the [documentation](https://reference.aspose.com/zip/net/) contains com
 ### Q5: Can I purchase Aspose.Zip for .NET?
 
 A5: Certainly, you can make a purchase [here](https://purchase.aspose.com/buy).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: 使用 Aspose.Zip for .NET 建立 SevenZip 條目
 linktitle: 建立 SevenZip 條目
 second_title: 用於檔案壓縮和歸檔的 Aspose.Zip .NET API
 description: 探索 Aspose.Zip for .NET 的強大功能！了解逐步建立 SevenZip 條目。毫不費力地壓縮檔案。立即下載以獲得無縫的開發體驗。
-type: docs
 weight: 10
 url: /zh-hant/net/sevenzip-compression/create-sevenzip-entries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Zip for .NET 建立 SevenZip 條目
+
 
 ## 介紹
 
@@ -83,3 +89,10 @@ Console.WriteLine("Successfully Created a Seven Zip File");
 
 ### 購買前是否可以免費試用？
 是的，您可以免費試用[這裡](https://releases.aspose.com/)在做出承諾之前探索這些功能。
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

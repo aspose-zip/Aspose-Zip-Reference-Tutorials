@@ -3,10 +3,16 @@ title: .NET용 Aspose.Zip을 사용하여 단일 파일 압축 풀기
 linktitle: 단일 파일 압축 풀기
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: .NET용 Aspose.Zip을 사용하여 원활한 파일 압축 해제 세계를 탐험해보세요. C# 프로젝트에서 압축 파일을 손쉽게 처리하세요.
-type: docs
 weight: 12
 url: /ko/net/file-decompression/decompress-single-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.Zip을 사용하여 단일 파일 압축 풀기
+
 ## 소개
 
 .NET 개발 영역에서 Aspose.Zip은 압축 파일을 정교하게 처리하기 위한 강력한 솔루션입니다. 이 튜토리얼은 .NET용 Aspose.Zip을 사용하여 단일 파일의 압축을 푸는 과정을 안내합니다. 이 강력한 라이브러리의 기능을 단계별로 살펴보는 과정을 진행해 보세요.
@@ -103,3 +109,9 @@ A3: Aspose.Zip은 비밀번호로 보호된 아카이브를 사용하는 방법�
 ### Q5: 문제가 발생하면 어디서 도움을 받을 수 있나요?
 
  A5: 다음을 방문하세요.[Aspose.Zip 포럼](https://forum.aspose.com/c/zip/37) 지역 사회 지원을 위해.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

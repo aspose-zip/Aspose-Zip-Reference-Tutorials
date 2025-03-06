@@ -3,10 +3,16 @@ title: 目录和文件夹压缩
 linktitle: 目录和文件夹压缩
 second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
 description: 使用 Aspose.Zip for .NET 轻松优化存储空间。了解目录压缩和解压缩技术以增强您的 .NET 开发项目。
-type: docs
 weight: 22
 url: /zh/net/directory-and-folder-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 目录和文件夹压缩
+
 
 ## 介绍
 
@@ -38,3 +44,9 @@ Aspose.Zip for .NET 不仅仅压缩目录；它还可以压缩目录。它优化
 学习使用 Aspose.Zip for .NET 轻松压缩目录。通过有效优化存储空间来促进您的 .NET 开发。
 ### [使用 Aspose.Zip for .NET 解压缩文件夹](./decompress-folder/)
 掌握使用 Aspose.Zip for .NET 解压缩文件夹的艺术。轻松处理项目中的压缩任务。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Yedi Zip Dosyası Oluşturma - Aspose.Zip for .NET Eğitimi
 linktitle: Çeşitli Sıkıştırma Yöntemleriyle SevenZip
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Aspose.Zip for .NET ile farklı sıkıştırma yöntemleri kullanarak Seven Zip dosyaları oluşturmayı öğrenin. LZMA2, BZip2 ve Store için kolay adımlar (sıkıştırma yok).
-type: docs
 weight: 12
 url: /tr/net/sevenzip-compression/sevenzip-various-compression-methods/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Yedi Zip Dosyası Oluşturma - Aspose.Zip for .NET Eğitimi
+
 
 ## giriiş
 
@@ -89,3 +95,10 @@ Evet, Aspose.Zip for .NET çok çeşitli dosya türlerini destekleyerek çeşitl
 
 ### Aspose.Zip for .NET için nereden destek alabilirim?
  adresinden destek alabilirsiniz.[Aspose.Zip forumu](https://forum.aspose.com/c/zip/37).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

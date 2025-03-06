@@ -3,10 +3,16 @@ title: Dekomprimujte komprimovanou složku do adresáře v Aspose.Zip pro .NET
 linktitle: Dekomprimujte komprimovanou složku do adresáře
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Odemkněte potenciál Aspose.Zip pro .NET! Naučte se, jak snadno dekomprimovat složky pomocí tohoto podrobného průvodce. Ponořte se do světa bezproblémové komprese a extrakce.
-type: docs
 weight: 14
 url: /cs/net/file-decompression/decompress-compressed-folder-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekomprimujte komprimovanou složku do adresáře v Aspose.Zip pro .NET
+
 ## Úvod
 
 Vítejte ve světě Aspose.Zip for .NET, robustní knihovny, která umožňuje vývojářům bez námahy pracovat s komprimovanými složkami. V tomto tutoriálu se ponoříme do procesu dekomprimace komprimované složky do adresáře pomocí Aspose.Zip for .NET. Připoutejte se, až vás podrobně provedeme každým krokem a demystifikujeme spletitost tohoto mocného nástroje.
@@ -79,3 +85,9 @@ A2: Aspose.Zip pro .NET můžete samozřejmě využít v komerčních i nekomer�
 ### Q5: Potřebuji dočasnou licenci pro testování Aspose.Zip pro .NET?
 
  A5: Ano, můžete získat dočasnou licenci od[tady](https://purchase.aspose.com/temporary-license/) pro testovací účely.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

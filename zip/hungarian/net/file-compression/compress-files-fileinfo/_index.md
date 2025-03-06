@@ -3,10 +3,16 @@ title: Tömörítse a fájlokat a FileInfo segítségével az Aspose.Zip for .NE
 linktitle: Fájlok tömörítése a FileInfo segítségével
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Ismerje meg a fájlok tömörítését a fileinfo segítségével az Aspose.Zip for .NET segítségével. Kövesse lépésenkénti útmutatónkat a hatékony fájlkezelés érdekében.
-type: docs
 weight: 11
 url: /hu/net/file-compression/compress-files-fileinfo/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tömörítse a fájlokat a FileInfo segítségével az Aspose.Zip for .NET-ben
+
 ## Bevezetés
 
 Üdvözöljük átfogó útmutatónkban a fájlok Aspose.Zip for .NET használatával történő tömörítéséről! Ha optimalizálni szeretné fájltárolását vagy átvitelét, az Aspose.Zip a legjobb megoldás. Ebben az oktatóanyagban végigvezetjük a fájlok FileInfo osztály használatával történő tömörítésének folyamatán, és részletes, lépésről lépésre szóló útmutatót nyújtunk. Merüljünk el!
@@ -102,3 +108,9 @@ Ebben az oktatóanyagban megvizsgáltuk, hogyan lehet hatékonyan tömöríteni 
 ### 5. kérdés: Hogyan szerezhetek ideiglenes licencet az Aspose.Zip számára?
 
  A5: Látogassa meg[ez a link](https://purchase.aspose.com/temporary-license/) az ideiglenes engedély megszerzésével kapcsolatos információkért.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

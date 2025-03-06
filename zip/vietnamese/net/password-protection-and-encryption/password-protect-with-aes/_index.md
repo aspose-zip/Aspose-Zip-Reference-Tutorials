@@ -3,10 +3,16 @@ title: Bảo mật tệp của bạn - Mã hóa AES bằng Aspose.Zip
 linktitle: Bảo vệ mật khẩu bằng AES
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Tìm hiểu cách tăng cường bảo mật tệp của bạn bằng Aspose.Zip cho .NET với mã hóa AES. Hãy làm theo hướng dẫn từng bước của chúng tôi để được bảo vệ tối ưu.
-type: docs
 weight: 11
 url: /vi/net/password-protection-and-encryption/password-protect-with-aes/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bảo mật tệp của bạn - Mã hóa AES bằng Aspose.Zip
+
 
 ## Giới thiệu
 
@@ -108,3 +114,10 @@ Aspose.Zip hỗ trợ mã hóa nhiều loại tệp khác nhau, đảm bảo tí
 
 ### Điều gì xảy ra nếu tôi quên mật khẩu của kho lưu trữ được mã hóa?
 Thật không may, không có cách nào để khôi phục mật khẩu của kho lưu trữ được mã hóa. Điều quan trọng là phải giữ mật khẩu ở một nơi an toàn.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

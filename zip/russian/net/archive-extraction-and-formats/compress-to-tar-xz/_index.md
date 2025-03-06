@@ -3,10 +3,16 @@ title: Сжатие в TarXz с помощью Aspose.Zip для .NET
 linktitle: Сжатие в TarXz
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Научитесь сжимать файлы в формат TarXz в .NET с помощью Aspose.Zip. Следуйте нашему пошаговому руководству для эффективного хранения и передачи файлов.
-type: docs
 weight: 14
 url: /ru/net/archive-extraction-and-formats/compress-to-tar-xz/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Сжатие в TarXz с помощью Aspose.Zip для .NET
+
 ## Введение
 
 В сфере разработки .NET эффективное сжатие файлов является важнейшим аспектом оптимизации хранения и передачи данных. Aspose.Zip для .NET — мощный инструмент, облегчающий сжатие файлов, и в этом руководстве мы углубимся в сжатие файлов в формат TarXz с помощью Aspose.Zip. Это пошаговое руководство призвано предоставить вам полное понимание процесса и позволит вам легко интегрировать эту функциональность в ваши проекты .NET.
@@ -84,3 +90,9 @@ using (TarArchive archive = new TarArchive())
 ### Вопрос 5: Могу ли я бесплатно попробовать Aspose.Zip перед покупкой?
 
  О5: Да, вы можете воспользоваться бесплатной пробной версией.[здесь](https://releases.aspose.com/zip/net).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

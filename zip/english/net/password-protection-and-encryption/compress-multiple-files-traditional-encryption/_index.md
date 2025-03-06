@@ -3,10 +3,16 @@ title: Compress Multiple Files with Encryption in Aspose.Zip .NET
 linktitle: Compress Multiple Files with Traditional Encryption
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: Learn how to compress multiple files securely using traditional encryption in Aspose.Zip for .NET. Enhance data protection in your .NET applications.
-type: docs
 weight: 17
 url: /net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Compress Multiple Files with Encryption in Aspose.Zip .NET
+
 
 ## Introduction
 
@@ -95,3 +101,10 @@ Yes, temporary licenses can be obtained from [here](https://purchase.aspose.com/
 
 Refer to the documentation [here](https://reference.aspose.com/zip/net/) for in-depth information.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

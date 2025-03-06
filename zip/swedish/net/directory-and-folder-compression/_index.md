@@ -3,10 +3,16 @@ title: Katalog- och mappkomprimering
 linktitle: Katalog- och mappkomprimering
 second_title: Aspose.Zip .NET API för filkomprimering och arkivering
 description: Optimera enkelt lagringsutrymme med Aspose.Zip för .NET. Lär dig katalogkomprimering och dekomprimeringstekniker för att förbättra dina .NET-utvecklingsprojekt.
-type: docs
 weight: 22
 url: /sv/net/directory-and-folder-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Katalog- och mappkomprimering
+
 
 ## Introduktion
 
@@ -38,3 +44,9 @@ Sammanfattningsvis är dessa självstudier för katalog- och mappkomprimering di
 Lär dig att komprimera kataloger utan ansträngning med Aspose.Zip för .NET. Öka din .NET-utveckling genom att optimera lagringsutrymmet effektivt.
 ### [Dekomprimera en mapp med Aspose.Zip för .NET](./decompress-folder/)
 Bemästra konsten att dekomprimera mappar med Aspose.Zip för .NET. Hantera enkelt komprimeringsuppgifter i dina projekt.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Κύρια ασφαλής αρχειοθέτηση σε .NET με Aspose.
 linktitle: Αρχειοθέτηση με κρυπτογραφημένη καταχώρηση
 second_title: Aspose.Zip .NET API για συμπίεση και αρχειοθέτηση αρχείων
 description: Εξερευνήστε τον κόσμο της ασφαλούς αρχειοθέτησης στο .NET με το Aspose.Zip. Δημιουργήστε επτά αρχεία Zip με κρυπτογράφηση AES χωρίς κόπο. Ενισχύστε τις αναπτυξιακές σας δεξιότητες τώρα!
-type: docs
 weight: 15
 url: /el/net/password-protection-and-encryption/archive-with-encrypted-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Κύρια ασφαλής αρχειοθέτηση σε .NET με Aspose.Zip
+
 
 ## Εισαγωγή
 
@@ -81,3 +87,10 @@ Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Set
 ### Μπορώ να προσαρμόσω περαιτέρω τις ρυθμίσεις κρυπτογράφησης;
 Απολύτως! Εξερευνήστε την τεκμηρίωση για προηγμένες επιλογές προσαρμογής κρυπτογράφησης.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

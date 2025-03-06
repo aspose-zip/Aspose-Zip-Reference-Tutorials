@@ -3,10 +3,16 @@ title: Compresser un fichier avec Aspose.Zip pour .NET
 linktitle: Compresser un fichier
 second_title: API Aspose.Zip .NET pour la compression et l'archivage de fichiers
 description: Apprenez à compresser des fichiers sans effort à l'aide d'Aspose.Zip pour .NET. Suivez notre tutoriel étape par étape pour une gestion efficace des fichiers.
-type: docs
 weight: 10
 url: /fr/net/file-compression/compress-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Compresser un fichier avec Aspose.Zip pour .NET
+
 ## Introduction
 
 Bienvenue dans le monde d'Aspose.Zip pour .NET – une bibliothèque puissante qui vous permet de compresser des fichiers sans effort. Dans ce didacticiel, nous vous guiderons tout au long du processus de compression de fichiers à l'aide d'Aspose.Zip pour .NET. Si vous souhaitez optimiser le stockage de fichiers, réduire les temps de transfert ou simplement organiser plus efficacement vos données, ce tutoriel est fait pour vous.
@@ -88,3 +94,9 @@ Toutes nos félicitations! Vous avez compressé avec succès des fichiers à l�
 ### Q5 : Des licences temporaires sont-elles disponibles ?
 
  A5 : Oui, vous pouvez obtenir des licences temporaires[ici](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

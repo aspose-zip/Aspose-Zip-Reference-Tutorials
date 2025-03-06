@@ -3,10 +3,16 @@ title: Сжатие нескольких файлов с шифрованием 
 linktitle: Сжатие нескольких файлов с помощью традиционного шифрования
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Узнайте, как безопасно сжимать несколько файлов с помощью традиционного шифрования в Aspose.Zip для .NET. Улучшите защиту данных в ваших приложениях .NET.
-type: docs
 weight: 17
 url: /ru/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Сжатие нескольких файлов с шифрованием в Aspose.Zip .NET
+
 
 ## Введение
 
@@ -94,3 +100,10 @@ archive.Save(zipFile);
 ### 5. Где я могу найти подробную документацию по Aspose.Zip для .NET?
 
 Обратитесь к документации[здесь](https://reference.aspose.com/zip/net/) для более подробной информации.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

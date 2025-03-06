@@ -3,10 +3,16 @@ title: Jelszóvédett könyvtárak a .NET-ben az Aspose.Zip oktatóanyaggal
 linktitle: Jelszóvédett könyvtár
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Ismerje meg, hogyan védheti jelszóval a .NET-ben található könyvtárakat az Aspose.Zip segítségével. Ezzel a lépésenkénti oktatóanyaggal könnyedén biztonságba helyezheti fájljait.
-type: docs
 weight: 10
 url: /hu/net/password-protection-and-encryption/password-protect-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Jelszóvédett könyvtárak a .NET-ben az Aspose.Zip oktatóanyaggal
+
 
 ## Bevezetés
 
@@ -90,3 +96,10 @@ Igen, az Aspose.Zip for .NET úgy lett kialakítva, hogy hatékonyan kezelje a n
 ### Hol találok további támogatást az Aspose.Zip for .NET számára?
  Meglátogathatja a[Aspose.Zip fórum](https://forum.aspose.com/c/zip/37) bármilyen támogatás vagy kérdés esetén.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

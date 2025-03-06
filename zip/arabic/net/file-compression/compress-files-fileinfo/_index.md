@@ -3,10 +3,16 @@ title: ضغط الملفات باستخدام FileInfo في Aspose.Zip لـ .NET
 linktitle: ضغط الملفات باستخدام FileInfo
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: تعلم كيفية ضغط الملفات باستخدام fileinfo مع Aspose.Zip لـ .NET. اتبع دليلنا خطوة بخطوة لإدارة الملفات بكفاءة.
-type: docs
 weight: 11
 url: /ar/net/file-compression/compress-files-fileinfo/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ضغط الملفات باستخدام FileInfo في Aspose.Zip لـ .NET
+
 ## مقدمة
 
 مرحبًا بك في دليلنا الشامل حول ضغط الملفات باستخدام Aspose.Zip لـ .NET! إذا كنت تتطلع إلى تحسين تخزين الملفات أو نقلها، فإن Aspose.Zip هو الحل الأمثل لك. في هذا البرنامج التعليمي، سنرشدك خلال عملية ضغط الملفات باستخدام فئة FileInfo، مع توفير دليل تفصيلي خطوة بخطوة. دعونا الغوص في!
@@ -102,3 +108,9 @@ A1: يدعم Aspose.Zip نطاقًا واسعًا من أنواع الملفات
 ### س5: كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.Zip؟
 
  ج5: زيارة[هذا الرابط](https://purchase.aspose.com/temporary-license/) للحصول على معلومات حول الحصول على ترخيص مؤقت.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

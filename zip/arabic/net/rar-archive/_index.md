@@ -3,10 +3,16 @@ title: أرشيف رار
 linktitle: أرشيف رار
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: اكتشف أسرار إدارة أرشيف RAR باستخدام Aspose.Zip لـ .NET! قم بفك ضغط الملفات المضغوطة وفك تشفيرها والتعامل معها بسهولة. قم بالتنزيل الآن للتعامل بكفاءة مع الملفات.
-type: docs
 weight: 24
 url: /ar/net/rar-archive/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# أرشيف رار
+
 
 ## مقدمة
 
@@ -29,3 +35,9 @@ url: /ar/net/rar-archive/
 اكتشف بساطة إلغاء ضغط إدخالات RAR في .NET باستخدام Aspose.Zip. تعامل بسهولة مع الملفات المضغوطة باستخدام هذه المكتبة القوية.
 ### [فك تشفير أرشيف RAR باستخدام Aspose.Zip لـ .NET](./decrypt-rar-archive/)
 افتح أرشيفات RAR المشفرة بسهولة باستخدام Aspose.Zip لـ .NET. اتبع دليلنا خطوة بخطوة للتكامل السلس وفك التشفير الفعال.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

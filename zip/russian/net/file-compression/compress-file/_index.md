@@ -3,10 +3,16 @@ title: Сжатие файла с помощью Aspose.Zip для .NET
 linktitle: Сжатие файла
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Узнайте, как легко сжимать файлы с помощью Aspose.Zip для .NET. Следуйте нашему пошаговому руководству для эффективного управления файлами.
-type: docs
 weight: 10
 url: /ru/net/file-compression/compress-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Сжатие файла с помощью Aspose.Zip для .NET
+
 ## Введение
 
 Добро пожаловать в мир Aspose.Zip для .NET – мощной библиотеки, позволяющей легко сжимать файлы. В этом уроке мы покажем вам процесс сжатия файлов с помощью Aspose.Zip для .NET. Если вы хотите оптимизировать хранилище файлов, сократить время передачи или просто более эффективно организовать свои данные, это руководство для вас.
@@ -88,3 +94,9 @@ Console.WriteLine("Successfully Compressed Files");
 ### Вопрос 5: Доступны ли временные лицензии?
 
  О5: Да, вы можете получить временные лицензии.[здесь](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

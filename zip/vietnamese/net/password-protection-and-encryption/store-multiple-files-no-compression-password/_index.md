@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET - Hướng dẫn lưu trữ tệp an toàn
 linktitle: Lưu trữ nhiều tệp mà không cần nén bằng mật khẩu
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Khám phá cách sử dụng Aspose.Zip cho .NET để lưu trữ an toàn nhiều tệp mà không cần nén. Các bước dễ dàng để bảo vệ mật khẩu. Mở khóa sức mạnh của quản lý tập tin!
-type: docs
 weight: 13
 url: /vi/net/password-protection-and-encryption/store-multiple-files-no-compression-password/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET - Hướng dẫn lưu trữ tệp an toàn
+
 
 Trong thế giới phát triển .NET, việc quản lý và thao tác với các tệp là một nhiệm vụ phổ biến. Aspose.Zip for .NET là một thư viện mạnh mẽ cung cấp cho các nhà phát triển khả năng nén, giải nén và thao tác các kho lưu trữ zip một cách liền mạch. Trong hướng dẫn này, chúng ta sẽ đi sâu vào một tình huống cụ thể: lưu trữ nhiều tệp mà không cần nén và bảo vệ chúng bằng mật khẩu. Đến cuối hướng dẫn này, bạn sẽ được trang bị kiến thức để triển khai chức năng này bằng Aspose.Zip cho .NET.
 
@@ -93,3 +99,10 @@ Trong hướng dẫn này, chúng tôi đã khám phá cách sử dụng Aspose.
 
 ### Tôi có thể mua Aspose.Zip cho .NET ở đâu?
  Bạn có thể mua Aspose.Zip cho .NET[đây](https://purchase.aspose.com/buy).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

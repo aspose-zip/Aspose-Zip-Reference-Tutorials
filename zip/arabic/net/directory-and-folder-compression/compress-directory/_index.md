@@ -3,10 +3,16 @@ title: ضغط الدليل بسهولة باستخدام Aspose.Zip لـ .NET
 linktitle: كيفية ضغط الدليل
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: تعلم كيفية ضغط الأدلة بسهولة باستخدام Aspose.Zip لـ .NET. عزز تطوير .NET الخاص بك عن طريق تحسين مساحة التخزين بكفاءة.
-type: docs
 weight: 10
 url: /ar/net/directory-and-folder-compression/compress-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ضغط الدليل بسهولة باستخدام Aspose.Zip لـ .NET
+
 في المشهد المتطور باستمرار لتطوير .NET، يعد العثور على طرق فعالة لإدارة الدلائل وضغطها أمرًا بالغ الأهمية. بمساعدة Aspose.Zip for .NET، يمكنك تبسيط هذه العملية وتحسين أداء تطبيقاتك. في هذا الدليل التفصيلي، سنرشدك خلال عملية ضغط الدليل باستخدام Aspose.Zip، مما يضمن أنك تفهم كل مفهوم بوضوح.
 
 ## مقدمة
@@ -94,3 +100,9 @@ using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", Fil
 ### س5: هل يمكنني شراء Aspose.Zip لـ .NET؟
 
  ج5: بالتأكيد، يمكنك إجراء عملية شراء[هنا](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

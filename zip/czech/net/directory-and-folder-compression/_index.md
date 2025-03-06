@@ -3,10 +3,16 @@ title: Komprese adresářů a složek
 linktitle: Komprese adresářů a složek
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Optimalizujte úložný prostor bez námahy pomocí Aspose.Zip pro .NET. Naučte se techniky komprese a dekomprese adresářů, abyste vylepšili své vývojové projekty .NET.
-type: docs
 weight: 22
 url: /cs/net/directory-and-folder-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Komprese adresářů a složek
+
 
 ## Úvod
 
@@ -38,3 +44,9 @@ Závěrem lze říci, že tyto výukové programy pro kompresi adresářů a slo
 Naučte se komprimovat adresáře bez námahy s Aspose.Zip pro .NET. Podpořte svůj vývoj .NET efektivní optimalizací úložného prostoru.
 ### [Dekomprimace složky pomocí Aspose.Zip pro .NET](./decompress-folder/)
 Ovládněte umění dekomprese složek pomocí Aspose.Zip pro .NET. Zvládněte ve svých projektech úlohy komprese bez námahy.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

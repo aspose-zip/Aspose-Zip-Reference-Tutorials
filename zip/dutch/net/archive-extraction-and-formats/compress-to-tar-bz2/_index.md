@@ -3,10 +3,16 @@ title: Bestandscompressie naar TarBz2 met Aspose.Zip voor .NET
 linktitle: Comprimeren naar TarBz2
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Leer hoe u bestanden comprimeert naar TarBz2-indeling in .NET met behulp van Aspose.Zip. Volg onze stapsgewijze handleiding voor efficiënte bestandscompressie.
-type: docs
 weight: 11
 url: /nl/net/archive-extraction-and-formats/compress-to-tar-bz2/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bestandscompressie naar TarBz2 met Aspose.Zip voor .NET
+
 ## Invoering
 
 Welkom bij onze uitgebreide handleiding over het comprimeren van bestanden naar TarBz2-indeling met Aspose.Zip voor .NET. Aspose.Zip is een krachtige en veelzijdige bibliotheek die ontwikkelaars de tools biedt die ze nodig hebben om efficiënt te werken met gecomprimeerde bestandsformaten in hun .NET-applicaties.
@@ -90,3 +96,9 @@ A2: Ja, u kunt meerdere bestanden comprimeren door vermeldingen toe te voegen aa
 ### Vraag 5: Is er een gratis proefversie beschikbaar?
 
  A5: Ja, u heeft toegang tot de gratis proefperiode[hier](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Mendekompresi Folder dengan Aspose.Zip untuk .NET
 linktitle: Mendekompresi Folder
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Kuasai seni mendekompresi folder dengan Aspose.Zip untuk .NET. Tangani tugas kompresi di proyek Anda dengan mudah.
-type: docs
 weight: 11
 url: /id/net/directory-and-folder-compression/decompress-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mendekompresi Folder dengan Aspose.Zip untuk .NET
+
 Apakah Anda ingin mendekompresi folder dengan lancar menggunakan Aspose.Zip untuk .NET? Tidak perlu mencari lagi! Panduan langkah demi langkah ini akan memandu Anda melalui prosesnya, memastikan bahwa Anda menguasai seni mendekompresi folder dengan mudah.
 
 ## Prasyarat
@@ -88,3 +94,9 @@ A2: Tentu saja! Aspose.Zip untuk .NET dirancang untuk menangani aplikasi berskal
 ### Q5: Bagaimana saya bisa mendapatkan dukungan untuk Aspose.Zip untuk .NET?
 
  A5: Untuk pertanyaan atau bantuan apa pun, kunjungi[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) tempat Anda dapat terlibat dengan komunitas dan mencari nasihat ahli.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

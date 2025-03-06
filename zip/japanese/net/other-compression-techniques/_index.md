@@ -3,10 +3,16 @@ title: その他の圧縮技術
 linktitle: その他の圧縮技術
 second_title: ファイルの圧縮とアーカイブのための Aspose.Zip .NET API
 description: Aspose.Zip で高度な圧縮テクニックをマスターしましょう。メモリ ストリームへの抽出から Lzma 圧縮によるストレージの最適化まで、開発スキルを向上させます。
-type: docs
 weight: 27
 url: /ja/net/other-compression-techniques/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# その他の圧縮技術
+
 
 ## 導入
 
@@ -44,3 +50,9 @@ Aspose.Zip for .NET を使用して圧縮データをストリームに保存す
 さまざまなパスワードを使用して ZIP アーカイブを管理するためのステップバイステップ ガイドを使用して、Aspose.Zip for .NET の威力を体験してください。アプリケーションのセキュリティと柔軟性を強化します。 
 ### [Aspose.Zip for .NET で Lzma に圧縮](./compress-to-lzma/)
 強力な Lzma アルゴリズムを備えた Aspose.Zip for .NET を使用してファイルを圧縮する方法を学びます。ストレージを最適化し、データ転送効率を簡単に高めます。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

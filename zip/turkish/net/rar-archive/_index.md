@@ -3,10 +3,16 @@ title: RAR Arşivi
 linktitle: RAR Arşivi
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Aspose.Zip for .NET ile RAR arşiv yönetiminin sırlarını açığa çıkarın! Sıkıştırılmış dosyaları zahmetsizce açın, şifrelerini çözün ve işleyin. Verimli dosya işleme için şimdi indirin.
-type: docs
 weight: 24
 url: /tr/net/rar-archive/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# RAR Arşivi
+
 
 ## giriiş
 
@@ -29,3 +35,9 @@ Aspose.Zip ile .NET'te RAR arşivlerinin sıkıştırmasını açma konusunda uz
 Aspose.Zip kullanarak .NET'te RAR girişlerini açmanın kolaylığını keşfedin. Bu güçlü kitaplıkla sıkıştırılmış dosyaları zahmetsizce işleyin.
 ### [Aspose.Zip for .NET ile RAR Arşivinin şifresini çözme](./decrypt-rar-archive/)
 Aspose.Zip for .NET'i kullanarak şifrelenmiş RAR arşivlerinin kilidini zahmetsizce açın. Sorunsuz entegrasyon ve etkili şifre çözme için adım adım kılavuzumuzu izleyin.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

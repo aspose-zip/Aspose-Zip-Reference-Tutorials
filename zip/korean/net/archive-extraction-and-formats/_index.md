@@ -3,10 +3,16 @@ title: 아카이브 추출 및 형식
 linktitle: 아카이브 추출 및 형식
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: Aspose.Zip을 사용하여 .NET에서 파일 압축 기능을 활용하세요. 효율적인 저장을 위해 파일을 TarBz2, TarGz 및 TarZ와 같은 다양한 형식으로 압축하는 방법을 알아보세요.
-type: docs
 weight: 23
 url: /ko/net/archive-extraction-and-formats/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 아카이브 추출 및 형식
+
 
 ## 소개
 
@@ -53,3 +59,9 @@ Aspose.Zip을 사용하여 .NET에서 파일을 TarXz 형식으로 압축하는 
 .NET용 Aspose.Zip을 사용하여 TarZ로의 단계별 압축을 살펴보세요. .NET 프로젝트를 위한 효율적인 파일 처리.
 ### [.NET용 Aspose.Zip에서 다른 비밀번호를 사용하여 아카이브 항목 추출](./extract-archive-different-passwords/)
 .NET용 Aspose.Zip에서 다양한 비밀번호를 사용하여 아카이브 항목을 추출하는 방법을 알아보세요. 애플리케이션의 보안과 유연성을 강화하세요.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

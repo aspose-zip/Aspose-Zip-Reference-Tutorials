@@ -3,10 +3,16 @@ title: Aspose.Zip을 사용한 .NET의 마스터 보안 보관
 linktitle: 암호화된 항목으로 보관
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: Aspose.Zip을 사용하여 .NET의 보안 보관 세계를 탐험해 보세요. AES 암호화를 사용하여 손쉽게 Seven Zip 파일을 생성하세요. 지금 바로 개발 능력을 강화해보세요!
-type: docs
 weight: 15
 url: /ko/net/password-protection-and-encryption/archive-with-encrypted-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip을 사용한 .NET의 마스터 보안 보관
+
 
 ## 소개
 
@@ -81,3 +87,10 @@ Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Set
 ### 암호화 설정을 추가로 사용자 정의할 수 있나요?
 전적으로! 고급 암호화 사용자 정의 옵션에 대한 설명서를 살펴보세요.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

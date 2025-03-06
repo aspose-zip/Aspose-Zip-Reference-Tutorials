@@ -3,10 +3,16 @@ title: Wachtwoordbeveiliging van mappen in .NET met Aspose.Zip Tutorial
 linktitle: Wachtwoordbeveiliging map
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Leer hoe u mappen in .NET met een wachtwoord kunt beveiligen met Aspose.Zip. Beveilig uw bestanden moeiteloos met deze stapsgewijze zelfstudie.
-type: docs
 weight: 10
 url: /nl/net/password-protection-and-encryption/password-protect-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Wachtwoordbeveiliging van mappen in .NET met Aspose.Zip Tutorial
+
 
 ## Invoering
 
@@ -90,3 +96,10 @@ Ja, Aspose.Zip voor .NET is ontworpen om grote mappen efficiënt te verwerken en
 ### Waar kan ik aanvullende ondersteuning vinden voor Aspose.Zip voor .NET?
  U kunt een bezoek brengen aan de[Aspose.Zip-forum](https://forum.aspose.com/c/zip/37) voor eventuele ondersteuning of vragen.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

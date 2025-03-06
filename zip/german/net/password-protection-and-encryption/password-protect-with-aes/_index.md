@@ -3,10 +3,16 @@ title: Sichern Sie Ihre Dateien – AES-Verschlüsselung mit Aspose.Zip
 linktitle: Passwortschutz mit AES
 second_title: Aspose.Zip .NET API für Dateikomprimierung und -archivierung
 description: Erfahren Sie, wie Sie Ihre Dateisicherheit mithilfe von Aspose.Zip für .NET mit AES-Verschlüsselung verbessern. Befolgen Sie unsere Schritt-für-Schritt-Anleitung für optimalen Schutz.
-type: docs
 weight: 11
 url: /de/net/password-protection-and-encryption/password-protect-with-aes/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Sichern Sie Ihre Dateien – AES-Verschlüsselung mit Aspose.Zip
+
 
 ## Einführung
 
@@ -108,3 +114,10 @@ Aspose.Zip unterstützt die Verschlüsselung verschiedener Dateitypen und gewäh
 
 ### Was passiert, wenn ich das Passwort für ein verschlüsseltes Archiv vergesse?
 Leider gibt es keine Möglichkeit, das Passwort eines verschlüsselten Archivs wiederherzustellen. Es ist wichtig, das Passwort an einem sicheren Ort aufzubewahren.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: فك ضغط ملف واحد باستخدام Aspose.Zip لـ .NET
 linktitle: فك الضغط عن ملف واحد
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: استكشف العالم السلس لفك ضغط الملفات باستخدام Aspose.Zip for .NET. تعامل بسهولة مع الملفات المضغوطة في مشاريع C# الخاصة بك.
-type: docs
 weight: 12
 url: /ar/net/file-decompression/decompress-single-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# فك ضغط ملف واحد باستخدام Aspose.Zip لـ .NET
+
 ## مقدمة
 
 في مجال تطوير .NET، يمثل Aspose.Zip حلاً قويًا للتعامل مع الملفات المضغوطة ببراعة. سيرشدك هذا البرنامج التعليمي خلال عملية فك ضغط ملف واحد باستخدام Aspose.Zip لـ .NET. استعد بينما نكشف عن قدرات هذه المكتبة القوية خطوة بخطوة.
@@ -103,3 +109,9 @@ A3: يوفر Aspose.Zip طرقًا للعمل مع الأرشيفات المحم
 ### س5: أين يمكنني طلب المساعدة إذا واجهت مشكلات؟
 
  ج5: قم بزيارة[منتدى Aspose.Zip](https://forum.aspose.com/c/zip/37) لدعم المجتمع.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

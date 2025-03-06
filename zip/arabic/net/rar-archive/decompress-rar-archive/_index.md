@@ -3,10 +3,16 @@ title: فك ضغط أرشيف RAR باستخدام Aspose.Zip لـ .NET
 linktitle: فك ضغط أرشيف RAR
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: إتقان فك ضغط أرشيفات RAR في .NET باستخدام Aspose.Zip. دليل خطوة بخطوة للتعامل الفعال مع الملفات. التحميل الان!
-type: docs
 weight: 10
 url: /ar/net/rar-archive/decompress-rar-archive/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# فك ضغط أرشيف RAR باستخدام Aspose.Zip لـ .NET
+
 
 ## مقدمة
 
@@ -83,3 +89,10 @@ archive.ExtractToDirectory(dataDir + "DecompressRar_out");
 
 ### هل التراخيص المؤقتة متاحة؟
  نعم يمكنك الحصول على ترخيص مؤقت[هنا](https://purchase.aspose.com/temporary-license/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

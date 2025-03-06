@@ -3,10 +3,16 @@ title: Mendekompresi Banyak File menggunakan Aspose.Zip untuk .NET
 linktitle: Mendekompresi Banyak File
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Pelajari cara mendekompresi beberapa file menggunakan Aspose.Zip untuk .NET. Ikuti panduan langkah demi langkah kami untuk pengelolaan file yang efisien.
-type: docs
 weight: 11
 url: /id/net/file-decompression/decompress-multiple-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Mendekompresi Banyak File menggunakan Aspose.Zip untuk .NET
+
 ## Perkenalan
 
 Selamat datang di tutorial komprehensif kami tentang mendekompresi banyak file menggunakan Aspose.Zip untuk .NET! Jika Anda ingin menangani file terkompresi yang berisi banyak entri secara efisien, Anda berada di tempat yang tepat. Dalam panduan ini, kami akan memandu Anda melalui proses langkah demi langkah, menggunakan Aspose.Zip untuk .NET.
@@ -127,3 +133,9 @@ Dalam tutorial ini, kami telah membahas langkah-langkah penting untuk mendekompr
 ### Q5: Apakah ada persyaratan sistem khusus untuk menggunakan Aspose.Zip untuk .NET?
 
  A5: Lihat[dokumentasi](https://reference.aspose.com/zip/net/) untuk persyaratan sistem terperinci.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Nén tệp bằng FileInfo trong Aspose.Zip cho .NET
 linktitle: Nén tệp bằng FileInfo
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Tìm hiểu cách nén tệp bằng fileinfo với Aspose.Zip cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để quản lý tệp hiệu quả.
-type: docs
 weight: 11
 url: /vi/net/file-compression/compress-files-fileinfo/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Nén tệp bằng FileInfo trong Aspose.Zip cho .NET
+
 ## Giới thiệu
 
 Chào mừng bạn đến với hướng dẫn toàn diện của chúng tôi về cách nén tệp bằng Aspose.Zip cho .NET! Nếu bạn đang tìm cách tối ưu hóa việc lưu trữ hoặc truyền tệp của mình, Aspose.Zip là giải pháp phù hợp cho bạn. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình nén tệp bằng lớp FileInfo, cung cấp hướng dẫn chi tiết từng bước. Hãy đi sâu vào!
@@ -102,3 +108,9 @@ Câu trả lời 1: Aspose.Zip hỗ trợ nhiều loại tệp, đảm bảo tí
 ### Câu hỏi 5: Làm cách nào tôi có thể nhận được giấy phép tạm thời cho Aspose.Zip?
 
  A5: Thăm quan[liên kết này](https://purchase.aspose.com/temporary-license/) để biết thông tin về việc xin giấy phép tạm thời.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

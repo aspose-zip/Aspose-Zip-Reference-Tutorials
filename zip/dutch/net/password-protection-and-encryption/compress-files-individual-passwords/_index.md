@@ -3,10 +3,16 @@ title: Veilige bestandscompressie in .NET met Aspose.Zip
 linktitle: Comprimeer bestanden met individuele wachtwoorden
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Leer hoe u de bestandsbeveiliging in .NET-toepassingen kunt verbeteren! Volg onze stapsgewijze handleiding voor het comprimeren van bestanden met individuele wachtwoorden met Aspose.Zip voor .NET.
-type: docs
 weight: 16
 url: /nl/net/password-protection-and-encryption/compress-files-individual-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Veilige bestandscompressie in .NET met Aspose.Zip
+
 
 ## Invoering
 
@@ -84,3 +90,10 @@ Ja, met Aspose.Zip voor .NET kunt u tijdens de compressie voor elk bestand versc
 
 ### Kan ik een tijdelijke licentie aanschaffen voor testdoeleinden?
  Ja, u kunt een tijdelijke licentie aanschaffen[hier](https://purchase.aspose.com/temporary-license/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

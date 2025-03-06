@@ -3,10 +3,16 @@ title: تأمين ضغط الملفات في .NET باستخدام Aspose.Zip
 linktitle: ضغط الملفات بكلمات مرور فردية
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: تعرف على كيفية تحسين أمان الملفات في تطبيقات .NET! اتبع دليلنا خطوة بخطوة حول ضغط الملفات بكلمات مرور فردية باستخدام Aspose.Zip لـ .NET.
-type: docs
 weight: 16
 url: /ar/net/password-protection-and-encryption/compress-files-individual-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# تأمين ضغط الملفات في .NET باستخدام Aspose.Zip
+
 
 ## مقدمة
 
@@ -84,3 +90,10 @@ using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPass
 
 ### هل يمكنني شراء ترخيص مؤقت لأغراض الاختبار؟
  نعم، يمكنك الحصول على ترخيص مؤقت[هنا](https://purchase.aspose.com/temporary-license/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

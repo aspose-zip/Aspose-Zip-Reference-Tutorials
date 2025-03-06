@@ -3,10 +3,16 @@ title: Dekomprimieren Sie Xar in einen Ordner in Aspose.Zip für .NET
 linktitle: Dekomprimieren Sie Xar in einen Ordner
 second_title: Aspose.Zip .NET API für Dateikomprimierung und -archivierung
 description: Entdecken Sie die Leistungsfähigkeit von Aspose.Zip für .NET! Mit diesem benutzerfreundlichen Tutorial können Sie mühelos Xar-Archive dekomprimieren. Verbessern Sie Ihre .NET-Entwicklungserfahrung.
-type: docs
 weight: 17
 url: /de/net/file-decompression/decompress-xar-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekomprimieren Sie Xar in einen Ordner in Aspose.Zip für .NET
+
 ## Einführung
 
 Wenn Sie in die Welt der .NET-Entwicklung eintauchen und nach einer zuverlässigen Lösung zum Dekomprimieren von Xar-Archiven suchen, ist Aspose.Zip für .NET genau das Richtige für Sie. In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch den Prozess der Dekomprimierung von Xar in einen Ordner mithilfe von Aspose.Zip, einer leistungsstarken Bibliothek, die die Archivbearbeitung in Ihren .NET-Anwendungen vereinfacht.
@@ -79,3 +85,9 @@ Mit Aspose.Zip für .NET wird das Dekomprimieren von Xar-Archiven in Ihren .NET-
 ### F5: Wo kann ich Aspose.Zip für .NET kaufen?
 
  A5: Sie können Aspose.Zip für .NET erwerben[Hier](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

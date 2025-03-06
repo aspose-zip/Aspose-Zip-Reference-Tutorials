@@ -3,10 +3,16 @@ title: Aspose.Zip dla .NET - Odszyfrowywanie plików zaszyfrowanych AES
 linktitle: Dekompresuj zapisany plik zaszyfrowany AES
 second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
 description: Dowiedz się, jak dekompresować zapisane pliki zaszyfrowane AES w Aspose.Zip dla .NET, korzystając z tego obszernego przewodnika krok po kroku. Zwiększ swoje umiejętności programistyczne .NET już dziś!
-type: docs
 weight: 19
 url: /pl/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip dla .NET - Odszyfrowywanie plików zaszyfrowanych AES
+
 
 ## Wstęp
 
@@ -89,3 +95,10 @@ Aspose.Zip obsługuje różne formaty, w tym ZIP, 7z i TAR. Pełną listę możn
 ### Czy mogę używać Aspose.Zip do celów komercyjnych?
  Tak, możesz kupić licencję[Tutaj](https://purchase.aspose.com/buy) do użytku komercyjnego.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

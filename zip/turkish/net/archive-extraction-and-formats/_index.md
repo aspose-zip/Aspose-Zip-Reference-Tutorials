@@ -3,10 +3,16 @@ title: Arşiv Çıkarma ve Formatlar
 linktitle: Arşiv Çıkarma ve Formatlar
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Aspose.Zip ile .NET'te dosya sıkıştırmanın gücünün kilidini açın. Verimli depolama için dosyaları TarBz2, TarGz ve TarZ gibi çeşitli formatlara sıkıştırmayı öğrenin.
-type: docs
 weight: 23
 url: /tr/net/archive-extraction-and-formats/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Arşiv Çıkarma ve Formatlar
+
 
 ## giriiş
 
@@ -53,3 +59,9 @@ Aspose.Zip kullanarak dosyaları .NET'te TarXz formatına sıkıştırmayı öğ
 Aspose.Zip for .NET kullanarak TarZ'a adım adım sıkıştırmayı keşfedin. .NET projeleriniz için verimli dosya işleme.
 ### [Aspose.Zip for .NET'te Arşiv Girişlerini Farklı Parolalarla Çıkarma](./extract-archive-different-passwords/)
 Aspose.Zip for .NET'te arşiv girişlerini farklı şifrelerle nasıl çıkaracağınızı öğrenin. Uygulamalarınızda güvenliği ve esnekliği artırın.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

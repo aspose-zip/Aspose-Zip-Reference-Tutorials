@@ -3,10 +3,16 @@ title: Trích xuất và định dạng lưu trữ
 linktitle: Trích xuất và định dạng lưu trữ
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Giải phóng sức mạnh nén tệp trong .NET bằng Aspose.Zip. Tìm hiểu cách nén tệp sang nhiều định dạng khác nhau như TarBz2, TarGz và TarZ để lưu trữ hiệu quả.
-type: docs
 weight: 23
 url: /vi/net/archive-extraction-and-formats/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Trích xuất và định dạng lưu trữ
+
 
 ## Giới thiệu
 
@@ -53,3 +59,9 @@ Tìm hiểu cách nén tệp sang định dạng TarXz trong .NET bằng Aspose.
 Khám phá tính năng nén từng bước sang TarZ bằng Aspose.Zip for .NET. Xử lý tệp hiệu quả cho các dự án .NET của bạn.
 ### [Trích xuất các mục lưu trữ với các mật khẩu khác nhau trong Aspose.Zip cho .NET](./extract-archive-different-passwords/)
 Tìm hiểu cách trích xuất các mục lưu trữ bằng các mật khẩu khác nhau trong Aspose.Zip dành cho .NET. Tăng cường bảo mật và tính linh hoạt trong các ứng dụng của bạn.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

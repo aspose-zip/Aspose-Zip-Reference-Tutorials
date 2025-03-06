@@ -3,10 +3,16 @@ title: Extrahieren von Archiveinträgen mit unterschiedlichen Passwörtern in As
 linktitle: Archiveinträge mit unterschiedlichen Passwörtern extrahieren
 second_title: Aspose.Zip .NET API für Dateikomprimierung und -archivierung
 description: Erfahren Sie, wie Sie Archiveinträge mit unterschiedlichen Passwörtern in Aspose.Zip für .NET extrahieren. Steigern Sie die Sicherheit und Flexibilität Ihrer Anwendungen.
-type: docs
 weight: 10
 url: /de/net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Extrahieren von Archiveinträgen mit unterschiedlichen Passwörtern in Aspose.Zip für .NET
+
 ## Einführung
 
 In der sich ständig weiterentwickelnden Landschaft der .NET-Entwicklung sticht Aspose.Zip als leistungsstarkes Tool für die Arbeit mit komprimierten Archiven hervor. Zu den zahlreichen Funktionen gehört das Extrahieren von Archiveinträgen mit unterschiedlichen Passwörtern, das Ihren Anwendungen zusätzliche Sicherheit und Vielseitigkeit verleiht. In dieser Schritt-für-Schritt-Anleitung erfahren Sie, wie Sie dies mit Aspose.Zip für .NET erreichen.
@@ -89,3 +95,9 @@ A1: Ja, Aspose.Zip unterstützt sowohl .NET Core als auch .NET Framework und bie
 ### F5: Wo kann ich Aspose.Zip kaufen?
 
  A5: Um Aspose.Zip zu kaufen, besuchen Sie die[Kaufseite](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Создайте запись SevenZip в Aspose.Zip для .NET
 linktitle: Создать запись SevenZip
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Освойте Aspose.Zip для .NET — легко создавайте записи SevenZip. Усовершенствуйте свои .NET-приложения с помощью эффективных манипуляций с zip-архивами.
-type: docs
 weight: 11
 url: /ru/net/sevenzip-compression/create-sevenzip-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Создайте запись SevenZip в Aspose.Zip для .NET
+
 
 ## Введение
 
@@ -83,3 +89,10 @@ Aspose.Zip в первую очередь ориентирован на форм
 
 ### Вопрос: Где я могу обратиться за помощью или связаться с сообществом Aspose.Zip?
  Посетить[Форум Aspose.Zip](https://forum.aspose.com/c/zip/37) искать поддержку, задавать вопросы и общаться с сообществом.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Nén nhiều tệp bằng mã hóa trong Aspose.Zip .NET
 linktitle: Nén nhiều tệp bằng mã hóa truyền thống
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Tìm hiểu cách nén nhiều tệp một cách an toàn bằng cách sử dụng mã hóa truyền thống trong Aspose.Zip dành cho .NET. Tăng cường bảo vệ dữ liệu trong các ứng dụng .NET của bạn.
-type: docs
 weight: 17
 url: /vi/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Nén nhiều tệp bằng mã hóa trong Aspose.Zip .NET
+
 
 ## Giới thiệu
 
@@ -94,3 +100,10 @@ Có, Aspose.Zip cho .NET tương thích với cả môi trường Windows và Li
 ### 5. Tôi có thể tìm tài liệu chi tiết về Aspose.Zip cho .NET ở đâu?
 
 Tham khảo tài liệu[đây](https://reference.aspose.com/zip/net/) để biết thông tin chuyên sâu.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

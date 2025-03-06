@@ -3,10 +3,16 @@ title: Descompacte a pasta compactada para o diretório em Aspose.Zip para .NET
 linktitle: Descompacte pasta compactada no diretório
 second_title: API Aspose.Zip .NET para compactação e arquivamento de arquivos
 description: Desbloqueie o potencial do Aspose.Zip para .NET! Aprenda como descompactar pastas sem esforço com este guia passo a passo. Mergulhe no mundo da compressão e extração contínuas.
-type: docs
 weight: 14
 url: /pt/net/file-decompression/decompress-compressed-folder-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Descompacte a pasta compactada para o diretório em Aspose.Zip para .NET
+
 ## Introdução
 
 Bem-vindo ao mundo do Aspose.Zip for .NET, uma biblioteca robusta que permite aos desenvolvedores lidar com pastas compactadas sem esforço. Neste tutorial, nos aprofundaremos no processo de descompactação de uma pasta compactada em um diretório usando Aspose.Zip para .NET. Aperte o cinto enquanto conduzimos você detalhadamente cada etapa, desmistificando as complexidades desta ferramenta poderosa.
@@ -79,3 +85,9 @@ A2: Com certeza, você pode utilizar Aspose.Zip for .NET em aplicativos comercia
 ### Q5: Preciso de uma licença temporária para testar o Aspose.Zip for .NET?
 
  A5: Sim, você pode obter uma licença temporária de[aqui](https://purchase.aspose.com/temporary-license/) para fins de teste.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

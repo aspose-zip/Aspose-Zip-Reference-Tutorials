@@ -3,10 +3,16 @@ title: Voci con password diverse in Aspose.Zip per .NET
 linktitle: Voci con password diverse
 second_title: Aspose.Zip .NET API per la compressione e l'archiviazione dei file
 description: Esplora la potenza di Aspose.Zip per .NET con la nostra guida passo passo sulla gestione degli archivi ZIP con password diverse. Migliora la sicurezza e la flessibilità delle tue applicazioni.
-type: docs
 weight: 13
 url: /it/net/other-compression-techniques/entries-with-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Voci con password diverse in Aspose.Zip per .NET
+
 ## introduzione
 
 Benvenuti nel mondo di Aspose.Zip per .NET, una potente libreria che consente agli sviluppatori di gestire e manipolare gli archivi ZIP senza problemi. In questo tutorial approfondiremo una funzionalità specifica: lavorare con voci con password diverse. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, questa guida passo passo ti guiderà attraverso il processo, sbloccando il potenziale di Aspose.Zip per .NET.
@@ -97,3 +103,9 @@ A2: Assolutamente! Aspose.Zip per .NET offre licenze commerciali e puoi trovare 
 ### Q5: posso utilizzare Aspose.Zip per .NET senza una licenza permanente?
 
  R5: Sì, puoi ottenere una licenza temporanea per le tue esigenze a breve termine. Trova maggiori dettagli[Qui](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Descriptografando um arquivo RAR com Aspose.Zip para .NET
 linktitle: Descriptografando um arquivo RAR
 second_title: API Aspose.Zip .NET para compactação e arquivamento de arquivos
 description: Desbloqueie arquivos RAR criptografados sem esforço usando Aspose.Zip for .NET. Siga nosso guia passo a passo para integração perfeita e descriptografia eficiente.
-type: docs
 weight: 12
 url: /pt/net/rar-archive/decrypt-rar-archive/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Descriptografando um arquivo RAR com Aspose.Zip para .NET
+
 
 ## Introdução
 
@@ -89,3 +95,10 @@ Aspose.Zip for .NET suporta várias versões de arquivos RAR, garantindo compati
 
 ### Como acesso a documentação do Aspose.Zip for .NET?
  O[documentação](https://reference.aspose.com/zip/net/) fornece informações abrangentes sobre o uso do Aspose.Zip para .NET.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

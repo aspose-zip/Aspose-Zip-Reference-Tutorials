@@ -3,10 +3,16 @@ title: Bezpečná komprese souborů v .NET pomocí Aspose.Zip
 linktitle: Komprimujte soubory s individuálními hesly
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Naučte se, jak zlepšit zabezpečení souborů v aplikacích .NET! Postupujte podle našeho podrobného průvodce komprimací souborů s individuálními hesly pomocí Aspose.Zip pro .NET.
-type: docs
 weight: 16
 url: /cs/net/password-protection-and-encryption/compress-files-individual-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Bezpečná komprese souborů v .NET pomocí Aspose.Zip
+
 
 ## Úvod
 
@@ -84,3 +90,10 @@ Ano, Aspose.Zip for .NET umožňuje používat různé metody šifrování pro k
 
 ### Mohu si zakoupit dočasnou licenci pro testovací účely?
  Ano, můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET'te Geleneksel Parola Korumalı Dosyanın Sıkıştır
 linktitle: Geleneksel Olarak Parola Korumalı Dosyanın Sıkıştırmasını Aç
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Aspose.Zip for .NET kullanarak geleneksel olarak parola korumalı dosyaların sıkıştırmasını nasıl açacağınızı öğrenin. Sorunsuz entegrasyon için adım adım kılavuz.
-type: docs
 weight: 15
 url: /tr/net/file-decompression/decompress-traditionally-password-protected-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET'te Geleneksel Parola Korumalı Dosyanın Sıkıştırmasını Açın
+
 .NET geliştirme alanında Aspose.Zip, sıkıştırılmış dosyaların işlenmesinde güçlü bir çözüm olarak öne çıkıyor. Sayısız özelliği arasında öne çıkan bir özellik, geleneksel olarak parola korumalı dosyaların sıkıştırmasını açma yeteneğidir. Bu eğitimde, Aspose.Zip for .NET kullanarak geleneksel parolayla şifrelenmiş bir dosyanın sıkıştırmasını açma sürecini ayrıntılı olarak ele alacağız. Bu yolculuğa çıkmadan önce önkoşulların yerine getirildiğinden emin olalım.
 
 ## Önkoşullar
@@ -96,3 +102,9 @@ Cevap3: Evet, Aspose.Zip çeşitli şifreleme yöntemlerini destekleyerek güven
 ### S5: Aspose.Zip için nasıl geçici lisans alabilirim?
 
  Cevap 5: Şuradan geçici bir lisans alabilirsiniz:[Aspose.Satın Alma](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

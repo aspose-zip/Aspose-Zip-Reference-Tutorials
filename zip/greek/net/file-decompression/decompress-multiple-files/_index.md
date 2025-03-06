@@ -3,10 +3,16 @@ title: Αποσυμπίεση πολλών αρχείων χρησιμοποιώ
 linktitle: Αποσυμπίεση πολλών αρχείων
 second_title: Aspose.Zip .NET API για συμπίεση και αρχειοθέτηση αρχείων
 description: Μάθετε πώς να αποσυμπιέζετε πολλά αρχεία χρησιμοποιώντας το Aspose.Zip για .NET. Ακολουθήστε τον βήμα προς βήμα οδηγό μας για αποτελεσματική διαχείριση αρχείων.
-type: docs
 weight: 11
 url: /el/net/file-decompression/decompress-multiple-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Αποσυμπίεση πολλών αρχείων χρησιμοποιώντας το Aspose.Zip για .NET
+
 ## Εισαγωγή
 
 Καλώς ήρθατε στο περιεκτικό μας σεμινάριο για την αποσυμπίεση πολλών αρχείων χρησιμοποιώντας το Aspose.Zip για .NET! Αν θέλετε να χειριστείτε αποτελεσματικά συμπιεσμένα αρχεία που περιέχουν πολλές καταχωρήσεις, βρίσκεστε στο σωστό μέρος. Σε αυτόν τον οδηγό, θα σας καθοδηγήσουμε στη διαδικασία βήμα προς βήμα, χρησιμοποιώντας το Aspose.Zip για .NET.
@@ -127,3 +133,9 @@ archive.Entries[1].Extract(dataDir + "asyoulik_extracted_out.txt");
 ### Ε5: Υπάρχουν συγκεκριμένες απαιτήσεις συστήματος για τη χρήση του Aspose.Zip για .NET;
 
  A5: Ανατρέξτε στο[τεκμηρίωση](https://reference.aspose.com/zip/net/) για λεπτομερείς απαιτήσεις συστήματος.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

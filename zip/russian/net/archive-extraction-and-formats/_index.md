@@ -3,10 +3,16 @@ title: Извлечение архива и форматы
 linktitle: Извлечение архива и форматы
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Раскройте возможности сжатия файлов в .NET с помощью Aspose.Zip. Научитесь сжимать файлы в различные форматы, такие как TarBz2, TarGz и TarZ, для эффективного хранения.
-type: docs
 weight: 23
 url: /ru/net/archive-extraction-and-formats/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Извлечение архива и форматы
+
 
 ## Введение
 
@@ -53,3 +59,9 @@ url: /ru/net/archive-extraction-and-formats/
 Изучите пошаговое сжатие в TarZ с помощью Aspose.Zip для .NET. Эффективная обработка файлов для ваших проектов .NET.
 ### [Извлечение записей архива с разными паролями в Aspose.Zip для .NET](./extract-archive-different-passwords/)
 Узнайте, как извлечь записи из архива с разными паролями в Aspose.Zip для .NET. Повысьте безопасность и гибкость ваших приложений.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

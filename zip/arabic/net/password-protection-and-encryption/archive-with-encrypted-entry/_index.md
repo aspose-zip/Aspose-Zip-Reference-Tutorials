@@ -3,10 +3,16 @@ title: إتقان الأرشفة الآمنة في .NET باستخدام Aspose.
 linktitle: أرشفة بإدخال مشفر
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: اكتشف عالم الأرشفة الآمنة في .NET باستخدام Aspose.Zip. قم بإنشاء ملفات Seven Zip بتشفير AES دون عناء. عزز مهاراتك التنموية الآن!
-type: docs
 weight: 15
 url: /ar/net/password-protection-and-encryption/archive-with-encrypted-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# إتقان الأرشفة الآمنة في .NET باستخدام Aspose.Zip
+
 
 ## مقدمة
 
@@ -81,3 +87,10 @@ Explanation: في هذه الخطوة، نقوم بإنشاء ملف Seven Zip �
 ### هل يمكنني تخصيص إعدادات التشفير بشكل أكبر؟
 قطعاً! استكشف الوثائق الخاصة بخيارات تخصيص التشفير المتقدمة.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

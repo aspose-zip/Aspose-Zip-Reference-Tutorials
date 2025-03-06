@@ -3,10 +3,16 @@ title: Parola Koruması ve Şifreleme
 linktitle: Parola Koruması ve Şifreleme
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Aspose.Zip for .NET ile dosyalarınızı güvence altına alın! AES'ten geleneksel yöntemlere kadar parola koruması ve şifrelemeyle ilgili adım adım eğitimleri öğrenin.
-type: docs
 weight: 26
 url: /tr/net/password-protection-and-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Parola Koruması ve Şifreleme
+
 
 ## giriiş
 
@@ -74,3 +80,9 @@ Aspose.Zip for .NET'te geleneksel şifrelemeyi kullanarak birden fazla dosyayı 
 Aspose.Zip for .NET kullanarak C#'ta AES şifreli dosyaların sıkıştırmasını açmayı öğrenin. Verimli dosya işleme için adım adım kılavuzumuzu izleyin.
 ### [Aspose.Zip for .NET'te AES Şifreli Saklanan Dosyanın sıkıştırmasını açın](./decompress-aes-encrypted-stored-file/)
 Bu kapsamlı adım adım kılavuzla Aspose.Zip for .NET'te AES şifreli depolanan dosyaların sıkıştırmasını nasıl açacağınızı öğrenin. .NET geliştirme becerilerinizi bugün geliştirin!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

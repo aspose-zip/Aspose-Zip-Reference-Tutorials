@@ -3,10 +3,16 @@ title: Αποσυμπιέστε το αρχείο που προστατεύετ�
 linktitle: Αποσυμπίεση αρχείου που προστατεύεται με παραδοσιακό κωδικό πρόσβασης
 second_title: Aspose.Zip .NET API για συμπίεση και αρχειοθέτηση αρχείων
 description: Μάθετε πώς να αποσυμπιέζετε παραδοσιακά αρχεία που προστατεύονται με κωδικό πρόσβασης χρησιμοποιώντας το Aspose.Zip για .NET. Ένας βήμα προς βήμα οδηγός για απρόσκοπτη ενσωμάτωση.
-type: docs
 weight: 15
 url: /el/net/file-decompression/decompress-traditionally-password-protected-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Αποσυμπιέστε το αρχείο που προστατεύεται με παραδοσιακό κωδικό πρόσβασης στο Aspose.Zip για .NET
+
 Στον τομέα της ανάπτυξης .NET, το Aspose.Zip ξεχωρίζει ως μια ισχυρή λύση για το χειρισμό συμπιεσμένων αρχείων. Μεταξύ των μυριάδων χαρακτηριστικών του, μια εξέχουσα δυνατότητα είναι η ικανότητα αποσυμπίεσης αρχείων που προστατεύονται παραδοσιακά με κωδικό πρόσβασης. Σε αυτό το σεμινάριο, θα εμβαθύνουμε στη διαδικασία αποσυμπίεσης ενός αρχείου κρυπτογραφημένου με παραδοσιακό κωδικό πρόσβασης χρησιμοποιώντας το Aspose.Zip για .NET. Πριν ξεκινήσουμε αυτό το ταξίδι, ας βεβαιωθούμε ότι έχουμε τις προϋποθέσεις.
 
 ## Προαπαιτούμενα
@@ -96,3 +102,9 @@ A3: Ναι, το Aspose.Zip υποστηρίζει διάφορες μεθόδο
 ### Ε5: Πώς μπορώ να αποκτήσω μια προσωρινή άδεια για το Aspose.Zip;
 
  A5: Μπορείτε να αποκτήσετε μια προσωρινή άδεια από[Aspose.Purchase](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

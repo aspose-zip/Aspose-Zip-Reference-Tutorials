@@ -3,10 +3,16 @@ title: 使用 Aspose.Zip for .NET 解密 RAR 檔案
 linktitle: 解密 RAR 存檔
 second_title: 用於檔案壓縮和歸檔的 Aspose.Zip .NET API
 description: 使用 Aspose.Zip for .NET 輕鬆解鎖加密的 RAR 檔案。按照我們的逐步指南進行無縫整合和高效解密。
-type: docs
 weight: 12
 url: /zh-hant/net/rar-archive/decrypt-rar-archive/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Zip for .NET 解密 RAR 檔案
+
 
 ## 介紹
 
@@ -89,3 +95,10 @@ Aspose.Zip for .NET 支援各種 RAR 檔案版本，確保與各種檔案的兼�
 
 ### 如何存取 Aspose.Zip for .NET 的文檔？
 這[文件](https://reference.aspose.com/zip/net/)提供有關使用 Aspose.Zip for .NET 的全面資訊。
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

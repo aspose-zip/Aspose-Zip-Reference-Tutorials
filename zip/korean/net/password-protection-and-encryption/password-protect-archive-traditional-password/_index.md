@@ -3,10 +3,16 @@ title: .NET용 Aspose.Zip - 비밀번호 보호 아카이브 튜토리얼
 linktitle: 비밀번호는 기존 비밀번호로 아카이브를 보호합니다.
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: Aspose.Zip을 사용하여 기존 비밀번호 보호로 .NET 아카이브를 보호하는 방법을 알아보세요. 향상된 데이터 기밀성을 위한 단계별 가이드를 따르세요.
-type: docs
 weight: 12
 url: /ko/net/password-protection-and-encryption/password-protect-archive-traditional-password/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.Zip - 비밀번호 보호 아카이브 튜토리얼
+
 
 .NET 개발 영역에서 아카이브 내의 민감한 데이터를 보호하는 것은 애플리케이션 설계의 중요한 측면입니다. .NET용 Aspose.Zip은 기존 비밀번호 암호화를 사용하여 아카이브를 비밀번호로 보호하는 강력한 솔루션을 제공합니다. 이 단계별 가이드는 보관된 데이터의 기밀과 보안을 유지하는 과정을 안내합니다.
 
@@ -81,3 +87,10 @@ using (FileStream zipFile = File.Open(dataDir + "CompressWithTraditionalEncrypti
 ### .NET용 Aspose.Zip에 대한 지원을 받으려면 어떻게 해야 합니까?
  방문하다[Aspose.Zip 포럼](https://forum.aspose.com/c/zip/37)지역사회 지원을 원하거나[선적 서류 비치](https://reference.aspose.com/zip/net/) 자세한 정보를 보려면.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

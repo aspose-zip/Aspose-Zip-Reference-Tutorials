@@ -3,10 +3,16 @@ title: Entri dengan Kata Sandi Berbeda di Aspose.Zip untuk .NET
 linktitle: Entri dengan Kata Sandi Berbeda
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Jelajahi kekuatan Aspose.Zip untuk .NET dengan panduan langkah demi langkah kami dalam mengelola arsip ZIP dengan kata sandi berbeda. Tingkatkan keamanan dan fleksibilitas dalam aplikasi Anda.
-type: docs
 weight: 13
 url: /id/net/other-compression-techniques/entries-with-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Entri dengan Kata Sandi Berbeda di Aspose.Zip untuk .NET
+
 ## Perkenalan
 
 Selamat datang di dunia Aspose.Zip untuk .NET, perpustakaan canggih yang memberdayakan pengembang untuk mengelola dan memanipulasi arsip ZIP dengan lancar. Dalam tutorial ini, kita akan mempelajari fitur spesifik: bekerja dengan entri dengan kata sandi berbeda. Baik Anda seorang pengembang berpengalaman atau baru memulai, panduan langkah demi langkah ini akan memandu Anda melalui prosesnya, membuka potensi Aspose.Zip untuk .NET.
@@ -97,3 +103,9 @@ A2: Tentu saja! Aspose.Zip untuk .NET menawarkan lisensi komersial, dan Anda dap
 ### Q5: Bisakah saya menggunakan Aspose.Zip untuk .NET tanpa lisensi permanen?
 
  A5: Ya, Anda bisa mendapatkan lisensi sementara untuk kebutuhan jangka pendek Anda. Temukan detail lebih lanjut[Di Sini](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

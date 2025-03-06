@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET'te SevenZip Girişi Oluşturun
 linktitle: SevenZip Girişi Oluştur
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Master Aspose.Zip for .NET - SevenZip girişlerini zahmetsizce oluşturun. Verimli zip arşivi yönetimiyle .NET uygulamalarınızı geliştirin.
-type: docs
 weight: 11
 url: /tr/net/sevenzip-compression/create-sevenzip-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET'te SevenZip Girişi Oluşturun
+
 
 ## giriiş
 
@@ -83,3 +89,10 @@ Kesinlikle! Aspose.Zip, büyük ölçekli uygulamaları yönetmek için tasarlan
 
 ### S: Aspose.Zip için nereden yardım alabilirim veya toplulukla bağlantı kurabilirim?
  Ziyaret edin[Aspose.Zip forumu](https://forum.aspose.com/c/zip/37) destek aramak, sorular sormak ve toplulukla bağlantı kurmak için.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

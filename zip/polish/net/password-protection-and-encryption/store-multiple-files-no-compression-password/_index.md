@@ -3,10 +3,16 @@ title: Aspose.Zip dla .NET - samouczek dotyczący bezpiecznego przechowywania pl
 linktitle: Przechowuj wiele plików bez kompresji za pomocą hasła
 second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
 description: Dowiedz się, jak używać Aspose.Zip dla .NET do bezpiecznego przechowywania wielu plików bez kompresji. Proste kroki do ochrony hasłem. Odblokuj moc zarządzania plikami!
-type: docs
 weight: 13
 url: /pl/net/password-protection-and-encryption/store-multiple-files-no-compression-password/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip dla .NET - samouczek dotyczący bezpiecznego przechowywania plików
+
 
 W świecie programowania .NET zarządzanie plikami i manipulowanie nimi jest powszechnym zadaniem. Aspose.Zip dla .NET to potężna biblioteka, która zapewnia programistom możliwość płynnego kompresowania, dekompresowania i manipulowania archiwami zip. W tym samouczku omówimy konkretny scenariusz: przechowywanie wielu plików bez kompresji i zabezpieczanie ich hasłem. Pod koniec tego przewodnika będziesz wyposażony w wiedzę niezbędną do wdrożenia tej funkcjonalności przy użyciu Aspose.Zip dla .NET.
 
@@ -93,3 +99,10 @@ W tym samouczku omówiliśmy, jak używać Aspose.Zip dla .NET do przechowywania
 
 ### Gdzie mogę kupić Aspose.Zip dla .NET?
  Możesz kupić Aspose.Zip dla .NET[Tutaj](https://purchase.aspose.com/buy).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

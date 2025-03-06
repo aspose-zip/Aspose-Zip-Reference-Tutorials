@@ -3,10 +3,16 @@ title: Effortless Multiple File Compression with Aspose.Zip for .NET
 linktitle: How to Compress Multiple Files 
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: Learn how to compress multiple files effortlessly using Aspose.Zip for .NET. Optimize storage and enhance file management with this comprehensive guide.
-type: docs
 weight: 13
 url: /net/file-compression/compress-multiple-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Effortless Multiple File Compression with Aspose.Zip for .NET
+
 In today's fast-paced digital world, optimizing file storage is crucial for efficient data management. Aspose.Zip for .NET provides a powerful solution for compressing multiple files seamlessly. In this step-by-step guide, we'll walk you through the process of compressing multiple files using Aspose.Zip for .NET, ensuring that your data remains organized and easily manageable.
 
 ## Prerequisites
@@ -104,3 +110,10 @@ A4: Yes, you can explore the product with a [free trial](https://releases.aspose
 ### Q5: Where can I find the documentation for Aspose.Zip for .NET?
 
 A5: Refer to the [Aspose.Zip documentation](https://reference.aspose.com/zip/net/) for detailed information and examples.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.Zip ile .NET'te Güvenli Arşivlemede Ustalaşın
 linktitle: Şifreli Girişle Arşivle
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Aspose.Zip ile .NET'te güvenli arşivleme dünyasını keşfedin. Zahmetsizce AES şifrelemeli Yedi Zip dosyası oluşturun. Geliştirme becerilerinizi şimdi artırın!
-type: docs
 weight: 15
 url: /tr/net/password-protection-and-encryption/archive-with-encrypted-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip ile .NET'te Güvenli Arşivlemede Ustalaşın
+
 
 ## giriiş
 
@@ -81,3 +87,10 @@ Aspose.Zip for .NET çeşitli sıkıştırma algoritmalarını destekler. Ayrın
 ### Şifreleme ayarlarını daha da özelleştirebilir miyim?
 Kesinlikle! Gelişmiş şifreleme özelleştirme seçenekleri için belgeleri inceleyin.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

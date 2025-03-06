@@ -3,10 +3,16 @@ title: Giải nén thư mục bằng Aspose.Zip cho .NET
 linktitle: Giải nén một thư mục
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Nắm vững nghệ thuật giải nén thư mục với Aspose.Zip cho .NET. Dễ dàng xử lý các tác vụ nén trong dự án của bạn.
-type: docs
 weight: 11
 url: /vi/net/directory-and-folder-compression/decompress-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Giải nén thư mục bằng Aspose.Zip cho .NET
+
 Bạn đang tìm cách giải nén liền mạch các thư mục bằng Aspose.Zip cho .NET? Đừng tìm đâu xa! Hướng dẫn từng bước này sẽ hướng dẫn bạn thực hiện quy trình, đảm bảo rằng bạn nắm vững nghệ thuật giải nén thư mục một cách dễ dàng.
 
 ## Điều kiện tiên quyết
@@ -88,3 +94,9 @@ A2: Chắc chắn rồi! Aspose.Zip cho .NET được thiết kế để xử l�
 ### Câu hỏi 5: Làm cách nào tôi có thể nhận được hỗ trợ cho Aspose.Zip cho .NET?
 
  Câu trả lời 5: Nếu có bất kỳ thắc mắc hoặc trợ giúp nào, hãy truy cập[Diễn đàn Aspose.Zip](https://forum.aspose.com/c/zip/37) nơi bạn có thể tham gia với cộng đồng và tìm kiếm lời khuyên của chuyên gia.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

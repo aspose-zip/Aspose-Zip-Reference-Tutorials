@@ -3,10 +3,16 @@ title: 檔案解壓縮
 linktitle: 檔案解壓縮
 second_title: 用於檔案壓縮和歸檔的 Aspose.Zip .NET API
 description: 使用 Aspose.Zip for .NET 教學課程輕鬆掌握 .NET 中的檔案解壓縮。透過逐步指南學習如何有效地處理壓縮檔案。
-type: docs
 weight: 21
 url: /zh-hant/net/file-decompression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 檔案解壓縮
+
 
 
 ## 介紹
@@ -45,3 +51,9 @@ Aspose.Zip for .NET 被證明是檔案解壓縮領域的遊戲規則改變者。
 探索使用 Aspose.Zip for .NET 解壓縮 Wim 檔案的逐步指南。下載該庫，按照教程操作，並有效管理 .NET 應用程式中的存檔檔案。
 ### [將 Xar 解壓縮到 Aspose.Zip for .NET 中的資料夾](./decompress-xar-folder/)
 探索 Aspose.Zip for .NET 的強大功能！透過這個用戶友好的教程輕鬆解壓縮 Xar 檔案。增強您的 .NET 開發體驗。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

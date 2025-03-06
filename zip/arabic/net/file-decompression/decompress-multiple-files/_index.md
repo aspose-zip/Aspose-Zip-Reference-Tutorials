@@ -3,10 +3,16 @@ title: فك ضغط ملفات متعددة باستخدام Aspose.Zip لـ .NET
 linktitle: فك ضغط ملفات متعددة
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: تعرف على كيفية فك ضغط ملفات متعددة باستخدام Aspose.Zip لـ .NET. اتبع دليلنا خطوة بخطوة لإدارة الملفات بكفاءة.
-type: docs
 weight: 11
 url: /ar/net/file-decompression/decompress-multiple-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# فك ضغط ملفات متعددة باستخدام Aspose.Zip لـ .NET
+
 ## مقدمة
 
 مرحبًا بك في برنامجنا التعليمي الشامل حول فك ضغط ملفات متعددة باستخدام Aspose.Zip لـ .NET! إذا كنت تتطلع إلى التعامل بكفاءة مع الملفات المضغوطة التي تحتوي على إدخالات متعددة، فأنت في المكان الصحيح. في هذا الدليل، سنرشدك خلال العملية خطوة بخطوة، باستخدام Aspose.Zip لـ .NET.
@@ -127,3 +133,9 @@ archive.Entries[1].Extract(dataDir + "asyoulik_extracted_out.txt");
 ### س5: هل هناك أي متطلبات نظام محددة لاستخدام Aspose.Zip لـ .NET؟
 
  ج5: راجع[توثيق](https://reference.aspose.com/zip/net/) لمتطلبات النظام التفصيلية.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

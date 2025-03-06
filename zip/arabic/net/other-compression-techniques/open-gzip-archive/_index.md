@@ -3,10 +3,16 @@ title: فتح أرشيف GZip باستخدام Aspose.Zip لـ .NET
 linktitle: فتح أرشيف GZip
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: تعرف على كيفية فتح أرشيفات GZip في .NET بسهولة باستخدام Aspose.Zip. اتبع دليلنا خطوة بخطوة للتعامل مع الملفات بكفاءة وسلاسة.
-type: docs
 weight: 11
 url: /ar/net/other-compression-techniques/open-gzip-archive/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# فتح أرشيف GZip باستخدام Aspose.Zip لـ .NET
+
 ## مقدمة
 
 إذا كنت تعمل مع الأرشيفات المضغوطة في .NET، فإن Aspose.Zip هو الحل الأمثل للتعامل الفعال والسلس. في هذا البرنامج التعليمي، سوف نتعمق في عملية فتح أرشيف GZip باستخدام Aspose.Zip لـ .NET. سواء كنت مطورًا متمرسًا أو بدأت للتو، سيرشدك هذا الدليل المفصّل خطوة بخطوة خلال العملية بوضوح ودقة.
@@ -87,3 +93,9 @@ Console.WriteLine("Successfully Opened GZip Archive");
 ### س5: كيف يمكنني شراء Aspose.Zip لـ .NET؟
 
  ج5: زيارة[Aspose.Zip الشراء](https://purchase.aspose.com/buy) للحصول على معلومات حول خيارات الترخيص والشراء.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

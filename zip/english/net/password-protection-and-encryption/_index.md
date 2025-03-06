@@ -3,10 +3,16 @@ title: Password Protection and Encryption
 linktitle: Password Protection and Encryption
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: Secure your files with Aspose.Zip for .NET! Learn step-by-step tutorials on password protection and encryption, from AES to traditional methods. 
-type: docs
 weight: 26
 url: /net/password-protection-and-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Password Protection and Encryption
+
 
 ## Introduction
 
@@ -74,3 +80,9 @@ Learn how to compress multiple files securely using traditional encryption in As
 Learn to decompress AES encrypted files in C# using Aspose.Zip for .NET. Follow our step-by-step guide for efficient file handling.
 ### [Decompress AES Encrypted Stored File in Aspose.Zip for .NET](./decompress-aes-encrypted-stored-file/)
 Learn how to decompress AES encrypted stored files in Aspose.Zip for .NET with this comprehensive step-by-step guide. Enhance your .NET development skills today!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

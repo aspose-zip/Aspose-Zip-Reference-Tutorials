@@ -3,10 +3,16 @@ title: Komprese souborů do TarBz2 pomocí Aspose.Zip pro .NET
 linktitle: Komprese do TarBz2
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Naučte se komprimovat soubory do formátu TarBz2 v .NET pomocí Aspose.Zip. Postupujte podle našeho podrobného průvodce pro efektivní kompresi souborů.
-type: docs
 weight: 11
 url: /cs/net/archive-extraction-and-formats/compress-to-tar-bz2/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Komprese souborů do TarBz2 pomocí Aspose.Zip pro .NET
+
 ## Úvod
 
 Vítejte v našem komplexním průvodci komprimací souborů do formátu TarBz2 pomocí Aspose.Zip pro .NET. Aspose.Zip je výkonná a všestranná knihovna, která poskytuje vývojářům nástroje, které potřebují k efektivní práci s komprimovanými formáty souborů v jejich aplikacích .NET.
@@ -90,3 +96,9 @@ Odpověď 2: Ano, můžete komprimovat více souborů přidáním položek do ar
 ### Q5: Je k dispozici bezplatná zkušební verze?
 
  A5: Ano, máte přístup k bezplatné zkušební verzi[tady](https://releases.aspose.com/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

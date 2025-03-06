@@ -1,12 +1,17 @@
 ---
 title: Tutorial Komprehensif dan Contoh Aspose.Zip untuk .NET
 linktitle: Aspose.Zip untuk Tutorial .NET
-type: docs
 weight: 10
 url: /id/net/
 description:
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tutorial Komprehensif dan Contoh Aspose.Zip untuk .NET
+
 
 ### [Kompresi Berkas](./file-compression/)
 Kompres file dalam .NET dengan mudah dengan Aspose.Zip! Pelajari manajemen file langkah demi langkah menggunakan metode Bzip2, LZMA, PPMd, Deflate, dan Store untuk pengaturan kompresi optimal.
@@ -24,3 +29,9 @@ Buka potensi Aspose.Zip untuk .NET dengan Tutorial Kompresi SevenZip kami. Buat 
 Amankan file Anda dengan Aspose.Zip untuk .NET! Pelajari tutorial langkah demi langkah tentang perlindungan kata sandi dan enkripsi, dari AES hingga metode tradisional. 
 ### [Teknik Kompresi Lainnya](./other-compression-techniques/)
 Kuasai teknik kompresi tingkat lanjut dengan mudah menggunakan Aspose.Zip untuk .NET. Tingkatkan keterampilan pengembangan Anda, mulai dari mengekstraksi ke aliran memori hingga mengoptimalkan penyimpanan dengan kompresi Lzma.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

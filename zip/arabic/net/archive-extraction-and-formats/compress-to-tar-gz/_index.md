@@ -3,10 +3,16 @@ title: الضغط على TarGz باستخدام Aspose.Zip لـ .NET
 linktitle: الضغط على TarGz
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: اكتشف ضغط الملفات الفعال في .NET باستخدام Aspose.Zip. اضغط على TarGz دون عناء.
-type: docs
 weight: 12
 url: /ar/net/archive-extraction-and-formats/compress-to-tar-gz/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# الضغط على TarGz باستخدام Aspose.Zip لـ .NET
+
 ## مقدمة
 
 في المشهد المتطور باستمرار لتطوير .NET، يعد ضغط الملفات الفعال جانبًا حاسمًا لتحسين تخزين البيانات ونقلها. يظهر Aspose.Zip for .NET كأداة قوية للمطورين الذين يبحثون عن إمكانات ضغط قوية. سيرشدك هذا البرنامج التعليمي خلال عملية ضغط الملفات إلى تنسيق TarGz باستخدام Aspose.Zip لـ .NET، مما يوفر لك إرشادات خطوة بخطوة.
@@ -91,3 +97,9 @@ A3: تم تحسين Aspose.Zip for .NET للتعامل مع الملفات ال�
 ### س5: هل يمكنني تجربة Aspose.Zip لـ .NET مجانًا قبل الشراء؟
 
  ج5: بالتأكيد! الوصول إلى النسخة التجريبية المجانية[هنا](https://releases.aspose.com/zip/net) لاستكشاف إمكانيات Aspose.Zip لـ .NET.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Tạo các mục nhập SevenZip bằng Aspose.Zip cho .NET
 linktitle: Tạo các mục SevenZip
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Khám phá sức mạnh của Aspose.Zip dành cho .NET! Tìm hiểu cách tạo các mục SevenZip theo từng bước. Nén tập tin một cách dễ dàng. Tải xuống ngay để có trải nghiệm phát triển liền mạch.
-type: docs
 weight: 10
 url: /vi/net/sevenzip-compression/create-sevenzip-entries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tạo các mục nhập SevenZip bằng Aspose.Zip cho .NET
+
 
 ## Giới thiệu
 
@@ -83,3 +89,10 @@ Có, Aspose.Zip cho .NET là đa nền tảng và có thể được sử dụng
 
 ### Có bản dùng thử miễn phí trước khi mua hàng không?
  Có, bạn có thể truy cập bản dùng thử miễn phí[đây](https://releases.aspose.com/) để khám phá các tính năng trước khi đưa ra cam kết.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: فك ضغط إدخال RAR باستخدام Aspose.Zip لـ .NET
 linktitle: فك ضغط إدخال RAR
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: اكتشف بساطة إلغاء ضغط إدخالات RAR في .NET باستخدام Aspose.Zip. تعامل بسهولة مع الملفات المضغوطة باستخدام هذه المكتبة القوية.
-type: docs
 weight: 11
 url: /ar/net/rar-archive/decompress-rar-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# فك ضغط إدخال RAR باستخدام Aspose.Zip لـ .NET
+
 
 ## مقدمة
 
@@ -74,3 +80,9 @@ Explanation: يقوم مقتطف الكود بفتح ملف RAR، ويستخرج
 
 ### س: أين يمكنني طلب المساعدة إذا واجهت مشكلات مع Aspose.Zip for .NET؟
  قم بزيارة[منتدى Aspose.Zip](https://forum.aspose.com/c/zip/37) لدعم المجتمع والمناقشات.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

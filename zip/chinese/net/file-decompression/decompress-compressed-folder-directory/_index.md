@@ -3,10 +3,16 @@ title: 将压缩文件夹解压到 Aspose.Zip for .NET 中的目录
 linktitle: 将压缩文件夹解压到目录
 second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
 description: 释放 Aspose.Zip for .NET 的潜力！通过此分步指南了解如何轻松解压缩文件夹。深入无缝压缩和提取的世界。
-type: docs
 weight: 14
 url: /zh/net/file-decompression/decompress-compressed-folder-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 将压缩文件夹解压到 Aspose.Zip for .NET 中的目录
+
 ## 介绍
 
 欢迎来到 Aspose.Zip for .NET 的世界，这是一个强大的库，使开发人员能够轻松处理压缩文件夹。在本教程中，我们将深入研究使用 Aspose.Zip for .NET 将压缩文件夹解压到目录的过程。请系好安全带，我们将带您详细了解每一步，揭开这个强大工具的复杂性。
@@ -79,3 +85,9 @@ A4：向 Aspose.Zip 社区寻求帮助，网址为[支持论坛](https://forum.a
 ### 问题 5：测试 Aspose.Zip for .NET 是否需要临时许可证？
 
  A5：是的，您可以从以下机构获得临时许可证：[这里](https://purchase.aspose.com/temporary-license/)用于测试目的。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

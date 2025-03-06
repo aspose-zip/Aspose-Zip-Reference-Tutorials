@@ -3,10 +3,16 @@ title: .NET용 Aspose.Zip에서 다른 비밀번호를 사용하여 아카이브
 linktitle: 다른 비밀번호를 사용하여 아카이브 항목 추출
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: .NET용 Aspose.Zip에서 다양한 비밀번호를 사용하여 아카이브 항목을 추출하는 방법을 알아보세요. 애플리케이션의 보안과 유연성을 강화하세요.
-type: docs
 weight: 10
 url: /ko/net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET용 Aspose.Zip에서 다른 비밀번호를 사용하여 아카이브 항목 추출
+
 ## 소개
 
 끊임없이 진화하는 .NET 개발 환경에서 Aspose.Zip은 압축된 아카이브 작업을 위한 강력한 도구로 돋보입니다. 다양한 기능 중에서 다양한 비밀번호로 아카이브 항목을 추출하면 애플리케이션에 추가 보안 계층과 다양성이 추가됩니다. 이 단계별 가이드에서는 .NET용 Aspose.Zip을 사용하여 이를 달성하는 방법을 살펴보겠습니다.
@@ -89,3 +95,9 @@ A1: 예, Aspose.Zip은 .NET Core와 .NET Framework를 모두 지원하므로 다
 ### Q5: Aspose.Zip을 어디서 구입할 수 있나요?
 
  A5: Aspose.Zip을 구매하려면 다음을 방문하세요.[구매 페이지](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

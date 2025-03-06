@@ -3,10 +3,16 @@ title: Giải nén Wim vào thư mục trong Aspose.Zip cho .NET
 linktitle: Giải nén Wim vào thư mục
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Khám phá hướng dẫn từng bước về giải nén kho lưu trữ Wim bằng Aspose.Zip cho .NET. Tải xuống thư viện, làm theo hướng dẫn và quản lý hiệu quả các tệp lưu trữ trong ứng dụng .NET của bạn.
-type: docs
 weight: 16
 url: /vi/net/file-decompression/decompress-wim-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Giải nén Wim vào thư mục trong Aspose.Zip cho .NET
+
 ## Giới thiệu
 
 Chào mừng bạn đến với hướng dẫn toàn diện này về cách giải nén kho lưu trữ Wim vào một thư mục bằng Aspose.Zip cho .NET. Aspose.Zip là một thư viện mạnh mẽ cung cấp khả năng liền mạch để làm việc với nhiều định dạng lưu trữ khác nhau trong các ứng dụng .NET. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn từng bước quy trình giải nén kho lưu trữ Wim vào một thư mục được chỉ định.
@@ -77,3 +83,9 @@ Câu trả lời 1: Có, Aspose.Zip hỗ trợ nhiều định dạng lưu trữ
 ### Câu hỏi 5: Tôi có thể nhận hỗ trợ hoặc đặt câu hỏi về Aspose.Zip cho .NET ở đâu?
 
  A5: Tham quan[Diễn đàn Aspose.Zip](https://forum.aspose.com/c/zip/37) để được hỗ trợ và thảo luận.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

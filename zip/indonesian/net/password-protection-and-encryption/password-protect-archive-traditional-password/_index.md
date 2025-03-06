@@ -3,10 +3,16 @@ title: Aspose.Zip untuk .NET - Tutorial Perlindungan Kata Sandi
 linktitle: Arsip Perlindungan Kata Sandi dengan Kata Sandi Tradisional
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Pelajari cara mengamankan arsip .NET Anda dengan perlindungan kata sandi tradisional menggunakan Aspose.Zip. Ikuti panduan langkah demi langkah kami untuk meningkatkan kerahasiaan data.
-type: docs
 weight: 12
 url: /id/net/password-protection-and-encryption/password-protect-archive-traditional-password/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip untuk .NET - Tutorial Perlindungan Kata Sandi
+
 
 Dalam bidang pengembangan .NET, mengamankan data sensitif dalam arsip merupakan aspek penting dalam desain aplikasi. Aspose.Zip untuk .NET menawarkan solusi tangguh untuk melindungi arsip kata sandi menggunakan enkripsi kata sandi tradisional. Panduan langkah demi langkah ini akan memandu Anda melalui proses tersebut, memastikan bahwa data arsip Anda tetap rahasia dan aman.
 
@@ -81,3 +87,10 @@ Aspose.Zip untuk .NET dioptimalkan untuk kinerja yang efisien, menangani arsip d
 ### Bagaimana saya bisa mendapatkan dukungan untuk Aspose.Zip untuk .NET?
  Mengunjungi[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37)untuk dukungan komunitas atau menjelajahi[dokumentasi](https://reference.aspose.com/zip/net/) untuk informasi rinci.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

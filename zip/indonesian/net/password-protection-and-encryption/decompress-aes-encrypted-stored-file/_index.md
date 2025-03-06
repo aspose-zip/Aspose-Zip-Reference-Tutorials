@@ -3,10 +3,16 @@ title: Aspose.Zip untuk .NET - Mendekripsi File Terenkripsi AES
 linktitle: Dekompresi File Tersimpan Terenkripsi AES
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Pelajari cara mendekompresi file tersimpan terenkripsi AES di Aspose.Zip untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. Tingkatkan keterampilan pengembangan .NET Anda hari ini!
-type: docs
 weight: 19
 url: /id/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip untuk .NET - Mendekripsi File Terenkripsi AES
+
 
 ## Perkenalan
 
@@ -89,3 +95,10 @@ Aspose.Zip mendukung berbagai format, termasuk ZIP, 7z, dan TAR. Lihat dokumenta
 ### Bisakah saya menggunakan Aspose.Zip untuk tujuan komersial?
  Ya, Anda dapat membeli lisensi[Di Sini](https://purchase.aspose.com/buy) untuk penggunaan komersial.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

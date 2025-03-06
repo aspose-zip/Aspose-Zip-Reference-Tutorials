@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET で従来のようにパスワードで保護され�
 linktitle: 従来のようにパスワードで保護されたファイルを解凍する
 second_title: ファイルの圧縮とアーカイブのための Aspose.Zip .NET API
 description: Aspose.Zip for .NET を使用して、従来パスワードで保護されたファイルを解凍する方法を学びます。シームレスな統合のためのステップバイステップのガイド。
-type: docs
 weight: 15
 url: /ja/net/file-decompression/decompress-traditionally-password-protected-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET で従来のようにパスワードで保護されたファイルを解凍する
+
 .NET 開発の分野では、Aspose.Zip は圧縮ファイルを処理するための堅牢なソリューションとして際立っています。その無数の機能の中で、顕著な機能の 1 つは、従来パスワードで保護されていたファイルを解凍する機能です。このチュートリアルでは、Aspose.Zip for .NET を使用して、従来のパスワードで暗号化されたファイルを解凍するプロセスについて詳しく説明します。この旅を始める前に、前提条件が整っていることを確認してください。
 
 ## 前提条件
@@ -96,3 +102,9 @@ A3: はい、Aspose.Zip はさまざまな暗号化方式をサポートして�
 ### Q5: Aspose.Zip の一時ライセンスを取得するにはどうすればよいですか?
 
  A5: 一時ライセンスは以下から取得できます。[処分、購入](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

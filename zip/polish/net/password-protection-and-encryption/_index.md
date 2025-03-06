@@ -3,10 +3,16 @@ title: Ochrona hasłem i szyfrowanie
 linktitle: Ochrona hasłem i szyfrowanie
 second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
 description: Zabezpiecz swoje pliki za pomocą Aspose.Zip dla .NET! Poznaj szczegółowe samouczki dotyczące ochrony haseł i szyfrowania, od AES po metody tradycyjne.
-type: docs
 weight: 26
 url: /pl/net/password-protection-and-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Ochrona hasłem i szyfrowanie
+
 
 ## Wstęp
 
@@ -74,3 +80,9 @@ Dowiedz się, jak bezpiecznie kompresować wiele plików przy użyciu tradycyjne
 Dowiedz się, jak dekompresować pliki zaszyfrowane AES w języku C# przy użyciu Aspose.Zip dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby efektywnie obsługiwać pliki.
 ### [Dekompresuj zapisany plik zaszyfrowany AES w Aspose.Zip dla .NET](./decompress-aes-encrypted-stored-file/)
 Dowiedz się, jak dekompresować zapisane pliki zaszyfrowane AES w Aspose.Zip dla .NET, korzystając z tego obszernego przewodnika krok po kroku. Zwiększ swoje umiejętności programistyczne .NET już dziś!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

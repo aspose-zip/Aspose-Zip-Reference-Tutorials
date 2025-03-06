@@ -3,10 +3,16 @@ title: 使用 Aspose.Zip for .NET 解压多个文件
 linktitle: 解压多个文件
 second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
 description: 了解如何使用 Aspose.Zip for .NET 解压缩多个文件。请按照我们的分步指南进行高效的文件管理。
-type: docs
 weight: 11
 url: /zh/net/file-decompression/decompress-multiple-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Zip for .NET 解压多个文件
+
 ## 介绍
 
 欢迎来到我们关于使用 Aspose.Zip for .NET 解压缩多个文件的综合教程！如果您希望有效地处理包含多个条目的压缩文件，那么您来对地方了。在本指南中，我们将使用 Aspose.Zip for .NET 逐步引导您完成该过程。
@@ -127,3 +133,9 @@ A2：是的，您可以探索 Aspose.Zip for .NET 的免费试用版[这里](htt
 ### 问题 5：使用 Aspose.Zip for .NET 有什么特定的系统要求吗？
 
  A5：请参阅[文档](https://reference.aspose.com/zip/net/)了解详细的系统要求。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

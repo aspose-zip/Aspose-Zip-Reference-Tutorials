@@ -3,10 +3,16 @@ title: Записи с разными паролями в Aspose.Zip для .NET
 linktitle: Записи с разными паролями
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Изучите возможности Aspose.Zip для .NET с помощью нашего пошагового руководства по управлению ZIP-архивами с разными паролями. Повысьте безопасность и гибкость ваших приложений.
-type: docs
 weight: 13
 url: /ru/net/other-compression-techniques/entries-with-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Записи с разными паролями в Aspose.Zip для .NET
+
 ## Введение
 
 Добро пожаловать в мир Aspose.Zip для .NET, мощной библиотеки, которая позволяет разработчикам легко управлять ZIP-архивами и манипулировать ими. В этом уроке мы углубимся в конкретную функцию: работу с записями с разными паролями. Независимо от того, являетесь ли вы опытным разработчиком или только начинаете, это пошаговое руководство проведет вас через весь процесс, раскрывая потенциал Aspose.Zip для .NET.
@@ -97,3 +103,9 @@ Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Set
 ### Вопрос 5: Могу ли я использовать Aspose.Zip для .NET без постоянной лицензии?
 
  О5: Да, вы можете получить временную лицензию для своих краткосрочных нужд. Найти более подробную информацию[здесь](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

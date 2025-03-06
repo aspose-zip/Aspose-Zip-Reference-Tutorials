@@ -3,10 +3,16 @@ title: Lösenordsskydda kataloger i .NET med Aspose.Zip Tutorial
 linktitle: Lösenordsskyddad katalog
 second_title: Aspose.Zip .NET API för filkomprimering och arkivering
 description: Lär dig hur du lösenordsskyddar kataloger i .NET med Aspose.Zip. Säkra dina filer utan ansträngning med denna steg-för-steg handledning.
-type: docs
 weight: 10
 url: /sv/net/password-protection-and-encryption/password-protect-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Lösenordsskydda kataloger i .NET med Aspose.Zip Tutorial
+
 
 ## Introduktion
 
@@ -90,3 +96,10 @@ Ja, Aspose.Zip för .NET är designat för att hantera stora kataloger effektivt
 ### Var kan jag hitta ytterligare stöd för Aspose.Zip för .NET?
  Du kan besöka[Aspose.Zip forum](https://forum.aspose.com/c/zip/37) för support eller frågor.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET – Biztonságos fájltárolás oktatóanyaga
 linktitle: Tároljon több fájlt tömörítés nélkül jelszóval
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Fedezze fel, hogyan használhatja az Aspose.Zip for .NET-et több fájl biztonságos, tömörítés nélküli tárolására. Egyszerű lépések a jelszavas védelemhez. Oldja fel a fájlkezelés erejét!
-type: docs
 weight: 13
 url: /hu/net/password-protection-and-encryption/store-multiple-files-no-compression-password/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET – Biztonságos fájltárolás oktatóanyaga
+
 
 A .NET fejlesztés világában a fájlok kezelése és manipulálása gyakori feladat. Az Aspose.Zip for .NET egy hatékony könyvtár, amely a fejlesztők számára lehetővé teszi a zip-archívumok zökkenőmentes tömörítését, kicsomagolását és kezelését. Ebben az oktatóanyagban egy konkrét forgatókönyvet vizsgálunk meg: több fájl tárolása tömörítés nélkül, és jelszóval védve. Ennek az útmutatónak a végére birtokában lesz a funkciónak az Aspose.Zip for .NET használatával való megvalósításához.
 
@@ -93,3 +99,10 @@ Ebben az oktatóanyagban megvizsgáltuk, hogyan használható az Aspose.Zip for 
 
 ### Hol vásárolhatom meg az Aspose.Zip-et .NET-hez?
  Megvásárolhatja az Aspose.Zip-et .NET-hez[itt](https://purchase.aspose.com/buy).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

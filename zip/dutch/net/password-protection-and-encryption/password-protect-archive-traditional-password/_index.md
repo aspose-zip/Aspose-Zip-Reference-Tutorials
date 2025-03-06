@@ -3,10 +3,16 @@ title: Aspose.Zip voor .NET - Handleiding voor archieven met wachtwoordbeveiligi
 linktitle: Wachtwoordbeveiliging Archief met traditioneel wachtwoord
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Leer hoe u uw .NET-archieven kunt beveiligen met traditionele wachtwoordbeveiliging met Aspose.Zip. Volg onze stapsgewijze handleiding voor verbeterde gegevensvertrouwelijkheid.
-type: docs
 weight: 12
 url: /nl/net/password-protection-and-encryption/password-protect-archive-traditional-password/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip voor .NET - Handleiding voor archieven met wachtwoordbeveiliging
+
 
 Op het gebied van .NET-ontwikkeling is het beveiligen van gevoelige gegevens binnen archieven een cruciaal aspect van het applicatieontwerp. Aspose.Zip voor .NET biedt een robuuste oplossing voor het beveiligen van archieven met een wachtwoord met behulp van traditionele wachtwoordversleuteling. Deze stapsgewijze handleiding leidt u door het proces en zorgt ervoor dat uw gearchiveerde gegevens vertrouwelijk en veilig blijven.
 
@@ -81,3 +87,10 @@ Aspose.Zip voor .NET is geoptimaliseerd voor efficiënte prestaties, waarbij arc
 ### Hoe kan ik ondersteuning krijgen voor Aspose.Zip voor .NET?
  Bezoek de[Aspose.Zip-forum](https://forum.aspose.com/c/zip/37)voor gemeenschapsondersteuning of verken de[documentatie](https://reference.aspose.com/zip/net/) voor gedetailleerde informatie.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

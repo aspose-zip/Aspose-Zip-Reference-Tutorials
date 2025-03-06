@@ -3,10 +3,16 @@ title: Creación de siete archivos Zip - Tutorial de Aspose.Zip para .NET
 linktitle: SevenZip con varios métodos de compresión
 second_title: API Aspose.Zip .NET para compresión y archivado de archivos
 description: Aprenda a crear archivos Seven Zip con Aspose.Zip para .NET usando diferentes métodos de compresión. Pasos sencillos para LZMA2, BZip2 y Store (sin compresión).
-type: docs
 weight: 12
 url: /es/net/sevenzip-compression/sevenzip-various-compression-methods/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Creación de siete archivos Zip - Tutorial de Aspose.Zip para .NET
+
 
 ## Introducción
 
@@ -89,3 +95,10 @@ Sí, Aspose.Zip para .NET admite una amplia gama de tipos de archivos, lo que le
 
 ### ¿Dónde puedo obtener soporte para Aspose.Zip para .NET?
  Puedes buscar apoyo en el[Foro Aspose.Zip](https://forum.aspose.com/c/zip/37).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

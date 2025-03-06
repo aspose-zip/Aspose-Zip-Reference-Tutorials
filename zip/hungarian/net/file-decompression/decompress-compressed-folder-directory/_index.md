@@ -3,10 +3,16 @@ title: Tömörítse ki a tömörített mappát az Aspose.Zip for .NET könyvtár
 linktitle: A tömörített mappa kibontása könyvtárba
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Oldja fel az Aspose.Zipben rejlő lehetőségeket a .NET számára! Ezzel a lépésenkénti útmutatóval megtudhatja, hogyan bonthatja ki könnyedén a mappákat. Merüljön el a zökkenőmentes tömörítés és extrahálás világában.
-type: docs
 weight: 14
 url: /hu/net/file-decompression/decompress-compressed-folder-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Tömörítse ki a tömörített mappát az Aspose.Zip for .NET könyvtárába
+
 ## Bevezetés
 
 Üdvözöljük az Aspose.Zip for .NET világában, egy robusztus könyvtár, amely lehetővé teszi a fejlesztők számára, hogy könnyedén kezeljék a tömörített mappákat. Ebben az oktatóanyagban a tömörített mappák könyvtárba való kibontásának folyamatát mutatjuk be az Aspose.Zip for .NET használatával. Kapcsold be, miközben részletesen végigvezetjük az egyes lépéseken, tisztázva ennek a hatékony eszköznek a bonyolultságát.
@@ -79,3 +85,9 @@ Gratulálunk! Sikeresen megtanulta, hogyan lehet egy tömörített mappát köny
 ### 5. kérdés: Szükségem van ideiglenes licencre az Aspose.Zip for .NET teszteléséhez?
 
  V5: Igen, ideiglenes engedélyt szerezhet be[itt](https://purchase.aspose.com/temporary-license/) tesztelési célokra.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

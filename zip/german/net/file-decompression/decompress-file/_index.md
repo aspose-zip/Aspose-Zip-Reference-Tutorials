@@ -3,10 +3,16 @@ title: Dekomprimieren einer Datei mit Aspose.Zip für .NET
 linktitle: Dekomprimieren einer Datei
 second_title: Aspose.Zip .NET API für Dateikomprimierung und -archivierung
 description: Entdecken Sie die Welt der Dateikomprimierung in .NET mit Aspose.Zip. Erlernen Sie die Kunst, Dateien mühelos zu dekomprimieren.
-type: docs
 weight: 10
 url: /de/net/file-decompression/decompress-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekomprimieren einer Datei mit Aspose.Zip für .NET
+
 ## Einführung
 
 In der Welt der .NET-Entwicklung ist die effiziente Verwaltung komprimierter Dateien von entscheidender Bedeutung. Aspose.Zip für .NET bietet eine leistungsstarke Lösung für die nahtlose Dateikomprimierung und -dekomprimierung. In diesem Tutorial befassen wir uns mit dem Dekomprimierungsprozess einer Datei mit Aspose.Zip für .NET. Folgen Sie uns, um das Potenzial dieser leistungsstarken Bibliothek auszuschöpfen.
@@ -83,3 +89,9 @@ A3: Bei Fragen oder Hilfe können Sie die besuchen[Aspose.Zip-Forum](https://for
 ### F5: Wo kann ich Aspose.Zip für .NET kaufen?
 
  A5: Um Aspose.Zip für .NET zu kaufen, besuchen Sie die[Kaufseite](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

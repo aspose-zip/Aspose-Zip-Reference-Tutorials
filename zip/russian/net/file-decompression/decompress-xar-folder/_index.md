@@ -3,10 +3,16 @@ title: Распакуйте Xar в папку в Aspose.Zip для .NET
 linktitle: Распаковать Xar в папку
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Откройте для себя возможности Aspose.Zip для .NET! С легкостью распаковывайте архивы Xar с помощью этого удобного руководства. Расширьте свой опыт разработки .NET.
-type: docs
 weight: 17
 url: /ru/net/file-decompression/decompress-xar-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Распакуйте Xar в папку в Aspose.Zip для .NET
+
 ## Введение
 
 Если вы погружаетесь в мир разработки .NET и ищете надежное решение для распаковки архивов Xar, Aspose.Zip для .NET поможет вам. В этом пошаговом руководстве мы покажем вам процесс распаковки Xar в папку с помощью Aspose.Zip, мощной библиотеки, которая упрощает манипуляции с архивами в ваших .NET-приложениях.
@@ -79,3 +85,9 @@ using (FileStream fs = File.OpenRead(dataDir + "sample.xar"))
 ### Вопрос 5: Где я могу приобрести Aspose.Zip для .NET?
 
  О5: Вы можете приобрести Aspose.Zip для .NET.[здесь](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Compressing to TarXz with Aspose.Zip for .NET
 linktitle: Compressing to TarXz 
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: Learn to compress files to TarXz format in .NET using Aspose.Zip. Follow our step-by-step guide for efficient file storage and transmission.
-type: docs
 weight: 14
 url: /net/archive-extraction-and-formats/compress-to-tar-xz/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Compressing to TarXz with Aspose.Zip for .NET
+
 ## Introduction
 
 In the realm of .NET development, effective file compression is a crucial aspect of optimizing storage and transmission of data. Aspose.Zip for .NET is a powerful tool that facilitates file compression, and in this tutorial, we will delve into compressing files to TarXz format using Aspose.Zip. This step-by-step guide aims to provide you with a comprehensive understanding of the process, allowing you to seamlessly integrate this functionality into your .NET projects.
@@ -84,3 +90,10 @@ A4: You can visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for 
 ### Q5: Can I try Aspose.Zip for free before making a purchase?
 
 A5: Yes, you can explore a free trial [here](https://releases.aspose.com/zip/net).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

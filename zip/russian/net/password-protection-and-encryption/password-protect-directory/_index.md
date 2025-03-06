@@ -3,10 +3,16 @@ title: Защита каталогов паролем в .NET с помощью 
 linktitle: Защита каталога паролем
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Узнайте, как защитить паролем каталоги в .NET с помощью Aspose.Zip. Защитите свои файлы без особых усилий с помощью этого пошагового руководства.
-type: docs
 weight: 10
 url: /ru/net/password-protection-and-encryption/password-protect-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Защита каталогов паролем в .NET с помощью Aspose.Zip Tutorial
+
 
 ## Введение
 
@@ -90,3 +96,10 @@ using (FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", 
 ### Где я могу найти дополнительную поддержку Aspose.Zip для .NET?
  Вы можете посетить[Форум Aspose.Zip](https://forum.aspose.com/c/zip/37) для любой поддержки или вопросов.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

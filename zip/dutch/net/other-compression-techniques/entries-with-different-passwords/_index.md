@@ -3,10 +3,16 @@ title: Vermeldingen met verschillende wachtwoorden in Aspose.Zip voor .NET
 linktitle: Invoer met verschillende wachtwoorden
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Ontdek de kracht van Aspose.Zip voor .NET met onze stapsgewijze handleiding voor het beheren van ZIP-archieven met verschillende wachtwoorden. Verbeter de veiligheid en flexibiliteit in uw applicaties.
-type: docs
 weight: 13
 url: /nl/net/other-compression-techniques/entries-with-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Vermeldingen met verschillende wachtwoorden in Aspose.Zip voor .NET
+
 ## Invoering
 
 Welkom in de wereld van Aspose.Zip voor .NET, een krachtige bibliotheek waarmee ontwikkelaars ZIP-archieven naadloos kunnen beheren en manipuleren. In deze tutorial gaan we dieper in op een specifieke functie: werken met vermeldingen met verschillende wachtwoorden. Of u nu een doorgewinterde ontwikkelaar bent of net begint, deze stapsgewijze handleiding begeleidt u door het proces en ontgrendelt de mogelijkheden van Aspose.Zip voor .NET.
@@ -97,3 +103,9 @@ A2: Absoluut! Aspose.Zip voor .NET biedt commerciële licenties en u kunt meer i
 ### V5: Kan ik Aspose.Zip voor .NET gebruiken zonder een permanente licentie?
 
  A5: Ja, u kunt een tijdelijke licentie verkrijgen voor uw kortetermijnbehoeften. Vind meer details[hier](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

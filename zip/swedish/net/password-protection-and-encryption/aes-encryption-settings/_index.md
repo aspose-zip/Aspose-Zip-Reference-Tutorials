@@ -3,10 +3,16 @@ title: Aspose.Zip för .NET - AES Encryption Tutorial
 linktitle: AES-krypteringsinställningar
 second_title: Aspose.Zip .NET API för filkomprimering och arkivering
 description: Utforska Aspose.Zip för .NET för att säkra dina komprimerade filer med AES-kryptering. Ladda ner nu för effektivt dataskydd.
-type: docs
 weight: 14
 url: /sv/net/password-protection-and-encryption/aes-encryption-settings/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip för .NET - AES Encryption Tutorial
+
 
 ## Introduktion
 
@@ -87,3 +93,10 @@ Grattis! Du har framgångsrikt implementerat AES-krypteringsinställningar med A
 ### F: Kan jag få tillfälliga licenser för testning?
  S: Ja, du kan få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

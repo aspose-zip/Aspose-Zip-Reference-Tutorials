@@ -3,10 +3,16 @@ title: บีบอัดเป็น TarLz ด้วย Aspose.Zip สำหร
 linktitle: บีบอัดเป็น TarLz
 second_title: Aspose.Zip .NET API สำหรับการบีบอัดไฟล์และการเก็บถาวร
 description: บีบอัดไฟล์ใน .NET ได้อย่างง่ายดายด้วย Aspose.Zip เรียนรู้การสร้างไฟล์เก็บถาวร TarLz ทีละขั้นตอน
-type: docs
 weight: 13
 url: /th/net/archive-extraction-and-formats/compress-to-tar-lz/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# บีบอัดเป็น TarLz ด้วย Aspose.Zip สำหรับ .NET
+
 ## การแนะนำ
 
 ในสภาพแวดล้อมการพัฒนา .NET ที่เปลี่ยนแปลงตลอดเวลา ความจำเป็นในการจัดการและบีบอัดไฟล์อย่างมีประสิทธิภาพเป็นสิ่งสำคัญยิ่ง Aspose.Zip สำหรับ .NET กลายเป็นเครื่องมืออันทรงพลังที่ให้ความสามารถในการบีบอัดไฟล์ได้อย่างราบรื่น ในบทช่วยสอนนี้ เราจะเจาะลึกแง่มุมหนึ่ง นั่นคือการบีบอัดเป็น TarLz โดยใช้ Aspose.Zip ปฏิบัติตามในขณะที่เราแจกแจงรายละเอียดแต่ละขั้นตอน ทำให้นักพัฒนาทุกระดับสามารถเข้าใจกระบวนการนี้ได้อย่างง่ายดาย
@@ -99,3 +105,9 @@ A2: ใช่ รหัสได้รับการออกแบบให้
 ### คำถามที่ 5: ฉันจะรับการสนับสนุนได้ที่ไหนหากฉันประสบปัญหา
 
  A5: เยี่ยมชม[ฟอรั่ม Aspose.Zip](https://forum.aspose.com/c/zip/37) สำหรับการสนับสนุนและการแก้ไขปัญหาของชุมชน
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

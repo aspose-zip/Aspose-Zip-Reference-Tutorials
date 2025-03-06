@@ -3,10 +3,16 @@ title: الإدخالات بكلمات مرور مختلفة في Aspose.Zip ل�
 linktitle: إدخالات بكلمات مرور مختلفة
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: اكتشف قوة Aspose.Zip لـ .NET من خلال دليلنا المفصّل خطوة بخطوة حول إدارة أرشيفات ZIP باستخدام كلمات مرور مختلفة. تعزيز الأمان والمرونة في تطبيقاتك.
-type: docs
 weight: 13
 url: /ar/net/other-compression-techniques/entries-with-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# الإدخالات بكلمات مرور مختلفة في Aspose.Zip لـ .NET
+
 ## مقدمة
 
 مرحبًا بك في عالم Aspose.Zip for .NET، وهي مكتبة قوية تمكّن المطورين من إدارة أرشيفات ZIP ومعالجتها بسلاسة. في هذا البرنامج التعليمي، سوف نتعمق في ميزة محددة: العمل مع الإدخالات بكلمات مرور مختلفة. سواء كنت مطورًا متمرسًا أو بدأت للتو، سيرشدك هذا الدليل خطوة بخطوة خلال العملية، ويطلق العنان لإمكانات Aspose.Zip لـ .NET.
@@ -97,3 +103,9 @@ Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Set
 ### س5: هل يمكنني استخدام Aspose.Zip لـ .NET بدون ترخيص دائم؟
 
  ج5: نعم، يمكنك الحصول على ترخيص مؤقت لاحتياجاتك قصيرة المدى. العثور على مزيد من التفاصيل[هنا](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Giải nén tệp được bảo vệ bằng mật khẩu truyền thốn
 linktitle: Giải nén tập tin được bảo vệ bằng mật khẩu truyền thống
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Tìm hiểu cách giải nén các tệp được bảo vệ bằng mật khẩu truyền thống bằng Aspose.Zip cho .NET. Hướng dẫn từng bước để tích hợp liền mạch.
-type: docs
 weight: 15
 url: /vi/net/file-decompression/decompress-traditionally-password-protected-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Giải nén tệp được bảo vệ bằng mật khẩu truyền thống trong Aspose.Zip cho .NET
+
 Trong lĩnh vực phát triển .NET, Aspose.Zip nổi bật như một giải pháp mạnh mẽ để xử lý các tệp nén. Trong số vô số tính năng của nó, một khả năng nổi bật là khả năng giải nén các tệp được bảo vệ bằng mật khẩu truyền thống. Trong hướng dẫn này, chúng ta sẽ đi sâu vào quy trình giải nén tệp được mã hóa bằng mật khẩu truyền thống bằng Aspose.Zip cho .NET. Trước khi bắt đầu cuộc hành trình này, hãy đảm bảo rằng chúng ta có sẵn các điều kiện tiên quyết.
 
 ## Điều kiện tiên quyết
@@ -96,3 +102,9 @@ Câu trả lời 3: Có, Aspose.Zip hỗ trợ nhiều phương thức mã hóa 
 ### Câu hỏi 5: Làm cách nào tôi có thể nhận được giấy phép tạm thời cho Aspose.Zip?
 
  Câu trả lời 5: Bạn có thể lấy giấy phép tạm thời từ[Aspose.Purchase](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

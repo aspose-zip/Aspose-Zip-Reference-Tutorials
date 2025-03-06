@@ -3,10 +3,16 @@ title: Aspose.Zip ट्यूटोरियल के साथ .NET में
 linktitle: पासवर्ड सुरक्षा निर्देशिका
 second_title: फ़ाइलें संपीड़न और संग्रहण के लिए Aspose.Zip .NET API
 description: Aspose.Zip का उपयोग करके .NET में निर्देशिकाओं को पासवर्ड से सुरक्षित करने का तरीका जानें। इस चरण-दर-चरण ट्यूटोरियल के साथ अपनी फ़ाइलों को सहजता से सुरक्षित करें।
-type: docs
 weight: 10
 url: /hi/net/password-protection-and-encryption/password-protect-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip ट्यूटोरियल के साथ .NET में पासवर्ड प्रोटेक्ट डायरेक्ट्रीज़
+
 
 ## परिचय
 
@@ -90,3 +96,10 @@ using (FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", 
 ### मुझे .NET के लिए Aspose.Zip के लिए अतिरिक्त समर्थन कहां मिल सकता है?
  आप विजिट कर सकते हैं[Aspose.ज़िप फोरम](https://forum.aspose.com/c/zip/37) किसी भी समर्थन या प्रश्न के लिए।
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

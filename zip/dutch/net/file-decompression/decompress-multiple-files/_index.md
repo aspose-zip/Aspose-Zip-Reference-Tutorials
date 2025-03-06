@@ -3,10 +3,16 @@ title: Meerdere bestanden decomprimeren met Aspose.Zip voor .NET
 linktitle: Meerdere bestanden decomprimeren
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Leer hoe u meerdere bestanden kunt decomprimeren met Aspose.Zip voor .NET. Volg onze stapsgewijze handleiding voor efficiënt bestandsbeheer.
-type: docs
 weight: 11
 url: /nl/net/file-decompression/decompress-multiple-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Meerdere bestanden decomprimeren met Aspose.Zip voor .NET
+
 ## Invoering
 
 Welkom bij onze uitgebreide tutorial over het decomprimeren van meerdere bestanden met Aspose.Zip voor .NET! Als u gecomprimeerde bestanden met meerdere vermeldingen efficiënt wilt verwerken, bent u hier aan het juiste adres. In deze handleiding leiden we u stap voor stap door het proces met behulp van Aspose.Zip voor .NET.
@@ -127,3 +133,9 @@ In deze zelfstudie hebben we de essentiële stappen besproken om meerdere bestan
 ### V5: Zijn er specifieke systeemvereisten voor het gebruik van Aspose.Zip voor .NET?
 
  A5: Raadpleeg de[documentatie](https://reference.aspose.com/zip/net/) voor gedetailleerde systeemvereisten.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

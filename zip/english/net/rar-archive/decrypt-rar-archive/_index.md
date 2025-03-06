@@ -3,10 +3,16 @@ title: Decrypting a RAR Archive with Aspose.Zip for .NET
 linktitle: Decrypting a RAR Archive 
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 description: Unlock encrypted RAR archives effortlessly using Aspose.Zip for .NET. Follow our step-by-step guide for seamless integration and efficient decryption.
-type: docs
 weight: 12
 url: /net/rar-archive/decrypt-rar-archive/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Decrypting a RAR Archive with Aspose.Zip for .NET
+
 
 ## Introduction
 
@@ -90,3 +96,10 @@ Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for support and 
 ### How do I access the documentation for Aspose.Zip for .NET?
 The [documentation](https://reference.aspose.com/zip/net/) provides comprehensive information on using Aspose.Zip for .NET.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

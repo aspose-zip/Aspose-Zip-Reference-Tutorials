@@ -3,10 +3,16 @@ title: Compactação de diretório e pasta
 linktitle: Compactação de diretório e pasta
 second_title: API Aspose.Zip .NET para compactação e arquivamento de arquivos
 description: Otimize facilmente o espaço de armazenamento com Aspose.Zip for .NET. Aprenda técnicas de compactação e descompactação de diretório para aprimorar seus projetos de desenvolvimento .NET.
-type: docs
 weight: 22
 url: /pt/net/directory-and-folder-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Compactação de diretório e pasta
+
 
 ## Introdução
 
@@ -38,3 +44,9 @@ Concluindo, esses tutoriais de compactação de diretórios e pastas são sua po
 Aprenda a compactar diretórios sem esforço com Aspose.Zip para .NET. Aumente o seu desenvolvimento .NET otimizando o espaço de armazenamento de forma eficiente.
 ### [Descompactando uma pasta com Aspose.Zip para .NET](./decompress-folder/)
 Domine a arte de descompactar pastas com Aspose.Zip para .NET. Lide facilmente com tarefas de compactação em seus projetos.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

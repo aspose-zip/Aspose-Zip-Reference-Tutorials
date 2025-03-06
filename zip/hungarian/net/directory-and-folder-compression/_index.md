@@ -3,10 +3,16 @@ title: Könyvtár- és mappatömörítés
 linktitle: Könyvtár- és mappatömörítés
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Könnyedén optimalizálja a tárhelyet az Aspose.Zip for .NET segítségével. Tanuljon meg címtártömörítési és -kicsomagolási technikákat .NET fejlesztési projektjei fejlesztéséhez.
-type: docs
 weight: 22
 url: /hu/net/directory-and-folder-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Könyvtár- és mappatömörítés
+
 
 ## Bevezetés
 
@@ -38,3 +44,9 @@ Az Aspose.Zip for .NET eszköztárba való beépítésével nem csak a mappákat
 Tanulja meg könnyedén tömöríteni a könyvtárakat az Aspose.Zip for .NET segítségével. Fokozza fel .NET-fejlesztését a tárhely hatékony optimalizálásával.
 ### [Mappa kicsomagolása az Aspose.Zip for .NET segítségével](./decompress-folder/)
 Sajátítsa el a mappák kibontásának művészetét az Aspose.Zip for .NET segítségével. Könnyedén kezelheti a tömörítési feladatokat a projektekben.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

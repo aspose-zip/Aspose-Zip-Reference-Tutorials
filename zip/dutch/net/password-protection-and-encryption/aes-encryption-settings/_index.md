@@ -3,10 +3,16 @@ title: Aspose.Zip voor .NET - AES-coderingshandleiding
 linktitle: AES-coderingsinstellingen
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Ontdek Aspose.Zip voor .NET om uw gecomprimeerde bestanden te beveiligen met AES-codering. Download nu voor efficiënte gegevensbescherming.
-type: docs
 weight: 14
 url: /nl/net/password-protection-and-encryption/aes-encryption-settings/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip voor .NET - AES-coderingshandleiding
+
 
 ## Invoering
 
@@ -87,3 +93,10 @@ Gefeliciteerd! U hebt met succes de AES-coderingsinstellingen geïmplementeerd m
 ### Vraag: Kan ik tijdelijke licenties krijgen voor testen?
  A: Ja, u kunt een tijdelijke licentie verkrijgen[hier](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

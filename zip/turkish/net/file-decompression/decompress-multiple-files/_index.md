@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET kullanarak Çoklu Dosyaları Açma
 linktitle: Birden Çok Dosyanın Sıkıştırılmasını Açma
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Aspose.Zip for .NET kullanarak birden fazla dosyanın sıkıştırmasını nasıl açacağınızı öğrenin. Verimli dosya yönetimi için adım adım kılavuzumuzu izleyin.
-type: docs
 weight: 11
 url: /tr/net/file-decompression/decompress-multiple-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET kullanarak Çoklu Dosyaları Açma
+
 ## giriiş
 
 Aspose.Zip for .NET kullanarak birden fazla dosyanın sıkıştırmasını açmaya yönelik kapsamlı eğitimimize hoş geldiniz! Birden fazla giriş içeren sıkıştırılmış dosyaları verimli bir şekilde işlemek istiyorsanız doğru yerdesiniz. Bu kılavuzda, Aspose.Zip for .NET'i kullanarak süreç boyunca size adım adım yol göstereceğiz.
@@ -127,3 +133,9 @@ Bu eğitimde Aspose.Zip for .NET kullanarak birden fazla dosyanın sıkıştırm
 ### S5: Aspose.Zip for .NET'i kullanmak için herhangi bir özel sistem gereksinimi var mı?
 
  A5: Bkz.[dokümantasyon](https://reference.aspose.com/zip/net/) ayrıntılı sistem gereksinimleri için.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

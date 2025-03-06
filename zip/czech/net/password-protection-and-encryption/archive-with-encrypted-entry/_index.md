@@ -3,10 +3,16 @@ title: Master Secure Archiving v .NET s Aspose.Zip
 linktitle: Archivujte se zašifrovaným záznamem
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Prozkoumejte svět bezpečné archivace v .NET s Aspose.Zip. Vytvářejte soubory Seven Zip pomocí šifrování AES bez námahy. Zlepšete své rozvojové dovednosti nyní!
-type: docs
 weight: 15
 url: /cs/net/password-protection-and-encryption/archive-with-encrypted-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Master Secure Archiving v .NET s Aspose.Zip
+
 
 ## Úvod
 
@@ -81,3 +87,10 @@ Aspose.Zip for .NET podporuje různé kompresní algoritmy. Podrobnosti naleznet
 ### Mohu dále upravit nastavení šifrování?
 Absolutně! Prozkoumejte dokumentaci pro pokročilé možnosti přizpůsobení šifrování.
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

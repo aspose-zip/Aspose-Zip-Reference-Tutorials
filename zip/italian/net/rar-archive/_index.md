@@ -3,10 +3,16 @@ title: Archivio RAR
 linktitle: Archivio RAR
 second_title: Aspose.Zip .NET API per la compressione e l'archiviazione dei file
 description: Svela i segreti della gestione degli archivi RAR con Aspose.Zip per .NET! Decomprimi, decifra e gestisci facilmente i file compressi. Scaricalo ora per una gestione efficiente dei file.
-type: docs
 weight: 24
 url: /it/net/rar-archive/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Archivio RAR
+
 
 ## introduzione
 
@@ -29,3 +35,9 @@ Padroneggia la decompressione degli archivi RAR in .NET con Aspose.Zip. Guida pa
 Scopri la semplicità della decompressione delle voci RAR in .NET utilizzando Aspose.Zip. Gestisci facilmente i file compressi con questa potente libreria.
 ### [Decifrare un archivio RAR con Aspose.Zip per .NET](./decrypt-rar-archive/)
 Sblocca archivi RAR crittografati senza sforzo utilizzando Aspose.Zip per .NET. Segui la nostra guida passo passo per un'integrazione perfetta e una decrittazione efficiente.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

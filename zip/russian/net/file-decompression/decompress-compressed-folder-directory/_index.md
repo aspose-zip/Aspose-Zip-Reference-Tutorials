@@ -3,10 +3,16 @@ title: Распаковать сжатую папку в каталог в Aspos
 linktitle: Распаковать сжатую папку в каталог
 second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
 description: Раскройте потенциал Aspose.Zip для .NET! Узнайте, как легко распаковать папки, с помощью этого пошагового руководства. Погрузитесь в мир плавного сжатия и извлечения.
-type: docs
 weight: 14
 url: /ru/net/file-decompression/decompress-compressed-folder-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Распаковать сжатую папку в каталог в Aspose.Zip для .NET
+
 ## Введение
 
 Добро пожаловать в мир Aspose.Zip для .NET, надежной библиотеки, которая позволяет разработчикам легко обрабатывать сжатые папки. В этом уроке мы углубимся в процесс распаковки сжатой папки в каталог с помощью Aspose.Zip для .NET. Пристегнитесь, пока мы подробно проведем вас через каждый шаг, раскрывая тайны этого мощного инструмента.
@@ -79,3 +85,9 @@ new Archive(zipFile, new ArchiveLoadOptions() { DecryptionPassword = "p@s$" })
 ### В5: Нужна ли мне временная лицензия для тестирования Aspose.Zip для .NET?
 
  О5: Да, вы можете получить временную лицензию[здесь](https://purchase.aspose.com/temporary-license/) в целях тестирования.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

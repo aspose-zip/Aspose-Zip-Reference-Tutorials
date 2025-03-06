@@ -3,10 +3,16 @@ title: Entradas com senhas diferentes em Aspose.Zip para .NET
 linktitle: Entradas com senhas diferentes
 second_title: API Aspose.Zip .NET para compactação e arquivamento de arquivos
 description: Explore o poder do Aspose.Zip para .NET com nosso guia passo a passo sobre como gerenciar arquivos ZIP com senhas diferentes. Aumente a segurança e a flexibilidade em seus aplicativos.
-type: docs
 weight: 13
 url: /pt/net/other-compression-techniques/entries-with-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Entradas com senhas diferentes em Aspose.Zip para .NET
+
 ## Introdução
 
 Bem-vindo ao mundo do Aspose.Zip for .NET, uma biblioteca poderosa que permite aos desenvolvedores gerenciar e manipular arquivos ZIP perfeitamente. Neste tutorial vamos nos aprofundar em um recurso específico: trabalhar com entradas com senhas diferentes. Quer você seja um desenvolvedor experiente ou esteja apenas começando, este guia passo a passo irá orientá-lo durante o processo, revelando o potencial do Aspose.Zip para .NET.
@@ -97,3 +103,9 @@ A2: Com certeza! Aspose.Zip for .NET oferece licenças comerciais e você pode e
 ### Q5: Posso usar o Aspose.Zip for .NET sem uma licença permanente?
 
  R5: Sim, você pode obter uma licença temporária para suas necessidades de curto prazo. Encontre mais detalhes[aqui](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

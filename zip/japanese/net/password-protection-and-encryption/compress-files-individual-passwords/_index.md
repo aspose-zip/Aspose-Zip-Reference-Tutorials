@@ -3,10 +3,16 @@ title: Aspose.Zip を使用した .NET での安全なファイル圧縮
 linktitle: 個別のパスワードを使用してファイルを圧縮する
 second_title: ファイルの圧縮とアーカイブのための Aspose.Zip .NET API
 description: .NET アプリケーションのファイル セキュリティを強化する方法を学びましょう。 Aspose.Zip for .NET を使用して個別のパスワードを使用してファイルを圧縮するためのステップバイステップ ガイドに従ってください。
-type: docs
 weight: 16
 url: /ja/net/password-protection-and-encryption/compress-files-individual-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip を使用した .NET での安全なファイル圧縮
+
 
 ## 導入
 
@@ -84,3 +90,10 @@ using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPass
 
 ### テスト目的で一時ライセンスを購入できますか?
 はい、一時ライセンスを取得できます[ここ](https://purchase.aspose.com/temporary-license/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

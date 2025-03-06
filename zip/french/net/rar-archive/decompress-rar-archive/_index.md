@@ -3,10 +3,16 @@ title: Décompresser une archive RAR avec Aspose.Zip pour .NET
 linktitle: Décompresser une archive RAR
 second_title: API Aspose.Zip .NET pour la compression et l'archivage de fichiers
 description: Maîtrisez la décompression des archives RAR dans .NET avec Aspose.Zip. Guide étape par étape pour une gestion efficace des fichiers. Télécharger maintenant!
-type: docs
 weight: 10
 url: /fr/net/rar-archive/decompress-rar-archive/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Décompresser une archive RAR avec Aspose.Zip pour .NET
+
 
 ## Introduction
 
@@ -83,3 +89,10 @@ Au cours de ces trois étapes simples, vous avez réussi à décompresser une ar
 
 ### Des licences temporaires sont-elles disponibles ?
  Oui, vous pouvez obtenir une licence temporaire[ici](https://purchase.aspose.com/temporary-license/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

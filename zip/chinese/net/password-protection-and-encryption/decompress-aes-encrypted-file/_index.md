@@ -3,10 +3,16 @@ title: 解压缩 AES 文件 - Aspose.Zip .NET 教程
 linktitle: 解压AES加密文件
 second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
 description: 了解使用 Aspose.Zip for .NET 在 C# 中解压缩 AES 加密文件。请按照我们的分步指南进行高效的文件处理。
-type: docs
 weight: 18
 url: /zh/net/password-protection-and-encryption/decompress-aes-encrypted-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 解压缩 AES 文件 - Aspose.Zip .NET 教程
+
 
 ## 介绍
 
@@ -92,3 +98,10 @@ using (FileStream fs = File.OpenRead(dataDir + "PasswordProtectWithAES256_out.zi
 ### 如果我需要临时许可证怎么办？
 您可以获得临时许可证[这里](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Creazione di voci SevenZip con Aspose.Zip per .NET
 linktitle: Crea voci SevenZip
 second_title: Aspose.Zip .NET API per la compressione e l'archiviazione dei file
 description: Esplora la potenza di Aspose.Zip per .NET! Impara a creare voci SevenZip passo dopo passo. Comprimi i file senza sforzo. Scaricalo ora per un'esperienza di sviluppo senza interruzioni.
-type: docs
 weight: 10
 url: /it/net/sevenzip-compression/create-sevenzip-entries/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Creazione di voci SevenZip con Aspose.Zip per .NET
+
 
 ## introduzione
 
@@ -83,3 +89,10 @@ Sì, Aspose.Zip per .NET è multipiattaforma e può essere utilizzato senza prob
 
 ### È disponibile una prova gratuita prima di effettuare un acquisto?
  Sì, puoi accedere alla prova gratuita[Qui](https://releases.aspose.com/) per esplorare le funzionalità prima di prendere un impegno.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

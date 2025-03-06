@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET ile Bir Klasörün Sıkıştırılmış Dosyasını A
 linktitle: Bir Klasörün Sıkıştırılmasını Açma
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Aspose.Zip for .NET ile klasörlerin sıkıştırmasını açma sanatında ustalaşın. Projelerinizdeki sıkıştırma görevlerini zahmetsizce gerçekleştirin.
-type: docs
 weight: 11
 url: /tr/net/directory-and-folder-compression/decompress-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET ile Bir Klasörün Sıkıştırılmış Dosyasını Açma
+
 Aspose.Zip for .NET kullanarak klasörlerin sıkıştırmasını sorunsuz bir şekilde açmak mı istiyorsunuz? Başka yerde arama! Bu adım adım kılavuz, süreç boyunca size yol gösterecek ve klasörlerin sıkıştırmasını zahmetsizce açma sanatında ustalaşmanızı sağlayacaktır.
 
 ## Önkoşullar
@@ -88,3 +94,9 @@ A2: Kesinlikle! Aspose.Zip for .NET, büyük ölçekli uygulamaları kolaylıkla
 ### S5: Aspose.Zip for .NET desteğini nasıl alabilirim?
 
  A5: Herhangi bir sorunuz veya yardım için şu adresi ziyaret edin:[Aspose.Zip forumu](https://forum.aspose.com/c/zip/37) toplulukla etkileşime girebileceğiniz ve uzman tavsiyesi alabileceğiniz yer.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

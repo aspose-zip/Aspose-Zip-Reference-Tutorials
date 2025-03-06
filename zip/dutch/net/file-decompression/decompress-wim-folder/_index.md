@@ -3,10 +3,16 @@ title: Decomprimeer Wim naar map in Aspose.Zip voor .NET
 linktitle: Decomprimeer Wim naar map
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Ontdek de stapsgewijze handleiding voor het decomprimeren van Wim-archieven met Aspose.Zip voor .NET. Download de bibliotheek, volg de tutorial en beheer archiefbestanden efficiënt in uw .NET-applicaties.
-type: docs
 weight: 16
 url: /nl/net/file-decompression/decompress-wim-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Decomprimeer Wim naar map in Aspose.Zip voor .NET
+
 ## Invoering
 
 Welkom bij deze uitgebreide tutorial over het decomprimeren van Wim-archieven naar een map met behulp van Aspose.Zip voor .NET. Aspose.Zip is een krachtige bibliotheek die naadloze mogelijkheden biedt voor het werken met verschillende archiefformaten in .NET-toepassingen. In deze zelfstudie begeleiden we u stap voor stap door het proces van het decomprimeren van een Wim-archief naar een opgegeven map.
@@ -77,3 +83,9 @@ A1: Ja, Aspose.Zip ondersteunt verschillende archiefformaten, waaronder ZIP, TAR
 ### V5: Waar kan ik ondersteuning krijgen of vragen stellen over Aspose.Zip voor .NET?
 
  A5: Bezoek de[Aspose.Zip-forum](https://forum.aspose.com/c/zip/37) voor ondersteuning en discussies.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

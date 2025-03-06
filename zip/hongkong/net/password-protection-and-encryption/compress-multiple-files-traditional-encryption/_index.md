@@ -3,10 +3,16 @@ title: 在 Aspose.Zip .NET 中加密壓縮多個文件
 linktitle: 使用傳統加密壓縮多個文件
 second_title: 用於檔案壓縮和歸檔的 Aspose.Zip .NET API
 description: 了解如何使用 Aspose.Zip for .NET 中的傳統加密安全地壓縮多個檔案。增強 .NET 應用程式中的資料保護。
-type: docs
 weight: 17
 url: /zh-hant/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 在 Aspose.Zip .NET 中加密壓縮多個文件
+
 
 ## 介紹
 
@@ -94,3 +100,10 @@ archive.Save(zipFile);
 ### 5. 在哪裡可以找到 Aspose.Zip for .NET 的詳細文件？
 
 參考文檔[這裡](https://reference.aspose.com/zip/net/)以獲得深入的資訊。
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Εξαγωγή καταχωρήσεων αρχείου με διαφορ�
 linktitle: Εξαγωγή καταχωρήσεων αρχείου με διαφορετικούς κωδικούς πρόσβασης
 second_title: Aspose.Zip .NET API για συμπίεση και αρχειοθέτηση αρχείων
 description: Μάθετε πώς να εξαγάγετε καταχωρήσεις αρχειοθέτησης με διαφορετικούς κωδικούς πρόσβασης στο Aspose.Zip για .NET. Ενισχύστε την ασφάλεια και την ευελιξία στις εφαρμογές σας.
-type: docs
 weight: 10
 url: /el/net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Εξαγωγή καταχωρήσεων αρχείου με διαφορετικούς κωδικούς πρόσβασης στο Aspose.Zip για .NET
+
 ## Εισαγωγή
 
 Στο συνεχώς εξελισσόμενο τοπίο της ανάπτυξης .NET, το Aspose.Zip ξεχωρίζει ως ένα ισχυρό εργαλείο για την εργασία με συμπιεσμένα αρχεία. Μεταξύ των πολλών δυνατοτήτων του, η εξαγωγή εγγραφών αρχείου με διαφορετικούς κωδικούς πρόσβασης προσθέτει ένα επιπλέον επίπεδο ασφάλειας και ευελιξίας στις εφαρμογές σας. Σε αυτόν τον οδηγό βήμα προς βήμα, θα εξερευνήσουμε πώς να το πετύχετε αυτό χρησιμοποιώντας το Aspose.Zip για .NET.
@@ -89,3 +95,9 @@ A1: Ναι, το Aspose.Zip υποστηρίζει τόσο .NET Core όσο κ�
 ### Ε5: Πού μπορώ να αγοράσω το Aspose.Zip;
 
  A5: Για να αγοράσετε το Aspose.Zip, επισκεφτείτε το[σελίδα αγοράς](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

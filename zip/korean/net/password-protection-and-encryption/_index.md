@@ -3,10 +3,16 @@ title: 비밀번호 보호 및 암호화
 linktitle: 비밀번호 보호 및 암호화
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: .NET용 Aspose.Zip으로 파일을 보호하세요! AES부터 기존 방법까지 비밀번호 보호 및 암호화에 대한 단계별 튜토리얼을 알아보세요.
-type: docs
 weight: 26
 url: /ko/net/password-protection-and-encryption/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 비밀번호 보호 및 암호화
+
 
 ## 소개
 
@@ -74,3 +80,9 @@ Aspose.Zip을 사용하여 .NET의 보안 보관 세계를 탐험해 보세요. 
 .NET용 Aspose.Zip을 사용하여 C#에서 AES 암호화 파일의 압축을 푸는 방법을 알아보세요. 효율적인 파일 처리를 위한 단계별 가이드를 따르세요.
 ### [.NET용 Aspose.Zip에서 AES 암호화 저장 파일 압축 풀기](./decompress-aes-encrypted-stored-file/)
 이 포괄적인 단계별 가이드를 통해 .NET용 Aspose.Zip에서 AES 암호화 저장 파일의 압축을 푸는 방법을 알아보세요. 지금 .NET 개발 기술을 향상시키세요!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

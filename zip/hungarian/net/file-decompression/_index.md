@@ -3,10 +3,16 @@ title: Fájl kitömörítés
 linktitle: Fájl kitömörítés
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Könnyedén elsajátíthatja a .NET fájlok kitömörítését az Aspose.Zip for .NET oktatóanyaggal. Ismerje meg a tömörített fájlok hatékony kezelését a lépésenkénti útmutatók segítségével.
-type: docs
 weight: 21
 url: /hu/net/file-decompression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Fájl kitömörítés
+
 
 
 ## Bevezetés
@@ -45,3 +51,9 @@ Ismerje meg, hogyan bonthatja ki a hagyományosan jelszóval védett fájlokat a
 Fedezze fel a Wim-archívumok Aspose.Zip for .NET használatával történő kicsomagolásáról szóló, lépésről lépésre szóló útmutatót. Töltse le a könyvtárat, kövesse az oktatóanyagot, és hatékonyan kezelje az archív fájlokat .NET-alkalmazásaiban.
 ### [Tömörítse ki az Xar-t mappába az Aspose.Zip for .NET-ben](./decompress-xar-folder/)
 Fedezze fel az Aspose.Zip erejét .NET-hez! Könnyedén kicsomagolja a Xar archívumokat ezzel a felhasználóbarát oktatóanyaggal. Növelje .NET fejlesztési élményét.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

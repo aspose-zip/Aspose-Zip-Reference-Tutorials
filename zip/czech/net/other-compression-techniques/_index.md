@@ -3,10 +3,16 @@ title: Jiné kompresní techniky
 linktitle: Jiné kompresní techniky
 second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
 description: Zvládněte pokročilé kompresní techniky s Aspose.Zip. Zvyšte své vývojové dovednosti, od extrakce přes paměťový stream až po optimalizaci úložiště pomocí komprese Lzma.
-type: docs
 weight: 27
 url: /cs/net/other-compression-techniques/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Jiné kompresní techniky
+
 
 ## Úvod
 
@@ -44,3 +50,9 @@ Naučte se ukládat komprimovaná data do streamu pomocí Aspose.Zip pro .NET. V
 Prozkoumejte sílu Aspose.Zip pro .NET pomocí našeho podrobného průvodce správou archivů ZIP s různými hesly. Zvyšte bezpečnost a flexibilitu ve svých aplikacích. 
 ### [Komprimujte do Lzma v Aspose.Zip pro .NET](./compress-to-lzma/)
 Naučte se komprimovat soubory pomocí Aspose.Zip for .NET s výkonným algoritmem Lzma. Optimalizujte úložiště a zvyšte efektivitu přenosu dat bez námahy.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

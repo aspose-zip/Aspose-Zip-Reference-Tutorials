@@ -3,10 +3,16 @@ title: 使用 Aspose.Zip for .NET 中的 FileInfo 压缩文件
 linktitle: 使用 FileInfo 压缩文件
 second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
 description: 学习使用 Aspose.Zip for .NET 的 fileinfo 来压缩文件。请按照我们的分步指南进行高效的文件管理。
-type: docs
 weight: 11
 url: /zh/net/file-compression/compress-files-fileinfo/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Zip for .NET 中的 FileInfo 压缩文件
+
 ## 介绍
 
 欢迎来到我们关于使用 Aspose.Zip for .NET 压缩文件的综合指南！如果您希望优化文件存储或传输，Aspose.Zip 是您的首选解决方案。在本教程中，我们将引导您完成使用 FileInfo 类压缩文件的过程，并提供详细的分步指南。让我们深入了解吧！
@@ -102,3 +108,9 @@ A1：Aspose.Zip 支持多种文件类型，确保压缩的多功能性。
 ### Q5：如何获得 Aspose.Zip 的临时许可证？
 
  A5：参观[这个链接](https://purchase.aspose.com/temporary-license/)有关获得临时许可证的信息。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

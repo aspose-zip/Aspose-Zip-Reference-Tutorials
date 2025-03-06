@@ -3,10 +3,16 @@ title: فك ضغط الملفات
 linktitle: فك ضغط الملفات
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: إتقان عملية فك ضغط الملفات بسهولة في .NET باستخدام Aspose.Zip لبرامج .NET التعليمية. تعلم كيفية التعامل مع الملفات المضغوطة بكفاءة باستخدام الأدلة خطوة بخطوة.
-type: docs
 weight: 21
 url: /ar/net/file-decompression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# فك ضغط الملفات
+
 
 
 ## مقدمة
@@ -45,3 +51,9 @@ url: /ar/net/file-decompression/
 استكشف الدليل التفصيلي خطوة بخطوة حول فك ضغط أرشيفات Wim باستخدام Aspose.Zip لـ .NET. قم بتنزيل المكتبة، واتبع البرنامج التعليمي، وقم بإدارة ملفات الأرشيف بكفاءة في تطبيقات .NET الخاصة بك.
 ### [قم بفك ضغط Xar إلى مجلد في Aspose.Zip لـ .NET](./decompress-xar-folder/)
 اكتشف قوة Aspose.Zip لـ .NET! قم بفك ضغط أرشيفات Xar بسهولة باستخدام هذا البرنامج التعليمي سهل الاستخدام. تعزيز تجربة تطوير .NET الخاصة بك.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

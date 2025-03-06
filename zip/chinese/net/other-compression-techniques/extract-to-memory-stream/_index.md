@@ -3,10 +3,16 @@ title: 使用 Aspose.Zip for .NET 提取到内存流
 linktitle: 提取到内存流
 second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
 description: 探索 Aspose.Zip for .NET 在本分步指南中轻松将存档提取到 MemoryStream。轻松提升您的 .NET 开发。
-type: docs
 weight: 10
 url: /zh/net/other-compression-techniques/extract-to-memory-stream/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# 使用 Aspose.Zip for .NET 提取到内存流
+
 ## 介绍
 
 在.NET 开发领域，Aspose.Zip 作为管理和操作 ZIP 和 GZIP 档案的强大工具脱颖而出。无论您是经验丰富的开发人员还是新手，本教程都将指导您完成使用 Aspose.Zip for .NET 将存档提取到 MemoryStream 的过程。
@@ -96,3 +102,9 @@ A3：如有任何疑问或帮助，请访问[Aspose.Zip 论坛](https://forum.as
 ### Q5：如何获得临时驾照？
 
  A5：如果您需要临时许可证，请访问[这里](https://purchase.aspose.com/temporary-license/)实现无缝流程。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

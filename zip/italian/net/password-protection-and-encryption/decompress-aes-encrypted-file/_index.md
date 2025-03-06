@@ -3,10 +3,16 @@ title: Decomprimere file AES - Tutorial Aspose.Zip .NET
 linktitle: Decomprimere il file crittografato AES
 second_title: Aspose.Zip .NET API per la compressione e l'archiviazione dei file
 description: Impara a decomprimere i file crittografati AES in C# utilizzando Aspose.Zip per .NET. Segui la nostra guida passo passo per una gestione efficiente dei file.
-type: docs
 weight: 18
 url: /it/net/password-protection-and-encryption/decompress-aes-encrypted-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Decomprimere file AES - Tutorial Aspose.Zip .NET
+
 
 ## introduzione
 
@@ -92,3 +98,10 @@ Sì, Aspose.Zip supporta la crittografia AES con lunghezze di chiave di 128, 192
 ### Cosa succede se ho bisogno di una licenza temporanea?
  È possibile ottenere una licenza temporanea[Qui](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

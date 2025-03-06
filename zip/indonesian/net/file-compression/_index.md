@@ -3,10 +3,16 @@ title: Kompresi Berkas
 linktitle: Kompresi Berkas
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Kompres file dalam .NET dengan mudah dengan Aspose.Zip! Pelajari manajemen file langkah demi langkah menggunakan metode Bzip2, LZMA, PPMd, Deflate, dan Store untuk pengaturan kompresi optimal.
-type: docs
 weight: 20
 url: /id/net/file-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Kompresi Berkas
+
 
 ## Perkenalan
 
@@ -47,3 +53,9 @@ Pelajari cara mengompresi file secara efisien di .NET menggunakan Aspose.Zip. Ma
 
 ## Kesimpulan
 Di bidang kompresi file, Aspose.Zip untuk .NET menonjol sebagai alat serbaguna dan kuat. Dari mengompresi satu file hingga mengelola banyak file tanpa kompresi, dan mengoptimalkan pengaturan untuk kinerja superior, rangkaian tutorial ini mencakup semuanya. Tingkatkan keterampilan manajemen file Anda dan tingkatkan aplikasi .NET Anda dengan Aspose.Zip!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

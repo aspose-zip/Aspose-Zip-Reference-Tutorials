@@ -3,10 +3,16 @@ title: सात ज़िप फ़ाइलें बनाना - .NET ट�
 linktitle: विभिन्न संपीड़न विधियों के साथ सेवनज़िप
 second_title: फ़ाइलें संपीड़न और संग्रहण के लिए Aspose.Zip .NET API
 description: विभिन्न संपीड़न विधियों का उपयोग करके .NET के लिए Aspose.Zip के साथ सात ज़िप फ़ाइलें बनाना सीखें। LZMA2, BZip2 और स्टोर के लिए आसान चरण (कोई संपीड़न नहीं)।
-type: docs
 weight: 12
 url: /hi/net/sevenzip-compression/sevenzip-various-compression-methods/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# सात ज़िप फ़ाइलें बनाना - .NET ट्यूटोरियल के लिए Aspose.Zip
+
 
 ## परिचय
 
@@ -89,3 +95,10 @@ Console.WriteLine("Successfully Created a Seven Zip File with No Compression (St
 
 ### मुझे .NET के लिए Aspose.Zip के लिए समर्थन कहाँ से मिल सकता है?
  आप पर समर्थन मांग सकते हैं[Aspose.ज़िप फोरम](https://forum.aspose.com/c/zip/37).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

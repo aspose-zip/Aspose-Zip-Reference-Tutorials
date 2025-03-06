@@ -3,10 +3,16 @@ title: SevenZip 壓縮
 linktitle: SevenZip 壓縮
 second_title: 用於檔案壓縮和歸檔的 Aspose.Zip .NET API
 description: 透過我們的 SevenZip 壓縮教學釋放 Aspose.Zip for .NET 的潛力。輕鬆建立 SevenZip 條目並探索各種壓縮方法。
-type: docs
 weight: 25
 url: /zh-hant/net/sevenzip-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# SevenZip 壓縮
+
 
 
 歡迎來到我們關於使用 Aspose.Zip for .NET 的 SevenZip 壓縮教學的綜合指南。在本教學系列中，我們將深入研究 Aspose.Zip 的強大功能，引導您完成建立 SevenZip 條目並探索各種壓縮方法的過程。讓我們踏上這段增強您的 .NET 開發體驗的旅程。
@@ -31,3 +37,9 @@ url: /zh-hant/net/sevenzip-compression/
 Master Aspose.Zip for .NET - 輕鬆建立 SevenZip 條目。透過高效率的 zip 檔案操作增強您的 .NET 應用程式。
 ### [Aspose.Zip for .NET 中的 SevenZip 具有多種壓縮方法](./sevenzip-various-compression-methods/)
 了解如何使用不同的壓縮方法透過 Aspose.Zip for .NET 建立七個 Zip 檔案。 LZMA2、BZip2 和 Store（無壓縮）的簡單步驟。
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

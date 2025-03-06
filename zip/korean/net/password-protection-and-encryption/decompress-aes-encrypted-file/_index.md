@@ -3,10 +3,16 @@ title: AES 파일 압축 풀기 - Aspose.Zip .NET Tutorial
 linktitle: AES 암호화 파일 압축 풀기
 second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
 description: .NET용 Aspose.Zip을 사용하여 C#에서 AES 암호화 파일의 압축을 푸는 방법을 알아보세요. 효율적인 파일 처리를 위한 단계별 가이드를 따르세요.
-type: docs
 weight: 18
 url: /ko/net/password-protection-and-encryption/decompress-aes-encrypted-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# AES 파일 압축 풀기 - Aspose.Zip .NET Tutorial
+
 
 ## 소개
 
@@ -92,3 +98,10 @@ using (FileStream fs = File.OpenRead(dataDir + "PasswordProtectWithAES256_out.zi
 ### 임시 라이센스가 필요한 경우 어떻게 해야 합니까?
  임시면허를 취득할 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

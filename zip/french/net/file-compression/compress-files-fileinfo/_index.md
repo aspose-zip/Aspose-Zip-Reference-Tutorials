@@ -3,10 +3,16 @@ title: Compresser des fichiers à l'aide de FileInfo dans Aspose.Zip pour .NET
 linktitle: Compresser des fichiers à l'aide de FileInfo
 second_title: API Aspose.Zip .NET pour la compression et l'archivage de fichiers
 description: Apprenez à compresser des fichiers à l'aide de fileinfo avec Aspose.Zip pour .NET. Suivez notre guide étape par étape pour une gestion efficace des fichiers.
-type: docs
 weight: 11
 url: /fr/net/file-compression/compress-files-fileinfo/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Compresser des fichiers à l'aide de FileInfo dans Aspose.Zip pour .NET
+
 ## Introduction
 
 Bienvenue dans notre guide complet sur la compression de fichiers à l'aide d'Aspose.Zip pour .NET ! Si vous cherchez à optimiser le stockage ou la transmission de vos fichiers, Aspose.Zip est votre solution incontournable. Dans ce didacticiel, nous vous guiderons tout au long du processus de compression de fichiers à l'aide de la classe FileInfo, en vous fournissant un guide détaillé étape par étape. Allons-y !
@@ -102,3 +108,9 @@ A1 : Aspose.Zip prend en charge un large éventail de types de fichiers, garanti
 ### Q5 : Comment puis-je obtenir une licence temporaire pour Aspose.Zip ?
 
  A5 : Visite[ce lien](https://purchase.aspose.com/temporary-license/) pour obtenir des informations sur l’obtention d’un permis temporaire.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

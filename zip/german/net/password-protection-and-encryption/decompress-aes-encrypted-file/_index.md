@@ -3,10 +3,16 @@ title: AES-Dateien dekomprimieren – Aspose.Zip .NET Tutorial
 linktitle: Dekomprimieren Sie die AES-verschlüsselte Datei
 second_title: Aspose.Zip .NET API für Dateikomprimierung und -archivierung
 description: Erfahren Sie, wie Sie AES-verschlüsselte Dateien in C# mit Aspose.Zip für .NET dekomprimieren. Befolgen Sie unsere Schritt-für-Schritt-Anleitung für eine effiziente Dateiverwaltung.
-type: docs
 weight: 18
 url: /de/net/password-protection-and-encryption/decompress-aes-encrypted-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# AES-Dateien dekomprimieren – Aspose.Zip .NET Tutorial
+
 
 ## Einführung
 
@@ -92,3 +98,10 @@ Ja, Aspose.Zip unterstützt die AES-Verschlüsselung mit Schlüssellängen von 1
 ### Was ist, wenn ich eine temporäre Lizenz benötige?
  Sie können eine temporäre Lizenz erhalten[Hier](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

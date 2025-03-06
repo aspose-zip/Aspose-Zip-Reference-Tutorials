@@ -3,10 +3,16 @@ title: Aspose.Zip for .NET ile RAR Girişinin sıkıştırmasını açma
 linktitle: Bir RAR Girişinin Sıkıştırılmasını Açma
 second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
 description: Aspose.Zip kullanarak .NET'te RAR girişlerini açmanın kolaylığını keşfedin. Bu güçlü kitaplıkla sıkıştırılmış dosyaları zahmetsizce işleyin.
-type: docs
 weight: 11
 url: /tr/net/rar-archive/decompress-rar-entry/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Aspose.Zip for .NET ile RAR Girişinin sıkıştırmasını açma
+
 
 ## giriiş
 
@@ -74,3 +80,9 @@ Evet, Aspose.Zip geliştiricilere ticari lisanslar sunarak ticari uygulamalar i�
 
 ### S: Aspose.Zip for .NET'te sorunlarla karşılaşırsam nereden yardım alabilirim?
  Ziyaret edin[Aspose.Zip Forumu](https://forum.aspose.com/c/zip/37) topluluk desteği ve tartışmalar için.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

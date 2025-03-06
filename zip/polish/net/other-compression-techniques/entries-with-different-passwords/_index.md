@@ -3,10 +3,16 @@ title: Wpisy z różnymi hasłami w Aspose.Zip dla .NET
 linktitle: Wpisy z różnymi hasłami
 second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
 description: Odkryj moc Aspose.Zip dla .NET dzięki naszemu przewodnikowi krok po kroku na temat zarządzania archiwami ZIP za pomocą różnych haseł. Zwiększ bezpieczeństwo i elastyczność swoich aplikacji.
-type: docs
 weight: 13
 url: /pl/net/other-compression-techniques/entries-with-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Wpisy z różnymi hasłami w Aspose.Zip dla .NET
+
 ## Wstęp
 
 Witamy w świecie Aspose.Zip dla .NET, potężnej biblioteki, która umożliwia programistom płynne zarządzanie archiwami ZIP i manipulowanie nimi. W tym samouczku zajmiemy się konkretną funkcją: pracą z wpisami z różnymi hasłami. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten przewodnik krok po kroku przeprowadzi Cię przez proces, odblokowując potencjał Aspose.Zip dla .NET.
@@ -97,3 +103,9 @@ A2: Absolutnie! Aspose.Zip dla .NET oferuje licencje komercyjne, a więcej infor
 ### P5: Czy mogę używać Aspose.Zip dla .NET bez stałej licencji?
 
  Odpowiedź 5: Tak, możesz uzyskać licencję tymczasową na swoje krótkoterminowe potrzeby. Znajdź więcej szczegółów[Tutaj](https://purchase.aspose.com/temporary-license/).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Enregistrement en streaming avec Aspose.Zip pour .NET
 linktitle: Enregistrer en streaming
 second_title: API Aspose.Zip .NET pour la compression et l'archivage de fichiers
 description: Apprenez à enregistrer des données compressées dans un flux avec Aspose.Zip pour .NET. Améliorez vos compétences en développement .NET avec ce guide étape par étape.
-type: docs
 weight: 12
 url: /fr/net/other-compression-techniques/save-to-stream/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Enregistrement en streaming avec Aspose.Zip pour .NET
+
 ## Introduction
 
 Bienvenue dans notre guide complet sur l'enregistrement de données compressées dans un flux à l'aide d'Aspose.Zip pour .NET ! Dans ce didacticiel, nous aborderons les étapes essentielles de l'utilisation d'Aspose.Zip pour gérer et compresser efficacement les données dans vos applications .NET.
@@ -100,3 +106,9 @@ A1 : Aspose.Zip est principalement conçu pour les applications .NET. Cependant,
 ### Q5 : Besoin d'aide ou avez-vous d'autres questions ?
 
  A5 : Visitez le[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) pour obtenir de l'aide de la communauté.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -3,10 +3,16 @@ title: Dekompresi File AES - Tutorial Aspose.Zip .NET
 linktitle: Dekompresi File Terenkripsi AES
 second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
 description: Pelajari cara mendekompresi file terenkripsi AES di C# menggunakan Aspose.Zip untuk .NET. Ikuti panduan langkah demi langkah kami untuk penanganan file yang efisien.
-type: docs
 weight: 18
 url: /id/net/password-protection-and-encryption/decompress-aes-encrypted-file/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekompresi File AES - Tutorial Aspose.Zip .NET
+
 
 ## Perkenalan
 
@@ -92,3 +98,10 @@ Ya, Aspose.Zip mendukung enkripsi AES dengan panjang kunci 128, 192, dan 256-bit
 ### Bagaimana jika saya memerlukan lisensi sementara?
  Anda bisa mendapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).
 
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

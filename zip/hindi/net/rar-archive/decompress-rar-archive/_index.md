@@ -3,10 +3,16 @@ title: .NET के लिए Aspose.Zip के साथ RAR पुराले�
 linktitle: RAR पुरालेख को डीकंप्रेस करना
 second_title: फ़ाइलें संपीड़न और संग्रहण के लिए Aspose.Zip .NET API
 description: Aspose.Zip के साथ .NET में RAR अभिलेखागार को डीकंप्रेस करने में महारत हासिल करें। कुशल फ़ाइल प्रबंधन के लिए चरण-दर-चरण मार्गदर्शिका। अब डाउनलोड करो!
-type: docs
 weight: 10
 url: /hi/net/rar-archive/decompress-rar-archive/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# .NET के लिए Aspose.Zip के साथ RAR पुरालेख को डीकंप्रेस करना
+
 
 ## परिचय
 
@@ -83,3 +89,10 @@ archive.ExtractToDirectory(dataDir + "DecompressRar_out");
 
 ### क्या अस्थायी लाइसेंस उपलब्ध हैं?
  हां, आप अस्थायी लाइसेंस प्राप्त कर सकते हैं[यहाँ](https://purchase.aspose.com/temporary-license/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

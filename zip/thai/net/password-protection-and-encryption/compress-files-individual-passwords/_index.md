@@ -3,10 +3,16 @@ title: บีบอัดไฟล์อย่างปลอดภัยใน 
 linktitle: บีบอัดไฟล์ด้วยรหัสผ่านส่วนบุคคล
 second_title: Aspose.Zip .NET API สำหรับการบีบอัดไฟล์และการเก็บถาวร
 description: เรียนรู้วิธีปรับปรุงความปลอดภัยของไฟล์ในแอปพลิเคชัน .NET! ปฏิบัติตามคำแนะนำทีละขั้นตอนของเราเกี่ยวกับการบีบอัดไฟล์ด้วยรหัสผ่านส่วนบุคคลโดยใช้ Aspose.Zip สำหรับ .NET
-type: docs
 weight: 16
 url: /th/net/password-protection-and-encryption/compress-files-individual-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# บีบอัดไฟล์อย่างปลอดภัยใน .NET ด้วย Aspose.Zip
+
 
 ## การแนะนำ
 
@@ -84,3 +90,10 @@ using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPass
 
 ### ฉันสามารถซื้อใบอนุญาตชั่วคราวเพื่อการทดสอบได้หรือไม่
  ใช่ คุณสามารถขอรับใบอนุญาตชั่วคราวได้[ที่นี่](https://purchase.aspose.com/temporary-license/).
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

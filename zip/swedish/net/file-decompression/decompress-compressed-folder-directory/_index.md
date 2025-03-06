@@ -3,10 +3,16 @@ title: Dekomprimera komprimerad mapp till katalog i Aspose.Zip för .NET
 linktitle: Dekomprimera komprimerad mapp till katalog
 second_title: Aspose.Zip .NET API för filkomprimering och arkivering
 description: Lås upp potentialen hos Aspose.Zip för .NET! Lär dig hur du enkelt dekomprimerar mappar med denna steg-för-steg-guide. Dyk in i en värld av sömlös kompression och extraktion.
-type: docs
 weight: 14
 url: /sv/net/file-decompression/decompress-compressed-folder-directory/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Dekomprimera komprimerad mapp till katalog i Aspose.Zip för .NET
+
 ## Introduktion
 
 Välkommen till Aspose.Zip för .NET-världen, ett robust bibliotek som gör det möjligt för utvecklare att hantera komprimerade mappar utan ansträngning. I den här handledningen kommer vi att fördjupa oss i processen att dekomprimera en komprimerad mapp till en katalog med Aspose.Zip för .NET. Spänn upp dig när vi tar dig igenom varje steg i detalj, och avmystifiera krångligheterna med detta kraftfulla verktyg.
@@ -79,3 +85,9 @@ S2: Absolut, du kan använda Aspose.Zip för .NET i både kommersiella och icke-
 ### F5: Behöver jag en tillfällig licens för att testa Aspose.Zip för .NET?
 
  S5: Ja, du kan få en tillfällig licens från[här](https://purchase.aspose.com/temporary-license/) för teständamål.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

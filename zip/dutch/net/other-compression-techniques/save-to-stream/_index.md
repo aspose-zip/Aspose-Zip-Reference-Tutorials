@@ -3,10 +3,16 @@ title: Opslaan om te streamen met Aspose.Zip voor .NET
 linktitle: Opslaan in stream
 second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
 description: Leer hoe u gecomprimeerde gegevens in een stream kunt opslaan met Aspose.Zip voor .NET. Verbeter uw .NET-ontwikkelvaardigheden met deze stapsgewijze handleiding.
-type: docs
 weight: 12
 url: /nl/net/other-compression-techniques/save-to-stream/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Opslaan om te streamen met Aspose.Zip voor .NET
+
 ## Invoering
 
 Welkom bij onze uitgebreide handleiding over het opslaan van gecomprimeerde gegevens in een stream met Aspose.Zip voor .NET! In deze zelfstudie gaan we in op de essentiële stappen voor het gebruik van Aspose.Zip om gegevens in uw .NET-applicaties efficiënt te beheren en te comprimeren.
@@ -100,3 +106,9 @@ A1: Aspose.Zip is voornamelijk ontworpen voor .NET-toepassingen. U kunt echter o
 ### Q5: Hulp nodig of meer vragen?
 
  A5: Bezoek de[Aspose.Zip-forum](https://forum.aspose.com/c/zip/37) om hulp te krijgen van de gemeenschap.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

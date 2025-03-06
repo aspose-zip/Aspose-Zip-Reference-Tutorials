@@ -3,10 +3,16 @@ title: Több fájl kicsomagolása az Aspose.Zip for .NET használatával
 linktitle: Több fájl kicsomagolása
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Ismerje meg, hogyan bonthat ki több fájlt az Aspose.Zip for .NET használatával. Kövesse lépésenkénti útmutatónkat a hatékony fájlkezelés érdekében.
-type: docs
 weight: 11
 url: /hu/net/file-decompression/decompress-multiple-files/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Több fájl kicsomagolása az Aspose.Zip for .NET használatával
+
 ## Bevezetés
 
 Üdvözöljük átfogó oktatóanyagunkban, amely több fájl kicsomagolásáról szól az Aspose.Zip for .NET használatával! Ha hatékonyan szeretné kezelni a több bejegyzést tartalmazó tömörített fájlokat, akkor jó helyen jár. Ebben az útmutatóban lépésről lépésre végigvezetjük a folyamaton az Aspose.Zip for .NET használatával.
@@ -127,3 +133,9 @@ Ebben az oktatóanyagban az Aspose.Zip for .NET használatával több fájl kics
 ### 5. kérdés: Vannak speciális rendszerkövetelmények az Aspose.Zip for .NET használatához?
 
  A5: Lásd a[dokumentáció](https://reference.aspose.com/zip/net/) részletes rendszerkövetelményekért.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

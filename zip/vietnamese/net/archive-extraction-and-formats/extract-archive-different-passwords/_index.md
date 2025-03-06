@@ -3,10 +3,16 @@ title: Trích xuất các mục lưu trữ với các mật khẩu khác nhau tr
 linktitle: Trích xuất các mục lưu trữ với mật khẩu khác nhau
 second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
 description: Tìm hiểu cách trích xuất các mục lưu trữ bằng các mật khẩu khác nhau trong Aspose.Zip dành cho .NET. Tăng cường bảo mật và tính linh hoạt trong các ứng dụng của bạn.
-type: docs
 weight: 10
 url: /vi/net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Trích xuất các mục lưu trữ với các mật khẩu khác nhau trong Aspose.Zip cho .NET
+
 ## Giới thiệu
 
 Trong bối cảnh phát triển .NET ngày càng phát triển, Aspose.Zip nổi bật như một công cụ mạnh mẽ để làm việc với các kho lưu trữ nén. Trong số nhiều tính năng của nó, việc trích xuất các mục lưu trữ bằng các mật khẩu khác nhau sẽ bổ sung thêm một lớp bảo mật và tính linh hoạt cho ứng dụng của bạn. Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách đạt được điều này bằng Aspose.Zip cho .NET.
@@ -89,3 +95,9 @@ Câu trả lời 1: Có, Aspose.Zip hỗ trợ cả .NET Core và .NET Framework
 ### Câu 5: Tôi có thể mua Aspose.Zip ở đâu?
 
  Câu trả lời 5: Để mua Aspose.Zip, hãy truy cập[trang mua hàng](https://purchase.aspose.com/buy).
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

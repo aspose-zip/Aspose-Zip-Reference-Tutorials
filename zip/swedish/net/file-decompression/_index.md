@@ -3,10 +3,16 @@ title: Fildekomprimering
 linktitle: Fildekomprimering
 second_title: Aspose.Zip .NET API för filkomprimering och arkivering
 description: Bemästra fildekomprimering utan ansträngning i .NET med Aspose.Zip för .NET tutorials. Lär dig att hantera komprimerade filer effektivt med steg-för-steg-guider.
-type: docs
 weight: 21
 url: /sv/net/file-decompression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Fildekomprimering
+
 
 
 ## Introduktion
@@ -45,3 +51,9 @@ Lär dig hur du dekomprimerar traditionellt lösenordsskyddade filer med Aspose.
 Utforska steg-för-steg-guiden för att dekomprimera Wim-arkiv med Aspose.Zip för .NET. Ladda ner biblioteket, följ handledningen och hantera arkivfiler effektivt i dina .NET-program.
 ### [Dekomprimera Xar till mapp i Aspose.Zip för .NET](./decompress-xar-folder/)
 Utforska kraften i Aspose.Zip för .NET! Dekomprimera Xar-arkiv utan ansträngning med denna användarvänliga handledning. Förbättra din .NET-utvecklingsupplevelse.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

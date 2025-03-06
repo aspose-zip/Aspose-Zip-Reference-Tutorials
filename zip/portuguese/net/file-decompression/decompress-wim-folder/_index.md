@@ -3,10 +3,16 @@ title: Descompacte Wim para pasta em Aspose.Zip para .NET
 linktitle: Descompacte Wim para pasta
 second_title: API Aspose.Zip .NET para compactação e arquivamento de arquivos
 description: Explore o guia passo a passo sobre como descompactar arquivos Wim usando Aspose.Zip para .NET. Baixe a biblioteca, siga o tutorial e gerencie arquivos compactados com eficiência em seus aplicativos .NET.
-type: docs
 weight: 16
 url: /pt/net/file-decompression/decompress-wim-folder/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Descompacte Wim para pasta em Aspose.Zip para .NET
+
 ## Introdução
 
 Bem-vindo a este tutorial abrangente sobre como descompactar arquivos Wim em uma pasta usando Aspose.Zip para .NET. Aspose.Zip é uma biblioteca poderosa que oferece recursos integrados para trabalhar com vários formatos de arquivo em aplicativos .NET. Neste tutorial, orientaremos você passo a passo no processo de descompactação de um arquivo Wim para uma pasta especificada.
@@ -77,3 +83,9 @@ A1: Sim, Aspose.Zip suporta vários formatos de arquivo, incluindo ZIP, TAR, GZI
 ### P5: Onde posso obter suporte ou fazer perguntas sobre o Aspose.Zip for .NET?
 
  A5: Visite o[Fórum Aspose.Zip](https://forum.aspose.com/c/zip/37) para apoio e discussões.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

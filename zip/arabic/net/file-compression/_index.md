@@ -3,10 +3,16 @@ title: ضغط الملفات
 linktitle: ضغط الملفات
 second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
 description: قم بضغط الملفات في .NET بسهولة باستخدام Aspose.Zip! تعرف على إدارة الملفات خطوة بخطوة باستخدام طرق Bzip2 وLZMA وPPMd وDeflate وStore لإعدادات الضغط المثالية.
-type: docs
 weight: 20
 url: /ar/net/file-compression/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# ضغط الملفات
+
 
 ## مقدمة
 
@@ -47,3 +53,9 @@ url: /ar/net/file-compression/
 
 ## خاتمة
 في مجال ضغط الملفات، يبرز Aspose.Zip for .NET كأداة قوية ومتعددة الاستخدامات. بدءًا من ضغط الملفات الفردية وحتى إدارة ملفات متعددة دون ضغط، وتحسين الإعدادات للحصول على أداء فائق، تغطي هذه المجموعة من البرامج التعليمية كل ذلك. ارفع مستوى مهاراتك في إدارة الملفات وحسّن تطبيقات .NET الخاصة بك باستخدام Aspose.Zip!
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

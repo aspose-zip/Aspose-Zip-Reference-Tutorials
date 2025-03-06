@@ -1,12 +1,17 @@
 ---
 title: Комплексные руководства и примеры использования Aspose.Zip для .NET
 linktitle: Учебные пособия по Aspose.Zip для .NET
-type: docs
 weight: 10
 url: /ru/net/
 description:
-is_root: true
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Комплексные руководства и примеры использования Aspose.Zip для .NET
+
 
 ### [Сжатие файлов](./file-compression/)
 Легко сжимайте файлы .NET с помощью Aspose.Zip! Изучите пошаговое управление файлами с использованием методов Bzip2, LZMA, PPMd, Deflate и Store для оптимальных настроек сжатия.
@@ -24,3 +29,9 @@ is_root: true
 Защитите свои файлы с помощью Aspose.Zip для .NET! Изучите пошаговые руководства по защите паролем и шифрованию, от AES до традиционных методов. 
 ### [Другие методы сжатия](./other-compression-techniques/)
 С легкостью осваивайте передовые методы сжатия с помощью Aspose.Zip для .NET. Повысьте свои навыки разработки: от извлечения в поток памяти до оптимизации хранилища с помощью сжатия Lzma.
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

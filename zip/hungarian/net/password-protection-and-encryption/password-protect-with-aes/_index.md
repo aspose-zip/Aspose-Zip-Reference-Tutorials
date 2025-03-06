@@ -3,10 +3,16 @@ title: Biztosítsa fájljait – AES titkosítás az Aspose.Zip segítségével
 linktitle: Jelszavas védelem AES-sel
 second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
 description: Ismerje meg, hogyan javíthatja fájlbiztonságát az Aspose.Zip for .NET használatával AES titkosítással. Kövesse lépésről lépésre útmutatónkat az optimális védelem érdekében.
-type: docs
 weight: 11
 url: /hu/net/password-protection-and-encryption/password-protect-with-aes/
 ---
+
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
+
+# Biztosítsa fájljait – AES titkosítás az Aspose.Zip segítségével
+
 
 ## Bevezetés
 
@@ -108,3 +114,10 @@ Az Aspose.Zip támogatja a különféle fájltípusok titkosítását, rugalmass
 
 ### Mi történik, ha elfelejtem egy titkosított archívum jelszavát?
 Sajnos nincs mód a titkosított archívum jelszavának visszaállítására. Nagyon fontos, hogy a jelszót biztonságos helyen tárolja.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
