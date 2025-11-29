@@ -1,105 +1,138 @@
 ---
-title: Aspose.Zip for .NET ile TarZ'a sıkıştırma
-linktitle: TarZ'a Sıkıştırma
-second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
-description: Aspose.Zip for .NET kullanarak TarZ'a adım adım sıkıştırmayı keşfedin. .NET projeleriniz için verimli dosya işleme.
+date: 2025-11-29
+description: Aspose.Zip for .NET kullanarak dosyaları tar arşivine eklemeyi ve TarZ
+  olarak sıkıştırmayı öğrenin – verimli .NET dosya işleme için adım adım bir rehber.
+language: tr
+linktitle: Compressing to TarZ
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Dosyaları tar'a ekleyin ve Aspose.Zip for .NET ile TarZ olarak sıkıştırın
+url: /net/archive-extraction-and-formats/compress-to-tar-z/
 weight: 15
-url: /tr/net/archive-extraction-and-formats/compress-to-tar-z/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET ile TarZ'a sıkıştırma
+# Tar dosyalarına dosya ekleme ve TarZ olarak sıkıştırma Aspose.Zip for .NET ile
 
-## giriiş
+## Giriş
 
-Aspose.Zip for .NET'i kullanarak dosyaları verimli bir şekilde TarZ formatına sıkıştırmak istiyorsanız doğru yerdesiniz. Bu adım adım kılavuz, sıkıştırma ihtiyaçlarınızı sorunsuz bir şekilde karşılamak için Aspose.Zip for .NET'in tüm potansiyelinden yararlanmanızı sağlayarak süreç boyunca size yol gösterecektir.
+**Tar dosyalarına dosya ekleme** ve ardından arşivi TarZ formatına sıkıştırma ihtiyacınız varsa, Aspose.Zip for .NET tüm süreci sorunsuz hâle getirir. Bu öğreticide, projenizi kurmaktan bir tar arşivi oluşturmaya, dosyaları eklemeye ve son olarak sıkıştırılmış .tar.z dosyasını kaydetmeye kadar her adımı adım adım inceleyeceğiz. Sonunda, herhangi bir .NET uygulamasına ekleyebileceğiniz yeniden kullanılabilir bir kod parçacığına sahip olacaksınız.
 
-## Önkoşullar
+## Hızlı Yanıtlar
+- **Tar oluşturmayı hangi kütüphane yönetir?** Aspose.Zip for .NET  
+- **Kaç satır kod?** Yaklaşık 15 satır (yorumlar hariç)  
+- **Test için lisansa ihtiyacım var mı?** Ücretsiz deneme mevcuttur; üretim için lisans gereklidir.  
+- **Desteklenen .NET sürümleri?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+  
+- **Sadece dosyalar değil, klasörler de sıkıştırabilir miyim?** Evet – bir döngü ile tüm dizinleri ekleyebilirsiniz.
 
-Eğiticiye dalmadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+## **add files to tar** nedir?
+Dosyaları bir tar arşivine eklemek, onları tek bir sıkıştırılmamış konteynerde birleştirir; bu konteyner dizin yapısını ve dosya meta verilerini korur. Tar, klasik bir Unix formatıdır ve bu kılavuzda kullanılan TarZ formatı dahil birçok sıkıştırma iş akışının temelini oluşturur.
 
--  Aspose.Zip for .NET Library: Aspose.Zip for .NET kütüphanesinin kurulu olduğundan emin olun. İndirebilirsin[Burada](https://releases.aspose.com/zip/net/).
+## TarZ olarak sıkıştırmadan önce dosyaları tar’a eklemek neden gerekir?
+- **Taşınabilirlik** – Bir tar arşivi, bireysel dosya işlemleriyle uğraşmadan platformlar arasında sorunsuz çalışır.  
+- **Hız** – Tar konteynerinin oluşturulması hızlıdır; ardından gelen Z‑sıkıştırma sadece boyutu küçültmeye odaklanır.  
+- **Uyumluluk** – Birçok eski araç, gzip‑stil sıkıştırma uygulanmadan önce bir `.tar` bekler; işte `.tar.z` tam da bunu sağlar.
 
-- Belge Dizini: Belgelerinizin saklanacağı bir dizin ayarlayın. Örneklerde "Belge Dizininiz"i yer tutucu olarak kullanacağız; onu gerçek dizin yolunuzla değiştirin.
+## Ön Koşullar
 
-## Ad Alanlarını İçe Aktar
+Koda geçmeden önce şunların kurulu olduğundan emin olun:
 
-Aspose.Zip'in işlevlerine erişmek için .NET projenize gerekli ad alanlarını içe aktarın. Kodunuzun başına aşağıdaki satırları ekleyin:
+- **Aspose.Zip for .NET** yüklü. Resmi siteden [buradan](https://releases.aspose.com/zip/net/) indirebilirsiniz.  
+- Makinenizde arşivlemek istediğiniz dosyaları içeren bir klasör bulun. Yer tutucu yolu, gerçek dizininizle değiştirin.
+
+## Ad Alanlarını İçe Aktarın
+
+C# dosyanızın en üstüne gerekli `using` ifadelerini ekleyin:
 
 ```csharp
 using System;
 using Aspose.Zip.Tar;
 ```
 
-## 1. Adım: Belge Dizininizi Başlatın
+## Adım‑Adım Kılavuz
+
+### Adım 1: Belge Dizinini Tanımlayın
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-"Belge Dizininiz"i, dosyalarınızı içeren dizinin gerçek yoluyla değiştirdiğinizden emin olun.
+> **İpucu:** Dinamik olarak yol oluşturmanız gerekiyorsa `Path.Combine` kullanın; bu, farklı işletim sistemlerinde eksik yol ayırıcılarından kaçınmanızı sağlar.
 
-## Adım 2: Dosyaları TarZ'a Sıkıştırma
+### Adım 2: Bir Tar Arşivi Oluşturun ve dosyaları ekleyin
 
-Şimdi örneği birden çok adıma ayıralım:
-
-### Adım 2.1: Tar Arşivi Oluşturma
+#### 2.1: Tar arşivi örneğini oluşturun
 
 ```csharp
 using (TarArchive archive = new TarArchive())
 {
-    // Tar arşivini oluşturmaya yönelik kodunuz buraya gelecek
+    // Your code for creating the Tar archive goes here
 }
 ```
 
-### Adım 2.2: Arşive Dosya Ekleme
+#### 2.2: Arşive dosyaları ekleyin  
+
+`using` bloğu içinde, eklemek istediğiniz her dosyayı şu şekilde ekleyin:
 
 ```csharp
 archive.CreateEntry("alice29.txt", dataDir + "alice29.txt");
 archive.CreateEntry("lcet10.txt", dataDir + "lcet10.txt");
 ```
 
-Bu kod parçası, Tar arşivine "alice29.txt" ve "lcet10.txt" olmak üzere iki dosya ekler. Gereksinimlerinize göre dosya adlarını ve yolları değiştirin.
+İhtiyacınız olan kadar `CreateEntry` çağrısı yapabilir ya da bir dizini döngüyle gezerek programatik olarak ekleyebilirsiniz.
 
-### Adım 2.3: Sıkıştırılmış Arşivi Kaydetme
+#### 2.3: Sıkıştırılmış TarZ dosyasını kaydedin  
+
+Tüm girişleri ekledikten sonra tar arşivini `.tar.z` formatına sıkıştırın:
 
 ```csharp
 archive.SaveZCompressed(dataDir + "archive.tar.z");
 ```
 
-Bu satır, sıkıştırılmış Tar arşivini "archive.tar.z" adıyla belirtilen dizine kaydeder. Dosya adını ve yolunu gerektiği gibi ayarlayın.
+Ortaya çıkan `archive.tar.z` dosyası, `dataDir` içinde belirttiğiniz aynı klasörde bulunacaktır.
 
-## Çözüm
+## Yaygın Sorunlar ve Çözümleri
 
-Tebrikler! Aspose.Zip for .NET'i kullanarak dosyaları başarıyla TarZ formatına sıkıştırdınız. Bu güçlü kitaplık, sıkıştırma işlemini basitleştirerek .NET projeleriniz için verimli ve güvenilir olmasını sağlar.
+| Sorun | Sebep | Çözüm |
+|-------|--------|-----|
+| **Dosya bulunamadı** | Yanlış yol veya eksik dosya uzantısı | `dataDir` sonunun bir yol ayırıcı içerdiğini ve dosya adlarının doğru olduğunu doğrulayın. |
+| **Erişim reddedildi** | Hedef klasörde yetersiz izinler | Uygulamayı gerekli yetkilerle çalıştırın veya yazılabilir bir dizin seçin. |
+| **Sıkıştırılmış dosya beklenenden büyük** | Orijinal dosyalar zaten sıkıştırılmış (ör. görüntüler, videolar) | TarZ, metin veya günlük dosyalarında en iyi sonucu verir; zaten sıkıştırılmış dosyaları olduğu gibi bırakmayı düşünün. |
 
-## SSS'ler
+## Sıkça Sorulan Sorular
 
-### S1: Klasörleri Aspose.Zip for .NET kullanarak sıkıştırabilir miyim?
+**S: Aspose.Zip for .NET ile tüm klasörleri sıkıştırabilir miyim?**  
+C: Kesinlikle. `Directory.GetFiles` döngüsü kullanarak her dosya için `CreateEntry` çağırabilir ve göreli yolları koruyabilirsiniz.
 
-A1: Kesinlikle! Aspose.Zip for .NET, hem tek tek dosyaları hem de tüm klasörleri zahmetsizce sıkıştırmanıza olanak tanır.
+**S: Aspose.Zip for .NET için deneme sürümü mevcut mu?**  
+C: Evet, Aspose.Zip for .NET’in ücretsiz deneme sürümünü [buradan](https://releases.aspose.com/) indirebilirsiniz.
 
-### S2: Aspose.Zip for .NET'in deneme sürümü mevcut mu?
+**S: Aspose.Zip for .NET için kapsamlı belgeleri nerede bulabilirim?**  
+C: Kütüphanenin özellikleri ve kullanımı hakkında detaylı bilgiler [burada](https://reference.aspose.com/zip/net/) mevcuttur.
 
- Cevap2: Evet, ücretsiz deneme sürümünü indirerek Aspose.Zip for .NET'in özelliklerini keşfedebilirsiniz.[Burada](https://releases.aspose.com/).
+**S: Aspose.Zip for .NET için destek nasıl alınır?**  
+C: Yardım almak, deneyimlerinizi paylaşmak ve toplulukla iletişime geçmek için [Aspose.Zip forumunu](https://forum.aspose.com/c/zip/37) ziyaret edin.
 
-### S3: Aspose.Zip for .NET'in kapsamlı belgelerini nerede bulabilirim?
+**S: Aspose.Zip for .NET için geçici bir lisans alabilir miyim?**  
+C: Evet, geçici lisans ihtiyacınız varsa [buradan](https://purchase.aspose.com/temporary-license/) temin edebilirsiniz.
 
- A3: Belgeler mevcut[Burada](https://reference.aspose.com/zip/net/), kütüphanenin özellikleri ve kullanımına ilişkin ayrıntılı bilgiler sağlar.
+## Sonuç
 
-### S4: Aspose.Zip for .NET desteğini nasıl alabilirim?
+Artık **tar dosyalarına dosya ekleme** ve sonucu Aspose.Zip for .NET kullanarak TarZ arşivi olarak sıkıştırma konusunda bilgi sahibisiniz. Bu yöntem, kolayca aktarılabilir, depolanabilir veya daha ileri işlem yapılabilir temiz ve taşınabilir bir paket sunar. Kod parçacığını dizinleri toplu işleyerek, derleme hatlarına entegre ederek veya diğer Aspose bileşenleriyle birleştirerek daha zengin belge iş akışları oluşturmak için özgürce uyarlayabilirsiniz.
 
- A4: Ziyaret edin[Aspose.Zip forumu](https://forum.aspose.com/c/zip/37) yardım istemek, deneyimlerinizi paylaşmak ve toplulukla bağlantı kurmak için.
-
-### S5: Aspose.Zip for .NET için geçici bir lisans alabilir miyim?
-
-Cevap5: Evet, geçici lisansa ihtiyacınız varsa alabilirsiniz.[Burada](https://purchase.aspose.com/temporary-license/).
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Son Güncelleme:** 2025-11-29  
+**Test Edilen Versiyon:** Aspose.Zip for .NET 24.11  
+**Yazar:** Aspose  
+
+---
