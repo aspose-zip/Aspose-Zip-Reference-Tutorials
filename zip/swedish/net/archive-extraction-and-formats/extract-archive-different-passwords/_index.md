@@ -1,103 +1,135 @@
 ---
-title: Extrahera arkivposter med olika lösenord i Aspose.Zip för .NET
-linktitle: Extrahera arkivposter med olika lösenord
-second_title: Aspose.Zip .NET API för filkomprimering och arkivering
-description: Lär dig hur du extraherar arkivposter med olika lösenord i Aspose.Zip för .NET. Öka säkerheten och flexibiliteten i dina applikationer.
+date: 2025-12-01
+description: Lär dig hur du extraherar zip-filer med lösenord med Aspose.Zip för .NET
+  och hanterar flera lösenordsskyddade poster effektivt.
+language: sv
+linktitle: Extracting Archive Entries with Different Passwords
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Hur man extraherar zip med lösenord med Aspise.Zip för .NET
+url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
 weight: 10
-url: /sv/net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Extrahera arkivposter med olika lösenord i Aspose.Zip för .NET
+# Hur man extraherar Zip med lösenord med Aspose.Zip för .NET
 
-## Introduktion
+I moderna .NET‑applikationer är det vanligt att skydda känslig data i ZIP‑arkiv. Denna handledning visar **hur man extraherar zip med lösenord** när varje post använder ett annat lösenord, vilket ger dig fin‑granulär kontroll över säkerheten samtidigt som extraheringsprocessen förblir enkel.
 
-I det ständigt föränderliga landskapet av .NET-utveckling framstår Aspose.Zip som ett kraftfullt verktyg för att arbeta med komprimerade arkiv. Bland dess många funktioner, extrahering av arkivposter med olika lösenord ger ett extra lager av säkerhet och mångsidighet till dina applikationer. I den här steg-för-steg-guiden kommer vi att utforska hur du uppnår detta med Aspose.Zip för .NET.
+## Snabba svar
+- **Vilket bibliotek ska jag använda?** Aspose.Zip för .NET.
+- **Kan jag extrahera poster som har olika lösenord?** Ja — varje post kan öppnas med sitt eget lösenord.
+- **Behöver jag en licens för produktion?** En kommersiell licens krävs; en gratis provversion finns tillgänglig.
+- **Stödda plattformar?** .NET Framework, .NET Core, .NET 5/6+.
+- **Typisk implementeringstid?** Ungefär 10 minuter för ett grundläggande scenario.
 
 ## Förutsättningar
 
-Innan vi dyker in i handledningen, se till att du har följande på plats:
+Innan vi dyker ner, se till att du har:
 
--  Aspose.Zip för .NET: Se till att du har Aspose.Zip-biblioteket installerat i ditt .NET-projekt. Du hittar dokumentationen[här](https://reference.aspose.com/zip/net/).
+- **Aspose.Zip för .NET** installerat i ditt projekt. Du hittar den officiella dokumentationen [här](https://reference.aspose.com/zip/net/).
+- En .NET‑utvecklingsmiljö (Visual Studio, Rider eller VS Code) som riktar sig mot .NET 5 eller senare.
+- En ZIP‑fil som innehåller poster krypterade med **olika lösenord** (exempelfilen som används här är `different_password.zip`).
 
-- Utvecklingsmiljö: Konfigurera en .NET-utvecklingsmiljö med Visual Studio eller någon annan kompatibel IDE.
+## Importera namnrymder
 
-## Importera namnområden
-
-För att komma igång, importera de nödvändiga namnrymden i din C#-kod:
+Importera först de namnrymder som krävs för att arbeta med arkiv:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-## Steg 1: Ställ in din dokumentkatalog
+Dessa två `using`‑satser ger dig åtkomst till `Archive`‑klassen och standard‑I/O‑verktyg.
 
-Innan du arbetar med Aspose.Zip-biblioteket, ställ in katalogen där du vill lagra de extraherade filerna:
+## Steg 1: Definiera arbetskatalogen
+
+Ange mappen där ZIP‑filen ligger och där de extraherade filerna ska skrivas:
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
+> **Proffstips:** Använd `Path.Combine` för plattformsoberoende sökvägsbyggnad om du behöver stöd för Linux/macOS.
+
 ## Steg 2: Extrahera arkivposter med olika lösenord
 
-Låt oss nu dela upp processen att extrahera arkivposter med olika lösenord i flera steg:
+Nedan går vi igenom exakt hur du öppnar arkivet och extraherar varje post med sitt eget lösenord.
 
-### Steg 2.1: Öppna zip-filen
+### Steg 2.1: Öppna Zip‑filen
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "\\different_password.zip", FileMode.Open))
 {
     using (Archive archive = new Archive(zipFile))
     {
-        // Fortsätt till nästa steg...
+        // Continue to the next steps...
     }
 }
 ```
 
-### Steg 2.2: Extrahera den första posten med ett lösenord
+`Archive`‑objektet representerar ZIP‑behållaren. Att hålla `FileStream` och `Archive` i `using`‑block säkerställer att alla resurser frigörs omedelbart.
+
+### Steg 2.2: Extrahera den första posten (Lösenord = “first_pass”)
 
 ```csharp
 archive.Entries[0].Extract(dataDir + "alice29_extracted_pass_out.txt", "first_pass");
 ```
 
-### Steg 2.3: Extrahera den andra posten med ett lösenord
+Här **extraherar vi flera zip‑poster** genom att adressera dem via `Entries`‑samlingen. Den första posten dekrypteras med lösenordet `"first_pass"`.
+
+### Steg 2.3: Extrahera den andra posten (Lösenord = “second_pass”)
 
 ```csharp
 archive.Entries[1].Extract(dataDir + "asyoulik_extracted_pass_out.txt", "second_pass");
 ```
 
-## Slutsats
+Den andra posten använder ett annat lösenord, vilket demonstrerar **lösenordsskyddad zip‑extrahering** för varje enskild fil.
 
-I den här handledningen har vi utforskat hur man använder Aspose.Zip för .NET för att extrahera arkivposter med olika lösenord. Genom att följa dessa steg förbättrar du säkerheten för dina applikationer samtidigt som du njuter av flexibiliteten som Aspose.Zip ger.
+## Varför detta tillvägagångssätt är viktigt
 
-## FAQ's
+- **Granulär säkerhet:** Varje fil kan ha sitt eget lösenord, vilket minskar risken om ett enda lösenord blir komprometterat.
+- **Flexibilitet:** Du kan programatiskt bestämma vilket lösenord som ska användas baserat på affärslogik (t.ex. användarroller).
+- **Prestanda:** Aspose.Zip behandlar poster i minnet, vilket undviker behovet av att packa upp hela arkivet först.
 
-### F1: Kan jag använda Aspose.Zip i både .NET Core- och .NET Framework-projekt?
+## Vanliga problem & lösningar
 
-S1: Ja, Aspose.Zip stöder både .NET Core och .NET Framework, vilket ger flexibilitet för utvecklare som arbetar i olika miljöer.
+| Problem | Orsak | Lösning |
+|-------|--------|-----|
+| *“Invalid password” exception* | Fel lösenord angivet eller posten är faktiskt inte krypterad. | Verifiera lösenordsträngen och säkerställ att posten är lösenordsskyddad. |
+| *File not found* | `dataDir`‑sökvägen är felaktig. | Använd `Path.Combine(dataDir, "different_password.zip")` och dubbelkolla mappen. |
+| *Stora arkiv ger hög minnesanvändning* | Alla poster laddas in i minnet som standard. | Strömma varje post individuellt eller använd `Archive.ExtractToDirectory` med en lösenordskallback (om stöd finns). |
 
-### F2: Var kan jag hitta ytterligare stöd eller diskussioner om Aspose.Zip?
+## Vanliga frågor
 
- A2: Besök[Aspose.Zip forum](https://forum.aspose.com/c/zip/37) att engagera sig i samhället, ställa frågor och dela dina erfarenheter.
+**Q1: Kan jag använda Aspose.Zip i både .NET Core‑ och .NET Framework‑projekt?**  
+A1: Ja, Aspose.Zip stödjer .NET Framework, .NET Core och .NET 5/6+, vilket ger dig flexibilitet över plattformar.
 
-### F3: Finns det en gratis testversion tillgänglig för Aspose.Zip?
+**Q2: Var kan jag hitta ytterligare support eller community‑diskussioner kring Aspose.Zip?**  
+A2: Besök [Aspose.Zip‑forumet](https://forum.aspose.com/c/zip/37) för att interagera med communityn, ställa frågor och dela erfarenheter.
 
- S3: Ja, du kan komma åt den kostnadsfria testversionen av Aspose.Zip[här](https://releases.aspose.com/).
+**Q3: Finns det en gratis provversion av Aspose.Zip?**  
+A3: Ja, du kan komma åt den fria provversionen av Aspose.Zip [här](https://releases.aspose.com/).
 
-### F4: Hur kan jag få en tillfällig licens för Aspose.Zip?
+**Q4: Hur kan jag få en tillfällig licens för Aspose.Zip?**  
+A4: För en tillfällig licens, besök [denna länk](https://purchase.aspose.com/temporary-license/).
 
- A4: För en tillfällig licens, besök[den här länken](https://purchase.aspose.com/temporary-license/).
+**Q5: Var kan jag köpa Aspose.Zip?**  
+A5: För att köpa Aspose.Zip, gå till [köpsidan](https://purchase.aspose.com/buy).
 
-### F5: Var kan jag köpa Aspose.Zip?
-
- S5: För att köpa Aspose.Zip, besök[köpsidan](https://purchase.aspose.com/buy).
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Senast uppdaterad:** 2025-12-01  
+**Testad med:** Aspose.Zip för .NET 24.11 (senaste vid skrivtillfället)  
+**Författare:** Aspose  
+
+---

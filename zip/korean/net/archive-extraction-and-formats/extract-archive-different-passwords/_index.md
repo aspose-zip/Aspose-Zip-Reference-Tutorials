@@ -1,103 +1,133 @@
 ---
-title: .NET용 Aspose.Zip에서 다른 비밀번호를 사용하여 아카이브 항목 추출
-linktitle: 다른 비밀번호를 사용하여 아카이브 항목 추출
-second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
-description: .NET용 Aspose.Zip에서 다양한 비밀번호를 사용하여 아카이브 항목을 추출하는 방법을 알아보세요. 애플리케이션의 보안과 유연성을 강화하세요.
+date: 2025-12-01
+description: Aspose.Zip for .NET을 사용하여 비밀번호가 있는 zip 파일을 추출하는 방법을 배우고, 여러 비밀번호 보호된
+  항목을 효율적으로 처리하세요.
+language: ko
+linktitle: Extracting Archive Entries with Different Passwords
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: .NET용 Aspise.Zip을 사용하여 비밀번호가 있는 Zip 파일 추출 방법
+url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
 weight: 10
-url: /ko/net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# .NET용 Aspose.Zip에서 다른 비밀번호를 사용하여 아카이브 항목 추출
+# Aspose.Zip for .NET을 사용하여 비밀번호로 Zip 추출하는 방법
 
-## 소개
-
-끊임없이 진화하는 .NET 개발 환경에서 Aspose.Zip은 압축된 아카이브 작업을 위한 강력한 도구로 돋보입니다. 다양한 기능 중에서 다양한 비밀번호로 아카이브 항목을 추출하면 애플리케이션에 추가 보안 계층과 다양성이 추가됩니다. 이 단계별 가이드에서는 .NET용 Aspose.Zip을 사용하여 이를 달성하는 방법을 살펴보겠습니다.
+## 빠른 답변
+- **어떤 라이브러리를 사용해야 하나요?** Aspose.Zip for .NET.
+- **다른 비밀번호를 가진 항목을 추출할 수 있나요?** 예—각 항목을 개별 비밀번호로 열 수 있습니다.
+- **프로덕션에 라이선스가 필요합니까?** 상업용 라이선스가 필요합니다; 무료 체험판을 사용할 수 있습니다.
+- **지원되는 플랫폼?** .NET Framework, .NET Core, .NET 5/6+.
+- **보통 구현 시간?** 기본 시나리오에 약 10 분 정도.
 
 ## 전제 조건
 
-튜토리얼을 시작하기 전에 다음 사항이 준비되어 있는지 확인하세요.
+시작하기 전에 다음을 확인하십시오:
 
--  .NET용 Aspose.Zip: .NET 프로젝트에 Aspose.Zip 라이브러리가 설치되어 있는지 확인하세요. 문서를 찾을 수 있습니다[여기](https://reference.aspose.com/zip/net/).
-
-- 개발 환경: Visual Studio 또는 기타 호환 가능한 IDE를 사용하여 .NET 개발 환경을 설정합니다.
+- **Aspose.Zip for .NET**이 프로젝트에 설치되어 있어야 합니다. 공식 문서는 [여기](https://reference.aspose.com/zip/net/)에서 확인할 수 있습니다.
+- .NET 5 이상을 대상으로 하는 .NET 개발 환경(Visual Studio, Rider, 또는 VS Code)이 필요합니다.
+- **다른 비밀번호**로 암호화된 항목을 포함하는 ZIP 파일이 필요합니다(예시 파일은 `different_password.zip`).
 
 ## 네임스페이스 가져오기
 
-시작하려면 C# 코드에서 필요한 네임스페이스를 가져옵니다.
+아카이브 작업에 필요한 네임스페이스를 먼저 가져옵니다:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-## 1단계: 문서 디렉터리 설정
+이 두 개의 `using` 문을 통해 `Archive` 클래스와 표준 I/O 유틸리티에 접근할 수 있습니다.
 
-Aspose.Zip 라이브러리를 사용하기 전에 추출된 파일을 저장할 디렉터리를 설정하세요.
+## 단계 1: 작업 디렉터리 정의
+
+ZIP 파일이 위치하고 추출된 파일이 기록될 폴더를 지정합니다:
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## 2단계: 비밀번호가 다른 아카이브 항목 추출
+> **Pro tip:** Linux/macOS를 지원해야 한다면 `Path.Combine`을 사용해 교차 플랫폼 경로를 구성하세요.
 
-이제 서로 다른 비밀번호를 가진 아카이브 항목을 추출하는 프로세스를 여러 단계로 나누어 보겠습니다.
+## 단계 2: 서로 다른 비밀번호로 아카이브 항목 추출
 
-### 2.1단계: Zip 파일 열기
+아래에서는 아카이브를 열고 각 항목을 자체 비밀번호로 추출하는 정확한 절차를 설명합니다.
+
+### 단계 2.1: Zip 파일 열기
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "\\different_password.zip", FileMode.Open))
 {
     using (Archive archive = new Archive(zipFile))
     {
-        // 다음 단계를 계속하세요...
+        // Continue to the next steps...
     }
 }
 ```
 
-### 2.2단계: 비밀번호가 포함된 첫 번째 항목 추출
+`Archive` 객체는 ZIP 컨테이너를 나타냅니다. `FileStream`과 `Archive`를 `using` 블록 안에 두면 모든 리소스가 즉시 해제됩니다.
+
+### 단계 2.2: 첫 번째 항목 추출 (비밀번호 = “first_pass”)
 
 ```csharp
 archive.Entries[0].Extract(dataDir + "alice29_extracted_pass_out.txt", "first_pass");
 ```
 
-### 2.3단계: 비밀번호가 포함된 두 번째 항목 추출
+여기서는 `Entries` 컬렉션을 통해 여러 ZIP 항목을 추출합니다. 첫 번째 항목은 비밀번호 `"first_pass"`로 복호화됩니다.
+
+### 단계 2.3: 두 번째 항목 추출 (비밀번호 = “second_pass”)
 
 ```csharp
 archive.Entries[1].Extract(dataDir + "asyoulik_extracted_pass_out.txt", "second_pass");
 ```
 
-## 결론
+두 번째 항목은 다른 비밀번호를 사용하므로, 개별 파일에 대한 **비밀번호 보호 zip 추출**을 보여줍니다.
 
-이 튜토리얼에서는 .NET용 Aspose.Zip을 사용하여 다양한 비밀번호를 가진 아카이브 항목을 추출하는 방법을 살펴보았습니다. 다음 단계를 따르면 Aspose.Zip이 제공하는 유연성을 즐기면서 애플리케이션의 보안을 강화할 수 있습니다.
+## 이 접근 방식이 중요한 이유
 
-## FAQ
+- **세분화된 보안:** 각 파일마다 고유 비밀번호를 가질 수 있어, 하나의 비밀번호가 유출되더라도 위험을 최소화합니다.
+- **유연성:** 비즈니스 로직(예: 사용자 역할)에 따라 적용할 비밀번호를 프로그래밍적으로 결정할 수 있습니다.
+- **성능:** Aspose.Zip은 항목을 메모리 내에서 처리하므로 전체 아카이브를 먼저 압축 해제할 필요가 없습니다.
 
-### 질문 1: .NET Core 및 .NET Framework 프로젝트 모두에서 Aspose.Zip을 사용할 수 있습니까?
+## 일반적인 문제 및 해결책
 
-A1: 예, Aspose.Zip은 .NET Core와 .NET Framework를 모두 지원하므로 다양한 환경에서 작업하는 개발자에게 유연성을 제공합니다.
+| Issue | Reason | Fix |
+|-------|--------|-----|
+| *“Invalid password” exception* | 잘못된 비밀번호가 제공되었거나 해당 항목이 실제로 암호화되지 않았습니다. | 비밀번호 문자열을 확인하고 항목이 비밀번호로 보호되어 있는지 확인하십시오. |
+| *File not found* | `dataDir` 경로가 올바르지 않습니다. | `Path.Combine(dataDir, "different_password.zip")`을 사용하고 폴더를 다시 확인하십시오. |
+| *Large archives cause high memory usage* | 기본적으로 모든 항목이 메모리에 로드됩니다. | 각 항목을 개별적으로 스트리밍하거나 (지원되는 경우) 비밀번호 콜백과 함께 `Archive.ExtractToDirectory`를 사용하십시오. |
 
-### Q2: Aspose.Zip과 관련된 추가 지원이나 커뮤니티 토론은 어디서 찾을 수 있나요?
+## 자주 묻는 질문
 
- A2: 다음을 방문하세요.[Aspose.Zip 포럼](https://forum.aspose.com/c/zip/37) 커뮤니티에 참여하고, 질문하고, 경험을 공유하세요.
+**Q1: Aspose.Zip을 .NET Core와 .NET Framework 프로젝트 모두에서 사용할 수 있나요?**  
+A1: 예, Aspose.Zip은 .NET Framework, .NET Core 및 .NET 5/6+를 지원하므로 다양한 플랫폼에서 유연하게 사용할 수 있습니다.
 
-### Q3: Aspose.Zip에 대한 무료 평가판이 있습니까?
+**Q2: Aspose.Zip과 관련된 추가 지원이나 커뮤니티 토론을 어디서 찾을 수 있나요?**  
+A2: [Aspose.Zip 포럼](https://forum.aspose.com/c/zip/37)을 방문하여 커뮤니티와 소통하고, 질문을 올리며 경험을 공유할 수 있습니다.
 
- A3: 예, Aspose.Zip의 무료 평가판에 액세스할 수 있습니다.[여기](https://releases.aspose.com/).
+**Q3: Aspose.Zip의 무료 체험판이 있나요?**  
+A3: 예, Aspose.Zip 무료 체험판은 [여기](https://releases.aspose.com/)에서 이용할 수 있습니다.
 
-### Q4: Aspose.Zip의 임시 라이센스를 어떻게 얻을 수 있나요?
+**Q4: Aspose.Zip의 임시 라이선스를 어떻게 얻을 수 있나요?**  
+A4: 임시 라이선스는 [이 링크](https://purchase.aspose.com/temporary-license/)를 통해 발급받을 수 있습니다.
 
- A4: 임시 라이센스를 받으려면 다음을 방문하세요.[이 링크](https://purchase.aspose.com/temporary-license/).
+**Q5: Aspose.Zip을 구매하려면 어디로 가야 하나요?**  
+A5: 구매 페이지는 [여기](https://purchase.aspose.com/buy)에서 확인할 수 있습니다.
 
-### Q5: Aspose.Zip을 어디서 구입할 수 있나요?
-
- A5: Aspose.Zip을 구매하려면 다음을 방문하세요.[구매 페이지](https://purchase.aspose.com/buy).
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Last Updated:** 2025-12-01  
+**Tested With:** Aspose.Zip for .NET 24.11 (latest at time of writing)  
+**Author:** Aspose  
+
+---

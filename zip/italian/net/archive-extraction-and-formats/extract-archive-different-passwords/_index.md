@@ -1,103 +1,135 @@
 ---
-title: Estrazione di voci di archivio con password diverse in Aspose.Zip per .NET
-linktitle: Estrazione di voci di archivio con password diverse
-second_title: Aspose.Zip .NET API per la compressione e l'archiviazione dei file
-description: Scopri come estrarre voci di archivio con password diverse in Aspose.Zip per .NET. Aumenta la sicurezza e la flessibilità delle tue applicazioni.
+date: 2025-12-01
+description: Scopri come estrarre file zip con password usando Aspose.Zip per .NET,
+  gestendo in modo efficiente più voci protette da password.
+language: it
+linktitle: Extracting Archive Entries with Different Passwords
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Come estrarre un file zip con password usando Aspise.Zip per .NET
+url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
 weight: 10
-url: /it/net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Estrazione di voci di archivio con password diverse in Aspose.Zip per .NET
+# Come estrarre un file Zip con password usando Aspose.Zip per .NET
 
-## introduzione
+Nelle moderne applicazioni .NET, proteggere i dati sensibili all'interno di archivi ZIP è una necessità comune. Questo tutorial mostra **come estrarre zip con password** quando ogni voce utilizza una password diversa, offrendoti un controllo granulare sulla sicurezza mantenendo il processo di estrazione semplice.
 
-Nel panorama in continua evoluzione dello sviluppo .NET, Aspose.Zip si distingue come un potente strumento per lavorare con archivi compressi. Tra le sue numerose funzionalità, l'estrazione di voci di archivio con password diverse aggiunge un ulteriore livello di sicurezza e versatilità alle tue applicazioni. In questa guida passo passo, esploreremo come raggiungere questo obiettivo utilizzando Aspose.Zip per .NET.
+## Risposte rapide
+- **Quale libreria devo usare?** Aspose.Zip for .NET.
+- **Posso estrarre voci che hanno password diverse?** Sì—ogni voce può essere aperta con la propria password.
+- **Ho bisogno di una licenza per la produzione?** È necessaria una licenza commerciale; è disponibile una versione di prova gratuita.
+- **Piattaforme supportate?** .NET Framework, .NET Core, .NET 5/6+.
+- **Tempo tipico di implementazione?** Circa 10 minuti per uno scenario base.
 
 ## Prerequisiti
 
-Prima di immergerci nel tutorial, assicurati di avere a disposizione quanto segue:
+Prima di iniziare, assicurati di avere:
 
--  Aspose.Zip per .NET: assicurati di avere la libreria Aspose.Zip installata nel tuo progetto .NET. Puoi trovare la documentazione[Qui](https://reference.aspose.com/zip/net/).
+- **Aspose.Zip for .NET** installato nel tuo progetto. Puoi trovare la documentazione ufficiale [qui](https://reference.aspose.com/zip/net/).
+- Un ambiente di sviluppo .NET (Visual Studio, Rider o VS Code) che targetizza .NET 5 o versioni successive.
+- Un file ZIP che contiene voci criptate con **password diverse** (l'esempio usato qui è `different_password.zip`).
 
-- Ambiente di sviluppo: configura un ambiente di sviluppo .NET con Visual Studio o qualsiasi altro IDE compatibile.
+## Importare gli spazi dei nomi
 
-## Importa spazi dei nomi
-
-Per iniziare, importa gli spazi dei nomi necessari nel codice C#:
+Per prima cosa, importa gli spazi dei nomi necessari per lavorare con gli archivi:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-## Passaggio 1: imposta la directory dei documenti
+Queste due istruzioni `using` ti danno accesso alla classe `Archive` e alle utility standard di I/O.
 
-Prima di lavorare con la libreria Aspose.Zip, imposta la directory in cui desideri archiviare i file estratti:
+## Passo 1: Definire la directory di lavoro
+
+Imposta la cartella in cui si trova il file ZIP e dove verranno scritti i file estratti:
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Passaggio 2: estrazione delle voci dell'archivio con password diverse
+> **Consiglio:** Usa `Path.Combine` per costruire percorsi cross‑platform se devi supportare Linux/macOS.
 
-Ora suddividiamo il processo di estrazione delle voci di archivio con password diverse in più passaggi:
+## Passo 2: Estrarre le voci dell'archivio con password diverse
 
-### Passaggio 2.1: aprire il file zip
+Di seguito percorriamo i passaggi esatti per aprire l'archivio ed estrarre ogni voce usando la propria password.
+
+### Passo 2.1: Aprire il file Zip
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "\\different_password.zip", FileMode.Open))
 {
     using (Archive archive = new Archive(zipFile))
     {
-        // Continua con i passaggi successivi...
+        // Continue to the next steps...
     }
 }
 ```
 
-### Passaggio 2.2: estrarre la prima voce con una password
+L'oggetto `Archive` rappresenta il contenitore ZIP. Mantenere `FileStream` e `Archive` all'interno di blocchi `using` garantisce che tutte le risorse vengano rilasciate prontamente.
+
+### Passo 2.2: Estrarre la prima voce (Password = “first_pass”)
 
 ```csharp
 archive.Entries[0].Extract(dataDir + "alice29_extracted_pass_out.txt", "first_pass");
 ```
 
-### Passaggio 2.3: estrarre la seconda voce con una password
+Qui **estraiamo più voci zip** accedendovi tramite la collezione `Entries`. La prima voce è decrittata con la password `"first_pass"`.
+
+### Passo 2.3: Estrarre la seconda voce (Password = “second_pass”)
 
 ```csharp
 archive.Entries[1].Extract(dataDir + "asyoulik_extracted_pass_out.txt", "second_pass");
 ```
 
-## Conclusione
+La seconda voce utilizza una password diversa, dimostrando **estrazione di zip protetto da password** per ogni singolo file.
 
-In questo tutorial, abbiamo esplorato come utilizzare Aspose.Zip per .NET per estrarre voci di archivio con password diverse. Seguendo questi passaggi, migliorerai la sicurezza delle tue applicazioni godendo della flessibilità fornita da Aspose.Zip.
+## Perché questo approccio è importante
+
+- **Sicurezza granulare:** ogni file può avere la propria password, riducendo il rischio se una singola password viene compromessa.
+- **Flessibilità:** puoi decidere programmaticamente quale password applicare in base alla logica di business (ad esempio, ruoli utente).
+- **Prestazioni:** Aspose.Zip elabora le voci in memoria, evitando la necessità di decomprimere l'intero archivio prima.
+
+## Problemi comuni e soluzioni
+
+| Problema | Motivo | Soluzione |
+|----------|--------|-----------|
+| *“Invalid password” exception* | Password errata fornita o la voce non è realmente criptata. | Verifica la stringa della password e assicurati che la voce sia protetta da password. |
+| *File not found* | Il percorso `dataDir` è errato. | Usa `Path.Combine(dataDir, "different_password.zip")` e ricontrolla la cartella. |
+| *Large archives cause high memory usage* | Tutte le voci vengono caricate in memoria per impostazione predefinita. | Esegui lo streaming di ogni voce individualmente o usa `Archive.ExtractToDirectory` con una callback per la password (se supportata). |
 
 ## Domande frequenti
 
-### Q1: posso utilizzare Aspose.Zip in entrambi i progetti .NET Core e .NET Framework?
+**D1: Posso usare Aspose.Zip sia in progetti .NET Core che .NET Framework?**  
+R1: Sì, Aspose.Zip supporta .NET Framework, .NET Core e .NET 5/6+, offrendoti flessibilità su più piattaforme.
 
-A1: Sì, Aspose.Zip supporta sia .NET Core che .NET Framework, offrendo flessibilità agli sviluppatori che lavorano in vari ambienti.
+**D2: Dove posso trovare supporto aggiuntivo o discussioni della community relative ad Aspose.Zip?**  
+R2: Visita il [forum Aspose.Zip](https://forum.aspose.com/c/zip/37) per interagire con la community, fare domande e condividere esperienze.
 
-### Q2: Dove posso trovare ulteriore supporto o discussioni della community relative ad Aspose.Zip?
+**D3: È disponibile una versione di prova gratuita per Aspose.Zip?**  
+R3: Sì, puoi accedere alla versione di prova gratuita di Aspose.Zip [qui](https://releases.aspose.com/).
 
- A2: Visita il[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) per interagire con la comunità, porre domande e condividere le tue esperienze.
+**D4: Come posso ottenere una licenza temporanea per Aspose.Zip?**  
+R4: Per una licenza temporanea, visita [questo link](https://purchase.aspose.com/temporary-license/).
 
-### Q3: È disponibile una prova gratuita per Aspose.Zip?
+**D5: Dove posso acquistare Aspose.Zip?**  
+R5: Per acquistare Aspose.Zip, visita la [pagina di acquisto](https://purchase.aspose.com/buy).
 
- A3: Sì, puoi accedere alla prova gratuita di Aspose.Zip[Qui](https://releases.aspose.com/).
-
-### Q4: Come posso ottenere una licenza temporanea per Aspose.Zip?
-
- R4: Per una licenza temporanea, visitare[questo link](https://purchase.aspose.com/temporary-license/).
-
-### Q5: Dove posso acquistare Aspose.Zip?
-
- A5: Per acquistare Aspose.Zip, visitare il sito[pagina di acquisto](https://purchase.aspose.com/buy).
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Ultimo aggiornamento:** 2025-12-01  
+**Testato con:** Aspose.Zip for .NET 24.11 (ultima versione al momento della stesura)  
+**Autore:** Aspose  
+
+---

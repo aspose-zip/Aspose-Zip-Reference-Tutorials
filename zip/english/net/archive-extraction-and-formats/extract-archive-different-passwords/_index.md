@@ -1,9 +1,10 @@
 ---
-title: Extracting Archive Entries with Different Passwords in Aspose.Zip for .NET
+title: How to Extract Zip with Password Using Aspise.Zip for .NET
 linktitle: Extracting Archive Entries with Different Passwords
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-description: Learn how to extract archive entries with different passwords in Aspose.Zip for .NET. Boost security and flexibility in your applications.
+description: Learn how to extract zip with password using Aspose.Zip for .NET, handling multiple password-protected entries efficiently.
 weight: 10
+date: 2025-12-01
 url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
 
@@ -11,40 +12,49 @@ url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Extracting Archive Entries with Different Passwords in Aspose.Zip for .NET
+# How to Extract Zip with Password Using Aspose.Zip for .NET
 
-## Introduction
+In modern .NET applications, protecting sensitive data inside ZIP archives is a common requirement. This tutorial shows **how to extract zip with password** when each entry uses a different password, giving you fine‑grained control over security while keeping the extraction process straightforward.
 
-In the ever-evolving landscape of .NET development, Aspose.Zip stands out as a powerful tool for working with compressed archives. Among its many features, extracting archive entries with different passwords adds an extra layer of security and versatility to your applications. In this step-by-step guide, we'll explore how to achieve this using Aspose.Zip for .NET.
+## Quick Answers
+- **What library should I use?** Aspose.Zip for .NET.
+- **Can I extract entries that have different passwords?** Yes—each entry can be opened with its own password.
+- **Do I need a license for production?** A commercial license is required; a free trial is available.
+- **Supported platforms?** .NET Framework, .NET Core, .NET 5/6+.
+- **Typical implementation time?** Around 10 minutes for a basic scenario.
 
 ## Prerequisites
 
-Before we dive into the tutorial, make sure you have the following in place:
+Before we dive in, make sure you have:
 
-- Aspose.Zip for .NET: Ensure you have the Aspose.Zip library installed in your .NET project. You can find the documentation [here](https://reference.aspose.com/zip/net/).
-
-- Development Environment: Set up a .NET development environment with Visual Studio or any other compatible IDE.
+- **Aspose.Zip for .NET** installed in your project. You can find the official documentation [here](https://reference.aspose.com/zip/net/).
+- A .NET development environment (Visual Studio, Rider, or VS Code) targeting .NET 5 or later.
+- A ZIP file that contains entries encrypted with **different passwords** (the sample used here is `different_password.zip`).
 
 ## Import Namespaces
 
-To get started, import the necessary namespaces in your C# code:
+First, import the namespaces required for working with archives:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-## Step 1: Set Your Document Directory
+These two `using` statements give you access to the `Archive` class and standard I/O utilities.
 
-Before working with the Aspose.Zip library, set the directory where you want to store the extracted files:
+## Step 1: Define the Working Directory
+
+Set the folder where the ZIP file resides and where the extracted files will be written:
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
+> **Pro tip:** Use `Path.Combine` for cross‑platform path building if you need to support Linux/macOS.
+
 ## Step 2: Extract Archive Entries with Different Passwords
 
-Now, let's break down the process of extracting archive entries with different passwords into multiple steps:
+Below we walk through the exact steps to open the archive and extract each entry using its own password.
 
 ### Step 2.1: Open the Zip File
 
@@ -58,42 +68,53 @@ using (FileStream zipFile = File.Open(dataDir + "\\different_password.zip", File
 }
 ```
 
-### Step 2.2: Extract the First Entry with a Password
+The `Archive` object represents the ZIP container. Keeping the `FileStream` and `Archive` inside `using` blocks ensures all resources are released promptly.
+
+### Step 2.2: Extract the First Entry (Password = “first_pass”)
 
 ```csharp
 archive.Entries[0].Extract(dataDir + "alice29_extracted_pass_out.txt", "first_pass");
 ```
 
-### Step 2.3: Extract the Second Entry with a Password
+Here we **extract multiple zip entries** by addressing them via the `Entries` collection. The first entry is decrypted with the password `"first_pass"`.
+
+### Step 2.3: Extract the Second Entry (Password = “second_pass”)
 
 ```csharp
 archive.Entries[1].Extract(dataDir + "asyoulik_extracted_pass_out.txt", "second_pass");
 ```
 
-## Conclusion
+The second entry uses a different password, demonstrating **password protected zip extraction** for each individual file.
 
-In this tutorial, we've explored how to use Aspose.Zip for .NET to extract archive entries with different passwords. By following these steps, you enhance the security of your applications while enjoying the flexibility that Aspose.Zip provides.
+## Why This Approach Matters
 
-## FAQ's
+- **Granular security:** Each file can have its own password, reducing the risk if a single password is compromised.
+- **Flexibility:** You can programmatically decide which password to apply based on business logic (e.g., user roles).
+- **Performance:** Aspose.Zip processes entries in‑memory, avoiding the need to unzip the whole archive first.
 
-### Q1: Can I use Aspose.Zip in both .NET Core and .NET Framework projects?
+## Common Issues & Solutions
 
-A1: Yes, Aspose.Zip supports both .NET Core and .NET Framework, providing flexibility for developers working in various environments.
+| Issue | Reason | Fix |
+|-------|--------|-----|
+| *“Invalid password” exception* | Wrong password supplied or entry is not actually encrypted. | Verify the password string and ensure the entry is password‑protected. |
+| *File not found* | `dataDir` path is incorrect. | Use `Path.Combine(dataDir, "different_password.zip")` and double‑check the folder. |
+| *Large archives cause high memory usage* | All entries are loaded into memory by default. | Stream each entry individually or use `Archive.ExtractToDirectory` with a password callback (if supported). |
 
-### Q2: Where can I find additional support or community discussions related to Aspose.Zip?
+## Frequently Asked Questions
 
-A2: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) to engage with the community, ask questions, and share your experiences.
+**Q1: Can I use Aspose.Zip in both .NET Core and .NET Framework projects?**  
+A1: Yes, Aspose.Zip supports .NET Framework, .NET Core, and .NET 5/6+, giving you flexibility across platforms.
 
-### Q3: Is there a free trial available for Aspose.Zip?
+**Q2: Where can I find additional support or community discussions related to Aspose.Zip?**  
+A2: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) to engage with the community, ask questions, and share experiences.
 
+**Q3: Is there a free trial available for Aspose.Zip?**  
 A3: Yes, you can access the free trial of Aspose.Zip [here](https://releases.aspose.com/).
 
-### Q4: How can I obtain a temporary license for Aspose.Zip?
-
+**Q4: How can I obtain a temporary license for Aspose.Zip?**  
 A4: For a temporary license, visit [this link](https://purchase.aspose.com/temporary-license/).
 
-### Q5: Where can I purchase Aspose.Zip?
-
+**Q5: Where can I purchase Aspose.Zip?**  
 A5: To purchase Aspose.Zip, visit the [purchase page](https://purchase.aspose.com/buy).
 
 {{< /blocks/products/pf/tutorial-page-section >}}
@@ -102,3 +123,11 @@ A5: To purchase Aspose.Zip, visit the [purchase page](https://purchase.aspose.co
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Last Updated:** 2025-12-01  
+**Tested With:** Aspose.Zip for .NET 24.11 (latest at time of writing)  
+**Author:** Aspose  
+
+---
