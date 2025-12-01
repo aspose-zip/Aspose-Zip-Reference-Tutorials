@@ -1,99 +1,119 @@
 ---
-title: Mappa kicsomagolása az Aspose.Zip for .NET segítségével
-linktitle: Mappa kicsomagolása
-second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
-description: Sajátítsa el a mappák kibontásának művészetét az Aspose.Zip for .NET segítségével. Könnyedén kezelheti a tömörítési feladatokat a projektekben.
+date: 2025-12-01
+description: Tanulja meg, hogyan tömöríthet egy könyvtárat zip fájlba, és hogyan csomagolhat
+  ki egy zip-et könyvtárba az Aspose.Zip for .NET segítségével – egy teljes útmutató
+  a zip tömörítéshez .net és zip archívum létrehozásához .net.
+language: hu
+linktitle: Decompressing a Folder
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Könyvtár tömörítése ZIP-be és kitömörítése – Aspose.Zip .NET-hez
+url: /net/directory-and-folder-compression/decompress-folder/
 weight: 11
-url: /hu/net/directory-and-folder-compression/decompress-folder/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Mappa kicsomagolása az Aspose.Zip for .NET segítségével
+# Könyvtár tömörítése zip-re és kitömörítés – Aspose.Zip for .NET
 
-Szeretné zökkenőmentesen kicsomagolni a mappákat az Aspose.Zip for .NET segítségével? Ne keressen tovább! Ez a lépésenkénti útmutató végigvezeti a folyamaton, és biztosítja, hogy könnyedén elsajátítsa a mappák kitömörítésének művészetét.
+Ha **könyvtár tömörítése zip-re**-t kell végrehajtania, majd ki szeretné csomagolni azt az archívumot egy .NET alkalmazásban, jó helyen jár. Ebben az útmutatóban végigvezetjük az egész folyamatot – a zip archívum létrehozásától kezdve, egészen egy tiszta, lépésről‑lépésre bemutatott kitömörítésig az Aspose.Zip for .NET használatával. A végére egy újrahasználható mintát kap a zip tömörítéshez .NET projektekben, és alapos megértést a .NET stílusú kitömörítésről.
+
+## Gyors válaszok
+- **Mi jelent a “compress directory to zip”?** Ez azt jelenti, hogy egy mappa tartalmát egyetlen .zip fájlba csomagolja.  
+- **Hogyan csomagolhatom ki a zip-et egy könyvtárba?** Használja a `Archive.ExtractToDirectory` metódust, ahogy a útmutatóban látható.  
+- **Mely .NET verziók támogatottak?** Minden modern .NET Framework, .NET Core és .NET 5/6+ verzió.  
+- **Szükséges licenc a termeléshez?** Igen, kereskedelmi Aspose.Zip licenc szükséges a nem próba használathoz.  
+- **Automatizálhatom ezt CI/CD pipeline-okban?** Természetesen – csak adja hozzá ugyanazt a kódot a build szkriptekhez.
+
+## Mi a “compress directory to zip”?
+A könyvtár zip-re tömörítése minden fájlt és almappát egyetlen tömörített archívumba csomagol. Ez csökkenti a tárolási méretet, egyszerűsíti az átvitelét, és szabványos módja a források csomagolásának a telepítéshez.
+
+## Miért használja az Aspose.Zip for .NET-et?
+Az Aspose.Zip **pure‑managed** API-t kínál, amely natív függőségek nélkül működik, nagy fájlokat támogat, és nagy teljesítményű zip tömörítési .NET képességeket biztosít. Emellett kezeli az olyan speciális eseteket, mint a jelszóval védett archívumok és a Unicode fájlnevek, mindezt alapból.
 
 ## Előfeltételek
-
-Mielőtt belevágna az oktatóanyagba, győződjön meg arról, hogy a következő előfeltételeket teljesítette:
-
--  Aspose.Zip for .NET Library: Győződjön meg arról, hogy telepítve van az Aspose.Zip könyvtár. Ha nem, akkor letöltheti[itt](https://releases.aspose.com/zip/net/).
-
--  Dokumentumkönyvtár: Határozza meg a könyvtárat, ahol a dokumentumokat tárolják. Állítsa be a változót`dataDir` erre a helyre a megadott kódrészletben.
+- **Aspose.Zip for .NET** könyvtár telepítve (töltse le [ide](https://releases.aspose.com/zip/net/)).  
+- Egy mappa a lemezen, amelyet archiválni szeretne – állítsa be az elérési útját a `dataDir` változóban.  
+- .NET fejlesztői környezet (Visual Studio, VS Code vagy bármely kedvelt IDE).
 
 ## Névterek importálása
-
-A kezdéshez importálja a szükséges névtereket:
+Először hozza be a szükséges névtereket a hatókörbe:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-## 1. lépés: Tömörítsen egy könyvtárat
-
- Kezdje azzal, hogy hozzon létre egy zip fájlt a későbbiekben kicsomagolni kívánt könyvtárból. Használja ki a`CompressDirectory.Run()` módszer, ahogy a kódrészletben látható:
+## 1. lépés: Könyvtár tömörítése zip-re
+Létrehozunk egy zip fájlt a könyvtárból, amelyet később ki szeretne csomagolni. A `CompressDirectory.Run()` segédprogram végzi a nehéz munkát.
 
 ```csharp
 string dataDir = "Your Document Directory";
 CompressDirectory.Run();
 ```
 
-## 2. lépés: Tömörítse ki a mappát
+> **Pro tip:** A `CompressDirectory` minta minden fájlt a `dataDir`-ben a `CompressDirectory_out.zip` fájlba csomagol. Nyugodtan nevezze át a kimeneti fájlt, hogy megfeleljen a névadási konvencióinak.
 
-Most bontsuk le a dekompressziós folyamatot több lépésre:
+## 2. lépés: Mappa kitömörítése (Hogyan csomagoljuk ki .NET-ben)
 
-### 2.1. lépés: Nyissa meg a ZIP-fájlt
+### 2.1. lépés: Zip fájl megnyitása
+Nyissa meg a generált archívumot egy `FileStream`-mel. Ez előkészíti a fájlt az olvasáshoz.
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", FileMode.Open))
 {
 ```
 
-### 2.2. lépés: Archív példány létrehozása
+### 2.2. lépés: Archive példány létrehozása
+Példányosítsa az `Archive` objektumot, amely a zip tárolót képviseli.
 
 ```csharp
-	using (var archive = new Archive(zipFile))
-	{
+    using (var archive = new Archive(zipFile))
+    {
 ```
 
-### 2.3. lépés: Kibontás a könyvtárba
+### 2.3. lépés: Kitömörítés könyvtárba
+Végül csomagolja ki a tartalmat egy új mappába. Ez a **extract zip to directory** lépés.
 
 ```csharp
-		archive.ExtractToDirectory(dataDir + "DecompressFolder_out");
-	}
+        archive.ExtractToDirectory(dataDir + "DecompressFolder_out");
+    }
 }
 ```
 
-Gratulálunk! Sikeresen kicsomagolt egy mappát az Aspose.Zip for .NET használatával. Ez az egyszerű, de hatékony folyamat biztosítja az adatok sértetlenségét, miközben a kicsomagolási folyamatot gyerekjáték.
+Gratulálunk! Sikeresen **compressed a directory to zip** és aztán **extracted the zip to a directory** műveleteket hajtotta végre az Aspose.Zip for .NET használatával. Ez a megközelítés garantálja az adat integritását, miközben a kódot tömör és olvasható marad.
 
-## Következtetés
+## Gyakori problémák és megoldások
+| Tünet | Valószínű ok | Megoldás |
+|-------|--------------|----------|
+| `UnauthorizedAccessException` when extracting | A célmappa csak olvasható vagy használatban van | Győződjön meg róla, hogy a cél útvonal írható és nincs zárolva |
+| Üres kimeneti mappa a kitömörítés után | Helytelen forrás zip útvonal | Ellenőrizze, hogy a `dataDir + "CompressDirectory_out.zip"` a helyes fájlra mutat |
+| Nagy fájlok OutOfMemoryException-t okoznak | Alapértelmezett pufferméret használata nagyon nagy archívumoknál | Használja az `ArchiveOptions`-t a pufferméret növeléséhez vagy a fájlok darabokban történő streameléséhez |
 
-Összefoglalva, a mappák kitömörítésének művészetének elsajátítása az Aspose.Zip for .NET segítségével értékes készség. Akár tapasztalt fejlesztő, akár csak most kezdi, ez az oktatóanyag lehetővé teszi, hogy hatékonyan kezelje a tömörítési és kicsomagolási feladatokat projektjei során.
+## Gyakran ismételt kérdések
 
-## GYIK
+**K: Használhatom az Aspose.Zip for .NET-et bármilyen fájltípussal?**  
+A: Igen, az Aspose.Zip minden fájltípust támogat – szöveg, bináris, képek, PDF-ek, amit csak el tud nevezni.
 
-### 1. kérdés: Használhatom az Aspose.Zip for .NET fájlt bármilyen típusú fájlhoz?
+**K: Alkalmas az Aspose.Zip nagy léptékű alkalmazásokhoz?**  
+A: Teljesen. Kifejezetten nagy teljesítményű zip tömörítés .NET helyzetekhez tervezték, több gigabájtos archívumok kezelésével alacsony memóriaigénnyel.
 
-1. válasz: Igen, az Aspose.Zip for .NET támogatja a különféle fájltípusok tömörítését és kicsomagolását, így sokoldalúságot biztosít a projektekhez.
+**K: Hol találhatom meg az Aspose.Zip for .NET átfogó dokumentációját?**  
+A: Tekintse meg a részletes dokumentációt [itt](https://reference.aspose.com/zip/net/).
 
-### 2. kérdés: Az Aspose.Zip for .NET alkalmas nagyméretű alkalmazásokhoz?
+**K: Próbálhatom ki az Aspose.Zip-et vásárlás előtt?**  
+A: Igen, ingyenes próba elérhető a [Aspose.Zip letöltési oldalon](https://releases.aspose.com/).
 
-A2: Abszolút! Az Aspose.Zip for .NET célja a nagyméretű alkalmazások egyszerű kezelése, optimális teljesítményt és megbízhatóságot biztosítva.
+**K: Hogyan kaphatok támogatást az Aspose.Zip for .NET-hez?**  
+A: Látogassa meg az [Aspose.Zip fórumot](https://forum.aspose.com/c/zip/37) a közösségi segítségért és hivatalos támogatásért.
 
-### 3. kérdés: Hol találom az Aspose.Zip for .NET átfogó dokumentációját?
+---
 
- 3. válasz: Fedezze fel a részletes dokumentációt[itt](https://reference.aspose.com/zip/net/) az Aspose.Zip for .NET megértéséhez és használatához.
+**Utolsó frissítés:** 2025-12-01  
+**Tesztelve:** Aspose.Zip 24.11 for .NET  
+**Szerző:** Aspose  
 
-### 4. kérdés: Kipróbálhatom az Aspose.Zip for .NET fájlt a vásárlás előtt?
-
- A4: Természetesen! Használja ki a[ingyenes próbaverzió](https://releases.aspose.com/) hogy első kézből tapasztalja meg az Aspose.Zip for .NET képességeit.
-
-### 5. kérdés: Hogyan kaphatok támogatást az Aspose.Zip for .NET-hez?
-
- 5. válasz: Ha kérdése vagy segítsége van, keresse fel a[Aspose.Zip fórum](https://forum.aspose.com/c/zip/37) ahol kapcsolatba léphet a közösséggel, és szakértői tanácsot kérhet.
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

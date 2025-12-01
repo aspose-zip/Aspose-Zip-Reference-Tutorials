@@ -1,99 +1,117 @@
 ---
-title: Dekomprimace složky pomocí Aspose.Zip pro .NET
-linktitle: Dekomprese složky
-second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
-description: Ovládněte umění dekomprese složek pomocí Aspose.Zip pro .NET. Zvládněte ve svých projektech úlohy komprese bez námahy.
+date: 2025-12-01
+description: Naučte se, jak komprimovat složku do zipu a rozbalit zip do složky pomocí
+  Aspose.Zip pro .NET – kompletní průvodce zip kompresí v .NET a vytvářením zip archivu
+  v .NET.
+language: cs
+linktitle: Decompressing a Folder
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Komprimovat adresář do ZIP a rozbalit – Aspose.Zip pro .NET
+url: /net/directory-and-folder-compression/decompress-folder/
 weight: 11
-url: /cs/net/directory-and-folder-compression/decompress-folder/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Dekomprimace složky pomocí Aspose.Zip pro .NET
+# Komprimovat adresář do ZIP a rozbalit – Aspose.Zip pro .NET
 
-Hledáte bezproblémovou dekomprimaci složek pomocí Aspose.Zip pro .NET? Už nehledejte! Tento podrobný průvodce vás provede celým procesem a zajistí, že zvládnete umění dekomprimovat složky bez námahy.
+Pokud potřebujete **komprimovat adresář do zip** a poté rozbalit tento archiv v aplikaci .NET, jste na správném místě. V tomto tutoriálu projdeme celý postup – od vytvoření ZIP archivu až po čisté, krok‑za‑krokem rozbalení pomocí Aspose.Zip pro .NET. Na konci budete mít znovupoužitelný vzor pro zip kompresi .NET projektů a solidní pochopení toho, jak rozbalovat ve stylu .NET.
 
-## Předpoklady
+## Rychlé odpovědi
+- **Co znamená “compress directory to zip”?** Znamená to převést obsah složky do jediného .zip souboru.  
+- **Jak rozbalím zip do adresáře?** Použijte metodu `Archive.ExtractToDirectory` jak je ukázáno v průvodci.  
+- **Které verze .NET jsou podporovány?** Všechny moderní verze .NET Framework, .NET Core a .NET 5/6+.  
+- **Je pro produkci vyžadována licence?** Ano, pro ne‑zkušební použití je potřeba komerční licence Aspose.Zip.  
+- **Mohu to automatizovat v CI/CD pipelinech?** Rozhodně – stačí přidat stejný kód do vašich build skriptů.
 
-Než se pustíte do výukového programu, ujistěte se, že máte splněny následující předpoklady:
+## Co je “compress directory to zip”?
+Komprimování adresáře do zip spojí každý soubor a podsložku do jediného komprimovaného archivu. Tím se sníží velikost úložiště, usnadní přenos a jedná se o standardní způsob balení zdrojů pro nasazení.
 
--  Aspose.Zip for .NET Library: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Zip. Pokud ne, můžete si jej stáhnout[tady](https://releases.aspose.com/zip/net/).
+## Proč používat Aspose.Zip pro .NET?
+Aspose.Zip nabízí **pure‑managed** API, které funguje bez nativních závislostí, podporuje velké soubory a poskytuje vysoký výkon při zip kompresi .NET. Také automaticky řeší okrajové případy, jako jsou archiv chráněný heslem a názvy souborů v Unicode.
 
--  Adresář dokumentů: Určete adresář, kde jsou uloženy vaše dokumenty. Nastavte proměnnou`dataDir` na toto místo v poskytnutém fragmentu kódu.
+## Požadavky
+- **Aspose.Zip for .NET** knihovna nainstalována (stáhněte ji [zde](https://releases.aspose.com/zip/net/)).  
+- Složka na disku, kterou chcete archivovat – nastavte její cestu v proměnné `dataDir`.  
+- .NET vývojové prostředí (Visual Studio, VS Code nebo jakékoli IDE dle vašeho výběru).
 
 ## Importovat jmenné prostory
-
-Chcete-li začít, importujte potřebné jmenné prostory:
+First, bring the required namespaces into scope:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-## Krok 1: Komprimujte adresář
-
- Začněte vytvořením souboru zip z adresáře, který chcete později dekomprimovat. Využijte`CompressDirectory.Run()` metoda, jak je uvedeno ve fragmentu kódu:
+## Krok 1: Komprimovat adresář do ZIP
+Vytvoříme zip soubor ze složky, kterou později budete chtít rozbalit. Pomocná metoda `CompressDirectory.Run()` provede těžkou práci.
 
 ```csharp
 string dataDir = "Your Document Directory";
 CompressDirectory.Run();
 ```
 
-## Krok 2: Dekomprimujte složku
+> **Tip:** Vzorek `CompressDirectory` zabalí každý soubor v `dataDir` do `CompressDirectory_out.zip`. Klidně přejmenujte výstupní soubor podle vašich pojmenovacích konvencí.
 
-Nyní rozdělme proces dekomprese do několika kroků:
+## Krok 2: Rozbalit složku (Jak rozbalit .NET)
 
-### Krok 2.1: Otevřete soubor ZIP
+### Krok 2.1: Otevřít ZIP soubor
+Otevřete vygenerovaný archiv pomocí `FileStream`. Tím připravíte soubor ke čtení.
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", FileMode.Open))
 {
 ```
 
-### Krok 2.2: Vytvořte archivní instanci
+### Krok 2.2: Vytvořit instanci Archive
+Vytvořte instanci objektu `Archive`, který představuje ZIP kontejner.
 
 ```csharp
-	using (var archive = new Archive(zipFile))
-	{
+    using (var archive = new Archive(zipFile))
+    {
 ```
 
-### Krok 2.3: Extrahujte do adresáře
+### Krok 2.3: Rozbalit do adresáře
+Nakonec rozbalte obsah do nové složky. Toto je krok **extract zip to directory**.
 
 ```csharp
-		archive.ExtractToDirectory(dataDir + "DecompressFolder_out");
-	}
+        archive.ExtractToDirectory(dataDir + "DecompressFolder_out");
+    }
 }
 ```
 
-Gratulujeme! Úspěšně jste dekomprimovali složku pomocí Aspose.Zip for .NET. Tento jednoduchý, ale výkonný proces zajišťuje integritu vašich dat a zároveň činí proces dekomprese hračkou.
+Gratulujeme! Úspěšně jste **komprimovali adresář do zip** a poté **rozbalili zip do adresáře** pomocí Aspose.Zip pro .NET. Tento přístup zaručuje integritu dat a zároveň udržuje kód stručný a čitelný.
 
-## Závěr
+## Časté problémy a řešení
+| Příznak | Pravděpodobná příčina | Řešení |
+|---------|-----------------------|--------|
+| `UnauthorizedAccessException` při rozbalování | Cílová složka je jen pro čtení nebo je používána | Ujistěte se, že cílová cesta je zapisovatelná a není zamčená |
+| Prázdná výstupní složka po rozbalení | Špatná cesta ke zdrojovému zip souboru | Zkontrolujte, že `dataDir + "CompressDirectory_out.zip"` ukazuje na správný soubor |
+| Velké soubory způsobují OutOfMemoryException | Použití výchozí velikosti bufferu u velmi velkých archivů | Použijte `ArchiveOptions` ke zvýšení velikosti bufferu nebo streamujte soubory po částech |
 
-Na závěr, zvládnutí umění dekomprimovat složky pomocí Aspose.Zip pro .NET je cenná dovednost. Ať už jste zkušený vývojář nebo teprve začínáte, tento výukový program vám umožní efektivně zvládnout úkoly komprese a dekomprese ve vašich projektech.
+## Často kladené otázky
 
-## FAQ
+**Q: Mohu použít Aspose.Zip pro .NET s jakýmkoli typem souboru?**  
+A: Ano, Aspose.Zip podporuje všechny typy souborů – text, binární, obrázky, PDF, jakýkoli.
 
-### Q1: Mohu použít Aspose.Zip pro .NET s jakýmkoli typem souboru?
+**Q: Je Aspose.Zip vhodný pro rozsáhlé aplikace?**  
+A: Rozhodně. Je navržen pro vysokovýkonné scénáře zip komprese .NET, zvládá archivů o velikosti několika gigabajtů s nízkou paměťovou zátěží.
 
-Odpověď 1: Ano, Aspose.Zip for .NET podporuje kompresi a dekompresi různých typů souborů a poskytuje tak všestrannost pro vaše projekty.
+**Q: Kde mohu najít komplexní dokumentaci k Aspose.Zip pro .NET?**  
+A: Prozkoumejte podrobnou dokumentaci [zde](https://reference.aspose.com/zip/net/).
 
-### Q2: Je Aspose.Zip for .NET vhodný pro rozsáhlé aplikace?
+**Q: Můžu si Aspose.Zip vyzkoušet před zakoupením?**  
+A: Ano, k dispozici je bezplatná zkušební verze na [stahovací stránce Aspose.Zip](https://releases.aspose.com/).
 
-A2: Rozhodně! Aspose.Zip for .NET je navržen tak, aby snadno zvládl rozsáhlé aplikace a zajistil optimální výkon a spolehlivost.
+**Q: Jak mohu získat podporu pro Aspose.Zip pro .NET?**  
+A: Navštivte [forum Aspose.Zip](https://forum.aspose.com/c/zip/37) pro komunitní pomoc a oficiální asistenci.
 
-### Q3: Kde najdu komplexní dokumentaci pro Aspose.Zip pro .NET?
+**Poslední aktualizace:** 2025-12-01  
+**Testováno s:** Aspose.Zip 24.11 for .NET  
+**Autor:** Aspose  
 
- A3: Prozkoumejte podrobnou dokumentaci[tady](https://reference.aspose.com/zip/net/) zlepšit vaše porozumění a využití Aspose.Zip pro .NET.
-
-### Q4: Mohu vyzkoušet Aspose.Zip for .NET před nákupem?
-
- A4: Určitě! Využijte možnosti[zkušební verze zdarma](https://releases.aspose.com/) vyzkoušet možnosti Aspose.Zip pro .NET na vlastní kůži.
-
-### Q5: Jak mohu získat podporu pro Aspose.Zip pro .NET?
-
- A5: Máte-li jakékoli dotazy nebo pomoc, navštivte[Fórum Aspose.Zip](https://forum.aspose.com/c/zip/37) kde se můžete zapojit do komunity a vyhledat odbornou radu.
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
