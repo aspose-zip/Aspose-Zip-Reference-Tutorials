@@ -122,17 +122,15 @@ A: Ano, pokud potřebujete dočasnou licenci, můžete ji získat [here](https:/
 
 Nyní jste se naučili, jak **přidat soubory do tar** a výsledek zkomprimovat do archivu TarZ pomocí Aspose.Zip pro .NET. Tento přístup vám poskytne čistý, přenosný balíček, který lze snadno přenášet, ukládat nebo dále zpracovávat. Klidně upravte úryvek tak, aby zpracovával adresáře hromadně, integroval jej do build pipeline nebo jej kombinoval s dalšími komponentami Aspose pro bohatší pracovní toky s dokumenty.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Poslední aktualizace:** 2025-11-29  
 **Testováno s:** Aspose.Zip pro .NET 24.11  
 **Autor:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

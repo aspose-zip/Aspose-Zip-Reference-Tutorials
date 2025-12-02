@@ -122,17 +122,15 @@ A: Ja, om du behöver en tillfällig licens kan du skaffa en [här](https://purc
 
 Du har nu lärt dig hur du **add files to tar** och komprimerar resultatet till ett TarZ‑arkiv med Aspose.Zip för .NET. Detta tillvägagångssätt ger dig ett rent, portabelt paket som enkelt kan överföras, lagras eller vidarebehandlas. Känn dig fri att anpassa kodsnutten för att batch‑processa kataloger, integrera den i bygg‑pipelines eller kombinera den med andra Aspose‑komponenter för rikare dokumentarbetsflöden.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Senast uppdaterad:** 2025-11-29  
 **Testat med:** Aspose.Zip för .NET 24.11  
 **Author:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

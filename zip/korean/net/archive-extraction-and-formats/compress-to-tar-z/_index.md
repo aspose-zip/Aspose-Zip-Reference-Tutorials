@@ -132,15 +132,15 @@ A: 예, 임시 라이선스가 필요하면 [여기](https://purchase.aspose.com
 
 이제 Aspose.Zip for .NET을 사용하여 **파일을 tar에 추가**하고 결과를 TarZ 아카이브로 압축하는 방법을 배웠습니다. 이 방법은 쉽게 전송·저장·추가 처리할 수 있는 깔끔하고 이식 가능한 패키지를 제공합니다. 스니펫을 디렉터리 일괄 처리에 맞게 조정하거나 빌드 파이프라인에 통합하고, 다른 Aspose 구성 요소와 결합하여 보다 풍부한 문서 워크플로우를 구현해 보세요.
 
+---
+
+**마지막 업데이트:** 2025-11-29  
+**테스트 환경:** Aspose.Zip for .NET 24.11  
+**작성자:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**마지막 업데이트:** 2025-11-29  
-**테스트 환경:** Aspose.Zip for .NET 24.11  
-**작성자:** Aspose

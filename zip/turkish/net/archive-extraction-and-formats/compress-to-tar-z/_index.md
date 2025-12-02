@@ -122,17 +122,15 @@ C: Evet, geçici lisans ihtiyacınız varsa [buradan](https://purchase.aspose.co
 
 Artık **tar dosyalarına dosya ekleme** ve sonucu Aspose.Zip for .NET kullanarak TarZ arşivi olarak sıkıştırma konusunda bilgi sahibisiniz. Bu yöntem, kolayca aktarılabilir, depolanabilir veya daha ileri işlem yapılabilir temiz ve taşınabilir bir paket sunar. Kod parçacığını dizinleri toplu işleyerek, derleme hatlarına entegre ederek veya diğer Aspose bileşenleriyle birleştirerek daha zengin belge iş akışları oluşturmak için özgürce uyarlayabilirsiniz.
 
+---
+
+**Son Güncelleme:** 2025-11-29  
+**Test Edilen Versiyon:** Aspose.Zip for .NET 24.11  
+**Yazar:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Son Güncelleme:** 2025-11-29  
-**Test Edilen Versiyon:** Aspose.Zip for .NET 24.11  
-**Yazar:** Aspose  
-
----

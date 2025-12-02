@@ -123,17 +123,15 @@ archive.SaveZCompressed(dataDir + "archive.tar.z");
 
 您现在已经学习了如何 **add files to tar** 并使用 Aspose.Zip for .NET 将结果压缩为 TarZ 存档。此方法为您提供了一个干净、可移植的包，便于传输、存储或进一步处理。欢迎将此代码片段用于批量处理目录、集成到构建流水线，或与其他 Aspose 组件结合，实现更丰富的文档工作流。
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **最后更新：** 2025-11-29  
 **测试环境：** Aspose.Zip for .NET 24.11  
 **作者：** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

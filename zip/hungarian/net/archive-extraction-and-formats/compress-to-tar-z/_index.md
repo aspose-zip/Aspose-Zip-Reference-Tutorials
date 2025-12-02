@@ -124,17 +124,15 @@ A: Igen, ha ideiglenes licencre van szüksége, azt [itt](https://purchase.aspos
 
 Most már megtanulta, hogyan **add files to tar**, majd az eredményt TarZ archívumba tömörítse az Aspose.Zip for .NET használatával. Ez a megközelítés tiszta, hordozható csomagot biztosít, amely könnyen áthelyezhető, tárolható vagy tovább feldolgozható. Nyugodtan módosítsa a kódrészletet, hogy kötegelt feldolgozza a könyvtárakat, integrálja build folyamatokba, vagy más Aspose komponensekkel kombinálja a gazdagabb dokumentumáramlathoz.
 
+---
+
+**Utoljára frissítve:** 2025-11-29  
+**Tesztelve ezzel:** Aspose.Zip for .NET 24.11  
+**Szerző:** Aspose 
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Utoljára frissítve:** 2025-11-29  
-**Tesztelve ezzel:** Aspose.Zip for .NET 24.11  
-**Szerző:** Aspose  
-
----

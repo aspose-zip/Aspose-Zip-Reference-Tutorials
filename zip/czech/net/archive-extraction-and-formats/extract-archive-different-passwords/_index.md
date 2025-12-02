@@ -1,103 +1,135 @@
 ---
-title: Extrahování položek archivu s různými hesly v Aspose.Zip pro .NET
-linktitle: Extrahování archivních záznamů s různými hesly
-second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
-description: Naučte se, jak extrahovat archivní položky s různými hesly v Aspose.Zip pro .NET. Zvyšte bezpečnost a flexibilitu ve svých aplikacích.
+date: 2025-12-01
+description: Naučte se, jak rozbalit zip s heslem pomocí Aspose.Zip pro .NET a efektivně
+  zpracovávat více položek chráněných heslem.
+language: cs
+linktitle: Extracting Archive Entries with Different Passwords
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Jak rozbalit zip s heslem pomocí Aspise.Zip pro .NET
+url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
 weight: 10
-url: /cs/net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Extrahování položek archivu s různými hesly v Aspose.Zip pro .NET
+# Jak extrahovat zip s heslem pomocí Aspose.Zip pro .NET
 
-## Úvod
+V moderních aplikacích .NET je ochrana citlivých dat uvnitř ZIP archivů běžnou požadavkem. Tento tutoriál ukazuje **jak extrahovat zip s heslem**, když každý záznam používá jiné heslo, což vám poskytuje detailní kontrolu nad zabezpečením a zároveň udržuje proces extrakce jednoduchý.
 
-V neustále se vyvíjejícím prostředí vývoje .NET vyniká Aspose.Zip jako výkonný nástroj pro práci s komprimovanými archivy. Mezi jeho mnoha funkcemi přidává extrahování archivních záznamů s různými hesly další vrstvu zabezpečení a všestrannost vašim aplikacím. V tomto podrobném průvodci prozkoumáme, jak toho dosáhnout pomocí Aspose.Zip pro .NET.
+## Rychlé odpovědi
+- **Jakou knihovnu mám použít?** Aspose.Zip for .NET.
+- **Mohu extrahovat záznamy, které mají různá hesla?** Ano — každý záznam může být otevřen svým vlastním heslem.
+- **Potřebuji licenci pro produkci?** Je vyžadována komerční licence; je k dispozici bezplatná zkušební verze.
+- **Podporované platformy?** .NET Framework, .NET Core, .NET 5/6+.
+- **Typický čas implementace?** Přibližně 10 minut pro základní scénář.
 
 ## Předpoklady
 
-Než se pustíme do výukového programu, ujistěte se, že máte na svém místě následující:
+Než se pustíme dál, ujistěte se, že máte:
 
--  Aspose.Zip for .NET: Ujistěte se, že máte v projektu .NET nainstalovanou knihovnu Aspose.Zip. Dokumentaci najdete[tady](https://reference.aspose.com/zip/net/).
+- **Aspose.Zip for .NET** nainstalovaný ve vašem projektu. Oficiální dokumentaci najdete [zde](https://reference.aspose.com/zip/net/).
+- Vývojové prostředí .NET (Visual Studio, Rider nebo VS Code) cílící na .NET 5 nebo novější.
+- ZIP soubor, který obsahuje záznamy šifrované **různými hesly** (příklad použitý zde je `different_password.zip`).
 
-- Vývojové prostředí: Nastavte vývojové prostředí .NET pomocí sady Visual Studio nebo jiného kompatibilního IDE.
+## Importujte jmenné prostory
 
-## Importovat jmenné prostory
-
-Chcete-li začít, importujte potřebné jmenné prostory do kódu C#:
+Nejprve importujte jmenné prostory potřebné pro práci s archivy:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-## Krok 1: Nastavte adresář dokumentů
+Tyto dva `using` příkazy vám poskytují přístup ke třídě `Archive` a standardním I/O utilitám.
 
-Před prací s knihovnou Aspose.Zip nastavte adresář, kam chcete ukládat extrahované soubory:
+## Krok 1: Definujte pracovní adresář
+
+Nastavte složku, kde se nachází ZIP soubor a kam budou zapsány extrahované soubory:
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Krok 2: Extrahujte archivní záznamy s různými hesly
+> **Tip:** Použijte `Path.Combine` pro tvorbu cest napříč platformami, pokud potřebujete podporovat Linux/macOS.
 
-Nyní si rozdělme proces extrahování archivních záznamů s různými hesly do několika kroků:
+## Krok 2: Extrahujte položky archivu s různými hesly
 
-### Krok 2.1: Otevřete soubor ZIP
+Níže projdeme přesné kroky, jak otevřít archiv a extrahovat každou položku pomocí jejího vlastního hesla.
+
+### Krok 2.1: Otevřete Zip soubor
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "\\different_password.zip", FileMode.Open))
 {
     using (Archive archive = new Archive(zipFile))
     {
-        // Pokračujte dalšími kroky...
+        // Continue to the next steps...
     }
 }
 ```
 
-### Krok 2.2: Extrahujte první položku s heslem
+`Archive` objekt představuje ZIP kontejner. Udržování `FileStream` a `Archive` uvnitř `using` bloků zajišťuje, že všechny prostředky jsou uvolněny okamžitě.
+
+### Krok 2.2: Extrahujte první položku (heslo = “first_pass”)
 
 ```csharp
 archive.Entries[0].Extract(dataDir + "alice29_extracted_pass_out.txt", "first_pass");
 ```
 
-### Krok 2.3: Extrahujte druhý záznam pomocí hesla
+Zde **extrahujeme více zip položek** pomocí kolekce `Entries`. První položka je dešifrována heslem `"first_pass"`.
+
+### Krok 2.3: Extrahujte druhou položku (heslo = “second_pass”)
 
 ```csharp
 archive.Entries[1].Extract(dataDir + "asyoulik_extracted_pass_out.txt", "second_pass");
 ```
 
-## Závěr
+Druhá položka používá jiné heslo, což demonstruje **extrakci zip chráněnou heslem** pro každý jednotlivý soubor.
 
-V tomto tutoriálu jsme prozkoumali, jak používat Aspose.Zip pro .NET k extrahování archivních záznamů s různými hesly. Dodržováním těchto kroků zvýšíte zabezpečení svých aplikací a zároveň si budete užívat flexibilitu, kterou Aspose.Zip poskytuje.
+## Proč je tento přístup důležitý
 
-## FAQ
+- **Granulární zabezpečení:** Každý soubor může mít své vlastní heslo, což snižuje riziko při kompromitaci jediného hesla.
+- **Flexibilita:** Můžete programově rozhodnout, které heslo použít na základě obchodní logiky (např. role uživatelů).
+- **Výkon:** Aspose.Zip zpracovává položky v paměti, čímž se vyhýbá nutnosti nejprve rozbalit celý archiv.
 
-### Q1: Mohu použít Aspose.Zip v projektech .NET Core i .NET Framework?
+## Časté problémy a řešení
 
-Odpověď 1: Ano, Aspose.Zip podporuje .NET Core i .NET Framework, což poskytuje flexibilitu pro vývojáře pracující v různých prostředích.
+| Problém | Příčina | Řešení |
+|-------|--------|-----|
+| *“Invalid password” exception* | Bylo zadáno špatné heslo nebo položka není skutečně zašifrovaná. | Ověřte řetězec hesla a ujistěte se, že je položka chráněna heslem. |
+| *File not found* | cesta `dataDir` je nesprávná. | Použijte `Path.Combine(dataDir, "different_password.zip")` a dvojitě zkontrolujte složku. |
+| *Large archives cause high memory usage* | Všechny položky jsou ve výchozím nastavení načteny do paměti. | Streamujte každou položku jednotlivě nebo použijte `Archive.ExtractToDirectory` s callbackem pro heslo (pokud je podporováno). |
 
-### Q2: Kde najdu další podporu nebo komunitní diskuse týkající se Aspose.Zip?
+## Často kladené otázky
 
- A2: Navštivte[Fórum Aspose.Zip](https://forum.aspose.com/c/zip/37) zapojit se do komunity, klást otázky a sdílet své zkušenosti.
+**Q1: Mohu používat Aspose.Zip jak v .NET Core, tak v .NET Framework projektech?**  
+A1: Ano, Aspose.Zip podporuje .NET Framework, .NET Core a .NET 5/6+, což vám poskytuje flexibilitu napříč platformami.
 
-### Q3: Je k dispozici bezplatná zkušební verze pro Aspose.Zip?
+**Q2: Kde mohu najít další podporu nebo komunitní diskuze související s Aspose.Zip?**  
+A2: Navštivte [forum Aspose.Zip](https://forum.aspose.com/c/zip/37), kde můžete komunikovat s komunitou, klást otázky a sdílet zkušenosti.
 
- A3: Ano, máte přístup k bezplatné zkušební verzi Aspose.Zip[tady](https://releases.aspose.com/).
+**Q3: Je k dispozici bezplatná zkušební verze Aspose.Zip?**  
+A3: Ano, bezplatnou zkušební verzi Aspose.Zip můžete získat [zde](https://releases.aspose.com/).
 
-### Q4: Jak mohu získat dočasnou licenci pro Aspose.Zip?
+**Q4: Jak mohu získat dočasnou licenci pro Aspose.Zip?**  
+A4: Pro dočasnou licenci navštivte [tento odkaz](https://purchase.aspose.com/temporary-license/).
 
- A4: Pro dočasnou licenci navštivte[tento odkaz](https://purchase.aspose.com/temporary-license/).
+**Q5: Kde mohu zakoupit Aspose.Zip?**  
+A5: Pro nákup Aspose.Zip navštivte [stránku nákupu](https://purchase.aspose.com/buy).
 
-### Q5: Kde mohu zakoupit Aspose.Zip?
-
- A5: Chcete-li zakoupit Aspose.Zip, navštivte[nákupní stránku](https://purchase.aspose.com/buy).
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Poslední aktualizace:** 2025-12-01  
+**Testováno s:** Aspose.Zip for .NET 24.11 (latest at time of writing)  
+**Autor:** Aspose  
+
+---

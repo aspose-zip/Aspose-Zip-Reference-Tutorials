@@ -123,17 +123,15 @@ O: Tak, tymczasową licencję można uzyskać **[tutaj](https://purchase.aspose.
 
 Teraz wiesz, jak **dodać pliki do tar** i skompresować wynik do archiwum TarZ przy użyciu Aspose.Zip dla .NET. To podejście zapewnia czysty, przenośny pakiet, który można łatwo przenosić, przechowywać lub dalej przetwarzać. Śmiało dostosuj fragment kodu do przetwarzania wsadowego katalogów, integracji z pipeline’ami budowania lub połączenia z innymi komponentami Aspose w celu uzyskania bardziej rozbudowanych przepływów dokumentów.
 
+---
+
+**Ostatnia aktualizacja:** 2025-11-29  
+**Testowano z:** Aspose.Zip dla .NET 24.11  
+**Autor:** Aspose 
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ostatnia aktualizacja:** 2025-11-29  
-**Testowano z:** Aspose.Zip dla .NET 24.11  
-**Autor:** Aspose  
-
----
