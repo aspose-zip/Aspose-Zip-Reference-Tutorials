@@ -122,17 +122,15 @@ Tệp `archive.tar.z` sẽ được tạo trong cùng thư mục mà bạn đã 
 
 Bạn đã học cách **thêm tệp vào tar** và nén kết quả thành một archive TarZ bằng Aspose.Zip cho .NET. Cách tiếp cận này cung cấp cho bạn một gói sạch sẽ, di động, dễ dàng chuyển giao, lưu trữ hoặc xử lý tiếp. Hãy tự do tùy chỉnh đoạn mã để xử lý hàng loạt thư mục, tích hợp vào pipeline xây dựng, hoặc kết hợp với các thành phần Aspose khác để tạo ra quy trình công việc tài liệu phong phú hơn.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Cập nhật lần cuối:** 2025-11-29  
 **Đã kiểm tra với:** Aspose.Zip cho .NET 24.11  
 **Tác giả:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

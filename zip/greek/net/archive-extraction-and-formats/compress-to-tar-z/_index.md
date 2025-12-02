@@ -123,17 +123,15 @@ archive.SaveZCompressed(dataDir + "archive.tar.z");
 
 Έχετε τώρα μάθει πώς να **προσθέσετε αρχεία σε tar** και να συμπιέσετε το αποτέλεσμα σε ένα αρχείο TarZ χρησιμοποιώντας το Aspose.Zip για .NET. Αυτή η προσέγγιση σας παρέχει ένα καθαρό, φορητό πακέτο που μπορεί να μεταφερθεί, αποθηκευτεί ή να υποβληθεί σε περαιτέρω επεξεργασία. Μη διστάσετε να προσαρμόσετε το κομμάτι κώδικα για μαζική επεξεργασία καταλόγων, ενσωμάτωσή του σε pipelines κατασκευής ή συνδυασμό του με άλλα στοιχεία του Aspose για πιο πλούσιες ροές εργασίας εγγράφων.
 
+---
+
+**Last Updated:** 2025-11-29  
+**Tested With:** Aspose.Zip for .NET 24.11  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-11-29  
-**Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose  
-
----

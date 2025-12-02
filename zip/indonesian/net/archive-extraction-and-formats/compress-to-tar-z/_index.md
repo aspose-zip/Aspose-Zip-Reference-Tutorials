@@ -123,17 +123,15 @@ A: Ya, jika Anda memerlukan lisensi sementara, Anda dapat memperolehnya [di sini
 
 Anda kini telah mempelajari cara **menambahkan file ke tar** dan mengompres hasilnya ke arsip TarZ menggunakan Aspose.Zip untuk .NET. Pendekatan ini memberikan paket yang bersih dan portabel yang dapat dengan mudah dipindahkan, disimpan, atau diproses lebih lanjut. Silakan sesuaikan potongan kode ini untuk memproses batch direktori, mengintegrasikannya ke dalam pipeline build, atau menggabungkannya dengan komponen Aspose lainnya untuk alur kerja dokumen yang lebih kaya.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Terakhir Diperbarui:** 2025-11-29  
 **Diuji Dengan:** Aspose.Zip untuk .NET 24.11  
 **Penulis:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

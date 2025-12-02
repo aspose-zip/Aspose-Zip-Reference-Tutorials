@@ -123,17 +123,15 @@ A: Yes, if you need a temporary license, you can obtain one [here](https://purch
 
 आपने अब सीखा कि **add files to tar** कैसे करें और परिणाम को Aspose.Zip for .NET का उपयोग करके TarZ आर्काइव में कैसे संपीड़ित करें। यह तरीका आपको एक साफ़, पोर्टेबल पैकेज देता है जिसे आसानी से ट्रांसफ़र, स्टोर या आगे प्रोसेस किया जा सकता है। स्निपेट को बैच‑प्रोसेसिंग, बिल्ड पाइपलाइन में इंटीग्रेट करने या अन्य Aspose कंपोनेंट्स के साथ मिलाकर अधिक समृद्ध डॉक्यूमेंट वर्कफ़्लो बनाने के लिए अनुकूलित करने में संकोच न करें।
 
+---
+
+**Last Updated:** 2025-11-29  
+**Tested With:** Aspose.Zip for .NET 24.11  
+**Author:** Aspose 
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-11-29  
-**Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose  
-
----

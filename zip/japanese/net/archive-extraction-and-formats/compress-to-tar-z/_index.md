@@ -123,17 +123,15 @@ A: はい、一時ライセンスは[こちら](https://purchase.aspose.com/temp
 
 これで **ファイルを tar に追加**し、Aspose.Zip for .NET を使って TarZ アーカイブに圧縮する方法が習得できました。この手法により、転送や保存、さらなる処理が容易なクリーンでポータブルなパッケージを作成できます。スニペットをディレクトリのバッチ処理に組み込んだり、ビルドパイプラインに統合したり、他の Aspose コンポーネントと組み合わせてリッチなドキュメントワークフローを構築したりして自由に活用してください。
 
+---
+
+**最終更新日:** 2025-11-29  
+**テスト環境:** Aspose.Zip for .NET 24.11  
+**作者:** Aspose 
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最終更新日:** 2025-11-29  
-**テスト環境:** Aspose.Zip for .NET 24.11  
-**作者:** Aspose  
-
----

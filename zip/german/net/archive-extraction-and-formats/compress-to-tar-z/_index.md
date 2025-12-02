@@ -123,17 +123,15 @@ A: Ja, wenn Sie eine temporäre Lizenz benötigen, können Sie diese [hier](http
 
 Sie haben nun gelernt, wie Sie **Dateien zu tar hinzufügen** und das Ergebnis mit Aspose.Zip für .NET zu einem TarZ‑Archiv komprimieren. Dieser Ansatz liefert ein sauberes, portables Paket, das sich leicht übertragen, speichern oder weiterverarbeiten lässt. Passen Sie das Snippet gern an, um Verzeichnisse stapelweise zu verarbeiten, in Build‑Pipelines zu integrieren oder mit anderen Aspose‑Komponenten zu kombinieren, um umfangreichere Dokument‑Workflows zu realisieren.
 
+---
+
+**Zuletzt aktualisiert:** 2025-11-29  
+**Getestet mit:** Aspose.Zip für .NET 24.11  
+**Autor:** Aspose 
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Zuletzt aktualisiert:** 2025-11-29  
-**Getestet mit:** Aspose.Zip für .NET 24.11  
-**Autor:** Aspose  
-
----
