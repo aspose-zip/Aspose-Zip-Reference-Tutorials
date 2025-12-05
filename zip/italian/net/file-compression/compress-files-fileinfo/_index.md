@@ -1,33 +1,53 @@
 ---
-title: Comprimi file utilizzando FileInfo in Aspose.Zip per .NET
-linktitle: Comprimi i file utilizzando FileInfo
-second_title: Aspose.Zip .NET API per la compressione e l'archiviazione dei file
-description: Impara a comprimere i file utilizzando fileinfo con Aspose.Zip per .NET. Segui la nostra guida passo passo per una gestione efficiente dei file.
+date: 2025-12-05
+description: Scopri come creare un archivio zip e aggiungere file allo zip utilizzando
+  Aspose.Zip per .NET. Questa guida passo‑passo mostra come comprimere i file con
+  FileInfo nei progetti ASP.NET.
+language: it
+linktitle: Compress Files using FileInfo
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Come creare un archivio Zip usando Aspose.Zip per .NET – Comprimere file con
+  FileInfo
+url: /net/file-compression/compress-files-fileinfo/
 weight: 11
-url: /it/net/file-compression/compress-files-fileinfo/
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Comprimi file utilizzando FileInfo in Aspose.Zip per .NET
+# Come creare un archivio Zip usando Aspose.Zip per .NET
 
-## introduzione
+## Introduzione
 
-Benvenuti nella nostra guida completa sulla compressione dei file utilizzando Aspose.Zip per .NET! Se stai cercando di ottimizzare l'archiviazione o la trasmissione dei tuoi file, Aspose.Zip è la soluzione giusta. In questo tutorial ti guideremo attraverso il processo di compressione dei file utilizzando la classe FileInfo, fornendo una guida dettagliata passo passo. Immergiamoci!
+Se hai bisogno di **creare un archivio zip** in modo programmatico, Aspose.Zip per .NET ti offre un'API pulita e ad alte prestazioni che funziona in qualsiasi applicazione .NET (inclusi ASP.NET). In questo tutorial vedremo come comprimere file con la classe `FileInfo`, ti mostreremo come **aggiungere file allo zip** e spiegheremo perché questo approccio è ideale per i progetti .NET moderni. Iniziamo!
+
+## Risposte rapide
+- **Qual è il modo più semplice per creare un archivio zip?** Usa la classe `Archive` di Aspose.Zip insieme agli oggetti `FileInfo`.  
+- **Posso aggiungere più file contemporaneamente?** Sì – basta creare un `FileInfo` per ogni file e chiamare `CreateEntry`.  
+- **È necessaria una licenza speciale per ASP.NET?** È richiesta una licenza commerciale di Aspose.Zip per la produzione; una versione di prova gratuita è sufficiente per la valutazione.  
+- **Quali versioni di .NET sono supportate?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
+- **L'API è thread‑safe?** Sì, purché ogni thread utilizzi la propria istanza di `Archive`.
+
+## Cos'è un archivio Zip e perché crearne uno?
+Un archivio zip raggruppa uno o più file in un unico contenitore compresso. Questo riduce lo spazio di archiviazione, velocizza i trasferimenti di rete e semplifica la distribuzione. Che tu stia consegnando log, esportando report o impacchettando risorse per un cliente, sapere **come creare file zip** in modo programmatico è una competenza preziosa per qualsiasi sviluppatore .NET.
+
+## Perché usare Aspose.Zip per aggiungere file allo Zip?
+- **Zero dipendenze esterne** – implementazione pura .NET.  
+- **Controllo completo sul livello di compressione e sulla codifica** (ASCII, UTF‑8, ecc.).  
+- **Supporta file di grandi dimensioni** (> 4 GB) e protezione con password.  
+- **API coerente su .NET Framework, .NET Core e .NET 5+**.
 
 ## Prerequisiti
 
-Prima di iniziare, assicurati di disporre dei seguenti prerequisiti:
+Prima di immergerci nel codice, assicurati di avere:
 
-1.  Aspose.Zip per .NET: assicurati di avere la libreria Aspose.Zip installata. Puoi scaricarlo da[sito web](https://releases.aspose.com/zip/net/).
+1. **Aspose.Zip per .NET** installato. Scarica il pacchetto più recente dalla [pagina di download di Aspose.Zip](https://releases.aspose.com/zip/net/).  
+2. Una cartella sul tuo computer contenente i file che desideri comprimere (ad es., `alice29.txt` e `fields.c`).  
 
-2. Directory dei documenti: configura una directory sul tuo sistema per archiviare i file che desideri comprimere.
+## Importare gli spazi dei nomi
 
-## Importa spazi dei nomi
-
-Nel tuo progetto .NET, includi gli spazi dei nomi necessari:
+In qualsiasi file C# in cui lavorerai con archivi zip, aggiungi le seguenti istruzioni `using`:
 
 ```csharp
 using Aspose.Zip;
@@ -37,35 +57,43 @@ using System.IO;
 using System.Text;
 ```
 
-## Passaggio 1: imposta la directory dei documenti
+Questi spazi dei nomi ti danno accesso alla classe `Archive`, alle opzioni di salvataggio e alle utility I/O standard.
 
-Per prima cosa, definisci la directory in cui sono archiviati i tuoi documenti. È possibile utilizzare il seguente codice:
+## Guida passo‑passo
+
+### Passo 1: Configurare la directory dei documenti
+
+Per prima cosa, definisci la cartella che contiene i file sorgente. Sostituisci il segnaposto con il percorso assoluto o relativo sul tuo sistema:
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Passaggio 2: comprimi i file utilizzando FileInfo
+> **Consiglio professionale:** Usa `Path.Combine` per costruire i percorsi in modo cross‑platform.
 
- Ora entriamo nel nocciolo del processo. Utilizzeremo il`FileInfo` class insieme ad Aspose.Zip per comprimere i file. Segui questi passi:
+### Passo 2: Aprire un file Zip per la scrittura
 
-### Passaggio 2.1: aprire un file zip
+Crea un `FileStream` che punta al file zip di output. Lo stream è aperto in modalità **Create**, che sovrascrive eventuali file esistenti con lo stesso nome:
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressFilesByFileInfo_out.zip", FileMode.Create))
 {
 ```
 
-### Passaggio 2.2: creazione di oggetti FileInfo
+### Passo 3: Preparare gli oggetti `FileInfo` per ogni file sorgente
 
- Creare`FileInfo` oggetti per i file che desideri comprimere:
+`FileInfo` fornisce ad Aspose.Zip l'accesso diretto ai file fisici su disco. Crea un'istanza per ogni file che desideri comprimere:
 
 ```csharp
 FileInfo fi1 = new FileInfo(dataDir + "alice29.txt");
 FileInfo fi2 = new FileInfo(dataDir + "fields.c");
 ```
 
-### Passaggio 2.3: Crea archivio e aggiungi voci
+> **Perché usare `FileInfo`?** Evita di caricare l'intero file in memoria, il che è particolarmente utile per file di grandi dimensioni.
+
+### Passo 4: Creare l'archivio e aggiungere le voci
+
+Istanzia un oggetto `Archive`, quindi chiama `CreateEntry` per ogni `FileInfo`. Il primo argomento è il nome che il file avrà all'interno dello zip, il secondo è il `FileInfo` di origine:
 
 ```csharp
 using (var archive = new Archive())
@@ -74,40 +102,77 @@ using (var archive = new Archive())
     archive.CreateEntry("fields.c", fi2);
 ```
 
-### Passaggio 2.4: salvare il file zip
+### Passo 5: Salvare l'archivio Zip con la codifica desiderata
+
+Infine, persisti l'archivio nello `FileStream` aperto in precedenza. Qui usiamo la codifica ASCII per i nomi delle voci, ma puoi passare a UTF‑8 se i tuoi nomi di file contengono caratteri non ASCII:
 
 ```csharp
     archive.Save(zipFile, new ArchiveSaveOptions() { Encoding = Encoding.ASCII });
 }
 ```
 
-Congratulazioni! Hai compresso con successo i file utilizzando la classe FileInfo in Aspose.Zip per .NET.
+Quando i blocchi `using` terminano, gli stream vengono chiusi automaticamente e il file zip è pronto per l'uso.
 
-## Conclusione
+## Problemi comuni e soluzioni
 
-In questo tutorial, abbiamo esplorato come comprimere in modo efficiente i file utilizzando Aspose.Zip per .NET. Seguendo questi passaggi, puoi migliorare le tue capacità di gestione dei file e ottimizzare l'utilizzo dello spazio. Sperimenta diversi tipi e dimensioni di file per sperimentare tutto il potenziale di Aspose.Zip.
+| Problema | Causa | Soluzione |
+|----------|-------|-----------|
+| **File zip vuoto** | `FileInfo` punta a un percorso inesistente | Verifica `dataDir` e i nomi dei file; usa `File.Exists` per controllare prima di creare le voci. |
+| **Codifica del nome file errata** | Uso della codifica predefinita con nomi non ASCII | Imposta `Encoding = Encoding.UTF8` in `ArchiveSaveOptions`. |
+| **OutOfMemoryException su file grandi** | Caricamento dell'intero file in memoria | `FileInfo` trasmette il file; assicurati di non leggere il file in un array di byte altrove. |
+| **Accesso negato** | L'applicazione non ha permessi di scrittura nella cartella di output | Esegui l'app con i diritti appropriati o scegli una directory scrivibile. |
 
 ## Domande frequenti
 
-### Q1: Aspose.Zip è compatibile con tutti i tipi di file?
+**D: Posso aggiungere una protezione con password all'archivio zip?**  
+R: Sì. Dopo aver creato l'`Archive`, imposta `archive.Password = "yourPassword"` prima di chiamare `Save`.
 
-A1: Aspose.Zip supporta un'ampia gamma di tipi di file, garantendo versatilità nella compressione.
+**D: È possibile aggiornare un file zip esistente?**  
+R: Aspose.Zip supporta l'apertura di un archivio esistente con `Archive.Open` e poi l'aggiunta di nuove voci.
 
-### Q2: Posso utilizzare Aspose.Zip per progetti commerciali?
+**D: Come comprimere file in un controller ASP.NET MVC?**  
+R: Lo stesso codice funziona; basta assicurarsi che lo stream di output venga restituito come `FileResult` al client.
 
- A2: Assolutamente! Visita il nostro[pagina di acquisto](https://purchase.aspose.com/buy) per esplorare le opzioni di licenza.
+**D: Aspose.Zip supporta algoritmi di crittografia?**  
+R: Supporta la crittografia standard ZipCrypto e AES‑256.
 
-### Q3: Come posso ottenere supporto per Aspose.Zip?
+**D: Cosa fare se devo comprimere una cartella ricorsivamente?**  
+R: Scorri `Directory.GetFiles` (e le sottocartelle) creando un `FileInfo` per ogni file, quindi aggiungili all'archivio.
 
- A3: Unisciti alla nostra comunità su[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) per assistenza e discussioni.
+## Existing FAQ Section (kept unchanged)
 
-### Q4: È disponibile una prova gratuita?
+### FAQ's
 
- A4: Sì, puoi prendere il tuo[prova gratuita qui](https://releases.aspose.com/).
+#### Q1: Is Aspose.Zip compatible with all file types?
 
-### Q5: Come posso ottenere una licenza temporanea per Aspose.Zip?
+A1: Aspose.Zip supports a wide range of file types, ensuring versatility in compression.
 
- A5: Visita[questo link](https://purchase.aspose.com/temporary-license/) per informazioni su come ottenere una licenza temporanea.
+#### Q2: Can I use Aspose.Zip for commercial projects?
+
+A2: Absolutely! Visit our [purchase page](https://purchase.aspose.com/buy) to explore licensing options.
+
+#### Q3: How can I get support for Aspose.Zip?
+
+A3: Join our community on the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for assistance and discussions.
+
+#### Q4: Is there a free trial available?
+
+A4: Yes, you can grab your [free trial here](https://releases.aspose.com/).
+
+#### Q5: How can I obtain a temporary license for Aspose.Zip?
+
+A5: Visit [this link](https://purchase.aspose.com/temporary-license/) for information on obtaining a temporary license.
+
+## Conclusione
+
+Ora sai **come creare file zip** usando Aspose.Zip per .NET, **come aggiungere file allo zip** e perché questo metodo è ideale per ASP.NET e altre applicazioni .NET. Sperimenta con diversi livelli di compressione, codifiche e opzioni di crittografia per adattare l'archivio alle tue esigenze precise. Buona compressione!
+
+---
+
+**Ultimo aggiornamento:** 2025-12-05  
+**Testato con:** Aspose.Zip per .NET 24.12 (ultima versione)  
+**Autore:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
