@@ -3,11 +3,10 @@ date: 2025-11-30
 description: Tudja meg, hogyan hozhat létre zip archívumot .NET-ben az Aspose.Zip
   for .NET használatával. Lépésről lépésre útmutató a könyvtárak hatékony tömörítéséhez
   és kitömörítéséhez .NET projektjeiben.
-language: hu
 linktitle: Create zip archive .net – Directory and Folder Compression
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: ZIP archívum létrehozása .net – Könyvtár és mappa tömörítése
-url: /net/directory-and-folder-compression/
+url: /hu/net/directory-and-folder-compression/
 weight: 22
 ---
 

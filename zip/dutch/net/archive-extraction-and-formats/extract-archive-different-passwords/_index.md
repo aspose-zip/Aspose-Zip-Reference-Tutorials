@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: Leer hoe je zip-bestanden met wachtwoord kunt uitpakken met Aspose.Zip
   voor .NET, en efficiënt meerdere wachtwoordbeveiligde items verwerkt.
-language: nl
 linktitle: Extracting Archive Entries with Different Passwords
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Hoe zip-bestand met wachtwoord uitpakken met Aspise.Zip voor .NET
-url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
+url: /nl/net/archive-extraction-and-formats/extract-archive-different-passwords/
 weight: 10
 ---
 

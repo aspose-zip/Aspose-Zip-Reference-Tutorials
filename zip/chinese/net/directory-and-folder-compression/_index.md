@@ -1,11 +1,10 @@
 ---
 date: 2025-11-30
 description: 学习如何使用 Aspose.Zip for .NET 在 .NET 中创建 ZIP 压缩包。一步步指南，帮助您在 .NET 项目中高效压缩和解压目录。
-language: zh
 linktitle: Create zip archive .net – Directory and Folder Compression
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: 在 .NET 中创建 ZIP 压缩档案 – 目录和文件夹压缩
-url: /net/directory-and-folder-compression/
+url: /zh/net/directory-and-folder-compression/
 weight: 22
 ---
 

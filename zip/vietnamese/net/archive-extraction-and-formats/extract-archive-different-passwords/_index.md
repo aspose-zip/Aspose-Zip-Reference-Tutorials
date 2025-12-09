@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: Tìm hiểu cách giải nén zip có mật khẩu bằng Aspose.Zip cho .NET, xử lý
   hiệu quả nhiều mục được bảo vệ bằng mật khẩu.
-language: vi
 linktitle: Extracting Archive Entries with Different Passwords
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Cách giải nén Zip có mật khẩu bằng Aspise.Zip cho .NET
-url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
+url: /vi/net/archive-extraction-and-formats/extract-archive-different-passwords/
 weight: 10
 ---
 

@@ -3,12 +3,11 @@ date: 2025-11-29
 description: Tanulja meg, hogyan adhat hozzá fájlokat a tar-hoz, és hogyan tömörítheti
   a fájlokat tarbz2 formátumba .NET-ben az Aspose.Zip segítségével. Ez a lépésről‑lépésre
   útmutató bemutatja, hogyan hozhat létre hatékonyan tarbz2 archívumokat.
-language: hu
 linktitle: Compressing to TarBz2
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Fájlok hozzáadása a tar-hoz és tömörítés TarBz2 formátumba az Aspose.Zip for
   .NET használatával
-url: /net/archive-extraction-and-formats/compress-to-tar-bz2/
+url: /hu/net/archive-extraction-and-formats/compress-to-tar-bz2/
 weight: 11
 ---
 

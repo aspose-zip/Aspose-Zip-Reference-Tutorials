@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: Aspose.Zip for .NET을 사용하여 비밀번호가 있는 zip 파일을 추출하는 방법을 배우고, 여러 비밀번호 보호된
   항목을 효율적으로 처리하세요.
-language: ko
 linktitle: Extracting Archive Entries with Different Passwords
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: .NET용 Aspise.Zip을 사용하여 비밀번호가 있는 Zip 파일 추출 방법
-url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
+url: /ko/net/archive-extraction-and-formats/extract-archive-different-passwords/
 weight: 10
 ---
 

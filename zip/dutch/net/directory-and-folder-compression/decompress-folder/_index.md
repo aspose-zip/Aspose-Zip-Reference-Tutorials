@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Leer hoe u een map comprimeert naar zip en een zip-bestand naar een map
   extraheert met Aspose.Zip voor .NET – een complete gids voor zip-compressie in .NET
   en het maken van zip-archieven in .NET.
-language: nl
 linktitle: Decompressing a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Map comprimeren naar zip & decomprimeren – Aspose.Zip voor .NET
-url: /net/directory-and-folder-compression/decompress-folder/
+url: /nl/net/directory-and-folder-compression/decompress-folder/
 weight: 11
 ---
 

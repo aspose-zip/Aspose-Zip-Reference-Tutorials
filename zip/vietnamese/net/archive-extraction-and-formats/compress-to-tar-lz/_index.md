@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: Tìm hiểu cách nén các tệp tar.lz trong .NET bằng Aspose.Zip và tạo kho
   lưu trữ tar.lz một cách dễ dàng.
-language: vi
 linktitle: Compressing to TarLz
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Cách nén tar.lz bằng Aspose.Zip cho .NET
-url: /net/archive-extraction-and-formats/compress-to-tar-lz/
+url: /vi/net/archive-extraction-and-formats/compress-to-tar-lz/
 weight: 13
 ---
 

@@ -2,11 +2,10 @@
 date: 2025-11-29
 description: Tìm hiểu cách thêm tệp vào tar và nén chúng thành TarZ bằng Aspose.Zip
   cho .NET – hướng dẫn từng bước để xử lý tệp .NET hiệu quả.
-language: vi
 linktitle: Compressing to TarZ
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Thêm tệp vào tar và nén thành TarZ với Aspose.Zip cho .NET
-url: /net/archive-extraction-and-formats/compress-to-tar-z/
+url: /vi/net/archive-extraction-and-formats/compress-to-tar-z/
 weight: 15
 ---
 

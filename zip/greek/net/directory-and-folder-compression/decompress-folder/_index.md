@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Μάθετε πώς να συμπιέσετε έναν φάκελο σε zip και να εξάγετε ένα zip σε
   φάκελο χρησιμοποιώντας το Aspose.Zip για .NET – ένας πλήρης οδηγός για τη συμπίεση
   zip .NET και τη δημιουργία αρχείου zip .NET.
-language: el
 linktitle: Decompressing a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Συμπίεση φακέλου σε Zip & Αποσυμπίεση – Aspose.Zip για .NET
-url: /net/directory-and-folder-compression/decompress-folder/
+url: /el/net/directory-and-folder-compression/decompress-folder/
 weight: 11
 ---
 

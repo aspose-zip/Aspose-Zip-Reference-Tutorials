@@ -3,10 +3,9 @@ additionalTitle: Aspose API References
 date: 2025-11-30
 description: Aspose.Zip for .NET를 사용하여 zip 파일을 추출하고, 비밀번호로 보호된 zip 아카이브를 처리하며, 여러
   파일을 압축하는 방법을 배워보세요. 효율적인 zip 파일 처리를 위한 포괄적인 튜토리얼입니다.
-language: ko
 linktitle: Aspose.Zip Tutorials
 title: Aspose.Zip - Zip 파일을 추출하고 압축을 마스터하는 방법
-url: /
+url: /ko/
 weight: 11
 ---
 

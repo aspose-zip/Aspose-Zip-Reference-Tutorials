@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: Naučte se, jak rozbalit zip s heslem pomocí Aspose.Zip pro .NET a efektivně
   zpracovávat více položek chráněných heslem.
-language: cs
 linktitle: Extracting Archive Entries with Different Passwords
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Jak rozbalit zip s heslem pomocí Aspise.Zip pro .NET
-url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
+url: /cs/net/archive-extraction-and-formats/extract-archive-different-passwords/
 weight: 10
 ---
 

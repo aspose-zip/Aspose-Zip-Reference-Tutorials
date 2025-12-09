@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Lär dig hur du extraherar zip‑filer, hanterar lösenordsskyddade zip‑arkiv
   och komprimerar flera filer med Aspose.Zip för .NET. Omfattande handledningar för
   effektiv zip‑filhantering.
-language: sv
 linktitle: Aspose.Zip Tutorials
 title: Aspose.Zip - Hur man extraherar zip‑filer och behärskar komprimering
-url: /
+url: /sv/
 weight: 11
 ---
 

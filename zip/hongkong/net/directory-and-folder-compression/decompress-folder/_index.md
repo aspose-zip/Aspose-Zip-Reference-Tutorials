@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: 學習如何使用 Aspose.Zip for .NET 將資料夾壓縮成 zip 並將 zip 解壓縮回資料夾——完整的 .NET zip 壓縮指南與建立
   zip 檔案 .NET。
-language: zh-hant
 linktitle: Decompressing a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: 將資料夾壓縮為 Zip 並解壓縮 – Aspose.Zip for .NET
-url: /net/directory-and-folder-compression/decompress-folder/
+url: /zh-hant/net/directory-and-folder-compression/decompress-folder/
 weight: 11
 ---
 

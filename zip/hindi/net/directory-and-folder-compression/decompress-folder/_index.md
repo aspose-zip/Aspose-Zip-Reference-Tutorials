@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Aspose.Zip for .NET का उपयोग करके डायरेक्टरी को ज़िप में संकुचित करना
   और ज़िप को डायरेक्टरी में निकालना सीखें – .NET में ज़िप संपीड़न और ज़िप आर्काइव
   बनाने के लिए एक पूर्ण गाइड।
-language: hi
 linktitle: Decompressing a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: डायरेक्टरी को ज़िप में संपीड़ित करें और डिकम्प्रेस करें – Aspose.Zip for .NET
-url: /net/directory-and-folder-compression/decompress-folder/
+url: /hi/net/directory-and-folder-compression/decompress-folder/
 weight: 11
 ---
 

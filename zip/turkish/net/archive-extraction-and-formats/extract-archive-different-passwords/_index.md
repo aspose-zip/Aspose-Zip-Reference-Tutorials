@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: Aspose.Zip for .NET kullanarak şifreli zip dosyasını nasıl çıkaracağınızı
   öğrenin, birden fazla şifre korumalı girişi verimli bir şekilde işleyin.
-language: tr
 linktitle: Extracting Archive Entries with Different Passwords
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Aspise.Zip for .NET Kullanarak Parolalı Zip Dosyasını Nasıl Çıkarılır
-url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
+url: /tr/net/archive-extraction-and-formats/extract-archive-different-passwords/
 weight: 10
 ---
 

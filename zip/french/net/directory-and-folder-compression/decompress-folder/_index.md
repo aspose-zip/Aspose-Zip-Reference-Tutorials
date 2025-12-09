@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Apprenez à compresser un répertoire en zip et à extraire un zip vers
   un répertoire en utilisant Aspose.Zip pour .NET – un guide complet de la compression
   zip .NET et de la création d’archives zip .NET.
-language: fr
 linktitle: Decompressing a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Compresser un répertoire en zip et décompresser – Aspose.Zip pour .NET
-url: /net/directory-and-folder-compression/decompress-folder/
+url: /fr/net/directory-and-folder-compression/decompress-folder/
 weight: 11
 ---
 

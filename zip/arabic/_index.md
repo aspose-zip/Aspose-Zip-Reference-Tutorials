@@ -4,10 +4,9 @@ date: 2025-11-30
 description: تعلم كيفية استخراج ملفات zip، ومعالجة أرشيفات zip المحمية بكلمة مرور،
   وضغط ملفات متعددة باستخدام Aspose.Zip لـ .NET. دروس شاملة للتعامل الفعال مع ملفات
   zip.
-language: ar
 linktitle: Aspose.Zip Tutorials
 title: Aspose.Zip - كيفية استخراج ملفات ZIP وإتقان الضغط
-url: /
+url: /ar/
 weight: 11
 ---
 

@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: تعلم كيفية ضغط ملفات tar.lz في .NET باستخدام Aspose.Zip وإنشاء أرشيف
   tar.lz بسهولة.
-language: ar
 linktitle: Compressing to TarLz
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: كيفية ضغط tar.lz باستخدام Aspose.Zip لـ .NET
-url: /net/archive-extraction-and-formats/compress-to-tar-lz/
+url: /ar/net/archive-extraction-and-formats/compress-to-tar-lz/
 weight: 13
 ---
 

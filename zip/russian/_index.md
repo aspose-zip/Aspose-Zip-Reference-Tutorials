@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Изучите, как извлекать ZIP‑файлы, работать с архивами ZIP, защищёнными
   паролем, и сжимать несколько файлов с помощью Aspose.Zip для .NET. Полные руководства
   для эффективного управления ZIP‑файлами.
-language: ru
 linktitle: Aspose.Zip Tutorials
 title: Aspose.Zip — Как извлекать ZIP‑файлы и освоить сжатие
-url: /
+url: /ru/
 weight: 11
 ---
 

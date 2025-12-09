@@ -3,11 +3,10 @@ date: 2025-11-29
 description: Aspose.Zip for .NET का उपयोग करके फ़ाइलों को टार में जोड़ना और उन्हें
   TarZ में संपीड़ित करना सीखें – .NET फ़ाइल हैंडलिंग को कुशल बनाने के लिए चरण‑दर‑चरण
   मार्गदर्शिका।
-language: hi
 linktitle: Compressing to TarZ
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Aspose.Zip for .NET के साथ फ़ाइलें टार में जोड़ें और टारज़ में संपीड़ित करें
-url: /net/archive-extraction-and-formats/compress-to-tar-z/
+url: /hi/net/archive-extraction-and-formats/compress-to-tar-z/
 weight: 15
 ---
 

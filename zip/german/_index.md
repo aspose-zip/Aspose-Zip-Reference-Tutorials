@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Erfahren Sie, wie Sie ZIP-Dateien extrahieren, passwortgeschützte ZIP-Archive
   verarbeiten und mehrere Dateien mit Aspose.Zip für .NET komprimieren. Umfassende
   Tutorials für effizientes ZIP-Datei‑Handling.
-language: de
 linktitle: Aspose.Zip Tutorials
 title: Aspose.Zip – Wie man ZIP-Dateien extrahiert und die Kompression meistert
-url: /
+url: /de/
 weight: 11
 ---
 

@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: Dowiedz się, jak rozpakować plik zip zabezpieczony hasłem przy użyciu
   Aspose.Zip dla .NET, efektywnie obsługując wiele wpisów chronionych hasłem.
-language: pl
 linktitle: Extracting Archive Entries with Different Passwords
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Jak rozpakować zip z hasłem przy użyciu Aspise.Zip dla .NET
-url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
+url: /pl/net/archive-extraction-and-formats/extract-archive-different-passwords/
 weight: 10
 ---
 

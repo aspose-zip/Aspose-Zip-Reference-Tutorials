@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Tìm hiểu cách giải nén các tệp zip, xử lý các tệp zip được bảo vệ bằng
   mật khẩu và nén nhiều tệp với Aspose.Zip cho .NET. Các hướng dẫn toàn diện để xử
   lý tệp zip một cách hiệu quả.
-language: vi
 linktitle: Aspose.Zip Tutorials
 title: Aspose.Zip - Cách giải nén tệp Zip và làm chủ nén
-url: /
+url: /vi/
 weight: 11
 ---
 

@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: Lär dig hur du komprimerar tar.lz-filer i .NET med Aspose.Zip och skapar
   tar.lz-arkiv enkelt.
-language: sv
 linktitle: Compressing to TarLz
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Hur man komprimerar tar.lz med Aspose.Zip för .NET
-url: /net/archive-extraction-and-formats/compress-to-tar-lz/
+url: /sv/net/archive-extraction-and-formats/compress-to-tar-lz/
 weight: 13
 ---
 

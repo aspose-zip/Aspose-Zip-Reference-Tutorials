@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Leer hoe u zip‑bestanden kunt uitpakken, wachtwoord‑beveiligde zip‑archieven
   kunt verwerken en meerdere bestanden kunt comprimeren met Aspose.Zip voor .NET.
   Uitgebreide tutorials voor efficiënte zip‑bestandsverwerking.
-language: nl
 linktitle: Aspose.Zip Tutorials
 title: Aspose.Zip - Hoe zipbestanden uit te pakken en compressie te beheersen
-url: /
+url: /nl/
 weight: 11
 ---
 

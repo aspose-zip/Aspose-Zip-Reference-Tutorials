@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: تعلم كيفية استخراج ملفات zip باستخدام كلمة مرور عبر Aspose.Zip لـ .NET،
   مع معالجة متعددة للملفات المحمية بكلمة مرور بكفاءة.
-language: ar
 linktitle: Extracting Archive Entries with Different Passwords
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: كيفية استخراج ملف ZIP بكلمة مرور باستخدام Aspise.Zip لـ .NET
-url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
+url: /ar/net/archive-extraction-and-formats/extract-archive-different-passwords/
 weight: 10
 ---
 

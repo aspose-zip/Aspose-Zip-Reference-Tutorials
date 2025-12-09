@@ -2,12 +2,11 @@
 date: 2025-12-01
 description: Tanulja meg, hogyan lehet jelszóval védett zip fájlt kicsomagolni az
   Aspose.Zip for .NET használatával, hatékonyan kezelve a több jelszóval védett bejegyzést.
-language: hu
 linktitle: Extracting Archive Entries with Different Passwords
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Hogyan csomagoljunk ki jelszóval védett zip fájlt az Aspise.Zip segítségével
   .NET-ben
-url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
+url: /hu/net/archive-extraction-and-formats/extract-archive-different-passwords/
 weight: 10
 ---
 

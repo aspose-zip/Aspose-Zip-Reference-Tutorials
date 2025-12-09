@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: Pelajari cara mengekstrak zip dengan kata sandi menggunakan Aspose.Zip
   untuk .NET, menangani beberapa entri yang dilindungi kata sandi secara efisien.
-language: id
 linktitle: Extracting Archive Entries with Different Passwords
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Cara Mengekstrak Zip dengan Kata Sandi Menggunakan Aspise.Zip untuk .NET
-url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
+url: /id/net/archive-extraction-and-formats/extract-archive-different-passwords/
 weight: 10
 ---
 

@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Naučte se, jak rozbalovat zip soubory, pracovat s zip archivy chráněnými
   heslem a komprimovat více souborů pomocí Aspose.Zip pro .NET. Kompletní tutoriály
   pro efektivní práci se zip soubory.
-language: cs
 linktitle: Aspose.Zip Tutorials
 title: Aspose.Zip – Jak extrahovat zip soubory a ovládnout kompresi
-url: /
+url: /cs/
 weight: 11
 ---
 

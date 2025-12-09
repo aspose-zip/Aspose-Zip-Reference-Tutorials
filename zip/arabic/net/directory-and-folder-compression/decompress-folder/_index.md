@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: تعلم كيفية ضغط دليل إلى ملف zip واستخراج ملف zip إلى دليل باستخدام Aspose.Zip
   لـ .NET – دليل كامل لضغط zip في .NET وإنشاء أرشيف zip في .NET.
-language: ar
 linktitle: Decompressing a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: ضغط المجلد إلى ملف Zip وفك الضغط – Aspose.Zip لـ .NET
-url: /net/directory-and-folder-compression/decompress-folder/
+url: /ar/net/directory-and-folder-compression/decompress-folder/
 weight: 11
 ---
 

@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: Узнайте, как сжать каталог в zip и извлечь zip в каталог с помощью Aspose.Zip
   для .NET — полное руководство по zip‑сжатию в .NET и созданию zip‑архивов в .NET.
-language: ru
 linktitle: Decompressing a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Сжатие каталога в Zip и распаковка – Aspose.Zip для .NET
-url: /net/directory-and-folder-compression/decompress-folder/
+url: /ru/net/directory-and-folder-compression/decompress-folder/
 weight: 11
 ---
 

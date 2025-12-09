@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Lär dig hur du komprimerar en katalog till zip och extraherar zip till
   en katalog med Aspose.Zip för .NET – en komplett guide till zip‑komprimering .net
   och att skapa zip‑arkiv .net.
-language: sv
 linktitle: Decompressing a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Komprimera katalog till zip och dekomprimera – Aspose.Zip för .NET
-url: /net/directory-and-folder-compression/decompress-folder/
+url: /sv/net/directory-and-folder-compression/decompress-folder/
 weight: 11
 ---
 

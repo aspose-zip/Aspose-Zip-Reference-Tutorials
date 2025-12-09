@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Aspose.Zip for .NET ile zip dosyalarını nasıl çıkaracağınızı, şifre korumalı
   zip arşivlerini nasıl yöneteceğinizi ve birden fazla dosyayı nasıl sıkıştıracağınızı
   öğrenin. Verimli zip dosyası işleme için kapsamlı öğreticiler.
-language: tr
 linktitle: Aspose.Zip Tutorials
 title: Aspose.Zip - Zip Dosyalarını Nasıl Çıkarır ve Sıkıştırmada Ustalaşmak
-url: /
+url: /tr/
 weight: 11
 ---
 

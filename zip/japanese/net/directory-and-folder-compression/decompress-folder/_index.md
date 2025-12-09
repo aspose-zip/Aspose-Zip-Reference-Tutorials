@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: Aspose.Zip for .NET を使用してディレクトリを ZIP に圧縮し、ZIP をディレクトリに展開する方法を学びましょう –
   ZIP 圧縮 .NET の完全ガイドと ZIP アーカイブの作成 .NET。
-language: ja
 linktitle: Decompressing a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: ディレクトリをZIPに圧縮して解凍 – Aspose.Zip for .NET
-url: /net/directory-and-folder-compression/decompress-folder/
+url: /ja/net/directory-and-folder-compression/decompress-folder/
 weight: 11
 ---
 

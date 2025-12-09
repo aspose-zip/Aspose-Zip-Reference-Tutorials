@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Pelajari cara mengekstrak file zip, menangani arsip zip yang dilindungi
   kata sandi, dan mengompres beberapa file dengan Aspose.Zip untuk .NET. Tutorial
   komprehensif untuk penanganan file zip yang efisien.
-language: id
 linktitle: Aspose.Zip Tutorials
 title: Aspose.Zip - Cara Mengekstrak File Zip dan Menguasai Kompresi
-url: /
+url: /id/
 weight: 11
 ---
 

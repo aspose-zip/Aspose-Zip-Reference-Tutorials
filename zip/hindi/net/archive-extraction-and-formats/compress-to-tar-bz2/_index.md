@@ -3,12 +3,11 @@ date: 2025-11-29
 description: Aspose.Zip के साथ .NET में फ़ाइलों को tar में जोड़ना और फ़ाइलों को tarbz2
   फ़ॉर्मेट में संपीड़ित करना सीखें। यह चरण‑दर‑चरण गाइड दिखाता है कि tarbz2 अभिलेखों
   को प्रभावी ढंग से कैसे बनाया जाए।
-language: hi
 linktitle: Compressing to TarBz2
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Aspose.Zip for .NET का उपयोग करके फ़ाइलों को टार में जोड़ें और टारबज़2 में
   संपीड़ित करें
-url: /net/archive-extraction-and-formats/compress-to-tar-bz2/
+url: /hi/net/archive-extraction-and-formats/compress-to-tar-bz2/
 weight: 11
 ---
 

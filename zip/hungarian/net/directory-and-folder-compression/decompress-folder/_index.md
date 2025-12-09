@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Tanulja meg, hogyan tömöríthet egy könyvtárat zip fájlba, és hogyan csomagolhat
   ki egy zip-et könyvtárba az Aspose.Zip for .NET segítségével – egy teljes útmutató
   a zip tömörítéshez .net és zip archívum létrehozásához .net.
-language: hu
 linktitle: Decompressing a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Könyvtár tömörítése ZIP-be és kitömörítése – Aspose.Zip .NET-hez
-url: /net/directory-and-folder-compression/decompress-folder/
+url: /hu/net/directory-and-folder-compression/decompress-folder/
 weight: 11
 ---
 

@@ -3,11 +3,10 @@ date: 2025-11-29
 description: Aprenda cómo agregar archivos a tar y comprimir archivos en formato tarbz2
   en .NET con Aspose.Zip. Esta guía paso a paso muestra cómo crear archivos tarbz2
   de manera eficiente.
-language: es
 linktitle: Compressing to TarBz2
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Agregar archivos a tar y comprimir a TarBz2 usando Aspose.Zip para .NET
-url: /net/archive-extraction-and-formats/compress-to-tar-bz2/
+url: /es/net/archive-extraction-and-formats/compress-to-tar-bz2/
 weight: 11
 ---
 

@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: Узнайте, как извлекать ZIP‑архивы с паролем с помощью Aspose.Zip для
   .NET, эффективно обрабатывая несколько защищённых паролем записей.
-language: ru
 linktitle: Extracting Archive Entries with Different Passwords
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Как извлечь ZIP‑архив с паролем с помощью Aspise.Zip для .NET
-url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
+url: /ru/net/archive-extraction-and-formats/extract-archive-different-passwords/
 weight: 10
 ---
 

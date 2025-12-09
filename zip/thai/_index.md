@@ -4,10 +4,9 @@ date: 2025-11-30
 description: เรียนรู้วิธีการแตกไฟล์ zip, จัดการไฟล์ zip ที่มีการป้องกันด้วยรหัสผ่าน,
   และบีบอัดหลายไฟล์ด้วย Aspose.Zip สำหรับ .NET. บทเรียนเชิงลึกเพื่อการจัดการไฟล์ zip
   อย่างมีประสิทธิภาพ.
-language: th
 linktitle: Aspose.Zip Tutorials
 title: Aspose.Zip - วิธีสกัดไฟล์ Zip และเชี่ยวชาญการบีบอัด
-url: /
+url: /th/
 weight: 11
 ---
 

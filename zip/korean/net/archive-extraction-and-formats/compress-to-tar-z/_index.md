@@ -2,11 +2,10 @@
 date: 2025-11-29
 description: Aspose.Zip for .NET를 사용하여 파일을 tar에 추가하고 TarZ로 압축하는 방법을 배우세요 – 효율적인 .NET
   파일 처리를 위한 단계별 가이드.
-language: ko
 linktitle: Compressing to TarZ
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Aspose.Zip for .NET를 사용하여 파일을 tar에 추가하고 TarZ로 압축하기
-url: /net/archive-extraction-and-formats/compress-to-tar-z/
+url: /ko/net/archive-extraction-and-formats/compress-to-tar-z/
 weight: 15
 ---
 

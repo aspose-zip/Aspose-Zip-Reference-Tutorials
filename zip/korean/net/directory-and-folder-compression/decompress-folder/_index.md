@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: Aspose.Zip for .NET를 사용하여 디렉터리를 zip 파일로 압축하고 zip 파일을 디렉터리로 추출하는 방법을 배우세요
   – zip 압축 .NET에 대한 완전한 가이드와 zip 아카이브 .NET 생성.
-language: ko
 linktitle: Decompressing a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: 디렉터리를 Zip으로 압축 및 압축 해제 – Aspose.Zip for .NET
-url: /net/directory-and-folder-compression/decompress-folder/
+url: /ko/net/directory-and-folder-compression/decompress-folder/
 weight: 11
 ---
 

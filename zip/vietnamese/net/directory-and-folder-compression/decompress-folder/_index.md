@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: Tìm hiểu cách nén thư mục thành zip và giải nén zip ra thư mục bằng Aspose.Zip
   cho .NET – hướng dẫn đầy đủ về nén zip .NET và tạo tệp zip .NET.
-language: vi
 linktitle: Decompressing a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Nén thư mục thành Zip & Giải nén – Aspose.Zip cho .NET
-url: /net/directory-and-folder-compression/decompress-folder/
+url: /vi/net/directory-and-folder-compression/decompress-folder/
 weight: 11
 ---
 

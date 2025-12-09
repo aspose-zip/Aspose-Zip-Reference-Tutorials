@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Aspose.Zip for .NET kullanarak bir dizini zip dosyasına sıkıştırmayı
   ve zip dosyasını dizine çıkarmayı öğrenin – zip sıkıştırma .net ve zip arşivi oluşturma
   .net için eksiksiz bir rehber.
-language: tr
 linktitle: Decompressing a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Dizini Zip'e Sıkıştır ve Aç – Aspose.Zip for .NET
-url: /net/directory-and-folder-compression/decompress-folder/
+url: /tr/net/directory-and-folder-compression/decompress-folder/
 weight: 11
 ---
 

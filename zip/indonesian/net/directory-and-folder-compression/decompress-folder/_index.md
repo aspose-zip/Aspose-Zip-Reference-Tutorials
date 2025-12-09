@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Pelajari cara mengompres direktori menjadi zip dan mengekstrak zip ke
   direktori menggunakan Aspose.Zip untuk .NET – panduan lengkap tentang kompresi zip
   .NET dan pembuatan arsip zip .NET.
-language: id
 linktitle: Decompressing a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Kompres Direktori ke Zip & Ekstrak – Aspose.Zip untuk .NET
-url: /net/directory-and-folder-compression/decompress-folder/
+url: /id/net/directory-and-folder-compression/decompress-folder/
 weight: 11
 ---
 

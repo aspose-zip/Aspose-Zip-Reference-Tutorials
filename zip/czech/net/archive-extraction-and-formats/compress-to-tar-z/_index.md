@@ -2,11 +2,10 @@
 date: 2025-11-29
 description: Naučte se, jak přidávat soubory do tar a komprimovat je do TarZ pomocí
   Aspose.Zip pro .NET – krok za krokem průvodce pro efektivní práci se soubory v .NET.
-language: cs
 linktitle: Compressing to TarZ
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Přidat soubory do tar a komprimovat do TarZ pomocí Aspose.Zip pro .NET
-url: /net/archive-extraction-and-formats/compress-to-tar-z/
+url: /cs/net/archive-extraction-and-formats/compress-to-tar-z/
 weight: 15
 ---
 

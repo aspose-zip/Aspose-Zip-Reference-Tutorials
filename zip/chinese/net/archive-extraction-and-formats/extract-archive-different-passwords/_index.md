@@ -1,11 +1,10 @@
 ---
 date: 2025-12-01
 description: 学习如何使用 Aspose.Zip for .NET 提取带密码的 ZIP，并高效处理多个受密码保护的条目。
-language: zh
 linktitle: Extracting Archive Entries with Different Passwords
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: 如何使用 Aspise.Zip for .NET 提取带密码的 Zip 文件
-url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
+url: /zh/net/archive-extraction-and-formats/extract-archive-different-passwords/
 weight: 10
 ---
 

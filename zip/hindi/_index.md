@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Aspose.Zip for .NET के साथ zip फ़ाइलें निकालना, पासवर्ड‑सुरक्षित zip
   आर्काइव को संभालना, और कई फ़ाइलों को संकुचित करना सीखें। कुशल zip फ़ाइल हैंडलिंग
   के लिए व्यापक ट्यूटोरियल।
-language: hi
 linktitle: Aspose.Zip Tutorials
 title: Aspose.Zip - ज़िप फ़ाइलें कैसे निकालें और संपीड़न में माहिर बनें
-url: /
+url: /hi/
 weight: 11
 ---
 

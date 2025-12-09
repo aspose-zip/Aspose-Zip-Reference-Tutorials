@@ -3,12 +3,11 @@ date: 2025-11-29
 description: Tanulja meg, hogyan adhat fájlokat a tar-archívumba, és tömörítheti őket
   TarZ formátumba az Aspose.Zip for .NET segítségével – egy lépésről‑lépésre útmutató
   a hatékony .NET fájlkezeléshez.
-language: hu
 linktitle: Compressing to TarZ
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Fájlok hozzáadása a tar-hoz és tömörítés TarZ formátumba az Aspose.Zip for
   .NET használatával
-url: /net/archive-extraction-and-formats/compress-to-tar-z/
+url: /hu/net/archive-extraction-and-formats/compress-to-tar-z/
 weight: 15
 ---
 

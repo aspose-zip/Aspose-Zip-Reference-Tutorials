@@ -3,11 +3,10 @@ date: 2025-12-01
 description: เรียนรู้วิธีบีบอัดไดเรกทอรีเป็นไฟล์ zip และแตกไฟล์ zip ไปยังไดเรกทอรีโดยใช้
   Aspose.Zip สำหรับ .NET – คู่มือครบถ้วนเกี่ยวกับการบีบอัด zip ใน .NET และการสร้างไฟล์
   zip archive ใน .NET.
-language: th
 linktitle: Decompressing a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: บีบอัดไดเรกทอรีเป็น Zip และคลายบีบอัด – Aspose.Zip สำหรับ .NET
-url: /net/directory-and-folder-compression/decompress-folder/
+url: /th/net/directory-and-folder-compression/decompress-folder/
 weight: 11
 ---
 

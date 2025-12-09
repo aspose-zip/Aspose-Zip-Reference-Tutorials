@@ -3,11 +3,10 @@ date: 2025-12-01
 description: Naučte se, jak komprimovat složku do zipu a rozbalit zip do složky pomocí
   Aspose.Zip pro .NET – kompletní průvodce zip kompresí v .NET a vytvářením zip archivu
   v .NET.
-language: cs
 linktitle: Decompressing a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Komprimovat adresář do ZIP a rozbalit – Aspose.Zip pro .NET
-url: /net/directory-and-folder-compression/decompress-folder/
+url: /cs/net/directory-and-folder-compression/decompress-folder/
 weight: 11
 ---
 

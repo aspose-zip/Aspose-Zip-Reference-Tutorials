@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Tanulja meg, hogyan lehet zip fájlokat kicsomagolni, jelszóval védett
   zip archívumokat kezelni, és több fájlt tömöríteni az Aspose.Zip for .NET segítségével.
   Átfogó útmutatók a hatékony zip fájlkezeléshez.
-language: hu
 linktitle: Aspose.Zip Tutorials
 title: Aspose.Zip – Hogyan csomagoljunk ki zip fájlokat és sajátítsuk el a tömörítést
-url: /
+url: /hu/
 weight: 11
 ---
 

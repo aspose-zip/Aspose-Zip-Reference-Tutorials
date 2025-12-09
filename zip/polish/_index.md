@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Dowiedz się, jak wyodrębniać pliki zip, obsługiwać archiwa zip chronione
   hasłem oraz kompresować wiele plików przy użyciu Aspose.Zip dla .NET. Kompleksowe
   samouczki umożliwiające efektywne zarządzanie plikami zip.
-language: pl
 linktitle: Aspose.Zip Tutorials
 title: Aspose.Zip - Jak wyodrębniać pliki ZIP i opanować kompresję
-url: /
+url: /pl/
 weight: 11
 ---
 

@@ -1,11 +1,10 @@
 ---
 date: 2025-12-01
 description: .NETでAspose.Zipを使用してtar.lzファイルを圧縮し、簡単にtar.lzアーカイブを作成する方法を学びましょう。
-language: ja
 linktitle: Compressing to TarLz
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: .NET 用 Aspose.Zip で tar.lz を圧縮する方法
-url: /net/archive-extraction-and-formats/compress-to-tar-lz/
+url: /ja/net/archive-extraction-and-formats/compress-to-tar-lz/
 weight: 13
 ---
 

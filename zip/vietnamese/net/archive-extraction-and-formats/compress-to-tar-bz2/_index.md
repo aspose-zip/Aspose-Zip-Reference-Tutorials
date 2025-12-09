@@ -3,11 +3,10 @@ date: 2025-11-29
 description: Học cách thêm tệp vào tar và nén tệp sang định dạng tarbz2 trong .NET
   với Aspose.Zip. Hướng dẫn từng bước này chỉ ra cách tạo các tệp tarbz2 một cách
   hiệu quả.
-language: vi
 linktitle: Compressing to TarBz2
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Thêm tệp vào tar và nén thành TarBz2 bằng Aspose.Zip cho .NET
-url: /net/archive-extraction-and-formats/compress-to-tar-bz2/
+url: /vi/net/archive-extraction-and-formats/compress-to-tar-bz2/
 weight: 11
 ---
 

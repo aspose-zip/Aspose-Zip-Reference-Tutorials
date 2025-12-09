@@ -2,11 +2,10 @@
 date: 2025-11-30
 description: Leer hoe u een zip‑archief maakt in .NET met Aspose.Zip voor .NET. Stapsgewijze
   handleiding om mappen efficiënt te comprimeren en te decomprimeren in uw .NET‑projecten.
-language: nl
 linktitle: Create zip archive .net – Directory and Folder Compression
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Maak zip-archief .net – Directory- en mapcompressie
-url: /net/directory-and-folder-compression/
+url: /nl/net/directory-and-folder-compression/
 weight: 22
 ---
 

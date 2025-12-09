@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: เรียนรู้วิธีการแตกไฟล์ zip ที่มีรหัสผ่านโดยใช้ Aspose.Zip สำหรับ .NET
   พร้อมจัดการรายการที่มีการป้องกันด้วยรหัสผ่านหลายรายการอย่างมีประสิทธิภาพ
-language: th
 linktitle: Extracting Archive Entries with Different Passwords
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: วิธีการแตกไฟล์ Zip ด้วยรหัสผ่านโดยใช้ Aspise.Zip สำหรับ .NET
-url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
+url: /th/net/archive-extraction-and-formats/extract-archive-different-passwords/
 weight: 10
 ---
 

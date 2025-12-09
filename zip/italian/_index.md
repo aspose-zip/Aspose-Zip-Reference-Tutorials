@@ -4,10 +4,9 @@ date: 2025-11-30
 description: Scopri come estrarre file zip, gestire archivi zip protetti da password
   e comprimere più file con Aspose.Zip per .NET. Tutorial completi per una gestione
   efficiente dei file zip.
-language: it
 linktitle: Aspose.Zip Tutorials
 title: Aspose.Zip - Come estrarre file zip e padroneggiare la compressione
-url: /
+url: /it/
 weight: 11
 ---
 

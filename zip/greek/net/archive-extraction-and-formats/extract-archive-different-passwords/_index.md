@@ -3,12 +3,11 @@ date: 2025-12-01
 description: Μάθετε πώς να εξάγετε zip με κωδικό πρόσβασης χρησιμοποιώντας το Aspose.Zip
   για .NET, διαχειριζόμενοι αποδοτικά πολλαπλές καταχωρήσεις προστατευμένες με κωδικό
   πρόσβασης.
-language: el
 linktitle: Extracting Archive Entries with Different Passwords
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Πώς να εξάγετε αρχείο zip με κωδικό πρόσβασης χρησιμοποιώντας το Aspise.Zip
   για .NET
-url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
+url: /el/net/archive-extraction-and-formats/extract-archive-different-passwords/
 weight: 10
 ---
 

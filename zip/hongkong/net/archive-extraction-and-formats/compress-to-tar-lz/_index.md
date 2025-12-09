@@ -1,11 +1,10 @@
 ---
 date: 2025-12-01
 description: 學習如何在 .NET 中使用 Aspose.Zip 壓縮 tar.lz 檔案，輕鬆建立 tar.lz 壓縮檔。
-language: zh-hant
 linktitle: Compressing to TarLz
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: 如何使用 Aspose.Zip for .NET 壓縮 tar.lz
-url: /net/archive-extraction-and-formats/compress-to-tar-lz/
+url: /zh-hant/net/archive-extraction-and-formats/compress-to-tar-lz/
 weight: 13
 ---
 

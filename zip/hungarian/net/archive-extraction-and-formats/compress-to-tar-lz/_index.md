@@ -2,11 +2,10 @@
 date: 2025-12-01
 description: Tanulja meg, hogyan tömöríthet tar.lz fájlokat .NET-ben az Aspose.Zip
   segítségével, és egyszerűen készíthet tar.lz archívumot.
-language: hu
 linktitle: Compressing to TarLz
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Hogyan tömörítsük a tar.lz-t az Aspose.Zip for .NET használatával
-url: /net/archive-extraction-and-formats/compress-to-tar-lz/
+url: /hu/net/archive-extraction-and-formats/compress-to-tar-lz/
 weight: 13
 ---
 

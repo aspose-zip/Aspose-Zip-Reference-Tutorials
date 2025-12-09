@@ -3,11 +3,10 @@ date: 2025-11-30
 description: Aspose.Zip for .NET का उपयोग करके .NET में ज़िप आर्काइव बनाना सीखें।
   अपने .NET प्रोजेक्ट्स में डायरेक्टरीज़ को प्रभावी ढंग से संपीड़ित और डिकम्प्रेस
   करने के लिए चरण‑दर‑चरण मार्गदर्शिका।
-language: hi
 linktitle: Create zip archive .net – Directory and Folder Compression
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: ज़िप आर्काइव बनाएं .net – डायरेक्टरी और फ़ोल्डर संपीड़न
-url: /net/directory-and-folder-compression/
+url: /hi/net/directory-and-folder-compression/
 weight: 22
 ---
 

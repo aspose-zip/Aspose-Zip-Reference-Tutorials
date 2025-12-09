@@ -3,10 +3,9 @@ additionalTitle: Aspose API References
 date: 2025-11-30
 description: 學習如何解壓 ZIP 檔案、處理受密碼保護的 ZIP 壓縮檔，並使用 Aspose.Zip for .NET 壓縮多個檔案。提供全面的教學，助你高效處理
   ZIP 檔案。
-language: zh-hant
 linktitle: Aspose.Zip Tutorials
 title: Aspose.Zip - 如何解壓 ZIP 檔案並精通壓縮
-url: /
+url: /zh-hant/
 weight: 11
 ---
 
