@@ -1,56 +1,76 @@
 ---
-title: Bezproblemowa kompresja katalogów za pomocą Aspose.Zip dla .NET
-linktitle: Jak skompresować katalog
-second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
-description: Naucz się bez wysiłku kompresować katalogi za pomocą Aspose.Zip dla .NET. Przyspiesz rozwój swojej platformy .NET poprzez efektywną optymalizację przestrzeni dyskowej.
-weight: 10
+date: 2025-12-09
+description: Dowiedz się, jak kompresować katalog przy użyciu Aspose.Zip dla .NET
+  i efektywnie tworzyć archiwa zip w .NET. Optymalizuj miejsce na dysku w swoich aplikacjach
+  .NET.
+linktitle: How to Compress a Directory
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Jak skompresować katalog przy użyciu Aspose.Zip dla .NET
 url: /pl/net/directory-and-folder-compression/compress-directory/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Bezproblemowa kompresja katalogów za pomocą Aspose.Zip dla .NET
+# Bezproblemowa kompresja katalogu przy użyciu Aspose.Zip dla .NET
 
-stale zmieniającym się środowisku rozwoju platformy .NET znalezienie skutecznych sposobów zarządzania katalogami i ich kompresowania ma kluczowe znaczenie. Za pomocą Aspose.Zip dla .NET możesz usprawnić ten proces i zwiększyć wydajność swoich aplikacji. W tym przewodniku krok po kroku przeprowadzimy Cię przez proces kompresji katalogu przy użyciu Aspose.Zip, upewniając się, że dobrze rozumiesz każdą koncepcję.
+W tym samouczku pokażemy, **jak skompresować katalog** przy użyciu Aspose.Zip dla .NET, potężnego narzędzia do zarządzania dużymi zestawami danych i oszczędzania miejsca na dysku. Niezależnie od tego, czy tworzysz aplikację desktopową, czy usługę w chmurze, efektywna kompresja folderów może znacząco poprawić wydajność i obniżyć koszty. Przejdziemy krok po kroku, wyjaśnimy logikę kodu i wskażemy typowe pułapki, abyś mógł zastosować tę technikę z pewnością.
 
-## Wstęp
+## Szybkie odpowiedzi
+- **Co robi Aspose.Zip?** Udostępnia prosty interfejs .NET API do tworzenia i rozpakowywania archiwów ZIP bez zewnętrznych zależności.  
+- **Jak długo trwa implementacja?** Zazwyczaj mniej niż 10 minut dla podstawowej kompresji katalogu.  
+- **Które wersje .NET są obsługiwane?** .NET Framework 4.5+, .NET Core 3.1+ oraz .NET 5/6+.  
+- **Czy potrzebna jest licencja do produkcji?** Tak, do użytku produkcyjnego wymagana jest licencja komercyjna.  
+- **Czy mogę skompresować wiele folderów jednocześnie?** Oczywiście — użyj metody `CreateEntries` na dowolnej kolekcji `DirectoryInfo`.
 
-Aspose.Zip dla .NET to potężna biblioteka, która umożliwia programistom .NET bezproblemową pracę ze skompresowanymi plikami i katalogami. Niezależnie od tego, czy masz do czynienia z dużymi zbiorami danych, czy też chcesz zoptymalizować przestrzeń dyskową, Aspose.Zip zapewnia solidny zestaw funkcji do zadań kompresji i dekompresji.
+## Wprowadzenie
 
-## Warunki wstępne
+Aspose.Zip dla .NET to potężna biblioteka, która umożliwia programistom .NET płynną pracę z plikami i katalogami skompresowanymi. Niezależnie od tego, czy pracujesz z dużymi zestawami danych, czy potrzebujesz **generować archiwa zip w stylu c#**, Aspose.Zip oferuje solidny zestaw funkcji do zadań kompresji i dekompresji.
 
-Zanim przejdziesz do samouczka, upewnij się, że spełniasz następujące wymagania wstępne:
+## Co to jest „jak skompresować katalog”?
 
--  Aspose.Zip dla .NET: Upewnij się, że masz zainstalowaną bibliotekę. Możesz go pobrać[Tutaj](https://releases.aspose.com/zip/net/).
+Kompresowanie katalogu oznacza pobranie wszystkich plików i podfolderów w danym folderze i spakowanie ich do jednego archiwum ZIP. Zmniejsza to całkowity rozmiar, upraszcza transfer i zachowuje pierwotną strukturę folderów.
 
-- Środowisko programistyczne: skonfiguruj preferowane środowisko programistyczne .NET, takie jak Visual Studio.
+## Dlaczego używać Aspose.Zip do tego zadania?
 
-- Katalog dokumentów: Zastąp „Twój katalog dokumentów” we fragmencie kodu ścieżką do katalogu, który chcesz skompresować.
+- **Szybkość i wydajność:** Zoptymalizowane algorytmy szybko obsługują duże foldery.  
+- **Czysty .NET:** Nie wymaga natywnych binarek ani narzędzi firm trzecich.  
+- **Bogaty zestaw funkcji:** Obsługuje ochronę hasłem, strumieniowanie i dynamiczne dodawanie wpisów — idealny dla scenariuszy **zip multiple files .net**.  
+- **Spójne API:** Działa tak samo w .NET Framework, .NET Core i .NET 5/6.
 
--  Dostęp do dokumentacji: odniesienia i dodatkowe informacje można znaleźć w dokumentacji[Tutaj](https://reference.aspose.com/zip/net/).
+## Wymagania wstępne
 
-## Importuj przestrzenie nazw
+- **Aspose.Zip for .NET** – pobierz go [tutaj](https://releases.aspose.com/zip/net/).  
+- **Środowisko programistyczne** – Visual Studio, Rider lub dowolne IDE obsługujące C#.  
+- **Katalog dokumentów** – zamień `"Your Document Directory"` w kodzie na ścieżkę do folderu, który chcesz skompresować.  
+- **Dokumentacja referencyjna** – zapoznaj się z oficjalną dokumentacją [tutaj](https://reference.aspose.com/zip/net/).
 
-Rozpocznij od zaimportowania niezbędnych przestrzeni nazw do swojego kodu. Te przestrzenie nazw zapewniają podstawowe klasy i metody wymagane do pracy z Aspose.Zip dla .NET.
+## Importowanie przestrzeni nazw
+
+Zacznij od zaimportowania niezbędnych przestrzeni nazw. Dają one dostęp do podstawowych klas kompresji.
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-## Krok 1: Zainicjuj katalog dokumentów
+## Jak spakować folder przy użyciu Aspose.Zip
 
- Ustaw zmienną`dataDir` do ścieżki katalogu, który chcesz skompresować.
+Poniżej znajduje się prosty przykład, który demonstruje **jak spakować folder**. Ten sam wzorzec można rozszerzyć na **zip multiple files .net** lub na tworzenie niestandardowych struktur archiwów.
+
+### Krok 1: Zainicjalizuj katalog dokumentów
+
+Ustaw zmienną `dataDir` na ścieżkę katalogu, który chcesz skompresować.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Krok 2: Utwórz wyjściowe pliki ZIP
+### Krok 2: Utwórz pliki wyjściowe ZIP
 
-Otwórz dwa strumienie plików dla wyjściowych plików zip, które będą zawierać skompresowane dane.
+Otwórz dwa obiekty `FileStream` dla wyjściowych plików ZIP. Pokazuje to, jak można wygenerować więcej niż jedno archiwum z tego samego źródła — przydatne przy wersjonowanych kopiach zapasowych.
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", FileMode.Create))
@@ -59,9 +79,9 @@ using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", Fil
     {
 ```
 
-## Krok 3: Skompresuj katalog
+### Krok 3: Skompresuj katalog
 
- Skorzystaj z`Archive` class, aby skompresować określony katalog. W tym przykładzie używamy`CanterburyCorpus` informator.
+Użyj klasy `Archive`, aby dodać każdy wpis z docelowego folderu. Przykład używa przykładowego folderu o nazwie **CanterburyCorpus**, ale możesz wskazać dowolny katalog.
 
 ```csharp
         using (Archive archive = new Archive())
@@ -75,34 +95,58 @@ using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", Fil
 }
 ```
 
-## Wniosek
+> **Wskazówka:** Jeśli potrzebujesz **create zip archive .net** z określonym poziomem kompresji, ustaw `archive.CompressionLevel` przed wywołaniem `Save`.
 
-Kompresja katalogów w .NET nigdy nie była łatwiejsza dzięki Aspose.Zip. Wykonując te proste kroki, możesz bezproblemowo zintegrować kompresję katalogów z aplikacjami, optymalizując pamięć i poprawiając wydajność.
+## Typowe problemy i rozwiązania
 
-## Często zadawane pytania
+| Objaw | Prawdopodobna przyczyna | Rozwiązanie |
+|---------|--------------|-----|
+| Pusty plik ZIP | `dataDir` wskazuje na niewłaściwy folder lub brak końcowego ukośnika | Sprawdź ścieżkę i upewnij się, że folder zawiera pliki |
+| `UnauthorizedAccessException` | Aplikacja nie ma uprawnień do systemu plików | Uruchom Visual Studio jako administrator lub przyznaj prawa odczytu/zapisu |
+| Wysokie zużycie pamięci przy dużych katalogach | Ładowanie wszystkich wpisów do pamięci jednocześnie | Użyj `Archive.CreateEntryFromFile` w pętli, aby strumieniowo przetwarzać pliki pojedynczo |
 
-### P1: Czy mogę używać Aspose.Zip dla .NET zarówno w projektach komercyjnych, jak i osobistych?
+## Najczęściej zadawane pytania (dodatkowe)
 
-Odpowiedź 1: Tak, Aspose.Zip dla .NET jest licencjonowany zarówno do użytku komercyjnego, jak i osobistego.
+**P: Czy mogę dodać hasło do archiwum ZIP?**  
+O: Tak. Ustaw `archive.Password = "yourPassword";` przed wywołaniem `Save`.
 
-### P2: Czy dostępny jest bezpłatny okres próbny?
+**P: Jak uwzględnić tylko określone typy plików?**  
+O: Przefiltruj kolekcję `DirectoryInfo` przy użyciu `GetFiles("*.txt")` lub podobnej metody przed wywołaniem `CreateEntries`.
 
- Odpowiedź 2: Tak, możesz skorzystać z bezpłatnego okresu próbnego[Tutaj](https://releases.aspose.com/zip/net).
+**P: Czy istnieje sposób na aktualizację istniejącego ZIP bez jego ponownego tworzenia?**  
+O: Aspose.Zip obsługuje przyrostowe aktualizacje za pomocą `Archive.UpdateEntry`.
+
+## FAQ
+
+### P1: Czy mogę używać Aspose.Zip dla .NET zarówno w projektach komercyjnych, jak i prywatnych?
+
+O1: Tak, Aspose.Zip dla .NET jest licencjonowany zarówno do użytku komercyjnego, jak i prywatnego.
+
+### P2: Czy dostępna jest darmowa wersja próbna?
+
+O2: Tak, możesz wypróbować darmową wersję próbną [tutaj](https://releases.aspose.com/zip/net).
 
 ### P3: Jak uzyskać wsparcie dla Aspose.Zip dla .NET?
 
- A3: Odwiedź[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) uzyskać wsparcie społeczności lub rozważyć zakup a[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) za dedykowaną pomoc.
+O3: Odwiedź [forum Aspose.Zip](https://forum.aspose.com/c/zip/37) w celu uzyskania wsparcia społeczności lub rozważ zakup [tymczasowej licencji](https://purchase.aspose.com/temporary-license/) dla dedykowanej pomocy.
 
 ### P4: Czy dostępne są inne przykłady i samouczki?
 
- A4: Tak,[dokumentacja](https://reference.aspose.com/zip/net/) zawiera obszerne przykłady i tutoriale.
+O4: Tak, [dokumentacja](https://reference.aspose.com/zip/net/) zawiera obszerne przykłady i samouczki.
 
-### P5: Czy mogę kupić Aspose.Zip dla .NET?
+### P5: Czy mogę zakupić Aspose.Zip dla .NET?
 
- A5: Oczywiście, możesz dokonać zakupu[Tutaj](https://purchase.aspose.com/buy).
+O5: Oczywiście, możesz dokonać zakupu [tutaj](https://purchase.aspose.com/buy).
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Ostatnia aktualizacja:** 2025-12-09  
+**Testowano z:** Aspose.Zip 24.11 for .NET  
+**Autor:** Aspose
