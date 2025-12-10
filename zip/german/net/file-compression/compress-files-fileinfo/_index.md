@@ -3,12 +3,11 @@ date: 2025-12-05
 description: Erfahren Sie, wie Sie ein ZIP‑Archiv erstellen und Dateien mit Aspose.Zip
   für .NET zum ZIP hinzufügen. Diese Schritt‑für‑Schritt‑Anleitung zeigt, wie Sie
   Dateien mit FileInfo in ASP.NET‑Projekten komprimieren.
-language: de
 linktitle: Compress Files using FileInfo
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Wie man ein Zip‑Archiv mit Aspose.Zip für .NET erstellt – Dateien mit FileInfo
   komprimieren
-url: /net/file-compression/compress-files-fileinfo/
+url: /de/net/file-compression/compress-files-fileinfo/
 weight: 11
 ---
 

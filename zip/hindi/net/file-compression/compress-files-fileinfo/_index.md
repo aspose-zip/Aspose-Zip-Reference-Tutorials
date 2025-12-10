@@ -3,12 +3,11 @@ date: 2025-12-05
 description: Aspose.Zip for .NET का उपयोग करके ज़िप आर्काइव बनाना और फ़ाइलें जोड़ना
   सीखें। यह चरण‑दर‑चरण गाइड ASP.NET प्रोजेक्ट्स में FileInfo के साथ फ़ाइलों को संकुचित
   करने का तरीका दिखाता है।
-language: hi
 linktitle: Compress Files using FileInfo
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Aspose.Zip for .NET का उपयोग करके ज़िप आर्काइव कैसे बनाएं – FileInfo के साथ
   फ़ाइलें संपीड़ित करें
-url: /net/file-compression/compress-files-fileinfo/
+url: /hi/net/file-compression/compress-files-fileinfo/
 weight: 11
 ---
 

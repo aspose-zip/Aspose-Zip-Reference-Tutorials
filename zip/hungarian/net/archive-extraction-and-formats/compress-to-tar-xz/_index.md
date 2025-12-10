@@ -3,11 +3,10 @@ date: 2025-12-05
 description: Tudja meg, hogyan hozhat létre tarxz archívumot .NET‑ben, és hogyan tömörítheti
   a tarxz fájlokat az Aspose.Zip for .NET segítségével. Kövesse ezt a lépésről‑lépésre
   útmutatót a hatékony tárolás és átvitel érdekében.
-language: hu
 linktitle: Compressing to TarXz
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Hogyan lehet .net-ben tarxz archívumot létrehozni az Aspose.Zip segítségével
-url: /net/archive-extraction-and-formats/compress-to-tar-xz/
+url: /hu/net/archive-extraction-and-formats/compress-to-tar-xz/
 weight: 14
 ---
 

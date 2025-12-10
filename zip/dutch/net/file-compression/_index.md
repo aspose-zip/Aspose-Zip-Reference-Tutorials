@@ -3,11 +3,10 @@ date: 2025-12-05
 description: Leer hoe je een zip‑archief maakt in .NET met Aspose.Zip. Deze Aspose‑Zip‑tutorial
   laat je zien hoe je bestanden comprimeert in .NET, zip‑bestanden wijzigt in C# en
   compressie‑instellingen optimaliseert voor superieure prestaties.
-language: nl
 linktitle: Create Zip Archive .NET
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Zip-archief maken .NET – Bestandscompressie met Aspose.Zip
-url: /net/file-compression/
+url: /nl/net/file-compression/
 weight: 20
 ---
 

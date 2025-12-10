@@ -2,11 +2,10 @@
 date: 2025-12-05
 description: تعلم كيفية إنشاء أرشيف zip وإضافة ملفات إلى zip باستخدام Aspose.Zip لـ
   .NET. يوضح هذا الدليل خطوة بخطوة كيفية ضغط الملفات باستخدام FileInfo في مشاريع ASP.NET.
-language: ar
 linktitle: Compress Files using FileInfo
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: كيفية إنشاء أرشيف Zip باستخدام Aspose.Zip لـ .NET – ضغط الملفات باستخدام FileInfo
-url: /net/file-compression/compress-files-fileinfo/
+url: /ar/net/file-compression/compress-files-fileinfo/
 weight: 11
 ---
 

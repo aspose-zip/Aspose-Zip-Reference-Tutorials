@@ -2,11 +2,10 @@
 date: 2025-12-05
 description: 學習如何使用 Aspose.Zip 在 .NET 中建立 zip 壓縮檔。本 Aspose.Zip 教學將示範如何壓縮檔案 (.NET)、修改
   zip 檔案 (C#)，以及優化壓縮設定以獲得更佳效能。
-language: zh-hant
 linktitle: Create Zip Archive .NET
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: 在 .NET 中建立 Zip 壓縮檔 – 使用 Aspose.Zip 進行檔案壓縮
-url: /net/file-compression/
+url: /zh-hant/net/file-compression/
 weight: 20
 ---
 

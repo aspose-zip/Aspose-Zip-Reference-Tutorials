@@ -4,11 +4,10 @@ description: Tanulja meg, hogyan hozhat létre zip archívumot .NET-ben az Aspos
   használatával. Ez az Aspose Zip oktatóanyag megmutatja, hogyan tömöríthet fájlokat
   .NET-ben, módosíthatja a zip fájlt C#-ban, és optimalizálhatja a tömörítési beállításokat
   a kiváló teljesítmény érdekében.
-language: hu
 linktitle: Create Zip Archive .NET
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Zip archívum létrehozása .NET – Fájl tömörítés az Aspose.Zip segítségével
-url: /net/file-compression/
+url: /hu/net/file-compression/
 weight: 20
 ---
 

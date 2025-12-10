@@ -1,11 +1,10 @@
 ---
 date: 2025-12-05
 description: 學習如何在 .NET 中建立 tarxz 壓縮檔，以及如何使用 Aspose.Zip for .NET 壓縮 tarxz 檔案。遵循此一步一步的指南，以實現高效的儲存與傳輸。
-language: zh-hant
 linktitle: Compressing to TarXz
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: 如何在 .NET 中使用 Aspose.Zip 建立 tarxz 壓縮檔
-url: /net/archive-extraction-and-formats/compress-to-tar-xz/
+url: /zh-hant/net/archive-extraction-and-formats/compress-to-tar-xz/
 weight: 14
 ---
 

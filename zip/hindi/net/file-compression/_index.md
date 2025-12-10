@@ -3,11 +3,10 @@ date: 2025-12-05
 description: Aspose.Zip का उपयोग करके .NET में ज़िप आर्काइव बनाना सीखें। यह Aspose
   Zip ट्यूटोरियल आपको .NET में फ़ाइलें संपीड़ित करना, C# में ज़िप फ़ाइल को संशोधित
   करना, और बेहतर प्रदर्शन के लिए संपीड़न सेटिंग्स को अनुकूलित करना दिखाता है।
-language: hi
 linktitle: Create Zip Archive .NET
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: ज़िप आर्काइव बनाएं .NET – Aspose.Zip के साथ फ़ाइल संपीड़न
-url: /net/file-compression/
+url: /hi/net/file-compression/
 weight: 20
 ---
 

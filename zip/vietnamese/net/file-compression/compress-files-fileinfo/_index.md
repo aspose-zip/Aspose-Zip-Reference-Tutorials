@@ -2,11 +2,10 @@
 date: 2025-12-05
 description: Tìm hiểu cách tạo tệp zip và thêm các tệp vào zip bằng Aspose.Zip cho
   .NET. Hướng dẫn từng bước này chỉ cách nén tệp bằng FileInfo trong các dự án ASP.NET.
-language: vi
 linktitle: Compress Files using FileInfo
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Cách tạo tệp Zip bằng Aspose.Zip cho .NET – Nén tệp với FileInfo
-url: /net/file-compression/compress-files-fileinfo/
+url: /vi/net/file-compression/compress-files-fileinfo/
 weight: 11
 ---
 

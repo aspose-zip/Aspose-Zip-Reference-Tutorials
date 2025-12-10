@@ -3,11 +3,10 @@ date: 2025-12-05
 description: Aspose.Zip for .NET kullanarak tarxz arşivi .NET nasıl oluşturulur ve
   tarxz dosyaları nasıl sıkıştırılır öğrenin. Verimli depolama ve iletim için bu adım
   adım rehberi izleyin.
-language: tr
 linktitle: Compressing to TarXz
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Aspose.Zip ile .NET'te tarxz arşivi nasıl oluşturulur
-url: /net/archive-extraction-and-formats/compress-to-tar-xz/
+url: /tr/net/archive-extraction-and-formats/compress-to-tar-xz/
 weight: 14
 ---
 

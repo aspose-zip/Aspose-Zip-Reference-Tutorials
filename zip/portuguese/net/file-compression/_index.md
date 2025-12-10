@@ -3,11 +3,10 @@ date: 2025-12-05
 description: Aprenda a criar arquivos zip no .NET usando Aspose.Zip. Este tutorial
   de Aspose Zip mostra como compactar arquivos .NET, modificar arquivos zip em C#
   e otimizar as configurações de compressão para desempenho superior.
-language: pt
 linktitle: Create Zip Archive .NET
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Criar Arquivo Zip .NET – Compressão de Arquivos com Aspose.Zip
-url: /net/file-compression/
+url: /pt/net/file-compression/
 weight: 20
 ---
 

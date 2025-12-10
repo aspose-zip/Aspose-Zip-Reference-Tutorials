@@ -3,12 +3,11 @@ date: 2025-12-05
 description: Tanulja meg, hogyan hozhat létre zip archívumot és adhat hozzá fájlokat
   a zip-hez az Aspose.Zip for .NET használatával. Ez a lépésről‑lépésre útmutató bemutatja,
   hogyan tömöríthet fájlokat a FileInfo segítségével ASP.NET projektekben.
-language: hu
 linktitle: Compress Files using FileInfo
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Hogyan hozzunk létre ZIP archívumot az Aspose.Zip for .NET használatával –
   Fájlok tömörítése FileInfo-val
-url: /net/file-compression/compress-files-fileinfo/
+url: /hu/net/file-compression/compress-files-fileinfo/
 weight: 11
 ---
 

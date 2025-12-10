@@ -3,11 +3,10 @@ date: 2025-12-05
 description: Học cách tạo tệp nén zip trong .NET bằng Aspose.Zip. Hướng dẫn Aspose
   Zip này sẽ chỉ cho bạn cách nén các tệp .NET, chỉnh sửa tệp zip bằng C#, và tối
   ưu cài đặt nén để đạt hiệu suất vượt trội.
-language: vi
 linktitle: Create Zip Archive .NET
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Tạo tệp Zip .NET – Nén tệp với Aspose.Zip
-url: /net/file-compression/
+url: /vi/net/file-compression/
 weight: 20
 ---
 

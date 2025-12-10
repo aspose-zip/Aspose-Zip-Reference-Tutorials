@@ -2,11 +2,10 @@
 date: 2025-12-05
 description: 學習如何使用 Aspose.Zip for .NET 建立 ZIP 壓縮檔並將檔案加入其中。此一步一步的指南示範如何在 ASP.NET 專案中使用
   FileInfo 進行檔案壓縮。
-language: zh-hant
 linktitle: Compress Files using FileInfo
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: 如何使用 Aspose.Zip for .NET 建立 Zip 壓縮檔 – 使用 FileInfo 壓縮檔案
-url: /net/file-compression/compress-files-fileinfo/
+url: /zh-hant/net/file-compression/compress-files-fileinfo/
 weight: 11
 ---
 

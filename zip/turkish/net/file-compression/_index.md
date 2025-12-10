@@ -3,11 +3,10 @@ date: 2025-12-05
 description: .NET'te Aspose.Zip kullanarak zip arşivi oluşturmayı öğrenin. Bu Aspose
   Zip öğreticisi, .net'te dosyaları sıkıştırmayı, zip dosyasını C#'ta değiştirmeyi
   ve üstün performans için sıkıştırma ayarlarını optimize etmeyi gösterir.
-language: tr
 linktitle: Create Zip Archive .NET
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Zip Arşivi Oluştur .NET – Aspose.Zip ile Dosya Sıkıştırma
-url: /net/file-compression/
+url: /tr/net/file-compression/
 weight: 20
 ---
 
