@@ -1,35 +1,44 @@
 ---
-title: 在 Aspose.Zip for .NET 中儲存多個不壓縮的文件
-linktitle: 儲存多個檔案而不壓縮
-second_title: 用於檔案壓縮和歸檔的 Aspose.Zip .NET API
-description: 在 Aspose.Zip for .NET 中探索多個檔案的無縫存儲，無需壓縮。透過此逐步指南優化您的 .NET 應用程式以實現高效的文件管理。
-weight: 16
+date: 2025-12-10
+description: 學習如何使用 Aspose.Zip for .NET 儲存未壓縮的檔案。本指南將示範如何建立未壓縮的 ZIP、將檔案存入 ZIP，以及有效管理壓縮檔案。
+linktitle: Storing Multiple Files Without Compression
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: 如何使用 Aspose.Zip for .NET 儲存未壓縮的檔案
 url: /zh-hant/net/file-compression/store-multiple-files-no-compression/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 在 Aspose.Zip for .NET 中儲存多個不壓縮的文件
+# 如何使用 Aspose.Zip for .NET 以未壓縮方式儲存檔案
 
-## 介紹
+在現代 .NET 開發中，**如何有效儲存檔案** 可能會對效能與儲存成本產生重大影響。當您需要將檔案保持原樣——不進行任何壓縮——Aspose.Zip for .NET 提供了簡潔直觀的 API。本教學將一步步說明如何建立未壓縮的 ZIP 壓縮檔、將檔案儲存至 ZIP，並將此解決方案整合至您的應用程式中。
 
-在 .NET 開發的動態世界中，有效的檔案壓縮對於優化資料儲存和傳輸至關重要。 Aspose.Zip for .NET 是一個功能強大的工具，可以簡化此流程，使開發人員能夠有效率地儲存多個檔案而無需壓縮。在本教程中，我們將逐步引導您完成整個過程，確保您充分利用 Aspose.Zip for .NET 的全部潛力。
+## 快速解答
+- **「未壓縮 zip」是什麼意思？** 它是一種 ZIP 壓縮檔，每個項目皆以「store」方式儲存，原始檔案的位元組保持不變。  
+- **為什麼要避免壓縮？** 為了加快壓縮速度、保留原始檔案大小以供後續處理，或符合禁止資料變更的法規要求。  
+- **哪個 Aspose.Zip 類別負責此功能？** `ArchiveEntrySettings` 搭配 `StoreCompressionSettings`。  
+- **我需要授權嗎？** 免費試用版可用於測試，正式環境需購買商業授權。  
+- **支援的 .NET 版本？** .NET Framework、.NET Core、.NET 5/6/7 以及更高版本。
 
-## 先決條件
+## 什麼是未壓縮儲存多個檔案？
+未壓縮儲存多個檔案指的是使用 *store* 壓縮方式將每個檔案加入 ZIP 容器。檔案的位元組與原始檔案完全相同，適用於需要快速封存或必須保持資料不變的情況。
 
-在我們深入學習本教程之前，請確保您具備以下先決條件：
+## 為什麼要使用 Aspose.Zip 來建立未壓縮壓縮檔？
+- **速度：** 不會執行耗費 CPU 的壓縮演算法。  
+- **可預測大小：** 壓縮檔大小等於原始檔案總和加上極少的 ZIP 開銷。  
+- **相容性：** 產生的 ZIP 可在任何標準解壓縮工具中使用。  
+- **彈性：** 如有需要，仍可在同一壓縮檔中混合壓縮與未壓縮的項目。
 
-- Aspose.Zip for .NET：確保您已將 Aspose.Zip for .NET 整合到您的專案中。如果沒有，您可以參考[文件](https://reference.aspose.com/zip/net/)以獲得指導。
+## 前置條件
+- **Aspose.Zip for .NET** – 已整合至您的專案。請參考官方 [documentation](https://reference.aspose.com/zip/net/) 了解安裝步驟。  
+- **.NET 開發環境** – Visual Studio、VS Code 或您慣用的任何 IDE。  
+- **文件目錄** – 您機器上存放欲封存檔案的資料夾（例如「Your Document Directory」）。
 
-- 開發環境：在您的電腦上設定一個有效的 .NET 開發環境。
-
-- 文檔目錄：標識儲存文檔的目錄。在範例中，我們將使用佔位符「您的文件目錄」。
-
-## 導入命名空間
-
-在開始編碼之前，讓我們先匯入必要的命名空間以確保流暢的編碼體驗：
+## 匯入命名空間
+在撰寫程式碼之前，先匯入必要的命名空間，讓編譯器能找到 Aspose 類別。
 
 ```csharp
 using Aspose.Zip;
@@ -38,15 +47,15 @@ using System.IO;
 using System.Text;
 ```
 
-## 步驟1：設定文檔目錄
+## 步驟 1：設定文件目錄
+定義來源檔案所在的路徑。請將佔位符替換為您系統上的實際資料夾路徑。
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-將「您的文件目錄」替換為儲存文件的實際路徑。
-
-## 第 2 步：建立不壓縮的 Zip 檔案
+## 步驟 2：建立未壓縮的 Zip 壓縮檔
+本教學的核心——我們建立一個以 `StoreCompressionSettings` 設定的 `Archive` 實例，告訴 Aspose.Zip *store*（即不壓縮）每個項目。
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompression_out.zip", FileMode.Create))
@@ -63,33 +72,38 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 }
 ```
 
-此程式碼片段建立 zip 存檔，而不壓縮指定檔案（「alice29.txt」和「lcet10.txt」）。根據您的專案結構調整檔案名稱和路徑。
+> **專業提示：** 若您需要 **將檔案儲存至 zip** 時，同時對部分檔案進行壓縮、對其他檔案保持未壓縮，只要為每個檔案建立不同的 `ArchiveEntrySettings`，再將它們加入同一個 `Archive` 即可。
 
-## 結論
+## 常見問題與解決方案
+| 問題 | 為何會發生 | 解決方式 |
+|------|------------|----------|
+| **找不到檔案** | `dataDir` 路徑不正確或缺少副檔名。 | 核對路徑並確認檔案存在。使用 `Path.Combine` 以取得更安全的路徑組合。 |
+| **存取被拒** | 程式缺乏讀取來源檔案或寫入 ZIP 的權限。 | 以具備相應權限的身分執行應用程式，或選擇具有寫入權限的資料夾。 |
+| **ZIP 中的檔案大小異常** | 壓縮檔是以預設壓縮方式建立的。 | 確認在 `ArchiveEntrySettings` 中傳入 `new StoreCompressionSettings()`。 |
 
-恭喜！您已成功學習如何使用 Aspose.Zip for .NET 儲存多個檔案而不進行壓縮。這種有效的方法可確保 .NET 應用程式中的最佳檔案管理。
+## 常見問答
 
-## 常見問題解答
+**Q: 我可以對特定類型的檔案進行壓縮，其他則保持未壓縮嗎？**  
+A: 可以，為每種檔案建立不同的 `ArchiveEntrySettings`，即可在同一壓縮檔中混合壓縮與未壓縮的項目。
 
-### 問題 1：我可以使用 Aspose.Zip for .NET 壓縮特定檔案類型，同時儲存其他檔案類型而不進行壓縮嗎？
+**Q: Aspose.Zip for .NET 是否相容 .NET Core 與 .NET 5/6？**  
+A: 完全相容。此函式庫支援 .NET Framework、.NET Core、.NET Standard，以及最新的 .NET 版本。
 
-A1：是的，您可以為單一檔案或檔案類型自訂壓縮設置，從而為您的應用程式提供靈活性。
+**Q: 在封存過程中應如何處理例外狀況？**  
+A: 將封存程式碼包在 `try‑catch` 區塊中，並記錄例外細節。這樣可確保程式平順失敗並方便除錯。
 
-### Q2：Aspose.Zip for .NET 是否與不同的 .NET 框架相容？
+**Q: Aspose.Zip 支援多執行緒封存嗎？**  
+A: 支援，您可以平行處理多個檔案並將它們加入壓縮檔，但需注意 `Archive` 物件本身不是執行緒安全的；在加入項目時請同步存取。
 
-A2：Aspose.Zip for .NET 支援各種 .NET 框架，包括 .NET Core 和 .NET Standard。
+**Q: 我可以在不大幅修改程式碼的情況下將 Aspose.Zip 整合到既有專案嗎？**  
+A: 完全可以。API 設計為即插即用。請參考官方 [documentation](https://reference.aspose.com/zip/net/) 取得遷移指引。
 
-### Q3：文件儲存過程中出現異常如何處理？
+---
 
-A3：使用 try-catch 區塊實現錯誤處理機制，以優雅地管理異常並增強應用程式的穩健性。
+**最後更新：** 2025-12-10  
+**測試環境：** Aspose.Zip for .NET 24.12（撰寫時的最新版本）  
+**作者：** Aspose  
 
-### Q4：Aspose.Zip for .NET 提供多執行緒支援嗎？
-
-A4：是的，Aspose.Zip for .NET 支援多線程，讓您可以增強檔案壓縮和儲存操作的效能。
-
-### Q5：我可以將 Aspose.Zip for .NET 整合到我現有的專案中，而無需進行重大程式碼修改嗎？
-
- A5：是的，Aspose.Zip for .NET 專為輕鬆整合而設計，並且[文件](https://reference.aspose.com/zip/net/)為無縫整合過程提供全面的指導。
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

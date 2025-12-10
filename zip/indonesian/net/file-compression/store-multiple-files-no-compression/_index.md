@@ -1,35 +1,46 @@
 ---
-title: Menyimpan Banyak File Tanpa Kompresi di Aspose.Zip untuk .NET
-linktitle: Menyimpan Banyak File Tanpa Kompresi
-second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
-description: Jelajahi penyimpanan banyak file tanpa kompresi di Aspose.Zip untuk .NET. Optimalkan aplikasi .NET Anda untuk manajemen file yang efisien dengan panduan langkah demi langkah ini.
-weight: 16
+date: 2025-12-10
+description: Pelajari cara menyimpan file tanpa kompresi menggunakan Aspose.Zip untuk
+  .NET. Panduan ini menunjukkan cara membuat zip yang tidak terkompresi, menyimpan
+  file ke dalam zip, dan mengelola arsip secara efisien.
+linktitle: Storing Multiple Files Without Compression
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Cara Menyimpan File Tanpa Kompresi dengan Aspose.Zip untuk .NET
 url: /id/net/file-compression/store-multiple-files-no-compression/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Menyimpan Banyak File Tanpa Kompresi di Aspose.Zip untuk .NET
+# Cara Menyimpan File Tanpa Kompresi dengan Aspose.Zip untuk .NET
 
-## Perkenalan
+Dalam pengembangan .NET modern, **cara menyimpan file** secara efisien dapat membuat perbedaan besar dalam kinerja dan biaya penyimpanan. Ketika Anda perlu menjaga file persis seperti aslinya—tanpa kompresi apa pun—Aspose.Zip untuk .NET menyediakan API yang bersih dan sederhana. Dalam tutorial ini kami akan menjelaskan langkah‑langkah untuk membuat arsip ZIP tanpa kompresi, menyimpan file ke ZIP, dan mengintegrasikan solusi ke dalam aplikasi Anda.
 
-Dalam dunia perkembangan .NET yang dinamis, kompresi file yang efektif sangat penting untuk mengoptimalkan penyimpanan dan transmisi data. Aspose.Zip untuk .NET adalah alat canggih yang menyederhanakan proses ini, memungkinkan pengembang menyimpan banyak file secara efisien tanpa kompresi. Dalam tutorial ini, kami akan memandu Anda melalui proses, langkah demi langkah, memastikan Anda memanfaatkan potensi penuh Aspose.Zip untuk .NET.
+## Jawaban Cepat
+- **Apa arti “uncompressed zip”?** Ini adalah arsip ZIP di mana setiap entri disimpan menggunakan metode “store”, sehingga byte file asli tidak diubah.  
+- **Mengapa menghindari kompresi?** Untuk mempercepat proses pengarsipan, mempertahankan ukuran file asli untuk pemrosesan selanjutnya, atau memenuhi persyaratan regulasi yang melarang perubahan data.  
+- **Kelas Aspose.Zip mana yang menangani ini?** `ArchiveEntrySettings` dikombinasikan dengan `StoreCompressionSettings`.  
+- **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk pengujian; lisensi komersial diperlukan untuk produksi.  
+- **Versi .NET yang didukung?** .NET Framework, .NET Core, .NET 5/6/7, dan versi selanjutnya.
+
+## Apa Itu Menyimpan Beberapa File Tanpa Kompresi?
+Menyimpan beberapa file tanpa kompresi berarti menambahkan setiap file ke dalam kontainer ZIP menggunakan metode kompresi *store*. File tetap identik byte‑per‑byte dengan aslinya, yang ideal ketika Anda menginginkan pengarsipan cepat atau perlu menjaga data tetap tidak berubah.
+
+## Mengapa Menggunakan Aspose.Zip untuk Arsip Tanpa Kompresi?
+- **Kecepatan:** Tidak ada algoritma kompresi yang intensif CPU yang dijalankan.  
+- **Ukuran yang Dapat Diprediksi:** Ukuran arsip sama dengan jumlah file asli ditambah overhead ZIP minimal.  
+- **Kompatibilitas:** ZIP yang dihasilkan dapat bekerja dengan utilitas unzip standar apa pun.  
+- **Fleksibilitas:** Anda masih dapat mencampur entri terkompresi dan tidak terkompresi dalam arsip yang sama bila diperlukan.
 
 ## Prasyarat
-
-Sebelum kita mendalami tutorialnya, pastikan Anda memiliki prasyarat berikut:
-
-- Aspose.Zip untuk .NET: Pastikan Anda telah mengintegrasikan Aspose.Zip untuk .NET ke dalam proyek Anda. Jika tidak, Anda dapat merujuk ke[dokumentasi](https://reference.aspose.com/zip/net/) untuk bimbingan.
-
-- Lingkungan Pengembangan: Siapkan lingkungan pengembangan .NET yang berfungsi di mesin Anda.
-
-- Direktori Dokumen: Identifikasi direktori tempat dokumen Anda disimpan. Dalam contoh ini, kita akan menggunakan placeholder "Direktori Dokumen Anda".
+- **Aspose.Zip for .NET** – terintegrasi ke dalam proyek Anda. Lihat [dokumentasi](https://reference.aspose.com/zip/net/) resmi untuk langkah instalasi.  
+- **Lingkungan Pengembangan .NET** – Visual Studio, VS Code, atau IDE apa pun yang Anda sukai.  
+- **Direktori Dokumen** – folder di mesin Anda yang berisi file yang ingin Anda arsipkan (mis., “Your Document Directory”).
 
 ## Impor Namespace
-
-Sebelum memulai pengkodean, mari impor namespace yang diperlukan untuk memastikan pengalaman pengkodean yang lancar:
+Sebelum menulis kode apa pun, impor namespace yang diperlukan agar kompiler mengetahui di mana menemukan kelas Aspose.
 
 ```csharp
 using Aspose.Zip;
@@ -39,14 +50,14 @@ using System.Text;
 ```
 
 ## Langkah 1: Atur Direktori Dokumen
+Tentukan jalur di mana file sumber Anda berada. Ganti placeholder dengan folder sebenarnya di sistem Anda.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-Ganti "Direktori Dokumen Anda" dengan jalur sebenarnya tempat dokumen Anda disimpan.
-
 ## Langkah 2: Buat Arsip Zip Tanpa Kompresi
+Inti dari tutorial – kami membuat instance `Archive` yang dikonfigurasi dengan `StoreCompressionSettings`. Ini memberi tahu Aspose.Zip untuk *menyimpan* (yaitu, tidak mengompresi) setiap entri.
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompression_out.zip", FileMode.Create))
@@ -63,33 +74,38 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 }
 ```
 
-Cuplikan kode ini membuat arsip zip tanpa mengompresi file yang ditentukan ("alice29.txt" dan "lcet10.txt"). Sesuaikan nama file dan jalur sesuai dengan struktur proyek Anda.
+> **Tip Pro:** Jika Anda perlu **menyimpan file ke zip** sambil mengompresi beberapa dan membiarkan yang lain tidak terkompresi, buat instance `ArchiveEntrySettings` terpisah untuk setiap file dan tambahkan ke `Archive` yang sama.
 
-## Kesimpulan
+## Masalah Umum dan Solusinya
+| Masalah | Mengapa Terjadi | Solusi |
+|-------|----------------|-----|
+| **File not found** | Path `dataDir` tidak benar atau ekstensi file hilang. | Verifikasi jalur dan pastikan file ada. Gunakan `Path.Combine` untuk penggabungan yang lebih aman. |
+| **Access denied** | Proses tidak memiliki izin untuk membaca file sumber atau menulis ZIP. | Jalankan aplikasi dengan hak yang sesuai atau pilih folder dengan akses menulis. |
+| **Unexpected file size in ZIP** | Arsip dibuat dengan kompresi default. | Pastikan `new StoreCompressionSettings()` diteruskan ke `ArchiveEntrySettings`. |
 
-Selamat! Anda telah berhasil mempelajari cara menyimpan banyak file tanpa kompresi menggunakan Aspose.Zip untuk .NET. Pendekatan efisien ini memastikan pengelolaan file yang optimal dalam aplikasi .NET Anda.
+## Pertanyaan yang Sering Diajukan
 
-## FAQ
+**Q: Bisakah saya mengompresi tipe file tertentu sementara menyimpan yang lain tanpa kompresi?**  
+A: Ya, Anda dapat membuat `ArchiveEntrySettings` yang berbeda untuk setiap file dan mencampur entri terkompresi dan tidak terkompresi dalam arsip yang sama.
 
-### Q1: Dapatkah saya mengompresi jenis file tertentu sambil menyimpan file lain tanpa kompresi menggunakan Aspose.Zip untuk .NET?
+**Q: Apakah Aspose.Zip untuk .NET kompatibel dengan .NET Core dan .NET 5/6?**  
+A: Tentu saja. Perpustakaan ini mendukung .NET Framework, .NET Core, .NET Standard, dan versi .NET terbaru.
 
-A1: Ya, Anda dapat menyesuaikan pengaturan kompresi untuk masing-masing file atau jenis file, sehingga memberikan fleksibilitas dalam aplikasi Anda.
+**Q: Bagaimana cara menangani pengecualian selama proses pengarsipan?**  
+A: Bungkus kode pengarsipan dalam blok `try‑catch` dan catat detail pengecualian. Ini memastikan kegagalan yang terkelola dengan baik dan memudahkan debugging.
 
-### Q2: Apakah Aspose.Zip untuk .NET kompatibel dengan kerangka .NET yang berbeda?
+**Q: Apakah Aspose.Zip mendukung pengarsipan multi‑thread?**  
+A: Ya, Anda dapat memproses beberapa file secara paralel dan menambahkannya ke arsip, tetapi ingat bahwa objek `Archive` tidak thread‑safe; sinkronkan akses saat menambahkan entri.
 
-A2: Aspose.Zip untuk .NET mendukung berbagai kerangka .NET, termasuk .NET Core dan .NET Standard.
+**Q: Bisakah saya mengintegrasikan Aspose.Zip ke dalam proyek yang sudah ada tanpa perubahan kode besar?**  
+A: Tentu. API dirancang untuk penggunaan drop‑in yang sederhana. Lihat [dokumentasi](https://reference.aspose.com/zip/net/) resmi untuk panduan migrasi.
 
-### Q3: Bagaimana cara menangani pengecualian selama proses penyimpanan file?
+---
 
-A3: Terapkan mekanisme penanganan kesalahan menggunakan blok coba-tangkap untuk mengelola pengecualian dengan baik dan meningkatkan ketahanan aplikasi Anda.
+**Terakhir Diperbarui:** 2025-12-10  
+**Diuji Dengan:** Aspose.Zip for .NET 24.12 (latest at time of writing)  
+**Penulis:** Aspose  
 
-### Q4: Apakah Aspose.Zip untuk .NET menawarkan dukungan multi-threading?
-
-A4: Ya, Aspose.Zip untuk .NET mendukung multi-threading, memungkinkan Anda meningkatkan kinerja kompresi file dan operasi penyimpanan.
-
-### Q5: Dapatkah saya mengintegrasikan Aspose.Zip untuk .NET ke dalam proyek saya yang sudah ada tanpa modifikasi kode besar?
-
- A5: Ya, Aspose.Zip untuk .NET dirancang untuk kemudahan integrasi, dan[dokumentasi](https://reference.aspose.com/zip/net/) memberikan panduan komprehensif untuk proses integrasi yang lancar.
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

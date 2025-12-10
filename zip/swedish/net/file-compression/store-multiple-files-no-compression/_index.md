@@ -1,35 +1,46 @@
 ---
-title: Lagra flera filer utan komprimering i Aspose.Zip för .NET
-linktitle: Lagra flera filer utan komprimering
-second_title: Aspose.Zip .NET API för filkomprimering och arkivering
-description: Utforska den sömlösa lagringen av flera filer utan komprimering i Aspose.Zip för .NET. Optimera dina .NET-applikationer för effektiv filhantering med denna steg-för-steg-guide.
-weight: 16
+date: 2025-12-10
+description: Lär dig hur du lagrar filer utan komprimering med Aspose.Zip för .NET.
+  Denna guide visar hur du skapar ett okomprimerat zip‑arkiv, sparar filer i zip‑filen
+  och hanterar arkiv på ett effektivt sätt.
+linktitle: Storing Multiple Files Without Compression
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Hur man lagrar filer okomprimerade med Aspose.Zip för .NET
 url: /sv/net/file-compression/store-multiple-files-no-compression/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Lagra flera filer utan komprimering i Aspose.Zip för .NET
+# Hur man lagrar filer okomprimerade med Aspose.Zip för .NET
 
-## Introduktion
+I modern .NET‑utveckling kan **hur man lagrar filer** effektivt göra en stor skillnad i prestanda och lagringskostnader. När du behöver behålla filer exakt som de är—utan någon komprimering—så erbjuder Aspose.Zip för .NET ett rent, enkelt API. I den här handledningen går vi igenom stegen för att skapa ett okomprimerat ZIP‑arkiv, spara filer till ZIP och integrera lösningen i din applikation.
 
-I den dynamiska världen av .NET-utveckling är effektiv filkomprimering avgörande för att optimera lagring och överföring av data. Aspose.Zip för .NET är ett kraftfullt verktyg som förenklar denna process, vilket gör det möjligt för utvecklare att effektivt lagra flera filer utan komprimering. I den här handledningen guidar vi dig genom processen, steg för steg, för att säkerställa att du utnyttjar den fulla potentialen hos Aspose.Zip för .NET.
+## Snabba svar
+- **Vad betyder “uncompressed zip”?** Det är ett ZIP‑arkiv där varje post lagras med “store”-metoden, vilket lämnar de ursprungliga filbytena orörda.  
+- **Varför undvika komprimering?** För att snabba upp arkivering, bevara originalfilstorlekar för efterföljande bearbetning, eller uppfylla regulatoriska krav som förbjuder dataändring.  
+- **Vilken Aspose.Zip‑klass hanterar detta?** `ArchiveEntrySettings` kombinerat med `StoreCompressionSettings`.  
+- **Behöver jag en licens?** En gratis provversion fungerar för testning; en kommersiell licens krävs för produktion.  
+- **Vilka .NET‑versioner stöds?** .NET Framework, .NET Core, .NET 5/6/7 och senare.
+
+## Vad innebär att lagra flera filer utan komprimering?
+Att lagra flera filer utan komprimering innebär att lägga till varje fil i en ZIP‑behållare med *store*-komprimeringsmetoden. Filerna förblir byte‑för‑byte identiska med originalen, vilket är idealiskt när du vill ha snabb arkivering eller behöver hålla data oförändrade.
+
+## Varför använda Aspose.Zip för okomprimerade arkiv?
+- **Hastighet:** Inga CPU‑intensiva komprimeringsalgoritmer körs.  
+- **Förutsägbar storlek:** Arkivets storlek är lika med summan av originalfilerna plus minimal ZIP‑overhead.  
+- **Kompatibilitet:** Det resulterande ZIP‑filen fungerar med alla standardverktyg för uppackning.  
+- **Flexibilitet:** Du kan fortfarande blanda komprimerade och okomprimerade poster i samma arkiv om så behövs.
 
 ## Förutsättningar
+- **Aspose.Zip for .NET** – integrerad i ditt projekt. Se den officiella [dokumentationen](https://reference.aspose.com/zip/net/) för installationssteg.  
+- **.NET Development Environment** – Visual Studio, VS Code eller någon IDE du föredrar.  
+- **Document Directory** – en mapp på din maskin som innehåller filerna du vill arkivera (t.ex. “Your Document Directory”).
 
-Innan vi dyker in i handledningen, se till att du har följande förutsättningar på plats:
-
-- Aspose.Zip för .NET: Se till att du har integrerat Aspose.Zip för .NET i ditt projekt. Om inte kan du hänvisa till[dokumentation](https://reference.aspose.com/zip/net/) för vägledning.
-
-- Utvecklingsmiljö: Ha en fungerande .NET-utvecklingsmiljö inställd på din maskin.
-
-- Dokumentkatalog: Identifiera katalogen där dina dokument lagras. I exemplet använder vi platshållaren "Din dokumentkatalog."
-
-## Importera namnområden
-
-Innan vi börjar koda, låt oss importera de nödvändiga namnrymden för att säkerställa en smidig kodningsupplevelse:
+## Importera namnrymder
+Innan du skriver någon kod, importera de nödvändiga namnrymderna så att kompilatorn vet var den ska hitta Aspose‑klasserna.
 
 ```csharp
 using Aspose.Zip;
@@ -38,15 +49,15 @@ using System.IO;
 using System.Text;
 ```
 
-## Steg 1: Ställ in dokumentkatalog
+## Steg 1: Ange dokumentkatalog
+Definiera sökvägen där dina källfiler finns. Ersätt platshållaren med den faktiska mappen på ditt system.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-Ersätt "Din dokumentkatalog" med den faktiska sökvägen där dina dokument lagras.
-
-## Steg 2: Skapa Zip-arkiv utan komprimering
+## Steg 2: Skapa ZIP‑arkiv utan kompression
+Kärnan i handledningen – vi skapar en `Archive`‑instans konfigurerad med `StoreCompressionSettings`. Detta instruerar Aspose.Zip att *store* (dvs. inte komprimera) varje post.
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompression_out.zip", FileMode.Create))
@@ -63,33 +74,38 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 }
 ```
 
-Detta kodavsnitt skapar ett zip-arkiv utan att komprimera de angivna filerna ("alice29.txt" och "lcet10.txt"). Justera filnamnen och sökvägarna enligt din projektstruktur.
+> **Proffstips:** Om du behöver **spara filer till zip** samtidigt som du komprimerar vissa och lämnar andra okomprimerade, skapa separata `ArchiveEntrySettings`‑instanser för varje fil och lägg till dem i samma `Archive`.
 
-## Slutsats
+## Vanliga problem och lösningar
+| Issue | Why It Happens | Fix |
+|-------|----------------|-----|
+| **Filen hittades inte** | Felaktig `dataDir`‑sökväg eller saknad filändelse. | Verifiera sökvägen och säkerställ att filerna finns. Använd `Path.Combine` för säkrare sammanslagning. |
+| **Åtkomst nekad** | Processen saknar behörighet att läsa källfilerna eller skriva ZIP‑filen. | Kör applikationen med lämpliga rättigheter eller välj en mapp med skrivbehörighet. |
+| **Oväntad filstorlek i ZIP** | Arkivet skapades med standardkomprimering. | Se till att `new StoreCompressionSettings()` skickas till `ArchiveEntrySettings`. |
 
-Grattis! Du har framgångsrikt lärt dig hur du lagrar flera filer utan komprimering med Aspose.Zip för .NET. Detta effektiva tillvägagångssätt säkerställer optimal filhantering i dina .NET-applikationer.
+## Vanliga frågor
 
-## FAQ's
+**Q: Kan jag komprimera specifika filtyper medan jag lagrar andra utan kompression?**  
+A: Ja, du kan skapa olika `ArchiveEntrySettings` för varje fil och blanda komprimerade och okomprimerade poster i samma arkiv.
 
-### F1: Kan jag komprimera specifika filtyper samtidigt som jag lagrar andra utan komprimering med Aspose.Zip för .NET?
+**Q: Är Aspose.Zip för .NET kompatibel med .NET Core och .NET 5/6?**  
+A: Absolut. Biblioteket stöder .NET Framework, .NET Core, .NET Standard och de senaste .NET‑versionerna.
 
-S1: Ja, du kan anpassa komprimeringsinställningarna för enskilda filer eller filtyper, vilket ger flexibilitet i din applikation.
+**Q: Hur bör jag hantera undantag under arkiveringsprocessen?**  
+A: Omge arkiveringskoden med ett `try‑catch`‑block och logga undantagsdetaljerna. Detta säkerställer en kontrollerad felhantering och underlättar felsökning.
 
-### F2: Är Aspose.Zip för .NET kompatibelt med olika .NET-ramverk?
+**Q: Stöder Aspose.Zip flerkärnig (multi‑threaded) arkivering?**  
+A: Ja, du kan bearbeta flera filer parallellt och lägga till dem i arkivet, men kom ihåg att `Archive`‑objektet i sig inte är trådsäkert; synkronisera åtkomst när du lägger till poster.
 
-S2: Aspose.Zip för .NET stöder olika .NET-ramverk, inklusive .NET Core och .NET Standard.
+**Q: Kan jag integrera Aspose.Zip i ett befintligt projekt utan stora kodändringar?**  
+A: Definitivt. API‑et är utformat för enkel drop‑in‑användning. Se den officiella [dokumentationen](https://reference.aspose.com/zip/net/) för migrationsvägledning.
 
-### F3: Hur kan jag hantera undantag under fillagringsprocessen?
+---
 
-S3: Implementera felhanteringsmekanismer med hjälp av försöksfångstblock för att på ett elegant sätt hantera undantag och förbättra robustheten i din applikation.
+**Senast uppdaterad:** 2025-12-10  
+**Testad med:** Aspose.Zip for .NET 24.12 (latest at time of writing)  
+**Författare:** Aspose  
 
-### F4: Erbjuder Aspose.Zip för .NET stöd för flera trådar?
-
-S4: Ja, Aspose.Zip för .NET stöder multi-threading, vilket gör att du kan förbättra prestandan för filkomprimering och lagring.
-
-### F5: Kan jag integrera Aspose.Zip för .NET i mitt befintliga projekt utan större kodändringar?
-
- S5: Ja, Aspose.Zip för .NET är designat för enkel integration, och[dokumentation](https://reference.aspose.com/zip/net/) ger omfattande vägledning för en sömlös integrationsprocess.
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

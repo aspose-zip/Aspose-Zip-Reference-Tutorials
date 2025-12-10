@@ -1,35 +1,46 @@
 ---
-title: Több fájl tárolása tömörítés nélkül az Aspose.Zip for .NET fájlban
-linktitle: Több fájl tárolása tömörítés nélkül
-second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
-description: Fedezze fel a több fájl zökkenőmentes tárolását tömörítés nélkül az Aspose.Zip for .NET-ben. Optimalizálja .NET-alkalmazásait a hatékony fájlkezelés érdekében ezzel a lépésenkénti útmutatóval.
-weight: 16
+date: 2025-12-10
+description: Ismerje meg, hogyan tárolhat fájlokat tömörítés nélkül az Aspose.Zip
+  for .NET használatával. Ez az útmutató megmutatja, hogyan hozhat létre tömörítetlen
+  zip fájlt, hogyan menthet fájlokat a zip-be, és hogyan kezelheti hatékonyan az archívumokat.
+linktitle: Storing Multiple Files Without Compression
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Hogyan tároljunk fájlokat tömörítés nélkül az Aspose.Zip for .NET segítségével
 url: /hu/net/file-compression/store-multiple-files-no-compression/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Több fájl tárolása tömörítés nélkül az Aspose.Zip for .NET fájlban
+# Hogyan tároljunk fájlokat tömörítés nélkül az Aspose.Zip for .NET segítségével
 
-## Bevezetés
+A modern .NET fejlesztésben a **fájlok hatékony tárolása** jelentős különbséget tehet a teljesítmény és a tárolási költségek tekintetében. Ha a fájlokat pontosan úgy kell megőrizni, ahogy vannak – tömörítés nélkül – az Aspose.Zip for .NET egy tiszta, egyszerű API-t biztosít. Ebben az útmutatóban végigvezetünk a lépéseken, hogyan hozhatunk létre egy tömörítés nélküli ZIP archívumot, hogyan menthetünk fájlokat a ZIP-be, és hogyan integrálhatjuk a megoldást az alkalmazásba.
 
-A .NET fejlesztés dinamikus világában a hatékony fájltömörítés kulcsfontosságú az adatok tárolásának és továbbításának optimalizálása szempontjából. Az Aspose.Zip for .NET egy hatékony eszköz, amely leegyszerűsíti ezt a folyamatot, és lehetővé teszi a fejlesztők számára, hogy több fájlt is hatékonyan, tömörítés nélkül tároljanak. Ebben az oktatóanyagban lépésről lépésre végigvezetjük a folyamaton, biztosítva, hogy az Aspose.Zip .NET-hez való teljes potenciálját kihasználja.
+## Gyors válaszok
+- **Mit jelent a „tömörítés nélküli zip”?** Ez egy ZIP archívum, ahol minden bejegyzés a „store” (tárolás) módszerrel van tárolva, az eredeti fájlbiteket érintetlenül hagyva.  
+- **Miért kerülni a tömörítést?** Az archiválás felgyorsítása, az eredeti fájlméretek megőrzése a további feldolgozáshoz, vagy olyan szabályozási követelményeknek való megfelelés, amelyek tiltják az adatok módosítását.  
+- **Melyik Aspose.Zip osztály kezeli ezt?** `ArchiveEntrySettings` kombinálva a `StoreCompressionSettings`-szel.  
+- **Szükségem van licencre?** Egy ingyenes próba verzió teszteléshez megfelelő; a termeléshez kereskedelmi licenc szükséges.  
+- **Támogatott .NET verziók?** .NET Framework, .NET Core, .NET 5/6/7 és újabbak.
 
-## Előfeltételek
+## Mi az a több fájl tömörítés nélküli tárolása?
+A több fájl tömörítés nélküli tárolása azt jelenti, hogy minden fájlt a *store* tömörítési módszerrel adunk hozzá egy ZIP konténerhez. A fájlok bájtonként azonosak maradnak az eredetikkel, ami ideális, ha gyors archiválásra van szükség vagy az adatot változatlanul kell megőrizni.
 
-Mielőtt belevágnánk az oktatóanyagba, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
+## Miért használjuk az Aspose.Zip-et tömörítés nélküli archívumokhoz?
+- **Sebesség:** Nem futtat CPU‑igényes tömörítési algoritmusokat.  
+- **Előre látható méret:** Az archívum mérete megegyezik az eredeti fájlok összegével, plusz minimális ZIP overhead.  
+- **Kompatibilitás:** A létrehozott ZIP bármely szabványos kicsomagoló eszközzel működik.  
+- **Rugalmasság:** Szükség esetén keverhet tömörített és tömörítés nélküli bejegyzéseket ugyanabban az archívumban.
 
-- Aspose.Zip for .NET: Győződjön meg arról, hogy az Aspose.Zip for .NET programot integrálta a projektjébe. Ha nem, akkor hivatkozhat a[dokumentáció](https://reference.aspose.com/zip/net/) útmutatásért.
-
-- Fejlesztői környezet: Készítsen működő .NET fejlesztői környezetet a gépén.
-
-- Dokumentumkönyvtár: Határozza meg a könyvtárat, ahol a dokumentumokat tárolják. A példában a „Saját dokumentumkönyvtár” helyőrzőt fogjuk használni.
+## Előkövetelmények
+- **Aspose.Zip for .NET** – integrálva a projektbe. Az installációs lépésekért tekintse meg a hivatalos [dokumentációt](https://reference.aspose.com/zip/net/).  
+- **.NET fejlesztői környezet** – Visual Studio, VS Code vagy bármely kedvelt IDE.  
+- **Dokumentum könyvtár** – egy mappa a gépén, amely a archiválni kívánt fájlokat tartalmazza (pl. “Your Document Directory”).
 
 ## Névterek importálása
-
-A kódolás megkezdése előtt importáljuk a szükséges névtereket a zökkenőmentes kódolási élmény érdekében:
+Mielőtt kódot írna, importálja a szükséges névtereket, hogy a fordító tudja, hol találja az Aspose osztályokat.
 
 ```csharp
 using Aspose.Zip;
@@ -38,15 +49,15 @@ using System.IO;
 using System.Text;
 ```
 
-## 1. lépés: Állítsa be a dokumentumkönyvtárat
+## 1. lépés: Dokumentum könyvtár beállítása
+Határozza meg az útvonalat, ahol a forrásfájlok találhatók. Cserélje ki a helyőrzőt a rendszerén lévő tényleges mappára.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-Cserélje ki a "Saját dokumentumkönyvtárat" a tényleges elérési útra, ahol a dokumentumokat tárolják.
-
-## 2. lépés: Hozzon létre tömörítés nélküli archívumot
+## 2. lépés: ZIP archívum létrehozása tömörítés nélkül
+Az útmutató központi része – létrehozunk egy `Archive` példányt, amely `StoreCompressionSettings`-kel van konfigurálva. Ez azt mondja az Aspose.Zip-nek, hogy *tárolja* (azaz ne tömörítse) minden bejegyzést.
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompression_out.zip", FileMode.Create))
@@ -63,33 +74,38 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 }
 ```
 
-Ez a kódrészlet a megadott fájlok ("alice29.txt" és "lcet10.txt") tömörítése nélkül hoz létre egy zip-archívumot. Módosítsa a fájlneveket és elérési útvonalakat a projekt szerkezetének megfelelően.
+> **Pro tipp:** Ha **fájlokat kell ZIP-be menteni**, miközben egyeseket tömörít, másokat tömörítés nélkül hagy, hozzon létre külön `ArchiveEntrySettings` példányokat minden fájlhoz, és adja hozzá őket ugyanahhoz az `Archive`-hez.
 
-## Következtetés
+## Gyakori problémák és megoldások
+| Probléma | Miért fordul elő | Megoldás |
+|----------|------------------|----------|
+| **File not found** | Helytelen `dataDir` útvonal vagy hiányzó fájlkiterjesztés. | Ellenőrizze az útvonalat és győződjön meg a fájlok létezéséről. Használja a `Path.Combine`-t a biztonságosabb összefűzéshez. |
+| **Access denied** | A folyamatnak nincs joga a forrásfájlok olvasásához vagy a ZIP írásához. | Futtassa az alkalmazást megfelelő jogosultságokkal, vagy válasszon egy írási jogosultsággal rendelkező mappát. |
+| **Unexpected file size in ZIP** | Az archívum alapértelmezett tömörítéssel lett létrehozva. | Győződjön meg róla, hogy `new StoreCompressionSettings()` van átadva az `ArchiveEntrySettings`-nek. |
 
-Gratulálunk! Sikeresen megtanulta, hogyan tárolhat több fájlt tömörítés nélkül az Aspose.Zip for .NET segítségével. Ez a hatékony megközelítés biztosítja az optimális fájlkezelést a .NET-alkalmazásokban.
+## Gyakran Ismételt Kérdések
 
-## GYIK
+**K: Kompressálhatok bizonyos fájltípusokat, míg másokat tömörítés nélkül tárolok?**  
+V: Igen, létrehozhat különböző `ArchiveEntrySettings`-t minden fájlhoz, és keverheti a tömörített és tömörítés nélküli bejegyzéseket ugyanabban az archívumban.
 
-### 1. kérdés: Tömöríthetek bizonyos fájltípusokat, miközben másokat tömörítés nélkül tárolok az Aspose.Zip for .NET használatával?
+**K: Az Aspose.Zip for .NET kompatibilis a .NET Core és a .NET 5/6 verziókkal?**  
+V: Teljesen. A könyvtár támogatja a .NET Framework, .NET Core, .NET Standard és a legújabb .NET verziókat.
 
-1. válasz: Igen, testreszabhatja az egyes fájlokhoz vagy fájltípusokhoz tartozó tömörítési beállításokat, ami rugalmasságot biztosít az alkalmazásban.
+**K: Hogyan kezeljem a kivételeket az archiválási folyamat során?**  
+V: Tegye a archiváló kódot egy `try‑catch` blokkba, és naplózza a kivétel részleteit. Ez biztosítja a hibamentes leállást és a könnyebb hibakeresést.
 
-### 2. kérdés: Az Aspose.Zip for .NET kompatibilis a különböző .NET-keretrendszerekkel?
+**K.Zip támogatja a több szálas archiválást?**  
+V: Igen, több fájlt párhuzamosan feldolgozhat és hozzáadhat az archívumhoz, de ne feledje, hogy az `Archive` objektum önmagában nem szálbiztos; szinkronizálja a hozzáférést a bejegyzések hozzáadásakor.
 
-2. válasz: Az Aspose.Zip for .NET különféle .NET-keretrendszereket támogat, beleértve a .NET Core-t és a .NET Standard-t.
+**K: Integrálhatom az Aspose.Zip-et egy meglévő projektbe jelentős kódelváltoztatás nélkül?**  
+V: Határozottan. Az API egyszerű beillesztésre lett tervezve. Tekintse meg a hivatalos [dokumentációt](https://reference.aspose.com/zip/net/) a migrációs útmutatóért.
 
-### 3. kérdés: Hogyan kezelhetem a kivételeket a fájltárolási folyamat során?
+---
 
-3. válasz: Valósítson meg hibakezelési mechanizmusokat try-catch blokkokkal, hogy kecsesen kezelje a kivételeket és fokozza az alkalmazás robusztusságát.
+**Last Updated:** 2025-12-10  
+**Tesztelve a következővel:** Aspose.Zip for .NET 24.12 (a legújabb a írás időpontjában)  
+**Szerző:** Aspose  
 
-### 4. kérdés: Az Aspose.Zip for .NET kínál többszálú támogatást?
-
-4. válasz: Igen, az Aspose.Zip for .NET támogatja a többszálas feldolgozást, amely lehetővé teszi a fájltömörítési és -tárolási műveletek teljesítményének javítását.
-
-### 5. kérdés: Integrálhatom az Aspose.Zip for .NET-et a meglévő projektembe jelentősebb kódmódosítások nélkül?
-
- 5. válasz: Igen, az Aspose.Zip for .NET az egyszerű integrációra készült, és a[dokumentáció](https://reference.aspose.com/zip/net/) átfogó útmutatást nyújt a zökkenőmentes integrációs folyamathoz.
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

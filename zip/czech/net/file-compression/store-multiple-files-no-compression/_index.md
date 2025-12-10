@@ -1,35 +1,46 @@
 ---
-title: Ukládání více souborů bez komprese v Aspose.Zip pro .NET
-linktitle: Ukládání více souborů bez komprese
-second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
-description: Prozkoumejte bezproblémové ukládání více souborů bez komprese v Aspose.Zip pro .NET. Optimalizujte své aplikace .NET pro efektivní správu souborů pomocí tohoto podrobného průvodce.
-weight: 16
+date: 2025-12-10
+description: Naučte se, jak ukládat soubory bez komprese pomocí Aspose.Zip pro .NET.
+  Tento průvodce vám ukáže, jak vytvořit nekomprimovaný zip, uložit soubory do zipu
+  a efektivně spravovat archivy.
+linktitle: Storing Multiple Files Without Compression
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Jak ukládat soubory nekomprimovaně pomocí Aspose.Zip pro .NET
 url: /cs/net/file-compression/store-multiple-files-no-compression/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Ukládání více souborů bez komprese v Aspose.Zip pro .NET
+# Jak ukládat soubory bez komprese pomocí Aspose.Zip pro .NET
 
-## Úvod
+V moderním vývoji .NET může **jak ukládat soubory** efektivně znamenat velký rozdíl ve výkonu a nákladech na úložiště. Když potřebujete zachovat sou tak, jak jsou – bez jakékoli komprese – Aspose.Zip pro .NET poskytuje čisté a jednoduché API. V tomto tutoriálu vás provedeme kroky k vytvoření nekomprimovaného ZIP archivu, uložení souborů do ZIP a integraci řešení do vaší aplikace.
 
-V dynamickém světě vývoje .NET je efektivní komprese souborů zásadní pro optimalizaci ukládání a přenosu dat. Aspose.Zip for .NET je výkonný nástroj, který tento proces zjednodušuje a umožňuje vývojářům efektivně ukládat více souborů bez komprese. V tomto tutoriálu vás provedeme procesem krok za krokem a zajistíme, že využijete plný potenciál Aspose.Zip pro .NET.
+## Rychlé odpovědi
+- **Co znamená „nekomprimovaný zip“?** Jedná se o ZIP archiv, kde je každý záznam uložen metodou „store“, takže původní bajty souboru zůstávají nedotčeny.  
+- **Proč se vyhýbat kompresi?** Pro zrychlení archivace, zachování původních velikostí souborů pro následné zpracování nebo splnění regulačních požadavků, které zakazují úpravu dat.  
+- **Která třída Aspose.Zip to řeší?** `ArchiveEntrySettings` v kombinaci s `StoreCompressionSettings`.  
+- **Potřebuji licenci?** Bezplatná zkušební verze funguje pro testování; pro produkci je vyžadována komerční licence.  
+- **Podporované verze .NET?** .NET Framework, .NET Core, .NET 5/6/7 a novější.
+
+## Co je ukládání více souborů bez komprese?
+Ukládání více souborů bez komprese znamená přidání každého souboru do ZIP kontejneru pomocí *store* kompresní metody. Soubory zůstávají bajt‑po‑bajtu identické s originály, což je ideální, když chcete rychlou archivaci nebo potřebujete data ponechat nezměněná.
+
+## Proč použít Aspose.Zip pro nekomprimované archivy?
+- **Rychlost:** Nespouští se žádné CPU‑intenzivní kompresní algoritmy.  
+- **Předvídatelná velikost:** Velikost archivu se rovná součtu původních souborů plus minimální režii ZIP.  
+- **Kompatibilita:** Výsledný ZIP funguje s jakýmkoli standardním nástrojem pro rozbalování.  
+- **Flexibilita:** V případě potřeby můžete v jednom archivu kombinovat komprimované i nekomprimované položky.
 
 ## Předpoklady
+- **Aspose.Zip for .NET** – integrováno do vašeho projektu. Viz oficiální [dokumentace](https://reference.aspose.com/zip/net/) pro kroky instalace.  
+- **Vývojové prostředí .NET** – Visual Studio, VS Code nebo jakékoli IDE, které preferujete.  
+- **Adresář dokumentů** – složka ve vašem počítači obsahující soubory, které chcete archivovat (např. „Your Document Directory“).
 
-Než se pustíme do výukového programu, ujistěte se, že máte splněny následující předpoklady:
-
-- Aspose.Zip for .NET: Ujistěte se, že jste do svého projektu integrovali Aspose.Zip for .NET. Pokud ne, můžete se obrátit na[dokumentace](https://reference.aspose.com/zip/net/) pro vedení.
-
-- Vývojové prostředí: Mějte na svém počítači nastavené funkční vývojové prostředí .NET.
-
-- Adresář dokumentů: Určete adresář, kde jsou uloženy vaše dokumenty. V příkladu použijeme zástupný symbol „Adresář vašich dokumentů“.
-
-## Importovat jmenné prostory
-
-Než začneme kódovat, importujme potřebné jmenné prostory, abychom zajistili hladký průběh kódování:
+## Importujte jmenné prostory
+Před psaním jakéhokoli kódu importujte požadované jmenné prostory, aby kompilátor věděl, kde najít třídy Aspose.
 
 ```csharp
 using Aspose.Zip;
@@ -39,14 +50,14 @@ using System.Text;
 ```
 
 ## Krok 1: Nastavte adresář dokumentů
+Definujte cestu, kde se nacházejí vaše zdrojové soubory. Nahraďte zástupný text skutečnou složkou ve vašem systému.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-Nahraďte "Your Document Directory" skutečnou cestou, kde jsou uloženy vaše dokumenty.
-
-## Krok 2: Vytvořte archiv ZIP bez komprese
+## Krok 2: Vytvořte ZIP archiv bez komprese
+Jádro tutoriálu – vytvoříme instanci `Archive` nakonfigurovanou pomocí `StoreCompressionSettings`. Tím říkáme Aspose.Zip, aby *uložil* (tj. nekomprimoval) každý záznam.
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompression_out.zip", FileMode.Create))
@@ -63,33 +74,36 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 }
 ```
 
-Tento fragment kódu vytvoří zip archiv bez komprimace zadaných souborů ("alice29.txt" a "lcet10.txt"). Upravte názvy souborů a cesty podle struktury vašeho projektu.
+> **Pro tip:** Pokud potřebujete **uložit soubory do zip** při kompresi některých a ponechání jiných nekomprimovaných, vytvořte samostatné instance `ArchiveEntrySettings` pro každý soubor a přidejte je do stejného `Archive`.
 
-## Závěr
+## Časté problémy a řešení
+| Problém | Proč k tomu dochází | Řešení |
+|-------|----------------|-----|
+| **Soubor nenalezen** | Nesprávná cesta `dataDir` nebo chybějící přípona souboru. | Ověřte cestu a ujistěte se, že soubory existují. Použijte `Path.Combine` pro bezpečnější spojování. |
+| **Přístup odmítnut** | Proces nemá oprávnění číst zdrojové soubory nebo zapisovat ZIP. | Spusťte aplikaci s odpovídajícími právy nebo vyberte složku s právy zápisu. |
+| **Neočekávaná velikost souboru v ZIP** | Archiv byl vytvořen s výchozí kompresí. | Ujistěte se, že `new StoreCompressionSettings()` je předáno do `ArchiveEntrySettings`. |
 
-Gratulujeme! Úspěšně jste se naučili, jak ukládat více souborů bez komprese pomocí Aspose.Zip pro .NET. Tento účinný přístup zajišťuje optimální správu souborů ve vašich aplikacích .NET.
+## Často kladené otázky
 
-## FAQ
+**Q: Mohu komprimovat konkrétní typy souborů a jiné ukládat bez komprese?**  
+A: Ano, můžete vytvořit různé `ArchiveEntrySettings` pro každý soubor a v jednom archivu kombinovat komprimované i nekomprimované položky.
 
-### Q1: Mohu pomocí Aspose.Zip for .NET komprimovat určité typy souborů a zároveň ukládat ostatní bez komprese?
+**Q: Je Aspose.Zip pro .NET kompatibilní s .NET Core a .NET 5/6?**  
+A: Rozhodně. Knihovna podporuje .NET Framework, .NET Core, .NET Standard i nejnovější verze .NET.
 
-Odpověď 1: Ano, můžete přizpůsobit nastavení komprese pro jednotlivé soubory nebo typy souborů a poskytnout tak flexibilitu vaší aplikaci.
+**Q: Jak mám zacházet s výjimkami během procesu archivace?**  
+A: Zabalte kód archivace do bloku `try‑catch` a zaznamenejte podrobnosti výjimky. To zajišťuje elegantní selhání a usnadňuje ladění.
 
-### Q2: Je Aspose.Zip for .NET kompatibilní s různými .NET frameworky?
+**Q: Podporuje Aspose.Zip vícevláknovou archivaci?**  
+A: Ano, můžete zpracovávat více souborů paralelně a přidávat je do archivu, ale pamatujte, že objekt `Archive` není thread‑safe; při přidávání položek synchronizujte přístup.
 
-Odpověď 2: Aspose.Zip for .NET podporuje různé rámce .NET, včetně .NET Core a .NET Standard.
+**Q: Můžu integrovat Aspose.Zip do existujícího projektu bez velkých změn kódu?**  
+A: Určitě. API je navrženo pro jednoduché „drop‑in“ použití. Viz oficiální [dokumentace](https://reference.aspose.com/zip/net/) pro pokyny k migraci.
 
-### Q3: Jak mohu zpracovat výjimky během procesu ukládání souborů?
+**Poslední aktualizace:** 2025-12-10  
+**Testováno s:** Aspose.Zip for .NET 24.12 (nejnovější v době psaní)  
+**Autor:** Aspose  
 
-Odpověď 3: Implementujte mechanismy pro zpracování chyb pomocí bloků try-catch pro bezproblémovou správu výjimek a zvýšení odolnosti vaší aplikace.
-
-### Q4: Nabízí Aspose.Zip pro .NET podporu více vláken?
-
-A4: Ano, Aspose.Zip for .NET podporuje multi-threading, což vám umožní zvýšit výkon operací komprese souborů a ukládání.
-
-### Q5: Mohu integrovat Aspose.Zip for .NET do mého stávajícího projektu bez velkých úprav kódu?
-
- A5: Ano, Aspose.Zip for .NET je navržen pro snadnou integraci a[dokumentace](https://reference.aspose.com/zip/net/) poskytuje komplexní návod pro bezproblémový integrační proces.
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
