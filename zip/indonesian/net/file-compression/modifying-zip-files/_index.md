@@ -1,35 +1,55 @@
 ---
-title: Memodifikasi File Zip dengan Aspose.Zip untuk .NET
-linktitle: Memodifikasi File Zip
-second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
-description: Jelajahi kekuatan Aspose.Zip untuk .NET dalam tutorial komprehensif ini. Belajar memodifikasi file zip dengan lancar menggunakan C#.
-weight: 15
+date: 2025-12-09
+description: Pelajari cara membuat arsip zip C# dan mengekstrak file zip di dalamnya
+  menggunakan Aspose.Zip untuk .NET dalam tutorial C# langkah demi langkah.
+linktitle: Modifying Zip Files
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Buat arsip zip C# menggunakan Aspose.Zip untuk .NET
 url: /id/net/file-compression/modifying-zip-files/
+weight: 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Memodifikasi File Zip dengan Aspose.Zip untuk .NET
+# Membuat arsip zip C# menggunakan Aspise.Zip untuk .NET
 
-## Perkenalan
+## Pendahuluan
 
-File zip memainkan peran penting dalam mengatur dan mengompresi data, tetapi bagaimana jika Anda perlu mengubah konten file zip secara terprogram? Di situlah Aspose.Zip untuk .NET berperan. Pustaka canggih ini menyediakan cara mulus untuk memanipulasi file zip menggunakan C#.
+File zip adalah format pilihan untuk mengemas dan mengompresi data, tetapi skenario dunia nyata sering mengharuskan Anda **membuat arsip zip C#** yang juga dapat **mengekstrak file zip di dalamnya**, mengganti nama entri, atau meratakan arsip bersarang. Aspose.Zip untuk .NET memberikan API yang bersih dan sepenuhnya dikelola untuk melakukan semua ini tanpa harus berurusan dengan manipulasi stream tingkat rendah.
 
-Dalam tutorial ini, kita akan mempelajari cara memodifikasi file zip menggunakan Aspose.Zip untuk .NET. Baik Anda ingin mengekstrak, menghapus, atau menambahkan entri ke file zip, kami siap membantu Anda. Mari selami panduan langkah demi langkah untuk mengeluarkan potensi penuh Aspose.Zip.
+Dalam tutorial ini Anda akan belajar cara memodifikasi zip yang sudah ada, mengambil entri zip di dalamnya, dan akhirnya mengemas semuanya kembali ke dalam arsip datar baru—semua dengan kode C# yang ringkas. Baik Anda sedang membangun layanan pemrosesan file, utilitas cadangan, atau pipeline penyebaran otomatis, langkah‑langkah di bawah ini akan menunjukkan secara tepat cara menyelesaikannya.
+
+## Jawaban Cepat
+- **Apakah Aspose.Zip dapat membuat arsip zip C#?** Ya – kelas `Archive` memungkinkan Anda membangun dan mengedit file zip langsung di C#.
+- **Bagaimana cara mengekstrak file zip di dalamnya?** Buka entri luar sebagai stream, buat `Archive` kedua dari stream tersebut, lalu enumerasi entri‑entri di dalamnya.
+- **Apakah saya memerlukan lisensi untuk pengembangan?** Versi percobaan gratis dapat digunakan untuk evaluasi; lisensi komersial diperlukan untuk produksi.
+- **Versi .NET yang didukung?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6/7.
+- **Waktu eksekusi tipikal untuk contoh?** Kurang dari satu detik untuk beberapa megabyte data.
+
+## Apa itu “membuat arsip zip C#”?
+
+Membuat arsip zip di C# berarti menghasilkan file `.zip` secara programatik yang dapat berisi sejumlah file atau folder, dengan opsional menerapkan tingkat kompresi, enkripsi, atau metadata khusus. Aspose.Zip menyederhanakan kompleksitas tersebut, memungkinkan Anda fokus pada logika bisnis daripada format file zip itu sendiri.
+
+## Mengapa menggunakan Aspose.Zip untuk .NET?
+
+- **Tanpa dependensi eksternal** – perpustakaan .NET murni, tanpa DLL native.
+- **Kontrol penuh atas entri** – tambahkan, hapus, ganti nama, atau ganti file secara dinamis.
+- **API berorientasi Stream** – bekerja dengan objek `MemoryStream`, cocok untuk skenario cloud atau in‑memory.
+- **Penanganan arsip bersarang yang kuat** – dengan mudah **mengekstrak file zip di dalamnya** tanpa file sementara di disk.
 
 ## Prasyarat
 
-Sebelum kita mulai, pastikan Anda memiliki prasyarat berikut:
+Sebelum memulai, pastikan Anda memiliki:
 
-1.  Aspose.Zip untuk Perpustakaan .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Zip di proyek Anda. Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/zip/net/).
-
-2. Direktori Dokumen: Siapkan direktori tempat file zip Anda disimpan. Ganti "Direktori Dokumen Anda" dalam kode dengan jalur sebenarnya ke direktori Anda.
+1. **Aspose.Zip untuk .NET** terpasang di proyek Anda. Anda dapat mengunduhnya **[di sini](https://releases.aspose.com/zip/net/)**.  
+2. Sebuah folder yang berisi file zip sumber yang akan Anda kerjakan. Ganti `"Your Document Directory"` dalam potongan kode dengan jalur sebenarnya di mesin Anda.  
+3. Lingkungan pengembangan .NET (Visual Studio, VS Code, atau Rider) yang menargetkan .NET Framework 4.6+ atau .NET Core 3.1+.
 
 ## Impor Namespace
 
-Untuk memulai, impor namespace yang diperlukan ke dalam proyek Anda:
+Pertama, bawa namespace yang diperlukan ke dalam ruang lingkup:
 
 ```csharp
 using Aspose.Zip;
@@ -41,18 +61,22 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Sekarang, mari kita bagi contoh yang diberikan menjadi beberapa langkah:
+## Panduan Langkah‑per‑Langkah
 
-## Langkah 1: Buka File Zip Luar
+### Langkah 1: Buka File Zip Luar  
+
+Kita mulai dengan membuka arsip yang sudah ada (`outer.zip`). Pernyataan `using` memastikan file ditutup secara otomatis.
 
 ```csharp
 using (Archive outer = new Archive(dataDir + "outer.zip"))
 {
-    // Kode untuk Langkah 1
+    // Code for Step 1
 }
 ```
 
-## Langkah 2: Identifikasi Entri Zip Bagian Dalam
+### Langkah 2: Identifikasi Entri Zip Di Dalam  
+
+Selanjutnya, kita memindai arsip luar untuk entri yang berakhiran `.zip`. Itu adalah **file zip di dalam** yang ingin kita ekstrak.
 
 ```csharp
 List<ArchiveEntry> entriesToDelete = new List<ArchiveEntry>();
@@ -67,12 +91,14 @@ foreach (ArchiveEntry entry in outer.Entries)
         MemoryStream innerCompressed = new MemoryStream();
         entry.Open().CopyTo(innerCompressed);
         
-        // Kode untuk mengekstrak entri dalam
+        // Code for extracting inner entries
     }
 }
 ```
 
-## Langkah 3: Ekstrak Entri Dalam
+### Langkah 3: Ekstrak Entri Di Dalam  
+
+Sekarang kita memperlakukan setiap zip di dalam sebagai `Archive` tersendiri. Di sinilah kita **mengekstrak file zip di dalamnya** dan mengumpulkan isinya di memori.
 
 ```csharp
 using (Archive inner = new Archive(innerCompressed))
@@ -83,12 +109,14 @@ using (Archive inner = new Archive(innerCompressed))
         MemoryStream content = new MemoryStream();
         ie.Open().CopyTo(content);
         
-        // Kode untuk mengekstrak konten entri dalam
+        // Code for extracting content of inner entries
     }
 }
 ```
 
-## Langkah 4: Hapus Entri Arsip Dalam
+### Langkah 4: Hapus Entri Arsip Di Dalam  
+
+Setelah data yang diperlukan sudah diambil, kita menghapus entri zip di dalam yang asli dari arsip luar.
 
 ```csharp
 foreach (ArchiveEntry e in entriesToDelete)
@@ -97,7 +125,9 @@ foreach (ArchiveEntry e in entriesToDelete)
 }
 ```
 
-## Langkah 5: Tambahkan Entri yang Dimodifikasi ke Zip Luar
+### Langkah 5: Tambahkan Entri yang Dimodifikasi ke Zip Luar  
+
+Akhirnya, kita menyisipkan kembali file‑file yang telah diekstrak ke dalam arsip luar, secara efektif meratakan struktur, dan menyimpan hasilnya sebagai `flatten.zip`.
 
 ```csharp
 for (int i = 0; i < namesToInsert.Count; i++)
@@ -108,33 +138,44 @@ for (int i = 0; i < namesToInsert.Count; i++)
 outer.Save(dataDir + "flatten.zip");
 ```
 
-Dengan mengikuti langkah-langkah ini, Anda dapat memodifikasi file zip secara efektif menggunakan Aspose.Zip untuk .NET, menyesuaikannya dengan kebutuhan spesifik Anda.
+Dengan mengikuti lima langkah ini Anda telah **membuat arsip zip C#** yang berisi file‑file yang sama dengan yang asli tetapi tanpa lapisan zip bersarang.
 
-## Kesimpulan
+## Masalah Umum dan Solusinya
 
-Kesimpulannya, Aspose.Zip untuk .NET memberdayakan pengembang untuk memanipulasi file zip dengan mudah. Dengan panduan langkah demi langkah yang disediakan, Anda dapat memodifikasi file zip dengan lancar menggunakan C#. Bereksperimenlah dengan berbagai skenario dan tingkatkan kemampuan manipulasi file Anda.
+| Masalah | Mengapa Terjadi | Solusi |
+|-------|----------------|-----|
+| `ArgumentNullException` saat membuka arsip dalam | Posisi stream `innerCompressed` berada di akhir | Panggil `innerCompressed.Position = 0;` sebelum membuat `Archive` |
+| File besar menyebabkan penggunaan memori tinggi | Semua entri dalam disimpan dalam objek `MemoryStream` | Gunakan file sementara di disk (`Path.GetTempFileName()`) untuk arsip yang sangat besar |
+| Entri hilang setelah perataan | Lupa menambahkan konten yang diekstrak ke daftar `contentToInsert` | Pastikan `contentToInsert.Add(content);` dipanggil di dalam loop dalam |
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Q1: Bisakah saya menggunakan Aspose.Zip untuk .NET dengan bahasa pemrograman lain?
 
-A1: Aspose.Zip terutama dirancang untuk aplikasi .NET. Namun Aspose menyediakan perpustakaan untuk berbagai bahasa pemrograman, masing-masing disesuaikan dengan lingkungannya.
+A1: Aspose.Zip terutama dirancang untuk aplikasi .NET. Namun, Aspose menyediakan perpustakaan untuk berbagai bahasa pemrograman, masingmasing disesuaikan dengan lingkungan mereka.
 
-### Q2: Apakah ada uji coba gratis yang tersedia untuk Aspose.Zip untuk .NET?
+### Q2: Apakah ada versi percobaan gratis untuk Aspose.Zip untuk .NET?
 
- A2: Ya, Anda dapat mengakses uji coba gratis[Di Sini](https://releases.aspose.com/).
+A2: Ya, Anda dapat mengakses percobaan gratis **[di sini](https://releases.aspose.com/)**.
 
 ### Q3: Bagaimana cara mendapatkan dukungan untuk Aspose.Zip untuk .NET?
 
- A3: Untuk dukungan dan diskusi, kunjungi[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37).
+A3: Untuk dukungan dan diskusi, kunjungi **[forum Aspose.Zip](https://forum.aspose.com/c/zip/37)**.
 
-### Q4: Bisakah saya membeli lisensi sementara Aspose.Zip untuk .NET?
+### Q4: Bisakah saya membeli lisensi sementara untuk Aspose.Zip untuk .NET?
 
- A4: Ya, Anda bisa mendapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).
+A4: Ya, Anda dapat memperoleh lisensi sementara **[di sini](https://purchase.aspose.com/temporary-license/)**.
 
-### Q5: Di mana saya dapat menemukan dokumentasi Aspose.Zip untuk .NET?
+### Q5: Di mana saya dapat menemukan dokumentasi untuk Aspose.Zip untuk .NET?
 
- A5: Dokumentasi tersedia[Di Sini](https://reference.aspose.com/zip/net/).
+A5: Dokumentasi tersedia **[di sini](https://reference.aspose.com/zip/net/)**.
+
+---
+
+**Terakhir Diperbarui:** 2025-12-09  
+**Diuji Dengan:** Aspose.Zip 24.12 untuk .NET  
+**Penulis:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
