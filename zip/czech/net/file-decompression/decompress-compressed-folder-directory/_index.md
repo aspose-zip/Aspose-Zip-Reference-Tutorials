@@ -1,90 +1,114 @@
 ---
-title: Dekomprimujte komprimovanou složku do adresáře v Aspose.Zip pro .NET
-linktitle: Dekomprimujte komprimovanou složku do adresáře
-second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
-description: Odemkněte potenciál Aspose.Zip pro .NET! Naučte se, jak snadno dekomprimovat složky pomocí tohoto podrobného průvodce. Ponořte se do světa bezproblémové komprese a extrakce.
-weight: 14
+date: 2025-12-10
+description: Odemkněte potenciál Aspose.Zip pro .NET! Naučte se, jak snadno dekomprimovat
+  složky pomocí tohoto podrobného návodu. Ponořte se do světa plynulé komprese a extrakce.
+linktitle: Decompress Compressed Folder to Directory
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Rozbalit komprimovanou složku do adresáře v Aspose.Zip pro .NET
 url: /cs/net/file-decompression/decompress-compressed-folder-directory/
+weight: 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Dekomprimujte komprimovanou složku do adresáře v Aspose.Zip pro .NET
+# Jak extrahovat soubory ZIP pomocí Aspose.Zip pro .NET
 
 ## Úvod
 
-Vítejte ve světě Aspose.Zip for .NET, robustní knihovny, která umožňuje vývojářům bez námahy pracovat s komprimovanými složkami. V tomto tutoriálu se ponoříme do procesu dekomprimace komprimované složky do adresáře pomocí Aspose.Zip for .NET. Připoutejte se, až vás podrobně provedeme každým krokem a demystifikujeme spletitost tohoto mocného nástroje.
+Vítejte ve světě Aspose.Zip pro .NET, robustní knihovny, která vývojářům umožňuje snadno pracovat s komprimovanými složkami. Pokud se ptáte, **jak extrahovat zip** soubory v .NET, tento průvodce vám poskytne odpovědi. V tomto tutoriálu se ponoříme do procesu dekomprese komprimované složky do adresáře pomocí Aspose.Zip pro .NET. Připoutejte se, provedeme vás podrobným popisem každého kroku a odhalíme složitosti tohoto výkonného nástroje.
 
-## Předpoklady
+## Rychlé odpovědi
+- **Jaký je hlavní účel Aspose.Zip?** Vytvářet, číst a extrahovat ZIP archivy v .NET aplikacích.  
+- **Jak extrahovat zip** s heslem? Použijte `ArchiveLoadOptions` s vlastností `DecryptionPassword`.  
+- **Mohu rozbalit šifrovaný archiv** bez hesla? Ne – musíte zadat správné heslo.  
+- **Jaké verze .NET jsou podporovány?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **Je pro produkci vyžadována licence?** Ano, pro komerční použití je potřeba platná licence Aspose.Zip.
 
-Než se vydáme na tuto cestu, ujistěte se, že máte splněny následující předpoklady:
+## Co je **jak extrahovat zip**?
+Extrahování souboru ZIP znamená čtení komprimovaných dat a zápis původních souborů do cílového adresáře. Aspose.Zip abstrahuje nízkoúrovňové detaily, což vám umožňuje soustředit se na obchodní logiku místo manipulace s archivy.
 
--  Aspose.Zip for .NET Library: Stáhněte a nainstalujte knihovnu z[Dokumentace Aspose.Zip pro .NET](https://reference.aspose.com/zip/net/).
+## Proč použít Aspose.Zip pro úkoly **jak rozbalit složku**?
+- **Jednoduché API** – minimální kód pro otevření, dešifrování a extrahování archivů.  
+- **Podporuje šifrované archivy** – ideální pro bezpečnou výměnu dat.  
+- **Cross‑platform** – funguje na Windows, Linuxu a macOS s .NET Core/.NET 5+.  
+- **Žádné externí závislosti** – není nutné instalovat nativní zip utility.
 
-## Importovat jmenné prostory
+## Požadavky
 
-Do svého projektu .NET naimportujte potřebné jmenné prostory, abyste mohli využít funkce Aspose.Zip:
+Než se pustíme do tohoto postupu, ujistěte se, že máte následující požadavky:
+
+- Aspose.Zip pro .NET knihovna: Stáhněte a nainstalujte knihovnu z [Aspose.Zip for .NET documentation](https://reference.aspose.com/zip/net/).
+
+## Importujte jmenné prostory
+
+Ve vašem .NET projektu importujte potřebné jmenné prostory, abyste mohli využívat funkce Aspose.Zip:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-Nyní rozeberme poskytnutý příklad do několika kroků pro komplexní pochopení.
+Nyní rozdělíme poskytnutý příklad do několika kroků pro komplexní pochopení.
 
-## Krok 1: Otevření komprimované složky
+## Jak **rozbalit složku** – Průvodce krok za krokem
+
+### Krok 1: Otevření komprimované složky
 
 ```csharp
 using (FileStream zipFile = File.Open(".\\all_corpus_encrypted.zip", FileMode.Open))
 ```
 
- Začněte otevřením komprimované složky pomocí a`FileStream`Upravte cestu k souboru podle struktury vašeho projektu.
+Začněte otevřením komprimované složky pomocí `FileStream`. Přizpůsobte cestu k souboru podle struktury vašeho projektu.
 
-## Krok 2: Vytvoření archivní instance
+### Krok 2: Vytvoření instance Archive (dešifrování ZIP)
 
 ```csharp
 new Archive(zipFile, new ArchiveLoadOptions() { DecryptionPassword = "p@s$" })
 ```
 
- Instantovat an`Archive` objekt, míjení`zipFile` stream a poskytování volitelných možností načítání, jako je v tomto případě dešifrovací heslo.
+Vytvořte objekt `Archive`, předáte stream `zipFile` a volitelně zadáte možnosti načtení, například dešifrovací heslo. Toto je klíčový krok, když potřebujete **rozbalit šifrovaný archiv**.
 
-## Krok 3: Extrahování do adresáře
+### Krok 3: Extrahování do adresáře
 
 ```csharp
 .ExtractToDirectory(".\\all_corpus_decrypted");
 ```
 
- Nakonec použijte`ExtractToDirectory` metoda pro dekomprimaci a extrahování obsahu komprimované složky do zadaného adresáře.
+Nakonec použijte metodu `ExtractToDirectory` k dekompresi a extrahování obsahu komprimované složky do určeného adresáře. Tím je dokončen proces **jak dekomprimovat zip**.
 
-Opakujte tyto kroky pro další komprimované složky, čímž zajistíte bezproblémovou integraci s Aspose.Zip pro .NET.
+Opakujte tyto kroky pro další komprimované složky a zajistěte tak plynulou integraci s Aspose.Zip pro .NET.
 
-## Závěr
+## Časté problémy a řešení
 
-Gratulujeme! Úspěšně jste se naučili, jak dekomprimovat komprimovanou složku do adresáře pomocí Aspose.Zip for .NET. Tato knihovna se ukazuje jako neocenitelný přínos pro vývojáře, kteří se ve svých projektech zabývají komprimovanými daty.
+- **Nesprávné heslo** – Pokud je dešifrovací heslo špatné, Aspose.Zip vyhodí výjimku autentizace. Zkontrolujte řetězec hesla.  
+- **Cesta nenalezena** – Ujistěte se, že cílový adresář existuje, nebo nechte `ExtractToDirectory` jej vytvořit automaticky.  
+- **Velké archivy** – U velkých ZIP souborů zvažte extrahování po částech nebo použití streamingových API pro snížení zatížení paměti.
 
-## FAQ
+## Často kladené otázky
 
-### Q1: Je Aspose.Zip for .NET kompatibilní s různými kompresními formáty?
+**Q: Je Aspose.Zip pro .NET kompatibilní s různými kompresními formáty?**  
+A: Ano, Aspose.Zip pro .NET podporuje populární kompresní formáty jako ZIP, GZIP a další.
 
-Odpověď 1: Ano, Aspose.Zip for .NET podporuje oblíbené kompresní formáty jako ZIP, GZIP a další.
+**Q: Mohu používat Aspose.Zip pro .NET jak v komerčních, tak nekomerčních projektech?**  
+A: Rozhodně, můžete využívat Aspose.Zip pro .NET jak v komerčních, tak nekomerčních aplikacích.
 
-### Q2: Mohu používat Aspose.Zip pro .NET v komerčních i nekomerčních projektech?
+**Q: Je k dispozici bezplatná zkušební verze Aspose.Zip pro .NET?**  
+A: Ano, můžete si vyzkoušet funkce pomocí bezplatné zkušební verze na [zde](https://releases.aspose.com/).
 
-A2: Aspose.Zip pro .NET můžete samozřejmě využít v komerčních i nekomerčních aplikacích.
+**Q: Jak mohu získat podporu pro Aspose.Zip pro .NET?**  
+A: Požádejte o pomoc v komunitě Aspose.Zip na [support forum](https://forum.aspose.com/c/zip/37).
 
-### Q3: Je k dispozici bezplatná zkušební verze pro Aspose.Zip pro .NET?
+**Q: Potřebuji dočasnou licenci pro testování Aspose.Zip pro .NET?**  
+A: Ano, můžete získat dočasnou licenci na [zde](https://purchase.aspose.com/temporary-license/) pro testovací účely.
 
- A3: Ano, můžete prozkoumat funkce s bezplatnou zkušební verzí návštěvou[tady](https://releases.aspose.com/).
+---
 
-### Q4: Jak mohu získat podporu pro Aspose.Zip pro .NET?
+**Poslední aktualizace:** 2025-12-10  
+**Testováno s:** Aspose.Zip pro .NET (nejnovější verze)  
+**Autor:** Aspose  
 
- A4: Vyhledejte pomoc od komunity Aspose.Zip na adrese[Fórum podpory](https://forum.aspose.com/c/zip/37).
-
-### Q5: Potřebuji dočasnou licenci pro testování Aspose.Zip pro .NET?
-
- A5: Ano, můžete získat dočasnou licenci od[tady](https://purchase.aspose.com/temporary-license/) pro testovací účely.
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
