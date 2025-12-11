@@ -83,13 +83,6 @@ Học cách nén thư mục một cách dễ dàng với Aspose.Zip for .NET. T�
 ### [Decompressing a Folder with Aspose.Zip for .NET](./decompress-folder/)
 Làm chủ nghệ thuật giải nén thư mục với Aspose.Zip for .NET. Xử lý các tác vụ nén một cách dễ dàng trong dự án của bạn.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Câu hỏi thường gặp
 
 **Q: Tôi có thể tạo zip archive có bảo vệ bằng mật khẩu bằng Aspose.Zip không?**  
@@ -113,4 +106,9 @@ A: Aspose.Zip for .NET hỗ trợ .NET Framework 4.5+, .NET Core 3.1+, và .NET 
 **Đã kiểm tra với:** Aspose.Zip for .NET 24.11  
 **Tác giả:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

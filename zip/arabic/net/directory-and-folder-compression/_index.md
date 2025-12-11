@@ -82,13 +82,6 @@ weight: 22
 ### [فك ضغط مجلد باستخدام Aspose.Zip for .NET](./decompress-folder/)
 أتقن فن فك ضغط المجلدات باستخدام Aspose.Zip for .NET. تعامل بسهولة مع مهام الضغط في مشاريعك.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## الأسئلة المتكررة
 
 **س: هل يمكنني إنشاء أرشيف zip محمي بكلمة مرور باستخدام Aspose.Zip؟**  
@@ -111,3 +104,10 @@ weight: 22
 **آخر تحديث:** 2025-11-30  
 **تم الاختبار مع:** Aspose.Zip for .NET 24.11  
 **المؤلف:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

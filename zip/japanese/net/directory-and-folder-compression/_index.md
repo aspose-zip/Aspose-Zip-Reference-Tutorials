@@ -81,13 +81,6 @@ Aspose.Zip for .NET を使用してディレクトリを手軽に圧縮する方
 ### [Decompressing a Folder with Aspose.Zip for .NET](./decompress-folder/)
 Aspose.Zip for .NET を使用したフォルダーの展開技術をマスターします。プロジェクト内の圧縮タスクを手軽に処理できるようになります。
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Frequently Asked Questions
 
 **Q: Can I create a password‑protected zip archive using Aspose.Zip?**  
@@ -110,3 +103,10 @@ A: Aspose.Zip for .NET supports .NET Framework 4.5+, .NET Core 3.1+, and .NET 5/
 **Last Updated:** 2025-11-30  
 **Tested With:** Aspose.Zip for .NET 24.11  
 **Author:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

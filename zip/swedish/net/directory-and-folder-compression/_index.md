@@ -82,13 +82,6 @@ Lär dig att komprimera kataloger på ett enkelt sätt med Aspose.Zip för .NET.
 ### [Decompressing a Folder with Aspose.Zip for .NET](./decompress-folder/)
 Behärska konsten att dekomprimera mappar med Aspose.Zip för .NET. Hantera komprimeringsuppgifter i dina projekt utan ansträngning.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Vanliga frågor
 
 **Q: Kan jag skapa ett lösenordsskyddat zip‑arkiv med Aspose.Zip?**  
@@ -111,3 +104,10 @@ A: Aspose.Zip för .NET stöder .NET Framework 4.5+, .NET Core 3.1+, och .NET 5/
 **Senast uppdaterad:** 2025-11-30  
 **Testad med:** Aspose.Zip för .NET 24.11  
 **Författare:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

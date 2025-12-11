@@ -82,13 +82,6 @@ Leer hoe je directories moeiteloos comprimeert met Aspose.Zip voor .NET. Verhoog
 ### [Een map decomprimeren met Aspose.Zip voor .NET](./decompress-folder/)
 Beheers de kunst van het decomprimeren van mappen met Aspose.Zip voor .NET. Handhaaf compressietaken moeiteloos in je projecten.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Veelgestelde vragen
 
 **V: Kan ik een wachtwoord‑beveiligd zip‑archief maken met Aspose.Zip?**  
@@ -112,4 +105,9 @@ A: Aspose.Zip voor .NET ondersteunt .NET Framework 4.5+, .NET Core 3.1+, en .NET
 **Getest met:** Aspose.Zip voor .NET 24.11  
 **Auteur:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

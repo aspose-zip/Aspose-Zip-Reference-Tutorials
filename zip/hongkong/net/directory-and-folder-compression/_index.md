@@ -83,13 +83,6 @@ Aspose.Zip for .NET 不僅僅是壓縮目錄；它 **optimizes storage space**�
 ### [使用 Aspose.Zip for .NET 解壓縮資料夾](./decompress-folder/)
 掌握使用 Aspose.Zip for .NET 解壓縮資料夾的技巧。輕鬆處理專案中的壓縮任務。
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## 常見問題
 
 **Q: 我可以使用 Aspose.Zip 建立受密碼保護的 zip 檔案嗎？**  
@@ -112,3 +105,10 @@ A: Aspose.Zip for .NET 支援 .NET Framework 4.5+、.NET Core 3.1+ 以及 .NET 5
 **最後更新：** 2025-11-30  
 **測試版本：** Aspose.Zip for .NET 24.11  
 **作者：** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

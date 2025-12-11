@@ -83,13 +83,6 @@ Naucz się kompresować katalogi w prosty sposób przy użyciu Aspose.Zip for .N
 ### [Dekompresja folderu z Aspose.Zip for .NET](./decompress-folder/)
 Opanuj sztukę dekompresji folderów przy użyciu Aspose.Zip for .NET. Łatwo radź sobie z zadaniami kompresji w swoich projektach.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Najczęściej zadawane pytania
 
 **Q: Czy mogę utworzyć chronione hasłem archiwum zip przy użyciu Aspose.Zip?**  
@@ -113,4 +106,9 @@ A: Aspose.Zip for .NET wspiera .NET Framework 4.5+, .NET Core 3.1+, oraz .NET 5/
 **Testowano z:** Aspose.Zip for .NET 24.11  
 **Autor:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

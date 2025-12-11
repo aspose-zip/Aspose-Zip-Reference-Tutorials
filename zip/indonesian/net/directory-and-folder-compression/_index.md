@@ -83,13 +83,6 @@ Pelajari cara mengompres direktori dengan mudah menggunakan Aspose.Zip untuk .NE
 ### [Mengekstrak Folder dengan Aspose.Zip untuk .NET](./decompress-folder/)
 Kuasi seni dekompresi folder dengan Aspose.Zip untuk .NET. Tangani tugas kompresi dalam proyek Anda dengan mudah.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Pertanyaan yang Sering Diajukan
 
 **T: Bisakah saya membuat arsip zip yang dilindungi password menggunakan Aspose.Zip?**  
@@ -113,4 +106,9 @@ J: Aspose.Zip untuk .NET mendukung .NET Framework 4.5+, .NET Core 3.1+, dan .NET
 **Diuji Dengan:** Aspose.Zip untuk .NET 24.11  
 **Penulis:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -83,13 +83,6 @@ Tanulja meg, hogyan tömörítsen könyvtárakat könnyedén az Aspose.Zip for .
 ### [Mappa kicsomagolása az Aspose.Zip for .NET‑el](./decompress-folder/)
 Mesteri szintre emeli a mappák kicsomagolását az Aspose.Zip for .NET‑el. Kezelje könnyedén a tömörítési feladatokat projektjeiben.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Gyakran ismételt kérdések
 
 **Q: Létrehozhatok jelszóval védett zip archívumot az Aspose.Zip segítségével?**  
@@ -113,4 +106,9 @@ A: Az Aspose.Zip for .NET támogatja a .NET Framework 4.5+, a .NET Core 3.1+ és
 **Tesztelve:** Aspose.Zip for .NET 24.11  
 **Szerző:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -83,13 +83,6 @@ Lernen Sie, Verzeichnisse mühelos mit Aspose.Zip für .NET zu komprimieren. Opt
 ### [Entpacken eines Ordners mit Aspose.Zip für .NET](./decompress-folder/)
 Meistern Sie die Kunst, Ordner mit Aspose.Zip für .NET zu dekomprimieren. Handhaben Sie Kompressionsaufgaben in Ihren Projekten mühelos.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Häufig gestellte Fragen
 
 **F: Kann ich ein passwortgeschütztes Zip‑Archiv mit Aspose.Zip erstellen?**  
@@ -113,4 +106,9 @@ A: Aspose.Zip für .NET unterstützt .NET Framework 4.5+, .NET Core 3.1+, und .N
 **Getestet mit:** Aspose.Zip für .NET 24.11  
 **Autor:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

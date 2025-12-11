@@ -83,13 +83,6 @@ Aspose.Zip for .NET не просто сжимает каталоги; он **о
 ### [Decompressing a Folder with Aspose.Zip for .NET](./decompress-folder/)
 Освойте искусство распаковки папок с Aspose.Zip for .NET. Легко справляйтесь со задачами сжатия в своих проектах.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Часто задаваемые вопросы
 
 **Q: Можно ли создать zip‑архив, защищённый паролем, с помощью Aspose.Zip?**  
@@ -113,4 +106,9 @@ A: Aspose.Zip for .NET поддерживает .NET Framework 4.5+, .NET Core 3
 **Тестировано с:** Aspose.Zip for .NET 24.11  
 **Автор:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

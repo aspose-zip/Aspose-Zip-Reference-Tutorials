@@ -82,13 +82,6 @@ Aspose.Zip for .NET ไม่ได้แค่บีบอัดไดเรก
 ### [Decompressing a Folder with Aspose.Zip for .NET](./decompress-folder/)
 เชี่ยวชาญการแตกโฟลเดอร์ด้วย Aspose.Zip for .NET จัดการงานบีบอัดในโครงการของคุณได้อย่างไม่มีอุปสรรค
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## คำถามที่พบบ่อย
 
 **Q: ฉันสามารถสร้าง zip archive ที่ป้องกันด้วยรหัสผ่านโดยใช้ Aspose.Zip ได้หรือไม่?**  
@@ -112,4 +105,9 @@ A: Aspose.Zip for .NET รองรับ .NET Framework 4.5+, .NET Core 3.1+, �
 **ทดสอบกับ:** Aspose.Zip for .NET 24.11  
 **ผู้เขียน:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

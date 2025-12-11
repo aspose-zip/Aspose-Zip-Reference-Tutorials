@@ -81,13 +81,6 @@ Aspose.Zip for .NET 不仅压缩目录，还**优化存储空间**，这是现�
 ### [Decompressing a Folder with Aspose.Zip for .NET](./decompress-folder/)
 掌握使用 Aspose.Zip for .NET 解压文件夹的技巧。轻松在项目中处理压缩任务。
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## 常见问题
 
 **问：我可以使用 Aspose.Zip 创建受密码保护的 zip 压缩包吗？**  
@@ -111,4 +104,9 @@ Aspose.Zip for .NET 不仅压缩目录，还**优化存储空间**，这是现�
 **测试环境：** Aspose.Zip for .NET 24.11  
 **作者：** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
