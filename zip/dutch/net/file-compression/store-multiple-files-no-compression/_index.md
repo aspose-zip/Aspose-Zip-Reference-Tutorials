@@ -1,35 +1,46 @@
 ---
-title: Meerdere bestanden opslaan zonder compressie in Aspose.Zip voor .NET
-linktitle: Meerdere bestanden opslaan zonder compressie
-second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
-description: Ontdek de naadloze opslag van meerdere bestanden zonder compressie in Aspose.Zip voor .NET. Optimaliseer uw .NET-applicaties voor efficiënt bestandsbeheer met deze stapsgewijze handleiding.
-weight: 16
+date: 2025-12-10
+description: Leer hoe u bestanden zonder compressie kunt opslaan met Aspose.Zip voor
+  .NET. Deze gids laat u zien hoe u een ongecomprimeerde zip maakt, bestanden opslaat
+  in een zip en archieven efficiënt beheert.
+linktitle: Storing Multiple Files Without Compression
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Hoe bestanden ongecomprimeerd opslaan met Aspose.Zip voor .NET
 url: /nl/net/file-compression/store-multiple-files-no-compression/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Meerdere bestanden opslaan zonder compressie in Aspose.Zip voor .NET
+# Hoe bestanden ongecomprimeerd opslaan met Aspose.Zip voor .NET
 
-## Invoering
+In moderne .NET-ontwikkeling kan **hoe bestanden op te slaan** efficiënt een groot verschil maken in prestaties en opslagkosten. Wanneer je bestanden exact ongewijzigd moet houden—zonder enige compressie—biedt Aspose.Zip voor .NET een schone, eenvoudige API. In deze tutorial lopen we de stappen door om een ongecomprimeerd ZIP‑archief te maken, bestanden naar ZIP op te slaan en de oplossing in je applicatie te integreren.
 
-In de dynamische wereld van .NET-ontwikkeling is effectieve bestandscompressie cruciaal voor het optimaliseren van de opslag en overdracht van gegevens. Aspose.Zip voor .NET is een krachtige tool die dit proces vereenvoudigt, waardoor ontwikkelaars meerdere bestanden efficiënt kunnen opslaan zonder compressie. In deze zelfstudie begeleiden we u stap voor stap door het proces, zodat u het volledige potentieel van Aspose.Zip voor .NET kunt benutten.
+## Snelle antwoorden
+- **Wat betekent “uncompressed zip”?** Het is een ZIP‑archief waarbij elk item wordt opgeslagen met de “store”‑methode, waardoor de oorspronkelijke bytes van het bestand onaangetast blijven.  
+- **Waarom compressie vermijden?** Om het archiveren te versnellen, de oorspronkelijke bestandsgroottes te behouden voor verdere verwerking, of te voldoen aan regelgeving die gegevenswijziging verbiedt.  
+- **Welke Aspose.Zip‑klasse regelt dit?** `ArchiveEntrySettings` gecombineerd met `StoreCompressionSettings`.  
+- **Heb ik een licentie nodig?** Een gratis proefversie werkt voor testen; een commerciële licentie is vereist voor productie.  
+- **Ondersteunde .NET‑versies?** .NET Framework, .NET Core, .NET 5/6/7 en later.
 
-## Vereisten
+## Wat betekent het opslaan van meerdere bestanden zonder compressie?
+Het opslaan van meerdere bestanden zonder compressie betekent dat elk bestand wordt toegevoegd aan een ZIP‑container met de *store*‑compressiemethode. De bestanden blijven byte‑voor‑byte identiek aan de originelen, wat ideaal is wanneer je snel wilt archiveren of de gegevens ongewijzigd moet houden.
 
-Voordat we in de tutorial duiken, moet je ervoor zorgen dat je aan de volgende vereisten voldoet:
+## Waarom Aspose.Zip gebruiken voor ongecomprimeerde archieven?
+- **Snelheid:** Er worden geen CPU‑intensieve compressie‑algoritmen uitgevoerd.  
+- **Voorspelbare grootte:** De archiefgrootte is gelijk aan de som van de originele bestanden plus minimale ZIP‑overhead.  
+- **Compatibiliteit:** Het resulterende ZIP‑bestand werkt met elke standaard unzip‑tool.  
+- **Flexibiliteit:** Je kunt nog steeds gecomprimeerde en ongecomprimeerde items in hetzelfde archief combineren indien nodig.
 
-- Aspose.Zip voor .NET: Zorg ervoor dat u Aspose.Zip voor .NET in uw project hebt geïntegreerd. Als dit niet het geval is, kunt u verwijzen naar de[documentatie](https://reference.aspose.com/zip/net/) voor begeleiding.
+## Voorvereisten
+- **Aspose.Zip for .NET** – geïntegreerd in je project. Zie de officiële [documentatie](https://reference.aspose.com/zip/net/) voor installatiestappen.  
+- **.NET‑ontwikkelomgeving** – Visual Studio, VS Code, of elke IDE die je verkiest.  
+- **Documentdirectory** – een map op je computer met de bestanden die je wilt archiveren (bijv. “Your Document Directory”).
 
-- Ontwikkelomgeving: Zorg ervoor dat er een werkende .NET-ontwikkelomgeving op uw computer is geïnstalleerd.
-
-- Documentmap: identificeer de map waarin uw documenten zijn opgeslagen. In het voorbeeld gebruiken we de tijdelijke aanduiding 'Uw documentenmap'.
-
-## Naamruimten importeren
-
-Voordat we beginnen met coderen, importeren we de benodigde naamruimten om een soepele codeerervaring te garanderen:
+## Namespaces importeren
+Voordat je code schrijft, importeer je de benodigde namespaces zodat de compiler weet waar de Aspose‑klassen zich bevinden.
 
 ```csharp
 using Aspose.Zip;
@@ -38,15 +49,15 @@ using System.IO;
 using System.Text;
 ```
 
-## Stap 1: Documentmap instellen
+## Stap 1: Documentdirectory instellen
+Definieer het pad waar je bronbestanden zich bevinden. Vervang de placeholder door de daadwerkelijke map op je systeem.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-Vervang "Uw documentenmap" door het daadwerkelijke pad waar uw documenten zijn opgeslagen.
-
-## Stap 2: Maak een zip-archief zonder compressie
+## Stap 2: ZIP‑archief maken zonder compressie
+De kern van de tutorial – we maken een `Archive`‑instantie geconfigureerd met `StoreCompressionSettings`. Dit vertelt Aspose.Zip om elk item te *store* (d.w.z. niet te comprimeren).
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompression_out.zip", FileMode.Create))
@@ -63,33 +74,38 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 }
 ```
 
-Met dit codefragment wordt een zip-archief gemaakt zonder de opgegeven bestanden ("alice29.txt" en "lcet10.txt") te comprimeren. Pas de bestandsnamen en paden aan volgens uw projectstructuur.
+> **Pro tip:** Als je **bestanden naar zip wilt opslaan** terwijl je sommige comprimeert en andere ongecomprimeerd laat, maak dan aparte `ArchiveEntrySettings`‑instanties voor elk bestand en voeg ze toe aan dezelfde `Archive`.
 
-## Conclusie
-
-Gefeliciteerd! Je hebt met succes geleerd hoe je meerdere bestanden zonder compressie kunt opslaan met Aspose.Zip voor .NET. Deze efficiënte aanpak zorgt voor optimaal bestandsbeheer in uw .NET-applicaties.
+## Veelvoorkomende problemen en oplossingen
+| Issue | Why It Happens | Fix |
+|-------|----------------|-----|
+| **Bestand niet gevonden** | Onjuist `dataDir`‑pad of ontbrekende bestandsextensie. | Controleer het pad en zorg dat de bestanden bestaan. Gebruik `Path.Combine` voor veiligere samenvoeging. |
+| **Toegang geweigerd** | Het proces heeft geen toestemming om de bronbestanden te lezen of de ZIP te schrijven. | Voer de applicatie uit met de juiste rechten of kies een map met schrijfrechten. |
+| **Onverwachte bestandsgrootte in ZIP** | Het archief is gemaakt met standaardcompressie. | Zorg ervoor dat `new StoreCompressionSettings()` wordt doorgegeven aan `ArchiveEntrySettings`. |
 
 ## Veelgestelde vragen
 
-### V1: Kan ik specifieke bestandstypen comprimeren terwijl ik andere zonder compressie opsla met Aspose.Zip voor .NET?
+**Q: Kan ik specifieke bestandstypen comprimeren terwijl ik andere ongecomprimeerd opsla?**  
+A: Ja, je kunt verschillende `ArchiveEntrySettings` voor elk bestand maken en gecomprimeerde en ongecomprimeerde items in hetzelfde archief combineren.
 
-A1: Ja, u kunt de compressie-instellingen aanpassen voor individuele bestanden of bestandstypen, waardoor u flexibiliteit in uw toepassing krijgt.
+**Q: Is Aspose.Zip for .NET compatibel met .NET Core en .NET 5/6?**  
+A: Absoluut. De bibliotheek ondersteunt .NET Framework, .NET Core, .NET Standard en de nieuwste .NET‑versies.
 
-### V2: Is Aspose.Zip voor .NET compatibel met verschillende .NET-frameworks?
+**Q: Hoe moet ik uitzonderingen afhandelen tijdens het archiveringsproces?**  
+A: Plaats de archiveringscode in een `try‑catch`‑blok en log de details van de uitzondering. Dit zorgt voor een nette foutafhandeling en makkelijker debuggen.
 
-A2: Aspose.Zip voor .NET ondersteunt verschillende .NET-frameworks, waaronder .NET Core en .NET Standard.
+**Q: Ondersteunt Aspose.Zip multi‑threaded archiveren?**  
+A: Ja, je kunt meerdere bestanden parallel verwerken en aan het archief toevoegen, maar onthoud dat het `Archive`‑object zelf niet thread‑safe is; synchroniseer de toegang bij het toevoegen van items.
 
-### Vraag 3: Hoe kan ik omgaan met uitzonderingen tijdens het bestandsopslagproces?
+**Q: Kan ik Aspose.Zip integreren in een bestaand project zonder grote code‑wijzigingen?**  
+A: Zeker. De API is ontworpen voor eenvoudige drop‑in gebruik. Raadpleeg de officiële [documentatie](https://reference.aspose.com/zip/net/) voor migratie‑advies.
 
-A3: Implementeer mechanismen voor foutafhandeling met behulp van try-catch-blokken om uitzonderingen netjes te beheren en de robuustheid van uw applicatie te verbeteren.
+---
 
-### V4: Biedt Aspose.Zip voor .NET ondersteuning voor multi-threading?
+**Laatst bijgewerkt:** 2025-12-10  
+**Getest met:** Aspose.Zip for .NET 24.12 (latest op het moment van schrijven)  
+**Auteur:** Aspose  
 
-A4: Ja, Aspose.Zip voor .NET ondersteunt multi-threading, waardoor u de prestaties van bestandscompressie en opslagbewerkingen kunt verbeteren.
-
-### V5: Kan ik Aspose.Zip voor .NET integreren in mijn bestaande project zonder grote codewijzigingen?
-
- A5: Ja, Aspose.Zip voor .NET is ontworpen voor eenvoudige integratie, en de[documentatie](https://reference.aspose.com/zip/net/) biedt uitgebreide begeleiding voor een naadloos integratieproces.
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

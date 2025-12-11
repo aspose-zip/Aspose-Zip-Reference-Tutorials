@@ -1,35 +1,46 @@
 ---
-title: Memorizzazione di più file senza compressione in Aspose.Zip per .NET
-linktitle: Memorizzazione di più file senza compressione
-second_title: Aspose.Zip .NET API per la compressione e l'archiviazione dei file
-description: Esplora l'archiviazione continua di più file senza compressione in Aspose.Zip per .NET. Ottimizza le tue applicazioni .NET per una gestione efficiente dei file con questa guida passo passo.
-weight: 16
+date: 2025-12-10
+description: Scopri come archiviare file senza compressione usando Aspose.Zip per
+  .NET. Questa guida ti mostra come creare un file zip non compresso, salvare file
+  nello zip e gestire gli archivi in modo efficiente.
+linktitle: Storing Multiple Files Without Compression
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Come archiviare file non compressi con Aspose.Zip per .NET
 url: /it/net/file-compression/store-multiple-files-no-compression/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Memorizzazione di più file senza compressione in Aspose.Zip per .NET
+# Come archiviare file senza compressione con Aspose.Zip per .NET
 
-## introduzione
+Nello sviluppo .NET moderno, **come archiviare file** in modo efficiente può fare una grande differenza in termini di prestazioni e costi di archiviazione. Quando è necessario mantenere i file esattamente così come sono—senza alcuna compressione—Aspose.Zip per .NET offre un'API pulita e semplice. In questo tutorial vedremo i passaggi per creare un archivio ZIP non compresso, salvare file nello ZIP e integrare la soluzione nella tua applicazione.
 
-Nel mondo dinamico dello sviluppo .NET, una compressione efficace dei file è fondamentale per ottimizzare l'archiviazione e la trasmissione dei dati. Aspose.Zip per .NET è un potente strumento che semplifica questo processo, consentendo agli sviluppatori di archiviare in modo efficiente più file senza compressione. In questo tutorial ti guideremo attraverso il processo, passo dopo passo, assicurandoti di sfruttare tutto il potenziale di Aspose.Zip per .NET.
+## Risposte rapide
+- **Cosa significa “zip non compresso”?** È un archivio ZIP in cui ogni voce è memorizzata usando il metodo “store”, lasciando intatti i byte originali del file.  
+- **Perché evitare la compressione?** Per velocizzare l'archiviazione, preservare le dimensioni originali dei file per l'elaborazione successiva, o soddisfare requisiti normativi che vietano la modifica dei dati.  
+- **Quale classe di Aspose.Zip gestisce questo?** `ArchiveEntrySettings` combinata con `StoreCompressionSettings`.  
+- **Ho bisogno di una licenza?** Una versione di prova gratuita è sufficiente per i test; è necessaria una licenza commerciale per la produzione.  
+- **Versioni .NET supportate?** .NET Framework, .NET Core, .NET 5/6/7 e successive.
+
+## Cos'è l'archiviazione di più file senza compressione?
+Archiviare più file senza compressione significa aggiungere ogni file a un contenitore ZIP usando il metodo di compressione *store*. I file rimangono identici byte per byte agli originali, il che è ideale quando si desidera un'archiviazione rapida o è necessario mantenere i dati invariati.
+
+## Perché usare Aspose.Zip per archivi non compressi?
+- **Velocità:** Non vengono eseguiti algoritmi di compressione intensivi per la CPU.  
+- **Dimensione prevedibile:** La dimensione dell'archivio è pari alla somma dei file originali più un minimo overhead ZIP.  
+- **Compatibilità:** Lo ZIP risultante funziona con qualsiasi utility di estrazione standard.  
+- **Flessibilità:** È comunque possibile mescolare voci compresse e non compresse nello stesso archivio, se necessario.
 
 ## Prerequisiti
+- **Aspose.Zip for .NET** – integrato nel tuo progetto. Consulta la [documentazione](https://reference.aspose.com/zip/net/) ufficiale per le istruzioni di installazione.  
+- **Ambiente di sviluppo .NET** – Visual Studio, VS Code o qualsiasi IDE tu preferisca.  
+- **Directory dei documenti** – una cartella sul tuo computer contenente i file che desideri archiviare (ad esempio, “Your Document Directory”).
 
-Prima di immergerci nel tutorial, assicurati di disporre dei seguenti prerequisiti:
-
-- Aspose.Zip per .NET: assicurati di aver integrato Aspose.Zip per .NET nel tuo progetto. In caso contrario, puoi fare riferimento a[documentazione](https://reference.aspose.com/zip/net/) per l'orientamento.
-
-- Ambiente di sviluppo: disporre di un ambiente di sviluppo .NET funzionante configurato sul computer.
-
-- Directory dei documenti: identifica la directory in cui sono archiviati i tuoi documenti. Nell'esempio utilizzeremo il segnaposto "Your Document Directory".
-
-## Importa spazi dei nomi
-
-Prima di iniziare a scrivere codice, importiamo gli spazi dei nomi necessari per garantire un'esperienza di codifica fluida:
+## Importa gli spazi dei nomi
+Prima di scrivere qualsiasi codice, importa gli spazi dei nomi richiesti in modo che il compilatore sappia dove trovare le classi Aspose.
 
 ```csharp
 using Aspose.Zip;
@@ -38,15 +49,15 @@ using System.IO;
 using System.Text;
 ```
 
-## Passaggio 1: imposta la directory dei documenti
+## Passo 1: Imposta la directory dei documenti
+Definisci il percorso in cui risiedono i tuoi file sorgente. Sostituisci il segnaposto con la cartella effettiva sul tuo sistema.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-Sostituisci "La tua directory dei documenti" con il percorso effettivo in cui sono archiviati i tuoi documenti.
-
-## Passaggio 2: crea un archivio zip senza compressione
+## Passo 2: Crea un archivio Zip senza compressione
+Il fulcro del tutorial – creiamo un'istanza `Archive` configurata con `StoreCompressionSettings`. Questo indica ad Aspose.Zip di *memorizzare* (cioè, non comprimere) ogni voce.
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompression_out.zip", FileMode.Create))
@@ -63,33 +74,38 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 }
 ```
 
-Questo frammento di codice crea un archivio zip senza comprimere i file specificati ("alice29.txt" e "lcet10.txt"). Modifica i nomi e i percorsi dei file in base alla struttura del tuo progetto.
+> **Consiglio professionale:** Se hai bisogno di **salvare file nello zip** comprimendo alcuni e lasciandone altri non compressi, crea istanze separate di `ArchiveEntrySettings` per ogni file e aggiungile allo stesso `Archive`.
 
-## Conclusione
-
-Congratulazioni! Hai imparato con successo come archiviare più file senza compressione utilizzando Aspose.Zip per .NET. Questo approccio efficiente garantisce una gestione ottimale dei file nelle applicazioni .NET.
+## Problemi comuni e soluzioni
+| Problema | Perché accade | Soluzione |
+|----------|----------------|----------|
+| **File non trovato** | Percorso `dataDir` errato o estensione del file mancante. | Verifica il percorso e assicurati che i file esistano. Usa `Path.Combine` per una concatenazione più sicura. |
+| **Accesso negato** | Il processo non ha i permessi per leggere i file sorgente o scrivere lo ZIP. | Esegui l'applicazione con i diritti appropriati o scegli una cartella con accesso in scrittura. |
+| **Dimensione file inattesa nello ZIP** | L'archivio è stato creato con compressione predefinita. | Assicurati che `new StoreCompressionSettings()` sia passato a `ArchiveEntrySettings`. |
 
 ## Domande frequenti
 
-### Q1: Posso comprimere tipi di file specifici mentre memorizzo altri senza compressione utilizzando Aspose.Zip per .NET?
+**D: Posso comprimere tipi di file specifici mentre ne archivio altri senza compressione?**  
+R: Sì, puoi creare diversi `ArchiveEntrySettings` per ogni file e mescolare voci compresse e non compresse nello stesso archivio.
 
-R1: Sì, puoi personalizzare le impostazioni di compressione per singoli file o tipi di file, garantendo flessibilità alla tua applicazione.
+**D: Aspose.Zip per .NET è compatibile con .NET Core e .NET 5/6?**  
+R: Assolutamente. La libreria supporta .NET Framework, .NET Core, .NET Standard e le versioni più recenti di .NET.
 
-### Q2: Aspose.Zip per .NET è compatibile con diversi framework .NET?
+**D: Come dovrei gestire le eccezioni durante il processo di archiviazione?**  
+R: Avvolgi il codice di archiviazione in un blocco `try‑catch` e registra i dettagli dell'eccezione. Questo garantisce un fallimento gestito e una più facile debug.
 
-A2: Aspose.Zip per .NET supporta vari framework .NET, inclusi .NET Core e .NET Standard.
+**D: Aspose.Zip supporta l'archiviazione multithread?**  
+R: Sì, puoi elaborare più file in parallelo e aggiungerli all'archivio, ma ricorda che l'oggetto `Archive` non è thread‑safe; sincronizza l'accesso quando aggiungi voci.
 
-### Q3: Come posso gestire le eccezioni durante il processo di archiviazione dei file?
+**D: Posso integrare Aspose.Zip in un progetto esistente senza grandi modifiche al codice?**  
+R: Certamente. L'API è progettata per un utilizzo semplice plug‑and‑play. Consulta la [documentazione](https://reference.aspose.com/zip/net/) ufficiale per le linee guida sulla migrazione.
 
-A3: Implementa meccanismi di gestione degli errori utilizzando blocchi try-catch per gestire con garbo le eccezioni e migliorare la robustezza della tua applicazione.
+---
 
-### Q4: Aspose.Zip per .NET offre supporto multi-threading?
+**Ultimo aggiornamento:** 2025-12-10  
+**Testato con:** Aspose.Zip for .NET 24.12 (ultima versione al momento della scrittura)  
+**Autore:** Aspose  
 
-A4: Sì, Aspose.Zip per .NET supporta il multi-threading, consentendo di migliorare le prestazioni delle operazioni di compressione e archiviazione dei file.
-
-### Q5: Posso integrare Aspose.Zip per .NET nel mio progetto esistente senza importanti modifiche al codice?
-
- A5: Sì, Aspose.Zip per .NET è progettato per una facile integrazione e il[documentazione](https://reference.aspose.com/zip/net/) fornisce una guida completa per un processo di integrazione senza soluzione di continuità.
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
