@@ -112,15 +112,15 @@ Aspose.Zip для .NET оказывается настоящим прорыво�
 ### [Распаковка Xar в папку с Aspose.Zip для .NET](./decompress-xar-folder/)
 Исследуйте возможности Aspose.Zip для .NET! Без труда распакуйте Xar‑архивы с этим удобным руководством. Улучшите свой опыт разработки на .NET.
 
+---
+
+**Last Updated:** 2025-12-10  
+**Tested With:** Aspose.Zip for .NET 24.12  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-10  
-**Tested With:** Aspose.Zip for .NET 24.12  
-**Author:** Aspose

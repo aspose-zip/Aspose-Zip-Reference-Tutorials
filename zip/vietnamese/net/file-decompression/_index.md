@@ -104,15 +104,15 @@ Khám phá hướng dẫn chi tiết về giải nén các kho lưu trữ Wim b�
 ### [Decompress Xar to Folder in Aspose.Zip for .NET](./decompress-xar-folder/)
 Khám phá sức mạnh của Aspose.Zip cho .NET! Giải nén các kho lưu trữ Xar một cách dễ dàng với tutorial thân thiện này. Nâng cao trải nghiệm phát triển .NET của bạn.
 
+---
+
+**Last Updated:** 2025-12-10  
+**Tested With:** Aspose.Zip for .NET 24.12  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-10  
-**Tested With:** Aspose.Zip for .NET 24.12  
-**Author:** Aspose

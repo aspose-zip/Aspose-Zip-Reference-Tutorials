@@ -111,15 +111,15 @@ Prozkoumejte krok‑za‑krokem průvodce rozbalením Wim archivů pomocí Aspos
 ### [Decompress Xar to Folder in Aspose.Zip for .NET](./decompress-xar-folder/)
 Objevte sílu Aspose.Zip pro .NET! Bez námahy rozbalte Xar archivy pomocí tohoto uživatelsky přívětivého tutoriálu. Zlepšete svůj .NET vývojářský zážitek.
 
+---
+
+**Last Updated:** 2025-12-10  
+**Tested With:** Aspose.Zip for .NET 24.12  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-10  
-**Tested With:** Aspose.Zip for .NET 24.12  
-**Author:** Aspose

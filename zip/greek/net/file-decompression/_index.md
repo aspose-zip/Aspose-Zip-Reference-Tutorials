@@ -112,15 +112,15 @@ weight: 21
 ### [Αποσυμπίεση Xar σε Φάκελο στο Aspose.Zip για .NET](./decompress-xar-folder/)
 Ανακαλύψτε τη δύναμη του Aspose.Zip για .NET! Αποσυμπιέστε εύκολα αρχεία Xar με αυτόν τον φιλικό προς το χρήστη οδηγό. Βελτιώστε την εμπειρία ανάπτυξης .NET σας.
 
+---
+
+**Τελευταία Ενημέρωση:** 2025-12-10  
+**Δοκιμή με:** Aspose.Zip για .NET 24.12  
+**Συγγραφέας:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Τελευταία Ενημέρωση:** 2025-12-10  
-**Δοκιμή με:** Aspose.Zip για .NET 24.12  
-**Συγγραφέας:** Aspose

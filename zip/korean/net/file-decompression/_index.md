@@ -104,15 +104,15 @@ Aspose.Zip for .NET를 활용한 Wim 아카이브 압축 해제 단계별 가이
 ### [Aspose.Zip for .NET를 사용해 Xar를 폴더로 압축 해제](./decompress-xar-folder/)
 Aspose.Zip for .NET의 강력함을 탐험하세요! 사용자 친화적인 튜토리얼을 통해 Xar 아카이브를 손쉽게 압축 해제하고 .NET 개발 경험을 향상시킵니다.
 
+---
+
+**마지막 업데이트:** 2025-12-10  
+**테스트 환경:** Aspose.Zip for .NET 24.12  
+**작성자:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**마지막 업데이트:** 2025-12-10  
-**테스트 환경:** Aspose.Zip for .NET 24.12  
-**작성자:** Aspose

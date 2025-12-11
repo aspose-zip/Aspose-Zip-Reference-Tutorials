@@ -104,13 +104,6 @@ weight: 21
 ### [Decompress Xar to Folder in Aspose.Zip for .NET](./decompress-xar-folder/)
 اكتشف قوة Aspose.Zip لـ .NET! فك ضغط أرشيفات Xar بسهولة مع هذا الدليل الصديق للمستخدم. عزّز تجربة تطوير .NET الخاصة بك.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **آخر تحديث:** 2025-12-10  
@@ -118,3 +111,10 @@ weight: 21
 **المؤلف:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

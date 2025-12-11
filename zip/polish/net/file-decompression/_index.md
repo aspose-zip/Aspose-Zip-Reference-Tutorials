@@ -105,15 +105,15 @@ Zapoznaj się z przewodnikiem krok po kroku dotyczącym rozpakowywania archiwów
 ### [Rozpakowywanie Xar do folderu w Aspose.Zip dla .NET](./decompress-xar-folder/)
 Poznaj moc Aspose.Zip dla .NET! Bez trudu rozpakowuj archiwa Xar dzięki temu przyjaznemu użytkownikowi samouczkowi. Ulepsz swoje doświadczenia programistyczne w .NET.
 
+---
+
+**Ostatnia aktualizacja:** 2025-12-10  
+**Testowano z:** Aspose.Zip for .NET 24.12  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ostatnia aktualizacja:** 2025-12-10  
-**Testowano z:** Aspose.Zip for .NET 24.12  
-**Autor:** Aspose

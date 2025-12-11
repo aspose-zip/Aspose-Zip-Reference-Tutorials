@@ -105,15 +105,15 @@ Aspose.Zip for .NET kullanarak Wim arşivlerini açma konusunda adım adım rehb
 ### [Aspose.Zip for .NET ile Xar'ı Klasöre Açma](./decompress-xar-folder/)
 Aspose.Zip for .NET'in gücünü keşfedin! Bu kullanıcı dostu öğreticiyle Xar arşivlerini zahmetsizce açın. .NET geliştirme deneyiminizi geliştirin.
 
+---
+
+**Son Güncelleme:** 2025-12-10  
+**Test Edilen:** Aspose.Zip for .NET 24.12  
+**Yazar:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Son Güncelleme:** 2025-12-10  
-**Test Edilen:** Aspose.Zip for .NET 24.12  
-**Yazar:** Aspose

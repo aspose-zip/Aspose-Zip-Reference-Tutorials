@@ -108,15 +108,15 @@ Aspose.Zip for .NET 在檔案解壓領域可說是顛覆性工具。無論您處
 ### [Decompress Xar to Folder in Aspose.Zip for .NET](./decompress-xar-folder/)
 探索 Aspose.Zip for .NET 的強大功能！透過此使用者友善的教學，輕鬆解壓 Xar 壓縮檔。提升您的 .NET 開發體驗。
 
+---
+
+**Last Updated:** 2025-12-10  
+**Tested With:** Aspose.Zip for .NET 24.12  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-10  
-**Tested With:** Aspose.Zip for .NET 24.12  
-**Author:** Aspose

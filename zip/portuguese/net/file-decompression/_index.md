@@ -104,15 +104,15 @@ Explore o guia passo a passo sobre descompactação de arquivos Wim usando Aspos
 ### [Descompactando Xar para Pasta em Aspose.Zip para .NET](./decompress-xar-folder/)
 Explore o poder do Aspose.Zip para .NET! Descompacte arquivos Xar sem esforço com este tutorial amigável. Aprimore sua experiência de desenvolvimento .NET.
 
+---
+
+**Última atualização:** 2025-12-10  
+**Testado com:** Aspose.Zip para .NET 24.12  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última atualização:** 2025-12-10  
-**Testado com:** Aspose.Zip para .NET 24.12  
-**Autor:** Aspose

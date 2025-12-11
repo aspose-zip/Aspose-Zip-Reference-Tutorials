@@ -112,15 +112,15 @@ Fedezd fel a lépésről‑lépésre útmutatót a Wim archívumok kicsomagolás
 ### [Xar archívum kibontása mappába az Aspose.Zip for .NET segítségével](./decompress-xar-folder/)
 Ismerd meg az Aspose.Zip for .NET erejét! Kicsomagolás nélkülözhetetlen módon a Xar archívumokat ebben a felhasználóbarát tutorialban. Fejleszd .NET fejlesztési élményedet.
 
+---
+
+**Utolsó frissítés:** 2025-12-10  
+**Tesztelt verzió:** Aspose.Zip for .NET 24.12  
+**Szerző:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Utolsó frissítés:** 2025-12-10  
-**Tesztelt verzió:** Aspose.Zip for .NET 24.12  
-**Szerző:** Aspose
