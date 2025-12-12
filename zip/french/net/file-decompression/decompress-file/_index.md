@@ -1,35 +1,50 @@
 ---
-title: Décompresser un fichier avec Aspose.Zip pour .NET
-linktitle: Décompresser un fichier
-second_title: API Aspose.Zip .NET pour la compression et l'archivage de fichiers
-description: Explorez le monde de la compression de fichiers dans .NET avec Aspose.Zip. Apprenez l'art de décompresser des fichiers sans effort.
-weight: 10
+date: 2025-12-12
+description: Apprenez à décompresser rapidement un fichier .NET avec Aspose.Zip. Guide
+  étape par étape pour l'extraction d'archives .NET et l'extraction en C# depuis une
+  archive.
+linktitle: Decompressing a File
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Décompresser le fichier .NET avec Aspose.Zip
 url: /fr/net/file-decompression/decompress-file/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Décompresser un fichier avec Aspose.Zip pour .NET
+# Décompresser un fichier .NET avec Aspose.Zip
 
 ## Introduction
 
-Dans le monde du développement .NET, la gestion efficace des fichiers compressés est cruciale. Aspose.Zip pour .NET fournit une solution puissante pour gérer de manière transparente la compression et la décompression de fichiers. Dans ce didacticiel, nous aborderons le processus de décompression d'un fichier à l'aide d'Aspose.Zip pour .NET. Suivez-nous pour libérer le potentiel de cette puissante bibliothèque.
+Dans le monde du développement .NET, apprendre à **décompresser un fichier .NET** efficacement est crucial pour les applications où les performances sont essentielles. Aspose.Zip pour .NET propose une API propre et haute performance qui vous permet de gérer l’extraction d’archives .NET sans vous occuper de la gestion bas‑niveau des flux. Dans ce tutoriel, nous parcourrons un scénario complet d’**extraction Aspose.Zip** : ouverture d’une archive Lzip et extraction de son contenu en quelques lignes de code C#.
 
-## Conditions préalables
+## Quick Answers
+- **Quelle bibliothèque gère l’extraction d’archives .NET ?** Aspose.Zip for .NET  
+- **Quelle méthode extrait une archive Lzip en C# ?** `LzipArchive.Extract`  
+- **Ai‑je besoin d’une licence pour la production ?** Oui, une licence commerciale est requise pour une utilisation non‑évaluation.  
+- **Versions .NET prises en charge ?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
+- **Combien de temps prend l’extraction de base ?** Généralement moins d’une seconde pour de petits fichiers.
 
-Avant de nous lancer dans ce voyage, assurez-vous d’avoir les conditions préalables suivantes en place :
+## What is “decompress file .NET”?
+Décompresser un fichier en .NET signifie lire une archive compressée (par ex., ZIP, LZIP, GZIP) et écrire son contenu original sur le système de fichiers. Aspose.Zip abstrait la complexité, vous permettant de vous concentrer sur la logique métier plutôt que sur les algorithmes de compression.
 
--  Aspose.Zip pour .NET : assurez-vous que la bibliothèque est installée. Vous pouvez trouver la documentation[ici](https://reference.aspose.com/zip/net/).
+## Why use Aspose.Zip for .NET archive extraction?
+- **Zero‑dependency** – aucune dépendance native externe.  
+- **Rich format support** – ZIP, GZIP, TAR, LZIP, et plus encore.  
+- **Thread‑safe API** – parfait pour les services web et les tâches en arrière‑plan.  
+- **Comprehensive documentation** et ressources **Aspose.Zip tutorial**.
 
-- Environnement de développement : configurez un environnement de développement .NET avec les outils nécessaires installés.
+## Prerequisites
 
-- Votre répertoire de documents : choisissez un répertoire dans lequel vous travaillerez avec les fichiers compressés.
+- **Aspose.Zip for .NET** – installez le package NuGet ou téléchargez la bibliothèque. Vous pouvez trouver la documentation [here](https://reference.aspose.com/zip/net/).  
+- **Environnement de développement** – Visual Studio 2022, .NET 6 SDK, ou tout IDE supportant C#.  
+- **Your Document Directory** – un dossier sur le disque où le fichier compressé (`archive.lz`) se trouve et où vous souhaitez enregistrer le fichier extrait.
 
-## Importer des espaces de noms
+## Import Namespaces
 
-Tout d’abord, importons les espaces de noms nécessaires pour lancer notre processus de décompression :
+First, import the namespaces required for file I/O and Aspose.Zip’s Lzip support:
 
 ```csharp
 using System;
@@ -37,20 +52,20 @@ using System.IO;
 using Aspose.Zip.Lzip;
 ```
 
-## Étape 1 : initialisez votre répertoire de documents
+## .NET Archive Extraction: Set Up Your Working Folder
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-Assurez-vous de remplacer « Votre répertoire de documents » par le chemin réel où se trouve votre fichier compressé.
+Remplacez `"Your Document Directory"` par le chemin absolu ou relatif contenant `archive.lz`. Conserver le chemin dans une variable rend le code réutilisable et plus facile à maintenir.
 
-## Étape 2 : Ouvrir et extraire de l'archive Lzip
+## Step 1: Open and Extract Lzip Archive Using C#
 
-Passons maintenant au cœur du processus. Nous allons ouvrir une archive Lzip et extraire son contenu :
+The core of the **c# extract from archive** operation is a short `using` block that opens the Lzip file and writes the decompressed data to a new file.
 
 ```csharp
-//ExStart : OpenLzipArchive
+//ExStart: OpenLzipArchive
 using (var archive = new LzipArchive(Path.Combine(dataDir, "archive.lz")))
 {
     using (var extracted = File.Create(Path.Combine(dataDir, "output.txt")))
@@ -58,40 +73,55 @@ using (var archive = new LzipArchive(Path.Combine(dataDir, "archive.lz")))
         archive.Extract(extracted);
     }
 }
-//ExEnd : OpenLzipArchive
+//ExEnd: OpenLzipArchive
 Console.WriteLine("Successfully Opened Lzip Archive");
 ```
 
- Cette étape initialise une instance du`LzipArchive` classe, ouvre le fichier d'archive spécifié et extrait son contenu dans un fichier de sortie.
+Ce fragment montre le modèle **extract lzip archive c#** :
+
+1. **Create** an `LzipArchive` instance pointing at the source file.  
+2. **Create** the destination file (`output.txt`).  
+3. **Call** `Extract` to write the decompressed bytes.  
+4. The `using` statements guarantee that all streams are closed automatically.
+
+## Common Issues and Solutions
+
+| Symptom | Likely Cause | Fix |
+|---------|--------------|-----|
+| `FileNotFoundException` | Wrong `dataDir` path | Verify the folder path and ensure `archive.lz` exists. |
+| `UnauthorizedAccessException` | Insufficient write permissions | Run the app with proper privileges or choose a writable folder. |
+| Output file is empty | Archive is corrupted or not an Lzip file | Confirm the source file is a valid Lzip archive; use `LzipArchive.IsValid` if needed. |
+
+## Frequently Asked Questions
+
+**Q: Is Aspose.Zip compatible with all .NET applications?**  
+A: Yes, Aspose.Zip for .NET integrates with desktop, web, cloud, and micro‑service projects alike.
+
+**Q: Can I use Aspose.Zip for both personal and commercial projects?**  
+A: Absolutely. The library offers flexible licensing for evaluation, personal, and commercial use.
+
+**Q: How can I get support for Aspose.Zip for .NET?**  
+A: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) to ask questions and share experiences with the community.
+
+**Q: Is there a free trial available?**  
+A: Yes, you can explore the features of Aspose.Zip for .NET by downloading the free trial [here](https://releases.aspose.com/).
+
+**Q: Where can I purchase Aspose.Zip for .NET?**  
+A: To purchase a license, go to the [purchase page](https://purchase.aspose.com/buy).
 
 ## Conclusion
 
- Toutes nos félicitations! Vous avez appris avec succès comment décompresser un fichier à l'aide d'Aspose.Zip pour .NET. Cette puissante bibliothèque rationalise le processus de gestion des fichiers compressés dans vos applications .NET. À mesure que vous explorez d'autres fonctionnalités, reportez-vous au[Documentation](https://reference.aspose.com/zip/net/) pour des informations détaillées.
+You’ve now mastered how to **decompress file .NET** using Aspose.Zip’s straightforward API. This approach simplifies .NET archive extraction, reduces boilerplate code, and scales well for large‑scale applications. For deeper scenarios—password‑protected archives, multi‑file extraction, or custom compression levels—refer to the full [documentation](https://reference.aspose.com/zip/net/).
 
-## FAQ
-
-### Q1 : Aspose.Zip est-il compatible avec toutes les applications .NET ?
-
-A1 : Oui, Aspose.Zip pour .NET est conçu pour s'intégrer de manière transparente à diverses applications .NET, offrant des capacités efficaces de compression et de décompression de fichiers.
-
-### Q2 : Puis-je utiliser Aspose.Zip pour des projets personnels et commerciaux ?
-
-A2 : Absolument ! Aspose.Zip pour .NET offre des options de licence flexibles, ce qui le rend adapté à un usage personnel et commercial.
-
-### Q3 : Comment puis-je obtenir de l'assistance pour Aspose.Zip pour .NET ?
-
-A3 : Pour toute question ou assistance, vous pouvez visiter le[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) pour se connecter avec la communauté et demander conseil.
-
-### Q4 : Existe-t-il un essai gratuit ?
-
- A4 : Oui, vous pouvez explorer les fonctionnalités d'Aspose.Zip pour .NET en téléchargeant la version d'essai gratuite.[ici](https://releases.aspose.com/).
-
-### Q5 : Où puis-je acheter Aspose.Zip pour .NET ?
-
- A5 : Pour acheter Aspose.Zip pour .NET, visitez le[page d'achat](https://purchase.aspose.com/buy).
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Last Updated:** 2025-12-12  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose

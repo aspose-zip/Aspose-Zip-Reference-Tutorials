@@ -1,35 +1,49 @@
 ---
-title: Giải nén tệp bằng Aspose.Zip cho .NET
-linktitle: Giải nén một tập tin
-second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
-description: Khám phá thế giới nén tệp trong .NET với Aspose.Zip. Tìm hiểu nghệ thuật giải nén tập tin một cách dễ dàng.
-weight: 10
+date: 2025-12-12
+description: Học cách giải nén tệp .NET nhanh chóng với Aspose.Zip. Hướng dẫn chi
+  tiết từng bước về việc trích xuất lưu trữ .NET và cách trích xuất bằng C#.
+linktitle: Decompressing a File
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Giải nén tệp .NET bằng Aspose.Zip
 url: /vi/net/file-decompression/decompress-file/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Giải nén tệp bằng Aspose.Zip cho .NET
+# Giải Nén Tập Tin .NET Bằng Aspose.Zip
 
 ## Giới thiệu
 
-Trong thế giới phát triển .NET, việc quản lý các tệp nén một cách hiệu quả là rất quan trọng. Aspose.Zip for .NET cung cấp một giải pháp mạnh mẽ để xử lý việc nén và giải nén tệp một cách liền mạch. Trong hướng dẫn này, chúng ta sẽ đi sâu vào quy trình giải nén tệp bằng Aspose.Zip cho .NET. Hãy làm theo để mở khóa tiềm năng của thư viện mạnh mẽ này.
+Trong thế giới phát triển .NET, việc học cách **giải nén tập tin .NET** một cách hiệu quả là rất quan trọng đối với các ứng dụng yêu cầu hiệu năng cao. Aspose.Zip cho .NET cung cấp một API sạch, hiệu suất cao cho phép bạn xử lý việc giải nén archive .NET mà không cần quản lý stream ở mức thấp. Trong hướng dẫn này, chúng ta sẽ đi qua một kịch bản **trích xuất Aspose.Zip** hoàn chỉnh — mở một archive Lzip và giải nén nội dung của nó chỉ với vài dòng mã C#.
 
-## Điều kiện tiên quyết
+## Trả Lời Nhanh
+- **Thư viện nào xử lý việc giải nén archive .NET?** Aspose.Zip cho .NET  
+- **Phương thức nào để giải nén archive Lzip trong C#?** `LzipArchive.Extract`  
+- **Có cần giấy phép cho môi trường production không?** Có, cần giấy phép thương mại cho việc sử dụng không phải đánh giá.  
+- **Các phiên bản .NET được hỗ trợ?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
+- **Thời gian thực hiện giải nén cơ bản là bao lâu?** Thông thường dưới một giây đối với các tệp nhỏ.
 
-Trước khi chúng ta bắt đầu cuộc hành trình này, hãy đảm bảo rằng bạn có sẵn các điều kiện tiên quyết sau:
+## “giải nén file .NET” là gì?
+Giải nén một tệp trong .NET có nghĩa là đọc một archive đã nén (ví dụ: ZIP, LZIP, GZIP) và ghi lại nội dung gốc của nó vào hệ thống tệp. Aspose.Zip trừu tượng hoá sự phức tạp, cho phép bạn tập trung vào logic nghiệp vụ thay vì các thuật toán nén.
 
--  Aspose.Zip dành cho .NET: Đảm bảo bạn đã cài đặt thư viện. Bạn có thể tìm thấy tài liệu[đây](https://reference.aspose.com/zip/net/).
+## Tại sao nên dùng Aspose.Zip cho việc giải nén archive .NET?
+- **Không phụ thuộc** – không có binary native bên ngoài.  
+- **Hỗ trợ đa dạng định dạng** – ZIP, GZIP, TAR, LZIP và nhiều hơn nữa.  
+- **API thread‑safe** – lý tưởng cho các dịch vụ web và công việc nền.  
+- **Tài liệu đầy đủ** và các tài nguyên **hướng dẫn Aspose.Zip**.
 
-- Môi trường phát triển: Thiết lập môi trường phát triển .NET với các công cụ cần thiết được cài đặt.
+## Yêu cầu trước
 
-- Thư mục tài liệu của bạn: Chọn thư mục nơi bạn sẽ làm việc với các tệp nén.
+- **Aspose.Zip cho .NET** – cài đặt gói NuGet hoặc tải thư viện. Bạn có thể tìm tài liệu [tại đây](https://reference.aspose.com/zip/net/).  
+- **Môi trường phát triển** – Visual Studio 2022, .NET 6 SDK, hoặc bất kỳ IDE nào hỗ trợ C#.  
+- **Thư mục tài liệu của bạn** – một thư mục trên đĩa chứa tệp nén (`archive.lz`) và nơi bạn muốn lưu tệp đã giải nén.
 
-## Nhập không gian tên
+## Nhập Namespace
 
-Trước tiên, hãy nhập các không gian tên cần thiết để bắt đầu quá trình giải nén của chúng tôi:
+Đầu tiên, nhập các namespace cần thiết cho I/O tệp và hỗ trợ Lzip của Aspose.Zip:
 
 ```csharp
 using System;
@@ -37,17 +51,17 @@ using System.IO;
 using Aspose.Zip.Lzip;
 ```
 
-## Bước 1: Khởi tạo thư mục tài liệu của bạn
+## Giải Nén Archive .NET: Thiết Lập Thư Mục Làm Việc
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-Đảm bảo thay thế "Thư mục tài liệu của bạn" bằng đường dẫn thực tế nơi đặt tệp nén của bạn.
+Thay thế `"Your Document Directory"` bằng đường dẫn tuyệt đối hoặc tương đối chứa `archive.lz`. Việc giữ đường dẫn trong một biến giúp mã tái sử dụng và dễ bảo trì hơn.
 
-## Bước 2: Mở và giải nén từ kho lưu trữ Lzip
+## Bước 1: Mở và Giải Nén Archive Lzip Bằng C#
 
-Bây giờ, hãy đi sâu vào trọng tâm của quá trình. Chúng tôi sẽ mở kho lưu trữ Lzip và trích xuất nội dung của nó:
+Phần cốt lõi của thao tác **c# extract from archive** là một khối `using` ngắn gọn mở tệp Lzip và ghi dữ liệu đã giải nén vào tệp mới.
 
 ```csharp
 //ExStart: OpenLzipArchive
@@ -62,36 +76,53 @@ using (var archive = new LzipArchive(Path.Combine(dataDir, "archive.lz")))
 Console.WriteLine("Successfully Opened Lzip Archive");
 ```
 
- Bước này khởi tạo một phiên bản của`LzipArchive` class, mở tệp lưu trữ được chỉ định và trích xuất nội dung của nó vào tệp đầu ra.
+Đoạn mã này minh họa mẫu **extract lzip archive c#**:
 
-## Phần kết luận
+1. **Tạo** một đối tượng `LzipArchive` trỏ tới tệp nguồn.  
+2. **Tạo** tệp đích (`output.txt`).  
+3. **Gọi** `Extract` để ghi các byte đã giải nén.  
+4. Các câu lệnh `using` đảm bảo tất cả stream được đóng tự động.
 
- Chúc mừng! Bạn đã học thành công cách giải nén tệp bằng Aspose.Zip cho .NET. Thư viện mạnh mẽ này hợp lý hóa quy trình xử lý các tệp nén trong ứng dụng .NET của bạn. Khi bạn khám phá thêm các tính năng, hãy tham khảo[tài liệu](https://reference.aspose.com/zip/net/) để biết thông tin chi tiết.
+## Các Vấn Đề Thường Gặp và Giải Pháp
 
-## Câu hỏi thường gặp
+| Triệu chứng | Nguyên nhân có thể | Cách khắc phục |
+|------------|--------------------|----------------|
+| `FileNotFoundException` | Đường dẫn `dataDir` sai | Kiểm tra lại đường dẫn thư mục và chắc chắn `archive.lz` tồn tại. |
+| `UnauthorizedAccessException` | Thiếu quyền ghi | Chạy ứng dụng với quyền thích hợp hoặc chọn thư mục có thể ghi. |
+| Tệp đầu ra rỗng | Archive bị hỏng hoặc không phải Lzip | Xác nhận tệp nguồn là archive Lzip hợp lệ; dùng `LzipArchive.IsValid` nếu cần. |
 
-### Câu hỏi 1: Aspose.Zip có tương thích với tất cả các ứng dụng .NET không?
+## Câu Hỏi Thường Gặp
 
-Câu trả lời 1: Có, Aspose.Zip dành cho .NET được thiết kế để tích hợp liền mạch với nhiều ứng dụng .NET khác nhau, cung cấp khả năng nén và giải nén tệp hiệu quả.
+**H: Aspose.Zip có tương thích với mọi ứng dụng .NET không?**  
+Đ: Có, Aspose.Zip cho .NET tích hợp được với các dự án desktop, web, cloud và micro‑service.
 
-### Câu hỏi 2: Tôi có thể sử dụng Aspose.Zip cho cả dự án cá nhân và thương mại không?
+**H: Tôi có thể dùng Aspose.Zip cho cả dự án cá nhân và thương mại không?**  
+Đ: Chắc chắn. Thư viện cung cấp các tùy chọn giấy phép linh hoạt cho đánh giá, cá nhân và thương mại.
 
-A2: Chắc chắn rồi! Aspose.Zip for .NET cung cấp các tùy chọn cấp phép linh hoạt, làm cho nó phù hợp cho cả mục đích sử dụng cá nhân và thương mại.
+**H: Làm sao tôi có thể nhận hỗ trợ cho Aspose.Zip cho .NET?**  
+Đ: Truy cập [diễn đàn Aspose.Zip](https://forum.aspose.com/c/zip/37) để đặt câu hỏi và chia sẻ kinh nghiệm với cộng đồng.
 
-### Câu hỏi 3: Làm cách nào tôi có thể nhận được hỗ trợ cho Aspose.Zip cho .NET?
+**H: Có bản dùng thử miễn phí không?**  
+Đ: Có, bạn có thể khám phá các tính năng của Aspose.Zip cho .NET bằng cách tải bản dùng thử miễn phí [tại đây](https://releases.aspose.com/).
 
-A3: Nếu có bất kỳ thắc mắc hoặc hỗ trợ nào, bạn có thể truy cập[Diễn đàn Aspose.Zip](https://forum.aspose.com/c/zip/37) để kết nối với cộng đồng và tìm kiếm sự hướng dẫn.
+**H: Tôi có thể mua Aspose.Zip cho .NET ở đâu?**  
+Đ: Để mua giấy phép, hãy vào [trang mua hàng](https://purchase.aspose.com/buy).
 
-### Q4: Có bản dùng thử miễn phí không?
+## Kết Luận
 
- Câu trả lời 4: Có, bạn có thể khám phá các tính năng của Aspose.Zip dành cho .NET bằng cách tải xuống bản dùng thử miễn phí[đây](https://releases.aspose.com/).
+Bạn đã nắm vững cách **giải nén file .NET** bằng API đơn giản của Aspose.Zip. Cách tiếp cận này đơn giản hoá việc giải nén archive .NET, giảm thiểu mã lặp lại và mở rộng tốt cho các ứng dụng quy mô lớn. Đối với các kịch bản phức tạp hơn—archive có mật khẩu, giải nén đa tệp, hoặc mức nén tùy chỉnh—hãy tham khảo đầy đủ [tài liệu](https://reference.aspose.com/zip/net/).
 
-### Câu hỏi 5: Tôi có thể mua Aspose.Zip cho .NET ở đâu?
-
- Câu trả lời 5: Để mua Aspose.Zip cho .NET, hãy truy cập[trang mua hàng](https://purchase.aspose.com/buy).
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Cập nhật lần cuối:** 2025-12-12  
+**Đã kiểm tra với:** Aspose.Zip 24.11 cho .NET  
+**Tác giả:** Aspose  
+
+---
