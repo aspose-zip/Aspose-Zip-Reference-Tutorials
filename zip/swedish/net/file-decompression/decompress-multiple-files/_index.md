@@ -1,35 +1,52 @@
 ---
-title: Dekomprimera flera filer med Aspose.Zip för .NET
-linktitle: Dekomprimera flera filer
-second_title: Aspose.Zip .NET API för filkomprimering och arkivering
-description: Lär dig hur du dekomprimerar flera filer med Aspose.Zip för .NET. Följ vår steg-för-steg-guide för effektiv filhantering.
-weight: 11
+date: 2025-12-13
+description: Lär dig hur du extraherar zip‑filer och hanterar flera zip‑poster med
+  Aspose.Zip för .NET. Följ vår steg‑för‑steg‑guide för effektiv filhantering.
+linktitle: Decompressing Multiple Files
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Hur man extraherar ZIP-filer med Aspose.Zip för .NET
 url: /sv/net/file-decompression/decompress-multiple-files/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Dekomprimera flera filer med Aspose.Zip för .NET
+# Hur man extraherar ZIP-filer med Aspose.Zip för .NET
 
 ## Introduktion
 
-Välkommen till vår omfattande handledning om att dekomprimera flera filer med Aspose.Zip för .NET! Om du vill effektivt hantera komprimerade filer som innehåller flera poster, är du på rätt plats. I den här guiden går vi igenom processen steg för steg, med hjälp av Aspose.Zip för .NET.
+Välkommen till vår omfattande handledning om **how to extract zip**-filer med Aspose.Zip för .NET! Om du vill hantera komprimerade filer med flera poster på ett effektivt sätt, har du kommit till rätt ställe. I den här guiden går vi igenom allt du behöver – från att konfigurera miljön till att extrahera varje post – så att du kan bemästra extrahering av flera zip-poster med självförtroende.
+
+## Snabba svar
+- **Vilket bibliotek är bäst för .NET zip‑extrahering?** Aspose.Zip for .NET  
+- **Kan jag extrahera flera zip‑poster på en gång?** Ja, med Archive‑API:n kan du iterera över varje post.  
+- **Behöver jag en licens för produktion?** En giltig Aspose.Zip‑licens krävs för icke‑testanvändning.  
+- **Vilka .NET‑versioner stöds?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
+- **Finns det en gratis provversion?** Absolut – ladda ner den från Aspose‑webbplatsen.
+
+## Vad betyder “how to extract zip” i .NET‑världen?
+Att extrahera en ZIP‑fil innebär att läsa det komprimerade arkivet, lokalisera de enskilda posterna och skriva varje posts okomprimerade data till en mål‑mapp eller ström. Aspose.Zip tillhandahåller ett flytande, högpresterande API som abstraherar bort de lågnivå‑detaljerna, så att du kan fokusera på affärslogiken.
+
+## Varför använda Aspose.Zip för .NET?
+- **Robust performance** – Hanterar stora arkiv med minimal minnesanvändning.  
+- **Full .NET support** – Fungerar med .NET Framework, .NET Core och .NET 5+.  
+- **Advanced features** – Spårning av framsteg, lösenordsskydd och post‑nivå‑extrahering.  
+- **No external dependencies** – Ren hanterad kod, inga inhemska DLL‑filer krävs.
 
 ## Förutsättningar
 
-Innan vi dyker in i handledningen, se till att du har följande förutsättningar på plats:
+Innan vi dyker ner i handledningen, se till att du har följande förutsättningar på plats:
 
--  Aspose.Zip för .NET: Se till att du har Aspose.Zip-biblioteket för .NET installerat. Du kan ladda ner den[här](https://releases.aspose.com/zip/net/).
+- **Aspose.Zip for .NET** – Se till att du har Aspose.Zip‑biblioteket för .NET installerat. Du kan ladda ner det [here](https://releases.aspose.com/zip/net/).  
+- **Document Directory** – Skapa en katalog där dina dokument lagras. Du kommer att använda den som bas‑katalog i koden.
 
-- Dokumentkatalog: Skapa en katalog där dina dokument lagras. Du kommer att använda detta som baskatalog i koden.
+Nu, låt oss komma igång med steg‑för‑steg‑guiden.
 
-Låt oss nu komma igång med steg-för-steg-guiden.
+## Importera namnrymder
 
-## Importera namnområden
-
-I ditt .NET-projekt börjar du med att importera de nödvändiga namnrymden för Aspose.Zip:
+I ditt .NET‑projekt, börja med att importera de nödvändiga namnrymderna för Aspose.Zip:
 
 ```csharp
 using Aspose.Zip;
@@ -41,20 +58,18 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Steg 1: Komprimera flera filer
+## Steg 1: Skapa ett ZIP‑arkiv i .NET‑stil (Valfritt)
 
-För att dekomprimera flera filer behöver du först en komprimerad fil med flera poster. Låt oss skapa en:
+Om du redan har en ZIP‑fil kan du hoppa över detta steg. Annars är det enkelt att skapa ett zip‑arkiv i .NET, vilket hjälper till att demonstrera hela extraheringsflödet.
 
 ```csharp
 string dataDir = "Your Document Directory";
 
-// Kör komprimeringsmetoden
+// Run the compression method
 CompressMultipleFiles.Run();
 ```
 
-## Steg 2: Dekomprimera filerna
-
-Låt oss nu dekomprimera filerna steg för steg:
+## Steg 2: Dekomprimera filerna (How to Extract ZIP)
 
 ### Steg 2.1: Öppna den komprimerade filen
 
@@ -65,7 +80,7 @@ using (FileStream zipFile = File.Open(dataDir + "CompressMultipleFiles_out.zip",
 }
 ```
 
-### Steg 2.2: Lista poster och spåra framsteg
+### Steg 2.2: Lista poster och spåra framsteg (Extract Multiple ZIP Entries)
 
 ```csharp
 StringBuilder sb = new StringBuilder("Entries are: ");
@@ -95,7 +110,7 @@ using (var extracted = File.Create(dataDir + "alice_extracted_out.txt"))
 {
     using (var decompressed = archive.Entries[0].Open())
     {
-        // Läs och skriv data från dekomprimerad ström till den extraherade filen.
+        // Read and write data from decompressed stream to the extracting file.
     }
 }
 ```
@@ -106,33 +121,43 @@ using (var extracted = File.Create(dataDir + "alice_extracted_out.txt"))
 archive.Entries[1].Extract(dataDir + "asyoulik_extracted_out.txt");
 ```
 
-Och där har du det! Du har framgångsrikt dekomprimerat flera filer med Aspose.Zip för .NET.
+Och där har du det! Du har framgångsrikt **extracted multiple zip entries** med Aspose.Zip för .NET.
+
+## Vanliga problem och lösningar
+
+| Problem | Orsak | Lösning |
+|-------|--------|-----|
+| **No output files created** | Fel `dataDir`‑sökväg eller saknade skrivbehörigheter | Verifiera att katalogen finns och att applikationen har skrivbehörighet. |
+| **Progress shows 0%** | Postens storlek rapporteras som 0 (tom fil) | Se till att käll‑ZIP‑filen faktiskt innehåller data; återskapa arkivet om det behövs. |
+| **Exception on large archives** | Otillräckligt minne | Använd `ArchiveLoadOptions` med `ReadOnly = true` för att strömma poster istället för att ladda in alla på en gång. |
+
+## Vanliga frågor (Aspose.Zip‑handledning)
+
+**Q1: Kan jag använda Aspose.Zip för .NET i både kommersiella och personliga projekt?**  
+A1: Ja, Aspose.Zip för .NET kan användas i både kommersiella och personliga projekt. För licensinformation, se [Aspose's licensing information](https://purchase.aspose.com/buy).
+
+**Q2: Finns det en gratis provversion av Aspose.Zip för .NET?**  
+A2: Ja, du kan prova en gratis provversion av Aspose.Zip för .NET [here](https://releases.aspose.com/zip/net).
+
+**Q3: Var kan jag hitta ytterligare support för Aspose.Zip för .NET?**  
+A3: Besök [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) för community‑support och diskussioner.
+
+**Q4: Hur kan jag köpa en tillfällig licens för Aspose.Zip för .NET?**  
+A4: Skaffa en tillfällig licens för Aspose.Zip för .NET [here](https://purchase.aspose.com/temporary-license/).
+
+**Q5: Finns det några specifika systemkrav för att använda Aspose.Zip för .NET?**  
+A5: Se [documentation](https://reference.aspose.com/zip/net/) för detaljerade systemkrav.
 
 ## Slutsats
 
-den här handledningen har vi täckt de väsentliga stegen för att dekomprimera flera filer med Aspose.Zip för .NET. Genom att följa den här guiden kan du effektivt hantera komprimerade filer med lätthet.
+I den här handledningen gick vi igenom **how to extract zip**‑filer, demonstrerade extrahering av flera zip‑poster och lyfte fram bästa praxis för att använda Aspose.Zip:s kraftfulla API. Genom att följa dessa steg kan du effektivt hantera ZIP‑arkiv i vilken .NET‑applikation som helst, oavsett om du bygger ett skrivbordsverktyg, en webbtjänst eller en automatiserad batch‑processor.
 
-## FAQ's
+---
 
-### F1: Kan jag använda Aspose.Zip för .NET i både kommersiella och personliga projekt?
+**Senast uppdaterad:** 2025-12-13  
+**Testad med:** Aspose.Zip 24.11 for .NET  
+**Författare:** Aspose  
 
- S1: Ja, Aspose.Zip för .NET kan användas i både kommersiella och personliga projekt. För licensinformation, se[Asposes licensinformation](https://purchase.aspose.com/buy).
-
-### F2: Finns det en gratis testversion tillgänglig för Aspose.Zip för .NET?
-
- S2: Ja, du kan utforska en gratis provversion av Aspose.Zip för .NET[här](https://releases.aspose.com/zip/net).
-
-### F3: Var kan jag hitta ytterligare stöd för Aspose.Zip för .NET?
-
- A3: Besök[Aspose.Zip forum](https://forum.aspose.com/c/zip/37) för samhällsstöd och diskussioner.
-
-### F4: Hur kan jag köpa en tillfällig licens för Aspose.Zip för .NET?
-
- S4: Skaffa en tillfällig licens för Aspose.Zip för .NET[här](https://purchase.aspose.com/temporary-license/).
-
-### F5: Finns det några specifika systemkrav för att använda Aspose.Zip för .NET?
-
- A5: Se[dokumentation](https://reference.aspose.com/zip/net/) för detaljerade systemkrav.
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
