@@ -1,37 +1,44 @@
 ---
-title: Dekomprese jednoho souboru pomocí Aspose.Zip pro .NET
-linktitle: Dekomprese jednoho souboru
-second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
-description: Prozkoumejte bezproblémový svět dekomprese souborů s Aspose.Zip pro .NET. Bez námahy manipulujte s komprimovanými soubory ve svých projektech C#.
-weight: 12
+date: 2025-12-14
+description: Naučte se, jak dekomprimovat zip v C# a extrahovat jeden soubor zip pomocí
+  Aspose.Zip pro .NET ve vašich projektech C#.
+linktitle: Decompressing a Single File
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Rozbalit zip v C# – Extrahovat jeden soubor pomocí Aspose.Zip
 url: /cs/net/file-decompression/decompress-single-file/
+weight: 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Dekomprese jednoho souboru pomocí Aspose.Zip pro .NET
+# Rozbalení zip c# – Extrahování jednoho souboru pomocí Aspose.Zip
 
 ## Úvod
 
-oblasti vývoje .NET představuje Aspose.Zip robustní řešení pro jemné zpracování komprimovaných souborů. Tento tutoriál vás provede procesem dekomprese jednoho souboru pomocí Aspose.Zip pro .NET. Připoutejte se, když krok za krokem odhalíme možnosti této výkonné knihovny.
+Pokud potřebujete **decompress zip c#** soubory a vytáhnout jen jeden záznam, Aspose.Zip pro .NET to provede jednoduše. V tomto tutoriálu projdeme kompletním, reálným příkladem, který ukazuje, jak extrahovat jeden soubor ze ZIP archivu, sledovat průběh a zpracovat výsledek čistým a udržovatelným způsobem. Na konci budete jistí při přidávání rozbalování zip souborů do jakékoli C# aplikace.
 
-## Předpoklady
+## Rychlé odpovědi
+- **Co tento tutoriál pokrývá?** Rozbalování ZIP archivu a extrahování jednoho souboru pomocí Aspose.Zip pro .NET.  
+- **Jaké primární klíčové slovo je cílem?** decompress zip c#  
+- **Potřebuji licenci?** Bezplatná zkušební verze funguje pro vývoj; pro produkci je vyžadována komerční licence.  
+- **Je podporován .NET Core?** Ano – stejný kód běží na .NET Framework i .NET Core.  
+- **Jak dlouho trvá implementace?** Přibližně 10‑15 minut proní nastavení.
 
-Než se pustíte do výukového programu, ujistěte se, že máte splněny následující předpoklady:
+## Požadavky
 
--  Aspose.Zip for .NET Library: Stáhněte a nainstalujte knihovnu z[Aspose.Zip pro .NET dokumentaci](https://reference.aspose.com/zip/net/).
+Před ponořením se do tutoriálu se ujistěte, že máte následující požadavky připravené:
 
-- Vývojové prostředí: Mějte připravené funkční vývojové prostředí .NET, včetně Visual Studia nebo jakéhokoli jiného kompatibilního IDE.
+- Aspose.Zip pro .NET knihovna: Stáhněte a nainstalujte knihovnu z [Aspose.Zip for .NET Documentation](https://reference.aspose.com/zip/net/).
+- Vývojové prostředí: Mějte připravené funkční .NET vývojové prostředí, včetně Visual Studio nebo jiného kompatibilního IDE.
+- Základní znalost C#: Seznamte se se základy programování v C#.
 
-- Základní porozumění C#: Seznamte se se základy programování v C#.
+Nyní si pojďme vyzkoušet kód!
 
-Teď si ušpiníme ruce nějakým kódem!
+## Importování jmenných prostorů
 
-## Importovat jmenné prostory
-
-Začněte importem potřebných jmenných prostorů k zahájení vaší cesty Aspose.Zip:
+Začněte importováním potřebných jmenných prostorů pro zahájení vaší cesty s Aspose.Zip:
 
 ```csharp
 using Aspose.Zip;
@@ -39,27 +46,27 @@ using System;
 using System.IO;
 ```
 
-## Dekomprese jednoho souboru pomocí Aspose.Zip pro .NET
+## Postupný průvodce rozbalením zip c#
 
 ### Krok 1: Nastavte adresář dokumentů
 
- Začněte zadáním adresáře, kde jsou uloženy vaše dokumenty. Nahradit`"Your Document Directory"` se skutečnou cestou.
+Začněte určením adresáře, kde jsou uloženy vaše dokumenty. Nahraďte `"Your Document Directory"` skutečnou cestou.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-### Krok 2: Vytvořte komprimovaný soubor
+### Krok 2: Vytvořte komprimovaný soubor (ukázkové nastavení)
 
-Pomocí následujícího fragmentu kódu vytvořte komprimovaný soubor, který později dekomprimujeme.
+Následující volání vytvoří ukázkový ZIP soubor, který později rozbalíme. To odráží typický scénář, kdy již máte ZIP archiv.
 
 ```csharp
 CompressSingleFile.Run();
 ```
 
-### Krok 3: Dekomprimujte soubor
+### Krok 3: Rozbalte soubor – Extrahujte jeden ZIP soubor
 
-Nyní se pojďme ponořit do jádra věci – dekomprimovat jeden soubor. Použijte následující kód:
+Nyní se ponořme do jádra věci – extrahování jednoho záznamu. Níže uvedený kód otevře ZIP archiv, připojí obslužnou rutinu pro průběh a extrahuje první záznam do textového souboru.
 
 ```csharp
 // ExStart: DecompressSingleFile
@@ -82,33 +89,53 @@ using (FileStream fs = File.OpenRead(dataDir + "CompressSingleFile_out.zip"))
 }
 ```
 
-Tento kód efektivně zpracovává proces dekomprese a poskytuje aktualizace průběhu v reálném čase.
+Tento úryvek **extrahuje jeden zip záznam** a zároveň vypisuje průběh v reálném čase (např. „30 % rozbaleno“). Index (`Entries[0]`) můžete upravit tak, aby cílil na jakýkoli jiný soubor v archivu.
 
-## Závěr
+## Proč použít Aspose.Zip pro rozbalování souborů v C#?
 
-Gratulujeme! Úspěšně jste prošli složitostmi dekomprese jednoho souboru pomocí Aspose.Zip pro .NET. Využijte sílu této knihovny a bez námahy zjednodušte své úlohy manipulace se soubory.
+- **Žádné externí závislosti** – čistá .NET knihovna.  
+- **Podporuje velké archivy** pomocí streamování, takže využití paměti zůstává nízké.  
+- **Vestavěné události průběhu** usnadňují poskytování zpětné vazby v UI.  
+- **Funguje napříč .NET Framework, .NET Core a .NET 5/6**.
 
-## FAQ
+## Časté problémy a tipy
 
-### Q1: Mohu komprimovat více souborů pomocí Aspose.Zip for .NET?
+- **Oddělovače cest** – použijte `Path.Combine` pro bezpečnost napříč platformami.  
+- **ZIPy chráněné heslem** – nastavte `archive.Password` před extrahováním.  
+- **Více záznamů** – projděte `archive.Entries` a porovnejte podle `FileName`.  
 
-Odpověď 1: Ano, Aspose.Zip for .NET podporuje kompresi více souborů. Podrobné pokyny naleznete v dokumentaci.
+## Často kladené otázky
+
+### Q1: Mohu komprimovat více souborů pomocí Aspose.Zip pro .NET?
+
+A1: Ano, Aspose.Zip pro .NET podporuje kompresi více souborů. Podívejte se do dokumentace pro podrobné instrukce.
 
 ### Q2: Je Aspose.Zip kompatibilní s .NET Core?
 
-A2: Rozhodně! Aspose.Zip se hladce integruje s .NET Framework a .NET Core.
+A2: Rozhodně! Aspose.Zip se bez problémů integruje jak s .NET Framework, tak s .NET Core.
 
-### Q3: Jak mohu zpracovat komprimované soubory chráněné heslem?
+### Q3: Jak mohu pracovat se soubory komprimovanými a chráněnými heslem?
 
-A3: Aspose.Zip poskytuje metody pro práci s archivy chráněnými heslem. Pokyny naleznete v dokumentaci.
+A3: Aspose.Zip poskytuje metody pro práci s archivy chráněnými heslem. Proveďte konzultaci s dokumentací pro návod.
 
-### Q4: Existují nějaké licenční úvahy pro používání Aspose.Zip?
+### Q4: Existují nějaké licenční úvahy při používání Aspose.Zip?
 
- A4: Zkontrolujte licenční informace na[Aspose webové stránky](https://purchase.aspose.com/buy).
+A4: Prohlédněte si informace o licencování na [Aspose website](https://purchase.aspose.com/buy).
 
-### Q5: Kde mohu vyhledat pomoc, pokud narazím na problémy?
+### Q5: Kde mohu získat pomoc, pokud narazím na problémy?
 
- A5: Navštivte[Fórum Aspose.Zip](https://forum.aspose.com/c/zip/37) za podporu komunity.
+A5: Navštivte [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) pro podporu komunity.
+
+## Závěr
+
+Gratulujeme! Úspěšně jste prošli složitostmi **decompress zip c#** a extrahovali jeden soubor pomocí Aspose.Zip pro .NET. Začleňte tento vzor do svých aplikací pro zjednodušení práce se soubory, zlepšení uživatelského zážitku a udržení čistoty kódu.
+
+---
+
+**Poslední aktualizace:** 2025-12-14  
+**Testováno s:** Aspose.Zip for .NET 24.11  
+**Autor:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

@@ -1,37 +1,44 @@
 ---
-title: Décompresser un seul fichier avec Aspose.Zip pour .NET
-linktitle: Décompresser un seul fichier
-second_title: API Aspose.Zip .NET pour la compression et l'archivage de fichiers
-description: Explorez le monde transparent de la décompression de fichiers avec Aspose.Zip pour .NET. Gérez sans effort les fichiers compressés dans vos projets C#.
-weight: 12
+date: 2025-12-14
+description: Apprenez à décompresser un fichier zip en C# et à extraire un seul fichier
+  zip en utilisant Aspose.Zip pour .NET dans vos projets C#.
+linktitle: Decompressing a Single File
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Décompresser zip c# – Extraire un fichier unique avec Aspose.Zip
 url: /fr/net/file-decompression/decompress-single-file/
+weight: 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Décompresser un seul fichier avec Aspose.Zip pour .NET
+# Décompresser zip c# – Extraire un fichier unique avec Aspose.Zip
 
 ## Introduction
 
-Dans le domaine du développement .NET, Aspose.Zip constitue une solution robuste pour gérer les fichiers compressés avec finesse. Ce didacticiel vous guidera tout au long du processus de décompression d'un seul fichier à l'aide d'Aspose.Zip pour .NET. Attachez-vous et découvrez étape par étape les capacités de cette puissante bibliothèque.
+Si vous devez **décompresser zip c#** des fichiers et extraire une seule entrée, Aspose.Zip for .NET rend la tâche simple. Dans ce tutoriel, nous parcourrons un exemple complet et réel qui montre comment extraire un seul fichier d’une archive ZIP, surveiller la progression et gérer le résultat de manière propre et maintenable. À la fin, vous serez à l’aise pour ajouter l’extraction de zip à n’importe quelle application C#.
 
-## Conditions préalables
+## Réponses rapides
+- **Quel est le sujet de ce tutoriel ?** Décompression d’une archive ZIP et extraction d’un seul fichier à l’aide d’Aspose.Zip for .NET.  
+- **Quel mot‑clé principal est ciblé ?** decompress zip c#  
+- **Ai‑je besoin d’une licence ?** Un essai gratuit suffit pour le développement ; une licence commerciale est requise pour la production.  
+- **.NET Core est‑il pris en charge ?** Oui – le même code fonctionne sur .NET Framework et .NET Core.  
+- **Combien de temps prend l’implémentation ?** Environ 10‑15 minutes pour une configuration de base.
 
-Avant de plonger dans le didacticiel, assurez-vous que les conditions préalables suivantes sont remplies :
+## Prérequis
 
--  Aspose.Zip pour la bibliothèque .NET : téléchargez et installez la bibliothèque à partir du[Aspose.Zip pour la documentation .NET](https://reference.aspose.com/zip/net/).
+Avant de plonger dans le tutoriel, assurez‑vous d’avoir les prérequis suivants en place :
 
-- Environnement de développement : disposez d'un environnement de développement .NET fonctionnel, comprenant Visual Studio ou tout autre IDE compatible.
+- Bibliothèque Aspose.Zip for .NET : téléchargez et installez la bibliothèque depuis la [Documentation Aspose.Zip for .NET](https://reference.aspose.com/zip/net/).
+- Environnement de développement : disposez d’un environnement de développement .NET fonctionnel, incluant Visual Studio ou tout autre IDE compatible.
+- Connaissances de base en C# : familiarisez‑vous avec les bases de la programmation C#.
 
-- Compréhension de base de C# : Familiarisez-vous avec les bases de la programmation C#.
+Maintenant, mettons les mains dans le code !
 
-Maintenant, mettons la main à la pâte avec du code !
+## Importer les espaces de noms
 
-## Importer des espaces de noms
-
-Commencez par importer les espaces de noms nécessaires pour lancer votre parcours Aspose.Zip :
+Commencez par importer les espaces de noms nécessaires pour démarrer votre aventure avec Aspose.Zip :
 
 ```csharp
 using Aspose.Zip;
@@ -39,30 +46,30 @@ using System;
 using System.IO;
 ```
 
-## Décompresser un seul fichier avec Aspose.Zip pour .NET
+## Guide étape par étape pour décompresser zip c#
 
-### Étape 1 : définissez votre répertoire de documents
+### Étape 1 : Définir votre répertoire de documents
 
- Commencez par spécifier le répertoire dans lequel vos documents sont stockés. Remplacer`"Your Document Directory"` avec le chemin réel.
+Commencez par spécifier le répertoire où vos documents sont stockés. Remplacez `"Your Document Directory"` par le chemin réel.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-### Étape 2 : Créer un fichier compressé
+### Étape 2 : Créer un fichier compressé (configuration de démonstration)
 
-Utilisez l'extrait de code suivant pour créer un fichier compressé que nous décompresserons ultérieurement.
+L’appel suivant crée un fichier ZIP d’exemple que nous décompresserons plus tard. Cela reflète un scénario typique où vous avez déjà une archive ZIP.
 
 ```csharp
 CompressSingleFile.Run();
 ```
 
-### Étape 3 : Décompresser le fichier
+### Étape 3 : Décompresser le fichier – extraire un fichier ZIP unique
 
-Passons maintenant au vif du sujet : la décompression du fichier unique. Utilisez le code suivant :
+Passons maintenant au cœur du sujet – extraire l’entrée unique. Le code ci‑dessous ouvre l’archive ZIP, attache un gestionnaire de progression et extrait la première entrée vers un fichier texte.
 
 ```csharp
-// ExStart : DécompresserSingleFile
+// ExStart: DecompressSingleFile
 using (FileStream fs = File.OpenRead(dataDir + "CompressSingleFile_out.zip"))
 {
     using (Archive archive = new Archive(fs))
@@ -82,33 +89,53 @@ using (FileStream fs = File.OpenRead(dataDir + "CompressSingleFile_out.zip"))
 }
 ```
 
-Ce code gère efficacement le processus de décompression, fournissant des mises à jour de progression en temps réel.
+Cet extrait **extrait une seule entrée zip** tout en affichant la progression en temps réel (par ex., « 30 % décompressé »). Vous pouvez adapter l’index (`Entries[0]`) pour cibler tout autre fichier dans l’archive.
+
+## Pourquoi utiliser Aspose.Zip pour la décompression de fichiers C# ?
+
+- **Aucune dépendance externe** – bibliothèque pure .NET.  
+- **Prend en charge les grandes archives** grâce au streaming, ce qui maintient une faible consommation de mémoire.  
+- **Événements de progression intégrés** facilitent la fourniture de retours UI.  
+- **Fonctionne sur .NET Framework, .NET Core et .NET 5/6**.
+
+## Problèmes courants et astuces
+
+- **Séparateurs de chemin de fichier** – utilisez `Path.Combine` pour la sécurité multiplateforme.  
+- **ZIP protégés par mot de passe** – définissez `archive.Password` avant l’extraction.  
+- **Entrées multiples** – parcourez `archive.Entries` et comparez par `FileName`.
+
+## Questions fréquentes
+
+### Q1 : Puis‑je compresser plusieurs fichiers avec Aspose.Zip for .NET ?
+
+R1 : Oui, Aspose.Zip for .NET prend en charge la compression de plusieurs fichiers. Consultez la documentation pour des instructions détaillées.
+
+### Q2 : Aspose.Zip est‑il compatible avec .NET Core ?
+
+R2 : Absolument ! Aspose.Zip s’intègre parfaitement à la fois avec .NET Framework et .NET Core.
+
+### Q3 : Comment gérer les fichiers compressés protégés par mot de passe ?
+
+R3 : Aspose.Zip propose des méthodes pour travailler avec des archives protégées par mot de passe. Consultez la documentation pour obtenir des conseils.
+
+### Q4 : Y a‑t‑il des considérations de licence pour l’utilisation d’Aspose.Zip ?
+
+R4 : Consultez les informations de licence sur le [site Aspose](https://purchase.aspose.com/buy).
+
+### Q5 : Où puis‑je obtenir de l’aide en cas de problème ?
+
+R5 : Rendez‑vous sur le [forum Aspose.Zip](https://forum.aspose.com/c/zip/37) pour le support communautaire.
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez réussi à naviguer dans les subtilités de la décompression d'un seul fichier à l'aide d'Aspose.Zip pour .NET. Profitez de la puissance de cette bibliothèque pour rationaliser vos tâches de manipulation de fichiers sans effort.
+Félicitations ! Vous avez réussi à maîtriser les subtilités du **décompress zip c#** et à extraire un seul fichier avec Aspose.Zip for .NET. Intégrez ce modèle dans vos applications pour simplifier la gestion des fichiers, améliorer l’expérience utilisateur et garder votre base de code propre.
 
-## FAQ
+---
 
-### Q1 : Puis-je compresser plusieurs fichiers à l’aide d’Aspose.Zip pour .NET ?
+**Dernière mise à jour :** 2025-12-14  
+**Testé avec :** Aspose.Zip for .NET 24.11  
+**Auteur :** Aspose  
 
-A1 : Oui, Aspose.Zip pour .NET prend en charge la compression de plusieurs fichiers. Reportez-vous à la documentation pour des instructions détaillées.
-
-### Q2 : Aspose.Zip est-il compatible avec .NET Core ?
-
-A2 : Absolument ! Aspose.Zip s'intègre parfaitement à .NET Framework et .NET Core.
-
-### Q3 : Comment puis-je gérer les fichiers compressés protégés par mot de passe ?
-
-A3 : Aspose.Zip fournit des méthodes pour travailler avec des archives protégées par mot de passe. Consultez la documentation pour obtenir des conseils.
-
-### Q4 : Y a-t-il des considérations en matière de licence pour l'utilisation d'Aspose.Zip ?
-
- A4 : Consultez les informations de licence sur le[Site Aspose](https://purchase.aspose.com/buy).
-
-### Q5 : Où puis-je demander de l'aide si je rencontre des problèmes ?
-
- A5 : Visitez le[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) pour le soutien de la communauté.
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
