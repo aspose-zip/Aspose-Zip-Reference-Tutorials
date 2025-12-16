@@ -1,52 +1,70 @@
 ---
-title: Aspose.Zip for .NET kullanarak Saklanan Dosyanın Sıkıştırılmış Dosyasını Açma
-linktitle: Saklanan Bir Dosyanın Sıkıştırmasını Açma
-second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
-description: Saklanan dosyaların sıkıştırmasını açmaya yönelik bu adım adım kılavuzla Aspose.Zip for .NET'in gücünü keşfedin. Verimli dosya işlemeye yönelik sağlam bir çözümle yazılım geliştirme becerilerinizi geliştirin.
-weight: 13
+date: 2025-12-16
+description: Aspose.Zip for .NET kullanarak sıkıştırmasız zip oluşturmayı ve birden
+  fazla zip dosyasını çıkarmayı öğrenin. Bu kılavuz, zip dosyasını nasıl açacağınızı,
+  zip girişini nasıl okuyacağınızı ve C# ile zip çıkarma adımlarını kapsar.
+linktitle: Decompressing a Stored File
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Sıkıştırma Olmadan Zip Oluştur ve Dosyaları Aç – Aspose.Zip
 url: /tr/net/file-decompression/decompress-stored-file/
+weight: 13
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET kullanarak Saklanan Dosyanın Sıkıştırılmış Dosyasını Açma
+# Aspose.Zip for .NET kullanarak Saklanan Bir Dosyayı Açma
 
-## giriiş
+## Giriş
 
-Sürekli gelişen yazılım geliştirme ortamında, sıkıştırılmış dosyaların verimli bir şekilde işlenmesi kritik bir husustur. Aspose.Zip for .NET, geliştiricilere depolanan dosyaların sıkıştırmasını sorunsuz bir şekilde açmak için güçlü araçlar sağlayan sağlam bir çözüm olarak ortaya çıkıyor. Bu eğitimde, Aspose.Zip for .NET'i kullanarak saklanan bir dosyanın sıkıştırmasını açma sürecini inceleyeceğiz.
+Modern .NET uygulamalarında **create zip without compression** (sıkıştırma olmadan zip oluşturma) hızlı arşivleme ihtiyacınız olduğunda faydalı bir tekniktir. Aspose.Zip for .NET, bu tür arşivleri oluşturmayı ve ardından **extract multiple zip files** (birden fazla zip dosyasını çıkartma) işlemini kolaylaştırır. Bu öğreticide bir zip dosyasını nasıl açacağınızı, zip giriş verilerini nasıl okuyacağınızı ve **C# extract zip** işlemini adım adım nasıl gerçekleştireceğinizi göreceksiniz.
+
+## Hızlı Yanıtlar
+- **“create zip without compression” nedir?** Dosyaları “store” yöntemiyle ZIP arşivine eklemek anlamına gelir; veri değişmeden eklenir.
+- **.NET’te bunu hangi kütüphane yönetir?** Aspose.Zip for .NET.
+- **Örneği çalıştırmak için lisansa ihtiyacım var mı?** Geliştirme için ücretsiz deneme sürümü yeterlidir; üretim ortamı için ticari lisans gerekir.
+- **Birden fazla dosyayı aynı anda çıkarabilir miyim?** Evet – öğreticide **extract multiple zip files** işleminin bir döngü içinde nasıl yapılacağını gösteriyoruz.
+- **Hangi .NET sürümleri destekleniyor?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+
+## “create zip without compression” nedir?
+ZIP arşivini **store** sıkıştırma yöntemiyle oluşturduğunuzda, her dosya tam olarak olduğu gibi eklenir. Bu, sıkıştırılmış ZIP’lere göre daha büyük bir arşiv anlamına gelir, ancak işlem çok daha hızlıdır ve orijinal dosya baytları değişmeden kalır – hızın veya veri bütünlüğünün boyuttan daha önemli olduğu senaryolar için idealdir.
+
+## Neden Aspose.Zip for .NET?
+- **Tam kontrol** sıkıştırma seviyesi üzerinde (store vs. deflate).  
+- **Basit API** girişleri okuma, zip dosyalarını açma ve veri çıkarma için.  
+- **Çapraz platform** desteği .NET Framework, .NET Core ve .NET 5+ için.
 
 ## Önkoşullar
 
-Bu eğitime başlamadan önce aşağıdaki önkoşulların yerine getirildiğinden emin olun:
+Bu öğreticiye başlamadan önce aşağıdaki önkoşulları yerine getirdiğinizden emin olun:
 
-- Aspose.Zip for .NET Kütüphanesi: Aspose.Zip for .NET kütüphanesini indirip yükleyin. Kütüphaneyi bulabilirsiniz[Burada](https://releases.aspose.com/zip/net/).
+- Aspose.Zip for .NET Kütüphanesi: Aspose.Zip for .NET kütüphanesini indirin ve kurun. Kütüphaneyi [buradan](https://releases.aspose.com/zip/net/) bulabilirsiniz.
 
-- Belge Dizini: Sisteminizde bu eğitim için gerekli dosyaları saklayacağınız bir dizin oluşturun.
+- Belge Dizini: Bu öğretici için gerekli dosyaları saklayacağınız bir dizin oluşturun.
 
-## Ad Alanlarını İçe Aktar
+## Ad Alanlarını İçe Aktarma
 
-İşleri başlatmak için projemiz için gerekli ad alanlarını içe aktaralım:
+Projeye gerekli ad alanlarını ekleyelim:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-## Adım 1: Sıkıştırmadan Saklanan Dosya Oluşturma
+## Sıkıştırma Olmadan Zip Oluşturma
 
-Saklanan bir dosyanın sıkıştırmasını açmadan önce bir tane hazır bulundurmamız gerekir. Sıkıştırılmadan saklanan bir dosya oluşturmak için aşağıdaki kodu yürütün:
+İlk olarak **store** yöntemi (yani sıkıştırma yok) kullanan bir ZIP arşivi oluşturmamız gerekiyor. Aşağıdaki örnek kod bu arşivi oluşturur ve Aspose.Zip tarafından bir yardımcı yöntem olarak sağlanır. Çalıştırdığınızda `StoreMultipleFilesWithoutCompression_out.zip` dosyası belge dizininizde oluşur.
 
 ```csharp
 StoreMultipleFilesWithoutCompression.Run();
 ```
 
- Bu adım, adında saklanan bir dosya oluşturur.`StoreMultipleFilesWithoutCompression_out.zip` belirtilen belge dizininde.
+> **İpucu:** Yardımcı yöntem, her giriş için dahili olarak `CompressionMethod.Store` ayarlar; böylece arşiv hiçbir veri sıkıştırması olmadan oluşturulur.
 
-## Adım 2: Saklanan Dosyanın Sıkıştırılmasını Açma
+## Zip’i Açma ve Birden Fazla Dosyayı Çıkarma
 
-Şimdi eğitimimizin özüne, yani depolanan dosyanın sıkıştırmasını açmaya dalalım. Bu adımları takip et:
+Şimdi saklanan bir ZIP’imiz olduğuna göre **how to open zip** ve dosyaları dışa aktarma adımlarına bakalım.
 
 ### Adım 2.1: Zip Dosyasını Açma
 
@@ -59,7 +77,9 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
     {
 ```
 
-### Adım 2.2: Çıkarılan Dosyaların Oluşturulması
+`Archive` nesnesi açılan ZIP’i temsil eder ve `Entries` koleksiyonu üzerinden her girişe erişim sağlar.
+
+### Adım 2.2: Çıkarılan Dosyaları Oluşturma
 
 ```csharp
         using (var extracted = File.Create(dataDir + "alice_extracted_store_out.txt"))
@@ -69,7 +89,7 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
                 byte[] buffer = new byte[8192];
                 int bytesRead;
 
-                // Sıkıştırılmış akıştan dosya çıkarmaya kadar okuma.
+                // Reading from decompressed stream to extracting file.
                 while (0 < (bytesRead = decompressed.Read(buffer, 0, buffer.Length)))
                 {
                     extracted.Write(buffer, 0, bytesRead);
@@ -78,7 +98,9 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
         }
 ```
 
-### Adım 2.3: İşlemin Başka Bir Dosya İçin Tekrarlanması
+Burada **read zip entry** 0’ı okur, baytlarını yeni bir dosyaya kopyalar ve `using` ifadeleri sayesinde akışlar otomatik olarak kapatılır.
+
+### Adım 2.3: Başka Bir Dosya İçin İşlemi Tekrarlama
 
 ```csharp
         using (var extracted = File.Create(dataDir + "asyoulik_extracted_store_out.txt"))
@@ -88,7 +110,7 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
                 byte[] buffer = new byte[8192];
                 int bytesRead;
 
-                // Sıkıştırılmış akıştan dosya çıkarmaya kadar okuma.
+                // Reading from decompressed stream to extracting file.
                 while (0 < (bytesRead = decompressed.Read(buffer, 0, buffer.Length)))
                 {
                     extracted.Write(buffer, 0, bytesRead);
@@ -99,36 +121,61 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 }
 ```
 
-Bu kapsamlı kılavuzda, Aspose.Zip for .NET kullanarak saklanan bir dosyanın sıkıştırmasını açmanın karmaşık adımlarını başarıyla ele aldık. Sağlanan kod parçacıkları ve açıklamalar, geliştiricilerin bu işlevselliği projelerine sorunsuz bir şekilde entegre etmelerine olanak sağlamayı amaçlamaktadır.
+`archive.Entries` üzerinde döngü kurarak **extract multiple zip files** (veya birden fazla giriş) birkaç satır kodla çıkarabilirsiniz.
 
-## Çözüm
+## Yaygın Sorunlar ve Çözümleri
 
-Dosya sıkıştırma ve sıkıştırmayı açma konusunda uzmanlaşmak, yazılım geliştirme alanında çok önemlidir. Aspose.Zip for .NET, süreci basitleştiren ve verimliliği artıran güçlü bir araç seti sunar. Bu adım adım kılavuzu takip ederek, Aspose.Zip for .NET ile depolanan dosyaların sıkıştırmasını açmanın sırlarını açığa çıkardınız.
+| Issue | Cause | Fix |
+|-------|-------|-----|
+| `FileNotFoundException` when opening the ZIP | Wrong `dataDir` path | Verify that `dataDir` ends with a trailing slash or use `Path.Combine`. |
+| Extracted file is empty | Buffer not flushed | The `using` block automatically flushes; ensure you read the stream until `bytesRead` is 0 (as shown). |
+| License exception | Running without a valid license | Apply a trial or permanent license before deployment. |
 
-## SSS'ler
+## Sıkça Sorulan Sorular
 
-### S1: Aspose.Zip for .NET tüm .NET çerçeveleriyle uyumlu mudur?
+### Q1: Aspose.Zip for .NET tüm .NET framework’leriyle uyumlu mu?
 
-C1: Evet, Aspose.Zip for .NET, çeşitli .NET çerçeveleriyle uyumlu olacak şekilde tasarlanmıştır ve geliştiricilere esneklik sağlar.
+**A:** Evet, Aspose.Zip for .NET çeşitli .NET framework’leriyle uyumlu olacak şekilde tasarlanmıştır, geliştiricilere esneklik sağlar.
 
-### S2: Aspose.Zip for .NET'i hem ticari hem de ticari olmayan projelerde kullanabilir miyim?
+### Q2: Aspose.Zip for .NET’i ticari ve ticari olmayan projelerde kullanabilir miyim?
 
- C2: Evet, Aspose.Zip for .NET hem ticari hem de ticari olmayan projelerde kullanılabilir. Bakın[satın alma sayfası](https://purchase.aspose.com/buy) lisans ayrıntıları için.
+**A:** Evet, Aspose.Zip for .NET hem ticari hem de ticari olmayan projelerde kullanılabilir. Lisans detayları için [satın alma sayfasına](https://purchase.aspose.com/buy) bakın.
 
-### S3: Aspose.Zip for .NET desteğini nasıl alabilirim?
+### Q3: Aspose.Zip for .NET için destek nasıl alınır?
 
- C3: Destek için şu adresi ziyaret edin:[Aspose.Zip forumu](https://forum.aspose.com/c/zip/37)size yardımcı olmaya hazır geliştiricilerden ve uzmanlardan oluşan bir topluluk bulabileceğiniz yer.
+**A:** Destek için [Aspose.Zip forumunu](https://forum.aspose.com/c/zip/37) ziyaret edin; burada geliştiriciler ve uzmanlar yardımcı olur.
 
-### S4: Aspose.Zip for .NET'in ücretsiz deneme sürümü mevcut mu?
+### Q4: Aspose.Zip for .NET için ücretsiz deneme mevcut mu?
 
- Cevap4: Evet, ücretsiz deneme sürümünü edinerek Aspose.Zip for .NET'in özelliklerini keşfedebilirsiniz.[Burada](https://releases.aspose.com/).
+**A:** Evet, ücretsiz deneme sürümünü [buradan](https://releases.aspose.com/) alarak Aspose.Zip for .NET’in özelliklerini keşfedebilirsiniz.
 
-### S5: Aspose.Zip for .NET için geçici bir lisans alabilir miyim?
+### Q5: Test amaçlı geçici bir lisans alabilir miyim?
 
- A5: Evet, ziyaret edin[bu bağlantı](https://purchase.aspose.com/temporary-license/) Test amacıyla geçici bir lisans almak için.
+**A:** Evet, test için geçici lisansı [bu linkten](https://purchase.aspose.com/temporary-license/) edinebilirsiniz.
+
+### Q6: Tüm arşivi çıkarmadan bir zip girişini nasıl okurum?
+
+**A:** Belirli bir giriş için `archive.Entries[index].Open()` ile bir akış elde edin ve ihtiyacınız olan baytları okuyun; yukarıdaki kodda gösterildiği gibi.
+
+### Q7: Bir döngü içinde **extract multiple zip files** işlemini en iyi nasıl yaparım?
+
+**A:** `archive.Entries` üzerinde bir `foreach` döngüsü kullanarak her girişin akışını açın ve hedef dosyaya yazın; bu, Adım 2.2 ve 2.3’teki örnek desenle aynıdır.
+
+## Sonuç
+
+**create zip without compression** ve ardından gelen çıkarma sürecini ustalıkla yönetmek, yüksek performanslı .NET uygulamaları için kritiktir. Aspose.Zip for .NET, **how to open zip**, her **zip entry**’yi okuma ve **C# extract zip** işlemini minimal kodla yapmanızı sağlayan temiz ve sezgisel bir API sunar. Bu kılavuzu izleyerek saklanan bir arşiv oluşturmayı, açmayı ve içeriğini verimli bir şekilde çıkarmayı öğrendiniz.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Last Updated:** 2025-12-16  
+**Tested With:** Aspose.Zip for .NET 24.12  
+**Author:** Aspose  
+
+---

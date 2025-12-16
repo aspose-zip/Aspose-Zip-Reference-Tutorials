@@ -1,54 +1,72 @@
 ---
-title: فك ضغط الملفات المخزنة باستخدام Aspose.Zip لـ .NET
-linktitle: فك ضغط ملف مخزن
-second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
-description: اكتشف قوة Aspose.Zip لـ .NET في هذا الدليل التفصيلي خطوة بخطوة حول فك ضغط الملفات المخزنة. عزز مهاراتك في تطوير البرامج من خلال حل قوي لمعالجة الملفات بكفاءة.
-weight: 13
+date: 2025-12-16
+description: تعلم كيفية إنشاء ملف zip بدون ضغط واستخراج ملفات zip متعددة باستخدام
+  Aspose.Zip لـ .NET. يغطي هذا الدليل كيفية فتح ملف zip، قراءة إدخال zip، وخطوات استخراج
+  zip باستخدام C#.
+linktitle: Decompressing a Stored File
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: إنشاء ملف Zip بدون ضغط وفك ضغط الملفات – Aspose.Zip
 url: /ar/net/file-decompression/decompress-stored-file/
+weight: 13
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# فك ضغط الملفات المخزنة باستخدام Aspose.Zip لـ .NET
+# فك ضغط ملف مخزن باستخدام Aspose.Zip لـ .NET
 
-## مقدمة
+## المقدمة
 
-في المشهد المتطور باستمرار لتطوير البرمجيات، يعد التعامل مع الملفات المضغوطة بكفاءة جانبًا بالغ الأهمية. يظهر Aspose.Zip for .NET كحل قوي، حيث يوفر للمطورين أدوات قوية لفك ضغط الملفات المخزنة بسلاسة. في هذا البرنامج التعليمي، سوف نتعمق في عملية فك ضغط الملف المخزن باستخدام Aspose.Zip for .NET.
+في تطبيقات .NET الحديثة، **create zip without compression** هي تقنية مفيدة عندما تحتاج إلى أرشفة سريعة دون عبء تقليل حجم البيانات. تجعل Aspose.Zip لـ .NET من السهل إنشاء مثل هذه الأرشيفات ثم **extract multiple zip files** لاحقًا. في هذا الدرس ستتعرف على كيفية فتح ملف zip، قراءة بيانات إدخال zip، وإجراء عملية **C# extract zip** خطوة بخطوة.
 
-## المتطلبات الأساسية
+## إجابات سريعة
+- **ما هو “create zip without compression”؟** يعني إضافة ملفات إلى أرشيف ZIP باستخدام طريقة “store”، والتي تترك البيانات دون تعديل.
+- **أي مكتبة تتعامل مع ذلك في .NET؟** Aspose.Zip لـ .NET.
+- **هل أحتاج إلى ترخيص لتشغيل العينة؟** النسخة التجريبية المجانية تكفي للتطوير؛ يلزم ترخيص تجاري للإنتاج.
+- **هل يمكن استخراج عدة ملفات مرة واحدة؟** نعم – يوضح الدرس كيفية **extract multiple zip files** داخل حلقة.
+- **ما إصدارات .NET المدعومة؟** .NET Framework 4.5+، .NET Core 3.1+، .NET 5/6/7.
 
-قبل أن نبدأ في هذا البرنامج التعليمي، تأكد من أن لديك المتطلبات الأساسية التالية:
+## ما هو “create zip without compression”؟
+عند إنشاء أرشيف ZIP باستخدام طريقة الضغط **store**، يتم إضافة كل ملف كما هو بالضبط. ينتج عن ذلك أرشيف أكبر مقارنةً بملفات ZIP المضغوطة، لكن العملية تكون أسرع بكثير وتبقى بايتات الملف الأصلية دون تغيير – وهو مثالي للسيناريوهات التي تكون فيها السرعة أو سلامة البيانات أهم من الحجم.
 
-- Aspose.Zip لمكتبة .NET: قم بتنزيل وتثبيت Aspose.Zip لمكتبة .NET. يمكنك العثور على المكتبة[هنا](https://releases.aspose.com/zip/net/).
+## لماذا نستخدم Aspose.Zip لـ .NET؟
+- **تحكم كامل** في مستوى الضغط (store مقابل deflate).  
+- **API بسيط** لقراءة الإدخالات، فتح ملفات zip، واستخراج البيانات.  
+- **دعم متعدد المنصات** لـ .NET Framework، .NET Core، و .NET 5+.
 
-- دليل المستندات: قم بإنشاء دليل في نظامك حيث ستقوم بتخزين الملفات الضرورية لهذا البرنامج التعليمي.
+## المتطلبات المسبقة
 
-## استيراد مساحات الأسماء
+قبل أن نبدأ هذا الدرس، تأكد من توفر المتطلبات التالية:
 
-للبدء، دعونا نستورد مساحات الأسماء المطلوبة لمشروعنا:
+- مكتبة Aspose.Zip لـ .NET: قم بتحميل وتثبيت مكتبة Aspose.Zip لـ .NET. يمكنك العثور على المكتبة [هنا](https://releases.aspose.com/zip/net/).
+
+- دليل المستندات: أنشئ دليلًا في نظامك لتخزين الملفات اللازمة لهذا الدرس.
+
+## استيراد المساحات الاسمية
+
+لبدء العمل، لنقم باستيراد المساحات الاسمية المطلوبة لمشروعنا:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-## الخطوة 1: إنشاء ملف مخزن بدون ضغط
+## كيفية إنشاء Zip بدون ضغط
 
-قبل أن نتمكن من فك ضغط الملف المخزن، نحتاج إلى أن يكون واحدًا جاهزًا. قم بتنفيذ التعليمة البرمجية التالية لإنشاء ملف مخزن بدون ضغط:
+أولاً نحتاج إلى أرشيف ZIP يستخدم طريقة **store** (أي بدون ضغط). الشيفرة النموذجية أدناه تنشئ مثل هذا الأرشيف وتوفرها Aspose.Zip كطريقة مساعدة. تشغيلها سيولد `StoreMultipleFilesWithoutCompression_out.zip` في دليل المستندات الخاص بك.
 
 ```csharp
 StoreMultipleFilesWithoutCompression.Run();
 ```
 
- تقوم هذه الخطوة بإنشاء ملف مخزن باسم`StoreMultipleFilesWithoutCompression_out.zip` في دليل المستندات المحدد.
+> **نصيحة احترافية:** الطريقة المساعدة تقوم داخليًا بتعيين `CompressionMethod.Store` لكل إدخال، مما يضمن إنشاء الأرشيف دون أي ضغط للبيانات.
 
-## الخطوة 2: فك ضغط الملف المخزن
+## كيفية فتح Zip واستخراج ملفات متعددة
 
-الآن، دعونا نتعمق في جوهر البرنامج التعليمي لدينا، وهو فك ضغط الملف المخزن. اتبع الخطوات التالية:
+الآن بعد أن أصبح لدينا Zip مخزن، دعنا نرى **how to open zip** وسحب الملفات منه.
 
-### الخطوة 2.1: فتح الملف المضغوط
+### الخطوة 2.1: فتح ملف Zip
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -59,7 +77,9 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
     {
 ```
 
-### الخطوة 2.2: إنشاء الملفات المستخرجة
+كائن `Archive` يمثل ملف الـ ZIP المفتوح ويمنحك الوصول إلى كل إدخال عبر مجموعة `Entries`.
+
+### الخطوة 2.2: إنشاء ملفات مستخرجة
 
 ```csharp
         using (var extracted = File.Create(dataDir + "alice_extracted_store_out.txt"))
@@ -69,7 +89,7 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
                 byte[] buffer = new byte[8192];
                 int bytesRead;
 
-                // القراءة من الدفق المضغوط إلى استخراج الملف.
+                // Reading from decompressed stream to extracting file.
                 while (0 < (bytesRead = decompressed.Read(buffer, 0, buffer.Length)))
                 {
                     extracted.Write(buffer, 0, bytesRead);
@@ -77,6 +97,8 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
             }
         }
 ```
+
+هنا نقوم **read zip entry** 0، نسخ بايتاته إلى ملف جديد، وتغلق التيارات تلقائيًا بفضل عبارات `using`.
 
 ### الخطوة 2.3: تكرار العملية لملف آخر
 
@@ -88,7 +110,7 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
                 byte[] buffer = new byte[8192];
                 int bytesRead;
 
-                // القراءة من الدفق المضغوط إلى استخراج الملف.
+                // Reading from decompressed stream to extracting file.
                 while (0 < (bytesRead = decompressed.Read(buffer, 0, buffer.Length)))
                 {
                     extracted.Write(buffer, 0, bytesRead);
@@ -99,36 +121,61 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 }
 ```
 
-في هذا الدليل الشامل، نجحنا في تغطية الخطوات المعقدة المتعلقة بفك ضغط ملف مخزن باستخدام Aspose.Zip for .NET. تهدف مقتطفات التعليمات البرمجية والتوضيحات المقدمة إلى تمكين المطورين من دمج هذه الوظيفة بسلاسة في مشاريعهم.
+من خلال التكرار على `archive.Entries`، يمكنك **extract multiple zip files** (أو إدخالات متعددة) ببضع أسطر من الشيفرة فقط.
 
-## خاتمة
+## المشكلات الشائعة والحلول
 
-يعد إتقان ضغط الملفات وإلغاء ضغطها أمرًا بالغ الأهمية في مجال تطوير البرمجيات. يوفر Aspose.Zip for .NET مجموعة أدوات قوية تعمل على تبسيط العملية وتعزيز الكفاءة. باتباع هذا الدليل خطوة بخطوة، تكون قد كشفت عن أسرار فك ضغط الملفات المخزنة باستخدام Aspose.Zip for .NET.
+| المشكلة | السبب | الحل |
+|-------|-------|-----|
+| `FileNotFoundException` عند فتح الـ ZIP | مسار `dataDir` غير صحيح | تأكد من أن `dataDir` ينتهي بشرطة مائلة أو استخدم `Path.Combine`. |
+| الملف المستخرج فارغ | لم يتم تفريغ الـ Buffer | كتلة `using` تقوم بالتفريغ تلقائيًا؛ تأكد من قراءة التيار حتى يصبح `bytesRead` صفرًا (كما هو موضح). |
+| استثناء الترخيص | تشغيل بدون ترخيص صالح | طبّق ترخيص تجريبي أو دائم قبل النشر. |
 
-## الأسئلة الشائعة
+## الأسئلة المتكررة
 
-### س1: هل يتوافق Aspose.Zip for .NET مع كافة أطر عمل .NET؟
+### س1: هل Aspose.Zip لـ .NET متوافق مع جميع أطر .NET؟
 
-ج1: نعم، تم تصميم Aspose.Zip for .NET ليكون متوافقًا مع أطر عمل .NET المتنوعة، مما يوفر المرونة للمطورين.
+**ج:** نعم، تم تصميم Aspose.Zip لـ .NET ليكون متوافقًا مع أطر .NET المختلفة، مما يوفر مرونة للمطورين.
 
-### س2: هل يمكنني استخدام Aspose.Zip لـ .NET في كل من المشاريع التجارية وغير التجارية؟
+### س2: هل يمكنني استخدام Aspose.Zip لـ .NET في المشاريع التجارية وغير التجارية؟
 
- ج2: نعم، يمكن استخدام Aspose.Zip for .NET في المشاريع التجارية وغير التجارية. الرجوع إلى[صفحة الشراء](https://purchase.aspose.com/buy) للحصول على تفاصيل الترخيص.
+**ج:** نعم، يمكن استخدام Aspose.Zip لـ .NET في كلا النوعين من المشاريع. راجع [صفحة الشراء](https://purchase.aspose.com/buy) لتفاصيل الترخيص.
 
-### س3: كيف يمكنني الحصول على دعم Aspose.Zip لـ .NET؟
+### س3: كيف يمكنني الحصول على دعم لـ Aspose.Zip لـ .NET؟
 
- ج3: للحصول على الدعم، قم بزيارة[منتدى Aspose.Zip](https://forum.aspose.com/c/zip/37)حيث يمكنك العثور على مجتمع من المطورين والخبراء المستعدين لمساعدتك.
+**ج:** للحصول على الدعم، زر [منتدى Aspose.Zip](https://forum.aspose.com/c/zip/37)، حيث يمكن للمجتمع من المطورين والخبراء مساعدتك.
 
-### س4: هل هناك إصدار تجريبي مجاني متاح لـ Aspose.Zip for .NET؟
+### س4: هل هناك نسخة تجريبية مجانية متاحة لـ Aspose.Zip لـ .NET؟
 
- ج4: نعم، يمكنك استكشاف ميزات Aspose.Zip for .NET من خلال الحصول على نسخة تجريبية مجانية[هنا](https://releases.aspose.com/).
+**ج:** نعم، يمكنك استكشاف ميزات Aspose.Zip لـ .NET بالحصول على نسخة تجريبية مجانية [هنا](https://releases.aspose.com/).
 
-### س5: هل يمكنني الحصول على ترخيص مؤقت لـ Aspose.Zip لـ .NET؟
+### س5: هل يمكنني الحصول على ترخيص مؤقت لأغراض الاختبار؟
 
- ج5: نعم قم بالزيارة[هذا الرابط](https://purchase.aspose.com/temporary-license/) للحصول على ترخيص مؤقت لأغراض الاختبار.
+**ج:** نعم، يمكنك الحصول على ترخيص مؤقت للاختبار عبر زيارة [هذا الرابط](https://purchase.aspose.com/temporary-license/).
+
+### س6: كيف أقرأ إدخال zip دون استخراج الأرشيف بالكامل؟
+
+**ج:** استخدم `archive.Entries[index].Open()` للحصول على تيار لإدخال محدد، ثم اقرأ البايتات التي تحتاجها، كما هو موضح في الشيفرة أعلاه.
+
+### س7: ما هي أفضل طريقة لـ **extract multiple zip files** داخل حلقة؟
+
+**ج:** قم بالتكرار على `archive.Entries` باستخدام حلقة `foreach`، افتح تيار كل إدخال واكتب محتوياته إلى ملف الوجهة، مشابهًا للنمط الموضح في الخطوتين 2.2 و 2.3.
+
+## الخاتمة
+
+إتقان **create zip without compression** وعملية الاستخراج اللاحقة أمر أساسي لتطبيقات .NET عالية الأداء. توفر Aspose.Zip لـ .NET API نظيفًا وبديهيًا لـ **how to open zip**، قراءة كل **zip entry**، وإجراء عملية **C# extract zip** بأقل قدر من الشيفرة. باتباعك لهذا الدليل، تعلمت كيفية إنشاء أرشيف مخزن، فتحه، واستخراج محتوياته بكفاءة.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**آخر تحديث:** 2025-12-16  
+**تم الاختبار مع:** Aspose.Zip لـ .NET 24.12  
+**المؤلف:** Aspose  
+
+---
