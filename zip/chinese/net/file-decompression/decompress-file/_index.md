@@ -111,17 +111,15 @@ Console.WriteLine("Successfully Opened Lzip Archive");
 
 您现在已经掌握了如何使用 Aspose.Zip 的简洁 API **解压文件 .NET**。这种方法简化了 .NET 存档提取，减少了样板代码，并能很好地扩展到大规模应用。欲了解更深入的场景——如受密码保护的存档、多文件提取或自定义压缩级别——请参考完整的[文档](https://reference.aspose.com/zip/net/)。
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **最后更新：** 2025-12-12  
 **测试环境：** Aspose.Zip 24.11 for .NET  
 **作者：** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

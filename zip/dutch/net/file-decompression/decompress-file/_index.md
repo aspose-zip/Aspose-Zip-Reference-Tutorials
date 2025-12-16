@@ -112,15 +112,15 @@ A: Om een licentie aan te schaffen, ga naar de [purchase page](https://purchase.
 
 Je hebt nu geleerd hoe je **decompress file .NET** kunt gebruiken met de eenvoudige API van Aspose.Zip. Deze aanpak vereenvoudigt .NET-archiefextractie, vermindert boilerplate‑code en schaalt goed voor grootschalige applicaties. Voor uitgebreidere scenario’s—wachtwoord‑beveiligde archieven, multi‑bestandsextractie of aangepaste compressieniveaus—raadpleeg de volledige [documentation](https://reference.aspose.com/zip/net/).
 
+---
+
+**Laatst bijgewerkt:** 2025-12-12  
+**Getest met:** Aspose.Zip 24.11 for .NET  
+**Auteur:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Laatst bijgewerkt:** 2025-12-12  
-**Getest met:** Aspose.Zip 24.11 for .NET  
-**Auteur:** Aspose

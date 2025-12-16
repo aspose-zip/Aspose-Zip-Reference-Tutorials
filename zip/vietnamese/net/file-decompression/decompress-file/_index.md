@@ -112,17 +112,15 @@ Console.WriteLine("Successfully Opened Lzip Archive");
 
 Bạn đã nắm vững cách **giải nén file .NET** bằng API đơn giản của Aspose.Zip. Cách tiếp cận này đơn giản hoá việc giải nén archive .NET, giảm thiểu mã lặp lại và mở rộng tốt cho các ứng dụng quy mô lớn. Đối với các kịch bản phức tạp hơn—archive có mật khẩu, giải nén đa tệp, hoặc mức nén tùy chỉnh—hãy tham khảo đầy đủ [tài liệu](https://reference.aspose.com/zip/net/).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Cập nhật lần cuối:** 2025-12-12  
 **Đã kiểm tra với:** Aspose.Zip 24.11 cho .NET  
 **Tác giả:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

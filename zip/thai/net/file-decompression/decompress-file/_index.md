@@ -112,15 +112,15 @@ A: เพื่อซื้อไลเซนส์ ไปที่ [purchase pa
 
 คุณได้เรียนรู้วิธี **decompress file .NET** ด้วย API ที่ตรงไปตรงมาของ Aspose.Zip แล้ว วิธีนี้ทำให้การสกัดไฟล์ .NET ง่ายขึ้น ลดโค้ดซ้ำซ้อน และสามารถขยายได้ดีสำหรับแอปพลิเคชันขนาดใหญ่ สำหรับสถานการณ์ที่ลึกขึ้น—เช่นอาร์ไคฟ์ที่มีรหัสผ่าน, การสกัดหลายไฟล์, หรือระดับการบีบอัดที่กำหนดเอง—ดูเอกสารเต็มได้ที่ [documentation](https://reference.aspose.com/zip/net/).
 
+---
+
+**อัปเดตล่าสุด:** 2025-12-12  
+**ทดสอบด้วย:** Aspose.Zip 24.11 for .NET  
+**ผู้เขียน:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**อัปเดตล่าสุด:** 2025-12-12  
-**ทดสอบด้วย:** Aspose.Zip 24.11 for .NET  
-**ผู้เขียน:** Aspose

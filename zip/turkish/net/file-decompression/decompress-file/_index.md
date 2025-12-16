@@ -112,15 +112,15 @@ A: Lisans satın almak için [satın alma sayfasına](https://purchase.aspose.co
 
 Artık Aspose.Zip'in basit API'sini kullanarak **decompress file .NET** işlemini nasıl yapacağınızı öğrendiniz. Bu yaklaşım .NET arşiv çıkarımını basitleştirir, gereksiz kodu azaltır ve büyük ölçekli uygulamalarda iyi ölçeklenir. Daha derin senaryolar—şifre korumalı arşivler, çoklu dosya çıkarımı veya özel sıkıştırma seviyeleri—için tam [documentation](https://reference.aspose.com/zip/net/) sayfasına bakın.
 
+---
+
+**Last Updated:** 2025-12-12  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-12  
-**Tested With:** Aspose.Zip 24.11 for .NET  
-**Author:** Aspose

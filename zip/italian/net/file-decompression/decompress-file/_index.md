@@ -112,17 +112,15 @@ A: Per acquistare una licenza, vai alla [pagina di acquisto](https://purchase.as
 
 Ora hai padroneggiato come **decompress file .NET** usando l'API semplice di Aspose.Zip. Questo approccio semplifica l'estrazione di archivi .NET, riduce il codice boilerplate e scala bene per applicazioni su larga scala. Per scenari più avanzati — archivi protetti da password, estrazione di più file o livelli di compressione personalizzati — consulta la [documentazione completa](https://reference.aspose.com/zip/net/).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Ultimo Aggiornamento:** 2025-12-12  
 **Testato Con:** Aspose.Zip 24.11 per .NET  
 **Autore:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

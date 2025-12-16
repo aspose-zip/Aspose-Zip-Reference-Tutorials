@@ -112,17 +112,15 @@ A: To purchase a license, go to the [purchase page](https://purchase.aspose.com/
 
 आपने अब **decompress file .NET** को Aspose.Zip के सरल API का उपयोग करके महारत हासिल कर ली है। यह दृष्टिकोण .NET आर्काइव एक्सट्रैक्शन को सरल बनाता है, बायलरप्लेट कोड को कम करता है, और बड़े‑स्तर के अनुप्रयोगों के लिए अच्छी स्केलेबिलिटी प्रदान करता है। अधिक उन्नत परिदृश्यों—जैसे पासवर्ड‑सुरक्षित आर्काइव, मल्टी‑फ़ाइल एक्सट्रैक्शन, या कस्टम कम्प्रेशन लेवल—के लिए पूर्ण [documentation](https://reference.aspose.com/zip/net/) देखें।
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2025-12-12  
 **Tested With:** Aspose.Zip 24.11 for .NET  
 **Author:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -112,17 +112,15 @@ A: Pro zakoupení licence přejděte na [purchase page](https://purchase.aspose.
 
 Nyní ovládáte, jak **dekomprimovat soubor .NET** pomocí jednoduchého API Aspose.Zip. Tento přístup zjednodušuje .NET archivní extrakci, snižuje množství boilerplate kódu a dobře škáluje pro rozsáhlé aplikace. Pro pokročilejší scénáře – archivy chráněné heslem, extrakce více souborů nebo vlastní úrovně komprese – se podívejte na kompletní [documentation](https://reference.aspose.com/zip/net/).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Poslední aktualizace:** 2025-12-12  
 **Testováno s:** Aspose.Zip 24.11 pro .NET  
 **Autor:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

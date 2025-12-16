@@ -111,15 +111,15 @@ Console.WriteLine("Successfully Opened Lzip Archive");
 
 您現在已掌握如何使用 Aspose.Zip 的簡潔 API **decompress file .NET**。此方法簡化 .NET 壓縮檔案的解壓縮流程，減少樣板程式碼，且能在大規模應用中良好擴展。欲了解更深入的情境——如受密碼保護的壓縮檔、多檔案解壓或自訂壓縮等級——請參考完整的 [文件](https://reference.aspose.com/zip/net/)。
 
+---
+
+**最後更新：** 2025-12-12  
+**測試版本：** Aspose.Zip 24.11 for .NET  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最後更新：** 2025-12-12  
-**測試版本：** Aspose.Zip 24.11 for .NET  
-**作者：** Aspose

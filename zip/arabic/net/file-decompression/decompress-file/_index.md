@@ -112,17 +112,15 @@ Console.WriteLine("Successfully Opened Lzip Archive");
 
 لقد أصبحت الآن قادرًا على **decompress file .NET** باستخدام واجهة برمجة التطبيقات السهلة من Aspose.Zip. يبسط هذا النهج استخراج أرشيف .NET، يقلل من الكود المتكرر، ويتناسب مع التطبيقات على نطاق واسع. للمزيد من السيناريوهات المتقدمة — مثل الأرشيفات المحمية بكلمة مرور، استخراج ملفات متعددة، أو مستويات ضغط مخصصة — راجع الوثائق الكاملة [هنا](https://reference.aspose.com/zip/net/).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **آخر تحديث:** 2025-12-12  
 **تم الاختبار مع:** Aspose.Zip 24.11 for .NET  
 **المؤلف:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

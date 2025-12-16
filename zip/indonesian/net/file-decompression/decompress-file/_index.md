@@ -112,15 +112,15 @@ A: Untuk membeli lisensi, kunjungi [halaman pembelian](https://purchase.aspose.c
 
 Anda kini telah menguasai cara **decompress file .NET** menggunakan API Aspose.Zip yang sederhana. Pendekatan ini menyederhanakan ekstraksi arsip .NET, mengurangi kode boilerplate, dan skalabel untuk aplikasi berskala besar. Untuk skenario yang lebih mendalam—arsip yang dilindungi kata sandi, ekstraksi multi‑file, atau tingkat kompresi khusus—lihat [dokumentasi](https://reference.aspose.com/zip/net/) lengkap.
 
+---
+
+**Terakhir Diperbarui:** 2025-12-12  
+**Diuji Dengan:** Aspose.Zip 24.11 for .NET  
+**Penulis:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Terakhir Diperbarui:** 2025-12-12  
-**Diuji Dengan:** Aspose.Zip 24.11 for .NET  
-**Penulis:** Aspose

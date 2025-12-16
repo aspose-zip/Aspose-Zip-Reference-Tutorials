@@ -111,17 +111,15 @@ A: ライセンス購入は[購入ページ](https://purchase.aspose.com/buy)か
 
 これで Aspose.Zip のシンプルな API を使って **decompress file .NET** をマスターしました。この手法により .NET アーカイブ抽出が簡素化され、ボイラープレートコードが削減され、大規模アプリケーションでもスケーラブルに動作します。パスワード保護アーカイブ、複数ファイルの抽出、カスタム圧縮レベルなど、より高度なシナリオについては、完全な[ドキュメント](https://reference.aspose.com/zip/net/)をご参照ください。
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **最終更新日:** 2025-12-12  
 **テスト環境:** Aspose.Zip 24.11 for .NET  
 **作成者:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

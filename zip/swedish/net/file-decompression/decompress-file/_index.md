@@ -110,15 +110,15 @@ A: För att köpa en licens, gå till [köpsidan](https://purchase.aspose.com/bu
 
 Du har nu lärt dig hur man **dekomprimerar fil .NET** med Aspose.Zip:s enkla API. Detta tillvägagångssätt förenklar .NET‑arkivextraktion, minskar boilerplate‑kod och skalar bra för storskaliga applikationer. För djupare scenarier — lösenordsskyddade arkiv, flerfilsextraktion eller anpassade komprimeringsnivåer — se den fullständiga [dokumentationen](https://reference.aspose.com/zip/net/).
 
+---
+
+**Last Updated:** 2025-12-12  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-12  
-**Tested With:** Aspose.Zip 24.11 for .NET  
-**Author:** Aspose

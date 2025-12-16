@@ -113,17 +113,15 @@ A: Licenc vásárlásához menjen a [vásárlási oldalra](https://purchase.aspo
 
 Most már elsajátította, hogyan **decompress file .NET** az Aspose.Zip egyszerű API-jával. Ez a megközelítés leegyszerűsíti a .NET archívum kitömörítést, csökkenti a sablonkódot, és jól skálázható nagy‑méretű alkalmazásokhoz. Mélyebb forgatókönyvekhez – jelszóval védett archívumok, több fájl kitömörítése vagy egyéni tömörítési szintek – tekintse meg a teljes [documentation](https://reference.aspose.com/zip/net/) oldalt.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2025-12-12  
 **Tested With:** Aspose.Zip 24.11 for .NET  
 **Author:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
