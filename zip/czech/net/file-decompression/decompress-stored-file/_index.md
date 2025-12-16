@@ -164,17 +164,15 @@ Iterací přes `archive.Entries` můžete **extract multiple zip files** (nebo v
 
 Ovládnutí **create zip without compression** a následného procesu extrakce je nezbytné pro vysoce výkonné .NET aplikace. Aspose.Zip pro .NET poskytuje čisté, intuitivní API pro **how to open zip**, čtení každého **zip entry** a provedení operace **C# extract zip** s minimálním kódem. Dodržením tohoto návodu jste se naučili, jak vytvořit uložený archiv, otevřít jej a efektivně extrahovat jeho obsah.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Poslední aktualizace:** 2025-12-16  
 **Testováno s:** Aspose.Zip pro .NET 24.12  
 **Autor:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

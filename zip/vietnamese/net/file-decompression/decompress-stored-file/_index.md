@@ -164,17 +164,15 @@ Bằng cách lặp qua `archive.Entries`, bạn có thể **extract multiple zip
 
 Việc nắm vững **create zip without compression** và quy trình giải nén tiếp theo là điều thiết yếu cho các ứng dụng .NET hiệu năng cao. Aspose.Zip cho .NET cung cấp một API sạch sẽ, trực quan để **how to open zip**, đọc từng **zip entry**, và thực hiện một thao tác **C# extract zip** với ít mã nhất. Bằng cách theo dõi hướng dẫn này, bạn đã học cách tạo một archive đã lưu, mở nó, và giải nén nội dung một cách hiệu quả.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Cập nhật lần cuối:** 2025-12-16  
 **Kiểm tra với:** Aspose.Zip cho .NET 24.12  
 **Tác giả:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

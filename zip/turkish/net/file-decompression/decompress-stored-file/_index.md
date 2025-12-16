@@ -165,17 +165,15 @@ Burada **read zip entry** 0’ı okur, baytlarını yeni bir dosyaya kopyalar 
 
 **create zip without compression** ve ardından gelen çıkarma sürecini ustalıkla yönetmek, yüksek performanslı .NET uygulamaları için kritiktir. Aspose.Zip for .NET, **how to open zip**, her **zip entry**’yi okuma ve **C# extract zip** işlemini minimal kodla yapmanızı sağlayan temiz ve sezgisel bir API sunar. Bu kılavuzu izleyerek saklanan bir arşiv oluşturmayı, açmayı ve içeriğini verimli bir şekilde çıkarmayı öğrendiniz.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2025-12-16  
 **Tested With:** Aspose.Zip for .NET 24.12  
 **Author:** Aspose  
 
----
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

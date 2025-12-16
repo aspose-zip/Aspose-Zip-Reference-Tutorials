@@ -167,15 +167,15 @@ Az `archive.Entries` iterálásával néhány kódsorral **extract multiple zip 
 
 A **create zip without compression** és a későbbi kicsomagolási folyamat elsajátítása elengedhetetlen a nagy teljesítményű .NET alkalmazásokhoz. Az Aspose.Zip for .NET tiszta, intuitív API-t biztosít a **how to open zip** művelethez, minden **zip entry** olvasásához, és egy **C# extract zip** művelet végrehajtásához minimális kóddal. Ezt az útmutatót követve megtanulta, hogyan generáljon egy tárolt archívumot, nyissa meg, és hatékonyan vonja ki a tartalmát.
 
+---
+
+**Utoljára frissítve:** 2025-12-16  
+**Tesztelve ezzel:** Aspose.Zip for .NET 24.12  
+**Szerző:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Utoljára frissítve:** 2025-12-16  
-**Tesztelve ezzel:** Aspose.Zip for .NET 24.12  
-**Szerző:** Aspose

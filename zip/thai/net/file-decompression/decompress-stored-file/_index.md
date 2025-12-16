@@ -165,15 +165,15 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 
 การเชี่ยวชาญ **create zip without compression** และกระบวนการดึงข้อมูลต่อไปเป็นสิ่งสำคัญสำหรับแอปพลิเคชัน .NET ที่มีประสิทธิภาพสูง. Aspose.Zip for .NET ให้ API ที่สะอาดและใช้งานง่ายเพื่อ **how to open zip**, อ่านแต่ละ **zip entry**, และทำการ **C# extract zip** ด้วยโค้ดที่น้อยที่สุด. ด้วยการทำตามคู่มือนี้, คุณได้เรียนรู้วิธีสร้าง archive ที่เก็บไว้, เปิดมัน, และดึงเนื้อหาออกอย่างมีประสิทธิภาพ.
 
+---
+
+**อัปเดตล่าสุด:** 2025-12-16  
+**ทดสอบด้วย:** Aspose.Zip for .NET 24.12  
+**ผู้เขียน:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**อัปเดตล่าสุด:** 2025-12-16  
-**ทดสอบด้วย:** Aspose.Zip for .NET 24.12  
-**ผู้เขียน:** Aspose

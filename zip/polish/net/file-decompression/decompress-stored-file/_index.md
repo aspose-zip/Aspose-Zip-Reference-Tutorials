@@ -165,15 +165,15 @@ Iterując po `archive.Entries`, możesz **extract multiple zip files** (lub wiel
 
 Opanowanie **create zip without compression** oraz późniejszego procesu wyodrębniania jest kluczowe dla wysokowydajnych aplikacji .NET. Aspose.Zip for .NET zapewnia czyste, intuicyjne API do **how to open zip**, odczytu każdego **zip entry** i wykonania operacji **C# extract zip** przy minimalnej ilości kodu. Postępując zgodnie z tym przewodnikiem, nauczyłeś się generować przechowywane archiwum, otwierać je i efektywnie wyodrębniać jego zawartość.
 
+---
+
+**Ostatnia aktualizacja:** 2025-12-16  
+**Testowano z:** Aspose.Zip for .NET 24.12  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ostatnia aktualizacja:** 2025-12-16  
-**Testowano z:** Aspose.Zip for .NET 24.12  
-**Autor:** Aspose
