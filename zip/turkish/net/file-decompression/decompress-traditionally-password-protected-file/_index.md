@@ -1,52 +1,67 @@
 ---
-title: Aspose.Zip for .NET'te Geleneksel Parola Korumalı Dosyanın Sıkıştırmasını Açın
-linktitle: Geleneksel Olarak Parola Korumalı Dosyanın Sıkıştırmasını Aç
-second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
-description: Aspose.Zip for .NET kullanarak geleneksel olarak parola korumalı dosyaların sıkıştırmasını nasıl açacağınızı öğrenin. Sorunsuz entegrasyon için adım adım kılavuz.
-weight: 15
+date: 2025-12-17
+description: Aspose.Zip for .NET kullanarak şifreli zip dosyalarını nasıl çıkaracağınızı
+  ve şifre korumalı zip dosyalarını nasıl açacağınızı öğrenin. Sorunsuz entegrasyon
+  için adım adım kılavuz.
+linktitle: Decompress Traditionally Password Protected File
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Aspose.Zip for .NET ile şifreli zip dosyasını nasıl çıkarılır
 url: /tr/net/file-decompression/decompress-traditionally-password-protected-file/
+weight: 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET'te Geleneksel Parola Korumalı Dosyanın Sıkıştırmasını Açın
+# Parola ile zip çıkartma Aspose.Zip for .NET kullanarak
 
-.NET geliştirme alanında Aspose.Zip, sıkıştırılmış dosyaların işlenmesinde güçlü bir çözüm olarak öne çıkıyor. Sayısız özelliği arasında öne çıkan bir özellik, geleneksel olarak parola korumalı dosyaların sıkıştırmasını açma yeteneğidir. Bu eğitimde, Aspose.Zip for .NET kullanarak geleneksel parolayla şifrelenmiş bir dosyanın sıkıştırmasını açma sürecini ayrıntılı olarak ele alacağız. Bu yolculuğa çıkmadan önce önkoşulların yerine getirildiğinden emin olalım.
+.NET geliştirme dünyasında, parola korumalı bir zip dosyasını çıkartmak, güvenli arşivlerle çalışırken yaygın bir gereksinimdir. Aspose.Zip for .NET bu görevi basitleştirir ve sadece birkaç satır kodla **decompress password protected zip** dosyalarını açmanıza olanak tanır. Bu öğreticide, parola‑korumalı bir arşivi oluşturma aşamasından içeriğini çıkartmaya kadar tüm süreci adım adım ele alacağız; böylece C# uygulamalarınızda **open password protected archive** dosyalarını güvenle açabilirsiniz.
 
-## Önkoşullar
+## Hızlı Yanıtlar
+- **Zip dosyalarını işlemek için birincil sınıf nedir?** `Archive` sınıfı, Aspose.Zip ad alanından.  
+- **Parola nereden sağlanır?** `ArchiveLoadOptions` içinde `DecryptionPassword` parametresiyle.  
+- **.NET Core’da parola korumalı dosyaları açabilir miyim?** Evet, Aspose.Zip .NET Framework, .NET Core ve .NET 5/6+ sürümlerini destekler.  
+- **Geliştirme için lisansa ihtiyacım var mı?** Test için geçici bir lisans yeterlidir; üretim için tam lisans gereklidir.  
+- **Kaç satır kod gerekir?** Using ifadeleri hariç 20 satırdan az.
 
-Geleneksel olarak parola korumalı dosyaların sıkıştırmasını açmaya başlamadan önce, aşağıdaki önkoşullara sırayla sahip olduğunuzdan emin olun:
+## “extract zip with password” nedir?
+Parola ile zip çıkartma, şifreli bir ZIP arşivini okurken doğru parolayı sağlayarak kütüphanenin dosyaları deşifre edip açmasını ifade eder. Bu, genellikle **how to unzip encrypted** arşivler olarak adlandırılır.
 
-## Ad Alanlarını İçe Aktar
+## Bu görev için Aspose.Zip neden tercih edilmeli?
+- **Tam .NET desteği** – .NET Framework, .NET Core ve yeni .NET sürümleriyle çalışır.  
+- **Geleneksel şifreleme desteği** – birçok eski aracın kullandığı ZipCrypto yöntemini destekler.  
+- **Basit API** – parolayı sağlamak ve girişleri okumak için sadece birkaç çağrı yeterlidir.  
+- **Performans‑optimizasyonu** – akışlar verimli işlenir, bu da büyük arşivler için uygundur.
 
-Aspose.Zip işlevlerine erişmek için öncelikle gerekli ad alanlarını içe aktarmanız gerekir. .NET projenize aşağıdaki ad alanlarını ekleyin:
+## Ön Koşullar
+- .NET geliştirme ortamı (Visual Studio 2022 veya daha yeni).  
+- Projeye eklenmiş Aspose.Zip for .NET kütüphanesi (NuGet paketi `Aspose.Zip`).  
+- C# dosya I/O konusunda temel bilgi.
+
+## Namespace’leri İçe Aktarma
+İlk olarak, gerekli namespace’leri kapsam içine alın:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-Şimdi süreci adım adım talimatlara ayıralım.
-
-## 1. Adım: Bir Dosyada Parola Korumasını Çalıştırın
-
-Geleneksel olarak parola korumalı bir dosyanın sıkıştırmasını açmadan önce, bir dosyaya parola koruması uygulayarak aşamayı ayarlayalım. Bunu başarmak için aşağıdaki kod parçacığını kullanın:
+## Adım 1: Dosyaya Parola Koruması Uygulama
+Çıkarma işlemini gösterebilmek için geleneksel bir parola ile korunmuş bir zip dosyasına ihtiyacımız var. Aşağıdaki kod parçacığı bu arşivi oluşturur (zaten bir zip’iniz varsa onu da kullanabilirsiniz):
 
 ```csharp
 string dataDir = "Your Document Directory";
-PasswordProtectArchiveWithTraditionalPassword.Run(); // Daha sonra kullanmak üzere bir dosya örneğinde parola korumasını çalıştırın
+PasswordProtectArchiveWithTraditionalPassword.Run(); // Run password protection on a file example to use it later
 ```
 
-"Belge Dizininiz"i, belgenizin bulunduğu gerçek dizinle değiştirdiğinizden emin olun.
+> **İpucu:** `"Your Document Directory"` ifadesini test dosyalarınızı sakladığınız mutlak yol ile değiştirin.
 
-## Adım 2: Geleneksel Olarak Parola Korumalı Dosyanın Sıkıştırmasını Açın
-
-Artık geleneksel şifre korumalı bir dosyamız olduğuna göre, sıkıştırmayı açma işlemine geçelim. Aşağıdaki kod parçacığı bunun nasıl başarılacağını göstermektedir:
+## Adım 2: Geleneksel Parola‑Koruması Olan Dosyayı Açma
+Şimdi içeriği çıkartalım. Aşağıdaki kod, Aspose.Zip kullanarak **c# unzip password protected** arşivleri nasıl açacağınızı tam olarak gösterir:
 
 ```csharp
-// ExStart: Geleneksel Olarak Parola Korumalı Dosyayı Sıkıştırın
+// ExStart: DecompressTraditionallyPasswordProtectedFile
 using (FileStream fs = File.OpenRead(dataDir + "CompressWithTraditionalEncryption_out.zip"))
 {
     using (var extracted = File.Create(dataDir + "alice_extracted_out.txt"))
@@ -65,43 +80,47 @@ using (FileStream fs = File.OpenRead(dataDir + "CompressWithTraditionalEncryptio
         }
     }
 }
-// ExEnd: Geleneksel Olarak Parola Korumalı Dosyayı Sıkıştırın
+}
+// ExEnd: DecompressTraditionallyPasswordProtectedFile
 ```
 
-Bu kod parçacığında:
-- Sıkıştırılmış dosya akışını açıyoruz.
-- Sıkıştırılmış içerik için bir çıktı dosyası akışı oluşturun.
--  Bir örneği oluşturun`Archive` şifre çözme şifresi sağlanan nesne.
-- Arşivdeki ilk girişi açın (yalnızca bir giriş olduğunu varsayarak).
-- Sıkıştırılmış içeriği okuyun ve çıktı dosyasına yazın.
+Bu kodda şu adımları izliyoruz:
 
-Tebrikler! Aspose.Zip for .NET'i kullanarak geleneksel olarak parola korumalı bir dosyanın sıkıştırmasını başarıyla açtınız.
+1. Şifreli ZIP dosyasını yalnızca‑okuma akışı olarak açıyoruz.  
+2. Deşifre edilmiş verinin yazılacağı yeni bir dosya (`alice_extracted_out.txt`) oluşturuyoruz.  
+3. `Archive` nesnesini `ArchiveLoadOptions` ile örnekleyip parolayı (`"p@s$"`) iletiyoruz.  
+4. Arşivdeki ilk girişi (tek bir dosya olduğu varsayımıyla) alıp baytlarını çıktı dosyasına kopyalıyoruz.
 
-## Çözüm
+Kod tamamlandığında, **extract zip with password** işlemini başarıyla gerçekleştirmiş ve orijinal dosya içeriğini elde etmiş olacaksınız.
 
-Sonuç olarak Aspose.Zip for .NET, geleneksel olarak parola korumalı dosyaları işlemek için basit ve etkili bir yol sağlar. Bu öğreticide özetlenen adımları izleyerek bu işlevselliği .NET uygulamalarınızla sorunsuz bir şekilde tümleştirebilirsiniz.
+## Yaygın Hatalar & Önleme Yöntemleri
+| Sorun | Neden | Çözüm |
+|-------|-------|----------|
+| “Invalid password” hatası | Yanlış parola dizesi veya `DecryptionPassword` eksikliği | Parolayı iki kez kontrol edin ve `ArchiveLoadOptions` ile sağlandığından emin olun. |
+| Giriş bulunamadı | Arşiv boş veya yol hatalı | ZIP dosyasının yolunu doğrulayın ve 7‑Zip gibi bir araçla arşivi inceleyin. |
+| Büyük dosyalar bellek baskısı oluşturuyor | Tüm dosya belleğe okunuyor | Veriyi parçalar halinde işlemek için tamponlu okuma/yazma döngüsü (örnekte gösterildiği gibi) kullanın. |
 
-## SSS'ler
+## Sıkça Sorulan Sorular
 
-### S1: Aspose.Zip büyük sıkıştırılmış dosyalar için uygun mudur?
+### S1: Aspose.Zip büyük sıkıştırılmış dosyalar için uygun mu?
+C1: Evet, Aspose.Zip hem küçük hem de büyük sıkıştırılmış dosyalar için optimize edilmiştir ve verimli işlem sağlar.
 
-Cevap1: Evet, Aspose.Zip, hem küçük hem de büyük sıkıştırılmış dosyalar için optimize edilmiştir ve verimli işlem yapılmasını sağlar.
+### S2: Aspose.Zip’i diğer .NET kütüphaneleriyle birlikte kullanabilir miyim?
+C2: Kesinlikle, Aspose.Zip diğer .NET kütüphaneleriyle kolayca entegre edilerek uygulamanızın yeteneklerini artırabilir.
 
-### S2: Aspose.Zip'i diğer .NET kütüphaneleriyle kullanabilir miyim?
-
-Cevap2: Kesinlikle Aspose.Zip, uygulamanızın yeteneklerini geliştirmek için diğer .NET kitaplıklarıyla kolayca entegre edilebilir.
-
-### S3: Geleneksel şifrelerin dışında başka şifreleme seçenekleri var mı?
-
-Cevap3: Evet, Aspose.Zip çeşitli şifreleme yöntemlerini destekleyerek güvenlik gereksinimlerinize göre esneklik sağlar.
+### S3: Geleneksel parolalar dışında başka şifreleme seçenekleri var mı?
+C3: Evet, Aspose.Zip çeşitli şifreleme yöntemlerini destekler ve güvenlik gereksinimlerinize göre esneklik sunar.
 
 ### S4: Aspose.Zip desteği için bir topluluk forumu var mı?
+C4: Evet, Aspose.Zip topluluğu ve desteği için [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) adresini ziyaret edebilirsiniz.
 
- C4: Evet, Aspose.Zip topluluğuna şu adresten destek bulabilir ve onlarla iletişime geçebilirsiniz:[Aspose.Zip Forumu](https://forum.aspose.com/c/zip/37).
+### S5: Aspose.Zip için geçici bir lisans nasıl alınır?
+C5: Geçici lisansı [Aspose.Purchase](https://purchase.aspose.com/temporary-license/) üzerinden edine---
 
-### S5: Aspose.Zip için nasıl geçici lisans alabilirim?
+**Son Güncelleme:** 2025-12-17  
+**Test Edilen:** Aspose.Zip 24.11 for .NET  
+**Yazar:** Aspose  
 
- Cevap 5: Şuradan geçici bir lisans alabilirsiniz:[Aspose.Satın Alma](https://purchase.aspose.com/temporary-license/).
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

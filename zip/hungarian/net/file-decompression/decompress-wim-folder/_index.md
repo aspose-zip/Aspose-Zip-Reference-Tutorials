@@ -1,50 +1,64 @@
 ---
-title: Tömörítse ki a Wim-et mappába az Aspose.Zip for .NET-ben
-linktitle: A Wim kibontása mappába
-second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
-description: Fedezze fel a Wim-archívumok Aspose.Zip for .NET használatával történő kicsomagolásáról szóló, lépésről lépésre szóló útmutatót. Töltse le a könyvtárat, kövesse az oktatóanyagot, és hatékonyan kezelje az archív fájlokat .NET-alkalmazásaiban.
-weight: 16
+date: 2025-12-17
+description: Tanulja meg, hogyan csomagolhat ki WIM fájlokat egy mappába az Aspose.Zip
+  for .NET segítségével. Kövesse ezt a lépésről‑lépésre útmutatót, hogy hatékonyan
+  tömörítse ki a WIM archívumokat .NET alkalmazásaiban.
+linktitle: Decompress Wim to Folder
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Hogyan lehet WIM-et mappába kicsomagolni az Aspose.Zip for .NET használatával
 url: /hu/net/file-decompression/decompress-wim-folder/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Tömörítse ki a Wim-et mappába az Aspose.Zip for .NET-ben
+# Hogyan lehet WIM-et mappába kicsomagolni az Aspose.Zip for .NET használatával
 
 ## Bevezetés
 
-Üdvözöljük ebben az átfogó oktatóanyagban, amely a Wim-archívumok kicsomagolásáról szól egy mappába az Aspose.Zip for .NET használatával. Az Aspose.Zip egy hatékony könyvtár, amely zökkenőmentes képességeket biztosít a .NET-alkalmazások különféle archív formátumaival való munkavégzéshez. Ebben az oktatóanyagban lépésről lépésre végigvezetjük a Wim-archívum egy meghatározott mappába történő kicsomagolásának folyamatán.
+Üdvözöljük ebben az átfogó tutorialban, amely bemutatja, **hogyan lehet WIM-et kicsomagolni** fájlok mappába az Aspose.Zip for .NET segítségével. Az Aspose.Zip egy erőteljes könyvtár, amely zökkenőmentes lehetőségeket biztosít különféle archívumformátumok kezeléséhez .NET alkalmazásokban. Ebben a tutorialban lépésről lépésre végigvezetjük a Wim archívum egy megadott mappába történő kibontásának folyamatán.
+
+## Gyors válaszok
+- **Melyik könyvtár ajánlott?** Aspose.Zip for .NET  
+- **Kicsomagolhatok WIM fájlokat .NET Core-on?** Igen, az API működik .NET Core, .NET 5+ és .NET 6+ környezetekkel.  
+- **Szükségem van licencre a termeléshez?** Kereskedelmi licenc szükséges a termeléshez; ingyenes próba elérhető.  
+- **Mi a minimális .NET verzió?** .NET Framework 4.5+ vagy .NET Core 3.1+.  
+- **Mennyi időt vesz igénybe a kicsomagolás?** Általában néhány másodperc a szokásos WIM képek esetén; nagyobb képek esetén hosszabb idő is lehet.
 
 ## Előfeltételek
 
-Mielőtt belevágna az oktatóanyagba, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
+Mielőtt elkezdené a tutorialt, győződjön meg róla, hogy a következő előfeltételek rendelkezésre állnak:
 
--  Aspose.Zip Library: Győződjön meg arról, hogy telepítve van az Aspose.Zip for .NET könyvtár. Letöltheti a[weboldal](https://releases.aspose.com/zip/net/).
+- Aspose.Zip könyvtár: Győződjön meg róla, hogy az Aspose.Zip for .NET könyvtár telepítve van. Letöltheti a [weboldalról](https://releases.aspose.com/zip/net/).
 
-- Dokumentumkönyvtár: Állítson be egy dokumentumkönyvtárat, ahol a kicsomagolni kívánt Wim archív fájlja van.
+- Dokumentum könyvtár: Hozzon létre egy dokumentum könyvtárat, ahol a kicsomagolni kívánt Wim archívum fájl található.
 
 ## Névterek importálása
 
-Kezdje a szükséges névterek importálásával a C# projektben. Ez a lépés biztosítja, hogy hozzáférjen az Aspose.Zip funkciókhoz.
+Kezdje a szükséges névterek importálásával a C# projektjében. Ez a lépés biztosítja, hogy hozzáférjen az Aspose.Zip funkciókhoz.
 
 ```csharp
 using System.IO;
 using Aspose.Zip.Wim;
 ```
 
-## 1. lépés: Állítsa be a dokumentumkönyvtárat
+## Hogyan lehet WIM-et mappába kicsomagolni
 
-Határozza meg a könyvtár elérési útját, ahol a Wim archív fájlja található. Cserélje le a „Saját dokumentumkönyvtár” elemet a dokumentumkönyvtár tényleges elérési útjával.
+Az alábbiakban megtalálja a pontos lépéseket, amelyek bemutatják, **hogyan kicsomagolhat WIM** archívumokat az Aspose.Zip használatával. Kövesse figyelmesen az egyes lépéseket.
+
+### 1. lépés: Állítsa be a dokumentum könyvtárát
+
+Adja meg a könyvtár útvonalát, ahol a Wim archívum fájl található. Cserélje le a `"Your Document Directory"`-t a tényleges útvonalra a dokumentum könyvtárhoz.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## 2. lépés: A Wim archívum kibontása
+### 2. lépés: Wim archívum kicsomagolása
 
- Nyissa meg a Wim archív fájlt a`FileStream` majd csomagolja ki a tartalmat egy megadott könyvtárba az Aspose.Zip segítségével.
+Nyissa meg a Wim archívum fájlt egy `FileStream` segítségével, majd az Aspose.Zip használatával csomagolja ki a tartalmat egy megadott könyvtárba.
 
 ```csharp
 using (FileStream fs = File.OpenRead(dataDir + "corpus.wim"))
@@ -56,33 +70,35 @@ using (FileStream fs = File.OpenRead(dataDir + "corpus.wim"))
 }
 ```
 
-Ez a kódrészlet beolvassa a Wim archív fájlt, hozzáfér annak első képéhez, és kibontja annak tartalmát a megadott kimeneti könyvtárba.
+Ez a kódrészlet beolvassa a Wim archívum fájlt, eléri az első képet, és kicsomagolja a tartalmát a megadott kimeneti könyvtárba.
 
-## Következtetés
+## Összegzés
 
-Gratulálunk! Sikeresen megtanulta, hogyan lehet kicsomagolni egy Wim-archívumot egy mappába az Aspose.Zip for .NET segítségével. Ez az egyszerű, de hatékony folyamat lehetővé teszi a .NET-alkalmazások Wim-archívumainak hatékony kezelését és kinyerését.
+Gratulálunk! Sikeresen megtanulta, **hogyan kell WIM** archívumokat mappába kicsomagolni az Aspose.Zip for .NET használatával. Ez az egyszerű, mégis hatékony folyamat lehetővé teszi, hogy hatékonyan kezelje és kicsomagolja a Wim archívumok adatait .NET alkalmazásaiban.
 
-## GYIK
+## Gyakran Ismételt Kérdések
 
-### 1. kérdés: Használhatom az Aspose.Zip for .NET fájlt más archív formátumokkal?
+### Q1: Használhatom az Aspose.Zip for .NET-et más archívumformátumokkal?
+A1: Igen, az Aspose.Zip támogatja a különböző archívumformátumokat, beleértve a ZIP, TAR, GZIP és egyebeket.
 
-1. válasz: Igen, az Aspose.Zip különféle archív formátumokat támogat, beleértve a ZIP-t, TAR-t, GZIP-et és még sok mást.
+### Q2: Hol találok több példát és dokumentációt az Aspose.Zip-hez?
+A2: Fedezze fel az [Aspose.Zip dokumentációt](https://reference.aspose.com/zip/net/) részletes példákért és átfogó dokumentációért.
 
-### 2. kérdés: Hol találok további példákat és dokumentációt az Aspose.Zip fájlhoz?
+### Q3: Elérhető ingyenes próba az Aspose.Zip for .NET-hez?
+A3: Igen, a ingyenes próbát [itt](https://releases.aspose.com/) érheti el.
 
- V2: Fedezze fel a[Aspose.Zip dokumentáció](https://reference.aspose.com/zip/net/) részletes példákért és átfogó dokumentációért.
+### Q4: Hogyan szerezhetek ideiglenes licenceket az Aspose.Zip for .NET-hez?
+A4: Szerezzen ideiglenes licenceket erről a linkről: [this link](https://purchase.aspose.com/temporary-license/).
 
-### 3. kérdés: Elérhető ingyenes próbaverzió az Aspose.Zip for .NET számára?
+### Q5: Hol kaphatok támogatást vagy tehetek fel kérdéseket az Aspose.Zip for .NET-ről?
+A5: Látogassa meg az [Aspose.Zip fórumot](https://forum.aspose.com/c/zip/37) támogatás és megbeszélések céljából.
 
- 3. válasz: Igen, hozzáférhet az ingyenes próbaverzióhoz[itt](https://releases.aspose.com/).
+---
 
-### 4. kérdés Hogyan szerezhetek ideiglenes licenceket az Aspose.Zip for .NET számára?
+**Last Updated:** 2025-12-17  
+**Tested With:** Aspose.Zip for .NET (latest release)  
+**Author:** Aspose  
 
- 4. válasz: Szerezzen ideiglenes licenceket a következőtől[ez a link](https://purchase.aspose.com/temporary-license/).
-
-### 5. kérdés: Hol kaphatok támogatást, vagy hol tehetek fel kérdéseket az Aspose.Zip for .NET-hez kapcsolódóan?
-
- A5: Látogassa meg a[Aspose.Zip fórum](https://forum.aspose.com/c/zip/37) támogatásért és megbeszélésekért.
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

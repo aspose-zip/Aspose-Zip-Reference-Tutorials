@@ -1,50 +1,62 @@
 ---
-title: 將 Wim 解壓縮到 Aspose.Zip for .NET 中的資料夾
-linktitle: 解壓縮Wim到資料夾
-second_title: 用於檔案壓縮和歸檔的 Aspose.Zip .NET API
-description: 探索使用 Aspose.Zip for .NET 解壓縮 Wim 檔案的逐步指南。下載該庫，按照教程操作，並有效管理 .NET 應用程式中的存檔檔案。
-weight: 16
+date: 2025-12-17
+description: 學習如何使用 Aspose.Zip for .NET 將 WIM 檔案解壓縮至資料夾。跟隨本步驟指南，在您的 .NET 應用程式中高效解壓縮
+  WIM 檔案。
+linktitle: Decompress Wim to Folder
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: 如何使用 Aspose.Zip for .NET 將 WIM 解壓縮至資料夾
 url: /zh-hant/net/file-decompression/decompress-wim-folder/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 將 Wim 解壓縮到 Aspose.Zip for .NET 中的資料夾
+# 如何使用 Aspose.Zip for .NET 將 WIM 解壓縮至資料夾
 
-## 介紹
+## 簡介
 
-歡迎來到這個關於使用 Aspose.Zip for .NET 將 Wim 存檔解壓縮到資料夾的綜合教學。 Aspose.Zip 是一個功能強大的程式庫，提供在 .NET 應用程式中處理各種存檔格式的無縫功能。在本教學中，我們將引導您逐步完成將 Wim 存檔解壓縮到指定資料夾的過程。
+歡迎閱讀本完整教學，內容說明如何使用 Aspose.Zip for .NET 將 **WIM** 檔案解壓縮至資料夾。Aspose.Zip 是一個功能強大的函式庫，提供在 .NET 應用程式中處理各種壓縮檔格式的無縫能力。在本教學中，我們將一步一步指導您將 Wim 壓縮檔解壓縮至指定資料夾的過程。
+
+## 快速答覆
+- **建議使用哪個函式庫？** Aspose.Zip for .NET  
+- **我可以在 .NET Core 上解壓縮 WIM 檔案嗎？** Yes, the API works with .NET Core, .NET 5+, and .NET 6+.  
+- **生產環境需要授權嗎？** A commercial license is required for production use; a free trial is available.  
+- **最低支援的 .NET 版本是什麼？** .NET Framework 4.5+ or .NET Core 3.1+.  
+- **解壓縮需要多久時間？** Typically a few seconds for standard WIM images; larger images may take longer.
 
 ## 先決條件
 
-在深入學習本教程之前，請確保您具備以下先決條件：
+在開始本教學之前，請確保已具備以下先決條件：
 
--  Aspose.Zip 函式庫：確保您安裝了 Aspose.Zip for .NET 函式庫。您可以從[網站](https://releases.aspose.com/zip/net/).
+- Aspose.Zip 函式庫：確保已安裝 Aspose.Zip for .NET 函式庫。您可以從 [website](https://releases.aspose.com/zip/net/) 下載。  
+- 文件目錄：設定一個文件目錄，放置您想要解壓縮的 Wim 壓縮檔。
 
-- 文件目錄：設定一個文件目錄，其中包含要解壓縮的 Wim 存檔檔案。
+## 匯入命名空間
 
-## 導入命名空間
-
-首先在 C# 專案中導入必要的命名空間。此步驟可確保您可以存取 Aspose.Zip 功能。
+首先在您的 C# 專案中匯入必要的命名空間。此步驟可確保您能使用 Aspose.Zip 的功能。
 
 ```csharp
 using System.IO;
 using Aspose.Zip.Wim;
 ```
 
-## 第 1 步：設定您的文件目錄
+## 如何將 WIM 解壓縮至資料夾
 
-定義 Wim 存檔檔案所在的目錄路徑。將“您的文檔目錄”替換為文檔目錄的實際路徑。
+以下為使用 Aspose.Zip **解壓縮 WIM** 壓縮檔的完整步驟，請仔細遵循每一步。
+
+### 步驟 1：設定您的文件目錄
+
+定義 Wim 壓縮檔所在的目錄路徑。將 `"Your Document Directory"` 替換為實際的文件目錄路徑。
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## 步驟2：解壓縮Wim存檔
+### 步驟 2：解壓縮 Wim 壓縮檔
 
-使用以下命令開啟 Wim 存檔文件`FileStream`然後使用 Aspose.Zip 將內容解壓縮到指定目錄。
+使用 `FileStream` 開啟 Wim 壓縮檔，然後使用 Aspose.Zip 將內容解壓縮至指定目錄。
 
 ```csharp
 using (FileStream fs = File.OpenRead(dataDir + "corpus.wim"))
@@ -56,33 +68,40 @@ using (FileStream fs = File.OpenRead(dataDir + "corpus.wim"))
 }
 ```
 
-此程式碼片段讀取 Wim 存檔文件，存取其第一個映像，並將其內容提取到指定的輸出目錄。
+此程式碼片段會讀取 Wim 壓縮檔，存取其第一個映像，並將內容解壓縮至指定的輸出目錄。
 
 ## 結論
 
-恭喜！您已成功學習如何使用 Aspose.Zip for .NET 將 Wim 檔案解壓縮到資料夾。這個簡單但功能強大的過程可讓您在 .NET 應用程式中有效地管理和提取 Wim 檔案中的資料。
+恭喜！您已成功學會使用 Aspose.Zip for .NET **將 WIM** 壓縮檔解壓縮至資料夾。這個簡單而強大的流程讓您能在 .NET 應用程式中有效管理與解壓縮 Wim 壓縮檔的資料。
 
-## 常見問題解答
+## 常見問題
 
-### Q1：我可以將 Aspose.Zip for .NET 與其他檔案格式一起使用嗎？
+### Q1：我可以在 .NET 中使用 Aspose.Zip for .NET 處理其他壓縮檔格式嗎？
 
-A1：是的，Aspose.Zip 支援各種存檔格式，包括 ZIP、TAR、GZIP 等。
+A1：可以，Aspose.Zip 支援多種壓縮檔格式，包括 ZIP、TAR、GZIP 等。
 
-### Q2：在哪裡可以找到更多 Aspose.Zip 的範例和文件？
+### Q2：在哪裡可以找到更多 Aspose.Zip 的範例與文件說明？
 
- A2：探索[Aspose.Zip 文檔](https://reference.aspose.com/zip/net/)取得詳細的範例和全面的文件。
+A2：請參閱 [Aspose.Zip documentation](https://reference.aspose.com/zip/net/) 以取得詳細範例與完整文件說明。
 
-### 問題 3：Aspose.Zip for .NET 是否有免費試用版？
+### Q3：Aspose.Zip for .NET 有提供免費試用嗎？
 
- A3：是的，您可以免費試用[這裡](https://releases.aspose.com/).
+A3：有，您可在此取得免費試用 [here](https://releases.aspose.com/)。
 
-### Q4 如何取得 Aspose.Zip for .NET 的臨時授權？
+### Q4：如何取得 Aspose.Zip for .NET 的臨時授權？
 
- A4：從以下機構取得臨時許可證[這個連結](https://purchase.aspose.com/temporary-license/).
+A4：請從 [this link](https://purchase.aspose.com/temporary-license/) 取得臨時授權。
 
-### 問題 5：我可以在哪裡獲得有關 Aspose.Zip for .NET 的支援或提出問題？
+### Q5：在哪裡可以取得 Aspose.Zip for .NET 的支援或提問？
 
- A5：訪問[Aspose.Zip 論壇](https://forum.aspose.com/c/zip/37)以尋求支持和討論。
+A5：請前往 [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) 取得支援與討論。
+
+---
+
+**最後更新：** 2025-12-17  
+**測試環境：** Aspose.Zip for .NET (latest release)  
+**作者：** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
