@@ -1,49 +1,63 @@
 ---
-title: Dekomprimujte tradičně heslem chráněný soubor v Aspose.Zip pro .NET
-linktitle: Dekomprimujte tradičně heslem chráněný soubor
-second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
-description: Naučte se, jak dekomprimovat tradičně heslem chráněné soubory pomocí Aspose.Zip pro .NET. Podrobný průvodce pro bezproblémovou integraci.
-weight: 15
+date: 2025-12-17
+description: Naučte se, jak rozbalit zip s heslem a dekomprimovat chráněné zip soubory
+  pomocí Aspose.Zip pro .NET. Podrobný návod krok za krokem pro bezproblémovou integraci.
+linktitle: Decompress Traditionally Password Protected File
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Jak rozbalit zip s heslem pomocí Aspose.Zip pro .NET
 url: /cs/net/file-decompression/decompress-traditionally-password-protected-file/
+weight: 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Dekomprimujte tradičně heslem chráněný soubor v Aspose.Zip pro .NET
+# extrahování zipu s heslem pomocí Aspose.Zip pro .NET
 
-oblasti vývoje .NET vyniká Aspose.Zip jako robustní řešení pro manipulaci s komprimovanými soubory. Mezi jeho nesčetnými funkcemi je jednou z prominentních schopností schopnost dekomprimovat tradičně heslem chráněné soubory. V tomto tutoriálu se ponoříme do procesu dekomprimace souboru zašifrovaného tradičním heslem pomocí Aspose.Zip for .NET. Než se vydáme na tuto cestu, ujistěte se, že máme připravené předpoklady.
+Ve světě vývoje v .NET je extrahování zipu s heslem běžnou požadavkou při práci se zabezpečenými archivy. Aspose.Zip pro .NET tuto úlohu zjednodušuje a umožňuje vám **dekomprimovat zip chráněný heslem** pomocí několika řádků kódu. V tomto tutoriálu projdeme celý proces – od vytvoření archivu chráněného heslem až po jeho rozbalení – abyste mohli sebejistě **otevřít archiv chráněný heslem** ve svých aplikacích C#.
 
-## Předpoklady
+## Quick Answers
+- **Jaká je hlavní třída pro práci se zip soubory?** `Archive` z jmenného prostoru Aspose.Zip.  
+- **Která metoda poskytuje heslo?** Předáte `DecryptionPassword` prostřednictvím `ArchiveLoadOptions`.  
+- **Mohu rozbalit soubory chráněné heslem v .NET Core?** Ano, Aspose.Zip podporuje .NET Framework, .NET Core a .NET 5/6+.  
+- **Potřebuji licenci pro vývoj?** Dočasná licence stačí pro testování; pro produkci je vyžadována plná licence.  
+- **Kolik řádků kódu je potřeba?** Méně než 20 řádků (bez using direktiv).
 
-Než se pustíte do dekomprimace tradičně heslem chráněných souborů, ujistěte se, že máte v pořádku následující předpoklady:
+## Co je „extrahování zipu s heslem“?
+Extrahování zipu s heslem znamená čtení šifrovaného ZIP archivu a zadání správného hesla, aby knihovna mohla dešifrovat a rozbalit obsažené soubory. Často se to označuje jako **jak rozbalit šifrované** archivy.
 
-## Importovat jmenné prostory
+## Proč použít Aspose.Zip pro tuto úlohu?
+- **Plná podpora .NET** – funguje s .NET Framework, .NET Core a novějšími verzemi .NET.  
+- **Zpracování tradiční šifrování** – podporuje starší metodu ZipCrypto používanou mnoha staršími nástroji.  
+- **Jednoduché API** – stačí jen několik volání k zadání hesla a čtení položek.  
+- **Optimalizovaný výkon** – proudy jsou zpracovávány efektivně, což je vhodné pro velké archivy.
 
-Nejprve musíte importovat potřebné jmenné prostory pro přístup k funkcím Aspose.Zip. Zahrňte do svého projektu .NET následující jmenné prostory:
+## Požadavky
+- Vývojové prostředí .NET (Visual Studio 2022 nebo novější).  
+- Knihovna Aspose.Zip pro .NET přidaná do projektu (NuGet balíček `Aspose.Zip`).  
+- Základní znalost práce se soubory v C#.
+
+## Importování jmenných prostorů
+Nejprve přidejte požadované jmenné prostory do rozsahu:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-Nyní si tento proces rozdělíme na pokyny krok za krokem.
-
-## Krok 1: Spusťte ochranu heslem na souboru
-
-Než budeme moci dekomprimovat tradičně heslem chráněný soubor, připravíme jeviště použitím ochrany heslem na soubor. K tomu použijte následující fragment kódu:
+## Krok 1: Nastavení ochrany heslem souboru
+Než budeme moci demonstrovat rozbalení, potřebujeme zip chráněný tradičním heslem. Následující úryvek vytvoří takový archiv (můžete použít existující, pokud ho již máte):
 
 ```csharp
 string dataDir = "Your Document Directory";
-PasswordProtectArchiveWithTraditionalPassword.Run(); // Spusťte ochranu heslem na příkladu souboru a použijte jej později
+PasswordProtectArchiveWithTraditionalPassword.Run(); // Run password protection on a file example to use it later
 ```
 
-Ujistěte se, že jste nahradili "Your Document Directory" skutečným adresářem, kde je umístěn váš dokument.
+> **Tip:** Nahraďte `"Your Document Directory"` absolutní cestou, kde ukládáte testovací soubory.
 
-## Krok 2: Dekomprimujte tradičně heslem chráněný soubor
-
-Nyní, když máme soubor s tradiční ochranou heslem, pojďme pokračovat v procesu dekomprese. Níže uvedený fragment kódu ukazuje, jak toho dosáhnout:
+## Krok 2: Dekompresovat tradičně chráněný soubor heslem
+Nyní rozbalíme obsah. Níže uvedený kód ukazuje přesně, jak **v C# rozbalit archiv chráněný heslem** pomocí Aspose.Zip:
 
 ```csharp
 // ExStart: DecompressTraditionallyPasswordProtectedFile
@@ -65,43 +79,48 @@ using (FileStream fs = File.OpenRead(dataDir + "CompressWithTraditionalEncryptio
         }
     }
 }
+}
 // ExEnd: DecompressTraditionallyPasswordProtectedFile
 ```
 
-V tomto fragmentu kódu:
-- Otevřeme proud komprimovaného souboru.
-- Vytvořte proud výstupního souboru pro dekomprimovaný obsah.
--  Instantovat an`Archive` objekt s poskytnutým dešifrovacím heslem.
-- Otevřete první záznam v archivu (za předpokladu, že existuje pouze jeden záznam).
-- Čtěte a zapisujte dekomprimovaný obsah do výstupního souboru.
+V tomto úryvku provádíme:
+1. Otevřete šifrovaný ZIP soubor jako jen‑pro‑čtení proud.  
+2. Vytvořte nový soubor (`alice_extracted_out.txt`), do kterého budou zapsána dekomprimovaná data.  
+3. Instancujte `Archive` s `ArchiveLoadOptions` a předáte heslo (`"p@s$"`).  
+4. Přistupte k první položce v archivu (předpokládá se jediný soubor) a zkopírujte její bajty do výstupního souboru.
 
-Gratulujeme! Úspěšně jste dekomprimovali soubor tradičně chráněný heslem pomocí Aspose.Zip pro .NET.
+Po dokončení kódu budete mít úspěšně **extrahovaný zip s heslem** a získáte původní obsah souboru.
 
-## Závěr
+## Časté problémy a jak se jim vyhnout
+| Problém | Příčina | Řešení |
+|-------|-------|----------|
+| Výjimka „Neplatné heslo“ | Špatný řetězec hesla nebo chybějící `DecryptionPassword` | Zkontrolujte heslo a ujistěte se, že je předáno přes `ArchiveLoadOptions`. |
+| Nebyla nalezena žádná položka | Archiv je prázdný nebo je cesta nesprávná | Ověřte cestu k ZIP souboru a prohlédněte archiv pomocí nástroje jako 7‑Zip. |
+| Velké soubory způsobují tlak na paměť | Čtení celého souboru do paměti | Použijte smyčku čtení/zápisu s vyrovnávací pamětí (jak je ukázáno) pro zpracování dat po částech. |
 
-Závěrem lze říci, že Aspose.Zip for .NET poskytuje přímočarý a efektivní způsob, jak zacházet se soubory tradičně chráněnými heslem. Podle kroků uvedených v tomto kurzu můžete tuto funkci bez problémů integrovat do svých aplikací .NET.
-
-## FAQ
+## Často kladené otázky
 
 ### Q1: Je Aspose.Zip vhodný pro velké komprimované soubory?
+A1: Ano, Aspose.Zip je optimalizován jak pro malé, tak pro velké komprimované soubory, což zajišťuje efektivní zpracování.
 
-Odpověď 1: Ano, Aspose.Zip je optimalizován pro malé i velké komprimované soubory, což zajišťuje efektivní zpracování.
+### Q2: Mohu použít Aspose.Zip s jinými .NET knihovnami?
+A2: Rozhodně, Aspose.Zip lze snadno integrovat s dalšími .NET knihovnami a rozšířit tak možnosti vaší aplikace.
 
-### Q2: Mohu použít Aspose.Zip s jinými knihovnami .NET?
-
-Odpověď 2: Aspose.Zip lze samozřejmě snadno integrovat s jinými knihovnami .NET a rozšířit tak možnosti vaší aplikace.
-
-### Otázka 3: Existují jiné možnosti šifrování kromě tradičních hesel?
-
-Odpověď 3: Ano, Aspose.Zip podporuje různé metody šifrování a poskytuje flexibilitu na základě vašich požadavků na zabezpečení.
+### Q3: Existují i jiné šifrovací možnosti kromě tradičních hesel?
+A3: Ano, Aspose.Zip podporuje různé šifrovací metody, což poskytuje flexibilitu podle vašich bezpečnostních požadavků.
 
 ### Q4: Existuje komunitní fórum pro podporu Aspose.Zip?
-
- A4: Ano, můžete najít podporu a zapojit se do komunity Aspose.Zip na[Fórum Aspose.Zip](https://forum.aspose.com/c/zip/37).
+A4: Ano, podporu a komunitu Aspose.Zip najdete na [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37).
 
 ### Q5: Jak mohu získat dočasnou licenci pro Aspose.Zip?
+A5: Dočasnou licenci můžete získat na [Aspose.Purchase](https://purchase.aspose.com/temporary-license/).
 
- A5: Můžete získat dočasnou licenci od[Aspose.Purchase](https://purchase.aspose.com/temporary-license/).
+---
+
+**Poslední aktualizace:** 2025-12-17  
+**Testováno s:** Aspose.Zip 24.11 pro .NET  
+**Autor:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

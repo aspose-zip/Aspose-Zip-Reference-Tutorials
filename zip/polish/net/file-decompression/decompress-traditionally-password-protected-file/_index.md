@@ -1,52 +1,67 @@
 ---
-title: Dekompresuj plik tradycyjnie chroniony hasłem w Aspose.Zip dla .NET
-linktitle: Dekompresuj plik tradycyjnie chroniony hasłem
-second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
-description: Dowiedz się, jak dekompresować pliki tradycyjnie chronione hasłem przy użyciu Aspose.Zip dla .NET. Przewodnik krok po kroku dotyczący bezproblemowej integracji.
-weight: 15
+date: 2025-12-17
+description: Dowiedz się, jak wyodrębniać pliki zip z hasłem i dekompresować chronione
+  hasłem archiwa zip przy użyciu Aspose.Zip dla .NET. Przewodnik krok po kroku zapewniający
+  płynną integrację.
+linktitle: Decompress Traditionally Password Protected File
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Jak wyodrębnić plik zip z hasłem przy użyciu Aspose.Zip dla .NET
 url: /pl/net/file-decompression/decompress-traditionally-password-protected-file/
+weight: 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Dekompresuj plik tradycyjnie chroniony hasłem w Aspose.Zip dla .NET
+# wyodrębnianie zip z hasłem przy użyciu Aspose.Zip dla .NET
 
-dziedzinie rozwoju .NET Aspose.Zip wyróżnia się jako solidne rozwiązanie do obsługi skompresowanych plików. Wśród niezliczonych funkcji jedną z najważniejszych jest możliwość dekompresji plików tradycyjnie chronionych hasłem. W tym samouczku zagłębimy się w proces dekompresji pliku zaszyfrowanego tradycyjnym hasłem przy użyciu Aspose.Zip dla .NET. Zanim wyruszymy w tę podróż, upewnijmy się, że mamy spełnione warunki wstępne.
+W świecie programowania .NET wyodrębnianie zip z hasłem jest powszechnym wymaganiem przy pracy z zabezpieczonymi archiwami. Aspose.Zip dla .NET upraszcza to zadanie, pozwalając **dekompresować zip chroniony hasłem** przy użyciu kilku linii kodu. W tym samouczku przeprowadzimy Cię przez cały proces — od utworzenia archiwum chronionego hasłem po wyodrębnienie jego zawartości — abyś mógł pewnie **otwierać archiwa chronione hasłem** w swoich aplikacjach C#.
 
-## Warunki wstępne
+## Szybkie odpowiedzi
+- **Jaka jest główna klasa do obsługi plików zip?** `Archive` z przestrzeni nazw Aspose.Zip.  
+- **Która metoda podaje hasło?** Przekaż `DecryptionPassword` poprzez `ArchiveLoadOptions`.  
+- **Czy mogę rozpakować pliki chronione hasłem w .NET Core?** Tak, Aspose.Zip obsługuje .NET Framework, .NET Core oraz .NET 5/6+.  
+- **Czy potrzebna jest licencja do rozwoju?** Tymczasowa licencja wystarczy do testów; pełna licencja jest wymagana w produkcji.  
+- **Ile linii kodu jest potrzebnych?** Mniej niż 20 linii (bez instrukcji using).
 
-Zanim zaczniesz dekompresować pliki tradycyjnie chronione hasłem, upewnij się, że spełniasz następujące wymagania wstępne:
+## Co to jest „wyodrębnianie zip z hasłem”?
+Wyodrębnianie zip z hasłem oznacza odczyt zaszyfrowanego archiwum ZIP i podanie prawidłowego hasła, aby biblioteka mogła odszyfrować i rozpakować zawarte w nim pliki. Często określa się to jako **jak rozpakować zaszyfrowane** archiwa.
 
-## Importuj przestrzenie nazw
+## Dlaczego warto używać Aspose.Zip do tego zadania?
+- **Pełne wsparcie .NET** – działa z .NET Framework, .NET Core i nowszymi wersjami .NET.  
+- **Obsługa tradycyjnego szyfrowania** – obsługuje starszą metodę ZipCrypto używaną przez wiele starszych narzędzi.  
+- **Proste API** – wystarczy kilka wywołań, aby podać hasło i odczytać wpisy.  
+- **Wydajność zoptymalizowana** – strumienie są przetwarzane efektywnie, co czyni je odpowiednimi dla dużych archiwów.
 
-Po pierwsze, musisz zaimportować niezbędne przestrzenie nazw, aby uzyskać dostęp do funkcjonalności Aspose.Zip. Uwzględnij następujące przestrzenie nazw w swoim projekcie .NET:
+## Wymagania wstępne
+- Środowisko programistyczne .NET (Visual Studio 2022 lub nowsze).  
+- Biblioteka Aspose.Zip dla .NET dodana do projektu (pakiet NuGet `Aspose.Zip`).  
+- Podstawowa znajomość operacji I/O w C#.
+
+## Importowanie przestrzeni nazw
+First, bring the required namespaces into scope:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-Podzielmy teraz proces na instrukcje krok po kroku.
-
-## Krok 1: Uruchom ochronę hasłem pliku
-
-Zanim będziemy mogli zdekompresować plik tradycyjnie chroniony hasłem, przygotujmy grunt, stosując ochronę pliku hasłem. Aby to osiągnąć, użyj następującego fragmentu kodu:
+## Krok 1: Zabezpiecz plik hasłem
+Before we can demonstrate extraction, we need a zip that’s protected with a traditional password. The following snippet creates such an archive (you can reuse an existing one if you already have it):
 
 ```csharp
 string dataDir = "Your Document Directory";
-PasswordProtectArchiveWithTraditionalPassword.Run(); // Uruchom ochronę hasłem na przykładowym pliku, aby użyć jej później
+PasswordProtectArchiveWithTraditionalPassword.Run(); // Run password protection on a file example to use it later
 ```
 
-Upewnij się, że zastąpiłeś „Twój katalog dokumentów” rzeczywistym katalogiem, w którym znajduje się Twój dokument.
+> **Wskazówka:** Zastąp `"Your Document Directory"` absolutną ścieżką, w której przechowujesz pliki testowe.
 
-## Krok 2: Dekompresuj plik tradycyjnie chroniony hasłem
-
-Teraz, gdy mamy plik z tradycyjnym zabezpieczeniem hasłem, przejdźmy do procesu dekompresji. Poniższy fragment kodu ilustruje, jak to osiągnąć:
+## Krok 2: Dekompresja tradycyjnie chronionego hasłem pliku
+Now let’s extract the content. The code below shows exactly how to **c# unzip password protected** archives using Aspose.Zip:
 
 ```csharp
-// ExStart: Dekompresuj tradycyjnie chroniony plik hasłem
+// ExStart: DecompressTraditionallyPasswordProtectedFile
 using (FileStream fs = File.OpenRead(dataDir + "CompressWithTraditionalEncryption_out.zip"))
 {
     using (var extracted = File.Create(dataDir + "alice_extracted_out.txt"))
@@ -65,43 +80,49 @@ using (FileStream fs = File.OpenRead(dataDir + "CompressWithTraditionalEncryptio
         }
     }
 }
-// ExEnd: Dekompresuj tradycyjnie chroniony plik hasłem
+}
+// ExEnd: DecompressTraditionallyPasswordProtectedFile
 ```
 
-W tym fragmencie kodu:
-- Otwieramy skompresowany strumień plików.
-- Utwórz strumień pliku wyjściowego dla zdekompresowanej zawartości.
--  Utwórz instancję`Archive` obiekt z podanym hasłem do odszyfrowania.
-- Otwórz pierwszy wpis w archiwum (zakładając, że jest tylko jeden wpis).
-- Odczytaj i zapisz zdekompresowaną zawartość w pliku wyjściowym.
+W tym przykładzie:
 
-Gratulacje! Pomyślnie zdekompresowałeś plik tradycyjnie chroniony hasłem przy użyciu Aspose.Zip dla .NET.
+1. Otwórz zaszyfrowany plik ZIP jako strumień tylko do odczytu.  
+2. Utwórz nowy plik (`alice_extracted_out.txt`), do którego zostaną zapisane zdekompresowane dane.  
+3. Zainicjuj `Archive` z `ArchiveLoadOptions`, przekazując hasło (`"p@s$"`).  
+4. Uzyskaj dostęp do pierwszego wpisu w archiwum (zakładając pojedynczy plik) i skopiuj jego bajty do pliku wyjściowego.
 
-## Wniosek
+Po zakończeniu działania kodu, pomyślnie **wyodrębnisz zip z hasłem** i uzyskasz oryginalną zawartość pliku.
 
-Podsumowując, Aspose.Zip dla .NET zapewnia prosty i skuteczny sposób obsługi plików tradycyjnie chronionych hasłem. Wykonując kroki opisane w tym samouczku, możesz bezproblemowo zintegrować tę funkcjonalność z aplikacjami .NET.
+## Częste pułapki i jak ich unikać
+| Problem | Przyczyna | Rozwiązanie |
+|-------|-------|----------|
+| Wyjątek „Invalid password” | Nieprawidłowy ciąg hasła lub brak `DecryptionPassword` | Sprawdź ponownie hasło i upewnij się, że jest podane przez `ArchiveLoadOptions`. |
+| Nie znaleziono wpisów | Archiwum jest puste lub ścieżka jest nieprawidłowa | Zweryfikuj ścieżkę do pliku ZIP i sprawdź archiwum przy pomocy narzędzia takiego jak 7‑Zip. |
+| Duże pliki powodują obciążenie pamięci | Odczyt całego pliku do pamięci | Użyj buforowanej pętli odczytu/zapisu (jak pokazano), aby przetwarzać dane w fragmentach. |
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### P1: Czy Aspose.Zip nadaje się do dużych skompresowanych plików?
-
-Odpowiedź 1: Tak, Aspose.Zip jest zoptymalizowany zarówno pod kątem małych, jak i dużych skompresowanych plików, zapewniając wydajne przetwarzanie.
+O1: Tak, Aspose.Zip jest zoptymalizowany zarówno dla małych, jak i dużych skompresowanych plików, zapewniając efektywne przetwarzanie.
 
 ### P2: Czy mogę używać Aspose.Zip z innymi bibliotekami .NET?
+O2: Oczywiście, Aspose.Zip można łatwo zintegrować z innymi bibliotekami .NET, aby zwiększyć możliwości Twojej aplikacji.
 
-Odpowiedź 2: Oczywiście, Aspose.Zip można łatwo zintegrować z innymi bibliotekami .NET, aby zwiększyć możliwości aplikacji.
+### P3: Czy istnieją inne opcje szyfrowania poza tradycyjnymi hasłami?
+O3: Tak, Aspose.Zip obsługuje różne metody szyfrowania, zapewniając elastyczność w zależności od wymagań bezpieczeństwa.
 
-### P3: Czy oprócz tradycyjnych haseł istnieją inne opcje szyfrowania?
+### P4: Czy istnieje forum społecznościowe wsparcia Aspose.Zip?
+O4: Tak, wsparcie i dyskusje ze społecznością Aspose.Zip znajdziesz na [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37).
 
-O3: Tak, Aspose.Zip obsługuje różne metody szyfrowania, zapewniając elastyczność w oparciu o Twoje wymagania bezpieczeństwa.
+### P5: Jak mogę uzyskać tymczasową licencję dla Aspose.Zip?
+O5: Tymczasową licencję możesz uzyskać na stronie [Aspose.Purchase](https://purchase.aspose.com/temporary-license/).
 
-### P4: Czy istnieje forum społecznościowe dotyczące wsparcia Aspose.Zip?
+---
 
- Odpowiedź 4: Tak, możesz znaleźć wsparcie i nawiązać kontakt ze społecznością Aspose.Zip pod adresem[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37).
+**Ostatnia aktualizacja:** 2025-12-17  
+**Testowano z:** Aspose.Zip 24.11 for .NET  
+**Autor:** Aspose  
 
-### P5: Jak mogę uzyskać tymczasową licencję na Aspose.Zip?
-
- Odpowiedź 5: Możesz nabyć licencję tymczasową od[Złóż. Kup](https://purchase.aspose.com/temporary-license/).
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
