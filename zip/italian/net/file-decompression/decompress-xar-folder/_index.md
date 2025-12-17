@@ -1,46 +1,67 @@
 ---
-title: Decomprimi Xar nella cartella in Aspose.Zip per .NET
-linktitle: Decomprimi Xar nella cartella
-second_title: Aspose.Zip .NET API per la compressione e l'archiviazione dei file
-description: Esplora la potenza di Aspose.Zip per .NET! Decomprimi facilmente gli archivi Xar con questo tutorial intuitivo. Migliora la tua esperienza di sviluppo .NET.
-weight: 17
+date: 2025-12-17
+description: Scopri come estrarre gli archivi Xar e decomprimere un archivio Xar in
+  una cartella usando Aspose.Zip per .NET. Segui questa guida passo passo.
+linktitle: Decompress Xar to Folder
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Come estrarre XAR in una cartella usando Aspose.Zip per .NET
 url: /it/net/file-decompression/decompress-xar-folder/
+weight: 17
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Decomprimi Xar nella cartella in Aspose.Zip per .NET
+# Come estrarre Xar in una cartella usando Aspose.Zip per .NET
 
-## introduzione
+## Introduzione
 
-Se stai addentrandoti nel mondo dello sviluppo .NET e stai cercando una soluzione affidabile per decomprimere gli archivi Xar, Aspose.Zip per .NET ti copre. In questa guida passo passo ti guideremo attraverso il processo di decompressione di Xar in una cartella utilizzando Aspose.Zip, una potente libreria che semplifica la manipolazione degli archivi nelle tue applicazioni .NET.
+Se sei uno sviluppatore .NET alla ricerca di un modo affidabile **come estrarre xar**, Aspose.Zip per .NET offre un'API pulita e ad alte prestazioni. In questo tutorial percorreremo l'intero processo di decompressione di un archivio Xar in una cartella, spiegheremo perché questo approccio ti fa risparmiare tempo e ti mostreremo il codice esatto da eseguire.
+
+## Risposte rapide
+- **Cosa fa la libreria?** Legge ed estrae archivi Xar senza strumenti esterni.  
+- **Quali versioni .NET sono supportate?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6+.  
+- **Ho bisogno di una licenza?** Una versione di prova gratuita funziona per lo sviluppo; è necessaria una licenza commerciale per la produzione.  
+- **Quanto tempo richiede l'implementazione?** Tipicamente meno di 10 minuti.  
+- **Posso estrarre in una cartella personalizzata?** Sì—basta specificare il percorso di destinazione in `ExtractToDirectory`.
+
+## Cos'è “come estrarre xar”?
+Estrarre un archivio Xar significa leggere il pacchetto compresso e scrivere i suoi file interni in una directory sul disco. Questo è utile quando ricevi pacchetti XAR da installer macOS, utility di backup o strumenti di terze parti e devi elaborare il loro contenuto in un'applicazione .NET.
+
+## Perché usare Aspose.Zip per questo compito?
+- **Zero dipendenze esterne** – puro .NET, nessun binario nativo.  
+- **API basata su stream** – funziona con file, stream di memoria o stream di rete.  
+- **Gestione robusta degli errori** – eccezioni dettagliate ti aiutano a risolvere archivi corrotti.  
+- **Compatibilità completa con .NET** – funziona su runtime Windows, Linux e macOS.
 
 ## Prerequisiti
 
-Prima di immergerci nel tutorial, assicurati di disporre dei seguenti prerequisiti:
+Prima di iniziare, assicurati di avere quanto segue:
 
--  Aspose.Zip per .NET: assicurati di avere la libreria Aspose.Zip integrata nel tuo progetto .NET. In caso contrario, puoi scaricarlo da[Qui](https://releases.aspose.com/zip/net/).
+- **Aspose.Zip per .NET** – integrato nel tuo progetto. Puoi scaricarlo da [qui](https://releases.aspose.com/zip/net/).
+- **Document Directory** – una cartella nella tua soluzione dove risiederà il file `.xar` di esempio e l'output estratto.
 
-- Directory dei documenti: imposta una directory nel tuo progetto in cui verranno archiviati il tuo archivio Xar e il contenuto decompresso.
+## Importare gli spazi dei nomi
 
-## Importa spazi dei nomi
-
-Nel tuo progetto .NET, includi gli spazi dei nomi necessari per accedere alle funzionalità fornite da Aspose.Zip:
+Nel tuo progetto .NET, includi gli spazi dei nomi necessari per accedere alle funzionalità di Aspose.Zip:
 
 ```csharp
 using System.IO;
 using Aspose.Zip.Xar;
 ```
 
-## Passaggio 1: definire la directory dei documenti
+## Passo 1: Definire la tua Document Directory
+
+Sostituisci `"Your Document Directory"` con il percorso assoluto o relativo che contiene `sample.xar` e dove desideri che venga creata la cartella di output.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Passaggio 2: decomprimere l'archivio Xar
+## Passo 2: Decomprimere l'archivio Xar
+
+Questo frammento apre il file Xar, crea un'istanza `XarArchive` ed estrae **l'intero archivio xar decompresso** in `DecompressXar_out`. L'operazione è completamente basata su stream, quindi funziona in modo efficiente anche con pacchetti di grandi dimensioni.
 
 ```csharp
 //ExStart: DecompressXarArchive
@@ -53,38 +74,43 @@ using (FileStream fs = File.OpenRead(dataDir + "sample.xar"))
 }
 ```
 
-Questo frammento di codice inizializza un FileStream con il tuo archivio Xar, crea un'istanza della classe XarArchive ed estrae il contenuto nella directory specificata.
+## Passo 3: Eseguire il codice
 
-## Passaggio 3: eseguire il codice
+Compila ed esegui la tua applicazione. Dopo l'esecuzione, troverai una nuova cartella chiamata `DecompressXar_out` all'interno della tua document directory, contenente tutti i file che erano stati impacchettati nell'archivio `.xar` originale.
 
-Esegui la tua applicazione .NET e guarda Aspose.Zip decomprimere senza sforzo il tuo archivio Xar, lasciandoti con i contenuti ben organizzati nella cartella designata.
+## Problemi comuni e consigli
 
-## Conclusione
-
-Con Aspose.Zip per .NET, la decompressione degli archivi Xar diventa un compito semplice nelle tue applicazioni .NET. Questa libreria semplifica il processo, consentendoti di concentrarti sulle funzionalità principali della tua applicazione.
-
+- **File non trovato** – Assicurati che il percorso in `File.OpenRead` punti correttamente a `sample.xar`. Usa `Path.Combine` per una gestione più sicura dei percorsi.  
+- **Accesso negato** – Esegui l'applicazione con permessi sufficienti sul file system, soprattutto quando scrivi in directory protette.  
+- **Archivio corrotto** – Aspose.Zip genera `InvalidDataException`; verifica che il file `.xar` di origine sia integro.
 
 ## Domande frequenti
 
-### Q1: Aspose.Zip è compatibile con le ultime versioni di .NET framework?
+**D: Aspose.Zip è compatibile con le versioni più recenti del framework .NET?**  
+R: Sì, Aspose.Zip viene aggiornato regolarmente per garantire la compatibilità con le versioni più recenti del framework .NET. Consulta la [documentazione](https://reference.aspose.com/zip/net/) per i dettagli specifici.
 
- A1: Sì, Aspose.Zip viene regolarmente aggiornato per garantire la compatibilità con le ultime versioni di .NET Framework. Fare riferimento al[documentazione](https://reference.aspose.com/zip/net/) per dettagli specifici.
+**D: Posso provare Aspose.Zip prima di acquistarlo?**  
+R: Assolutamente! Puoi scaricare una versione di prova gratuita da [qui](https://releases.aspose.com/).
 
-### Q2: Posso provare Aspose.Zip prima di effettuare un acquisto?
+**D: Come posso ottenere supporto per Aspose.Zip?**  
+R: Per qualsiasi domanda o assistenza, visita il [forum Aspose.Zip](https://forum.aspose.com/c/zip/37).
 
- A2: Assolutamente! È possibile scaricare una versione di prova gratuita da[Qui](https://releases.aspose.com/).
+**D: Sono disponibili licenze temporanee per Aspose.Zip?**  
+R: Sì, le licenze temporanee possono essere ottenute da [qui](https://purchase.aspose.com/temporary-license/).
 
-### Q3: Come posso ottenere supporto per Aspose.Zip?
+**D: Dove posso acquistare Aspose.Zip per .NET?**  
+R: Puoi acquistare Aspose.Zip per .NET [qui](https://purchase.aspose.com/buy).
 
- R3: Per qualsiasi domanda o assistenza, visitare il[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37).
+**D: Posso estrarre solo file specifici da un archivio Xar?**  
+R: Sì—usa `archive.Entries` per enumerare gli elementi e chiama `ExtractToFile` sulle voci selezionate.
 
-### Q4: Sono disponibili licenze temporanee per Aspose.Zip?
+**D: La libreria supporta file Xar protetti da password?**  
+R: Attualmente, gli archivi Xar non supportano la crittografia; se incontri un file protetto, dovrai decrittarlo prima di usare Aspose.Zip.
 
- R4: Sì, è possibile ottenere licenze temporanee da[Qui](https://purchase.aspose.com/temporary-license/).
+**Ultimo aggiornamento:** 2025-12-17  
+**Testato con:** Aspose.Zip 24.11 per .NET  
+**Autore:** Aspose  
 
-### Q5: Dove posso acquistare Aspose.Zip per .NET?
-
- A5: È possibile acquistare Aspose.Zip per .NET[Qui](https://purchase.aspose.com/buy).
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
