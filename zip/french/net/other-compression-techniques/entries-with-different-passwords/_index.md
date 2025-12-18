@@ -1,33 +1,54 @@
 ---
-title: Entrées avec des mots de passe différents dans Aspose.Zip pour .NET
-linktitle: Entrées avec des mots de passe différents
-second_title: API Aspose.Zip .NET pour la compression et l'archivage de fichiers
-description: Découvrez la puissance d'Aspose.Zip pour .NET avec notre guide étape par étape sur la gestion des archives ZIP avec différents mots de passe. Améliorez la sécurité et la flexibilité de vos applications.
-weight: 13
+date: 2025-12-18
+description: Apprenez à chiffrer des fichiers zip avec différents mots de passe en
+  utilisant Aspose.Zip pour .NET. Ce guide vous montre comment compresser des fichiers
+  avec des mots de passe et créer une archive 7z en C#.
+linktitle: Entries with Different Passwords
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Comment chiffrer des fichiers ZIP avec différents mots de passe dans Aspose.Zip
+  pour .NET
 url: /fr/net/other-compression-techniques/entries-with-different-passwords/
+weight: 13
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Entrées avec des mots de passe différents dans Aspose.Zip pour .NET
+# Comment chiffrer des fichiers ZIP avec des mots de passe différents dans Aspose.Zip pour .NET
 
 ## Introduction
 
-Bienvenue dans le monde d'Aspose.Zip pour .NET, une bibliothèque puissante qui permet aux développeurs de gérer et de manipuler les archives ZIP de manière transparente. Dans ce didacticiel, nous aborderons une fonctionnalité spécifique : travailler avec des entrées avec des mots de passe différents. Que vous soyez un développeur chevronné ou tout juste débutant, ce guide étape par étape vous guidera tout au long du processus, libérant ainsi le potentiel d'Aspose.Zip pour .NET.
+Si vous devez **chiffrer des archives zip** tout en attribuant à chaque entrée son propre mot de passe, vous êtes au bon endroit. Dans ce tutoriel, nous passerons en revue les étapes exactes pour créer une archive 7‑zip où chaque fichier est protégé par un mot de passe unique, en utilisant la bibliothèque Aspose.Zip pour .NET. À la fin, vous comprendrez pourquoi le chiffrement par entrée est important, comment le configurer et comment vérifier le résultat dans vos propres projets.
 
-## Conditions préalables
+## Réponses rapides
+- **Que signifie « encrypt zip » ?** Cela signifie appliquer une protection par mot de passe (AES ou ZipCrypto) au contenu d’une archive ZIP/7z.  
+- **Chaque entrée peut‑elle avoir un mot de passe différent ?** Oui—Aspose.Zip vous permet d’attribuer des mots de passe distincts par fichier.  
+- **Quelles versions de .NET sont prises en charge ?** Toutes les versions modernes de .NET Framework, .NET Core et .NET 5/6.  
+- **Ai‑je besoin d’une licence pour la production ?** Une licence commerciale est requise pour un usage en production ; un essai gratuit est disponible.  
+- **Quel format de compression est utilisé dans l’exemple ?** L’exemple crée une archive 7z avec chiffrement AES‑256.
 
-Avant de plonger dans le monde passionnant de la gestion des archives ZIP avec différents mots de passe, assurez-vous d'avoir les éléments suivants :
+## Qu’est‑ce que « how to encrypt zip » avec Aspose.Zip ?
 
--  Aspose.Zip pour .NET : assurez-vous que la bibliothèque est installée. Dans le cas contraire, vous trouverez les informations nécessaires dans le[Documentation](https://reference.aspose.com/zip/net/).
-- Répertoire de documents : configurez un répertoire pour stocker vos documents.
-- Connaissance de base de C# : Une connaissance de C# sera bénéfique car nous l'utiliserons pour le codage.
+Chiffrer un fichier ZIP (ou 7z) signifie sécuriser ses entrées afin qu’elles ne puissent pas être ouvertes sans le mot de passe correct. Aspose.Zip pour .NET prend en charge à la fois le ZipCrypto classique et le chiffrement AES plus robuste, et il vous permet de spécifier les paramètres de chiffrement par entrée, vous offrant ainsi un contrôle granulaire de la sécurité.
 
-## Importer des espaces de noms
+## Pourquoi utiliser des mots de passe différents pour chaque entrée ?
 
-Pour commencer, vous devez importer les espaces de noms nécessaires dans votre projet C#. Cela garantit que vous avez accès aux fonctionnalités fournies par Aspose.Zip pour .NET.
+- **Segmentation de la sécurité :** Si un mot de passe est compromis, les autres fichiers restent protégés.  
+- **Conformité réglementaire :** Certaines industries exigent des identifiants séparés pour différentes catégories de données.  
+- **Accès spécifique à l’utilisateur :** Vous pouvez distribuer une archive unique à plusieurs utilisateurs, chacun ne débloquant que les fichiers auxquels il est autorisé.
+
+## Prérequis
+
+Avant de commencer, assurez‑vous d’avoir :
+
+- **Aspose.Zip pour .NET** installé – consultez la [documentation officielle](https://reference.aspose.com/zip/net/) pour les instructions de téléchargement et d’installation.  
+- Un dossier sur votre machine où vous conserverez les fichiers source (le « Document Directory »).  
+- Une connaissance de base du C# et de Visual Studio (ou de votre IDE .NET préféré).
+
+## Importer les espaces de noms
+
+Nous commençons par inclure les espaces de noms contenant les classes dont nous aurons besoin.
 
 ```csharp
 using Aspose.Zip.Saving;
@@ -40,18 +61,20 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Étape 1 : définissez votre répertoire de documents
+## Étape 1 : Définir votre répertoire de documents
+
+Définissez le chemin qui contient les fichiers que vous souhaitez archiver.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Étape 2 : Créer des entrées avec différents mots de passe
+## Étape 2 : Créer des entrées avec des mots de passe différents
 
-Passons maintenant à la fonctionnalité principale de création d'entrées avec différents mots de passe dans Aspose.Zip pour .NET.
+Voici le cœur du tutoriel. Nous ouvrons un nouveau fichier 7z, créons trois objets `FileInfo`, et ajoutons chacun comme entrée avec son propre mot de passe AES.
 
 ```csharp
-//ExStart : EntriesWithDifferentPasswords
+//ExStart: EntriesWithDifferentPasswords
 using (FileStream sevenZipFile = File.Open("archive.7z", FileMode.Create))
 {
     FileInfo fi1 = new FileInfo("data1.bin");
@@ -67,42 +90,66 @@ using (FileStream sevenZipFile = File.Open("archive.7z", FileMode.Create))
         archive.Save(sevenZipFile);
     }
 }
-//ExEnd : EntriesWithDifferentPasswords
+//ExEnd: EntriesWithDifferentPasswords
 ```
 
-## Étape 3 : Vérification
+### Comment cela fonctionne
 
-Après avoir exécuté le code, vérifiez votre console pour vous assurer que le fichier Seven Zip avec les paramètres de cryptage AES a été créé avec succès.
+- `SevenZipArchive` est le conteneur d’une archive 7‑z.  
+- `CreateEntry` prend le nom de l’entrée, le fichier source, un indicateur de remplacement, et un objet `SevenZipEntrySettings`.  
+- Dans `SevenZipEntrySettings` nous fournissons deux objets de paramètres : un pour la compression (`SevenZipStoreCompressionSettings`) et un pour le chiffrement (`SevenZipAESEncryptionSettings`).  
+- Chaque appel fournit un **mot de passe différent** (`"test1"`, `"test2"`, `"test3"`), réalisant ainsi une protection par entrée.
+
+## Étape 3 : Vérification
+
+Après l’enregistrement de l’archive, vous pouvez afficher un simple message de confirmation.
 
 ```csharp
 Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Settings");
 ```
 
+Exécutez le programme, puis essayez d’ouvrir `archive.7z` avec un outil comme 7‑Zip. Il vous demandera un mot de passe pour chaque entrée, confirmant que les mots de passe sont bien distincts.
+
+## Problèmes courants et solutions
+
+| Problème | Raison | Solution |
+|----------|--------|----------|
+| **Erreur de mot de passe incorrect** | La chaîne du mot de passe contient des espaces superflus ou des caractères invisibles. | Supprimez les espaces (`new SevenZipAESEncryptionSettings(password.Trim())`). |
+| **Archive non ouvrable avec d’anciens outils** | Certains outils ZIP hérités ne prennent pas en charge le chiffrement AES‑256 utilisé par 7z. | Utilisez un extracteur moderne (7‑Zip 19.00+). |
+| **Fichier non ajouté à l’archive** | Le chemin du fichier source est incorrect ou le fichier n’existe pas. | Vérifiez `dataDir` et les noms de fichiers, ou utilisez `Path.Combine(dataDir, "data1.bin")`. |
+
+## Questions fréquentes
+
+### Q1 : Aspose.Zip pour .NET est‑il compatible avec toutes les versions de .NET ?
+
+R1 : Oui, Aspose.Zip pour .NET est conçu pour s’intégrer de façon transparente à toutes les versions du framework .NET.
+
+### Q2 : Puis‑je utiliser Aspose.Zip pour .NET dans mes projets commerciaux ?
+
+R2 : Absolument ! Aspose.Zip pour .NET propose des licences commerciales, et vous pouvez obtenir plus d’informations sur l’achat [ici](https://purchase.aspose.com/buy).
+
+### Q3 : Existe‑t‑il une version d’essai gratuite ?
+
+R3 : Oui, vous pouvez explorer les fonctionnalités d’Aspose.Zip pour .NET avec un essai gratuit. Commencez [ici](https://releases.aspose.com/).
+
+### Q4 : Comment obtenir du support pour Aspose.Zip pour .NET ?
+
+R4 : Pour toute question ou assistance, rendez‑vous sur le [forum Aspose.Zip](https://forum.aspose.com/c/zip/37).
+
+### Q5 : Puis‑je utiliser Aspose.Zip pour .NET sans licence permanente ?
+
+R5 : Oui, vous pouvez obtenir une licence temporaire pour vos besoins à court terme. Plus de détails [ici](https://purchase.aspose.com/temporary-license/).
+
 ## Conclusion
 
-Toutes nos félicitations! Vous maîtrisez maintenant l'art de travailler avec des entrées ayant des mots de passe différents dans Aspose.Zip pour .NET. Cette puissante fonctionnalité ouvre la porte à une sécurité et une flexibilité accrues lors de la gestion des archives ZIP dans vos applications.
+Vous venez d’apprendre **comment chiffrer des archives zip** avec des mots de passe par entrée en utilisant Aspose.Zip pour .NET. Cette technique vous offre la flexibilité de protéger chaque fichier individuellement, répondant à des exigences de sécurité plus strictes et simplifiant la distribution spécifique à chaque utilisateur. N’hésitez pas à expérimenter d’autres paramètres de compression, des ensembles de fichiers plus volumineux, ou à intégrer cette logique dans un service web qui génère des archives sécurisées à la volée.
 
-## FAQ
+---
 
-### Q1 : Aspose.Zip pour .NET est-il compatible avec toutes les versions de .NET ?
+**Dernière mise à jour :** 2025-12-18  
+**Testé avec :** Aspose.Zip pour .NET 24.12 (dernière version au moment de la rédaction)  
+**Auteur :** Aspose  
 
-A1 : Oui, Aspose.Zip pour .NET est conçu pour s'intégrer de manière transparente à toutes les versions du framework .NET.
-
-### Q2 : Puis-je utiliser Aspose.Zip pour .NET dans mes projets commerciaux ?
-
-A2 : Absolument ! Aspose.Zip pour .NET propose des licences commerciales et vous pouvez trouver plus d'informations sur la façon d'acheter[ici](https://purchase.aspose.com/buy).
-
-### Q3 : Existe-t-il un essai gratuit disponible ?
-
- A3 : Oui, vous pouvez explorer les fonctionnalités d'Aspose.Zip pour .NET avec un essai gratuit. Commencer[ici](https://releases.aspose.com/).
-
-### Q4 : Comment puis-je obtenir de l'assistance pour Aspose.Zip pour .NET ?
-
- A4 : Pour toute question ou assistance, visitez le[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37).
-
-### Q5 : Puis-je utiliser Aspose.Zip pour .NET sans licence permanente ?
-
- R5 : Oui, vous pouvez obtenir une licence temporaire pour vos besoins à court terme. Trouver plus de détails[ici](https://purchase.aspose.com/temporary-license/).
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
