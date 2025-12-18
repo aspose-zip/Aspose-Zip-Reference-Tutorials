@@ -1,33 +1,53 @@
 ---
-title: Aspose.Zip for .NET'te Farklı Şifreli Girişler
-linktitle: Farklı Şifreli Girişler
-second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
-description: ZIP arşivlerini farklı şifrelerle yönetmeye yönelik adım adım kılavuzumuzla Aspose.Zip for .NET'in gücünü keşfedin. Uygulamalarınızda güvenliği ve esnekliği artırın.
-weight: 13
+date: 2025-12-18
+description: .NET için Aspose.Zip kullanarak farklı şifrelerle zip dosyalarını nasıl
+  şifreleyeceğinizi öğrenin. Bu kılavuz, dosyaları şifreyle sıkıştırmayı ve C#'ta
+  7z arşivi oluşturmayı gösterir.
+linktitle: Entries with Different Passwords
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Aspose.Zip for .NET'te ZIP Dosyalarını Farklı Parolalarla Şifreleme
 url: /tr/net/other-compression-techniques/entries-with-different-passwords/
+weight: 13
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET'te Farklı Şifreli Girişler
+# Aspose.Zip for .NET ile Farklı Parolalar Kullanarak ZIP Dosyalarını Şifreleme
 
-## giriiş
+## Giriş
 
-Geliştiricilerin ZIP arşivlerini sorunsuz bir şekilde yönetmesine ve işlemesine olanak tanıyan güçlü bir kütüphane olan Aspose.Zip for .NET dünyasına hoş geldiniz. Bu eğitimde belirli bir özelliği inceleyeceğiz: farklı şifrelere sahip girişlerle çalışmak. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu adım adım kılavuz süreç boyunca size yol gösterecek ve Aspose.Zip for .NET'in potansiyelini ortaya çıkaracaktır.
+Her bir girdiye ayrı bir parola vererek **zip nasıl şifrelenir** arşivleri oluşturmanız gerekiyorsa doğru yerdesiniz. Bu öğreticide, Aspose.Zip .NET kütüphanesini kullanarak her dosyanın benzersiz bir parola ile korunduğu bir 7‑zip arşivi oluşturmanın tam adımlarını göstereceğiz. Sonunda, giriş‑başına şifrelemenin neden önemli olduğunu, nasıl ayarlanacağını ve sonucu kendi projelerinizde nasıl doğrulayacağınızı anlayacaksınız.
+
+## Hızlı Yanıtlar
+- **“encrypt zip” ne anlama geliyor?** ZIP/7z arşivinin içeriğine parola‑tabanlı koruma (AES veya ZipCrypto) uygulanması demektir.  
+- **Her giriş farklı bir parola alabilir mi?** Evet—Aspose.Zip, dosya başına ayrı parolalar atamanıza izin verir.  
+- **Hangi .NET sürümleri destekleniyor?** Tüm modern .NET Framework, .NET Core ve .NET 5/6 sürümleri.  
+- **Üretim için lisansa ihtiyacım var mı?** Üretim kullanımında ticari bir lisans gereklidir; ücretsiz bir deneme sürümü mevcuttur.  
+- **Örnekte hangi sıkıştırma formatı kullanılıyor?** Örnek, AES‑256 şifreleme ile bir 7z arşivi oluşturur.
+
+## Aspose.Zip ile “how to encrypt zip” nedir?
+
+Bir ZIP (veya 7z) dosyasını şifrelemek, girdilerini doğru parola olmadan açılamaz hâle getirmek demektir. Aspose.Zip for .NET, klasik ZipCrypto ve daha güçlü AES şifrelemesini destekler ve her giriş için şifreleme ayarlarını belirlemenize olanak tanır; bu da güvenlik üzerinde ince ayar yapmanızı sağlar.
+
+## Her Giriş İçin Farklı Parola Kullanmanın Avantajları
+
+- **Güvenlik segmentasyonu:** Bir parola ele geçirilirse, diğer dosyalar korunmaya devam eder.  
+- **Yasal uyumluluk:** Bazı sektörler, farklı veri kategorileri için ayrı kimlik bilgileri gerektirir.  
+- **Kullanıcı‑özel erişim:** Tek bir arşivi birden fazla kullanıcıya dağıtabilir, her kullanıcı yalnızca yetkili olduğu dosyaları açabilir.
 
 ## Önkoşullar
 
-ZIP arşivlerini çeşitli şifrelerle yönetmenin heyecan verici dünyasına dalmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+Başlamadan önce şunların kurulu olduğundan emin olun:
 
--  Aspose.Zip for .NET: Kütüphanenin kurulu olduğundan emin olun. Değilse, gerekli bilgileri şurada bulabilirsiniz.[dokümantasyon](https://reference.aspose.com/zip/net/).
-- Belge Dizini: Belgelerinizi saklamak için bir dizin ayarlayın.
-- Temel C# Bilgisi: Kodlamada kullanacağımız için C#'a aşina olmak faydalı olacaktır.
+- **Aspose.Zip for .NET** yüklü – indirme ve kurulum talimatları için resmi [documentation](https://reference.aspose.com/zip/net/) sayfasına bakın.  
+- Makinenizde kaynak dosyaları tutacağınız bir klasör (“Document Directory”).  
+- C# ve Visual Studio (veya tercih ettiğiniz .NET IDE) hakkında temel bilgi.
 
-## Ad Alanlarını İçe Aktar
+## Namespace’leri İçe Aktarma
 
-Başlamak için gerekli ad alanlarını C# projenize aktarmanız gerekir. Bu, Aspose.Zip for .NET tarafından sağlanan işlevselliğe erişmenizi sağlar.
+İhtiyacımız olan sınıfların bulunduğu namespace’leri ekleyerek başlıyoruz.
 
 ```csharp
 using Aspose.Zip.Saving;
@@ -40,18 +60,20 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## 1. Adım: Belge Dizininizi Ayarlayın
+## Adım 1: Document Directory’nizi Ayarlayın
+
+Arşivleyeceğiniz dosyaların bulunduğu yolu tanımlayın.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## 2. Adım: Farklı Şifrelerle Girişler Oluşturun
+## Adım 2: Farklı Parolalarla Girdiler Oluşturun
 
-Şimdi Aspose.Zip for .NET'te farklı parolalarla girişler oluşturmanın temel işlevlerine geçelim.
+İşte öğretinin kalbi. Yeni bir 7z dosyası açıyor, üç `FileInfo` nesnesi oluşturuyor ve her birini kendi AES parolasıyla bir giriş olarak ekliyoruz.
 
 ```csharp
-//ExStart: Farklı Şifreli Girişler
+//ExStart: EntriesWithDifferentPasswords
 using (FileStream sevenZipFile = File.Open("archive.7z", FileMode.Create))
 {
     FileInfo fi1 = new FileInfo("data1.bin");
@@ -67,42 +89,66 @@ using (FileStream sevenZipFile = File.Open("archive.7z", FileMode.Create))
         archive.Save(sevenZipFile);
     }
 }
-//ExEnd: Farklı Şifreli Girişler
+//ExEnd: EntriesWithDifferentPasswords
 ```
 
-## 3. Adım: Doğrulama
+### Nasıl Çalışıyor
 
-Kodu yürüttükten sonra, AES şifreleme ayarlarına sahip Seven Zip dosyasının başarıyla oluşturulduğundan emin olmak için konsolunuzu kontrol edin.
+- `SevenZipArchive`, 7‑z arşivi için konteynerdir.  
+- `CreateEntry` giriş adını, kaynak dosyayı, üzerine yazma bayrağını ve bir `SevenZipEntrySettings` nesnesini alır.  
+- `SevenZipEntrySettings` içinde iki ayar nesnesi sağlarız: sıkıştırma için (`SevenZipStoreCompressionSettings`) ve şifreleme için (`SevenZipAESEncryptionSettings`).  
+- Her çağrı **farklı bir parola** (`"test1"`, `"test2"`, `"test3"`) sağlar; böylece giriş‑başına koruma elde edilir.
+
+## Adım 3: Doğrulama
+
+Arşiv kaydedildikten sonra basit bir onay mesajı yazdırabilirsiniz.
 
 ```csharp
 Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Settings");
 ```
 
-## Çözüm
+Programı çalıştırın, ardından `archive.7z` dosyasını 7‑Zip gibi bir araçla açmayı deneyin. Her giriş için ayrı bir parola sorulacak ve parolaların gerçekten farklı olduğu doğrulanacaktır.
 
-Tebrikler! Artık Aspose.Zip for .NET'te farklı parolalara sahip girişlerle çalışma sanatında ustalaştınız. Bu güçlü özellik, uygulamalarınızdaki ZIP arşivlerini yönetirken gelişmiş güvenlik ve esnekliğe kapı açar.
+## Yaygın Sorunlar ve Çözümler
 
-## SSS'ler
+| Issue | Reason | Fix |
+|-------|--------|-----|
+| **Incorrect password error** | Parola dizesi gereksiz boşluklar veya görünmez karakterler içeriyor. | Parola dizelerini kırpın (`new SevenZipAESEncryptionSettings(password.Trim())`). |
+| **Archive not opening in older tools** | Bazı eski ZIP araçları, 7z’de kullanılan AES‑256 şifrelemeyi desteklemiyor. | Modern bir çıkarıcı kullanın (7‑Zip 19.00+). |
+| **File not added to archive** | Kaynak dosya yolu hatalı veya dosya mevcut değil. | `dataDir` ve dosya adlarını kontrol edin, ya da `Path.Combine(dataDir, "data1.bin")` kullanın. |
 
-### S1: Aspose.Zip for .NET, .NET'in tüm sürümleriyle uyumlu mudur?
+## Sık Sorulan Sorular
 
-Cevap1: Evet, Aspose.Zip for .NET, .NET framework'ün tüm sürümleriyle sorunsuz bir şekilde entegre olacak şekilde tasarlanmıştır.
+### S1: Aspose.Zip for .NET tüm .NET sürümleriyle uyumlu mu?
 
-### S2: Aspose.Zip for .NET'i ticari projelerimde kullanabilir miyim?
+C1: Evet, Aspose.Zip for .NET .NET framework’ün tüm sürümleriyle sorunsuz entegrasyon sağlayacak şekilde tasarlanmıştır.
 
-A2: Kesinlikle! Aspose.Zip for .NET ticari lisanslar sunar ve nasıl satın alacağınız hakkında daha fazla bilgi bulabilirsiniz[Burada](https://purchase.aspose.com/buy).
+### S2: Aspose.Zip for .NET’i ticari projelerimde kullanabilir miyim?
 
-### S3: Ücretsiz deneme sürümü mevcut mu?
+C2: Kesinlikle! Aspose.Zip for .NET ticari lisanslar sunar; lisans satın alma hakkında daha fazla bilgiye [buradan](https://purchase.aspose.com/buy) ulaşabilirsiniz.
 
- C3: Evet, Aspose.Zip for .NET'in özelliklerini ücretsiz denemeyle keşfedebilirsiniz. Başlamak[Burada](https://releases.aspose.com/).
+### S3: Ücretsiz bir deneme sürümü var mı?
 
-### S4: Aspose.Zip for .NET desteğini nasıl alabilirim?
+C3: Evet, Aspose.Zip for .NET’in özelliklerini ücretsiz deneme sürümüyle keşfedebilirsiniz. Başlamak için [buraya](https://releases.aspose.com/) tıklayın.
 
- A4: Sorularınız veya yardım için şu adresi ziyaret edin:[Aspose.Zip Forumu](https://forum.aspose.com/c/zip/37).
+### S4: Aspose.Zip for .NET için destek nasıl alınır?
 
-### S5: Aspose.Zip for .NET'i kalıcı lisans olmadan kullanabilir miyim?
+C4: Her türlü soru ve yardım için [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) adresini ziyaret edin.
 
- Cevap5: Evet, kısa süreli ihtiyaçlarınız için geçici lisans alabilirsiniz. Daha fazla ayrıntı bulun[Burada](https://purchase.aspose.com/temporary-license/).
+### S5: Kalıcı bir lisans almadan Aspose.Zip for .NET’i kullanabilir miyim?
+
+C5: Evet, kısa vadeli ihtiyaçlarınız için geçici bir lisans alabilirsiniz. Detaylar için [buraya](https://purchase.aspose.com/temporary-license/) bakın.
+
+## Sonuç
+
+Aspose.Zip for .NET kullanarak giriş‑başına parolalarla **zip nasıl şifrelenir** sorusunun yanıtını öğrendiniz. Bu teknik, her dosyayı ayrı ayrı korumanıza, daha katı güvenlik gereksinimlerini karşılamanıza ve kullanıcı‑özel dağıtımı basitleştirmenize olanak tanır. Diğer sıkıştırma ayarları, daha büyük dosya setleriyle denemeler yapabilir veya bu mantığı, güvenli arşivleri anlık olarak üreten bir web servisine entegre edebilirsiniz.
+
+---
+
+**Son Güncelleme:** 2025-12-18  
+**Test Edilen Versiyon:** Aspose.Zip for .NET 24.12 (yazım anındaki en yeni sürüm)  
+**Yazar:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
