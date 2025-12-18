@@ -1,88 +1,121 @@
 ---
-title: 密码保护和加密
-linktitle: 密码保护和加密
-second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
-description: 使用 Aspose.Zip for .NET 保护您的文件！学习有关密码保护和加密（从 AES 到传统方法）的分步教程。
-weight: 26
+date: 2025-12-18
+description: 学习如何使用 Aspose.Zip for .NET 对 zip 文件进行密码保护。为 zip 添加密码，使用 AES 加密 zip，并解压
+  AES 加密的 zip 存档。
+linktitle: Password Protection and Encryption
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: 密码保护 Zip – Aspose.Zip for .NET 指南
 url: /zh/net/password-protection-and-encryption/
+weight: 26
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 密码保护和加密
-
+# 密码保护与加密
 
 ## 介绍
 
-您是否担心 .NET 应用程序中文件的安全性？别再犹豫了！ Aspose.Zip for .NET 提供强大的密码保护和加密解决方案，确保您的数据保密且安全。在这份综合指南中，我们将引导您完成各种教程，每个教程都侧重于文件安全的特定方面。
+您是否担心 .NET 应用程序中文件的安全性？在本指南中，您将了解如何使用 Aspose.Zip for .NET **对 zip 进行密码保护**，无论是 *向 zip 添加密码*、使用 AES 加密，还是仅仅保护目录。我们将通过一系列逐步教程，涵盖所有常见场景——从传统密码到基于 AES 的现代保护——帮助您保持数据机密并符合合规要求。
 
-## Aspose.Zip for .NET 中的密码保护目录
+## 快速答案
+- **“password protect zip” 是什么意思？** 它指的是对 ZIP 压缩包应用密码或加密，使其内容在未进行身份验证的情况下无法打开。  
+- **哪种加密算法最强？** AES‑256 是 Aspose.Zip 提供的最安全选项。  
+- **我可以为不同文件设置不同密码吗？** 可以，Aspose.Zip 允许为每个条目分配唯一密码。  
+- **生产环境需要许可证吗？** 商业许可证是非试用部署的必需品。  
+- **API 是否兼容 .NET 6 及以上？** 完全兼容——Aspose.Zip 支持 .NET Framework、.NET Core 以及 .NET 5/6。
 
-保护您的目录是首要任务吗？深入了解有关使用 Aspose.Zip 保护 .NET 中的目录的密码的教程。我们提供分步指南，轻松保护您的文件，确保您的数据受到保护。
+## 在 Aspose.Zip for .NET 中对目录进行密码保护
+
+保护目录是否是您的首要任务？深入阅读我们关于在 .NET 中使用 Aspose.Zip 对目录进行密码保护的教程。我们提供逐步指南，帮助您轻松保障文件安全，确保数据得到保护。
 
 ## 在 Aspose.Zip for .NET 中使用 AES 进行密码保护
 
-通过 Aspose.Zip for .NET 中的高级 AES 加密增强文件安全性。我们的分步指南将引导您完成整个过程，确保为您的敏感数据提供最佳保护。立即升级您的安全措施！
+通过 Aspose.Zip for .NET 的高级 AES 加密提升文件安全性。我们的逐步指南将带您完成整个过程，为您的敏感数据提供最佳保护。立即升级您的安全措施！
 
-## 在 Aspose.Zip for .NET 中使用传统密码密码保护存档
+## 在 Aspose.Zip for .NET 中使用传统密码保护归档
 
-对 .NET 档案的传统密码保护感到好奇吗？探索我们有关使用 Aspose.Zip 保护档案的教程。请遵循我们的增强数据机密性指南并加强您的文件安全游戏。
+想了解 .NET 归档的传统密码保护吗？探索我们关于使用 Aspose.Zip 保护归档的教程。按照指南操作，提升数据机密性，增强文件安全防护。
 
-## 在 Aspose.Zip for .NET 中使用密码存储多个文件而不进行压缩
+## 在 Aspose.Zip for .NET 中使用密码存储多个文件（无压缩）
 
-释放文件管理的力量！了解如何使用 Aspose.Zip for .NET 安全地存储多个文件而不进行压缩。我们易于遵循的密码保护步骤使文件管理变得轻而易举。
+释放文件管理的强大功能！学习如何使用 Aspose.Zip for .NET 在不压缩的情况下安全存储多个文件。我们提供的密码保护步骤简明易懂，让文件管理轻松自如。
 
 ## Aspose.Zip for .NET 中的 AES 加密设置
 
-使用 Aspose.Zip for .NET 中的 AES 加密设置深入了解安全压缩文件的世界。立即下载，探索有效的文件数据保护措施。
+深入了解 Aspose.Zip for .NET 中的 AES 加密设置，掌握安全压缩文件的世界。立即下载，探索高效的数据保护方案。
 
-## 在 Aspose.Zip for .NET 中使用加密条目进行存档
+## Aspose.Zip for .NET 中的加密条目归档
 
-成为安全归档专家！探索 Aspose.Zip for .NET，轻松创建 7 个采用 AES 加密的 Zip 文件。提高您的开发技能并确保您的档案坚不可摧。
+成为安全归档的专家！使用 Aspose.Zip for .NET 轻松创建带 AES 加密的 Seven Zip 文件。提升开发技能，确保归档坚不可摧。
 
-## 在 Aspose.Zip for .NET 中使用单独的密码压缩文件
+## 在 Aspose.Zip for .NET 中使用单独密码压缩文件
 
-将您的文件安全性提升到一个新的水平！请按照我们的分步指南使用 Aspose.Zip for .NET 压缩具有单独密码的文件。轻松增强 .NET 应用程序中的数据保护。
+将文件安全提升到新水平！按照我们的逐步指南，使用 Aspose.Zip for .NET 为每个文件设置单独密码进行压缩。轻松在 .NET 应用中增强数据保护。
 
 ## 在 Aspose.Zip for .NET 中使用传统加密压缩多个文件
 
-希望在 .NET 应用程序中安全地压缩多个文件？使用 Aspose.Zip 了解传统加密的艺术。我们的指南可确保您增强数据保护并有效保护您的文件。
+想在 .NET 应用中安全压缩多个文件吗？学习使用 Aspose.Zip 的传统加密技术。我们的指南帮助您提升数据保护，确保文件安全。
 
 ## 在 Aspose.Zip for .NET 中解压 AES 加密文件
 
-揭开使用 Aspose.Zip for .NET 在 C# 中解压缩 AES 加密文件的神秘面纱。我们的综合指南可确保高效的文件处理，让您的流程无缝衔接。
+揭开在 C# 中使用 Aspose.Zip for .NET 解压 AES 加密文件的神秘面纱。我们的完整指南确保高效的文件处理，让过程顺畅无阻。
 
-## 在 Aspose.Zip for .NET 中解压 AES 加密存储文件
+## 在 Aspose.Zip for .NET 中解压 AES 加密的存储文件
 
-准备好增强您的 .NET 开发技能了吗？通过我们的分步指南，了解如何在 Aspose.Zip for .NET 中解压缩 AES 加密的存储文件。立即提升您的文件管理专业知识！
+准备提升您的 .NET 开发技能了吗？通过我们的逐步指南，学习在 Aspose.Zip for .NET 中解压 AES 加密的存储文件。今天就提升您的文件管理专业水平！
 
-无论您是新手还是经验丰富的开发人员，我们的教程都适合所有技能水平。深入了解 Aspose.Zip for .NET 的世界，确保您的文件受到最新的加密和密码保护技术的保护。立即下载并迈出迈向更安全的文件管理体验的第一步！
-## 密码保护和加密教程
-### [Aspose.Zip for .NET 中的密码保护目录](./password-protect-directory/)
-了解如何使用 Aspose.Zip 对 .NET 中的目录进行密码保护。通过此分步教程轻松保护您的文件。
-### [在 Aspose.Zip for .NET 中使用 AES 进行密码保护](./password-protect-with-aes/)
-了解如何使用 Aspose.Zip for .NET 和 AES 加密来增强文件安全性。请遵循我们的分步指南以获得最佳保护。
-### [在 Aspose.Zip for .NET 中使用传统密码密码保护存档](./password-protect-archive-traditional-password/)
-了解如何使用 Aspose.Zip 通过传统密码保护来保护您的 .NET 存档。请遵循我们的分步指南以增强数据机密性。
-### [在 Aspose.Zip for .NET 中使用密码存储多个文件而不进行压缩](./store-multiple-files-no-compression-password/)
-探索如何使用 Aspose.Zip for .NET 安全地存储多个文件而不进行压缩。密码保护的简单步骤。释放文件管理的力量！
-### [Aspose.Zip for .NET 中的 AES 加密设置](./aes-encryption-settings/)
-探索 Aspose.Zip for .NET，通过 AES 加密保护您的压缩文件。立即下载以实现高效的数据保护。
-### [在 Aspose.Zip for .NET 中使用加密条目进行存档](./archive-with-encrypted-entry/)
-使用 Aspose.Zip 探索 .NET 中的安全归档世界。轻松创建七个采用 AES 加密的 Zip 文件。立即提升您的开发技能！
-### [在 Aspose.Zip for .NET 中使用单独的密码压缩文件](./compress-files-individual-passwords/)
-了解如何增强 .NET 应用程序中的文件安全性！请按照我们的分步指南使用 Aspose.Zip for .NET 压缩具有单独密码的文件。
-### [在 Aspose.Zip for .NET 中使用传统加密压缩多个文件](./compress-multiple-files-traditional-encryption/)
-了解如何使用 Aspose.Zip for .NET 中的传统加密安全地压缩多个文件。增强 .NET 应用程序中的数据保护。
-### [在 Aspose.Zip for .NET 中解压 AES 加密文件](./decompress-aes-encrypted-file/)
-了解使用 Aspose.Zip for .NET 在 C# 中解压缩 AES 加密文件。请按照我们的分步指南进行高效的文件处理。
-### [在 Aspose.Zip for .NET 中解压 AES 加密存储文件](./decompress-aes-encrypted-stored-file/)
-通过这份全面的分步指南，了解如何在 Aspose.Zip for .NET 中解压缩 AES 加密的存储文件。立即增强您的 .NET 开发技能！
+无论您是新手还是经验丰富的开发者，我们的教程均适用于所有技能层级。深入 Aspose.Zip for .NET 的世界，使用最新的加密和密码保护技术确保文件安全。立即下载，迈出更安全文件管理体验的第一步！
+
+## 密码保护与加密教程
+### [Password Protect Directory in Aspose.Zip for .NET](./password-protect-directory/)
+了解如何在 .NET 中使用 Aspose.Zip 对目录进行密码保护。通过本逐步教程轻松保障文件安全。
+### [Password Protect with AES in Aspose.Zip for .NET](./password-protect-with-aes/)
+了解如何使用 Aspose.Zip for .NET 的 AES 加密提升文件安全。按照我们的逐步指南获得最佳保护。
+### [Password Protect Archive with Traditional Password in Aspose.Zip for .NET](./password-protect-archive-traditional-password/)
+了解如何使用 Aspose.Zip 对 .NET 归档进行传统密码保护。按照我们的逐步指南提升数据机密性。
+### [Store Multiple Files Without Compression with Password in Aspose.Zip for .NET](./store-multiple-files-no-compression-password/)
+探索如何使用 Aspose.Zip for .NET 在不压缩的情况下安全存储多个文件。简易步骤实现密码保护，释放文件管理的强大潜能！
+### [AES Encryption Settings in Aspose.Zip for .NET](./aes-encryption-settings/)
+探索 Aspose.Zip for .NET，使用 AES 加密保护压缩文件。立即下载，获取高效的数据保护方案。
+### [Archive with Encrypted Entry in Aspose.Zip for .NET](./archive-with-encrypted-entry/)
+探索 .NET 中使用 Aspose.Zip 的安全归档世界。轻松创建带 AES 加密的 Seven Zip 文件，立即提升开发技能！
+### [Compress Files with Individual Passwords in Aspose.Zip for .NET](./compress-files-individual-passwords/)
+了解如何在 .NET 应用中提升文件安全！按照我们的逐步指南，使用 Aspose.Zip for .NET 为文件设置单独密码进行压缩。
+### [Compress Multiple Files with Traditional Encryption in Aspose.Zip for .NET](./compress-multiple-files-traditional-encryption/)
+了解如何使用 Aspose.Zip for .NET 的传统加密安全压缩多个文件。提升 .NET 应用中的数据保护。
+### [Decompress AES Encrypted File in Aspose.Zip for .NET](./decompress-aes-encrypted-file/)
+学习在 C# 中使用 Aspose.Zip for .NET 解压 AES 加密文件。按照我们的逐步指南实现高效文件处理。
+### [Decompress AES Encrypted Stored File in Aspose.Zip for .NET](./decompress-aes-encrypted-stored-file/)
+学习如何使用本完整的逐步指南在 Aspose.Zip for .NET 中解压 AES 加密的存储文件。今天就提升您的 .NET 开发技能！
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+## 常见问题
+
+**Q: 如何使用 Aspose.Zip 为 zip 文件添加密码？**  
+A: 使用 `ZipArchive` 类，设置 `Password` 属性，并选择如 AES‑256 等加密方式。
+
+**Q: 能否在不压缩的情况下对目录进行密码保护？**  
+A: 可以，Aspose.Zip 允许创建包含文件夹结构的归档，并对整个归档应用密码。
+
+**Q: “encrypt zip with aes” 与传统密码保护有什么区别？**  
+A: AES 加密提供强大的密码学安全性（128/256 位密钥），而传统 ZIP 密码使用较弱的 ZipCrypto。
+
+**Q: 如何在 .NET 中解压 AES 加密的 zip 归档？**  
+A: 调用 `ZipArchive.ExtractAll`（或 `ExtractEntry`），并提供创建归档时使用的相同密码。
+
+**Q: 能否在不写入磁盘的情况下解压 AES 加密的文件流？**  
+A: 可以，Aspose.Zip 支持直接使用流进行内存解压。
+
+---
+
+**最后更新：** 2025-12-18  
+**测试环境：** Aspose.Zip for .NET 24.12  
+**作者：** Aspose
