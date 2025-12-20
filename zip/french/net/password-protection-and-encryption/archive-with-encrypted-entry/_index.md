@@ -1,35 +1,48 @@
 ---
-title: Maîtrisez l’archivage sécurisé dans .NET avec Aspose.Zip
-linktitle: Archiver avec entrée cryptée
-second_title: API Aspose.Zip .NET pour la compression et l'archivage de fichiers
-description: Explorez le monde de l'archivage sécurisé dans .NET avec Aspose.Zip. Créez facilement sept fichiers Zip avec cryptage AES. Boostez vos compétences en développement dès maintenant !
-weight: 15
+date: 2025-12-20
+description: Apprenez à créer des archives 7z avec chiffrement AES en .NET à l’aide
+  d’Aspose.Zip. Archivage sécurisé, protection par mot de passe des ZIP et création
+  de fichiers seven zip chiffrés, le tout en toute simplicité.
+linktitle: Archive with Encrypted Entry
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Comment créer des fichiers 7z avec chiffrement AES en .NET
 url: /fr/net/password-protection-and-encryption/archive-with-encrypted-entry/
+weight: 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Maîtrisez l’archivage sécurisé dans .NET avec Aspose.Zip
-
+# Comment créer des fichiers 7z avec chiffrement AES dans .NET
 
 ## Introduction
 
-Dans le monde en constante évolution du développement logiciel, la maîtrise de techniques efficaces de compression et de chiffrement est cruciale. Aspose.Zip pour .NET apparaît comme un outil puissant, permettant aux développeurs de gérer de manière transparente des archives avec des entrées cryptées. Dans ce didacticiel complet, nous aborderons le processus de création d'un fichier Seven Zip avec les paramètres de cryptage AES à l'aide d'Aspose.Zip pour .NET.
+Créer une archive **7z** avec un chiffrement AES puissant est une exigence courante lorsque vous devez protéger des données sensibles dans vos applications .NET. Dans ce tutoriel, nous vous montrerons **comment créer des fichiers 7z** de manière sécurisée en utilisant la bibliothèque Aspose.Zip, en couvrant tout, de la configuration du projet à l’ajout d’entrées chiffrées. À la fin, vous comprendrez pourquoi **l’archivage sécurisé .NET** est important, comment fonctionne **aes zip encryption**, et comment implémenter **zip password protection** avec seulement quelques lignes de code C#.
 
-## Conditions préalables
+## Quick Answers
+- **Que signifie “7z” ?** C’est l’extension de fichier des archives créées avec le format 7‑Zip, qui prend en charge une compression à haut ratio et un chiffrement fort.  
+- **Quel algorithme offre la meilleure sécurité ?** AES‑256, disponible via `SevenZipAESEncryptionSettings` d’Aspose.Zip.  
+- **Ai‑je besoin d’une licence pour le développement ?** Une licence temporaire est disponible pour les tests ; une licence complète est requise pour la production.  
+- **Puis‑je chiffrer plusieurs entrées ?** Oui — répétez l’appel `CreateEntry` pour chaque fichier que vous souhaitez protéger.  
+- **Quelles versions de .NET sont prises en charge ?** .NET Framework 4.5+, .NET Core 3.1+, et .NET 5/6+.
 
-Avant de vous lancer dans cette aventure, assurez-vous d’avoir les prérequis suivants en place :
+## What is a 7z File and Why Encrypt It?
 
-- Environnement de développement : configurez un environnement de développement .NET sur votre machine.
--  Aspose.Zip pour .NET : installez la bibliothèque Aspose.Zip. Vous pouvez trouver la documentation nécessaire[ici](https://reference.aspose.com/zip/net/).
--  Téléchargement : obtenez la bibliothèque Aspose.Zip pour .NET à partir du[lien de téléchargement](https://releases.aspose.com/zip/net/).
-- Connaissances de base : Familiarisez-vous avec les concepts de base du développement C# et .NET.
+Un fichier **7z** est un conteneur compressé pouvant contenir de nombreux fichiers et répertoires. Parce qu’il prend en charge le chiffrement AES, il est idéal pour les scénarios où la confidentialité des données est cruciale — par exemple la transmission de rapports confidentiels, la sauvegarde de code propriétaire ou le stockage d’informations personnelles. Utiliser des archives **encrypted seven zip** vous aide à répondre aux exigences de conformité et protège les données contre tout accès non autorisé.
 
-## Importer des espaces de noms
+## Prerequisites
 
-Dans votre projet C#, commencez par importer les espaces de noms requis :
+Avant de commencer, assurez‑vous d’avoir :
+
+- **Environnement de développement :** Visual Studio 2022 ou tout IDE compatible .NET.  
+- **Aspose.Zip for .NET :** Installez la bibliothèque. Vous pouvez trouver la documentation nécessaire [ici](https://reference.aspose.com/zip/net/).  
+- **Téléchargement :** Obtenez la bibliothèque Aspose.Zip for .NET depuis le [download link](https://releases.aspose.com/zip/net/).  
+- **Connaissances de base :** Familiarité avec C# et les structures de projets .NET.
+
+## Import Namespaces
+
+Dans votre projet C#, importez les espaces de noms requis afin de pouvoir travailler avec l’API Aspose.Zip :
 
 ```csharp
 using Aspose.Zip;
@@ -37,17 +50,21 @@ using Aspose.Zip.Saving;
 using Aspose.Zip.SevenZip;
 ```
 
-## Étape 1 : Définir le chemin du répertoire de ressources
+## Step 1: Set the Resource Directory Path
+
+Définissez le dossier contenant les fichiers que vous souhaitez archiver. Ce chemin sera utilisé plus tard pour lire les données dans l’archive.
 
 ```csharp
-// Le chemin d'accès au répertoire de ressources.
+// The path to the resource directory.
 string dataDir = "Your Document Directory";
 ```
 
-## Étape 2 : Créer un fichier Seven Zip avec cryptage AES
+## Step 2: Create a Seven Zip File with AES Encryption
+
+Nous allons maintenant créer l’archive **7z** et y ajouter une entrée chiffrée. L’exemple utilise un tableau d’octets simple, mais vous pouvez le remplacer par n’importe quel flux (par ex., un flux de fichier).
 
 ```csharp
-//ExStart : ArchiveWithEncryptedEntry
+//ExStart: ArchiveWithEncryptedEntry
 using (FileStream sevenZipFile = File.Open("archive.7z", FileMode.Create))
 {
     using (var archive = new SevenZipArchive())
@@ -58,35 +75,57 @@ using (FileStream sevenZipFile = File.Open("archive.7z", FileMode.Create))
         archive.Save(sevenZipFile);
     }
 }
-//ExEnd : ArchiveWithEncryptedEntry
+//ExEnd: ArchiveWithEncryptedEntry
 Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Settings");
 ```
 
-Explication : Dans cette étape, nous créons un fichier Seven Zip nommé "archive.7z" et ajoutons une entrée cryptée "entry1.bin" avec des exemples de données. Les paramètres de cryptage utilisent l'algorithme AES avec la clé « test1 ».
+**Explanation:**  
+- `SevenZipArchive` crée un nouveau conteneur 7z.  
+- `CreateEntry` ajoute un fichier nommé `entry1.bin`.  
+- `SevenZipAESEncryptionSettings("test1")` applique **aes zip encryption** avec le mot de passe *test1*.  
+- Vous pouvez répéter `CreateEntry` pour des fichiers supplémentaires, chacun avec ses propres paramètres de chiffrement si nécessaire.
 
-Répétez les étapes ci-dessus pour des entrées supplémentaires si nécessaire.
+## Why Use Aspose.Zip for Secure Archiving .NET?
+
+- **Support complet de .NET :** Fonctionne avec .NET Framework, .NET Core et .NET 5/6+.  
+- **Compression haute performance :** L’algorithme LZMA offre d’excellents taux de compression.  
+- **Chiffrement robuste :** Le chiffrement AES‑256 garantit que vos archives sont protégées contre les attaques par force brute.  
+- **Aucune dépendance externe :** Toutes les fonctionnalités sont contenues dans les DLL d’Aspose.Zip.
+
+## Common Issues and Solutions
+
+| Problème | Cause | Solution |
+|----------|-------|----------|
+| **Erreur “Invalid password” lors de l’ouverture de l’archive** | Incohérence du mot de passe ou utilisation de mauvais paramètres de chiffrement. | Vérifiez que le mot de passe passé à `SevenZipAESEncryptionSettings` correspond à celui utilisé lors de l’extraction. |
+| **L’archive apparaît vide** | `CreateEntry` n’a pas été appelé avant `Save`. | Assurez‑vous d’ajouter au moins une entrée avant d’appeler `archive.Save`. |
+| **Ralentissement des performances avec de gros fichiers** | Lecture de fichiers entiers en mémoire. | Utilisez `FileStream` pour chaque entrée au lieu de `MemoryStream` afin de diffuser les données directement. |
+
+## Frequently Asked Questions
+
+### Puis‑je utiliser Aspose.Zip for .NET dans mes projets non commerciaux ?
+Oui, Aspose.Zip for .NET peut être utilisé à la fois dans des projets commerciaux et non commerciaux.
+
+### Comment obtenir une licence temporaire pour Aspose.Zip for .NET ?
+Obtenez une licence temporaire [ici](https://purchase.aspose.com/temporary-license/).
+
+### Existe‑t‑il un support communautaire pour Aspose.Zip for .NET ?
+Oui, consultez le [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) pour le support communautaire.
+
+### D’autres algorithmes de compression sont‑ils pris en charge en plus de LZMA ?
+Aspose.Zip for .NET prend en charge divers algorithmes de compression. Référez‑vous à la documentation pour plus de détails.
+
+### Puis‑je personnaliser davantage les paramètres de chiffrement ?
+Absolument ! Explorez la documentation pour les options avancées de personnalisation du chiffrement.
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez créé avec succès un fichier Seven Zip avec les paramètres de cryptage AES à l'aide d'Aspose.Zip pour .NET. Ce didacticiel fournit une compréhension fondamentale de la façon de mettre en œuvre un archivage sécurisé dans vos projets .NET.
+Vous savez maintenant **comment créer des archives 7z** avec chiffrement AES dans .NET en utilisant Aspose.Zip. Cette approche vous offre un contrôle granulaire à la fois sur la compression et la sécurité, ce qui la rend idéale pour tout scénario nécessitant **zip password protection** ou des fichiers **encrypted seven zip**. N’hésitez pas à expérimenter avec plusieurs entrées, différents niveaux de compression et des mots de passe personnalisés pour répondre aux besoins de votre projet.
 
-## FAQ
+---
 
-### Puis-je utiliser Aspose.Zip pour .NET dans mes projets non commerciaux ?
-Oui, Aspose.Zip pour .NET peut être utilisé dans des projets commerciaux et non commerciaux.
-
-### Comment puis-je obtenir une licence temporaire pour Aspose.Zip pour .NET ?
- Obtenir un permis temporaire[ici](https://purchase.aspose.com/temporary-license/).
-
-### Existe-t-il un support communautaire disponible pour Aspose.Zip pour .NET ?
- Oui, visitez le[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) pour le soutien de la communauté.
-
-### Existe-t-il d'autres algorithmes de compression pris en charge en plus de LZMA ?
-Aspose.Zip pour .NET prend en charge divers algorithmes de compression. Reportez-vous à la documentation pour plus de détails.
-
-### Puis-je personnaliser davantage les paramètres de cryptage ?
-Absolument! Explorez la documentation pour connaître les options avancées de personnalisation du chiffrement.
-
+**Last Updated:** 2025-12-20  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

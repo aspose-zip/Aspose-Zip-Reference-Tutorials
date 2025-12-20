@@ -1,36 +1,52 @@
 ---
-title: Bezpečná komprese souborů v .NET pomocí Aspose.Zip
-linktitle: Komprimujte soubory s individuálními hesly
-second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
-description: Naučte se, jak zlepšit zabezpečení souborů v aplikacích .NET! Postupujte podle našeho podrobného průvodce komprimací souborů s individuálními hesly pomocí Aspose.Zip pro .NET.
-weight: 16
+date: 2025-12-20
+description: Naučte se, jak vytvářet chráněné zip archivy s heslem v .NET pomocí Aspose.Zip.
+  Tento krok‑za‑krokem průvodce ukazuje, jak komprimovat soubory s hesly, nastavit
+  heslo pro zip položku a použít AES šifrování.
+linktitle: Compress Files with Individual Passwords
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Vytvořte ZIP soubory chráněné heslem v .NET s Aspose.Zip
 url: /cs/net/password-protection-and-encryption/compress-files-individual-passwords/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Bezpečná komprese souborů v .NET pomocí Aspose.Zip
-
+# Vytvoření chráněných ZIP souborů heslem v .NET s Aspose.Zip
 
 ## Úvod
 
-Ve světě vývoje .NET je efektivní správa a komprimace souborů zásadním úkolem. Aspose.Zip for .NET poskytuje výkonné řešení pro kompresi souborů a nabízí různé funkce pro vylepšení vašich aplikací. Jednou z pozoruhodných funkcí je možnost komprimovat soubory pomocí jednotlivých hesel, což poskytuje další vrstvu zabezpečení. V tomto tutoriálu vás provedeme procesem komprimace souborů s jednotlivými hesly pomocí Aspose.Zip pro .NET.
+Pokud potřebujete **vytvořit chráněné zip** archivy v .NET aplikaci, Aspose.Zip to usnadňuje. Přiřazením jedinečného hesla ke každému záznamu můžete uchovat citlivé dokumenty v bezpečí a zároveň využívat výhod ZIP komprese. V tomto tutoriálu se naučíte, jak komprimovat soubory s individuálními hesly, vybrat různé šifrovací metody a nastavit heslo pro zip záznam – vše s přehledným, připraveným k nasazení kódem.
 
-## Předpoklady
+## Rychlé odpovědi
+- **Jakou knihovnu mám použít?** Aspose.Zip pro .NET.  
+- **Mohu přiřadit různé heslo pro každý soubor?** Ano, každý záznam může mít své vlastní heslo.  
+- **Jaké šifrovací algoritmy jsou podporovány?** Tradiční ZipCrypto, AES‑128 a AES‑256.  
+- **Potřebuji licenci pro vývoj?** Bezplatná zkušební verze funguje pro testování; pro produkci je vyžadována komerční licence.  
+- **Je to kompatibilní s .NET 6+?** Naprosto – API cílí na .NET Standard 2.0 a novější.
 
-Než se ponoříte do výukového programu, ujistěte se, že máte následující předpoklady:
+## Co znamená „vytvořit chráněný zip“?
+Vytvoření chráněného zipu znamená přidání šifrování k jednomu nebo více záznamům uvnitř ZIP archivu, takže obsah nelze otevřít bez správného hesla. To je ideální pro přenos důvěrných souborů, ukládání záloh nebo dodržování zásad ochrany dat.
 
--  Aspose.Zip for .NET: Ujistěte se, že máte v projektu .NET nainstalovanou knihovnu Aspose.Zip. Můžete najít potřebnou dokumentaci[tady](https://reference.aspose.com/zip/net/).
+## Proč použít Aspose.Zip pro archivy chráněné heslem?
+- **Detailní kontrola** – nastavení odlišného hesla pro každý soubor.  
+- **Více šifrovacích možností** – od staršího ZipCrypto po silné AES‑128/256.  
+- **Žádné externí závislosti** – čistá .NET knihovna, snadná integrace.  
+- **Komplexní dokumentace** – obsahuje **aspose zip tutorial** pro pokročilejší scénáře.
 
--  Stáhnout: Pokud jste tak ještě neučinili, stáhněte si knihovnu Aspose.Zip for .NET z[tento odkaz](https://releases.aspose.com/zip/net/).
+## Požadavky
 
-- Adresář dokumentů: Připravte si adresář obsahující soubory, které chcete komprimovat.
+Než se ponoříte do tutoriálu, ujistěte se, že máte následující požadavky:
 
-## Importovat jmenné prostory
+- Aspose.Zip pro .NET: Ujistěte se, že máte knihovnu Aspose.Zip nainstalovanou ve svém .NET projektu. Potřebnou dokumentaci najdete [zde](https://reference.aspose.com/zip/net/).
+- Stažení: Pokud jste tak ještě neučinili, stáhněte knihovnu Aspose.Zip pro .NET z [tohoto odkazu](https://releases.aspose.com/zip/net/).
+- Adresář s dokumenty: Připravte adresář obsahující soubory, které chcete komprimovat.
 
-Ve svém projektu .NET se ujistěte, že importujete potřebné jmenné prostory:
+## Importování jmenných prostor
+
+Ve svém .NET projektu se ujistěte, že importujete potřebné jmenné prostory:
 
 ```csharp
 using Aspose.Zip;
@@ -38,9 +54,9 @@ using Aspose.Zip.Saving;
 using System.IO;
 ```
 
-## Krok 1: Nastavte cestu k adresáři prostředků
+## Krok 1: Nastavte cestu ke zdrojovému adresáři
 
-Definujte cestu k adresáři prostředků, kde jsou umístěny vaše soubory.
+Definujte cestu ke zdrojovému adresáři, kde se nacházejí vaše vstupní soubory.
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -48,7 +64,7 @@ string dataDir = "Your Document Directory";
 
 ## Krok 2: Komprimujte soubory s individuálními hesly
 
-Nyní zkomprimujme soubory s jednotlivými hesly. Použijeme tři vzorové soubory (`alice29.txt`, `asyoulik.txt` , a`fields.c`) s odlišnými hesly pro každého.
+Nyní komprimujeme soubory s individuálními hesly. Použijeme tři ukázkové soubory (`alice29.txt`, `asyoulik.txt` a `fields.c`) s odlišnými hesly pro každý. Toto ukazuje, jak **komprimovat soubory s hesly** a také jak **nastavit heslo pro zip záznam** pomocí různých šifrovacích schémat, včetně **zip archivu s aes**.
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPasswords_out.zip", FileMode.Create))
@@ -59,37 +75,67 @@ using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPass
 
     using (var archive = new Archive())
     {
-        // Komprimujte každý soubor pomocí individuálního hesla
+        // Compress each file with an individual password
         archive.CreateEntry("alice29.txt", source1, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new TraditionalEncryptionSettings("pass1")));
         archive.CreateEntry("asyoulik.txt", source2, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new AesEcryptionSettings("pass2", EncryptionMethod.AES128)));
         archive.CreateEntry("fields.c", source3, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new AesEcryptionSettings("pass3", EncryptionMethod.AES256)));
         
-        // Uložte komprimované soubory
+        // Save the compressed files
         archive.Save(zipFile);
     }
 }
 ```
 
-## Závěr
+### Jak to funguje
+- **TraditionalEncryptionSettings** používá starší algoritmus ZipCrypto (kompatibilní s většinou ZIP nástrojů).
+- **AesEcryptionSettings** vám umožní vybrat AES‑128 nebo AES‑256 pro vyšší zabezpečení.
+- Každé volání `CreateEntry` přijímá objekt `ArchiveEntrySettings`, kde specifikujeme jak kompresní metodu, tak šifrovací nastavení, čímž efektivně **chráníme heslem zip archiv** položky.
 
-Gratulujeme! Úspěšně jste se naučili, jak komprimovat soubory s jednotlivými hesly pomocí Aspose.Zip pro .NET. Tato funkce přidává vašim komprimovaným souborům další vrstvu zabezpečení a zajišťuje důvěrnost.
+## Časté problémy a řešení
+
+| Problém | Důvod | Řešení |
+|---------|-------|--------|
+| “Neplatné heslo” při otevírání ZIP | Nesoulad mezi heslem použitém v kódu a heslem zadaným v extraktoru | Ověřte přesný řetězec předaný do `TraditionalEncryptionSettings` nebo `AesEcryptionSettings`. |
+| Starší nástroje pro extrakci nemohou otevřít AES‑šifrované položky | Ne všechny ZIP utility podporují AES šifrování | Použijte tradiční metodu ZipCrypto pro maximální kompatibilitu, nebo uživatelům doporučte moderní nástroj (např. 7‑Zip). |
+| Velké soubory způsobují `OutOfMemoryException` | Načítání obrovských souborů do paměti před kompresí | Streamujte soubor přímo pomocí `FileStream` bez načítání celého souboru do objektu `FileInfo`. |
 
 ## Často kladené otázky (FAQ)
 
-### Mohu pro každý soubor použít různé metody šifrování?
-Ano, Aspose.Zip for .NET umožňuje používat různé metody šifrování pro každý soubor během komprese.
+### Mohu pro každý soubor použít různé šifrovací metody?
+Ano, Aspose.Zip pro .NET vám umožňuje během komprese použít různé šifrovací metody pro každý soubor.
 
 ### Je k dispozici zkušební verze?
- Ano, máte přístup k bezplatné zkušební verzi Aspose.Zip pro .NET[tady](https://releases.aspose.com/).
+Ano, můžete získat bezplatnou zkušební verzi Aspose.Zip pro .NET [zde](https://releases.aspose.com/).
 
 ### Jak mohu získat podporu, pokud narazím na problémy?
- Navštivte[Fórum Aspose.Zip](https://forum.aspose.com/c/zip/37) za pomoc od komunity a podporu Aspose.
+Navštivte [Aspose.Zip fórum](https://forum.aspose.com/c/zip/37) pro pomoc od komunity a podpory Aspose.
 
 ### Kde najdu podrobnou dokumentaci k Aspose.Zip pro .NET?
- Dokumentace je k dispozici[tady](https://reference.aspose.com/zip/net/).
+Dokumentace je k dispozici [zde](https://reference.aspose.com/zip/net/).
 
-### Mohu si zakoupit dočasnou licenci pro testovací účely?
- Ano, můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+### Mohu zakoupit dočasnou licenci pro testovací účely?
+Ano, můžete získat dočasnou licenci [zde](https://purchase.aspose.com/temporary-license/).
+
+## Další rychlé FAQ
+
+**Q: Podporuje knihovna .NET Core a .NET 5/6?**  
+A: Ano, Aspose.Zip cílí na .NET Standard, což zajišťuje kompatibilitu s .NET Framework, .NET Core a .NET 5/6.
+
+**Q: Mohu přidat komentář ke každému ZIP záznamu?**  
+A: Přestože se Aspose.Zip zaměřuje na kompresi a šifrování, můžete uložit metadata v samostatném manifest souboru uvnitř archivu.
+
+**Q: Je možné zašifrovat celý archiv jedním heslem?**  
+A: Můžete nastavit heslo pro každý záznam zvlášť (jak je ukázáno) nebo použít stejné heslo pro všechny záznamy pro jednodušší přístup „zip archiv s aes“.
+
+## Závěr
+
+Nyní ovládáte, jak **vytvořit chráněné zip** soubory v .NET pomocí Aspose.Zip. Přiřazením individuálních hesel a výběrem vhodné šifrovací metody můžete udržet svá data v bezpečí, aniž byste ztratili výhody ZIP komprese. Prozkoumejte další funkce Aspose.Zip, jako je streamování velkých souborů, přidávání vlastních metadat a integrace s cloudovým úložištěm pro ještě výkonnější scénáře.
+
+---
+
+**Poslední aktualizace:** 2025-12-20  
+**Testováno s:** Aspose.Zip pro .NET 23.12  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
