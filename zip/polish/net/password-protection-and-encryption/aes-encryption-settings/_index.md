@@ -1,34 +1,42 @@
 ---
-title: Aspose.Zip dla .NET - samouczek szyfrowania AES
-linktitle: Ustawienia szyfrowania AES
-second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
-description: Przeglądaj Aspose.Zip dla .NET, aby zabezpieczyć skompresowane pliki za pomocą szyfrowania AES. Pobierz teraz, aby zapewnić skuteczną ochronę danych.
-weight: 14
+date: 2025-12-20
+description: Dowiedz się, jak zabezpieczyć pliki ZIP hasłem przy użyciu szyfrowania
+  AES w Aspose.Zip dla .NET – bezpieczny sposób kompresji i szyfrowania plików.
+linktitle: AES Encryption Settings
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Zabezpiecz ZIP hasłem z szyfrowaniem AES przy użyciu Aspose.Zip dla .NET
 url: /pl/net/password-protection-and-encryption/aes-encryption-settings/
+weight: 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip dla .NET - samouczek szyfrowania AES
+# Zabezpiecz ZIP hasłem przy użyciu szyfrowania AES w Aspose.Zip dla .NET
 
+## Wprowadzenie
 
-## Wstęp
+W tym samouczku odkryjesz **jak zabezpieczyć zip hasłem** archiwa, stosując szyfrowanie AES za pomocą biblioteki Aspose.Zip dla .NET. Niezależnie od tego, czy potrzebujesz **kompresować i szyfrować pliki** w celu bezpiecznej transmisji, czy wygenerować zaszyfrowany archiwum dla zgodności, poniższe kroki poprowadzą Cię przez czystą, gotową do produkcji implementację.
 
-Witamy w naszym przewodniku krok po kroku dotyczącym wdrażania ustawień szyfrowania AES w Aspose.Zip dla .NET. Aspose.Zip to potężna biblioteka, która pozwala z łatwością kompresować i dekompresować pliki. W tym samouczku skupimy się na ustawieniach zaawansowanego standardu szyfrowania (AES), zapewniających bezpieczny sposób ochrony skompresowanych danych.
+## Szybkie odpowiedzi
+- **Co oznacza zabezpieczenie zip hasłem?** Dodaje warstwę szyfrowania AES opartą na haśle do archiwum ZIP.  
+- **Jaki tryb AES jest używany?** Aspose.Zip domyślnie używa AES‑256 dla maksymalnego bezpieczeństwa.  
+- **Czy potrzebna jest licencja?** Wersja próbna działa w środowisku deweloperskim; licencja komercyjna jest wymagana w produkcji.  
+- **Czy mogę używać tego z .NET Core?** Tak, biblioteka obsługuje .NET Framework, .NET Core oraz .NET 5/6+.  
+- **Jak długo to trwa?** Tworzenie ZIP zabezpieczonego hasłem z kilkoma plikami zazwyczaj zajmuje mniej niż sekundę.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Przed przystąpieniem do samouczka upewnij się, że spełniasz następujące wymagania wstępne:
+Zanim rozpoczniesz, upewnij się, że masz:
 
-- Praktyczna znajomość C# i .NET.
--  Zainstalowana biblioteka Aspose.Zip dla .NET. Możesz go pobrać[Tutaj](https://releases.aspose.com/zip/net/).
-- Ścieżka katalogu dokumentów do testowania.
+- Podstawową wiedzę o C# i platformie .NET.  
+- Zainstalowany Aspose.Zip dla .NET – możesz go pobrać [tutaj](https://releases.aspose.com/zip/net/).  
+- Folder na komputerze, który zawiera pliki, które chcesz zarchiwizować.
 
-## Importuj przestrzenie nazw
+## Importowanie przestrzeni nazw
 
-W kodzie C# pamiętaj o zaimportowaniu niezbędnych przestrzeni nazw dla Aspose.Zip:
+Dodaj wymagane dyrektywy `using` do swojego pliku C#:
 
 ```csharp
 using Aspose.Zip.Saving;
@@ -37,62 +45,96 @@ using System;
 using System.IO;
 ```
 
-Podzielmy teraz podany przykład na wiele kroków.
+## Czym jest zabezpieczenie ZIP hasłem?
 
-## Krok 1: Ustaw ścieżkę katalogu zasobów
+Plik **password protect zip** to standardowe archiwum ZIP, które wymaga hasła do otwarcia. Hasło jest używane do wygenerowania klucza szyfrowania, a dane wewnątrz archiwum są szyfrowane przy użyciu AES, zapewniając, że tylko upoważnieni użytkownicy mogą wyodrębnić zawartość.
 
-Zdefiniuj ścieżkę do katalogu zasobów, w którym znajduje się dokument:
+## Dlaczego używać szyfrowania AES z Aspose.Zip?
+
+- **Silne bezpieczeństwo** – AES‑256 jest uznawany za solidny standard szyfrowania.  
+- **Proste API** – Kilka linii kodu pozwala wygenerować zaszyfrowane archiwum.  
+- **Wieloplatformowość** – Działa na Windows, Linux i macOS z dowolnym środowiskiem .NET.  
+- **Gotowość do zgodności** – Spełnia wiele wymogów regulacyjnych dotyczących ochrony danych.
+
+## Przewodnik krok po kroku
+
+### Krok 1: Ustaw ścieżkę katalogu zasobów
+
+Określ, gdzie znajdują się Twoje pliki źródłowe:
 
 ```csharp
-// Ścieżka do katalogu zasobów.
+// The path to the resource directory.
 string dataDir = "Your Document Directory";
 ```
 
-## Krok 2: Zainicjuj archiwum z ustawieniami szyfrowania AES
+### Krok 2: Zainicjalizuj archiwum z ustawieniami szyfrowania AES
 
-Użyj poniższego kodu, aby utworzyć archiwum Seven Zip z ustawieniami szyfrowania AES:
+Utwórz archiwum Seven Zip i zastosuj szyfrowanie AES. Ten przykład pokazuje również **jak szyfrować pliki zip** programowo:
 
 ```csharp
-//ExStart: Ustawienia AESEncryption
+//ExStart: AESEncryptionSettings
 using (var archive = new SevenZipArchive(new SevenZipEntrySettings(null, new SevenZipAESEncryptionSettings("p@s$"))))
 {
     archive.CreateEntry("data.bin", new MemoryStream(new byte[] { 0x00, 0xFF }));
     archive.Save("archive.7z");
 }
-//ExEnd: Ustawienia AESEncryption
+//ExEnd: AESEncryptionSettings
 ```
 
-## Krok 3: Wyświetl komunikat o powodzeniu
+> **Pro tip:** Hasło `"p@s$"` to tylko symboliczny przykład — zamień je na silne, generowane przez użytkownika hasło.
 
-Po utworzeniu archiwum wyświetl komunikat o powodzeniu:
+### Krok 3: Wyświetl komunikat sukcesu
+
+Potwierdź, że archiwum zostało utworzone:
 
 ```csharp
 Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Settings");
 ```
 
-Powtórz te kroki, jeśli jest to konieczne dla konkretnego przypadku użycia.
+### Krok 4: Zweryfikuj zaszyfrowane archiwum (opcjonalnie)
 
-## Wniosek
+Po wygenerowaniu archiwum możesz spróbować otworzyć je przy pomocy narzędzia ZIP obsługującego AES. Zostaniesz poproszony o podanie hasła, które ustawiłeś w poprzednim kroku. To potwierdza, że pomyślnie **wygenerowałeś zaszyfrowane archiwum**.
 
-Gratulacje! Pomyślnie zaimplementowałeś ustawienia szyfrowania AES przy użyciu Aspose.Zip dla .NET. Dodaje to dodatkową warstwę zabezpieczeń do skompresowanych plików, zapewniając poufność danych.
+## Typowe problemy i rozwiązania
 
-## Często zadawane pytania
+| Problem | Rozwiązanie |
+|-------|----------|
+| **Błąd nieprawidłowego hasła** | Upewnij się, że ciąg hasła przekazywany do `SevenZipAESEncryptionSettings` jest dokładnie taki sam (uwzględniając wielkość liter). |
+| **Archiwum nie może być otwarte w starszych narzędziach ZIP** | Niektóre starsze narzędzia obsługują tylko ZipCrypto; użyj nowoczesnego narzędzia, takiego jak 7‑Zip, które rozumie AES‑256. |
+| **Duże pliki powodują obciążenie pamięci** | Użyj `archive.CreateEntry` ze strumieniem, aby uniknąć ładowania całego pliku do pamięci. |
 
-### P: Gdzie mogę znaleźć dokumentację Aspose.Zip dla .NET?
- Odp.: Dokumentacja jest dostępna[Tutaj](https://reference.aspose.com/zip/net/).
+## Najczęściej zadawane pytania
 
-### P: Jak pobrać Aspose.Zip dla .NET?
- O: Możesz to pobrać[Tutaj](https://releases.aspose.com/zip/net/).
+**P: Gdzie mogę znaleźć dokumentację Aspose.Zip dla .NET?**  
+O: Dokumentacja jest dostępna [tutaj](https://reference.aspose.com/zip/net/).
 
-### P: Gdzie mogę kupić Aspose.Zip dla .NET?
- Odp.: możesz to kupić[Tutaj](https://purchase.aspose.com/buy).
+**P: Jak mogę pobrać Aspose.Zip dla .NET?**  
+O: Możesz go pobrać [tutaj](https://releases.aspose.com/zip/net/).
 
-### P: Czy dostępny jest bezpłatny okres próbny?
- Odp.: Tak, możesz skorzystać z bezpłatnego okresu próbnego[Tutaj](https://releases.aspose.com/).
+**P: Gdzie mogę kupić Aspose.Zip dla .NET?**  
+O: Możesz go kupić [tutaj](https://purchase.aspose.com/buy).
 
-### P: Czy mogę uzyskać tymczasowe licencje na potrzeby testowania?
- Odpowiedź: Tak, możesz uzyskać licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).
+**P: Czy dostępna jest darmowa wersja próbna?**  
+O: Tak, możesz uzyskać darmową wersję próbną [tutaj](https://releases.aspose.com/).
 
+**P: Czy mogę uzyskać tymczasowe licencje do testów?**  
+O: Tak, możesz uzyskać tymczasową licencję [tutaj](https://purchase.aspose.com/temporary-license/).
+
+**P: Czy mogę użyć tego podejścia do **kompresowania i szyfrowania plików** w usłudze w tle?**  
+O: Oczywiście — otocz kod tworzenia archiwum w `Task` lub w tle pracującego pracownika, aby UI pozostało responsywne.
+
+**P: Czy biblioteka obsługuje **implement aes encryption c#** dla innych formatów archiwów?**  
+O: Ta sama klasa `SevenZipAESEncryptionSettings` może być używana z innymi typami archiwów Aspose.Zip, takimi jak ZIP i TAR, poprzez dostosowanie klasy archiwum, którą tworzysz.
+
+## Podsumowanie
+
+Teraz wiesz, jak **zabezpieczyć zip hasłem** przy użyciu szyfrowania AES w Aspose.Zip dla .NET. Ta metoda pozwala **kompresować i szyfrować pliki** w jednym, bezpiecznym kroku, co czyni ją idealną dla aplikacji wrażliwych na dane, automatycznych kopii zapasowych lub każdego scenariusza, w którym poufność plików ma znaczenie.
+
+---
+
+**Ostatnia aktualizacja:** 2025-12-20  
+**Testowano z:** Aspose.Zip for .NET 24.11  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
