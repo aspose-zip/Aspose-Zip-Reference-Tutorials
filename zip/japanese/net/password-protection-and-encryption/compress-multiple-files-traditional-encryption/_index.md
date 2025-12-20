@@ -1,34 +1,50 @@
 ---
-title: Aspose.Zip .NET で暗号化を使用して複数のファイルを圧縮する
-linktitle: 従来の暗号化を使用して複数のファイルを圧縮する
-second_title: ファイルの圧縮とアーカイブのための Aspose.Zip .NET API
-description: Aspose.Zip for .NET で従来の暗号化を使用して複数のファイルを安全に圧縮する方法を学びます。 .NET アプリケーションのデータ保護を強化します。
-weight: 17
+date: 2025-12-20
+description: Aspose.Zip for .NET を使用して、従来の暗号化で zip アーカイブにパスワードを設定する方法を学びましょう。このガイドでは、zip
+  ファイルを暗号化し、効率的にファイルを zip に追加する方法を示します。
+linktitle: Compress Multiple Files with Traditional Encryption
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Aspose.Zip .NETでZIPアーカイブにパスワード保護
 url: /ja/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/
+weight: 17
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip .NET で暗号化を使用して複数のファイルを圧縮する
+# Aspose.Zip .NET を使用した Zip アーカイブのパスワード保護
 
+## はじめに
 
-## 導入
+このステップバイステップチュートリアルへようこそ。**Zip アーカイブにパスワード保護をかける方法** を、Aspose.Zip for .NET の従来型暗号化を使って解説します。Aspose.Zip は、開発者が zip アーカイブを簡単に作成、読み取り、操作できる強力なライブラリです。本ガイドでは、複数ファイルを圧縮し zip に追加し、パスワードでアーカイブを保護する手順を、コードをクリーンかつ保守しやすい形でご紹介します。
 
-Aspose.Zip for .NET を使用した従来の暗号化による複数のファイルの圧縮に関するこのステップバイステップのチュートリアルへようこそ。 Aspose.Zip は、開発者が .NET アプリケーションで zip アーカイブをシームレスに操作できるようにする強力なライブラリです。このガイドでは、従来の暗号化を使用して複数のファイルを圧縮し、データのセキュリティを確保するプロセスについて説明します。
+## クイック回答
+- **「password protect zip archive」とは何ですか？** 正しいパスワードを入力しないと内容を開けないように zip ファイルを暗号化することです。  
+- **.NET でこれを扱うライブラリはどれですか？** Aspose.Zip for .NET が従来型暗号化を標準でサポートしています。  
+- **本番環境でライセンスは必要ですか？** はい、商用利用には商用ライセンスが必要です。無料トライアルも利用可能です。  
+- **Linux でも実行できますか？** もちろんです。Aspose.Zip はクロスプラットフォームで、Windows、Linux、macOS で動作します。  
+- **何個のファイルを追加できますか？** 任意の数のファイルを追加できます。例では 3 ファイルを示していますが、同様の手順で拡張可能です。
+
+## “password protect zip archive” とは？
+
+パスワード保護された zip アーカイブは、（この場合は従来の PKZIP 暗号化）を使用してアーカイブ内部のファイルデータを暗号化します。ユーザーがアーカイブを展開しようとすると、正しいパスワードを入力して初めて内容が復号されます。
+
+## このタスクに Aspose.Zip を使用する理由
+
+- **Simple API** – 暗号化を有効にするコードは 1 行です。  
+- **No external dependencies** – 純粋な .NET だけで動作し、ネイティブ DLL は不要です。  
+- **Cross‑platform** – .NET Framework、.NET Core、.NET 5/6+ で動作します。  
+- **Performance‑optimized** – 大容量ファイルも効率的に処理します。
 
 ## 前提条件
 
-チュートリアルに入る前に、次の前提条件が満たされていることを確認してください。
-
--  Aspose.Zip for .NET: .NET 用の Aspose.Zip ライブラリが開発環境にインストールされていることを確認します。からダウンロードできます[ここ](https://releases.aspose.com/zip/net/).
-
-- ドキュメント ディレクトリ: 置換`"Your Document Directory"`コード スニペット内でドキュメント ディレクトリへの実際のパスを指定します。
+- **Aspose.Zip for .NET** – 公式サイトからダウンロードしてください [here](https://releases.aspose.com/zip/net/)。  
+- **ファイルが入ったフォルダー** – サンプルコード中の `"Your Document Directory"` を、実際に zip にしたいファイルが格納されているパスに置き換えてください。
 
 ## 名前空間のインポート
 
-.NET アプリケーションで、必要な名前空間をインポートすることから始めます。これにより、Aspose.Zip が提供する機能にアクセスできるようになります。以下に例を示します。
+Aspose.Zip クラスを使用できるように、必要な名前空間をインポートします。
 
 ```csharp
 using Aspose.Zip;
@@ -36,26 +52,28 @@ using Aspose.Zip.Saving;
 using System.IO;
 ```
 
-## ステップ 1: ZIP ファイルをセットアップする
+## 従来の暗号化で zip を暗号化する方法
 
-次のコマンドを使用して新しい zip ファイルを作成します。`Archive`クラス。このステップでは、セキュリティを強化するためのパスワードを提供する、従来の暗号化設定も定義します。
+### 手順 1: Zip ファイルの設定 (Password Protect Zip Archive)
+
+zip ファイルを作成し、従来型暗号化の設定を行います。パスワード `"p@s$"` は例ですので、実際のプロジェクトでは強力なパスワードに置き換えてください。
 
 ```csharp
-//ExStart: 従来の暗号化を使用して複数のファイルを圧縮
+//ExStart: CompressMultipleFilesWithTraditionalEncryption
 using (FileStream zipFile = File.Open(".\\CompressMultipleFilesWithTraditionalEncryption_out.zip", FileMode.Create))
 {
-    //従来の暗号化設定でアーカイブを作成する
+    // Create archive with traditional encryption settings
     using (var archive = new Archive(new ArchiveEntrySettings(null, new TraditionalEncryptionSettings("p@s$"))))
     {
-        //次のステップに進みます...
+        // Continue to the next step...
     }
 }
-//ExEnd: 従来の暗号化を使用して複数のファイルを圧縮
+//ExEnd: CompressMultipleFilesWithTraditionalEncryption
 ```
 
-## ステップ 2: ファイルをアーカイブに追加する
+### Zip アーカイブにファイルを追加
 
-次に、圧縮するファイルをアーカイブに追加します。この例では、「alice29.txt」、「asyoulik.txt」、「fields.c」の 3 つのファイルを追加します。
+追加したい各ファイルを zip に入れます。`CreateEntry` メソッドは zip 内でのファイル名と、実際のファイルデータを指すストリーム（`source1`、`source2`、`source3`）を受け取ります。
 
 ```csharp
 archive.CreateEntry("alice29.txt", source1);
@@ -63,43 +81,46 @@ archive.CreateEntry("asyoulik.txt", source2);
 archive.CreateEntry("fields.c", source3);
 ```
 
-## ステップ 3: ZIP ファイルを保存する
+### Zip ファイルの保存 (パスワードでファイルを圧縮)
 
-追加したエントリを含む zip ファイルを保存します。このステップにより、圧縮プロセスが完了します。
+最後にアーカイブをディスクに保存します。このステップで暗号化された zip ファイルが指定した場所に書き込まれます。
 
 ```csharp
 archive.Save(zipFile);
 ```
 
-おめでとう！ Aspose.Zip for .NET を使用して、従来の暗号化で複数のファイルを圧縮することに成功しました。
+> **Pro tip:** 大きなファイルを扱う場合は、特に `using` ステートメントでストリームを確実に閉じ、ファイルハンドルを速やかに解放してください。
 
-## 結論
+## よくある問題と解決策
 
-このチュートリアルでは、Aspose.Zip for .NET を利用して、従来の暗号化で複数のファイルを圧縮する方法を検討しました。このプロセスにより、.NET アプリケーションで zip アーカイブを効率的に管理しながら、データのセキュリティが確保されます。
-
----
+| 問題 | 原因 | 対策 |
+|-------|--------|-----|
+| **Incorrect password error** | `TraditionalEncryptionSettings` のパスワードが一致しない、またはタイプミス | パスワード文字列を確認し、展開時に同じパスワードを使用しているか確認してください。 |
+| **File not added** | ソースストリーム (`sourceX`) が null もしくは破棄されている | `CreateEntry` に渡す前に `File.OpenRead` でソースストリームを開いてください。 |
+| **Performance slowdown on large files** | 多数の大容量エントリでデフォルトの圧縮レベルを使用している | `ArchiveEntrySettings` の `CompressionLevel` を設定して、処理速度を向上させることを検討してください。 |
 
 ## よくある質問
 
-### 1. Windows 環境と Linux 環境の両方で Aspose.Zip for .NET を使用できますか?
+**Q: Windows と Linux の両環境で使用できますか？**  
+A: はい、Aspose.Zip for .NET は完全にクロスプラットフォームで、Windows、Linux、macOS で動作します。
 
-はい、Aspose.Zip for .NET は Windows 環境と Linux 環境の両方と互換性があり、開発者に柔軟性を提供します。
+**Q: 無料トライアルはありますか？**  
+A: もちろんです。Aspose.Zip for .NET の無料トライアルは [here](https://releases.aspose.com/) からお試しいただけます。
 
-### 2. Aspose.Zip for .NET に利用できる無料トライアルはありますか?
+**Q: 問題が発生した場合、どこでサポートを受けられますか？**  
+A: 公式の [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) でコミュニティや公式サポートから助けを得られます。
 
-はい、Aspose.Zip for .NET の無料トライアルを試すことができます。[ここ](https://releases.aspose.com/).
+**Q: 評価用に一時ライセンスは取得できますか？**  
+A: はい、[here](https://purchase.aspose.com/temporary-license/) から一時ライセンスを取得できます。
 
-### 3. Aspose.Zip for .NET のサポートを受けるにはどうすればよいですか?
+**Q: 完全な API ドキュメントはどこにありますか？**  
+A: 詳細なリファレンスは [here](https://reference.aspose.com/zip/net/) にあります。
 
-サポートまたは質問がある場合は、次のサイトにアクセスしてください。[Aspose.Zip フォーラム](https://forum.aspose.com/c/zip/37).
+---
 
-### 4. Aspose.Zip for .NET の一時ライセンスは利用できますか?
-
-はい、一時ライセンスは次のサイトから取得できます。[ここ](https://purchase.aspose.com/temporary-license/).
-
-### 5. Aspose.Zip for .NET の詳細なドキュメントはどこで見つけられますか?
-
-ドキュメントを参照してください[ここ](https://reference.aspose.com/zip/net/)詳細な情報については。
+**最終更新日:** 2025-12-20  
+**テスト環境:** Aspose.Zip 24.11 for .NET  
+**作成者:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

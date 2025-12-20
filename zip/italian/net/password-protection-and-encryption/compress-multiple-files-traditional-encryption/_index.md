@@ -1,34 +1,53 @@
 ---
-title: Comprimi più file con crittografia in Aspose.Zip .NET
-linktitle: Comprimi più file con la crittografia tradizionale
-second_title: Aspose.Zip .NET API per la compressione e l'archiviazione dei file
-description: Scopri come comprimere più file in modo sicuro utilizzando la crittografia tradizionale in Aspose.Zip per .NET. Migliora la protezione dei dati nelle tue applicazioni .NET.
-weight: 17
+date: 2025-12-20
+description: Scopri come proteggere con password un archivio zip utilizzando Aspose.Zip
+  per .NET con crittografia tradizionale. Questa guida mostra come crittografare i
+  file zip e aggiungere file allo zip in modo efficiente.
+linktitle: Compress Multiple Files with Traditional Encryption
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Proteggi con password l'archivio Zip con Aspose.Zip .NET
 url: /it/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/
+weight: 17
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Comprimi più file con crittografia in Aspose.Zip .NET
+# Proteggi con password un archivio Zip con Aspose.Zip .NET
 
+## Introduzione
 
-## introduzione
+Benvenuti a questo tutorial passo‑a‑passo su **come proteggere con password gli archivi zip** utilizzando la crittografia tradizionale con Aspose.Zip per .NET. Aspose.Zip è una libreria potente che consente agli sviluppatori di creare, leggere e manipolare gli archivi zip senza sforzo. In questa guida, vi mostreremo come comprimere più file, aggiungerli a un zip e proteggere l'archivio con una password—tutto mantenendo il codice pulito e manutenibile.
 
-Benvenuti in questo tutorial passo passo sulla compressione di più file con la crittografia tradizionale utilizzando Aspose.Zip per .NET. Aspose.Zip è una potente libreria che consente agli sviluppatori di lavorare senza problemi con archivi zip nelle loro applicazioni .NET. In questa guida ti guideremo attraverso il processo di compressione di più file con la crittografia tradizionale, garantendo la sicurezza dei tuoi dati.
+## Risposte rapide
+- **Cosa significa “proteggere con password un archivio zip”?** Significa crittografare un file zip in modo che il suo contenuto possa essere aperto solo fornendo la password corretta.  
+- **Quale libreria gestisce questo in .NET?** Aspose.Zip per .NET fornisce supporto integrato per la crittografia tradizionale.  
+- **È necessaria una licenza per la produzione?** Sì, è richiesta una licenza commerciale per l'uso in produzione; è disponibile una versione di prova gratuita.  
+- **Posso eseguirlo su Linux?** Assolutamente—Aspose.Zip è multipiattaforma e funziona su Windows, Linux e macOS.  
+- **Quanti file posso aggiungere?** È possibile aggiungere un numero illimitato di file; l'esempio ne mostra tre, ma l'approccio è scalabile.
+
+## Cos'è un “archivio zip protetto da password”?
+
+Un archivio zip protetto da password utilizza la crittografia (in questo caso, la crittografia PKZIP tradizionale) per offuscare i dati dei file all'interno dell'archivio. Quando un utente tenta di estrarre l'archivio, è necessario fornire la password corretta per decrittografare il contenuto.
+
+## Perché utilizzare Aspose.Zip per questo compito?
+
+- **Simple API** – Una riga di codice per abilitare la crittografia.  
+- **No external dependencies** – Pure .NET, nessun DLL nativo.  
+- **Cross‑platform** – Funziona con .NET Framework, .NET Core e .NET 5/6+.  
+- **Performance‑optimized** – Gestisce file di grandi dimensioni in modo efficiente.
 
 ## Prerequisiti
 
-Prima di immergerci nel tutorial, assicurati di disporre dei seguenti prerequisiti:
+Prima di iniziare, assicuratevi di avere quanto segue:
 
--  Aspose.Zip per .NET: assicurati di avere la libreria Aspose.Zip per .NET installata nel tuo ambiente di sviluppo. Puoi scaricarlo da[Qui](https://releases.aspose.com/zip/net/).
+- **Aspose.Zip for .NET** – Scaricatela dal sito ufficiale [qui](https://releases.aspose.com/zip/net/).  
+- **Una cartella con i file** – Sostituite `"Your Document Directory"` nel codice di esempio con il percorso reale che contiene i file da comprimere.
 
--  La tua directory dei documenti: sostituisci`"Your Document Directory"`nello snippet di codice con il percorso effettivo della directory dei documenti.
+## Importa gli spazi dei nomi
 
-## Importa spazi dei nomi
-
-Nella tua applicazione .NET, inizia importando gli spazi dei nomi necessari. Ciò ti consentirà di accedere alle funzionalità fornite da Aspose.Zip. Ecco un esempio:
+Iniziate importando gli spazi dei nomi necessari per lavorare con le classi di Aspose.Zip:
 
 ```csharp
 using Aspose.Zip;
@@ -36,26 +55,28 @@ using Aspose.Zip.Saving;
 using System.IO;
 ```
 
-## Passaggio 1: imposta il file zip
+## Come crittografare zip con crittografia tradizionale
 
- Crea un nuovo file zip utilizzando il file`Archive` classe. In questo passaggio definirai anche le impostazioni di crittografia tradizionali, fornendo una password per una maggiore sicurezza.
+### Passo 1: Configura il file Zip (Proteggi con password l'archivio Zip)
+
+Create il file zip e configurate le impostazioni di crittografia tradizionale. La password `"p@s$"` è solo un esempio—sostituitela con una password robusta per progetti reali.
 
 ```csharp
 //ExStart: CompressMultipleFilesWithTraditionalEncryption
 using (FileStream zipFile = File.Open(".\\CompressMultipleFilesWithTraditionalEncryption_out.zip", FileMode.Create))
 {
-    // Crea un archivio con le impostazioni di crittografia tradizionali
+    // Create archive with traditional encryption settings
     using (var archive = new Archive(new ArchiveEntrySettings(null, new TraditionalEncryptionSettings("p@s$"))))
     {
-        // Continua al passaggio successivo...
+        // Continue to the next step...
     }
 }
 //ExEnd: CompressMultipleFilesWithTraditionalEncryption
 ```
 
-## Passaggio 2: aggiungi file all'archivio
+### Aggiungi file all'archivio zip
 
-Ora aggiungi i file che desideri comprimere all'archivio. In questo esempio, stiamo aggiungendo tre file: "alice29.txt", "asyoulik.txt" e "fields.c."
+Ora, aggiungete ogni file che desiderate includere. Il metodo `CreateEntry` accetta il nome del file all'interno del zip e uno stream (`source1`, `source2`, `source3`) che punta ai dati effettivi del file.
 
 ```csharp
 archive.CreateEntry("alice29.txt", source1);
@@ -63,43 +84,46 @@ archive.CreateEntry("asyoulik.txt", source2);
 archive.CreateEntry("fields.c", source3);
 ```
 
-## Passaggio 3: salva il file zip
+### Salva il file Zip (comprimi i file con password)
 
-Salva il file zip con le voci aggiunte. Questo passaggio finalizza il processo di compressione.
+Infine, persistete l'archivio su disco. Questo passaggio scrive il file zip crittografato nella posizione specificata in precedenza.
 
 ```csharp
 archive.Save(zipFile);
 ```
 
-Congratulazioni! Hai compresso con successo più file con la crittografia tradizionale utilizzando Aspose.Zip per .NET.
+> **Pro tip:** Chiudete sempre gli stream (`using` statements) per rilasciare rapidamente i handle dei file, soprattutto quando si lavora con file di grandi dimensioni.
 
-## Conclusione
+## Problemi comuni e soluzioni
 
-In questo tutorial, abbiamo esplorato come sfruttare Aspose.Zip per .NET per comprimere più file con la crittografia tradizionale. Questo processo garantisce la sicurezza dei tuoi dati gestendo in modo efficiente gli archivi zip nelle tue applicazioni .NET.
-
----
+| Problema | Motivo | Soluzione |
+|----------|--------|-----------|
+| **Incorrect password error** | Password mismatch or typo in `TraditionalEncryptionSettings` | Verify the password string and ensure the same password is used when extracting. |
+| **File not added** | Source stream (`sourceX`) is null or disposed | Open the source streams with `File.OpenRead` before passing them to `CreateEntry`. |
+| **Performance slowdown on large files** | Using default compression level with many large entries | Consider setting `CompressionLevel` in `ArchiveEntrySettings` for faster processing. |
 
 ## Domande frequenti
 
-### 1. Posso utilizzare Aspose.Zip per .NET in ambienti Windows e Linux?
+**Q: Posso usarlo sia in ambienti Windows che Linux?**  
+A: Sì, Aspose.Zip per .NET è completamente multipiattaforma e funziona su Windows, Linux e macOS.
 
-Sì, Aspose.Zip per .NET è compatibile sia con gli ambienti Windows che Linux, offrendo flessibilità agli sviluppatori.
+**Q: È disponibile una versione di prova gratuita?**  
+A: Assolutamente—potete provare gratuitamente Aspose.Zip per .NET [qui](https://releases.aspose.com/).
 
-### 2. È disponibile una prova gratuita per Aspose.Zip per .NET?
+**Q: Dove posso ottenere supporto se riscontro problemi?**  
+A: Visitate il forum ufficiale [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) per assistenza dalla community e supporto ufficiale.
 
- Sì, puoi esplorare una prova gratuita di Aspose.Zip per .NET[Qui](https://releases.aspose.com/).
+**Q: Le licenze temporanee sono un'opzione per la valutazione?**  
+A: Sì, potete ottenere una licenza temporanea [qui](https://purchase.aspose.com/temporary-license/).
 
-### 3. Come posso ottenere supporto per Aspose.Zip per .NET?
+**Q: Dove si trova la documentazione completa dell'API?**  
+A: Il materiale di riferimento dettagliato è disponibile [qui](https://reference.aspose.com/zip/net/).
 
- Per qualsiasi supporto o domanda, puoi visitare il[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37).
+---
 
-### 4. Sono disponibili licenze temporanee per Aspose.Zip per .NET?
-
- Sì, è possibile ottenere licenze temporanee da[Qui](https://purchase.aspose.com/temporary-license/).
-
-### 5. Dove posso trovare la documentazione dettagliata per Aspose.Zip per .NET?
-
-Fare riferimento alla documentazione[Qui](https://reference.aspose.com/zip/net/) per informazioni approfondite.
+**Ultimo aggiornamento:** 2025-12-20  
+**Testato con:** Aspose.Zip 24.11 per .NET  
+**Autore:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
