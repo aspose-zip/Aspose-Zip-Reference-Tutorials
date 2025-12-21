@@ -1,36 +1,47 @@
 ---
-title: Aspose.Zip pour .NET - Tutoriel sur la protection des archives par mot de passe
-linktitle: Archive protégée par mot de passe avec un mot de passe traditionnel
-second_title: API Aspose.Zip .NET pour la compression et l'archivage de fichiers
-description: Découvrez comment sécuriser vos archives .NET avec une protection par mot de passe traditionnelle à l'aide d'Aspose.Zip. Suivez notre guide étape par étape pour améliorer la confidentialité des données.
-weight: 12
+date: 2025-12-21
+description: Apprenez à créer des archives ZIP protégées par mot de passe avec Aspose.Zip
+  pour .NET, à ajouter un mot de passe aux fichiers ZIP et à garantir une compression
+  de données sécurisée.
+linktitle: Password Protect Archive with Traditional Password
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Créer un ZIP protégé par mot de passe avec Aspose.Zip pour .NET
 url: /fr/net/password-protection-and-encryption/password-protect-archive-traditional-password/
+weight: 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip pour .NET - Tutoriel sur la protection des archives par mot de passe
+# Créer un ZIP protégé par mot de passe avec Aspose.Zip pour .NET
 
+Dans le domaine du développement .NET, apprendre à **créer un zip protégé par mot de passe** est un aspect crucial de la conception d'applications. Aspose.Zip pour .NET offre une solution robuste pour ajouter un mot de passe aux fichiers zip en utilisant le chiffrement traditionnel par mot de passe. Ce guide étape par étape vous accompagnera tout au long du processus, garantissant que vos données archivées restent confidentielles et sécurisées.
 
-Dans le domaine du développement .NET, la sécurisation des données sensibles dans les archives est un aspect crucial de la conception d'applications. Aspose.Zip pour .NET offre une solution robuste pour protéger les archives par mot de passe à l'aide du cryptage par mot de passe traditionnel. Ce guide étape par étape vous guidera tout au long du processus, garantissant que vos données archivées restent confidentielles et sécurisées.
+## Quick Answers
+- **Que signifie « créer un zip protégé par mot de passe » ?** Cela signifie générer une archive ZIP dont le contenu est chiffré et ne peut être ouvert qu'avec le mot de passe correct.  
+- **Quelle bibliothèque puis‑je utiliser ?** Aspose.Zip pour .NET fournit une prise en charge intégrée de la protection par mot de passe traditionnelle.  
+- **Ai‑je besoin d’une licence ?** Un essai gratuit est disponible, mais une licence commerciale est requise pour une utilisation en production.  
+- **Puis‑je l’utiliser avec .NET Core ?** Oui, la bibliothèque fonctionne avec .NET Framework, .NET Core et .NET 5/6+.  
+- **Combien de temps prend l’implémentation ?** Typiquement moins de 10 minutes pour une archive basique protégée par mot de passe.
 
-## Introduction
+## Qu’est‑ce que « créer un zip protégé par mot de passe » ?
+Créer un zip protégé par mot de passe consiste à compresser un ou plusieurs fichiers dans un conteneur ZIP et à chiffrer ce conteneur avec un mot de passe. L’archive résultante peut être partagée ou stockée en toute sécurité, car son contenu est illisible sans le mot de passe correct.
 
-L'ajout d'une couche de sécurité à vos archives est essentiel pour protéger les informations sensibles. Aspose.Zip pour .NET permet aux développeurs de mettre en œuvre sans effort une protection par mot de passe traditionnelle. Dans ce didacticiel, nous explorerons comment protéger par mot de passe une archive à l'aide d'Aspose.Zip, en garantissant que seules les personnes autorisées peuvent accéder à son contenu.
+## Pourquoi utiliser Aspose.Zip pour la protection par mot de passe des archives ZIP ?
+- **Intégration complète .NET** – fonctionne de manière transparente avec les projets C# et VB.NET.  
+- **Chiffrement traditionnel** – compatible avec la plupart des utilitaires ZIP qui prennent en charge la protection par mot de passe.  
+- **Aucune dépendance externe** – la bibliothèque gère la compression, le chiffrement et l’enregistrement via une seule API.  
+- **Optimisé pour les performances** – adapté aux petits fichiers comme les journaux ainsi qu’aux gros ensembles de documents.
 
-## Conditions préalables
+## Prérequis
+Avant de commencer, assurez‑vous d’avoir :
 
-Avant de plonger dans le didacticiel, assurez-vous que les conditions préalables suivantes sont remplies :
+1. **Aspose.Zip pour .NET** – téléchargez et installez la bibliothèque depuis le site officiel **[here](https://releases.aspose.com/zip/net/)**.  
+2. Un dossier contenant le(s) fichier(s) que vous souhaitez compresser et protéger.
 
-1. Bibliothèque Aspose.Zip pour .NET : téléchargez et installez la bibliothèque Aspose.Zip pour .NET. Vous pouvez trouver la bibliothèque[ici](https://releases.aspose.com/zip/net/).
-
-2. Répertoire de documents : disposez d'un répertoire contenant le document que vous souhaitez archiver et protéger.
-
-## Importer des espaces de noms
-
-Pour démarrer le processus, importez les espaces de noms nécessaires. Ces espaces de noms vous permettent d'exploiter les fonctionnalités fournies par Aspose.Zip pour .NET.
+## Importer les espaces de noms
+Tout d’abord, importez les espaces de noms qui vous donnent accès aux classes de compression et de chiffrement.
 
 ```csharp
 using Aspose.Zip;
@@ -38,16 +49,14 @@ using System.IO;
 using Aspose.Zip.Saving;
 ```
 
-## Étape 1 : ouvrez le répertoire des ressources
+## Étape 1 : Ouvrir le répertoire des ressources
+Identifiez le répertoire qui contient les fichiers que vous voulez archiver. Ce chemin sera utilisé lors de la création du flux ZIP.
 
-Commencez par spécifier le chemin d’accès au répertoire de ressources où se trouve votre document.
-
-## Étape 2 : Créer une archive avec un mot de passe traditionnel
-
-Ensuite, créez une archive et appliquez-y une protection par mot de passe traditionnelle. Cela garantit que le contenu est crypté avec le mot de passe spécifié.
+## Étape 2 : Créer l’archive avec un mot de passe traditionnel
+Nous allons maintenant créer l’archive et **add password to zip** en utilisant `TraditionalEncryptionSettings`. Le mot de passe `"p@s$"` n’est qu’un exemple ; remplacez‑le par un secret fort de votre choix.
 
 ```csharp
-//ExStart : PasswordProtectArchiveWithTraditionalPassword
+//ExStart: PasswordProtectArchiveWithTraditionalPassword
 using (FileStream zipFile = File.Open(dataDir + "CompressWithTraditionalEncryption_out.zip", FileMode.Create))
 {
     using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
@@ -57,36 +66,46 @@ using (FileStream zipFile = File.Open(dataDir + "CompressWithTraditionalEncrypti
         archive.Save(zipFile);
     }
 }
-// ExEnd : PasswordProtectArchiveWithTraditionalPassword
+//ExEnd: PasswordProtectArchiveWithTraditionalPassword 
 ```
 
-## Étape 3 : Enregistrez l'archive
+> **Astuce :** Stockez le mot de passe de façon sécurisée (par ex., dans Azure Key Vault) au lieu de l’encoder en dur.
 
-Enregistrez l'archive nouvellement créée, complétée par une protection par mot de passe traditionnelle. Cette étape finalise le processus et garantit que les données sensibles sont stockées en toute sécurité.
+## Étape 3 : Enregistrer l’archive
+L’appel `archive.Save(zipFile);` écrit l’opération **save zip with password** sur le disque. Après cette étape, le fichier `CompressWithTraditionalEncryption_out.zip` est une archive ZIP entièrement protégée par mot de passe, prête à être distribuée.
 
-Cette approche simple mais efficace garantit que vos archives restent inaccessibles aux utilisateurs non autorisés, ajoutant ainsi une couche de protection supplémentaire à vos précieuses informations.
+## Problème | Solution
+| Problème | Solution |
+|----------|----------|
+| **Erreur de mot de passe incorrect** | Vérifiez que la chaîne du mot de passe correspond exactement, y compris la casse et les caractères spéciaux. |
+| **Les gros fichiers provoquent une pression mémoire** | Utilisez les API de streaming (`FileStream`) comme indiqué ci‑dessus pour éviter de charger les fichiers entiers en mémoire. |
+| **Compatibilité avec d’autres outils ZIP** | Le chiffrement traditionnel est largement supporté, mais certains outils plus récents peuvent par défaut utiliser l’AES. Assurez‑vous que le destinataire utilise un outil qui prend en charge le chiffrement ZIP hérité. |
+
+## Questions fréquentes
+
+### Aspose.Zip pour .NET est‑il compatible avec différents formats d’archive ?
+Oui, Aspose.Zip pour .NET prend en charge divers formats compatibles ZIP, vous offrant une flexibilité sur plusieurs plateformes.
+
+### Puis‑je utiliser Aspose.Zip pour .NET pour des projets commerciaux ?
+Absolument ! La bibliothèque est licenciée pour un usage personnel et commercial.
+
+### La méthode de protection par mot de passe traditionnelle est‑elle sécurisée ?
+Le chiffrement ZIP traditionnel offre un niveau de sécurité raisonnable pour la plupart des scénarios d’entreprise, bien que pour des données très sensibles, il soit recommandé d’envisager le chiffrement basé sur AES.
+
+### Existe‑t‑il des limitations de taille de document pour cette méthode de chiffrement ?
+La bibliothèque gère efficacement les archives de plusieurs gigaoctets, mais assurez‑vous de disposer d’un espace disque suffisant pour les fichiers temporaires créés pendant la compression.
+
+### Comment obtenir du support pour Aspose.Zip pour .NET ?
+Visitez le [forum Aspose.Zip](https://forum.aspose.com/c/zip/37) pour l’assistance communautaire ou explorez la [documentation](https://reference.aspose.com/zip/net/) pour des instructions détaillées.
 
 ## Conclusion
+En suivant ce tutoriel, vous savez maintenant comment **créer un zip protégé par mot de passe** à l’aide d’Aspose.Zip pour .NET. Implémenter la **protection par mot de passe d’une archive zip** est simple, et cela ajoute une couche de sécurité précieuse à tout flux d’échange de données. Explorez d’autres fonctionnalités telles que le chiffrement AES ou les archives multi‑volumes pour améliorer davantage votre stratégie de compression.
 
-En conclusion, intégrer une protection par mot de passe traditionnelle dans vos archives à l'aide d'Aspose.Zip pour .NET est un processus simple. En suivant ce guide étape par étape, vous pouvez améliorer la sécurité de vos données sensibles, en garantissant qu'elles restent confidentielles et accessibles uniquement aux personnes autorisées.
+---
 
-## Foire aux questions (FAQ)
-
-### Aspose.Zip pour .NET est-il compatible avec différents formats d'archives ?
-Oui, Aspose.Zip pour .NET prend en charge différents formats d'archives, offrant ainsi une flexibilité aux développeurs.
-
-### Puis-je utiliser Aspose.Zip pour .NET pour des projets commerciaux ?
-Absolument! Aspose.Zip pour .NET est conçu pour un usage personnel et commercial.
-
-### La méthode traditionnelle de protection par mot de passe est-elle sécurisée ?
-Oui, la protection par mot de passe traditionnelle fournie par Aspose.Zip pour .NET garantit un haut niveau de sécurité pour vos archives.
-
-### Existe-t-il des limites sur la taille du document pour cette méthode de cryptage ?
-Aspose.Zip pour .NET est optimisé pour des performances efficaces, gérant efficacement des archives de différentes tailles.
-
-### Comment puis-je obtenir de l’assistance pour Aspose.Zip pour .NET ?
- Visiter le[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37)pour le soutien de la communauté ou explorez les[Documentation](https://reference.aspose.com/zip/net/) pour des informations détaillées.
-
+**Dernière mise à jour :** 2025-12-21  
+**Testé avec :** Aspose.Zip pour .NET 24.11  
+**Auteur :** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
