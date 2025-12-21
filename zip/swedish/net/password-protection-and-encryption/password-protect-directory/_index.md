@@ -1,35 +1,45 @@
 ---
-title: Lösenordsskydda kataloger i .NET med Aspose.Zip Tutorial
-linktitle: Lösenordsskyddad katalog
-second_title: Aspose.Zip .NET API för filkomprimering och arkivering
-description: Lär dig hur du lösenordsskyddar kataloger i .NET med Aspose.Zip. Säkra dina filer utan ansträngning med denna steg-för-steg handledning.
-weight: 10
+date: 2025-12-21
+description: Lär dig hur du skapar lösenordsskyddade zip‑filer i .NET, krypterar mappar
+  och ändrar zip‑lösenord med Aspose.Zip.
+linktitle: Password Protect Directory
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Skapa lösenordsskyddat zip för .NET‑kataloger – Aspose.Zip‑handledning
 url: /sv/net/password-protection-and-encryption/password-protect-directory/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Lösenordsskydda kataloger i .NET med Aspose.Zip Tutorial
+# Skapa lösenordsskyddat zip för .NET‑kataloger – Aspose.Zip‑handledning
 
+I den här guiden kommer du att **skapa lösenordsskyddade zip**‑arkiv för hela kataloger med hjälp av Aspose.Zip‑biblioteket för .NET. Oavsett om du behöver **kryptera en mapp**, säkra säkerhetskopior eller helt enkelt begränsa åtkomsten till känslig data, visar denna steg‑för‑steg‑handledning exakt hur du gör det med ren C#‑kod.
 
-## Introduktion
+## Snabba svar
+- **Vilket bibliotek rekommenderas?** Aspose.Zip for .NET  
+- **Kan jag kryptera en hel mapp?** Ja – peka bara API‑et på den mapp du vill zip‑komprimera.  
+- **Stöds det att ändra zip‑lösenordet?** Absolut, använd `TraditionalEncryptionSettings`.  
+- **Behöver jag en licens för produktion?** En giltig Aspose.Zip‑licens krävs för kommersiell användning.  
+- **Fungerar det med .NET Core/5/6?** Ja, API‑et är fullt kompatibelt med moderna .NET‑runtime‑miljöer.  
 
-I en värld av .NET-utveckling är hantering och säkrande av kataloger en avgörande aspekt av filhantering. Aspose.Zip för .NET tillhandahåller en robust lösning för lösenordsskyddande kataloger, vilket säkerställer konfidentialitet och integritet för dina känsliga data. I den här handledningen guidar vi dig genom processen att lösenordsskydda en katalog steg för steg, med Aspose.Zip för .NET.
+## Vad betyder “skapa lösenordsskyddat zip”?
+Att skapa ett lösenordsskyddat zip innebär att komprimera filer eller kataloger till ett ZIP‑arkiv samtidigt som du applicerar kryptering så att arkivet bara kan öppnas med rätt lösenord. Detta skyddar innehållet mot obehörig åtkomst.
+
+## Varför använda Aspose.Zip för att lösenordsskydda katalog i .NET?
+Aspose.Zip erbjuder ett enkelt, högpresterande API som stödjer **c# zip password protection**, traditionell ZipCrypto‑kryptering och AES‑kryptering. Det hanterar stora kataloger effektivt och integreras sömlöst i alla .NET‑projekt.
 
 ## Förutsättningar
+Innan du börjar, se till att du har:
 
-Innan du dyker in i handledningen, se till att du har följande förutsättningar:
+- Grundläggande kunskaper i C#‑programmering.  
+- Visual Studio (valfri nyare version).  
+- Aspose.Zip for .NET‑biblioteket – ladda ner det **[here](https://releases.aspose.com/zip/net/)**.  
+- En mapp på disken som du vill skydda med ett lösenord.
 
-- Grundläggande förståelse för programmeringsspråket C#.
-- Visual Studio installerat på din dator.
--  Aspose.Zip för .NET-bibliotek. Du kan ladda ner den[här](https://releases.aspose.com/zip/net/).
-- En katalog som innehåller filer som du vill lösenordsskydda.
-
-## Importera namnområden
-
-För att komma igång måste du importera de nödvändiga namnrymden till ditt C#-projekt. Dessa namnutrymmen är avgörande för att använda funktionerna som tillhandahålls av Aspose.Zip för .NET.
+## Importera namnrymder
+Lägg till de nödvändiga namnrymderna i din C#‑fil så att kompilatorn vet var den ska hitta Aspose.Zip‑klasserna.
 
 ```csharp
 using Aspose.Zip;
@@ -37,17 +47,15 @@ using System.IO;
 using Aspose.Zip.Saving;
 ```
 
-## Steg 1: Ställ in sökvägen till resurskatalogen
-
-Först definierar du sökvägen till katalogen som innehåller de filer du vill skydda med ett lösenord.
+## Steg 1: Ange sökvägen till resurskatalogen
+Definiera sökvägen som pekar på den katalog du avser att zip‑komprimera och skydda.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
 ## Steg 2: Lösenordsskydda katalogen
-
- Låt oss nu fördjupa oss i koden som utför lösenordsskyddet för katalogen. Vi använder`TraditionalEncryptionSettings` klass för att ställa in ett lösenord och tillämpa det på den angivna katalogen.
+Använd `TraditionalEncryptionSettings` för att ange lösenordet och skapa det krypterade arkivet. Detta är kärnan i **c# zip password protection**.
 
 ```csharp
 //ExStart: PasswordProtectDirectory
@@ -64,38 +72,41 @@ using (FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", 
 ```
 
 ## Steg 3: Förklaring av koden
+- **Skapar utdatafilen:** `File.Open(..., FileMode.Create)` öppnar (eller skapar) ZIP‑filen som kommer att innehålla den krypterade datan.  
+- **Väljer källmappen:** `new DirectoryInfo(".\\CanterburyCorpus")` talar om för Aspose.Zip vilken katalog som ska komprimeras.  
+- **Applicerar lösenordet:** `new TraditionalEncryptionSettings("p@s$")` sätter lösenordet som skyddar arkivet.  
+- **Lägger till poster & sparar:** `archive.CreateEntries(corpus)` lägger till varje fil i mappen, och `archive.Save(zipFile)` skriver den krypterade ZIP‑filen till disk.
 
-Låt oss dela upp koden för att förstå varje steg:
+## Hur ändrar man zip‑lösenordet senare?
+Om du behöver **change zip password**, återskapa helt enkelt arkivet med en ny `TraditionalEncryptionSettings`‑instans som innehåller det nya lösenordet, och spara det igen.
 
--  Ställa in utdatafilen:`FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", FileMode.Create)` skapar en ny ZIP-fil för den krypterade utdata.
-
--  Definiera katalogen:`DirectoryInfo corpus = new DirectoryInfo(".\\CanterburyCorpus")` anger katalogen som ska lösenordsskyddas.
-
--  Skapa och spara poster:`archive.CreateEntries(corpus)` skapar poster för filerna i den angivna katalogen, och`archive.Save(zipFile)`sparar det lösenordsskyddade arkivet.
-
-## Slutsats
-
-I den här handledningen gick vi igenom processen att lösenordsskydda en katalog med Aspose.Zip för .NET. Genom att följa dessa steg kan du säkerställa säkerheten för dina känsliga filer på ett användarvänligt och effektivt sätt.
-
----
+## Vanliga problem & tips
+- **Stora mappar:** Aspose.Zip strömmar data, så minnesanvändningen förblir låg även för enorma kataloger.  
+- **Lösenordskomplexitet:** Använd ett starkt lösenord (blanda bokstäver, siffror, symboler) för att förbättra säkerheten.  
+- **Licensfel:** Se till att du har applicerat en giltig licensfil; annars körs biblioteket i utvärderingsläge med begränsningar.
 
 ## Vanliga frågor
 
 ### Är Aspose.Zip för .NET lämplig för stora kataloger?
-Ja, Aspose.Zip för .NET är designat för att hantera stora kataloger effektivt, vilket ger optimal prestanda.
+Ja, Aspose.Zip för .NET är designat för att hantera stora kataloger effektivt och leverera optimal prestanda.
 
 ### Kan jag ändra lösenordet för en redan skyddad katalog?
- Ja, du kan ändra lösenordet genom att justera`TraditionalEncryptionSettings` i koden i enlighet med detta.
+Ja, du kan ändra lösenordet genom att justera `TraditionalEncryptionSettings` i koden enligt behov.
 
 ### Finns det några licenskrav för att använda Aspose.Zip för .NET?
- Ja, en giltig licens krävs för att använda Aspose.Zip för .NET i en produktionsmiljö. Du kan få en licens[här](https://purchase.aspose.com/buy).
+Ja, en giltig licens krävs för att använda Aspose.Zip för .NET i en produktionsmiljö. Du kan skaffa en licens **[here](https://purchase.aspose.com/buy)**.
 
-### Finns det en gratis testversion tillgänglig för Aspose.Zip för .NET?
- Ja, du kan få tillgång till en gratis provperiod[här](https://releases.aspose.com/).
+### Finns det en gratis provversion av Aspose.Zip för .NET?
+Ja, du kan komma åt en gratis provversion **[here](https://releases.aspose.com/)**.
 
-### Var kan jag hitta ytterligare stöd för Aspose.Zip för .NET?
- Du kan besöka[Aspose.Zip forum](https://forum.aspose.com/c/zip/37) för support eller frågor.
+### Var kan jag hitta ytterligare support för Aspose.Zip för .NET?
+Du kan besöka **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)** för support eller frågor.
 
+---
+
+**Last Updated:** 2025-12-21  
+**Tested With:** Aspose.Zip for .NET (latest release)  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

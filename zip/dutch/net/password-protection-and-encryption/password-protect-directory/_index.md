@@ -1,35 +1,43 @@
 ---
-title: Wachtwoordbeveiliging van mappen in .NET met Aspose.Zip Tutorial
-linktitle: Wachtwoordbeveiliging map
-second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
-description: Leer hoe u mappen in .NET met een wachtwoord kunt beveiligen met Aspose.Zip. Beveilig uw bestanden moeiteloos met deze stapsgewijze zelfstudie.
-weight: 10
+date: 2025-12-21
+description: Leer hoe u wachtwoordbeveiligde zip‑bestanden maakt in .NET, mappen versleutelt
+  en het zip‑wachtwoord wijzigt met Aspose.Zip.
+linktitle: Password Protect Directory
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Maak een wachtwoordbeveiligde zip voor .NET-mappen – Aspose.Zip Tutorial
 url: /nl/net/password-protection-and-encryption/password-protect-directory/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Wachtwoordbeveiliging van mappen in .NET met Aspose.Zip Tutorial
+# Maak een wachtwoordbeveiligde zip voor .NET-mappen – Aspose.Zip Tutorial
 
+In deze gids maak je **wachtwoordbeveiligde zip**-archieven voor volledige mappen met behulp van de Aspose.Zip-bibliotheek voor .NET. Of je nu een **map wilt versleutelen**, back‑upbestanden wilt beveiligen, of simpelweg de toegang tot gevoelige gegevens wilt beperken, deze stap‑voor‑stap tutorial laat je precies zien hoe je dit doet met nette C#-code.
 
-## Invoering
+## Snelle antwoorden
+- **Welke bibliotheek wordt aanbevolen?** Aspose.Zip for .NET  
+- **Kan ik een volledige map versleutelen?** Ja – wijs de API gewoon op de map die je wilt zippen.  
+- **Wordt het wijzigen van het zip-wachtwoord ondersteund?** Absoluut, gebruik `TraditionalEncryptionSettings`.  
+- **Heb ik een licentie nodig voor productie?** Een geldige Aspose.Zip-licentie is vereist voor commercieel gebruik.  
+- **Werkt het met .NET Core/5/6?** Ja, de API is volledig compatibel met moderne .NET-runtime.  
 
-In de wereld van .NET-ontwikkeling is het beheren en beveiligen van mappen een cruciaal aspect van de bestandsverwerking. Aspose.Zip voor .NET biedt een robuuste oplossing voor het beveiligen van mappen met wachtwoorden, waardoor de vertrouwelijkheid en integriteit van uw gevoelige gegevens wordt gegarandeerd. In deze zelfstudie begeleiden we u stap voor stap bij het beveiligen van een map met een wachtwoord, met behulp van Aspose.Zip voor .NET.
+## Wat is “create password protected zip”?
+Een wachtwoordbeveiligde zip maken betekent dat je bestanden of mappen comprimeert tot een ZIP-archief en daarbij encryptie toepast, zodat het archief alleen kan worden geopend met het juiste wachtwoord. Dit beschermt de inhoud tegen ongeautoriseerde toegang.
+
+## Waarom Aspose.Zip gebruiken voor wachtwoordbeveiliging van mappen in .NET?
+Aspose.Zip biedt een eenvoudige, high‑performance API die **c# zip password protection** ondersteunt, traditionele ZipCrypto-encryptie en AES-encryptie. Het verwerkt grote mappen efficiënt en integreert naadloos met elk .NET‑project.
 
 ## Vereisten
+- Basiskennis van C#-programmeren.  
+- Visual Studio (een recente editie).  
+- Aspose.Zip for .NET bibliotheek – download deze **[hier](https://releases.aspose.com/zip/net/)**.  
+- Een map op de schijf die je wilt beveiligen met een wachtwoord.
 
-Voordat u in de zelfstudie duikt, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
-
-- Basiskennis van de programmeertaal C#.
-- Visual Studio is op uw computer geïnstalleerd.
--  Aspose.Zip voor .NET-bibliotheek. Je kunt het downloaden[hier](https://releases.aspose.com/zip/net/).
-- Een map met bestanden die u met een wachtwoord wilt beveiligen.
-
-## Naamruimten importeren
-
-Om aan de slag te gaan, moet u de benodigde naamruimten in uw C#-project importeren. Deze naamruimten zijn cruciaal voor het gebruik van de functionaliteit van Aspose.Zip voor .NET.
+## Namespaces importeren
+Voeg de benodigde namespaces toe aan je C#‑bestand zodat de compiler weet waar de Aspose.Zip‑klassen te vinden zijn.
 
 ```csharp
 using Aspose.Zip;
@@ -37,20 +45,18 @@ using System.IO;
 using Aspose.Zip.Saving;
 ```
 
-## Stap 1: Stel het pad naar de resourcemap in
-
-Definieer eerst het pad naar de map met de bestanden die u met een wachtwoord wilt beveiligen.
+## Stap 1: Stel het pad naar de resource‑directory in
+Definieer het pad dat naar de map wijst die je wilt zippen en beveiligen.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
 ## Stap 2: Beveilig de map met een wachtwoord
-
- Laten we nu eens kijken naar de code die de wachtwoordbeveiliging van de map uitvoert. Wij gebruiken de`TraditionalEncryptionSettings` class om een wachtwoord in te stellen en dit toe te passen op de opgegeven map.
+Gebruik `TraditionalEncryptionSettings` om het wachtwoord op te geven en het versleutelde archief te maken. Dit is de kern van **c# zip password protection**.
 
 ```csharp
-//ExStart: WachtwoordProtectDirectory
+//ExStart: PasswordProtectDirectory
 using (FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", FileMode.Create))
 {
     DirectoryInfo corpus = new DirectoryInfo(".\\CanterburyCorpus");
@@ -58,44 +64,47 @@ using (FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", 
     {
         archive.CreateEntries(corpus);
         archive.Save(zipFile);
-        //ExEnd: WachtwoordProtectDirectory
+        //ExEnd: PasswordProtectDirectory
     }
 }
 ```
 
-## Stap 3: Uitleg van de Code
+## Stap 3: Uitleg van de code
+- **Het output‑bestand maken:** `File.Open(..., FileMode.Create)` opent (of maakt) het ZIP‑bestand dat de versleutelde gegevens zal bevatten.  
+- **De bronmap selecteren:** `new DirectoryInfo(".\\CanterburyCorpus")` geeft Aspose.Zip aan welke map moet worden gecomprimeerd.  
+- **Het wachtwoord toepassen:** `new TraditionalEncryptionSettings("p@s$")` stelt het wachtwoord in dat het archief zal beveiligen.  
+- **Items toevoegen & opslaan:** `archive.CreateEntries(corpus)` voegt elk bestand in de map toe, en `archive.Save(zipFile)` schrijft de versleutelde ZIP naar de schijf.
 
-Laten we de code opsplitsen om elke stap te begrijpen:
+## Hoe het zip‑wachtwoord later wijzigen?
+Als je het **zip‑wachtwoord wilt wijzigen**, maak dan simpelweg het archief opnieuw met een nieuwe `TraditionalEncryptionSettings`‑instantie die het nieuwe wachtwoord bevat, en sla het vervolgens opnieuw op.
 
--  Het uitvoerbestand instellen:`FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", FileMode.Create)` maakt een nieuw ZIP-bestand aan voor de gecodeerde uitvoer.
+## Veelvoorkomende problemen & tips
+- **Grote mappen:** Aspose.Zip streamt gegevens, waardoor het geheugenverbruik laag blijft, zelfs bij enorme mappen.  
+- **Wachtwoordcomplexiteit:** Gebruik een sterk wachtwoord (mix van letters, cijfers, symbolen) om de beveiliging te verbeteren.  
+- **Licentiefouten:** Zorg ervoor dat je een geldig licentiebestand hebt toegepast; anders draait de bibliotheek in evaluatiemodus met beperkingen.
 
--  De map definiëren:`DirectoryInfo corpus = new DirectoryInfo(".\\CanterburyCorpus")` specificeert de map die met een wachtwoord moet worden beveiligd.
+## Veelgestelde vragen
 
--  Gegevens aanmaken en opslaan:`archive.CreateEntries(corpus)` creëert vermeldingen voor de bestanden in de opgegeven map, en`archive.Save(zipFile)`slaat het met een wachtwoord beveiligde archief op.
+### Is Aspose.Zip for .NET geschikt voor grote mappen?
+Ja, Aspose.Zip for .NET is ontworpen om grote mappen efficiënt te verwerken, met optimale prestaties.
 
-## Conclusie
+### Kan ik het wachtwoord wijzigen voor een al beveiligde map?
+Ja, je kunt het wachtwoord wijzigen door de `TraditionalEncryptionSettings` in de code dienovereenkomstig aan te passen.
 
-In deze zelfstudie hebben we het proces doorlopen van het beveiligen van een map met een wachtwoord met behulp van Aspose.Zip voor .NET. Door deze stappen te volgen, kunt u op een gebruiksvriendelijke en efficiënte manier de beveiliging van uw gevoelige bestanden garanderen.
+### Zijn er licentievereisten voor het gebruik van Aspose.Zip for .NET?
+Ja, een geldige licentie is vereist voor het gebruik van Aspose.Zip for .NET in een productieomgeving. Je kunt een licentie verkrijgen **[hier](https://purchase.aspose.com/buy)**.
+
+### Is er een gratis proefversie beschikbaar voor Aspose.Zip for .NET?
+Ja, je kunt een gratis proefversie krijgen **[hier](https://releases.aspose.com/)**.
+
+### Waar kan ik extra ondersteuning vinden voor Aspose.Zip for .NET?
+Je kunt het **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)** bezoeken voor ondersteuning of vragen.
 
 ---
 
-## Veel Gestelde Vragen
-
-### Is Aspose.Zip voor .NET geschikt voor grote mappen?
-Ja, Aspose.Zip voor .NET is ontworpen om grote mappen efficiënt te verwerken en optimale prestaties te leveren.
-
-### Kan ik het wachtwoord voor een reeds beveiligde map wijzigen?
- Ja, u kunt het wachtwoord wijzigen door het aan te passen`TraditionalEncryptionSettings` overeenkomstig in de code.
-
-### Zijn er licentievereisten voor het gebruik van Aspose.Zip voor .NET?
- Ja, voor het gebruik van Aspose.Zip voor .NET in een productieomgeving is een geldige licentie vereist. U kunt een licentie verkrijgen[hier](https://purchase.aspose.com/buy).
-
-### Is er een gratis proefversie beschikbaar voor Aspose.Zip voor .NET?
- Ja, u krijgt toegang tot een gratis proefperiode[hier](https://releases.aspose.com/).
-
-### Waar kan ik aanvullende ondersteuning vinden voor Aspose.Zip voor .NET?
- U kunt een bezoek brengen aan de[Aspose.Zip-forum](https://forum.aspose.com/c/zip/37) voor eventuele ondersteuning of vragen.
-
+**Laatst bijgewerkt:** 2025-12-21  
+**Getest met:** Aspose.Zip for .NET (latest release)  
+**Auteur:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

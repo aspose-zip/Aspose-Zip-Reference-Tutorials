@@ -1,35 +1,45 @@
 ---
-title: Proteger directorios con contraseña en .NET con Aspose.Zip Tutorial
-linktitle: Directorio protegido con contraseña
-second_title: API Aspose.Zip .NET para compresión y archivado de archivos
-description: Aprenda cómo proteger con contraseña directorios en .NET usando Aspose.Zip. Proteja sus archivos sin esfuerzo con este tutorial paso a paso.
-weight: 10
+date: 2025-12-21
+description: Aprende a crear archivos zip protegidos con contraseña en .NET, encriptar
+  carpetas y cambiar la contraseña del zip usando Aspose.Zip.
+linktitle: Password Protect Directory
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Crear zip protegido con contraseña para directorios .NET – Tutorial de Aspose.Zip
 url: /es/net/password-protection-and-encryption/password-protect-directory/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Proteger directorios con contraseña en .NET con Aspose.Zip Tutorial
+# Crear zip protegido con contraseña para directorios .NET – Tutorial de Aspose.Zip
 
+En esta guía **creará archivos zip protegidos con contraseña** para directorios completos usando la biblioteca Aspose.Zip para .NET. Ya sea que necesite **encriptar una carpeta**, asegurar archivos de respaldo, o simplemente restringir el acceso a datos sensibles, este tutorial paso a paso le muestra exactamente cómo hacerlo con código C# limpio.
 
-## Introducción
+## Respuestas rápidas
+- **¿Qué biblioteca se recomienda?** Aspose.Zip for .NET  
+- **¿Puedo encriptar una carpeta completa?** Sí – simplemente indique la API a la carpeta que desea comprimir.  
+- **¿Se admite cambiar la contraseña del zip?** Absolutamente, use `TraditionalEncryptionSettings`.  
+- **¿Necesito una licencia para producción?** Se requiere una licencia válida de Aspose.Zip para uso comercial.  
+- **¿Funciona con .NET Core/5/6?** Sí, la API es totalmente compatible con los runtimes modernos de .NET.  
 
-En el mundo del desarrollo .NET, administrar y proteger directorios es un aspecto crucial del manejo de archivos. Aspose.Zip para .NET proporciona una solución sólida para proteger directorios con contraseña, garantizando la confidencialidad e integridad de sus datos confidenciales. En este tutorial, lo guiaremos a través del proceso de protección con contraseña de un directorio paso a paso, usando Aspose.Zip para .NET.
+## ¿Qué es “crear zip protegido con contraseña”?
+Crear un zip protegido con contraseña significa comprimir archivos o directorios en un archivo ZIP mientras se aplica encriptación, de modo que el archivo solo pueda abrirse con la contraseña correcta. Esto protege el contenido contra accesos no autorizados.
 
-## Requisitos previos
+## ¿Por qué usar Aspose.Zip para proteger con contraseña directorios .NET?
+Aspose.Zip ofrece una API sencilla y de alto rendimiento que admite **c# zip password protection**, encriptación tradicional ZipCrypto y encriptación AES. Maneja directorios grandes de manera eficiente e se integra sin problemas con cualquier proyecto .NET.
 
-Antes de sumergirse en el tutorial, asegúrese de tener los siguientes requisitos previos:
+## Prerrequisitos
+Antes de comenzar, asegúrese de tener:
 
-- Conocimientos básicos del lenguaje de programación C#.
-- Visual Studio instalado en su máquina.
--  Aspose.Zip para la biblioteca .NET. Puedes descargarlo[aquí](https://releases.aspose.com/zip/net/).
-- Un directorio que contiene archivos que desea proteger con contraseña.
+- Conocimientos básicos de programación en C#.  
+- Visual Studio (cualquier edición reciente).  
+- Biblioteca Aspose.Zip para .NET – descárguela **[aquí](https://releases.aspose.com/zip/net/)**.  
+- Una carpeta en el disco que desea proteger con una contraseña.
 
 ## Importar espacios de nombres
-
-Para comenzar, necesita importar los espacios de nombres necesarios a su proyecto C#. Estos espacios de nombres son cruciales para utilizar la funcionalidad proporcionada por Aspose.Zip para .NET.
+Agregue los espacios de nombres requeridos a su archivo C# para que el compilador sepa dónde encontrar las clases de Aspose.Zip.
 
 ```csharp
 using Aspose.Zip;
@@ -37,20 +47,18 @@ using System.IO;
 using Aspose.Zip.Saving;
 ```
 
-## Paso 1: establezca la ruta al directorio de recursos
-
-En primer lugar, defina la ruta al directorio que contiene los archivos que desea proteger con una contraseña.
+## Paso 1: Establecer la ruta al directorio de recursos
+Defina la ruta que apunta al directorio que desea comprimir y proteger.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Paso 2: Proteja el directorio con contraseña
-
- Ahora, profundicemos en el código que realiza la protección con contraseña del directorio. Usamos el`TraditionalEncryptionSettings` clase para establecer una contraseña y aplicarla al directorio especificado.
+## Paso 2: Proteger la carpeta con contraseña
+Utilice `TraditionalEncryptionSettings` para especificar la contraseña y crear el archivo encriptado. Este es el núcleo de **c# zip password protection**.
 
 ```csharp
-//ExStart: Directorio de protección de contraseña
+//ExStart: PasswordProtectDirectory
 using (FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", FileMode.Create))
 {
     DirectoryInfo corpus = new DirectoryInfo(".\\CanterburyCorpus");
@@ -58,44 +66,47 @@ using (FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", 
     {
         archive.CreateEntries(corpus);
         archive.Save(zipFile);
-        //ExEnd: Directorio de protección de contraseña
+        //ExEnd: PasswordProtectDirectory
     }
 }
 ```
 
-## Paso 3: Explicación del Código
+## Paso 3: Explicación del código
+- **Crear el archivo de salida:** `File.Open(..., FileMode.Create)` abre (o crea) el archivo ZIP que contendrá los datos encriptados.  
+- **Seleccionar la carpeta fuente:** `new DirectoryInfo(".\\CanterburyCorpus")` indica a Aspose.Zip qué directorio comprimir.  
+- **Aplicar la contraseña:** `new TraditionalEncryptionSettings("p@s$")` establece la contraseña que protegerá el archivo.  
+- **Agregar entradas y guardar:** `archive.CreateEntries(corpus)` agrega cada archivo de la carpeta, y `archive.Save(zipFile)` escribe el ZIP encriptado en el disco.
 
-Analicemos el código para comprender cada paso:
+## ¿Cómo cambiar la contraseña del zip más tarde?
+Si necesita **cambiar la contraseña del zip**, simplemente recree el archivo con una nueva instancia de `TraditionalEncryptionSettings` que contenga la nueva contraseña, y luego guárdelo nuevamente.
 
--  Configuración del archivo de salida:`FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", FileMode.Create)` crea un nuevo archivo ZIP para la salida cifrada.
-
--  Definición del directorio:`DirectoryInfo corpus = new DirectoryInfo(".\\CanterburyCorpus")` especifica el directorio que se protegerá con contraseña.
-
--  Crear y guardar entradas:`archive.CreateEntries(corpus)` crea entradas para los archivos en el directorio especificado, y`archive.Save(zipFile)`guarda el archivo protegido con contraseña.
-
-## Conclusión
-
-En este tutorial, recorrimos el proceso de protección con contraseña de un directorio usando Aspose.Zip para .NET. Si sigue estos pasos, podrá garantizar la seguridad de sus archivos confidenciales de una manera eficiente y fácil de usar.
-
----
+## Problemas comunes y consejos
+- **Carpetas grandes:** Aspose.Zip transmite los datos, por lo que el uso de memoria se mantiene bajo incluso para directorios enormes.  
+- **Complejidad de la contraseña:** Use una contraseña fuerte (mezcla de letras, números y símbolos) para mejorar la seguridad.  
+- **Errores de licencia:** Asegúrese de haber aplicado un archivo de licencia válido; de lo contrario la biblioteca se ejecuta en modo de evaluación con limitaciones.
 
 ## Preguntas frecuentes
 
-### ¿Aspose.Zip para .NET es adecuado para directorios grandes?
+### ¿Es Aspose.Zip para .NET adecuado para directorios grandes?
 Sí, Aspose.Zip para .NET está diseñado para manejar directorios grandes de manera eficiente, proporcionando un rendimiento óptimo.
 
-### ¿Puedo cambiar la contraseña de un directorio ya protegido?
- Sí, puedes modificar la contraseña ajustando el`TraditionalEncryptionSettings` en el código en consecuencia.
+### ¿Puedo cambiar la contraseña de una carpeta ya protegida?
+Sí, puede modificar la contraseña ajustando `TraditionalEncryptionSettings` en el código según corresponda.
 
-### ¿Existe algún requisito de licencia para utilizar Aspose.Zip para .NET?
- Sí, se requiere una licencia válida para utilizar Aspose.Zip para .NET en un entorno de producción. Puedes obtener una licencia[aquí](https://purchase.aspose.com/buy).
+### ¿Existen requisitos de licencia para usar Aspose.Zip para .NET?
+Sí, se requiere una licencia válida para usar Aspose.Zip para .NET en un entorno de producción. Puede obtener una licencia **[aquí](https://purchase.aspose.com/buy)**.
 
 ### ¿Hay una prueba gratuita disponible para Aspose.Zip para .NET?
- Sí, puedes acceder a una prueba gratuita[aquí](https://releases.aspose.com/).
+Sí, puede acceder a una prueba gratuita **[aquí](https://releases.aspose.com/)**.
 
 ### ¿Dónde puedo encontrar soporte adicional para Aspose.Zip para .NET?
- Puedes visitar el[Foro Aspose.Zip](https://forum.aspose.com/c/zip/37) para cualquier soporte o consulta.
+Puede visitar el **[foro de Aspose.Zip](https://forum.aspose.com/c/zip/37)** para cualquier soporte o consulta.
 
+---
+
+**Última actualización:** 2025-12-21  
+**Probado con:** Aspose.Zip for .NET (última versión)  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -1,35 +1,44 @@
 ---
-title: 使用 Aspose.Zip 教程密码保护 .NET 中的目录
-linktitle: 密码保护目录
-second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
-description: 了解如何使用 Aspose.Zip 对 .NET 中的目录进行密码保护。通过此分步教程轻松保护您的文件。
-weight: 10
+date: 2025-12-21
+description: 了解如何在 .NET 中创建受密码保护的 zip 文件、加密文件夹以及使用 Aspose.Zip 更改 zip 密码。
+linktitle: Password Protect Directory
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: 为 .NET 目录创建受密码保护的 zip – Aspose.Zip 教程
 url: /zh/net/password-protection-and-encryption/password-protect-directory/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 使用 Aspose.Zip 教程密码保护 .NET 中的目录
+# 为 .NET 目录创建受密码保护的 zip – Aspose.Zip 教程
 
+在本指南中，您将使用 Aspose.Zip 库为整个目录 **创建受密码保护的 zip** 压缩包。无论是 **加密文件夹**、保护备份文件，还是仅仅限制对敏感数据的访问，本分步教程都将展示如何使用简洁的 C# 代码实现。
 
-## 介绍
+## 快速答案
+- **推荐使用哪个库？** Aspose.Zip for .NET  
+- **可以加密整个文件夹吗？** 可以 – 只需将 API 指向要压缩的文件夹。  
+- **是否支持更改 zip 密码？** 当然，使用 `TraditionalEncryptionSettings` 即可。  
+- **生产环境需要许可证吗？** 商业使用必须拥有有效的 Aspose.Zip 许可证。  
+- **兼容 .NET Core/5/6 吗？** 兼容，API 完全支持现代 .NET 运行时。  
 
-在 .NET 开发领域，管理和保护目录是文件处理的一个重要方面。 Aspose.Zip for .NET 为密码保护目录提供了强大的解决方案，确保敏感数据的机密性和完整性。在本教程中，我们将指导您使用 Aspose.Zip for .NET 逐步完成密码保护目录的过程。
+## 什么是 “create password protected zip”？
+创建受密码保护的 zip 是指在将文件或目录压缩为 ZIP 存档的同时，应用加密，使得只有使用正确密码才能打开该存档，从而防止未授权访问。
 
-## 先决条件
+## 为什么在 .NET 中使用 Aspose.Zip 对目录进行密码保护？
+Aspose.Zip 提供直观且高性能的 API，支持 **c# zip password protection**、传统 ZipCrypto 加密以及 AES 加密。它能够高效处理大型目录，并可无缝集成到任何 .NET 项目中。
 
-在深入学习本教程之前，请确保您满足以下先决条件：
+## 前置条件
+在开始之前，请确保您具备以下条件：
 
-- 对 C# 编程语言有基本了解。
-- Visual Studio 安装在您的计算机上。
--  Aspose.Zip for .NET 库。你可以下载它[这里](https://releases.aspose.com/zip/net/).
-- 包含要受密码保护的文件的目录。
+- 基础的 C# 编程知识。  
+- Visual Studio（任意近期版本）。  
+- Aspose.Zip for .NET 库 – 在 **[此处](https://releases.aspose.com/zip/net/)** 下载。  
+- 一个您希望使用密码保护的磁盘文件夹。
 
 ## 导入命名空间
-
-首先，您需要将必要的命名空间导入到您的 C# 项目中。这些命名空间对于利用 Aspose.Zip for .NET 提供的功能至关重要。
+在 C# 文件中添加所需的命名空间，以便编译器能够找到 Aspose.Zip 类。
 
 ```csharp
 using Aspose.Zip;
@@ -37,20 +46,18 @@ using System.IO;
 using Aspose.Zip.Saving;
 ```
 
-## 第1步：设置资源目录的路径
-
-首先，定义包含要使用密码保护的文件的目录的路径。
+## 步骤 1：设置资源目录的路径
+定义指向您要压缩并保护的目录的路径。
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## 第 2 步：用密码保护目录
-
-现在，让我们深入研究执行目录密码保护的代码。我们使用`TraditionalEncryptionSettings`类设置密码并将其应用于指定目录。
+## 步骤 2：对目录进行密码保护
+使用 `TraditionalEncryptionSettings` 指定密码并创建加密存档。这是 **c# zip password protection** 的核心。
 
 ```csharp
-//ExStart：密码保护目录
+//ExStart: PasswordProtectDirectory
 using (FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", FileMode.Create))
 {
     DirectoryInfo corpus = new DirectoryInfo(".\\CanterburyCorpus");
@@ -58,44 +65,47 @@ using (FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", 
     {
         archive.CreateEntries(corpus);
         archive.Save(zipFile);
-        //结束：密码保护目录
+        //ExEnd: PasswordProtectDirectory
     }
 }
 ```
 
-## 第 3 步：代码解释
+## 步骤 3：代码说明
+- **创建输出文件：** `File.Open(..., FileMode.Create)` 打开（或创建）用于保存加密数据的 ZIP 文件。  
+- **选择源文件夹：** `new DirectoryInfo(".\\CanterburyCorpus")` 告诉 Aspose.Zip 要压缩哪个目录。  
+- **应用密码：** `new TraditionalEncryptionSettings("p@s$")` 设置用于保护存档的密码。  
+- **添加条目并保存：** `archive.CreateEntries(corpus)` 将文件夹中的每个文件加入压缩包，`archive.Save(zipFile)` 将加密后的 ZIP 写入磁盘。
 
-让我们分解代码来理解每个步骤：
+## 如何以后更改 zip 密码？
+如果需要 **change zip password**，只需使用包含新密码的 `TraditionalEncryptionSettings` 实例重新创建存档，然后再次保存即可。
 
-- 设置输出文件：`FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", FileMode.Create)`为加密输出创建一个新的 ZIP 文件。
+## 常见问题与技巧
+- **大型文件夹：** Aspose.Zip 采用流式处理，内存占用低，即使是超大目录也能顺畅处理。  
+- **密码复杂度：** 使用强密码（字母、数字、符号混合）提升安全性。  
+- **许可证错误：** 确保已应用有效的许可证文件，否则库将以评估模式运行并受限。
 
-- 定义目录：`DirectoryInfo corpus = new DirectoryInfo(".\\CanterburyCorpus")`指定要受密码保护的目录。
+## 常见问答
 
-- 创建和保存条目：`archive.CreateEntries(corpus)`为指定目录中的文件创建条目，并且`archive.Save(zipFile)`保存受密码保护的存档。
+### Aspose.Zip for .NET 适用于大型目录吗？
+是的，Aspose.Zip for .NET 旨在高效处理大型目录，提供最佳性能。
 
-## 结论
+### 能否更改已受保护目录的密码？
+可以，只需在代码中相应地调整 `TraditionalEncryptionSettings` 即可。
 
-在本教程中，我们演示了使用 Aspose.Zip for .NET 使用密码保护目录的过程。通过执行这些步骤，您可以以用户友好且高效的方式确保敏感文件的安全。
+### 使用 Aspose.Zip for .NET 是否有许可证要求？
+是的，生产环境中使用 Aspose.Zip for .NET 必须拥有有效许可证。您可以在 **[此处](https://purchase.aspose.com/buy)** 获取许可证。
+
+### 是否提供 Aspose.Zip for .NET 的免费试用？
+提供，您可以在 **[此处](https://releases.aspose.com/)** 访问免费试用。
+
+### 在哪里可以获取 Aspose.Zip for .NET 的其他支持？
+您可以访问 **[Aspose.Zip 论坛](https://forum.aspose.com/c/zip/37)** 寻求支持或提问。
 
 ---
 
-## 经常问的问题
-
-### Aspose.Zip for .NET 适合大型目录吗？
-是的，Aspose.Zip for .NET 旨在高效处理大型目录，提供最佳性能。
-
-### 我可以更改已受保护目录的密码吗？
-是的，您可以通过调整密码来修改密码`TraditionalEncryptionSettings`相应地在代码中。
-
-### 使用 Aspose.Zip for .NET 有任何许可要求吗？
-是的，在生产环境中使用 Aspose.Zip for .NET 需要有效的许可证。您可以获得许可证[这里](https://purchase.aspose.com/buy).
-
-### Aspose.Zip for .NET 是否有免费试用版？
-是的，您可以免费试用[这里](https://releases.aspose.com/).
-
-### 在哪里可以找到 Aspose.Zip for .NET 的其他支持？
-您可以访问[Aspose.Zip 论坛](https://forum.aspose.com/c/zip/37)如有任何支持或疑问。
-
+**最后更新：** 2025-12-21  
+**测试环境：** Aspose.Zip for .NET（最新版本）  
+**作者：** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

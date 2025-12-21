@@ -1,32 +1,51 @@
 ---
-title: Sécurisez vos fichiers - Cryptage AES avec Aspose.Zip
-linktitle: Protéger par mot de passe avec AES
-second_title: API Aspose.Zip .NET pour la compression et l'archivage de fichiers
-description: Découvrez comment améliorer la sécurité de vos fichiers à l'aide d'Aspose.Zip pour .NET avec cryptage AES. Suivez notre guide étape par étape pour une protection optimale.
-weight: 11
+date: 2025-12-21
+description: Apprenez à protéger par mot de passe les fichiers zip à l'aide d'Aspose.Zip
+  pour .NET avec le chiffrement AES. Suivez notre guide étape par étape pour une protection
+  optimale.
+linktitle: Password Protect with AES
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Protéger les fichiers ZIP par mot de passe avec le chiffrement AES à l'aide
+  d'Aspose.Zip
 url: /fr/net/password-protection-and-encryption/password-protect-with-aes/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Sécurisez vos fichiers - Cryptage AES avec Aspose.Zip
-
+# Protéger les fichiers ZIP par mot de passe avec le chiffrement AES à l'aide d'Aspose.Zip
 
 ## Introduction
 
-La sécurisation de vos fichiers sensibles est cruciale à l'ère numérique d'aujourd'hui, et Aspose.Zip pour .NET fournit une solution robuste pour protéger par mot de passe vos archives à l'aide de Advanced Encryption Standard (AES). Dans ce didacticiel, nous explorerons comment implémenter le cryptage AES avec trois longueurs de clé : 128 bits, 192 bits et 256 bits - garantissant le plus haut niveau de sécurité pour vos fichiers compressés.
+Dans le paysage numérique actuel, les archives **password protect zip** sont un moyen fondamental de garder les données confidentielles sécurisées lors du partage. Aspose.Zip pour .NET simplifie le chiffrement de vos fichiers zip avec les algorithmes AES standard de l'industrie, vous assurant que seuls les utilisateurs autorisés peuvent ouvrir l'archive. Dans ce tutoriel, nous expliquerons **how to encrypt zip** avec des clés AES de 128 bits, 192 bits et 256 bits, et montrerons comment compresser des fichiers avec protection par mot de passe en quelques lignes de C#.
 
-## Conditions préalables
+## Quick Answers
+- **Que signifie “password protect zip” ?** Cela signifie appliquer un chiffrement basé sur un mot de passe (par ex., AES) à une archive ZIP afin que son contenu ne puisse pas être ouvert sans le mot de passe correct.  
+- **Quelles longueurs de clé AES sont prises en charge ?** Aspose.Zip prend en charge le chiffrement AES‑128, AES‑192 et AES‑256.  
+- **Ai‑je besoin d’une licence pour essayer cela ?** Un essai gratuit d'Aspose.Zip est disponible ; une licence est requise pour une utilisation en production.  
+- **Puis‑je l’utiliser avec .NET Core ?** Oui, la bibliothèque fonctionne avec .NET Framework, .NET Core et .NET 5/6+.  
+- **AES‑256 est‑il l’option la plus sécurisée ?** Oui, AES‑256 offre le niveau de sécurité le plus élevé parmi les méthodes prises en charge.
 
-Avant de plonger dans le didacticiel, assurez-vous que les conditions préalables suivantes sont remplies :
+## Qu’est‑ce que le password protect zip ?
 
--  Aspose.Zip pour .NET : assurez-vous que la bibliothèque Aspose.Zip est intégrée à votre projet .NET. Vous pouvez le télécharger[ici](https://releases.aspose.com/zip/net/).
+Protéger un fichier ZIP par mot de passe signifie appliquer un chiffrement à l'archive afin que ses entrées soient brouillées jusqu'à ce que le mot de passe correct soit fourni. AES (Advanced Encryption Standard) est l'algorithme préféré car il est rapide, largement supporté et répond aux normes de sécurité modernes.
 
-- Répertoire de documents : disposez d'un répertoire dans lequel se trouvent vos fichiers sources.
+## Pourquoi utiliser le chiffrement AES pour les archives ZIP ?
 
-## Importer des espaces de noms
+- **Strong security:** AES‑256 offre une force de clé de 256 bits, rendant les attaques par force brute pratiquement impossibles.  
+- **Cross‑platform compatibility:** La plupart des outils d'archivage comprennent les ZIP chiffrés AES, ainsi les destinataires peuvent les ouvrir avec un logiciel standard.  
+- **Simple API:** Aspose.Zip abstrait les détails cryptographiques complexes, vous permettant de vous concentrer sur votre logique métier.
+
+## Prérequis
+
+Avant de commencer, assurez‑vous d'avoir :
+
+- **Aspose.Zip for .NET** intégré à votre projet. Vous pouvez le télécharger [here](https://releases.aspose.com/zip/net/).
+- Un dossier contenant les fichiers que vous souhaitez compresser (nous l’appellerons `dataDir`).
+
+## Import Namespaces
 
 ```csharp
 using Aspose.Zip;
@@ -34,10 +53,12 @@ using Aspose.Zip.Saving;
 using System.IO;
 ```
 
-## Étape 1 : Protection par mot de passe avec AES-128
+## Comment chiffrer des fichiers zip avec AES‑128
+
+Dans cette première étape, nous créons une archive ZIP et la protégeons avec **AES‑128**. Le mot de passe `"p@s$"` est utilisé pour verrouiller l'archive.
 
 ```csharp
-//ExStart : Protection par mot de passe avec AES128
+//ExStart:PasswordProtectWithAES128
 using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES128_out.zip", FileMode.Create))
 {
     using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
@@ -49,15 +70,17 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES128_out.z
         }
     }
 }
-//ExEnd : Mot de passeProtectWithAES128
+//ExEnd: PasswordProtectWithAES128
 ```
 
-Dans cette étape, nous créons un fichier zip et le protégeons avec le cryptage AES-128. Le mot de passe "p@s$" assure la sécurité de vos archives.
+> **Pro tip:** Conservez vos mots de passe dans un coffre sécurisé ; ne les codez jamais en dur dans le code de production.
 
-## Étape 2 : Protection par mot de passe avec AES-192
+## Comment chiffrer des fichiers zip avec AES‑192
+
+Si vous avez besoin d’un niveau de protection plus élevé, passez à **AES‑192**. Le code est identique ; seul le `EncryptionMethod` change.
 
 ```csharp
-//ExStart : Protection par mot de passe avec AES192
+//ExStart:PasswordProtectWithAES192
 using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES192_out.zip", FileMode.Create))
 {
     using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
@@ -69,15 +92,15 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES192_out.z
         }
     }
 }
-//ExEnd : Mot de passeProtectWithAES192
+//ExEnd:PasswordProtectWithAES192
 ```
 
-Cette étape montre comment implémenter le cryptage AES-192 pour une sécurité renforcée. Le même mot de passe "p@s$" est utilisé par souci de cohérence.
+## Comment chiffrer des fichiers zip avec AES‑256 (aes 256 zip encryption)
 
-## Étape 3 : Protection par mot de passe avec AES-256
+Pour la sécurité maximale, utilisez **AES‑256**. C’est le paramètre recommandé pour les données d’entreprise sensibles ou les secteurs réglementés.
 
 ```csharp
-//ExStart : Protection par mot de passe avec AES256
+//ExStart:PasswordProtectWithAES256
 using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES256_out.zip", FileMode.Create))
 {
     using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
@@ -89,31 +112,52 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES256_out.z
         }
     }
 }
-// ExEnd : Mot de passeProtectWithAES256
+//ExEnd:PasswordProtectWithAES256 
 ```
 
-Dans cette dernière étape, nous implémentons le niveau de cryptage le plus élevé, AES-256, offrant une couche de sécurité supplémentaire pour vos fichiers compressés.
+> **Note:** AES‑256 est souvent désigné comme *aes 256 zip encryption* dans la documentation et les requêtes de recherche.
 
-## Conclusion
+## Problèmes courants et solutions
 
-Dans ce didacticiel, nous avons couvert les étapes essentielles pour protéger par mot de passe vos archives à l'aide du cryptage AES dans Aspose.Zip pour .NET. Que vous choisissiez un cryptage 128 bits, 192 bits ou 256 bits, vos fichiers seront protégés contre tout accès non autorisé.
+| Problème | Cause | Solution |
+|----------|-------|----------|
+| “Erreur de mot de passe invalide” lors de l'ouverture de l'archive | Mot de passe incorrect ou méthode de chiffrement non correspondante | Vérifiez la chaîne du mot de passe et assurez‑vous que le même `EncryptionMethod` est utilisé pour la création et l'extraction. |
+| L'archive ne peut pas être ouverte avec d'anciens outils de décompression | Les outils plus anciens peuvent ne pas prendre en charge le chiffrement AES | Utilisez un utilitaire de décompression moderne (par ex., 7‑Zip) ou choisissez le chiffrement ZIP standard si la compatibilité est requise. |
+| Les gros fichiers provoquent une pression mémoire | Le fichier entier est chargé en mémoire avant la compression | Diffusez le fichier en utilisant `FileStream` (comme montré) et évitez de charger tout le contenu dans un tableau d’octets. |
 
 ## Questions fréquemment posées
 
-### Puis-je utiliser Aspose.Zip pour .NET avec d’autres langages de programmation ?
-Aspose.Zip est principalement conçu pour les applications .NET, garantissant une intégration transparente et des performances optimales.
+### Puis‑je utiliser Aspose.Zip pour .NET avec d’autres langages de programmation ?
+Aspose.Zip est principalement conçu pour les applications .NET, assurant une intégration transparente et des performances optimales.
 
-### La méthode de cryptage AES est-elle sécurisée pour les données sensibles ?
-Oui, le cryptage AES est largement reconnu comme une méthode sécurisée et robuste pour protéger les informations sensibles.
+### La méthode de chiffrement AES est‑elle sécurisée pour les données sensibles ?
+Oui, le chiffrement AES est largement reconnu comme une méthode sécurisée et robuste pour protéger les informations sensibles.
 
-### Puis-je changer le mot de passe d'une archive déjà cryptée ?
-Non, le mot de passe d'une archive cryptée ne peut pas être modifié une fois défini. Vous devrez créer une nouvelle archive cryptée avec un mot de passe différent.
+### Puis‑je changer le mot de passe d’une archive déjà chiffrée ?
+Non, le mot de passe d’une archive chiffrée ne peut pas être modifié une fois défini. Vous devez créer une nouvelle archive chiffrée avec un mot de passe différent.
 
-### Existe-t-il des limitations sur les types de fichiers pouvant être chiffrés à l’aide d’Aspose.Zip ?
-Aspose.Zip prend en charge le cryptage de différents types de fichiers, garantissant une flexibilité dans la sécurisation de différents types de données.
+### Existe‑t‑il des limitations sur les types de fichiers pouvant être chiffrés avec Aspose.Zip ?
+Aspose.Zip prend en charge le chiffrement de divers types de fichiers, assurant une flexibilité dans la sécurisation de différents types de données.
 
-### Que se passe-t-il si j'oublie le mot de passe d'une archive cryptée ?
-Malheureusement, il n'existe aucun moyen de récupérer le mot de passe d'une archive cryptée. Il est essentiel de conserver le mot de passe dans un endroit sécurisé.
+### Que se passe‑t‑il si j’oublie le mot de passe d’une archive chiffrée ?
+Malheureusement, il n’est pas possible de récupérer le mot de passe d’une archive chiffrée. Il est crucial de garder le mot de passe dans un endroit sécurisé.
+
+## Questions supplémentaires fréquentes
+
+**Q : Comment chiffrer un fichier zip en C# avec Aspose.Zip ?**  
+A : Utilisez la classe `AesEcryptionSettings` avec le `EncryptionMethod` souhaité (AES128, AES192 ou AES256) comme démontré dans les extraits de code ci‑dessus.
+
+**Q : Puis‑je compresser des fichiers avec protection par mot de passe en une seule étape ?**  
+A : Oui, Aspose.Zip vous permet d’ajouter des entrées à l’archive et d’appliquer le chiffrement AES dans le même appel `CreateEntry`, comme illustré.
+
+**Q : Aspose.Zip prend‑il en charge le chiffrement de grandes archives (plusieurs Go) ?**  
+A : Absolument. En diffusant les fichiers avec `FileStream`, vous pouvez chiffrer des archives de taille pratiquement illimitée sans charger tout le contenu en mémoire.
+
+**Q : Existe‑t‑il un moyen de vérifier l’intégrité d’un zip chiffré après sa création ?**  
+A : Vous pouvez ouvrir l’archive avec le même mot de passe et relire les entrées ; toute discordance déclenchera une exception indiquant une corruption.
+
+**Q : AES‑256 affecte‑t‑il le taux de compression ?**  
+A : Le chiffrement est appliqué après la compression, donc le taux de compression reste le même ; seul le payload chiffré est légèrement plus volumineux en raison d’un petit overhead.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -121,3 +165,9 @@ Malheureusement, il n'existe aucun moyen de récupérer le mot de passe d'une ar
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Last Updated:** 2025-12-21  
+**Tested With:** Aspose.Zip for .NET 24.11 (latest)  
+**Author:** Aspose

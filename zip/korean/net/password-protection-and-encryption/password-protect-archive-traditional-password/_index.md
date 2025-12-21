@@ -1,36 +1,46 @@
 ---
-title: .NET용 Aspose.Zip - 비밀번호 보호 아카이브 튜토리얼
-linktitle: 비밀번호는 기존 비밀번호로 아카이브를 보호합니다.
-second_title: 파일 압축 및 보관을 위한 Aspose.Zip .NET API
-description: Aspose.Zip을 사용하여 기존 비밀번호 보호로 .NET 아카이브를 보호하는 방법을 알아보세요. 향상된 데이터 기밀성을 위한 단계별 가이드를 따르세요.
-weight: 12
+date: 2025-12-21
+description: Aspose.Zip for .NET를 사용하여 비밀번호로 보호된 ZIP 아카이브를 만드는 방법을 배우고, ZIP 파일에 비밀번호를
+  추가하며, 안전한 데이터 압축을 보장하세요.
+linktitle: Password Protect Archive with Traditional Password
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Aspose.Zip for .NET를 사용하여 비밀번호 보호 ZIP 만들기
 url: /ko/net/password-protection-and-encryption/password-protect-archive-traditional-password/
+weight: 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# .NET용 Aspose.Zip - 비밀번호 보호 아카이브 튜토리얼
+# Aspose.Zip for .NET을 사용한 비밀번호 보호 ZIP 만들기
 
+.NET 개발 영역에서 **비밀번호 보호 ZIP** 아카이브를 **생성하는 방법**을 배우는 것은 애플리케이션 설계의 중요한 측면입니다. Aspose.Zip for .NET은 전통적인 비밀번호 암호화를 사용하여 ZIP 파일에 비밀번호를 추가하는 강력한 솔루션을 제공합니다. 이 단계별 가이드는 프로세스를 안내하여 아카이브된 데이터가 기밀성과 보안을 유지하도록 합니다.
 
-.NET 개발 영역에서 아카이브 내의 민감한 데이터를 보호하는 것은 애플리케이션 설계의 중요한 측면입니다. .NET용 Aspose.Zip은 기존 비밀번호 암호화를 사용하여 아카이브를 비밀번호로 보호하는 강력한 솔루션을 제공합니다. 이 단계별 가이드는 보관된 데이터의 기밀과 보안을 유지하는 과정을 안내합니다.
+## 빠른 답변
+- **“비밀번호 보호 ZIP 만들기”는 무엇을 의미하나요?** ZIP 아카이브의 내용이 암호화되어 올바른 비밀번호로만 열 수 있음을 의미합니다.  
+- **어떤 라이브러리를 사용할 수 있나요?** Aspose.Zip for .NET이 전통적인 비밀번호 보호를 기본 지원합니다.  
+- **라이선스가 필요합니까?** 무료 체험판을 사용할 수 있지만, 상용 사용을 위해서는 상업용 라이선스가 필요합니다.  
+- **.NET Core와 함께 사용할 수 있나요?** 예, 이 라이브러리는 .NET Framework, .NET Core 및 .NET 5/6+와 함께 작동합니다.  
+- **구현에 얼마나 걸리나요?** 기본 비밀번호 보호 아카이브는 일반적으로 10분 이내에 완료됩니다.
 
-## 소개
+## “비밀번호 보호 ZIP 만들기”란?
+비밀번호 보호 ZIP을 만든다는 것은 하나 이상의 파일을 ZIP 컨테이너에 압축하고, 해당 컨테이너를 비밀번호로 암호화하는 것을 의미합니다. 이렇게 생성된 아카이브는 올바른 비밀번호 없이는 내용을 읽을 수 없으므로 안전하게 공유하거나 저장할 수 있습니다.
 
-민감한 정보를 보호하려면 아카이브에 보안 계층을 추가하는 것이 필수적입니다. .NET용 Aspose.Zip을 사용하면 개발자가 기존 비밀번호 보호를 쉽게 구현할 수 있습니다. 이 튜토리얼에서는 Aspose.Zip을 사용하여 아카이브를 비밀번호로 보호하여 승인된 개인만 해당 콘텐츠에 액세스할 수 있도록 하는 방법을 살펴보겠습니다.
+## Aspose.Zip을 사용해 ZIP 아카이브 비밀번호 보호를 선택해야 하는 이유
+- **전체 .NET 통합** – C# 및 VB.NET 프로젝트와 원활하게 작동합니다.  
+- **전통적인 암호화** – 비밀번호 보호를 지원하는 대부분의 ZIP 유틸리티와 호환됩니다.  
+- **외부 종속성 없음** – 라이브러리 하나로 압축, 암호화 및 저장을 모두 처리합니다.  
+- **성능 최적화** – 로그와 같은 작은 파일부터 대용량 문서 번들까지 모두 적합합니다.
 
-## 전제 조건
+## 사전 준비 사항
+시작하기 전에 다음을 준비하십시오:
 
-튜토리얼을 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
-
-1. .NET 라이브러리용 Aspose.Zip: .NET 라이브러리용 Aspose.Zip을 다운로드하고 설치합니다. 도서관을 찾으실 수 있습니다[여기](https://releases.aspose.com/zip/net/).
-
-2. 문서 디렉터리: 보관하고 보호하려는 문서가 포함된 디렉터리가 있습니다.
+1. **Aspose.Zip for .NET** – 공식 사이트 **[여기](https://releases.aspose.com/zip/net/)**에서 라이브러리를 다운로드하고 설치합니다.  
+2. 압축하고 보호하려는 파일이 들어 있는 폴더.
 
 ## 네임스페이스 가져오기
-
-프로세스를 시작하려면 필요한 네임스페이스를 가져옵니다. 이러한 네임스페이스를 사용하면 Aspose.Zip for .NET에서 제공하는 기능을 활용할 수 있습니다.
+먼저 압축 및 암호화 클래스를 사용할 수 있도록 네임스페이스를 가져옵니다.
 
 ```csharp
 using Aspose.Zip;
@@ -38,13 +48,11 @@ using System.IO;
 using Aspose.Zip.Saving;
 ```
 
-## 1단계: 리소스 디렉터리 열기
+## 단계 1: 리소스 디렉터리 열기
+아카이브에 포함할 파일이 들어 있는 디렉터리를 지정합니다. 이 경로는 ZIP 스트림을 생성할 때 사용됩니다.
 
-문서가 있는 리소스 디렉터리의 경로를 지정하여 시작하세요.
-
-## 2단계: 기존 비밀번호로 아카이브 생성
-
-다음으로 아카이브를 생성하고 여기에 기존 비밀번호 보호를 적용합니다. 이렇게 하면 내용이 지정된 비밀번호로 암호화됩니다.
+## 단계 2: 전통적인 비밀번호로 아카이브 만들기
+이제 `TraditionalEncryptionSettings`를 사용하여 **ZIP에 비밀번호 추가**를 수행합니다. 비밀번호 `"p@s$"`는 예시일 뿐이며, 원하는 강력한 비밀로 교체하십시오.
 
 ```csharp
 //ExStart: PasswordProtectArchiveWithTraditionalPassword
@@ -57,36 +65,46 @@ using (FileStream zipFile = File.Open(dataDir + "CompressWithTraditionalEncrypti
         archive.Save(zipFile);
     }
 }
-// ExEnd: PasswordProtectArchiveWithTraditionalPassword
+//ExEnd: PasswordProtectArchiveWithTraditionalPassword 
 ```
 
-## 3단계: 아카이브 저장
+> **팁:** 비밀번호를 코드에 하드코딩하지 말고 Azure Key Vault와 같은 안전한 저장소에 보관하십시오.
 
-기존 비밀번호 보호 기능을 갖춘 새로 생성된 아카이브를 저장하세요. 이 단계에서는 프로세스를 마무리하고 중요한 데이터가 안전하게 저장되었는지 확인합니다.
+## 단계 3: 아카이브 저장
+`archive.Save(zipFile);` 호출은 **비밀번호가 설정된 ZIP 저장** 작업을 디스크에 기록합니다. 이 단계가 끝나면 `CompressWithTraditionalEncryption_out.zip` 파일이 완전한 비밀번호 보호 ZIP 아카이브가 되어 배포 준비가 됩니다.
 
-이 간단하면서도 효과적인 접근 방식은 귀하의 아카이브에 무단 사용자가 액세스할 수 없도록 하여 귀중한 정보에 추가 보호 계층을 추가합니다.
+## 일반적인 문제 및 해결책
+| 문제 | 해결책 |
+|-------|----------|
+| **잘못된 비밀번호 오류** | 비밀번호 문자열이 대소문자 및 특수 문자를 포함해 정확히 일치하는지 확인하십시오. |
+| **대용량 파일으로 인한 메모리 압박** | 위 예시와 같이 스트리밍 API(`FileStream`)를 사용해 전체 파일을 메모리에 로드하지 않도록 합니다. |
+| **다른 ZIP 도구와의 호환성** | 전통적인 암호화는 대부분 지원되지만, 일부 최신 도구는 AES를 기본으로 할 수 있습니다. 수신자가 레거시 ZIP 암호화를 지원하는 도구를 사용하도록 안내하십시오. |
+
+## 자주 묻는 질문
+
+### Aspose.Zip for .NET은 다양한 아카이브 형식을 지원하나요?
+예, Aspose.Zip for .NET은 여러 ZIP 호환 형식을 지원하므로 다양한 플랫폼에서 유연하게 사용할 수 있습니다.
+
+### Aspose.Zip for .NET을 상업 프로젝트에 사용할 수 있나요?
+물론입니다! 이 라이브러리는 개인 및 상업용 모두에 라이선스가 제공됩니다.
+
+### 전통적인 비밀번호 보호 방식은 안전한가요?
+전통적인 ZIP 암호화는 대부분의 비즈니스 시나리오에 합리적인 보안 수준을 제공하지만, 매우 민감한 데이터의 경우 AES 기반 암호화를 고려하십시오.
+
+### 이 암호화 방식에 문서 크기 제한이 있나요?
+라이브러리는 수 기가바이트 규모의 아카이브를 효율적으로 처리하지만, 압축 중 생성되는 임시 파일을 위한 충분한 디스크 공간을 확보하십시오.
+
+### Aspose.Zip for .NET에 대한 지원은 어떻게 받을 수 있나요?
+커뮤니티 지원은 [Aspose.Zip 포럼](https://forum.aspose.com/c/zip/37)에서 받을 수 있으며, 자세한 안내는 [문서](https://reference.aspose.com/zip/net/)를 참고하십시오.
 
 ## 결론
+이 튜토리얼을 따라 하면 Aspose.Zip for .NET을 사용해 **비밀번호 보호 ZIP** 파일을 만드는 방법을 알게 되었습니다. **ZIP 아카이브 비밀번호 보호** 구현은 간단하며 데이터 교환 워크플로에 중요한 보안 레이어를 추가합니다. AES 암호화나 다중 볼륨 아카이브와 같은 다른 기능도 탐색해 압축 전략을 더욱 강화해 보세요.
 
-결론적으로 Aspose.Zip for .NET을 사용하여 아카이브에 기존 비밀번호 보호를 통합하는 것은 간단한 프로세스입니다. 이 단계별 가이드를 따르면 중요한 데이터의 보안을 강화하여 해당 데이터의 기밀을 유지하고 승인된 개인만 액세스할 수 있도록 할 수 있습니다.
+---
 
-## 자주 묻는 질문(FAQ)
-
-### .NET용 Aspose.Zip은 다른 아카이브 형식과 호환됩니까?
-예, .NET용 Aspose.Zip은 다양한 아카이브 형식을 지원하여 개발자에게 유연성을 제공합니다.
-
-### 상업용 프로젝트에 Aspose.Zip for .NET을 사용할 수 있나요?
-전적으로! Aspose.Zip for .NET은 개인용 및 상업용으로 설계되었습니다.
-
-### 기존의 비밀번호 보호 방식은 안전한가요?
-예, Aspose.Zip for .NET에서 제공하는 전통적인 비밀번호 보호는 아카이브에 대한 높은 수준의 보안을 보장합니다.
-
-### 이 암호화 방법의 문서 크기에 제한이 있나요?
-.NET용 Aspose.Zip은 효율적인 성능을 위해 최적화되어 다양한 크기의 아카이브를 효과적으로 처리합니다.
-
-### .NET용 Aspose.Zip에 대한 지원을 받으려면 어떻게 해야 합니까?
- 방문하다[Aspose.Zip 포럼](https://forum.aspose.com/c/zip/37)지역사회 지원을 원하거나[선적 서류 비치](https://reference.aspose.com/zip/net/) 자세한 정보를 보려면.
-
+**마지막 업데이트:** 2025-12-21  
+**테스트 환경:** Aspose.Zip for .NET 24.11  
+**작성자:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

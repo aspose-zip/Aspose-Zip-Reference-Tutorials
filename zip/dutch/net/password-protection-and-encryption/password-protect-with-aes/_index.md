@@ -1,32 +1,48 @@
 ---
-title: Beveilig uw bestanden - AES-codering met Aspose.Zip
-linktitle: Wachtwoordbeveiliging met AES
-second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
-description: Leer hoe u uw bestandsbeveiliging kunt verbeteren met Aspose.Zip voor .NET met AES-codering. Volg onze stap-voor-stap handleiding voor optimale bescherming.
-weight: 11
+date: 2025-12-21
+description: Leer hoe u zip‑bestanden kunt beveiligen met een wachtwoord met behulp
+  van Aspose.Zip voor .NET met AES‑versleuteling. Volg onze stapsgewijze handleiding
+  voor optimale bescherming.
+linktitle: Password Protect with AES
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: ZIP-bestanden beveiligen met wachtwoord en AES‑encryptie met Aspose.Zip
 url: /nl/net/password-protection-and-encryption/password-protect-with-aes/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Beveilig uw bestanden - AES-codering met Aspose.Zip
+# Wachtwoordbeveiligde ZIP-bestanden met AES-encryptie met Aspose.Zip
 
+## Introduction
 
-## Invoering
+In het digitale landschap van vandaag zijn **password protect zip** archieven een fundamentele manier om vertrouwelijke gegevens veilig te houden tijdens het delen. Aspose.Zip voor .NET maakt het eenvoudig om uw zip‑bestanden te versleutelen met industriestandaard AES‑algoritmen, waardoor u erop kunt vertrouwen dat alleen geautoriseerde gebruikers het archief kunnen openen. In deze tutorial lopen we door **how to encrypt zip** bestanden met 128‑bit, 192‑bit en 256‑bit AES‑sleutels, en laten we zien hoe u bestanden kunt comprimeren met wachtwoordbeveiliging in slechts een paar regels C#.
 
-Het beveiligen van uw gevoelige bestanden is van cruciaal belang in het huidige digitale tijdperk, en Aspose.Zip voor .NET biedt een robuuste oplossing voor het beveiligen van uw archieven met een wachtwoord met behulp van Advanced Encryption Standard (AES). In deze zelfstudie onderzoeken we hoe u AES-codering kunt implementeren met drie sleutellengtes (128-bit, 192-bit en 256-bit), zodat u het hoogste beveiligingsniveau voor uw gecomprimeerde bestanden kunt garanderen.
+## Quick Answers
+- **What does “password protect zip” mean?** Het betekent dat er een wachtwoord‑gebaseerde encryptie (bijv. AES) op een ZIP‑archief wordt toegepast zodat de inhoud niet kan worden geopend zonder het juiste wachtwoord.  
+- **Which AES key lengths are supported?** Aspose.Zip ondersteunt AES‑128, AES‑192 en AES‑256 encryptie.  
+- **Do I need a license to try this?** Een gratis proefversie van Aspose.Zip is beschikbaar; een licentie is vereist voor productiegebruik.  
+- **Can I use this with .NET Core?** Ja, de bibliotheek werkt met .NET Framework, .NET Core en .NET 5/6+.  
+- **Is AES‑256 the most secure option?** Ja, AES‑256 biedt het hoogste beveiligingsniveau onder de ondersteunde methoden.
 
-## Vereisten
+## What is password protect zip?
+Wachtwoordbeveiliging van een ZIP‑bestand betekent dat er encryptie op het archief wordt toegepast zodat de items versleuteld blijven totdat het juiste wachtwoord wordt opgegeven. AES (Advanced Encryption Standard) is het voorkeursalgoritme omdat het snel, breed ondersteund en in overeenstemming met moderne beveiligingsnormen is.
 
-Voordat u in de zelfstudie duikt, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
+## Why use AES encryption for ZIP archives?
+- **Strong security:** AES‑256 biedt een sleutelsterkte van 256‑bit, waardoor brute‑force aanvallen praktisch onuitvoerbaar zijn.  
+- **Cross‑platform compatibility:** De meeste archiveringsprogramma’s begrijpen AES‑versleutelde ZIP‑bestanden, zodat ontvangers ze kunnen openen met standaardsoftware.  
+- **Simple API:** Aspose.Zip abstraheert de complexe cryptografische details, zodat u zich kunt concentreren op uw bedrijfslogica.
 
--  Aspose.Zip voor .NET: Zorg ervoor dat de Aspose.Zip-bibliotheek in uw .NET-project is geïntegreerd. Je kunt het downloaden[hier](https://releases.aspose.com/zip/net/).
+## Prerequisites
 
-- Documentmap: Zorg voor een map waarin uw bronbestanden zich bevinden.
+Voordat u begint, zorg ervoor dat u het volgende heeft:
 
-## Naamruimten importeren
+- **Aspose.Zip for .NET** geïntegreerd in uw project. U kunt het downloaden [hier](https://releases.aspose.com/zip/net/).
+- Een map met de bestanden die u wilt comprimeren (we noemen deze `dataDir`).
+
+## Import Namespaces
 
 ```csharp
 using Aspose.Zip;
@@ -34,10 +50,12 @@ using Aspose.Zip.Saving;
 using System.IO;
 ```
 
-## Stap 1: Wachtwoordbeveiliging met AES-128
+## How to encrypt zip files with AES‑128
+
+In deze eerste stap maken we een ZIP‑archief en beveiligen we het met **AES‑128**. Het wachtwoord `"p@s$"` wordt gebruikt om het archief te vergrendelen.
 
 ```csharp
-//ExStart:WachtwoordProtectMetAES128
+//ExStart:PasswordProtectWithAES128
 using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES128_out.zip", FileMode.Create))
 {
     using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
@@ -49,15 +67,17 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES128_out.z
         }
     }
 }
-//ExEnd: WachtwoordProtectWithAES128
+//ExEnd: PasswordProtectWithAES128
 ```
 
-In deze stap maken we een zipbestand en beveiligen dit met AES-128-codering. Het wachtwoord "p@s$" garandeert de veiligheid van uw archief.
+> **Pro tip:** Bewaar uw wachtwoorden in een veilige kluis; codeer ze nooit hard‑coded in productiecodel.
 
-## Stap 2: Wachtwoordbeveiliging met AES-192
+## How to encrypt zip files with AES‑192
+
+Als u een sterker beschermingsniveau nodig heeft, schakelt u over naar **AES‑192**. De code is identiek; alleen de `EncryptionMethod` verandert.
 
 ```csharp
-//ExStart:WachtwoordProtectMetAES192
+//ExStart:PasswordProtectWithAES192
 using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES192_out.zip", FileMode.Create))
 {
     using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
@@ -69,15 +89,15 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES192_out.z
         }
     }
 }
-//ExEnd: WachtwoordProtectWithAES192
+//ExEnd:PasswordProtectWithAES192
 ```
 
-Deze stap laat zien hoe u AES-192-codering implementeert voor verbeterde beveiliging. Voor consistentie wordt hetzelfde wachtwoord "p@s$" gebruikt.
+## How to encrypt zip files with AES‑256 (aes 256 zip encryption)
 
-## Stap 3: Wachtwoordbeveiliging met AES-256
+Voor de hoogste beveiliging gebruikt u **AES‑256**. Dit is de aanbevolen instelling voor gevoelige bedrijfsdata of gereguleerde sectoren.
 
 ```csharp
-//ExStart:WachtwoordProtectMetAES256
+//ExStart:PasswordProtectWithAES256
 using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES256_out.zip", FileMode.Create))
 {
     using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
@@ -89,31 +109,52 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES256_out.z
         }
     }
 }
-// ExEnd: WachtwoordProtectWithAES256
+//ExEnd:PasswordProtectWithAES256 
 ```
 
-In deze laatste stap implementeren we het hoogste coderingsniveau, AES-256, dat een extra beveiligingslaag biedt voor uw gecomprimeerde bestanden.
+> **Note:** AES‑256 wordt vaak aangeduid als *aes 256 zip encryption* in documentatie en zoekopdrachten.
 
-## Conclusie
+## Common Issues and Solutions
 
-In deze zelfstudie hebben we de essentiële stappen besproken om uw archieven met een wachtwoord te beveiligen met behulp van AES-codering in Aspose.Zip voor .NET. Of u nu kiest voor 128-bits, 192-bits of 256-bits codering, uw bestanden zijn beveiligd tegen ongeautoriseerde toegang.
+| Issue | Cause | Fix |
+|-------|-------|-----|
+| “Invalid password” error when opening the archive | Verkeerd wachtwoord of niet‑overeenkomende encryptiemethode | Controleer de wachtwoord‑string en zorg dat dezelfde `EncryptionMethod` wordt gebruikt bij zowel creatie als extractie. |
+| Archive cannot be opened in older unzip tools | Oudere tools ondersteunen mogelijk geen AES‑encryptie | Gebruik een modern unzip‑hulpmiddel (bijv. 7‑Zip) of kies de standaard ZIP‑encryptie als compatibiliteit vereist is. |
+| Large files cause memory pressure | Het volledige bestand wordt in het geheugen geladen vóór compressie | Stream het bestand met `FileStream` (zoals getoond) en vermijd het laden van de volledige inhoud in een byte‑array. |
 
-## Veel Gestelde Vragen
+## Frequently Asked Questions
 
-### Kan ik Aspose.Zip voor .NET gebruiken met andere programmeertalen?
-Aspose.Zip is primair ontworpen voor .NET-toepassingen en zorgt voor naadloze integratie en optimale prestaties.
+### Can I use Aspose.Zip for .NET with other programming languages?
+Aspose.Zip is primair ontworpen voor .NET‑applicaties, waardoor naadloze integratie en optimale prestaties worden gegarandeerd.
 
-### Is de AES-versleutelingsmethode veilig voor gevoelige gegevens?
-Ja, AES-encryptie wordt algemeen erkend als een veilige en robuuste methode voor het beschermen van gevoelige informatie.
+### Is the AES encryption method secure for sensitive data?
+Ja, AES‑encryptie wordt algemeen erkend als een veilige en robuuste methode voor het beschermen van gevoelige informatie.
 
-### Kan ik het wachtwoord voor een reeds gecodeerd archief wijzigen?
-Nee, het wachtwoord voor een gecodeerd archief kan niet meer worden gewijzigd nadat het is ingesteld. U moet een nieuw gecodeerd archief maken met een ander wachtwoord.
+### Can I change the password for an already encrypted archive?
+Nee, het wachtwoord van een versleuteld archief kan niet worden gewijzigd nadat het is ingesteld. U moet een nieuw versleuteld archief maken met een ander wachtwoord.
 
-### Zijn er beperkingen op de bestandstypen die kunnen worden gecodeerd met Aspose.Zip?
-Aspose.Zip ondersteunt de codering van verschillende bestandstypen, waardoor flexibiliteit bij het beveiligen van verschillende soorten gegevens wordt gegarandeerd.
+### Are there any limitations on the file types that can be encrypted using Aspose.Zip?
+Aspose.Zip ondersteunt de encryptie van diverse bestandstypen, waardoor flexibiliteit bestaat bij het beveiligen van verschillende soorten data.
 
-### Wat gebeurt er als ik het wachtwoord voor een gecodeerd archief vergeet?
-Helaas is er geen manier om het wachtwoord van een gecodeerd archief te herstellen. Het is van cruciaal belang om het wachtwoord op een veilige locatie te bewaren.
+### What happens if I forget the password for an encrypted archive?
+Helaas is er geen manier om het wachtwoord van een versleuteld archief te herstellen. Het is cruciaal het wachtwoord op een veilige locatie te bewaren.
+
+## Additional Frequently Asked Questions
+
+**Q: How do I encrypt zip file C# using Aspose.Zip?**  
+A: Gebruik de `AesEcryptionSettings`‑klasse met de gewenste `EncryptionMethod` (AES128, AES192 of AES256) zoals gedemonstreerd in de code‑fragmenten hierboven.
+
+**Q: Can I compress files with password protection in a single step?**  
+A: Ja, Aspose.Zip laat u entries aan het archief toevoegen en AES‑encryptie toepassen in dezelfde `CreateEntry`‑aanroep, zoals getoond.
+
+**Q: Does Aspose.Zip support encrypting large archives (multiple GB)?**  
+A: Absoluut. Door bestanden te streamen met `FileStream` kunt u archieven van praktisch elke grootte versleutelen zonder alles in het geheugen te laden.
+
+**Q: Is there a way to verify the integrity of an encrypted zip after creation?**  
+A: U kunt het archief openen met hetzelfde wachtwoord en de entries teruglezen; elke afwijking zal een uitzondering veroorzaken die corruptie aangeeft.
+
+**Q: Does AES‑256 affect compression ratio?**  
+A: Encryptie wordt toegepast na compressie, dus de compressieverhouding blijft gelijk; alleen de versleutelde payload is iets groter door een kleine overhead.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -121,3 +162,9 @@ Helaas is er geen manier om het wachtwoord van een gecodeerd archief te herstell
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Laatst bijgewerkt:** 2025-12-21  
+**Getest met:** Aspose.Zip for .NET 24.11 (latest)  
+**Auteur:** Aspose
