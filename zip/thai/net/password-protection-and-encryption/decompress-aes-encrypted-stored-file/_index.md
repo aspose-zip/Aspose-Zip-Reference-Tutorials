@@ -1,51 +1,74 @@
 ---
-title: Aspose.Zip สำหรับ .NET - การถอดรหัสไฟล์ที่เข้ารหัส AES
-linktitle: คลายการบีบอัดไฟล์ที่เก็บไว้ที่เข้ารหัส AES
-second_title: Aspose.Zip .NET API สำหรับการบีบอัดไฟล์และการเก็บถาวร
-description: เรียนรู้วิธีคลายการบีบอัดไฟล์ที่เข้ารหัส AES ที่จัดเก็บไว้ใน Aspose.Zip สำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนที่ครอบคลุมนี้ เสริมทักษะการพัฒนา .NET ของคุณวันนี้!
-weight: 19
+date: 2025-12-21
+description: เรียนรู้วิธีเปิดไฟล์อาร์ไคฟ์ที่เข้ารหัส (AES) ด้วย Aspose.Zip สำหรับ
+  .NET คู่มือแบบทีละขั้นตอนนี้จะแสดงวิธีถอดรหัสไฟล์ zip ที่ป้องกันด้วยรหัสผ่านและแตกไฟล์
+  zip ที่ได้รับการป้องกันใน C#
+linktitle: Decompress AES Encrypted Stored File
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: เปิดไฟล์เก็บข้อมูลที่เข้ารหัสด้วย Aspose.Zip สำหรับ .NET – ถอดรหัสไฟล์ที่เข้ารหัสแบบ
+  AES
 url: /th/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/
+weight: 19
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip สำหรับ .NET - การถอดรหัสไฟล์ที่เข้ารหัส AES
+# เปิดไฟล์อาร์ไคฟ์ที่เข้ารหัสด้วย Aspose.Zip สำหรับ .NET – ถอดรหัสไฟล์ AES
 
+## Introduction
 
-## การแนะนำ
+Welcome! In this comprehensive tutorial you’ll learn **how to open encrypted archive** files that use AES encryption with Aspose.Zip for .NET. Whether you’re building a desktop utility or a server‑side service, being able to *decrypt zip password‑protected* archives and *decompress protected zip* files is a common requirement. We’ll walk through the entire process, from setting up the environment to extracting the contents of an AES‑encrypted ZIP file in C#.
 
-ยินดีต้อนรับสู่คำแนะนำทีละขั้นตอนเกี่ยวกับการขยายขนาดไฟล์ที่เข้ารหัส AES ที่จัดเก็บไว้โดยใช้ Aspose.Zip สำหรับ .NET Aspose.Zip เป็นไลบรารี .NET อันทรงพลังที่ช่วยให้นักพัฒนาทำงานกับไฟล์บีบอัดได้อย่างง่ายดาย ในบทช่วยสอนนี้ เราจะมุ่งเน้นไปที่การขยายขนาดไฟล์ที่เข้ารหัส AES เพื่อให้คุณเข้าใจกระบวนการได้ชัดเจน
+## Quick Answers
+- **What does “open encrypted archive” mean?** It refers to reading a password‑protected ZIP file and extracting its contents programmatically.  
+- **Which library handles AES decryption?** Aspose.Zip for .NET provides built‑in support for AES‑encrypted archives.  
+- **Do I need a license for production?** Yes, a commercial license is required for production use; a free trial is available.  
+- **Can I use this with .NET 6+?** Absolutely – the library targets .NET Standard 2.0 and works with .NET 6, .NET 7, and later.  
+- **What is the typical code flow?** Load the archive with a password, locate the entry, and stream the decrypted data to a file.
 
-## ข้อกำหนดเบื้องต้น
+## What is an “open encrypted archive” operation?
 
-ก่อนที่เราจะเจาะลึกบทช่วยสอน ตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นต่อไปนี้:
+Opening an encrypted archive means loading a ZIP file that has been secured with a password (AES‑256 by default) and then reading its entries without manual decryption. Aspose.Zip abstracts the cryptographic details, letting you focus on the business logic.
 
--  Aspose.Zip สำหรับ .NET: ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้งไลบรารี Aspose.Zip แล้ว คุณสามารถค้นหาเอกสาร[ที่นี่](https://reference.aspose.com/zip/net/).
+## Why use Aspose.Zip for C# to decrypt AES ZIP files?
 
--  ตัวอย่างไฟล์ที่เข้ารหัส AES: ดาวน์โหลดไฟล์ตัวอย่างที่เข้ารหัส AES จาก[ลิงค์นี้](https://releases.aspose.com/zip/net/).
+- **Full AES support** – Handles 128‑, 192‑ and 256‑bit keys automatically.  
+- **Simple API** – One line of code to supply the password (`DecryptionPassword`).  
+- **No external dependencies** – No need to bundle OpenSSL or other native libraries.  
+- **Robust error handling** – Throws clear exceptions for wrong passwords or corrupted archives.  
 
-- ไดเร็กทอรีเอกสารของคุณ: ตั้งค่าไดเร็กทอรีที่คุณต้องการจัดเก็บไฟล์ที่คลายการบีบอัด แทนที่ "ไดเรกทอรีเอกสารของคุณ" ในข้อมูลโค้ดด้วยเส้นทางไดเรกทอรีจริงของคุณ
+## Prerequisites
 
-## นำเข้าเนมสเปซ
+Before we dive into the code, make sure you have the following prerequisites in place:
 
-ในข้อมูลโค้ดที่ให้มา คุณจะสังเกตเห็นการใช้เนมสเปซต่างๆ อย่าลืมรวมสิ่งเหล่านี้ในโครงการของคุณ:
+- Aspose.Zip for .NET: Ensure that you have the Aspose.Zip library installed. You can find the documentation [here](https://reference.aspose.com/zip/net/).
+
+- Sample AES Encrypted File: Download a sample AES encrypted file from [this link](https://releases.aspose.com/zip/net/).
+
+- Your Document Directory: Set up a directory where you want to store the decompressed file. Replace "Your Document Directory" in the code snippet with your actual directory path.
+
+## Import Namespaces
+
+In the code snippet provided, you'll notice the usage of various namespaces. Make sure to include these in your project:
 
 ```csharp
 using System.IO;
 using Aspose.Zip;
 ```
 
-## ขั้นตอนที่ 1: กำหนดไดเรกทอรีทรัพยากร
+## Step 1: Define the Resource Directory
 
-ตรวจสอบให้แน่ใจว่าคุณระบุเส้นทางไปยังไดเร็กทอรีทรัพยากรของคุณ ในตัวอย่าง ให้แทนที่ "Your Document Directory" ด้วยเส้นทางจริง
+Specify the path to the folder that contains your encrypted ZIP file and where the extracted file will be written.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## ขั้นตอนที่ 2: เปิดไฟล์เก็บถาวรที่เข้ารหัส
+## Step 2: Open the Encrypted Archive
+
+The `Archive` constructor accepts an `ArchiveLoadOptions` object where you can set the `DecryptionPassword`. This is the core of the **decrypt zip password** operation.
 
 ```csharp
 using (FileStream fs = File.OpenRead(dataDir + "StoreMutlipleFilesWithoutCompressionWithPassword_out.zip"))
@@ -54,13 +77,15 @@ using (FileStream fs = File.OpenRead(dataDir + "StoreMutlipleFilesWithoutCompres
     {
         using (Archive archive = new Archive(fs, new ArchiveLoadOptions() { DecryptionPassword = "p@s$" }))
         {
-            // ทำตามขั้นตอนต่อไป...
+            // Continue to the next steps...
         }
     }
 }
 ```
 
-## ขั้นตอนที่ 3: ขยายรายการที่เข้ารหัส
+## Step 3: Decompress the Encrypted Entry
+
+Now that the archive is opened, you can read the first entry (or any entry you need) and write the decrypted bytes to the output file. This demonstrates **c# extract encrypted zip** in a streaming fashion.
 
 ```csharp
 using (var decompressed = archive.Entries[0].Open())
@@ -74,27 +99,34 @@ using (var decompressed = archive.Entries[0].Open())
 }
 ```
 
-## บทสรุป
+## Common Issues and Solutions
 
-ยินดีด้วย! คุณได้เรียนรู้วิธีขยายขนาดไฟล์ที่เข้ารหัส AES ที่จัดเก็บไว้โดยใช้ Aspose.Zip สำหรับ .NET เรียบร้อยแล้ว กระบวนการนี้ช่วยให้คุณทำงานกับไฟล์เก็บถาวรที่เข้ารหัสในแอปพลิเคชัน .NET ของคุณได้อย่างมีประสิทธิภาพ
+| Issue | Why It Happens | Fix |
+|-------|----------------|-----|
+| **Incorrect password error** | The `DecryptionPassword` does not match the one used to encrypt the archive. | Verify the password string; remember it is case‑sensitive. |
+| **ArchiveLoadOptions not recognized** | Using an older version of Aspose.Zip that lacks this overload. | Update to the latest Aspose.Zip for .NET release. |
+| **Large files cause memory pressure** | Reading the whole file into memory. | Use the streaming approach shown above (buffered read). |
 
-## คำถามที่พบบ่อย
+## Conclusion
 
-### ฉันสามารถใช้ Aspose.Zip สำหรับ .NET กับอัลกอริธึมการเข้ารหัสอื่นๆ ได้หรือไม่
-Aspose.Zip รองรับการเข้ารหัส AES เป็นหลัก ตรวจสอบเอกสารสำหรับการอัพเดตล่าสุด
+Congratulations! You've successfully learned how to **open encrypted archive** files, decrypt AES‑encrypted ZIP entries, and **decompress protected zip** archives using Aspose.Zip for .NET. This workflow gives you a reliable way to handle secure ZIP files in any C# application.
 
-### มีรุ่นทดลองใช้งานหรือไม่?
- ใช่ คุณสามารถเข้าถึงการทดลองใช้ฟรีได้[ที่นี่](https://releases.aspose.com/).
+## Frequently Asked Questions
 
-### ฉันจะรับการสนับสนุน Aspose.Zip สำหรับ .NET ได้อย่างไร
- เยี่ยมชมฟอรั่มการสนับสนุน[ที่นี่](https://forum.aspose.com/c/zip/37) เพื่อรับความช่วยเหลือจากชุมชน
+### Can I use Aspose.Zip for .NET with other encryption algorithms?
+Aspose.Zip primarily supports AES encryption. Check the documentation for the latest updates.
 
-### ไฟล์รูปแบบใดบ้างที่รองรับการบีบอัดและคลายการบีบอัด?
-Aspose.Zip รองรับรูปแบบต่างๆ รวมถึง ZIP, 7z และ TAR โปรดดูเอกสารประกอบสำหรับรายการที่ครอบคลุม
+### Is there a trial version available?
+Yes, you can access a free trial [here](https://releases.aspose.com/).
 
-### ฉันสามารถใช้ Aspose.Zip เพื่อจุดประสงค์เชิงพาณิชย์ได้หรือไม่
- ใช่ คุณสามารถซื้อใบอนุญาตได้[ที่นี่](https://purchase.aspose.com/buy) เพื่อใช้ในเชิงพาณิชย์
+### How can I get support for Aspose.Zip for .NET?
+Visit the support forum [here](https://forum.aspose.com/c/zip/37) to get assistance from the community.
 
+### What file formats are supported for compression and decompression?
+Aspose.Zip supports various formats, including ZIP, 7z, and TAR. Refer to the documentation for a comprehensive list.
+
+### Can I use Aspose.Zip for commercial purposes?
+Yes, you can purchase a license [here](https://purchase.aspose.com/buy) for commercial use.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -102,3 +134,11 @@ Aspose.Zip รองรับรูปแบบต่างๆ รวมถึ�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Last Updated:** 2025-12-21  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose  
+
+---

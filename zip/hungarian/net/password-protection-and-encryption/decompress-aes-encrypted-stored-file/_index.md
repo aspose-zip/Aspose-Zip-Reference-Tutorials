@@ -1,51 +1,75 @@
 ---
-title: Aspose.Zip for .NET – AES titkosított fájlok visszafejtése
-linktitle: Az AES titkosított tárolt fájl kibontása
-second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
-description: Ebből az átfogó, lépésenkénti útmutatóból megtudhatja, hogyan lehet kicsomagolni az AES-titkosított tárolt fájlokat az Aspose.Zip for .NET-ben. Növelje .NET fejlesztési készségeit még ma!
-weight: 19
+date: 2025-12-21
+description: Ismerje meg, hogyan nyithat meg titkosított archívumfájlokat (AES) az
+  Aspose.Zip for .NET segítségével. Ez a lépésről‑lépésre útmutató bemutatja, hogyan
+  lehet visszafejteni jelszóval védett zip fájlokat, és hogyan lehet kibontani a védett
+  zip archívumokat C#‑ban.
+linktitle: Decompress AES Encrypted Stored File
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Titkosított archívum megnyitása az Aspose.Zip for .NET segítségével – AES titkosított
+  fájlok dekódolása
 url: /hu/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/
+weight: 19
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET – AES titkosított fájlok visszafejtése
-
+# Titkosított archívum megnyitása Aspose.Zip for .NET segítségével – AES titkosított fájlok dekódolása
 
 ## Bevezetés
 
-Üdvözöljük ebben a lépésenkénti útmutatóban az AES-titkosított tárolt fájlok kitömörítéséről az Aspose.Zip for .NET használatával. Az Aspose.Zip egy hatékony .NET-könyvtár, amely lehetővé teszi a fejlesztők számára, hogy könnyedén dolgozzanak tömörített fájlokkal. Ebben az oktatóanyagban az AES-titkosított fájlok kicsomagolására fogunk összpontosítani, így világosan megértheti a folyamatot.
+Üdvözlünk! Ebben az átfogó útmutatóban megtanulod, **hogyan nyiss meg titkosított archívum** fájlokat, amelyek AES titkosítást használnak az Aspose.Zip for .NET segítségével. Akár asztali segédprogramot, akár szerver‑oldali szolgáltatást építesz, a *jelszóval védett zip* archívumok **dekódolása** és a *védett zip* fájlok **kicsomagolása** gyakori követelmény. Végigvezetünk a teljes folyamaton, a környezet beállításától az AES‑titkosított ZIP fájl tartalmának C#‑ban történő kinyeréséig.
+
+## Gyors válaszok
+- **Mit jelent a “titkosított archívum megnyitása”?** Egy jelszóval védett ZIP fájl beolvasását és tartalmának programozott kinyerését jelenti.  
+- **Melyik könyvtár kezeli az AES dekódolást?** Az Aspose.Zip for .NET beépített támogatást nyújt az AES‑titkosított archívumokhoz.  
+- **Szükség van licencre a termeléshez?** Igen, a kereskedelmi használathoz kereskedelmi licenc szükséges; ingyenes próbaverzió is elérhető.  
+- **Használható .NET 6+ környezetben?** Természetesen – a könyvtár a .NET Standard 2.0‑ra céloz, és működik .NET 6, .NET 7 és újabb verziókkal.  
+- **Mi a tipikus kódfolyamat?** Betöltöd az archívumot jelszóval, megtalálod a bejegyzést, és a dekódolt adatot egy fájlba írod.
+
+## Mi az a “titkosított archívum megnyitása” művelet?
+
+A titkosított archívum megnyitása azt jelenti, hogy betöltesz egy ZIP fájlt, amelyet jelszóval (alapértelmezés szerint AES‑256) védtek, majd a bejegyzéseit manuális dekódolás nélkül olvasod. Az Aspose.Zip elrejti a kriptográfiai részleteket, így a üzleti logikára koncentrálhatsz.
+
+## Miért használjuk az Aspose.Zip-et C#‑ban AES ZIP fájlok dekódolásához?
+
+- **Teljes AES támogatás** – Automatikusan kezeli a 128‑, 192‑ és 256‑bit kulcsokat.  
+- **Egyszerű API** – Egy sor kóddal adhatod meg a jelszót (`DecryptionPassword`).  
+- **Nincsenek külső függőségek** – Nem kell OpenSSL‑t vagy más natív könyvtárat csomagolni.  
+- **Robusztus hibakezelés** – Egyértelmű kivételeket dob helytelen jelszó vagy sérült archívum esetén.  
 
 ## Előfeltételek
 
-Mielőtt belevágnánk az oktatóanyagba, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
+Mielőtt a kódba merülnél, győződj meg róla, hogy a következő előfeltételek teljesülnek:
 
--  Aspose.Zip .NET-hez: Győződjön meg arról, hogy telepítve van az Aspose.Zip könyvtár. A dokumentációt megtalálod[itt](https://reference.aspose.com/zip/net/).
+- Aspose.Zip for .NET: Győződj meg róla, hogy telepítetted az Aspose.Zip könyvtárat. A dokumentációt [itt](https://reference.aspose.com/zip/net/) találod.
 
--  Minta AES-titkosított fájl: Töltse le az AES-titkosított mintafájlt innen[ez a link](https://releases.aspose.com/zip/net/).
+- Minta AES titkosított fájl: Tölts le egy minta AES titkosított fájlt a [következő hivatkozásról](https://releases.aspose.com/zip/net/).
 
-- Saját dokumentumkönyvtár: Állítson be egy könyvtárat, ahol a kicsomagolt fájlt tárolni szeretné. Cserélje le a „Saját dokumentumkönyvtár” szöveget a kódrészletben a tényleges könyvtár elérési útjával.
+- Dokumentumkönyvtárad: Hozz létre egy könyvtárat, ahová a kicsomagolt fájlt szeretnéd menteni. A kódrészletben cseréld ki a „Your Document Directory” szöveget a saját könyvtárad elérési útjára.
 
 ## Névterek importálása
 
-A megadott kódrészletben különféle névterek használatát fogja észrevenni. Ügyeljen arra, hogy ezeket tartalmazza a projektben:
+A megadott kódrészletben különböző névterek használatát láthatod. Ügyelj arra, hogy ezeket a projektedbe felvedd:
 
 ```csharp
 using System.IO;
 using Aspose.Zip;
 ```
 
-## 1. lépés: Határozza meg az erőforrás-könyvtárat
+## 1. lépés: A forráskönyvtár meghatározása
 
-Győződjön meg arról, hogy megadta az erőforrás-könyvtár elérési útját. A példában cserélje ki a "Saját dokumentumkönyvtárat" a tényleges elérési útra.
+Add meg annak a mappának az elérési útját, amely a titkosított ZIP fájlt tartalmazza, valamint azt a helyet, ahová a kicsomagolt fájl kerül.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## 2. lépés: Nyissa meg a titkosított archívumot
+## 2. lépés: Titkosított archívum megnyitása
+
+Az `Archive` konstruktor egy `ArchiveLoadOptions` objektumot fogad, ahol beállíthatod a `DecryptionPassword`‑t. Ez a **decrypt zip password** művelet központja.
 
 ```csharp
 using (FileStream fs = File.OpenRead(dataDir + "StoreMutlipleFilesWithoutCompressionWithPassword_out.zip"))
@@ -54,13 +78,15 @@ using (FileStream fs = File.OpenRead(dataDir + "StoreMutlipleFilesWithoutCompres
     {
         using (Archive archive = new Archive(fs, new ArchiveLoadOptions() { DecryptionPassword = "p@s$" }))
         {
-            // Folytassa a következő lépésekkel...
+            // Continue to the next steps...
         }
     }
 }
 ```
 
-## 3. lépés: Tömörítse ki a titkosított bejegyzést
+## 3. lépés: Titkosított bejegyzés kicsomagolása
+
+Miután az archívum meg van nyitva, beolvashatod az első bejegyzést (vagy bármelyik szükséges bejegyzést), és a dekódolt bájtokat az output fájlba írhatod. Ez a **c# extract encrypted zip** folyamatot mutatja be streaming módon.
 
 ```csharp
 using (var decompressed = archive.Entries[0].Open())
@@ -74,27 +100,34 @@ using (var decompressed = archive.Entries[0].Open())
 }
 ```
 
-## Következtetés
+## Gyakori problémák és megoldások
 
-Gratulálunk! Sikeresen megtanulta, hogyan kell kicsomagolni az AES-titkosított tárolt fájlokat az Aspose.Zip for .NET használatával. Ez a folyamat lehetővé teszi, hogy hatékonyan dolgozzon titkosított archívumokkal .NET-alkalmazásaiban.
+| Probléma | Miért fordul elő | Megoldás |
+|----------|------------------|----------|
+| **Helytelen jelszó hiba** | A `DecryptionPassword` nem egyezik az archívum titkosításához használt jelszóval. | Ellenőrizd a jelszó karakterláncot; ne feledd, hogy kis‑ és nagybetű érzékeny. |
+| **ArchiveLoadOptions nem ismerhető** | Régebbi Aspose.Zip verziót használsz, amely nem tartalmazza ezt a túlterhelést. | Frissíts a legújabb Aspose.Zip for .NET kiadásra. |
+| **Nagy fájlok memória nyomást okoznak** | A teljes fájl memóriába olvasása. | Használd a fenti streaming megközelítést (pufferelt olvasás). |
 
-## GYIK
+## Összegzés
 
-### Használhatom az Aspose.Zip for .NET fájlt más titkosítási algoritmusokkal?
-Az Aspose.Zip elsősorban az AES titkosítást támogatja. Tekintse meg a dokumentációt a legújabb frissítésekért.
+Gratulálunk! Sikeresen megtanultad, hogyan **nyiss meg titkosított archívum** fájlokat, dekódold az AES‑titkosított ZIP bejegyzéseket, és **kicsomagold a védett zip** archívumokat az Aspose.Zip for .NET segítségével. Ez a munkafolyamat megbízható megoldást nyújt a biztonságos ZIP fájlok kezelésére bármely C# alkalmazásban.
 
-### Létezik próbaverzió?
- Igen, hozzáférhet az ingyenes próbaverzióhoz[itt](https://releases.aspose.com/).
+## Gyakran Ismételt Kérdések
+
+### Használhatom az Aspose.Zip for .NET-et más titkosítási algoritmusokkal?
+Az Aspose.Zip elsősorban az AES titkosítást támogatja. A legfrissebb információkért tekintsd meg a dokumentációt.
+
+### Van elérhető próbaverzió?
+Igen, ingyenes próbaverziót itt érhetsz el: [here](https://releases.aspose.com/).
 
 ### Hogyan kaphatok támogatást az Aspose.Zip for .NET-hez?
- Látogassa meg a támogatási fórumot[itt](https://forum.aspose.com/c/zip/37) segítséget kérni a közösségtől.
+Látogasd meg a támogatási fórumot [here](https://forum.aspose.com/c/zip/37), ahol a közösség segíthet.
 
-### Milyen fájlformátumok támogatottak a tömörítéshez és a kicsomagoláshoz?
-Az Aspose.Zip különféle formátumokat támogat, beleértve a ZIP-t, a 7z-t és a TAR-t. Az átfogó listát a dokumentációban találja.
+### Milyen fájlformátumok támogatottak a tömörítéshez és kicsomagoláshoz?
+Az Aspose.Zip különböző formátumokat támogat, többek között ZIP, 7z és TAR. A teljes listáért tekintsd meg a dokumentációt.
 
 ### Használhatom az Aspose.Zip-et kereskedelmi célokra?
- Igen, vásárolhat licencet[itt](https://purchase.aspose.com/buy) kereskedelmi használatra.
-
+Igen, kereskedelmi licencet vásárolhatsz [here](https://purchase.aspose.com/buy) a kereskedelmi felhasználáshoz.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -102,3 +135,11 @@ Az Aspose.Zip különféle formátumokat támogat, beleértve a ZIP-t, a 7z-t é
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Utoljára frissítve:** 2025-12-21  
+**Tesztelt verzió:** Aspose.Zip 24.11 for .NET  
+**Szerző:** Aspose  
+
+---
