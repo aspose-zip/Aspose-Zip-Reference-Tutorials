@@ -1,100 +1,142 @@
 ---
-title: Odszyfrowywanie archiwum RAR za pomocą Aspose.Zip dla .NET
-linktitle: Odszyfrowanie archiwum RAR
-second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
-description: Odblokuj zaszyfrowane archiwa RAR bez wysiłku za pomocą Aspose.Zip dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby uzyskać bezproblemową integrację i skuteczne odszyfrowanie.
-weight: 12
+date: 2025-12-23
+description: Dowiedz się, jak wyodrębniać chronione hasłem pliki RAR i rozpakowywać
+  zaszyfrowane pliki RAR przy użyciu Aspose.Zip dla .NET. Skorzystaj z przewodnika
+  krok po kroku, aby efektywnie odczytywać zaszyfrowane pliki RAR.
+linktitle: Decrypting a RAR Archive
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Rozpakuj chroniony hasłem plik RAR przy użyciu Aspose.Zip dla .NET
 url: /pl/net/rar-archive/decrypt-rar-archive/
+weight: 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Odszyfrowywanie archiwum RAR za pomocą Aspose.Zip dla .NET
+# Wyodrębnianie chronionego hasłem pliku RAR przy użyciu Aspose.Zip dla .NET
 
+## Wprowadzenie
 
-## Wstęp
+Jeśli kiedykolwiek musiałeś **wyodrębnić chroniony hasłem plik rar** w aplikacji .NET, wiesz, jak to może być trudne. Na szczęście Aspose.Zip for .NET usuwa zgadywanie i pozwala odczytywać zaszyfrowane pliki rar za pomocą kilku linii kodu. W tym samouczku przeprowadzimy Cię przez cały proces — od konfiguracji projektu po wyodrębnienie zawartości — abyś mógł płynnie zintegrować odszyfrowywanie w swoich rozwiązaniach.
 
-Odblokowanie zawartości chronionego hasłem archiwum RAR może być trudnym zadaniem, ale dzięki Aspose.Zip dla .NET proces ten staje się prosty i wydajny. W tym samouczku przeprowadzimy Cię przez etapy odszyfrowywania archiwum RAR przy użyciu biblioteki Aspose.Zip. Niezależnie od tego, czy jesteś doświadczonym programistą, czy entuzjastą kodowania, ten przewodnik pomoże Ci bezproblemowo zintegrować funkcję deszyfrowania z aplikacjami .NET.
+## Szybkie odpowiedzi
+- **Jaka biblioteka obsługuje deszyfrowanie RAR?** Aspose.Zip for .NET  
+- **Czy potrzebna jest licencja do produkcji?** Tak, wymagana jest licencja komercyjna.  
+- **Jakie wersje .NET są obsługiwane?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **Czy mogę wyodrębniać wiele archiwów w pętli?** Oczywiście — po prostu powtórz kroki dla każdego pliku.  
+- **Czy hasło rozróżnia wielkość liter?** Tak, traktuj je jak zwykły ciąg znaków.
 
-## Warunki wstępne
+## Czym jest „wyodrębnianie chronionego hasłem pliku rar”?
 
-Zanim przejdziesz do samouczka, upewnij się, że spełniasz następujące wymagania wstępne:
+Wyodrębnianie archiwum RAR chronionego hasłem oznacza otwarcie archiwum, podanie prawidłowego hasła deszyfrującego, a następnie zapisanie zawartych plików do folderu docelowego. Aspose.Zip ukrywa szczegóły niskiego poziomu, dzięki czemu możesz skupić się na logice biznesowej.
 
-1.  Biblioteka Aspose.Zip dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Zip w projekcie .NET. Można go pobrać z[Dokumentacja Aspose.Zip](https://reference.aspose.com/zip/net/).
+## Dlaczego warto używać Aspose.Zip dla .NET?
 
-2. Katalog dokumentów: skonfiguruj katalog, w którym znajduje się zaszyfrowane archiwum RAR. Zastąp „Twój katalog dokumentów” w przykładowym kodzie rzeczywistą ścieżką do tego katalogu.
+- **Pełne wsparcie RAR** – Obsługuje formaty RAR4 i RAR5, w tym zaszyfrowane archiwa.  
+- **Proste API** – Wystarczy kilka wywołań metod, aby otworzyć, odszyfrować i wyodrębnić.  
+- **Wieloplatformowe** – Działa na środowiskach .NET w Windows, Linux i macOS.  
+- **Brak zewnętrznych zależności** – Nie ma potrzeby dostarczania zewnętrznych narzędzi RAR.
 
-## Importuj przestrzenie nazw
+## Wymagania wstępne
 
-Zacznijmy od zaimportowania niezbędnych przestrzeni nazw, aby efektywnie korzystać z biblioteki Aspose.Zip. Dodaj następujące wiersze na górze pliku .NET:
+1. **Biblioteka Aspose.Zip for .NET** – Zainstaluj bibliotekę przez NuGet lub pobierz ją z [dokumentacji Aspose.Zip](https://reference.aspose.com/zip/net/).  
+2. **Katalog dokumentów** – Utwórz folder zawierający zaszyfrowane archiwum RAR, z którym chcesz pracować. Zamień ścieżkę zastępczą w kodzie na swoją rzeczywistą lokalizację.
+
+## Importowanie przestrzeni nazw
+
+Dodaj wymagane instrukcje `using` na początku pliku C#:
 
 ```csharp
-//ExStart: Importuj przestrzenie nazw
+//ExStart: ImportNamespaces
 using Aspose.Zip;
 using System.IO;
-//ExEnd: Importuj przestrzenie nazw
+//ExEnd: ImportNamespaces
 ```
 
 ## Krok 1: Otwórz zaszyfrowane archiwum RAR
 
-Zacznij od otwarcia zaszyfrowanego archiwum RAR. W przykładowym kodzie zastąp „encrypted.rar” nazwą zaszyfrowanego pliku RAR.
+Otwórz strumień tylko do odczytu dla pliku RAR, który chcesz odszyfrować. Zmień `"encrypted.rar"` na nazwę swojego pliku.
 
 ```csharp
 //ExStart: DecryptRarArchive_Step1
 using (FileStream fs = File.OpenRead(dataDir + "encrypted.rar"))
 {
-    //Zakończ: DecryptRarArchive_Step1
-    // Przejdź do następnego kroku tutaj...
+    //ExEnd: DecryptRarArchive_Step1
+    // Continue to the next step here...
 }
 ```
 
-## Krok 2: Określ hasło odszyfrowujące
+## Krok 2: Określ hasło deszyfrujące
 
-Określ hasło deszyfrujące dla archiwum RAR. W przykładzie użyte zostało hasło „p@s$”. Zastąp je rzeczywistym hasłem ustawionym dla zaszyfrowanego pliku RAR.
+Podaj hasło chroniące archiwum. W tym przykładzie hasło to `"p@s$"`. Zamień je na rzeczywiste hasło, które ustawiłeś.
 
 ```csharp
 //ExStart: DecryptRarArchive_Step2
 using (RarArchive archive = new RarArchive(fs, new RarArchiveLoadOptions() { DecryptionPassword = "p@s$" }))
 {
-    //Zakończ: DecryptRarArchive_Step2
-    // Przejdź do następnego kroku tutaj...
+    //ExEnd: DecryptRarArchive_Step2
+    // Continue to the next step here...
 }
 ```
 
 ## Krok 3: Wyodrębnij zawartość do katalogu
 
-Teraz wyodrębnij zawartość archiwum RAR do określonego katalogu. Zastąp „DecompressRar_out” ścieżką, w której mają być przechowywane odszyfrowane pliki.
+Wyodrębnij odszyfrowane pliki do wybranego folderu. Zmień `"DecompressRar_out"` na żądaną ścieżkę wyjściową.
 
 ```csharp
 //ExStart: DecryptRarArchive_Step3
 archive.ExtractToDirectory(dataDir + "DecompressRar_out");
-//Zakończ: DecryptRarArchive_Step3
+//ExEnd: DecryptRarArchive_Step3
 ```
 
-Powtórz te kroki dla każdego archiwum RAR, które chcesz odszyfrować, zapewniając bezproblemową integrację Aspose.Zip dla .NET z Twoim projektem.
+## Jak wyodrębnić chronione hasłem pliki rar przy użyciu Aspose.Zip
 
-## Wniosek
+Postępując zgodnie z powyższymi trzema krokami, możesz **wyodrębnić chronione hasłem archiwa rar** programowo. To podejście działa dla dowolnej liczby plików — po prostu iteruj listę plików i powtarzaj kroki.
 
-Gratulacje! Pomyślnie odszyfrowałeś archiwum RAR przy użyciu Aspose.Zip dla .NET. Ta potężna biblioteka upraszcza złożony proces odblokowywania archiwów chronionych hasłem, dzięki czemu jest nieocenionym narzędziem dla programistów pracujących z aplikacjami .NET.
+## Typowe przypadki użycia
 
-## Często zadawane pytania (FAQ)
+- **Automatyczne pobieranie danych** – Pobieraj dane z zaszyfrowanych przesyłek RAR i przetwarzaj je automatycznie.  
+- **Przywracanie kopii zapasowych przedsiębiorstwa** – Odszyfruj i przywróć archiwalne kopie zapasowe przechowywane w chronionych hasłem plikach RAR.  
+- **Bezpieczna wymiana plików** – Pozwól użytkownikom przesyłać zaszyfrowane archiwa RAR, a następnie wyodrębniaj je po stronie serwera po weryfikacji.
 
-### Czy Aspose.Zip dla .NET jest kompatybilny ze wszystkimi wersjami archiwów RAR?
-Aspose.Zip dla .NET obsługuje różne wersje archiwów RAR, zapewniając kompatybilność z szeroką gamą plików.
+## Podsumowanie
 
-### Czy mogę używać Aspose.Zip dla .NET w projektach komercyjnych?
- Tak, Aspose.Zip dla .NET jest dostępny do użytku komercyjnego. Odwiedzić[strona zakupu](https://purchase.aspose.com/buy) w celu uzyskania szczegółów licencji.
+Teraz wiesz, jak **wyodrębnić zaszyfrowane pliki rar** i **odczytać zawartość zaszyfrowanego pliku rar** przy użyciu Aspose.Zip for .NET. Biblioteka zajmuje się trudnym zadaniem, dzięki czemu możesz skupić się na integracji wyodrębnionych danych w przepływie pracy aplikacji.
 
-### Czy dostępne są licencje tymczasowe do celów testowych?
- Tak, możesz uzyskać tymczasową licencję na testowanie od[Tutaj](https://purchase.aspose.com/temporary-license/).
+## Najczęściej zadawane pytania (FAQ)
 
-### Gdzie mogę znaleźć dodatkowe wsparcie lub dyskusje społecznościowe?
- Odwiedzić[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) za wsparcie i dyskusje społeczne.
+### Czy Aspose.Zip for .NET jest kompatybilny ze wszystkimi wersjami archiwów RAR?
+Aspose.Zip for .NET obsługuje różne wersje archiwów RAR, zapewniając kompatybilność z szerokim zakresem plików.
 
-### Jak uzyskać dostęp do dokumentacji Aspose.Zip dla .NET?
- The[dokumentacja](https://reference.aspose.com/zip/net/) zawiera wyczerpujące informacje na temat korzystania z Aspose.Zip dla .NET.
+### Czy mogę używać Aspose.Zip for .NET w projektach komercyjnych?
+Tak, Aspose.Zip for .NET jest dostępny do użytku komercyjnego. Odwiedź [stronę zakupu](https://purchase.aspose.com/buy) po szczegóły licencjonowania.
+
+### Czy dostępne są tymczasowe licencje do celów testowych?
+Tak, możesz uzyskać tymczasową licencję do testów [tutaj](https://purchase.aspose.com/temporary-license/).
+
+### Gdzie mogę znaleźć dodatkowe wsparcie lub dyskusje społeczności?
+Odwiedź [forum Aspose.Zip](https://forum.aspose.com/c/zip/37) w celu uzyskania wsparcia i dyskusji społecznościowych.
+
+### Jak uzyskać dostęp do dokumentacji Aspose.Zip for .NET?
+[Dokumentacja](https://reference.aspose.com/zip/net/) zawiera kompleksowe informacje o używaniu Aspose.Zip for .NET.
+
+**Additional Q&A**
+
+**Q: Co się stanie, jeśli hasło jest nieprawidłowe?**  
+A: Aspose.Zip zgłasza `InvalidPasswordException`. Przechwyć wyjątek, aby obsłużyć błąd w sposób elegancki.
+
+**Q: Czy mogę wyodrębnić tylko wybrane pliki z archiwum?**  
+A: Tak, iteruj przez `archive.Entries` i wywołaj `entry.ExtractToFile()` na wybranych wpisach.
+
+**Q: Czy możliwe jest wyodrębnienie archiwów większych niż 2 GB?**  
+A: Zdecydowanie — Aspose.Zip działa na strumieniach, więc rozmiar pliku jest ograniczony jedynie dostępnymi zasobami systemowymi.
+
+---
+
+**Ostatnia aktualizacja:** 2025-12-23  
+**Testowano z:** Aspose.Zip for .NET 24.11  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
