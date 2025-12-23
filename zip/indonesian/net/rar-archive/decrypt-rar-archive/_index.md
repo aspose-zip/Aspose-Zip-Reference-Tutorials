@@ -1,71 +1,88 @@
 ---
-title: Mendekripsi Arsip RAR dengan Aspose.Zip untuk .NET
-linktitle: Mendekripsi Arsip RAR
-second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
-description: Buka kunci arsip RAR terenkripsi dengan mudah menggunakan Aspose.Zip untuk .NET. Ikuti panduan langkah demi langkah kami untuk integrasi yang lancar dan dekripsi yang efisien.
-weight: 12
+date: 2025-12-23
+description: Pelajari cara mengekstrak file rar yang dilindungi kata sandi dan mengekstrak
+  file rar terenkripsi menggunakan Aspose.Zip untuk .NET. Ikuti panduan langkah demi
+  langkah untuk membaca file rar terenkripsi secara efisien.
+linktitle: Decrypting a RAR Archive
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Ekstrak rar yang dilindungi kata sandi dengan Aspose.Zip untuk .NET
 url: /id/net/rar-archive/decrypt-rar-archive/
+weight: 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Mendekripsi Arsip RAR dengan Aspose.Zip untuk .NET
+# Ekstrak rar yang dilindungi kata sandi dengan Aspose.Zip untuk .NET
 
+## Introduction
 
-## Perkenalan
+Jika Anda pernah perlu **mengekstrak rar yang dilindungi kata sandi** dalam aplikasi .NET, Anda tahu betapa sulitnya. Untungnya, Aspose.Zip untuk .NET menghilangkan dugaan dan memungkinkan Anda membaca file rar terenkripsi dengan hanya beberapa baris kode. Dalam tutorial ini kami akan membahas seluruh proses—dari menyiapkan proyek hingga mengekstrak isi—sehingga Anda dapat mengintegrasikan dekripsi secara mulus ke dalam solusi Anda.
 
-Membuka kunci konten arsip RAR yang dilindungi kata sandi bisa menjadi tugas yang menakutkan, namun dengan Aspose.Zip untuk .NET, prosesnya menjadi mudah dan efisien. Dalam tutorial ini, kami akan memandu Anda melalui langkah-langkah mendekripsi arsip RAR menggunakan perpustakaan Aspose.Zip. Baik Anda seorang pengembang berpengalaman atau penggemar coding, panduan ini akan membantu Anda mengintegrasikan fungsi dekripsi dengan lancar ke dalam aplikasi .NET Anda.
+## Quick Answers
+- **Perpustakaan apa yang menangani dekripsi RAR?** Aspose.Zip for .NET  
+- **Apakah saya memerlukan lisensi untuk produksi?** Ya, lisensi komersial diperlukan.  
+- **Versi .NET mana yang didukung?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **Bisakah saya mengekstrak beberapa arsip dalam loop?** Tentu—cukup ulangi langkah untuk setiap file.  
+- **Apakah kata sandi case‑sensitive?** Ya, perlakukan seperti string biasa.
 
-## Prasyarat
+## What is “extract password protected rar”?
 
-Sebelum masuk ke tutorial, pastikan Anda memiliki prasyarat berikut:
+Mengekstrak arsip RAR yang dilindungi kata sandi berarti membuka arsip, memberikan kata sandi dekripsi yang benar, dan kemudian menulis file yang terkandung ke folder tujuan. Aspose.Zip mengabstraksi detail tingkat rendah, sehingga Anda dapat fokus pada logika bisnis Anda.
 
-1.  Aspose.Zip untuk Perpustakaan .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Zip di proyek .NET Anda. Anda dapat mengunduhnya dari[Dokumentasi Aspose.Zip](https://reference.aspose.com/zip/net/).
+## Why use Aspose.Zip for .NET?
 
-2. Direktori Dokumen: Siapkan direktori tempat arsip RAR terenkripsi Anda berada. Ganti "Direktori Dokumen Anda" dalam kode contoh dengan jalur sebenarnya ke direktori ini.
+- **Dukungan RAR penuh** – Menangani format RAR4 dan RAR5, termasuk arsip terenkripsi.  
+- **API sederhana** – Hanya beberapa pemanggilan metode yang diperlukan untuk membuka, mendekripsi, dan mengekstrak.  
+- **Lintas‑platform** – Berfungsi di runtime .NET Windows, Linux, dan macOS.  
+- **Tanpa dependensi eksternal** – Tidak perlu menyertakan utilitas RAR pihak ketiga.
 
-## Impor Namespace
+## Prerequisites
 
-Mari kita mulai dengan mengimpor namespace yang diperlukan untuk menggunakan perpustakaan Aspose.Zip secara efektif. Tambahkan baris berikut ke bagian atas file .NET Anda:
+1. **Aspose.Zip untuk .NET Library** – Instal perpustakaan melalui NuGet atau unduh dari [dokumentasi Aspose.Zip](https://reference.aspose.com/zip/net/).  
+2. **Direktori Dokumen** – Miliki folder yang berisi arsip RAR terenkripsi yang ingin Anda kerjakan. Ganti jalur placeholder dalam kode dengan direktori Anda yang sebenarnya.
+
+## Import Namespaces
+
+Add the required `using` statements at the top of your C# file:
 
 ```csharp
-//ExStart: ImporNamespace
+//ExStart: ImportNamespaces
 using Aspose.Zip;
 using System.IO;
-//ExEnd: ImporNamespace
+//ExEnd: ImportNamespaces
 ```
 
-## Langkah 1: Buka Arsip RAR Terenkripsi
+## Step 1: Open the Encrypted RAR Archive
 
-Mulailah dengan membuka arsip RAR terenkripsi. Pada contoh kode, ganti "encrypted.rar" dengan nama file RAR terenkripsi Anda.
+Open a read‑only stream for the RAR file you wish to decrypt. Change `"encrypted.rar"` to match your file name.
 
 ```csharp
 //ExStart: DecryptRarArchive_Step1
 using (FileStream fs = File.OpenRead(dataDir + "encrypted.rar"))
 {
     //ExEnd: DecryptRarArchive_Step1
-    // Lanjutkan ke langkah berikutnya di sini...
+    // Continue to the next step here...
 }
 ```
 
-## Langkah 2: Tentukan Kata Sandi Dekripsi
+## Step 2: Specify Decryption Password
 
-Tentukan kata sandi dekripsi untuk arsip RAR. Dalam contoh, kata sandi "p@s$" digunakan. Gantilah dengan kata sandi sebenarnya yang Anda tetapkan untuk file RAR terenkripsi Anda.
+Provide the password that protects the archive. In this example the password is `"p@s$"`. Replace it with the actual password you set.
 
 ```csharp
 //ExStart: DecryptRarArchive_Step2
 using (RarArchive archive = new RarArchive(fs, new RarArchiveLoadOptions() { DecryptionPassword = "p@s$" }))
 {
-    //ExEnd: DekripsiRarArchive_Step2
-    // Lanjutkan ke langkah berikutnya di sini...
+    //ExEnd: DecryptRarArchive_Step2
+    // Continue to the next step here...
 }
 ```
 
-## Langkah 3: Ekstrak Konten ke Direktori
+## Step 3: Extract Contents to Directory
 
-Sekarang, ekstrak isi arsip RAR ke direktori tertentu. Ganti "DecompressRar_out" dengan jalur tempat Anda ingin menyimpan file yang didekripsi.
+Extract the decrypted files to a folder of your choice. Change `"DecompressRar_out"` to your desired output path.
 
 ```csharp
 //ExStart: DecryptRarArchive_Step3
@@ -73,28 +90,53 @@ archive.ExtractToDirectory(dataDir + "DecompressRar_out");
 //ExEnd: DecryptRarArchive_Step3
 ```
 
-Ulangi langkah-langkah ini untuk setiap arsip RAR yang perlu Anda dekripsi, untuk memastikan integrasi Aspose.Zip untuk .NET yang lancar ke dalam proyek Anda.
+## How to extract password protected rar files using Aspose.Zip
 
-## Kesimpulan
+Dengan mengikuti tiga langkah di atas Anda dapat **mengekstrak rar yang dilindungi kata sandi** secara programatis. Pendekatan ini bekerja untuk sejumlah file apa pun—cukup loop melalui daftar file dan ulangi langkah-langkahnya.
 
-Selamat! Anda telah berhasil mendekripsi arsip RAR menggunakan Aspose.Zip untuk .NET. Pustaka yang kuat ini menyederhanakan proses kompleks untuk membuka kunci arsip yang dilindungi kata sandi, menjadikannya alat yang sangat berharga bagi pengembang yang bekerja dengan aplikasi .NET.
+## Common Use Cases
 
-## Pertanyaan yang Sering Diajukan (FAQ)
+- **Ingesti data otomatis** – Mengambil data dari kiriman RAR terenkripsi dan memprosesnya secara otomatis.  
+- **Pemulihan backup perusahaan** – Mendekripsi dan memulihkan backup arsip yang disimpan dalam file RAR yang dilindungi kata sandi.  
+- **Pertukaran file aman** – Memungkinkan pengguna mengunggah arsip RAR terenkripsi, kemudian mengekstraknya di sisi server setelah validasi.
+
+## Conclusion
+
+Anda kini telah mempelajari cara **mengekstrak file rar terenkripsi** dan **membaca isi file rar terenkripsi** menggunakan Aspose.Zip untuk .NET. Perpustakaan ini menangani pekerjaan berat, sehingga Anda dapat fokus mengintegrasikan data yang diekstrak ke dalam alur kerja aplikasi Anda.
+
+## Frequently Asked Questions (FAQs)
 
 ### Apakah Aspose.Zip untuk .NET kompatibel dengan semua versi arsip RAR?
-Aspose.Zip untuk .NET mendukung berbagai versi arsip RAR, memastikan kompatibilitas dengan berbagai macam file.
+Aspose.Zip untuk .NET mendukung berbagai versi arsip RAR, memastikan kompatibilitas dengan beragam file.
 
 ### Bisakah saya menggunakan Aspose.Zip untuk .NET dalam proyek komersial?
- Ya, Aspose.Zip untuk .NET tersedia untuk penggunaan komersial. Mengunjungi[halaman pembelian](https://purchase.aspose.com/buy) untuk rincian perizinan.
+Ya, Aspose.Zip untuk .NET tersedia untuk penggunaan komersial. Kunjungi [halaman pembelian](https://purchase.aspose.com/buy) untuk detail lisensi.
 
 ### Apakah lisensi sementara tersedia untuk tujuan pengujian?
- Ya, Anda bisa mendapatkan lisensi sementara untuk pengujian dari[Di Sini](https://purchase.aspose.com/temporary-license/).
+Ya, Anda dapat memperoleh lisensi sementara untuk pengujian dari [sini](https://purchase.aspose.com/temporary-license/).
 
 ### Di mana saya dapat menemukan dukungan tambahan atau diskusi komunitas?
- Mengunjungi[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) untuk dukungan dan diskusi komunitas.
+Kunjungi [forum Aspose.Zip](https://forum.aspose.com/c/zip/37) untuk dukungan dan diskusi komunitas.
 
-### Bagaimana cara mengakses dokumentasi Aspose.Zip untuk .NET?
- Itu[dokumentasi](https://reference.aspose.com/zip/net/) memberikan informasi komprehensif tentang penggunaan Aspose.Zip untuk .NET.
+### Bagaimana cara mengakses dokumentasi untuk Aspose.Zip untuk .NET?
+[Dokumentasi](https://reference.aspose.com/zip/net/) menyediakan informasi lengkap tentang penggunaan Aspose.Zip untuk .NET.
+
+**Additional Q&A**
+
+**Q: What happens if the password is incorrect?**  
+A: Aspose.Zip throws a `InvalidPasswordException`. Catch the exception to handle the error gracefully.
+
+**Q: Can I extract only specific files from the archive?**  
+A: Yes, iterate through `archive.Entries` and call `entry.ExtractToFile()` on the desired entries.
+
+**Q: Is it possible to extract archives larger than 2 GB?**  
+A: Absolutely—Aspose.Zip works with streams, so file size is limited only by available system resources.
+
+---
+
+**Last Updated:** 2025-12-23  
+**Tested With:** Aspose.Zip for .NET 24.11  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

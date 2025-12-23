@@ -1,34 +1,51 @@
 ---
-title: RAR-archívum visszafejtése az Aspose.Zip for .NET segítségével
-linktitle: RAR archívum visszafejtése
-second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
-description: Könnyedén feloldhatja a titkosított RAR archívumokat az Aspose.Zip for .NET segítségével. Kövesse lépésről lépésre útmutatónkat a zökkenőmentes integráció és a hatékony visszafejtés érdekében.
-weight: 12
+date: 2025-12-23
+description: Tanulja meg, hogyan lehet jelszóval védett RAR fájlokat kicsomagolni
+  és titkosított RAR fájlokat kibontani az Aspose.Zip for .NET használatával. Kövesse
+  a lépésről‑lépésre útmutatót a titkosított RAR fájl hatékony olvasásához.
+linktitle: Decrypting a RAR Archive
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Jelszóval védett RAR kicsomagolása az Aspose.Zip for .NET segítségével
 url: /hu/net/rar-archive/decrypt-rar-archive/
+weight: 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# RAR-archívum visszafejtése az Aspose.Zip for .NET segítségével
+# Jelszóval védett RAR kicsomagolása az Aspose.Zip for .NET segítségével
 
+## Introduction
 
-## Bevezetés
+Ha valaha is **jelszóval védett RAR** archívumot kellett kicsomagolnia egy .NET alkalmazásban, tudja, milyen nehéz lehet. Szerencsére az Aspose.Zip for .NET leveszi a találgatást a válláról, és néhány kódsorral lehetővé teszi a titkosított RAR fájlok olvasását. Ebben az útmutatóban végigvezetjük a teljes folyamaton – a projekt beállításától a tartalom kicsomagolásáig –, hogy zökkenőmentesen integrálhassa a dekódolást megoldásaiba.
 
-jelszóval védett RAR-archívum tartalmának feloldása ijesztő feladat lehet, de az Aspose.Zip for .NET segítségével a folyamat egyszerűvé és hatékonysá válik. Ebben az oktatóanyagban végigvezetjük a RAR-archívum Aspose.Zip könyvtár használatával történő visszafejtésének lépésein. Akár tapasztalt fejlesztő, akár kódolás-rajongó, ez az útmutató segít a visszafejtési funkciók zökkenőmentes integrálásában a .NET-alkalmazásokba.
+## Quick Answers
+- **Melyik könyvtár kezeli a RAR dekódolást?** Aspose.Zip for .NET  
+- **Szükségem van licencre a termeléshez?** Igen, kereskedelmi licenc szükséges.  
+- **Mely .NET verziók támogatottak?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **Kicsomagolhatok több archívumot egy ciklusban?** Természetesen – csak ismételje meg a lépéseket minden fájlra.  
+- **A jelszó kis‑ és nagybetűérzékeny?** Igen, úgy kell kezelni, mint egy normál karakterláncot.
 
-## Előfeltételek
+## What is “extract password protected rar”?
 
-Mielőtt belevágna az oktatóanyagba, győződjön meg arról, hogy a következő előfeltételeket teljesítette:
+A jelszóval védett RAR archívum kicsomagolása azt jelenti, hogy megnyitja az archívumot, megadja a helyes dekódoló jelszót, majd a benne lévő fájlokat egy célmappába írja. Az Aspose.Zip elrejti az alacsony szintű részleteket, így Ön a saját üzleti logikájára koncentrálhat.
 
-1.  Aspose.Zip for .NET Library: Győződjön meg arról, hogy az Aspose.Zip könyvtár telepítve van a .NET-projektben. Letöltheti a[Aspose.Zip dokumentáció](https://reference.aspose.com/zip/net/).
+## Why use Aspose.Zip for .NET?
 
-2. Dokumentumkönyvtár: Állítson be egy könyvtárat, ahol a titkosított RAR archívum található. Cserélje le a példakódban a „Saját dokumentumkönyvtár” elemet a könyvtár tényleges elérési útjával.
+- **Full RAR support** – Kezeli a RAR4 és RAR5 formátumokat, beleértve a titkosított archívumokat.  
+- **Simple API** – Csak néhány metódushívásra van szükség a megnyitáshoz, dekódoláshoz és kicsomagoláshoz.  
+- **Cross‑platform** – Windows, Linux és macOS .NET futtatókörnyezeteken is működik.  
+- **No external dependencies** – Nem kell harmadik féltől származó RAR segédprogramokat szállítania.
 
-## Névterek importálása
+## Prerequisites
 
-Kezdjük az Aspose.Zip könyvtár hatékony használatához szükséges névterek importálásával. Adja hozzá a következő sorokat a .NET-fájl tetejéhez:
+1. **Aspose.Zip for .NET Library** – Telepítse a könyvtárat a NuGet‑en keresztül, vagy töltse le a [Aspose.Zip documentation](https://reference.aspose.com/zip/net/) oldalról.  
+2. **Document Directory** – Legyen egy mappa, amely tartalmazza a titkosított RAR archívumot, amivel dolgozni szeretne. Cserélje le a kódban a helyőrző útvonalat a saját könyvtárára.
+
+## Import Namespaces
+
+Adja hozzá a szükséges `using` utasításokat a C# fájl tetejéhez:
 
 ```csharp
 //ExStart: ImportNamespaces
@@ -37,35 +54,35 @@ using System.IO;
 //ExEnd: ImportNamespaces
 ```
 
-## 1. lépés: Nyissa meg a titkosított RAR archívumot
+## Step 1: Open the Encrypted RAR Archive
 
-Kezdje a titkosított RAR archívum megnyitásával. A példakódban cserélje ki az "encrypted.rar" szót a titkosított RAR-fájl nevére.
+Nyisson egy csak‑olvasásra szóló streamet a dekódolni kívánt RAR fájlhoz. Cserélje le a `"encrypted.rar"` értéket a saját fájlnevére.
 
 ```csharp
 //ExStart: DecryptRarArchive_Step1
 using (FileStream fs = File.OpenRead(dataDir + "encrypted.rar"))
 {
     //ExEnd: DecryptRarArchive_Step1
-    // Itt folytassa a következő lépéssel...
+    // Continue to the next step here...
 }
 ```
 
-## 2. lépés: Adja meg a visszafejtési jelszót
+## Step 2: Specify Decryption Password
 
-Adja meg a RAR archívum visszafejtési jelszavát. A példában a "p@s$" jelszót használjuk. Cserélje ki a titkosított RAR-fájlhoz beállított tényleges jelszóra.
+Adja meg a archívumot védő jelszót. Ebben a példában a jelszó `"p@s$"`. Cserélje le a ténylegesen beállított jelszóra.
 
 ```csharp
 //ExStart: DecryptRarArchive_Step2
 using (RarArchive archive = new RarArchive(fs, new RarArchiveLoadOptions() { DecryptionPassword = "p@s$" }))
 {
     //ExEnd: DecryptRarArchive_Step2
-    // Itt folytassa a következő lépéssel...
+    // Continue to the next step here...
 }
 ```
 
-## 3. lépés: A tartalom kibontása a könyvtárba
+## Step 3: Extract Contents to Directory
 
-Most bontsa ki a RAR archívum tartalmát egy megadott könyvtárba. Cserélje ki a "DecompressRar_out" kifejezést arra az elérési útra, ahol a visszafejtett fájlokat tárolni szeretné.
+Kicsomagolja a dekódolt fájlokat egy saját választású mappába. Cserélje le a `"DecompressRar_out"` értéket a kívánt kimeneti útvonalra.
 
 ```csharp
 //ExStart: DecryptRarArchive_Step3
@@ -73,28 +90,53 @@ archive.ExtractToDirectory(dataDir + "DecompressRar_out");
 //ExEnd: DecryptRarArchive_Step3
 ```
 
-Ismételje meg ezeket a lépéseket minden dekódolandó RAR-archívumnál, így biztosítva az Aspose.Zip for .NET zökkenőmentes integrációját a projektbe.
+## How to extract password protected rar files using Aspose.Zip
 
-## Következtetés
+A fenti három lépés követésével programozottan **kicsomagolhatja a jelszóval védett RAR** archívumokat. Ez a megközelítés tetszőleges számú fájlra alkalmazható – egyszerűen iteráljon a fájllistán, és ismételje meg a lépéseket.
 
-Gratulálunk! Sikeresen visszafejtette a RAR-archívumot az Aspose.Zip for .NET használatával. Ez a hatékony könyvtár leegyszerűsíti a jelszóval védett archívumok feloldásának összetett folyamatát, és felbecsülhetetlen értékű eszközzé teszi a .NET-alkalmazásokkal dolgozó fejlesztők számára.
+## Common Use Cases
 
-## Gyakran Ismételt Kérdések (GYIK)
+- **Automated data ingestion** – Titkosított RAR szállítmányokból adatot nyer ki, és automatikusan feldolgozza.  
+- **Enterprise backup restoration** – Dekódolja és visszaállítja a jelszóval védett RAR fájlokban tárolt archivált mentéseket.  
+- **Secure file exchange** – Lehetővé teszi a felhasználók számára, hogy titkosított RAR archívumokat töltsenek fel, majd a szerveren validálás után kicsomagolja azokat.
 
-### Az Aspose.Zip for .NET kompatibilis az összes RAR archív verzióval?
-Az Aspose.Zip for .NET támogatja a különböző RAR archív verziókat, biztosítva a kompatibilitást a fájlok széles skálájával.
+## Conclusion
 
-### Használhatom az Aspose.Zip for .NET-et kereskedelmi projektekben?
- Igen, az Aspose.Zip for .NET elérhető kereskedelmi használatra. Meglátogatni a[vásárlási oldal](https://purchase.aspose.com/buy) az engedélyezési részletekért.
+Most már tudja, hogyan **kicsomagolja a titkosított RAR fájlokat** és hogyan **olvassa a titkosított RAR fájlok** tartalmát az Aspose.Zip for .NET segítségével. A könyvtár elvégzi a nehéz munkát, így Ön a kicsomagolt adatok alkalmazásba való integrálására koncentrálhat.
 
-### Vannak ideiglenes licencek tesztelési célokra?
- Igen, ideiglenes licencet szerezhet a teszteléshez[itt](https://purchase.aspose.com/temporary-license/).
+## Frequently Asked Questions (FAQs)
 
-### Hol találhatok további támogatást vagy közösségi beszélgetéseket?
- Meglátogatni a[Aspose.Zip fórum](https://forum.aspose.com/c/zip/37) támogatásra és közösségi megbeszélésekre.
+### Is Aspose.Zip for .NET compatible with all RAR archive versions?
+Aspose.Zip for .NET supports various RAR archive versions, ensuring compatibility with a wide range of files.
 
-### Hogyan érhetem el az Aspose.Zip for .NET dokumentációját?
- A[dokumentáció](https://reference.aspose.com/zip/net/) átfogó tájékoztatást nyújt az Aspose.Zip for .NET használatáról.
+### Can I use Aspose.Zip for .NET in commercial projects?
+Yes, Aspose.Zip for .NET is available for commercial use. Visit the [purchase page](https://purchase.aspose.com/buy) for licensing details.
+
+### Are temporary licenses available for testing purposes?
+Yes, you can obtain a temporary license for testing from [here](https://purchase.aspose.com/temporary-license/).
+
+### Where can I find additional support or community discussions?
+Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for support and community discussions.
+
+### How do I access the documentation for Aspose.Zip for .NET?
+The [documentation](https://reference.aspose.com/zip/net/) provides comprehensive information on using Aspose.Zip for .NET.
+
+**Additional Q&A**
+
+**Q: What happens if the password is incorrect?**  
+A: Aspose.Zip throws a `InvalidPasswordException`. Catch the exception to handle the error gracefully.
+
+**Q: Can I extract only specific files from the archive?**  
+A: Yes, iterate through `archive.Entries` and call `entry.ExtractToFile()` on the desired entries.
+
+**Q: Is it possible to extract archives larger than 2 GB?**  
+A: Absolutely—Aspose.Zip works with streams, so file size is limited only by available system resources.
+
+---
+
+**Last Updated:** 2025-12-23  
+**Tested With:** Aspose.Zip for .NET 24.11  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

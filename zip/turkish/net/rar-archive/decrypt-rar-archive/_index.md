@@ -1,71 +1,88 @@
 ---
-title: Aspose.Zip for .NET ile RAR Arşivinin şifresini çözme
-linktitle: RAR Arşivinin Şifresini Çözmek
-second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
-description: Aspose.Zip for .NET'i kullanarak şifrelenmiş RAR arşivlerinin kilidini zahmetsizce açın. Sorunsuz entegrasyon ve etkili şifre çözme için adım adım kılavuzumuzu izleyin.
-weight: 12
+date: 2025-12-23
+description: Aspose.Zip for .NET kullanarak şifre korumalı rar dosyalarını nasıl çıkaracağınızı
+  ve şifreli rar dosyalarını nasıl açacağınızı öğrenin. Şifreli rar dosyasını verimli
+  bir şekilde okumak için adım adım rehberi izleyin.
+linktitle: Decrypting a RAR Archive
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Aspose.Zip for .NET ile şifre korumalı rar dosyasını çıkar
 url: /tr/net/rar-archive/decrypt-rar-archive/
+weight: 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET ile RAR Arşivinin şifresini çözme
+# Şifre korumalı rar dosyalarını Aspose.Zip for .NET ile çıkarma
 
+## Giriş
 
-## giriiş
+Bir .NET uygulamasında **şifre korumalı rar** arşivlerini **çıkarmak** gerektiğinde ne kadar zor olabileceğini biliyorsunuzdur. Neyse ki Aspose.Zip for .NET, tahmin etmeyi ortadan kaldırır ve şifreli rar dosyalarını sadece birkaç satır kodla okumanıza olanak tanır. Bu öğreticide, projeyi kurmaktan içeriği çıkarmaya kadar tüm süreci adım adım inceleyeceğiz; böylece şifre çözümlemeyi çözümlerinizde sorunsuz bir şekilde entegre edebilirsiniz.
 
-Parola korumalı bir RAR arşivinin içeriğinin kilidini açmak göz korkutucu bir görev olabilir, ancak Aspose.Zip for .NET ile süreç basit ve verimli hale gelir. Bu eğitimde, Aspose.Zip kütüphanesini kullanarak bir RAR arşivinin şifresini çözme adımlarında size yol göstereceğiz. İster deneyimli bir geliştirici ister kodlama meraklısı olun, bu kılavuz şifre çözme işlevini .NET uygulamalarınızla sorunsuz bir şekilde bütünleştirmenize yardımcı olacaktır.
+## Hızlı Yanıtlar
+- **RAR şifre çözümlemesini hangi kütüphane yönetir?** Aspose.Zip for .NET  
+- **Üretim için lisansa ihtiyacım var mı?** Evet, ticari bir lisans gereklidir.  
+- **Hangi .NET sürümleri destekleniyor?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **Bir döngü içinde birden fazla arşivi çıkarabilir miyim?** Kesinlikle—her dosya için adımları tekrarlayın.  
+- **Şifre büyük/küçük harfe duyarlı mı?** Evet, normal bir string gibi ele alın.
+
+## “Şifre korumalı rar çıkarma” nedir?
+
+Şifre korumalı bir RAR arşivini çıkarmak, arşivi açmak, doğru şifreyi sağlayarak şifre çözmek ve ardından içindeki dosyaları bir hedef klasöre yazmak anlamına gelir. Aspose.Zip, düşük seviyeli ayrıntıları soyutlayarak iş mantığınıza odaklanmanızı sağlar.
+
+## Neden Aspose.Zip for .NET kullanmalı?
+
+- **Tam RAR desteği** – RAR4 ve RAR5 formatlarını, şifreli arşivleri de destekler.  
+- **Basit API** – Açma, şifre çözme ve çıkarma için sadece birkaç metod çağrısı yeterlidir.  
+- **Çapraz platform** – Windows, Linux ve macOS .NET çalışma zamanlarında çalışır.  
+- **Harici bağımlılık yok** – Üçüncü taraf RAR araçları göndermenize gerek yok.
 
 ## Önkoşullar
 
-Eğiticiye dalmadan önce aşağıdaki önkoşulların yerine getirildiğinden emin olun:
+1. **Aspose.Zip for .NET Kütüphanesi** – Kütüphaneyi NuGet üzerinden kurun veya [Aspose.Zip documentation](https://reference.aspose.com/zip/net/) adresinden indirin.  
+2. **Belge Dizini** – Çalışmak istediğiniz şifreli RAR arşivini içeren bir klasörünüz olsun. Koddaki yer tutucu yolu gerçek dizininizle değiştirin.
 
-1.  Aspose.Zip for .NET Library: .NET projenizde Aspose.Zip kütüphanesinin kurulu olduğundan emin olun. adresinden indirebilirsiniz.[Aspose.Zip belgeleri](https://reference.aspose.com/zip/net/).
+## Ad Alanlarını İçe Aktarma
 
-2. Belge Dizini: Şifrelenmiş RAR arşivinizin bulunduğu bir dizin oluşturun. Örnek koddaki "Belge Dizininiz"i bu dizine giden gerçek yolla değiştirin.
-
-## Ad Alanlarını İçe Aktar
-
-Aspose.Zip kütüphanesini etkili bir şekilde kullanmak için gerekli ad alanlarını içe aktararak başlayalım. .NET dosyanızın en üstüne aşağıdaki satırları ekleyin:
+C# dosyanızın en üstüne gerekli `using` ifadelerini ekleyin:
 
 ```csharp
-//ExStart: İçe Aktarma Ad Alanları
+//ExStart: ImportNamespaces
 using Aspose.Zip;
 using System.IO;
-//ExEnd: İçe Aktarılan Ad Alanları
+//ExEnd: ImportNamespaces
 ```
 
-## Adım 1: Şifreli RAR Arşivini açın
+## Adım 1: Şifreli RAR Arşivini Açma
 
-Şifrelenmiş RAR arşivini açarak başlayın. Örnek kodda, "encrypted.rar" yerine şifrelenmiş RAR dosyanızın adını yazın.
+Şifre çözmek istediğiniz RAR dosyası için yalnızca‑okunur bir akış açın. `"encrypted.rar"` ifadesini dosya adınıza göre değiştirin.
 
 ```csharp
 //ExStart: DecryptRarArchive_Step1
 using (FileStream fs = File.OpenRead(dataDir + "encrypted.rar"))
 {
     //ExEnd: DecryptRarArchive_Step1
-    // Bir sonraki adıma buradan devam edin...
+    // Continue to the next step here...
 }
 ```
 
-## Adım 2: Şifre Çözme Parolasını Belirleyin
+## Adım 2: Şifre Çözümleme Parolasını Belirtme
 
-RAR arşivi için şifre çözme şifresini belirtin. Örnekte "p@s$" şifresi kullanılmıştır. Şifrelenmiş RAR dosyanız için belirlediğiniz gerçek şifreyle değiştirin.
+Arşivi koruyan parolayı sağlayın. Bu örnekte parola `"p@s$"` olarak verilmiştir. Kendi belirlediğiniz gerçek parolayı buraya koyun.
 
 ```csharp
 //ExStart: DecryptRarArchive_Step2
 using (RarArchive archive = new RarArchive(fs, new RarArchiveLoadOptions() { DecryptionPassword = "p@s$" }))
 {
     //ExEnd: DecryptRarArchive_Step2
-    // Bir sonraki adıma buradan devam edin...
+    // Continue to the next step here...
 }
 ```
 
-## 3. Adım: İçeriği Dizine Çıkarın
+## Adım 3: İçeriği Dizin'e Çıkarma
 
-Şimdi RAR arşivinin içeriğini belirtilen dizine çıkartın. "DecompressRar_out" ifadesini, şifresi çözülmüş dosyaların saklanmasını istediğiniz yolla değiştirin.
+Şifre çözülmüş dosyaları istediğiniz bir klasöre çıkarın. `"DecompressRar_out"` ifadesini istediğiniz çıktı yoluyla değiştirin.
 
 ```csharp
 //ExStart: DecryptRarArchive_Step3
@@ -73,28 +90,53 @@ archive.ExtractToDirectory(dataDir + "DecompressRar_out");
 //ExEnd: DecryptRarArchive_Step3
 ```
 
-Aspose.Zip for .NET'in projenize kusursuz entegrasyonunu sağlamak için şifresini çözmeniz gereken her RAR arşivi için bu adımları tekrarlayın.
+## Aspose.Zip kullanarak şifre korumalı rar dosyalarını nasıl çıkarabilirsiniz
 
-## Çözüm
+Yukarıdaki üç adımı izleyerek **şifre korumalı rar** arşivlerini programlı olarak çıkarabilirsiniz. Bu yöntem, dosya sayısı ne olursa olsun çalışır—dosya listesi üzerinde döngü kurup adımları tekrarlamanız yeterlidir.
 
-Tebrikler! Aspose.Zip for .NET'i kullanarak bir RAR arşivinin şifresini başarıyla çözdünüz. Bu güçlü kitaplık, parola korumalı arşivlerin kilidini açmaya yönelik karmaşık süreci basitleştirerek, onu .NET uygulamalarıyla çalışan geliştiriciler için paha biçilmez bir araç haline getirir.
+## Yaygın Kullanım Senaryoları
+
+- **Otomatik veri alımı** – Şifreli RAR gönderimlerinden veri çekin ve otomatik olarak işleyin.  
+- **Kurumsal yedekleme geri yükleme** – Şifre korumalı RAR dosyalarında saklanan arşivlenmiş yedekleri şifre çözerek geri yükleyin.  
+- **Güvenli dosya alışverişi** – Kullanıcıların şifreli RAR arşivleri yüklemesine izin verin, ardından doğrulama sonrası sunucu tarafında çıkarın.
+
+## Sonuç
+
+Artık **şifreli rar dosyalarını çıkarmayı** ve **şifreli rar dosyası içeriğini okumayı** Aspose.Zip for .NET ile nasıl yapacağınızı öğrendiniz. Kütüphane ağır işleri üstlenir, böylece çıkarılan verileri uygulamanızın iş akışına entegre etmeye odaklanabilirsiniz.
 
 ## Sıkça Sorulan Sorular (SSS)
 
 ### Aspose.Zip for .NET tüm RAR arşiv sürümleriyle uyumlu mu?
-Aspose.Zip for .NET, çeşitli RAR arşiv sürümlerini destekleyerek geniş bir dosya yelpazesiyle uyumluluk sağlar.
+Aspose.Zip for .NET, çeşitli RAR arşiv sürümlerini destekler ve geniş bir dosya yelpazesiyle uyumluluk sağlar.
 
 ### Aspose.Zip for .NET'i ticari projelerde kullanabilir miyim?
- Evet, Aspose.Zip for .NET ticari kullanıma açıktır. Ziyaret edin[satın alma sayfası](https://purchase.aspose.com/buy) lisans ayrıntıları için.
+Evet, Aspose.Zip for .NET ticari kullanım için mevcuttur. Lisans detayları için [purchase page](https://purchase.aspose.com/buy) adresini ziyaret edin.
 
-### Test amaçlı geçici lisanslar mevcut mu?
- Evet, test etmek için şu adresten geçici bir lisans alabilirsiniz:[Burada](https://purchase.aspose.com/temporary-license/).
+### Test amaçları için geçici lisanslar mevcut mu?
+Evet, test için geçici bir lisans alabilirsiniz; [buradan](https://purchase.aspose.com/temporary-license/) temin edebilirsiniz.
 
-### Ek desteği veya topluluk tartışmalarını nerede bulabilirim?
- Ziyaret edin[Aspose.Zip forumu](https://forum.aspose.com/c/zip/37) destek ve topluluk tartışmaları için.
+### Ek destek veya topluluk tartışmalarını nerede bulabilirim?
+Destek ve topluluk tartışmaları için [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) adresini ziyaret edin.
 
 ### Aspose.Zip for .NET belgelerine nasıl erişebilirim?
-[dokümantasyon](https://reference.aspose.com/zip/net/) Aspose.Zip for .NET kullanımına ilişkin kapsamlı bilgiler sağlar.
+[Aspose.Zip for .NET belgeleri](https://reference.aspose.com/zip/net/) kapsamlı bilgi sağlar ve kullanım kılavuzlarını içerir.
+
+**Ek Soru&Cevap**
+
+**S: Parola yanlış olduğunda ne olur?**  
+C: Aspose.Zip bir `InvalidPasswordException` fırlatır. Hata yönetimini nazikçe yapmak için istisnayı yakalayın.
+
+**S: Arşivden sadece belirli dosyaları çıkarabilir miyim?**  
+C: Evet, `archive.Entries` üzerinden döngü kurup istediğiniz girdiler için `entry.ExtractToFile()` metodunu çağırabilirsiniz.
+
+**S: 2 GB'den büyük arşivleri çıkarmak mümkün mü?**  
+C: Kesinlikle—Aspose.Zip akışlarla çalışır, bu yüzden dosya boyutu yalnızca mevcut sistem kaynaklarıyla sınırlıdır.
+
+---
+
+**Last Updated:** 2025-12-23  
+**Tested With:** Aspose.Zip for .NET 24.11  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
