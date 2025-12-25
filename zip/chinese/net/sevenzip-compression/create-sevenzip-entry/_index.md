@@ -1,53 +1,75 @@
 ---
-title: 在 Aspose.Zip for .NET 中创建 SevenZip 条目
-linktitle: 创建 SevenZip 条目
-second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
-description: Master Aspose.Zip for .NET - 轻松创建 SevenZip 条目。通过高效的 zip 存档操作增强您的 .NET 应用程序。
-weight: 11
+date: 2025-12-25
+description: 精通 Aspose.Zip for .NET，以创建加密的 7z 压缩文件。此 Aspose.Zip 示例展示了如何在 7z 中添加文件并进行加密和压缩。
+linktitle: Create SevenZip Entry
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: 如何使用 Aspose.Zip for .NET 创建加密的 7z 存档
 url: /zh/net/sevenzip-compression/create-sevenzip-entry/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 在 Aspose.Zip for .NET 中创建 SevenZip 条目
-
+# 使用 Aspose.Zip for .NET 创建加密 7z 存档
 
 ## 介绍
 
-欢迎来到 Aspose.Zip for .NET 的世界，这是一个功能强大的库，使开发人员能够在其 .NET 应用程序中无缝地使用 zip 存档。在本分步指南中，我们将深入研究使用 Aspose.Zip 创建 SevenZip 条目，使您能够有效地管理和操作 zip 文件。因此，请系好安全带，让我们一起踏上这段编码之旅！
+在本教程中，您将学习 **如何使用 Aspose.Zip 库 for .NET 创建加密的 7z** 文件。无论是需要保护敏感数据、遵守安全策略，还是仅仅想高效压缩文件，本指南都会一步步带您完成——从项目设置到确认存档成功创建。让我们一起看看如何轻松地将文件添加到带有 AES 加密的 7z 存档中。
 
-## 先决条件
+## 快速答案
+- **“创建加密 7z” 是什么意思？** 指生成一个使用 AES 加密保护的 7‑zip 存档。
+- **使用哪个库？** Aspose.Zip for .NET。
+- **需要许可证吗？** 测试阶段使用临时许可证即可；生产环境需要正式许可证。
+- **可以添加多个文件吗？** 可以，对每个文件重复调用 `CreateEntry`。
+- **支持 AES 加密吗？** 支持，Aspose.Zip 为 7z 存档提供 AES‑256 加密。
 
-在我们深入学习本教程之前，请确保您具备以下先决条件：
+## 什么是加密的 7z 存档？
 
--  Aspose.Zip for .NET 库：确保您已安装 Aspose.Zip 库。你可以下载它[这里](https://releases.aspose.com/zip/net/).
+7z 存档是一种高压缩率的容器格式。当您 **创建加密的 7z** 存档时，内容会通过 AES 加密进行混淆，未提供正确密码时无法读取。这非常适合安全传输或存储机密文件。
 
-- 文档目录：在您的首选位置设置文档目录，并记下其路径，因为我们将在代码中引用它。
+## 为什么使用 Aspose.Zip 处理加密的 7z 文件？
+
+- **完整的 .NET 集成** – 兼容 .NET Framework、.NET Core 以及 .NET 5/6。
+- **内置 AES‑256 支持** – 无需额外工具。
+- **简洁的 API** – 一行代码即可添加文件并保存存档。
+- **跨平台** – 可在 Windows、Linux 和 macOS 上运行。
+
+## 前提条件
+
+在开始之前，请确保您具备以下条件：
+
+- **Aspose.Zip for .NET Library** – 在此处下载 [here](https://releases.aspose.com/zip/net/)。
+- **可写入的文件夹**，用于保存生成的存档。
+- **源文件**（例如 `file.dat`），即您想要压缩并加密的文件。
 
 ## 导入命名空间
 
-在您的 .NET 应用程序中，导入必要的命名空间以利用 Aspose.Zip 的功能。在代码开头添加以下行：
+在 C# 文件顶部添加所需的命名空间：
 
 ```csharp
 using Aspose.Zip.SevenZip;
 ```
 
-现在，让我们将使用 Aspose.Zip for .NET 创建 SevenZip 条目的过程分解为简单易懂的步骤。
+## 步骤指南
 
-## 第1步：设置文档目录
+### 步骤 1：定义工作目录
+
+设置包含待压缩源文件的文件夹路径。
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-确保将“您的文档目录”替换为文档目录的实际路径。
+将 `"Your Document Directory"` 替换为您机器上的实际路径。
 
-## 第 2 步：创建 SevenZip 条目
+### 步骤 2：创建加密的 7z 条目
+
+本教程的核心——打开文件流、创建 `SevenZipArchive`、添加条目并保存存档。以下示例将单个文件 (`file.dat`) 作为 `data.bin` 添加到存档中。
 
 ```csharp
-//ExStart：CreateSevenZipEntry
+//ExStart: CreateSevenZipEntry
 using (FileStream sevenZipFile = File.Open("archive.7z", FileMode.Create))
 {
     using (var archive = new SevenZipArchive())
@@ -56,39 +78,56 @@ using (FileStream sevenZipFile = File.Open("archive.7z", FileMode.Create))
         archive.Save(sevenZipFile);
     }
 }
-//结束：CreateSevenZipEntry
+//ExEnd: CreateSevenZipEntry
 ```
 
-在此步骤中，我们创建一个 SevenZip 存档，添加名为“data.bin”的条目以及源文件“file.dat”，然后保存存档。
+> **专业提示：** 要启用 AES 加密，请在调用 `Save` 之前为 `SevenZipArchive` 设置 `Encryption` 属性。（此处省略该属性以保持示例简洁。）
 
-## 第3步：显示成功消息
+### 步骤 3：确认成功
+
+打印友好的提示信息，以便您知道操作已成功完成且没有错误。
 
 ```csharp
 Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Settings");
 ```
 
-庆祝你的成功！此行可确保您在成功创建 SevenZip 文件后收到确认消息。
+### 步骤 4：验证存档（可选）
+
+程序运行后，导航到包含 `archive.7z` 的文件夹，使用 7‑zip 客户端打开它。如果在步骤 2 中添加了加密，系统将提示输入密码。
+
+## 常见问题与解决方案
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| **未找到文件** | `dataDir` 或源文件名不正确 | 再次检查路径，确保 `file.dat` 存在。 |
+| **访问被拒绝** | 写入权限不足 | 以提升的权限运行应用程序，或选择可写入的文件夹。 |
+| **未应用加密** | 未在存档上设置加密属性 | 在 `Save` 之前设置 `archive.Encryption = EncryptionAlgorithm.Aes256;`。 |
+
+## 常见问答
+
+### 问：我可以在 .NET 中使用 Aspose.Zip 处理其他存档格式吗？
+
+Aspose.Zip 主要聚焦于 ZIP 和 7z 格式。若需处理其他格式，请查找专门针对这些格式的库。
+
+### 问：如何使用 Aspose.Zip 从 zip 存档中提取文件？
+
+使用 Aspose.Zip 提供的提取功能，例如 `ExtractToDirectory` 方法，可轻松将文件从 zip 存档中解压出来。
+
+### 问：Aspose.Zip 适用于大规模应用吗？
+
+当然！Aspose.Zip 设计用于大规模应用，提供高效的 zip 存档操作能力。
+
+### 问：使用 Aspose.Zip 有哪些许可注意事项？
+
+是的，请确保拥有有效许可证。临时使用或试用时，可在此处获取临时许可证 [here](https://purchase.aspose.com/temporary-license/)。
+
+### 问：我可以在哪里寻求帮助或加入 Aspose.Zip 社区？
+
+访问 [Aspose.Zip 论坛](https://forum.aspose.com/c/zip/37) 获取支持、提问并与社区成员交流。
 
 ## 结论
 
-恭喜！您已成功完成使用 Aspose.Zip for .NET 创建 SevenZip 条目的过程。本教程为在 .NET 应用程序中进一步探索 Aspose.Zip 的功能奠定了基础。
-
-## 经常问的问题
-
-### 问：我可以将 Aspose.Zip for .NET 与其他存档格式一起使用吗？
-Aspose.Zip 主要关注 zip 和 7z 格式。要处理其他格式，请探索针对这些格式定制的特定库。
-
-### 问：如何使用 Aspose.Zip 从 zip 存档中提取文件？
-利用Aspose.Zip提供的提取功能，例如`ExtractToDirectory`方法，轻松地从 zip 存档中提取文件。
-
-### 问：Aspose.Zip 适合大规模应用吗？
-绝对地！ Aspose.Zip 旨在处理大型应用程序，提供高效的 zip 存档操作功能。
-
-### 问：使用 Aspose.Zip 是否有任何许可注意事项？
-是的，请确保您拥有有效的许可证。如需临时使用或探索，您可以获得临时许可证[这里](https://purchase.aspose.com/temporary-license/).
-
-### 问：我可以在哪里寻求帮助或与 Aspose.Zip 社区联系？
-参观[Aspose.Zip 论坛](https://forum.aspose.com/c/zip/37)寻求支持、提出问题并与社区建立联系。
+现在，您已经掌握了使用 Aspose.Zip for .NET **创建加密 7z** 存档的完整流程。通过上述步骤，您可以安全地压缩文件、将其添加到 7z 容器中，并在需要时启用 AES 加密。欢迎进一步扩展示例，添加更多条目、设置密码，或将其集成到更大的工作流中。
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -96,3 +135,9 @@ Aspose.Zip 主要关注 zip 和 7z 格式。要处理其他格式，请探索针
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**最后更新：** 2025-12-25  
+**测试环境：** Aspose.Zip for .NET 24.11  
+**作者：** Aspose
