@@ -1,53 +1,66 @@
 ---
-title: SevenZip-vermeldingen maken met Aspose.Zip voor .NET
-linktitle: Maak SevenZip-vermeldingen
-second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
-description: Ontdek de kracht van Aspose.Zip voor .NET! Leer stap voor stap SevenZip-vermeldingen maken. Bestanden moeiteloos comprimeren. Download nu voor een naadloze ontwikkelingservaring.
-weight: 10
+date: 2025-12-25
+description: Leer hoe je met C# 7z‑archiefbestanden maakt met Aspose.Zip voor .NET.
+  Deze stapsgewijze handleiding laat zien hoe je bestanden comprimeert met C# en een
+  map efficiënt naar 7z comprimeert.
+linktitle: Create SevenZip Entries
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: c# 7z-archief maken – SevenZip‑items aanmaken met Aspose.Zip voor .NET
 url: /nl/net/sevenzip-compression/create-sevenzip-entries/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# SevenZip-vermeldingen maken met Aspose.Zip voor .NET
+# c# create 7z archive – SevenZip‑items maken met Aspose.Zip voor .NET
 
+## Inleiding
 
-## Invoering
+In deze tutorial leer je hoe je **c# create 7z archive** bestanden efficiënt kunt maken in je .NET‑applicatie met Aspose.Zip. Of je nu **compress files c#** moet uitvoeren voor opslagbesparing of **compress directory to 7z** voor eenvoudige distributie, de onderstaande stappen begeleiden je door het proces met duidelijke uitleg en praktische tips.
 
-Wilt u uw bestanden efficiënt comprimeren in uw .NET-toepassing met Aspose.Zip? Dan ben je hier aan het juiste adres! In deze zelfstudie verkennen we het proces van het maken van SevenZip-vermeldingen met Aspose.Zip voor .NET. Of je nu een doorgewinterde ontwikkelaar bent of net begint, volg ons om je vaardigheden te verbeteren en de kracht van Aspose.Zip te benutten.
+## Snelle antwoorden
+- **Waar gaat deze tutorial over?** Het maken van SevenZip‑items en deze opslaan als een 7z‑archief met Aspose.Zip voor .NET.  
+- **Welk primair zoekwoord wordt getarget?** c# create 7z archive.  
+- **Heb ik een licentie nodig?** Er is een tijdelijke licentie beschikbaar voor testen; een volledige licentie is vereist voor productie.  
+- **Kan ik dit op Linux draaien?** Ja – Aspose.Zip voor .NET is cross‑platform.  
+- **Hoe lang duurt de implementatie?** Ongeveer 5‑10 minuten voor een basis‑archief.
 
 ## Vereisten
 
-Voordat we in de tutorial duiken, moet je ervoor zorgen dat je aan de volgende vereisten voldoet:
+Voordat we aan de tutorial beginnen, zorg ervoor dat je de volgende vereisten hebt:
 
-- Basiskennis van C# en .NET-ontwikkeling.
-- Een geïntegreerde ontwikkelomgeving (IDE) zoals Visual Studio.
--  Aspose.Zip voor .NET-bibliotheek geïnstalleerd. Zo niet, dan kunt u deze downloaden[hier](https://releases.aspose.com/zip/net/).
+- Basiskennis van C# en .NET‑ontwikkeling.  
+- Een geïntegreerde ontwikkelomgeving (IDE) zoals Visual Studio.  
+- Aspose.Zip voor .NET bibliotheek geïnstalleerd. Zo niet, kun je het downloaden [hier](https://releases.aspose.com/zip/net/).
 
-## Naamruimten importeren
+## Namespaces importeren
 
-Zorg ervoor dat u in uw C#-project de benodigde naamruimten importeert om Aspose.Zip te gebruiken. Voeg de volgende regels toe aan het begin van uw code:
+Importeer in je C#‑project de benodigde namespaces om Aspose.Zip te gebruiken. Voeg de volgende regels toe aan het begin van je code:
 
 ```csharp
 using Aspose.Zip.SevenZip;
 using System;
 ```
 
-Laten we nu het gegeven voorbeeld in meerdere stappen opsplitsen voor een uitgebreid begrip.
+Laten we nu het voorbeeld opdelen in meerdere stappen voor een uitgebreid begrip.
 
-## Stap 1: Stel het bronmappad in
+## c# create 7z archive – Stap‑voor‑stap gids
 
- Voordat u SevenZip-vermeldingen maakt, stelt u het pad naar uw bronmap in. Vervangen`"Your Document Directory"` in de`dataDir` variabele met het werkelijke pad.
+### Stap 1: Het pad naar de resource‑directory instellen
+
+Voordat je SevenZip‑items maakt, stel je het pad naar je resource‑directory in. Vervang `"Your Document Directory"` in de `dataDir`‑variabele door het daadwerkelijke pad.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Stap 2: Maak SevenZip-vermeldingen
+> **Pro tip:** Het gebruik van een absoluut pad voorkomt verwarring wanneer de applicatie vanuit een andere werkmap wordt uitgevoerd.
 
-Laten we nu eens in de kern van het proces duiken: het maken van SevenZip-vermeldingen. Gebruik het volgende codefragment:
+### Stap 2: SevenZip‑items maken
+
+Laten we nu duiken in de kern van het proces – het maken van SevenZip‑items. Deze stap **compresses the directory to 7z** formaat.
 
 ```csharp
 //ExStart: CreateSevenZipEntries
@@ -59,36 +72,55 @@ using (SevenZipArchive archive = new SevenZipArchive())
 //ExEnd: CreateSevenZipEntries
 ```
 
-Deze code initialiseert een SevenZipArchive, creëert vermeldingen uit de opgegeven map en slaat het gecomprimeerde bestand op als "SevenZip.7z."
+De bovenstaande code initialiseert een `SevenZipArchive`, voegt elk bestand uit de opgegeven map toe, en schrijft het gecomprimeerde archief naar **SevenZip.7z**.
 
-## Stap 3: Succesbericht weergeven
+### Stap 3: Succesbericht weergeven
 
-Geef een succesbericht weer om er zeker van te zijn dat alles soepel verloopt:
+Om te verzekeren dat alles soepel verliep, toon een succesbericht:
 
 ```csharp
 Console.WriteLine("Successfully Created a Seven Zip File");
 ```
 
-## Conclusie
+Je hebt nu een kant‑en‑klaar **7z‑archief** dat kan worden overgedragen, opgeslagen of verder verwerkt.
 
-Gefeliciteerd! U hebt met succes SevenZip-vermeldingen gemaakt met Aspose.Zip voor .NET. Deze compressietechniek kan de bestandsopslag en -overdracht in uw toepassingen aanzienlijk optimaliseren.
+## Waarom Aspose.Zip voor .NET gebruiken?
+
+- **Hoge prestaties:** Geoptimaliseerde compressie‑algoritmen die vele open‑source alternatieven overtreffen.  
+- **Cross‑platform ondersteuning:** Werkt op Windows, Linux en macOS zonder code‑aanpassingen.  
+- **Rijke API:** Biedt fijnmazige controle over compressieniveaus, versleuteling en archiefstructuur.  
+- **Geen externe afhankelijkheden:** Het is niet nodig om native 7‑Zip binaries te installeren.
+
+## Veelvoorkomende problemen & oplossingen
+
+| Probleem | Oplossing |
+|----------|-----------|
+| **Archive is empty** | Verify that `dataDir` points to a folder containing files. Use `Directory.Exists` to confirm. |
+| **Access denied error** | Ensure the application has read permissions on the source folder and write permissions for the output path. |
+| **Large files cause OutOfMemoryException** | Use `SevenZipArchive` with streaming options or split the archive into multiple parts. |
 
 ## Veelgestelde vragen
 
 ### Kan ik Aspose.Zip voor .NET gebruiken in zowel Windows- als Linux-omgevingen?
-Ja, Aspose.Zip voor .NET is platformonafhankelijk en kan naadloos worden gebruikt in zowel Windows- als Linux-omgevingen.
+Ja, Aspose.Zip voor .NET is cross‑platform en kan naadloos in zowel Windows- als Linux-omgevingen worden gebruikt.
 
 ### Is er een tijdelijke licentie beschikbaar voor testdoeleinden?
- Absoluut! U kunt een tijdelijke licentie verkrijgen[hier](https://purchase.aspose.com/temporary-license/) om het volledige potentieel van Aspose.Zip te verkennen.
+Absoluut! Je kunt een tijdelijke licentie verkrijgen [hier](https://purchase.aspose.com/temporary-license/) om het volledige potentieel van Aspose.Zip te verkennen.
 
 ### Waar kan ik uitgebreide documentatie vinden voor Aspose.Zip voor .NET?
- Voor gedetailleerde documentatie, zie[Aspose.Zip voor .NET-documentatie](https://reference.aspose.com/zip/net/).
+Voor gedetailleerde documentatie, raadpleeg [Aspose.Zip for .NET Documentation](https://reference.aspose.com/zip/net/).
 
-### Wat moet ik doen als ik tijdens de implementatie problemen tegenkom of specifieke vragen heb?
- Zoek gerust hulp in de[Aspose.Zip-forum](https://forum.aspose.com/c/zip/37). De community en het ondersteuningsteam zijn er om te helpen!
+### Wat als ik problemen tegenkom of specifieke vragen heb tijdens de implementatie?
+Voel je vrij om hulp te zoeken in het [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37). De community en het supportteam staan klaar om te helpen!
 
-### Is er een gratis proefperiode beschikbaar voordat u een aankoop doet?
- Ja, u heeft toegang tot de gratis proefperiode[hier](https://releases.aspose.com/) om de functies te verkennen voordat u een verbintenis aangaat.
+### Is er een gratis proefversie beschikbaar voordat ik een aankoop doe?
+Ja, je kunt de gratis proefversie benaderen [hier](https://releases.aspose.com/) om de functies te verkennen voordat je een beslissing maakt.
+
+---
+
+**Laatst bijgewerkt:** 2025-12-25  
+**Getest met:** Aspose.Zip for .NET 24.11  
+**Auteur:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

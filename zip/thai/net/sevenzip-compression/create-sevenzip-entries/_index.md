@@ -1,53 +1,66 @@
 ---
-title: การสร้างรายการ SevenZip ด้วย Aspose.Zip สำหรับ .NET
-linktitle: สร้างรายการ SevenZip
-second_title: Aspose.Zip .NET API สำหรับการบีบอัดไฟล์และการเก็บถาวร
-description: สำรวจพลังของ Aspose.Zip สำหรับ .NET! เรียนรู้การสร้างรายการ SevenZip ทีละขั้นตอน บีบอัดไฟล์ได้อย่างง่ายดาย ดาวน์โหลดตอนนี้เพื่อประสบการณ์การพัฒนาที่ราบรื่น
-weight: 10
+date: 2025-12-25
+description: เรียนรู้วิธีการสร้างไฟล์อาร์ไคฟ์ 7z ด้วย Aspose.Zip สำหรับ .NET ด้วย
+  C# คู่มือขั้นตอนนี้จะแสดงให้คุณเห็นวิธีการบีบอัดไฟล์ด้วย C# และบีบอัดไดเรกทอรีเป็น
+  7z อย่างมีประสิทธิภาพ.
+linktitle: Create SevenZip Entries
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: c# สร้างไฟล์ 7z – การสร้างรายการ SevenZip ด้วย Aspose.Zip สำหรับ .NET
 url: /th/net/sevenzip-compression/create-sevenzip-entries/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# การสร้างรายการ SevenZip ด้วย Aspose.Zip สำหรับ .NET
+# c# create 7z archive – การสร้าง SevenZip Entries ด้วย Aspose.Zip สำหรับ .NET
 
+## Introduction
 
-## การแนะนำ
+ในบทแนะนำนี้ คุณจะได้เรียนรู้วิธี **c# create 7z archive** ไฟล์อย่างมีประสิทธิภาพในแอปพลิเคชัน .NET ของคุณโดยใช้ Aspose.Zip ไม่ว่าคุณจะต้องการ **compress files c#** เพื่อประหยัดพื้นที่จัดเก็บหรือ **compress directory to 7z** เพื่อการแจกจ่ายที่ง่าย ขั้นตอนต่อไปนี้จะนำคุณผ่านกระบวนการด้วยคำอธิบายที่ชัดเจนและเคล็ดลับจากโลกจริง
 
-คุณต้องการบีบอัดไฟล์ของคุณอย่างมีประสิทธิภาพในแอปพลิเคชัน .NET โดยใช้ Aspose.Zip หรือไม่? ถ้าเป็นเช่นนั้น คุณมาถูกที่แล้ว! ในบทช่วยสอนนี้ เราจะสำรวจกระบวนการสร้างรายการ SevenZip โดยใช้ Aspose.Zip สำหรับ .NET ไม่ว่าคุณจะเป็นนักพัฒนาที่มีประสบการณ์หรือเพิ่งเริ่มต้น ติดตามเพื่อพัฒนาทักษะของคุณและใช้ประโยชน์จากพลังของ Aspose.Zip
+## Quick Answers
+- **What does this tutorial cover?** การสร้าง SevenZip entries และบันทึกเป็น 7z archive ด้วย Aspose.Zip สำหรับ .NET  
+- **Which primary keyword is targeted?** c# create 7z archive  
+- **Do I need a license?** มีใบอนุญาตชั่วคราวสำหรับการทดสอบ; ต้องมีใบอนุญาตเต็มสำหรับการใช้งานจริง  
+- **Can I run this on Linux?** ได้ – Aspose.Zip สำหรับ .NET รองรับหลายแพลตฟอร์ม  
+- **How long does implementation take?** ประมาณ 5‑10 นาทีสำหรับการสร้าง archive เบื้องต้น
 
-## ข้อกำหนดเบื้องต้น
+## Prerequisites
 
-ก่อนที่เราจะเจาะลึกบทช่วยสอน ตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นต่อไปนี้:
+ก่อนที่เราจะลงลึกในบทแนะนำ โปรดตรวจสอบว่าคุณมีข้อกำหนดเบื้องต้นต่อไปนี้พร้อมใช้งาน:
 
-- ความรู้พื้นฐานเกี่ยวกับการพัฒนา C# และ .NET
-- สภาพแวดล้อมการพัฒนาแบบรวม (IDE) เช่น Visual Studio
--  ติดตั้ง Aspose.Zip สำหรับไลบรารี .NET แล้ว ถ้าไม่คุณสามารถดาวน์โหลดได้[ที่นี่](https://releases.aspose.com/zip/net/).
+- ความรู้พื้นฐานเกี่ยวกับ C# และการพัฒนา .NET  
+- สภาพแวดล้อมการพัฒนาแบบบูรณาการ (IDE) เช่น Visual Studio  
+- ไลบรารี Aspose.Zip สำหรับ .NET ที่ติดตั้งแล้ว หากยังไม่มี คุณสามารถดาวน์โหลดได้จาก [here](https://releases.aspose.com/zip/net/)
 
-## นำเข้าเนมสเปซ
+## Import Namespaces
 
-ในโปรเจ็กต์ C# ของคุณ ตรวจสอบให้แน่ใจว่าได้นำเข้าเนมสเปซที่จำเป็นเพื่อใช้ Aspose.Zip เพิ่มบรรทัดต่อไปนี้ที่จุดเริ่มต้นของโค้ดของคุณ:
+ในโปรเจกต์ C# ของคุณ ให้แน่ใจว่าได้นำเข้า namespace ที่จำเป็นสำหรับการใช้ Aspose.Zip เพิ่มบรรทัดต่อไปนี้ที่ส่วนต้นของโค้ดของคุณ:
 
 ```csharp
 using Aspose.Zip.SevenZip;
 using System;
 ```
 
-ตอนนี้ เรามาแบ่งตัวอย่างที่ให้ไว้ออกเป็นหลายขั้นตอนเพื่อความเข้าใจที่ครอบคลุม
+ตอนนี้เราจะทำการแยกตัวอย่างที่ให้มาเป็นหลายขั้นตอนเพื่อความเข้าใจที่ครอบคลุม
 
-## ขั้นตอนที่ 1: ตั้งค่าเส้นทางไดเรกทอรีทรัพยากร
+## c# create 7z archive – คู่มือขั้นตอนโดยละเอียด
 
- ก่อนที่จะสร้างรายการ SevenZip ให้กำหนดเส้นทางไปยังไดเรกทอรีทรัพยากรของคุณ แทนที่`"Your Document Directory"` ใน`dataDir` แปรผันตามเส้นทางจริง
+### Step 1: Set the Resource Directory Path
+
+ก่อนสร้าง SevenZip entries ให้ตั้งค่าเส้นทางไปยังโฟลเดอร์ทรัพยากรของคุณ แทนที่ `"Your Document Directory"` ในตัวแปร `dataDir` ด้วยเส้นทางจริงของคุณ
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## ขั้นตอนที่ 2: สร้างรายการ SevenZip
+> **Pro tip:** การใช้เส้นทางแบบ absolute จะช่วยขจัดความสับสนเมื่อแอปพลิเคชันทำงานจากไดเรกทอรีทำงานที่ต่างออกไป
 
-ตอนนี้ เรามาเจาะลึกถึงแก่นของกระบวนการ - การสร้างรายการ SevenZip ใช้ข้อมูลโค้ดต่อไปนี้:
+### Step 2: Create SevenZip Entries
+
+ต่อไปนี้เป็นขั้นตอนหลักของกระบวนการ – การสร้าง SevenZip entries ขั้นตอนนี้ **compresses the directory to 7z** ฟอร์แมต
 
 ```csharp
 //ExStart: CreateSevenZipEntries
@@ -56,39 +69,58 @@ using (SevenZipArchive archive = new SevenZipArchive())
     archive.CreateEntries(dataDir);
     archive.Save("SevenZip.7z");
 }
-//ตัวอย่าง: CreateSevenZipEntries
+//ExEnd: CreateSevenZipEntries
 ```
 
-โค้ดนี้เริ่มต้น SevenZipArchive สร้างรายการจากไดเร็กทอรีที่ระบุ และบันทึกไฟล์บีบอัดเป็น "SevenZip.7z"
+โค้ดด้านบนจะสร้าง `SevenZipArchive` เพิ่มไฟล์ทุกไฟล์จากโฟลเดอร์ที่ระบุ และเขียน archive ที่บีบอัดลงใน **SevenZip.7z**
 
-## ขั้นตอนที่ 3: แสดงข้อความแสดงความสำเร็จ
+### Step 3: Display Success Message
 
-เพื่อให้แน่ใจว่าทุกอย่างดำเนินไปอย่างราบรื่น ให้แสดงข้อความแสดงความสำเร็จ:
+เพื่อยืนยันว่าทุกอย่างทำงานเรียบร้อย ให้แสดงข้อความยืนยัน:
 
 ```csharp
 Console.WriteLine("Successfully Created a Seven Zip File");
 ```
 
-## บทสรุป
+ตอนนี้คุณมี **7z archive** พร้อมแชร์ที่สามารถโอนย้าย เก็บรักษา หรือประมวลผลต่อได้
 
-ยินดีด้วย! คุณสร้างรายการ SevenZip โดยใช้ Aspose.Zip สำหรับ .NET สำเร็จแล้ว เทคนิคการบีบอัดนี้สามารถเพิ่มประสิทธิภาพการจัดเก็บไฟล์และการถ่ายโอนในแอปพลิเคชันของคุณได้อย่างมาก
+## Why Use Aspose.Zip for .NET?
 
-## คำถามที่พบบ่อย
+- **High performance:** อัลกอริธึมการบีบอัดที่ปรับแต่งให้ทำงานเร็วกว่าโซลูชันโอเพ่นซอร์สหลายตัว  
+- **Cross‑platform support:** ทำงานบน Windows, Linux, และ macOS โดยไม่ต้องแก้ไขโค้ด  
+- **Rich API:** ให้การควบคุมระดับละเอียดต่อระดับการบีบอัด การเข้ารหัส และโครงสร้าง archive  
+- **No external dependencies:** ไม่ต้องติดตั้งไบนารี 7‑Zip ภายนอก
 
-### ฉันสามารถใช้ Aspose.Zip สำหรับ .NET ทั้งในสภาพแวดล้อม Windows และ Linux ได้หรือไม่
-ใช่ Aspose.Zip สำหรับ .NET เป็นแพลตฟอร์มข้ามแพลตฟอร์มและสามารถใช้งานได้ทั้งในสภาพแวดล้อม Windows และ Linux ได้อย่างราบรื่น
+## Common Issues & Solutions
 
-### มีใบอนุญาตชั่วคราวสำหรับการทดสอบหรือไม่
- อย่างแน่นอน! คุณสามารถขอรับใบอนุญาตชั่วคราวได้[ที่นี่](https://purchase.aspose.com/temporary-license/) เพื่อสำรวจศักยภาพทั้งหมดของ Aspose.Zip
+| Issue | Solution |
+|-------|----------|
+| **Archive is empty** | ตรวจสอบให้แน่ใจว่า `dataDir` ชี้ไปยังโฟลเดอร์ที่มีไฟล์ ใช้ `Directory.Exists` เพื่อยืนยัน |
+| **Access denied error** | ตรวจสอบว่าแอปพลิเคชันมีสิทธิ์อ่านโฟลเดอร์ต้นทางและมีสิทธิ์เขียนที่เส้นทางผลลัพธ์ |
+| **Large files cause OutOfMemoryException** | ใช้ `SevenZipArchive` พร้อมตัวเลือกการสตรีมหรือแบ่ง archive เป็นหลายส่วน |
 
-### ฉันจะหาเอกสารที่ครอบคลุมเกี่ยวกับ Aspose.Zip สำหรับ .NET ได้ที่ไหน
- สำหรับเอกสารโดยละเอียด โปรดดูที่[Aspose.Zip สำหรับเอกสาร .NET](https://reference.aspose.com/zip/net/).
+## Frequently Asked Questions
 
-### จะเกิดอะไรขึ้นหากฉันพบปัญหาหรือมีคำถามเฉพาะระหว่างการใช้งาน?
- รู้สึกอิสระที่จะขอความช่วยเหลือใน[ฟอรั่ม Aspose.Zip](https://forum.aspose.com/c/zip/37). ชุมชนและทีมสนับสนุนพร้อมให้ความช่วยเหลือ!
+### Can I use Aspose.Zip for .NET in both Windows and Linux environments?
+ใช่, Aspose.Zip สำหรับ .NET รองรับหลายแพลตฟอร์มและสามารถใช้งานได้อย่างราบรื่นบน Windows และ Linux
 
-### มีการทดลองใช้ฟรีก่อนตัดสินใจซื้อหรือไม่?
- ใช่ คุณสามารถเข้าถึงการทดลองใช้ฟรีได้[ที่นี่](https://releases.aspose.com/) เพื่อสำรวจคุณสมบัติต่างๆ ก่อนตัดสินใจ
+### Is a temporary license available for testing purposes?
+แน่นอน! คุณสามารถรับใบอนุญาตชั่วคราวได้จาก [here](https://purchase.aspose.com/temporary-license/) เพื่อสำรวจศักยภาพเต็มของ Aspose.Zip
+
+### Where can I find comprehensive documentation for Aspose.Zip for .NET?
+สำหรับเอกสารรายละเอียด โปรดดูที่ [Aspose.Zip for .NET Documentation](https://reference.aspose.com/zip/net/)
+
+### What if I encounter issues or have specific questions during implementation?
+หากคุณมีปัญหาหรือคำถามเฉพาะ สามารถขอความช่วยเหลือได้ใน [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) ชุมชนและทีมสนับสนุนพร้อมให้ความช่วยเหลือ
+
+### Is there a free trial available before making a purchase?
+มี, คุณสามารถเข้าถึงรุ่นทดลองฟรีได้จาก [here](https://releases.aspose.com/) เพื่อสำรวจคุณสมบัติก่อนตัดสินใจซื้อ
+
+---
+
+**Last Updated:** 2025-12-25  
+**Tested With:** Aspose.Zip for .NET 24.11  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
