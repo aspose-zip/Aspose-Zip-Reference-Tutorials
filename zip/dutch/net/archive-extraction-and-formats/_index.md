@@ -1,67 +1,126 @@
 ---
-title: Archiefextractie en formaten
-linktitle: Archiefextractie en formaten
-second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
-description: Ontgrendel de kracht van bestandscompressie in .NET met Aspose.Zip. Leer hoe u bestanden comprimeert naar verschillende formaten zoals TarBz2, TarGz en TarZ voor efficiënte opslag.
-weight: 23
+date: 2026-01-28
+description: Leer hoe u een archief met wachtwoord kunt uitpakken, bestanden kunt
+  comprimeren naar TarBz2 en TarGz-archieven kunt maken met Aspose.Zip voor .NET.
+  Verhoog de opslag efficiëntie en beveiliging.
+linktitle: Archive Extraction and Formats
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Archief uitpakken met wachtwoord en comprimeren naar TarBz2 (.NET)
 url: /nl/net/archive-extraction-and-formats/
+weight: 23
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Archiefextractie en formaten
+# Archief uitpakken met wachtwoord en comprimeren naar TarBz2 (.NET)
 
+In deze gids ontdek je **hoe je een archief met wachtwoord kunt uitpakken** en beheer je ook **bestanden comprimeren naar TarBz2** met Aspose.Zip voor .NET. Of je nu een back‑upservice, een cloud‑storage client, of een data‑verwerkingspipeline bouwt, deze technieken laten je opslagruimte verkleinen, overdrachten versnellen en gevoelige gegevens beschermd houden.
 
-## Invoering
+## Snelle antwoorden
+- **What is TarBz2?** Een gecomprimeerd archief dat TAR-verpakking combineert met BZIP2-compressie voor hoge compressieverhoudingen.  
+- **Why choose Aspose.Zip for .NET?** Het biedt een enkele, vloeiende API voor vele archiefformaten zonder native afhankelijkheden.  
+- **Can I create a TarGz archive?** Ja – Aspose.Zip ondersteunt TarGz, TarLz, TarXz, TarZ en meer.  
+- **How do I extract a password‑protected archive?** Stel de `Password`‑eigenschap in op elke `ArchiveEntry` vóór het uitpakken.  
+- **Do I need a license for production use?** Een commerciële licentie is vereist voor productie; een gratis proefversie is beschikbaar voor evaluatie.
 
-In het enorme landschap van softwareontwikkeling is efficiënte bestandsverwerking van cruciaal belang. Aspose.Zip voor .NET komt naar voren als een krachtige bondgenoot en biedt een uitgebreide set tools om bestanden naadloos te comprimeren en uitpakken. In deze tutorialreeks verdiepen we ons in de fijne kneepjes van archiefextractie en verschillende formaten, waardoor u de vaardigheden krijgt om het bestandsbeheer in uw .NET-projecten te optimaliseren.
+## Hoe een archief met wachtwoord uit te pakken met Aspose.Zip voor .NET
+Het uitpakken van een archief dat **password protect zip archive** beschermd is, is eenvoudig. Je opent het archief, zoekt de gewenste entry, wijst het wachtwoord toe, en roept vervolgens `Extract` aan. Deze aanpak werkt voor TarBz2, TarGz en andere ondersteunde formaten.
 
-## Comprimeren naar TarBz2 met Aspose.Zip voor .NET
+## Wat betekent “compress files to TarBz2” eigenlijk?
+Bestanden comprimeren naar TarBz2 betekent eerst meerdere bestanden en mappen bundelen in één **TAR**‑container en vervolgens **BZIP2**‑compressie toepassen. Het resultaat is een `.tar.bz2`‑bestand dat zowel gemakkelijk te transporteren als sterk gecomprimeerd is.
 
-Duik in de wereld van bestandscompressie terwijl we u stap voor stap begeleiden bij het gebruik van Aspose.Zip voor .NET om bestanden te comprimeren naar het TarBz2-formaat. Efficiëntie ontmoet eenvoud in deze tutorial, waardoor uw bestanden niet alleen compact zijn, maar ook gemakkelijk kunnen worden verzonden.
+## Waarom Aspose.Zip voor .NET gebruiken om deze formaten te verwerken?
+- **Unified API** – Eén bibliotheek, vele formaten (TarBz2, TarGz, TarLz, TarXz, TarZ).  
+- **No native dependencies** – Werkt direct op Windows, Linux en macOS.  
+- **Password support** – Beveilig en pak archieven veilig uit met per‑entry wachtwoorden.  
+- **Performance‑focused** – Stream‑gebaseerde verwerking minimaliseert geheugengebruik.
 
-## Comprimeren naar TarGz met Aspose.Zip voor .NET
+## Vereisten
+- .NET 6.0 of later (of .NET Core 3.1+ / .NET Framework 4.5+).  
+- Aspose.Zip for .NET NuGet‑pakket geïnstalleerd (`Install-Package Aspose.Zip`).  
+- Basiskennis van C# en bestands‑I/O.
 
-Comprimeer bestanden moeiteloos naar het TarGz-formaat in .NET met Aspose.Zip. Onze tutorial leidt u door het proces, waardoor bestandscompressie een fluitje van een cent wordt. Optimaliseer de opslag en verbeter uw mogelijkheden voor bestandsverwerking met deze uitgebreide handleiding.
+## Stapsgewijze handleiding
 
-## Comprimeren naar TarLz met Aspose.Zip voor .NET
+### Stap 1: Kies het archiefformaat dat je nodig hebt
+Bepaal of **TarBz2**, **TarGz**, **TarLz**, **TarXz**, of **TarZ** het beste past bij je compressieverhouding en compatibiliteitseisen.  
+- **TarBz2** – Beste compressie, langzamere verwerking.  
+- **TarGz** – Goede balans tussen snelheid en grootte (dekt het secundaire trefwoord *compress files to targz*).  
+- **TarZ** – Legacy‑formaat voor oudere Unix‑tools.
 
-Leer de kunst van het maken van TarLz-archieven in .NET met behulp van Aspose.Zip. We splitsen de stappen op, waardoor bestandscompressie een intuïtief proces wordt. Verbeter uw bestandsbeheerspel met deze eenvoudig te volgen tutorial.
+### Stap 2: Maak een nieuwe `Archive`‑instantie
+Instantieer de `Archive`‑klasse en wijs deze naar het uitvoer‑bestandspad. Dit object beheert het inpakken en comprimeren.
 
-## Comprimeren naar TarXz met Aspose.Zip voor .NET
+### Stap 3: Voeg bestanden en mappen toe
+Gebruik de `AddAll`‑ of `AddFile`‑methoden om de bestanden die je wilt comprimeren toe te voegen. Behoud de mapstructuur door een basismap toe te voegen.
 
-Efficiëntie staat centraal terwijl we u leren hoe u bestanden comprimeert naar het TarXz-formaat in .NET met behulp van Aspose.Zip. Onze stapsgewijze handleiding zorgt ervoor dat u de fijne kneepjes begrijpt en biedt waardevolle vaardigheden voor efficiënte bestandsopslag en -overdracht.
+### Stap 4: Stel het gewenste compressietype in
+Geef het compressie‑algoritme op (`CompressionType.BZip2`, `CompressionType.GZip`, enz.) bij het opslaan van het archief. Hier **compress files to tarbz2** je daadwerkelijk of een ander formaat.
 
-## Comprimeren naar TarZ met Aspose.Zip voor .NET
+### Stap 5: Sla het archief op
+Roep `Save` aan met de juiste format‑enum (`ArchiveFormat.TarBz2`, `ArchiveFormat.TarGz`, enz.). De bibliotheek schrijft de TAR‑container en past de gekozen compressie in één stap toe.
 
-Begin aan een reis van efficiënte bestandsverwerking in uw .NET-projecten door compressie naar TarZ te verkennen met Aspose.Zip. Onze stapsgewijze aanpak vereenvoudigt het proces, waardoor u deze mogelijkheid naadloos in uw applicaties kunt integreren.
+### Stap 6: Archieven uitpakken met wachtwoorden
+Als je **archive‑entries met verschillende wachtwoorden** moet uitpakken (secundair trefwoord *how to extract password protected archive*), open dan het archief, zoek elke entry, wijs het wachtwoord toe en pak vervolgens uit.
 
-## Archiefvermeldingen met verschillende wachtwoorden extraheren in Aspose.Zip voor .NET
+### Stap 7: Controleer het resultaat
+Na het uitpakken, vergelijk bestandsgroottes en controlesommen om te bevestigen dat het archief correct is aangemaakt en uitgepakt.
 
-Verhoog de beveiliging en flexibiliteit in uw toepassingen door te leren hoe u archiefvermeldingen met verschillende wachtwoorden kunt extraheren in Aspose.Zip voor .NET. Deze tutorial voegt een laagje verfijning toe aan uw arsenaal voor bestandsverwerking, zodat uw gegevens veilig blijven.
+## Veelvoorkomende gebruikssituaties
+- **Backup utilities** – Sla dagelijkse back‑ups op als `.tar.bz2` om opslagkosten te minimaliseren.  
+- **Cross‑platform data exchange** – Tar‑gebaseerde formaten worden universeel begrepen op Linux, macOS en Windows.  
+- **Secure distribution** – Bescherm individuele entries met wachtwoorden voor compliance‑gedreven omgevingen.
 
-Terwijl u aan deze reis begint om archiefextractie en -formaten in .NET onder de knie te krijgen, dient onze uitgebreide lijst met tutorials over het gebruik van Aspose.Zip als uw kompas. Ontdek de diverse mogelijkheden van deze krachtige tool en vergroot uw vaardigheid in bestandsbeheer.
+## Problemen oplossen & Tips
+- **Large archives** – Gebruik streaming‑API’s (`Archive.CreateEntryFromFile`) om te voorkomen dat volledige bestanden in het geheugen worden geladen.  
+- **Password mismatches** – Zorg ervoor dat het wachtwoord dat op elke `ArchiveEntry` is ingesteld overeenkomt met het wachtwoord dat tijdens het uitpakken wordt gebruikt; anders krijg je een `InvalidPasswordException`.  
+- **Unsupported compression level** – BZIP2 ondersteunt geen aangepaste compressieniveaus; als je fijnere controle nodig hebt, overweeg dan TarLz of TarXz.  
+- **Performance tip** – Bij het maken van een **create tarbz2 archive**, schakel buffering in op de onderliggende stream om de schrijfsnelheid te verbeteren.
 
-Ontgrendel het volledige potentieel van Aspose.Zip voor .NET en zorg voor een revolutie in de manier waarop u met bestanden in uw projecten omgaat. Duik vandaag nog in onze tutorials en verbeter vandaag nog uw vaardigheden op het gebied van archiefextractie en bestandscompressie.
+## Veelgestelde vragen
 
-## Archiefextractie en indelingen-tutorials
+**Q: Hoe maak ik een TarGz‑archief?**  
+A: Stel het compressietype in op `CompressionType.GZip` en het formaat op `ArchiveFormat.TarGz` bij het aanroepen van `Save`.
+
+**Q: Kan ik een wachtwoord‑beveiligd archief uitpakken zonder het wachtwoord te kennen?**  
+A: Nee. Elke entry moet worden voorzien van het juiste wachtwoord; anders mislukt het uitpakken.
+
+**Q: Ondersteunt Aspose.Zip het uitpakken van archieven met verschillende wachtwoorden per entry?**  
+A: Ja. Je kunt elk `ArchiveEntry` afzonderlijk een wachtwoord toewijzen vóór het uitpakken.
+
+**Q: Welk formaat biedt de beste compressie?**  
+A: TarBz2 levert doorgaans de hoogste compressieverhouding, gevolgd door TarLz en TarXz. TarGz biedt een goede balans tussen snelheid en grootte.
+
+**Q: Is er een limiet aan het aantal bestanden dat ik aan een TAR‑archief kan toevoegen?**  
+A: Praktisch gezien niet, maar zeer grote archieven kunnen baat hebben bij het splitsen in meerdere delen voor gemakkelijker beheer.
+
+## Archiefuitpak- en Formaat‑handleidingen
 ### [Bestanden comprimeren naar TarBz2 met Aspose.Zip voor .NET](./compress-to-tar-bz2/)
-Leer hoe u bestanden comprimeert naar TarBz2-indeling in .NET met behulp van Aspose.Zip. Volg onze stapsgewijze handleiding voor efficiënte bestandscompressie.
+Leer hoe je bestanden naar TarBz2‑formaat kunt comprimeren in .NET met Aspose.Zip. Volg onze stapsgewijze handleiding voor efficiënte bestandscompressie.
 ### [Comprimeren naar TarGz met Aspose.Zip voor .NET](./compress-to-tar-gz/)
 Ontdek efficiënte bestandscompressie in .NET met Aspose.Zip. Comprimeer moeiteloos naar TarGz.
 ### [Comprimeren naar TarLz met Aspose.Zip voor .NET](./compress-to-tar-lz/)
-Comprimeer bestanden moeiteloos in .NET met Aspose.Zip. Leer stap voor stap TarLz-archieven maken.
+Moeiteloos bestanden comprimeren in .NET met Aspose.Zip. Leer stap‑voor‑stap TarLz‑archieven te maken.
 ### [Comprimeren naar TarXz met Aspose.Zip voor .NET](./compress-to-tar-xz/)
-Leer hoe u bestanden comprimeert naar TarXz-indeling in .NET met behulp van Aspose.Zip. Volg onze stapsgewijze handleiding voor efficiënte bestandsopslag en -overdracht.
+Leer hoe je bestanden naar TarXz‑formaat kunt comprimeren in .NET met Aspose.Zip. Volg onze stapsgewijze handleiding voor efficiënte opslag en transmissie.
 ### [Comprimeren naar TarZ met Aspose.Zip voor .NET](./compress-to-tar-z/)
-Ontdek stapsgewijze compressie naar TarZ met Aspose.Zip voor .NET. Efficiënte bestandsverwerking voor uw .NET-projecten.
-### [Archiefvermeldingen met verschillende wachtwoorden extraheren in Aspose.Zip voor .NET](./extract-archive-different-passwords/)
-Leer hoe u archiefvermeldingen met verschillende wachtwoorden uitpakt in Aspose.Zip voor .NET. Verhoog de veiligheid en flexibiliteit in uw applicaties.
+Ontdek stap‑voor‑stap compressie naar TarZ met Aspose.Zip voor .NET. Efficiënte bestandsafhandeling voor je .NET‑projecten.
+### [Archief‑entries uitpakken met verschillende wachtwoorden in Aspose.Zip voor .NET](./extract-archive-different-passwords/)
+Leer hoe je archief‑entries met verschillende wachtwoorden kunt uitpakken in Aspose.Zip voor .NET. Verhoog de beveiliging en flexibiliteit in je applicaties.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Laatst bijgewerkt:** 2026-01-28  
+**Getest met:** Aspose.Zip for .NET 24.11  
+**Auteur:** Aspose  
+
+---

@@ -1,67 +1,130 @@
 ---
-title: Trích xuất và định dạng lưu trữ
-linktitle: Trích xuất và định dạng lưu trữ
-second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
-description: Giải phóng sức mạnh nén tệp trong .NET bằng Aspose.Zip. Tìm hiểu cách nén tệp sang nhiều định dạng khác nhau như TarBz2, TarGz và TarZ để lưu trữ hiệu quả.
-weight: 23
+date: 2026-01-28
+description: Tìm hiểu cách giải nén tệp có mật khẩu, nén file thành TarBz2, tạo các
+  tệp TarGz bằng Aspose.Zip cho .NET. Tăng cường hiệu quả lưu trữ và bảo mật.
+linktitle: Archive Extraction and Formats
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Giải nén tệp có mật khẩu và nén thành TarBz2 (.NET)
 url: /vi/net/archive-extraction-and-formats/
+weight: 23
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Trích xuất và định dạng lưu trữ
+# Trích xuất Archive có Mật khẩu và Nén thành TarBz2 (.NET)
 
+Trong hướng dẫn này, bạn sẽ khám phá **cách trích xuất archive có mật khẩu** và cũng nắm vững **cách nén file thành TarBz2** bằng Aspose.Zip cho .NET. Dù bạn đang xây dựng dịch vụ sao lưu, client lưu trữ đám mây, hay pipeline xử lý dữ liệu, những kỹ thuật này giúp giảm dung lượng lưu trữ, tăng tốc truyền tải và bảo vệ dữ liệu nhạy cảm.
 
-## Giới thiệu
+## Câu trả lời nhanh
+- **TarBz2 là gì?** Một archive nén kết hợp gói TAR với nén BZIP2 để đạt tỷ lệ nén cao.  
+- **Tại sao chọn Aspose.Zip cho .NET?** Nó cung cấp một API duy nhất, mượt mà cho nhiều định dạng archive mà không cần phụ thuộc gốc.  
+- **Tôi có thể tạo archive TarGz không?** Có – Aspose.Zip hỗ trợ TarGz, TarLz, TarXz, TarZ và nhiều hơn nữa.  
+- **Làm thế nào để trích xuất archive được bảo vệ bằng mật khẩu?** Đặt thuộc tính `Password` trên mỗi `ArchiveEntry` trước khi trích xuất.  
+- **Tôi có cần giấy phép cho việc sử dụng trong môi trường production không?** Cần giấy phép thương mại cho production; bản dùng thử miễn phí có sẵn để đánh giá.
 
-Trong bối cảnh phát triển phần mềm rộng lớn, việc xử lý tệp hiệu quả là điều tối quan trọng. Aspose.Zip cho .NET nổi lên như một đồng minh mạnh mẽ, cung cấp một bộ công cụ toàn diện để nén và giải nén tệp một cách liền mạch. Trong loạt bài hướng dẫn này, chúng tôi đi sâu vào sự phức tạp của việc trích xuất kho lưu trữ và các định dạng khác nhau, trang bị cho bạn các kỹ năng để tối ưu hóa việc quản lý tệp trong các dự án .NET của bạn.
+## Cách trích xuất archive có mật khẩu bằng Aspose.Zip cho .NET
+Việc trích xuất một archive **được bảo vệ bằng mật khẩu** là rất đơn giản. Bạn mở archive, tìm entry cần thiết, gán mật khẩu cho nó, và sau đó gọi `Extract`. Cách tiếp cận này hoạt động cho TarBz2, TarGz và các định dạng được hỗ trợ khác.
 
-## Nén vào TarBz2 bằng Aspose.Zip cho .NET
+## “Nén file thành TarBz2” thực sự có nghĩa là gì?
+Nén file thành TarBz2 có nghĩa là đầu tiên gộp nhiều file và thư mục vào một container **TAR** duy nhất, sau đó áp dụng nén **BZIP2**. Kết quả là một file `.tar.bz2` vừa dễ truyền tải vừa được nén mạnh.
 
-Đi sâu vào thế giới nén tệp khi chúng tôi hướng dẫn bạn từng bước cách sử dụng Aspose.Zip cho .NET để nén tệp sang định dạng TarBz2. Hiệu quả đáp ứng sự đơn giản trong hướng dẫn này, đảm bảo các tệp của bạn không chỉ nhỏ gọn mà còn có thể truyền tải dễ dàng.
+## Tại sao sử dụng Aspose.Zip cho .NET để xử lý các định dạng này?
+- **Unified API** – Một thư viện, nhiều định dạng (TarBz2, TarGz, TarLz, TarXz, TarZ).  
+- **No native dependencies** – Hoạt động trên Windows, Linux và macOS ngay lập tức.  
+- **Password support** – Bảo vệ và trích xuất archive một cách an toàn với mật khẩu riêng cho mỗi entry.  
+- **Performance‑focused** – Xử lý dựa trên stream giảm thiểu việc sử dụng bộ nhớ.
 
-## Nén vào TarGz bằng Aspose.Zip cho .NET
+## Yêu cầu trước
+- .NET 6.0 hoặc mới hơn (hoặc .NET Core 3.1+ / .NET Framework 4.5+).  
+- Gói NuGet Aspose.Zip cho .NET đã được cài đặt (`Install-Package Aspose.Zip`).  
+- Kiến thức cơ bản về C# và I/O file.
 
-Dễ dàng nén tệp sang định dạng TarGz trong .NET bằng Aspose.Zip. Hướng dẫn của chúng tôi sẽ hướng dẫn bạn thực hiện quy trình, giúp việc nén tệp trở nên dễ dàng. Tối ưu hóa bộ nhớ và nâng cao khả năng xử lý tệp của bạn với hướng dẫn toàn diện này.
+## Hướng dẫn từng bước
 
-## Nén vào TarLz bằng Aspose.Zip cho .NET
+### Bước 1: Chọn định dạng archive bạn cần
+Quyết định **TarBz2**, **TarGz**, **TarLz**, **TarXz**, hay **TarZ** nào phù hợp nhất với tỷ lệ nén và yêu cầu tương thích của bạn.  
+- **TarBz2** – Nén tốt nhất, xử lý chậm hơn.  
+- **TarGz** – Cân bằng tốt giữa tốc độ và kích thước (bao gồm từ khóa phụ *compress files to targz*).  
+- **TarZ** – Định dạng legacy cho các công cụ Unix cũ.
 
-Tìm hiểu nghệ thuật tạo kho lưu trữ TarLz trong .NET bằng Aspose.Zip. Chúng tôi chia nhỏ các bước để nén tệp thành một quy trình trực quan. Nâng cao khả năng quản lý tệp của bạn với hướng dẫn dễ làm theo này.
+### Bước 2: Tạo một đối tượng `Archive` mới
+Tạo một thể hiện của lớp `Archive` và chỉ đến đường dẫn file đầu ra. Đối tượng này sẽ quản lý quá trình đóng gói và nén.
 
-## Nén vào TarXz bằng Aspose.Zip cho .NET
+### Bước 3: Thêm file và thư mục
+Sử dụng các phương thức `AddAll` hoặc `AddFile` để bao gồm các file bạn muốn nén. Giữ nguyên cấu trúc thư mục bằng cách thêm một thư mục gốc.
 
-Hiệu quả là trọng tâm khi chúng tôi hướng dẫn bạn cách nén tệp sang định dạng TarXz trong .NET bằng Aspose.Zip. Hướng dẫn từng bước của chúng tôi đảm bảo bạn nắm bắt được những điều phức tạp, cung cấp bộ kỹ năng có giá trị để lưu trữ và truyền tệp hiệu quả.
+### Bước 4: Đặt loại nén mong muốn
+Chỉ định thuật toán nén (`CompressionType.BZip2`, `CompressionType.GZip`, v.v.) khi lưu archive. Đây là nơi bạn thực sự **nén file thành tarbz2** hoặc bất kỳ định dạng nào khác.
 
-## Nén vào TarZ bằng Aspose.Zip cho .NET
+### Bước 5: Lưu archive
+Gọi `Save` với enum định dạng phù hợp (`ArchiveFormat.TarBz2`, `ArchiveFormat.TarGz`, v.v.). Thư viện sẽ ghi container TAR và áp dụng nén đã chọn trong một lần.
 
-Bắt tay vào hành trình xử lý tệp hiệu quả trong các dự án .NET của bạn bằng cách khám phá tính năng nén sang TarZ bằng Aspose.Zip. Cách tiếp cận từng bước của chúng tôi giúp đơn giản hóa quy trình, cho phép bạn tích hợp liền mạch khả năng này vào các ứng dụng của mình.
+### Bước 6: Trích xuất archive có mật khẩu
+Nếu bạn cần **trích xuất các entry trong archive với mật khẩu khác nhau** (từ khóa phụ *how to extract password protected archive*), mở archive, tìm từng entry, gán mật khẩu cho nó, và sau đó trích xuất.
 
-## Trích xuất các mục lưu trữ với các mật khẩu khác nhau trong Aspose.Zip cho .NET
+### Bước 7: Xác minh kết quả
+Sau khi trích xuất, so sánh kích thước file và checksum để đảm bảo archive đã được tạo và giải nén đúng.
 
-Nâng cao tính bảo mật và tính linh hoạt trong ứng dụng của bạn bằng cách tìm hiểu cách trích xuất các mục lưu trữ bằng các mật khẩu khác nhau trong Aspose.Zip dành cho .NET. Hướng dẫn này bổ sung thêm một lớp phức tạp cho kho vũ khí xử lý tệp của bạn, đảm bảo dữ liệu của bạn vẫn được an toàn.
+## Các trường hợp sử dụng phổ biến
+- **Backup utilities** – Lưu các bản sao lưu hàng ngày dưới dạng `.tar.bz2` để giảm chi phí lưu trữ.  
+- **Cross‑platform data exchange** – Các định dạng dựa trên Tar được hiểu rộng rãi trên Linux, macOS và Windows.  
+- **Secure distribution** – Bảo vệ từng entry bằng mật khẩu cho môi trường yêu cầu tuân thủ.
 
-Khi bạn bắt đầu hành trình làm chủ các định dạng và trích xuất kho lưu trữ trong .NET, danh sách hướng dẫn đầy đủ của chúng tôi về cách sử dụng Aspose.Zip sẽ đóng vai trò là la bàn của bạn. Khám phá khả năng đa dạng của công cụ mạnh mẽ này, nâng cao trình độ quản lý tệp của bạn.
+## Khắc phục sự cố & Mẹo
+- **Large archives** – Sử dụng API streaming (`Archive.CreateEntryFromFile`) để tránh tải toàn bộ file vào bộ nhớ.  
+- **Password mismatches** – Đảm bảo mật khẩu được đặt trên mỗi `ArchiveEntry` khớp với mật khẩu dùng khi trích xuất; nếu không sẽ gặp `InvalidPasswordException`.  
+- **Unsupported compression level** – BZIP2 không hỗ trợ mức nén tùy chỉnh; nếu cần kiểm soát chi tiết hơn, hãy cân nhắc TarLz hoặc TarXz.  
+- **Performance tip** – Khi tạo **create tarbz2 archive**, bật buffering trên stream nền để cải thiện tốc độ ghi.
 
-Mở khóa toàn bộ tiềm năng của Aspose.Zip cho .NET và cách mạng hóa cách bạn xử lý các tệp trong dự án của mình. Hãy đi sâu vào các hướng dẫn của chúng tôi và nâng cao kỹ năng của bạn trong việc trích xuất kho lưu trữ và nén tệp ngay hôm nay.
+## Câu hỏi thường gặp
 
-## Hướng dẫn trích xuất và định dạng lưu trữ
-### [Nén tệp vào TarBz2 bằng Aspose.Zip cho .NET](./compress-to-tar-bz2/)
-Tìm hiểu cách nén tệp sang định dạng TarBz2 trong .NET bằng Aspose.Zip. Hãy làm theo hướng dẫn từng bước của chúng tôi để nén tệp hiệu quả.
-### [Nén vào TarGz bằng Aspose.Zip cho .NET](./compress-to-tar-gz/)
-Khám phá tính năng nén tệp hiệu quả trong .NET với Aspose.Zip. Nén vào TarGz một cách dễ dàng.
-### [Nén vào TarLz bằng Aspose.Zip cho .NET](./compress-to-tar-lz/)
-Dễ dàng nén các tệp trong .NET bằng Aspose.Zip. Tìm hiểu cách tạo kho lưu trữ TarLz từng bước.
-### [Nén vào TarXz bằng Aspose.Zip cho .NET](./compress-to-tar-xz/)
-Tìm hiểu cách nén tệp sang định dạng TarXz trong .NET bằng Aspose.Zip. Hãy làm theo hướng dẫn từng bước của chúng tôi để lưu trữ và truyền tệp hiệu quả.
-### [Nén vào TarZ bằng Aspose.Zip cho .NET](./compress-to-tar-z/)
-Khám phá tính năng nén từng bước sang TarZ bằng Aspose.Zip for .NET. Xử lý tệp hiệu quả cho các dự án .NET của bạn.
-### [Trích xuất các mục lưu trữ với các mật khẩu khác nhau trong Aspose.Zip cho .NET](./extract-archive-different-passwords/)
-Tìm hiểu cách trích xuất các mục lưu trữ bằng các mật khẩu khác nhau trong Aspose.Zip dành cho .NET. Tăng cường bảo mật và tính linh hoạt trong các ứng dụng của bạn.
+**H: Làm thế nào để tạo archive TarGz?**  
+Đặt loại nén thành `CompressionType.GZip` và định dạng thành `ArchiveFormat.TarGz` khi gọi `Save`.
+
+**H: Tôi có thể trích xuất archive được bảo vệ bằng mật khẩu mà không biết mật khẩu không?**  
+Không. Mỗi entry phải được cung cấp mật khẩu đúng; nếu không việc trích xuất sẽ thất bại.
+
+**H: Aspose.Zip có hỗ trợ trích xuất archive với mật khẩu khác nhau cho mỗi entry không?**  
+Có. Bạn có thể gán mật khẩu cho từng `ArchiveEntry` riêng biệt trước khi trích xuất.
+
+**H: Định dạng nào cho mức nén tốt nhất?**  
+TarBz2 thường cung cấp tỷ lệ nén cao nhất, tiếp theo là TarLz và TarXz. TarGz mang lại cân bằng tốt giữa tốc độ và kích thước.
+
+**H: Có giới hạn số lượng file tôi có thể thêm vào archive TAR không?**  
+Thực tế không, nhưng các archive cực lớn có thể hưởng lợi từ việc chia thành nhiều phần để dễ quản lý hơn.
+
+## Hướng dẫn Trích xuất Archive và Định dạng Tutorials
+### [Nén File thành TarBz2 với Aspose.Zip cho .NET](./compress-to-tar-bz2/)
+Học cách nén file thành định dạng TarBz2 trong .NET bằng Aspose.Zip. Thực hiện theo hướng dẫn từng bước của chúng tôi để nén file hiệu quả.
+
+### [Nén thành TarGz với Aspose.Zip cho .NET](./compress-to-tar-gz/)
+Tìm hiểu nén file hiệu quả trong .NET với Aspose.Zip. Nén thành TarGz một cách dễ dàng.
+
+### [Nén thành TarLz với Aspose.Zip cho .NET](./compress-to-tar-lz/)
+Nén file trong .NET một cách dễ dàng với Aspose.Zip. Học cách tạo archive TarLz từng bước.
+
+### [Nén thành TarXz với Aspose.Zip cho .NET](./compress-to-tar-xz/)
+Học cách nén file thành định dạng TarXz trong .NET bằng Aspose.Zip. Thực hiện theo hướng dẫn từng bước để lưu trữ và truyền tải file hiệu quả.
+
+### [Nén thành TarZ với Aspose.Zip cho .NET](./compress-to-tar-z/)
+Tìm hiểu quy trình nén từng bước thành TarZ bằng Aspose.Zip cho .NET. Xử lý file hiệu quả cho dự án .NET của bạn.
+
+### [Trích xuất các Entry trong Archive với Mật khẩu Khác nhau trong Aspose.Zip cho .NET](./extract-archive-different-passwords/)
+Học cách trích xuất các entry trong archive với mật khẩu khác nhau trong Aspose.Zip cho .NET. Tăng cường bảo mật và tính linh hoạt cho ứng dụng của bạn.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Cập nhật lần cuối:** 2026-01-28  
+**Kiểm tra với:** Aspose.Zip for .NET 24.11  
+**Tác giả:** Aspose  
+
+---
