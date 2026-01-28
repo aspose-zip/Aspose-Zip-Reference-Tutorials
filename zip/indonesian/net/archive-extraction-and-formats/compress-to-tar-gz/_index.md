@@ -1,105 +1,147 @@
 ---
-title: Mengompresi ke TarGz dengan Aspose.Zip untuk .NET
-linktitle: Mengompresi ke TarGz
-second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
-description: Jelajahi kompresi file yang efisien di .NET dengan Aspose.Zip. Kompres ke TarGz dengan mudah.
-weight: 12
+date: 2026-01-28
+description: Pelajari cara membuat arsip tar.gz, menambahkan file ke tar, dan mengompres
+  menggunakan Aspose.Zip untuk .NET – cara cepat dan andal untuk mengarsipkan file.
+linktitle: Add files to tar
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Buat arsip tar.gz dan tambahkan file ke tar dengan Aspose.Zip untuk .NET
 url: /id/net/archive-extraction-and-formats/compress-to-tar-gz/
+weight: 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Mengompresi ke TarGz dengan Aspose.Zip untuk .NET
+# Tambahkan file ke tar dan buat TarGz dengan Aspose.Zip untuk .NET
 
-## Perkenalan
+## Introduction
 
-Dalam lanskap pengembangan .NET yang terus berkembang, kompresi file yang efisien merupakan aspek penting dalam mengoptimalkan penyimpanan dan transfer data. Aspose.Zip untuk .NET muncul sebagai alat yang ampuh bagi pengembang yang mencari kemampuan kompresi yang kuat. Tutorial ini akan memandu Anda melalui proses mengompresi file ke format TarGz menggunakan Aspose.Zip untuk .NET, memberikan panduan langkah demi langkah.
+Dalam aplikasi .NET modern, **menambahkan file ke tar** dengan cepat dan dapat diandalkan adalah kebutuhan umum—baik Anda sedang mengemas log, menyiapkan data untuk penyimpanan cloud, atau membangun paket penyebaran. Aspose.Zip untuk .NET memberikan API yang bersih dan berperforma tinggi untuk **menambahkan file ke tar**, lalu mengompres arsip ke format **tar.gz** yang banyak digunakan. Pada tutorial ini Anda akan belajar secara tepat cara **membuat arsip tar.gz** dari awal, langkah demi langkah, menggunakan pustaka Aspose.Zip .NET.
 
-## Prasyarat
+## Quick Answers
+- **Library apa yang harus saya gunakan?** Aspose.Zip untuk .NET  
+- **Bagaimana cara menambahkan file ke tar?** Gunakan `TarArchive.CreateEntry` untuk setiap file.  
+- **Bisakah saya mengompres langsung ke tar.gz?** Ya—panggil `SaveGzipped`.  
+- **Apakah saya memerlukan lisensi untuk produksi?** Lisensi Aspose yang valid diperlukan untuk penggunaan non‑trial.  
+- **Versi .NET yang didukung?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
-Sebelum masuk ke tutorial, pastikan Anda memiliki prasyarat berikut:
+## What is “add files to tar”?
 
-- Pengetahuan dasar tentang pengembangan .NET.
-- Lingkungan pengembangan terintegrasi (IDE) seperti Visual Studio.
--  Aspose.Zip untuk perpustakaan .NET diinstal. Anda dapat menemukan dokumentasinya[Di Sini](https://reference.aspose.com/zip/net/).
--  Unduh perpustakaan Aspose.Zip untuk .NET dari[Link ini](https://releases.aspose.com/zip/net/).
+Menambahkan file ke arsip tar berarti menggabungkan beberapa file ke dalam satu wadah yang tidak terkompresi. Format tar mempertahankan struktur direktori dan metadata file, menjadikannya ideal untuk pengarsipan sebelum kompresi opsional (misalnya gzip) untuk **membuat arsip tar.gz**.
 
-## Impor Namespace
+## Why use Aspose.Zip to compress files to tar.gz?
+- **Tanpa alat eksternal** – semuanya berjalan di dalam kode .NET Anda.  
+- **Performa tinggi** – API berbasis stream menangani file besar secara efisien.  
+- **Lintas‑platform** – berfungsi di Windows, Linux, dan macOS.  
+- **Fitur lengkap** – mendukung enkripsi, perlindungan kata sandi, dan atribut entri khusus.  
 
-Di proyek .NET Anda, mulailah dengan mengimpor namespace yang diperlukan untuk memanfaatkan fungsionalitas Aspose.Zip:
+## Prerequisites
+
+Sebelum memulai, pastikan Anda memiliki:
+
+- Pengalaman dasar pengembangan .NET.  
+- Visual Studio (atau IDE pilihan lain).  
+- Aspose.Zip untuk .NET terpasang – lihat dokumentasi resmi [di sini](https://reference.aspose.com/zip/net/).  
+- Pustaka Aspose.Zip yang diunduh dari [tautan ini](https://releases.aspose.com/zip/net/).
+
+## Import Namespaces
+
+Di proyek .NET Anda, impor namespace yang menyediakan kelas‑kelas terkait tar:
 
 ```csharp
 using System;
 using Aspose.Zip.Tar;
 ```
 
-## Langkah 1: Atur Direktori Dokumen Anda
+## How to create tar.gz archive with Aspose.Zip for .NET
 
-Mulailah dengan menentukan direktori tempat dokumen Anda berada. Ini akan digunakan selama proses kompresi.
+### Step 1: Set Your Document Directory
+
+Pertama, arahkan kode ke folder yang berisi file yang ingin Anda arsipkan.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Langkah 2: Buat Arsip TarGz
+> **Pro tip:** Gunakan `Path.Combine` saat membangun path untuk menghindari masalah pemisah yang spesifik platform.
 
-Sekarang, mari buat arsip TarGz menggunakan Aspose.Zip untuk .NET. Ini melibatkan langkah-langkah berikut:
+### Step 2: Initialize the TarArchive
 
-### Langkah 2.1: Inisialisasi TarArchive
+Buat instance `TarArchive` yang akan menampung entri‑entri.
 
 ```csharp
 using (TarArchive archive = new TarArchive())
 {
-    // Kode Anda untuk membuat entri dan mengompresi file ada di sini
+    // Entries will be added inside this block.
 }
 ```
 
-### Langkah 2.2: Buat Entri
+### Step 3: Add Files – the core of “add files to tar”
 
- Tambahkan file ke arsip menggunakan`CreateEntry` metode. Dalam contoh ini, "alice29.txt" dan "lcet10.txt" ditambahkan:
+Di dalam blok `using`, tambahkan setiap file yang ingin Anda sertakan dalam arsip.
 
 ```csharp
 archive.CreateEntry("alice29.txt", dataDir + "alice29.txt");
 archive.CreateEntry("lcet10.txt", dataDir + "lcet10.txt");
 ```
 
-### Langkah 2.3: Simpan sebagai Gzip Tar
+Setiap pemanggilan `CreateEntry` mengambil **nama entri** (bagaimana file akan muncul di dalam tar) dan **path file sumber** di disk.
 
- Simpan arsip dalam format TarGz menggunakan`SaveGzipped` metode:
+### Step 4: Save as a Gzipped Tar (how to compress files to tar.gz)
+
+Akhirnya, tulis konten tar ke stream gzip untuk menghasilkan `archive.tar.gz` yang kompak.
 
 ```csharp
 archive.SaveGzipped(dataDir + "archive.tar.gz");
 ```
 
-## Kesimpulan
+`SaveGzipped` menangani baik pengemasan tar maupun kompresi gzip dalam satu pemanggilan yang fluently.
 
-Selamat! Anda telah berhasil mengompresi file ke format TarGz menggunakan Aspose.Zip untuk .NET. Proses yang disederhanakan ini memastikan pengelolaan data yang efisien dalam aplikasi .NET Anda.
+## Common Use Cases
 
-## FAQ
+| Scenario | Why “add files to tar” helps |
+|----------|------------------------------|
+| **Log aggregation** | Menggabungkan log harian ke dalam satu arsip sebelum diunggah ke penyimpanan cloud. |
+| **Deployment packages** | Membuat paket tar.gz portabel untuk server Linux dari pipeline build Windows. |
+| **Data backup** | Mempertahankan hierarki folder dan metadata sambil menjaga ukuran backup tetap kecil. |
 
-### Q1: Apakah Aspose.Zip untuk .NET kompatibel dengan semua aplikasi .NET?
-A1: Ya, Aspose.Zip untuk .NET dirancang untuk berintegrasi secara mulus dengan semua aplikasi .NET, memberikan kemampuan kompresi file serbaguna.
+## Common Issues and Solutions
 
-### Q2: Bagaimana cara mendapatkan lisensi sementara untuk Aspose.Zip untuk .NET?
+- **File not found error** – Pastikan `dataDir` diakhiri dengan pemisah path yang tepat atau gunakan `Path.Combine`.  
+- **Large files cause memory pressure** – Gunakan overload berbasis stream (`CreateEntry` dengan `Stream`) untuk menghindari memuat seluruh file ke memori.  
+- **Gzip output is corrupted** – Pastikan arsip ditutup (`using` block) sebelum memanggil `SaveGzipped`.
 
- A2: Kunjungi[Link ini](https://purchase.aspose.com/temporary-license/) untuk memperoleh lisensi sementara untuk Aspose.Zip.
+## Frequently Asked Questions
 
-### Q3: Apakah ada batasan ukuran file saat menggunakan Aspose.Zip untuk .NET?
+**Q: Apakah Aspose.Zip untuk .NET kompatibel dengan semua aplikasi .NET?**  
+A: Ya, ia bekerja dengan proyek .NET Framework, .NET Core, dan .NET 5/6/7.
 
-A3: Aspose.Zip untuk .NET dioptimalkan untuk menangani file besar, dan tidak ada batasan ketat pada ukuran file.
+**Q: Bagaimana cara mendapatkan lisensi sementara untuk Aspose.Zip untuk .NET?**  
+A: Kunjungi [halaman lisensi sementara](https://purchase.aspose.com/temporary-license/) untuk meminta lisensi trial.
 
-### Q4: Di mana saya dapat mencari dukungan untuk Aspose.Zip untuk .NET?
+**Q: Apakah ada batasan ukuran file?**  
+A: Pustaka ini dioptimalkan untuk file besar; tidak ada batas ukuran keras selain memori sistem yang tersedia.
 
- A4: Jelajahi forum dukungan berbasis komunitas[Di Sini](https://forum.aspose.com/c/zip/37) untuk mendapatkan bantuan dan terhubung dengan pengembang lain.
+**Q: Di mana saya dapat mendapatkan dukungan?**  
+A: Gunakan forum dukungan komunitas [di sini](https://forum.aspose.com/c/zip/37) untuk bantuan dari insinyur Aspose dan pengembang lain.
 
-### Q5: Dapatkah saya mencoba Aspose.Zip untuk .NET secara gratis sebelum membeli?
+**Q: Bisakah saya mencoba Aspose.Zip untuk .NET secara gratis?**  
+A: Tentu—unduh trial gratis dari [halaman rilis Aspose Zip](https://releases.aspose.com/zip/net).
 
- A5: Tentu saja! Akses versi uji coba gratis[Di Sini](https://releases.aspose.com/zip/net) untuk mengeksplorasi kemampuan Aspose.Zip untuk .NET.
+## Conclusion
+
+Anda kini telah mempelajari **cara menambahkan file ke tar**, membuat arsip tar, dan mengompresnya menjadi **tar.gz** menggunakan Aspose.Zip untuk .NET. Pendekatan ini menghilangkan ketergantungan eksternal, memberi Anda kontrol detail atas isi arsip, dan dapat diskalakan untuk kumpulan data besar. Jangan ragu untuk menjelajahi fitur tambahan Aspose.Zip seperti enkripsi, atribut entri khusus, dan API streaming untuk lebih meningkatkan alur kerja pengarsipan Anda.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Last Updated:** 2026-01-28  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose

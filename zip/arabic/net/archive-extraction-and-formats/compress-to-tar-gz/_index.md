@@ -1,105 +1,147 @@
 ---
-title: الضغط على TarGz باستخدام Aspose.Zip لـ .NET
-linktitle: الضغط على TarGz
-second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
-description: اكتشف ضغط الملفات الفعال في .NET باستخدام Aspose.Zip. اضغط على TarGz دون عناء.
-weight: 12
+date: 2026-01-28
+description: تعلم كيفية إنشاء أرشيف tar.gz، وإضافة ملفات إلى tar وضغطها باستخدام Aspose.Zip
+  لـ .NET – طريقة سريعة وموثوقة لأرشفة الملفات.
+linktitle: Add files to tar
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: إنشاء أرشيف tar.gz وإضافة ملفات إلى tar باستخدام Aspose.Zip لـ .NET
 url: /ar/net/archive-extraction-and-formats/compress-to-tar-gz/
+weight: 12
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# الضغط على TarGz باستخدام Aspose.Zip لـ .NET
+# إضافة ملفات إلى tar وإنشاء TarGz باستخدام Aspose.Zip لـ .NET
 
-## مقدمة
+## Introduction
 
-في المشهد المتطور باستمرار لتطوير .NET، يعد ضغط الملفات الفعال جانبًا حاسمًا لتحسين تخزين البيانات ونقلها. يظهر Aspose.Zip for .NET كأداة قوية للمطورين الذين يبحثون عن إمكانات ضغط قوية. سيرشدك هذا البرنامج التعليمي خلال عملية ضغط الملفات إلى تنسيق TarGz باستخدام Aspose.Zip لـ .NET، مما يوفر لك إرشادات خطوة بخطوة.
+في تطبيقات .NET الحديثة، **إضافة ملفات إلى tar** بسرعة وموثوقية هي متطلب شائع — سواء كنت تقوم بضغط السجلات، أو إعداد البيانات للتخزين السحابي، أو بناء حزم النشر. Aspose.Zip لـ .NET يوفّر لك واجهة برمجة تطبيقات نظيفة وعالية الأداء **لإضافة ملفات إلى tar**، ثم ضغط الأرشيف إلى تنسيق **tar.gz** الشائع. في هذا البرنامج التعليمي ستتعلم بالضبط كيف **إنشاء أرشيف tar.gz** من الصفر، خطوة بخطوة، باستخدام مكتبة Aspose.Zip .NET.
 
-## المتطلبات الأساسية
+## Quick Answers
+- **ما المكتبة التي يجب أن أستخدمها؟** Aspose.Zip for .NET  
+- **كيف أضيف ملفات إلى tar؟** استخدم `TarArchive.CreateEntry` لكل ملف.  
+- **هل يمكنني الضغط مباشرة إلى tar.gz؟** نعم — استدعِ `SaveGzipped`.  
+- **هل أحتاج إلى ترخيص للإنتاج؟** يلزم وجود ترخيص Aspose صالح للاستخدام غير التجريبي.  
+- **الإصدارات المدعومة من .NET؟** .NET Framework 4.5+، .NET Core 3.1+، .NET 5/6/7.
 
-قبل الغوص في البرنامج التعليمي، تأكد من توفر المتطلبات الأساسية التالية:
+## What is “add files to tar”?
 
-- المعرفة الأساسية بتطوير .NET.
-- بيئة تطوير متكاملة (IDE) مثل Visual Studio.
--  تم تثبيت Aspose.Zip لمكتبة .NET. يمكنك العثور على الوثائق[هنا](https://reference.aspose.com/zip/net/).
--  قم بتنزيل مكتبة Aspose.Zip for .NET من[هذا الرابط](https://releases.aspose.com/zip/net/).
+إضافة ملفات إلى أرشيف tar تعني تجميع ملفات متعددة في حاوية واحدة غير مضغوطة. يحافظ تنسيق tar على هياكل الدليل وبيانات التعريف الخاصة بالملفات، مما يجعله مثالياً للأرشفة قبل الضغط الاختياري (مثل gzip) **لإنشاء أرشيف tar.gz**.
 
-## استيراد مساحات الأسماء
+## Why use Aspose.Zip to compress files to tar.gz?
+- **لا أدوات خارجية** – كل شيء يُنفّذ داخل كود .NET الخاص بك.  
+- **أداء عالي** – واجهة برمجة تطبيقات تعتمد على التدفق تتعامل بفعالية مع الملفات الكبيرة.  
+- **متعدد المنصات** – يعمل على Windows وLinux وmacOS.  
+- **مجموعة ميزات غنية** – يدعم التشفير، حماية كلمة المرور، وسمات الإدخالات المخصصة.  
 
-في مشروع .NET الخاص بك، ابدأ باستيراد مساحات الأسماء الضرورية للاستفادة من وظائف Aspose.Zip:
+## Prerequisites
+
+قبل البدء، تأكد من توفر ما يلي:
+
+- خبرة أساسية في تطوير .NET.  
+- Visual Studio (أو أي بيئة تطوير مفضلة).  
+- Aspose.Zip for .NET مثبت – راجع الوثائق الرسمية [هنا](https://reference.aspose.com/zip/net/).  
+- مكتبة Aspose.Zip تم تحميلها من [هذا الرابط](https://releases.aspose.com/zip/net/).
+
+## Import Namespaces
+
+في مشروع .NET الخاص بك، استورد المساحات الاسمية التي تُظهر الفئات المتعلقة بـ tar:
 
 ```csharp
 using System;
 using Aspose.Zip.Tar;
 ```
 
-## الخطوة 1: قم بتعيين دليل المستندات الخاص بك
+## How to create tar.gz archive with Aspose.Zip for .NET
 
-ابدأ بتحديد الدليل الذي توجد به مستنداتك. سيتم استخدام هذا طوال عملية الضغط.
+### Step 1: Set Your Document Directory
+
+أولاً، حدّد مسار المجلد الذي يحتوي على الملفات التي تريد أرشفتها.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## الخطوة 2: إنشاء أرشيف TarGz
+> **Pro tip:** استخدم `Path.Combine` عند بناء المسارات لتجنب مشاكل الفواصل الخاصة بالمنصات.
 
-الآن، لنقم بإنشاء أرشيف TarGz باستخدام Aspose.Zip لـ .NET. يتضمن ذلك الخطوات التالية:
+### Step 2: Initialize the TarArchive
 
-### الخطوة 2.1: تهيئة TarArchive
+أنشئ كائن `TarArchive` سيحمل الإدخالات.
 
 ```csharp
 using (TarArchive archive = new TarArchive())
 {
-    // الكود الخاص بك لإنشاء الإدخالات وضغط الملفات موجود هنا
+    // Entries will be added inside this block.
 }
 ```
 
-### الخطوة 2.2: إنشاء الإدخالات
+### Step 3: Add Files – the core of “add files to tar”
 
- أضف الملفات إلى الأرشيف باستخدام`CreateEntry` طريقة. في هذا المثال، تتم إضافة "alice29.txt" و"lcet10.txt":
+داخل كتلة `using`، أضف كل ملف تريد تضمينه في الأرشيف.
 
 ```csharp
 archive.CreateEntry("alice29.txt", dataDir + "alice29.txt");
 archive.CreateEntry("lcet10.txt", dataDir + "lcet10.txt");
 ```
 
-### الخطوة 2.3: حفظ باسم Gzipped Tar
+كل استدعاء لـ `CreateEntry` يأخذ **اسم الإدخال** (كيف سيظهر الملف داخل tar) و**مسار الملف المصدر** على القرص.
 
- احفظ الأرشيف بتنسيق TarGz باستخدام ملف`SaveGzipped` طريقة:
+### Step 4: Save as a Gzipped Tar (how to compress files to tar.gz)
+
+أخيراً، اكتب محتويات tar إلى تدفق gzip لإنتاج ملف `archive.tar.gz` مضغوط.
 
 ```csharp
 archive.SaveGzipped(dataDir + "archive.tar.gz");
 ```
 
-## خاتمة
+`SaveGzipped` يتعامل مع كل من تعبئة tar وضغط gzip في استدعاء واحد سلس.
 
-تهانينا! لقد نجحت في ضغط الملفات إلى تنسيق TarGz باستخدام Aspose.Zip لـ .NET. تضمن هذه العملية المبسطة إدارة فعالة للبيانات في تطبيقات .NET الخاصة بك.
+## Common Use Cases
 
-## الأسئلة الشائعة
+| السيناريو | لماذا تساعد “إضافة ملفات إلى tar” |
+|----------|-----------------------------------|
+| **تجميع السجلات** | تجميع سجلات اليوم في أرشيف واحد قبل رفعه إلى التخزين السحابي. |
+| **حزم النشر** | إنشاء حزم tar.gz محمولة لخوادم Linux من خط أنابيب بناء على Windows. |
+| **نسخ احتياطي للبيانات** | الحفاظ على هيكل المجلدات وبيانات التعريف مع الحفاظ على حجم النسخة الاحتياطية منخفضاً. |
 
-### س1: هل يتوافق Aspose.Zip for .NET مع كافة تطبيقات .NET؟
-ج1: نعم، تم تصميم Aspose.Zip for .NET للتكامل بسلاسة مع كافة تطبيقات .NET، مما يوفر إمكانات متعددة لضغط الملفات.
+## Common Issues and Solutions
 
-### س2: كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.Zip لـ .NET؟
+- **خطأ عدم العثور على الملف** – تأكد من أن `dataDir` ينتهي بالفاصل المناسب أو استخدم `Path.Combine`.  
+- **الملفات الكبيرة تسبب ضغطًا على الذاكرة** – استخدم الإصدارات المعتمدة على التدفق (`CreateEntry` مع `Stream`) لتجنب تحميل الملفات بالكامل في الذاكرة.  
+- **مخرجات Gzip تالفة** – تحقق من إغلاق الأرشيف (`using` block) قبل استدعاء `SaveGzipped`.
 
- ج2: زيارة[هذا الرابط](https://purchase.aspose.com/temporary-license/) للحصول على ترخيص مؤقت لـ Aspose.Zip.
+## Frequently Asked Questions
 
-### س3: هل توجد أي قيود على حجم الملف عند استخدام Aspose.Zip لـ .NET؟
+**س: هل Aspose.Zip لـ .NET متوافق مع جميع تطبيقات .NET؟**  
+ج: نعم، يعمل مع مشاريع .NET Framework و .NET Core و .NET 5/6/7.
 
-A3: تم تحسين Aspose.Zip for .NET للتعامل مع الملفات الكبيرة، ولا توجد قيود صارمة على حجم الملف.
+**س: كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.Zip لـ .NET؟**  
+ج: زر [صفحة الترخيص المؤقت](https://purchase.aspose.com/temporary-license/) لطلب ترخيص تجريبي.
 
-### س 4: أين يمكنني طلب الدعم لـ Aspose.Zip لـ .NET؟
+**س: هل هناك أي قيود على حجم الملفات؟**  
+ج: المكتبة مُحسّنة للملفات الكبيرة؛ لا يوجد حد ثابت للحجم سوى الذاكرة المتاحة في النظام.
 
- ج4: استكشف منتدى الدعم المجتمعي[هنا](https://forum.aspose.com/c/zip/37) للحصول على المساعدة والتواصل مع المطورين الآخرين.
+**س: أين يمكنني الحصول على الدعم؟**  
+ج: استخدم منتدى الدعم المجتمعي [هنا](https://forum.aspose.com/c/zip/37) للحصول على مساعدة من مهندسي Aspose ومطوريين آخرين.
 
-### س5: هل يمكنني تجربة Aspose.Zip لـ .NET مجانًا قبل الشراء؟
+**س: هل يمكن تجربة Aspose.Zip لـ .NET مجانًا؟**  
+ج: بالتأكيد — حمّل النسخة التجريبية المجانية من [صفحة إصدارات Aspose Zip](https://releases.aspose.com/zip/net).
 
- ج5: بالتأكيد! الوصول إلى النسخة التجريبية المجانية[هنا](https://releases.aspose.com/zip/net) لاستكشاف إمكانيات Aspose.Zip لـ .NET.
+## Conclusion
+
+لقد تعلمت الآن **كيفية إضافة ملفات إلى tar**، إنشاء أرشيف tar، وضغطه إلى **tar.gz** باستخدام Aspose.Zip لـ .NET. يزيل هذا النهج الاعتماد على أدوات خارجية، يمنحك تحكمًا دقيقًا في محتويات الأرشيف، ويتعامل مع مجموعات بيانات كبيرة. لا تتردد في استكشاف ميزات إضافية في Aspose.Zip مثل التشفير، سمات الإدخالات المخصصة، وواجهات برمجة التطبيقات المتدفقة لتعزيز سير عمل الأرشفة الخاص بك.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Last Updated:** 2026-01-28  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose
