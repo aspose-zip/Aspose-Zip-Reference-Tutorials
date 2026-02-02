@@ -1,10 +1,10 @@
 ---
 additionalTitle: Aspose API References
-date: 2025-11-30
-description: Aspose.Zip for .NET를 사용하여 zip 파일을 추출하고, 비밀번호로 보호된 zip 아카이브를 처리하며, 여러
-  파일을 압축하는 방법을 배워보세요. 효율적인 zip 파일 처리를 위한 포괄적인 튜토리얼입니다.
+date: 2026-02-02
+description: Aspose.Zip for .NET을 사용하여 zip 파일을 추출하고, 비밀번호로 보호된 압축 파일을 처리하며, 여러 파일을
+  효율적으로 압축하는 방법을 배워보세요.
 linktitle: Aspose.Zip Tutorials
-title: Aspose.Zip - Zip 파일을 추출하고 압축을 마스터하는 방법
+title: Aspose.Zip - .NET용 Aspose.Zip으로 ZIP 파일 추출하는 방법
 url: /ko/
 weight: 11
 ---
@@ -13,30 +13,30 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip - Zip 파일 추출 및 압축 마스터하기
+# Aspose.Zip - Aspose.Zip for .NET으로 Zip 파일 추출하기
 
-Welcome to the world of **Aspose.Zip**, where extracting zip files meets high‑performance compression! Whether you're a seasoned .NET developer or just getting started, this tutorial series will give you the practical know‑how to **extract zip files**, work with **password protected zip** archives, and even **encrypt zip archive** contents when needed. By the end of the guide you’ll be able to handle complex zip file scenarios—compress multiple files, manage zip file handling intricacies, and integrate these capabilities seamlessly into your .NET applications.
+Aspose.Zip의 세계에 오신 것을 환영합니다. 여기서는 고성능 압축과 함께 Zip 파일을 추출하는 방법을 제공합니다! .NET 개발에 익숙하든 이제 시작하든, 이 튜토리얼 시리즈를 통해 **Aspose.Zip으로 zip 파일을 추출**하는 실전 노하우, **비밀번호로 보호된 zip** 아카이브 작업, 필요 시 **zip 아카이브 암호화**까지 배울 수 있습니다. 가이드를 마치면 복잡한 zip 파일 시나리오—여러 파일 압축, zip 파일 처리 세부 사항 관리, .NET 애플리케이션에 원활히 통합—를 자유롭게 다룰 수 있게 됩니다.
 
 ## Quick Answers
-- **What is the primary purpose of Aspose.Zip?** To create, compress, and extract zip archives efficiently in .NET. → Aspose.Zip의 주요 목적은 .NET에서 zip 아카이브를 효율적으로 생성, 압축 및 추출하는 것입니다.  
-- **Can Aspose.Zip extract zip files with a password?** Yes—support for password‑protected zip extraction is built‑in. → 예, 비밀번호가 보호된 zip 추출을 기본적으로 지원합니다.  
-- **Is it possible to encrypt a zip archive while extracting?** You can decrypt encrypted archives during extraction and re‑encrypt them if required. → 추출 중에 암호화된 아카이브를 복호화하고 필요에 따라 다시 암호화할 수 있습니다.  
-- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7+. → .NET Framework 4.5 이상, .NET Core 3.1 이상, .NET 5/6/7 지원.  
-- **Do I need a license for production use?** A commercial license is required for production deployments; a free trial is available. → 상용 배포에는 상업용 라이선스가 필요하며, 무료 체험판을 제공합니다.
+- **What is the primary purpose of Aspose.Zip?** To create, compress, and extract zip archives efficiently in .NET.  
+- **Can Aspose.Zip extract zip files with a password?** Yes—support for password‑protected zip extraction is built‑in.  
+- **Is it possible to encrypt a zip archive while extracting?** You can decrypt encrypted archives during extraction and re‑encrypt them if required.  
+- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7+.  
+- **Do I need a license for production use?** A commercial license is required for production deployments; a free trial is available.
 
-## What is “extract zip files”?
-Extracting zip files means decompressing the contents of a `.zip` archive back to their original files and folder structure. Aspose.Zip provides a straightforward API that handles this process without needing external tools, making it ideal for automated workflows and server‑side processing.
+## “Aspose.Zip으로 zip 파일을 추출”이란?
+zip 파일을 추출한다는 것은 `.zip` 아카이브의 내용을 원래 파일 및 폴더 구조로 복원하는 것을 의미합니다. Aspose.Zip은 외부 도구 없이도 이 과정을 간단히 처리할 수 있는 API를 제공하므로 자동화 워크플로와 서버‑사이드 처리에 최적입니다.
 
-## Why use Aspose.Zip for .NET?
-- **Full control** over compression levels, encryption, and archive formats. → 압축 수준, 암호화 및 아카이브 형식에 대한 완전한 제어.  
-- **Seamless integration** with existing .NET projects—no native DLLs or third‑party dependencies. → 기존 .NET 프로젝트와 원활하게 통합—네이티브 DLL이나 타사 종속성이 없습니다.  
-- **Robust handling** of password‑protected zip files and the ability to **encrypt zip archive** contents on the fly. → 비밀번호 보호 zip 파일을 견고하게 처리하고, 실시간으로 **encrypt zip archive** 내용을 암호화할 수 있습니다.  
-- **Performance‑optimized** for large data sets, allowing you to **compress multiple files** quickly and reliably. → 대용량 데이터 세트에 최적화된 성능으로 **compress multiple files**을 빠르고 안정적으로 수행합니다.
+## .NET에서 Aspose.Zip을 사용해야 하는 이유
+- **Full control** over compression levels, encryption, and archive formats.  
+- **Seamless integration** with existing .NET projects—no native DLLs or third‑party dependencies.  
+- **Robust handling** of password‑protected zip files and the ability to **encrypt zip archive** contents on the fly.  
+- **Performance‑optimized** for large data sets, allowing you to **compress multiple files** quickly and reliably.
 
 ## Prerequisites
-- A .NET development environment (Visual Studio 2022 or later). → .NET 개발 환경 (Visual Studio 2022 이상).  
-- Aspose.Zip for .NET NuGet package installed (`Install-Package Aspose.Zip`). → Aspose.Zip for .NET NuGet 패키지 설치 (`Install-Package Aspose.Zip`).  
-- (Optional) A valid Aspose.Zip license for production use. → (선택) 프로덕션 사용을 위한 유효한 Aspose.Zip 라이선스.
+- A .NET development environment (Visual Studio 2022 or later).  
+- Aspose.Zip for .NET NuGet package installed (`Install-Package Aspose.Zip`).  
+- (Optional) A valid Aspose.Zip license for production use.
 
 {{% alert color="primary" %}}
 Delve into the realm of Aspose.Zip for .NET through our meticulously crafted tutorials. Designed to cater to both beginners and seasoned developers, these tutorials offer a comprehensive exploration of Aspose.Zip's capabilities within the .NET framework. Learn how to efficiently compress and decompress files, explore advanced compression techniques, and integrate seamless file handling into your .NET applications. With clear, step‑by‑step instructions and practical examples, our tutorials empower you to harness the full potential of Aspose.Zip for .NET, ensuring that you can optimize your file manipulation processes with confidence and precision. Elevate your .NET development skills with the expertise gained from our Aspose.Zip tutorials.
@@ -66,26 +66,26 @@ In scenarios where you need to extract a zip file and immediately re‑encrypt i
 While this guide focuses on extraction, remember that Aspose.Zip also excels at **compress files .net**. You can add many files to a single archive with a single call, specify compression levels, and even split large archives into volumes.
 
 ## Common Issues & Solutions
-- **Extraction fails with “Invalid password”** – Verify that the password you supplied matches the one used during compression; passwords are case‑sensitive. → “Invalid password” 오류가 발생하면 제공한 비밀번호가 압축 시 사용된 비밀번호와 일치하는지 확인하십시오. 비밀번호는 대소문자를 구분합니다.  
-- **Large archives cause OutOfMemoryException** – Use the streaming API (`ExtractToStream`) to process files sequentially instead of loading the entire archive into memory. → 대용량 아카이브에서 OutOfMemoryException이 발생하면 스트리밍 API(`ExtractToStream`)를 사용해 파일을 순차적으로 처리하십시오.  
-- **File name collisions** – Set the `OverwriteExistingFiles` flag to control whether existing files should be replaced or renamed. → `OverwriteExistingFiles` 플래그를 설정하여 기존 파일을 교체하거나 이름을 변경하도록 제어하십시오.
+- **Extraction fails with “Invalid password”** – Verify that the password you supplied matches the one used during compression; passwords are case‑sensitive.  
+- **Large archives cause OutOfMemoryException** – Use the streaming API (`ExtractToStream`) to process files sequentially instead of loading the entire archive into memory.  
+- **File name collisions** – Set the `OverwriteExistingFiles` flag to control whether existing files should be replaced or renamed.
 
 ## Frequently Asked Questions
 
 **Q: Can I extract a zip file without knowing its password?**  
-A: No, Aspose.Zip requires the correct password to decrypt a password‑protected archive. You can catch the `InvalidPasswordException` to handle incorrect passwords gracefully. → 아니요, Aspose.Zip은 비밀번호가 보호된 아카이브를 복호화하려면 올바른 비밀번호가 필요합니다. `InvalidPasswordException`을 잡아 잘못된 비밀번호를 우아하게 처리할 수 있습니다.
+A: No, Aspose.Zip requires the correct password to decrypt a password‑protected archive. You can catch the `InvalidPasswordException` to handle incorrect passwords gracefully.
 
 **Q: Does Aspose.Zip support other archive formats like RAR or 7z?**  
-A: Direct support is limited to ZIP, but you can combine Aspose.Zip with third‑party libraries for those formats, or use the “Archive Extraction and Formats” tutorial for guidance. → 직접적인 지원은 ZIP에만 제한되지만, 해당 형식에 대해 타사 라이브러리와 결합하거나 “Archive Extraction and Formats” 튜토리얼을 참고할 수 있습니다.
+A: Direct support is limited to ZIP, but you can combine Aspose.Zip with third‑party libraries for those formats, or use the “Archive Extraction and Formats” tutorial for guidance.
 
 **Q: How do I extract only specific files from a large archive?**  
-A: Use the `ExtractEntry` method to target individual entries by name, avoiding the need to extract the entire archive. → `ExtractEntry` 메서드를 사용해 이름으로 개별 항목을 지정하면 전체 아카이브를 추출할 필요가 없습니다.
+A: Use the `ExtractEntry` method to target individual entries by name, avoiding the need to extract the entire archive.
 
 **Q: Is there a way to monitor extraction progress?**  
-A: Yes—subscribe to the `ProgressChanged` event on the `ZipFile` object to receive real‑time updates. → 예, `ZipFile` 객체의 `ProgressChanged` 이벤트에 구독하면 실시간 진행 상황을 받을 수 있습니다.
+A: Yes—subscribe to the `ProgressChanged` event on the `ZipFile` object to receive real‑time updates.
 
 **Q: What licensing is required for commercial use?**  
-A: A paid Aspose.Zip license is required for production deployments; a free evaluation license is available for testing. → 상업적 사용을 위해서는 유료 Aspose.Zip 라이선스가 필요하며, 테스트용 무료 평가 라이선스를 제공하고 있습니다.
+A: A paid Aspose.Zip license is required for production deployments; a free evaluation license is available for testing.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -96,6 +96,8 @@ A: A paid Aspose.Zip license is required for production deployments; a free eval
 
 ---
 
-**Last Updated:** 2025-11-30 → **마지막 업데이트:** 2025-11-30  
-**Tested With:** Aspose.Zip 24.11 for .NET → **테스트 환경:** Aspose.Zip 24.11 for .NET  
-**Author:** Aspose → **작성자:** Aspose
+**Last Updated:** 2026-02-02  
+**Tested With:** Aspose.Zip latest for .NET  
+**Author:** Aspose  
+
+---
