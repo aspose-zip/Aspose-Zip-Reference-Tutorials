@@ -1,32 +1,33 @@
 ---
-title: How to Create Zip Archive Using Aspose.Zip for .NET – Compress Files with FileInfo
+title: How to zip multiple files c# using Aspose.Zip for .NET
 linktitle: Compress Files using FileInfo
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-description: Learn how to create zip archive and add files to zip using Aspose.Zip for .NET. This step‑by‑step guide shows how to compress files with FileInfo in ASP.NET projects.
+description: Learn how to zip multiple files c# and create zip archive .NET using Aspose.Zip. This step‑by‑step guide shows compressing files with FileInfo in ASP.NET projects.
 weight: 11
 url: /net/file-compression/compress-files-fileinfo/
-date: 2025-12-05
+date: 2026-02-05
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# How to Create Zip Archive Using Aspose.Zip for .NET
+# How to zip multiple files c# using Aspise.Zip for .NET
 
 ## Introduction
 
-If you need to **create a zip archive** programmatically, Aspose.Zip for .NET gives you a clean, high‑performance API that works in any .NET (including ASP.NET) application. In this tutorial we’ll walk through compressing files with the `FileInfo` class, show you how to **add files to zip**, and explain why this approach is ideal for modern .NET projects. Let’s get started!
+If you need to **zip multiple files c#** programmatically, Aspose.Zip for .NET gives you a clean, high‑performance API that works in any .NET (including ASP.NET) application. In this tutorial we’ll walk through compressing files with the `FileInfo` class, show you how to **add files to zip**, and explain why this approach is ideal for modern .NET projects. Let’s get started!
 
 ## Quick Answers
 - **What is the easiest way to create a zip archive?** Use Aspose.Zip’s `Archive` class together with `FileInfo` objects.  
 - **Can I add multiple files at once?** Yes – just create a `FileInfo` for each file and call `CreateEntry`.  
 - **Do I need a special license for ASP.NET?** A commercial Aspose.Zip license is required for production; a free trial works for evaluation.  
 - **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
-- **Is the API thread‑safe?** Yes, as long as each thread works with its own `Archive` instance.
+- **Is the API thread‑safe?** Yes, as long as each thread works with its own `Archive` instance.  
+- **How to zip files c# without loading them into memory?** Use `FileInfo` objects – they stream the data directly.  
 
-## What is a Zip Archive and Why Create One?
-A zip archive bundles one or more files into a single, compressed container. This reduces storage space, speeds up network transfers, and simplifies distribution. Whether you’re delivering logs, exporting reports, or packaging assets for a client, knowing **how to create zip archive** files programmatically is a valuable skill for any .NET developer.
+## How to zip multiple files c#
+A zip archive bundles one or more files into a single, compressed container. This reduces storage space, speeds up network transfers, and simplifies distribution. Whether you’re delivering logs, exporting reports, or packaging assets for a client, knowing **how to zip files c#** programmatically is a valuable skill for any .NET developer.
 
 ## Why Use Aspose.Zip to Add Files to Zip?
 - **Zero external dependencies** – pure .NET implementation.  
@@ -161,11 +162,11 @@ A5: Visit [this link](https://purchase.aspose.com/temporary-license/) for inform
 
 ## Conclusion
 
-You now know **how to create zip archive** files using Aspose.Zip for .NET, how to **add files to zip**, and why this method is ideal for ASP.NET and other .NET applications. Experiment with different compression levels, encodings, and encryption options to tailor the archive to your exact needs. Happy compressing!
+You now know **how to zip multiple files c#** using Aspose.Zip for .NET, how to **add files to zip**, and why this method is ideal for ASP.NET and other .NET applications. Experiment with different compression levels, encodings, and encryption options to tailor the archive to your exact needs. Happy compressing!
 
 ---
 
-**Last Updated:** 2025-12-05  
+**Last Updated:** 2026-02-05  
 **Tested With:** Aspose.Zip for .NET 24.12 (latest)  
 **Author:** Aspose  
 
