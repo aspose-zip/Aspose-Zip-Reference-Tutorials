@@ -1,11 +1,10 @@
 ---
-date: 2025-12-01
-description: เรียนรู้วิธีบีบอัดไดเรกทอรีเป็นไฟล์ zip และแตกไฟล์ zip ไปยังไดเรกทอรีโดยใช้
-  Aspose.Zip สำหรับ .NET – คู่มือครบถ้วนเกี่ยวกับการบีบอัด zip ใน .NET และการสร้างไฟล์
-  zip archive ใน .NET.
+date: 2026-02-07
+description: เรียนรู้วิธีการบีบอัดโฟลเดอร์ใน .NET โดยการบีบอัดไดเรกทอรีเป็นไฟล์ zip
+  และการแตกไฟล์กลับมา คู่มือนี้แสดงวิธีการบีบอัดโฟลเดอร์โดยใช้ Aspose.Zip สำหรับ .NET
 linktitle: Decompressing a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: บีบอัดไดเรกทอรีเป็น Zip และคลายบีบอัด – Aspose.Zip สำหรับ .NET
+title: วิธีบีบอัดโฟลเดอร์ – บีบอัดไดเรกทอรีด้วย Aspose.Zip
 url: /th/net/directory-and-folder-compression/decompress-folder/
 weight: 11
 ---
@@ -14,66 +13,68 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# บีบอัดโฟลเดอร์เป็น Zip & แยกไฟล์ – Aspose.Zip สำหรับ .NET
+# วิธีบีบอัดโฟลเดอร์ – บีบอัดไดเรกทอรีด้วย Aspose.Zip สำหรับ .NET
 
-หากคุณต้องการ **บีบอัดโฟลเดอร์เป็น zip** แล้วจึงแตกไฟล์ archive นั้นในแอปพลิเคชัน .NET คุณมาถูกที่แล้ว ในบทแนะนำนี้เราจะเดินผ่านขั้นตอนทั้งหมด—เริ่มจากการสร้างไฟล์ zip archive แล้วแสดงวิธีการแตกไฟล์อย่างเป็นขั้นเป็นตอนโดยใช้ Aspose.Zip สำหรับ .NET สุดท้ายคุณจะได้รูปแบบการบีบอัด zip ที่นำกลับมาใช้ใหม่ในโครงการ .NET และเข้าใจวิธีการแตกไฟล์แบบ .NET อย่างมั่นใจ
+หากคุณกำลังมองหาโซลูชัน **how to zip folder** ที่ชัดเจนในแอปพลิเคชัน .NET คุณมาถูกที่แล้ว ในบทแนะนำนี้เราจะเดินผ่านกระบวนการทั้งหมด—แรกเราจะ **compress directory to zip**, จากนั้นเราจะแสดงขั้นตอนที่แน่นอนเพื่อ **extract zip to directory** (หรือที่เรียกว่า how to unzip folder) เมื่อเสร็จคุณจะมีรูปแบบโปรแกรมที่สามารถนำกลับมาใช้ใหม่สำหรับการทำงาน zip folder ที่ทำงานได้บน .NET Framework, .NET Core, และ .NET 5/6+.
 
-## คำตอบสั้น ๆ
-- **“บีบอัดโฟลเดอร์เป็น zip” หมายถึงอะไร?** หมายถึงการนำเนื้อหาในโฟลเดอร์มารวมเป็นไฟล์ .zip ไฟล์เดียว  
-- **จะทำอย่างไรจึงจะแตกไฟล์ zip ไปยังโฟลเดอร์?** ใช้เมธอด `Archive.ExtractToDirectory` ตามที่แสดงในคู่มือ  
-- **รองรับเวอร์ชัน .NET ใดบ้าง?** รองรับ .NET Framework, .NET Core, และ .NET 5/6+ เวอร์ชันล่าสุดทั้งหมด  
-- **ต้องมีลิขสิทธิ์สำหรับการใช้งานจริงหรือไม่?** ต้องมีลิขสิทธิ์ Aspose.Zip เชิงพาณิชย์สำหรับการใช้งานที่ไม่ใช่แบบทดลอง  
-- **สามารถทำอัตโนมัติใน pipeline CI/CD ได้หรือไม่?** ทำได้แน่นอน—เพียงเพิ่มโค้ดเดียวกันในสคริปต์การสร้าง
+## Quick Answers
+- **What does “compress directory to zip” mean?** หมายถึงการแปลงเนื้อหาของโฟลเดอร์ให้เป็นไฟล์ .zip ไฟล์เดียว  
+- **How do I extract zip to directory?** ใช้เมธอด `Archive.ExtractToDirectory` ตามที่แสดงในคู่มือ  
+- **Which .NET versions are supported?** รองรับ .NET Framework, .NET Core, และ .NET 5/6+ รุ่นสมัยใหม่ทั้งหมด  
+- **Is a license required for production?** ใช่, จำเป็นต้องมีลิขสิทธิ์เชิงพาณิชย์ของ Aspose.Zip สำหรับการใช้งานที่ไม่ใช่การทดลอง  
+- **Can I automate this in CI/CD pipelines?** แน่นอน—เพียงเพิ่มโค้ดเดียวกันนี้ลงในสคริปต์การสร้างของคุณ  
 
-## “บีบอัดโฟลเดอร์เป็น zip” คืออะไร?
-การบีบอัดโฟลเดอร์เป็น zip จะรวมไฟล์และโฟลเดอร์ย่อยทั้งหมดไว้ใน archive ที่บีบอัดเดียว ซึ่งช่วยลดขนาดการจัดเก็บ, ทำให้การโอนย้ายง่ายขึ้น, และเป็นวิธีมาตรฐานในการแพ็คทรัพยากรเพื่อการปรับใช้
+## What is “how to zip folder”?
+**How to zip folder** หมายถึงการนำไฟล์และโฟลเดอร์ย่อยทั้งหมดภายในไดเรกทอรีมารวมกันเป็นไฟล์บีบอัดเดียว ซึ่งช่วยลดขนาดการจัดเก็บ, เร่งความเร็วในการถ่ายโอน, และสร้างแพคเกจพกพาสำหรับการปรับใช้  
 
-## ทำไมต้องใช้ Aspose.Zip สำหรับ .NET?
-Aspose.Zip มี API **pure‑managed** ที่ทำงานโดยไม่ต้องพึ่งพา native dependencies, รองรับไฟล์ขนาดใหญ่, และให้ประสิทธิภาพการบีบอัด zip .NET สูง นอกจากนี้ยังจัดการกรณีพิเศษเช่น archive ที่มีรหัสผ่านและชื่อไฟล์ Unicode ได้โดยอัตโนมัติ
+## Why use Aspose.Zip for .NET?
+Aspose.Zip ให้ API **pure‑managed** ที่ไม่ต้องอาศัย DLL แบบเนทีฟ, รองรับไฟล์อาร์ไคฟ์ขนาดใหญ่, และจัดการกรณีพิเศษเช่น **zip archive password protection** และชื่อไฟล์ Unicode โดยอัตโนมัติ นอกจากนี้ยังได้รับการปรับให้ทำงานได้อย่างมีประสิทธิภาพ ทำให้เหมาะสมเมื่อคุณต้องการ zip folder ด้วยโปรแกรมในสถานการณ์ที่ต้องการประมวลผลจำนวนมาก  
 
-## สิ่งที่ต้องเตรียม
-- ไลบรารี **Aspose.Zip สำหรับ .NET** ติดตั้งแล้ว (ดาวน์โหลดได้จาก [ที่นี่](https://releases.aspose.com/zip/net/))  
-- โฟลเดอร์บนดิสก์ที่ต้องการบีบอัด – กำหนดพาธในตัวแปร `dataDir`  
-- สภาพแวดล้อมการพัฒนา .NET (Visual Studio, VS Code หรือ IDE ที่คุณชอบ)
+## Prerequisites
+- **Aspose.Zip for .NET** library installed (ดาวน์โหลดได้จาก [ที่นี่](https://releases.aspose.com/zip/net/)).  
+- โฟลเดอร์บนดิสก์ที่คุณต้องการบีบอัด – กำหนดพาธของมันในตัวแปร `dataDir`  
+- สภาพแวดล้อมการพัฒนา .NET (Visual Studio, VS Code, หรือ IDE ใดก็ได้ที่คุณชอบ)  
 
-## นำเข้า Namespaces
-ก่อนอื่นให้เพิ่ม namespaces ที่จำเป็นเข้าไปในสโคป:
+## Import Namespaces
+ก่อนอื่น นำเนมสเปซที่จำเป็นเข้าสู่สโคป:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-## ขั้นตอนที่ 1: บีบอัดโฟลเดอร์เป็น Zip
-เราจะสร้างไฟล์ zip จากโฟลเดอร์ที่คุณจะทำการแตกในภายหลัง ตัวช่วย `CompressDirectory.Run()` จะทำงานหนักให้คุณ
+## Step‑by‑Step Guide
+
+### Step 1: Compress Directory to Zip (zip folder programmatically)
+เราจะสร้างไฟล์ zip จากไดเรกทอรีที่คุณวางแผนจะทำการแตกไฟล์ในภายหลัง ตัวช่วย `CompressDirectory.Run()` จะทำหน้าที่หลัก
 
 ```csharp
 string dataDir = "Your Document Directory";
 CompressDirectory.Run();
 ```
 
-> **เคล็ดลับ:** ตัวอย่าง `CompressDirectory` จะบรรจุทุกไฟล์ใน `dataDir` ลงใน `CompressDirectory_out.zip` คุณสามารถเปลี่ยนชื่อไฟล์ผลลัพธ์ให้ตรงกับมาตรฐานการตั้งชื่อของคุณได้ตามต้องการ
+> **Pro tip:** ตัวอย่าง `CompressDirectory` จะบรรจุไฟล์ทุกไฟล์ใน `dataDir` ไปยัง `CompressDirectory_out.zip`. คุณสามารถเปลี่ยนชื่อไฟล์ผลลัพธ์ให้ตรงกับแนวทางการตั้งชื่อของคุณได้ตามต้องการ.
 
-## ขั้นตอนที่ 2: แยกโฟลเดอร์ (วิธีการ unzip .NET)
+### Step 2: Decompress the Folder – How to Unzip Folder in .NET
 
-### ขั้นตอน 2.1: เปิดไฟล์ Zip
-เปิด archive ที่สร้างขึ้นด้วย `FileStream` เพื่อเตรียมอ่านไฟล์
+#### Step 2.1: Open the Zip File
+เปิดอาร์ไคฟ์ที่สร้างขึ้นด้วย `FileStream`. การทำเช่นนี้เตรียมไฟล์สำหรับการอ่าน
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", FileMode.Open))
 {
 ```
 
-### ขั้นตอน 2.2: สร้างอินสแตนซ์ Archive
-สร้างอ็อบเจ็กต์ `Archive` ซึ่งเป็นตัวแทนของ container zip
+#### Step 2.2: Create Archive Instance
+สร้างอินสแตนซ์ของอ็อบเจกต์ `Archive` ซึ่งเป็นตัวแทนของคอนเทนเนอร์ zip
 
 ```csharp
     using (var archive = new Archive(zipFile))
     {
 ```
 
-### ขั้นตอน 2.3: แตกไฟล์ไปยังโฟลเดอร์
-สุดท้ายให้แตกเนื้อหาไปยังโฟลเดอร์ใหม่ นี่คือขั้นตอน **extract zip to directory**
+#### Step 2.3: Extract to Directory
+สุดท้าย ให้แตกเนื้อหาไปยังโฟลเดอร์ใหม่ นี่คือขั้นตอน **extract zip to directory**
 
 ```csharp
         archive.ExtractToDirectory(dataDir + "DecompressFolder_out");
@@ -81,36 +82,44 @@ using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", Fil
 }
 ```
 
-ยินดีด้วย! คุณได้ **บีบอัดโฟลเดอร์เป็น zip** แล้วตามด้วยการ **แตกไฟล์ zip ไปยังโฟลเดอร์** ด้วย Aspose.Zip สำหรับ .NET วิธีนี้รับประกันความสมบูรณ์ของข้อมูลพร้อมกับโค้ดที่กระชับและอ่านง่าย
+## Why This Matters
+- **Consistency:** การใช้ไลบรารีเดียวกันสำหรับการบีบอัดและการแตกไฟล์รับประกันรูปแบบอาร์ไคฟ์ที่เข้ากันได้  
+- **Performance:** Aspose.Zip สตรีมข้อมูลอย่างมีประสิทธิภาพ ทำให้แม้ไฟล์อาร์ไคฟ์หลายกิกะไบต์ก็สามารถจัดการได้โดยใช้หน่วยความจำต่ำ  
+- **Security:** การสนับสนุนการป้องกันด้วยรหัสผ่านในตัวหมายความว่าคุณสามารถรักษาความปลอดภัยของอาร์ไคฟ์ zip ได้โดยไม่ต้องเขียนโค้ดเพิ่มเติม  
 
-## ปัญหาที่พบบ่อย & วิธีแก้
+## Common Use Cases
+- **Automated backups** – บีบอัดโฟลเดอร์บันทึกประจำคืนและเก็บไว้ในคลาวด์สตอเรจ  
+- **Deployment packages** – รวมไฟล์ทรัพยากรเว็บแบบสแตติกก่อนทำการเผยแพร่ไปยังเซิร์ฟเวอร์  
+- **Data exchange** – ส่งคอลเลกชันของไฟล์ระหว่างบริการเป็นอาร์ไคฟ์เดียว  
+
+## Common Issues & Solutions
 | อาการ | สาเหตุที่เป็นไปได้ | วิธีแก้ |
 |---------|--------------|-----|
-| `UnauthorizedAccessException` ขณะแตกไฟล์ | โฟลเดอร์ปลายทางเป็นแบบอ่าน‑อย่างเดียวหรือกำลังถูกใช้ | ตรวจสอบให้แน่ใจว่าเส้นทางปลายทางสามารถเขียนได้และไม่ได้ถูกล็อก |
-| โฟลเดอร์ผลลัพธ์ว่างหลังการแตก | พาธ zip ต้นทางผิด | ตรวจสอบให้แน่ใจว่า `dataDir + "CompressDirectory_out.zip"` ชี้ไปยังไฟล์ที่ถูกต้อง |
-| ไฟล์ขนาดใหญ่ทำให้เกิด OutOfMemoryException | ใช้ขนาดบัฟเฟอร์เริ่มต้นกับ archive ขนาดใหญ่มาก | ใช้ `ArchiveOptions` เพื่อเพิ่มขนาดบัฟเฟอร์หรือสตรีมไฟล์เป็นชิ้นส่วน |
+| `UnauthorizedAccessException` when extracting | โฟลเดอร์เป้าหมายเป็นแบบอ่านอย่างเดียวหรือกำลังถูกใช้งาน | ตรวจสอบให้แน่ใจว่าพาธปลายทางสามารถเขียนได้และไม่ได้ถูกล็อก |
+| Empty output folder after extraction | พาธ zip ต้นทางผิดพลาด | ตรวจสอบอีกครั้งว่า `dataDir + "CompressDirectory_out.zip"` ชี้ไปยังไฟล์ที่ถูกต้อง |
+| Large files cause OutOfMemoryException | ใช้ขนาดบัฟเฟอร์เริ่มต้นกับอาร์ไคฟ์ขนาดใหญ่มาก | ใช้ `ArchiveOptions` เพื่อเพิ่มขนาดบัฟเฟอร์หรือสตรีมไฟล์เป็นชิ้นส่วน |
 
-## คำถามที่พบบ่อย
+## Frequently Asked Questions
 
-**ถาม: สามารถใช้ Aspose.Zip สำหรับ .NET กับไฟล์ประเภทใดก็ได้หรือไม่?**  
-ตอบ: ใช่, Aspose.Zip รองรับไฟล์ทุกประเภท—ข้อความ, ไบนารี, รูปภาพ, PDF, หรือไฟล์ใด ๆ ที่คุณต้องการ
+**Q: Can I use Aspose.Zip for .NET with any type of file?**  
+A: ใช่, Aspose.Zip รองรับไฟล์ทุกประเภท—ข้อความ, ไบนารี, รูปภาพ, PDF, ตามที่คุณต้องการ  
 
-**ถาม: Aspose.Zip เหมาะกับแอปพลิเคชันขนาดใหญ่หรือไม่?**  
-ตอบ: แน่นอน. มันออกแบบมาสำหรับสถานการณ์การบีบอัด zip .NET ที่ต้องการประสิทธิภาพสูง, รองรับ archive ขนาดหลายกิกะไบต์โดยใช้หน่วยความจำต่ำ
+**Q: Is Aspose.Zip suitable for large‑scale applications?**  
+A: แน่นอน. มันถูกออกแบบมาสำหรับการบีบอัด zip ที่มีประสิทธิภาพสูงในสถานการณ์ .NET, จัดการอาร์ไคฟ์หลายกิกะไบต์ด้วยหน่วยความจำต่ำ  
 
-**ถาม: จะหาเอกสารประกอบการใช้ Aspose.Zip สำหรับ .NET ได้จากที่ไหน?**  
-ตอบ: ดูรายละเอียดเอกสารเต็มได้ที่ [ที่นี่](https://reference.aspose.com/zip/net/)
+**Q: Where can I find comprehensive documentation for Aspose.Zip for .NET?**  
+A: สำรวจเอกสารรายละเอียดได้ที่ [ที่นี่](https://reference.aspose.com/zip/net/)  
 
-**ถาม: สามารถทดลองใช้ Aspose.Zip ก่อนซื้อได้หรือไม่?**  
-ตอบ: ได้, มีเวอร์ชันทดลองฟรีที่ [หน้าดาวน์โหลด Aspose.Zip](https://releases.aspose.com/)
+**Q: Can I try Aspose.Zip before purchasing?**  
+A: ใช่, มีการทดลองใช้งานฟรีที่ [หน้าดาวน์โหลด Aspose.Zip](https://releases.aspose.com/)  
 
-**ถาม: จะรับการสนับสนุนสำหรับ Aspose.Zip สำหรับ .NET ได้อย่างไร?**  
-ตอบ: เยี่ยมชม [ฟอรั่ม Aspose.Zip](https://forum.aspose.com/c/zip/37) เพื่อขอความช่วยเหลือจากชุมชนและทีมงานอย่างเป็นทางการ
+**Q: How can I get support for Aspose.Zip for .NET?**  
+A: เยี่ยมชม [ฟอรั่ม Aspose.Zip](https://forum.aspose.com/c/zip/37) เพื่อรับความช่วยเหลือจากชุมชนและการสนับสนุนอย่างเป็นทางการ  
 
 ---
 
-**อัปเดตล่าสุด:** 2025-12-01  
-**ทดสอบกับ:** Aspose.Zip 24.11 สำหรับ .NET  
+**อัปเดตล่าสุด:** 2026-02-07  
+**ทดสอบด้วย:** Aspose.Zip 24.11 for .NET  
 **ผู้เขียน:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
