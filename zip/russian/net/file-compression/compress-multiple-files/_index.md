@@ -1,11 +1,11 @@
 ---
-date: 2025-12-09
+date: 2026-02-10
 description: Узнайте, как упаковывать несколько файлов в zip на C# с помощью Aspose.Zip
   для .NET. Это пошаговое руководство показывает, как добавить файлы в zip, создать
   zip‑архив на C# и выполнить пример zip‑файла на C#.
 linktitle: How to Compress Multiple Files
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Сжатие нескольких файлов в C# – Легкое сжатие с Aspose.Zip для .NET
+title: zip нескольких файлов в C# — Легкое сжатие с Aspose.Zip для .NET
 url: /ru/net/file-compression/compress-multiple-files/
 weight: 13
 ---
@@ -16,35 +16,37 @@ weight: 13
 
 # zip multiple files c# – Легкое сжатие с Aspose.Zip для .NET
 
-В современном быстроменяющемся цифровом мире **zip multiple files c#** является распространённой задачей для разработчиков, которым нужно уменьшить расходы на хранение, ускорить передачу файлов или собрать связанные документы для загрузки. Aspose.Zip для .NET предоставляет чистый, высокопроизводительный API для **add files to zip**, создания **zip archive c#** и работы со всем, от небольших текстовых файлов до крупных бинарных ресурсов — всё это с помощью всего лишь нескольких строк кода на C#.
+В современном быстром цифровом мире **zip multiple files c#** является распространённой задачей для разработчиков, которым нужно уменьшить затраты на хранение, ускорить передачу файлов или собрать связанные документы для загрузки. Aspose.Zip для .NET предоставляет чистый, высокопроизводительный API для **add files to zip**, создания **zip archive c#** и работы со всем, от небольших текстовых файлов до крупных бинарных ресурсов — всё это с несколькими строками кода на C#.
 
 ## Быстрые ответы
-- **Что делает Aspose.Zip?** Он предоставляет .NET‑библиотеку, позволяющую создавать, читать и обновлять ZIP‑архивы без внешних зависимостей.  
+- **Что делает Aspose.Zip?** Предоставляет .NET‑библиотеку, позволяющую создавать, читать и обновлять ZIP‑архивы без внешних зависимостей.  
 - **Сколько файлов можно сжать?** Неограниченно — библиотека работает потоково, поэтому даже гигабайтные файлы обрабатываются эффективно.  
-- **Нужна ли лицензия для разработки?** Бесплатная пробная версия подходит для оценки; коммерческая лицензия требуется для использования в продакшене.  
+- **Нужна ли лицензия для разработки?** Бесплатная пробная версия подходит для оценки; коммерческая лицензия требуется для продакшн‑использования.  
 - **Какие версии .NET поддерживаются?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7+.  
 - **Можно ли добавить комментарий к архиву?** Да — используйте `ArchiveSaveOptions.ArchiveComment`.
 
 ## Что такое “zip multiple files c#”?
-Сжатие нескольких файлов в один ZIP‑архив с помощью кода на C# часто называют “zip multiple files c#”. Процесс включает открытие каждого исходного файла, создание записей в архиве и окончательное сохранение архива на диск.
+Сжатие нескольких файлов в один ZIP‑архив с помощью кода C# часто называют “zip multiple files c#”. Процесс включает открытие каждого исходного файла, создание записей в архиве и окончательное сохранение архива на диск.
 
 ## Почему стоит использовать Aspose.Zip для этой задачи?
-- **No external tools** – всё работает внутри вашего .NET‑приложения.  
-- **Full control over encoding and comments** – идеально для многоязычных имён файлов.  
-- **High compression ratios** – настраиваемые уровни сжатия.  
-- **Robust error handling** – подходит для корпоративных решений.
+- **Без внешних инструментов** — всё работает внутри вашего .NET‑приложения.  
+- **Полный контроль над кодировкой и комментариями** — идеально для многоязычных имён файлов.  
+- **Высокие коэффициенты сжатия** — настраиваемые уровни сжатия.  
+- **Надёжная обработка ошибок** — подходит для корпоративных решений.  
+- **Поддержка защиты паролем** — вы можете защитить архив паролем (c# zip password).  
+- **Streaming zip compression c#** — API работает с потоками, поэтому большие файлы никогда не загружаются полностью в память.
 
 ## Предварительные требования
 
-Перед тем как приступить к уроку, убедитесь, что у вас есть следующие требования:
+Прежде чем приступить к руководству, убедитесь, что у вас есть следующие компоненты:
 
-- **Aspose.Zip for .NET** – скачайте его из [Aspose.Zip documentation](https://reference.aspose.com/zip/net/).  
-- **Document Directory** – папка, содержащая файлы, которые вы хотите сжать. В примерах ниже мы используем переменную `dataDir` для представления этого пути.  
-- **Basic Understanding of C#** – фрагменты кода используют стандартные конструкции C#.
+- **Aspose.Zip for .NET** — скачайте его из [документации Aspose.Zip](https://reference.aspose.com/zip/net/).  
+- **Document Directory** — папка, содержащая файлы, которые нужно сжать. В примерах ниже переменная `dataDir` представляет этот путь.  
+- **Базовое понимание C#** — фрагменты кода используют стандартные конструкции C#.
 
 ## Импорт пространств имён
 
-В вашем C#‑коде начните с импорта необходимых пространств имён. Эти пространства предоставляют доступ к функционалу, требуемому для сжатия файлов.
+В вашем C#‑коде начните с импорта необходимых пространств имён. Они предоставляют доступ к функционалу, требуемому для сжатия файлов.
 
 ```csharp
 using Aspose.Zip;
@@ -55,34 +57,34 @@ using Aspose.Zip.Saving;
 
 ## Шаг 1: Определите каталог документов
 
-Замените `"Your Document Directory"` реальным путём к папке, в которой находятся файлы, которые вы хотите заархивировать.
-
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Шаг 2: Сжатие нескольких файлов – Полный пошаговый пример
+Замените `"Your Document Directory"` реальным путём к папке, в которой находятся файлы, которые вы хотите заархивировать.
 
-Ниже приведён **c# zip file example**, показывающий, как **how to compress multiple files** и **how to create zip file** программно.
+## Шаг 2: Сжатие нескольких файлов — полное руководство
 
-### Шаг 2.1: Открыть ZIP‑файл (Создать архив)
+Ниже представлен **c# zip file example**, показывающий, как **compress multiple files** и **create zip file** программно.
+
+### Шаг 2.1: Откройте ZIP‑файл (создайте архив)
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressMultipleFiles_out.zip", FileMode.Create))
 ```
 
-Эта строка создаёт новый ZIP‑файл под названием `CompressMultipleFiles_out.zip` в целевом каталоге. Флаг `FileMode.Create` гарантирует, что файл будет перезаписан, если уже существует.
+Эта строка создаёт новый ZIP‑файл `CompressMultipleFiles_out.zip` в целевом каталоге. Флаг `FileMode.Create` гарантирует, что файл будет перезаписан, если он уже существует.
 
-### Шаг 2.2: Открыть исходные файлы
+### Шаг 2.2: Откройте исходные файлы
 
 ```csharp
 using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
 using (FileStream source2 = File.Open(dataDir + "asyoulik.txt", FileMode.Open, FileAccess.Read))
 ```
 
-Здесь мы открываем два примерных текстовых файла (`alice29.txt` и `asyoulik.txt`). Вы можете добавить столько операторов `using (FileStream …)`, сколько потребуется — каждый из них представляет файл, который вы хотите **add files to zip**.
+Здесь мы открываем два примерных текстовых файла (`alice29.txt` и `asyoulik.txt`). Вы можете добавить столько операторов `using (FileStream …)`, сколько требуется — каждый из них представляет файл, который вы хотите **add files to zip**.
 
-### Шаг 2.3: Создать архив и добавить записи
+### Шаг 2.3: Создайте архив и добавьте записи
 
 ```csharp
 using (var archive = new Archive())
@@ -91,9 +93,9 @@ using (var archive = new Archive())
     archive.CreateEntry("asyoulik.txt", source2);
 ```
 
-Объект `Archive` представляет ZIP‑контейнер в памяти. `CreateEntry` добавляет каждый открытый поток как отдельную запись внутри архива. Первый арг — это имя, которое будет отображаться внутри ZIP‑файла.
+Объект `Archive` представляет ZIP‑контейнер в памяти. `CreateEntry` добавляет каждый открытый поток как отдельную запись внутри архива. Первый аргумент — имя, которое будет отображаться внутри ZIP‑файла.
 
-### Шаг 2.4: Сохранить ZIP‑файл
+### Шаг 2.4: Сохраните ZIP‑файл
 
 ```csharp
 archive.Save(zipFile, new ArchiveSaveOptions() { Encoding = Encoding.ASCII, ArchiveComment = "There are two poems from Canterbury corpus" });
@@ -102,43 +104,52 @@ archive.Save(zipFile, new ArchiveSaveOptions() { Encoding = Encoding.ASCII, Arch
 
 `archive.Save` записывает сжатые данные в поток `zipFile`. Мы также указываем кодировку ASCII для имён файлов и добавляем дружелюбный комментарий, описывающий содержимое архива.
 
+## Как добавить пароль к ZIP‑архиву (c# zip password)
+
+Если необходимо защитить ZIP‑файл, Aspose.Zip позволяет задать пароль через `ArchiveSaveOptions.Password`. Пароль применяется во время вызова `Save`, и полученный архив можно открыть только с тем же паролем. Эта возможность полезна при передаче конфиденциальных данных.
+
+## Streaming zip compression c# — почему это важно
+
+Приведённый выше пример уже демонстрирует потоковое сжатие: каждый файл читается через `FileStream` и сразу записывается в поток архива. Поскольку библиотека обрабатывает данные кусками, потребление памяти остаётся низким даже для многогигабайтных файлов. Такой подход гораздо масштабируемее, чем загрузка целых файлов в память.
+
 ## Распространённые проблемы и решения
 
 | Issue | Why it Happens | Fix |
 |-------|----------------|-----|
-| **File not found** | Incorrect `dataDir` path or missing source file. | Verify the path and ensure the files exist on disk. |
-| **OutOfMemoryException** on very large files | Loading entire file into memory. | Use streaming (as shown) – the library processes data in chunks. |
-| **Incorrect file names in ZIP** | Using a non‑ASCII encoding for Unicode filenames. | Switch to `Encoding.UTF8` in `ArchiveSaveOptions`. |
-| **Archive appears empty** |ting to call `archive.Save`. | Ensure the `Save` method is executed inside the `using` block. |
+| **File not found** | Неправильный путь `dataDir` или отсутствует исходный файл. | Проверьте путь и убедитесь, что файлы существуют на диске. |
+| **OutOfMemoryException** on very large files | Загрузка всего файла в память. | Используйте потоковую обработку (как показано) — библиотека работает с кусками данных. |
+| **Incorrect file names in ZIP** | Используется не‑ASCII кодировка для Unicode‑имен файлов. | Переключитесь на `Encoding.UTF8` в `ArchiveSaveOptions`. |
+| **Archive appears empty** | Забыл вызвать `archive.Save`. | Убедитесь, что метод `Save` выполнен внутри блока `using`. |
 
 ## Часто задаваемые вопросы
 
-**Q: Can I compress files of different formats using Aspose.Zip for .NET?**  
-A: Yes, Aspose.Zip supports any file type – you simply provide a stream, and the library handles the rest.
+**Q: Можно ли сжимать файлы разных форматов с помощью Aspose.Zip for .NET?**  
+A: Да, Aspose.Zip поддерживает любые типы файлов — вы просто передаёте поток, а библиотека делает остальное.
 
-**Q: Is Aspose.Zip suitable for large file compression?**  
-A: Absolutely. The library streams data, so even multi‑gigabyte files can be compressed without excessive memory usage.
+**Q: Подходит ли Aspose.Zip для сжатия больших файлов?**  
+A: Абсолютно. Библиотека работает потоково, поэтому даже многогигабайтные файлы можно сжимать без чрезмерного использования памяти.
 
-**Q: How can I get support for Aspose.Zip for .NET?**  
-A: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for community help, or purchase a [temporary license](https://purchase.aspose.com/temporary-license/) for dedicated assistance.
+**Q: Как добавить пароль к ZIP‑архиву?**  
+A: Установите свойство `Password` у `ArchiveSaveOptions` перед вызовом `archive.Save`. Это защитит архив указанным паролем.
 
-**Q: Are there free trials available?**  
-A: Yes, you can explore the product with a [free trial](https://releases.aspose.com/zip/net) before deciding to buy.
+**Q: Как получить поддержку по Aspose.Zip for .NET?**  
+A: Посетите [форум Aspose.Zip](https://forum.aspose.com/c/zip/37) для помощи сообщества или приобретите [временную лицензию](https://purchase.aspose.com/temporary-license/) для персональной поддержки.
 
-**Q: Where can I find the full documentation?**  
-A: Detailed API references and examples are available in the [Aspose.Zip documentation](https://reference.aspose.com/zip/net/).
+**Q: Есть ли бесплатные пробные версии?**  
+A: Да, вы можете опробовать продукт с помощью [бесплатной пробной версии](https://releases.aspose.com/zip/net) перед покупкой.
+
+**Q: Где найти полную документацию?**  
+A: Подробные справочники API и примеры доступны в [документации Aspose.Zip](https://reference.aspose.com/zip/net/).
 
 ## Заключение
 
-Вы теперь видели полный **c# zip file example**, демонстрирующий **how to compress multiple files**, **how to create zip archive c#** и **add files to zip** с использованием Aspose.Zip для .NET. Этот подход не только экономит место для хранения, но и упрощает распространение файлов в веб‑, десктопных или облачных приложениях.
-
-Не стесняйтесь экспериментировать, добавляя больше вызовов `CreateEntry`, регулируя уровни сжатия или внедряя защиту паролем — API Aspose.Zip предоставляет гибкость для настройки ZIP‑архивов под любые сценарии.
+Теперь вы видели полный **c# zip file example**, демонстрирующий **how to compress multiple files**, **how to create zip archive c#** и **add files to zip** с помощью Aspose.Zip для .NET. Такой подход не только экономит место для хранения, но и упрощает распространение файлов в веб‑, настольных или облачных приложениях. Не стесняйтесь экспериментировать, добавляя больше вызовов `CreateEntry`, меняя уровни сжатия или внедряя защиту паролем — API Aspose.Zip предоставляет гибкость для создания ZIP‑архивов под любые сценарии.
 
 ---
 
-**Последнее обновление:** 2025-12-09  
-**Тестировано с:** Aspose.Zip 24.11 for .NET  
-**Автор:** Aspose  
+**Last Updated:** 2026-02-10  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -1,11 +1,11 @@
 ---
-date: 2025-12-09
-description: Naučte se, jak zipovat více souborů v C# pomocí Aspose.Zip pro .NET.
+date: 2026-02-10
+description: Naučte se, jak zkomprimovat více souborů v C# pomocí Aspose.Zip pro .NET.
   Tento krok‑za‑krokem průvodce ukazuje, jak přidat soubory do zipu, vytvořit zip
   archiv v C# a spustit příklad zip souboru v C#.
 linktitle: How to Compress Multiple Files
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: zipování více souborů v C# – Snadná komprese s Aspose.Zip pro .NET
+title: zip multiple files c# – Bez námahy komprese s Aspose.Zip pro .NET
 url: /cs/net/file-compression/compress-multiple-files/
 weight: 13
 ---
@@ -16,7 +16,7 @@ weight: 13
 
 # zip multiple files c# – Snadná komprese s Aspose.Zip pro .NET
 
-V dnešním rychlém digitálním světě je **zip multiple files c#** běžnou potřebou vývojářů, kteří chtějí snížit náklady na úložiště, urychlit přenos souborů nebo seskupit související dokumenty ke stažení. Aspose.Zip pro .NET vám poskytuje čisté, vysoce výkonné API pro **add files to zip**, vytvoření **zip archive c#** a práci se všemi typy souborů – od malých textových souborů po velké binární assety – vše pomocí několika řádků C# kódu.
+V dnešním rychle se rozvíjejícím digitálním světě je **zip multiple files c#** běžnou potřebou vývojářů, kteří potřebují snížit náklady na úložiště, urychlit přenos souborů nebo seskupit související dokumenty ke stažení. Aspose.Zip pro .NET vám poskytuje čisté, vysoce výkonné API pro **add files to zip**, vytvoření **zip archive c#** a zpracování všeho od malých textových souborů po velké binární assety – a to vše jen několika řádky C# kódu.
 
 ## Quick Answers
 - **What does Aspose.Zip do?** It provides a .NET library that lets you create, read, and update ZIP archives without external dependencies.  
@@ -25,26 +25,28 @@ V dnešním rychlém digitálním světě je **zip multiple files c#** běžnou 
 - **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7+.  
 - **Can I add a comment to the archive?** Yes – use `ArchiveSaveOptions.ArchiveComment`.
 
-## Co je “zip multiple files c#”?
-Komprese několika souborů do jednoho ZIP archivu pomocí C# kódu se často označuje jako “zip multiple files c#”. Proces zahrnuje otevření každého zdrojového souboru, vytvoření položek v archivu a nakonec uložení archivu na disk.
+## What is “zip multiple files c#”?
+Komprese několika souborů do jediného ZIP archivu pomocí C# kódu se často označuje jako “zip multiple files c#”. Proces zahrnuje otevření každého zdrojového souboru, vytvoření položek v archivu a nakonec uložení archivu na disk.
 
-## Proč použít Aspose.Zip pro tento úkol?
-- **Žádné externí nástroje** – vše běží uvnitř vaší .NET aplikace.  
-- **Plná kontrola nad kódováním a komentáři** – ideální pro vícejazyčné názvy souborů.  
-- **Vysoké kompresní poměry** – konfigurovatelné úrovně komprese.  
-- **Robustní zpracování chyb** – vhodné pro enterprise‑grade řešení.
+## Why use Aspose.Zip for this task?
+- **No external tools** – everything runs inside your .NET application.  
+- **Full control over encoding and comments** – perfect for multilingual filenames.  
+- **High compression ratios** – configurable compression levels.  
+- **Robust error handling** – ideal for enterprise‑grade solutions.  
+- **Supports password protection** – you can secure the archive with a password (c# zip password).  
+- **Streaming zip compression c#** – the API works with streams, so large files never have to be fully loaded into memory.
 
-## Prerekvizity
+## Prerequisites
 
-Předtím, než se pustíte do tutoriálu, ujistěte se, že máte následující předpoklady:
+Before diving into the tutorial, make sure you have the following prerequisites in place:
 
-- **Aspose.Zip pro .NET** – stáhněte jej z [Aspose.Zip documentation](https://reference.aspose.com/zip/net/).  
-- **Document Directory** – složka, která obsahuje soubory, jež chcete komprimovat. V příkladech níže používáme proměnnou `dataDir` k reprezentaci této cesty.  
-- **Základní znalost C#** – úryvky kódu používají standardní konstrukce C#.
+- **Aspose.Zip for .NET** – download it from the [Aspose.Zip documentation](https://reference.aspose.com/zip/net/).  
+- **Document Directory** – a folder that contains the files you want to compress. In the examples below we use the variable `dataDir` to represent this path.  
+- **Basic Understanding of C#** – the code snippets use standard C# constructs.
 
 ## Import Namespaces
 
-Ve svém C# kódu začněte importovat potřebné jmenné prostory. Tyto jmenné prostory poskytují přístup k funkcionalitě požadované pro kompresi souborů.
+In your C# code, start by importing the necessary namespaces. These namespaces provide access to the functionality required for file compression.
 
 ```csharp
 using Aspose.Zip;
@@ -53,36 +55,36 @@ using System.Text;
 using Aspose.Zip.Saving;
 ```
 
-## Krok 1: Definujte Document Directory
+## Step 1: Define the Document Directory
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-Nahraďte `"Your Document Directory"` skutečnou cestou ke složce, která obsahuje soubory, jež chcete zkomprimovat.
+Replace `"Your Document Directory"` with the actual path to the folder that holds the files you want to zip.
 
-## Krok 2: Komprimujte více souborů – Kompletní průvodce
+## Step 2: Compress Multiple Files – Full Walkthrough
 
-Níže je **c# zip file example**, který ukazuje, jak **compress multiple files** a **create zip file** programově.
+Below is a **c# zip file example** that shows how to **how to compress multiple files** and **how to create zip file** programmatically.
 
-### Krok 2.1: Otevřete Zip soubor (vytvořte archiv)
+### Step 2.1: Open the Zip File (Create the Archive)
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressMultipleFiles_out.zip", FileMode.Create))
 ```
 
-Tento řádek vytvoří nový ZIP soubor s názvem `CompressMultipleFiles_out.zip` v cílovém adresáři. Příznak `FileMode.Create` zajistí přepsání souboru, pokud již existuje.
+This line creates a new ZIP file called `CompressMultipleFiles_out.zip` in the target directory. The `FileMode.Create` flag ensures the file is overwritten if it already exists.
 
-### Krok 2.2: Otevřete zdrojové soubory
+### Step 2.2: Open Source Files
 
 ```csharp
 using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
 using (FileStream source2 = File.Open(dataDir + "asyoulik.txt", FileMode.Open, FileAccess.Read))
 ```
 
-Zde otevíráme dva ukázkové textové soubory (`alice29.txt` a `asyoulik.txt`). Můžete přidat libovolný počet `using (FileStream …)` bloků – každý představuje soubor, který chcete **add files to zip**.
+Here we open two sample text files (`alice29.txt` and `asyoulik.txt`). You can add as many `using (FileStream …)` statements as needed – each one represents a file you want to **add files to zip**.
 
-### Krok 2.3: Vytvořte archiv a přidejte položky
+### Step 2.3: Create Archive and Add Entries
 
 ```csharp
 using (var archive = new Archive())
@@ -91,27 +93,35 @@ using (var archive = new Archive())
     archive.CreateEntry("asyoulik.txt", source2);
 ```
 
-Objekt `Archive` představuje ZIP kontejner v paměti. `CreateEntry` přidá každý otevřený stream jako samostatnou položku uvnitř archivu. První argument je název, který se objeví v ZIP souboru.
+The `Archive` object represents the in‑memory ZIP container. `CreateEntry` adds each opened stream as a separate entry inside the archive. The first argument is the name that will appear inside the ZIP file.
 
-### Krok 2.4: Uložte Zip soubor
+### Step 2.4: Save the Zip File
 
 ```csharp
 archive.Save(zipFile, new ArchiveSaveOptions() { Encoding = Encoding.ASCII, ArchiveComment = "There are two poems from Canterbury corpus" });
 }
 ```
 
-`archive.Save` zapíše komprimovaná data do streamu `zipFile`. Také specifikujeme ASCII kódování pro názvy souborů a přidáme přátelský komentář popisující obsah archivu.
+`archive.Save` writes the compressed data to the `zipFile` stream. We also specify an ASCII encoding for file names and add a friendly comment describing the archive’s contents.
 
-## Časté problémy a řešení
+## How to add a password to a ZIP archive (c# zip password)
+
+If you need to protect the ZIP file, Aspose.Zip lets you set a password through `ArchiveSaveOptions.Password`. The password is applied during the `Save` call, and the resulting archive can be opened only with the same password. This feature is useful when you are transmitting confidential data.
+
+## Streaming zip compression c# – Why it matters
+
+The example above already demonstrates streaming compression: each file is read via a `FileStream` and written directly to the archive stream. Because the library processes data in chunks, memory consumption stays low even for multi‑gigabyte files. This approach is far more scalable than loading whole files into memory.
+
+## Common Issues and Solutions
 
 | Issue | Why it Happens | Fix |
 |-------|----------------|-----|
 | **File not found** | Incorrect `dataDir` path or missing source file. | Verify the path and ensure the files exist on disk. |
 | **OutOfMemoryException** on very large files | Loading entire file into memory. | Use streaming (as shown) – the library processes data in chunks. |
 | **Incorrect file names in ZIP** | Using a non‑ASCII encoding for Unicode filenames. | Switch to `Encoding.UTF8` in `ArchiveSaveOptions`. |
-| **Archive appears empty** | Forgetting to call `archive.Save`. | Ensure theSave` method is executed inside the `using` block. |
+| **Archive appears empty** | Forgetting to call `archive.Save`. | Ensure the `Save` method is executed inside the `using` block. |
 
-## Často kladené otázky
+## Frequently Asked Questions
 
 **Q: Can I compress files of different formats using Aspose.Zip for .NET?**  
 A: Yes, Aspose.Zip supports any file type – you simply provide a stream, and the library handles the rest.
@@ -119,7 +129,10 @@ A: Yes, Aspose.Zip supports any file type – you simply provide a stream, and t
 **Q: Is Aspose.Zip suitable for large file compression?**  
 A: Absolutely. The library streams data, so even multi‑gigabyte files can be compressed without excessive memory usage.
 
-**Q: How can I get support for Aspose.Zip for .NET?**  
+**Q: How can I add a password to the ZIP archive?**  
+A: Set the `Password` property on `ArchiveSaveOptions` before calling `archive.Save`. This secures the archive with the specified password.
+
+**Q: How do I get support for Aspose.Zip for .NET?**  
 A: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for community help, or purchase a [temporary license](https://purchase.aspose.com/temporary-license/) for dedicated assistance.
 
 **Q: Are there free trials available?**  
@@ -128,15 +141,13 @@ A: Yes, you can explore the product with a [free trial](https://releases.aspose.
 **Q: Where can I find the full documentation?**  
 A: Detailed API references and examples are available in the [Aspose.Zip documentation](https://reference.aspose.com/zip/net/).
 
-## Závěr
+## Conclusion
 
-Nyní jste viděli kompletní **c# zip file example**, který demonstruje **how to compress multiple files**, **how to create zip archive c#**, a **add files to zip** pomocí Aspose.Zip pro .NET. Tento přístup nejen šetří úložný prostor, ale také zjednodušuje distribuci souborů ve webových, desktopových či cloudových aplikacích.
-
-Neváhejte experimentovat s dalšími voláními `CreateEntry`, upravit úrovně komprese nebo přidat ochranu heslem – API Aspose.Zip vám poskytuje flexibilitu přizpůsobit ZIP archivy jakémukoli scénáři.
+You’ve now seen a complete **c# zip file example** that demonstrates **how to compress multiple files**, **how to create zip archive c#**, and how to **add files to zip** using Aspose.Zip for .NET. This approach not only saves storage space but also simplifies file distribution in web, desktop, or cloud applications. Feel free to experiment by adding more `CreateEntry` calls, adjusting compression levels, or embedding password protection – the Aspose.Zip API gives you the flexibility to tailor ZIP archives to any scenario.
 
 ---
 
-**Last Updated:** 2025-12-09  
+**Last Updated:** 2026-02-10  
 **Tested With:** Aspose.Zip 24.11 for .NET  
 **Author:** Aspose  
 
