@@ -1,10 +1,10 @@
 ---
-date: 2025-12-09
-description: Aspose.Zip을 사용하여 .NET에서 파일을 zip에 추가하고 압축하는 방법을 배워보세요. 이 단계별 가이드를 따라 빠르게
-  C#으로 zip 아카이브를 생성하세요.
+date: 2026-02-10
+description: C#를 사용해 여러 파일을 zip하는 방법, 파일을 zip에 추가하는 방법, 그리고 Aspose.Zip for .NET을 이용해
+  .NET 프로젝트를 압축하는 방법을 배워보세요. 코드 예제가 포함된 단계별 가이드.
 linktitle: Compressing a Single File
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Aspose.Zip for .NET을 사용하여 파일을 Zip에 추가하는 방법
+title: 'c# zip 여러 파일: Aspose.Zip으로 파일을 Zip에 추가'
 url: /ko/net/file-compression/compress-single-file/
 weight: 14
 ---
@@ -13,41 +13,41 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET을 사용하여 파일을 Zip에 추가하기
+# c# zip multiple files – Aspose.Zip for .NET으로 Zip에 파일 추가
 
-## 소개
+## Introduction
 
-현대 .NET 개발에서 **파일을 zip에 추가**하는 작업은 저장 비용을 크게 절감하고 다운로드 시간을 단축시킬 수 있습니다. Aspose.Zip for .NET은 몇 줄의 코드만으로 **compress file .NET** 프로젝트를 압축할 수 있는 깔끔하고 고성능의 API를 제공합니다. 이 튜토리얼에서는 `FileStream` 기반 접근 방식을 사용하여 C# 스타일로 zip 아카이브를 만드는 전체 예제를 단계별로 살펴보겠습니다.
+빠르고 안정적으로 **c# zip multiple files**를 수행해야 한다면, Aspose.Zip for .NET은 간단한 파일 추가부터 고급 암호화까지 모든 작업을 처리하는 깔끔하고 고성능 API를 제공합니다. 이 튜토리얼에서는 **add file to zip**, **compress file .NET** 스타일을 보여주는 실습 예제를 단계별로 진행하고, 단일 아카이브에 여러 파일을 압축하는 기반을 마련합니다. 끝까지 읽으면 ZIP 아카이브를 다루는 모든 .NET 프로젝트에 이 라이브러리가 왜 견고한 선택인지 이해하게 될 것입니다.
 
-## 빠른 답변
-- **어떤 라이브러리를 사용해야 하나요?** Aspose.Zip for .NET
-- **한 줄 코드로 파일을 zip에 추가할 수 있나요?** 예 – `archive.CreateEntry(...)`가 핵심 작업을 수행합니다
-- **개발용 라이선스가 필요합니까?** 무료 체험판으로 테스트 가능하지만, 프로덕션에서는 라이선스가 필요합니다
-- **지원되는 .NET 버전은 무엇인가요?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7
-- **대용량 파일에도 안전한가요?** 예, 라이브러리가 데이터를 스트리밍하므로 메모리 사용량이 낮게 유지됩니다
+## Quick Answers
+- **What library should I use?** Aspose.Zip for .NET  
+- **Can I add a file to zip with a single line of code?** Yes – `archive.CreateEntry(...)` does the heavy lifting  
+- **Do I need a license for development?** A free trial works for testing; a license is required for production  
+- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7  
+- **Is it safe for large files?** Yes, the library streams data, so memory usage stays low  
 
-## Aspose.Zip에서 “add file to zip”란?
+## What is “add file to zip” in Aspose.Zip?
 
-파일을 zip 아카이브에 추가한다는 것은 디스크(또는 메모리)에 존재하는 파일을 ZIP 파일 사양에 맞는 압축 컨테이너에 기록하는 것을 의미합니다. Aspose.Zip은 저수준 세부 사항을 추상화하여 체크섬 계산이나 압축 알고리즘 대신 비즈니스 로직에 집중할 수 있게 해줍니다.
+파일을 zip 아카이브에 추가한다는 것은 디스크(또는 메모리)에 존재하는 기존 파일을 ZIP 파일 사양에 맞는 압축 컨테이너에 기록하는 것을 의미합니다. Aspose.Zip은 저수준 세부 사항을 추상화하여 체크섬 계산이나 압축 알고리즘보다 비즈니스 로직에 집중할 수 있게 해줍니다.
 
-## 왜 Aspose.Zip for .NET을 사용해야 할까요?
+## Why use Aspose.Zip for .NET?
 
-- **Performance‑optimized**: 데이터를 직접 스트리밍하여 임시 버퍼를 사용하지 않습니다.
-- **Rich feature set**: 암호화, 분할 아카이브, 사용자 지정 엔트리 설정 등을 지원합니다.
-- **Simple API**: 한 줄 엔트리 생성(`CreateEntry`)으로 보일러플레이트 코드를 크게 줄일 수 있습니다.
-- **Cross‑platform**: .NET Core/5+ 환경에서 Windows, Linux, macOS 모두 동작합니다.
+- **Performance‑optimized** – Streams data directly, avoiding temporary buffers.  
+- **Rich feature set** – Supports encryption, split archives, and custom entry settings.  
+- **Simple API** – One‑liner entry creation (`CreateEntry`) reduces boilerplate.  
+- **Cross‑platform** – Works on Windows, Linux, and macOS with .NET Core/5+.  
 
-## 사전 요구 사항
+## Prerequisites
 
-시작하기 전에 다음이 준비되어 있는지 확인하세요.
+시작하기 전에 다음을 확인하세요:
 
-- C# 프로그래밍에 대한 기본 지식
-- Visual Studio(또는 선호하는 .NET IDE) 설치
-- Aspose.Zip for .NET 라이브러리 – **[여기](https://releases.aspose.com/zip/net/)**에서 다운로드 가능
+- Basic knowledge of C# programming.  
+- Visual Studio (or any preferred .NET IDE) installed.  
+- Aspose.Zip for .NET library, which you can download **[here](https://releases.aspose.com/zip/net/)**.  
 
-## 네임스페이스 가져오기
+## Import Namespaces
 
-C# 파일에 필요한 네임스페이스를 먼저 포함합니다.
+First, include the required namespaces in your C# file:
 
 ```csharp
 using Aspose.Zip;
@@ -55,31 +55,31 @@ using System.IO;
 using Aspose.Zip.Saving;
 ```
 
-이 가져오기 구문을 통해 `Archive` 클래스, 파일 I/O 유틸리티 및 저장 옵션에 접근할 수 있습니다.
+These imports give you access to the `Archive` class, file I/O utilities, and saving options.
 
-## 단계 1: 문서 디렉터리 설정
+## Step 1: Set Up Your Document Directory
 
-압축하려는 원본 파일이 들어 있는 폴더를 정의합니다. 자리표시자를 실제 경로로 교체하세요.
+Define the folder that contains the source file you want to compress. Replace the placeholder with the actual path on your machine.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-> **팁:** `Path.Combine을 사용하면 플랫폼에 독립적인 경로를 만들 수 있습니다. 예: `Path.Combine(dataDir, "alice29.txt")`.
+> **Pro tip:** Use `Path.Combine` for platform‑independent paths, e.g., `Path.Combine(dataDir, "alice29.txt")`.
 
-## 단계 2: FileStream을 사용해 Zip 파일 만들기
+## Step 2: Create a Zip File Using FileStream
 
-출력 ZIP 파일을 가리키는 `FileStream`을 엽니다. 이는 **zip file using filestream** 기법을 보여줍니다.
+Open a `FileStream` that points to the output ZIP file. This demonstrates the **zip file using filestream** technique.
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressSingleFile_out.zip", FileMode.Create))
 ```
 
-`using` 문은 스트림이 올바르게 닫히고 파일이 정상적으로 플러시되도록 보장합니다.
+The `using` statement guarantees that the stream is closed and the file is flushed correctly.
 
-## 단계 3: 아카이브에 파일 추가
+## Step 3: Add a File to the Archive
 
-이제 원본 파일(`alice29.txt`)을 열고 아카이브에 추가합니다. 이것이 **c# compress file zip** 작업의 핵심입니다.
+Now open the source file (`alice29.txt`) and add it to the archive. This is the core of the **c# compress file zip** operation.
 
 ```csharp
 using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
@@ -94,50 +94,57 @@ using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, Fi
 }
 ```
 
-### 코드 동작 방식
-- **FileStream Setup** – 출력 ZIP 파일에 대한 연결을 설정합니다.
-- **CreateEntry** – 소스 스트림(`source1`)을 받아 `"alice29.txt"`라는 이름으로 아카이브에 기록합니다.
-- **Save** – 압축된 데이터를 `CompressSingleFile_out.zip`에 저장합니다.
+### How the code works
+- **FileStream Setup** – Establishes a connection to the output ZIP file.  
+- **CreateEntry** – Takes the source stream (`source1`) and writes it into the archive under the name `"alice29.txt"`.  
+- **Save** – Persists the compressed data to `CompressSingleFile_out.zip`.  
 
-추가 `CreateEntry` 호출을 반복하면 이 스니펫을 **zip archive tutorial c#** 전체 예제로 확장할 수 있습니다.
+You can repeat the `CreateEntry` call for additional files, turning this snippet into a full **zip archive tutorial c#** and a foundation for **c# zip multiple files**.
 
-## 일반적인 문제와 해결책
+## Common Use Cases for c# zip multiple files
+
+- **Batch exporting reports** – Generate dozens of PDF or CSV files and bundle them into a single ZIP for download.  
+- **Log archiving** – Periodically compress log files to keep storage costs low.  
+- **Data backup** – Combine configuration files, assets, and databases into one archive before uploading to cloud storage.  
+- **Secure file transfer** – Pair `CreateEntry` with encryption options to create password‑protected archives.
+
+## Common Issues and Solutions
 
 | Issue | Reason | Fix |
 |-------|--------|-----|
-| **File not found** | `dataDir` 경로가 잘못됨 | 디렉터리 문자열을 확인하거나 디버깅을 위해 `Path.GetFullPath` 사용 |
-| **Access denied** | 파일 권한 부족 | Visual Studio를 관리자 권한으로 실행하거나 폴더에 쓰기 권한 부여 |
-| **Empty zip file** | `archive.Save`가 `using` 블록 밖에서 호출됨 | `archive.Save(zipFile);`이 내부 `using` 블록 안에 위치하도록 확인 |
+| **File not found** | Incorrect `dataDir` path | Verify the directory string or use `Path.GetFullPath` for debugging |
+| **Access denied** | Insufficient file permissions | Run Visual Studio as administrator or grant write rights to the folder |
+| **Empty zip file** | `archive.Save` called outside the `using` block | Ensure `archive.Save(zipFile);` is inside the inner `using` block as shown |
 
-## 자주 묻는 질문
+## Frequently Asked Questions
 
-### Q1: Aspose.Zip for .NET을 사용해 하나의 아카이브에 여러 파일을 압축할 수 있나요?
+### Q1: Can I compress multiple files in a single archive using Aspose.Zip for .NET?
 
-A1: 물론입니다! `Save` 메서드 전에 추가 `CreateEntry` 호출을 넣어 여러 파일을 압축하도록 코드를 확장하면 됩니다.
+A1: Absolutely! You can adapt the provided code to compress multiple files by adding additional `CreateEntry` calls before the `Save` method.
 
-### Q2: Aspose.Zip for .NET에 대한 포괄적인 문서는 어디서 찾을 수 있나요?
+### Q2: Where can I find comprehensive documentation for Aspose.Zip for .NET?
 
-A2: **[documentation](https://reference.aspose.com/zip/net/)**을 살펴보면 Aspose.Zip의 기능을 깊이 있게 이해할 수 있습니다.
+A2: Explore the **[documentation](https://reference.aspose.com/zip/net/)** for in‑depth insights into Aspose.Zip's capabilities.
 
-### Q3: Aspose.Zip for .NET의 무료 체험판이 있나요?
+### Q3: Is there a free trial available for Aspose.Zip for .NET?
 
-A3: 예, **[free trial](https://releases.aspose.com/)**을 통해 기능을 체험해 볼 수 있습니다.
+A3: Yes, you can get a **[free trial](https://releases.aspose.com/)** to explore the features before making a purchase.
 
-### Q4: Aspose.Zip for .NET에 대한 임시 라이선스를 어떻게 얻나요?
+### Q4: How can I obtain temporary licensing for Aspose.Zip for .NET?
 
-A4: 개발용 임시 라이선스는 **[this link](https://purchase.aspose.com/temporary-license/)**에서 발급받을 수 있습니다.
+A4: Visit **[this link](https://purchase.aspose.com/temporary-license/)** to acquire a temporary license for your development needs.
 
-### Q5: Aspose.Zip for .NET에 대한 지원이나 커뮤니티는 어디서 찾을 수 있나요?
+### Q5: Where can I seek support or connect with the community for Aspose.Zip for .NET?
 
-A5: **[support forum](https://forum.aspose.com/c/zip/37)**에 참여하면 전문가와 다른 개발자들의 도움을 받을 수 있습니다.
+A5: Join the Aspose.Zip community on the **[support forum](https://forum.aspose.com/c/zip/37)** to get assistance from experts and fellow developers.
 
-## 결론
+## Conclusion
 
-이 단계를 따라 하면 **add file to zip** 아카이브, **compress file .NET** 프로젝트를 만들고 Aspose.Zip을 활용한 견고한 zip 아카이브를 생성하는 방법을 익히게 됩니다. 더 큰 파일, 암호화 옵션, 분할 아카이브 등을 실험해 보면서 라이브러리의 모든 기능을 최대한 활용해 보세요.
+By following these steps you now know how to **add file to zip**, **compress file .NET**, and lay the groundwork for **c# zip multiple files** in real‑world applications. Experiment with larger files, encryption options, or split archives to fully leverage Aspose.Zip’s power.
 
 ---
 
-**Last Updated:** 2025-12-09  
+**Last Updated:** 2026-02-10  
 **Tested With:** Aspose.Zip for .NET 24.11  
 **Author:** Aspose  
 

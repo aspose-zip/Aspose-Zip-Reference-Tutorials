@@ -1,11 +1,11 @@
 ---
-date: 2025-12-09
-description: Dowiedz się, jak dodać plik do archiwum zip i skompresować plik w .NET
-  przy użyciu Aspose.Zip. Postępuj zgodnie z tym przewodnikiem krok po kroku, aby
-  szybko utworzyć archiwum zip w C#.
+date: 2026-02-10
+description: Dowiedz się, jak w C# spakować wiele plików, dodać plik do archiwum zip
+  i kompresować projekty .NET przy użyciu Aspose.Zip dla .NET. Przewodnik krok po
+  kroku z przykładami kodu.
 linktitle: Compressing a Single File
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Jak dodać plik do archiwum ZIP przy użyciu Aspose.Zip dla .NET
+title: 'c# zipowanie wielu plików: Dodaj plik do Zip przy użyciu Aspose.Zip'
 url: /pl/net/file-compression/compress-single-file/
 weight: 14
 ---
@@ -14,41 +14,41 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Dodaj plik do archiwum ZIP przy użyciu Aspose.Zip dla .NET
+# c# zip multiple files – Dodaj plik do ZIP przy użyciu Aspose.Zip dla .NET
 
-## Wprowadzenie
+## Introduction
 
-We współczesnym programowaniu w .NET **dodawanie pliku do zip** może znacząco obniżyć koszty przechowywania i przyspieszyć pobieranie. Aspose.Zip dla .NET oferuje czyste, wysokowydajne API, które pozwala **kompresować plik .NET** projektów w kilku linijkach kodu. W tym samouczku przeprowadzimy Cię krok po kroku przez kompletny, praktyczny przykład pokazujący, jak stworzyć archiwum zip w stylu C#, używając podejścia opartego na `FileStream`.
+Jeśli potrzebujesz **c# zip multiple files** szybko i niezawodnie, Aspose.Zip dla .NET oferuje czyste, wysokowydajne API, które obsługuje wszystko – od prostego dodawania plików po zaawansowane szyfrowanie. W tym samouczku przeprowadzimy praktyczny przykład, który pokaże, jak **add file to zip**, **compress file .NET** style, oraz jak przygotować się do zipowania wielu plików w jednym archiwum. Po zakończeniu zrozumiesz, dlaczego ta biblioteka jest solidnym wyborem dla każdego projektu .NET pracującego z archiwami ZIP.
 
-## Szybkie odpowiedzi
-- **Jaką bibliotekę powinienem używać?** Aspose.Zip dla .NET
-- **Czy mogę dodać plik do zip jedną linią kodu?** Tak – `archive.CreateEntry(...)` wykonuje całą pracę
-- **Czy potrzebna jest licencja do rozwoju?** Darmowa wersja próbna wystarczy do testów; licencja jest wymagana w produkcji
-- **Jakie wersje .NET są wspierane?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7
-- **Czy jest bezpieczna dla dużych plików?** Tak, biblioteka strumieniuje dane, więc zużycie pamięci pozostaje niskie
+## Quick Answers
+- **What library should I use?** Aspose.Zip for .NET  
+- **Can I add a file to zip with a single line of code?** Yes – `archive.CreateEntry(...)` does the heavy lifting  
+- **Do I need a license for development?** A free trial works for testing; a license is required for production  
+- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7  
+- **Is it safe for large files?** Yes, the library streams data, so memory usage stays low  
 
-## Co oznacza „add file to zip” w Aspose.Zip?
+## What is “add file to zip” in Aspose.Zip?
 
-Dodanie pliku do archiwum zip oznacza wzięcie istniejącego pliku na dysku (lub w pamięci) i zapisanie go w skompresowanym kontenerze zgodnym ze specyfikacją ZIP. Aspose.Zip abstrahuje szczegóły niskiego poziomu, pozwalając skupić się na logice biznesowej, a nie na obliczeniach sum kontrolnych czy algorytmach kompresji.
+Dodanie pliku do archiwum ZIP oznacza wzięcie istniejącego pliku na dysku (lub w pamięci) i zapisanie go w skompresowanym kontenerze zgodnym ze specyfikacją pliku ZIP. Aspose.Zip abstrahuje szczegóły niskiego poziomu, pozwalając skupić się na logice biznesowej, a nie na obliczeniach sum kontrolnych czy algorytmach kompresji.
 
-## Dlaczego warto używać Aspose.Zip dla .NET?
+## Why use Aspose.Zip for .NET?
 
-- **Optymalizacja wydajności**: Strumieniuje dane bezpośrednio, unikając tymczasowych buforów.
-- **Bogaty zestaw funkcji**: Obsługa szyfrowania, archiwów podzielonych i niestandardowych ustawień wpisów.
-- **Proste API**: Jednolinijkowe tworzenie wpisu (`CreateEntry`) redukuje kod szablonowy.
-- **Cross‑platform**: Działa na Windows, Linux i macOS z .NET Core/5+.
+- **Performance‑optimized** – Streams data directly, avoiding temporary buffers.  
+- **Rich feature set** – Supports encryption, split archives, and custom entry settings.  
+- **Simple API** – One‑liner entry creation (`CreateEntry`) reduces boilerplate.  
+- **Cross‑platform** – Works on Windows, Linux, and macOS with .NET Core/5+.  
 
-## Wymagania wstępne
+## Prerequisites
 
-Zanim rozpoczniesz, upewnij się, że masz:
+Before you start, make sure you have:
 
-- Podstawową znajomość programowania w C#.
-- Zainstalowane Visual Studio (lub dowolne preferowane IDE .NET).
-- Bibliotekę Aspose.Zip dla .NET, którą możesz pobrać **[tutaj](https://releases.aspose.com/zip/net/)**.
+- Basic knowledge of C# programming.  
+- Visual Studio (or any preferred .NET IDE) installed.  
+- Aspose.Zip for .NET library, which you can download **[here](https://releases.aspose.com/zip/net/)**.  
 
-## Importowanie przestrzeni nazw
+## Import Namespaces
 
-Najpierw dołącz wymagane przestrzenie nazw w swoim pliku C#:
+First, include the required namespaces in your C# file:
 
 ```csharp
 using Aspose.Zip;
@@ -56,31 +56,31 @@ using System.IO;
 using Aspose.Zip.Saving;
 ```
 
-Te importy dają dostęp do klasy `Archive`, narzędzi I/O oraz opcji zapisu.
+These imports give you access to the `Archive` class, file I/O utilities, and saving options.
 
-## Krok 1: Konfiguracja katalogu dokumentu
+## Step 1: Set Up Your Document Directory
 
-Zdefiniuj folder zawierający plik źródłowy, który chcesz skompresować. Zastąp placeholder rzeczywistą ścieżką na swoim komputerze.
+Define the folder that contains the source file you want to compress. Replace the placeholder with the actual path on your machine.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-> **Porada:** Używaj `Path.Combine` dla ścieżek niezależnych od platformy, np. `Path.Combine(dataDir, "alice29.txt")`.
+> **Pro tip:** Use `Path.Combine` for platform‑independent paths, e.g., `Path.Combine(dataDir, "alice29.txt")`.
 
-## Krok 2: Utworzenie pliku ZIP przy użyciu FileStream
+## Step 2: Create a Zip File Using FileStream
 
-Otwórz `FileStream`, który wskazuje na wyjściowy plik ZIP. To demonstruje technikę **zip file using filestream**.
+Open a `FileStream` that points to the output ZIP file. This demonstrates the **zip file using filestream** technique.
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressSingleFile_out.zip", FileMode.Create))
 ```
 
-Instrukcja `using` zapewnia, że strumień zostanie zamknięty, a plik poprawnie zapisany.
+The `using` statement guarantees that the stream is closed and the file is flushed correctly.
 
-## Krok 3: Dodanie pliku do archiwum
+## Step 3: Add a File to the Archive
 
-Teraz otwórz plik źródłowy (`alice29.txt`) i dodaj go do archiwum. To jest sedno operacji **c# compress file zip**.
+Now open the source file (`alice29.txt`) and add it to the archive. This is the core of the **c# compress file zip** operation.
 
 ```csharp
 using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
@@ -95,52 +95,59 @@ using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, Fi
 }
 ```
 
-### Jak działa kod
-- **Ustawienie FileStream** – Nawiązuje połączenie z wyjściowym plikiem ZIP.
-- **CreateEntry** – Pobiera strumień źródłowy (`source1`) i zapisuje go w archiwum pod nazwą `"alice29.txt"`.
-- **Save** – Zapisuje skompresowane dane do `CompressSingleFile_out.zip`.
+### How the code works
+- **FileStream Setup** – Establishes a connection to the output ZIP file.  
+- **CreateEntry** – Takes the source stream (`source1`) and writes it into the archive under the name `"alice29.txt"`.  
+- **Save** – Persists the compressed data to `CompressSingleFile_out.zip`.  
 
-Możesz powtórzyć wywołanie `CreateEntry` dla dodatkowych plików, przekształcając ten fragment w pełny **zip archive tutorial c#**.
+You can repeat the `CreateEntry` call for additional files, turning this snippet into a full **zip archive tutorial c#** and a foundation for **c# zip multiple files**.
 
-## Typowe problemy i rozwiązania
+## Common Use Cases for c# zip multiple files
 
-| Problem | Powód | Rozwiązanie |
-|---------|-------|-------------|
-| **Plik nie został znaleziony** | Nieprawidłowa ścieżka `dataDir` | Sprawdź ciąg katalogu lub użyj `Path.GetFullPath` do debugowania |
-| **Odmowa dostępu** | Brak wystarczających uprawnień do pliku | Uruchom Visual Studio jako administrator lub przyznaj prawa zapisu do folderu |
-| **Puste archiwum ZIP** | `archive.Save` wywołane poza blokiem `using` | Upewnij się, że `archive.Save(zipFile);` znajduje się wewnątrz wewnętrznego bloku `using`, jak pokazano |
+- **Batch exporting reports** – Generate dozens of PDF or CSV files and bundle them into a single ZIP for download.  
+- **Log archiving** – Periodically compress log files to keep storage costs low.  
+- **Data backup** – Combine configuration files, assets, and databases into one archive before uploading to cloud storage.  
+- **Secure file transfer** – Pair `CreateEntry` with encryption options to create password‑protected archives.
 
-## Najczęściej zadawane pytania
+## Common Issues and Solutions
 
-### Q1: Czy mogę skompresować wiele plików w jednym archiwum przy użyciu Aspose.Zip dla .NET?
+| Issue | Reason | Fix |
+|-------|--------|-----|
+| **File not found** | Incorrect `dataDir` path | Verify the directory string or use `Path.GetFullPath` for debugging |
+| **Access denied** | Insufficient file permissions | Run Visual Studio as administrator or grant write rights to the folder |
+| **Empty zip file** | `archive.Save` called outside the `using` block | Ensure `archive.Save(zipFile);` is inside the inner `using` block as shown |
 
-A1: Oczywiście! Możesz dostosować podany kod, aby kompresować wiele plików, dodając kolejne wywołania `CreateEntry` przed metodą `Save`.
+## Frequently Asked Questions
 
-### Q2: Gdzie znajdę pełną dokumentację Aspose.Zip dla .NET?
+### Q1: Can I compress multiple files in a single archive using Aspose.Zip for .NET?
 
-A2: Zapoznaj się z **[dokumentacją](https://reference.aspose.com/zip/net/)**, aby uzyskać szczegółowe informacje o możliwościach Aspose.Zip.
+A1: Absolutely! You can adapt the provided code to compress multiple files by adding additional `CreateEntry` calls before the `Save` method.
 
-### Q3: Czy dostępna jest darmowa wersja próbna Aspose.Zip dla .NET?
+### Q2: Where can I find comprehensive documentation for Aspose.Zip for .NET?
 
-A3: Tak, możesz pobrać **[darmową wersję próbną](https://releases.aspose.com/)**, aby wypróbować funkcje przed zakupem.
+A2: Explore the **[documentation](https://reference.aspose.com/zip/net/)** for in‑depth insights into Aspose.Zip's capabilities.
 
-### Q4: Jak uzyskać tymczasową licencję dla Aspose.Zip dla .NET?
+### Q3: Is there a free trial available for Aspose.Zip for .NET?
 
-A4: Odwiedź **[ten link](https://purchase.aspose.com/temporary-license/)**, aby uzyskać tymczasową licencję do potrzeb rozwojowych.
+A3: Yes, you can get a **[free trial](https://releases.aspose.com/)** to explore the features before making a purchase.
 
-### Q5: Gdzie mogę uzyskać wsparcie lub połączyć się ze społecznością Aspose.Zip dla .NET?
+### Q4: How can I obtain temporary licensing for Aspose.Zip for .NET?
 
-A5: Dołącz do społeczności Aspose.Zip na **[forum wsparcia](https://forum.aspose.com/c/zip/37)**, aby uzyskać pomoc od ekspertów i innych programistów.
+A4: Visit **[this link](https://purchase.aspose.com/temporary-license/)** to acquire a temporary license for your development needs.
 
-## Zakończenie
+### Q5: Where can I seek support or connect with the community for Aspose.Zip for .NET?
 
-Postępując zgodnie z tymi krokami, teraz wiesz, jak **dodawać plik do zip** archiwów, **kompresować plik .NET** projekty oraz tworzyć solidne archiwa ZIP przy użyciu Aspose.Zip. Eksperymentuj z większymi plikami, opcjami szyfrowania lub podzielonymi archiwami, aby w pełni wykorzystać możliwości biblioteki.
+A5: Join the Aspose.Zip community on the **[support forum](https://forum.aspose.com/c/zip/37)** to get assistance from experts and fellow developers.
+
+## Conclusion
+
+By following these steps you now know how to **add file to zip**, **compress file .NET**, and lay the groundwork for **c# zip multiple files** in real‑world applications. Experiment with larger files, encryption options, or split archives to fully leverage Aspose.Zip’s power.
 
 ---
 
-**Ostatnia aktualizacja:** 2025-12-09  
-**Testowano z:** Aspose.Zip dla .NET 24.11  
-**Autor:** Aspose  
+**Last Updated:** 2026-02-10  
+**Tested With:** Aspose.Zip for .NET 24.11  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
