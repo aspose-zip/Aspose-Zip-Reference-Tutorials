@@ -1,11 +1,11 @@
 ---
-date: 2025-11-30
-description: Tudja meg, hogyan hozhat létre zip archívumot .NET-ben az Aspose.Zip
-  for .NET használatával. Lépésről lépésre útmutató a könyvtárak hatékony tömörítéséhez
-  és kitömörítéséhez .NET projektjeiben.
-linktitle: Create zip archive .net – Directory and Folder Compression
+date: 2026-02-10
+description: Tanulja meg, hogyan védhet jelszóval zip-archívumot .NET‑ben, és hogyan
+  hozhat létre zip-archívumot C#‑ban az Aspose.Zip használatával. Lépésről‑lépésre
+  útmutató a könyvtárak hatékony tömörítéséhez és kitömörítéséhez .NET‑projektjeiben.
+linktitle: Password protect zip archive .NET – Directory and Folder Compression
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: ZIP archívum létrehozása .net – Könyvtár és mappa tömörítése
+title: Jelszóval védett zip archívum .NET – Könyvtár és mappa tömörítés
 url: /hu/net/directory-and-folder-compression/
 weight: 22
 ---
@@ -14,96 +14,103 @@ weight: 22
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Zip archívum létrehozása .net – Könyvtár és mappa tömörítése
+# Jelszóval védett zip archívum .NET – Könyvtár és mappa tömörítés
 
 ## Bevezetés
 
-A modern .NET fejlesztésben a **zip archívum .net**‑stílusú fájlok létrehozása elengedhetetlen a tárolási költségek csökkentéséhez, a telepítések felgyorsításához és a fájlok elosztásának egyszerűsítéséhez. Ez a bemutató megmutatja, hogyan használhatja az Aspose.Zip for .NET-et teljes könyvtárak tömörítésére, majd később azok kicsomagolására, amikor szükség van rá. Akár CI/CD csővezeték építéséről, frissítő csomagok szállításáról vagy csak a naplófájlok rendbetételéről van szó, a zip archívumok létrehozásának elsajátítása .NET‑ben hatékonyabbá és professzionálisabbá teszi projektjeit.
+A modern .NET fejlesztésben a **password protect zip archive .NET** funkció elengedhetetlen a tárolási költségek csökkentéséhez, a kiadások felgyorsításához és az érzékeny adatok védelméhez. Akár **create zip archive c#**-ra van szükség egy CI/CD csővezetékben, biztonságos frissítési csomagok szállításához, vagy egyszerűen a naplófájlok rendezéséhez, a zip archívum létrehozásának és védelmének elsajátítása a .NET-ben hatékonyabbá és professzionálisabbá teszi a projektjeit.
 
 ## Gyors válaszok
-- **Melyik könyvtárat használjam?** Az Aspose.Zip for .NET egyszerű, nagy teljesítményű API‑t biztosít a zip archívumok létrehozásához.  
+- **Melyik könyvtárat használjam?** Az Aspose.Zip for .NET egyszerű, nagy teljesítményű API-t biztosít a zip archívum létrehozásához.  
 - **Tömöríthetek egy teljes mappát egy hívással?** Igen – az Aspose.Zip egyetlen metódussal rekurzívan tömöríti a könyvtárat.  
-- **Támogatott a jelszóvédelem?** Teljes mértékben; a zip archívum létrehozása közben hozzáadhat titkosítást.  
-- **Szükség van licencre a fejlesztéshez?** Ingyenes próba verzió elérhető értékeléshez; a kereskedelmi licenc a termeléshez kötelező.  
-- **Mely .NET verziókkal kompatibilis?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7 és újabb.
+- **Támogatott a jelszóvédelem?** Teljesen; a zip archívum létrehozása közben hozzáadhat titkosítást.  
+- **Szükségem van licencre a fejlesztéshez?** Az ingyenes próba a kiértékeléshez megfelelő; a termeléshez kereskedelmi licenc szükséges.  
+- **Mely .NET verziók kompatibilisek?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7 és későbbi verziók.
 
-## Mi az a „create zip archive .net”?
-A zip archívum létrehozása .NET‑ben azt jelenti, hogy egy vagy több fájlt és mappát egyetlen *.zip* konténerbe csomagolunk, amely hatékonyabban tárolható, továbbítható vagy letölthető. A zip formátum univerzálisan támogatott, így ideális a platformok közötti felhasználásra.
+## Mi az a “create zip archive .net”?
 
-## Miért használjuk az Aspose.Zip for .NET-et?
-- **Teljesítmény‑optimalizált** tömörítési algoritmusok, amelyek nagy könyvtárakat minimális memóriaigénnyel kezelnek.  
-- **Gazdag funkciókészlet** – titkosítás, felosztott archívumok, egyéni tömörítési szintek és zökkenőmentes integráció adatfolyamokkal.  
-- **Null‑függőség** – működik „out‑of‑the‑box”, külső eszközök (pl. 7‑Zip vagy WinRAR) nélkül.  
-- **Konzisztens API** a .NET Framework, .NET Core és .NET 5+ között.
+A zip archívum létrehozása a .NET-ben azt jelenti, hogy egy vagy több fájlt és mappát egyetlen *.zip* konténerbe csomagolunk, amely hatékonyabban tárolható, továbbítható vagy letölthető. A zip formátum univerzálisan támogatott, így ideális a platformok közötti forgatókönyvekhez.
 
-## Előfeltételek
-- Visual Studio 2022 (vagy bármely IDE, amely támogatja a .NET 6+-ot)  
-- Aspose.Zip for .NET NuGet csomag (`Install-Package Aspose.Zip`)  
-- Alapvető C# és fájlrendszer‑műveletek ismerete  
+## Miért használja az Aspose.Zip for .NET-et?
 
-## Könnyed könyvtár tömörítés az Aspose.Zip for .NET‑el
+- **Performance‑optimized** tömörítési algoritmusok, amelyek nagy könyvtárakat kezelnek minimális memóriahasználattal.  
+- **Rich feature set** – titkosítás, felosztott archívumok, egyéni tömörítési szintek, és zökkenőmentes integráció streamekkel.  
+- **Zero‑dependency** – azonnal működik külső eszközök, például a 7‑Zip vagy a WinRAR nélkül.  
+- **Consistent API** a .NET Framework, .NET Core és .NET 5+ között.
 
-Ha valaha is nehézségei adódtak a .NET projektjei tárolási helyének kezelése során, az Aspose.Zip for .NET a megoldás. Ez a bemutató lépésről‑lépésre vezeti végig a **zip archívum .net** fájlok egyszerű létrehozásán. Az Aspose.Zip robusztus funkciói leegyszerűsítik ezt a látszólag bonyolult feladatot, lehetővé téve a tárolás optimalizálását anélkül, hogy az adatok integritását veszélyeztetné.
+## Előkövetelmények
+- Visual Studio 2022 (vagy bármely IDE, amely támogatja a .NET 6+).  
+- Aspose.Zip for .NET NuGet csomag (`Install-Package Aspose.Zip`).  
+- Alapvető ismeretek a C#-ról és a fájlrendszer műveletekről.  
 
-Képzelje el, hogy a projektje könyvtárainak méretét csökkenti anélkül, hogy egyetlen fájlt is elveszítene. Az Aspose.Zip for .NET ezt valósággá teszi, egy zökkenőmentes megoldást kínálva a hatékony tároláskezeléshez. Ez a bemutató felbontja a lépéseket, biztosítva, hogy még a kezdők is megértsék a koncepciókat és magabiztosan alkalmazzák őket.
+## Könnyed könyvtár tömörítés az Aspose.Zip for .NET segítségével
+
+Ha valaha is nehézségei voltak a tárolóhely kezelésével .NET projektjeiben, az Aspose.Zip for .NET a megoldás. Ez az útmutató lépésről lépésre bemutatja a **creating zip archive .NET** fájlok egyszerű létrehozását. Az Aspose.Zip robusztus funkciói leegyszerűsítik ezt a látszólag bonyolult feladatot, lehetővé téve a tárolás optimalizálását anélkül, hogy a adatok integritását veszélyeztetné.
+
+Képzelje el, hogy a projektje könyvtárainak méretét csökkenti anélkül, hogy bármely fájlt feláldozna. Az Aspose.Zip for .NET valóra váltja ezt, zökkenőmentes megoldást nyújtva a hatékony tároláskezeléshez. Ez az útmutató lépésről lépésre bontja le a folyamatot, biztosítva, hogy még a kezdők is megértsék a koncepciókat és magabiztosan alkalmazzák őket.
 
 ### Hogyan tömörítsünk egy mappát
 
-1. **Hozzuk létre a `ZipPackage` objektumot** – ez képviseli a létrehozni kívánt archívumot.  
-2. **Adjunk hozzá a célkönyvtárat** a `AddFolder` metódussal, amely automatikusan belefoglalja az almappákat és fájlokat.  
-3. **Mentsük el az archívumot** a kívánt helyre `.zip` kiterjesztéssel.
+1. **Instantiate the `ZipPackage` object** – ez képviseli a létrehozni kívánt archívumot.  
+2. **Add the target directory** a `AddFolder` metódussal, amely automatikusan tartalmazza az almappákat és fájlokat.  
+3. **Save the archive** a kívánt helyre `.zip` kiterjesztéssel.
 
-> *Megjegyzés:* A fenti lépésekhez szükséges tényleges C# kód már elérhető a kapcsolódó „Könnyed könyvtár tömörítés” bemutatóoldalon.
+> *Megjegyzés:* A fenti lépésekhez tartozó C# kód már elérhető a hivatkozott “Effortless Directory Compression” útmutató oldalon.
 
-## Könnyed tömörítés a hatékony tárolásért
+## Hogyan védjünk jelszóval zip archívumot .NET-ben
 
-Az Aspose.Zip for .NET nem csak könyvtárakat tömörít; **optimalizálja a tárolási helyet**, ami a modern fejlesztési projektekben kulcsfontosságú tényező. Merüljön el a bemutatóban, és fedezze fel, hogyan érheti el a tökéletes egyensúlyt az adatok megőrzése és a könyvtárak általános méretének csökkentése között.
+A zip fájlhoz jelszó hozzáadásához egyszerűen állítsa be a `Password` tulajdonságot a `ZipPackage` objektumban a `Save` hívása előtt. Az Aspose.Zip erős AES‑256 titkosítást támogat, biztosítva, hogy csak a helyes jelszóval rendelkező felhasználók tudják kicsomagolni a tartalmat. Ez a legegyszerűbb mód a **password protect zip archive** fájlok védelmére, miközben továbbra is élvezheti a gyors tömörítést.
 
-## Mappa kicsomagolása az Aspose.Zip for .NET‑el
+## Könnyed tömörítés a hatékony tároláshoz
 
-Miután a könyvtárakat tömörítette, a következő logikus lépés a kicsomagolás hatékony megértése. Az Aspose.Zip for .NET ebben is kiváló. Ez a bemutató végigvezet a mappák kicsomagolásának művészetén, biztosítva, hogy a tömörítési feladatokat könnyedén kezelje.
+Az Aspose.Zip for .NET nem csak könyvtárakat tömörít; **optimalizálja a tárolóhelyet**, ami a modern fejlesztési projektekben kulcsfontosságú tényező. Merüljön el az útmutatóban, és fedezze fel, hogyan érheti el a tökéletes egyensúlyt az adatok megőrzése és a könyvtárak teljes méretének csökkentése között.
 
-Búcsúzzon el a tömörített mappák kezelése okozta fejfájástól. Az Aspose.Zip for .NET egyszerűsíti a teljes folyamatot, minden szintű fejlesztő számára elérhetővé téve. Merüljön el ebben a bemutatóban, hogy megismerje a kicsomagolás finomságait, és gördülékenyebbé tegye projektje munkafolyamatát.
+## Mappa kibontása az Aspose.Zip for .NET segítségével
+
+Miután a könyvtárak tömörítve lettek, a következő logikus lépés, hogy megtanuljuk, hogyan bontsuk ki őket hatékonyan. Az Aspose.Zip for .NET ebben a területen is kiemelkedik. Ez az útmutató a mappák kibontásának művészetének elsajátítására vezet, biztosítva, hogy a tömörítési feladatokat könnyedén kezelje.
+
+Mondjon búcsút a tömörített mappák kezelésének fejfájásának. Az Aspose.Zip for .NET egyszerűsíti az egész folyamatot, így minden szintű fejlesztő számára elérhető. Merüljön el ebben az útmutatóban, hogy betekintést nyerjen a kibontás részleteibe, és optimalizálja a projekt munkafolyamatát.
 
 ## Gyakori hibák és tippek
 
-- **Nagy fájlok:** 2 GB‑nál nagyobb fájlok esetén engedélyezze a **Zip64** módot a méretkorlátozások elkerülése érdekében.  
-- **Útvonalhossz problémák:** Használja a `UseLongFileNames` tulajdonságot, ha a mappaszerkezet meghaladja a Windows 260‑karakteres korlátját.  
-- **Teljesítmény tippek:** Állítsa a `CompressionLevel`‑et `Fast`‑ra a gyors buildhez, vagy `Maximum`‑ra, ha a lehető legkisebb archívumra van szükség.
+- **Large files:** Amikor 2 GB-nál nagyobb fájlokkal dolgozik, engedélyezze a **Zip64** módot a méretkorlátok elkerüléséhez.  
+- **Path length issues:** Használja a `UseLongFileNames` tulajdonságot, ha a mappahierarchia meghaladja a Windows 260 karakteres korlátját.  
+- **Performance tip:** Állítsa a `CompressionLevel` értékét `Fast`-ra a gyors buildhez, vagy `Maximum`-ra, ha a lehető legkisebb archívumra van szükség.  
+- **Password protection:** Ne felejtse el biztonságosan tárolni a jelszavakat; fontolja meg az Azure Key Vault vagy hasonló titokkezelő szolgáltatások használatát.
 
-## Könnyed feladatkezelés a zökkenőmentes projektekért
+## Könnyed feladatkezelés a zökkenőmentes projektekhez
 
-Az Aspose.Zip for .NET beépítésével nem csak mappákat tömörít és kicsomagol, hanem az egész projektmunka‑folyamatát optimalizálja. A jelenleg elérhető bemutatók útmutatóként szolgálnak a tömörítési feladatok bonyolultságainak átlépéséhez, biztosítva, hogy ezeket a technikákat zökkenőmentesen integrálhassa projektjeibe.
+Az Aspose.Zip for .NET beépítésével a szerszámkészletébe nem csak mappákat tömörít és bont ki; a teljes projekt munkafolyamatát optimalizálja. Az itt bemutatott útmutatók segítenek eligazodni a tömörítési feladatok összetettségében, biztosítva, hogy ezeket a technikákat zökkenőmentesen integrálhassa projektjeibe.
 
-Összegzésként ezek a könyvtár‑ és mappatömörítési bemutatók a hatékonyabb és áramvonalasabb .NET fejlesztési élmény kapuját jelentik. Az Aspose.Zip for .NET felhatalmazza Önt a tárolási hely irányítására, értékes eszközt nyújtva a fejlesztőknek, akik projektjeiket optimalizálni szeretnék anélkül, hogy az adatintegritást feláldoznák. Fejlessze képességeit, emelje projektjeit – fedezze fel a könyvtár‑ és mappatömörítés világát az Aspose.Zip for .NET‑el.
+Összefoglalva, ezek a könyvtár- és mappatömörítési útmutatók a hatékonyabb és áramvonalasabb .NET fejlesztési élmény kapuját jelentik. Az Aspose.Zip for .NET lehetővé teszi, hogy irányítsa a tárolóhelyét, értékes eszközt biztosítva a fejlesztőknek, akik projektjeiket optimalizálni kívánják anélkül, hogy az adatintegritást veszélyeztetnék. Fejlessze képességeit, gazdagítsa projektjeit – fedezze fel a könyvtár- és mappatömörítés világát az Aspose.Zip for .NET segítségével.
 
-## Könyvtár‑ és mappatömörítési bemutatók
-### [Könnyed könyvtár tömörítés az Aspose.Zip for .NET‑el](./compress-directory/)
-Tanulja meg, hogyan tömörítsen könyvtárakat könnyedén az Aspose.Zip for .NET‑el. Növelje .NET fejlesztését a tárolási hely hatékony optimalizálásával.
-### [Mappa kicsomagolása az Aspose.Zip for .NET‑el](./decompress-folder/)
-Mesteri szintre emeli a mappák kicsomagolását az Aspose.Zip for .NET‑el. Kezelje könnyedén a tömörítési feladatokat projektjeiben.
+## Könyvtár- és mappatömörítési útmutatók
+### [Könnyed könyvtár tömörítés az Aspose.Zip for .NET segítségével](./compress-directory/)
+Tanulja meg a könyvtárak könnyed tömörítését az Aspose.Zip for .NET segítségével. Növelje .NET fejlesztését a tárolóhely hatékony optimalizálásával.
+### [Mappa kibontása az Aspose.Zip for .NET segítségével](./decompress-folder/)
+Mesterségként sajátítsa el a mappák kibontását az Aspose.Zip for .NET segítségével. Könnyedén kezelje a tömörítési feladatokat projektjeiben.
 
-## Gyakran ismételt kérdések
+## Gyakran Ismételt Kérdések
 
-**Q: Létrehozhatok jelszóval védett zip archívumot az Aspose.Zip segítségével?**  
-A: Igen. Az archívum mentésekor megadhat egy `ZipPassword`‑t, és választhat titkosítási algoritmust, például AES‑256‑ot.
+**Q: Létrehozhatok jelszóval védett zip archívumot az Aspose.Zip használatával?**  
+A: Igen. Az archívum mentésekor megadhat egy `ZipPassword`-t, és választhat titkosítási algoritmust, például AES‑256.
 
-**Q: Az Aspose.Zip támogatja a nagy fájlok stream‑elését anélkül, hogy teljes egészében a memóriába töltené őket?**  
-A: Teljes mértékben. `FileStream` objektumokkal dolgozhat, lehetővé téve bármilyen méretű fájl hatékony tömörítését vagy kicsomagolását.
+**Q: Támogatja az Aspose.Zip a nagy fájlok streamingjét anélkül, hogy teljesen betöltené őket a memóriába?**  
+A: Teljesen. `FileStream` objektumokkal dolgozhat, lehetővé téve bármilyen méretű fájlok hatékony tömörítését vagy kibontását.
 
 **Q: Mi a teendő, ha egy nagy archívumot több részre kell felosztani?**  
-A: Használja a `SplitArchive` metódust a maximális részméret meghatározásához; az Aspose.Zip automatikusan létrehozza a szekvenciális felosztott fájlokat.
+A: Használja a `SplitArchive` metódust a maximális részméret meghatározásához; az Aspose.Zip automatikusan létrehozza a sorozatos felosztott fájlokat.
 
-**Q: Lehet-e fájlokat hozzáadni egy már létező zip archívumhoz?**  
+**Q: Lehet fájlokat hozzáadni egy meglévő zip archívumhoz?**  
 A: Igen. Nyissa meg az archívumot `Update` módban, és hívja meg az `AddFile` vagy `AddFolder` metódust az új tartalom hozzáfűzéséhez.
 
 **Q: Mely .NET futtatókörnyezetek támogatottak hivatalosan?**  
-A: Az Aspose.Zip for .NET támogatja a .NET Framework 4.5+, a .NET Core 3.1+ és a .NET 5/6/7+ verziókat.
+A: Az Aspose.Zip for .NET támogatja a .NET Framework 4.5+, .NET Core 3.1+, és a .NET 5/6/7+ verziókat.
 
 ---
 
-**Utoljára frissítve:** 2025-11-30  
-**Tesztelve:** Aspose.Zip for .NET 24.11  
+**Utolsó frissítés:** 2026-02-10  
+**Tesztelve a következővel:** Aspose.Zip for .NET 24.11  
 **Szerző:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}

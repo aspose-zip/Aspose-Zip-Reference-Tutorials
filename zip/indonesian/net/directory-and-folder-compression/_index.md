@@ -1,11 +1,11 @@
 ---
-date: 2025-11-30
-description: Pelajari cara membuat arsip zip .NET menggunakan Aspose.Zip untuk .NET.
-  Panduan langkah demi langkah untuk mengompres dan mengekstrak direktori secara efisien
-  dalam proyek .NET Anda.
-linktitle: Create zip archive .net – Directory and Folder Compression
+date: 2026-02-10
+description: Pelajari cara melindungi arsip zip dengan kata sandi di .NET dan membuat
+  arsip zip menggunakan C# dengan Aspose.Zip. Panduan langkah demi langkah untuk mengompresi
+  dan mengekstrak direktori secara efisien dalam proyek .NET Anda.
+linktitle: Password protect zip archive .NET – Directory and Folder Compression
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Buat arsip zip .net – Kompresi Direktori dan Folder
+title: Proteksi password arsip zip .NET – Kompresi Direktori dan Folder
 url: /id/net/directory-and-folder-compression/
 weight: 22
 ---
@@ -14,97 +14,103 @@ weight: 22
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Membuat arsip zip .net – Kompresi Direktori dan Folder
+# Melindungi arsip zip dengan kata sandi .NET – Kompresi Direktori dan Folder
 
-## Pendahuluan
+## Introduction
 
-Dalam pengembangan .NET modern, **membuat arsip zip .net**‑style sangat penting untuk mengurangi biaya penyimpanan, mempercepat proses deployment, dan menyederhanakan distribusi file. Tutorial ini menunjukkan cara menggunakan Aspose.Zip untuk .NET untuk mengompres seluruh direktori dan kemudian mengekstraknya bila diperlukan. Baik Anda membangun pipeline CI/CD, mengirim paket pembaruan, atau sekadar merapikan file log, menguasai pembuatan arsip zip di .NET akan membuat proyek Anda lebih efisien dan profesional.
+Dalam pengembangan .NET modern, fungsi **password protect zip archive .NET** sangat penting untuk mengurangi biaya penyimpanan, mempercepat proses deployment, dan melindungi data sensitif. Baik Anda perlu **create zip archive c#** untuk pipeline CI/CD, mengirimkan paket pembaruan yang aman, atau sekadar merapikan file log, menguasai pembuatan dan perlindungan arsip zip di .NET akan membuat proyek Anda lebih efisien dan profesional.
 
-## Jawaban Cepat
-- **Pustaka apa yang harus saya gunakan?** Aspose.Zip untuk .NET menyediakan API yang sederhana dan berperforma tinggi untuk pembuatan arsip zip.  
+## Quick Answers
+- **Library apa yang harus saya gunakan?** Aspose.Zip untuk .NET menyediakan API yang sederhana dan berperforma tinggi untuk pembuatan arsip zip.  
 - **Apakah saya dapat mengompres seluruh folder dengan satu panggilan?** Ya – Aspose.Zip dapat mengompres sebuah direktori secara rekursif dalam satu metode.  
-- **Apakah dukungan proteksi password tersedia?** Tentu; Anda dapat menambahkan enkripsi saat membuat arsip zip.  
-- **Apakah saya memerlukan lisensi untuk pengembangan?** Versi percobaan gratis dapat digunakan untuk evaluasi; lisensi komersial diperlukan untuk produksi.  
-- **Versi .NET mana yang kompatibel?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7 dan versi selanjutnya.
+- **Apakah perlindungan kata sandi didukung?** Tentu saja; Anda dapat menambahkan enkripsi saat membuat arsip zip.  
+- **Apakah saya memerlukan lisensi untuk pengembangan?** Versi percobaan gratis cukup untuk evaluasi; lisensi komersial diperlukan untuk produksi.  
+- **Versi .NET apa yang kompatibel?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7 dan yang lebih baru.
 
-## Apa itu “create zip archive .net”?
+## What is “create zip archive .net”?
+
 Membuat arsip zip di .NET berarti mengemas satu atau lebih file dan folder ke dalam satu kontainer *.zip* yang dapat disimpan, ditransfer, atau diunduh dengan lebih efisien. Format zip didukung secara universal, menjadikannya ideal untuk skenario lintas‑platform.
 
-## Mengapa menggunakan Aspose.Zip untuk .NET?
+## Why use Aspose.Zip for .NET?
 - **Algoritma kompresi yang dioptimalkan** untuk menangani direktori besar dengan penggunaan memori yang minimal.  
 - **Fitur lengkap** – enkripsi, arsip terpisah, tingkat kompresi kustom, dan integrasi mulus dengan stream.  
-- **Tanpa ketergantungan** – langsung dapat digunakan tanpa memerlukan alat eksternal seperti 7‑Zip atau WinRAR.  
+- **Tanpa ketergantungan** – bekerja langsung tanpa memerlukan alat eksternal seperti 7‑Zip atau WinRAR.  
 - **API konsisten** di seluruh .NET Framework, .NET Core, dan .NET 5+.
 
-## Prasyarat
+## Prerequisites
 - Visual Studio 2022 (atau IDE apa pun yang mendukung .NET 6+)  
 - Paket NuGet Aspose.Zip untuk .NET (`Install-Package Aspose.Zip`)  
 - Familiaritas dasar dengan C# dan operasi sistem file  
 
-## Kompresi Direktori Tanpa Repot dengan Aspose.Zip untuk .NET
+## Effortless Directory Compression with Aspose.Zip for .NET
 
-Jika Anda pernah mengalami kesulitan mengelola ruang penyimpanan dalam proyek .NET, Aspose.Zip untuk .NET hadir untuk menyelamatkan. Tutorial ini memandu Anda melalui proses **membuat arsip zip .net** dengan mudah. Fitur kuat Aspose.Zip menyederhanakan tugas yang tampak kompleks ini, memungkinkan Anda mengoptimalkan penyimpanan tanpa mengorbankan integritas data.
+Jika Anda pernah mengalami kesulitan mengelola ruang penyimpanan dalam proyek .NET, Aspose.Zip untuk .NET hadir untuk menyelamatkan. Tutorial ini memandu Anda melalui proses **creating zip archive .NET** secara mudah. Fitur kuat Aspose.Zip menyederhanakan tugas yang tampak kompleks ini, memungkinkan Anda mengoptimalkan penyimpanan tanpa mengorbankan integritas data.
 
-Bayangkan mengurangi ukuran direktori proyek Anda tanpa kehilangan file apa pun. Aspose.Zip untuk .NET mewujudkannya, menyediakan solusi mulus untuk manajemen penyimpanan yang efisien. Tutorial ini memecah langkah‑langkahnya, memastikan bahkan pemula sekalipun dapat memahami konsep dan mengimplementasikannya dengan percaya diri.
+Bayangkan mengurangi ukuran direktori proyek Anda tanpa menghilangkan file apa pun. Aspose.Zip untuk .NET mewujudkannya, menyediakan solusi mulus untuk manajemen penyimpanan yang efisien. Tutorial ini memecah langkah‑langkahnya, memastikan bahkan pemula sekalipun dapat memahami konsep dan menerapkannya dengan percaya diri.
 
-### Cara mengompres sebuah folder
+### How to compress a folder
 
-1. **Instansiasi objek `ZipPackage`** – objek ini mewakili arsip yang akan Anda buat.  
-2. **Tambahkan direktori target** menggunakan metode `AddFolder`, yang secara otomatis menyertakan sub‑folder dan file.  
-3. **Simpan arsip** ke lokasi yang diinginkan dengan ekstensi `.zip`.
+1. **Instantiate the `ZipPackage` object** – ini mewakili arsip yang akan Anda buat.  
+2. **Add the target directory** menggunakan metode `AddFolder`, yang secara otomatis menyertakan sub‑folder dan file.  
+3. **Save the archive** ke lokasi yang diinginkan dengan ekstensi `.zip`.
 
-> *Catatan:* Kode C# sebenarnya untuk langkah‑langkah ini sudah disediakan pada halaman tutorial “Kompresi Direktori Tanpa Repot”.
+> *Catatan:* Kode C# sebenarnya untuk langkah‑langkah ini sudah disediakan pada halaman tutorial “Effortless Directory Compression” yang ditautkan.
 
-## Kompresi Tanpa Repot untuk Penyimpanan Efisien
+## How to password protect zip archive in .NET
 
-Aspose.Zip untuk .NET tidak hanya mengompres direktori; ia **mengoptimalkan ruang penyimpanan**, faktor penting dalam proyek pengembangan modern. Selami tutorial ini dan temukan cara mencapai keseimbangan sempurna antara mempertahankan data dan mengurangi ukuran keseluruhan direktori Anda.
+Untuk menambahkan kata sandi pada file zip Anda, cukup set properti `Password` pada `ZipPackage` sebelum memanggil `Save`. Aspose.Zip mendukung enkripsi kuat AES‑256, memastikan hanya pengguna dengan kata sandi yang benar yang dapat mengekstrak isi. Ini adalah cara paling langsung untuk **password protect zip archive** sambil tetap menikmati kompresi cepat.
 
-## Mengekstrak Folder dengan Aspose.Zip untuk .NET
+## Effortless Compression for Efficient Storage
 
-Setelah direktori Anda terkompresi, langkah logis berikutnya adalah memahami cara mengekstraknya secara efektif. Aspose.Zip untuk .NET juga unggul dalam hal ini. Tutorial ini membawa Anda pada perjalanan menguasai seni dekompresi folder, memastikan Anda menangani tugas kompresi dengan mudah.
+Aspose.Zip untuk .NET tidak hanya mengompres direktori; ia **mengoptimalkan ruang penyimpanan**, faktor krusial dalam proyek pengembangan modern. Selami tutorial ini dan temukan cara mencapai keseimbangan sempurna antara mempertahankan data dan mengurangi ukuran keseluruhan direktori Anda.
 
-Ucapkan selamat tinggal pada kerumitan mengelola folder terkompresi. Aspose.Zip untuk .NET menyederhanakan seluruh proses, membuatnya dapat diakses oleh pengembang di semua level. Selami tutorial ini untuk memperoleh wawasan tentang seluk‑beluk dekompresi dan memperlancar alur kerja proyek Anda.
+## Decompressing a Folder with Aspose.Zip for .NET
 
-## Kesalahan Umum & Tips
+Setelah direktori Anda terkompres, langkah logis berikutnya adalah memahami cara mendekompresinya secara efektif. Aspose.Zip untuk .NET juga unggul di bidang ini. Tutorial ini membawa Anda pada perjalanan menguasai seni dekompresi folder, memastikan Anda menangani tugas kompresi dengan mudah.
+
+Ucapkan selamat tinggal pada kerumitan mengelola folder terkompres. Aspose.Zip untuk .NET menyederhanakan seluruh proses, membuatnya dapat diakses oleh pengembang di semua level. Selami tutorial ini untuk mendapatkan wawasan tentang seluk‑beluk dekompresi dan menyederhanakan alur kerja proyek Anda.
+
+## Common Pitfalls & Tips
 
 - **File besar:** Saat menangani file lebih besar dari 2 GB, aktifkan mode **Zip64** untuk menghindari batas ukuran.  
-- **Masalah panjang jalur:** Gunakan properti `UseLongFileNames` bila hierarki folder Anda melebihi batas 260 karakter Windows.  
-- **Tip performa:** Atur `CompressionLevel` ke `Fast` untuk build cepat, atau `Maximum` ketika Anda memerlukan arsip sekecil mungkin.
+- **Masalah panjang path:** Gunakan properti `UseLongFileNames` jika hierarki folder Anda melebihi batas 260‑karakter Windows.  
+- **Tips performa:** Set `CompressionLevel` ke `Fast` untuk build cepat, atau `Maximum` ketika Anda memerlukan arsip sekecil mungkin.  
+- **Perlindungan kata sandi:** Ingatlah untuk menyimpan kata sandi secara aman; pertimbangkan menggunakan Azure Key Vault atau layanan manajemen rahasia serupa.
 
-## Penanganan Tugas Tanpa Repot untuk Proyek Tanpa Hambatan
+## Effortless Task Handling for Seamless Projects
 
-Dengan memasukkan Aspose.Zip untuk .NET ke dalam toolkit Anda, Anda tidak hanya mengompres dan mengekstrak folder; Anda mengoptimalkan seluruh alur kerja proyek. Tutorial yang disediakan di sini berfungsi sebagai panduan untuk menavigasi kompleksitas tugas kompresi, memastikan Anda dapat mengintegrasikan teknik ini secara mulus ke dalam proyek Anda.
+Dengan memasukkan Aspose.Zip untuk .NET ke dalam toolkit Anda, Anda tidak hanya mengompres dan mendekompres folder; Anda mengoptimalkan seluruh alur kerja proyek. Tutorial yang disediakan di sini berfungsi sebagai panduan Anda menavigasi kompleksitas tugas kompresi, memastikan Anda dapat mengintegrasikan teknik ini secara mulus ke dalam proyek Anda.
 
-Sebagai kesimpulan, tutorial kompresi direktori dan folder ini adalah gerbang menuju pengalaman pengembangan .NET yang lebih efisien dan terstruktur. Aspose.Zip untuk .NET memberi Anda kendali atas ruang penyimpanan, menjadi aset berharga bagi pengembang yang ingin mengoptimalkan proyek tanpa mengorbankan integritas data. Tingkatkan keahlian Anda, perkuat proyek Anda—jelajahi dunia kompresi direktori dan folder dengan Aspose.Zip untuk .NET.
+Sebagai kesimpulan, tutorial kompresi direktori dan folder ini adalah pintu gerbang menuju pengalaman pengembangan .NET yang lebih efisien dan terstruktur. Aspose.Zip untuk .NET memberi Anda kendali atas ruang penyimpanan, menjadi aset berharga bagi pengembang yang ingin mengoptimalkan proyek tanpa mengorbankan integritas data. Tingkatkan keahlian Anda, tingkatkan proyek Anda—jelajahi dunia kompresi direktori dan folder dengan Aspose.Zip untuk .NET.
 
-## Tutorial Kompresi Direktori dan Folder
-### [Kompresi Direktori Tanpa Repot dengan Aspose.Zip untuk .NET](./compress-directory/)
-Pelajari cara mengompres direktori dengan mudah menggunakan Aspose.Zip untuk .NET. Tingkatkan pengembangan .NET Anda dengan mengoptimalkan ruang penyimpanan secara efisien.
-### [Mengekstrak Folder dengan Aspose.Zip untuk .NET](./decompress-folder/)
+## Directory and Folder Compression Tutorials
+### [Effortless Directory Compression with Aspose.Zip for .NET](./compress-directory/)
+Pelajari cara mengompres direktori secara mudah dengan Aspose.Zip untuk .NET. Tingkatkan pengembangan .NET Anda dengan mengoptimalkan ruang penyimpanan secara efisien.
+### [Decompressing a Folder with Aspose.Zip for .NET](./decompress-folder/)
 Kuasi seni dekompresi folder dengan Aspose.Zip untuk .NET. Tangani tugas kompresi dalam proyek Anda dengan mudah.
 
-## Pertanyaan yang Sering Diajukan
+## Frequently Asked Questions
 
-**T: Bisakah saya membuat arsip zip yang dilindungi password menggunakan Aspose.Zip?**  
-J: Ya. Saat menyimpan arsip, Anda dapat menyediakan `ZipPassword` dan memilih algoritma enkripsi seperti AES‑256.
+**Q: Can I create a password‑protected zip archive using Aspose.Zip?**  
+A: Yes. When saving the archive, you can supply a `ZipPassword` and choose an encryption algorithm such as AES‑256.
 
-**T: Apakah Aspose.Zip mendukung streaming file besar tanpa memuat seluruhnya ke memori?**  
-J: Tentu. Anda dapat bekerja dengan objek `FileStream`, memungkinkan kompresi atau ekstraksi file berukuran apa pun secara efisien.
+**Q: Does Aspose.Zip support streaming large files without loading them entirely into memory?**  
+A: Absolutely. You can work with `FileStream` objects, allowing you to compress or extract files of any size efficiently.
 
-**T: Bagaimana jika saya perlu membagi arsip besar menjadi beberapa bagian?**  
-J: Gunakan metode `SplitArchive` untuk menentukan ukuran maksimum tiap bagian; Aspose.Zip akan secara otomatis membuat file split berurutan.
+**Q: What if I need to split a large archive into multiple parts?**  
+A: Use the `SplitArchive` method to define a maximum part size; Aspose.Zip will automatically create sequential split files.
 
-**T: Apakah memungkinkan menambahkan file ke arsip zip yang sudah ada?**  
-J: Ya. Buka arsip dalam mode `Update` dan panggil `AddFile` atau `AddFolder` untuk menambahkan konten baru.
+**Q: Is it possible to add files to an existing zip archive?**  
+A: Yes. Open the archive in `Update` mode and call `AddFile` or `AddFolder` to append new content.
 
-**T: Runtime .NET mana yang secara resmi didukung?**  
-J: Aspose.Zip untuk .NET mendukung .NET Framework 4.5+, .NET Core 3.1+, dan .NET 5/6/7+.
+**Q: Which .NET runtimes are officially supported?**  
+A: Aspose.Zip for .NET supports .NET Framework 4.5+, .NET Core 3.1+, and .NET 5/6/7+.
 
 ---
 
-**Terakhir Diperbarui:** 2025-11-30  
-**Diuji Dengan:** Aspose.Zip untuk .NET 24.11  
-**Penulis:** Aspose  
+**Last Updated:** 2026-02-10  
+**Tested With:** Aspose.Zip for .NET 24.11  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
