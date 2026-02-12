@@ -1,11 +1,11 @@
 ---
-date: 2025-12-09
-description: Tanulja meg, hogyan tömöríthet egy könyvtárat az Aspose.Zip for .NET
-  segítségével, és hatékonyan hozhat létre zip archívumot .NET-ben. Optimalizálja
-  a tárhelyet .NET alkalmazásaiban.
-linktitle: How to Compress a Directory
+date: 2026-02-12
+description: Tanulja meg, hogyan lehet mappát tömöríteni az Aspose.Zip for .NET segítségével,
+  hatékonyan létrehozni zip-archívumot .NET-ben, és csökkenteni a tárolási helyet
+  .NET alkalmazásaiban.
+linktitle: How to Zip a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Hogyan tömörítsünk könyvtárat az Aspose.Zip for .NET használatával
+title: Hogyan tömörítsünk mappát az Aspose.Zip for .NET használatával
 url: /hu/net/directory-and-folder-compression/compress-directory/
 weight: 10
 ---
@@ -14,63 +14,59 @@ weight: 10
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Könnyed könyvtár tömörítés az Aspose.Zip for .NET segítségével
+# Hogyan tömörítsünk mappát az Aspose.Zip for .NET segítségével
 
-In this tutorial, we'll show you **how to compress directory** using Aspose.Zip for .NET, a powerful way to manage large data sets and save storage space. Whether you're building a desktop utility or a cloud‑based service, compressing folders efficiently can dramatically improve performance and reduce costs. We'll walk through each step, explain the reasoning behind the code, and point out common pitfalls so you can apply the technique with confidence.
+Ebben az útmutatóban megtanulja, **hogyan tömörítsen mappát** gyorsan és megbízhatóan az Aspose.Zip for .NET használatával. Akár asztali segédprogramot, felhőalapú szolgáltatást vagy automatizált mentési szkriptet épít, egy mappa ZIP archívumba tömörítése drámaian csökkentheti a tárolási igényeket és felgyorsíthatja a hálózati átviteleket. Lépésről lépésre végigvezetünk, elmagyarázzuk, miért fontos minden sor, és kiemeljük a gyakori buktatókat, hogy magabiztosan alkalmazhassa a technikát.
 
-## Quick Answers
-- **Mit csinál az Aspose.Zip?** It provides a simple .NET API for creating and extracting ZIP archives without external dependencies.  
-- **Mennyi időt vesz igénybe a megvalósítás?** Typically under 10 minutes for a basic directory compression.  
-- **Mely .NET verziók támogatottak?** .NET Framework 4.5+, .NET Core 3.1+, and .NET 5/6+.  
-- **Szükségem van licencre a termeléshez?** Yes, a commercial license is required for production use.  
-- **Tömöríthetek több mappát egyszerre?** Absolutely—use the `CreateEntries` method on any `DirectoryInfo` collection.
+## Gyors válaszok
+- **Mit csinál az Aspose.Zip?** Egy egyszerű .NET API-t biztosít ZIP archívumok létrehozásához és kibontásához külső függőségek nélkül.  
+- **Mennyi időt vesz igénybe a megvalósítás?** Általában 10 perc alatt egy alap mappatömörítéshez.  
+- **Mely .NET verziók támogatottak?** .NET Framework 4.5+, .NET Core 3.1+, valamint .NET 5/6+.  
+- **Szükség van licencre a termeléshez?** Igen, kereskedelmi licenc szükséges a termelési használathoz.  
+- **Tömöríthetek több mappát egyszerre?** Természetesen — használja a `CreateEntries` metódust bármely `DirectoryInfo` gyűjteményen, hogy **több mappát zip‑elj** egy futtatás során.
 
-## Introduction
+## Mi az a „how to zip folder”?
 
-Aspose.Zip for .NET is a powerful library that empowers .NET developers to work seamlessly with compressed files and directories. Whether you're dealing with large datasets or need to **generate zip file c#**‑style archives, Aspose.Zip provides a robust set of features for compression and decompression tasks.
+Egy mappa tömörítése azt jelenti, hogy a megadott könyvtár összes fájlját és alkönyvtárát egyetlen ZIP archívumba csomagolja. Ez csökkenti a teljes méretet, megőrzi az eredeti hierarchiát, és megkönnyíti az adat átvitelét vagy tárolását.
 
-## What is “how to compress directory”?
+## Miért használjuk az Aspose.Zip-et ehhez a feladathoz?
 
-Compressing a directory means taking all files and sub‑folders within a given folder and packing them into a single ZIP archive. This reduces the overall size, simplifies transfer, and preserves the original folder hierarchy.
+- **Sebesség és hatékonyság:** Optimalizált algoritmusok gyorsan kezelik a nagy mappákat.  
+- **Tiszta .NET:** Nincs szükség natív binárisokra vagy harmadik‑fél eszközökre.  
+- **Gazdag funkciók:** Támogatja a jelszóvédelmet (`add password zip`), streaminget, és egyedi tömörítési szint beállítását (`set compression level`).  
+- **Konzisztens API:** Ugyanúgy működik .NET Framework, .NET Core és .NET 5/6 környezetben, így ideális **create zip archive .net** szcenáriókhoz.  
 
-## Why use Aspose.Zip for this task?
+## Előfeltételek
 
-- **Sebesség és hatékonyság:** Optimized algorithms handle large folders quickly.  
-- **Pure .NET:** No native binaries or third‑party tools required.  
-- **Gazdag funkciókészlet:** Supports password protection, streaming, and adding entries on the fly—perfect for **zip multiple files .net** scenarios.  
-- **Következetes API:** Works the same across .NET Framework, .NET Core, and .NET 5/6.
+- **Aspose.Zip for .NET** – töltsd le [itt](https://releases.aspose.com/zip/net/).  
+- **Fejlesztői környezet** – Visual Studio, Rider vagy bármely C#‑t támogató IDE.  
+- **Dokumentumkönyvtár** – cseréld le a kódban a `"Your Document Directory"` értéket a tömöríteni kívánt mappa elérési útjára.  
+- **Referencia dokumentáció** – tekintsd meg a hivatalos dokumentációt [itt](https://reference.aspose.com/zip/net/).
 
-## Prerequisites
+## Névterek importálása
 
-- **Aspose.Zip for .NET** – download it [here](https://releases.aspose.com/zip/net/).  
-- **Fejlesztői környezet** – Visual Studio, Rider, or any IDE that supports C#.  
-- **Dokumentum könyvtár** – replace `"Your Document Directory"` in the code with the path to the folder you want to compress.  
-- **Referencia dokumentáció** – consult the official docs [here](https://reference.aspose.com/zip/net/).
-
-## Import Namespaces
-
-Begin by importing the necessary namespaces. These give you access to the core compression classes.
+Kezdje a szükséges névterek importálásával. Ezek biztosítják a magtömörítő osztályokhoz való hozzáférést.
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-## How to Zip Folder with Aspose.Zip
+## Hogyan tömörítsünk mappát az Aspose.Zip segítségével
 
-Below is a straightforward example that demonstrates **how to zip folder** contents. The same pattern can be extended to **zip multiple files .net** or to create custom archive structures.
+Az alábbi egyszerű példa bemutatja, **hogyan tömörítsen mappát**. Ugyanezt a mintát kiterjesztheti **zip multiple files .net** vagy egyedi archívumstruktúrák létrehozására.
 
-### Step 1: Initialize Your Document Directory
+### 1. lépés: Inicializálja a dokumentumkönyvtárat
 
-Set the variable `dataDir` to the path of the directory you want to compress.
+Állítsa be a `dataDir` változót a tömöríteni kívánt könyvtár elérési útjára.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-### Step 2: Create Output Zip Files
+### 2. lépés: Hozzon létre kimeneti ZIP fájlokat
 
-Open two `FileStream` objects for the output ZIP files. This shows how you can generate more than one archive from the same source—useful for versioned backups.
+Nyisson meg két `FileStream` objektumot a kimeneti ZIP fájlokhoz. Ez azt mutatja, hogyan generálhat több archívumot ugyanabból a forrásból — hasznos verziózott mentésekhez.
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", FileMode.Create))
@@ -79,9 +75,9 @@ using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", Fil
     {
 ```
 
-### Step 3: Compress the Directory
+### 3. lépés: Tömörítse a könyvtárat
 
-Use the `Archive` class to add every entry from the target folder. The example uses a sample folder named **CanterburyCorpus**, but you can point it to any directory.
+Használja az `Archive` osztályt, hogy minden bejegyzést hozzáadjon a célmappához. A példa egy **CanterburyCorpus** nevű mappát használ, de bármely könyvtárra mutathat.
 
 ```csharp
         using (Archive archive = new Archive())
@@ -95,48 +91,48 @@ Use the `Archive` class to add every entry from the target folder. The example u
 }
 ```
 
-> **Pro tip:** If you need to **create zip archive .net** with a specific compression level, set `archive.CompressionLevel` before calling `Save`.
+> **Pro tipp:** Ha egy adott tömörítési szinttel szeretne **create zip archive .net**, állítsa be az `archive.CompressionLevel` értékét a `Save` hívása előtt.
 
-## Common Issues and Solutions
+## Gyakori problémák és megoldások
 
 | Tünet | Valószínű ok | Megoldás |
-|---------|--------------|-----|
-| Üres ZIP fájl | `dataDir` points to wrong folder or missing trailing slash | Verify the path and ensure the folder contains files |
-| `UnauthorizedAccessException` | Application lacks file system permissions | Run Visual Studio as administrator or grant read/write rights |
-| Nagy memóriahasználat hatalmas könyvtárak esetén | Loading all entries into memory at once | Use `Archive.CreateEntryFromFile` in a loop to stream files individually |
+|-------|--------------|----------|
+| Üres ZIP fájl | `dataDir` rossz mappára mutat vagy hiányzik a záró perjel | Ellenőrizze az elérési utat, és győződjön meg róla, hogy a mappa tartalmaz fájlokat |
+| `UnauthorizedAccessException` | Az alkalmazásnak nincs fájlrendszer-engedélye | Futtassa a Visual Studio-t rendszergazdaként, vagy adjon olvasási/írási jogokat |
+| Nagy memóriahasználat hatalmas könyvtárak esetén | Az összes bejegyzés egyszerre történő betöltése a memóriába | Használja a `Archive.CreateEntryFromFile`-t egy ciklusban, hogy a fájlokat egyenként streamelje |
 
-## Frequently Asked Questions (Additional)
+## Gyakran Ismételt Kérdések (További)
 
 **K: Hozzáadhatok jelszót a ZIP archívumhoz?**  
-A: Yes. Set `archive.Password = "yourPassword";` before calling `Save`.
+V: Igen. Állítsa be az `archive.Password = "yourPassword";` értéket a `Save` hívása előtt.
 
 **K: Hogyan tudok csak bizonyos fájltípusokat belefoglalni?**  
-A: Filter the `DirectoryInfo` collection with `GetFiles("*.txt")` or similar before calling `CreateEntries`.
+V: Szűrje a `DirectoryInfo` gyűjteményt a `GetFiles("*.txt")` vagy hasonló metódussal a `CreateEntries` hívása előtt.
 
-**K: Van mód egy meglévő ZIP frissítésére anélkül, hogy újra létrehoznánk?**  
-A: Aspose.Zip supports incremental updates via `Archive.UpdateEntry`.
+**K: Van mód egy meglévő ZIP frissítésére anélkül, hogy újra létrehoznám?**  
+V: Az Aspose.Zip támogatja az inkrementális frissítéseket a `Archive.UpdateEntry` segítségével.
 
-## FAQ's
+## FAQ-k
 
-### Q1: Használhatom az Aspose.Zip for .NET-et kereskedelmi és személyes projektekben egyaránt?
+### Q1: Használhatom az Aspose.Zip for .NET-et mind kereskedelmi, mind személyes projektekben?
 
-A1: Yes, Aspose.Zip for .NET is licensed for both commercial and personal use.
+A1: Igen, az Aspose.Zip for .NET licencelt mind kereskedelmi, mind személyes felhasználásra.
 
-### Q2: Van ingyenes próbaverzió?
+### Q2: Elérhető ingyenes próba?
 
-A2: Yes, you can explore a free trial [here](https://releases.aspose.com/zip/net).
+A2: Igen, ingyenes próbaverziót [itt](https://releases.aspose.com/zip/net) talál.
 
 ### Q3: Hogyan kaphatok támogatást az Aspose.Zip for .NET-hez?
 
-A3: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for community support or consider purchasing a [temporary license](https://purchase.aspose.com/temporary-license/) for dedicated assistance.
+A3: Látogassa meg az [Aspose.Zip fórumot](https://forum.aspose.com/c/zip/37) a közösségi támogatásért, vagy fontolja meg egy [temporary license](https://purchase.aspose.com/temporary-license/) vásárlását dedikált segítségért.
 
 ### Q4: Vannak más példák és oktatóanyagok?
 
-A4: Yes, the [documentation](https://reference.aspose.com/zip/net/) contains comprehensive examples and tutorials.
+A4: Igen, a [documentation](https://reference.aspose.com/zip/net/) átfogó példákat és oktatóanyagokat tartalmaz.
 
 ### Q5: Megvásárolhatom az Aspose.Zip for .NET-et?
 
-A5: Certainly, you can make a purchase [here](https://purchase.aspose.com/buy).
+A5: Természetesen, vásárlásra [itt](https://purchase.aspose.com/buy) van lehetőség.
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -147,8 +143,8 @@ A5: Certainly, you can make a purchase [here](https://purchase.aspose.com/buy).
 
 ---
 
-**Utoljára frissítve:** 2025-12-09  
-**Tesztelve:** Aspose.Zip 24.11 for .NET  
+**Utolsó frissítés:** 2026-02-12  
+**Tesztelve a következővel:** Aspose.Zip 24.11 for .NET  
 **Szerző:** Aspose  
 
 ---

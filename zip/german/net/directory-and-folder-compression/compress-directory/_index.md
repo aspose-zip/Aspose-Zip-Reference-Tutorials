@@ -1,11 +1,10 @@
 ---
-date: 2025-12-09
-description: Erfahren Sie, wie Sie ein Verzeichnis mit Aspose.Zip für .NET komprimieren
-  und ein ZIP-Archiv effizient erstellen. Optimieren Sie den Speicherplatz in Ihren
-  .NET-Anwendungen.
-linktitle: How to Compress a Directory
+date: 2026-02-12
+description: Erfahren Sie, wie Sie Ordner mit Aspose.Zip für .NET zippen, ZIP-Archive
+  in .NET effizient erstellen und Speicherplatz in Ihren .NET-Anwendungen reduzieren.
+linktitle: How to Zip a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Wie man ein Verzeichnis mit Aspose.Zip für .NET komprimiert
+title: Wie man einen Ordner mit Aspose.Zip für .NET zippt
 url: /de/net/directory-and-folder-compression/compress-directory/
 weight: 10
 ---
@@ -14,42 +13,38 @@ weight: 10
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Mühelose Verzeichnis‑Komprimierung mit Aspose.Zip für .NET
+# Wie man einen Ordner mit Aspose.Zip für .NET zippt
 
-In diesem Tutorial zeigen wir Ihnen **wie man ein Verzeichnis komprimiert** mit Aspose.Zip für .NET, eine leistungsstarke Methode, um große Datensätze zu verwalten und Speicherplatz zu sparen. Egal, ob Sie ein Desktop‑Dienstprogramm oder einen‑basierten Service erstellen, das effiziente Komprimieren von Ordnern kann die Leistung dramatisch verbessern und Kosten senken. Wir gehen jeden Schritt durch, erklären die Logik hinter dem Code und weisen auf häufige Stolperfallen hin, damit Sie die Technik mit Vertrauen anwenden können.
+In diesem Tutorial erfahren Sie **wie man einen Ordner zippt** schnell und zuverlässig mit Aspose.Zip für .NET. Egal, ob Sie ein Desktop‑Dienstprogramm, einen cloud‑basierten Service oder ein automatisiertes Backup‑Skript erstellen, das Komprimieren eines Ordners in ein ZIP‑Archiv kann den Speicherbedarf erheblich reduzieren und Netzwerkübertragungen beschleunigen. Wir gehen jeden Schritt durch, erklären, warum jede Zeile wichtig ist, und weisen auf häufige Fallstricke hin, damit Sie die Technik mit Vertrauen anwenden können.
 
 ## Schnelle Antworten
-- **Was macht Aspose.Zip?** Es bietet eine einfache .NET‑API zum Erstellen und Extrahieren von ZIP‑Archiven ohne externe Abhängigkeiten.  
-- **Wie lange dauert die Implementierung?** In der Regel weniger als 10 Minuten für eine einfache Verzeichnis‑Komprimierung.  
+- **Was macht Aspose.Zip?** Es stellt eine einfache .NET‑API zum Erstellen und Extrahieren von ZIP‑Archiven ohne externe Abhängigkeiten bereit.  
+- **Wie lange dauert die Implementierung?** In der Regel weniger als 10 Minuten für eine grundlegende Ordnerkomprimierung.  
 - **Welche .NET‑Versionen werden unterstützt?** .NET Framework 4.5+, .NET Core 3.1+ und .NET 5/6+.  
 - **Benötige ich eine Lizenz für die Produktion?** Ja, für den Produktionseinsatz ist eine kommerzielle Lizenz erforderlich.  
-- **Kann ich mehrere Ordner gleichzeitig komprimieren?** Absolut – verwenden Sie die Methode `CreateEntries` auf jeder `DirectoryInfo`‑Sammlung.
+- **Kann ich mehrere Ordner gleichzeitig komprimieren?** Absolut – verwenden Sie die Methode `CreateEntries` auf einer beliebigen `DirectoryInfo`‑Sammlung, um **mehrere Ordner zu zippen** in einem Durchlauf.
 
-## Einführung
+## Was ist „wie man einen Ordner zippt“?
 
-Aspose.Zip für .NET ist eine leistungsstarke Bibliothek, die .NET‑Entwicklern ermöglicht, nahtlos mit komprimierten Dateien und Verzeichnissen zu arbeiten. Egal, ob Sie mit großen Datensätzen zu tun haben oder **zip file c#**‑artige Archive erzeugen müssen, Aspose.Zip bietet einen robusten Funktionsumfang für Komprimierungs‑ und Dekomprimierungsaufgaben.
+Ein Ordner zu komprimieren bedeutet, jede Datei und jeden Unterordner in einem angegebenen Verzeichnis zu nehmen und sie in ein einzelnes ZIP‑Archiv zu packen. Das reduziert die Gesamtabmessungen, bewahrt die ursprüngliche Hierarchie und erleichtert das Übertragen oder Speichern der Daten.
 
-## Was bedeutet „how to compress directory“?
-
-Das Komprimieren eines Verzeichnisses bedeutet, alle Dateien und Unterordner eines gegebenen Ordners zu nehmen und sie in ein einzelnes ZIP‑Archiv zu packen. Dadurch wird die Gesamtgröße reduziert, der Transfer vereinfacht und die ursprüngliche Ordnerhierarchie erhalten.
-
-## Warum Aspose.Zip für diese Aufgabe verwenden?
+## Warum Aspose.Zip für diese Aufgabe nutzen?
 
 - **Geschwindigkeit & Effizienz:** Optimierte Algorithmen verarbeiten große Ordner schnell.  
-- **Reines .NET:** Keine nativen Binärdateien oder Drittanbieter‑Tools erforderlich.  
-- **Umfangreicher Funktionsumfang:** Unterstützt Passwortschutz, Streaming und das Hinzufügen von Einträgen on‑the‑fly – perfekt für **zip multiple files .net**‑Szenarien.  
-- **Konsistente API:** Arbeitet gleich über .NET Framework, .NET Core und .NET 5/6 hinweg.
+- **Pure .NET:** Keine nativen Binärdateien oder Drittanbieter‑Tools erforderlich.  
+- **Umfangreicher Funktionsumfang:** Unterstützt Passwortschutz (`add password zip`), Streaming und das Festlegen eines benutzerdefinierten Komprimierungsgrades (`set compression level`).  
+- **Konsistente API:** Funktioniert identisch über .NET Framework, .NET Core und .NET 5/6 hinweg und ist damit ideal für **create zip archive .net**‑Szenarien.  
 
 ## Voraussetzungen
 
-- **Aspose.Zip für .NET** – laden Sie es [hier](https://releases.aspose.com/zip/net/) herunter.  
+- **Aspose.Zip for .NET** – laden Sie es [hier](https://releases.aspose.com/zip/net/) herunter.  
 - **Entwicklungsumgebung** – Visual Studio, Rider oder jede IDE, die C# unterstützt.  
-- **Dokumenten‑Verzeichnis** – Ersetzen Sie `"Your Document Directory"` im Code durch den Pfad zu dem Ordner, den Sie komprimieren möchten.  
-- **Referenzdokumentation** – Konsultieren Sie die offiziellen Docs [hier](https://reference.aspose.com/zip/net/).
+- **Dokumentverzeichnis** – Ersetzen Sie `"Your Document Directory"` im Code durch den Pfad zu dem Ordner, den Sie komprimieren möchten.  
+- **Referenzdokumentation** – konsultieren Sie die offiziellen Docs [hier](https://reference.aspose.com/zip/net/).
 
 ## Namespaces importieren
 
-Beginnen Sie damit, die erforderlichen Namespaces zu importieren. Diese geben Ihnen Zugriff auf die Kern‑Kompressionsklassen.
+Beginnen Sie damit, die erforderlichen Namespaces zu importieren. Diese geben Ihnen Zugriff auf die Kernkompressionsklassen.
 
 ```csharp
 using Aspose.Zip;
@@ -58,9 +53,9 @@ using System.IO;
 
 ## Wie man einen Ordner mit Aspose.Zip zippt
 
-Unten finden Sie ein einfaches Beispiel, das **wie man Ordnerinhalte zippt** demonstriert. Das gleiche Muster kann auf **zip multiple files .net** erweitert werden oder um benutzerdefinierte Archivstrukturen zu erstellen.
+Unten finden Sie ein einfaches Beispiel, das **wie man einen Ordner zippt** Inhalte demonstriert. Das gleiche Muster kann auf **zip multiple files .net** erweitert werden oder um benutzerdefinierte Archivstrukturen zu erstellen.
 
-### Schritt 1: Initialisieren Sie Ihr Dokumenten‑Verzeichnis
+### Schritt 1: Ihr Dokumentverzeichnis initialisieren
 
 Setzen Sie die Variable `dataDir` auf den Pfad des Verzeichnisses, das Sie komprimieren möchten.
 
@@ -68,7 +63,7 @@ Setzen Sie die Variable `dataDir` auf den Pfad des Verzeichnisses, das Sie kompr
 string dataDir = "Your Document Directory";
 ```
 
-### Schritt 2: Erstellen Sie Ausgabedateien für ZIP
+### Schritt 2: Ausgabedateien für ZIP erstellen
 
 Öffnen Sie zwei `FileStream`‑Objekte für die Ausgabedateien im ZIP‑Format. Dies zeigt, wie Sie aus derselben Quelle mehr als ein Archiv erzeugen können – nützlich für versionierte Backups.
 
@@ -81,7 +76,7 @@ using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", Fil
 
 ### Schritt 3: Verzeichnis komprimieren
 
-Verwenden Sie die Klasse `Archive`, um jeden Eintrag aus dem Zielordner hinzuzufügen. Das Beispiel nutzt einen Beispielordner namens **CanterburyCorpus**, Sie können jedoch jeden beliebigen Ordner angeben.
+Verwenden Sie die Klasse `Archive`, um jeden Eintrag aus dem Zielordner hinzuzufügen. Das Beispiel nutzt einen Beispielordner namens **CanterburyCorpus**, Sie können jedoch jedes beliebige Verzeichnis angeben.
 
 ```csharp
         using (Archive archive = new Archive())
@@ -95,19 +90,19 @@ Verwenden Sie die Klasse `Archive`, um jeden Eintrag aus dem Zielordner hinzuzuf
 }
 ```
 
-> **Pro‑Tipp:** Wenn Sie ein **create zip archive .net** mit einem bestimmten Kompressionsgrad erstellen müssen, setzen Sie `archive.CompressionLevel` bevor Sie `Save` aufrufen.
+> **Pro Tipp:** Wenn Sie **create zip archive .net** mit einem bestimmten Komprimierungsgrad benötigen, setzen Sie `archive.CompressionLevel` bevor Sie `Save` aufrufen.
 
 ## Häufige Probleme und Lösungen
 
 | Symptom | Wahrscheinliche Ursache | Lösung |
 |---------|--------------------------|--------|
-| Leere ZIP‑Datei | `dataDir` verweist auf den falschen Ordner oder fehlenden abschließenden Schrägstrich | Überprüfen Sie den Pfad und stellen Sie sicher, dass der Ordner Dateien enthält |
-| `UnauthorizedAccessException` | Anwendung hat keine Dateisystem‑Berechtigungen | Starten Sie Visual Studio als Administrator oder gewähren Sie Lese‑/Schreibrechte |
-| Hoher Speicherverbrauch bei riesigen Verzeichnissen | Alle Einträge werden gleichzeitig in den Speicher geladen | Verwenden Sie `Archive.CreateEntryFromFile` in einer Schleife, um Dateien einzeln zu streamen |
+| Leere ZIP-Datei | `dataDir` verweist auf den falschen Ordner oder es fehlt ein abschließender Schrägstrich | Überprüfen Sie den Pfad und stellen Sie sicher, dass der Ordner Dateien enthält |
+| `UnauthorizedAccessException` | Anwendung hat keine Dateisystemberechtigungen | Starten Sie Visual Studio als Administrator oder gewähren Sie Lese-/Schreibrechte |
+| Hoher Speicherverbrauch bei riesigen Verzeichnissen | Alle Einträge gleichzeitig in den Speicher laden | Verwenden Sie `Archive.CreateEntryFromFile` in einer Schleife, um Dateien einzeln zu streamen |
 
 ## Häufig gestellte Fragen (Zusätzlich)
 
-**Q: Kann ich ein Passwort zum ZIP‑Archiv hinzufügen?**  
+**Q: Kann ich ein Passwort zum ZIP-Archiv hinzufügen?**  
 A: Ja. Setzen Sie `archive.Password = "yourPassword";` bevor Sie `Save` aufrufen.
 
 **Q: Wie kann ich nur bestimmte Dateitypen einbeziehen?**  
@@ -116,11 +111,11 @@ A: Filtern Sie die `DirectoryInfo`‑Sammlung mit `GetFiles("*.txt")` oder Ähnl
 **Q: Gibt es eine Möglichkeit, ein bestehendes ZIP zu aktualisieren, ohne es neu zu erstellen?**  
 A: Aspose.Zip unterstützt inkrementelle Updates über `Archive.UpdateEntry`.
 
-## FAQ's
+## FAQ
 
 ### Q1: Kann ich Aspose.Zip für .NET sowohl in kommerziellen als auch in privaten Projekten verwenden?
 
-A1: Ja, Aspose.Zip für .NET ist für sowohl kommerzielle als auch private Nutzung lizenziert.
+A1: Ja, Aspose.Zip für .NET ist sowohl für kommerzielle als auch für private Nutzung lizenziert.
 
 ### Q2: Gibt es eine kostenlose Testversion?
 
@@ -147,8 +142,6 @@ A5: Natürlich, Sie können einen Kauf [hier](https://purchase.aspose.com/buy) t
 
 ---
 
-**Zuletzt aktualisiert:** 2025-12-09  
+**Zuletzt aktualisiert:** 2026-02-12  
 **Getestet mit:** Aspose.Zip 24.11 für .NET  
-**Autor:** Aspose  
-
----
+**Autor:** Aspose
