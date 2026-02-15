@@ -1,111 +1,120 @@
 ---
-date: 2025-12-10
-description: Lås upp potentialen i Aspose.Zip för .NET! Lär dig hur du enkelt dekomprimerar
-  mappar med den här steg‑för‑steg‑guiden. Dyk in i en värld av sömlös komprimering
-  och extraktion.
-linktitle: Decompress Compressed Folder to Directory
+date: 2026-02-15
+description: Lär dig hur du extraherar zip‑filer till en mapp med Aspose.Zip för .NET,
+  inklusive lösenordsskyddade arkiv och krypterad zip‑extraktion.
+linktitle: extract zip to folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Dekomprimera komprimerad mapp till katalog i Aspose.Zip för .NET
+title: Hur man extraherar zip till mapp med Aspose.Zip för .NET
 url: /sv/net/file-decompression/decompress-compressed-folder-directory/
 weight: 14
 ---
+
+.
+
+Now produce final content.
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Hur man extraherar ZIP-filer med Aspose.Zip för .NET
+# Så extraherar du zip till mapp med Aspose.Zip för .NET
 
 ## Introduktion
 
-Välkommen till världen av Aspose.Zip för .NET, ett robust bibliotek som ger utvecklare möjlighet att hantera komprimerade mappar utan ansträngning. Om du undrar **hur man extraherar zip** filer i .NET, så har den här guiden svaret. I den här handledningen kommer vi att gå igenom processen att dekomprimera en komprimerad mapp till en katalog med hjälp av Aspose.Zip för .NET. Spänn fast dig så tar vi dig igenom varje steg i detalj och avmystifierar komplexiteten i detta kraftfulla verktyg.
+Om du behöver **extrahera zip till mapp** snabbt och pålitligt i en .NET‑applikation, ger Aspose.Zip för .NET dig ett rent, plattformsoberoende API som hanterar både vanliga och krypterade arkiv. I den här handledningen går vi igenom allt du behöver – från att installera biblioteket till att extrahera en lösenordsskyddad ZIP‑fil – så att du kan fokusera på din affärslogik istället för låg‑nivå arkivhantering.
 
 ## Snabba svar
-- **Vad är det primära syftet med Aspose.Zip?** Att skapa, läsa och extrahera ZIP-arkiv i .NET-applikationer.  
-- **Hur man extraherar zip** med ett lösenord? Använd `ArchiveLoadOptions` med egenskapen `DecryptionPassword`.  
-- **Kan jag packa upp ett krypterat arkiv** utan ett lösenord? Nej – du måste ange rätt lösenord.  
-- **Vilka .NET-versioner stöds?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
-- **Krävs en licens för produktion?** Ja, en giltig Aspose.Zip-licens behövs för kommersiell användning.
+- **Vad är det primära syftet med Aspose.Zip?** Att skapa, läsa och **extrahera zip till mapp** i .NET‑applikationer.  
+- **Hur extraherar jag zip med lösenord?** Skicka lösenordet via `ArchiveLoadOptions.DecryptionPassword`.  
+- **Kan jag packa upp ett krypterat arkiv utan lösenord?** Nej – Aspose.Zip kräver rätt lösenord för att öppna krypterade arkiv.  
+- **Vilka .NET‑versioner stöds?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **Krävs en licens för produktion?** Ja, en giltig Aspose.Zip‑licens behövs för kommersiell användning.
 
-## Vad är **hur man extraherar zip**?
-Att extrahera en ZIP-fil innebär att läsa den komprimerade datan och skriva de ursprungliga filerna till en mål katalog. Aspose.Zip abstraherar de lågnivådetaljerna, så att du kan fokusera på affärslogik snarare än arkivhantering.
+## Vad är **extrahera zip till mapp**?
 
-## Varför använda Aspose.Zip för **hur man packar upp mapp**-uppgifter?
+Att extrahera en ZIP‑fil innebär att läsa den komprimerade datan och skriva de ursprungliga filerna till en målkatalog på disken. Aspose.Zip abstraherar låg‑nivå‑detaljerna, så att du kan anropa en enda metod för att utföra hela operationen.
+
+## Varför använda Aspose.Zip för **hur man packar upp zip**‑uppgifter?
+
 - **Enkel API** – minimal kod för att öppna, dekryptera och extrahera arkiv.  
 - **Stöder krypterade arkiv** – perfekt för säker datautbyte.  
-- **Plattformsoberoende** – fungerar på Windows, Linux och macOS med .NET Core/.NET 5+.  
-- **Inga externa beroenden** – ingen behov av att installera inhemska zip-verktyg.
+- **Plattformsoberoende** – fungerar på Windows, Linux och macOS med .NET Core/.NET 5+.  
+- **Inga externa beroenden** – ingen installation av inhemska zip‑verktyg behövs.  
 
 ## Förutsättningar
 
-Innan vi ger oss i kast med detta, se till att du har följande förutsättningar på plats:
+Innan vi börjar, se till att du har:
 
-- Aspose.Zip för .NET-biblioteket: Ladda ner och installera biblioteket från [Aspose.Zip för .NET-dokumentationen](https://reference.aspose.com/zip/net/).
+- Aspose.Zip för .NET‑biblioteket: Ladda ner och installera biblioteket från den [Aspose.Zip för .NET-dokumentationen](https://reference.aspose.com/zip/net/).
+- En .NET‑utvecklingsmiljö (Visual Studio, VS Code eller någon annan IDE du föredrar).
+- (Valfritt) En lösenordsskyddad ZIP‑fil om du vill prova **extrahera zip med lösenord**.
 
 ## Importera namnrymder
 
-I ditt .NET‑projekt importerar du de nödvändiga namnrymderna för att utnyttja funktionerna i Aspose.Zip:
+I ditt .NET‑projekt importerar du de nödvändiga namnutrymmena för att utnyttja funktionerna i Aspose.Zip:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-Nu ska vi bryta ner det medföljande exemplet i flera steg för en heltäckande förståelse.
+Låt oss nu gå igenom extraktionsprocessen steg för steg.
 
-## Hur man **packar upp mapp** – Steg‑för‑steg-guide
+## Så **extraherar du zip till mapp** – Steg‑för‑steg‑guide
 
-### Steg 1: Öppna den komprimerade mappen
+### Steg 1: Öppna ZIP‑filen (eller krypterat arkiv)
 
 ```csharp
 using (FileStream zipFile = File.Open(".\\all_corpus_encrypted.zip", FileMode.Open))
 ```
 
-Börja med att öppna den komprimerade mappen med en `FileStream`. Justera filsökvägen efter ditt projekts struktur.
+Vi öppnar ZIP‑filen med ett `FileStream`. Anpassa sökvägen så att den pekar på ditt eget arkiv. Om arkivet inte är krypterat fungerar samma kod för ett vanligt **dekomprimera zip-mapp**‑scenario.
 
-### Steg 2: Skapa ett Archive‑objekt (Dekryptera ZIP‑filen)
+### Steg 2: Skapa en `Archive`‑instans (ange lösenord vid behov)
 
 ```csharp
 new Archive(zipFile, new ArchiveLoadOptions() { DecryptionPassword = "p@s$" })
 ```
 
-Instansiera ett `Archive`‑objekt, skicka in `zipFile`‑strömmen och ange valfria laddningsalternativ, såsom dekrypteringslösenordet i detta fall. Detta är nyckelsteget när du behöver **packa upp krypterat arkiv**‑filer.
+`Archive`‑konstruktorn tar emot strömmen och ett `ArchiveLoadOptions`‑objekt. Att ange `DecryptionPassword` är hur du **extraherar zip med lösenord** och hanterar **packa upp krypterat arkiv**‑fall.
 
-### Steg 3: Extrahera till en katalog
+### Steg 3: Extrahera innehållet till en mål‑mapp
 
 ```csharp
 .ExtractToDirectory(".\\all_corpus_decrypted");
 ```
 
-Slutligen använder du `ExtractToDirectory`‑metoden för att dekomprimera och extrahera innehållet i den komprimerade mappen till den angivna katalogen. Detta slutför processen **hur man dekomprimerar zip**.
+Genom att anropa `ExtractToDirectory` skrivs varje post i arkivet till den angivna katalogen, vilket slutför **extrahera zip till mapp**‑operationen. Metoden skapar automatiskt mål‑mappen om den inte finns.
 
-Upprepa dessa steg för andra komprimerade mappar och säkerställ sömlös integration med Aspose.Zip för .NET.
+> **Proffstips:** Om du bara behöver extrahera en delmängd av filer, använd överlagringen som accepterar en filter‑delegat istället för att extrahera allt.
 
 ## Vanliga problem & felsökning
 
-- **Fel lösenord** – Om dekrypteringslösenordet är fel, kommer Aspose.Zip att kasta ett autentiseringsundantag. Dubbelkolla lösenordsträngen.  
-- **Sökväg ej hittad** – Säkerställ att mål katalogen finns eller låt `ExtractToDirectory` skapa den automatiskt.  
-- **Stora arkiv** – För mycket stora ZIP-filer, överväg att extrahera i delar eller använda streaming‑API:er för att minska minnesbelastning.
+- **Fel lösenord** – Aspose.Zip kastar ett autentiseringsundantag. Dubbelkolla lösenordsträngen eller hämta den säkert från en konfigurationskälla.  
+- **Målsökväg hittades inte** – Säkerställ att sökvägen till mål‑katalogen är giltig; `ExtractToDirectory` skapar saknade mappar, men föräldrasökvägen måste vara åtkomlig.  
+- **Stora arkiv** – För mycket stora ZIP‑filer, överväg att extrahera post för post med streaming‑API:t för att hålla minnesanvändningen låg.  
 
 ## Vanliga frågor
 
-**Q: Är Aspose.Zip för .NET kompatibel med olika komprimeringsformat?**  
-A: Ja, Aspose.Zip för .NET stöder populära komprimeringsformat som ZIP, GZIP och fler.
+**Q: Stöder Aspose.Zip andra komprimeringsformat som GZIP?**  
+A: Ja, Aspose.Zip för .NET stöder ZIP, GZIP och flera andra vanliga format.
 
-**Q: Kan jag använda Aspose.Zip för .NET i både kommersiella och icke‑komersiella projekt?**  
-A: Absolut, du kan använda Aspose.Zip för .NET i både kommersiella och icke‑komersiella applikationer.
+**Q: Kan jag använda Aspose.Zip i både kommersiella och icke‑kommersiella projekt?**  
+A: Absolut. En giltig licens krävs för produktion, men du kan använda gratisprovversionen för utvärdering.
 
-**Q: Finns det en gratis provperiod för Aspose.Zip för .NET?**  
-A: Ja, du kan utforska funktionerna med en gratis provperiod genom att besöka [här](https://releases.aspose.com/).
+**Q: Hur får jag en tillfällig licens för testning?**  
+A: Du kan skaffa en tillfällig licens från [här](https://purchase.aspose.com/temporary-license/) för teständamål.
 
-**Q: Hur kan jag få support för Aspose.Zip för .NET?**  
-A: Sök hjälp från Aspose.Zip‑gemenskapen på [supportforumet](https://forum.aspose.com/c/zip/37).
+**Q: Var kan jag ladda ner en gratis provversion av Aspose.Zip?**  
+A: Besök Aspose.Zip‑provversionssidan [här](https://releases.aspose.com/) för att ladda ner den senaste versionen.
 
-**Q: Behöver jag en tillfällig licens för att testa Aspose.Zip för .NET?**  
-A: Ja, du kan skaffa en tillfällig licens från [här](https://purchase.aspose.com/temporary-license/) för teständamål.
+**Q: Var kan jag be om hjälp om jag stöter på problem?**  
+A: Aspose.Zip‑community‑forumet är ett bra ställe att få hjälp: [supportforum](https://forum.aspose.com/c/zip/37).
 
-**Senast uppdaterad:** 2025-12-10  
-**Testad med:** Aspose.Zip för .NET (senaste versionen)  
+---
+
+**Senast uppdaterad:** 2026-02-15  
+**Testat med:** Aspose.Zip för .NET (senaste versionen)  
 **Författare:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}

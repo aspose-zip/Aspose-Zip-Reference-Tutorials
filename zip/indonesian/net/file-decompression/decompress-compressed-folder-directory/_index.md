@@ -1,11 +1,10 @@
 ---
-date: 2025-12-10
-description: Buka potensi Aspose.Zip untuk .NET! Pelajari cara dengan mudah mendekompresi
-  folder menggunakan panduan langkah demi langkah ini. Selami dunia kompresi dan ekstraksi
-  yang mulus.
-linktitle: Decompress Compressed Folder to Directory
+date: 2026-02-15
+description: Pelajari cara mengekstrak zip ke folder menggunakan Aspose.Zip untuk
+  .NET, termasuk arsip yang dilindungi kata sandi dan ekstraksi zip terenkripsi.
+linktitle: extract zip to folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Mengekstrak Folder Terkompresi ke Direktori di Aspose.Zip untuk .NET
+title: Cara mengekstrak zip ke folder dengan Aspose.Zip untuk .NET
 url: /id/net/file-decompression/decompress-compressed-folder-directory/
 weight: 14
 ---
@@ -14,33 +13,37 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Cara Mengekstrak File ZIP dengan Aspose.Zip untuk .NET
+# Cara mengekstrak zip ke folder dengan Aspose.Zip untuk .NET
 
 ## Pendahuluan
 
-Selamat datang di dunia Aspose.Zip untuk .NET, sebuah pustaka yang kuat yang memungkinkan pengembang menangani folder terkompresi dengan mudah. Jika Anda bertanya-tanya **cara mengekstrak zip** file di .NET, panduan ini mencakup semuanya. Dalam tutorial ini, kami akan membahas proses mendekompresi folder terkompresi ke sebuah direktori menggunakan Aspose.Zip untuk .NET. Siapkan diri Anda saat kami memandu Anda melalui setiap langkah secara detail, menjelaskan seluk‑beluk alat yang kuat ini.
+Jika Anda perlu **mengekstrak zip ke folder** dengan cepat dan dapat diandalkan dalam aplikasi .NET, Aspose.Zip untuk .NET memberikan API yang bersih dan lintas‑platform yang menangani arsip biasa maupun yang terenkripsi. Pada tutorial ini kami akan membahas semua yang Anda perlukan—dari menyiapkan pustaka hingga mengekstrak file ZIP yang dilindungi kata sandi—sehingga Anda dapat fokus pada logika bisnis alih-alih penanganan arsip tingkat rendah.
 
 ## Jawaban Cepat
-- **Apa tujuan utama Aspose.Zip?** Untuk membuat, membaca, dan mengekstrak arsip ZIP dalam aplikasi .NET.  
-- **Bagaimana cara mengekstrak zip** dengan password? Gunakan `ArchiveLoadOptions` dengan properti `DecryptionPassword`.  
-- **Bisakah saya mengekstrak arsip terenkripsi** tanpa password? Tidak – Anda harus menyediakan password yang benar.  
-- **Versi .NET apa yang didukung?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **Apa tujuan utama Aspose.Zip?** Untuk membuat, membaca, dan **mengekstrak zip ke folder** dalam aplikasi .NET.  
+- **Bagaimana cara mengekstrak zip dengan kata sandi?** Berikan kata sandi melalui `ArchiveLoadOptions.DecryptionPassword`.  
+- **Bisakah saya mengekstrak arsip terenkripsi tanpa kata sandi?** Tidak—Aspose.Zip memerlukan kata sandi yang benar untuk membuka arsip terenkripsi.  
+- **Versi .NET apa yang didukung?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
 - **Apakah lisensi diperlukan untuk produksi?** Ya, lisensi Aspose.Zip yang valid diperlukan untuk penggunaan komersial.
 
-## Apa itu **how to extract zip**?
-Mengekstrak file ZIP berarti membaca data terkompresi dan menulis file asli ke direktori target. Aspose.Zip menyederhanakan detail tingkat rendah, memungkinkan Anda fokus pada logika bisnis daripada penanganan arsip.
+## Apa itu **mengekstrak zip ke folder**?
 
-## Mengapa menggunakan Aspose.Zip untuk tugas **how to unzip folder**?
-- **API yang Sederhana** – kode minimal untuk membuka, mendekripsi, dan mengekstrak arsip.  
+Mengekstrak file ZIP berarti membaca data terkompresi dan menulis file asli ke direktori target di disk. Aspose.Zip mengabstraksi detail tingkat rendah, memungkinkan Anda memanggil satu metode untuk melakukan seluruh operasi.
+
+## Mengapa menggunakan Aspose.Zip untuk tugas **cara mengekstrak zip**?
+
+- **API yang sederhana** – kode minimal untuk membuka, mendekripsi, dan mengekstrak arsip.  
 - **Mendukung arsip terenkripsi** – sempurna untuk pertukaran data yang aman.  
-- **Lintas‑platform** – bekerja di Windows, Linux, dan macOS dengan .NET Core/.NET 5+.  
-- **Tanpa dependensi eksternal** – tidak perlu menginstal utilitas zip native.
+- **Lintas‑platform** – bekerja di Windows, Linux, dan macOS dengan .NET Core/.NET 5+.  
+- **Tanpa ketergantungan eksternal** – tidak perlu menginstal utilitas zip native.  
 
 ## Prasyarat
 
-Sebelum memulai, pastikan Anda memiliki prasyarat berikut:
+Sebelum kita mulai, pastikan Anda memiliki:
 
-- Aspose.Zip untuk .NET Library: Unduh dan instal pustaka dari [Aspose.Zip for .NET documentation](https://reference.aspose.com/zip/net/).
+- Pustaka Aspose.Zip untuk .NET: Unduh dan instal pustaka dari [dokumentasi Aspose.Zip untuk .NET](https://reference.aspose.com/zip/net/).
+- Lingkungan pengembangan .NET (Visual Studio, VS Code, atau IDE lain yang Anda sukai).
+- (Opsional) File ZIP yang dilindungi kata sandi jika Anda ingin mencoba **mengekstrak zip dengan kata sandi**.
 
 ## Impor Namespace
 
@@ -51,60 +54,62 @@ using Aspose.Zip;
 using System.IO;
 ```
 
-Sekarang, mari kita uraikan contoh yang diberikan menjadi beberapa langkah untuk pemahaman yang komprehensif.
+Sekarang mari kita uraikan proses ekstraksi langkah demi langkah.
 
-## Cara **unzip folder** – Panduan Langkah‑per‑Langkah
+## Cara **mengekstrak zip ke folder** – Panduan Langkah‑per‑Langkah
 
-### Langkah 1: Membuka Folder Terkompresi
+### Langkah 1: Buka file ZIP (atau arsip terenkripsi)
 
 ```csharp
 using (FileStream zipFile = File.Open(".\\all_corpus_encrypted.zip", FileMode.Open))
 ```
 
-Mulailah dengan membuka folder terkompresi menggunakan `FileStream`. Sesuaikan jalur file sesuai struktur proyek Anda.
+Kami membuka file ZIP dengan `FileStream`. Sesuaikan path agar mengarah ke arsip Anda sendiri. Jika arsip tidak terenkripsi, kode yang sama berfungsi untuk skenario **decompress zip folder** biasa.
 
-### Langkah 2: Membuat Instance Archive (Mendekripsi ZIP)
+### Langkah 2: Buat instance `Archive` (berikan kata sandi bila diperlukan)
 
 ```csharp
 new Archive(zipFile, new ArchiveLoadOptions() { DecryptionPassword = "p@s$" })
 ```
 
-Buat objek `Archive`, melewatkan aliran `zipFile` dan menyediakan opsi pemuatan opsional, seperti password dekripsi dalam kasus ini. Ini adalah langkah kunci ketika Anda perlu **mengekstrak arsip terenkripsi**.
+Konstruktor `Archive` menerima stream dan objek `ArchiveLoadOptions`. Menyediakan `DecryptionPassword` adalah cara Anda **mengekstrak zip dengan kata sandi** dan menangani kasus **mengekstrak arsip terenkripsi**.
 
-### Langkah 3: Mengekstrak ke Direktori
+### Langkah 3: Ekstrak konten ke folder tujuan
 
 ```csharp
 .ExtractToDirectory(".\\all_corpus_decrypted");
 ```
 
-Akhirnya, gunakan metode `ExtractToDirectory` untuk mendekompresi dan mengekstrak isi folder terkompresi ke direktori yang ditentukan. Ini menyelesaikan proses **cara mendekompresi zip**.
+Memanggil `ExtractToDirectory` menulis setiap entri dalam arsip ke direktori yang ditentukan, menyelesaikan operasi **mengekstrak zip ke folder**. Metode ini akan secara otomatis membuat folder target jika belum ada.
 
-Ulangi langkah-langkah ini untuk folder terkompresi lainnya, memastikan integrasi yang mulus dengan Aspose.Zip untuk .NET.
+> **Tips pro:** Jika Anda hanya perlu mengekstrak sebagian file, gunakan overload yang menerima delegate filter alih‑alih mengekstrak semuanya.
 
 ## Masalah Umum & Pemecahan Masalah
 
-- **Password salah** – Jika password dekripsi salah, Aspose.Zip akan melemparkan pengecualian otentikasi. Periksa kembali string password.  
-- **Path tidak ditemukan** – Pastikan direktori target ada atau biarkan `ExtractToDirectory` membuatnya secara otomatis.  
-- **Arsip besar** – Untuk file ZIP yang sangat besar, pertimbangkan mengekstrak dalam potongan atau menggunakan API streaming untuk mengurangi tekanan memori.
+- **Kata sandi salah** – Aspose.Zip melemparkan pengecualian otentikasi. Periksa kembali string kata sandi atau ambil secara aman dari sumber konfigurasi.  
+- **Path tujuan tidak ditemukan** – Pastikan path direktori tujuan valid; `ExtractToDirectory` akan membuat folder yang hilang, tetapi path induk harus dapat diakses.  
+- **Arsip besar** – Untuk file ZIP yang sangat besar, pertimbangkan mengekstrak entri demi entri menggunakan API streaming agar penggunaan memori tetap rendah.  
 
 ## Pertanyaan yang Sering Diajukan
 
-**Q: Apakah Aspose.Zip untuk .NET kompatibel dengan berbagai format kompresi?**  
-A: Ya, Aspose.Zip untuk .NET mendukung format kompresi populer seperti ZIP, GZIP, dan lainnya.
+**T: Apakah Aspose.Zip mendukung format kompresi lain seperti GZIP?**  
+J: Ya, Aspose.Zip untuk .NET mendukung ZIP, GZIP, dan beberapa format umum lainnya.
 
-**Q: Bisakah saya menggunakan Aspose.Zip untuk .NET dalam proyek komersial dan non‑komersial?**  
-A: Tentu saja, Anda dapat memanfaatkan Aspose.Zip untuk .NET dalam aplikasi komersial maupun non‑komersial.
+**T: Bisakah saya menggunakan Aspose.Zip dalam proyek komersial dan non‑komersial?**  
+J: Tentu saja. Lisensi yang valid diperlukan untuk produksi, tetapi Anda dapat menggunakan versi percobaan gratis untuk evaluasi.
 
-**Q: Apakah ada percobaan gratis untuk Aspose.Zip untuk .NET?**  
-A: Ya, Anda dapat menjelajahi fitur dengan percobaan gratis dengan mengunjungi [here](https://releases.aspose.com/).
+**T: Bagaimana cara mendapatkan lisensi sementara untuk pengujian?**  
+J: Anda dapat memperoleh lisensi sementara dari [sini](https://purchase.aspose.com/temporary-license/) untuk keperluan pengujian.
 
-**Q: Bagaimana cara mendapatkan dukungan untuk Aspose.Zip untuk .NET?**  
-A: Dapatkan bantuan dari komunitas Aspose.Zip di [support forum](https://forum.aspose.com/c/zip/37).
+**T: Di mana saya dapat mengunduh versi percobaan gratis Aspose.Zip?**  
+J: Kunjungi halaman percobaan Aspose.Zip [di sini](https://releases.aspose.com/) untuk mengunduh versi terbaru.
 
-**Q: Apakah saya memerlukan lisensi sementara untuk menguji Aspose.Zip untuk .NET?**  
-A: Ya, Anda dapat memperoleh lisensi sementara dari [here](https://purchase.aspose.com/temporary-license/) untuk keperluan pengujian.
+**T: Di mana saya dapat meminta bantuan jika mengalami masalah?**  
+J: Forum komunitas Aspose.Zip adalah tempat yang bagus untuk mendapatkan bantuan: [forum dukungan](https://forum.aspose.com/c/zip/37).
 
-**Terakhir Diperbarui:** 2025-12-10  
+---
+
+**Terakhir Diperbarui:** 2026-02-15  
 **Diuji Dengan:** Aspose.Zip untuk .NET (rilis terbaru)  
 **Penulis:** Aspose  
 

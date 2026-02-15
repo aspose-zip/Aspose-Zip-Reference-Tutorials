@@ -1,114 +1,119 @@
 ---
-date: 2025-12-10
-description: Aspose.Zip for .NET'in potansiyelini ortaya çıkarın! Bu adım adım kılavuzla
-  klasörleri zahmetsizce nasıl açacağınızı öğrenin. Sorunsuz sıkıştırma ve çıkarma
-  dünyasına dalın.
-linktitle: Decompress Compressed Folder to Directory
+date: 2026-02-15
+description: Aspose.Zip for .NET kullanarak zip dosyasını klasöre nasıl çıkaracağınızı,
+  şifre korumalı arşivler ve şifreli zip çıkarma dahil olmak üzere öğrenin.
+linktitle: extract zip to folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Aspose.Zip for .NET'te Sıkıştırılmış Klasörü Dizin'e Aç
+title: Aspose.Zip for .NET ile zip dosyasını klasöre nasıl çıkarılır
 url: /tr/net/file-decompression/decompress-compressed-folder-directory/
 weight: 14
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
+ unchanged.
+
+Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET ile ZIP Dosyalarını Nasıl Çıkarabilirsiniz
+# Aspose.Zip for .NET ile zip'i klasöre çıkarma
 
-## Introduction
+## Giriş
 
-Aspose.Zip for .NET dünyasına hoş geldiniz; sıkıştırılmış klasörleri zahmetsizce yönetmenizi sağlayan güçlü bir kütüphane. **how to extract zip** dosyalarını .NET içinde nasıl çıkaracağınızı merak ediyorsanız, bu rehber tam size göre. Bu öğreticide, Aspose.Zip for .NET kullanarak sıkıştırılmış bir klasörü bir dizine nasıl açacağınızı adım adım inceleyeceğiz. Güçlü bu aracın inceliklerini ayrıntılı bir şekilde keşfetmeye hazır olun.
+Eğer bir .NET uygulamasında **zip'i klasöre çıkarma** işlemini hızlı ve güvenilir bir şekilde yapmanız gerekiyorsa, Aspose.Zip for .NET size düz ve şifreli arşivleri aynı şekilde işleyen temiz, çapraz‑platform bir API sunar. Bu öğreticide, kütüphaneyi kurmaktan şifre korumalı bir ZIP dosyasını çıkarmaya kadar ihtiyacınız olan her şeyi adım adım göstereceğiz; böylece düşük seviyeli arşiv işlemleriyle uğraşmak yerine iş mantığınıza odaklanabilirsiniz.
 
-## Quick Answers
-- **What is the primary purpose of Aspose.Zip?** To create, read, and extract ZIP archives in .NET applications.  
-- **How to extract zip** with a password? Use `ArchiveLoadOptions` with the `DecryptionPassword` property.  
-- **Can I unzip encrypted archive** without a password? No – you must supply the correct password.  
-- **What .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
-- **Is a license required for production?** Yes, a valid Aspose.Zip license is needed for commercial use.
+## Hızlı Yanıtlar
+- **Aspose.Zip'in temel amacı nedir?** .NET uygulamalarında zip oluşturmak, okumak ve **zip'i klasöre çıkarmak**.  
+- **Şifreli zip'i nasıl çıkarırım?** Şifreyi `ArchiveLoadOptions.DecryptionPassword` aracılığıyla geçirin.  
+- **Şifreli arşivi şifresiz açabilir miyim?** Hayır—Aspose.Zip şifreli arşivleri açmak için doğru şifreyi gerektirir.  
+- **Hangi .NET sürümleri destekleniyor?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **Üretim ortamında lisans gerekli mi?** Evet, ticari kullanım için geçerli bir Aspose.Zip lisansı gereklidir.
 
-## What is **how to extract zip**?
-ZIP dosyasını çıkarmak, sıkıştırılmış veriyi okuyup orijinal dosyaları hedef bir dizine yazmak anlamına gelir. Aspose.Zip, düşük seviyeli detayları soyutlayarak arşiv yönetimi yerine iş mantığınıza odaklanmanızı sağlar.
+## **zip'i klasöre çıkarma** nedir?
 
-## Why use Aspose.Zip for **how to unzip folder** tasks?
-- **Straightforward API** – minimal code to open, decrypt, and extract archives.  
-- **Supports encrypted archives** – perfect for secure data exchange.  
-- **Cross‑platform** – works on Windows, Linux, and macOS with .NET Core/.NET 5+.  
-- **No external dependencies** – no need to install native zip utilities.
+ZIP dosyasını çıkarmak, sıkıştırılmış veriyi okuyup orijinal dosyaları diskteki hedef bir klasöre yazmak anlamına gelir. Aspose.Zip düşük seviyeli ayrıntıları soyutlayarak tek bir metodla tüm işlemi gerçekleştirmenizi sağlar.
 
-## Prerequisites
+## **zip'i nasıl açarız** görevleri için Aspose.Zip'i neden kullanmalısınız?
 
-Bu yolculuğa başlamadan önce aşağıdaki ön koşulların sağlandığından emin olun:
+- **Basit API** – arşivleri açmak, şifre çözmek ve çıkarmak için minimal kod.  
+- **Şifreli arşivleri destekler** – güvenli veri alışverişi için mükemmeldir.  
+- **Çapraz‑platform** – .NET Core/.NET 5+ ile Windows, Linux ve macOS'ta çalışır.  
+- **Harici bağımlılık yok** – yerel zip araçlarını kurmaya gerek yok.
 
-- Aspose.Zip for .NET Library: Download and install the library from the [Aspose.Zip for .NET documentation](https://reference.aspose.com/zip/net/).
+## Önkoşullar
 
-## Import Namespaces
+Başlamadan önce şunların olduğundan emin olun:
 
-.NET projenizde Aspose.Zip işlevselliğini kullanmak için gerekli ad alanlarını içe aktarın:
+- Aspose.Zip for .NET Kütüphanesi: Kütüphaneyi [Aspose.Zip for .NET documentation](https://reference.aspose.com/zip/net/) adresinden indirin ve kurun.
+- Bir .NET geliştirme ortamı (Visual Studio, VS Code veya tercih ettiğiniz herhangi bir IDE).
+- (İsteğe bağlı) **Şifreli zip'i çıkarmak** denemek istiyorsanız şifre korumalı bir ZIP dosyası.
+
+## Ad Alanlarını İçe Aktarma
+
+.NET projenizde, Aspose.Zip işlevlerini kullanmak için gerekli ad alanlarını içe aktarın:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-Şimdi, verilen örneği kapsamlı bir anlayış için birden fazla adıma ayıralım.
+Şimdi çıkarma sürecini adım adım inceleyelim.
 
-## How to **unzip folder** – Step‑by‑Step Guide
+## **zip'i klasöre çıkarma** – Adım Adım Kılavuz
 
-### Step 1: Opening the Compressed Folder
+### Adım 1: ZIP dosyasını açma (veya şifreli arşiv)
 
 ```csharp
 using (FileStream zipFile = File.Open(".\\all_corpus_encrypted.zip", FileMode.Open))
 ```
 
-`FileStream` kullanarak sıkıştırılmış klasörü açın. Dosya yolunu projenizin yapısına göre ayarlayın.
+`FileStream` ile ZIP dosyasını açıyoruz. Yolu kendi arşivinize göre ayarlayın. Arşiv şifreli değilse, aynı kod normal bir **zip klasörünü açma** senaryosu için de çalışır.
 
-### Step 2: Creating an Archive Instance (Decrypting the ZIP)
+### Adım 2: `Archive` örneği oluşturma (gerekirse şifre sağlama)
 
 ```csharp
 new Archive(zipFile, new ArchiveLoadOptions() { DecryptionPassword = "p@s$" })
 ```
 
-`Archive` nesnesini oluşturun, `zipFile` akışını ve isteğe bağlı olarak şifreleme parolasını içeren yükleme seçeneklerini geçin. Bu adım, **unzip encrypted archive** dosyaları için kritik öneme sahiptir.
+`Archive` yapıcı metodu, akışı ve bir `ArchiveLoadOptions` nesnesini alır. `DecryptionPassword` sağlamak, **şifreli zip'i çıkarmak** ve **şifreli arşivi açmak** durumlarını yönetmenin yoludur.
 
-### Step 3: Extracting to a Directory
+### Adım 3: İçeriği hedef klasöre çıkartma
 
 ```csharp
 .ExtractToDirectory(".\\all_corpus_decrypted");
 ```
 
-`ExtractToDirectory` metodunu kullanarak sıkıştırılmış klasörün içeriğini belirtilen dizine açın ve çıkarın. Böylece **how to decompress zip** süreci tamamlanmış olur.
+`ExtractToDirectory` çağrısı, arşivdeki her bir girişi belirtilen dizine yazar ve **zip'i klasöre çıkarma** işlemini tamamlar. Hedef klasör mevcut değilse, metod otomatik olarak oluşturur.
 
-Bu adımları diğer sıkıştırılmış klasörler için de tekrarlayarak Aspose.Zip for .NET ile sorunsuz entegrasyonu sağlayabilirsiniz.
+> **Pro ipucu:** Yalnızca belirli dosyaları çıkarmanız gerekiyorsa, her şeyi çıkarmak yerine bir filtre temsilcisi kabul eden aşırı yüklemeyi kullanın.
 
-## Common Issues & Troubleshooting
+## Yaygın Sorunlar ve Çözüm Yolları
 
-- **Incorrect password** – If the decryption password is wrong, Aspose.Zip will throw an authentication exception. Double‑check the password string.
-- **Path not found** – Ensure the target directory exists or let `ExtractToDirectory` create it automatically.
-- **Large archives** – For very large ZIP files, consider extracting in chunks or using streaming APIs to reduce memory pressure.
+- **Yanlış şifre** – Aspose.Zip bir kimlik doğrulama istisnası fırlatır. Şifre dizesini tekrar kontrol edin veya güvenli bir yapılandırma kaynağından alın.  
+- **Hedef yol bulunamadı** – Hedef dizin yolunun geçerli olduğundan emin olun; `ExtractToDirectory` eksik klasörleri oluşturur, ancak üst yol erişilebilir olmalıdır.  
+- **Büyük arşivler** – Çok büyük ZIP dosyaları için, bellek kullanımını düşük tutmak amacıyla akış API'sini kullanarak giriş‑giriş çıkarma yöntemini düşünün.  
 
-## Frequently Asked Questions
+## Sıkça Sorulan Sorular
 
-**Q: Is Aspose.Zip for .NET compatible with various compression formats?**  
-A: Yes, Aspose.Zip for .NET supports popular compression formats like ZIP, GZIP, and more.
+**S: Aspose.Zip GZIP gibi diğer sıkıştırma formatlarını destekliyor mu?**  
+C: Evet, Aspose.Zip for .NET ZIP, GZIP ve birkaç diğer yaygın formatı destekler.
 
-**Q: Can I use Aspose.Zip for .NET in both commercial and non‑commercial projects?**  
-A: Absolutely, you can utilize Aspose.Zip for .NET in both commercial and non‑commercial applications.
+**S: Aspose.Zip'i hem ticari hem de ticari olmayan projelerde kullanabilir miyim?**  
+C: Kesinlikle. Üretim için geçerli bir lisans gerekir, ancak değerlendirme için ücretsiz deneme sürümünü kullanabilirsiniz.
 
-**Q: Is there a free trial available for Aspose.Zip for .NET?**  
-A: Yes, you can explore the features with a free trial by visiting [here](https://releases.aspose.com/).
+**S: Test için geçici bir lisans nasıl alabilirim?**  
+C: Test amaçlı geçici bir lisansı [buradan](https://purchase.aspose.com/temporary-license/) edinebilirsiniz.
 
-**Q: How can I get support for Aspose.Zip for .NET?**  
-A: Seek assistance from the Aspose.Zip community at the [support forum](https://forum.aspose.com/c/zip/37).
+**S: Aspose.Zip'in ücretsiz deneme sürümünü nereden indirebilirim?**  
+C: En son sürümü indirmek için Aspose.Zip deneme sayfasını [buradan](https://releases.aspose.com/) ziyaret edin.
 
-**Q: Do I need a temporary license for testing Aspose.Zip for .NET?**  
-A: Yes, you can obtain a temporary license from [here](https://purchase.aspose.com/temporary-license/) for testing purposes.
+**S: Sorun yaşarsam nereden yardım alabilirim?**  
+C: Aspose.Zip topluluk forumu yardım almak için harika bir yerdir: [destek forumu](https://forum.aspose.com/c/zip/37).
 
 ---
 
-**Last Updated:** 2025-12-10  
-**Tested With:** Aspose.Zip for .NET (latest release)  
-**Author:** Aspose  
+**Son Güncelleme:** 2026-02-15  
+**Test Edilen Sürüm:** Aspose.Zip for .NET (en son sürüm)  
+**Yazar:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
