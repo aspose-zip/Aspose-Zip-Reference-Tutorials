@@ -1,11 +1,10 @@
 ---
-date: 2025-11-29
-description: Aspose.Zip for .NET का उपयोग करके फ़ाइलों को टार में जोड़ना और उन्हें
-  TarZ में संपीड़ित करना सीखें – .NET फ़ाइल हैंडलिंग को कुशल बनाने के लिए चरण‑दर‑चरण
-  मार्गदर्शिका।
+date: 2026-02-15
+description: Aspose.Zip for .NET का उपयोग करके फ़ाइलों को tar में जोड़ना और उन्हें
+  TarZ में संपीड़ित करना सीखें – .NET फ़ाइल हैंडलिंग के लिए एक चरण‑दर‑चरण मार्गदर्शिका।
 linktitle: Compressing to TarZ
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Aspose.Zip for .NET के साथ फ़ाइलें टार में जोड़ें और टारज़ में संपीड़ित करें
+title: Aspose.Zip for .NET के साथ फ़ाइलों को tar में जोड़ें और TarZ में संपीड़ित करें
 url: /hi/net/archive-extraction-and-formats/compress-to-tar-z/
 weight: 15
 ---
@@ -14,56 +13,61 @@ weight: 15
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET के साथ फ़ाइलों को tar में जोड़ें और TarZ में संपीड़ित करें
+# .NET के लिए Aspose.Zip के साथ फ़ाइलों को tar में जोड़ें और TarZ में संपीड़ित करें
 
-## Introduction
+## परिचय
 
-यदि आपको **add files to tar** करना है और फिर आर्काइव को TarZ फ़ॉर्मेट में संपीड़ित करना है, तो Aspose.Zip for .NET पूरी प्रक्रिया को आसान बनाता है। इस ट्यूटोरियल में हम हर चरण को समझेंगे—अपने प्रोजेक्ट को सेटअप करने से लेकर tar आर्काइव बनाने, फ़ाइलें जोड़ने, और अंत में संपीड़ित .tar.z फ़ाइल को सेव करने तक। अंत तक आपके पास एक पुन: उपयोग योग्य स्निपेट होगा जिसे आप किसी भी .NET एप्लिकेशन में डाल सकते हैं।
+यदि आपको **फ़ाइलों को tar में जोड़ना** है और फिर आर्काइव को TarZ फ़ॉर्मेट में संपीड़ित करना है, तो Aspose.Zip for .NET पूरी प्रक्रिया को सहज बनाता है। इस ट्यूटोरियल में हम हर चरण को समझेंगे—प्रोजेक्ट सेटअप से लेकर tar आर्काइव बनाना, फ़ाइलें जोड़ना, और अंत में संपीड़ित .tar.z फ़ाइल को सहेजना। अंत तक आपके पास एक पुन: उपयोग योग्य स्निपेट होगा जिसे आप किसी भी .NET एप्लिकेशन में डाल सकते हैं।
 
-## Quick Answers
-- **What library handles tar creation?** Aspose.Zip for .NET  
-- **How many lines of code?** About 15 lines (excluding comments)  
-- **Do I need a license for testing?** A free trial is available; a license is required for production.  
-- **Supported .NET versions?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+  
-- **Can I compress folders, not just files?** Yes – you can add entire directories with a loop.
+## त्वरित उत्तर
+- **कौन सी लाइब्रेरी tar निर्माण को संभालती है?** Aspose.Zip for .NET  
+- **कोड की कितनी पंक्तियाँ?** लगभग 15 पंक्तियाँ (टिप्पणियों को छोड़कर)  
+- **परीक्षण के लिए लाइसेंस चाहिए?** एक मुफ्त ट्रायल उपलब्ध है; प्रोडक्शन के लिए लाइसेंस आवश्यक है।  
+- **समर्थित .NET संस्करण?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+  
+- **क्या मैं फ़ोल्डर, न कि केवल फ़ाइलें, संपीड़ित कर सकता हूँ?** हाँ – आप लूप के साथ पूरे डायरेक्टरी जोड़ सकते हैं।
 
-## What is **add files to tar**?
-फ़ाइलों को tar आर्काइव में जोड़ने से वे एकल, अनकम्प्रेस्ड कंटेनर में बंडल हो जाती हैं जो डायरेक्टरी स्ट्रक्चर और फ़ाइल मेटाडेटा को संरक्षित रखता है। Tar एक क्लासिक Unix फ़ॉर्मेट है और कई कॉम्प्रेशन वर्कफ़्लो का आधार है, जिसमें इस गाइड में उपयोग किया गया TarZ फ़ॉर्मेट भी शामिल है।
+## **add files to tar** क्या है?
+फ़ाइलों को tar आर्काइव में जोड़ने से वे एकल, अनकम्प्रेस्ड कंटेनर में बंडल हो जाती हैं जो डायरेक्टरी संरचना और फ़ाइल मेटाडेटा को संरक्षित रखता है। Tar एक क्लासिक Unix फ़ॉर्मेट है और कई संपीड़न वर्कफ़्लो का आधार है, जिसमें इस गाइड में उपयोग किया गया TarZ फ़ॉर्मेट भी शामिल है।
 
-## Why add files to tar before compressing to TarZ?
-- **Portability** – एक tar आर्काइव प्लेटफ़ॉर्म के बीच बिना व्यक्तिगत फ़ाइल हैंडलिंग की चिंता के काम करता है।  
-- **Speed** – tar कंटेनर बनाना तेज़ है; बाद में Z‑कॉम्प्रेशन केवल आकार घटाने पर केंद्रित रहता है।  
-- **Compatibility** – कई लेगेसी टूल्स `.tar` को gzip‑स्टाइल कॉम्प्रेशन से पहले अपेक्षित करते हैं, जो ठीक वही है जो `.tar.z` प्रदान करता है।
+## TarZ में संपीड़ित करने से पहले फ़ाइलों को tar में क्यों जोड़ें?
+- **पोर्टेबिलिटी** – एक tar आर्काइव प्लेटफ़ॉर्म के बीच बिना व्यक्तिगत फ़ाइलों की चिंता के काम करता है।  
+- **गति** – tar कंटेनर बनाना तेज़ है; बाद में Z‑संपीड़न केवल आकार घटाने पर केंद्रित रहता है।  
+- **अनुकूलता** – कई लेगेसी टूल्स `.tar` के बाद gzip‑स्टाइल संपीड़न की अपेक्षा करते हैं, जो ठीक `.tar.z` प्रदान करता है।  
 
-## Prerequisites
+### .NET डेवलपर्स के लिए इसका महत्व
+tar कंटेनर का उपयोग करने से आपका .NET कोड सरल और निर्धारक बनता है। आप आर्काइव को मेमोरी में जेनरेट कर सकते हैं, सीधे रिस्पॉन्स में स्ट्रीम कर सकते हैं, या डिस्क पर बिना अस्थायी zip फ़ाइलों के स्टोर कर सकते हैं। यह पैटर्न विशेष रूप से बिल्ड पाइपलाइन, लॉग एग्रीगेशन, या जब आपको Linux‑आधारित सेवा को कॉन्फ़िगरेशन फ़ाइलों का सेट भेजना हो, में उपयोगी है।
 
-Before we dive into the code, make sure you have:
+## पूर्वापेक्षाएँ
 
-- **Aspose.Zip for .NET** installed. Download it from the official site [here](https://releases.aspose.com/zip/net/).  
-- A folder on your machine that contains the files you want to archive. Replace the placeholder path with your actual directory.
+कोड में डुबकी लगाने से पहले सुनिश्चित करें कि आपके पास है:
 
-## Import Namespaces
+- **Aspose.Zip for .NET** स्थापित। इसे आधिकारिक साइट [यहाँ](https://releases.aspose.com/zip/net/) से डाउनलोड करें।  
+- आपके मशीन पर वह फ़ोल्डर जिसमें आप आर्काइव करना चाहते हैं फ़ाइलें हैं। प्लेसहोल्डर पाथ को अपने वास्तविक डायरेक्टरी पाथ से बदलें।
 
-Add the required `using` statements at the top of your C# file:
+## नेमस्पेस आयात करें
+
+अपने C# फ़ाइल के शीर्ष पर आवश्यक `using` स्टेटमेंट जोड़ें:
 
 ```csharp
 using System;
 using Aspose.Zip.Tar;
 ```
 
-## Step‑by‑Step Guide
+> **प्रो टिप:** यदि आपको पाथ डायनामिक रूप से बनाना है तो `Path.Combine` का उपयोग करें; यह विभिन्न OS पर पाथ सेपरेटर की कमी से बचाता है।
 
-### Step 1: Define Your Document Directory
+## चरण‑दर‑चरण गाइड
+
+### चरण 1: अपना डॉक्यूमेंट डायरेक्टरी निर्धारित करें
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-> **Pro tip:** Use `Path.Combine` if you need to build paths dynamically; it avoids missing path separators on different OSes.
+> **यह चरण क्यों महत्वपूर्ण है:** `dataDir` हर फ़ाइल के लिए बेस लोकेशन के रूप में कार्य करता है जिसे आप जोड़ेंगे। इसे एक ही वेरिएबल में रखने से कोड को बनाए रखना और कई आर्काइव में पुन: उपयोग करना आसान हो जाता है।
 
-### Step 2: Create a Tar Archive and add files
+### चरण 2: एक Tar आर्काइव बनाएं और फ़ाइलें जोड़ें
 
-#### 2.1: Create the Tar archive instance
+#### 2.1: Tar आर्काइव इंस्टेंस बनाएं
 
 ```csharp
 using (TarArchive archive = new TarArchive())
@@ -72,61 +76,68 @@ using (TarArchive archive = new TarArchive())
 }
 ```
 
-#### 2.2: Add files to the archive  
+> `using` ब्लॉक यह सुनिश्चित करता है कि `TarArchive` ऑब्जेक्ट सही तरीके से डिस्पोज़ हो, जिससे फ़ाइल हैंडल या मेमोरी बफ़र मुक्त हो जाते हैं।
 
-Inside the `using` block, add each file you want to include:
+#### 2.2: आर्काइव में फ़ाइलें जोड़ें  
+
+`using` ब्लॉक के भीतर, प्रत्येक फ़ाइल को जोड़ें जिसे आप शामिल करना चाहते हैं:
 
 ```csharp
 archive.CreateEntry("alice29.txt", dataDir + "alice29.txt");
 archive.CreateEntry("lcet10.txt", dataDir + "lcet10.txt");
 ```
 
-You can repeat `CreateEntry` for as many files as needed, or loop through a directory to add them programmatically.
+आप आवश्यकता अनुसार `CreateEntry` को कई फ़ाइलों के लिए दोहरा सकते हैं, या डायरेक्टरी को लूप करके प्रोग्रामेटिकली जोड़ सकते हैं। उदाहरण के लिए, `foreach (var file in Directory.GetFiles(dataDir))` लूप आपको सापेक्ष पाथ बनाए रखते हुए अनिश्चित संख्या में फ़ाइलों को संभालने देगा।
 
-#### 2.3: Save the compressed TarZ file  
+#### 2.3: संपीड़ित TarZ फ़ाइल सहेजें  
 
-After adding all entries, compress the tar archive to the `.tar.z` format:
+सभी एंट्री जोड़ने के बाद, tar आर्काइव को `.tar.z` फ़ॉर्मेट में संपीड़ित करें:
 
 ```csharp
 archive.SaveZCompressed(dataDir + "archive.tar.z");
 ```
 
-The resulting `archive.tar.z` file will sit in the same folder you specified in `dataDir`.
+परिणामी `archive.tar.z` फ़ाइल वही फ़ोल्डर में स्थित होगी जिसे आपने `dataDir` में निर्दिष्ट किया था। अब आप इस एकल, संपीड़ित पैकेज को किसी भी सिस्टम पर भेज सकते हैं जो TarZ को समझता है।
 
-## Common Issues and Solutions
+## सामान्य समस्याएँ और समाधान
 
-| Issue | Reason | Fix |
+| समस्या | कारण | समाधान |
 |-------|--------|-----|
-| **File not found** | Wrong path or missing file extension | Verify `dataDir` ends with a path separator and the filenames are correct. |
-| **Access denied** | Insufficient permissions on the target folder | Run the application with appropriate rights or choose a writable directory. |
-| **Compressed file is larger than expected** | Original files already compressed (e.g., images, videos) | TarZ works best on text or log files; consider leaving already‑compressed files as‑is. |
+| **फ़ाइल नहीं मिली** | गलत पाथ या फ़ाइल एक्सटेंशन की कमी | सुनिश्चित करें कि `dataDir` पाथ सेपरेटर पर समाप्त हो और फ़ाइलनाम सही हों। |
+| **एक्सेस अस्वीकृत** | लक्ष्य फ़ोल्डर पर अपर्याप्त अनुमतियाँ | एप्लिकेशन को उचित अधिकारों के साथ चलाएँ या लिखने योग्य डायरेक्टरी चुनें। |
+| **संपीड़ित फ़ाइल अपेक्षा से बड़ी** | मूल फ़ाइलें पहले से ही संपीड़ित हैं (जैसे इमेज, वीडियो) | TarZ टेक्स्ट या लॉग फ़ाइलों पर सबसे अच्छा काम करता है; पहले से संपीड़ित फ़ाइलों को जैसा है वैसा रखें। |
 
-## Frequently Asked Questions
+### ध्यान देने योग्य सामान्य गलतियाँ
+- **ट्रेलिंग स्लैश की कमी** – यदि `dataDir` अंत में `\` या `/` नहीं रखता, तो स्ट्रिंग कंकैटनेशन से अमान्य पाथ बन जाएगा।  
+- **बड़ी डायरेक्टरीज़** – हजारों फ़ाइलें जोड़ने से मेमोरी उपयोग बढ़ सकता है; एंट्री को स्ट्रीम करने या `TarArchive` के ऐसे ओवरलोड का उपयोग करने पर विचार करें जो सीधे फ़ाइल स्ट्रीम में लिखता है।  
+- **एन्कोडिंग समस्याएँ** – गैर‑ASCII फ़ाइलनामों को स्पष्ट एन्कोडिंग की आवश्यकता हो सकती है; Aspose.Zip डिफ़ॉल्ट रूप से UTF‑8 का समर्थन करता है, लेकिन लक्ष्य प्लेटफ़ॉर्म पर सत्यापित करें।
 
-**Q: Can I compress entire folders with Aspose.Zip for .NET?**  
-A: Absolutely. Use a `Directory.GetFiles` loop and call `CreateEntry` for each file, preserving relative paths.
+## अक्सर पूछे जाने वाले प्रश्न
 
-**Q: Is there a trial version available for Aspose.Zip for .NET?**  
-A: Yes, you can explore the capabilities of Aspose.Zip for .NET by downloading the free trial [here](https://releases.aspose.com/).
+**प्रश्न: क्या मैं Aspose.Zip for .NET के साथ पूरे फ़ोल्डर को संपीड़ित कर सकता हूँ?**  
+उत्तर: बिल्कुल। `Directory.GetFiles` लूप का उपयोग करें और प्रत्येक फ़ाइल के लिए `CreateEntry` कॉल करें, सापेक्ष पाथ बनाए रखें।
 
-**Q: Where can I find comprehensive documentation for Aspose.Zip for .NET?**  
-A: The documentation is available [here](https://reference.aspose.com/zip/net/), providing detailed insights into the library's features and usage.
+**प्रश्न: क्या Aspose.Zip for .NET का ट्रायल संस्करण उपलब्ध है?**  
+उत्तर: हाँ, आप मुफ्त ट्रायल [यहाँ](https://releases.aspose.com/) डाउनलोड करके Aspose.Zip for .NET की क्षमताओं का अन्वेषण कर सकते हैं।
 
-**Q: How can I get support for Aspose.Zip for .NET?**  
-A: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) to seek assistance, share your experiences, and connect with the community.
+**प्रश्न: Aspose.Zip for .NET के लिए व्यापक दस्तावेज़ीकरण कहाँ मिल सकता है?**  
+उत्तर: दस्तावेज़ीकरण [यहाँ](https://reference.aspose.com/zip/net/) उपलब्ध है, जिसमें लाइब्रेरी की विशेषताओं और उपयोग के विस्तृत विवरण हैं।
 
-**Q: Can I obtain a temporary license for Aspose.Zip for .NET?**  
-A: Yes, if you need a temporary license, you can obtain one [here](https://purchase.aspose.com/temporary-license/).
+**प्रश्न: Aspose.Zip for .NET के लिए सपोर्ट कैसे प्राप्त करूँ?**  
+उत्तर: सहायता के लिए [Aspose.Zip फ़ोरम](https://forum.aspose.com/c/zip/37) पर जाएँ, अपने अनुभव साझा करें और समुदाय से जुड़ें।
 
-## Conclusion
+**प्रश्न: क्या मैं Aspose.Zip for .NET के लिए अस्थायी लाइसेंस प्राप्त कर सकता हूँ?**  
+उत्तर: हाँ, यदि आपको अस्थायी लाइसेंस चाहिए तो आप इसे [यहाँ](https://purchase.aspose.com/temporary-license/) से प्राप्त कर सकते हैं।
 
-आपने अब सीखा कि **add files to tar** कैसे करें और परिणाम को Aspose.Zip for .NET का उपयोग करके TarZ आर्काइव में कैसे संपीड़ित करें। यह तरीका आपको एक साफ़, पोर्टेबल पैकेज देता है जिसे आसानी से ट्रांसफ़र, स्टोर या आगे प्रोसेस किया जा सकता है। स्निपेट को बैच‑प्रोसेसिंग, बिल्ड पाइपलाइन में इंटीग्रेट करने या अन्य Aspose कंपोनेंट्स के साथ मिलाकर अधिक समृद्ध डॉक्यूमेंट वर्कफ़्लो बनाने के लिए अनुकूलित करने में संकोच न करें।
+## निष्कर्ष
+
+आपने अब सीखा कि **फ़ाइलों को tar में जोड़ें** और परिणाम को Aspose.Zip for .NET का उपयोग करके TarZ आर्काइव में कैसे संपीड़ित करें। यह तरीका आपको एक साफ़, पोर्टेबल पैकेज देता है जिसे आसानी से ट्रांसफ़र, स्टोर या आगे प्रोसेस किया जा सकता है। स्निपेट को डायरेक्टरी बैच‑प्रोसेसिंग, बिल्ड पाइपलाइन में इंटीग्रेशन, या अन्य Aspose कंपोनेंट्स के साथ मिलाकर अधिक समृद्ध डॉक्यूमेंट वर्कफ़्लो बनाने के लिए अनुकूलित करने में संकोच न करें।
 
 ---
 
-**Last Updated:** 2025-11-29  
-**Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose 
+**अंतिम अपडेट:** 2026-02-15  
+**टेस्टेड संस्करण:** Aspose.Zip for .NET 24.11  
+**लेखक:** Aspose 
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
