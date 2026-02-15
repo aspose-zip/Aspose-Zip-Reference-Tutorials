@@ -1,10 +1,11 @@
 ---
-date: 2025-12-09
-description: Tìm hiểu cách tạo tệp zip bằng C# và giải nén các tệp zip bên trong bằng
-  Aspose.Zip cho .NET trong một hướng dẫn C# từng bước.
+date: 2026-02-15
+description: Học cách nén tệp bằng C# với Aspose.Zip cho .NET, chỉnh sửa tệp zip bằng
+  C#, trích xuất các mục zip bên trong và tạo các kho lưu trữ phẳng trong một hướng
+  dẫn từng bước.
 linktitle: Modifying Zip Files
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Tạo tệp zip C# bằng Aspose.Zip cho .NET
+title: Nén file C# bằng Aspose.Zip – Tạo & Sửa đổi Zip
 url: /vi/net/file-compression/modifying-zip-files/
 weight: 15
 ---
@@ -13,38 +14,47 @@ weight: 15
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Tạo zip archive C# sử dụng Aspise.Zip cho .NET
+# Tạo zip archive C# bằng Aspose.Zip cho .NET
 
 ## Giới thiệu
 
-Các tệp Zip là định dạng tiêu chuẩn để đóng gói và nén dữ liệu, nhưng trong thực tế bạn thường cần **tạo zip archive C#** có khả năng **giải nén các tệp zip bên trong**, đổi tên các mục, hoặc làm phẳng các kho lưu trữ lồng nhau. Aspose.Zip cho .NET cung cấp một API sạch, hoàn toàn quản lý để thực hiện tất cả những việc này mà không phải lo lắng về các thao tác luồng cấp thấp.
+Nén các tệp C# là một yêu cầu phổ biến khi bạn cần chuyển giao dữ liệu, tạo bản sao lưu, hoặc giảm chi phí lưu trữ. Aspose.Zip cho .NET loại bỏ các công việc cấp thấp và cho phép bạn tập trung vào **what** bạn muốn đạt được — dù đó là tạo một archive mới hoàn toàn, làm phẳng các tệp zip lồng nhau, hoặc cập nhật một gói hiện có.  
 
-Trong hướng dẫn này, bạn sẽ học cách sửa đổi một tệp zip hiện có, lấy ra các mục zip bên trong, và cuối cùng đóng gói lại mọi thứ thành một kho lưu trữ phẳng mới — tất cả bằng mã C# ngắn gọn. Dù bạn đang xây dựng dịch vụ xử lý tệp, tiện ích sao lưu, hay quy trình triển khai tự động, các bước dưới đây sẽ chỉ cho bạn cách thực hiện chính xác.
+Trong tutorial này bạn sẽ học cách **modify a zip file C#**, trích xuất các mục zip bên trong, xóa các mục không mong muốn, và cuối cùng **compress files C#** thành một archive sạch, phẳng. Cách tiếp cận này hoạt động hoàn hảo cho các dịch vụ xử lý tệp, pipeline triển khai tự động, hoặc bất kỳ kịch bản nào mà bạn cần xử lý zip archive một cách lập trình.
 
 ## Câu trả lời nhanh
-- **Aspose.Zip có thể tạo zip archive C# không?** Có – lớp `Archive` cho phép bạn xây dựng và chỉnh sửa các tệp zip trực tiếp trong C#.
-- **Làm sao để giải nén các tệp zip bên trong?** Mở mục bên ngoài dưới dạng stream, tạo một `Archive` thứ hai từ stream đó, sau đó duyệt các mục của nó.
-- **Cần giấy phép cho việc phát triển không?** Bản dùng thử miễn phí đủ cho việc đánh giá; giấy phép thương mại cần thiết cho môi trường sản xuất.
+- **Aspose.Zip có thể tạo zip archive C# không?** Yes – the `Archive` class lets you build and edit zip files directly in C#.
+- **Làm thế nào để extract inner zip files?** Open the outer entry as a stream, create a second `Archive` from that stream, then enumerate its entries.
+- **Có cần giấy phép cho việc phát triển không?** A free trial works for evaluation; a commercial license is required for production.
 - **Các phiên bản .NET được hỗ trợ?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6/7.
-- **Thời gian chạy mẫu thường là bao lâu?** Ít hơn một giây cho vài megabyte dữ liệu.
+- **Thời gian chạy mẫu thường là bao lâu?** Less than a second for a few megabytes of data.
+
+## Cách compress files C# bằng Aspose.Zip
+
+Trước khi đi vào code, hãy làm rõ lý do bạn có thể chọn Aspose.Zip thay vì các thư viện khác:
+
+- **Pure .NET implementation** – no native DLLs, making deployment to cloud services painless.  
+- **Full control over entries** – you can add, delete, rename, or replace files on the fly, which is essential when you need to **modify zip file C#** programmatically.  
+- **Stream‑centric API** – work directly with `MemoryStream` objects, ideal for in‑memory processing or serverless functions.  
+- **Nested archive support** – extracting inner zip files without writing temporary files to disk.
 
 ## “create zip archive C#” là gì?
 
-Tạo zip archive trong C# có nghĩa là tạo một tệp `.zip` một cách lập trình, có thể chứa bất kỳ số lượng tệp hoặc thư mục nào, tùy chọn áp dụng mức nén, mã hoá, hoặc siêu dữ liệu tùy chỉnh. Aspose.Zip trừu tượng hoá sự phức tạp, cho phép bạn tập trung vào logic nghiệp vụ thay vì định dạng tệp zip.
+Tạo một zip archive trong C# có nghĩa là lập trình tạo ra một tệp `.zip` có thể chứa bất kỳ số lượng tệp hoặc thư mục nào, tùy chọn áp dụng mức nén, mã hoá, hoặc siêu dữ liệu tùy chỉnh. Aspose.Zip trừu tượng hoá sự phức tạp, cho phép bạn tập trung vào logic nghiệp vụ thay vì định dạng zip.
 
 ## Tại sao nên dùng Aspose.Zip cho .NET?
 
-- **Không phụ thuộc bên ngoài** – thư viện thuần .NET, không cần DLL gốc.
-- **Kiểm soát đầy đủ các mục** – thêm, xóa, đổi tên hoặc thay thế tệp một cách linh hoạt.
-- **API dựa trên stream** – làm việc với các đối tượng `MemoryStream`, lý tưởng cho các kịch bản đám mây hoặc trong bộ nhớ.
-- **Xử lý mạnh mẽ các kho lưu trữ lồng nhau** – dễ dàng **giải nén các tệp zip bên trong** mà không cần tạo tệp tạm trên đĩa.
+- **No external dependencies** – pure .NET library, no native DLLs.  
+- **Full control over entries** – add, delete, rename, or replace files on the fly.  
+- **Stream‑centric API** – work with `MemoryStream` objects, perfect for cloud or in‑memory scenarios.  
+- **Robust handling of nested archives** – easily **extract inner zip files** without temporary files on disk.
 
 ## Yêu cầu trước
 
-Trước khi bắt đầu, hãy chắc chắn rằng bạn đã có:
+Trước khi bắt đầu, hãy chắc chắn rằng bạn đã:
 
-1. **Aspose.Zip cho .NET** được cài đặt trong dự án của bạn. Bạn có thể tải xuống **[tại đây](https://releases.aspose.com/zip/net/)**.  
-2. Một thư mục chứa các tệp zip nguồn mà bạn sẽ làm việc. Thay thế `"Your Document Directory"` trong các đoạn mã bằng đường dẫn thực tế trên máy của bạn.  
+1. **Aspose.Zip for .NET** được cài đặt trong dự án của bạn. Bạn có thể tải về **[here](https://releases.aspose.com/zip/net/)**.  
+2. Một thư mục chứa các zip file nguồn mà bạn sẽ làm việc. Thay thế `"Your Document Directory"` trong các đoạn code bằng đường dẫn thực tế trên máy của bạn.  
 3. Môi trường phát triển .NET (Visual Studio, VS Code, hoặc Rider) nhắm tới .NET Framework 4.6+ hoặc .NET Core 3.1+.
 
 ## Nhập các Namespace
@@ -61,11 +71,13 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Hướng dẫn từng bước
+## Cách modify zip file C# với Aspose.Zip
 
-### Bước 1: Mở tệp Zip bên ngoài  
+Dưới đây là hướng dẫn từng bước giúp bạn mở một archive hiện có, trích xuất các mục zip bên trong, làm phẳng cấu trúc, và cuối cùng lưu một archive mới.
 
-Chúng ta bắt đầu bằng việc mở kho lưu trữ hiện có (`outer.zip`). Câu lệnh `using` đảm bảo tệp được đóng tự động.
+### Bước 1: Mở Outer Zip File  
+
+Chúng ta bắt đầu bằng việc mở archive hiện có (`outer.zip`). Câu lệnh `using` đảm bảo tệp được đóng tự động.
 
 ```csharp
 using (Archive outer = new Archive(dataDir + "outer.zip"))
@@ -74,9 +86,9 @@ using (Archive outer = new Archive(dataDir + "outer.zip"))
 }
 ```
 
-### Bước 2: Xác định các mục Zip bên trong  
+### Bước 2: Xác định Inner Zip Entries  
 
-Tiếp theo, chúng ta quét kho lưu trữ bên ngoài để tìm các mục có phần mở rộng `.zip`. Đó là các **tệp zip bên trong** mà chúng ta muốn giải nén.
+Tiếp theo, chúng ta quét outer archive để tìm các mục kết thúc bằng `.zip`. Đó là các **inner zip files** mà chúng ta muốn extract.
 
 ```csharp
 List<ArchiveEntry> entriesToDelete = new List<ArchiveEntry>();
@@ -96,9 +108,9 @@ foreach (ArchiveEntry entry in outer.Entries)
 }
 ```
 
-### Bước 3: Giải nén các mục bên trong  
+### Bước 3: Extract Inner Entries  
 
-Bây giờ chúng ta xử lý mỗi tệp zip bên trong như một `Archive` riêng. Đây là nơi chúng ta **giải nén các tệp zip bên trong** và thu thập nội dung của chúng trong bộ nhớ.
+Bây giờ chúng ta xử lý mỗi inner zip như một `Archive` riêng. Đây là nơi chúng ta **extract inner zip files** và thu thập nội dung của chúng trong bộ nhớ.
 
 ```csharp
 using (Archive inner = new Archive(innerCompressed))
@@ -114,9 +126,9 @@ using (Archive inner = new Archive(innerCompressed))
 }
 ```
 
-### Bước 4: Xóa các mục Zip bên trong  
+### Bước 4: Xóa Inner Archive Entries  
 
-Sau khi đã lấy được dữ liệu cần thiết, chúng ta loại bỏ các mục zip bên trong gốc khỏi kho lưu trữ bên ngoài.
+Sau khi đã lấy được dữ liệu cần thiết, chúng ta loại bỏ các mục inner zip gốc khỏi outer archive. Bước này thực chất là logic **delete zip entry C#**.
 
 ```csharp
 foreach (ArchiveEntry e in entriesToDelete)
@@ -125,9 +137,9 @@ foreach (ArchiveEntry e in entriesToDelete)
 }
 ```
 
-### Bước 5: Thêm các mục đã chỉnh sửa vào Zip bên ngoài  
+### Bước 5: Thêm Modified Entries vào Outer Zip  
 
-Cuối cùng, chúng ta chèn lại các tệp đã giải nén vào kho lưu trữ bên ngoài, thực hiện việc làm phẳng cấu trúc, và lưu kết quả dưới tên `flatten.zip`.
+Cuối cùng, chúng ta chèn lại các tệp đã được trích xuất vào outer archive, hiệu quả làm phẳng cấu trúc, và lưu kết quả dưới tên `flatten.zip`.
 
 ```csharp
 for (int i = 0; i < namesToInsert.Count; i++)
@@ -138,43 +150,43 @@ for (int i = 0; i < namesToInsert.Count; i++)
 outer.Save(dataDir + "flatten.zip");
 ```
 
-Bằng cách thực hiện năm bước này, bạn đã **tạo zip archive C#** chứa các tệp giống như bản gốc nhưng không còn lớp zip lồng nhau.
+Bằng cách thực hiện năm bước này, bạn đã **created a zip archive C#** chứa cùng các tệp như bản gốc nhưng không còn lớp zip lồng nhau.
 
 ## Các vấn đề thường gặp và giải pháp
 
-| Vấn đề | Nguyên nhân | Cách khắc phục |
-|-------|-------------|----------------|
-| `ArgumentNullException` khi mở kho lưu trữ bên trong | Vị trí của stream `innerCompressed` ở cuối | Gọi `innerCompressed.Position = 0;` trước khi tạo `Archive` |
-| Các tệp lớn gây tiêu thụ bộ nhớ cao | Tất cả các mục bên trong được lưu trong các đối tượng `MemoryStream` | Sử dụng tệp tạm trên đĩa (`Path.GetTempFileName()`) cho các kho lưu trữ rất lớn |
-| Thiếu mục sau khi làm phẳng | Quên thêm nội dung đã giải nén vào danh sách `contentToInsert` | Đảm bảo gọi `contentToInsert.Add(content);` bên trong vòng lặp nội bộ |
+| Issue | Why it Happens | Fix |
+|-------|----------------|-----|
+| `ArgumentNullException` khi mở inner archive | `innerCompressed` stream position is at the end | Call `innerCompressed.Position = 0;` before creating the `Archive` |
+| Các tệp lớn gây tiêu tốn bộ nhớ | All inner entries are stored in `MemoryStream` objects | Use temporary files on disk (`Path.GetTempFileName()`) for very large archives |
+| Thiếu mục sau khi flatten | Forgetting to add the extracted content to `contentToInsert` list | Ensure `contentToInsert.Add(content);` is called inside the inner loop |
 
 ## Câu hỏi thường gặp
 
 ### Q1: Tôi có thể dùng Aspose.Zip cho .NET với các ngôn ngữ lập trình khác không?
 
-A1: Aspose.Zip chủ yếu được thiết kế cho các ứng dụng .NET. Tuy nhiên, Aspose cung cấp các thư viện cho nhiều ngôn ngữ lập trình khác nhau, mỗi thư viện được tối ưu cho môi trường của nó.
+A1: Aspose.Zip được thiết kế chủ yếu cho các ứng dụng .NET. Tuy nhiên, Aspose cung cấp các thư viện cho nhiều ngôn ngữ lập trình khác nhau, mỗi thư viện được tối ưu cho môi trường của nó.
 
 ### Q2: Có bản dùng thử miễn phí cho Aspose.Zip cho .NET không?
 
-A2: Có, bạn có thể truy cập bản dùng thử **[tại đây](https://releases.aspose.com/)**.
+A2: Có, bạn có thể truy cập bản dùng thử **[here](https://releases.aspose.com/)**.
 
 ### Q3: Làm sao để nhận hỗ trợ cho Aspose.Zip cho .NET?
 
-A3: Để được hỗ trợ và thảo luận, hãy truy cập **[diễn đàn Aspose.Zip](https://forum.aspose.com/c/zip/37)**.
+A3: Để được hỗ trợ và thảo luận, hãy truy cập **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)**.
 
 ### Q4: Tôi có thể mua giấy phép tạm thời cho Aspose.Zip cho .NET không?
 
-A4: Có, bạn có thể nhận giấy phép tạm thời **[tại đây](https://purchase.aspose.com/temporary-license/)**.
+A4: Có, bạn có thể mua giấy phép tạm thời **[here](https://purchase.aspose.com/temporary-license/)**.
 
 ### Q5: Tôi có thể tìm tài liệu cho Aspose.Zip cho .NET ở đâu?
 
-A5: Tài liệu có sẵn **[tại đây](https://reference.aspose.com/zip/net/)**.
+A5: Tài liệu được cung cấp **[here](https://reference.aspose.com/zip/net/)**.
 
 ---
 
-**Cập nhật lần cuối:** 2025-12-09  
-**Kiểm tra với:** Aspose.Zip 24.12 cho .NET  
-**Tác giả:** Aspose  
+**Last Updated:** 2026-02-15  
+**Tested With:** Aspose.Zip 24.12 for .NET  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

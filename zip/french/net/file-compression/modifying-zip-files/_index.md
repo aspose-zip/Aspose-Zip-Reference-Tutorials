@@ -1,10 +1,11 @@
 ---
-date: 2025-12-09
-description: Apprenez à créer une archive zip en C# et à extraire les fichiers zip
-  internes à l’aide d’Aspose.Zip pour .NET dans un tutoriel C# étape par étape.
+date: 2026-02-15
+description: Apprenez à compresser des fichiers C# avec Aspose.Zip pour .NET, à modifier
+  un fichier zip en C#, à extraire les entrées zip internes et à créer des archives
+  plates dans un tutoriel étape par étape.
 linktitle: Modifying Zip Files
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Créer une archive zip C# en utilisant Aspose.Zip pour .NET
+title: Compresser des fichiers C# avec Aspose.Zip – Créer et modifier des ZIP
 url: /fr/net/file-compression/modifying-zip-files/
 weight: 15
 ---
@@ -13,35 +14,44 @@ weight: 15
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Créer une archive zip C# avec Aspise.Zip pour .NET
+# Créer une archive zip C# avec Aspose.Zip pour .NET
 
 ## Introduction
 
-Les fichiers zip sont le format de référence pour regrouper et compresser des données, mais les scénarios réels exigent souvent de **créer une archive zip C#** capable également d'**extraire des fichiers zip internes**, de renommer des entrées ou d’aplatir des archives imbriquées. Aspose.Zip pour .NET vous offre une API propre, entièrement gérée, pour faire tout cela sans manipuler des flux de bas niveau.
+Compresser des fichiers C# est une exigence courante lorsque vous devez transférer des données, créer des sauvegardes ou réduire les coûts de stockage. Aspose.Zip pour .NET supprime la plomberie de bas niveau et vous permet de vous concentrer sur **ce** que vous voulez accomplir — que ce soit créer une toute nouvelle archive, aplatir des fichiers zip imbriqués ou mettre à jour un package existant.  
 
-Dans ce tutoriel, vous apprendrez comment modifier un zip existant, extraire les entrées zip internes, puis reconditionner le tout dans une nouvelle archive plate — le tout avec du code C# concis. Que vous construisiez un service de traitement de fichiers, un utilitaire de sauvegarde ou une chaîne de déploiement automatisée, les étapes ci‑dessous vous montreront exactement comment accomplir la tâche.
+Dans ce tutoriel, vous apprendrez comment **modifier un fichier zip C#**, extraire les entrées zip internes, supprimer les éléments indésirables, et enfin **compresser des fichiers C#** dans une archive propre et aplatie. Cette approche fonctionne parfaitement pour les services de traitement de fichiers, les pipelines de déploiement automatisés ou tout scénario où vous devez gérer des archives zip de manière programmatique.
 
 ## Réponses rapides
-- **Aspose.Zip peut‑il créer une archive zip C# ?** Oui – la classe `Archive` vous permet de créer et modifier des fichiers zip directement en C#.
-- **Comment extraire des fichiers zip internes ?** Ouvrez l’entrée externe en tant que flux, créez un second `Archive` à partir de ce flux, puis parcourez ses entrées.
-- **Une licence est‑elle nécessaire pour le développement ?** Un essai gratuit suffit pour l’évaluation ; une licence commerciale est requise en production.
-- **Versions .NET prises en charge ?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6/7.
-- **Temps d’exécution typique de l’exemple ?** Moins d’une seconde pour quelques mégaoctets de données.
+- **Aspose.Zip peut‑il créer une archive zip C# ?** Oui – la classe `Archive` vous permet de créer et modifier des fichiers zip directement en C#.
+- **Comment extraire les fichiers zip internes ?** Ouvrez l’entrée externe comme un flux, créez un second `Archive` à partir de ce flux, puis parcourez ses entrées.
+- **Ai‑je besoin d’une licence pour le développement ?** Un essai gratuit suffit pour l’évaluation ; une licence commerciale est requise pour la production.
+- **Versions .NET prises en charge ?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6/7.
+- **Temps d’exécution typique pour l’exemple ?** Moins d’une seconde pour quelques mégaoctets de données.
 
-## Qu’est‑ce que “créer une archive zip C#” ?
+## Comment compresser des fichiers C# avec Aspose.Zip
 
-Créer une archive zip en C# signifie générer programmétiquement un fichier `.zip` pouvant contenir un nombre quelconque de fichiers ou dossiers, avec éventuellement des niveaux de compression, du chiffrement ou des métadonnées personnalisées. Aspose.Zip abstrait la complexité, vous permettant de vous concentrer sur la logique métier plutôt que sur le format zip lui‑même.
+Avant de plonger dans le code, clarifions pourquoi vous pourriez choisir Aspose.Zip plutôt que d’autres bibliothèques :
+
+- **Implémentation pure .NET** – aucune DLL native, ce qui rend le déploiement sur les services cloud sans effort.  
+- **Contrôle total sur les entrées** – vous pouvez ajouter, supprimer, renommer ou remplacer des fichiers à la volée, ce qui est essentiel lorsque vous devez **modifier un fichier zip C#** de façon programmatique.  
+- **API centrée sur les flux** – travaillez directement avec des objets `MemoryStream`, idéal pour le traitement en mémoire ou les fonctions serverless.  
+- **Prise en charge des archives imbriquées** – extraction des fichiers zip internes sans écrire de fichiers temporaires sur le disque.
+
+## Qu’est‑ce que « créer une archive zip C# » ?
+
+Créer une archive zip en C# signifie générer de façon programmatique un fichier `.zip` pouvant contenir n’importe quel nombre de fichiers ou dossiers, en appliquant éventuellement des niveaux de compression, du chiffrement ou des métadonnées personnalisées. Aspose.Zip abstrait la complexité, vous permettant de vous concentrer sur la logique métier plutôt que sur le format du fichier zip lui‑même.
 
 ## Pourquoi utiliser Aspose.Zip pour .NET ?
 
-- **Aucune dépendance externe** – bibliothèque pure .NET, sans DLL natives.
-- **Contrôle total sur les entrées** – ajouter, supprimer, renommer ou remplacer des fichiers à la volée.
-- **API centrée sur les flux** – travaillez avec des objets `MemoryStream`, idéal pour les scénarios cloud ou en mémoire.
-- **Gestion robuste des archives imbriquées** – **extraire facilement des fichiers zip internes** sans fichiers temporaires sur disque.
+- **Aucune dépendance externe** – bibliothèque pure .NET, aucune DLL native.  
+- **Contrôle total sur les entrées** – ajoutez, supprimez, renommez ou remplacez des fichiers à la volée.  
+- **API centrée sur les flux** – travaillez avec des objets `MemoryStream`, parfait pour les scénarios cloud ou en mémoire.  
+- **Gestion robuste des archives imbriquées** – extrayez facilement les **fichiers zip internes** sans fichiers temporaires sur le disque.
 
 ## Prérequis
 
-Avant de commencer, assurez‑vous d’avoir :
+Avant de commencer, assurez-vous d’avoir :
 
 1. **Aspose.Zip pour .NET** installé dans votre projet. Vous pouvez le télécharger **[ici](https://releases.aspose.com/zip/net/)**.  
 2. Un dossier contenant les fichiers zip sources avec lesquels vous allez travailler. Remplacez `"Your Document Directory"` dans les extraits de code par le chemin réel sur votre machine.  
@@ -61,7 +71,9 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Guide étape par étape
+## Comment modifier un fichier zip C# avec Aspose.Zip
+
+Voici un guide étape par étape qui vous montre comment ouvrir une archive existante, extraire les entrées zip internes, aplatir la structure, puis enregistrer une nouvelle archive.
 
 ### Étape 1 : Ouvrir le fichier zip externe  
 
@@ -98,7 +110,7 @@ foreach (ArchiveEntry entry in outer.Entries)
 
 ### Étape 3 : Extraire les entrées internes  
 
-Nous traitons chaque zip interne comme son propre `Archive`. C’est ici que nous **extrayons les fichiers zip internes** et collectons leur contenu en mémoire.
+Nous traitons maintenant chaque zip interne comme son propre `Archive`. C’est ici que nous **extrayons les fichiers zip internes** et collectons leur contenu en mémoire.
 
 ```csharp
 using (Archive inner = new Archive(innerCompressed))
@@ -114,9 +126,9 @@ using (Archive inner = new Archive(innerCompressed))
 }
 ```
 
-### Étape 4 : Supprimer les entrées de l’archive interne  
+### Étape 4 : Supprimer les entrées d’archive interne  
 
-Après avoir récupéré les données nécessaires, nous supprimons les entrées zip internes d’origine de l’archive externe.
+Après avoir capturé les données nécessaires, nous supprimons les entrées zip internes originales de l’archive externe. Cette étape correspond essentiellement à la logique de **suppression d’une entrée zip C#**.
 
 ```csharp
 foreach (ArchiveEntry e in entriesToDelete)
@@ -127,7 +139,7 @@ foreach (ArchiveEntry e in entriesToDelete)
 
 ### Étape 5 : Ajouter les entrées modifiées au zip externe  
 
-Enfin, nous ré‑insérons les fichiers extraits dans l’archive externe, aplatissant ainsi la structure, puis enregistrons le résultat sous le nom `flatten.zip`.
+Enfin, nous réinsérons les fichiers extraits dans l’archive externe, aplatissant ainsi la structure, et enregistrons le résultat sous le nom `flatten.zip`.
 
 ```csharp
 for (int i = 0; i < namesToInsert.Count; i++)
@@ -144,35 +156,35 @@ En suivant ces cinq étapes, vous avez **créé une archive zip C#** contenant l
 
 | Problème | Pourquoi cela se produit | Solution |
 |----------|--------------------------|----------|
-| `ArgumentNullException` lors de l’ouverture de l’archive interne | Le flux `innerCompressed` est positionné à la fin | Appelez `innerCompressed.Position = 0;` avant de créer le `Archive` |
-| Les gros fichiers entraînent une forte consommation de mémoire | Toutes les entrées internes sont stockées dans des objets `MemoryStream` | Utilisez des fichiers temporaires sur disque (`Path.GetTempFileName()`) pour les archives très volumineuses |
-| Des entrées manquent après l’aplatissement | Oubli d’ajouter le contenu extrait à la liste `contentToInsert` | Assurez‑vous que `contentToInsert.Add(content);` est appelé à l’intérieur de la boucle interne |
+| `ArgumentNullException` lors de l'ouverture de l'archive interne | La position du flux `innerCompressed` est à la fin | Appelez `innerCompressed.Position = 0;` avant de créer l'`Archive` |
+| Les gros fichiers entraînent une forte utilisation de la mémoire | Toutes les entrées internes sont stockées dans des objets `MemoryStream` | Utilisez des fichiers temporaires sur disque (`Path.GetTempFileName()`) pour les archives très volumineuses |
+| Entrées manquantes après l'aplatissement | Oubli d’ajouter le contenu extrait à la liste `contentToInsert` | Assurez‑vous que `contentToInsert.Add(content);` est appelé à l’intérieur de la boucle interne |
 
-## Foire aux questions
+## Questions fréquentes
 
 ### Q1 : Puis‑je utiliser Aspose.Zip pour .NET avec d’autres langages de programmation ?
 
-R1 : Aspose.Zip est principalement conçu pour les applications .NET. Cependant, Aspose propose des bibliothèques pour divers langages de programmation, chacune adaptée à son environnement.
+Aspose.Zip est principalement conçu pour les applications .NET. Cependant, Aspose propose des bibliothèques pour divers langages de programmation, chacune adaptée à son environnement.
 
-### Q2 : Existe‑t‑il un essai gratuit d’Aspose.Zip pour .NET ?
+### Q2 : Existe‑t‑il un essai gratuit disponible pour Aspose.Zip pour .NET ?
 
-R2 : Oui, vous pouvez accéder à l’essai gratuit **[ici](https://releases.aspose.com/)**.
+Oui, vous pouvez accéder à l’essai gratuit **[ici](https://releases.aspose.com/)**.
 
 ### Q3 : Comment obtenir du support pour Aspose.Zip pour .NET ?
 
-R3 : Pour le support et les discussions, visitez le **[forum Aspose.Zip](https://forum.aspose.com/c/zip/37)**.
+Pour le support et les discussions, rendez‑vous sur le **[forum Aspose.Zip](https://forum.aspose.com/c/zip/37)**.
 
 ### Q4 : Puis‑je acheter une licence temporaire pour Aspose.Zip pour .NET ?
 
-R4 : Oui, vous pouvez obtenir une licence temporaire **[ici](https://purchase.aspose.com/temporary-license/)**.
+Oui, vous pouvez obtenir une licence temporaire **[ici](https://purchase.aspose.com/temporary-license/)**.
 
 ### Q5 : Où puis‑je trouver la documentation d’Aspose.Zip pour .NET ?
 
-R5 : La documentation est disponible **[ici](https://reference.aspose.com/zip/net/)**.
+La documentation est disponible **[ici](https://reference.aspose.com/zip/net/)**.
 
 ---
 
-**Dernière mise à jour :** 2025-12-09  
+**Dernière mise à jour :** 2026-02-15  
 **Testé avec :** Aspose.Zip 24.12 pour .NET  
 **Auteur :** Aspose  
 
