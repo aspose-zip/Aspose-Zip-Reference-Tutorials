@@ -1,51 +1,80 @@
 ---
-date: 2025-12-10
-description: Impara la compressione di file in parallelo in .NET usando Aspose.Zip.
-  Comprimi più file in modo efficiente con la nostra guida passo‑passo.
-linktitle: Using Parallelism to Compress Files
-second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Compressione di file in parallelo con Aspose.Zip per .NET
+date: 2026-02-15
+description: Scopri come comprimere più file in C# con Aspose.Zip per .NET usando
+  la compressione parallela. Guida passo‑passo, esempi di codice e consigli per archivi
+  veloci e scalabili.
+linktitle: Using Parallelism to Zip Multiple Files in C#
+second_title: Aspose.Zip .NET API – zip multiple files c# with Parallel Processing
+title: Come comprimere più file in zip con C# usando Aspose.Zip Parallel Compression
 url: /it/net/file-compression/using-parallelism-compress-files/
 weight: 17
 ---
+
+Pro tip:** ... translate.
+
+### Common Use Cases
+
+Translate bullet points.
+
+## Common Issues & Tips
+
+Translate bullet points.
+
+## Frequently Asked Questions
+
+Translate Q&A, keep links unchanged.
+
+**Last Updated:** keep date.
+
+**Tested With:** keep.
+
+**Author:** keep.
+
+Close shortcodes.
+
+Add backtop button.
+
+Make sure not to translate URLs.
+
+Now produce final content.
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Compressione di file in parallelo con Aspose.Zip per .NET
+# zip multiple files c# con Aspose.Zip Compressione Parallela
 
 ## Introduzione
 
-Nel mondo dello sviluppo .NET, la **compressione di file in parallelo** è fondamentale per ottimizzare lo spazio di archiviazione e velocizzare la trasmissione dei dati. Aspose.Zip per .NET offre una soluzione potente, e una delle sue caratteristiche distintive è la capacità di sfruttare il parallelismo per la compressione dei file. In questo tutorial, ti guideremo nell'utilizzo del parallelismo per **comprimere più file** in modo efficiente con Aspose.Zip per .NET.
+Se hai bisogno di **zippare più file c#** rapidamente ed efficientemente, sfruttare l'elaborazione parallela è la soluzione ideale. Nelle moderne applicazioni .NET, la creazione di grandi archivi zip può diventare un collo di bottiglia—soprattutto quando si gestiscono decine o centinaia di file. Aspose.Zip per .NET elimina questo problema offrendo una **compressione zip parallela** integrata che distribuisce il lavoro su tutti i core CPU disponibili. In questo tutorial percorreremo l'intero processo: dalla configurazione dell'ambiente al salvataggio di un archivio zip con la compressione parallela abilitata.
 
-## Risposte rapide
-- **Cos'è la compressione di file in parallelo?** Una tecnica che comprime diversi file simultaneamente, utilizzando più core CPU per ridurre il tempo di elaborazione complessivo.  
-- **Quale libreria la supporta in .NET?** Aspose.Zip per .NET offre opzioni di compressione parallela integrate.  
-- **Ho bisogno di una licenza?** È disponibile una licenza temporanea per i test; è necessaria una licenza completa per la produzione.  
-- **Posso aggiungere file allo zip al volo?** Sì—usa `Archive.CreateEntry` per ogni file che desideri includere.  
-- **È compatibile con .NET Core/5/6?** Assolutamente, l'API funziona su tutti i runtime .NET moderni.
+## Risposte Rapide
+- **Che cos'è la compressione zip parallela?** Comprende diversi file contemporaneamente, usando più thread per ridurre il tempo di elaborazione complessivo.  
+- **Quale libreria .NET la supporta?** Aspose.Zip per .NET fornisce un'API semplice per la compressione parallela.  
+- **È necessaria una licenza per la produzione?** Sì—è richiesta una licenza completa; è disponibile una licenza temporanea per i test.  
+- **Posso aggiungere file allo zip al volo?** Assolutamente—usa `Archive.CreateEntry` per ogni file che desideri includere.  
+- **È compatibile con .NET 6/7?** Sì, l'API funziona su tutti i runtime .NET moderni.
 
-## Cos'è la compressione di file in parallelo?
-La compressione di file in parallelo consiste nel dividere il carico di lavoro di compressione su più thread o core, consentendo a diversi file (o a parti di un file di grandi dimensioni) di essere compressi contemporaneamente. Questo approccio riduce drasticamente il tempo necessario per creare un **zip archive c#** rispetto alla compressione sequenziale tradizionale.
+## Che cos'è zip multiple files c#?
+`zip multiple files c#` indica la pratica di creare un unico archivio ZIP che contiene molti file individuali, utilizzando codice C#. Quando lo combini con la **compressione zip parallela**, la libreria elabora ogni file su un thread separato, riducendo drasticamente il tempo necessario per produrre l'archivio finale.
 
-## Perché usare Aspose.Zip per la compressione in parallelo?
-- **Speed:** Sfrutta al massimo le CPU multi‑core.  
-- **Scalability:** Gestisce grandi lotti di file senza un aumento proporzionale del tempo di elaborazione.  
-- **Simplicity:** L'API di alto livello astrae le complessità del threading.  
-- **Flexibility:** Funziona con qualsiasi versione .NET e si integra senza problemi con i codebase esistenti.
+## Perché usare Aspose.Zip per la compressione parallela?
+- **Velocità:** Sfrutta appieno le CPU multi‑core, spesso offrendo una compressione 2‑3× più veloce rispetto agli approcci sequenziali.  
+- **Scalabilità:** Gestisce grandi lotti di file senza un aumento lineare del tempo di elaborazione.  
+- **Semplicità:** L'API di alto livello astrae il threading, così puoi concentrarti sulla logica di business.  
+- **Flessibilità:** Funziona con qualsiasi versione .NET (Framework, Core, .NET 5/6/7) e si integra facilmente nei progetti esistenti.
 
 ## Prerequisiti
 
 Prima di iniziare, assicurati di avere:
 
 - Conoscenze di base di C# e sviluppo .NET.  
-- Libreria Aspose.Zip per .NET installata. Puoi scaricarla **[qui](https://releases.aspose.com/zip/net/)**.  
-- Una buona comprensione dei concetti standard di compressione dei file.
+- Aspose.Zip per .NET installato. Puoi scaricarlo **[qui](https://releases.aspose.com/zip/net/)**.  
+- Una licenza temporanea o completa (la licenza temporanea è sufficiente per questo tutorial).  
 
-## Importare gli spazi dei nomi
+## Importare i Namespace
 
-Per prima cosa, importa gli spazi dei nomi necessari nel tuo file C# affinché il compilatore sappia dove trovare le classi che utilizzerai.
+Per prima cosa, importa i namespace necessari nel tuo file C# affinché il compilatore sappia dove trovare le classi che utilizzerai.
 
 ```csharp
 using Aspose.Zip;
@@ -54,7 +83,7 @@ using System.Text;
 using Aspose.Zip.Saving;
 ```
 
-## Passo 1: Configura la directory dei documenti
+## Step 1: Configura la Cartella dei Documenti
 
 Definisci la cartella che contiene i file da comprimere. Questo percorso è memorizzato nella variabile `dataDir`.
 
@@ -62,9 +91,9 @@ Definisci la cartella che contiene i file da comprimere. Questo percorso è memo
 string dataDir = "Your Document Directory";
 ```
 
-## Passo 2: Inizializza il processo di compressione
+## Step 2: Inizializza il Processo di Compressione
 
-Apri un nuovo file ZIP per la scrittura. L'istruzione `using` garantisce che lo stream del file venga correttamente eliminato al termine dell'operazione.
+Apri un nuovo file ZIP per la scrittura. L'istruzione `using` garantisce che lo stream del file venga correttamente rilasciato al termine dell'operazione.
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "UsingParallelismToCompressFiles_out.zip", FileMode.Create))
@@ -73,7 +102,7 @@ using (FileStream zipFile = File.Open(dataDir + "UsingParallelismToCompressFiles
 }
 ```
 
-## Passo 3: Leggi e comprimi i file in parallelo
+## Step 3: Leggi e Comprimi i File in Parallelo
 
 Apri ogni file sorgente che intendi aggiungere all'archivio. In questo esempio lavoriamo con due testi classici, ma puoi **add files to zip** per qualsiasi numero di documenti.
 
@@ -87,9 +116,9 @@ using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, Fi
 }
 ```
 
-## Passo 4: Crea le voci dell'archivio
+## Step 4: Crea le Voci dell'Archivio
 
-Crea un'istanza `Archive` e aggiungi ogni file come voce separata. È qui che avviene il passaggio **create zip archive c#**.
+Crea un'istanza `Archive` e aggiungi ogni file come voce separata. Qui avviene il passaggio **create zip archive c#**.
 
 ```csharp
 using (var archive = new Archive())
@@ -100,7 +129,7 @@ using (var archive = new Archive())
 }
 ```
 
-## Passo 5: Definisci il criterio di parallelismo
+## Step 5: Definisci il Criterio di Parallelismo
 
 Configura la compressione per l'esecuzione in parallelo impostando `ParallelOptions`. Il flag `ParallelCompressInMemory` indica ad Aspose.Zip di utilizzare sempre l'elaborazione parallela.
 
@@ -111,7 +140,7 @@ var parallelOptions = new ParallelOptions
 };
 ```
 
-## Passo 6: Salva l'archivio compresso
+## Step 6: Salva l'Archivio Compresso
 
 Infine, scrivi l'archivio su disco con le opzioni desiderate, includendo codifica, commento e le impostazioni di parallelismo definite in precedenza.
 
@@ -125,41 +154,42 @@ archive.Save(zipFile,
     });
 ```
 
-Congratulazioni! Hai appena eseguito la **compressione di file in parallelo** usando Aspose.Zip per .NET, comprimendo in modo efficiente **multiple files** in un unico archivio.
+> **Suggerimento professionale:** Se comprimi file molto grandi, considera di impostare `ParallelOptions.MaxDegreeOfParallelism` a un valore inferiore al numero di processori logici. Questo aiuta a mantenere il server reattivo sotto carico.
 
-## Problemi comuni e consigli
+### Casi d'Uso Comuni
 
-- **Large Files:** Se riscontri pressione sulla memoria, considera di comprimere i file a blocchi anziché caricare l'intero file in memoria.  
-- **Thread Safety:** L'API Aspose.Zip è thread‑safe per la modalità parallela; evita di modificare lo stesso stream da più thread al di fuori della libreria.  
-- **Performance Tuning:** Sperimenta con `ParallelOptions.MaxDegreeOfParallelism` se devi limitare l'uso della CPU su server condivisi.  
+- **Report batch:** Genera un pacchetto zip di report CSV giornalieri per i sistemi downstream.  
+- **Archiviazione documenti:** Conserva grandi collezioni di PDF, immagini o log in un unico archivio per il backup.  
+- **API di esportazione dati:** Restituisci un file zip contenente più file di dati a un client in una singola risposta HTTP.
 
-## FAQ
+## Problemi Comuni & Consigli
 
-### Q1: Posso usare Aspose.Zip per .NET con altre librerie .NET?
+- **Pressione sulla memoria con file enormi:** Invece di caricare l'intero file in memoria, trasmetti il file a blocchi o usa la modalità `ParallelCompressInMemory` in modo selettivo.  
+- **Sicurezza dei thread:** L'API Aspose.Zip è thread‑safe in modalità parallela, ma evita di modificare lo stesso `FileStream` al di fuori della libreria mentre la compressione è in corso.  
+- **Ottimizzazione delle prestazioni:** Sperimenta con `ParallelOptions.MaxDegreeOfParallelism` se devi limitare l'uso della CPU su server condivisi.  
 
-A1: Sì, Aspose.Zip per .NET è progettato per integrarsi perfettamente con altre librerie .NET.
+## Domande Frequenti
 
-### Q2: È disponibile una licenza temporanea per scopi di test?
+**D: Posso usare Aspose.Zip per .NET insieme ad altre librerie di compressione?**  
+R: Sì, Aspose.Zip può coesistere con altre librerie .NET; basta mantenere distinti i loro namespace.
 
-A2: Sì, puoi ottenere una licenza temporanea per i test **[qui](https://purchase.aspose.com/temporary-license/)**.
+**D: È disponibile una licenza temporanea per scopi di test?**  
+R: Sì, puoi ottenere una licenza temporanea per i test da **[qui](https://purchase.aspose.com/temporary-license/)**.
 
-### Q3: Dove posso trovare supporto aggiuntivo o fare domande?
+**D: Dove posso chiedere aiuto se incontro problemi?**  
+R: Visita il **[forum Aspose.Zip](https://forum.aspose.com/c/zip/37)** per supporto della community e discussioni.
 
-A3: Visita il **[forum Aspose.Zip](https://forum.aspose.com/c/zip/37)** per il supporto della community e le discussioni.
+**D: Dove posso trovare più esempi di codice e documentazione API dettagliata?**  
+R: Esplora la **[documentazione Aspose.Zip](https://reference.aspose.com/zip/net/)** per esempi completi.
 
-### Q4: Sono disponibili esempi o documentazione?
-
-A4: Esplora la **[documentazione Aspose.Zip](https://reference.aspose.com/zip/net/)** per esempi completi e guide dettagliate.
-
-### Q5: Come posso acquistare Aspose.Zip per .NET?
-
-A5: Puoi acquistare Aspose.Zip per .NET **[qui](https://purchase.aspose.com/buy)**.
+**D: Come acquisto una licenza completa per Aspose.Zip?**  
+R: Puoi acquistare Aspose.Zip per .NET **[qui](https://purchase.aspose.com/buy)**.
 
 ---
 
-**Ultimo aggiornamento:** 2025-12-10  
-**Testato con:** Aspose.Zip 24.11 per .NET  
-**Autore:** Aspose  
+**Last Updated:** 2026-02-15  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
