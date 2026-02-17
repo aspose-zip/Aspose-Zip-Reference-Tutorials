@@ -1,7 +1,7 @@
 ---
-date: 2025-12-16
-description: Aspose.Zip for .NET을 사용하여 압축 없이 zip 파일을 생성하고 여러 zip 파일을 추출하는 방법을 배웁니다.
-  이 가이드는 zip 파일을 열고, zip 항목을 읽으며, C#으로 zip을 추출하는 단계들을 다룹니다.
+date: 2026-02-17
+description: Aspose.Zip for .NET을 사용하여 압축 없이 ZIP 파일을 만들고 여러 ZIP 파일을 추출하는 방법을 배웁니다.
+  이 가이드는 ZIP 파일을 열고, ZIP 엔트리를 읽으며, C#에서 ZIP을 추출하는 단계에 대해 다룹니다.
 linktitle: Decompressing a Stored File
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: 압축 없이 Zip 만들기 및 파일 압축 해제 – Aspose.Zip
@@ -17,30 +17,37 @@ weight: 13
 
 ## 소개
 
-현대 .NET 애플리케이션에서 **create zip without compression**은 데이터 축소의 오버헤드 없이 빠른 아카이빙이 필요할 때 유용한 기술입니다. Aspose.Zip for .NET을 사용하면 이러한 아카이브를 쉽게 만들고 나중에 **extract multiple zip files**를 수행할 수 있습니다. 이 튜토리얼에서는 zip을 열고, zip 엔트리 데이터를 읽고, **C# extract zip** 작업을 단계별로 수행하는 방법을 보여드립니다.
+현대 .NET 애플리케이션에서 **create zip without compression**은 데이터 축소 오버헤드 없이 빠른 아카이빙이 필요할 때 유용한 기술입니다. Aspose.Zip for .NET은 이러한 아카이브를 쉽게 생성하고 이후에 **extract multiple zip files**를 수행할 수 있게 해줍니다. 이 튜토리얼에서는 zip을 열고, zip 엔트리 데이터를 읽으며, **C# extract zip** 작업을 단계별로 수행하는 방법을 보여줍니다.
 
 ## 빠른 답변
-- **“create zip without compression”이란?** 데이터를 변경하지 않고 “store” 방식으로 파일을 ZIP 아카이브에 추가하는 것을 의미합니다.
-- **.NET에서 이를 처리하는 라이브러리는?** Aspose.Zip for .NET.
-- **샘플을 실행하려면 라이선스가 필요합니까?** 개발 단계에서는 무료 체험판으로 가능하며, 운영 환경에서는 상용 라이선스가 필요합니다.
-- **한 번에 여러 파일을 추출할 수 있나요?** 예 – 튜토리얼에서는 **extract multiple zip files**를 루프에서 수행하는 방법을 보여줍니다.
-- **지원되는 .NET 버전은?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+- **“create zip without compression”이란?** 데이터를 변경하지 않고 “store” 방식으로 파일을 ZIP 아카이브에 추가하는 것을 의미합니다.  
+- **.NET에서 이를 처리하는 라이브러리는?** Aspose.Zip for .NET.  
+- **샘플을 실행하려면 라이선스가 필요합니까?** 개발 단계에서는 무료 트라이얼로 가능하지만, 운영 환경에서는 상용 라이선스가 필요합니다.  
+- **한 번에 여러 파일을 추출할 수 있나요?** 예 – 튜토리얼에서는 **extract multiple zip files**를 루프를 통해 수행하는 방법을 보여줍니다.  
+- **지원되는 .NET 버전은?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
 ## “create zip without compression”이란?
-**store** 압축 방식을 사용해 ZIP 아카이브를 만들면 각 파일이 그대로 추가됩니다. 압축된 ZIP에 비해 아카이브 크기는 크지만 작업 속도가 훨씬 빠르고 원본 파일 바이트가 그대로 유지됩니다 – 속도나 데이터 무결성이 크기보다 중요한 시나리오에 이상적입니다.
 
-## 왜 Aspose.Zip for .NET을 사용해야 할까요?
-- **압축 수준에 대한 완전한 제어** (store vs. deflate).  
-- **엔트리 읽기, zip 파일 열기, 데이터 추출**을 위한 간단한 API.  
-- **크로스‑플랫폼** 지원 (.NET Framework, .NET Core, .NET 5+).
+**store** 압축 방식을 사용해 ZIP 아카이브를 만들면 각 파일이 그대로 추가됩니다. 압축된 ZIP에 비해 아카이브 크기는 크지만 작업 속도가 훨씬 빠르고 원본 파일 바이트가 그대로 유지됩니다 – 속도나 데이터 무결성이 크기보다 중요한 시나리오에 적합합니다.
+
+## zip compression method store 이해하기
+
+**zip compression method store**(또는 “store” 방식)는 ZIP 포맷에 데이터 축소 단계를 건너뛰도록 지시합니다. Aspose.Zip은 `CompressionMethod.Store` 열거형을 통해 각 엔트리에 이 방식을 명시적으로 선택할 수 있게 합니다. 이미 압축된 미디어 파일(JPEG, MP3 등)처럼 추가 압축이 효과가 없는 경우에 특히 유용합니다.
+
+## 왜 Aspose.Zip for .NET을 사용해야 할까?
+
+- **압축 수준에 대한 완전한 제어**(store vs. deflate).  
+- **간단한 API**를 통해 엔트리 읽기, zip 파일 열기, 데이터 추출이 가능.  
+- **크로스‑플랫폼** 지원(.NET Framework, .NET Core, .NET 5+).  
+- **대용량 아카이브**를 메모리에 모두 로드하지 않고도 처리 가능.
 
 ## 사전 요구 사항
 
-튜토리얼을 시작하기 전에 다음 사항을 준비하십시오:
+튜토리얼을 시작하기 전에 다음 사항을 준비하세요:
 
-- Aspose.Zip for .NET 라이브러리: Aspose.Zip for .NET 라이브러리를 다운로드하고 설치합니다. 라이브러리는 [here](https://releases.aspose.com/zip/net/)에서 찾을 수 있습니다.
+- Aspose.Zip for .NET 라이브러리: Aspose.Zip for .NET 라이브러리를 다운로드하고 설치합니다. 라이브러리는 [여기](https://releases.aspose.com/zip/net/)에서 찾을 수 있습니다.
 
-- 문서 디렉터리: 이 튜토리얼에 필요한 파일을 저장할 시스템 디렉터리를 생성합니다.
+- 문서 디렉터리: 이 튜토리얼에 필요한 파일을 저장할 디렉터리를 시스템에 생성합니다.
 
 ## 네임스페이스 가져오기
 
@@ -53,19 +60,19 @@ using System.IO;
 
 ## 압축 없이 Zip 만들기
 
-먼저 **store** 방식을 사용하는 ZIP 아카이브가 필요합니다. 아래 샘플 코드는 Aspose.Zip에서 제공하는 헬퍼 메서드로, 실행하면 문서 디렉터리에 `StoreMultipleFilesWithoutCompression_out.zip`이 생성됩니다.
+먼저 **store** 방식(즉, 압축 없음)을 사용하는 ZIP 아카이브가 필요합니다. 아래 샘플 코드는 Aspose.Zip이 제공하는 헬퍼 메서드로, 실행하면 `StoreMultipleFilesWithoutCompression_out.zip` 파일이 문서 디렉터리에 생성됩니다.
 
 ```csharp
 StoreMultipleFilesWithoutCompression.Run();
 ```
 
-> **Pro tip:** 헬퍼 메서드는 내부적으로 각 엔트리에 `CompressionMethod.Store`를 설정하여 데이터 압축 없이 아카이브를 생성합니다.
+> **전문가 팁:** 헬퍼 메서드는 내부적으로 각 엔트리에 `CompressionMethod.Store`를 설정하여 데이터 압축 없이 아카이브를 생성합니다.
 
 ## Zip 열기 및 여러 파일 추출하기
 
-이제 저장된 ZIP이 준비되었으니 **how to open zip**하고 파일을 추출하는 방법을 살펴보겠습니다.
+이제 저장된 ZIP이 준비됐으니 **how to open zip**하고 파일을 추출하는 방법을 살펴봅니다.
 
-### Step 2.1: Zip 파일 열기
+### 2.1 단계: Zip 파일 열기
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -78,7 +85,7 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 
 `Archive` 객체는 열려 있는 ZIP을 나타내며 `Entries` 컬렉션을 통해 각 엔트리에 접근할 수 있습니다.
 
-### Step 2.2: 추출된 파일 생성
+### 2.2 단계: 추출 파일 만들기
 
 ```csharp
         using (var extracted = File.Create(dataDir + "alice_extracted_store_out.txt"))
@@ -99,7 +106,7 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 
 여기서는 **read zip entry** 0을 읽어 바이트를 새 파일에 복사하고, `using` 문 덕분에 스트림이 자동으로 닫힙니다.
 
-### Step 2.3: 다른 파일에 대해 과정 반복하기
+### 2.3 단계: 다른 파일에 대해 반복하기
 
 ```csharp
         using (var extracted = File.Create(dataDir + "asyoulik_extracted_store_out.txt"))
@@ -120,7 +127,7 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 }
 ```
 
-`archive.Entries`를 반복하면 몇 줄의 코드만으로 **extract multiple zip files**(또는 여러 엔트리)를 수행할 수 있습니다.
+`archive.Entries`를 순회하면 몇 줄의 코드만으로 **extract multiple zip files**(또는 다중 엔트리) 작업을 수행할 수 있습니다.
 
 ## 일반적인 문제와 해결책
 
@@ -134,15 +141,15 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 
 ### Q1: Aspose.Zip for .NET은 모든 .NET 프레임워크와 호환되나요?
 
-**A:** 예, Aspose.Zip for .NET은 다양한 .NET 프레임워크와 호환되도록 설계되어 개발자에게 유연성을 제공합니다.
+**A:** 네, Aspose.Zip for .NET은 다양한 .NET 프레임워크와 호환되도록 설계되어 있어 개발자에게 유연성을 제공합니다.
 
-### Q2: Aspose.Zip for .NET을 상업용 및 비상업용 프로젝트 모두에서 사용할 수 있나요?
+### Q2: 상업용 및 비상업용 프로젝트 모두에서 Aspose.Zip for .NET을 사용할 수 있나요?
 
-**A:** 예, Aspose.Zip for .NET은 상업용 및 비상업용 프로젝트 모두에서 사용할 수 있습니다. 라이선스 세부 사항은 [purchase page](https://purchase.aspose.com/buy)를 참고하십시오.
+**A:** 예, Aspose.Zip for .NET은 상업용 및 비상업용 프로젝트 모두에서 사용할 수 있습니다. 라이선스 상세 내용은 [purchase page](https://purchase.aspose.com/buy)를 참고하세요.
 
 ### Q3: Aspose.Zip for .NET에 대한 지원은 어떻게 받을 수 있나요?
 
-**A:** 지원이 필요하면 [Aspose.Zip forum](https://forum.aspose.com/c/zip/37)을 방문하십시오. 개발자와 전문가 커뮤니티가 도움을 제공합니다.
+**A:** 지원이 필요하면 [Aspose.Zip forum](https://forum.aspose.com/c/zip/37)을 방문하면 개발자와 전문가 커뮤니티가 도움을 제공합니다.
 
 ### Q4: Aspose.Zip for .NET의 무료 체험판이 있나요?
 
@@ -150,23 +157,23 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 
 ### Q5: 테스트용 임시 라이선스를 받을 수 있나요?
 
-**A:** 예, 테스트용 임시 라이선스는 [this link](https://purchase.aspose.com/temporary-license/)에서 받을 수 있습니다.
+**A:** 예, 테스트용 임시 라이선스는 [this link](https://purchase.aspose.com/temporary-license/)에서 얻을 수 있습니다.
 
 ### Q6: 전체 아카이브를 추출하지 않고 zip 엔트리를 읽는 방법은?
 
-**A:** `archive.Entries[index].Open()`을 사용해 특정 엔트리의 스트림을 얻은 뒤, 필요한 바이트만 읽으면 됩니다. 위 코드 예시를 참고하십시오.
+**A:** `archive.Entries[index].Open()`을 사용해 특정 엔트리의 스트림을 얻은 뒤, 필요한 바이트만 읽으면 됩니다. 위 코드 예시를 참고하세요.
 
-### Q7: 루프에서 **extract multiple zip files**를 수행하는 가장 좋은 방법은?
+### Q7: 루프에서 **extract multiple zip files**를 가장 효율적으로 수행하는 방법은?
 
-**A:** `foreach` 루프를 사용해 `archive.Entries`를 순회하면서 각 엔트리의 스트림을 열고 대상 파일에 기록하면 됩니다. Step 2.2와 2.3의 패턴을 참고하십시오.
+**A:** `foreach` 루프를 사용해 `archive.Entries`를 순회하고, 각 엔트리 스트림을 열어 목적지 파일에 기록하면 됩니다. 이는 2.2 및 2.3 단계에서 보여준 패턴과 동일합니다.
 
 ## 결론
 
-**create zip without compression**과 이후 추출 과정을 마스터하면 고성능 .NET 애플리케이션을 구현하는 데 큰 도움이 됩니다. Aspose.Zip for .NET은 **how to open zip**, 각 **zip entry**를 읽고 **C# extract zip** 작업을 최소한의 코드로 수행할 수 있는 깔끔하고 직관적인 API를 제공합니다. 이 가이드를 따라 저장된 아카이브를 생성하고, 열고, 효율적으로 내용을 추출하는 방법을 배웠습니다.
+**create zip without compression**과 이후 추출 과정을 마스터하면 고성능 .NET 애플리케이션을 구현하는 데 큰 도움이 됩니다. Aspose.Zip for .NET은 **how to open zip**, 각 **zip entry** 읽기, 그리고 **C# extract zip** 작업을 최소한의 코드로 수행할 수 있는 깔끔하고 직관적인 API를 제공합니다. 이 가이드를 따라 저장된 아카이브를 생성하고, 열고, 효율적으로 내용을 추출하는 방법을 배웠습니다.
 
 ---
 
-**Last Updated:** 2025-12-16  
+**Last Updated:** 2026-02-17  
 **Tested With:** Aspose.Zip for .NET 24.12  
 **Author:** Aspose  
 
