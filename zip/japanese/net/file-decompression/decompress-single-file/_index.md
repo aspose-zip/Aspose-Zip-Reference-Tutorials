@@ -1,9 +1,9 @@
 ---
-date: 2025-12-14
-description: C# プロジェクトで Aspose.Zip for .NET を使用して zip を解凍し、単一の zip ファイルを抽出する方法を学びましょう。
+date: 2026-02-17
+description: C# プロジェクトで Aspose.Zip for .NET を使用し、ZIP の進捗を監視しながら ZIP ファイルを解凍し、単一エントリを抽出する方法を学びましょう。
 linktitle: Decompressing a Single File
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: ZIP を解凍 C# – Aspose.Zip で単一ファイルを抽出
+title: C#でZIPの進行状況を監視 – Aspose.Zipで単一ファイルを解凍
 url: /ja/net/file-decompression/decompress-single-file/
 weight: 12
 ---
@@ -12,32 +12,32 @@ weight: 12
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# zip の解凍 c# – Aspose.Zip で単一ファイルを抽出
+# zip 進行状況の監視 c# – Aspose.Zip で単一ファイルを解凍
 
-## はじめに
+## Introduction
 
-**decompress zip c#** ファイルを解凍して単一エントリだけを取り出す必要がある場合、Aspose.Zip for .NET が簡単に実現します。このチュートリアルでは、ZIP アーカイブから単一ファイルを抽出し、進行状況を監視し、結果をクリーンで保守しやすい方法で処理する完全な実例をステップバイステップで解説します。最後まで読めば、任意の C# アプリケーションに zip 抽出機能を自信を持って組み込めるようになります。
+zip ファイルを解凍しながら **monitor zip progress c#** が必要な場合、Aspose.Zip for .NET を使用すれば作業はシンプルです。このチュートリアルでは、ZIP アーカイブから単一ファイルを抽出し、リアルタイムで抽出進行状況を監視し、結果をクリーンで保守しやすい方法で処理する実践的な例をステップバイステップで解説します。最後まで読めば、任意の C# アプリケーションに zip 抽出機能を自信を持って組み込めるようになります。
 
-## クイック回答
-- **このチュートリアルの内容は？** Aspose.Zip for .NET を使用した ZIP アーカイブの解凍と単一ファイルの抽出。  
-- **対象の主要キーワードは？** decompress zip c#  
-- **ライセンスは必要ですか？** 開発には無料トライアルで動作しますが、製品版には商用ライセンスが必要です。  
-- **.NET Core はサポートされていますか？** はい – 同じコードが .NET Framework と .NET Core の両方で動作します。  
-- **実装にどれくらい時間がかかりますか？** 基本的なセットアップで約 10〜15 分です。
+## Quick Answers
+- **What does this tutorial cover?** Monitoring zip progress c# と Aspose.Zip for .NET を使用した ZIP アーカイブからの単一ファイル抽出。  
+- **Which primary keyword is targeted?** monitor zip progress c#  
+- **Do I need a license?** 開発用途は無料トライアルで可能です。商用利用には有償ライセンスが必要です。  
+- **Is .NET Core supported?** はい – 同じコードが .NET Framework と .NET Core の両方で動作します。  
+- **How long does implementation take?** 基本的なセットアップで約 10‑15 分です。
 
-## 前提条件
+## Prerequisites
 
-チュートリアルに入る前に、以下の前提条件が整っていることを確認してください。
+チュートリアルに入る前に、以下の前提条件を満たしていることを確認してください。
 
-- Aspose.Zip for .NET ライブラリ: [Aspose.Zip for .NET Documentation](https://reference.aspose.com/zip/net/) からダウンロードしてインストールしてください。  
-- 開発環境: Visual Studio など、動作する .NET 開発環境が用意されていること。  
-- C# の基本的な理解: C# プログラミングの基礎を把握しておいてください。  
+- Aspose.Zip for .NET Library: [Aspose.Zip for .NET Documentation](https://reference.aspose.com/zip/net/) からライブラリをダウンロードしてインストールします。  
+- Development Environment: Visual Studio などの対応 IDE を含む、機能する .NET 開発環境を用意してください。  
+- Basic Understanding of C#: C# プログラミングの基本を把握しておいてください。
 
-さあ、コードを書いて実践してみましょう！
+Now, let's get our hands dirty with some code!
 
-## 名前空間のインポート
+## Import Namespaces
 
-まず、必要な名前空間をインポートして Aspose.Zip の使用を開始します：
+Aspose.Zip の使用を開始するために、必要な名前空間をインポートします。
 
 ```csharp
 using Aspose.Zip;
@@ -45,27 +45,41 @@ using System;
 using System.IO;
 ```
 
-## ステップバイステップガイド：zip の解凍 c#
+## What is monitor zip progress c#?
 
-### ステップ 1: ドキュメントディレクトリの設定
+ZIP 抽出の進行状況を監視することで、特に大容量アーカイブの場合にユーザーへ即時フィードバックを提供できます。Aspose.Zip は進行イベントを発行するため、パーセンテージ表示や UI 要素の更新が簡単に行えます。
 
-まず、ドキュメントが保存されているディレクトリを指定します。`"Your Document Directory"` を実際のパスに置き換えてください。
+## Why Use Aspose.Zip for C# File Decompression?
+
+- **No external dependencies** – 純粋な .NET ライブラリです。  
+- **Supports large archives** – ストリーミング対応で、メモリ使用量を低く抑えられます。  
+- **Built‑in progress events** – **monitor zip progress c#** を実現しやすく、UI フィードバックの提供が容易です。  
+- **Works across .NET Framework, .NET Core, and .NET 5/6** – 幅広いプラットフォームで動作します。  
+- **Also capable of compressing multiple files zip** – 後でアーカイブを作成する必要がある場合にも対応可能です。
+
+## How to decompress zip c# using Aspose.Zip
+
+以下の手順で単一エントリを抽出し、コンソールに抽出パーセンテージを表示します。
+
+### Step 1: Set Your Document Directory
+
+ドキュメントが保存されているディレクトリを指定します。`"Your Document Directory"` を実際のパスに置き換えてください。
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-### ステップ 2: 圧縮ファイルの作成（デモ設定）
+### Step 2: Create a Compressed File (Demo Setup)
 
-以下の呼び出しは、後で解凍するサンプル ZIP ファイルを作成します。これは、既に ZIP アーカイブを持っている典型的なシナリオを再現しています。
+次のコードはサンプル ZIP ファイルを作成します。これは、既に ZIP アーカイブが存在する典型的なシナリオをシミュレートしています。
 
 ```csharp
 CompressSingleFile.Run();
 ```
 
-### ステップ 3: ファイルの解凍 – 単一 ZIP ファイルの抽出
+### Step 3: Decompress the File – Extract Single Zip File
 
-それでは、本題に入ります – 単一エントリの抽出です。以下のコードは ZIP アーカイブを開き、プログレスハンドラを設定し、最初のエントリをテキストファイルに抽出します。
+ここからが本題です。**monitor zip progress c#** を行いながら単一エントリを抽出します。以下のコードは ZIP アーカイブを開き、進行ハンドラを登録し、最初のエントリをテキストファイルへ抽出します。
 
 ```csharp
 // ExStart: DecompressSingleFile
@@ -88,50 +102,44 @@ using (FileStream fs = File.OpenRead(dataDir + "CompressSingleFile_out.zip"))
 }
 ```
 
-このスニペットは **単一の zip エントリを抽出** し、リアルタイムで進行状況（例: “30% decompressed”）を表示します。インデックス (`Entries[0]`) を変更すれば、アーカイブ内の他のファイルを対象にできます。
+このスニペットは **extracts a single zip entry** しつつ、リアルタイムで進行状況（例: “30% decompressed”）をコンソールに出力します。インデックス (`Entries[0]`) を変更すれば、アーカイブ内の他のファイルも対象にできます。
 
-## なぜ Aspose.Zip for C# のファイル解凍に使うのか？
+## Common Issues & Tips
 
-- **外部依存なし** – 純粋な .NET ライブラリ。  
-- **大容量アーカイブに対応** – ストリーミングでメモリ使用量を抑えます。  
-- **組み込みのプログレスイベント** により UI フィードバックが簡単に提供できます。  
-- **.NET Framework、.NET Core、.NET 5/6 で動作**。
+- **File path separators** – クロスプラットフォームの安全性のために `Path.Combine` を使用してください。  
+- **Password‑protected ZIPs** – 抽出前に `archive.Password` を設定します。  
+- **Multiple entries** – `archive.Entries` をループし、`FileName` で目的のファイルを特定します。  
+- **Compress multiple files zip** – 後で複数ファイルをまとめたい場合は、Aspose.Zip の `AddFile` メソッドを使用して API 内でアーカイブを作成できます。
 
-## よくある問題とヒント
+## Frequently Asked Questions
 
-- **ファイルパスの区切り文字** – クロスプラットフォームの安全性のために `Path.Combine` を使用してください。  
-- **パスワード保護された ZIP** – 抽出前に `archive.Password` を設定します。  
-- **複数エントリ** – `archive.Entries` をループし、`FileName` で一致させます。  
+### Q1: Can I compress multiple files using Aspose.Zip for .NET?
 
-## よくある質問
+A1: はい、Aspose.Zip for .NET は **compress multiple files zip** をサポートしています。詳細はドキュメントをご参照ください。
 
-### Q1: Aspose.Zip for .NET で複数ファイルを圧縮できますか？
+### Q2: Is Aspose.Zip compatible with .NET Core?
 
-A1: はい、Aspose.Zip for .NET は複数ファイルの圧縮をサポートしています。詳細はドキュメントをご参照ください。
+A2: 絶対に対応しています！Aspose.Zip は .NET Framework と .NET Core の両方でシームレスに統合できます。
 
-### Q2: Aspose.Zip は .NET Core と互換性がありますか？
+### Q3: How can I handle password‑protected compressed files?
 
-A2: もちろんです！Aspose.Zip は .NET Framework と .NET Core の両方とシームレスに統合されます。
+A3: Aspose.Zip はパスワード保護されたアーカイブを操作するためのメソッドを提供しています。ドキュメントで手順をご確認ください。
 
-### Q3: パスワード保護された圧縮ファイルはどう扱いますか？
+### Q4: Are there any licensing considerations for using Aspose.Zip?
 
-A3: Aspose.Zip はパスワード保護されたアーカイブを操作するメソッドを提供しています。ガイドはドキュメントをご確認ください。
+A4: ライセンス情報は [Aspose website](https://purchase.aspose.com/buy) でご確認ください。
 
-### Q4: Aspose.Zip の使用に関するライセンス上の注意点はありますか？
+### Q5: Where can I seek help if I encounter issues?
 
-A4: ライセンス情報は [Aspose website](https://purchase.aspose.com/buy) をご確認ください。
+A5: コミュニティサポートは [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) で受けられます。
 
-### Q5: 問題が発生した場合、どこでサポートを受けられますか？
+## Conclusion
 
-A5: コミュニティサポートは [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) をご利用ください。
-
-## 結論
-
-おめでとうございます！**decompress zip c#** の詳細を無事に理解し、Aspose.Zip for .NET を使用して単一ファイルを抽出できました。このパターンをアプリケーションに組み込むことで、ファイル処理を効率化し、ユーザーエクスペリエンスを向上させ、コードベースをクリーンに保つことができます。
+おめでとうございます！**monitor zip progress c#** を実装し、Aspose.Zip for .NET を使って単一ファイルを正常に抽出できました。このパターンをアプリケーションに組み込めば、ファイル処理が効率化され、ユーザー体験が向上し、コードベースもクリーンに保てます。
 
 ---
 
-**Last Updated:** 2025-12-14  
+**Last Updated:** 2026-02-17  
 **Tested With:** Aspose.Zip for .NET 24.11  
 **Author:** Aspose  
 
