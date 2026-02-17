@@ -1,9 +1,9 @@
 ---
-title: How to Decompress Multiple Files with Aspose.Zip for .NET
-linktitle: How to Decompress Multiple Files with Aspose.Zip for .NET
+title: How to Decompress Files with Aspose.Zip for .NET
+linktitle: How to Decompress Files with Aspose.Zip for .NET
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-description: Learn how to decompress multiple files and zip folders in .NET with Aspose.Zip. Follow step‑by‑step C# examples for extracting archives efficiently.
-date: 2025-12-10
+description: Learn how to decompress files with Aspose.Zip for .NET, including how to extract zip folder and extract password protected zip archives using C#.
+date: 2026-02-17
 weight: 21
 url: /net/file-decompression/
 ---
@@ -12,11 +12,11 @@ url: /net/file-decompression/
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# How to Decompress Multiple Files with Aspose.Zip for .NET
+# How to Decompress Files with Aspose.Zip for .NET
 
 ## Introduction
 
-File compression is a crucial aspect of software development, enabling efficient data storage and transmission. When you need to **decompress multiple files** quickly and reliably in a .NET environment, Aspose.Zip for .NET provides a clean, high‑performance API that removes the hassle of manual extraction. In this guide we’ll explore common scenarios—from extracting a single archive to handling password‑protected zip files—so you can choose the right approach for your project.
+When you need to **how to decompress files** quickly and reliably in a .NET environment, Aspose.Zip for .NET offers a clean, high‑performance API that eliminates the hassle of manual extraction. Whether you’re dealing with a single archive, a batch of log files, or a password‑protected zip, this guide shows you exactly how to extract zip folder contents and handle encrypted archives with just a few lines of C# code.
 
 ## Quick Answers
 - **What does Aspose.Zip for .NET do?** It offers a simple API to create, read, and extract ZIP, TAR, GZIP, and other archive formats in C#.
@@ -25,16 +25,25 @@ File compression is a crucial aspect of software development, enabling efficient
 - **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7 and later.
 - **Do I need a license for development?** A free trial works for evaluation; a commercial license is required for production use.
 
+## How to Decompress Files Using Aspose.Zip for .NET
+Decompressing files with Aspose.Zip is straightforward. The library provides the `Extract` method, which can target a directory, a specific file, or a memory stream. Below we outline the typical workflow:
+
+1. **Create an `Archive` instance** pointing to your zip file.  
+2. **Call `Extract`** with the destination folder.  
+3. **Optionally pass a password** if the archive is encrypted (`extract password protected zip`).  
+
+This approach works for any archive type supported by Aspose.Zip, including traditional zip, zip folder structures, and modern formats like XAR and WIM.
+
 ## What is “decompress multiple files”?
 
 Decompressing multiple files means extracting every entry stored inside an archive (ZIP, TAR, etc.) and optionally writing each file to a target directory. This operation is common when you receive bundled data—log files, images, or configuration sets—that must be unpacked before processing.
 
 ## Why use Aspose.Zip for .NET to decompress multiple files?
 
-- **Performance‑optimized** extraction that works with large archives without excessive memory consumption.  
+- **Performance‑optimized** extraction that handles large archives without excessive memory consumption.  
 - **Built‑in support** for classic ZIP, modern formats (XAR, WIM) and encrypted archives.  
-- **Straightforward C# syntax** – no need to juggle streams or third‑party utilities.  
-- **Cross‑platform** compatibility, letting you run the same code on Windows, Linux, or macOS.
+- **Straightforward C# syntax** – no need to juggle streams or third‑party utilities (`aspose zip extract`).  
+- **Cross‑platform** compatibility, letting you run the same code on Windows, Linux, or macOS.  
 
 ## Decompressing a File with Aspose.Zip for .NET
 
@@ -62,12 +71,12 @@ If you need to **decompress zip folder** contents or work with a **decompress pa
 
 - **Use streaming** when extracting very large files to keep memory usage low.  
 - **Validate file paths** after extraction to avoid directory‑traversal vulnerabilities.  
-- **Handle exceptions** such as `InvalidPasswordException` to provide clear user feedback.
+- **Handle exceptions** such as `InvalidPasswordException` to provide clear user feedback.  
 
 ## Frequently Asked Questions
 
 **Q: Can I extract a zip archive directly to a memory stream?**  
-A: Yes, Aspose.Zip lets you read an entry into a `MemoryStream` without writing to disk.
+A: Yes, Aspose.Zip lets you read an entry into a `MemoryStream` without writing to disk (`extract zip archive c#`).
 
 **Q: Does the library support extracting to a specific folder structure?**  
 A: Absolutely. You can specify the output directory, and the API will recreate the archive’s internal folder hierarchy.
@@ -80,6 +89,12 @@ A: Yes, you can iterate over `archive.Entries` to inspect file names, sizes, and
 
 **Q: What if the archive contains duplicate file names?**  
 A: By default, the library overwrites existing files; you can change this behavior with the `OverwriteMode` option.
+
+**Q: Can I extract only selected entries from a zip folder?**  
+A: Yes, filter `archive.Entries` by name or extension and call `Extract` on the chosen entries.
+
+**Q: How does Aspose.Zip handle large zip files on low‑memory devices?**  
+A: The library uses lazy loading and streaming, so only the current entry is loaded into memory.
 
 ## Conclusion
 
@@ -105,7 +120,7 @@ Explore the power of Aspose.Zip for .NET! Effortlessly decompress Xar archives w
 
 ---
 
-**Last Updated:** 2025-12-10  
+**Last Updated:** 2026-02-17  
 **Tested With:** Aspose.Zip for .NET 24.12  
 **Author:** Aspose  
 
