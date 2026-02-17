@@ -1,11 +1,11 @@
 ---
-date: 2025-12-12
-description: Tanulja meg, hogyan lehet gyorsan kicsomagolni a .NET fájlokat az Aspose.Zip
-  segítségével. Lépésről‑lépésre útmutató a .NET archívumok kicsomagolásához és a
-  C#‑os kicsomagoláshoz.
+date: 2026-02-17
+description: Tanulja meg, hogyan lehet gyorsan kibontani zip fájlt C#‑ban az Aspose.Zip
+  segítségével. Lépésről‑lépésre útmutató a .NET archívum kicsomagolásához és C# fájl
+  kibontási példához.
 linktitle: Decompressing a File
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Fájl kitömörítése .NET-ben az Aspose.Zip használatával
+title: ZIP-fájl kibontása C#-ban az Aspose.Zip használatával
 url: /hu/net/file-decompression/decompress-file/
 weight: 10
 ---
@@ -14,37 +14,39 @@ weight: 10
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Decompress File .NET Using Aspose.Zip
+# Decompress zip file C# Using Aspose.Zip
 
 ## Bevezetés
 
-A .NET fejlesztés világában a **decompress file .NET** hatékony elsajátítása kulcsfontosságú a teljesítménykritikus alkalmazásoknál. Az Aspose.Zip for .NET tiszta, nagy teljesítményű API-t kínál, amely lehetővé teszi a .NET archívumok kitömörítését anélkül, hogy alacsony szintű stream-kezeléssel kellene foglalkozni. Ebben az útmutatóban egy teljes **Aspose.Zip extraction** példát mutatunk be – egy Lzip archívum megnyitása és tartalmának kitömörítése néhány C# sorral.
+If you need to **decompress zip file C#** in a .NET application, you’ll want a solution that’s fast, reliable, and easy to integrate. Aspose.Zip for .NET gives you a high‑performance API that hides the low‑level stream handling while still giving you full control over the extraction process. In this tutorial we’ll walk through a complete **C# file decompression example**—opening an Lzip archive and extracting its contents with just a few lines of code.
 
 ## Gyors válaszok
-- **Melyik könyvtár kezeli a .NET archívum kitömörítését?** Aspose.Zip for .NET  
+- **Melyik könyvtár kezeli a .NET archívum kitömörítést?** Aspose.Zip for .NET  
 - **Melyik metódus tömöríti ki az Lzip archívumot C#-ban?** `LzipArchive.Extract`  
-- **Szükségem van licencre a termeléshez?** Igen, kereskedelmi licenc szükséges nem‑értékelő használathoz.  
+- **Szükségem van licencre a termeléshez?** Igen, kereskedelmi licenc szükséges nem‑evaluation használathoz.  
 - **Támogatott .NET verziók?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
 - **Mennyi időt vesz igénybe az alapvető kitömörítés?** Általában egy másodpercnél kevesebb kis fájlok esetén.
 
-## Mi az a “decompress file .NET”?
-A fájl .NET kitömörítése azt jelenti, hogy egy tömörített archívumot (pl. ZIP, LZIP, GZIP) olvasunk be, és az eredeti tartalmát visszaírjuk a fájlrendszerbe. Az Aspose.Zip elrejti a komplexitást, így a fejlesztő a üzleti logikára koncentrálhat ahelyett, hogy a tömörítési algoritmusokkal foglalkozna.
+## Mi az a “decompress zip file C#”?
+
+Decompressing a file in .NET means reading a compressed archive (ZIP, LZIP, GZIP, etc.) and writing the original content back to the file system. Aspose.Zip abstracts the compression algorithms so you can focus on business logic instead of stream plumbing.
 
 ## Miért használjuk az Aspose.Zip-et .NET archívum kitömörítéshez?
-- **Zero‑dependency** – nincs külső natív bináris.  
-- **Gazdag formátumtámogatás** – ZIP, GZIP, TAR, LZIP és továbbiak.  
-- **Szálbiztos API** – tökéletes webszolgáltatásokhoz és háttérfeladatokhoz.  
-- **Átfogó dokumentáció** és **Aspose.Zip tutorial** erőforrások.
+
+- **Zero‑dependency** – no external native binaries.  
+- **Rich format support** – ZIP, GZIP, TAR, LZIP, and more.  
+- **Thread‑safe API** – perfect for web services and background jobs.  
+- **Comprehensive documentation** and **Aspose.Zip tutorial** resources.
 
 ## Előfeltételek
 
-- **Aspose.Zip for .NET** – telepítse a NuGet csomagot vagy töltse le a könyvtárat. A dokumentációt megtalálja [itt](https://reference.aspose.com/zip/net/).  
-- **Fejlesztői környezet** – Visual Studio 2022, .NET 6 SDK, vagy bármely C#‑t támogató IDE.  
-- **Your Document Directory** – egy mappa a lemezen, ahol a tömörített fájl (`archive.lz`) található, és ahová a kitömörített fájlt szeretné menteni.
+- **Aspose.Zip for .NET** – install the NuGet package or download the library. You can find the documentation [here](https://reference.aspose.com/zip/net/).  
+- **Development environment** – Visual Studio 2022, .NET 6 SDK, or any IDE that supports C#.  
+- **Your Document Directory** – a folder on disk where the compressed file (`archive.lz`) resides and where you want the extracted file saved.
 
 ## Névterek importálása
 
-Először importálja a fájl‑I/O és az Aspose.Zip Lzip támogatásához szükséges névtereket:
+First, import the namespaces required for file I/O and Aspose.Zip’s Lzip support:
 
 ```csharp
 using System;
@@ -54,15 +56,15 @@ using Aspose.Zip.Lzip;
 
 ## .NET archívum kitömörítés: Állítsa be a munkakönyvtárat
 
+Replace `"Your Document Directory"` with the absolute or relative path that contains `archive.lz`. Keeping the path in a variable makes the code reusable and easier to maintain.
+
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-Cserélje le a `"Your Document Directory"` értéket arra az abszolút vagy relatív útvonalra, amely tartalmazza az `archive.lz` fájlt. Az útvonal változóban való tárolása újrahasználhatóvá és könnyebben karbantarthatóvá teszi a kódot.
+## 1. lépés: Lzip archívum kitömörítése C# (extract lzip archive c#)
 
-## 1. lépés: Lzip archívum megnyitása és kitömörítése C#-ban
-
-A **c# extract from archive** művelet középpontjában egy rövid `using` blokk áll, amely megnyitja az Lzip fájlt és a kitömörített adatot egy új fájlba írja.
+The core of the **c# extract from archive** operation is a short `using` block that opens the Lzip file and writes the decompressed data to a new file.
 
 ```csharp
 //ExStart: OpenLzipArchive
@@ -77,45 +79,45 @@ using (var archive = new LzipArchive(Path.Combine(dataDir, "archive.lz")))
 Console.WriteLine("Successfully Opened Lzip Archive");
 ```
 
-Ez a kódrészlet bemutatja a **extract lzip archive c#** mintát:
+This snippet demonstrates the **extract lzip archive c#** pattern:
 
-1. **Hozzon létre** egy `LzipArchive` példányt, amely a forrásfájlra mutat.  
-2. **Hozzon létre** a célfájlt (`output.txt`).  
-3. **Hívja meg** a `Extract` metódust a kitömörített bájtok írásához.  
-4. A `using` utasítások garantálják, hogy minden stream automatikusan bezáródik.
+1. **Create** an `LzipArchive` instance pointing at the source file.  
+2. **Create** the destination file (`output.txt`).  
+3. **Call** `Extract` to write the decompressed bytes.  
+4. The `using` statements guarantee that all streams are closed automatically.
 
 ## Gyakori problémák és megoldások
 
 | Tünet | Valószínű ok | Megoldás |
-|-------|--------------|----------|
-| `FileNotFoundException` | Hibás `dataDir` útvonal | Ellenőrizze a mappautat és győződjön meg arról, hogy az `archive.lz` létezik. |
-| `UnauthorizedAccessException` | Nem elegendő írási jogosultság | Futtassa az alkalmazást megfelelő jogosultságokkal, vagy válasszon írható mappát. |
-| Output file is empty | Az archívum sérült vagy nem Lzip fájl | Ellenőrizze, hogy a forrásfájl érvényes Lzip archívum-e; szükség esetén használja a `LzipArchive.IsValid` metódust. |
+|---------|--------------|-----|
+| `FileNotFoundException` | Hibás `dataDir` útvonal | Verify the folder path and ensure `archive.lz` exists. |
+| `UnauthorizedAccessException` | Nem elegendő írási jogosultság | Run the app with proper privileges or choose a writable folder. |
+| Output file is empty | Archive is corrupted or not an Lzip file | Confirm the source file is a valid Lzip archive; use `LzipArchive.IsValid` if needed. |
 
-## Gyakran ismételt kérdések
+## Gyakran Ismételt Kérdések
 
-**Q: Az Aspose.Zip kompatibilis minden .NET alkalmazással?**  
-A: Igen, az Aspose.Zip for .NET integrálható asztali, web, felhő és mikro‑szolgáltatás projektekbe egyaránt.
+**Q: Is Aspose.Zip compatible with all .NET applications?**  
+A: Yes, Aspose.Zip for .NET integrates with desktop, web, cloud, and micro‑service projects alike.
 
-**Q: Használhatom az Aspose.Zip-et személyes és kereskedelmi projektekhez egyaránt?**  
-A: Természetesen. A könyvtár rugalmas licencelést kínál értékeléshez, személyes és kereskedelmi felhasználáshoz.
+**Q: Can I use Aspose.Zip for both personal and commercial projects?**  
+A: Absolutely. The library offers flexible licensing for evaluation, personal, and commercial use.
 
-**Q: Hogyan kaphatok támogatást az Aspose.Zip for .NET-hez?**  
-A: Látogassa meg az [Aspose.Zip fórumot](https://forum.aspose.com/c/zip/37) a kérdések feltevéséhez és tapasztalatok megosztásához.
+**Q: How can I get support for Aspose.Zip for .NET?**  
+A: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) to ask questions and share experiences with the community.
 
-**Q: Van ingyenes próba?**  
-A: Igen, a Aspose.Zip for .NET funkcióit ingyenes próba verzióval [itt](https://releases.aspose.com/) tekintheti meg.
+**Q: Is there a free trial available?**  
+A: Yes, you can explore the features of Aspose.Zip for .NET by downloading the free trial [here](https://releases.aspose.com/).
 
-**Q: Hol vásárolhatom meg az Aspose.Zip for .NET-et?**  
-A: Licenc vásárlásához menjen a [vásárlási oldalra](https://purchase.aspose.com/buy).
+**Q: Where can I purchase Aspose.Zip for .NET?**  
+A: To purchase a license, go to the [purchase page](https://purchase.aspose.com/buy).
 
-## Következtetés
+## Összegzés
 
-Most már elsajátította, hogyan **decompress file .NET** az Aspose.Zip egyszerű API-jával. Ez a megközelítés leegyszerűsíti a .NET archívum kitömörítést, csökkenti a sablonkódot, és jól skálázható nagy‑méretű alkalmazásokhoz. Mélyebb forgatókönyvekhez – jelszóval védett archívumok, több fájl kitömörítése vagy egyéni tömörítési szintek – tekintse meg a teljes [documentation](https://reference.aspose.com/zip/net/) oldalt.
+You’ve now mastered how to **decompress zip file C#** using Aspose.Zip’s straightforward API. This approach simplifies .NET archive extraction, reduces boilerplate code, and scales well for large‑scale applications. For deeper scenarios—password‑protected archives, multi‑file extraction, or custom compression levels—refer to the full [documentation](https://reference.aspose.com/zip/net/).
 
 ---
 
-**Last Updated:** 2025-12-12  
+**Last Updated:** 2026-02-17  
 **Tested With:** Aspose.Zip 24.11 for .NET  
 **Author:** Aspose  
 

@@ -1,9 +1,9 @@
 ---
-date: 2025-12-12
-description: Aspose.Zip を使用して .NET でファイルを素早く解凍する方法を学びましょう。.NET アーカイブ抽出と C# でのアーカイブからの抽出に関するステップバイステップガイドです。
+date: 2026-02-17
+description: Aspose.Zip を使用して C# で zip ファイルを素早く解凍する方法を学びましょう。.NET アーカイブ抽出と C# ファイル解凍のステップバイステップガイドです。
 linktitle: Decompressing a File
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Aspose.Zip を使用した .NET のファイル解凍
+title: Aspose.Zip を使用した C# での ZIP ファイルの解凍
 url: /ja/net/file-decompression/decompress-file/
 weight: 10
 ---
@@ -12,37 +12,39 @@ weight: 10
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip を使用した .NET のファイル解凍
+# Aspose.Zip を使用した zip ファイルの解凍（C#）
 
 ## はじめに
 
-.NET 開発の世界では、**decompress file .NET** を効率的に行う方法を学ぶことが、パフォーマンスが重要なアプリケーションにとって不可欠です。Aspose.Zip for .NET は、低レベルのストリーム管理に煩わされることなく、.NET アーカイブ抽出を扱えるクリーンで高性能な API を提供します。本チュートリアルでは、Lzip アーカイブを開き、数行の C# コードだけで内容を抽出する **Aspose.Zip 抽出** の完全なシナリオを順を追って解説します。
+If you need to **decompress zip file C#** in a .NET application, you’ll want a solution that’s fast, reliable, and easy to integrate. Aspose.Zip for .NET gives you a high‑performance API that hides the low‑level stream handling while still giving you full control over the extraction process. In this tutorial we’ll walk through a complete **C# file decompression example**—opening an Lzip archive and extracting its contents with just a few lines of code.
 
 ## クイック回答
-- **.NET アーカイブ抽出を扱うライブラリは？** Aspose.Zip for .NET  
-- **C# で Lzip アーカイブを抽出するメソッドは？** `LzipArchive.Extract`  
-- **本番環境でライセンスは必要ですか？** はい、評価版以外の使用には商用ライセンスが必要です。  
-- **対応している .NET バージョンは？** .NET Framework 4.5 以上、.NET Core 3.1 以上、.NET 5/6/7。  
-- **基本的な抽出にかかる時間は？** 小さなファイルであれば通常 1 秒未満です。
+- **.NET アーカイブ抽出を処理するライブラリは何ですか？** Aspose.Zip for .NET  
+- **C# で Lzip アーカイブを抽出するメソッドはどれですか？** `LzipArchive.Extract`  
+- **本番環境でライセンスが必要ですか？** Yes, a commercial license is required for non‑evaluation use.  
+- **サポートされている .NET バージョンは？** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
+- **基本的な抽出にどれくらい時間がかかりますか？** Typically under a second for small files.
 
-## “decompress file .NET” とは？
-.NET でファイルを解凍するとは、圧縮アーカイブ（ZIP、LZIP、GZIP など）を読み取り、元のコンテンツをファイルシステムに書き戻すことを指します。Aspose.Zip はその複雑さを抽象化し、圧縮アルゴリズムに関する詳細にとらわれずビジネスロジックに集中できるようにします。
+## “decompress zip file C#” とは何ですか？
 
-## .NET アーカイブ抽出に Aspose.Zip を使用する理由
+Decompressing a file in .NET means reading a compressed archive (ZIP, LZIP, GZIP, etc.) and writing the original content back to the file system. Aspose.Zip abstracts the compression algorithms so you can focus on business logic instead of stream plumbing.
+
+## なぜ .NET アーカイブ抽出に Aspose.Zip を使用するのか？
+
 - **Zero‑dependency** – 外部のネイティブバイナリが不要です。  
-- **豊富なフォーマットサポート** – ZIP、GZIP、TAR、LZIP など多数に対応。  
-- **スレッドセーフ API** – Web サービスやバックグラウンドジョブに最適です。  
-- **包括的なドキュメント** と **Aspose.Zip チュートリアル** リソース。
+- **Rich format support** – ZIP、GZIP、TAR、LZIP など多数をサポート。  
+- **Thread‑safe API** – Web サービスやバックグラウンドジョブに最適。  
+- **Comprehensive documentation** と **Aspose.Zip tutorial** リソース。
 
 ## 前提条件
 
-- **Aspose.Zip for .NET** – NuGet パッケージをインストールするか、ライブラリをダウンロードしてください。ドキュメントは[こちら](https://reference.aspose.com/zip/net/)で確認できます。  
-- **開発環境** – Visual Studio 2022、.NET 6 SDK、または C# をサポートする任意の IDE。  
-- **作業ディレクトリ** – 圧縮ファイル (`archive.lz`) が格納され、抽出先ファイルを保存したいフォルダー。
+- **Aspose.Zip for .NET** – NuGet パッケージをインストールするか、ライブラリをダウンロードしてください。ドキュメントは [here](https://reference.aspose.com/zip/net/) にあります。  
+- **Development environment** – Visual Studio 2022、.NET 6 SDK、または C# をサポートする任意の IDE。  
+- **Your Document Directory** – 圧縮ファイル (`archive.lz`) が格納され、抽出したファイルを保存したいディスク上のフォルダー。
 
 ## 名前空間のインポート
 
-まず、ファイル I/O と Aspose.Zip の Lzip サポートに必要な名前空間をインポートします。
+まず、ファイル I/O と Aspose.Zip の Lzip サポートに必要な名前空間をインポートします:
 
 ```csharp
 using System;
@@ -56,11 +58,11 @@ using Aspose.Zip.Lzip;
 string dataDir = "Your Document Directory";
 ```
 
-`"Your Document Directory"` を、`archive.lz` が存在する絶対パスまたは相対パスに置き換えてください。パスを変数に保持することで、コードの再利用性と保守性が向上します。
+`"Your Document Directory"` を `archive.lz` が含まれる絶対パスまたは相対パスに置き換えてください。パスを変数に保持することで、コードの再利用性が高まり、保守が容易になります。
 
-## 手順 1: C# で Lzip アーカイブを開いて抽出する
+## ステップ 1: Lzip アーカイブを抽出 C#（extract lzip archive c#）
 
-**c# extract from archive** 操作の核心は、Lzip ファイルを開き、解凍データを書き込む短い `using` ブロックです。
+The core of the **c# extract from archive** operation is a short `using` block that opens the Lzip file and writes the decompressed data to a new file.
 
 ```csharp
 //ExStart: OpenLzipArchive
@@ -75,47 +77,47 @@ using (var archive = new LzipArchive(Path.Combine(dataDir, "archive.lz")))
 Console.WriteLine("Successfully Opened Lzip Archive");
 ```
 
-このスニペットは **extract lzip archive c#** パターンを示しています。
+このスニペットは **extract lzip archive c#** パターンを示しています：
 
-1. `LzipArchive` インスタンスを作成し、ソースファイルを指す。  
-2. 出力ファイル (`output.txt`) を作成。  
-3. `Extract` を呼び出して解凍バイトを書き込む。  
-4. `using` 文により、すべてのストリームが自動的にクローズされます。
+1. **Create** ソースファイルを指す `LzipArchive` インスタンスを作成します。  
+2. **Create** 目的ファイル（`output.txt`）を作成します。  
+3. **Call** `Extract` を呼び出して解凍されたバイトを書き込みます。  
+4. `using` ステートメントにより、すべてのストリームが自動的にクローズされます。
 
-## よくある問題と解決策
+## 一般的な問題と解決策
 
-| 症状 | 主な原因 | 対策 |
-|------|----------|------|
-| `FileNotFoundException` | `dataDir` パスが間違っている | フォルダー パスを確認し、`archive.lz` が存在することを確認してください。 |
-| `UnauthorizedAccessException` | 書き込み権限が不足している | 適切な権限でアプリを実行するか、書き込み可能なフォルダーを選択してください。 |
-| 出力ファイルが空 | アーカイブが破損している、または Lzip 形式でない | ソースファイルが有効な Lzip アーカイブか確認し、必要に応じて `LzipArchive.IsValid` を使用してください。 |
+| 症状 | 考えられる原因 | 対策 |
+|------|----------------|------|
+| `FileNotFoundException` | `dataDir` パスが間違っています | フォルダー パスを確認し、`archive.lz` が存在することを確認してください。 |
+| `UnauthorizedAccessException` | 書き込み権限が不足しています | 適切な権限でアプリを実行するか、書き込み可能なフォルダーを選択してください。 |
+| Output file is empty | アーカイブが破損しているか、Lzip ファイルではありません | ソースファイルが有効な Lzip アーカイブであることを確認してください。必要に応じて `LzipArchive.IsValid` を使用します。 |
 
 ## よくある質問
 
-**Q: Aspose.Zip はすべての .NET アプリケーションで使用できますか？**  
-A: はい、Aspose.Zip for .NET はデスクトップ、Web、クラウド、マイクロサービスプロジェクトすべてに統合可能です。
+**Q: Aspose.Zip はすべての .NET アプリケーションと互換性がありますか？**  
+A: はい、Aspose.Zip for .NET はデスクトップ、Web、クラウド、マイクロサービス プロジェクトと同様に統合できます。
 
-**Q: 個人・商用プロジェクトのどちらでも Aspose.Zip を使用できますか？**  
-A: もちろんです。評価版、個人利用、商用利用向けに柔軟なライセンス形態を提供しています。
+**Q: 個人プロジェクトと商用プロジェクトの両方で Aspose.Zip を使用できますか？**  
+A: もちろんです。ライブラリは評価、個人、商用利用向けに柔軟なライセンスを提供しています。
 
-**Q: Aspose.Zip for .NET のサポートはどこで受けられますか？**  
-A: [Aspose.Zip フォーラム](https://forum.aspose.com/c/zip/37) で質問や体験を共有できます。
+**Q: Aspose.Zip for .NET のサポートはどのように受けられますか？**  
+A: コミュニティで質問や体験を共有するには、[Aspose.Zip フォーラム](https://forum.aspose.com/c/zip/37)をご覧ください。
 
-**Q: 無料トライアルはありますか？**  
-A: はい、[こちら](https://releases.aspose.com/) から無料トライアルをダウンロードして機能をお試しいただけます。
+**Q: 無料トライアルは利用できますか？**  
+A: はい、無料トライアルをダウンロードして Aspose.Zip for .NET の機能を試すことができます。[here](https://releases.aspose.com/) から。
 
-**Q: Aspose.Zip for .NET の購入先は？**  
-A: ライセンス購入は[購入ページ](https://purchase.aspose.com/buy)から行えます。
+**Q: Aspose.Zip for .NET はどこで購入できますか？**  
+A: ライセンスを購入するには、[購入ページ](https://purchase.aspose.com/buy)へお進みください。
 
 ## 結論
 
-これで Aspose.Zip のシンプルな API を使って **decompress file .NET** をマスターしました。この手法により .NET アーカイブ抽出が簡素化され、ボイラープレートコードが削減され、大規模アプリケーションでもスケーラブルに動作します。パスワード保護アーカイブ、複数ファイルの抽出、カスタム圧縮レベルなど、より高度なシナリオについては、完全な[ドキュメント](https://reference.aspose.com/zip/net/)をご参照ください。
+これで、Aspose.Zip のシンプルな API を使用した **decompress zip file C#** の方法を習得しました。このアプローチは .NET アーカイブ抽出を簡素化し、定型コードを削減し、大規模アプリケーションにもスケールします。より高度なシナリオ（パスワード保護アーカイブ、複数ファイル抽出、カスタム圧縮レベルなど）については、完全な [documentation](https://reference.aspose.com/zip/net/) を参照してください。
 
 ---
 
-**最終更新日:** 2025-12-12  
-**テスト環境:** Aspose.Zip 24.11 for .NET  
-**作成者:** Aspose  
+**Last Updated:** 2026-02-17  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
