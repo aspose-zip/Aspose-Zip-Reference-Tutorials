@@ -80,28 +80,6 @@ Sıkıştırma tamamlandıktan sonra, bu satır kullanıcıya işlemin başarıl
 
 Tebrikler! Aspose.Zip for .NET kullanarak **LZMA nasıl sıkıştırılır** konusunu başarıyla öğrendiniz. Bu verimli sıkıştırma tekniği, depolama alanını azaltmanıza ve veri transferlerini hızlandırmanıza yardımcı olur, uygulamalarınızı daha duyarlı ve maliyet‑etkin hâle getirir.
 
-## SSS'ler
-
-### S1: Aspose.Zip diğer sıkıştırma algoritmalarıyla uyumlu mu?
-
-C1: Evet, Aspose.Zip for .NET Lzma, Deflate ve BZip2 dahil olmak üzere çeşitli sıkıştırma algoritmalarını destekler.
-
-### S2: Aspose.Zip for .NET dokümantasyonunu nerede bulabilirim?
-
-C2: Dokümantasyon [burada](https://reference.aspose.com/zip/net/) mevcuttur.
-
-### S3: Aspose.Zip için geçici bir lisans nasıl alabilirim?
-
-C3: Geçici bir lisansı [buradan](https://purchase.aspose.com/temporary-license/) alabilirsiniz.
-
-### S4: Farklı sıkıştırma algoritmaları için kod örnekleri mevcut mu?
-
-C4: Evet, farklı sıkıştırma algoritmaları için kod örneklerini dokümantasyonda bulabilirsiniz.
-
-### S5: Aspose.Zip for .NET hakkında destek nasıl alabilir veya soru sorabilirim?
-
-C5: Destek ve tartışmalar için [Aspose.Zip forumunu](https://forum.aspose.com/c/zip/37) ziyaret edin.
-
 ## Sıkça Sorulan Sorular
 
 **S: Tek bir LZMA arşivine birden fazla dosya sıkıştırabilir miyim?**  

@@ -82,28 +82,6 @@ Gratulujeme! Úspěšně jste se naučili **jak komprimovat LZMA** pomocí Aspos
 
 ## Často kladené otázky
 
-### Q1: Je Aspose.Zip kompatibilní s jinými kompresními algoritmy?
-
-A1: Ano, Aspose.Zip pro .NET podporuje různé kompresní algoritmy, včetně Lzma, Deflate a BZip2.
-
-### Q2: Kde mohu najít dokumentaci pro Aspose.Zip pro .NET?
-
-A2: Dokumentace je k dispozici [zde](https://reference.aspose.com/zip/net/).
-
-### Q3: Jak mohu získat dočasnou licenci pro Aspose.Zip?
-
-A3: Dočasnou licenci můžete získat [zde](https://purchase.aspose.com/temporary-license/).
-
-### Q4: Existují ukázky kódu pro různé kompresní algoritmy?
-
-A4: Ano, ukázky kódu najdete v dokumentaci pro různé kompresní algoritmy.
-
-### Q5: Kde mohu získat podporu nebo položit otázky ohledně Aspose.Zip pro .NET?
-
-A5: Navštivte [forum Aspose.Zip](https://forum.aspose.com/c/zip/37) pro podporu a diskuze.
-
-## Často kladené otázky
-
 **Q: Mohu komprimovat více souborů do jednoho LZMA archivu?**  
 A: Ano. Zavolejte `archive.AddFile()` pro každý soubor před voláním `archive.Save()`.
 

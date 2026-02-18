@@ -81,28 +81,6 @@ Console.WriteLine("Successfully Compressed a File");
 
 ## คำถามที่พบบ่อย
 
-### Q1: Aspose.Zip รองรับอัลกอริทึมการบีบอัดอื่น ๆ หรือไม่?
-
-A1: Yes, Aspose.Zip for .NET supports various compression algorithms, including Lzma, Deflate, and BZip2.
-
-### Q2: ฉันจะหาเอกสารของ Aspose.Zip สำหรับ .NET ได้ที่ไหน?
-
-A2: The documentation is available [here](https://reference.aspose.com/zip/net/).
-
-### Q3: ฉันจะขอรับไลเซนส์ชั่วคราวสำหรับ Aspose.Zip ได้อย่างไร?
-
-A3: You can get a temporary license [here](https://purchase.aspose.com/temporary-license/).
-
-### Q4: มีตัวอย่างโค้ดสำหรับอัลกอริทึมการบีบอัดต่าง ๆ ไหม?
-
-A4: Yes, you can find code samples in the documentation for different compression algorithms.
-
-### Q5: ฉันจะขอรับการสนับสนุนหรือถามคำถามเกี่ยวกับ Aspose.Zip สำหรับ .NET ได้ที่ไหน?
-
-A5: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for support and discussions.
-
-## คำถามที่พบบ่อย
-
 **ถาม: ฉันสามารถบีบอัดหลายไฟล์เป็นไฟล์ LZMA เดียวได้หรือไม่?**  
 **ตอบ:** Yes. Call `archive.AddFile()` for each file before invoking `archive.Save()`.
 

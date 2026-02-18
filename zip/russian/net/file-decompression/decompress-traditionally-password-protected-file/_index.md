@@ -18,7 +18,7 @@ weight: 15
 
 В мире разработки на .NET извлечение zip‑файла с паролем является распространённой задачей при работе с защищёнными архивами. Aspose.Zip для .NET делает эту задачу простой, позволяя вам **decompress password protected zip** файлы всего несколькими строками кода. В этом руководстве мы пройдём весь процесс — от создания архива, защищённого паролем, до извлечения его содержимого — чтобы вы могли уверенно **open password protected archive** файлы в ваших C# приложениях.
 
-## Quick Answers
+## Быстрые ответы
 - **Какой основной класс для работы с zip‑файлами?** `Archive` from the Aspose.Zip namespace.  
 - **Какой метод задаёт пароль?** Pass `DecryptionPassword` through `ArchiveLoadOptions`.  
 - **Можно ли распаковать zip‑файлы, защищённые паролем, в .NET Core?** Yes, Aspose.Zip supports .NET Framework, .NET Core, and .NET 5/6+.  

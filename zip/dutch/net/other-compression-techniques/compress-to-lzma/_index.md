@@ -82,23 +82,6 @@ Gefeliciteerd! Je hebt met succes **geleerd hoe je LZMA kunt comprimeren** met A
 
 ## Veelgestelde vragen
 
-### Q1: Is Aspose.Zip compatibel met andere compressie-algoritmen?
-A1: Ja, Aspose.Zip voor .NET ondersteunt verschillende compressie-algoritmen, waaronder Lzma, Deflate en BZip2.
-
-### Q2: Waar kan ik de documentatie voor Aspose.Zip voor .NET vinden?
-A2: De documentatie is beschikbaar [hier](https://reference.aspose.com/zip/net/).
-
-### Q3: Hoe kan ik een tijdelijke licentie voor Aspose.Zip verkrijgen?
-A3: Je kunt een tijdelijke licentie krijgen [hier](https://purchase.aspose.com/temporary-license/).
-
-### Q4: Zijn er codevoorbeelden beschikbaar voor verschillende compressie-algoritmen?
-A4: Ja, je kunt codevoorbeelden vinden in de documentatie voor verschillende compressie-algoritmen.
-
-### Q5: Waar kan ik ondersteuning zoeken of vragen stellen over Aspose.Zip voor .NET?
-A5: Bezoek het [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) voor ondersteuning en discussies.
-
-## Veelgestelde vragen
-
 **V: Kan ik meerdere bestanden comprimeren in één LZMA-archief?**  
 A: Ja. Roep `archive.AddFile()` aan voor elk bestand voordat je `archive.Save()` aanroept.
 

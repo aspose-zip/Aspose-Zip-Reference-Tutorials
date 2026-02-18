@@ -80,28 +80,6 @@ Setelah kompresi selesai, baris ini memberi tahu pengguna bahwa operasi berhasil
 
 Selamat! Anda telah berhasil mempelajari **cara mengompres LZMA** menggunakan Aspose.Zip untuk .NET. Teknik kompresi yang efisien ini membantu Anda mengurangi jejak penyimpanan dan mempercepat transfer data, membuat aplikasi Anda lebih responsif dan hemat biaya.
 
-## FAQ
-
-### Q1: Apakah Aspose.Zip kompatibel dengan algoritma kompresi lain?
-
-J1: Ya, Aspose.Zip untuk .NET mendukung berbagai algoritma kompresi, termasuk Lzma, Deflate, dan BZip2.
-
-### Q2: Di mana saya dapat menemukan dokumentasi untuk Aspose.Zip untuk .NET?
-
-J2: Dokumentasinya tersedia [di sini](https://reference.aspose.com/zip/net/).
-
-### Q3: Bagaimana saya dapat memperoleh lisensi sementara untuk Aspose.Zip?
-
-J3: Anda dapat memperoleh lisensi sementara [di sini](https://purchase.aspose.com/temporary-license/).
-
-### Q4: Apakah ada contoh kode yang tersedia untuk algoritma kompresi yang berbeda?
-
-J4: Ya, Anda dapat menemukan contoh kode dalam dokumentasi untuk berbagai algoritma kompresi.
-
-### Q5: Di mana saya dapat mencari dukungan atau mengajukan pertanyaan tentang Aspose.Zip untuk .NET?
-
-J5: Kunjungi [forum Aspose.Zip](https://forum.aspose.com/c/zip/37) untuk dukungan dan diskusi.
-
 ## Pertanyaan yang Sering Diajukan
 
 **Q: Bisakah saya mengompres beberapa file menjadi satu arsip LZMA?**  

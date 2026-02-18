@@ -79,28 +79,6 @@ Console.WriteLine("Successfully Compressed a File");
 
 おめでとうございます！Aspose.Zip for .NET を使用して**LZMA を圧縮する方法**を習得しました。この効率的な圧縮手法により、ストレージのフットプリントを削減し、データ転送を高速化でき、アプリケーションの応答性とコスト効果が向上します。
 
-## FAQ
-
-### Q1: Aspose.Zip は他の圧縮アルゴリズムと互換性がありますか？
-
-A1: はい、Aspose.Zip for .NET は Lzma、Deflate、BZip2 などさまざまな圧縮アルゴリズムをサポートしています。
-
-### Q2: Aspose.Zip for .NET のドキュメントはどこで見つけられますか？
-
-A2: ドキュメントは[こちら](https://reference.aspose.com/zip/net/)にあります。
-
-### Q3: Aspose.Zip の一時ライセンスはどこで取得できますか？
-
-A3: 一時ライセンスは[こちら](https://purchase.aspose.com/temporary-license/)から取得できます。
-
-### Q4: 異なる圧縮アルゴリズム用のコードサンプルはありますか？
-
-A4: はい、ドキュメント内にさまざまな圧縮アルゴリズム用のコードサンプルが掲載されています。
-
-### Q5: Aspose.Zip for .NET に関するサポートや質問はどこで受けられますか？
-
-A5: サポートやディスカッションは[Aspose.Zip フォーラム](https://forum.aspose.com/c/zip/37)をご利用ください。
-
 ## よくある質問
 
 **Q: 複数のファイルを単一の LZMA アーカイブに圧縮できますか？**  

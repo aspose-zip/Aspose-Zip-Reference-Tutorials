@@ -82,23 +82,6 @@ Gratulálunk! Sikeresen megtanulta, **hogyan tömörítsen LZMA-t** az Aspose.Zi
 
 ## Gyakran Ismételt Kérdések
 
-### Q1: Az Aspose.Zip kompatibilis más tömörítési algoritmusokkal?
-A1: Igen, az Aspose.Zip for .NET különböző tömörítési algoritmusokat támogat, többek között Lzma, Deflate és BZip2.
-
-### Q2: Hol találom az Aspose.Zip for .NET dokumentációját?
-A2: A dokumentáció [itt](https://reference.aspose.com/zip/net/) érhető el.
-
-### Q3: Hogyan szerezhetek ideiglenes licencet az Aspose.Zip-hez?
-A3: Ideiglenes licencet [itt](https://purchase.aspose.com/temporary-license/) kaphat.
-
-### Q4: Van elérhető kódminta különböző tömörítési algoritmusokhoz?
-A4: Igen, a dokumentációban talál kódmintákat a különböző tömörítési algoritmusokhoz.
-
-### Q5: Hol kérhetek támogatást vagy tehetek fel kérdéseket az Aspose.Zip for .NET-ről?
-A5: Látogassa meg az [Aspose.Zip fórumot](https://forum.aspose.com/c/zip/37) támogatás és megbeszélések céljából.
-
-## Gyakran Ismételt Kérdések
-
 **K: Több fájlt tudok egyetlen LZMA archívumba tömöríteni?**  
 V: Igen. Hívja meg a `archive.AddFile()`-t minden fájlra, mielőtt meghívná a `archive.Save()`-t.
 

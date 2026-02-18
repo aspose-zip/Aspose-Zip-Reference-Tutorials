@@ -80,28 +80,6 @@ Sau khi quá trình nén hoàn tất, dòng này sẽ thông báo cho người d
 
 Chúc mừng! Bạn đã học thành công **cách nén LZMA** bằng Aspose.Zip cho .NET. Kỹ thuật nén hiệu quả này giúp bạn giảm footprint lưu trữ và tăng tốc độ truyền dữ liệu, làm cho ứng dụng của bạn trở nên phản hồi nhanh hơn và tiết kiệm chi phí.
 
-## Câu hỏi thường gặp
-
-### Câu hỏi 1: Aspose.Zip có tương thích với các thuật toán nén khác không?
-
-A1: Có, Aspose.Zip cho .NET hỗ trợ nhiều thuật toán nén, bao gồm Lzma, Deflate và BZip2.
-
-### Câu hỏi 2: Tôi có thể tìm tài liệu cho Aspose.Zip cho .NET ở đâu?
-
-A2: Tài liệu có sẵn [tại đây](https://reference.aspose.com/zip/net/).
-
-### Câu hỏi 3: Làm sao tôi có thể nhận giấy phép tạm thời cho Aspose.Zip?
-
-A3: Bạn có thể nhận giấy phép tạm thời [tại đây](https://purchase.aspose.com/temporary-license/).
-
-### Câu hỏi 4: Có mẫu mã nào cho các thuật toán nén khác không?
-
-A4: Có, bạn có thể tìm các mẫu mã trong tài liệu cho các thuật toán nén khác nhau.
-
-### Câu hỏi 5: Tôi có thể tìm hỗ trợ hoặc đặt câu hỏi về Aspose.Zip cho .NET ở đâu?
-
-A5: Truy cập [diễn đàn Aspose.Zip](https://forum.aspose.com/c/zip/37) để được hỗ trợ và thảo luận.
-
 ## Các Câu Hỏi Thường Gặp
 
 **Q: Tôi có thể nén nhiều tập tin vào một archive LZMA duy nhất không?**  

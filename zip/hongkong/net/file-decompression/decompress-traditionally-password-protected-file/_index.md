@@ -16,21 +16,24 @@ weight: 15
 
 在 .NET 開發的世界裡，解壓受密碼保護的 zip 是處理安全壓縮檔時的常見需求。Aspose.Zip for .NET 讓這項工作變得簡單，只需幾行程式碼即可 **decompress password protected zip** 檔案。在本教學中，我們將完整示範從建立受密碼保護的壓縮檔到解壓其內容的每個步驟，讓您能在 C# 應用程式中自信地 **open password protected archive** 檔案。
 
-## Quick Answers
-- **What is the primary class for handling zip files?** `Archive` from the Aspose.Zip namespace.  
-- **Which method supplies the password?** Pass `DecryptionPassword` through `ArchiveLoadOptions`.  
-- **Can I unzip password protected files in .NET Core?** Yes, Aspose.Zip supports .NET Framework, .NET Core, and .NET 5/6+.  
-- **Do I need a license for development?** A temporary license is sufficient for testing; a full license is required for production.  
-- **How many lines of code are needed?** Less than 20 lines (excluding using statements).
+## 快速解答
 
-## 什麼是「extract zip with password」？
-Extracting a zip with password means reading an encrypted ZIP archive and providing the correct password so the library can decrypt and unpack the contained files. This is often referred to as **how to unzip encrypted** archives.
+- **處理 ZIP 檔案的主要類別是什麼？ ** Aspose.Zip 命名空間中的 `Archive` 類別。
+- **哪個方法提供密碼？ ** 透過 `ArchiveLoadOptions` 傳遞 `DecryptionPassword` 方法。
+- **我可以在 .NET Core 中解壓縮受密碼保護的檔案嗎？ ** 可以，Aspose.Zip 支援 .NET Framework、.NET Core 和 .NET 5/6+。
+- **我需要開發授權嗎？ ** 臨時許可證足以用於測試；生產環境需要完整許可證。
+- **需要多少行程式碼？ ** 少於 20 行（不包括 using 語句）。
 
-## 為什麼要使用 Aspose.Zip 來完成此任務？
-- **Full .NET support** – works with .NET Framework, .NET Core, and newer .NET versions.  
-- **Traditional encryption handling** – supports the legacy ZipCrypto method used by many older tools.  
-- **Simple API** – only a few calls are required to supply the password and read entries.  
-- **Performance‑optimized** – streams are processed efficiently, making it suitable for large archives.
+## 什麼是「使用密碼提取 ZIP 檔案」？
+
+使用密碼提取 ZIP 檔案是指讀取加密的 ZIP 檔案並提供正確的密碼，以便程式庫可以解密並解壓縮其中包含的檔案。這通常被稱為**如何解壓縮加密的檔案**。
+
+## 為什麼要使用 Aspose.Zip 來完成這項任務？
+
+- **完全支援 .NET** – 相容於 .NET Framework、.NET Core 及更新的 .NET 版本。
+- **傳統加密處理** – 支援許多舊工具使用的 ZipCrypto 方法。
+- **簡潔的 API** – 只需幾次呼叫即可提供密碼並讀取條目。
+- **效能最佳化** – 串流處理效率高，非常適合處理大型壓縮檔。
 
 ## 前置條件
 - .NET 開發環境（Visual Studio 2022 或更新版本）。  
