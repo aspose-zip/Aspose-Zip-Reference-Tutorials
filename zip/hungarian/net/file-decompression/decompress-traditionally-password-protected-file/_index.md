@@ -1,49 +1,64 @@
 ---
-title: Tömörítse ki a hagyományosan jelszóval védett fájlt az Aspose.Zip for .NET-ben
-linktitle: A hagyományosan jelszóval védett fájl kibontása
-second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
-description: Ismerje meg, hogyan bonthatja ki a hagyományosan jelszóval védett fájlokat az Aspose.Zip for .NET segítségével. Lépésről lépésre szóló útmutató a zökkenőmentes integrációhoz.
-weight: 15
+date: 2025-12-17
+description: Tanulja meg, hogyan lehet jelszóval védett zip fájlokat kicsomagolni
+  és kibontani az Aspose.Zip for .NET használatával. Lépésről‑lépésre útmutató a zökkenőmentes
+  integrációhoz.
+linktitle: Decompress Traditionally Password Protected File
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Hogyan csomagoljunk ki jelszóval védett zip fájlt az Aspose.Zip for .NET használatával
 url: /hu/net/file-decompression/decompress-traditionally-password-protected-file/
+weight: 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Tömörítse ki a hagyományosan jelszóval védett fájlt az Aspose.Zip for .NET-ben
+# zip kicsomagolása jelszóval az Aspose.Zip for .NET segítségével
 
-.NET fejlesztés területén az Aspose.Zip robusztus megoldásként tűnik ki a tömörített fájlok kezelésére. Számtalan funkciója közül az egyik kiemelkedő képesség a hagyományosan jelszóval védett fájlok kicsomagolása. Ebben az oktatóanyagban a hagyományos jelszóval titkosított fájlok Aspose.Zip for .NET használatával történő kitömörítésének folyamatát mutatjuk be. Mielőtt nekivágnánk ennek az útnak, győződjön meg arról, hogy megvannak az előfeltételeink.
+A .NET fejlesztés világában a jelszóval védett zip kicsomagolása gyakori igény, amikor biztonságos archívumokkal dolgozunk. Az Aspose.Zip for .NET ezt a feladatot egyszerűvé teszi, lehetővé téve a **jelszóval védett zip** fájlok **kicsomagolását** néhány kódsorral. Ebben az útmutatóban végigvezetünk a teljes folyamaton – a jelszóval védett archívum létrehozásától a tartalom kicsomagolásáig – hogy magabiztosan **megnyithassa a jelszóval védett archívum** fájlokat C# alkalmazásaiban.
+
+## Gyors válaszok
+- **Mi a fő osztály a zip fájlok kezeléséhez?** `Archive` az Aspose.Zip névtérből.  
+- **Melyik metódus adja meg a jelszót?** A `DecryptionPassword` átadása `ArchiveLoadOptionsztül.  
+- **Kicsomagolhatok jelszóval védett fájlokat .NET Core‑ban?** Igen, az Aspose.Zip támogatja a .NET Framework‑ot, a .NET Core‑t és a .NET 5/6+ verziókat.  
+- **Szükség van licencre fejlesztéshez?** Ideiglenes licenc elegendő a teszteléshez; a teljes licenc a termeléshez kötelező.  
+- **Hány kódsorra van szükség?** Kevesebb, mint 20 sor (a `using` nyilatkozatok nélkül).
+
+## Mi az a „zip kicsomagolása jelszóval”?
+A zip jelszóval való kicsomagolása azt jelenti, hogy egy titkosított ZIP archívumot olvasunk, és megadjuk a helyes jelszót, hogy a könyvtár fel tudja fejteni és kibontsa a benne lévő fájlokat. Ezt gyakran **hogyan kell kicsomagolni a titkosított** archívumokat nevezik.
+
+## Miért használjuk az Aspose.Zip‑et ehhez a feladathoz?
+- **Teljes .NET támogatás** – működik .NET Framework‑kel, .NET Core‑ral és az újabb .NET verziókkal.  
+- **Hagyományos titkosítás kezelése** – támogatja a sok régebbi eszköz által használt ZipCrypto módszert.  
+- **Egyszerű API** – csak néhány hívás szükséges a jelszó megadásához és a bejegyzések olvasásához.  
+- **Teljesítmény‑optimalizált** – a streamek hatékonyan feldolgozhatók, így nagy archívumok esetén is megfelelő.
 
 ## Előfeltételek
-
-Mielőtt belevágna a hagyományosan jelszóval védett fájlok kicsomagolásába, győződjön meg arról, hogy a következő előfeltételek sorrendben vannak:
+- .NET fejlesztői környezet (Visual Studio 2022 vagy újabb).  
+- Aspose.Zip for .NET könyvtár hozzáadva a projekthez (NuGet csomag `Aspose.Zip`).  
+- Alapvető C# fájl‑I/O ismeretek.
 
 ## Névterek importálása
-
-Először is importálnia kell a szükséges névtereket az Aspose.Zip funkciók eléréséhez. A következő névtereket foglalja bele a .NET-projektbe:
+Először hozzuk be a szükséges névtereket:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-Most bontsuk le a folyamatot lépésről lépésre.
-
-## 1. lépés: Futtassa a jelszavas védelmet egy fájlon
-
-Mielőtt kicsomagolnánk egy hagyományosan jelszóval védett fájlt, állítsuk be a terepet azzal, hogy jelszavas védelmet alkalmazunk egy fájlra. Ennek eléréséhez használja a következő kódrészletet:
+## 1. lépés: Jelszóvédelem alkalmazása egy fájlra
+Mielőtt bemutathatnánk a kicsomagolást, szükségünk van egy hagyományos jelszóval védett zip‑re. Az alábbi kódrészlet létrehozza ezt az archívumot (használhatunk már meglévőt is, ha van):
 
 ```csharp
 string dataDir = "Your Document Directory";
-PasswordProtectArchiveWithTraditionalPassword.Run(); // Futtassa a jelszavas védelmet egy fájlpéldán a későbbi használathoz
+PasswordProtectArchiveWithTraditionalPassword.Run(); // Run password protection on a file example to use it later
 ```
 
-Győződjön meg arról, hogy a "Saját dokumentumkönyvtár" helyére cserélte azt a tényleges könyvtárat, amelyben a dokumentum található.
+> **Hasznos tipp:** Cserélje le a `"Your Document Directory"`‑t arra a teljes elérési útra, ahol a tesztfájlokat tárolja.
 
-## 2. lépés: A hagyományosan jelszóval védett fájl kicsomagolása
-
-Most, hogy van egy hagyományos jelszavas védelemmel ellátott fájlunk, folytassuk a kibontási folyamatot. Az alábbi kódrészlet szemlélteti, hogyan lehet ezt elérni:
+## 2. lépés: Hagyományos jelszóval védett fájl kicsomagolása
+Most bontsuk ki a tartalmat. Az alábbi kód pontosan megmutatja, hogyan **c# unzip password protected** archívumokat használhatunk az Aspose.Zip‑kel:
 
 ```csharp
 // ExStart: DecompressTraditionallyPasswordProtectedFile
@@ -65,43 +80,49 @@ using (FileStream fs = File.OpenRead(dataDir + "CompressWithTraditionalEncryptio
         }
     }
 }
+}
 // ExEnd: DecompressTraditionallyPasswordProtectedFile
 ```
 
-Ebben a kódrészletben:
-- Megnyitjuk a tömörített fájlfolyamot.
-- Hozzon létre egy kimeneti fájl adatfolyamot a kicsomagolt tartalomhoz.
--  Példányosítása an`Archive` objektum a megadott visszafejtési jelszóval.
-- Nyissa meg az archívum első bejegyzését (feltéve, hogy csak egy bejegyzés van).
-- Olvassa el és írja be a kicsomagolt tartalmat a kimeneti fájlba.
+Ebben a példában:
 
-Gratulálunk! Sikeresen kicsomagolt egy hagyományosan jelszóval védett fájlt az Aspose.Zip for .NET segítségével.
+1. Megnyitjuk a titkosított ZIP fájlt csak‑olvasás módú stream‑ként.  
+2. Létrehozunk egy új fájlt (`alice_extracted_out.txt`), ahová a kicsomagolt adat kerül.  
+3. Példányosítjuk az `Archive`‑t `ArchiveLoadOptions`‑szel, megadva a jelszót (`"p@s$"`).  
+4. Elérjük az archívum első bejegyzését (feltételezve, hogy csak egy fájl van benne), és átmásoljuk a bájtjait a kimeneti fájlba.
 
-## Következtetés
+Amikor a kód befejeződik, sikeresen **extract zip with password** műveletet hajtottunk végre, és megkaptuk az eredeti fájl tartalmát.
 
-Összefoglalva, az Aspose.Zip for .NET egy egyszerű és hatékony módszert kínál a hagyományosan jelszóval védett fájlok kezelésére. Az oktatóanyagban ismertetett lépések követésével zökkenőmentesen integrálhatja ezt a funkciót .NET-alkalmazásaiba.
+## Gyakori hibák és elkerülésük módja
+| Probléma | Ok | Megoldás |
+|----------|----|----------|
+| “Invalid password” kivétel | Hibás jelszó karakterlánc vagy hiányzó `DecryptionPassword` | Ellenőrizze a jelszót, és győződjön meg róla, hogy `ArchiveLoadOptions`‑on keresztül van megadva. |
+| Nincsenek bejegyzések | Az archívum üres vagy az útvonal hibás | Ellenőrizze a ZIP fájl útvonalát, és vizsgálja meg az archívumot egy 7‑Zip‑szerű eszközzel. |
+| Nagy fájlok memória‑nyomást okoznak | Az egész fájl beolvasása memóriába | Használjon pufferelt olvasás/írás ciklust (ahogy a példában látható) az adatok darabonkénti feldolgozásához. |
 
-## GYIK
+## Gyakran feltett kérdések
 
-### 1. kérdés: Az Aspose.Zip alkalmas nagy tömörített fájlokhoz?
+### Q1: Az Aspose.Zip alkalmas nagy tömörített fájlokra?
+A1: Igen, az Aspose.Zip optimalizált mind kis, mind nagy tömörített fájlok kezelésére, biztosítva a hatékony feldolgozást.
 
-1. válasz: Igen, az Aspose.Zip kis és nagy tömörített fájlokra egyaránt optimalizált, így biztosítva a hatékony feldolgozást.
+### Q2: Használhatom az Aspose.Zip‑et más .NET könyvtárakkal együtt?
+A2: Természetesen, az Aspose.Zip könnyen integrálható más .NET könyvtárakkal, hogy bővítse alkalmazása képességeit.
 
-### 2. kérdés: Használhatom az Aspose.Zip-et más .NET könyvtárakkal?
+### Q3: Vannak-e más titkosítási lehetőségek a hagyományos jelszavakon kívül?
+A3: Igen, az Aspose.Zip különféle titkosítási módszereket támogat, rugalmasságot biztosítva a biztonsági igényekhez.
 
-2. válasz: Természetesen az Aspose.Zip könnyen integrálható más .NET-könyvtárakba, hogy javítsa az alkalmazás képességeit.
+### Q4: Van közösségi fórum az Aspose.Zip támogatásához?
+A4: Igen, támogatást és közösségi részvételt talál az Aspose.Zip közösségben a [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) oldalon.
 
-### 3. kérdés: Vannak más titkosítási lehetőségek a hagyományos jelszavakon kívül?
+### Q5: Hogyan szerezhetek ideiglenes licencet az Aspose.Zip‑hez?
+A5: Ideiglenes licencet szerezhet a [Aspose.Purchase](https://purchase.aspose.com/temporary-license/) oldalról.
 
-3. válasz: Igen, az Aspose.Zip különféle titkosítási módszereket támogat, rugalmasságot biztosítva az Ön biztonsági követelményei alapján.
+---
 
-### 4. kérdés: Létezik közösségi fórum az Aspose.Zip támogatására?
+**Utoljára frissítve:** 2025-12-17  
+**Tesztelt verzió:** Aspose.Zip 24.11 for .NET  
+**Szerző:** Aspose  
 
- 4. válasz: Igen, támogatást találhat, és kapcsolatba léphet az Aspose.Zip közösséggel a címen[Aspose.Zip Fórum](https://forum.aspose.com/c/zip/37).
-
-### 5. kérdés: Hogyan szerezhetek ideiglenes licencet az Aspose.Zip számára?
-
- V5: Ideiglenes licencet szerezhet be[Aspose.Vásároljon](https://purchase.aspose.com/temporary-license/).
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

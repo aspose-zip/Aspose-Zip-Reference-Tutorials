@@ -1,51 +1,60 @@
 ---
-title: บีบอัดเป็น Lzma ใน Aspose.Zip สำหรับ .NET
-linktitle: บีบอัดเป็น Lzma
-second_title: Aspose.Zip .NET API สำหรับการบีบอัดไฟล์และการเก็บถาวร
-description: เรียนรู้วิธีบีบอัดไฟล์โดยใช้ Aspose.Zip สำหรับ .NET พร้อมด้วยอัลกอริทึม Lzma อันทรงพลัง เพิ่มประสิทธิภาพการจัดเก็บข้อมูลและเพิ่มประสิทธิภาพการถ่ายโอนข้อมูลได้อย่างง่ายดาย
-weight: 14
+date: 2025-12-17
+description: เรียนรู้วิธีบีบอัด LZMA ใน Aspose.Zip สำหรับ .NET เพื่อเพิ่มประสิทธิภาพการจัดเก็บและการถ่ายโอนข้อมูล
+linktitle: Compress to Lzma
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: วิธีบีบอัด LZMA ใน Aspose.Zip สำหรับ .NET
 url: /th/net/other-compression-techniques/compress-to-lzma/
+weight: 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# บีบอัดเป็น Lzma ใน Aspose.Zip สำหรับ .NET
+# วิธีบีบอัด LZMA ด้วย Aspose.Zip สำหรับ .NET
 
-## การแนะนำ
+## บทนำ
 
-ในโลกของการพัฒนา .NET การบีบอัดไฟล์ที่มีประสิทธิภาพถือเป็นสิ่งสำคัญในการเพิ่มประสิทธิภาพพื้นที่จัดเก็บข้อมูลและเพิ่มประสิทธิภาพการถ่ายโอนข้อมูล Aspose.Zip สำหรับ .NET มอบโซลูชันอันทรงพลังสำหรับการบีบอัดไฟล์ โดยมีอัลกอริธึมการบีบอัดที่หลากหลาย รวมถึง Lzma ในบทช่วยสอนนี้ เราจะแนะนำคุณตลอดขั้นตอนการบีบอัดไฟล์โดยใช้ Aspose.Zip สำหรับ .NET โดยเน้นที่อัลกอริธึมการบีบอัด Lzma
+ในบทแนะนำนี้ คุณจะได้เรียนรู้ **วิธีบีบอัด LZMA** ด้วย Aspose.Zip สำหรับ .NET ซึ่งเป็นทักษะสำคัญสำหรับการเพิ่มประสิทธิภาพการใช้พื้นที่จัดเก็บและเพิ่มประสิทธิภาพการถ่ายโอนข้อมูล Aspose.Zip สำหรับ .NET ให้โซลูชันที่ทรงพลังสำหรับการบีบอัดไฟล์ โดยมีอัลกอริทึมหลายแบบรวมถึง LZMA เพื่อให้คุณเลือกใช้ตามความต้องการของคุณ
+
+## คำตอบอย่างรวดเร็ว
+- **ต้องการไลบรารีอะไร?** Aspose.Zip for .NET  
+- **อัลกอริทึมใดที่คู่มือนี้ครอบคลุม?** LZMA compression  
+- **ฉันต้องการไลเซนส์หรือไม่?** A temporary license is sufficient for testing; a full license is required for production.  
+- **เวอร์ชัน .NET ที่รองรับคืออะไร?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
+- **การดำเนินการใช้เวลานานเท่าไหร่?** Typically under 10 minutes for a basic file.
+
+## วิธีบีบอัด LZMA
 
 ## ข้อกำหนดเบื้องต้น
 
-ก่อนที่จะเข้าสู่บทช่วยสอน ตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นต่อไปนี้:
+ก่อนเริ่มทำงาน โปรดตรวจสอบว่าคุณมีสิ่งต่อไปนี้:
 
--  Aspose.Zip สำหรับ .NET: ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้งไลบรารี Aspose.Zip แล้ว คุณสามารถค้นหาเอกสาร[ที่นี่](https://reference.aspose.com/zip/net/).
+- Aspose.Zip for .NET: ตรวจสอบให้แน่ใจว่าได้ติดตั้งไลบรารี Aspose.Zip แล้ว คุณสามารถค้นหาเอกสารได้ [ที่นี่](https://reference.aspose.com/zip/net/).
+- Document Directory: เลือกหรือสร้างโฟลเดอร์ที่มีไฟล์ที่คุณต้องการบีบอัด
 
-- ไดเร็กทอรีเอกสาร: เลือกหรือสร้างไดเร็กทอรีที่เก็บเอกสารสำหรับการบีบอัดของคุณ
+## นำเข้า Namespaces
 
-## นำเข้าเนมสเปซ
-
-ในโปรเจ็กต์ .NET ของคุณ ให้เริ่มต้นด้วยการนำเข้าเนมสเปซที่จำเป็นเพื่อเข้าถึงฟังก์ชันการทำงานที่ Aspose.Zip มอบให้ เพิ่มเนมสเปซต่อไปนี้ที่ด้านบนของไฟล์โค้ดของคุณ:
+เพิ่ม Namespaces ที่จำเป็นที่ส่วนหัวของไฟล์ C# ของคุณ เพื่อให้สามารถเข้าถึงฟังก์ชัน LZMA ของ Aspose.Zip ได้:
 
 ```csharp
 using System;
 using Aspose.Zip.LZMA;
 ```
 
-## ขั้นตอนที่ 1: ตั้งค่าไดเรกทอรีเอกสาร
+## ขั้นตอนที่ 1: ตั้งค่า Document Directory
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
- แทนที่`"Your Document Directory"` ด้วยเส้นทางจริงไปยังไดเร็กทอรีที่มีไฟล์ที่คุณต้องการบีบอัด
+แทนที่ `"Your Document Directory"` ด้วยเส้นทางจริงของโฟลเดอร์ที่เก็บไฟล์ที่คุณต้องการบีบอัด
 
-## ขั้นตอนที่ 2: บีบอัดไฟล์โดยใช้ Lzma
+## ขั้นตอนที่ 2: บีบอัดไฟล์ด้วย LZMA
 
 ```csharp
-//ExStart: บีบอัดไฟล์
+//ExStart: CompressFile
 
 using (LzmaArchive archive = new LzmaArchive())
 {
@@ -53,44 +62,46 @@ using (LzmaArchive archive = new LzmaArchive())
     archive.Save(dataDir + "archive.lzma");
 }
 
-//ExEnd: บีบอัดไฟล์
+//ExEnd: CompressFile
 ```
 
- ในขั้นตอนนี้ เราจะสร้างอินสแตนซ์ของ`LzmaArchive` ตั้งค่าไฟล์ต้นฉบับ (ในกรณีนี้คือ "alice29.txt") และบันทึกไฟล์บีบอัดเป็น "archive.lzma"
+ที่นี่เราจะสร้างอินสแตนซ์ของ `LzmaArchive` ชี้ไปที่ไฟล์ต้นทาง (`alice29.txt`) แล้วบันทึกผลลัพธ์ที่บีบอัดเป็น `archive.lzma`
 
-## ขั้นตอนที่ 3: แสดงข้อความแสดงความสำเร็จ
+## ขั้นตอนที่ 3: แสดงข้อความสำเร็จ
 
 ```csharp
 Console.WriteLine("Successfully Compressed a File");
 ```
 
-หลังจากบีบอัดไฟล์แล้ว ให้แจ้งให้ผู้ใช้ทราบเกี่ยวกับการดำเนินการบีบอัดที่สำเร็จ
+หลังจากการบีบอัดเสร็จสิ้น บรรทัดนี้จะแจ้งให้ผู้ใช้ทราบว่าการดำเนินการสำเร็จ
 
-## บทสรุป
+## สรุป
 
-ยินดีด้วย! คุณได้บีบอัดไฟล์โดยใช้ Aspose.Zip สำหรับ .NET ด้วยอัลกอริทึม Lzma สำเร็จแล้ว เทคนิคการบีบอัดที่มีประสิทธิภาพนี้ช่วยให้มั่นใจได้ถึงการใช้พื้นที่จัดเก็บข้อมูลอย่างเหมาะสมและการถ่ายโอนข้อมูลที่รวดเร็วยิ่งขึ้น
+ขอแสดงความยินดี! คุณได้เรียนรู้ **วิธีบีบอัด LZMA** ด้วย Aspose.Zip สำหรับ .NET อย่างสำเร็จ เทคนิคการบีบอัดที่มีประสิทธิภาพนี้ช่วยลดพื้นที่จัดเก็บและเร่งความเร็วการถ่ายโอนข้อมูล ทำให้แอปพลิเคชันของคุณตอบสนองได้ดีขึ้นและคุ้มค่ามากยิ่งขึ้น
 
 ## คำถามที่พบบ่อย
 
-### คำถามที่ 1: Aspose.Zip เข้ากันได้กับอัลกอริธึมการบีบอัดอื่นๆ หรือไม่
+**ถาม: ฉันสามารถบีบอัดหลายไฟล์เป็นไฟล์ LZMA เดียวได้หรือไม่?**  
+**ตอบ:** Yes. Call `archive.AddFile()` for each file before invoking `archive.Save()`.
 
-A1: ใช่ Aspose.Zip สำหรับ .NET รองรับอัลกอริธึมการบีบอัดที่หลากหลาย รวมถึง Lzma, Deflate และ BZip2
+**ถาม: มีวิธีตั้งค่าระดับการบีบอัดสำหรับ LZMA หรือไม่?**  
+**ตอบ:** The `LzmaArchive` class uses the default compression level, which provides a good balance between speed and size. Advanced settings are available through the `LzmaEncoder` if you need fine‑tuned control.
 
-### คำถามที่ 2: ฉันจะหาเอกสารสำหรับ Aspose.Zip สำหรับ .NET ได้ที่ไหน
+**ถาม: ไฟล์ .lzma ที่ได้จะทำงานบนแพลตฟอร์มที่ไม่ใช่ Windows หรือไม่?**  
+**ตอบ:** Absolutely. The LZMA format is platform‑agnostic, so the archive can be decompressed on any OS with an LZMA‑compatible tool.
 
- A2: มีเอกสารประกอบให้[ที่นี่](https://reference.aspose.com/zip/net/).
+**ถาม: ฉันจะทำการแตกไฟล์ LZMA ด้วย Aspose.Zip อย่างไร?**  
+**ตอบ:** Use the `LzmaArchive` constructor with the archive path, then call `ExtractToDirectory()` to extract its contents.
 
-### คำถามที่ 3: ฉันจะขอรับใบอนุญาตชั่วคราวสำหรับ Aspose.Zip ได้อย่างไร
+**ถาม: Aspose.Zip รองรับการบีบอัดแบบสตรีมเพื่อหลีกเลี่ยงการโหลดไฟล์ทั้งหมดเข้าสู่หน่วยความจำหรือไม่?**  
+**ตอบ:** Yes. You can work with streams by passing `Stream` objects to `SetSource()` and `Save()` methods.
 
- A3: คุณสามารถรับใบอนุญาตชั่วคราวได้[ที่นี่](https://purchase.aspose.com/temporary-license/).
+---
 
-### คำถามที่ 4: มีตัวอย่างโค้ดสำหรับอัลกอริธึมการบีบอัดที่แตกต่างกันหรือไม่
+**อัปเดตล่าสุด:** 2025-12-17  
+**ทดสอบกับ:** Aspose.Zip for .NET (รุ่นล่าสุด ณ เวลาที่เขียน)  
+**ผู้เขียน:** Aspose  
 
-A4: ใช่ คุณสามารถค้นหาตัวอย่างโค้ดในเอกสารประกอบสำหรับอัลกอริธึมการบีบอัดต่างๆ
-
-### คำถามที่ 5: ฉันจะขอรับการสนับสนุนหรือถามคำถามเกี่ยวกับ Aspose.Zip สำหรับ .NET ได้ที่ไหน
-
- A5: เยี่ยมชม[ฟอรั่ม Aspose.Zip](https://forum.aspose.com/c/zip/37) สำหรับการสนับสนุนและการอภิปราย
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

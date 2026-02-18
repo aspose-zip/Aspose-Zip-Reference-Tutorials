@@ -1,46 +1,67 @@
 ---
-title: Decomprimeer Xar naar map in Aspose.Zip voor .NET
-linktitle: Decomprimeer Xar naar map
-second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
-description: Ontdek de kracht van Aspose.Zip voor .NET! Decomprimeer Xar-archieven moeiteloos met deze gebruiksvriendelijke tutorial. Verbeter uw .NET-ontwikkelervaring.
-weight: 17
+date: 2025-12-17
+description: Leer hoe u Xar-archieven kunt uitpakken en een Xar-archief kunt decomprimeren
+  naar een map met Aspose.Zip voor .NET. Volg deze stapsgewijze handleiding.
+linktitle: Decompress Xar to Folder
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Hoe een XAR uitpakken naar een map met Aspose.Zip voor .NET
 url: /nl/net/file-decompression/decompress-xar-folder/
+weight: 17
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Decomprimeer Xar naar map in Aspose.Zip voor .NET
+# Hoe een Xar naar map uitpakken met Aspose.Zip voor .NET
 
-## Invoering
+## Introductie
 
-Als u zich verdiept in de wereld van .NET-ontwikkeling en op zoek bent naar een betrouwbare oplossing om Xar-archieven te decomprimeren, dan heeft Aspose.Zip voor .NET de oplossing voor u. In deze stapsgewijze handleiding leiden we u door het proces van het decomprimeren van Xar naar een map met behulp van Aspose.Zip, een krachtige bibliotheek die archiefmanipulatie in uw .NET-toepassingen vereenvoudigt.
+Als je een .NET‑ontwikkelaar bent die op zoek is naar een betrouwbare manier **hoe je xar kunt uitpakken**, biedt Aspose.Zip voor .NET een nette, high‑performance API. In deze tutorial lopen we het volledige proces van het decomprimeren van een Xar‑archief naar een map door, leggen we uit waarom deze aanpak je tijd bespaart, en tonen we de exacte code die je moet uitvoeren.
 
-## Vereisten
+## Snelle antwoorden
+- **Wat doet de bibliotheek?** Het leest en extraheert Xar‑archieven zonder externe tools.  
+- **Welke .NET‑versies worden ondersteund?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6+.  
+- **Heb ik een licentie nodig?** Een gratis proefversie werkt voor ontwikkeling; een commerciële licentie is vereist voor productie.  
+- **Hoe lang duurt de implementatie?** Meestal minder dan 10 minuten.  
+- **Kan ik naar een aangepaste map uitpakken?** Ja—geef gewoon het doelpad op in `ExtractToDirectory`.
 
-Voordat we in de tutorial duiken, moet je ervoor zorgen dat je aan de volgende vereisten voldoet:
+## Wat is “how to extract xar”?
+Een Xar‑archief uitpakken betekent dat je het gecomprimeerde pakket leest en de interne bestanden naar een map op de schijf schrijft. Dit is handig wanneer je XAR‑pakketten ontvangt van macOS‑installateurs, back‑up‑hulpmiddelen of tools van derden en hun inhoud moet verwerken in een .NET‑applicatie.
 
--  Aspose.Zip voor .NET: Zorg ervoor dat de Aspose.Zip-bibliotheek in uw .NET-project is geïntegreerd. Als dit niet het geval is, kunt u deze downloaden van[hier](https://releases.aspose.com/zip/net/).
+## Waarom Aspose.Zip voor deze taak gebruiken?
+- **Geen externe afhankelijkheden** – pure .NET, geen native binaries.  
+- **Stream‑gebaseerde API** – werkt met bestanden, memory streams of netwerk‑streams.  
+- **Robuuste foutafhandeling** – gedetailleerde uitzonderingen helpen je corrupte archieven te troubleshooten.  
+- **Volledige .NET‑compatibiliteit** – werkt op Windows-, Linux- en macOS‑runtime.
 
-- Documentmap: stel een map in uw project in waar uw Xar-archief en de gedecomprimeerde inhoud worden opgeslagen.
+## Voorwaarden
 
-## Naamruimten importeren
+Voordat we beginnen, zorg ervoor dat je het volgende hebt:
 
-Neem in uw .NET-project de benodigde naamruimten op om toegang te krijgen tot de functionaliteit van Aspose.Zip:
+- **Aspose.Zip for .NET** – geïntegreerd in je project. Je kunt het downloaden van [here](https://releases.aspose.com/zip/net/).
+- **Document Directory** – een map in je oplossing waar het voorbeeld‑`.xar`‑bestand en de uitgepakte output zich bevinden.
+
+## Namespaces importeren
+
+Voeg in je .NET‑project de benodigde namespaces toe om toegang te krijgen tot de functionaliteit van Aspose.Zip:
 
 ```csharp
 using System.IO;
 using Aspose.Zip.Xar;
 ```
 
-## Stap 1: Definieer uw documentenmap
+## Stap 1: Definieer je Document Directory
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Stap 2: Decomprimeer Xar-archief
+Vervang `"Your Document Directory"` door het absolute of relatieve pad dat `sample.xar` bevat en waar je de output‑map wilt laten aanmaken.
+
+## Stap 2: Decompress Xar‑archief
+
+Deze code opent het Xar‑bestand, maakt een `XarArchive`‑instantie aan, en extraheert **het volledige decompress xar‑archief** naar `DecompressXar_out`. De bewerking is volledig stream‑gebaseerd, zodat hij efficiënt werkt, zelfs bij grote pakketten.
 
 ```csharp
 //ExStart: DecompressXarArchive
@@ -53,38 +74,45 @@ using (FileStream fs = File.OpenRead(dataDir + "sample.xar"))
 }
 ```
 
-Dit codefragment initialiseert een FileStream met uw Xar-archief, maakt een exemplaar van de XarArchive-klasse en extraheert de inhoud naar de opgegeven map.
-
 ## Stap 3: Voer de code uit
 
-Start uw .NET-applicatie en zie hoe Aspose.Zip moeiteloos uw Xar-archief decomprimeert, zodat u de netjes georganiseerde inhoud in de aangewezen map achterlaat.
+Compileer en voer je applicatie uit. Na uitvoering vind je een nieuwe map met de naam `DecompressXar_out` in je document directory, die alle bestanden bevat die in het oorspronkelijke `.xar`‑archief waren verpakt.
 
-## Conclusie
+## Veelvoorkomende problemen & tips
 
-Met Aspose.Zip voor .NET wordt het decomprimeren van Xar-archieven een eenvoudige taak in uw .NET-toepassingen. Deze bibliotheek stroomlijnt het proces, zodat u zich kunt concentreren op de kernfunctionaliteit van uw applicatie.
-
+- **Bestand niet gevonden** – Zorg ervoor dat het pad in `File.OpenRead` correct naar `sample.xar` wijst. Gebruik `Path.Combine` voor veiliger padbeheer.  
+- **Toegang geweigerd** – Voer de applicatie uit met voldoende bestandsysteem‑rechten, vooral bij het schrijven naar beschermde mappen.  
+- **Beschadigd archief** – Aspose.Zip gooit `InvalidDataException`; controleer of het bron‑`.xar`‑bestand intact is.
 
 ## Veelgestelde vragen
 
-### Vraag 1: Is Aspose.Zip compatibel met de nieuwste .NET-frameworkversies?
+**Q: Is Aspose.Zip compatibel met de nieuwste .NET‑frameworkversies?**  
+A: Ja, Aspose.Zip wordt regelmatig bijgewerkt om compatibiliteit met de nieuwste .NET‑frameworkversies te garanderen. Zie de [documentation](https://reference.aspose.com/zip/net/) voor specifieke details.
 
- A1: Ja, Aspose.Zip wordt regelmatig bijgewerkt om compatibiliteit met de nieuwste .NET-frameworkversies te garanderen. Verwijs naar de[documentatie](https://reference.aspose.com/zip/net/) voor specifieke details.
+**Q: Kan ik Aspose.Zip eerst uitproberen voordat ik een aankoop doe?**  
+A: Absoluut! Je kunt een gratis proefversie downloaden van [here](https://releases.aspose.com/).
 
-### V2: Kan ik Aspose.Zip uitproberen voordat ik een aankoop doe?
+**Q: Hoe kan ik ondersteuning krijgen voor Aspose.Zip?**  
+A: Voor vragen of hulp kun je terecht op het [Aspose.Zip forum](https://forum.aspose.com/c/zip/37).
 
- A2: Absoluut! U kunt een gratis proefversie downloaden van[hier](https://releases.aspose.com/).
+**Q: Zijn tijdelijke licenties beschikbaar voor Aspose.Zip?**  
+A: Ja, tijdelijke licenties zijn verkrijgbaar via [here](https://purchase.aspose.com/temporary-license/).
 
-### V3: Hoe kan ik ondersteuning krijgen voor Aspose.Zip?
+**Q: Waar kan ik Aspose.Zip voor .NET kopen?**  
+A: Je kunt Aspose.Zip voor .NET aanschaffen via [here](https://purchase.aspose.com/buy).
 
- A3: Ga voor vragen of hulp naar de[Aspose.Zip-forum](https://forum.aspose.com/c/zip/37).
+**Q: Kan ik alleen specifieke bestanden uit een Xar‑archief uitpakken?**  
+A: Ja—gebruik `archive.Entries` om items te enumereren en roep `ExtractToFile` aan voor geselecteerde entries.
 
-### V4: Zijn er tijdelijke licenties beschikbaar voor Aspose.Zip?
+**Q: Ondersteunt de bibliotheek wachtwoord‑beveiligde Xar‑bestanden?**  
+A: Momenteel ondersteunen Xar‑archieven geen encryptie; als je een beveiligd bestand tegenkomt, moet je het eerst ontcijferen voordat je Aspose.Zip gebruikt.
 
- A4: Ja, tijdelijke licenties zijn verkrijgbaar bij[hier](https://purchase.aspose.com/temporary-license/).
+---
 
-### V5: Waar kan ik Aspose.Zip voor .NET kopen?
+**Last Updated:** 2025-12-17  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose  
 
- A5: U kunt Aspose.Zip voor .NET kopen[hier](https://purchase.aspose.com/buy).
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

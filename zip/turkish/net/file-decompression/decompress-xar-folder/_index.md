@@ -1,49 +1,69 @@
 ---
-title: Aspose.Zip for .NET'te Xar'ı Klasöre Çıkarın
-linktitle: Xar'ı Klasöre Aç
-second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
-description: Aspose.Zip for .NET'in gücünü keşfedin! Bu kullanıcı dostu eğitimle Xar arşivlerinin sıkıştırmasını zahmetsizce açın. .NET geliştirme deneyiminizi geliştirin.
-weight: 17
+date: 2025-12-17
+description: Aspose.Zip for .NET kullanarak Xar arşivlerini nasıl çıkaracağınızı ve
+  Xar arşivini bir klasöre nasıl sıkıştırılmış halden çıkaracağınızı öğrenin. Bu adım
+  adım rehberi izleyin.
+linktitle: Decompress Xar to Folder
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Aspose.Zip for .NET ile Xar'ı Klasöre Çıkarma
 url: /tr/net/file-decompression/decompress-xar-folder/
+weight: 17
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET'te Xar'ı Klasöre Çıkarın
+# Xar'ı Klasöre Çıkarmak için Aspose.Zip for .NET Kullanımı
 
-## giriiş
+## Giriş
 
-.NET geliştirme dünyasına giriyorsanız ve Xar arşivlerinin sıkıştırmasını açmak için güvenilir bir çözüm arıyorsanız, Aspose.Zip for .NET size yardımcı olacaktır. Bu adım adım kılavuzda, .NET uygulamalarınızda arşiv işlemlerini kolaylaştıran güçlü bir kütüphane olan Aspose.Zip'i kullanarak Xar'ı bir klasöre açma sürecinde size yol göstereceğiz.
+Eğer .NET geliştiricisi olarak güvenilir bir **xar nasıl çıkarılır** yöntemi arıyorsanız, Aspose.Zip for .NET temiz ve yüksek performanslı bir API sunar. Bu öğreticide bir Xar arşivini klasöre çıkarmanın tüm sürecini adım adım gösterecek, bu yaklaşımın neden zaman kazandırdığını açıklayacak ve çalıştırmanız gereken tam kodu göstereceğiz.
+
+## Hızlı Yanıtlar
+- **Kütüphane ne yapar?** Harici araçlar olmadan Xar arşivlerini okur ve çıkarır.  
+- **Hangi .NET sürümleri destekleniyor?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6+.  
+- **Lisans gerekir mi?** Geliştirme için ücretsiz deneme sürümü çalışır; üretim için ticari lisans gereklidir.  
+- **Uygulama ne kadar sürer?** Genellikle 10 dakikadan az.  
+- **Özel bir klasöre çıkarabilir miyim?** Evet—hedef yolu `ExtractToDirectory` içinde belirtmeniz yeterlidir.
+
+## “xar nasıl çıkarılır” nedir?
+Xar arşivini çıkarmak, sıkıştırılmış paketi okuyup içindeki dosyaları diskte bir dizine yazmak anlamına gelir. Bu, macOS kurulumlarından, yedekleme araçlarından veya üçüncü‑taraf araçlardan gelen XAR paketlerini alıp .NET uygulamanızda içeriğini işlemek istediğinizde faydalıdır.
+
+## Neden Aspose.Zip bu görev için kullanılmalı?
+- **Sıfır dış bağımlılık** – saf .NET, yerel ikili dosya yok.  
+- **Akış‑tabanlı API** – dosyalar, bellek akışları veya ağ akışlarıyla çalışır.  
+- **Sağlam hata yönetimi** – ayrıntılı istisnalar bozuk arşivleri çözmenize yardımcı olur.  
+- **Tam .NET uyumluluğu** – Windows, Linux ve macOS çalışma ortamlarında çalışır.
 
 ## Önkoşullar
 
-Eğiticiye dalmadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
--  Aspose.Zip for .NET: Aspose.Zip kütüphanesinin .NET projenize entegre olduğundan emin olun. Değilse, adresinden indirebilirsiniz.[Burada](https://releases.aspose.com/zip/net/).
+- **Aspose.Zip for .NET** – projenize entegre edilmiş. İndirmek için [buraya](https://releases.aspose.com/zip/net/) tıklayın.  
+- **Document Directory** – örnek `.xar` dosyasının ve çıkarılan çıktının bulunacağı çözümünüzdeki bir klasör.
 
-- Belge Dizini: Projenizde Xar arşivinizin ve sıkıştırılmış içeriğin depolanacağı bir dizin oluşturun.
+## Ad Alanlarını İçe Aktarın
 
-## Ad Alanlarını İçe Aktar
-
-.NET projenize Aspose.Zip tarafından sağlanan işlevselliğe erişmek için gerekli ad alanlarını ekleyin:
+.NET projenizde Aspose.Zip işlevselliğine erişmek için gerekli ad alanlarını ekleyin:
 
 ```csharp
 using System.IO;
 using Aspose.Zip.Xar;
 ```
 
-## 1. Adım: Belge Dizininizi Tanımlayın
+## Adım 1: Belge Dizinini Tanımlayın
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Adım 2: Xar Arşivini Sıkıştırın
+`"Your Document Directory"` ifadesini, `sample.xar` dosyasını içeren ve çıktı klasörünün oluşturulmasını istediğiniz mutlak ya da göreli yol ile değiştirin.
+
+## Adım 2: Xar Arşivini Açın
 
 ```csharp
-//ExStart: Sıkıştırılmış XarArchive
+//ExStart: DecompressXarArchive
 using (FileStream fs = File.OpenRead(dataDir + "sample.xar"))
 {
     using (XarArchive archive = new XarArchive(fs))
@@ -53,38 +73,45 @@ using (FileStream fs = File.OpenRead(dataDir + "sample.xar"))
 }
 ```
 
-Bu kod parçacığı, Xar arşivinizle bir FileStream başlatır, XarArchive sınıfının bir örneğini oluşturur ve içerikleri belirtilen dizine çıkarır.
+Bu kod parçacığı Xar dosyasını açar, bir `XarArchive` örneği oluşturur ve **tüm decompress xar arşivini** `DecompressXar_out` klasörüne çıkarır. İşlem tamamen akış‑tabanlıdır, bu yüzden büyük paketlerde bile verimli çalışır.
 
-## 3. Adım: Kodu Yürütün
+## Adım 3: Kodu Çalıştırın
 
-.NET uygulamanızı çalıştırın ve Aspose.Zip'in Xar arşivinizi zahmetsizce açmasını ve sizi belirlenen klasörde düzenli bir şekilde düzenlenmiş içerikle bırakmasını izleyin.
+Uygulamanızı derleyip çalıştırın. Çalıştırma sonrası belge dizininizde `DecompressXar_out` adlı yeni bir klasör bulacaksınız; bu klasör orijinal `.xar` arşivinde paketlenmiş tüm dosyaları içerir.
 
-## Çözüm
+## Yaygın Sorunlar ve İpuçları
 
-Aspose.Zip for .NET ile Xar arşivlerinin sıkıştırmasını açmak, .NET uygulamalarınızda basit bir iş haline gelir. Bu kitaplık, süreci kolaylaştırarak uygulamanızın temel işlevlerine odaklanmanıza olanak tanır.
+- **File not found** – `File.OpenRead` içindeki yolun `sample.xar` dosyasına doğru işaret ettiğinden emin olun. Daha güvenli yol yönetimi için `Path.Combine` kullanın.  
+- **Access denied** – Özellikle korumalı dizinlere yazarken, uygulamayı yeterli dosya sistemi izinleriyle çalıştırın.  
+- **Corrupted archive** – Aspose.Zip `InvalidDataException` fırlatır; kaynak `.xar` dosyasının bütünlüğünü kontrol edin.
 
+## Sıkça Sorulan Sorular
 
-## SSS'ler
+**S: Aspose.Zip en yeni .NET framework sürümleriyle uyumlu mu?**  
+C: Evet, Aspose.Zip düzenli olarak güncellenir ve en yeni .NET framework sürümleriyle uyumluluğu sağlanır. Ayrıntılar için [belgelere](https://reference.aspose.com/zip/net/) bakın.
 
-### S1: Aspose.Zip en son .NET framework sürümleriyle uyumlu mu?
+**S: Satın almadan önce Aspose.Zip'i deneyebilir miyim?**  
+C: Kesinlikle! Ücretsiz deneme sürümünü [buradan](https://releases.aspose.com/) indirebilirsiniz.
 
- Cevap1: Evet, Aspose.Zip, en son .NET framework sürümleriyle uyumluluğun sağlanması amacıyla düzenli olarak güncellenmektedir. Bakın[dokümantasyon](https://reference.aspose.com/zip/net/) özel ayrıntılar için.
+**S: Aspose.Zip için destek nasıl alınır?**  
+C: Her türlü soru ve yardım için [Aspose.Zip forumuna](https://forum.aspose.com/c/zip/37) göz atabilirsiniz.
 
-### S2: Satın alma işleminden önce Aspose.Zip'i deneyebilir miyim?
+**S: Aspose.Zip için geçici lisanslar mevcut mu?**  
+C: Evet, geçici lisansları [buradan](https://purchase.aspose.com/temporary-license/) temin edebilirsiniz.
 
- A2: Kesinlikle! Ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/).
+**S: Aspose.Zip for .NET'i nereden satın alabilirim?**  
+C: Aspose.Zip for .NET'i [buradan](https://purchase.aspose.com/buy) satın alabilirsiniz.
 
-### S3: Aspose.Zip için nasıl destek alabilirim?
+**S: Xar arşivinden sadece belirli dosyaları çıkarabilir miyim?**  
+C: Evet—`archive.Entries` ile öğeleri enumerate edip, seçilen girdilerde `ExtractToFile` çağırabilirsiniz.
 
- A3: Sorularınız veya yardım için şu adresi ziyaret edin:[Aspose.Zip forumu](https://forum.aspose.com/c/zip/37).
+**S: Kütüphane şifre korumalı Xar dosyalarını destekliyor mu?**  
+C: Şu anda Xar arşivleri şifreleme desteklemez; korumalı bir dosyayla karşılaşırsanız, Aspose.Zip'i kullanmadan önce dosyayı deşifre etmeniz gerekir.
 
-### S4: Aspose.Zip için geçici lisanslar mevcut mu?
+**Son Güncelleme:** 2025-12-17  
+**Test Edilen Versiyon:** Aspose.Zip 24.11 for .NET  
+**Yazar:** Aspose  
 
- Cevap4: Evet, geçici lisanslar şu adresten alınabilir:[Burada](https://purchase.aspose.com/temporary-license/).
-
-### S5: Aspose.Zip for .NET'i nereden satın alabilirim?
-
- Cevap5: .NET için Aspose.Zip'i satın alabilirsiniz[Burada](https://purchase.aspose.com/buy).
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

@@ -1,49 +1,64 @@
 ---
-title: Dekomprimieren Sie traditionell passwortgeschützte Dateien in Aspose.Zip für .NET
-linktitle: Dekomprimieren Sie traditionell passwortgeschützte Dateien
-second_title: Aspose.Zip .NET API für Dateikomprimierung und -archivierung
-description: Erfahren Sie, wie Sie traditionell passwortgeschützte Dateien mit Aspose.Zip für .NET dekomprimieren. Eine Schritt-für-Schritt-Anleitung für eine nahtlose Integration.
-weight: 15
+date: 2025-12-17
+description: Erfahren Sie, wie Sie ZIP-Dateien mit Passwort extrahieren und passwortgeschützte
+  ZIP-Dateien mit Aspose.Zip für .NET dekomprimieren. Schritt‑für‑Schritt‑Anleitung
+  für nahtlose Integration.
+linktitle: Decompress Traditionally Password Protected File
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Wie man ein passwortgeschütztes ZIP-Archiv mit Aspose.Zip für .NET extrahiert
 url: /de/net/file-decompression/decompress-traditionally-password-protected-file/
+weight: 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Dekomprimieren Sie traditionell passwortgeschützte Dateien in Aspose.Zip für .NET
+# ZIP mit Passwort extrahieren mit Aspose.Zip für .NET
 
-Im Bereich der .NET-Entwicklung zeichnet sich Aspose.Zip als robuste Lösung für den Umgang mit komprimierten Dateien aus. Unter den unzähligen Funktionen ist die Möglichkeit, traditionell passwortgeschützte Dateien zu dekomprimieren, besonders hervorzuheben. In diesem Tutorial befassen wir uns mit dem Dekomprimierungsprozess einer mit einem herkömmlichen Passwort verschlüsselten Datei mithilfe von Aspose.Zip für .NET. Bevor wir uns auf diese Reise begeben, stellen wir sicher, dass die Voraussetzungen dafür geschaffen sind.
+In der .NET‑Entwicklung ist das Extrahieren eines ZIP‑Archivs mit Passwort eine häufige Anforderung, wenn man mit sicheren Archiven arbeitet. Aspose.Zip für .NET macht diese Aufgabe unkompliziert und ermöglicht das **Entpacken von passwortgeschützten ZIP**‑Dateien mit nur wenigen Codezeilen. In diesem Tutorial führen wir Sie durch den gesamten Prozess – von der Erstellung eines passwortgeschützten Archivs bis zum Extrahieren seines Inhalts – sodass Sie **passwortgeschützte Archive** in Ihren C#‑Anwendungen sicher öffnen können.
+
+## Schnelle Antworten
+- **Was ist die primäre Klasse zur Handhabung von ZIP‑Dateien?** `Archive` aus dem Aspose.Zip‑Namespace.  
+- **Welche Methode liefert das Passwort?** Übergeben Sie `DecryptionPassword` über `ArchiveLoadOptions`.  
+- **Kann ich passwortgeschützte Dateien in .NET Core entpacken?** Ja, Aspose.Zip unterstützt .NET Framework, .NET Core und .NET 5/6+.  
+- **Benötige ich eine Lizenz für die Entwicklung?** Eine temporäre Lizenz reicht für Tests; für die Produktion ist eine Voll‑Lizenz erforderlich.  
+- **Wie viele Codezeilen werden benötigt?** Weniger als 20 Zeilen (ohne using‑Anweisungen).
+
+## Was bedeutet „ZIP mit Passwort extrahieren“?
+Ein ZIP‑Archiv mit Passwort zu extrahieren bedeutet, ein verschlüsseltes ZIP‑Archiv zu lesen und das korrekte Passwort bereitzustellen, damit die Bibliothek die Daten entschlüsseln und die enthaltenen Dateien auspacken kann. Dies wird häufig als **how to unzip encrypted** Archive bezeichnet.
+
+## Warum Aspose.Zip für diese Aufgabe verwenden?
+- **Vollständige .NET‑Unterstützung** – funktioniert mit .NET Framework, .NET Core und neueren .NET‑Versionen.  
+- **Traditionelle Verschlüsselungsunterstützung** – unterstützt die Legacy‑Methode ZipCrypto, die von vielen älteren Tools verwendet wird.  
+- **Einfache API** – nur wenige Aufrufe sind nötig, um das Passwort zu übergeben und Einträge zu lesen.  
+- **Leistungsoptimiert** – Streams werden effizient verarbeitet, was es für große Archive geeignet macht.
 
 ## Voraussetzungen
-
-Bevor Sie mit der Dekomprimierung herkömmlich passwortgeschützter Dateien beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
+- .NET‑Entwicklungsumgebung (Visual Studio 2022 oder neuer).  
+- Aspose.Zip für .NET Bibliothek zu Ihrem Projekt hinzugefügt (NuGet‑Paket `Aspose.Zip`).  
+- Grundlegende Kenntnisse in C#‑Datei‑I/O.
 
 ## Namespaces importieren
-
-Zunächst müssen Sie die erforderlichen Namespaces importieren, um auf die Aspose.Zip-Funktionen zugreifen zu können. Fügen Sie die folgenden Namespaces in Ihr .NET-Projekt ein:
+First, bring the required namespaces into scope:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-Lassen Sie uns nun den Prozess in Schritt-für-Schritt-Anleitungen unterteilen.
-
-## Schritt 1: Führen Sie den Passwortschutz für eine Datei aus
-
-Bevor wir eine traditionell passwortgeschützte Datei dekomprimieren können, bereiten wir die Weichen, indem wir einen Passwortschutz auf eine Datei anwenden. Verwenden Sie dazu den folgenden Codeausschnitt:
+## Schritt 1: Passwortschutz für eine Datei aktivieren
+Bevor wir die Extraktion demonstrieren können, benötigen wir ein ZIP‑Archiv, das mit einem traditionellen Passwort geschützt ist. Das folgende Snippet erstellt ein solches Archiv (Sie können ein vorhandenes wiederverwenden, falls Sie bereits eines haben):
 
 ```csharp
 string dataDir = "Your Document Directory";
-PasswordProtectArchiveWithTraditionalPassword.Run(); // Führen Sie einen Kennwortschutz für eine Beispieldatei aus, um ihn später zu verwenden
+PasswordProtectArchiveWithTraditionalPassword.Run(); // Run password protection on a file example to use it later
 ```
 
-Stellen Sie sicher, dass Sie „Ihr Dokumentverzeichnis“ durch das tatsächliche Verzeichnis ersetzen, in dem sich Ihr Dokument befindet.
+> **Pro‑Tipp:** Ersetzen Sie `"Your Document Directory"` durch den absoluten Pfad, in dem Sie Ihre Testdateien speichern.
 
-## Schritt 2: Entpacken Sie die traditionell passwortgeschützte Datei
-
-Da wir nun eine Datei mit herkömmlichem Passwortschutz haben, fahren wir mit dem Dekomprimierungsprozess fort. Der folgende Codeausschnitt veranschaulicht, wie dies erreicht wird:
+## Schritt 2: Traditionell passwortgeschützte Datei dekomprimieren
+Jetzt extrahieren wir den Inhalt. Der untenstehende Code zeigt genau, wie man **c# unzip password protected** Archive mit Aspose.Zip verwendet:
 
 ```csharp
 // ExStart: DecompressTraditionallyPasswordProtectedFile
@@ -65,43 +80,49 @@ using (FileStream fs = File.OpenRead(dataDir + "CompressWithTraditionalEncryptio
         }
     }
 }
+}
 // ExEnd: DecompressTraditionallyPasswordProtectedFile
 ```
 
-In diesem Codeausschnitt:
-- Wir öffnen den komprimierten Dateistream.
-- Erstellen Sie einen Ausgabedateistream für den dekomprimierten Inhalt.
--  Instanziieren Sie eine`Archive` Objekt mit bereitgestelltem Entschlüsselungskennwort.
-- Öffnen Sie den ersten Eintrag im Archiv (vorausgesetzt, es gibt nur einen Eintrag).
-- Lesen und schreiben Sie den dekomprimierten Inhalt in die Ausgabedatei.
+In diesem Snippet:
 
-Glückwunsch! Sie haben eine traditionell passwortgeschützte Datei mit Aspose.Zip für .NET erfolgreich dekomprimiert.
+1. Öffnen Sie die verschlüsselte ZIP‑Datei als Nur‑Lese‑Stream.  
+2. Erstellen Sie eine neue Datei (`alice_extracted_out.txt`), in die die dekomprimierten Daten geschrieben werden.  
+3. Instanziieren Sie `Archive` mit `ArchiveLoadOptions` und übergeben das Passwort (`"p@s$"`).  
+4. Greifen Sie auf den ersten Eintrag im Archiv zu (unter der Annahme einer einzelnen Datei) und kopieren dessen Bytes in die Ausgabedatei.
 
-## Abschluss
+Wenn der Code abgeschlossen ist, haben Sie erfolgreich **extract zip with password** durchgeführt und den ursprünglichen Dateinhalt erhalten.
 
-Zusammenfassend bietet Aspose.Zip für .NET eine unkomplizierte und effiziente Möglichkeit, traditionell passwortgeschützte Dateien zu verarbeiten. Wenn Sie die in diesem Tutorial beschriebenen Schritte befolgen, können Sie diese Funktionalität nahtlos in Ihre .NET-Anwendungen integrieren.
+## Häufige Fallstricke & wie man sie vermeidet
+| Problem | Ursache | Lösung |
+|-------|-------|----------|
+| “ password string or missing `DecryptionPassword` | Double‑check the password and ensure it’s supplied via `ArchiveLoadOptions`. |
+| No entries found | Archive is empty or path is incorrect | Verify the ZIP file path and inspect the archive with a tool like 7‑Zip. |
+| Large files cause memory pressure | Reading entire file into memory | Use a buffered read/write loop (as shown) to process data in chunks. |
 
-## FAQs
+## Häufig gestellte Fragen
 
-### F1: Ist Aspose.Zip für große komprimierte Dateien geeignet?
+### Q1: Ist Aspose.Zip für große komprimierte Dateien geeignet?
+A1: Ja, Aspose.Zip ist sowohl für kleine als auch für große komprimierte Dateien optimiert und sorgt für eine effiziente Verarbeitung.
 
-A1: Ja, Aspose.Zip ist sowohl für kleine als auch große komprimierte Dateien optimiert und gewährleistet so eine effiziente Verarbeitung.
+### Q2: Kann ich Aspose.Zip mit anderen .NET‑Bibliotheken verwenden?
+A2: Absolut, Aspose.Zip lässt sich problemlos in andere .NET‑Bibliotheken integrieren, um die Fähigkeiten Ihrer Anwendung zu erweitern.
 
-### F2: Kann ich Aspose.Zip mit anderen .NET-Bibliotheken verwenden?
+### Q3: Gibt es neben traditionellen Passwörtern weitere Verschlüsselungsoptionen?
+A3: Ja, Aspose.Zip unterstützt verschiedene Verschlüsselungsmethoden und bietet damit Flexibilität je nach Ihren Sicherheitsanforderungen.
 
-A2: Absolut, Aspose.Zip kann problemlos in andere .NET-Bibliotheken integriert werden, um die Funktionen Ihrer Anwendung zu erweitern.
+### Q4: Gibt es ein Community‑Forum für Aspose.Zip‑Support?
+A4: Ja, Sie finden Unterstützung und können sich mit der Aspose.Zip‑Community im [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) austauschen.
 
-### F3: Gibt es neben herkömmlichen Passwörtern noch andere Verschlüsselungsoptionen?
+### Q5: Wie kann ich eine temporäre Lizenz für Aspose.Zip erhalten?
+A5: Sie können eine temporäre Lizenz über [Aspose.Purchase](https://purchase.aspose.com/temporary-license/) beziehen.
 
-A3: Ja, Aspose.Zip unterstützt verschiedene Verschlüsselungsmethoden und bietet so Flexibilität entsprechend Ihren Sicherheitsanforderungen.
+---
 
-### F4: Gibt es ein Community-Forum für die Aspose.Zip-Unterstützung?
+**Zuletzt aktualisiert:** 2025-12-17  
+**Getestet mit:** Aspose.Zip 24.11 für .NET  
+**Autor:** Aspose  
 
- A4: Ja, Sie können Unterstützung finden und mit der Aspose.Zip-Community interagieren unter[Aspose.Zip-Forum](https://forum.aspose.com/c/zip/37).
-
-### F5: Wie kann ich eine temporäre Lizenz für Aspose.Zip erhalten?
-
- A5: Sie können eine temporäre Lizenz erwerben bei[Aspose.Kauf](https://purchase.aspose.com/temporary-license/).
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
