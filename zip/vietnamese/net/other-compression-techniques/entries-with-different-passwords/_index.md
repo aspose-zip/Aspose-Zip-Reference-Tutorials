@@ -1,33 +1,53 @@
 ---
-title: Các mục có mật khẩu khác nhau trong Aspose.Zip cho .NET
-linktitle: Các mục có mật khẩu khác nhau
-second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
-description: Khám phá sức mạnh của Aspose.Zip dành cho .NET với hướng dẫn từng bước của chúng tôi về cách quản lý kho lưu trữ ZIP bằng các mật khẩu khác nhau. Tăng cường bảo mật và tính linh hoạt trong các ứng dụng của bạn.
-weight: 13
+date: 2025-12-18
+description: Tìm hiểu cách mã hóa các tệp zip bằng các mật khẩu khác nhau bằng Aspose.Zip
+  cho .NET. Hướng dẫn này chỉ cho bạn cách nén tệp với mật khẩu và tạo tệp lưu trữ
+  7z trong C#.
+linktitle: Entries with Different Passwords
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Cách mã hóa tệp ZIP với các mật khẩu khác nhau trong Aspose.Zip cho .NET
 url: /vi/net/other-compression-techniques/entries-with-different-passwords/
+weight: 13
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Các mục có mật khẩu khác nhau trong Aspose.Zip cho .NET
+# Cách Mã Hoá Tệp ZIP với Mật Khẩu Khác Nhau trong Aspose.Zip cho .NET
 
 ## Giới thiệu
 
-Chào mừng bạn đến với thế giới của Aspose.Zip dành cho .NET, một thư viện mạnh mẽ trao quyền cho các nhà phát triển quản lý và thao tác các kho lưu trữ ZIP một cách liền mạch. Trong hướng dẫn này, chúng ta sẽ đi sâu vào một tính năng cụ thể: làm việc với các mục có mật khẩu khác nhau. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, hướng dẫn từng bước này sẽ hướng dẫn bạn qua quy trình, mở khóa tiềm năng của Aspose.Zip cho .NET.
+Nếu bạn cần **cách mã hoá zip** các tệp lưu trữ đồng thời cấp mỗi mục một mật khẩu riêng, bạn đã đến đúng nơi. Trong hướng dẫn này, chúng ta sẽ đi qua các bước chi tiết để tạo một tệp 7‑zip trong đó mỗi tệp đều được bảo vệ bằng mật khẩu độc nhất, sử dụng thư viện Aspose.Zip cho .NET. Khi kết thúc, bạn sẽ hiểu tại sao việc mã hoá từng mục lại quan trọng, cách thiết lập, và cách xác minh kết quả trong dự án của mình.
 
-## Điều kiện tiên quyết
+## Trả lời nhanh
+- **“encrypt zip” có nghĩa là gì?** Nó có nghĩa là áp dụng bảo vệ dựa trên mật khẩu (AES hoặc ZipCrypto) cho nội dung của một tệp ZIP/7z.  
+- **Mỗi mục có thể có mật khẩu khác nhau không?** Có — Aspose.Zip cho phép bạn gán các mật khẩu riêng biệt cho từng tệp.  
+- **Các phiên bản .NET nào được hỗ trợ?** Tất cả các phiên bản .NET Framework hiện đại, .NET Core và .NET 5/6.  
+- **Có cần giấy phép cho môi trường sản xuất không?** Giấy phép thương mại là bắt buộc cho việc sử dụng trong sản xuất; bản dùng thử miễn phí có sẵn.  
+- **Định dạng nén nào được sử dụng trong ví dụ?** Mẫu tạo một tệp 7z với mã hoá AES‑256.
 
-Trước khi chúng ta đi sâu vào thế giới thú vị của việc quản lý kho lưu trữ ZIP bằng nhiều mật khẩu khác nhau, hãy đảm bảo bạn có những điều sau:
+## “how to encrypt zip” là gì với Aspose.Zip?
 
--  Aspose.Zip dành cho .NET: Đảm bảo bạn đã cài đặt thư viện. Nếu không, bạn có thể tìm thấy thông tin cần thiết trong[tài liệu](https://reference.aspose.com/zip/net/).
-- Thư mục tài liệu: Thiết lập một thư mục để lưu trữ tài liệu của bạn.
-- Kiến thức cơ bản về C#: Làm quen với C# sẽ có ích vì chúng ta sẽ sử dụng nó để viết mã.
+Mã hoá một tệp ZIP (hoặc 7z) có nghĩa là bảo vệ các mục của nó để không thể mở mà không có mật khẩu đúng. Aspose.Zip cho .NET hỗ trợ cả ZipCrypto cổ điển và mã hoá AES mạnh hơn, đồng thời cho phép bạn chỉ định cài đặt mã hoá cho từng mục, mang lại kiểm soát bảo mật chi tiết.
+
+## Tại sao nên dùng mật khẩu khác nhau cho mỗi mục?
+
+- **Phân đoạn bảo mật:** Nếu một mật khẩu bị rò rỉ, các tệp còn lại vẫn được bảo vệ.  
+- **Tuân thủ quy định:** Một số ngành yêu cầu thông tin đăng nhập riêng cho các danh mục dữ liệu khác nhau.  
+- **Quyền truy cập theo người dùng:** Bạn có thể phân phối một tệp lưu trữ duy nhất cho nhiều người dùng, mỗi người chỉ mở được các tệp mà họ được phép.
+
+## Yêu cầu trước
+
+Trước khi bắt đầu, hãy chắc chắn rằng bạn đã có:
+
+- **Aspose.Zip cho .NET** đã được cài đặt – xem [tài liệu chính thức](https://reference.aspose.com/zip/net/) để tải và hướng dẫn cài đặt.  
+- Một thư mục trên máy tính nơi bạn sẽ lưu các tệp nguồn (gọi là “Document Directory”).  
+- Kiến thức cơ bản về C# và Visual Studio (hoặc IDE .NET ưa thích của bạn).
 
 ## Nhập không gian tên
 
-Để bắt đầu, bạn cần nhập các vùng tên cần thiết vào dự án C# của mình. Điều này đảm bảo rằng bạn có quyền truy cập vào chức năng do Aspose.Zip cung cấp cho .NET.
+Chúng ta bắt đầu bằng cách import các không gian tên chứa các lớp cần thiết.
 
 ```csharp
 using Aspose.Zip.Saving;
@@ -40,15 +60,17 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Bước 1: Đặt thư mục tài liệu của bạn
+## Bước 1: Đặt Thư Mục Tài Liệu
+
+Xác định đường dẫn chứa các tệp bạn muốn nén.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Bước 2: Tạo mục nhập với mật khẩu khác nhau
+## Bước 2: Tạo Các Mục với Mật Khẩu Khác Nhau
 
-Bây giờ, hãy đi vào chức năng cốt lõi của việc tạo các mục nhập với các mật khẩu khác nhau trong Aspose.Zip cho .NET.
+Đây là phần cốt lõi của hướng dẫn. Chúng ta mở một tệp 7z mới, tạo ba đối tượng `FileInfo`, và thêm mỗi đối tượng vào như một mục với mật khẩu AES riêng.
 
 ```csharp
 //ExStart: EntriesWithDifferentPasswords
@@ -70,39 +92,63 @@ using (FileStream sevenZipFile = File.Open("archive.7z", FileMode.Create))
 //ExEnd: EntriesWithDifferentPasswords
 ```
 
-## Bước 3: Xác minh
+### Cách Hoạt Động
 
-Sau khi thực thi mã, hãy kiểm tra bảng điều khiển của bạn để đảm bảo rằng tệp Seven Zip có cài đặt mã hóa AES đã được tạo thành công.
+- `SevenZipArchive` là container cho một tệp 7‑z.  
+- `CreateEntry` nhận tên mục, tệp nguồn, cờ ghi đè, và một đối tượng `SevenZipEntrySettings`.  
+- Trong `SevenZipEntrySettings` chúng ta cung cấp hai đối tượng cài đặt: một cho nén (`SevenZipStoreCompressionSettings`) và một cho mã hoá (`SevenZipAESEncryptionSettings`).  
+- Mỗi lần gọi cung cấp **mật khẩu khác nhau** (`"test1"`, `"test2"`, `"test3"`), thực hiện bảo vệ từng mục riêng biệt.
+
+## Bước 3: Kiểm Tra
+
+Sau khi lưu tệp lưu trữ, bạn có thể in ra một thông báo xác nhận đơn giản.
 
 ```csharp
 Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Settings");
 ```
 
-## Phần kết luận
+Chạy chương trình, sau đó thử mở `archive.7z` bằng công cụ như 7‑Zip. Nó sẽ yêu cầu mật khẩu cho mỗi mục, xác nhận rằng các mật khẩu thực sự khác nhau.
 
-Chúc mừng! Bây giờ bạn đã thành thạo nghệ thuật làm việc với các mục có mật khẩu khác nhau trong Aspose.Zip dành cho .NET. Khả năng mạnh mẽ này mở ra cánh cửa nâng cao tính bảo mật và tính linh hoạt khi quản lý các kho lưu trữ ZIP trong ứng dụng của bạn.
+## Các Vấn Đề Thường Gặp và Giải Pháp
 
-## Câu hỏi thường gặp
+| Vấn đề | Nguyên nhân | Giải pháp |
+|-------|------------|-----------|
+| **Lỗi mật khẩu không đúng** | Chuỗi mật khẩu chứa khoảng trắng thừa hoặc ký tự ẩn. | Cắt bỏ khoảng trắng (`new SevenZipAESEncryptionSettings(password.Trim())`). |
+| **Tệp không mở được trong các công cụ cũ** | Một số công cụ ZIP legacy không hỗ trợ mã hoá AES‑256 dùng trong 7z. | Dùng trình giải nén hiện đại (7‑Zip 19.00+). |
+| **Tệp không được thêm vào lưu trữ** | Đường dẫn tệp nguồn sai hoặc tệp không tồn tại. | Kiểm tra `dataDir` và tên tệp, hoặc dùng `Path.Combine(dataDir, "data1.bin")`. |
 
-### Câu hỏi 1: Aspose.Zip dành cho .NET có tương thích với tất cả các phiên bản .NET không?
+## Câu Hỏi Thường Gặp
 
-Câu trả lời 1: Có, Aspose.Zip dành cho .NET được thiết kế để tích hợp liền mạch với tất cả các phiên bản của .NET framework.
+### Q1: Aspose.Zip cho .NET có tương thích với mọi phiên bản .NET không?
 
-### Câu hỏi 2: Tôi có thể sử dụng Aspose.Zip cho .NET trong các dự án thương mại của mình không?
+A1: Có, Aspose.Zip cho .NET được thiết kế để tích hợp liền mạch với mọi phiên bản của .NET framework.
 
-A2: Chắc chắn rồi! Aspose.Zip cho .NET cung cấp giấy phép thương mại và bạn có thể tìm thêm thông tin về cách mua[đây](https://purchase.aspose.com/buy).
+### Q2: Tôi có thể sử dụng Aspose.Zip cho .NET trong các dự án thương mại không?
 
-### Câu 3: Có bản dùng thử miễn phí không?
+A2: Hoàn toàn có thể! Aspose.Zip cho .NET cung cấp giấy phép thương mại, và bạn có thể tìm thông tin mua tại [đây](https://purchase.aspose.com/buy).
 
- Câu trả lời 3: Có, bạn có thể khám phá các tính năng của Aspose.Zip dành cho .NET với bản dùng thử miễn phí. Bắt đầu[đây](https://releases.aspose.com/).
+### Q3: Có bản dùng thử miễn phí không?
 
-### Câu hỏi 4: Làm cách nào tôi có thể nhận được hỗ trợ cho Aspose.Zip cho .NET?
+A3: Có, bạn có thể khám phá các tính năng của Aspose.Zip cho .NET với bản dùng thử miễn phí. Bắt đầu [tại đây](https://releases.aspose.com/).
 
- A4: Nếu có bất kỳ thắc mắc hoặc trợ giúp nào, hãy truy cập[Diễn đàn Aspose.Zip](https://forum.aspose.com/c/zip/37).
+### Q4: Làm sao tôi có thể nhận hỗ trợ cho Aspose.Zip cho .NET?
 
-### Câu hỏi 5: Tôi có thể sử dụng Aspose.Zip cho .NET mà không có giấy phép vĩnh viễn không?
+A4: Đối với bất kỳ câu hỏi hay hỗ trợ nào, hãy truy cập [Diễn đàn Aspose.Zip](https://forum.aspose.com/c/zip/37).
 
- Câu trả lời 5: Có, bạn có thể xin giấy phép tạm thời cho nhu cầu ngắn hạn của mình. Tìm thêm chi tiết[đây](https://purchase.aspose.com/temporary-license/).
+### Q5: Tôi có thể sử dụng Aspose.Zip cho .NET mà không có giấy phép vĩnh viễn không?
+
+A5: Có, bạn có thể lấy giấy phép tạm thời cho nhu cầu ngắn hạn. Xem chi tiết [tại đây](https://purchase.aspose.com/temporary-license/).
+
+## Kết luận
+
+Bạn vừa học **cách mã hoá zip** các tệp lưu trữ với mật khẩu riêng cho từng mục bằng Aspose.Zip cho .NET. Kỹ thuật này cho phép bạn bảo vệ từng tệp một cách độc lập, đáp ứng các yêu cầu bảo mật nghiêm ngặt và đơn giản hoá việc phân phối theo người dùng. Hãy thử nghiệm với các cài đặt nén khác, tập hợp tệp lớn hơn, hoặc tích hợp logic này vào dịch vụ web tạo lưu trữ an toàn ngay lập tức.
+
+---
+
+**Cập nhật lần cuối:** 2025-12-18  
+**Đã kiểm tra với:** Aspose.Zip cho .NET 24.12 (phiên bản mới nhất tại thời điểm viết)  
+**Tác giả:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

@@ -1,33 +1,53 @@
 ---
-title: Bejegyzések különböző jelszavakkal az Aspose.Zip for .NET-ben
-linktitle: Bejegyzések különböző jelszavakkal
-second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
-description: Fedezze fel az Aspose.Zip for .NET erejét a ZIP-archívumok különböző jelszavakkal történő kezeléséről szóló, lépésről lépésre szóló útmutatónkkal. Növelje alkalmazásai biztonságát és rugalmasságát.
-weight: 13
+date: 2025-12-18
+description: Ismerje meg, hogyan titkosíthat zip-fájlokat különböző jelszavakkal az
+  Aspose.Zip for .NET segítségével. Ez az útmutató bemutatja, hogyan lehet jelszóval
+  tömöríteni fájlokat, és C#-ban 7z archívumot létrehozni.
+linktitle: Entries with Different Passwords
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Hogyan titkosítsunk ZIP-fájlokat különböző jelszavakkal az Aspose.Zip for .NET-ben
 url: /hu/net/other-compression-techniques/entries-with-different-passwords/
+weight: 13
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Bejegyzések különböző jelszavakkal az Aspose.Zip for .NET-ben
+# Hogyan titkosítsunk ZIP fájlokat különböző jelszavakkal az Aspose.Zip for .NET-ben
 
 ## Bevezetés
 
-Üdvözöljük az Aspose.Zip for .NET világában. Ez egy hatékony könyvtár, amely képessé teszi a fejlesztőket a ZIP-archívumok zökkenőmentes kezelésére és manipulálására. Ebben az oktatóanyagban egy sajátos funkcióval foglalkozunk: a különböző jelszavas bejegyzésekkel való munkavégzéssel. Akár tapasztalt fejlesztő, akár csak most kezdi, ez a részletes útmutató végigvezeti a folyamaton, felszabadítva az Aspose.Zip for .NET-ben rejlő lehetőségeit.
+Ha **how to encrypt zip** archívumokat kell titkosítania, miközben minden bejegyzésnek saját jelszót ad, jó helyen jár. Ebben az útmutatóban lépésről lépésre bemutatjuk, hogyan hozhat létre egy 7‑zip archívumot, ahol minden fájl egyedi jelszóval van védve, az Aspose.Zip .NET könyvtár segítségével. A végére megérti, miért fontos a bejegyzésenkénti titkosítás, hogyan állíthatja be, és hogyan ellenőrizheti az eredményt saját projektjeiben.
+
+## Gyors válaszok
+- **Mit jelent a “encrypt zip”?** Azt jelenti, hogy jelszó‑alapú védelmet (AES vagy ZipCrypto) alkalmazunk egy ZIP/7z archívum tartalmára.  
+- **Lehet minden bejegyzésnek külön jelszava?** Igen – az Aspose.Zip lehetővé teszi, hogy minden fájlhoz külön jelszót rendeljünk.  
+- **Mely .NET verziók támogatottak?** Minden modern .NET Framework, .NET Core és .NET 5/6 verzió.  
+- **Szükség van licencre a termeléshez?** Kereskedelmi licenc szükséges a termelési használathoz; ingyenes próba elérhető.  
+- **Milyen tömörítési formátumot használ a példában?** A minta egy 7z archívumot hoz létre AES‑256 titkosítással.
+
+## Mi az a “how to encrypt zip” az Aspose.Zip használatával?
+
+A ZIP (vagy 7z) fájl titkosítása azt jelenti, hogy a bejegyzéseket úgy védjük, hogy a megfelelő jelszó nélkül ne lehessen őket megnyitni. Az Aspose.Zip for .NET támogatja a klasszikus ZipCrypto‑t és a erősebb AES titkosítást is, és lehetővé teszi, hogy bejegyzésenként adjon meg titkosítási beállításokat, így finomhangolt biztonsági kontrollt biztosít.
+
+## Miért használjunk különböző jelszavakat minden bejegyzéshez?
+
+- **Biztonsági szegmentálás:** Ha egy jelszó kompromittálódik, a többi fájl továbbra is védett marad.  
+- **Szabályozási megfelelés:** Egyes iparágak külön hitelesítő adatokat követelnek meg különböző adatkategóriákhoz.  
+- **Felhasználó‑specifikus hozzáférés:** Egyetlen archívumot több felhasználónak is kiadhat, ahol mindenki csak azokat a fájlokat tudja feloldani, amelyekhez jogosultsága van.
 
 ## Előfeltételek
 
-Mielőtt belevetnénk magunkat a ZIP-archívumok változó jelszavakkal történő kezelésének izgalmas világába, győződjön meg a következőkről:
+Mielőtt elkezdenénk, győződjön meg róla, hogy rendelkezik:
 
--  Aspose.Zip .NET-hez: Győződjön meg arról, hogy a könyvtár telepítve van. Ha nem, a szükséges információkat megtalálja a[dokumentáció](https://reference.aspose.com/zip/net/).
-- Dokumentumkönyvtár: Állítson be egy könyvtárat a dokumentumok tárolására.
-- Alapvető C# ismerete: A C# ismerete előnyös lesz, mivel kódolásra fogjuk használni.
+- **Aspose.Zip for .NET** telepítve – a letöltési és telepítési útmutatóért tekintse meg a hivatalos [documentation](https://reference.aspose.com/zip/net/) oldalt.  
+- Egy mappa a gépén, ahol a forrásfájlokat tárolja (a „Document Directory”).  
+- Alapvető ismeretek C#‑ban és Visual Studio‑ban (vagy a kedvenc .NET IDE‑jában).
 
-## Névterek importálása
+## Névtér importálása
 
-A kezdéshez importálnia kell a szükséges névtereket a C# projektbe. Ez biztosítja, hogy hozzáférjen az Aspose.Zip for .NET szolgáltatásaihoz.
+Kezdjük azzal, hogy beimportáljuk azokat a névtereket, amelyek tartalmazzák a szükséges osztályokat.
 
 ```csharp
 using Aspose.Zip.Saving;
@@ -40,7 +60,9 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## 1. lépés: Állítsa be a dokumentumkönyvtárat
+## 1. lépés: Állítsa be a Document Directory‑t
+
+Határozza meg az útvonalat, amely a archiválni kívánt fájlokat tartalmazza.
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -48,7 +70,7 @@ string dataDir = "Your Document Directory";
 
 ## 2. lépés: Hozzon létre bejegyzéseket különböző jelszavakkal
 
-Most pedig nézzük meg az alapvető funkciókat, amelyek a különböző jelszavakkal rendelkező bejegyzések létrehozását jelentik az Aspose.Zip for .NET-ben.
+Itt van az útmutató központi része. Megnyitunk egy új 7z fájlt, három `FileInfo` objektumot hozunk létre, és mindegyiket egy saját AES jelszóval ellátott bejegyzésként adjuk hozzá.
 
 ```csharp
 //ExStart: EntriesWithDifferentPasswords
@@ -70,39 +92,63 @@ using (FileStream sevenZipFile = File.Open("archive.7z", FileMode.Create))
 //ExEnd: EntriesWithDifferentPasswords
 ```
 
+### Hogyan működik ez
+
+- `SevenZipArchive` a 7‑z archívum tárolója.  
+- `CreateEntry` a bejegyzés nevét, a forrásfájlt, egy felülírási jelzőt és egy `SevenZipEntrySettings` objektumot vár.  
+- A `SevenZipEntrySettings`‑ben két beállítási objektumot adunk meg: egyet a tömörítéshez (`SevenZipStoreCompressionSettings`) és egyet a titkosításhoz (`SevenZipAESEncryptionSettings`).  
+- Minden hívás **különböző jelszót** ad meg (`"test1"`, `"test2"`, `"test3"`), ezzel bejegyzésenkénti védelmet biztosítva.
+
 ## 3. lépés: Ellenőrzés
 
-A kód végrehajtása után ellenőrizze a konzolt, hogy megbizonyosodjon arról, hogy az AES titkosítási beállításokkal rendelkező Seven Zip fájl sikeresen létrejött.
+Miután az archívum mentésre került, kiírhat egy egyszerű megerősítő üzenetet.
 
 ```csharp
 Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Settings");
 ```
 
-## Következtetés
+Futtassa a programot, majd próbálja meg megnyitni az `archive.7z` fájlt egy, például a 7‑Zip‑et használó eszközzel. Minden bejegyzéshez jelszót kér, ezzel megerősítve, hogy a jelszavak valóban különböznek.
 
-Gratulálunk! Elsajátította a különböző jelszavakkal rendelkező bejegyzésekkel való munka művészetét az Aspose.Zip for .NET-ben. Ez a hatékony képesség nagyobb biztonságot és rugalmasságot nyit meg az alkalmazások ZIP-archívumainak kezelésekor.
+## Gyakori problémák és megoldások
 
-## GYIK
+| Probléma | Ok | Megoldás |
+|----------|----|----------|
+| **Helytelen jelszó hiba** | A jelszó karakterlánc felesleges szóközöket vagy láthatatlan karaktereket tartalmaz. | Vágja le a jelszó karakterláncokat (`new SevenZipAESEncryptionSettings(password.Trim())`). |
+| **Az archívum nem nyílik meg régebbi eszközökben** | Néhány régi ZIP eszköz nem támogatja a 7z által használt AES‑256 titkosítást. | Használjon modern kibontót (7‑Zip 19.00+). |
+| **A fájl nem lett hozzáadva az archívumhoz** | A forrásfájl útvonala hibás vagy a fájl nem létezik. | Ellenőrizze a `dataDir` és a fájlneveket, vagy használja a `Path.Combine(dataDir, "data1.bin")`-t. |
 
-### 1. kérdés: Az Aspose.Zip for .NET kompatibilis a .NET összes verziójával?
+## Gyakran feltett kérdések
 
-1. válasz: Igen, az Aspose.Zip for .NET úgy lett kialakítva, hogy zökkenőmentesen integrálódjon a .NET keretrendszer összes verziójával.
+### Q1: Az Aspose.Zip for .NET kompatibilis-e az összes .NET verzióval?
 
-### 2. kérdés: Használhatom az Aspose.Zip for .NET-et kereskedelmi projektjeimben?
+**A1:** Igen, az Aspose.Zip for .NET úgy lett tervezve, hogy zökkenőmentesen integrálódjon az összes .NET keretrendszer verzióval.
 
-A2: Abszolút! Az Aspose.Zip for .NET kereskedelmi licenceket kínál, és további információkat talál a vásárlás módjáról[itt](https://purchase.aspose.com/buy).
+### Q2: Használhatom az Aspose.Zip for .NET-et kereskedelmi projektjeimben?
 
-### 3. kérdés: Van ingyenes próbaverzió?
+**A2:** Természetesen! Az Aspose.Zip for .NET kereskedelmi licenceket kínál, és a vásárlás módjáról további információkat találhat [itt](https://purchase.aspose.com/buy).
 
- 3. válasz: Igen, egy ingyenes próbaverzióval felfedezheti az Aspose.Zip for .NET szolgáltatásait. Fogj neki[itt](https://releases.aspose.com/).
+### Q3: Elérhető ingyenes próba?
 
-### 4. kérdés: Hogyan kaphatok támogatást az Aspose.Zip for .NET-hez?
+**A3:** Igen, az Aspose.Zip for .NET funkcióit ingyenes próba verzióval is kipróbálhatja. Kezdje el [itt](https://releases.aspose.com/).
 
- 4. válasz: Ha kérdése vagy segítsége van, keresse fel a[Aspose.Zip Fórum](https://forum.aspose.com/c/zip/37).
+### Q4: Hogyan kaphatok támogatást az Aspose.Zip for .NET-hez?
 
-### 5. kérdés: Használhatom az Aspose.Zip-et .NET-hez állandó licenc nélkül?
+**A4:** Bármilyen kérdés vagy segítség esetén látogassa meg az [Aspose.Zip Fórumot](https://forum.aspose.com/c/zip/37).
 
- 5. válasz: Igen, rövid távú szükségleteihez ideiglenes engedélyt kaphat. További részletek[itt](https://purchase.aspose.com/temporary-license/).
+### Q5: Használhatom az Aspose.Zip for .NET-et állandó licenc nélkül?
+
+**A5:** Igen, ideiglenes licencet szerezhet rövid távú igényeihez. További részletek [itt](https://purchase.aspose.com/temporary-license/).
+
+## Összegzés
+
+Most megtanulta, hogyan **encrypt zip** archívumokat hozhat létre bejegyzésenkénti jelszavakkal az Aspose.Zip for .NET használatával. Ez a technika rugalmasságot biztosít, hogy minden fájlt egyenként védjen, szigorúbb biztonsági követelményeknek megfeleljen, és egyszerűsítse a felhasználó‑specifikus terjesztést. Nyugodtan kísérletezzen más tömörítési beállításokkal, nagyobb fájlkészletekkel, vagy integrálja ezt a logikát egy webszolgáltatásba, amely futás közben generál biztonságos archívumokat.
+
+---
+
+**Utolsó frissítés:** 2025-12-18  
+**Tesztelve:** Aspose.Zip for .NET 24.12 (a legújabb a írás időpontjában)  
+**Szerző:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
