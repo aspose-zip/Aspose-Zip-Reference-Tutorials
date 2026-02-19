@@ -126,15 +126,15 @@ Aspose.Zip يدعم صيغًا متعددة، بما في ذلك ZIP و 7z و TA
 ### هل يمكنني استخدام Aspose.Zip لأغراض تجارية؟
 نعم، يمكنك شراء ترخيص [هنا](https://purchase.aspose.com/buy) للاستخدام التجاري.
 
+---
+
+**آخر تحديث:** 2025-12-21  
+**تم الاختبار مع:** Aspose.Zip 24.11 for .NET  
+**المؤلف:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**آخر تحديث:** 2025-12-21  
-**تم الاختبار مع:** Aspose.Zip 24.11 for .NET  
-**المؤلف:** Aspose

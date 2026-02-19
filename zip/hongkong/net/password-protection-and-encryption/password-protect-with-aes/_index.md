@@ -120,23 +120,6 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES256_out.z
 | 舊版解壓縮工具無法開啟壓縮檔 | 舊版工具可能不支援 AES 加密 | 使用現代解壓縮工具（例如 7‑Zip），或在需要相容性時改用標準 ZIP 加密。 |
 | 大型檔案導致記憶體壓力 | 整個檔案在壓縮前被載入記憶體 | 如範例所示使用 `FileStream` 串流檔案，避免將全部內容載入至位元組陣列。 |
 
-## 常見問題
-
-### 我可以在其他程式語言中使用 Aspose.Zip for .NET 嗎？
-Aspose.Zip 主要設計給 .NET 應用程式使用，確保無縫整合與最佳效能。
-
-### AES 加密方法對於敏感資料是否安全？
-是的，AES 加密被廣泛認可為保護敏感資訊的安全且強韌的方法。
-
-### 我可以更改已加密壓縮檔的密碼嗎？
-不行，已設定密碼的加密壓縮檔無法更改密碼。您必須使用新密碼重新建立加密壓縮檔。
-
-### 使用 Aspose.Zip 加密時，檔案類型有任何限制嗎？
-Aspose.Zip 支援多種檔案類型的加密，確保在保護不同資料時具備彈性。
-
-### 如果忘記加密壓縮檔的密碼會怎樣？
-很遺憾，無法找回加密壓縮檔的密碼。務必將密碼妥善保管於安全位置。
-
 ## 其他常見問題
 
 **Q: 如何使用 Aspose.Zip 於 C# 加密 ZIP 檔案？**  
@@ -154,15 +137,15 @@ A: 您可以使用相同密碼開啟壓縮檔並讀取條目；若有任何不�
 **Q: AES‑256 會影響壓縮比例嗎？**  
 A: 加密是在壓縮之後進行的，因此壓縮比例不會改變；只有加密後的資料會因少量額外開銷而稍微變大。
 
+---
+
+**最後更新：** 2025-12-21  
+**測試環境：** Aspose.Zip for .NET 24.11（最新）  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最後更新：** 2025-12-21  
-**測試環境：** Aspose.Zip for .NET 24.11（最新）  
-**作者：** Aspose

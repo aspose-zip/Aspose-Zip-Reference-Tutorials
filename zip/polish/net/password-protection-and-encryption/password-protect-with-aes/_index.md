@@ -122,23 +122,6 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES256_out.z
 | Archive cannot be opened in older unzip tools | Starsze narzędzia mogą nie obsługiwać szyfrowania AES | Użyj nowoczesnego narzędzia do rozpakowywania (np. 7‑Zip) lub wybierz standardowe szyfrowanie ZIP, jeśli wymagana jest kompatybilność. |
 | Large files cause memory pressure | Cały plik jest wczytywany do pamięci przed kompresją | Strumieniuj plik przy użyciu `FileStream` (jak pokazano) i unikaj wczytywania całej zawartości do tablicy bajtów. |
 
-## Najczęściej zadawane pytania
-
-### Czy mogę używać Aspose.Zip dla .NET z innymi językami programowania?
-Aspose.Zip jest przede wszystkim przeznaczony dla aplikacji .NET, zapewniając płynną integrację i optymalną wydajność.
-
-### Czy metoda szyfrowania AES jest bezpieczna dla wrażliwych danych?
-Tak, szyfrowanie AES jest powszechnie uznawane za bezpieczną i solidną metodę ochrony wrażliwych informacji.
-
-### Czy mogę zmienić hasło już zaszyfrowanego archiwum?
-Nie, hasła zaszyfrowanego archiwum nie można zmienić po jego ustawieniu. Należy utworzyć nowe zaszyfrowane archiwum z innym hasłem.
-
-### Czy istnieją ograniczenia dotyczące typów plików, które można szyfrować przy użyciu Aspose.Zip?
-Aspose.Zip obsługuje szyfrowanie różnych typów plików, zapewniając elastyczność w zabezpieczaniu różnych rodzajów danych.
-
-### Co się stanie, jeśli zapomnę hasła do zaszyfrowanego archiwum?
-Niestety nie ma możliwości odzyskania hasła do zaszyfrowanego archiwum. Należy przechowywać hasło w bezpiecznym miejscu.
-
 ## Dodatkowe często zadawane pytania
 
 **Q: Jak zaszyfrować plik zip w C# przy użyciu Aspose.Zip?**  
@@ -156,15 +139,15 @@ A: Możesz otworzyć archiwum tym samym hasłem i odczytać wpisy; każde niezgo
 **Q: Czy AES‑256 wpływa na współczynnik kompresji?**  
 A: Szyfrowanie jest stosowane po kompresji, więc współczynnik kompresji pozostaje taki sam; jedynie zaszyfrowane dane są nieco większe ze względu na niewielki narzut.
 
+---
+
+**Last Updated:** 2025-12-21  
+**Tested With:** Aspose.Zip for .NET 24.11 (latest)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-21  
-**Tested With:** Aspose.Zip for .NET 24.11 (latest)  
-**Author:** Aspose

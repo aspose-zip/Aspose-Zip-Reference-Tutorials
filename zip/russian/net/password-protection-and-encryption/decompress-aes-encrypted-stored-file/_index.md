@@ -128,13 +128,6 @@ Aspose.Zip поддерживает различные форматы, вклю�
 ### Можно ли использовать Aspose.Zip в коммерческих целях?
 Да, коммерческую лицензию можно приобрести [здесь](https://purchase.aspose.com/buy).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Последнее обновление:** 2025-12-21  
@@ -142,3 +135,10 @@ Aspose.Zip поддерживает различные форматы, вклю�
 **Автор:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

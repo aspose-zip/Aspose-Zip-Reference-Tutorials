@@ -124,13 +124,6 @@ Aspose.Zip 支持多种格式，包括 ZIP、7z、TAR 等。详见文档中的�
 ### 我可以将 Aspose.Zip 用于商业用途吗？
 可以，您可以在[此处](https://purchase.aspose.com/buy)购买商业许可证。
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **最后更新：** 2025-12-21  
@@ -138,3 +131,10 @@ Aspose.Zip 支持多种格式，包括 ZIP、7z、TAR 等。详见文档中的�
 **作者：** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

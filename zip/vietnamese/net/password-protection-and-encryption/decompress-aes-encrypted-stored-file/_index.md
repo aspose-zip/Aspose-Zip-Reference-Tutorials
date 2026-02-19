@@ -128,13 +128,6 @@ Aspose.Zip hỗ trợ nhiều định dạng, bao gồm ZIP, 7z và TAR. Tham kh
 ### Tôi có thể sử dụng Aspose.Zip cho mục đích thương mại không?
 Có, bạn có thể mua giấy phép [tại đây](https://purchase.aspose.com/buy) cho việc sử dụng thương mại.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Cập nhật lần cuối:** 2025-12-21  
@@ -142,3 +135,10 @@ Có, bạn có thể mua giấy phép [tại đây](https://purchase.aspose.com/
 **Tác giả:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

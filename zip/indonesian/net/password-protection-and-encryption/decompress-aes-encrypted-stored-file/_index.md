@@ -128,15 +128,15 @@ Aspose.Zip mendukung berbagai format, termasuk ZIP, 7z, dan TAR. Lihat dokumenta
 ### Bisakah saya menggunakan Aspose.Zip untuk keperluan komersial?
 Ya, Anda dapat membeli lisensi [di sini](https://purchase.aspose.com/buy) untuk penggunaan komersial.
 
+---
+
+**Terakhir Diperbarui:** 2025-12-21  
+**Diuji Dengan:** Aspose.Zip 24.11 untuk .NET  
+**Penulis:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Terakhir Diperbarui:** 2025-12-21  
-**Diuji Dengan:** Aspose.Zip 24.11 untuk .NET  
-**Penulis:** Aspose

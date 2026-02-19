@@ -129,15 +129,15 @@ Aspose.Zip 支援多種格式，包括 ZIP、7z 與 TAR。請參閱文件以取�
 
 是的，您可於[此處](https://purchase.aspose.com/buy)購買授權以供商業使用。
 
+---
+
+**Last Updated:** 2025-12-21  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-21  
-**Tested With:** Aspose.Zip 24.11 for .NET  
-**Author:** Aspose

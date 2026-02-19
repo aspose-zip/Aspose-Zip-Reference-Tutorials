@@ -126,15 +126,15 @@ Aspose.Zip admite varios formatos, incluidos ZIP, 7z y TAR. Consulte la document
 ### ¿Puedo usar Aspose.Zip con fines comerciales?
 Sí, puede comprar una licencia [aquí](https://purchase.aspose.com/buy) para uso comercial.
 
+---
+
+**Última actualización:** 2025-12-21  
+**Probado con:** Aspose.Zip 24.11 for .NET  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última actualización:** 2025-12-21  
-**Probado con:** Aspose.Zip 24.11 for .NET  
-**Autor:** Aspose

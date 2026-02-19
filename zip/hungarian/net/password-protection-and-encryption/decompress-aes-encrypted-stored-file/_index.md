@@ -129,13 +129,6 @@ Az Aspose.Zip különböző formátumokat támogat, többek között ZIP, 7z és
 ### Használhatom az Aspose.Zip-et kereskedelmi célokra?
 Igen, kereskedelmi licencet vásárolhatsz [here](https://purchase.aspose.com/buy) a kereskedelmi felhasználáshoz.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Utoljára frissítve:** 2025-12-21  
@@ -143,3 +136,10 @@ Igen, kereskedelmi licencet vásárolhatsz [here](https://purchase.aspose.com/bu
 **Szerző:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

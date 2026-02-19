@@ -128,13 +128,6 @@ Aspose.Zip, ZIP, 7z ve TAR dahil çeşitli formatları destekler. Kapsamlı list
 ### Aspose.Zip'i ticari amaçlarla kullanabilir miyim?
 Evet, ticari kullanım için bir lisans satın alabilirsiniz [buradan](https://purchase.aspose.com/buy).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Son Güncelleme:** 2025-12-21  
@@ -142,3 +135,10 @@ Evet, ticari kullanım için bir lisans satın alabilirsiniz [buradan](https://p
 **Yazar:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

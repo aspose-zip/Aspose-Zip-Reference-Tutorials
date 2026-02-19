@@ -126,13 +126,6 @@ Aspose.Zip विभिन्न फ़ॉर्मेट्स को सपो
 ### क्या मैं Aspose.Zip को व्यावसायिक उद्देश्यों के लिए उपयोग कर सकता हूँ?
 हाँ, आप व्यावसायिक उपयोग के लिए एक लाइसेंस [here](https://purchase.aspose.com/buy) खरीद सकते हैं।
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **अंतिम अपडेट:** 2025-12-21  
@@ -140,3 +133,10 @@ Aspose.Zip विभिन्न फ़ॉर्मेट्स को सपो
 **लेखक:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

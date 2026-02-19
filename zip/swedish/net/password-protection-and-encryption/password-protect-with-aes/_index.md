@@ -121,23 +121,6 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES256_out.z
 | Arkivet kan inte öppnas i äldre unzip‑verktyg | Äldre verktyg kanske inte stödjer AES‑kryptering | Använd ett modernt unzip‑verktyg (t.ex. 7‑Zip) eller välj standard ZIP‑kryptering om kompatibilitet krävs. |
 | Stora filer orsakar minnesbelastning | Hela filen läses in i minnet innan komprimering | Strömma filen med `FileStream` (som visat) och undvik att läsa in hela innehållet i en byte‑array. |
 
-## Vanliga frågor
-
-### Kan jag använda Aspose.Zip för .NET med andra programmeringsspråk?
-Aspose.Zip är främst avsedd för .NET‑applikationer, vilket säkerställer sömlös integration och optimal prestanda.
-
-### Är AES‑krypteringsmetoden säker för känslig data?
-Ja, AES‑kryptering är allmänt erkänd som en säker och robust metod för att skydda känslig information.
-
-### Kan jag ändra lösenordet för ett redan krypterat arkiv?
-Nej, lösenordet för ett krypterat arkiv kan inte ändras när det har satts. Du måste skapa ett nytt krypterat arkiv med ett annat lösenord.
-
-### Finns det några begränsningar för vilka filtyper som kan krypteras med Aspose.Zip?
-Aspose.Zip stöder kryptering av olika filtyper, vilket ger flexibilitet att säkra olika typer av data.
-
-### Vad händer om jag glömmer lösenordet för ett krypterat arkiv?
-Tyvärr finns det inget sätt att återställa ett krypterat arkivs lösenord. Det är viktigt att förvara lösenordet på en säker plats.
-
 ## Ytterligare vanliga frågor
 
 **Q: Hur krypterar jag zip‑fil C# med Aspose.Zip?**  
@@ -155,15 +138,15 @@ A: Du kan öppna arkivet med samma lösenord och läsa tillbaka posterna; varje 
 **Q: Påverkar AES‑256 komprimeringsgraden?**  
 A: Kryptering appliceras efter komprimering, så komprimeringsgraden förblir densamma; endast den krypterade nyttolasten blir något större med en liten overhead.
 
+---
+
+**Last Updated:** 2025-12-21  
+**Tested With:** Aspose.Zip for .NET 24.11 (latest)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-21  
-**Tested With:** Aspose.Zip for .NET 24.11 (latest)  
-**Author:** Aspose

@@ -122,23 +122,6 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES256_out.z
 | Archiv nelze otevřít ve starších nástrojích pro rozbalování | Starší nástroje nemusí podporovat AES šifrování | Použijte moderní nástroj pro rozbalování (např. 7‑Zip) nebo zvolte standardní ZIP šifrování, pokud je vyžadována kompatibilita. |
 | Velké soubory způsobují tlak na paměť | Celý soubor je načten do paměti před kompresí | Streamujte soubor pomocí `FileStream` (jak je ukázáno) a vyhněte se načítání celého obsahu do pole bajtů. |
 
-## Často kladené otázky
-
-### Mohu použít Aspose.Zip pro .NET s jinými programovacími jazyky?
-Aspose.Zip je primárně navržen pro .NET aplikace, zajišťuje bezproblémovou integraci a optimální výkon.
-
-### Je metoda AES šifrování bezpečná pro citlivá data?
-Ano, AES šifrování je široce uznáváno jako bezpečná a robustní metoda pro ochranu citlivých informací.
-
-### Mohu změnit heslo u již šifrovaného archivu?
-Ne, heslo u šifrovaného archivu nelze po nastavení změnit. Je nutné vytvořit nový šifrovaný archiv s jiným heslem.
-
-### Existují omezení ohledně typů souborů, které lze šifrovat pomocí Aspose.Zip?
-Aspose.Zip podporuje šifrování různých typů souborů, což zajišťuje flexibilitu při zabezpečování různých druhů dat.
-
-### Co se stane, když zapomenu heslo k šifrovanému archivu?
-Bohužel neexistuje způsob, jak obnovit heslo šifrovaného archivu. Je důležité uchovávat heslo na bezpečném místě.
-
 ## Další často kladené otázky
 
 **Q: Jak šifruji zip soubor v C# pomocí Aspose.Zip?**  
@@ -156,15 +139,15 @@ A: Můžete otevřít archiv se stejným heslem a přečíst položky zpět; jak
 **Q: Ovlivňuje AES‑256 kompresní poměr?**  
 A: Šifrování se aplikuje po kompresi, takže kompresní poměr zůstává stejný; pouze šifrovaná část je o malý overhead větší.
 
+---
+
+**Poslední aktualizace:** 2025-12-21  
+**Testováno s:** Aspose.Zip for .NET 24.11 (latest)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Poslední aktualizace:** 2025-12-21  
-**Testováno s:** Aspose.Zip for .NET 24.11 (latest)  
-**Autor:** Aspose

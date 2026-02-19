@@ -15,7 +15,7 @@ weight: 10
 
 # Criar zip protegido por senha para diretórios .NET – Tutorial Aspose.Zip
 
-## Quick Answers
+## Respostas Rápidas
 - **Qual biblioteca é recomendada?** Aspose.Zip for .NET  
 - **Posso criptografar uma pasta inteira?** Sim – basta apontar a API para a pasta que você deseja compactar.  
 - **É possível alterar a senha do zip?** Absolutamente, use `TraditionalEncryptionSettings`.  

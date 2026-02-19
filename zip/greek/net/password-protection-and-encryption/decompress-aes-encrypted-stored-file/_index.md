@@ -129,13 +129,6 @@ using (var decompressed = archive.Entries[0].Open())
 ### Μπορώ να χρησιμοποιήσω το Aspose.Zip για εμπορικούς σκοπούς;
 Ναι, μπορείτε να αγοράσετε άδεια [εδώ](https://purchase.aspose.com/buy) για εμπορική χρήση.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Τελευταία ενημέρωση:** 2025-12-21  
@@ -143,3 +136,10 @@ using (var decompressed = archive.Entries[0].Open())
 **Συγγραφέας:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

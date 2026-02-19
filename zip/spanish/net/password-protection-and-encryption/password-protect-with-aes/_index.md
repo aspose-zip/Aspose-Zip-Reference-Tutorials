@@ -121,23 +121,6 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES256_out.z
 | El archivo no se puede abrir en herramientas de descompresión antiguas | Las herramientas antiguas pueden no soportar cifrado AES | Use una utilidad de descompresión moderna (p. ej., 7‑Zip) o elija el cifrado ZIP estándar si la compatibilidad es necesaria. |
 | Archivos grandes generan presión de memoria | El archivo completo se carga en memoria antes de la compresión | Transmita el archivo usando `FileStream` (como se muestra) y evite cargar todo el contenido en un arreglo de bytes. |
 
-## Preguntas frecuentes
-
-### ¿Puedo usar Aspose.Zip for .NET con otros lenguajes de programación?
-Aspose.Zip está diseñado principalmente para aplicaciones .NET, garantizando una integración fluida y un rendimiento óptimo.
-
-### ¿Es el método de cifrado AES seguro para datos sensibles?
-Sí, el cifrado AES es ampliamente reconocido como un método seguro y robusto para proteger información sensible.
-
-### ¿Puedo cambiar la contraseña de un archivo ya cifrado?
-No, la contraseña de un archivo cifrado no puede modificarse una vez establecida. Deberá crear un nuevo archivo cifrado con una contraseña diferente.
-
-### ¿Existen limitaciones en los tipos de archivo que pueden cifrarse con Aspose.Zip?
-Aspose.Zip admite el cifrado de diversos tipos de archivo, asegurando flexibilidad al proteger diferentes tipos de datos.
-
-### ¿Qué ocurre si olvido la contraseña de un archivo cifrado?
-Desafortunadamente, no hay forma de recuperar la contraseña de un archivo cifrado. Es crucial guardar la contraseña en un lugar seguro.
-
 ## Preguntas frecuentes adicionales
 
 **P: ¿Cómo cifro un archivo zip en C# usando Aspose.Zip?**  
@@ -155,15 +138,15 @@ R: Puede abrir el archivo con la misma contraseña y leer las entradas; cualquie
 **P: ¿Afecta AES‑256 la relación de compresión?**  
 R: El cifrado se aplica después de la compresión, por lo que la relación de compresión permanece igual; solo la carga cifrada es ligeramente mayor debido a un pequeño overhead.
 
+---
+
+**Última actualización:** 2025-12-21  
+**Probado con:** Aspose.Zip for .NET 24.11 (latest)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última actualización:** 2025-12-21  
-**Probado con:** Aspose.Zip for .NET 24.11 (latest)  
-**Autor:** Aspose

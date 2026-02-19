@@ -125,23 +125,6 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES256_out.z
 | L'archive ne peut pas être ouverte avec d'anciens outils de décompression | Les outils plus anciens peuvent ne pas prendre en charge le chiffrement AES | Utilisez un utilitaire de décompression moderne (par ex., 7‑Zip) ou choisissez le chiffrement ZIP standard si la compatibilité est requise. |
 | Les gros fichiers provoquent une pression mémoire | Le fichier entier est chargé en mémoire avant la compression | Diffusez le fichier en utilisant `FileStream` (comme montré) et évitez de charger tout le contenu dans un tableau d’octets. |
 
-## Questions fréquemment posées
-
-### Puis‑je utiliser Aspose.Zip pour .NET avec d’autres langages de programmation ?
-Aspose.Zip est principalement conçu pour les applications .NET, assurant une intégration transparente et des performances optimales.
-
-### La méthode de chiffrement AES est‑elle sécurisée pour les données sensibles ?
-Oui, le chiffrement AES est largement reconnu comme une méthode sécurisée et robuste pour protéger les informations sensibles.
-
-### Puis‑je changer le mot de passe d’une archive déjà chiffrée ?
-Non, le mot de passe d’une archive chiffrée ne peut pas être modifié une fois défini. Vous devez créer une nouvelle archive chiffrée avec un mot de passe différent.
-
-### Existe‑t‑il des limitations sur les types de fichiers pouvant être chiffrés avec Aspose.Zip ?
-Aspose.Zip prend en charge le chiffrement de divers types de fichiers, assurant une flexibilité dans la sécurisation de différents types de données.
-
-### Que se passe‑t‑il si j’oublie le mot de passe d’une archive chiffrée ?
-Malheureusement, il n’est pas possible de récupérer le mot de passe d’une archive chiffrée. Il est crucial de garder le mot de passe dans un endroit sécurisé.
-
 ## Questions supplémentaires fréquentes
 
 **Q : Comment chiffrer un fichier zip en C# avec Aspose.Zip ?**  
@@ -159,15 +142,15 @@ A : Vous pouvez ouvrir l’archive avec le même mot de passe et relire les en
 **Q : AES‑256 affecte‑t‑il le taux de compression ?**  
 A : Le chiffrement est appliqué après la compression, donc le taux de compression reste le même ; seul le payload chiffré est légèrement plus volumineux en raison d’un petit overhead.
 
+---
+
+**Last Updated:** 2025-12-21  
+**Tested With:** Aspose.Zip for .NET 24.11 (latest)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-21  
-**Tested With:** Aspose.Zip for .NET 24.11 (latest)  
-**Author:** Aspose
