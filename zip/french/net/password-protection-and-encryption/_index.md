@@ -91,13 +91,6 @@ Apprenez à décompresser des fichiers chiffrés AES en C# avec Aspose.Zip pour 
 ### [Décompresser un fichier stocké chiffré AES dans Aspose.Zip pour .NET](./decompress-aes-encrypted-stored-file/)
 Apprenez à décompresser des fichiers stockés chiffrés AES dans Aspose.Zip pour .NET grâce à ce guide complet étape par étape. Améliorez dès aujourd’hui vos compétences en développement .NET !
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Questions fréquentes
 
 **Q : Comment ajouter un mot de passe aux fichiers zip en utilisant Aspose.Zip ?**  
@@ -118,3 +111,10 @@ R : Oui, Aspose.Zip prend en charge l’extraction en mémoire en travaillant 
 **Dernière mise à jour :** 2025-12-18  
 **Testé avec :** Aspose.Zip for .NET 24.12  
 **Auteur :** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -91,13 +91,6 @@ weight: 26
 ### [فك ضغط ملف مخزن مشفر بـ AES في Aspose.Zip لـ .NET](./decompress-aes-encrypted-stored-file/)
 تعلم كيفية فك ضغط ملفات مخزنة مشفرة بـ AES في Aspose.Zip لـ .NET من خلال هذا الدليل الشامل خطوة بخطوة. عزز مهاراتك في تطوير .NET اليوم!
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## الأسئلة المتكررة
 
 **س: كيف أضيف كلمة مرور إلى ملفات zip باستخدام Aspose.Zip؟**  
@@ -120,3 +113,10 @@ weight: 26
 **آخر تحديث:** 2025-12-18  
 **تم الاختبار مع:** Aspose.Zip لـ .NET 24.12  
 **المؤلف:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

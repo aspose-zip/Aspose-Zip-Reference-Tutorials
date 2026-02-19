@@ -123,15 +123,15 @@ A: Odwiedź [forum Aspose.Zip](https://forum.aspose.com/c/zip/37), aby uzyskać 
 
 Teraz opanowałeś **jak zipować plik do strumienia c#** przy użyciu Aspose.Zip dla .NET. Ta technika pozwala na obsługę kompresji w całości w pamięci, co sprawia, że aplikacje są szybsze, bardziej bezpieczne i łatwiejsze w wdrożeniu. Eksperymentuj z różnymi poziomami kompresji, integruj strumień z odpowiedziami HTTP lub przechowuj go bezpośrednio w bazie danych — możliwości są nieograniczone.
 
+---
+
+**Ostatnia aktualizacja:** 2025-12-18  
+**Testowano z:** Aspose.Zip for .NET 24.11 (najnowsza w momencie pisania)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ostatnia aktualizacja:** 2025-12-18  
-**Testowano z:** Aspose.Zip for .NET 24.11 (najnowsza w momencie pisania)  
-**Autor:** Aspose

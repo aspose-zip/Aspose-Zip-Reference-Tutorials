@@ -122,13 +122,6 @@ Console.WriteLine("Successfully Saved to Stream");
 
 لقد أصبحت الآن متمكنًا من **كيفية ضغط ملف إلى تدفق c#** باستخدام Aspose.Zip لـ .NET. تمكنك هذه التقنية من التعامل مع الضغط بالكامل في الذاكرة، مما يجعل تطبيقاتك أسرع، أكثر أمانًا، وأسهل في النشر. جرب مستويات ضغط مختلفة، دمج التدفق في استجابات HTTP، أو تخزينه مباشرةً في قاعدة بيانات—الإمكانات لا حدود لها.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2025-12-18  
@@ -136,3 +129,10 @@ Console.WriteLine("Successfully Saved to Stream");
 **Author:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

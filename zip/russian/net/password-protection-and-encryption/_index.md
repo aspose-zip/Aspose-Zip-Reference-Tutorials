@@ -91,13 +91,6 @@ weight: 26
 ### [Распаковка AES‑зашифрованного хранимого файла в Aspose.Zip для .NET](./decompress-aes-encrypted-stored-file/)
 Узнайте, как распаковывать AES‑зашифрованные хранимые файлы в Aspose.Zip для .NET с помощью этого всестороннего пошагового руководства. Улучшайте навыки разработки в .NET уже сегодня!
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Часто задаваемые вопросы
 
 **Q: Как добавить пароль к zip‑файлам с помощью Aspose.Zip?**  
@@ -120,3 +113,10 @@ A: Да, Aspose.Zip поддерживает извлечение в памят�
 **Last Updated:** 2025-12-18  
 **Tested With:** Aspose.Zip for .NET 24.12  
 **Author:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

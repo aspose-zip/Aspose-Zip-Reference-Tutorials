@@ -91,13 +91,6 @@ weight: 26
 ### [แตกไฟล์ที่เก็บไว้และเข้ารหัส AES ใน Aspose.Zip for .NET](./decompress-aes-encrypted-stored-file/)
 เรียนรู้วิธีการแตกไฟล์ที่เก็บไว้และเข้ารหัส AES ใน Aspose.Zip for .NET ด้วยคำแนะนำแบบขั้นตอนต่อขั้นตอนที่ครอบคลุมนี้ ยกระดับทักษะการพัฒนา .NET ของคุณวันนี้!
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## คำถามที่พบบ่อย
 
 **ถาม: ฉันจะเพิ่มรหัสผ่านให้ไฟล์ zip โดยใช้ Aspose.Zip อย่างไร?**  
@@ -120,3 +113,10 @@ A: Yes, Aspose.Zip supports in‑memory extraction by working with streams direc
 **อัปเดตล่าสุด:** 2025-12-18  
 **ทดสอบกับ:** Aspose.Zip for .NET 24.12  
 **ผู้เขียน:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

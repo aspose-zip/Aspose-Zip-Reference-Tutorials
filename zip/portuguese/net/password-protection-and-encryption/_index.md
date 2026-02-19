@@ -91,13 +91,6 @@ Aprenda a descompactar arquivos criptografados com AES em C# usando Aspose.Zip p
 ### [Decompress AES Encrypted Stored File in Aspose.Zip for .NET](./decompress-aes-encrypted-stored-file/)
 Aprenda a descompactar arquivos armazenados criptografados com AES no Aspose.Zip para .NET com este guia abrangente passo a passo. Aprimore suas habilidades de desenvolvimento .NET hoje!
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ## Perguntas Frequentes
 
 **Q: Como adiciono senha a arquivos zip usando Aspose.Zip?**  
@@ -120,3 +113,10 @@ A: Sim, o Aspose.Zip suporta extração em memória trabalhando diretamente com 
 **Última atualização:** 2025-12-18  
 **Testado com:** Aspose.Zip para .NET 24.12  
 **Autor:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

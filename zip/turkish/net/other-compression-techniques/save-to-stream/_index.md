@@ -122,15 +122,15 @@ C: Topluluktan destek almak için [Aspose.Zip forumunu](https://forum.aspose.com
 
 Artık Aspose.Zip for .NET kullanarak **zip dosyasını akışa c# ile** nasıl sıkıştıracağınızı öğrendiniz. Bu teknik, sıkıştırmayı tamamen bellek içinde yapmanızı sağlar, uygulamalarınızı daha hızlı, daha güvenli ve dağıtımı daha kolay hâle getirir. Farklı sıkıştırma seviyeleriyle deneyler yapın, akışı HTTP yanıtlarına entegre edin veya doğrudan bir veritabanına kaydedin—olasılıklarınız sınırsız.
 
+---
+
+**Son Güncelleme:** 2025-12-18  
+**Test Edilen:** Aspose.Zip for .NET 24.11 (yazım anındaki en son sürüm)  
+**Yazar:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Son Güncelleme:** 2025-12-18  
-**Test Edilen:** Aspose.Zip for .NET 24.11 (yazım anındaki en son sürüm)  
-**Yazar:** Aspose

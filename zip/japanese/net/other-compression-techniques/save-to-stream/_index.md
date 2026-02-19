@@ -122,15 +122,15 @@ A: コミュニティから支援を受けるには、[Aspose.Zip forum](https:/
 
 これで、Aspose.Zip for .NET を使用した **C# で zip ファイルをストリームに変換する方法** を習得しました。この手法により、圧縮処理を完全にメモリ内で行えるため、アプリケーションがより高速に、より安全に、そしてデプロイが容易になります。さまざまな圧縮レベルを試したり、ストリームを HTTP 応答に組み込んだり、データベースに直接保存したりと、可能性は無限です。
 
+---
+
+**最終更新日:** 2025-12-18  
+**テスト環境:** Aspose.Zip for .NET 24.11 (latest at time of writing)  
+**作者:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最終更新日:** 2025-12-18  
-**テスト環境:** Aspose.Zip for .NET 24.11 (latest at time of writing)  
-**作者:** Aspose
