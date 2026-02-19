@@ -124,15 +124,15 @@ Látogassa meg az [Aspose.Zip fórumot](https://forum.aspose.com/c/zip/37), ahol
 
 Most már szilárd alapokkal rendelkezik a **titkosított 7z** archívumok létrehozásához az Aspose.Zip for .NET segítségével. A fenti lépések követésével biztonságosan tömörítheti a fájlokat, hozzáadhatja őket egy 7z tárolóhoz, és szükség esetén AES titkosítást is alkalmazhat. Nyugodtan bővítse a példát további bejegyzésekkel, jelszavak beállításával, vagy integrálja nagyobb munkafolyamatokba.
 
+---
+
+**Utoljára frissítve:** 2025-12-25  
+**Tesztelve a következővel:** Aspose.Zip for .NET 24.11  
+**Szerző:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Utoljára frissítve:** 2025-12-25  
-**Tesztelve a következővel:** Aspose.Zip for .NET 24.11  
-**Szerző:** Aspose

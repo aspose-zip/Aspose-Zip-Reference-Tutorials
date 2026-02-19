@@ -136,15 +136,15 @@ A: Bạn có thể tìm hỗ trợ trên **[Aspose.Zip forum](https://forum.aspo
 
 ---
 
+**Cập nhật lần cuối:** 2025-12-25  
+**Đã kiểm tra với:** Aspose.Zip for .NET 24.12  
+**Tác giả:** Aspose  
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-**Cập nhật lần cuối:** 2025-12-25  
-**Đã kiểm tra với:** Aspose.Zip for .NET 24.12  
-**Tác giả:** Aspose  
-
----

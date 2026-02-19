@@ -44,6 +44,14 @@ Jakmile se seznámíte s vytvářením SevenZip položek, je čas ovládnout ře
 ## SevenZip s různými kompresními metodami v Aspose.Zip pro .NET
 Připraveni jít dál než základy? Náš třetí tutoriál zkoumá vytváření Seven Zip souborů pomocí různých **sevenzip compression methods** v Aspose.Zip pro .NET. Provedeme vás jednoduchými kroky pro LZMA2, BZip2 a Store (bez komprese). Ať už hledáte vysoký poměr komprese nebo ukládání souborů bez komprese, tento tutoriál vše pokrývá. Rozšiřte svůj nástrojový set a učinte informovaná rozhodnutí o kompresních metodách, která vyhovují požadavkům vašeho projektu.
 
+## Tutoriály SevenZip komprese
+### [Vytvořte SevenZip položky v Aspose.Zip pro .NET](./create-sevenzip-entries/)
+Objevte sílu Aspose.Zip pro .NET! Naučte se krok za krokem vytvářet SevenZip položky. Komprimujte soubory bez námahy. Stáhněte si nyní pro plynulý vývojový zážitek.
+### [Vytvořte SevenZip položku v Aspose.Zip pro .NET](./create-sevenzip-entry/)
+Ovládněte Aspose.Zip pro .NET – snadno vytvářejte SevenZip položky. Vylepšete své .NET aplikace efektivní manipulací se zip archivy.
+### [SevenZip s různými kompresními metodami v Aspose.Zip pro .NET](./sevenzip-various-compression-methods/)
+Naučte se vytvářet Seven Zip soubory s Aspose.Zip pro .NET pomocí různých kompresních metod. Jednoduché kroky pro LZMA2, BZip2 a Store (bez komprese).
+
 ### Běžné úskalí a tipy
 - **Choosing the wrong method:** LZMA2 nabízí nejlepší kompresi, ale může být pomalejší u velkých souborů. Použijte BZip2, když potřebujete rovnováhu, a Store, když je rychlost kritická.  
 - **Memory consumption:** Metody s vysokou kompresí mohou vyžadovat více RAM; sledujte zdroje u velmi velkých archivů.  
@@ -70,13 +78,11 @@ A: Třída `Archive` implementuje `IDisposable`. Zabalte ji do `using` bloku neb
 
 Na závěr, naše tutoriály o SevenZip kompresi nabízejí komplexní průvodce efektivním využitím Aspose.Zip pro .NET. Od vytváření základních SevenZip položek po zkoumání pokročilých **sevenzip compression methods**, tato série je vaším hlavním zdrojem pro plynulý a efektivní vývoj. Stáhněte si tutoriály nyní a zlepšete své dovednosti s Aspose.Zip pro .NET. Šťastné programování!
 
-## Tutoriály SevenZip komprese
-### [Vytvořte SevenZip položky v Aspose.Zip pro .NET](./create-sevenzip-entries/)
-Objevte sílu Aspose.Zip pro .NET! Naučte se krok za krokem vytvářet SevenZip položky. Komprimujte soubory bez námahy. Stáhněte si nyní pro plynulý vývojový zážitek.
-### [Vytvořte SevenZip položku v Aspose.Zip pro .NET](./create-sevenzip-entry/)
-Ovládněte Aspose.Zip pro .NET – snadno vytvářejte SevenZip položky. Vylepšete své .NET aplikace efektivní manipulací se zip archivy.
-### [SevenZip s různými kompresními metodami v Aspose.Zip pro .NET](./sevenzip-various-compression-methods/)
-Naučte se vytvářet Seven Zip soubory s Aspose.Zip pro .NET pomocí různých kompresních metod. Jednoduché kroky pro LZMA2, BZip2 a Store (bez komprese).
+---
+
+**Poslední aktualizace:** 2025-12-25  
+**Testováno s:** Aspose.Zip pro .NET (nejnovější stabilní verze)  
+**Autor:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -84,9 +90,3 @@ Naučte se vytvářet Seven Zip soubory s Aspose.Zip pro .NET pomocí různých 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Poslední aktualizace:** 2025-12-25  
-**Testováno s:** Aspose.Zip pro .NET (nejnovější stabilní verze)  
-**Autor:** Aspose

@@ -124,15 +124,15 @@ Bezoek het [Aspose.Zip‑forum](https://forum.aspose.com/c/zip/37) om ondersteun
 
 Je hebt nu een stevige basis voor **het maken van versleutelde 7z**‑archieven met Aspose.Zip voor .NET. Door de bovenstaande stappen te volgen, kun je veilig bestanden comprimeren, ze toevoegen aan een 7z‑container en, indien nodig, AES‑versleuteling inschakelen. Voel je vrij om dit voorbeeld uit te breiden door meer entries toe te voegen, wachtwoorden in te stellen of het te integreren in grotere workflows.
 
+---
+
+**Laatst bijgewerkt:** 2025-12-25  
+**Getest met:** Aspose.Zip for .NET 24.11  
+**Auteur:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Laatst bijgewerkt:** 2025-12-25  
-**Getest met:** Aspose.Zip for .NET 24.11  
-**Auteur:** Aspose

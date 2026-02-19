@@ -136,15 +136,15 @@ O: Wsparcie dostępne jest na **[forum Aspose.Zip](https://forum.aspose.com/c/zi
 
 ---
 
+**Ostatnia aktualizacja:** 2025-12-25  
+**Testowano z:** Aspose.Zip dla .NET 24.12  
+**Autor:** Aspose  
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-**Ostatnia aktualizacja:** 2025-12-25  
-**Testowano z:** Aspose.Zip dla .NET 24.12  
-**Autor:** Aspose  
-
----

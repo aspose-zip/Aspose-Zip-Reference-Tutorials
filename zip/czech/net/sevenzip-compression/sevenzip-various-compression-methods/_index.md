@@ -136,15 +136,15 @@ A: Podporu můžete hledat na **[fóru Aspose.Zip](https://forum.aspose.com/c/zi
 
 ---
 
+**Poslední aktualizace:** 2025-12-25  
+**Testováno s:** Aspose.Zip pro .NET 24.12  
+**Autor:** Aspose  
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-**Poslední aktualizace:** 2025-12-25  
-**Testováno s:** Aspose.Zip pro .NET 24.12  
-**Autor:** Aspose  
-
----

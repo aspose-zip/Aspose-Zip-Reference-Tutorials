@@ -133,15 +133,17 @@ Console.WriteLine("Successfully Created a Seven Zip File with No Compression (St
 **س: أين يمكنني الحصول على دعم لـ Aspose.Zip لـ .NET؟**  
 ج: يمكنك طلب الدعم عبر **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)**.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
+---
 
 **آخر تحديث:** 2025-12-25  
 **تم الاختبار مع:** Aspose.Zip for .NET 24.12  
 **المؤلف:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -47,6 +47,14 @@ Miután megismerkedett a SevenZip bejegyzések létrehozásával, itt az ideje, 
 
 Készen áll a kezdő szint túllépésére? Harmadik tutorialunk a Seven Zip fájlok létrehozását mutatja be különböző **sevenzip compression methods** használatával az Aspose.Zip for .NET-ben. Lépésről‑lépésre végigvezetjük az LZMA2, BZip2 és Store (nincs tömörítés) folyamatain. Akár magas tömörítési arányt, akár tömörítés nélküli tárolást keres, ez a tutorial mindent lefed. Bővítse eszköztárát, és hozza meg a megfelelő döntéseket a projekt követelményeihez illő tömörítési módszerekről.
 
+## SevenZip tömörítési tutorialok
+### [SevenZip bejegyzések létrehozása Aspose.Zip for .NET-ben](./create-sevenzip-entries/)
+Fedezze fel az Aspose.Zip for .NET erejét! Tanulja meg lépésről‑lépésre a SevenZip bejegyzések létrehozását. Tömörítse a fájlokat könnyedén. Töltse le most a zökkenőmentes fejlesztési élményért.
+### [SevenZip bejegyzés létrehozása Aspose.Zip for .NET-ben](./create-sevenzip-entry/)
+Mesterségesen használja az Aspose.Zip for .NET-et – hozzon létre SevenZip bejegyzéseket egyszerűen. Emelje .NET alkalmazásait hatékony zip archívum‑manipulációval.
+### [SevenZip különböző tömörítési módszerekkel Aspose.Zip for .NET-ben](./sevenzip-various-compression-methods/)
+Tanulja meg, hogyan hozhat létre Seven Zip fájlokat az Aspose.Zip for .NET segítségével különböző tömörítési módszerekkel. Egyszerű lépések LZMA2, BZip2 és Store (nincs tömörítés) esetén.
+
 ### Gyakori hibák és tippek
 - **Rossz módszer választása:** Az LZMA2 a legjobb tömörítést nyújtja, de nagy fájloknál lassabb lehet. BZip2-et válasszon, ha egyensúlyt keres, Store-ot pedig, ha a sebesség kritikus.  
 - **Memóriafogyasztás:** A magas tömörítési módszerek több RAM-ot igényelhetnek; nagy archívumok esetén figyelje az erőforrásokat.  
@@ -73,13 +81,11 @@ A: Az `Archive` osztály implementálja az `IDisposable` interfészt. Tegye `usi
 
 Összefoglalva, SevenZip tömörítési tutorialjaink átfogó útmutatót nyújtanak az Aspose.Zip for .NET hatékony kihasználásához. A egyszerű SevenZip bejegyzések létrehozásától a fejlett **sevenzip compression methods** felfedezéséig, ez a sorozat az Ön megbízható forrása a zökkenőmentes és hatékony fejlesztéshez. Töltse le most a tutorialokat, és fejlessze készségeit az Aspose.Zip for .NET segítségével. Boldog kódolást!
 
-## SevenZip tömörítési tutorialok
-### [SevenZip bejegyzések létrehozása Aspose.Zip for .NET-ben](./create-sevenzip-entries/)
-Fedezze fel az Aspose.Zip for .NET erejét! Tanulja meg lépésről‑lépésre a SevenZip bejegyzések létrehozását. Tömörítse a fájlokat könnyedén. Töltse le most a zökkenőmentes fejlesztési élményért.
-### [SevenZip bejegyzés létrehozása Aspose.Zip for .NET-ben](./create-sevenzip-entry/)
-Mesterségesen használja az Aspose.Zip for .NET-et – hozzon létre SevenZip bejegyzéseket egyszerűen. Emelje .NET alkalmazásait hatékony zip archívum‑manipulációval.
-### [SevenZip különböző tömörítési módszerekkel Aspose.Zip for .NET-ben](./sevenzip-various-compression-methods/)
-Tanulja meg, hogyan hozhat létre Seven Zip fájlokat az Aspose.Zip for .NET segítségével különböző tömörítési módszerekkel. Egyszerű lépések LZMA2, BZip2 és Store (nincs tömörítés) esetén.
+---
+
+**Last Updated:** 2025-12-25  
+**Tested With:** Aspose.Zip for .NET (latest stable release)  
+**Author:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -87,9 +93,3 @@ Tanulja meg, hogyan hozhat létre Seven Zip fájlokat az Aspose.Zip for .NET seg
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-25  
-**Tested With:** Aspose.Zip for .NET (latest stable release)  
-**Author:** Aspose

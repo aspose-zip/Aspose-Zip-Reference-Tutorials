@@ -123,15 +123,15 @@ Truy cập [diễn đàn Aspose.Zip](https://forum.aspose.com/c/zip/37) để nh
 
 Bây giờ bạn đã có nền tảng vững chắc để **tạo các lưu trữ 7z được mã hoá** bằng Aspose.Zip cho .NET. Bằng cách làm theo các bước trên, bạn có thể nén file một cách an toàn, thêm chúng vào container 7z, và thậm chí bật mã hoá AES khi cần. Hãy tự do mở rộng ví dụ này bằng cách thêm nhiều mục hơn, đặt mật khẩu, hoặc tích hợp vào các quy trình làm việc lớn hơn.
 
+---
+
+**Cập nhật lần cuối:** 2025-12-25  
+**Kiểm tra với:** Aspose.Zip cho .NET 24.11  
+**Tác giả:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Cập nhật lần cuối:** 2025-12-25  
-**Kiểm tra với:** Aspose.Zip cho .NET 24.11  
-**Tác giả:** Aspose

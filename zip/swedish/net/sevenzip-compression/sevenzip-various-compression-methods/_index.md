@@ -136,15 +136,15 @@ A: Du kan söka support på **[Aspose.Zip‑forumet](https://forum.aspose.com/c/
 
 ---
 
+**Senast uppdaterad:** 2025-12-25  
+**Testad med:** Aspose.Zip för .NET 24.12  
+**Författare:** Aspose  
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-**Senast uppdaterad:** 2025-12-25  
-**Testad med:** Aspose.Zip för .NET 24.12  
-**Författare:** Aspose  
-
----

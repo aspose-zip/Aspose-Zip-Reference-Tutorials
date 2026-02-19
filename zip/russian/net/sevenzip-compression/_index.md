@@ -47,6 +47,14 @@ SevenZip обеспечивает более высокие коэффициен
 
 Готовы выйти за рамки базового уровня? Третий учебник исследует создание файлов Seven Zip с использованием разных **sevenzip compression methods** в Aspose.Zip для .NET. Мы покажем простые шаги для LZMA2, BZip2 и Store (без сжатия). Независимо от того, стремитесь ли вы к высоким коэффициентам сжатия или к хранению файлов без сжатия, этот материал охватывает всё. Расширьте свой набор инструментов и принимайте обоснованные решения о методах сжатия в соответствии с требованиями проекта.
 
+## Учебники по сжатию SevenZip
+### [Create SevenZip Entries in Aspose.Zip for .NET](./create-sevenzip-entries/)
+Исследуйте возможности Aspose.Zip для .NET! Узнайте, как пошагово создавать записи SevenZip. Легко сжимайте файлы. Скачайте сейчас для беспроблемного процесса разработки.
+### [Create SevenZip Entry in Aspose.Zip for .NET](./create-sevenzip-entry/)
+Освойте Aspose.Zip для .NET — создавайте записи SevenZip без усилий. Улучшайте свои .NET‑приложения с помощью эффективного управления zip‑архивами.
+### [SevenZip with Various Compression Methods in Aspose.Zip for .NET](./sevenzip-various-compression-methods/)
+Научитесь создавать файлы Seven Zip с Aspose.Zip для .NET, используя разные методы сжатия. Простые шаги для LZMA2, BZip2 и Store (без сжатия).
+
 ### Распространённые ошибки и советы
 - **Выбор неправильного метода:** LZMA2 обеспечивает наилучшее сжатие, но может работать медленнее с большими файлами. Используйте BZip2, когда нужен баланс, и Store, когда критична скорость.  
 - **Потребление памяти:** Методы с высоким уровнем сжатия могут требовать больше ОЗУ; следите за ресурсами при работе с очень большими архивами.  
@@ -73,13 +81,11 @@ SevenZip обеспечивает более высокие коэффициен
 
 Подводя итог, наши учебники по сжатию SevenZip предоставляют всестороннее руководство по эффективному использованию Aspose.Zip для .NET. От создания базовых записей SevenZip до изучения продвинутых **sevenzip compression methods** — эта серия является вашим главным ресурсом для бесшовной и эффективной разработки. Скачайте учебники сейчас и улучшите свои навыки с Aspose.Zip для .NET. Счастливого кодинга!
 
-## Учебники по сжатию SevenZip
-### [Create SevenZip Entries in Aspose.Zip for .NET](./create-sevenzip-entries/)
-Исследуйте возможности Aspose.Zip для .NET! Узнайте, как пошагово создавать записи SevenZip. Легко сжимайте файлы. Скачайте сейчас для беспроблемного процесса разработки.
-### [Create SevenZip Entry in Aspose.Zip for .NET](./create-sevenzip-entry/)
-Освойте Aspose.Zip для .NET — создавайте записи SevenZip без усилий. Улучшайте свои .NET‑приложения с помощью эффективного управления zip‑архивами.
-### [SevenZip with Various Compression Methods in Aspose.Zip for .NET](./sevenzip-various-compression-methods/)
-Научитесь создавать файлы Seven Zip с Aspose.Zip для .NET, используя разные методы сжатия. Простые шаги для LZMA2, BZip2 и Store (без сжатия).
+---
+
+**Last Updated:** 2025-12-25  
+**Tested With:** Aspose.Zip for .NET (latest stable release)  
+**Author:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -87,9 +93,3 @@ SevenZip обеспечивает более высокие коэффициен
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-25  
-**Tested With:** Aspose.Zip for .NET (latest stable release)  
-**Author:** Aspose

@@ -123,15 +123,15 @@ Kunjungi [forum Aspose.Zip](https://forum.aspose.com/c/zip/37) untuk meminta duk
 
 Anda kini memiliki dasar yang kuat untuk **membuat arsip 7z terenkripsi** dengan Aspose.Zip untuk .NET. Dengan mengikuti langkah‑langkah di atas, Anda dapat mengompres file secara aman, menambahkannya ke dalam kontainer 7z, dan bahkan mengaktifkan enkripsi AES bila diperlukan. Jangan ragu untuk memperluas contoh ini dengan menambahkan lebih banyak entri, mengatur kata sandi, atau mengintegrasikannya ke dalam alur kerja yang lebih besar.
 
+---
+
+**Terakhir Diperbarui:** 2025-12-25  
+**Diuji Dengan:** Aspose.Zip untuk .NET 24.11  
+**Penulis:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Terakhir Diperbarui:** 2025-12-25  
-**Diuji Dengan:** Aspose.Zip untuk .NET 24.11  
-**Penulis:** Aspose

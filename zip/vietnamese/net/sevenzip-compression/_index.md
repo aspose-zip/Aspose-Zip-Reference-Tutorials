@@ -47,6 +47,14 @@ Sau khi đã nắm vững cách tạo SevenZip entries, đã đến lúc nâng c
 
 Sẵn sàng vượt qua những kiến thức cơ bản? Tutorial thứ ba của chúng tôi khám phá việc tạo các tệp Seven Zip bằng các **sevenzip compression methods** khác nhau trong Aspose.Zip cho .NET. Chúng tôi sẽ hướng dẫn bạn các bước đơn giản cho LZMA2, BZip2 và Store (không nén). Dù bạn đang tìm kiếm tỷ lệ nén cao hay lưu trữ tệp mà không nén, tutorial này đều bao phủ đầy đủ. Mở rộng bộ công cụ của bạn và đưa ra quyết định thông minh về phương pháp nén phù hợp với yêu cầu dự án.
 
+## SevenZip Compression Tutorials
+### [Create SevenZip Entries in Aspose.Zip for .NET](./create-sevenzip-entries/)
+Khám phá sức mạnh của Aspose.Zip cho .NET! Học cách tạo các mục SevenZip từng bước. Nén tệp một cách dễ dàng. Tải ngay để có trải nghiệm phát triển liền mạch.
+### [Create SevenZip Entry in Aspose.Zip for .NET](./create-sevenzip-entry/)
+Thành thạo Aspose.Zip cho .NET - Tạo các mục SevenZip một cách dễ dàng. Nâng cao các ứng dụng .NET của bạn với việc thao tác kho lưu trữ zip hiệu quả.
+### [SevenZip with Various Compression Methods in Aspose.Zip for .NET](./sevenzip-various-compression-methods/)
+Học cách tạo các tệp Seven Zip với Aspose.Zip cho .NET bằng các phương pháp nén khác nhau. Các bước đơn giản cho LZMA2, BZip2 và Store (không nén).
+
 ### Những lỗi thường gặp & Mẹo
 - **Chọn sai phương pháp:** LZMA2 cho tỷ lệ nén tốt nhất nhưng có thể chậm hơn với các tệp lớn. Sử dụng BZip2 khi cần cân bằng, và Store khi tốc độ là yếu tố quan trọng.  
 - **Tiêu thụ bộ nhớ:** Các phương pháp nén cao có thể yêu cầu RAM nhiều hơn; hãy giám sát tài nguyên khi làm việc với các kho lưu trữ rất lớn.  
@@ -73,13 +81,11 @@ A: Lớp `Archive` triển khai `IDisposable`. Hãy bọc nó trong câu lệnh 
 
 Tóm lại, các tutorial về SevenZip Compression của chúng tôi cung cấp hướng dẫn toàn diện để tận dụng Aspose.Zip cho .NET một cách hiệu quả. Từ việc tạo các mục SevenZip cơ bản đến việc khám phá các **sevenzip compression methods** nâng cao, loạt tutorial này là nguồn tài nguyên đáng tin cậy cho việc phát triển liền mạch và hiệu quả. Tải ngay các tutorial và nâng cao kỹ năng của bạn với Aspose.Zip cho .NET. Chúc bạn lập trình vui vẻ!
 
-## SevenZip Compression Tutorials
-### [Create SevenZip Entries in Aspose.Zip for .NET](./create-sevenzip-entries/)
-Khám phá sức mạnh của Aspose.Zip cho .NET! Học cách tạo các mục SevenZip từng bước. Nén tệp một cách dễ dàng. Tải ngay để có trải nghiệm phát triển liền mạch.
-### [Create SevenZip Entry in Aspose.Zip for .NET](./create-sevenzip-entry/)
-Thành thạo Aspose.Zip cho .NET - Tạo các mục SevenZip một cách dễ dàng. Nâng cao các ứng dụng .NET của bạn với việc thao tác kho lưu trữ zip hiệu quả.
-### [SevenZip with Various Compression Methods in Aspose.Zip for .NET](./sevenzip-various-compression-methods/)
-Học cách tạo các tệp Seven Zip với Aspose.Zip cho .NET bằng các phương pháp nén khác nhau. Các bước đơn giản cho LZMA2, BZip2 và Store (không nén).
+---
+
+**Last Updated:** 2025-12-25  
+**Tested With:** Aspose.Zip for .NET (latest stable release)  
+**Author:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -87,9 +93,3 @@ Học cách tạo các tệp Seven Zip với Aspose.Zip cho .NET bằng các ph�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-25  
-**Tested With:** Aspose.Zip for .NET (latest stable release)  
-**Author:** Aspose

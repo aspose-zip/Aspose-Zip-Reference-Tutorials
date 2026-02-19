@@ -134,15 +134,17 @@ A : Les licences temporaires peuvent être obtenues **[here](https://purchase.
 **Q : Où puis‑je obtenir du support pour Aspose.Zip pour .NET ?**  
 A : Vous pouvez obtenir du support sur le **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)**.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
+---
 
 **Dernière mise à jour :** 2025-12-25  
 **Testé avec :** Aspose.Zip for .NET 24.12  
 **Auteur :** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -135,15 +135,15 @@ Aspose.Zip は主に ZIP と 7z 形式に焦点を当てています。他の形
 
 これで **暗号化 7z** アーカイブを Aspose.Zip for .NET で作成するための基礎が身につきました。上記の手順に従えば、ファイルを安全に圧縮し、7z コンテナに追加し、必要に応じて AES 暗号化も有効化できます。さらにエントリを増やしたり、パスワードを設定したり、より大規模なワークフローに組み込んだりして活用してください。
 
+---
+
+**最終更新日:** 2025-12-25  
+**テスト環境:** Aspose.Zip for .NET 24.11  
+**作者:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最終更新日:** 2025-12-25  
-**テスト環境:** Aspose.Zip for .NET 24.11  
-**作者:** Aspose

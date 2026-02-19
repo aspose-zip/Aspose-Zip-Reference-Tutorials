@@ -15,18 +15,18 @@ weight: 10
 
 # c# create 7z archive – Aspose.Zip for .NET を使用した SevenZip エントリの作成
 
-## Introduction
+## はじめに
 
 このチュートリアルでは、Aspose.Zip を使用して .NET アプリケーションで **c# create 7z archive** ファイルを効率的に作成する方法を学びます。ストレージ節約のために **compress files c#** が必要な場合や、配布を容易にするために **compress directory to 7z** が必要な場合でも、以下の手順が明確な説明と実践的なヒントとともにプロセスを案内します。
 
-## Quick Answers
+## クイックアンサー
 - **このチュートリアルの内容は？** Aspose.Zip for .NET を使用して SevenZip エントリを作成し、7z アーカイブとして保存することです。  
 - **対象の主要キーワードは？** c# create 7z archive。  
 - **ライセンスは必要ですか？** テスト用の一時ライセンスは利用可能ですが、本番環境ではフルライセンスが必要です。  
 - **Linux で実行できますか？** はい – Aspose.Zip for .NET はクロスプラットフォームです。  
 - **実装にどれくらい時間がかかりますか？** 基本的なアーカイブであれば約 5〜10 分です。
 
-## Prerequisites
+## 前提条件
 
 チュートリアルに入る前に、以下の前提条件が整っていることを確認してください：
 
@@ -34,7 +34,7 @@ weight: 10
 - Visual Studio などの統合開発環境 (IDE)。  
 - Aspose.Zip for .NET ライブラリがインストールされていること。未インストールの場合は、[here](https://releases.aspose.com/zip/net/) からダウンロードできます。
 
-## Import Namespaces
+## 名前空間のインポート
 
 C# プロジェクトで Aspose.Zip を使用するために、必要な名前空間をインポートしてください。コードの先頭に以下の行を追加します：
 
@@ -47,7 +47,7 @@ using System;
 
 ## c# create 7z archive – ステップバイステップ ガイド
 
-### Step 1: Set the Resource Directory Path
+### ステップ 1: リソースディレクトリのパスを設定する
 
 SevenZip エントリを作成する前に、リソースディレクトリへのパスを設定します。`dataDir` 変数内の `"Your Document Directory"` を実際のパスに置き換えてください。
 
@@ -57,7 +57,7 @@ string dataDir = "Your Document Directory";
 
 > **プロのコツ:** 絶対パスを使用すると、アプリケーションが別の作業ディレクトリから実行された場合の混乱を防げます。
 
-### Step 2: Create SevenZip Entries
+### ステップ 2: SevenZip エントリを作成する
 
 次に、プロセスの核心である SevenZip エントリの作成に取り組みます。このステップは **compress directory to 7z** 形式にディレクトリを圧縮します。
 
@@ -73,7 +73,7 @@ using (SevenZipArchive archive = new SevenZipArchive())
 
 上記のコードは `SevenZipArchive` を初期化し、指定フォルダー内のすべてのファイルを追加し、圧縮されたアーカイブを **SevenZip.7z** に書き出します。
 
-### Step 3: Display Success Message
+### ステップ 3: 成功メッセージを表示する
 
 すべてが正常に完了したことを確認するために、成功メッセージを表示します：
 
@@ -83,14 +83,14 @@ Console.WriteLine("Successfully Created a Seven Zip File");
 
 これで、転送・保存・さらなる処理が可能な共有用 **7z archive** が完成しました。
 
-## Why Use Aspose.Zip for .NET?
+## Aspose.Zip for .NET を使う理由
 
 - **高性能:** 多くのオープンソース代替品を上回る最適化された圧縮アルゴリズム。  
 - **クロスプラットフォーム対応:** コード変更なしで Windows、Linux、macOS で動作します。  
 - **豊富な API:** 圧縮レベル、暗号化、アーカイブ構造を細かく制御できます。  
 - **外部依存なし:** ネイティブの 7‑Zip バイナリをインストールする必要がありません。
 
-## Common Issues & Solutions
+## よくある問題と解決策
 
 | 問題 | 解決策 |
 |-------|----------|
@@ -98,7 +98,7 @@ Console.WriteLine("Successfully Created a Seven Zip File");
 | **Access denied error** | アプリケーションがソースフォルダーの読み取り権限と出力パスの書き込み権限を持っていることを確認してください。 |
 | **Large files cause OutOfMemoryException** | `SevenZipArchive` をストリーミングオプションで使用するか、アーカイブを複数のパートに分割してください。 |
 
-## Frequently Asked Questions
+## よくある質問
 
 ### Windows と Linux の両環境で Aspose.Zip for .NET を使用できますか？
 はい、Aspose.Zip for .NET はクロスプラットフォームであり、Windows と Linux の両環境でシームレスに利用できます。

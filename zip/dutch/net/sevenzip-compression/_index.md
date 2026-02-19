@@ -47,6 +47,14 @@ Nadat je vertrouwd bent geraakt met het maken van SevenZip‑items, is het tijd 
 
 Klaar om verder te gaan dan de basis? Onze derde tutorial onderzoekt het maken van Seven Zip‑bestanden met verschillende **sevenzip‑compressiemethoden** in Aspose.Zip voor .NET. We lopen je door eenvoudige stappen voor LZMA2, BZip2 en Store (geen compressie). Of je nu op zoek bent naar hoge compressieverhoudingen of bestanden wilt opslaan zonder compressie, deze tutorial behandelt alles. Breid je gereedschapskist uit en maak weloverwogen keuzes voor compressiemethoden die passen bij de eisen van je project.
 
+## SevenZip‑compressietutorials
+### [Create SevenZip Entries in Aspose.Zip for .NET](./create-sevenzip-entries/)
+Ontdek de kracht van Aspose.Zip voor .NET! Leer stap‑voor‑stap SevenZip‑items te maken. Comprimeer bestanden moeiteloos. Download nu voor een naadloze ontwikkelervaring.
+### [Create SevenZip Entry in Aspose.Zip for .NET](./create-sevenzip-entry/)
+Beheers Aspose.Zip voor .NET – SevenZip‑items moeiteloos maken. Verhoog je .NET‑applicaties met efficiënte zip‑archiefmanipulatie.
+### [SevenZip with Various Compression Methods in Aspose.Zip for .NET](./sevenzip-various-compression-methods/)
+Leer Seven Zip‑bestanden te maken met Aspose.Zip voor .NET met verschillende compressiemethoden. Eenvoudige stappen voor LZMA2, BZip2 en Store (geen compressie).
+
 ### Veelvoorkomende valkuilen & tips
 - **De verkeerde methode kiezen:** LZMA2 biedt de beste compressie maar kan trager zijn bij grote bestanden. Gebruik BZip2 wanneer je een balans nodig hebt, en Store wanneer snelheid cruciaal is.  
 - **Geheugengebruik:** Methoden met hoge compressie kunnen meer RAM vereisen; houd de resources in de gaten bij zeer grote archieven.  
@@ -73,13 +81,11 @@ A: De `Archive`‑klasse implementeert `IDisposable`. Plaats deze in een `using`
 
 Samenvattend bieden onze SevenZip‑compressietutorials een uitgebreide gids voor het effectief benutten van Aspose.Zip voor .NET. Van het maken van basis‑SevenZip‑items tot het verkennen van geavanceerde **sevenzip‑compressiemethoden**, is deze serie jouw go‑to‑bron voor naadloze en efficiënte ontwikkeling. Download de tutorials nu en verbeter je vaardigheden met Aspose.Zip voor .NET. Veel programmeerplezier!
 
-## SevenZip‑compressietutorials
-### [Create SevenZip Entries in Aspose.Zip for .NET](./create-sevenzip-entries/)
-Ontdek de kracht van Aspose.Zip voor .NET! Leer stap‑voor‑stap SevenZip‑items te maken. Comprimeer bestanden moeiteloos. Download nu voor een naadloze ontwikkelervaring.
-### [Create SevenZip Entry in Aspose.Zip for .NET](./create-sevenzip-entry/)
-Beheers Aspose.Zip voor .NET – SevenZip‑items moeiteloos maken. Verhoog je .NET‑applicaties met efficiënte zip‑archiefmanipulatie.
-### [SevenZip with Various Compression Methods in Aspose.Zip for .NET](./sevenzip-various-compression-methods/)
-Leer Seven Zip‑bestanden te maken met Aspose.Zip voor .NET met verschillende compressiemethoden. Eenvoudige stappen voor LZMA2, BZip2 en Store (geen compressie).
+---
+
+**Last Updated:** 2025-12-25  
+**Tested With:** Aspose.Zip for .NET (latest stable release)  
+**Author:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -87,9 +93,3 @@ Leer Seven Zip‑bestanden te maken met Aspose.Zip voor .NET met verschillende c
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-25  
-**Tested With:** Aspose.Zip for .NET (latest stable release)  
-**Author:** Aspose

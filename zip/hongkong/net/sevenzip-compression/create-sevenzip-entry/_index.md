@@ -122,15 +122,15 @@ Aspose.Zip 主要支援 ZIP 與 7z 格式。如需處理其他格式，請尋找
 
 現在您已具備使用 Aspose.Zip for .NET **建立加密 7z** 壓縮檔的完整基礎。依照上述步驟，即可安全壓縮檔案、加入 7z 容器，並在需要時啟用 AES 加密。歡迎自行擴充此範例，加入更多條目、設定密碼，或整合至更大的工作流程中。
 
+---
+
+**最後更新：** 2025-12-25  
+**測試環境：** Aspose.Zip for .NET 24.11  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最後更新：** 2025-12-25  
-**測試環境：** Aspose.Zip for .NET 24.11  
-**作者：** Aspose

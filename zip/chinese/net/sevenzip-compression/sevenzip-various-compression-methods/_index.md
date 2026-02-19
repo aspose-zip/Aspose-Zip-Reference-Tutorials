@@ -135,15 +135,15 @@ Console.WriteLine("Successfully Created a Seven Zip File with No Compression (St
 
 ---
 
+**最后更新：** 2025-12-25  
+**测试环境：** Aspose.Zip for .NET 24.12  
+**作者：** Aspose  
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-**最后更新：** 2025-12-25  
-**测试环境：** Aspose.Zip for .NET 24.12  
-**作者：** Aspose  
-
----

@@ -46,6 +46,14 @@ SevenZip エントリの作成に慣れたら、次はその技術をマスタ�
 
 基本を超えてさらに踏み込む準備はできましたか？3 番目のチュートリアルでは、Aspose.Zip for .NET で異なる **sevenzip compression methods** を使用して Seven Zip ファイルを作成する方法を紹介します。LZMA2、BZip2、Store（圧縮なし）の各手順を簡単に解説します。高い圧縮率が必要か、圧縮なしでファイルを保存したいかに関わらず、このチュートリアルですべてカバーできます。ツールキットを拡充し、プロジェクト要件に最適な圧縮方法を選択できるようになりましょう。
 
+## SevenZip 圧縮チュートリアル
+### [Create SevenZip Entries in Aspose.Zip for .NET](./create-sevenzip-entries/)
+Aspose.Zip for .NET のパワーを体感してください！SevenZip エントリをステップバイステップで作成し、ファイルを簡単に圧縮できます。シームレスな開発体験のために今すぐダウンロード。
+### [Create SevenZip Entry in Aspose.Zip for .NET](./create-sevenzip-entry/)
+Aspose.Zip for .NET をマスターし、SevenZip エントリを手軽に作成しましょう。効率的な zip アーカイブ操作で .NET アプリケーションを強化します。
+### [SevenZip with Various Compression Methods in Aspose.Zip for .NET](./sevenzip-various-compression-methods/)
+Aspose.Zip for .NET を使用して、さまざまな圧縮方法で Seven Zip ファイルを作成する方法を学びましょう。LZMA2、BZip2、Store（圧縮なし）の簡単な手順をご紹介します。
+
 ### よくある落とし穴とヒント
 - **間違った方式を選択すること:** LZMA2 は最高の圧縮率を提供しますが、大きなファイルでは速度が遅くなることがあります。バランスが必要な場合は BZip2、速度が重要な場合は Store を使用してください。  
 - **メモリ消費:** 高圧縮方式は RAM を多く消費する可能性があります。非常に大きなアーカイブを扱う際はリソースを監視してください。  
@@ -72,13 +80,11 @@ A: `Archive` クラスは `IDisposable` を実装しています。`using` ス�
 
 まとめると、当社の SevenZip 圧縮チュートリアルは Aspose.Zip for .NET を効果的に活用するための包括的なガイドです。基本的な SevenZip エントリの作成から高度な **sevenzip compression methods** の探求まで、このシリーズはシームレスかつ効率的な開発のための必携リソースです。今すぐチュートリアルをダウンロードし、Aspose.Zip for .NET でスキルを向上させましょう。ハッピーコーディング！
 
-## SevenZip 圧縮チュートリアル
-### [Create SevenZip Entries in Aspose.Zip for .NET](./create-sevenzip-entries/)
-Aspose.Zip for .NET のパワーを体感してください！SevenZip エントリをステップバイステップで作成し、ファイルを簡単に圧縮できます。シームレスな開発体験のために今すぐダウンロード。
-### [Create SevenZip Entry in Aspose.Zip for .NET](./create-sevenzip-entry/)
-Aspose.Zip for .NET をマスターし、SevenZip エントリを手軽に作成しましょう。効率的な zip アーカイブ操作で .NET アプリケーションを強化します。
-### [SevenZip with Various Compression Methods in Aspose.Zip for .NET](./sevenzip-various-compression-methods/)
-Aspose.Zip for .NET を使用して、さまざまな圧縮方法で Seven Zip ファイルを作成する方法を学びましょう。LZMA2、BZip2、Store（圧縮なし）の簡単な手順をご紹介します。
+---
+
+**Last Updated:** 2025-12-25  
+**Tested With:** Aspose.Zip for .NET (latest stable release)  
+**作者:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -86,9 +92,3 @@ Aspose.Zip for .NET を使用して、さまざまな圧縮方法で Seven Zip �
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-25  
-**Tested With:** Aspose.Zip for .NET (latest stable release)  
-**作者:** Aspose

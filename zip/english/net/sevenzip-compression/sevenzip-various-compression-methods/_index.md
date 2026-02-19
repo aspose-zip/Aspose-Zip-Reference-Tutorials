@@ -134,15 +134,15 @@ A: You can seek support on the **[Aspose.Zip forum](https://forum.aspose.com/c/z
 
 ---
 
+**Last Updated:** 2025-12-25  
+**Tested With:** Aspose.Zip for .NET 24.12  
+**Author:** Aspose  
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-**Last Updated:** 2025-12-25  
-**Tested With:** Aspose.Zip for .NET 24.12  
-**Author:** Aspose  
-
----

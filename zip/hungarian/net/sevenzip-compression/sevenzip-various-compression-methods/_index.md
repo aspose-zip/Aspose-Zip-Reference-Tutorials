@@ -136,15 +136,15 @@ V: Támogatást kérhet a **[Aspose.Zip fórumon](https://forum.aspose.com/c/zip
 
 ---
 
+**Utoljára frissítve:** 2025-12-25  
+**Tesztelve:** Aspose.Zip for .NET 24.12  
+**Szerző:** Aspose  
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-**Utoljára frissítve:** 2025-12-25  
-**Tesztelve:** Aspose.Zip for .NET 24.12  
-**Szerző:** Aspose  
-
----

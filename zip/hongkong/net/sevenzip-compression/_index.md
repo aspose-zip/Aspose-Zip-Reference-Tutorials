@@ -43,6 +43,14 @@ weight: 25
 ## 在 Aspose.Zip for .NET 中使用多種壓縮方法的 SevenZip
 準備好超越基礎了嗎？我們的第三篇教學探討在 Aspose.Zip for .NET 中使用不同 **sevenzip compression methods** 建立 Seven Zip 檔案。將為您示範 LZMA2、BZip2 與 Store（不壓縮）的簡易步驟。無論您追求高壓縮比或僅需儲存未壓縮檔案，本教學皆有涵蓋。擴充工具箱，並依專案需求作出明智的壓縮方法選擇。
 
+## SevenZip 壓縮教學
+### [在 Aspose.Zip for .NET 中建立 SevenZip 條目](./create-sevenzip-entries/)
+探索 Aspose.Zip for .NET 的強大功能！一步步學習建立 SevenZip 條目，輕鬆壓縮檔案。立即下載，獲得順暢的開發體驗。
+### [在 Aspose.Zip for .NET 中建立 SevenZip 條目](./create-sevenzip-entry/)
+精通 Aspose.Zip for .NET——輕鬆建立 SevenZip 條目。以高效的 zip 封存操作提升您的 .NET 應用程式。
+### [在 Aspose.Zip for .NET 中使用多種壓縮方法的 SevenZip](./sevenzip-various-compression-methods/)
+學習使用 Aspose.Zip for .NET 以不同壓縮方法建立 Seven Zip 檔案。提供 LZMA2、BZip2 與 Store（不壓縮）的簡易步驟。
+
 ### 常見陷阱與技巧
 - **選擇錯誤的壓縮方法：** LZMA2 壓縮率最高，但在大型檔案上可能較慢。需要速度與壓縮率平衡時使用 BZip2，對速度要求極高時則使用 Store。  
 - **記憶體使用量：** 高壓縮方法可能需要較多 RAM；對於極大型封存檔請留意資源使用情況。  
@@ -68,13 +76,11 @@ A: `Archive` 類別實作了 `IDisposable`。請將其放入 `using` 陳述式�
 ## 結論
 總結而言，我們的 SevenZip 壓縮教學提供了完整的指南，協助您有效運用 Aspose.Zip for .NET。從建立基本的 SevenZip 條目到探索進階 **sevenzip compression methods**，此系列是您無縫且高效開發的首選資源。立即下載教學，提升使用 Aspose.Zip for .NET 的技能。祝編程愉快！
 
-## SevenZip 壓縮教學
-### [在 Aspose.Zip for .NET 中建立 SevenZip 條目](./create-sevenzip-entries/)
-探索 Aspose.Zip for .NET 的強大功能！一步步學習建立 SevenZip 條目，輕鬆壓縮檔案。立即下載，獲得順暢的開發體驗。
-### [在 Aspose.Zip for .NET 中建立 SevenZip 條目](./create-sevenzip-entry/)
-精通 Aspose.Zip for .NET——輕鬆建立 SevenZip 條目。以高效的 zip 封存操作提升您的 .NET 應用程式。
-### [在 Aspose.Zip for .NET 中使用多種壓縮方法的 SevenZip](./sevenzip-various-compression-methods/)
-學習使用 Aspose.Zip for .NET 以不同壓縮方法建立 Seven Zip 檔案。提供 LZMA2、BZip2 與 Store（不壓縮）的簡易步驟。
+---
+
+**最後更新：** 2025-12-25  
+**測試環境：** Aspose.Zip for .NET (latest stable release)  
+**作者：** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -82,9 +88,3 @@ A: `Archive` 類別實作了 `IDisposable`。請將其放入 `using` 陳述式�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最後更新：** 2025-12-25  
-**測試環境：** Aspose.Zip for .NET (latest stable release)  
-**作者：** Aspose

@@ -132,15 +132,15 @@ C: **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)** üzerinden destek a
 
 ---
 
+**Son Güncelleme:** 2025-12-25  
+**Test Edilen Versiyon:** Aspose.Zip for .NET 24.12  
+**Yazar:** Aspose  
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-**Son Güncelleme:** 2025-12-25  
-**Test Edilen Versiyon:** Aspose.Zip for .NET 24.12  
-**Yazar:** Aspose  
-
----

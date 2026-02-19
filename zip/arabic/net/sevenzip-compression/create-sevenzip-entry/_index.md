@@ -123,15 +123,15 @@ Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Set
 
 أصبح لديك الآن أساس قوي **لإنشاء أرشيفات 7z مشفرة** باستخدام Aspose.Zip لـ .NET. باتباع الخطوات أعلاه، يمكنك ضغط الملفات بأمان، إضافتها إلى حاوية 7z، وتفعيل تشفير AES عند الحاجة. لا تتردد في توسيع هذا المثال بإضافة المزيد من الإدخالات، تعيين كلمات مرور، أو دمجه في سير عمل أكبر.
 
+---
+
+**آخر تحديث:** 2025-12-25  
+**تم الاختبار مع:** Aspose.Zip لـ .NET 24.11  
+**المؤلف:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**آخر تحديث:** 2025-12-25  
-**تم الاختبار مع:** Aspose.Zip لـ .NET 24.11  
-**المؤلف:** Aspose

@@ -135,15 +135,15 @@ A: **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)**에서 지원을 받
 
 ---
 
+**마지막 업데이트:** 2025-12-25  
+**테스트 환경:** Aspose.Zip for .NET 24.12  
+**작성자:** Aspose  
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-**마지막 업데이트:** 2025-12-25  
-**테스트 환경:** Aspose.Zip for .NET 24.12  
-**작성자:** Aspose  
-
----

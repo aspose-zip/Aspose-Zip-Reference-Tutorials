@@ -47,6 +47,14 @@ Una volta familiarizzato con la creazione di voci SevenZip, è il momento di pad
 
 Pronto a superare le basi? Il nostro terzo tutorial esplora la creazione di file Seven Zip usando diversi **sevenzip compression methods** in Aspose.Zip per .NET. Ti guideremo attraverso semplici passaggi per LZMA2, BZip2 e Store (senza compressione). Che tu stia cercando rapporti di compressione elevati o la memorizzazione di file senza compressione, questo tutorial copre tutto. Espandi il tuo set di strumenti e prendi decisioni informate sui metodi di compressione per soddisfare i requisiti del tuo progetto.
 
+## Tutorial di compressione SevenZip
+### [Crea voci SevenZip in Aspose.Zip per .NET](./create-sevenzip-entries/)
+Esplora la potenza di Aspose.Zip per .NET! Impara a creare voci SevenZip passo‑passo. Comprimi i file senza sforzo. Scarica ora per un'esperienza di sviluppo senza intoppi.
+### [Crea una voce SevenZip in Aspose.Zip per .NET](./create-sevenzip-entry/)
+Padroneggia Aspose.Zip per .NET - Crea voci SevenZip senza sforzo. Migliora le tue applicazioni .NET con una manipolazione efficiente degli archivi zip.
+### [SevenZip con vari metodi di compressione in Aspose.Zip per .NET](./sevenzip-various-compression-methods/)
+Impara a creare file Seven Zip con Aspose.Zip per .NET usando diversi metodi di compressione. Passaggi semplici per LZMA2, BZip2 e Store (senza compressione).
+
 ### Errori comuni e consigli
 - **Scegliere il metodo sbagliato:** LZMA2 offre la migliore compressione ma può essere più lento su file di grandi dimensioni. Usa BZip2 quando hai bisogno di un equilibrio, e Store quando la velocità è fondamentale.  
 - **Consumo di memoria:** I metodi di alta compressione possono richiedere più RAM; monitora le risorse per archivi molto grandi.  
@@ -73,13 +81,11 @@ R: La classe `Archive` implementa `IDisposable`. Avvolgila in una dichiarazione 
 
 In conclusione, i nostri tutorial sulla compressione SevenZip offrono una guida completa per sfruttare Aspose.Zip per .NET in modo efficace. Dalla creazione di voci SevenZip di base all'esplorazione di **sevenzip compression methods** avanzati, questa serie è la tua risorsa di riferimento per uno sviluppo fluido ed efficiente. Scarica i tutorial ora e migliora le tue competenze con Aspose.Zip per .NET. Buon coding!
 
-## Tutorial di compressione SevenZip
-### [Crea voci SevenZip in Aspose.Zip per .NET](./create-sevenzip-entries/)
-Esplora la potenza di Aspose.Zip per .NET! Impara a creare voci SevenZip passo‑passo. Comprimi i file senza sforzo. Scarica ora per un'esperienza di sviluppo senza intoppi.
-### [Crea una voce SevenZip in Aspose.Zip per .NET](./create-sevenzip-entry/)
-Padroneggia Aspose.Zip per .NET - Crea voci SevenZip senza sforzo. Migliora le tue applicazioni .NET con una manipolazione efficiente degli archivi zip.
-### [SevenZip con vari metodi di compressione in Aspose.Zip per .NET](./sevenzip-various-compression-methods/)
-Impara a creare file Seven Zip con Aspose.Zip per .NET usando diversi metodi di compressione. Passaggi semplici per LZMA2, BZip2 e Store (senza compressione).
+---
+
+**Last Updated:** 2025-12-25  
+**Tested With:** Aspose.Zip for .NET (latest stable release)  
+**Author:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -87,9 +93,3 @@ Impara a creare file Seven Zip con Aspose.Zip per .NET usando diversi metodi di 
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-25  
-**Tested With:** Aspose.Zip for .NET (latest stable release)  
-**Author:** Aspose

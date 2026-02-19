@@ -136,15 +136,15 @@ A: Você pode buscar suporte no **[forum Aspose.Zip](https://forum.aspose.com/c/
 
 ---
 
+**Última Atualização:** 2025-12-25  
+**Testado com:** Aspose.Zip para .NET 24.12  
+**Autor:** Aspose  
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-**Última Atualização:** 2025-12-25  
-**Testado com:** Aspose.Zip para .NET 24.12  
-**Autor:** Aspose  
-
----

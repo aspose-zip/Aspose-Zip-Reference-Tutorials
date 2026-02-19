@@ -46,6 +46,14 @@ SevenZip 提供的压缩比相较传统 ZIP 更优，尤其是 LZMA2。选择合
 
 准备好超越基础了吗？我们的第三篇教程探讨在 Aspose.Zip for .NET 中使用不同 **sevenzip compression methods** 创建 Seven Zip 文件。我们将为您演示 LZMA2、BZip2 和 Store（不压缩）的简易步骤。无论您追求高压缩比还是仅存储文件而不压缩，本教程均有覆盖。扩展您的工具箱，依据项目需求对压缩方法做出明智选择。
 
+## SevenZip 压缩教程
+### [在 Aspose.Zip for .NET 中创建 SevenZip 条目](./create-sevenzip-entries/)
+探索 Aspose.Zip for .NET 的强大功能！一步步学习创建 SevenZip 条目。轻松压缩文件。立即下载，获得无缝的开发体验。
+### [在 Aspose.Zip for .NET 中创建 SevenZip 条目](./create-sevenzip-entry/)
+精通 Aspose.Zip for .NET——轻松创建 SevenZip 条目。使用高效的 zip 归档操作提升您的 .NET 应用程序。
+### [Aspose.Zip for .NET 中的 SevenZip 多种压缩方法](./sevenzip-various-compression-methods/)
+学习使用 Aspose.Zip for .NET 通过不同压缩方法创建 Seven Zip 文件。提供 LZMA2、BZip2 和 Store（不压缩）的简易步骤。
+
 ### 常见陷阱与技巧
 - **选择错误的方法：** LZMA2 提供最佳压缩率，但在大文件上可能较慢。需要速度与压缩的平衡时使用 BZip2，追求速度时使用 Store。  
 - **内存消耗：** 高压缩方法可能需要更多内存；对超大归档请监控资源使用。  
@@ -72,13 +80,11 @@ A: `Archive` 类实现了 `IDisposable`。请将其放在 `using` 语句中或�
 
 总之，我们的 SevenZip 压缩教程提供了有效利用 Aspose.Zip for .NET 的全面指南。从创建基础 SevenZip 条目到探索高级 **sevenzip compression methods**，本系列是您实现无缝高效开发的首选资源。立即下载教程，提升您使用 Aspose.Zip for .NET 的技能。祝编码愉快！
 
-## SevenZip 压缩教程
-### [在 Aspose.Zip for .NET 中创建 SevenZip 条目](./create-sevenzip-entries/)
-探索 Aspose.Zip for .NET 的强大功能！一步步学习创建 SevenZip 条目。轻松压缩文件。立即下载，获得无缝的开发体验。
-### [在 Aspose.Zip for .NET 中创建 SevenZip 条目](./create-sevenzip-entry/)
-精通 Aspose.Zip for .NET——轻松创建 SevenZip 条目。使用高效的 zip 归档操作提升您的 .NET 应用程序。
-### [Aspose.Zip for .NET 中的 SevenZip 多种压缩方法](./sevenzip-various-compression-methods/)
-学习使用 Aspose.Zip for .NET 通过不同压缩方法创建 Seven Zip 文件。提供 LZMA2、BZip2 和 Store（不压缩）的简易步骤。
+---
+
+**最后更新：** 2025-12-25  
+**测试环境：** Aspose.Zip for .NET（最新稳定版）  
+**作者：** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -86,9 +92,3 @@ A: `Archive` 类实现了 `IDisposable`。请将其放在 `using` 语句中或�
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最后更新：** 2025-12-25  
-**测试环境：** Aspose.Zip for .NET（最新稳定版）  
-**作者：** Aspose

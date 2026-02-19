@@ -123,15 +123,15 @@ Navštivte [Aspose.Zip fórum](https://forum.aspose.com/c/zip/37), kde můžete 
 
 Nyní máte pevný základ pro **vytváření šifrovaných archivů 7z** pomocí Aspose.Zip pro .NET. Dodržením výše uvedených kroků můžete bezpečně komprimovat soubory, přidávat je do kontejneru 7z a v případě potřeby povolit AES šifrování. Klidně rozšiřte tento příklad o další záznamy, nastavení hesel nebo integraci do větších pracovních postupů.
 
+---
+
+**Last Updated:** 2025-12-25  
+**Tested With:** Aspose.Zip for .NET 24.11  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-25  
-**Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose

@@ -124,15 +124,15 @@ Visite o [forum Aspose.Zip](https://forum.aspose.com/c/zip/37) para obter suport
 
 Agora você tem uma base sólida para **criar arquivos 7z criptografados** com Aspose.Zip para .NET. Seguindo os passos acima, você pode comprimir arquivos com segurança, adicioná‑los a um contêiner 7z e até habilitar a criptografia AES quando necessário. Sinta‑se à vontade para expandir este exemplo adicionando mais entradas, definindo senhas ou integrando‑o a fluxos de trabalho maiores.
 
+---
+
+**Última atualização:** 2025-12-25  
+**Testado com:** Aspose.Zip para .NET 24.11  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última atualização:** 2025-12-25  
-**Testado com:** Aspose.Zip para .NET 24.11  
-**Autor:** Aspose

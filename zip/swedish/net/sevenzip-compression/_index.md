@@ -47,6 +47,14 @@ När du har bekantat dig med att skapa SevenZip-poster är det dags att bemästr
 
 Redo att gå bortom grunderna? Vår tredje handledning utforskar hur man skapar Seven Zip‑filer med olika **sevenzip compression methods** i Aspose.Zip för .NET. Vi guidar dig genom enkla steg för LZMA2, BZip2 och Store (ingen komprimering). Oavsett om du söker höga komprimeringsförhållanden eller vill lagra filer utan komprimering, täcker denna handledning allt. Utöka ditt verktygssätt och fatta informerade beslut om komprimeringsmetoder som passar ditt projekts krav.
 
+## SevenZip‑komprimeringshandledningar
+### [Skapa SevenZip-poster i Aspose.Zip för .NET](./create-sevenzip-entries/)
+Utforska kraften i Aspose.Zip för .NET! Lär dig skapa SevenZip-poster steg för steg. Komprimera filer utan ansträngning. Ladda ner nu för en smidig utvecklingsupplevelse.
+### [Skapa SevenZip-post i Aspose.Zip för .NET](./create-sevenzip-entry/)
+Behärska Aspose.Zip för .NET – skapa SevenZip-poster utan ansträngning. Förbättra dina .NET‑applikationer med effektiv zip‑arkivmanipulation.
+### [SevenZip med olika komprimeringsmetoder i Aspose.Zip för .NET](./sevenzip-various-compression-methods/)
+Lär dig skapa Seven Zip‑filer med Aspose.Zip för .NET med olika komprimeringsmetoder. Enkla steg för LZMA2, BZip2 och Store (ingen komprimering).
+
 ### Vanliga fallgropar & tips
 - **Välja fel metod:** LZMA2 ger den bästa komprimeringen men kan vara långsammare på stora filer. Använd BZip2 när du behöver en balans, och Store när hastigheten är kritisk.  
 - **Minnesanvändning:** Metoder med hög komprimering kan kräva mer RAM; övervaka resurserna för mycket stora arkiv.  
@@ -73,13 +81,11 @@ A: `Archive`‑klassen implementerar `IDisposable`. Omslut den i ett `using`‑u
 
 Sammanfattningsvis erbjuder våra SevenZip‑komprimeringshandledningar en omfattande guide för att effektivt utnyttja Aspose.Zip för .NET. Från att skapa grundläggande SevenZip-poster till att utforska avancerade **sevenzip compression methods**, är denna serie din främsta resurs för smidig och effektiv utveckling. Ladda ner handledningarna nu och förbättra dina färdigheter med Aspose.Zip för .NET. Lycka till med kodningen!
 
-## SevenZip‑komprimeringshandledningar
-### [Skapa SevenZip-poster i Aspose.Zip för .NET](./create-sevenzip-entries/)
-Utforska kraften i Aspose.Zip för .NET! Lär dig skapa SevenZip-poster steg för steg. Komprimera filer utan ansträngning. Ladda ner nu för en smidig utvecklingsupplevelse.
-### [Skapa SevenZip-post i Aspose.Zip för .NET](./create-sevenzip-entry/)
-Behärska Aspose.Zip för .NET – skapa SevenZip-poster utan ansträngning. Förbättra dina .NET‑applikationer med effektiv zip‑arkivmanipulation.
-### [SevenZip med olika komprimeringsmetoder i Aspose.Zip för .NET](./sevenzip-various-compression-methods/)
-Lär dig skapa Seven Zip‑filer med Aspose.Zip för .NET med olika komprimeringsmetoder. Enkla steg för LZMA2, BZip2 och Store (ingen komprimering).
+---
+
+**Last Updated:** 2025-12-25  
+**Tested With:** Aspose.Zip for .NET (latest stable release)  
+**Author:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -87,9 +93,3 @@ Lär dig skapa Seven Zip‑filer med Aspose.Zip för .NET med olika komprimering
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2025-12-25  
-**Tested With:** Aspose.Zip for .NET (latest stable release)  
-**Author:** Aspose

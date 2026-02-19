@@ -136,15 +136,15 @@ J: Anda dapat mencari dukungan di **[Aspose.Zip forum](https://forum.aspose.com/
 
 ---
 
+**Terakhir Diperbarui:** 2025-12-25  
+**Diuji Dengan:** Aspose.Zip untuk .NET 24.12  
+**Penulis:** Aspose  
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-**Terakhir Diperbarui:** 2025-12-25  
-**Diuji Dengan:** Aspose.Zip untuk .NET 24.12  
-**Penulis:** Aspose  
-
----
