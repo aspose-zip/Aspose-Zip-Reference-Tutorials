@@ -10,17 +10,7 @@ url: /fr/net/directory-and-folder-compression/compress-directory/
 weight: 10
 ---
 
-..." etc.
-
-Also quote block.
-
-Also "## Common Issues and Solutions" table.
-
-Also "## Frequently Asked Questions (Additional)" Q&A.
-
-Make sure to keep code block placeholders unchanged.
-
-Now produce final output.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -144,13 +134,6 @@ R4 : Oui, la [documentation](https://reference.aspose.com/zip/net/) contient d
 
 R5 : Certainement, vous pouvez effectuer un achat [ici](https://purchase.aspose.com/buy).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Dernière mise à jour :** 2026-02-12  
@@ -158,3 +141,10 @@ R5 : Certainement, vous pouvez effectuer un achat [ici](https://purchase.aspos
 **Auteur :** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

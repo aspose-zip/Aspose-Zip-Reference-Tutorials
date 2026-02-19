@@ -11,28 +11,6 @@ url: /id/net/file-compression/optimizing-compression-settings/
 weight: 12
 ---
 
-: "In modern .NET applications, **adding zip password** while creating a high‑ratio LZMA zip archive can protect sensitive data and still give you the best possible compression. Whether you’re building an ASP.NET file compression service, a desktop utility that handles large files, or a cloud‑based workflow, this tutorial shows you step‑by‑step how to secure and compress your files with Aspose.Zip for .NET."
-
-Translate to Indonesian.
-
-Proceed.
-
-Then Quick Answers section.
-
-Translate each Q/A.
-
-Need to keep bold formatting.
-
-Then "What is “add zip password” in Aspose.Zip?" etc.
-
-Proceed.
-
-Make sure to keep code block placeholders.
-
-Also keep blockquotes > etc.
-
-Now produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

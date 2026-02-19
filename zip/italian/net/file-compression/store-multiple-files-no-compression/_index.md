@@ -10,30 +10,6 @@ url: /it/net/file-compression/store-multiple-files-no-compression/
 weight: 16
 ---
 
- but translate surrounding text.
-
-We need to keep code block placeholders unchanged.
-
-Also table content: translate Issue, Why It Happens, Fix headings? Probably keep them in English? The instruction says translate all text content naturally to Italian, but technical terms remain English. Table headings are generic; we can translate them: "Problema", "Perché accade", "Soluzione". But they are part of text. Should we translate? Yes.
-
-But we must keep the pipe separators.
-
-Also the "Last Updated:" line; translate "Ultimo aggiornamento:" maybe.
-
-"Tested With:" -> "Testato con:".
-
-"Author:" -> "Autore:".
-
-Make sure to keep dates unchanged.
-
-Now produce final content.
-
-Let's construct.
-
-Start with shortcodes unchanged.
-
-Proceed.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

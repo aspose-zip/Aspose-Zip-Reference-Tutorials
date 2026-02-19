@@ -10,13 +10,7 @@ url: /ru/net/file-compression/store-multiple-files-no-compression/
 weight: 16
 ---
 
--button >}}
-
-All good.
-
-Make sure to keep markdown formatting, code block placeholders unchanged.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

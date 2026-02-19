@@ -9,16 +9,6 @@ url: /vi/net/directory-and-folder-compression/compress-directory/
 weight: 10
 ---
 
-ed With", "Author"? Probably keep as is? The instruction says translate all text content naturally to Vietnamese. So translate those labels.
-
-But keep dates unchanged.
-
-Now produce final content.
-
-Be careful to preserve markdown formatting.
-
-Let's craft translation.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
@@ -144,13 +134,6 @@ A4: Có, [tài liệu](https://reference.aspose.com/zip/net/) chứa đầy đ�
 
 A5: Chắc chắn, bạn có thể mua ngay [tại đây](https://purchase.aspose.com/buy).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Cập nhật lần cuối:** 2026-02-12  
@@ -158,3 +141,10 @@ A5: Chắc chắn, bạn có thể mua ngay [tại đây](https://purchase.aspos
 **Tác giả:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

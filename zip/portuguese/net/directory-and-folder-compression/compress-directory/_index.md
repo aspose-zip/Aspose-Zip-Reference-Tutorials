@@ -9,16 +9,6 @@ url: /pt/net/directory-and-folder-compression/compress-directory/
 weight: 10
 ---
 
- maybe "Perguntas Frequentes". Keep "Q1", "A1" etc.
-
-Translate table headers: Symptom, Likely Cause, Fix -> "Sintoma", "Causa Provável", "Correção". But need to keep same number of columns. Should translate content inside table cells.
-
-Also translate "Last Updated", "Tested With", "Author". Keep as Portuguese.
-
-Make sure not to translate URLs.
-
-Let's produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
@@ -143,13 +133,6 @@ A4: Sim, a [documentação](https://reference.aspose.com/zip/net/) contém exemp
 
 A5: Certamente, você pode fazer a compra [aqui](https://purchase.aspose.com/buy).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Última Atualização:** 2026-02-12  
@@ -157,3 +140,10 @@ A5: Certamente, você pode fazer a compra [aqui](https://purchase.aspose.com/buy
 **Autor:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

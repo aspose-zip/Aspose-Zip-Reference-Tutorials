@@ -134,15 +134,15 @@ A4: हाँ, [डॉक्यूमेंटेशन](https://reference.aspos
 
 A5: बिल्कुल, आप खरीदारी [यहाँ](https://purchase.aspose.com/buy) कर सकते हैं।
 
+---
+
+**अंतिम अपडेट:** 2026-02-12  
+**परीक्षित संस्करण:** Aspose.Zip 24.11 for .NET  
+**लेखक:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**अंतिम अपडेट:** 2026-02-12  
-**परीक्षित संस्करण:** Aspose.Zip 24.11 for .NET  
-**लेखक:** Aspose

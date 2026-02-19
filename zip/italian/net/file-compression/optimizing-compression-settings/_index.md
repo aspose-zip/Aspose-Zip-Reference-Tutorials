@@ -11,9 +11,7 @@ url: /it/net/file-compression/optimizing-compression-settings/
 weight: 12
 ---
 
- we keep all shortcodes unchanged.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

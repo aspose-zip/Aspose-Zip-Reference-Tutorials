@@ -133,15 +133,15 @@ A4: Ja, de [documentatie](https://reference.aspose.com/zip/net/) bevat uitgebrei
 
 A5: Zeker, je kunt een aankoop doen [hier](https://purchase.aspose.com/buy).
 
+---
+
+**Laatst bijgewerkt:** 2026-02-12  
+**Getest met:** Aspose.Zip 24.11 for .NET  
+**Auteur:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Laatst bijgewerkt:** 2026-02-12  
-**Getest met:** Aspose.Zip 24.11 for .NET  
-**Auteur:** Aspose

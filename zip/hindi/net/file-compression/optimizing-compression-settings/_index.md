@@ -15,33 +15,33 @@ weight: 12
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET के साथ LZMA zip में zip पासवर्ड जोड़ें
+# Aspose.Zip for .NET के साथ LZMA zip में zip पासवर्ड डालें
 
 आधुनिक .NET अनुप्रयोगों में, **zip पासवर्ड जोड़ना** उच्च‑संपीड़न अनुपात वाले LZMA zip अभिलेख बनाते समय संवेदनशील डेटा की सुरक्षा कर सकता है और आपको सर्वोत्तम संपीड़न भी देता है। चाहे आप ASP.NET फ़ाइल संपीड़न सेवा बना रहे हों, बड़े फ़ाइलों को संभालने वाला डेस्कटॉप यूटिलिटी, या क्लाउड‑आधारित वर्कफ़्लो, यह ट्यूटोरियल आपको चरण‑दर‑चरण दिखाता है कि Aspose.Zip for .NET के साथ अपनी फ़ाइलों को कैसे सुरक्षित और संपीड़ित करें।
 
-## Quick Answers
+## क्विक जवाब
 - **LZMA संपीड़न का मुख्य लाभ क्या है?** अधिकांश फ़ाइल प्रकारों के लिए उचित गति के साथ सबसे उच्च संपीड़न अनुपात।  
 - **कौन सी विधि फ़ाइलों को बिना संपीड़न के संग्रहीत करती है?** Store compression (जिसे “store compression zip” भी कहा जाता है)।  
 - **क्या मैं इन सेटिंग्स को ASP.NET अनुप्रयोग में उपयोग कर सकता हूँ?** हाँ—सिर्फ अपने प्रोजेक्ट में Aspose.Zip को रेफ़रेंस करें और वही API कॉल करें।  
 - **उत्पादन उपयोग के लिए क्या मुझे लाइसेंस चाहिए?** उत्पादन के लिए एक व्यावसायिक लाइसेंस आवश्यक है; एक मुफ्त ट्रायल उपलब्ध है।  
 - **कौन से .NET संस्करण समर्थित हैं?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7।
 
-## What is “add zip password” in Aspose.Zip?
+## Aspose.Zip में “add zip password” क्या है?
 Zip पासवर्ड जोड़ना का अर्थ है ZIP अभिलेख के अंदर की प्रविष्टियों को एन्क्रिप्ट करना ताकि केवल वही उपयोगकर्ता जो पासवर्ड जानते हैं, फ़ाइलें निकाल सकें। Aspose.Zip एक सरल `SetPassword` मेथड प्रदान करता है जो सभी संपीड़न एल्गोरिदम—Bzip2, LZMA, PPMd, Enhanced Deflate, और Store—के साथ काम करता है।
 
-## Why use Aspose.Zip for .NET file compression?
+## .NET फ़ाइल कम्प्रेशन के लिए Aspose.Zip का इस्तेमाल क्यों करें?
 - **Unified API** – Bzip2, LZMA, PPMd, Enhanced Deflate, और Store के लिए एक समान इंटरफ़ेस।  
 - **Performance‑tuned** – तेज़ प्रोसेसिंग के लिए अनुकूलित नेटिव इम्प्लीमेंटेशन।  
 - **ASP.NET friendly** – वेब प्रोजेक्ट्स, बैकग्राउंड सर्विसेज, और Azure Functions में सहजता से काम करता है।  
 - **Fine‑grained control** – डिक्शनरी आकार, संपीड़न स्तर को समायोजित करें, और एक ही कॉल से zip पासवर्ड जोड़ें।  
 - **Compress large files** – डेटा को सीधे आउटपुट स्ट्रीम में स्ट्रीमिंग करके बड़े फ़ाइलों को कुशलता से संपीड़ित करें।
 
-## Prerequisites
+## ज़रूरी शर्तें
 - **Aspose.Zip for .NET Library** – इसे [Aspose documentation](https://reference.aspose.com/zip/net/) से डाउनलोड और इंस्टॉल करें।  
 - **Sample Text File** – एक नमूना फ़ाइल तैयार करें (जैसे `sample.txt`) जिसे आप संपीड़ित करेंगे।  
 - **.NET development environment** – Visual Studio 2022 या कोई भी संगत IDE।
 
-## Import Namespaces
+## नेमस्पेस इंपोर्ट करें
 
 ```csharp
 using Aspose.Zip;
@@ -56,9 +56,9 @@ using System.Threading.Tasks;
 
 अब हम प्रत्येक संपीड़न सेटिंग का अन्वेषण करेंगे और देखेंगे कि जहाँ उपयुक्त हो **zip पासवर्ड कैसे जोड़ें**।
 
-## Using Bzip2 Compression Settings
+## Bzip2 कम्प्रेशन सेटिंग्स का इस्तेमाल करना
 
-### Step 1: Initialize Bzip2 Compression
+### स्टेप 1: Bzip2 कम्प्रेशन शुरू करें
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "Bzip2Compression_out.zip", FileMode.Create))
@@ -79,12 +79,12 @@ using (FileStream zipFile = File.Open(dataDir + "Bzip2Compression_out.zip", File
 
 *`SetPassword` कॉल दर्शाती है कि कैसे **zip पासवर्ड** को Bzip2‑संपीड़ित अभिलेख में जोड़ें।*
 
-## How to add zip password using Aspose.Zip for .NET
+## .NET के लिए Aspose.Zip का इस्तेमाल करके ज़िप पासवर्ड कैसे जोड़ें
 आप `Save` कॉल करने से पहले किसी भी अभिलेख इंस्टेंस पर पासवर्ड लागू कर सकते हैं। वही मेथड LZMA, PPMd, Enhanced Deflate, और Store संपीड़न के लिए भी काम करता है। केवल संपीड़न सेटिंग्स ऑब्जेक्ट को बदलें और `SetPassword` कॉल को रखें।
 
-## How to create LZMA zip archive using Aspose.Zip
+## Aspose.Zip का इस्तेमाल करके LZMA ज़िप आर्काइव कैसे बनाएं
 
-### Step 1: Initialize LZMA Compression
+### स्टेप 1: LZMA कम्प्रेशन शुरू करें
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "LZMACompression_out.zip", FileMode.Create))
@@ -103,11 +103,11 @@ using (FileStream zipFile = File.Open(dataDir + "LZMACompression_out.zip", FileM
 }
 ```
 
-> **Tip:** LMA एक कॉन्फ़िगर करने योग्य **LZMA dictionary size** प्रदान करता है जो संपीड़न अनुपात और मेमोरी उपयोग दोनों को प्रभावित करता है। यदि आपको बहुत बड़ी फ़ाइलों के लिए फाइन‑ट्यून करना है तो आप इसे `new LzmaCompressionSettings { DictionarySize = 8 * 1024 * 1024 }` द्वारा सेट कर सकते हैं।
+> **टिप:** LMA एक ऑप्शनल करने लायक है **LZMA डिक्शनरी साइज़** देता है जो फाइल रेश्यो और मेमोरी इस्तेमाल दोनों को प्रभावित करता है। अगर आपको बहुत बड़ी फाइल के लिए फाइन-ट्यून करना है तो आप इसे `new LzmaCompressionSettings { DictionarySize = 8 * 1024 * 1024 }` से सेट कर सकते हैं।
 
-## Using PPMd Compression Settings
+## PPMd कम्प्रेशन सेटिंग्स का इस्तेमाल करना
 
-### Step 1: Initialize PPMd Compression
+### स्टेप 1: PPMd कम्प्रेशन शुरू करें
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "PPMdCompression_out.zip", FileMode.Create))
@@ -126,9 +126,9 @@ using (FileStream zipFile = File.Open(dataDir + "PPMdCompression_out.zip", FileM
 }
 ```
 
-## Using Enhanced Deflate Compression Settings
+## एन्हांस्ड डिफ्लेट कम्प्रेशन सेटिंग्स का इस्तेमाल करना
 
-### Step 1: Initialize Enhanced Deflate Compression
+### स्टेप 1: एन्हांस्ड डिफ्लेट कम्प्रेशन शुरू करें
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "EnhancedDeflateCompression_out.zip", FileMode.Create))
@@ -147,9 +147,9 @@ using (FileStream zipFile = File.Open(dataDir + "EnhancedDeflateCompression_out.
 }
 ```
 
-## Using Store Compression Settings (store compression zip)
+## स्टोर कम्प्रेशन सेटिंग्स (स्टोर कम्प्रेशन ज़िप) का इस्तेमाल करना
 
-### Step 1: Initialize Store Compression
+### स्टेप 1: स्टोर कम्प्रेशन शुरू करें
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "StoreCompression_out.zip", FileMode.Create))
@@ -168,15 +168,15 @@ using (FileStream zipFile = File.Open(dataDir + "StoreCompression_out.zip", File
 }
 ```
 
-> **Pro tip:** `dataDir` वेरिएबल को अपने वास्तविक कार्य निर्देशिका की ओर इंगित करने के लिए समायोजित करें, और यदि आपको एक ही अभिलेख में कई फ़ाइलें जोड़नी हों तो वही `Archive` इंस्टेंस पुनः उपयोग करें।
+> **प्रो टिप:** `dataDir` वेरिएबल को अपने असली काम के डायरेक्टरी की ओर इशारा करने के लिए एडजस्ट करें, और अगर आपको एक ही रिकॉर्ड्स में कई फाइलें जोड़नी हों तो वही `Archive` इंस्टेंस दोबारा इस्तेमाल करें।
 
-## Common Issues & Solutions
-- **“File not found” errors** – सुनिश्चित करें कि `dataDir` पाथ सेपरेटर (`\` या `/`) पर समाप्त हो और `sample.txt` मौजूद हो।  
-- **Memory consumption with large files** – `ArchiveEntrySettings` का उपयोग करके स्ट्रीमिंग मोड सक्षम करें, जो डेटा को सीधे आउटपुट स्ट्रीम में लिखता है।  
-- **Incompatible compression level** – कुछ एल्गोरिदम (जैसे LZMA) अतिरिक्त प्रॉपर्टीज़ जैसे `DictionarySize` प्रदान करते हैं। यदि आपको अधिक सूक्ष्म नियंत्रण चाहिए तो API दस्तावेज़ देखें।  
+## आम दिक्कतें और समाधान
+- **“फाइल नहीं मिली” एरर** – यह पक्का करें कि `dataDir` पाथ सेपरेटर (`\` या `/`) पर खत्म हो और `sample.txt` मौजूद हो।
+- **बड़ी फाइलों के साथ मेमोरी की खपत** – `ArchiveEntrySettings` का इस्तेमाल करके स्ट्रीमिंग मोड कर सकें, जो डेटा को सीधे आउटपुट स्ट्रीम में लिखता है।
+- **इनकम्पैटिबल कम्प्रेशन लेवल** – कुछ प्रॉपर्टी (जैसे LZMA) एक्स्ट्रा प्रॉपर्टी जैसे `DictionarySize` देते हैं। अगर आपको ज़्यादा माइक्रो कंट्रोल चाहिए तो API डॉक्यूमेंट देखें।
 - **Password not applied** – सुनिश्चित करें कि आप `SetPassword` *से पहले* `archive.Save(zipFile);` कॉल करें।
 
-## Frequently Asked Questions
+## अक्सर पूछे जाने वाले सवाल
 
 **Q: क्या मैं Aspose.Zip for .NET को अन्य संपीड़न लाइब्रेरीज़ के साथ उपयोग कर सकता हूँ?**  
 A: Aspose.Zip अपने अंतर्निहित एल्गोरिदम के साथ काम करने के लिए डिज़ाइन किया गया है। थर्ड‑पार्टी लाइब्रेरीज़ को इंटीग्रेट करना संभव है लेकिन इसके लिए Aspose API के बाहर कस्टम हैंडलिंग की आवश्यकता होगी।

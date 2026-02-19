@@ -132,15 +132,15 @@ A4：是的，[documentation](https://reference.aspose.com/zip/net/) 包含了�
 
 A5：当然，您可以在此处 [here](https://purchase.aspose.com/buy) 进行购买。
 
+---
+
+**最后更新：** 2026-02-12  
+**测试环境：** Aspose.Zip 24.11 for .NET  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最后更新：** 2026-02-12  
-**测试环境：** Aspose.Zip 24.11 for .NET  
-**作者：** Aspose

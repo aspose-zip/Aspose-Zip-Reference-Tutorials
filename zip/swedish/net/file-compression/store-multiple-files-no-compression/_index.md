@@ -10,7 +10,7 @@ url: /sv/net/file-compression/store-multiple-files-no-compression/
 weight: 16
 ---
 
- produce final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

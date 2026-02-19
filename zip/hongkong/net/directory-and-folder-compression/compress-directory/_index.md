@@ -132,15 +132,15 @@ A4: 有，請參閱[文件說明](https://reference.aspose.com/zip/net/)中完�
 
 A5: 當然可以，請至[此處](https://purchase.aspose.com/buy)完成購買。
 
+---
+
+**最後更新：** 2026-02-12  
+**測試版本：** Aspose.Zip 24.11 for .NET  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最後更新：** 2026-02-12  
-**測試版本：** Aspose.Zip 24.11 for .NET  
-**作者：** Aspose

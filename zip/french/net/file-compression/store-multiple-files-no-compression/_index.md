@@ -10,37 +10,7 @@ url: /fr/net/file-compression/store-multiple-files-no-compression/
 weight: 16
 ---
 
- licence ?**
-
-- **Supported .NET versions?** => **Versions .NET prises en charge ?**
-
-Answers translate.
-
-Next section: "What is create uncompressed zip .net?" maybe "Qu'est-ce que créer un zip non compressé .net ?" but better "Qu'est-ce que créer un zip non compressé .net ?" We'll translate.
-
-Next: "Why use Aspose.Zip for zip files without compression?" => "Pourquoi utiliser Aspose.Zip pour les fichiers zip sans compression ?"
-
-Bullet points translate.
-
-Prerequisites translate.
-
-"Import Namespaces" => "Importer les espaces de noms"
-
-Step sections translate.
-
-Pro tip translate.
-
-Common Issues and Solutions table: translate headers and content.
-
-FAQs: translate Q and A.
-
-Last Updated etc.
-
-Let's produce final content.
-
-Be careful to keep markdown formatting.
-
-Let's write.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

@@ -133,15 +133,15 @@ A4: はい、[documentation](https://reference.aspose.com/zip/net/) に包括的
 
 A5: もちろん、[here](https://purchase.aspose.com/buy) から購入できます。
 
+---
+
+**最終更新日:** 2026-02-12  
+**テスト環境:** Aspose.Zip 24.11 for .NET  
+**作者:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最終更新日:** 2026-02-12  
-**テスト環境:** Aspose.Zip 24.11 for .NET  
-**作者:** Aspose

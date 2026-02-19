@@ -134,15 +134,15 @@ A4: Evet, [dokümantasyon](https://reference.aspose.com/zip/net/) kapsamlı örn
 
 A5: Elbette, satın alımınızı [buradan](https://purchase.aspose.com/buy) gerçekleştirebilirsiniz.
 
+---
+
+**Son Güncelleme:** 2026-02-12  
+**Test Edilen Versiyon:** Aspose.Zip 24.11 for .NET  
+**Yazar:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Son Güncelleme:** 2026-02-12  
-**Test Edilen Versiyon:** Aspose.Zip 24.11 for .NET  
-**Yazar:** Aspose

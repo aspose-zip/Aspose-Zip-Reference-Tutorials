@@ -133,13 +133,6 @@ using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", Fil
 
 ج5: بالتأكيد، يمكنك إجراء عملية الشراء [هنا](https://purchase.aspose.com/buy).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **آخر تحديث:** 2026-02-12  
@@ -147,3 +140,10 @@ using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", Fil
 **المؤلف:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

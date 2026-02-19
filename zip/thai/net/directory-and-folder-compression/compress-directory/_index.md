@@ -9,19 +9,7 @@ url: /th/net/directory-and-folder-compression/compress-directory/
 weight: 10
 ---
 
- shortcode unchanged.
-
-Then horizontal rule and metadata.
-
-Translate labels.
-
-Now produce final output with all markdown.
-
-Be careful to preserve code block placeholders exactly.
-
-Also preserve table formatting with pipes.
-
-Now craft final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -145,13 +133,6 @@ A4: มี, [documentation](https://reference.aspose.com/zip/net/) มีตั�
 
 A5: แน่นอน, คุณสามารถทำการซื้อได้ [here](https://purchase.aspose.com/buy).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **อัปเดตล่าสุด:** 2026-02-12  
@@ -159,3 +140,10 @@ A5: แน่นอน, คุณสามารถทำการซื้อ�
 **ผู้เขียน:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

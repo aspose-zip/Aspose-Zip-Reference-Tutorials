@@ -10,9 +10,7 @@ url: /tr/net/file-compression/store-multiple-files-no-compression/
 weight: 16
 ---
 
- exactly.
-
-Now craft final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

@@ -9,14 +9,6 @@ url: /sv/net/directory-and-folder-compression/compress-directory/
 weight: 10
 ---
 
- uppdaterad:", "Tested With:" to "Testad med:", "Author:" to "Författare:".
-
-Now produce final content.
-
-Be careful to preserve markdown formatting exactly.
-
-Let's craft translation.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
@@ -141,13 +133,6 @@ A4: Ja, [documentation](https://reference.aspose.com/zip/net/) innehåller omfat
 
 A5: Självklart, du kan göra ett köp [here](https://purchase.aspose.com/buy).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Senast uppdaterad:** 2026-02-12  
@@ -155,3 +140,10 @@ A5: Självklart, du kan göra ett köp [here](https://purchase.aspose.com/buy).
 **Författare:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

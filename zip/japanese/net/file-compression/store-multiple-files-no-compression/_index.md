@@ -17,7 +17,7 @@ weight: 16
 
 最新の .NET 開発において、**uncompressed zip .net** を作成することは、アーカイブ速度を劇的に向上させ、ファイルサイズを予測可能に保ちます。例えば、規制要件を満たすためや、下流処理を高速化するために **圧縮せずにファイルを zip** する必要がある場合、Aspose.Zip for .NET はシンプルで分かりやすい API を提供します。本チュートリアルでは、圧縮なし ZIP アーカイブの作成手順、ファイルの追加方法、そしてソリューションをアプリケーションに統合する手順を詳しく解説します。
 
-## Quick Answers
+## クイックアンサー
 - **“uncompressed zip” とは何ですか？** それは各エントリが “store” メソッドで保存され、元のファイルバイトがそのまま保持される ZIP アーカイブです。  
 - **なぜ圧縮を避けるのですか？** アーカイブ処理を高速化し、下流処理のために元のファイルサイズを保持するか、データ変更を禁じる規制要件を満たすためです。  
 - **どの Aspose.Zip クラスがこれを扱いますか？** `ArchiveEntrySettings` と `StoreCompressionSettings` の組み合わせです。  
@@ -28,19 +28,19 @@ weight: 16
 
 圧縮なし ZIP を作成するとは、*store* 圧縮方式を使用して各ファイルを ZIP コンテナに追加することです。ファイルは元のバイトと完全に同一のままで、迅速なアーカイブやデータを変更せずに保持したい場合に最適です。
 
-## Why use Aspose.Zip for zip files without compression?
+## 圧縮なしの Zip ファイルに Aspose.Zip を使用する理由
 
 - **速度:** CPU 集中型の圧縮アルゴリズムが実行されません。  
 - **予測可能なサイズ:** アーカイブサイズは元のファイルの合計に最小限の ZIP オーバーヘッドを加えたものと同じです。  
 - **互換性:** 作成された ZIP は標準的な解凍ユーティリティで問題なく使用できます。  
 - **柔軟性:** 必要に応じて、同じアーカイブ内で圧縮エントリと非圧縮エントリを混在させることができます。  
 
-## Prerequisites
+## 前提条件
 - **Aspose.Zip for .NET** – プロジェクトに統合します。インストール手順は公式 [documentation](https://reference.aspose.com/zip/net/) を参照してください。  
 - **.NET 開発環境** – Visual Studio、VS Code、またはお好みの IDE。  
 - **Document Directory** – アーカイブしたいファイルが格納されたローカルフォルダー（例: “Your Document Directory”）。  
 
-## Import Namespaces
+## 名前空間のインポート
 コードを書く前に、必要な名前空間をインポートしてコンパイラが Aspose クラスの所在を認識できるようにします。
 
 ```csharp
@@ -50,14 +50,14 @@ using System.IO;
 using System.Text;
 ```
 
-## Step 1: Set Document Directory
+## ステップ 1: ドキュメントディレクトリの設定
 ソースファイルが存在するパスを定義します。プレースホルダーを実際のフォルダーに置き換えてください。
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Step 2: Create Zip Archive Without Compression
+## ステップ 2: 圧縮なしの Zip アーカイブの作成
 チュートリアルの核心 – `StoreCompressionSettings` を設定した `Archive` インスタンスを作成します。これにより Aspose.Zip は各エントリを *store*（圧縮しない）方式で保存します。
 
 ```csharp
@@ -77,14 +77,14 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 
 > **プロのコツ:** いくつかのファイルは圧縮し、他は圧縮せずに **zip に保存** したい場合は、各ファイルごとに別々の `ArchiveEntrySettings` インスタンスを作成し、同じ `Archive` に追加してください。
 
-## Common Issues and Solutions
+## よくある問題と解決策
 | 問題 | 発生理由 | 対策 |
 |-------|----------------|-----|
 | **ファイルが見つかりません** | `dataDir` パスが間違っているか、ファイル拡張子が欠落しています。 | パスを確認し、ファイルが存在することを確認してください。安全な結合のために `Path.Combine` を使用します。 |
 | **アクセスが拒否されました** | プロセスにソースファイルの読み取りまたは ZIP の書き込み権限がありません。 | 適切な権限でアプリケーションを実行するか、書き込み可能なフォルダーを選択してください。 |
 | **ZIP 内の予期しないファイルサイズ** | アーカイブがデフォルトの圧縮で作成されました。 | `ArchiveEntrySettings` に `new StoreCompressionSettings()` が渡されていることを確認してください。 |
 
-## Frequently Asked Questions
+## よくある質問
 
 **Q: 特定のファイルタイプだけ圧縮し、他は圧縮せずに保存できますか？**  
 A: はい、各ファイルに対して異なる `ArchiveEntrySettings` を作成し、同じアーカイブ内で圧縮エントリと非圧縮エントリを混在させることができます。

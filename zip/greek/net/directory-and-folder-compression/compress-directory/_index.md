@@ -10,9 +10,7 @@ url: /el/net/directory-and-folder-compression/compress-directory/
 weight: 10
 ---
 
- terms like Aspose.Zip, .NET, API, etc.
-
-Ok produce final.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -136,13 +134,6 @@ using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", Fil
 
 Α5: Φυσικά, μπορείτε να πραγματοποιήσετε αγορά [εδώ](https://purchase.aspose.com/buy).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Τελευταία Ενημέρωση:** 2026-02-12  
@@ -150,3 +141,10 @@ using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", Fil
 **Συγγραφέας:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

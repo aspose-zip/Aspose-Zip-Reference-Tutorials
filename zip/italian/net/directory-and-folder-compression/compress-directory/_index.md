@@ -10,15 +10,7 @@ url: /it/net/directory-and-folder-compression/compress-directory/
 weight: 10
 ---
 
- Updated:" translate "Ultimo aggiornamento:" keep date.
-
-"Tested With:" translate "Testato con:" keep version.
-
-"Author:" translate "Autore:".
-
-Now ensure we keep all markdown formatting.
-
-Let's craft final output.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -142,13 +134,6 @@ A4: Sì, la [documentazione](https://reference.aspose.com/zip/net/) contiene ese
 
 A5: Certamente, puoi effettuare l'acquisto [qui](https://purchase.aspose.com/buy).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Ultimo aggiornamento:** 2026-02-12  
@@ -156,3 +141,10 @@ A5: Certamente, puoi effettuare l'acquisto [qui](https://purchase.aspose.com/buy
 **Autore:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

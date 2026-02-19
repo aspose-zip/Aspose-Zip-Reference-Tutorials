@@ -11,18 +11,6 @@ url: /ar/net/file-compression/optimizing-compression-settings/
 weight: 12
 ---
 
- 24.11 for .NET" translate "تم الاختبار مع: Aspose.Zip 24.11 لـ .NET".
-
-"**Author:** Aspose" translate "المؤلف: Aspose".
-
-Then closing shortcodes.
-
-Finally backtop button shortcode.
-
-Make sure to keep markdown formatting.
-
-Now produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

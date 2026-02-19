@@ -10,10 +10,6 @@ url: /id/net/directory-and-folder-compression/compress-directory/
 weight: 10
 ---
 
- sure to keep markdown formatting.
-
-Let's produce.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
@@ -138,13 +134,6 @@ A4: Ya, [dokumentasi](https://reference.aspose.com/zip/net/) berisi contoh dan t
 
 A5: Tentu, Anda dapat melakukan pembelian [di sini](https://purchase.aspose.com/buy).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Terakhir Diperbarui:** 2026-02-12  
@@ -152,3 +141,10 @@ A5: Tentu, Anda dapat melakukan pembelian [di sini](https://purchase.aspose.com/
 **Penulis:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

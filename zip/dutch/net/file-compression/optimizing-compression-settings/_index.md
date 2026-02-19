@@ -11,26 +11,6 @@ url: /nl/net/file-compression/optimizing-compression-settings/
 weight: 12
 ---
 
-"How to create LZMA zip archive using Aspose.Zip" -> "Hoe een LZMA-zip-archief maken met Aspose.Zip". Good.
-
-"Tip" -> "Tip". Good.
-
-"Using PPMd Compression Settings" -> "PPMd-compressie-instellingen gebruiken". Good.
-
-"Using Enhanced Deflate Compression Settings" -> "Enhanced Deflate-compressie-instellingen gebruiken". Good.
-
-"Using Store Compression Settings (store compression zip)" -> "Store-compressie-instellingen gebruiken (store compression zip)". Good.
-
-"Pro tip" -> "Pro tip". Good.
-
-"Common Issues & Solutions" -> "Veelvoorkomende problemen & oplossingen". Good.
-
-List items: keep bold parts unchanged.
-
-"Frequently Asked Questions" -> "Veelgestelde vragen". Good.
-
-Now final.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

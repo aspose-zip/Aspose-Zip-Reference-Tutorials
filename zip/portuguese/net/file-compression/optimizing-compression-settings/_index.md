@@ -17,28 +17,28 @@ weight: 12
 
 # Adicionar senha zip a zip LZMA com Aspose.Zip para .NET
 
-Em aplicações .NET modernas, **adicionar senha zip** ao criar um arquivo zip LZMA de alta taxa de compressão pode proteger dados sensíveis e ainda oferecer a melhor compressão possível. Seja construindo um serviço de compressão de arquivos ASP.NET, um utilitário desktop que manipula arquivos grandes ou um fluxo de trabalho baseado em nuvem, este tutorial mostra passo a passo como proteger e compactar seus arquivos com Aspose.Zip para .NET.
+Em aplicações .NET modernas, **adicionar senha zip** ao criar um arquivo zip LZMA de alta taxa de especificação pode proteger dados sensíveis e ainda oferecer a melhor atualização possível. Seja construindo um serviço de detalhamento de arquivos ASP.NET, um desktop específico que manipula arquivos grandes ou um fluxo de trabalho baseado em nuvem, este tutorial mostra passo a passo como proteger e compactar seus arquivos com Aspose.Zip para .NET.
 
-## Quick Answers
-- **Qual é o principal benefício da compressão LZMA?** Maior taxa de compressão com velocidade razoável para a maioria dos tipos de arquivo.  
-- **Qual método armazena arquivos sem compressão?** Compressão Store (também chamada “store compression zip”).  
-- **Posso usar essas configurações em uma aplicação ASP.NET?** Sim—basta referenciar Aspose.Zip no seu projeto e chamar a mesma API.  
-- **Preciso de uma licença para uso em produção?** Uma licença comercial é necessária para produção; uma versão de avaliação gratuita está disponível.  
+## Respostas rápidas
+- **Qual é o principal benefício da especificação LZMA?** Maiores taxas de revisão com velocidade razoável para a maioria dos tipos de arquivo.
+- **Qual método armazena arquivos sem extensões?** Compressão Store (também chamada “store compression zip”).
+- **Posso usar essas configurações em uma aplicação ASP.NET?** Sim — basta referenciar Aspose.Zip no seu projeto e chamar a mesma API.
+- **Preciso de uma licença para uso em produção?** Uma licença comercial é necessária para produção; uma versão de avaliação gratuita está disponível.
 - **Quais versões do .NET são suportadas?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
 ## O que é “add zip password” no Aspose.Zip?
-Adicionar uma senha zip significa criptografar as entradas dentro de um arquivo ZIP para que apenas usuários que conheçam a senha possam extrair os arquivos. Aspose.Zip fornece um método simples `SetPassword` que funciona com todos os algoritmos de compressão—Bzip2, LZMA, PPMd, Enhanced Deflate e Store.
+Adicionar uma senha zip significa criptografar as entradas dentro de um arquivo ZIP para que apenas usuários que conheçam a senha possam extrair os arquivos. Aspose.Zip fornece um método `SetPassword` simples que funciona com todos os algoritmos específicos—Bzip2, LZMA, PPMd, Enhanced Deflate e Store.
 
-## Por que usar Aspose.Zip para compressão de arquivos .NET?
-- **API Unificada** – Uma interface consistente para Bzip2, LZMA, PPMd, Enhanced Deflate e Store.  
-- **Desempenho otimizado** – Implementação nativa otimizada para processamento rápido.  
-- **Compatível com ASP.NET** – Funciona perfeitamente em projetos web, serviços em segundo plano e Azure Functions.  
-- **Controle granular** – Ajuste o tamanho do dicionário, nível de compressão e adicione senha zip com uma única chamada.  
-- **Compacte arquivos grandes** de forma eficiente transmitindo dados diretamente para o fluxo de saída.
+## Por que usar Aspose.Zip para extensão de arquivos .NET?
+- **API Unificada** – Uma interface consistente para Bzip2, LZMA, PPMd, Enhanced Deflate e Store.
+- **Desempenho otimizado** – Implementação otimizada para processamento rápido.
+- **Compatível com ASP.NET** – Funciona perfeitamente em projetos web, serviços em segundo plano e Azure Functions.
+- **Controle granular** – Ajuste o tamanho do dicionário, nível de atualizações e adição de senha zip com uma única chamada.
+- **Arquivos compactos grandes** de forma eficiente transmitindo dados diretamente para o fluxo de saída.
 
 ## Pré-requisitos
-- **Biblioteca Aspose.Zip para .NET** – Baixe e instale a partir da [documentação Aspose](https://reference.aspose.com/zip/net/).  
-- **Arquivo de texto de exemplo** – Prepare um arquivo de exemplo (por exemplo, `sample.txt`) que será compactado.  
+- **Biblioteca Aspose.Zip para .NET** – Baixe e instale a partir da [documentação Aspose](https://reference.aspose.com/zip/net/).
+- **Arquivo de texto de exemplo** – Prepare um arquivo de exemplo (por exemplo, `sample.txt`) que será compactado.
 - **Ambiente de desenvolvimento .NET** – Visual Studio 2022 ou qualquer IDE compatível.
 
 ## Importar Namespaces

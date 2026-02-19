@@ -9,15 +9,7 @@ url: /cs/net/directory-and-folder-compression/compress-directory/
 weight: 10
 ---
 
-ed With:" -> "Testováno s:".
-
-"Author:" -> "Autor:".
-
-Now produce final content.
-
-Make sure to keep all markdown formatting.
-
-Let's craft final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -141,13 +133,6 @@ A4: Ano, [dokumentace](https://reference.aspose.com/zip/net/) obsahuje komplexn�
 
 A5: Samozřejmě, můžete provést nákup [zde](https://purchase.aspose.com/buy).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Poslední aktualizace:** 2026-02-12  
@@ -155,3 +140,10 @@ A5: Samozřejmě, můžete provést nákup [zde](https://purchase.aspose.com/buy
 **Autor:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -10,9 +10,7 @@ url: /es/net/directory-and-folder-compression/compress-directory/
 weight: 10
 ---
 
- tables.
-
-Now produce final.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -136,15 +134,15 @@ Utiliza la clase `Archive` para añadir cada entrada de la carpeta objetivo. El 
 
 **A5:** Por supuesto, puedes realizar una compra [aquí](https://purchase.aspose.com/buy).
 
+---
+
+**Last Updated:** 2026-02-12  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-12  
-**Tested With:** Aspose.Zip 24.11 for .NET  
-**Author:** Aspose

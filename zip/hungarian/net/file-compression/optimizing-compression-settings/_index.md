@@ -11,9 +11,7 @@ url: /hu/net/file-compression/optimizing-compression-settings/
 weight: 12
 ---
 
- Keep them.
-
-Now produce final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

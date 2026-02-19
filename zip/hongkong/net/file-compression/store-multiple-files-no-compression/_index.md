@@ -8,22 +8,6 @@ url: /zh-hant/net/file-compression/store-multiple-files-no-compression/
 weight: 16
 ---
 
- Paragraphs etc.
-
-- Quick Answers list items.
-
-- etc.
-
-Make sure to keep code block placeholders unchanged.
-
-Also note: "Traditional Chinese (Hong Kong)" uses Traditional characters, maybe some HK-specific terms like "檔案" vs "文件". We'll use Traditional Chinese.
-
-Let's translate.
-
-We'll keep markdown formatting.
-
-Proceed.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

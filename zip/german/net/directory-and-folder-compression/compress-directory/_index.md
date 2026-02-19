@@ -133,15 +133,15 @@ A4: Ja, die [Dokumentation](https://reference.aspose.com/zip/net/) enthält umfa
 
 A5: Natürlich, Sie können einen Kauf [hier](https://purchase.aspose.com/buy) tätigen.
 
+---
+
+**Zuletzt aktualisiert:** 2026-02-12  
+**Getestet mit:** Aspose.Zip 24.11 für .NET  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Zuletzt aktualisiert:** 2026-02-12  
-**Getestet mit:** Aspose.Zip 24.11 für .NET  
-**Autor:** Aspose
