@@ -1,10 +1,10 @@
 ---
-date: 2025-12-01
-description: Aspose.Zip for .NET を使用してディレクトリを ZIP に圧縮し、ZIP をディレクトリに展開する方法を学びましょう –
-  ZIP 圧縮 .NET の完全ガイドと ZIP アーカイブの作成 .NET。
+date: 2026-02-07
+description: .NETでフォルダーを圧縮してZIPにし、再度展開する方法を学びましょう。このガイドでは、Aspose.Zip for .NET を使用してフォルダーを
+  ZIP に圧縮する手順を示します。
 linktitle: Decompressing a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: ディレクトリをZIPに圧縮して解凍 – Aspose.Zip for .NET
+title: フォルダーをZIPする方法 – Aspose.Zipでディレクトリを圧縮
 url: /ja/net/directory-and-folder-compression/decompress-folder/
 weight: 11
 ---
@@ -13,66 +13,75 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# ディレクトリを Zip に圧縮 & 解凍 – Aspose.Zip for .NET
+# フォルダーを Zip する方法 – Aspose.Zip for .NET でディレクトリを圧縮
 
-.NET アプリケーションで **compress directory to zip** してからそのアーカイブを展開したい場合、ここが最適な場所です。このチュートリアルでは、zip アーカイブの作成から Aspose.Zip for .NET を使用したクリーンなステップバイステップの解凍まで、全体のワークフローを解説します。最後まで実践すれば、.NET プロジェクトで再利用可能な zip 圧縮パターンと、.NET スタイルの解凍方法をしっかり理解できます。
+.NET アプリケーションで明確な **フォルダーを zip する方法** ソリューションを探しているなら、ここが正しい場所です。このチュートリアルでは、ワークフロー全体を順に説明します—まず **ディレクトリを zip に圧縮** し、次に **zip をディレクトリに抽出**（別名 フォルダーの unzip）する正確な手順を示します。最後まで読むと、.NET Framework、.NET Core、.NET 5/6+ で動作する再利用可能なプログラムパターンが手に入ります。
 
-## Quick Answers
-- **What does “compress directory to zip” mean?** フォルダーの内容を単一の .zip ファイルに変換することを指します。  
-- **How do I extract zip to directory?** ガイドに示したように `Archive.ExtractToDirectory` メソッドを使用します。  
-- **Which .NET versions are supported?** すべての最新 .NET Framework、.NET Core、.NET 5/6+ バージョンがサポートされています。  
-- **Is a license required for production?** はい、商用利用には Aspose.Zip の正式ライセンスが必要です。  
-- **Can I automate this in CI/CD pipelines?** もちろんです。同じコードをビルドスクリプトに組み込むだけで自動化できます。
+## クイック回答
+- **“compress directory to zip” は何を意味しますか？** フォルダーの内容を単一の .zip ファイルに変換することを意味します。  
+- **zip をディレクトリに抽出するには？** ガイドに示すように `Archive.ExtractToDirectory` メソッドを使用します。  
+- **対応している .NET バージョンは？** すべての最新の .NET Framework、.NET Core、.NET 5/6+ バージョンです。  
+- **本番環境でライセンスは必要ですか？** はい、トライアル以外の使用には商用 Aspose.Zip ライセンスが必要です。  
+- **CI/CD パイプラインで自動化できますか？** もちろんです—同じコードをビルドスクリプトに追加するだけです。
 
-## What is “compress directory to zip”?
-ディレクトリを zip に圧縮すると、すべてのファイルとサブフォルダーが単一の圧縮アーカイブにまとめられます。これにより保存容量が削減され、転送が簡素化され、デプロイ用リソースの標準的なパッケージング手段となります。
+## “フォルダーを zip する方法” とは？
 
-## Why use Aspose.Zip for .NET?
-Aspose.Zip は **pure‑managed** API を提供し、ネイティブ依存関係なしで動作し、大容量ファイルをサポートし、高性能な zip 圧縮 .NET 機能を実現します。また、パスワード保護されたアーカイブや Unicode ファイル名といったエッジケースも標準で処理します。
+**フォルダーを zip する方法** とは、ディレクトリ内のすべてのファイルとサブフォルダーを取り出し、単一の圧縮アーカイブにまとめることです。これによりストレージ容量が削減され、転送が高速化され、デプロイ用のポータブルパッケージが作成されます。
 
-## Prerequisites
-- **Aspose.Zip for .NET** ライブラリがインストール済み（[こちらからダウンロード](https://releases.aspose.com/zip/net/)）。  
-- アーカイブしたいフォルダーをディスク上に用意し、`dataDir` 変数にパスを設定します。  
-- .NET 開発環境（Visual Studio、VS Code、またはお好みの IDE）。
+## なぜ Aspose.Zip for .NET を使用するのか？
 
-## Import Namespaces
-まず、必要な名前空間をインポートします:
+Aspose.Zip は **pure‑managed** API を提供し、ネイティブ DLL が不要で、巨大なアーカイブをサポートし、**zip アーカイブのパスワード保護** や Unicode ファイル名といったエッジケースを自動的に処理します。また、パフォーマンス最適化が施されているため、高スループットシナリオでプログラム的にフォルダーを zip する必要がある場合に最適です。
+
+## 前提条件
+- **Aspose.Zip for .NET** ライブラリがインストールされていること（[here](https://releases.aspose.com/zip/net/) からダウンロード）。
+- アーカイブしたいディスク上のフォルダー – そのパスを `dataDir` 変数に設定します。
+- .NET 開発環境（Visual Studio、VS Code、または好みの IDE）。
+
+## 名前空間のインポート
+
+First, bring the required namespaces into scope:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-## Step 1: Compress Directory to Zip
-後で解凍するディレクトリから zip ファイルを作成します。`CompressDirectory.Run()` ヘルパーが主要な処理を行います。
+## ステップバイステップガイド
+
+### ステップ 1: ディレクトリを Zip に圧縮 (プログラムでフォルダーを zip)
+
+後で展開するディレクトリから zip ファイルを作成します。`CompressDirectory.Run()` ヘルパーが主要な処理を行います。
 
 ```csharp
 string dataDir = "Your Document Directory";
 CompressDirectory.Run();
 ```
 
-> **Pro tip:** `CompressDirectory` サンプルは `dataDir` 内のすべてのファイルを `CompressDirectory_out.zip` にパックします。出力ファイル名はご自身の命名規則に合わせて変更してください。
+> **Pro tip:** `CompressDirectory` サンプルは `dataDir` 内のすべてのファイルを `CompressDirectory_out.zip` にパックします。出力ファイル名は命名規則に合わせて自由に変更してください。
 
-## Step 2: Decompress the Folder (How to unzip .NET)
+### ステップ 2: フォルダーを展開 – .NET でフォルダーを unzip する方法
 
-### Step 2.1: Open the Zip File
-`FileStream` を使って生成されたアーカイブを開きます。これにより読み取り準備が整います。
+#### ステップ 2.1: Zip ファイルを開く
+
+生成されたアーカイブを `FileStream` で開きます。これによりファイルの読み取り準備が整います。
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", FileMode.Open))
 {
 ```
 
-### Step 2.2: Create Archive Instance
-zip コンテナを表す `Archive` オブジェクトをインスタンス化します。
+#### ステップ 2.2: Archive インスタンスを作成
+
+`Archive` オブジェクトをインスタンス化します。これは zip コンテナを表します。
 
 ```csharp
     using (var archive = new Archive(zipFile))
     {
 ```
 
-### Step 2.3: Extract to Directory
-最後に内容を新しいフォルダーへ展開します。これが **extract zip to directory** のステップです。
+#### ステップ 2.3: ディレクトリに抽出
+
+最後に、内容を新しいフォルダーに抽出します。これが **zip をディレクトリに抽出** のステップです。
 
 ```csharp
         archive.ExtractToDirectory(dataDir + "DecompressFolder_out");
@@ -80,37 +89,48 @@ zip コンテナを表す `Archive` オブジェクトをインスタンス化�
 }
 ```
 
-Congratulations! You have successfully **compressed a directory to zip** and then **extracted the zip to a directory** using Aspose.Zip for .NET. This approach guarantees data integrity while keeping the code concise and readable.
+## これが重要な理由
 
-## Common Issues & Solutions
-| Symptom | Likely Cause | Fix |
+- **一貫性:** 圧縮と抽出の両方に同じライブラリを使用することで、互換性のあるアーカイブ形式が保証されます。  
+- **パフォーマンス:** Aspose.Zip はデータを効率的にストリーム処理するため、マルチギガバイトのアーカイブでも低メモリオーバーヘッドで処理できます。  
+- **セキュリティ:** パスワード保護の組み込みサポートにより、追加コードなしで zip アーカイブを保護できます。
+
+## 一般的なユースケース
+
+- **自動バックアップ** – ログフォルダーを毎晩 zip にし、クラウドストレージに保存します。  
+- **デプロイパッケージ** – サーバーに公開する前に静的ウェブ資産をバンドルします。  
+- **データ交換** – 複数のファイルを単一のアーカイブとしてサービス間で送信します。
+
+## 一般的な問題と解決策
+
+| 症状 | 主な原因 | 対策 |
 |---------|--------------|-----|
-| `UnauthorizedAccessException` が発生する | 対象フォルダーが読み取り専用または使用中 | 宛先パスが書き込み可能でロックされていないことを確認 |
-| 展開後に出力フォルダーが空になる | ソース zip のパスが間違っている | `dataDir + "CompressDirectory_out.zip"` が正しいファイルを指しているか再確認 |
-| 大容量ファイルで OutOfMemoryException が発生 | デフォルトバッファサイズで非常に大きなアーカイブを処理している | `ArchiveOptions` でバッファサイズを増やすか、チャンク単位でストリーム処理 |
+| 抽出時に `UnauthorizedAccessException` が発生 | 対象フォルダーが読み取り専用または使用中 | 宛先パスが書き込み可能でロックされていないことを確認してください |
+| 抽出後に出力フォルダーが空 | ソース zip パスが間違っている | `dataDir + "CompressDirectory_out.zip"` が正しいファイルを指しているか再確認してください |
+| 大きなファイルで OutOfMemoryException が発生 | 非常に大きなアーカイブでデフォルトのバッファサイズを使用している | `ArchiveOptions` を使用してバッファサイズを増やすか、ファイルをチャンクでストリームしてください |
 
-## Frequently Asked Questions
+## よくある質問
 
-**Q: Can I use Aspose.Zip for .NET with any type of file?**  
-A: Yes, Aspose.Zip supports all file types—text, binary, images, PDFs, you name it.
+**Q: Aspose.Zip for .NET は任意の種類のファイルで使用できますか？**  
+A: はい、Aspose.Zip はテキスト、バイナリ、画像、PDF など、すべてのファイルタイプをサポートします。
 
-**Q: Is Aspose.Zip suitable for large‑scale applications?**  
-A: Absolutely. It’s designed for high‑performance zip compression .NET scenarios, handling multi‑gigabyte archives with low memory overhead.
+**Q: Aspose.Zip は大規模アプリケーションに適していますか？**  
+A: もちろんです。高性能な zip 圧縮を .NET で実現するよう設計されており、マルチギガバイトのアーカイブでも低メモリオーバーヘッドで処理できます。
 
-**Q: Where can I find comprehensive documentation for Aspose.Zip for .NET?**  
-A: Explore the detailed docs [here](https://reference.aspose.com/zip/net/).
+**Q: Aspose.Zip for .NET の包括的なドキュメントはどこで見つけられますか？**  
+A: 詳細なドキュメントは [here](https://reference.aspose.com/zip/net/) でご覧ください。
 
-**Q: Can I try Aspose.Zip before purchasing?**  
-A: Yes, a free trial is available at the [Aspose.Zip download page](https://releases.aspose.com/).
+**Q: 購入前に Aspose.Zip を試すことはできますか？**  
+A: はい、無料トライアルは [Aspose.Zip ダウンロードページ](https://releases.aspose.com/) で利用可能です。
 
-**Q: How can I get support for Aspose.Zip for .NET?**  
-A: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for community help and official assistance.
+**Q: Aspose.Zip for .NET のサポートはどのように受けられますか？**  
+A: コミュニティの支援や公式サポートは [Aspose.Zip フォーラム](https://forum.aspose.com/c/zip/37) をご利用ください。
 
 ---
 
-**Last Updated:** 2025-12-01  
-**Tested With:** Aspose.Zip 24.11 for .NET  
-**Author:** Aspose  
+**最終更新日:** 2026-02-07  
+**テスト環境:** Aspose.Zip 24.11 for .NET  
+**作者:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

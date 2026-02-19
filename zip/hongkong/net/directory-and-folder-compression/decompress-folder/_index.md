@@ -1,10 +1,9 @@
 ---
-date: 2025-12-01
-description: 學習如何使用 Aspose.Zip for .NET 將資料夾壓縮成 zip 並將 zip 解壓縮回資料夾——完整的 .NET zip 壓縮指南與建立
-  zip 檔案 .NET。
+date: 2026-02-07
+description: 學習如何在 .NET 中壓縮資料夾，將目錄壓縮成 zip 並再解壓縮回來。本指南示範如何使用 Aspose.Zip for .NET 進行資料夾壓縮。
 linktitle: Decompressing a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: 將資料夾壓縮為 Zip 並解壓縮 – Aspose.Zip for .NET
+title: 如何壓縮資料夾 – 使用 Aspose.Zip 壓縮目錄
 url: /zh-hant/net/directory-and-folder-compression/decompress-folder/
 weight: 11
 ---
@@ -13,66 +12,68 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 將目錄壓縮為 Zip 並解壓縮 – Aspose.Zip for .NET
+# 如何壓縮資料夾 – 使用 Aspose.Zip for .NET 壓縮目錄
 
-如果您需要在 .NET 應用程式中 **compress directory to zip** 並提取該壓縮檔，您來對地方了。在本教學中，我們將逐步說明完整流程——從建立 zip 壓縮檔開始，接著示範使用 Aspose.Zip for .NET 進行乾淨、一步一步的解壓縮。完成後，您將擁有可重複使用的 zip 壓縮 .NET 專案模式，並對 .NET 風格的解壓縮有深入了解。
+如果您正在尋找 .NET 應用程式中 **如何壓縮資料夾** 的清晰解決方案，您已經來對地方了。在本教學中，我們將完整說明工作流程——首先 **將目錄壓縮為 zip**，接著示範 **將 zip 解壓縮至目錄**（即如何解壓縮資料夾）的具體步驟。完成後，您將擁有一套可在 .NET Framework、.NET Core 以及 .NET 5/6+ 中重複使用的程式化壓縮/解壓縮模式。
 
-## Quick Answers
-- **What does “compress directory to zip” mean?** 它表示將資料夾的內容轉換為單一的 .zip 檔案。  
-- **How do I extract zip to directory?** 使用指南中示範的 `Archive.ExtractToDirectory` 方法。  
-- **Which .NET versions are supported?** 支援所有現代的 .NET Framework、.NET Core 以及 .NET 5/6+ 版本。  
-- **Is a license required for production?** 是，需要商業版 Aspose.Zip 授權才能在非試用環境使用。  
-- **Can I automate this in CI/CD pipelines?** 當然可以——只需將相同程式碼加入您的建置腳本即可。
+## 快速解答
+- **「將目錄壓縮為 zip」是什麼意思？** 就是把資料夾內的所有內容合併成一個 .zip 檔案。  
+- **如何將 zip 解壓縮至目錄？** 如指南所示，使用 `Archive.ExtractToDirectory` 方法。  
+- **支援哪些 .NET 版本？** 所有現代的 .NET Framework、.NET Core 以及 .NET 5/6+ 版本。  
+- **正式環境需要授權嗎？** 需要，非試用情況下必須購買 Aspose.Zip 商業授權。  
+- **可以在 CI/CD 流程中自動化嗎？** 完全可以，只要把相同程式碼加入建置腳本即可。
 
-## What is “compress directory to zip”?
-將目錄壓縮為 zip 會將每個檔案與子資料夾打包成單一的壓縮檔。這可減少儲存空間、簡化傳輸，且是部署資源的標準打包方式。
+## 什麼是「如何壓縮資料夾」？
+**如何壓縮資料夾** 就是把目錄內的每個檔案與子資料夾全部打包成一個壓縮檔。這樣可以減少儲存空間、加快傳輸速度，並提供可攜式的部署套件。
 
-## Why use Aspose.Zip for .NET?
-Aspose.Zip 提供 **pure‑managed** API，無需本機相依性即可運作，支援大型檔案，並提供高效能的 zip 壓縮 .NET 功能。它亦能直接處理密碼保護的壓縮檔與 Unicode 檔名等特殊情況。
+## 為什麼選擇 Aspose.Zip for .NET？
+Aspose.Zip 提供 **純受管理 (pure‑managed)** 的 API，無需原生 DLL，支援超大型壓縮檔，且自動處理 **zip 檔案密碼保護** 與 Unicode 檔名等邊緣情況。它同時針對效能進行最佳化，非常適合在高吞吐量情境下以程式方式壓縮資料夾。
 
-## Prerequisites
-- **Aspose.Zip for .NET** 函式庫已安裝（在此下載 [here](https://releases.aspose.com/zip/net/)。)  
-- 要壓縮的磁碟資料夾——在 `dataDir` 變數中設定其路徑。  
-- .NET 開發環境（Visual Studio、VS Code，或您偏好的任何 IDE）。
+## 前置作業
+- 已安裝 **Aspose.Zip for .NET** 套件（[下載連結](https://releases.aspose.com/zip/net/)）。  
+- 磁碟上已有欲壓縮的資料夾，請在 `dataDir` 變數中設定其路徑。  
+- .NET 開發環境（Visual Studio、VS Code 或其他您慣用的 IDE）。
 
-## Import Namespaces
-首先，將所需的命名空間匯入範圍內：
+## 匯入命名空間
+首先，將必要的命名空間引入程式碼：
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-## Step 1: Compress Directory to Zip
-我們將從您稍後要解壓縮的目錄建立 zip 檔。`CompressDirectory.Run()` 輔助程式負責主要工作。
+## 步驟說明
+
+### 步驟 1：將目錄壓縮為 Zip（程式化壓縮資料夾）
+我們會從您稍後要解壓的目錄建立 zip 檔。`CompressDirectory.Run()` 輔助方法會負責主要工作。
 
 ```csharp
 string dataDir = "Your Document Directory";
 CompressDirectory.Run();
 ```
 
-> **Pro tip:** `CompressDirectory` 範例會將 `dataDir` 中的所有檔案打包成 `CompressDirectory_out.zip`。您可以自行更改輸出檔名以符合命名慣例。
+> **小技巧：**`CompressDirectory` 範例會把 `dataDir` 中的所有檔案打包成 `CompressDirectory_out.zip`。您可以自行更改輸出檔名以符合命名慣例。
 
-## Step 2: Decompress the Folder（如何在 .NET 中解壓縮）
+### 步驟 2：解壓縮資料夾 – 在 .NET 中如何解壓縮資料夾
 
-### Step 2.1: Open the Zip File
-使用 `FileStream` 開啟產生的壓縮檔，為讀取做準備。
+#### 步驟 2.1：開啟 Zip 檔案
+使用 `FileStream` 開啟產生的壓縮檔，以便讀取。
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", FileMode.Open))
 {
 ```
 
-### Step 2.2: Create Archive Instance
-建立 `Archive` 物件的實例，它代表 zip 容器。
+#### 步驟 2.2：建立 Archive 物件
+實例化 `Archive` 物件，代表 zip 容器本身。
 
 ```csharp
     using (var archive = new Archive(zipFile))
     {
 ```
 
-### Step 2.3: Extract to Directory
-最後，將內容解壓縮至新資料夾。這就是 **extract zip to directory** 步驟。
+#### 步驟 2.3：解壓縮至目錄
+最後，將內容解壓縮到新資料夾，這就是 **將 zip 解壓縮至目錄** 的步驟。
 
 ```csharp
         archive.ExtractToDirectory(dataDir + "DecompressFolder_out");
@@ -80,36 +81,44 @@ using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", Fil
 }
 ```
 
-恭喜！您已成功使用 Aspose.Zip for .NET **將目錄壓縮為 zip**，再 **將 zip 解壓縮至資料夾**。此方法確保資料完整性，同時讓程式碼保持簡潔易讀。
+## 為什麼這很重要
+- **一致性：** 同時使用同一套函式庫進行壓縮與解壓，可確保檔案格式相容。  
+- **效能：** Aspose.Zip 以高效能串流方式處理資料，即使是多 GB 的壓縮檔也能以低記憶體佔用完成。  
+- **安全性：** 內建密碼保護支援，讓您在不額外撰寫程式碼的情況下保護 zip 檔。
 
-## Common Issues & Solutions
-| 症狀 | 可能原因 | 解決方案 |
-|---------|--------------|-----|
-| `UnauthorizedAccessException` when extracting | 目標資料夾為唯讀或正在使用中 | 確認目的地路徑可寫入且未被鎖定 |
-| Empty output folder after extraction | 壓縮檔路徑錯誤 | 再次確認 `dataDir + "CompressDirectory_out.zip"` 指向正確的檔案 |
-| Large files cause OutOfMemoryException | 在非常大的壓縮檔上使用預設緩衝區大小 | 使用 `ArchiveOptions` 增加緩衝區大小或分塊串流檔案 |
+## 常見使用情境
+- **自動化備份** – 每晚將日誌資料夾壓縮後上傳至雲端儲存。  
+- **部署套件** – 在發佈至伺服器前，先將靜態網頁資源打包。  
+- **資料交換** – 將多個檔案集合成單一壓縮檔，以便在服務間傳遞。
 
-## Frequently Asked Questions
+## 常見問題與解決方案
+| 症狀 | 可能原因 | 解決方式 |
+|------|----------|----------|
+| 解壓時拋出 `UnauthorizedAccessException` | 目標資料夾為唯讀或正被使用中 | 確認目的地路徑具寫入權限且未被鎖定 |
+| 解壓後輸出資料夾為空 | 壓縮檔路徑錯誤 | 再次檢查 `dataDir + "CompressDirectory_out.zip"` 是否指向正確檔案 |
+| 大檔案導致 OutOfMemoryException | 在極大檔案上使用預設緩衝區 | 使用 `ArchiveOptions` 增大緩衝區或以分塊方式串流檔案 |
 
-**Q: Can I use Aspose.Zip for .NET with any type of file?**  
-A: 是，Aspose.Zip 支援所有檔案類型——文字、二進位、影像、PDF，您說得出來的皆可。
+## 常見問答
 
-**Q: Is Aspose.Zip suitable for large‑scale applications?**  
-A: 絕對適合。它專為高效能 zip 壓縮 .NET 情境設計，能以低記憶體開銷處理多 GB 的壓縮檔。
+**Q: Aspose.Zip for .NET 能處理任何類型的檔案嗎？**  
+A: 能，Aspose.Zip 支援所有檔案類型——文字、二進位、圖片、PDF 等等。
 
-**Q: Where can I find comprehensive documentation for Aspose.Zip for .NET?**  
-A: 請前往此處查看詳細文件 [here](https://reference.aspose.com/zip/net/)。
+**Q: Aspose.Zip 適合大型應用程式嗎？**  
+A: 絕對適合。它專為高效能 .NET 壓縮情境設計，能以低記憶體佔用處理多 GB 壓縮檔。
 
-**Q: Can I try Aspose.Zip before purchasing?**  
-A: 是，您可在 [Aspose.Zip download page](https://releases.aspose.com/) 取得免費試用。
+**Q: 哪裡可以找到 Aspose.Zip for .NET 的完整文件？**  
+A: 請前往文件中心 [此處](https://reference.aspose.com/zip/net/)。
 
-**Q: How can I get support for Aspose.Zip for .NET?**  
-A: 請造訪 [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) 取得社群協助與官方支援。
+**Q: 可以先試用 Aspose.Zip 再決定購買嗎？**  
+A: 可以，請至 [Aspose.Zip 下載頁面](https://releases.aspose.com/) 取得免費試用版。
+
+**Q: 如何取得 Aspose.Zip for .NET 的技術支援？**  
+A: 前往 [Aspose.Zip 論壇](https://forum.aspose.com/c/zip/37) 取得社群與官方協助。
 
 ---
 
-**最後更新：** 2025-12-01  
-**測試版本：** Aspose.Zip 24.11 for .NET  
+**最後更新：** 2026-02-07  
+**測試環境：** Aspose.Zip 24.11 for .NET  
 **作者：** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
