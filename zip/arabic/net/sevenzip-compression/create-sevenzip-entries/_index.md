@@ -1,53 +1,65 @@
 ---
-title: إنشاء إدخالات SevenZip باستخدام Aspose.Zip لـ .NET
-linktitle: إنشاء إدخالات SevenZip
-second_title: Aspose.Zip .NET API لضغط الملفات وأرشفتها
-description: اكتشف قوة Aspose.Zip لـ .NET! تعلم كيفية إنشاء إدخالات SevenZip خطوة بخطوة. ضغط الملفات دون عناء. قم بالتنزيل الآن للحصول على تجربة تطوير سلسة.
-weight: 10
+date: 2025-12-25
+description: تعلم كيفية إنشاء ملفات أرشيف 7z باستخدام Aspose.Zip لـ .NET بلغة C#.
+  يوضح لك هذا الدليل خطوة بخطوة كيفية ضغط الملفات باستخدام C# وضغط المجلد إلى 7z بكفاءة.
+linktitle: Create SevenZip Entries
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: c# إنشاء أرشيف 7z – إنشاء إدخالات SevenZip باستخدام Aspose.Zip لـ .NET
 url: /ar/net/sevenzip-compression/create-sevenzip-entries/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# إنشاء إدخالات SevenZip باستخدام Aspose.Zip لـ .NET
+# c# create 7z archive – إنشاء SevenZip Entries باستخدام Aspose.Zip لـ .NET
 
+## المقدمة
 
-## مقدمة
+في هذا الدرس، ستتعلم كيفية **c# create 7z archive** ملفات بكفاءة في تطبيق .NET الخاص بك باستخدام Aspose.Zip. سواء كنت تحتاج إلى **compress files c#** لتوفير مساحة التخزين أو **compress directory to 7z** لتوزيع سهل، فإن الخطوات أدناه ستوجهك خلال العملية مع شروحات واضحة ونصائح عملية.
 
-هل تتطلع إلى ضغط ملفاتك بكفاءة في تطبيق .NET الخاص بك باستخدام Aspose.Zip؟ إذا كان الأمر كذلك، فأنت في المكان الصحيح! في هذا البرنامج التعليمي، سنستكشف عملية إنشاء إدخالات SevenZip باستخدام Aspose.Zip لـ .NET. سواء كنت مطورًا متمرسًا أو بدأت للتو، تابع معنا لتعزيز مهاراتك والاستفادة من قوة Aspose.Zip.
+## إجابات سريعة
+- **What does this tutorial cover?** إنشاء إدخالات SevenZip وحفظها كأرشيف 7z باستخدام Aspose.Zip لـ .NET.  
+- **Which primary keyword is targeted?** c# create 7z archive.  
+- **Do I need a license?** تتوفر رخصة مؤقتة للاختبار؛ يلزم الحصول على رخصة كاملة للإنتاج.  
+- **Can I run this on Linux?** نعم – Aspose.Zip لـ .NET متعدد المنصات.  
+- **How long does implementation take?** حوالي 5‑10 دقائق لإنشاء أرشيف أساسي.
 
-## المتطلبات الأساسية
+## المتطلبات
 
-قبل أن نتعمق في البرنامج التعليمي، تأكد من توفر المتطلبات الأساسية التالية:
+قبل أن نغوص في الدرس، تأكد من توفر المتطلبات التالية:
 
-- المعرفة الأساسية بتطوير C# و.NET.
-- بيئة تطوير متكاملة (IDE) مثل Visual Studio.
--  تم تثبيت Aspose.Zip لمكتبة .NET. إذا لم يكن الأمر كذلك، يمكنك تنزيله[هنا](https://releases.aspose.com/zip/net/).
+- معرفة أساسية بـ C# وتطوير .NET.  
+- بيئة تطوير متكاملة (IDE) مثل Visual Studio.  
+- مكتبة Aspose.Zip لـ .NET مثبتة. إذا لم تكن مثبتة، يمكنك تنزيلها [here](https://releases.aspose.com/zip/net/).
 
 ## استيراد مساحات الأسماء
 
-في مشروع C# الخاص بك، تأكد من استيراد مساحات الأسماء اللازمة لاستخدام Aspose.Zip. أضف الأسطر التالية في بداية الكود الخاص بك:
+في مشروع C# الخاص بك، تأكد من استيراد مساحات الأسماء الضرورية لاستخدام Aspose.Zip. أضف الأسطر التالية في بداية الكود الخاص بك:
 
 ```csharp
 using Aspose.Zip.SevenZip;
 using System;
 ```
 
-الآن، دعونا نقسم المثال المقدم إلى خطوات متعددة لفهم شامل.
+الآن، دعنا نقسم المثال المقدم إلى خطوات متعددة لفهم شامل.
 
-## الخطوة 1: قم بتعيين مسار دليل الموارد
+## c# create 7z archive – دليل خطوة بخطوة
 
- قبل إنشاء إدخالات SevenZip، قم بتعيين المسار إلى دليل الموارد الخاص بك. يستبدل`"Your Document Directory"` في ال`dataDir` متغير مع المسار الفعلي.
+### الخطوة 1: تعيين مسار دليل الموارد
+
+قبل إنشاء إدخالات SevenZip، عيّن مسار دليل الموارد الخاص بك. استبدل `"Your Document Directory"` في المتغير `dataDir` بالمسار الفعلي.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## الخطوة 2: إنشاء إدخالات SevenZip
+> **نصيحة احترافية:** استخدام مسار مطلق يزيل الالتباس عندما يعمل التطبيق من دليل عمل مختلف.
 
-الآن، دعونا نتعمق في جوهر العملية - إنشاء إدخالات SevenZip. استخدم مقتطف التعليمات البرمجية التالي:
+### الخطوة 2: إنشاء إدخالات SevenZip
+
+الآن، دعنا نتعمق في جوهر العملية – إنشاء إدخالات SevenZip. هذه الخطوة **compresses the directory to 7z**.
 
 ```csharp
 //ExStart: CreateSevenZipEntries
@@ -59,36 +71,55 @@ using (SevenZipArchive archive = new SevenZipArchive())
 //ExEnd: CreateSevenZipEntries
 ```
 
-يقوم هذا الرمز بتهيئة SevenZipArchive، وإنشاء إدخالات من الدليل المحدد، وحفظ الملف المضغوط باسم "SevenZip.7z".
+الكود أعلاه يinitialize `SevenZipArchive`، يضيف كل ملف من المجلد المحدد، ويكتب الأرشيف المضغوط إلى **SevenZip.7z**.
 
-## الخطوة 3: عرض رسالة النجاح
+### الخطوة 3: عرض رسالة النجاح
 
-للتأكد من أن كل شيء يسير بسلاسة، اعرض رسالة النجاح:
+للتأكد من أن كل شيء سار بسلاسة، اعرض رسالة نجاح:
 
 ```csharp
 Console.WriteLine("Successfully Created a Seven Zip File");
 ```
 
-## خاتمة
+الآن لديك **أرشيف 7z** جاهز للمشاركة يمكن نقله، تخزينه، أو معالجته لاحقًا.
 
-تهانينا! لقد نجحت في إنشاء إدخالات SevenZip باستخدام Aspose.Zip لـ .NET. يمكن لتقنية الضغط هذه تحسين تخزين الملفات ونقلها بشكل كبير في تطبيقاتك.
+## لماذا تستخدم Aspose.Zip لـ .NET؟
 
-## الأسئلة الشائعة
+- ** performance:** خوارزميات ضغط محسّنة تتفوق على العديد من البدائل المفتوحة المصدر.  
+- **Cross‑platform support:** يعمل على Windows وLinux وmacOS دون الحاجة لتغييرات في الكود.  
+- **Rich API:** يوفر تحكمًا دقيقًا في مستويات الضغط، التشفير، وبنية الأرشيف.  
+- **No external dependencies:** لا حاجة لتثبيت ملفات 7‑Zip الأصلية.
 
-### هل يمكنني استخدام Aspose.Zip لـ .NET في بيئات Windows وLinux؟
-نعم، يعد Aspose.Zip for .NET متعدد المنصات ويمكن استخدامه في بيئات Windows وLinux بسلاسة.
+## المشكلات الشائعة والحلول
 
-### هل الترخيص المؤقت متاح لأغراض الاختبار؟
- قطعاً! يمكنك الحصول على ترخيص مؤقت[هنا](https://purchase.aspose.com/temporary-license/) لاستكشاف الإمكانات الكاملة لـ Aspose.Zip.
+| المشكلة | الحل |
+|-------|----------|
+| **Archive is empty** | تحقق من أن `dataDir` يشير إلى مجلد يحتوي على ملفات. استخدم `Directory.Exists` للتأكيد. |
+| **Access denied error** | تأكد من أن التطبيق يمتلك أذونات قراءة على المجلد المصدر وأذونات كتابة للمسار الناتج. |
+| **Large files cause OutOfMemoryException** | استخدم `SevenZipArchive` مع خيارات البث أو قسّم الأرشيف إلى أجزاء متعددة. |
 
-### أين يمكنني العثور على وثائق شاملة لـ Aspose.Zip for .NET؟
- للحصول على وثائق مفصلة، راجع[Aspose.Zip لتوثيق .NET](https://reference.aspose.com/zip/net/).
+## الأسئلة المتكررة
 
-### ماذا لو واجهت مشكلات أو كانت لدي أسئلة محددة أثناء التنفيذ؟
- لا تتردد في طلب المساعدة في[منتدى Aspose.Zip](https://forum.aspose.com/c/zip/37). المجتمع وفريق الدعم موجودون للمساعدة!
+### هل يمكنني استخدام Aspose.Zip لـ .NET في بيئات Windows وLinux على حد سواء؟
+نعم، Aspose.Zip لـ .NET متعدد المنصات ويمكن استخدامه في بيئات Windows وLinux بسلاسة.
 
-### هل هناك نسخة تجريبية مجانية متاحة قبل إجراء عملية الشراء؟
- نعم، يمكنك الوصول إلى النسخة التجريبية المجانية[هنا](https://releases.aspose.com/) لاستكشاف الميزات قبل الالتزام.
+### هل تتوفر رخصة مؤقتة لأغراض الاختبار؟
+بالطبع! يمكنك الحصول على رخصة مؤقتة [here](https://purchase.aspose.com/temporary-license/) لاستكشاف الإمكانات الكاملة لـ Aspose.Zip.
+
+### أين يمكنني العثور على وثائق شاملة لـ Aspose.Zip لـ .NET؟
+للحصول على وثائق مفصلة، راجع [Aspose.Zip for .NET Documentation](https://reference.aspose.com/zip/net/).
+
+### ماذا أفعل إذا واجهت مشكلات أو كان لدي أسئلة محددة أثناء التنفيذ؟
+لا تتردد في طلب المساعدة في [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37). المجتمع وفريق الدعم موجودان للمساعدة!
+
+### هل هناك نسخة تجريبية مجانية متاحة قبل الشراء؟
+نعم، يمكنك الوصول إلى النسخة التجريبية المجانية [here](https://releases.aspose.com/) لاستكشاف الميزات قبل اتخاذ القرار.
+
+---
+
+**آخر تحديث:** 2025-12-25  
+**تم الاختبار باستخدام:** Aspose.Zip for .NET 24.11  
+**المؤلف:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

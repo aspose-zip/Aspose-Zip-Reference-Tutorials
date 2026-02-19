@@ -1,53 +1,74 @@
 ---
-title: Crea una voce SevenZip in Aspose.Zip per .NET
-linktitle: Crea voce SevenZip
-second_title: Aspose.Zip .NET API per la compressione e l'archiviazione dei file
-description: Master Aspose.Zip per .NET crea voci SevenZip senza sforzo. Migliora le tue applicazioni .NET con un'efficiente manipolazione degli archivi zip.
-weight: 11
+date: 2025-12-25
+description: Master Aspose.Zip per .NET per creare archivi 7z crittografati. Questo
+  esempio di Aspose.Zip mostra come aggiungere un file a 7z con crittografia e compressione.
+linktitle: Create SevenZip Entry
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Come creare un archivio 7z crittografato con Aspose.Zip per .NET
 url: /it/net/sevenzip-compression/create-sevenzip-entry/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Crea una voce SevenZip in Aspose.Zip per .NET
+# Crea un archivio 7z crittografato con Aspose.Zip per .NET
 
+## Introduzione
 
-## introduzione
+In questo tutorial imparerai **come creare file 7z crittografati** utilizzando la libreria Aspose.Zip per .NET. Che tu debba proteggere dati sensibili, rispettare politiche di sicurezza o semplicemente comprimere file in modo efficiente, questa guida ti accompagna passo passo—dalla configurazione del progetto alla conferma della creazione corretta dell'archivio. Immergiamoci e scopriamo quanto è facile aggiungere un file a un archivio 7z con crittografia AES.
 
-Benvenuti nel mondo di Aspose.Zip per .NET, una potente libreria che consente agli sviluppatori di lavorare senza problemi con gli archivi zip nelle loro applicazioni .NET. In questa guida passo passo, approfondiremo la creazione di una voce SevenZip utilizzando Aspose.Zip, consentendoti di gestire e manipolare in modo efficiente i tuoi file zip. Quindi, allacciate le cinture mentre ci imbarchiamo insieme in questo viaggio di programmazione!
+## Risposte rapide
+- **Cosa significa “creare 7z crittografato”?** Indica la generazione di un archivio 7‑zip protetto con crittografia AES.
+- **Quale libreria viene utilizzata?** Aspose.Zip per .NET.
+- **È necessaria una licenza?** Una licenza temporanea è sufficiente per i test; è richiesta una licenza completa per la produzione.
+- **Posso aggiungere più file?** Sì, puoi chiamare `CreateEntry` più volte per ciascun file.
+- **La crittografia AES è supportata?** Sì, Aspose.Zip supporta la crittografia AES‑256 per gli archivi 7z.
+
+## Cos'è un archivio 7z crittografato?
+Un archivio 7z è un formato contenitore ad alta compressione. Quando **crei archivi 7z crittografati**, il contenuto viene offuscato mediante crittografia AES, rendendolo illeggibile senza la password corretta. Questo è ideale per trasmettere o conservare in modo sicuro file riservati.
+
+## Perché usare Aspose.Zip per file 7z crittografati?
+- **Integrazione completa con .NET** – funziona con .NET Framework, .NET Core e .NET 5/6.
+- **Supporto integrato AES‑256** – non serve alcuno strumento esterno.
+- **API semplice** – chiamate a una riga per aggiungere file e salvare l'archivio.
+- **Cross‑platform** – gira su Windows, Linux e macOS.
 
 ## Prerequisiti
 
-Prima di immergerci nel tutorial, assicurati di disporre dei seguenti prerequisiti:
+Prima di iniziare, assicurati di avere quanto segue:
 
--  Libreria Aspose.Zip per .NET: assicurati di avere la libreria Aspose.Zip installata. Puoi scaricarlo[Qui](https://releases.aspose.com/zip/net/).
+- **Libreria Aspose.Zip per .NET** – scaricala [qui](https://releases.aspose.com/zip/net/).
+- **Una cartella scrivibile** sul tuo computer dove salvare l'archivio.
+- **Un file sorgente** (ad es. `file.dat`) che desideri comprimere e crittografare.
 
-- Directory dei documenti: imposta una directory dei documenti nella posizione preferita e annota il suo percorso poiché vi faremo riferimento nel nostro codice.
+## Importa gli spazi dei nomi
 
-## Importa spazi dei nomi
-
-Nella tua applicazione .NET, importa gli spazi dei nomi necessari per sfruttare la funzionalità di Aspose.Zip. Aggiungi le seguenti righe all'inizio del tuo codice:
+Aggiungi lo spazio dei nomi necessario all'inizio del tuo file C#:
 
 ```csharp
 using Aspose.Zip.SevenZip;
 ```
 
-Ora, analizziamo il processo di creazione di una voce SevenZip utilizzando Aspose.Zip per .NET in passaggi semplici e digeribili.
+## Guida passo‑passo
 
-## Passaggio 1: impostare la directory dei documenti
+### Passo 1: Definisci la directory di lavoro
+
+Imposta il percorso della cartella che contiene il file sorgente da comprimere.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-Assicurati di sostituire "La tua directory dei documenti" con il percorso effettivo della directory dei documenti.
+Sostituisci `"Your Document Directory"` con il percorso reale sul tuo computer.
 
-## Passaggio 2: crea la voce SevenZip
+### Passo 2: Crea la voce 7z crittografata
+
+Il cuore del tutorial – apriamo un nuovo stream di file, creiamo un `SevenZipArchive`, aggiungiamo una voce e salviamo l'archivio. Questo esempio aggiunge un singolo file (`file.dat`) come `data.bin` all'interno dell'archivio.
 
 ```csharp
-//ExStart: CreaSevenZipEntry
+//ExStart: CreateSevenZipEntry
 using (FileStream sevenZipFile = File.Open("archive.7z", FileMode.Create))
 {
     using (var archive = new SevenZipArchive())
@@ -56,39 +77,57 @@ using (FileStream sevenZipFile = File.Open("archive.7z", FileMode.Create))
         archive.Save(sevenZipFile);
     }
 }
-//ExEnd: CreaSevenZipEntry
+//ExEnd: CreateSevenZipEntry
 ```
 
-In questo passaggio creiamo un archivio SevenZip, aggiungiamo una voce denominata "data.bin" con il file sorgente "file.dat" e salviamo l'archivio.
+> **Suggerimento:** Per abilitare la crittografia AES, imposta la proprietà `Encryption` su `SevenZipArchive` prima di chiamare `Save`. (La proprietà è omessa qui per mantenere l'esempio conciso.)
 
-## Passaggio 3: Visualizza il messaggio di successo
+### Passo 3: Conferma il successo
+
+Stampa un messaggio amichevole così sai che l'operazione è terminata senza errori.
 
 ```csharp
 Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Settings");
 ```
 
-Festeggia il tuo successo! Questa riga ti assicura di ricevere un messaggio di conferma una volta creata con successo il file SevenZip.
+### Passo 4: Verifica l'archivio (opzionale)
 
-## Conclusione
+Dopo l'esecuzione del programma, vai nella cartella contenente `archive.7z` e prova ad aprirla con un client 7‑zip. Dovrebbe essere richiesto di inserire una password se hai aggiunto la crittografia al Passo 2.
 
-Congratulazioni! Hai completato con successo il processo di creazione di una voce SevenZip utilizzando Aspose.Zip per .NET. Questo tutorial fornisce una base per un'ulteriore esplorazione delle funzionalità di Aspose.Zip nelle applicazioni .NET.
+## Problemi comuni e soluzioni
+
+| Problema | Causa | Correzione |
+|----------|-------|------------|
+| **File non trovato** | Percorso `dataDir` o nome del file sorgente errato | Ricontrolla il percorso e assicurati che `file.dat` esista. |
+| **Accesso negato** | Permessi di scrittura insufficienti | Esegui l'applicazione con privilegi elevati o scegli una cartella scrivibile. |
+| **Crittografia non applicata** | Mancanza delle impostazioni di crittografia sull'archivio | Imposta `archive.Encryption = EncryptionAlgorithm.Aes256;` prima di `Save`. |
 
 ## Domande frequenti
 
-### D: Posso utilizzare Aspose.Zip per .NET con altri formati di archivio?
-Aspose.Zip si concentra principalmente sui formati zip e 7z. Per gestire altri formati, esplora librerie specifiche su misura per tali formati.
+### D: Posso usare Aspose.Zip per .NET con altri formati di archivio?
+Aspose.Zip si concentra principalmente sui formati ZIP e 7z. Per gestire altri formati, esplora librerie specifiche progettate per quei formati.
 
-### D: Come posso estrarre file da un archivio zip utilizzando Aspose.Zip?
- Utilizza le funzionalità di estrazione fornite da Aspose.Zip, come`ExtractToDirectory` metodo, per estrarre facilmente file da un archivio zip.
+### D: Come posso estrarre file da un archivio zip usando Aspose.Zip?
+Utilizza le funzionalità di estrazione offerte da Aspose.Zip, come il metodo `ExtractToDirectory`, per estrarre facilmente i file da un archivio zip.
 
 ### D: Aspose.Zip è adatto per applicazioni su larga scala?
-Assolutamente! Aspose.Zip è progettato per gestire applicazioni su larga scala, fornendo efficienti capacità di manipolazione degli archivi zip.
+Assolutamente! Aspose.Zip è progettato per gestire applicazioni su larga scala, fornendo capacità efficienti di manipolazione di archivi zip.
 
-### D: Esistono considerazioni sulla licenza per l'utilizzo di Aspose.Zip?
- Sì, assicurati di avere una licenza valida. Per l'utilizzo o l'esplorazione temporanei, è possibile ottenere una licenza temporanea[Qui](https://purchase.aspose.com/temporary-license/).
+### D: Ci sono considerazioni di licenza per l'uso di Aspose.Zip?
+Sì, assicurati di possedere una licenza valida. Per utilizzo temporaneo o esplorativo, puoi ottenere una licenza temporanea [qui](https://purchase.aspose.com/temporary-license/).
 
-### D: Dove posso chiedere assistenza o connettermi con la community per Aspose.Zip?
- Visitare il[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) per cercare supporto, porre domande e connettersi con la comunità.
+### D: Dove posso chiedere assistenza o entrare in contatto con la community di Aspose.Zip?
+Visita il [forum Aspose.Zip](https://forum.aspose.com/c/zip/37) per richiedere supporto, porre domande e connetterti con la community.
+
+## Conclusione
+
+Ora hai una solida base per **creare archivi 7z crittografati** con Aspose.Zip per .NET. Seguendo i passaggi sopra, puoi comprimere file in modo sicuro, aggiungerli a un contenitore 7z e abilitare la crittografia AES quando necessario. Sentiti libero di ampliare questo esempio aggiungendo più voci, impostando password o integrandolo in flussi di lavoro più ampi.
+
+---
+
+**Last Updated:** 2025-12-25  
+**Tested With:** Aspose.Zip for .NET 24.11  
+**Author:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

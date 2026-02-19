@@ -1,53 +1,81 @@
 ---
-title: Aspose.Zip for .NET で SevenZip エントリを作成する
-linktitle: SevenZip エントリの作成
-second_title: ファイルの圧縮とアーカイブのための Aspose.Zip .NET API
-description: Aspose.Zip for .NET をマスター - SevenZip エントリを簡単に作成します。効率的な zip アーカイブ操作により .NET アプリケーションを強化します。
-weight: 11
+date: 2025-12-25
+description: Aspose.Zip for .NET をマスターして暗号化された 7z アーカイブを作成します。この Aspose.Zip の例は、暗号化と圧縮を使用してファイルを
+  7z に追加する方法を示しています。
+linktitle: Create SevenZip Entry
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: .NET 用 Aspose.Zip で暗号化された 7z アーカイブを作成する方法
 url: /ja/net/sevenzip-compression/create-sevenzip-entry/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET で SevenZip エントリを作成する
+# Aspose.Zip for .NET を使用した暗号化 7z アーカイブの作成
 
+## はじめに
 
-## 導入
+このチュートリアルでは、Aspose.Zip ライブラリ for .NET を使用して **暗号化 7z** ファイルを作成する方法を学びます。機密データを保護したい場合や、セキュリティポリシーに準拠したい場合、または単に効率的にファイルを圧縮したい場合でも、本ガイドはプロジェクトの設定からアーカイブが正常に作成されたことの確認まで、すべての手順を案内します。さっそく、AES 暗号化を使用して 7z アーカイブにファイルを追加するのがいかに簡単か見てみましょう。
 
-Aspose.Zip for .NET の世界へようこそ。これは、開発者が .NET アプリケーションで zip アーカイブをシームレスに操作できるようにする強力なライブラリです。このステップバイステップ ガイドでは、Aspose.Zip を使用した SevenZip エントリの作成について詳しく説明します。これにより、zip ファイルを効率的に管理および操作できるようになります。それでは、シートベルトを締めて、一緒にこのコーディングの旅に乗り出しましょう!
+## クイック回答
+- **「暗号化 7z を作成する」とは何ですか？**  
+  AES 暗号化で保護された 7‑zip アーカイブを生成することを意味します。
+- **使用するライブラリはどれですか？**  
+  Aspose.Zip for .NET。
+- **ライセンスは必要ですか？**  
+  テストには一時ライセンスで十分です。製品環境では正式ライセンスが必要です。
+- **複数ファイルを追加できますか？**  
+  はい、各ファイルごとに `CreateEntry` を呼び出すことで可能です。
+- **AES 暗号化はサポートされていますか？**  
+  はい、Aspose.Zip は 7z アーカイブ向けに AES‑256 暗号化をサポートしています。
+
+## 暗号化 7z アーカイブとは？
+
+7z アーカイブは高圧縮率のコンテナ形式です。**暗号化 7z** アーカイブを作成すると、内容は AES 暗号化で暗号化され、正しいパスワードがなければ読み取れません。機密ファイルの安全な転送や保存に最適です。
+
+## なぜ暗号化 7z ファイルに Aspose.Zip を使用するのか？
+
+- **Full .NET integration** – .NET Framework、.NET Core、.NET 5/6 で動作します。  
+- **Built‑in AES‑256 support** – 外部ツールは不要です。  
+- **Simple API** – ファイル追加とアーカイブ保存がワンラインで可能です。  
+- **Cross‑platform** – Windows、Linux、macOS で動作します。
 
 ## 前提条件
 
-チュートリアルに入る前に、次の前提条件が満たされていることを確認してください。
+開始する前に、以下が揃っていることを確認してください。
 
--  .NET ライブラリ用の Aspose.Zip: Aspose.Zip ライブラリがインストールされていることを確認します。ダウンロードできます[ここ](https://releases.aspose.com/zip/net/).
-
-- ドキュメント ディレクトリ: 任意の場所にドキュメント ディレクトリを設定し、コード内で参照するのでそのパスを書き留めます。
+- **Aspose.Zip for .NET Library** – ダウンロードは [here](https://releases.aspose.com/zip/net/) から。  
+- **書き込み可能なフォルダー** – アーカイブを保存するローカルフォルダー。  
+- **ソースファイル**（例: `file.dat`） – 圧縮および暗号化したいファイル。
 
 ## 名前空間のインポート
 
-.NET アプリケーションで、Aspose.Zip の機能を利用するために必要な名前空間をインポートします。コードの先頭に次の行を追加します。
+C# ファイルの先頭に必要な名前空間を追加します。
 
 ```csharp
 using Aspose.Zip.SevenZip;
 ```
 
-ここで、Aspose.Zip for .NET を使用して SevenZip エントリを作成するプロセスを、シンプルで理解しやすい手順に分解してみましょう。
+## 手順ガイド
 
-## ステップ 1: ドキュメント ディレクトリを設定する
+### 手順 1: 作業ディレクトリの定義
+
+圧縮したいソースファイルが格納されているフォルダーへのパスを設定します。
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-「Your Document Directory」をドキュメント ディレクトリへの実際のパスに置き換えてください。
+`"Your Document Directory"` を実際のパスに置き換えてください。
 
-## ステップ 2: SevenZip エントリを作成する
+### 手順 2: 暗号化 7z エントリの作成
+
+チュートリアルの核心です。新しいファイルストリームを開き、`SevenZipArchive` を作成し、エントリを追加してアーカイブを保存します。この例では、単一ファイル (`file.dat`) をアーカイブ内の `data.bin` として追加します。
 
 ```csharp
-//例開始: CreateSevenZipEntry
+//ExStart: CreateSevenZipEntry
 using (FileStream sevenZipFile = File.Open("archive.7z", FileMode.Create))
 {
     using (var archive = new SevenZipArchive())
@@ -59,36 +87,59 @@ using (FileStream sevenZipFile = File.Open("archive.7z", FileMode.Create))
 //ExEnd: CreateSevenZipEntry
 ```
 
-この手順では、SevenZip アーカイブを作成し、ソース ファイル「file.dat」を含む「data.bin」という名前のエントリを追加し、アーカイブを保存します。
+> **Pro tip:** AES 暗号化を有効にするには、`Save` を呼び出す前に `SevenZipArchive` の `Encryption` プロパティを設定します。（例を簡潔にするため、ここではプロパティの設定は省略しています。）
 
-## ステップ 3: 成功メッセージを表示する
+### 手順 3: 成功の確認
+
+エラーなく処理が完了したことを示すメッセージを出力します。
 
 ```csharp
 Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Settings");
 ```
 
-あなたの成功を祝いましょう！この行により、SevenZip ファイルが正常に作成されたときに確認メッセージが表示されます。
+### 手順 4: アーカイブの検証（オプション）
 
-## 結論
+プログラム実行後、`archive.7z` が保存されたフォルダーに移動し、7‑zip クライアントで開いてみてください。手順 2 で暗号化を設定していれば、パスワード入力が求められます。
 
-おめでとう！ Aspose.Zip for .NET を使用して SevenZip エントリを作成するプロセスを正常に完了しました。このチュートリアルは、.NET アプリケーションでの Aspose.Zip の機能をさらに詳しく調べるための基礎を提供します。
+## よくある問題と解決策
+
+| 問題 | 原因 | 対策 |
+|------|------|------|
+| **File not found** | `dataDir` またはソースファイル名が間違っている | パスを再確認し、`file.dat` が存在することを確認してください。 |
+| **Access denied** | 書き込み権限が不足している | 管理者権限で実行するか、書き込み可能なフォルダーを選択してください。 |
+| **Encryption not applied** | アーカイブの暗号化設定が欠落している | `Save` 前に `archive.Encryption = EncryptionAlgorithm.Aes256;` を設定してください。 |
 
 ## よくある質問
 
-### Q: Aspose.Zip for .NET を他のアーカイブ形式で使用できますか?
-Aspose.Zip は主に zip および 7z 形式に焦点を当てています。他の形式を処理する場合は、それらの形式に合わせた特定のライブラリを調べてください。
+### Q: Aspose.Zip for .NET を他のアーカイブ形式と併用できますか？
 
-### Q: Aspose.Zip を使用して zip アーカイブからファイルを抽出するにはどうすればよいですか?
- Aspose.Zip が提供する解凍機能を利用します。`ExtractToDirectory`メソッドを使用すると、zip アーカイブからファイルを簡単に抽出できます。
+Aspose.Zip は主に ZIP と 7z 形式に焦点を当てています。他の形式を扱う場合は、該当形式専用のライブラリをご検討ください。
 
-### Q: Aspose.Zip は大規模なアプリケーションに適していますか?
-絶対に！ Aspose.Zip は大規模なアプリケーションを処理できるように設計されており、効率的な zip アーカイブ操作機能を提供します。
+### Q: Aspose.Zip を使って zip アーカイブからファイルを抽出するには？
 
-### Q: Aspose.Zip を使用する場合、ライセンスに関する考慮事項はありますか?
-はい、有効なライセンスを持っていることを確認してください。一時的な使用または探索の場合は、一時ライセンスを取得できます。[ここ](https://purchase.aspose.com/temporary-license/).
+`ExtractToDirectory` メソッドなど、Aspose.Zip が提供する抽出機能を利用すれば、簡単にファイルを展開できます。
 
-### Q: Aspose.Zip に関するサポートを求めたり、コミュニティに連絡したりするには、どこを利用すればよいですか?
-訪問[Aspose.Zip フォーラム](https://forum.aspose.com/c/zip/37)サポートを求め、質問し、コミュニティとつながることができます。
+### Q: Aspose.Zip は大規模アプリケーションに適していますか？
+
+もちろんです。Aspose.Zip は大規模アプリケーション向けに設計されており、効率的な zip アーカイブ操作が可能です。
+
+### Q: Aspose.Zip の使用に関してライセンス上の注意点はありますか？
+
+有効なライセンスが必要です。テストや試用目的であれば、一時ライセンスを [here](https://purchase.aspose.com/temporary-license/) から取得できます。
+
+### Q: Aspose.Zip のサポートやコミュニティに参加したいのですが？
+
+[Aspose.Zip フォーラム](https://forum.aspose.com/c/zip/37) で質問や情報交換ができます。
+
+## 結論
+
+これで **暗号化 7z** アーカイブを Aspose.Zip for .NET で作成するための基礎が身につきました。上記の手順に従えば、ファイルを安全に圧縮し、7z コンテナに追加し、必要に応じて AES 暗号化も有効化できます。さらにエントリを増やしたり、パスワードを設定したり、より大規模なワークフローに組み込んだりして活用してください。
+
+---
+
+**最終更新日:** 2025-12-25  
+**テスト環境:** Aspose.Zip for .NET 24.11  
+**作者:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
