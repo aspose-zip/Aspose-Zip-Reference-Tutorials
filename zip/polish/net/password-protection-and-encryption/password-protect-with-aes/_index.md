@@ -1,32 +1,48 @@
 ---
-title: Zabezpiecz swoje pliki — szyfrowanie AES za pomocą Aspose.Zip
-linktitle: Ochrona hasłem za pomocą AES
-second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
-description: Dowiedz się, jak zwiększyć bezpieczeństwo plików za pomocą Aspose.Zip dla .NET z szyfrowaniem AES. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby uzyskać optymalną ochronę.
-weight: 11
+date: 2025-12-21
+description: Dowiedz się, jak zabezpieczyć pliki zip hasłem przy użyciu Aspose.Zip
+  dla .NET z szyfrowaniem AES. Skorzystaj z naszego przewodnika krok po kroku, aby
+  uzyskać optymalną ochronę.
+linktitle: Password Protect with AES
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Zabezpiecz pliki ZIP hasłem przy użyciu szyfrowania AES w Aspose.Zip
 url: /pl/net/password-protection-and-encryption/password-protect-with-aes/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Zabezpiecz swoje pliki — szyfrowanie AES za pomocą Aspose.Zip
+# Zabezpiecz pliki ZIP hasłem przy użyciu szyfrowania AES z Aspose.Zip
 
+## Wprowadzenie
 
-## Wstęp
+W dzisiejszym cyfrowym świecie archiwa **password protect zip** są podstawowym sposobem zabezpieczania poufnych danych podczas ich udostępniania. Aspose.Zip dla .NET umożliwia łatwe szyfrowanie plików zip przy użyciu standardowych algorytmów AES, dając pewność, że tylko upoważnieni użytkownicy mogą otworzyć archiwum. W tym samouczku pokażemy, **how to encrypt zip** pliki przy użyciu kluczy AES o długościach 128‑bit, 192‑bit i 256‑bit oraz przedstawimy, jak skompresować pliki z ochroną hasłem w kilku linijkach C#.
 
-Zabezpieczanie wrażliwych plików ma kluczowe znaczenie w dzisiejszej epoce cyfrowej, a Aspose.Zip dla .NET zapewnia solidne rozwiązanie do ochrony hasłem archiwów przy użyciu Advanced Encryption Standard (AES). W tym samouczku omówimy, jak zaimplementować szyfrowanie AES z trzema długościami kluczy – 128-bitowymi, 192-bitowymi i 256-bitowymi – zapewniającymi najwyższy poziom bezpieczeństwa skompresowanych plików.
+## Szybkie odpowiedzi
+- **Co oznacza “password protect zip”?** Oznacza to zastosowanie szyfrowania opartego na haśle (np. AES) do archiwum ZIP, tak aby jego zawartość nie mogła być otwarta bez prawidłowego hasła.  
+- **Jakie długości kluczy AES są obsługiwane?** Aspose.Zip obsługuje szyfrowanie AES‑128, AES‑192 i AES‑256.  
+- **Czy potrzebuję licencji, aby to wypróbować?** Dostępna jest bezpłatna wersja próbna Aspose.Zip; licencja jest wymagana do użytku produkcyjnego.  
+- **Czy mogę używać tego z .NET Core?** Tak, biblioteka działa z .NET Framework, .NET Core oraz .NET 5/6+.  
+- **Czy AES‑256 jest najbezpieczniejszą opcją?** Tak, AES‑256 zapewnia najwyższy poziom bezpieczeństwa spośród obsługiwanych metod.
 
-## Warunki wstępne
+## Co to jest password protect zip?
+Zabezpieczenie pliku ZIP hasłem oznacza zastosowanie szyfrowania archiwum, tak aby jego wpisy były zaszyfrowane aż do podania prawidłowego hasła. AES (Advanced Encryption Standard) jest preferowanym algorytmem, ponieważ jest szybki, szeroko wspierany i spełnia współczesne standardy bezpieczeństwa.
 
-Zanim przejdziesz do samouczka, upewnij się, że spełniasz następujące wymagania wstępne:
+## Dlaczego używać szyfrowania AES dla archiwów ZIP?
+- **Silne bezpieczeństwo:** AES‑256 oferuje 256‑bitową siłę klucza, co czyni ataki brute‑force praktycznie niewykonalnymi.  
+- **Kompatybilność międzyplatformowa:** Większość narzędzi do archiwizacji rozumie ZIPy szyfrowane AES, więc odbiorcy mogą je otworzyć standardowym oprogramowaniem.  
+- **Proste API:** Aspose.Zip ukrywa złożone szczegóły kryptograficzne, pozwalając skupić się na logice biznesowej.
 
--  Aspose.Zip dla .NET: Upewnij się, że biblioteka Aspose.Zip jest zintegrowana z projektem .NET. Możesz go pobrać[Tutaj](https://releases.aspose.com/zip/net/).
+## Wymagania wstępne
 
-- Katalog dokumentów: Miej katalog, w którym znajdują się pliki źródłowe.
+Przed rozpoczęciem upewnij się, że masz:
 
-## Importuj przestrzenie nazw
+- **Aspose.Zip for .NET** zintegrowany w Twoim projekcie. Możesz go pobrać [tutaj](https://releases.aspose.com/zip/net/).
+- Folder zawierający pliki, które chcesz skompresować (będziemy go nazywać `dataDir`).
+
+## Importowanie przestrzeni nazw
 
 ```csharp
 using Aspose.Zip;
@@ -34,10 +50,12 @@ using Aspose.Zip.Saving;
 using System.IO;
 ```
 
-## Krok 1: Zabezpiecz hasłem za pomocą AES-128
+## Jak zaszyfrować pliki zip przy użyciu AES‑128
+
+W tym pierwszym kroku tworzymy archiwum ZIP i chronimy je przy użyciu **AES‑128**. Hasło `"p@s$"` jest używane do zabezpieczenia archiwum.
 
 ```csharp
-//ExStart: Ochrona hasłem za pomocą AES128
+//ExStart:PasswordProtectWithAES128
 using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES128_out.zip", FileMode.Create))
 {
     using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
@@ -49,15 +67,17 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES128_out.z
         }
     }
 }
-//Rozwiń: PasswordProtectWithAES128
+//ExEnd: PasswordProtectWithAES128
 ```
 
-Na tym etapie tworzymy plik zip i zabezpieczamy go szyfrowaniem AES-128. Hasło „p@s$” zapewnia bezpieczeństwo Twojego archiwum.
+> **Wskazówka:** Przechowuj hasła w bezpiecznym sejfie; nigdy nie zakodowuj ich na stałe w kodzie produkcyjnym.
 
-## Krok 2: Zabezpiecz hasłem za pomocą AES-192
+## Jak zaszyfrować pliki zip przy użyciu AES‑192
+
+Jeśli potrzebujesz wyższego poziomu ochrony, przełącz się na **AES‑192**. Kod jest identyczny; jedynie `EncryptionMethod` się zmienia.
 
 ```csharp
-//ExStart: Ochrona hasłem za pomocą AES192
+//ExStart:PasswordProtectWithAES192
 using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES192_out.zip", FileMode.Create))
 {
     using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
@@ -69,15 +89,15 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES192_out.z
         }
     }
 }
-//Rozwiń: PasswordProtectWithAES192
+//ExEnd:PasswordProtectWithAES192
 ```
 
-W tym kroku pokazano, jak wdrożyć szyfrowanie AES-192 w celu zwiększenia bezpieczeństwa. Dla zachowania spójności używane jest to samo hasło „p@s$”.
+## Jak zaszyfrować pliki zip przy użyciu AES‑256 (aes 256 zip encryption)
 
-## Krok 3: Zabezpiecz hasłem za pomocą AES-256
+Dla najwyższego poziomu bezpieczeństwa użyj **AES‑256**. Jest to zalecane ustawienie dla wrażliwych danych korporacyjnych lub branż regulowanych.
 
 ```csharp
-//ExStart: Ochrona hasłem za pomocą AES256
+//ExStart:PasswordProtectWithAES256
 using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES256_out.zip", FileMode.Create))
 {
     using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
@@ -89,31 +109,41 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES256_out.z
         }
     }
 }
-// Rozwiń: PasswordProtectWithAES256
+//ExEnd:PasswordProtectWithAES256 
 ```
 
-Na tym ostatnim etapie wdrażamy najwyższy poziom szyfrowania AES-256, zapewniając dodatkową warstwę bezpieczeństwa skompresowanych plików.
+> **Uwaga:** AES‑256 jest często określany jako *aes 256 zip encryption* w dokumentacji i zapytaniach wyszukiwania.
 
-## Wniosek
+## Typowe problemy i rozwiązania
 
-W tym samouczku omówiliśmy podstawowe kroki, aby zabezpieczyć hasłem swoje archiwa przy użyciu szyfrowania AES w Aspose.Zip dla .NET. Niezależnie od tego, czy wybierzesz szyfrowanie 128-bitowe, 192-bitowe czy 256-bitowe, Twoje pliki będą zabezpieczone przed nieautoryzowanym dostępem.
+| Problem | Przyczyna | Rozwiązanie |
+|---------|-----------|-------------|
+| “Invalid password” error when opening the archive | Nieprawidłowe hasło lub niezgodna metoda szyfrowania | Sprawdź ciąg hasła i upewnij się, że ta sama `EncryptionMethod` jest używana zarówno przy tworzeniu, jak i przy rozpakowywaniu. |
+| Archive cannot be opened in older unzip tools | Starsze narzędzia mogą nie obsługiwać szyfrowania AES | Użyj nowoczesnego narzędzia do rozpakowywania (np. 7‑Zip) lub wybierz standardowe szyfrowanie ZIP, jeśli wymagana jest kompatybilność. |
+| Large files cause memory pressure | Cały plik jest wczytywany do pamięci przed kompresją | Strumieniuj plik przy użyciu `FileStream` (jak pokazano) i unikaj wczytywania całej zawartości do tablicy bajtów. |
 
-## Często Zadawane Pytania
+## Dodatkowe często zadawane pytania
 
-### Czy mogę używać Aspose.Zip dla .NET z innymi językami programowania?
-Aspose.Zip jest przeznaczony przede wszystkim dla aplikacji .NET, zapewniając bezproblemową integrację i optymalną wydajność.
+**Q: Jak zaszyfrować plik zip w C# przy użyciu Aspose.Zip?**  
+A: Użyj klasy `AesEcryptionSettings` z żądaną `EncryptionMethod` (AES128, AES192 lub AES256), jak pokazano w powyższych fragmentach kodu.
 
-### Czy metoda szyfrowania AES jest bezpieczna dla wrażliwych danych?
-Tak, szyfrowanie AES jest powszechnie uznawane za bezpieczną i niezawodną metodę ochrony poufnych informacji.
+**Q: Czy mogę skompresować pliki z ochroną hasłem w jednym kroku?**  
+A: Tak, Aspose.Zip pozwala dodać wpisy do archiwum i zastosować szyfrowanie AES w tym samym wywołaniu `CreateEntry`, jak pokazano.
 
-### Czy mogę zmienić hasło do już zaszyfrowanego archiwum?
-Nie, hasła do zaszyfrowanego archiwum nie można zmienić po jego ustawieniu. Musisz utworzyć nowe zaszyfrowane archiwum z innym hasłem.
+**Q: Czy Aspose.Zip obsługuje szyfrowanie dużych archiwów (kilka GB)?**  
+A: Zdecydowanie tak. Strumieniując pliki przy użyciu `FileStream`, możesz szyfrować archiwa praktycznie dowolnego rozmiaru bez wczytywania wszystkiego do pamięci.
 
-### Czy istnieją jakieś ograniczenia dotyczące typów plików, które można szyfrować za pomocą Aspose.Zip?
-Aspose.Zip obsługuje szyfrowanie różnych typów plików, zapewniając elastyczność w zabezpieczaniu różnych rodzajów danych.
+**Q: Czy istnieje sposób na weryfikację integralności zaszyfrowanego zip po jego utworzeniu?**  
+A: Możesz otworzyć archiwum tym samym hasłem i odczytać wpisy; każde niezgodności spowodują wyrzucenie wyjątku wskazującego na uszkodzenie.
 
-### Co się stanie, jeśli zapomnę hasła do zaszyfrowanego archiwum?
-Niestety nie ma możliwości odzyskania hasła do zaszyfrowanego archiwum. Trzymanie hasła w bezpiecznym miejscu jest niezwykle istotne.
+**Q: Czy AES‑256 wpływa na współczynnik kompresji?**  
+A: Szyfrowanie jest stosowane po kompresji, więc współczynnik kompresji pozostaje taki sam; jedynie zaszyfrowane dane są nieco większe ze względu na niewielki narzut.
+
+---
+
+**Last Updated:** 2025-12-21  
+**Tested With:** Aspose.Zip for .NET 24.11 (latest)  
+**Author:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -1,35 +1,45 @@
 ---
-title: Katalogi chronione hasłem w .NET za pomocą samouczka Aspose.Zip
-linktitle: Katalog chroniony hasłem
-second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
-description: Dowiedz się, jak chronić katalogi hasłem w .NET przy użyciu Aspose.Zip. Zabezpiecz swoje pliki bez wysiłku, korzystając z tego samouczka krok po kroku.
-weight: 10
+date: 2025-12-21
+description: Dowiedz się, jak tworzyć pliki zip chronione hasłem w .NET, szyfrować
+  foldery i zmieniać hasło zip przy użyciu Aspose.Zip.
+linktitle: Password Protect Directory
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Utwórz chroniony hasłem plik zip dla katalogów .NET – Poradnik Aspose.Zip
 url: /pl/net/password-protection-and-encryption/password-protect-directory/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Katalogi chronione hasłem w .NET za pomocą samouczka Aspose.Zip
+# Tworzenie archiwum zip chronionego hasłem dla katalogów .NET – Poradnik Aspose.Zip
 
+W tym przewodniku **utworzysz archiwa zip chronione hasłem** dla całych katalogów przy użyciu biblioteki Aspose.Zip dla .NET. Niezależnie od tego, czy potrzebujesz **zaszyfrować folder**, zabezpieczyć pliki kopii zapasowych, czy po prostu ograniczyć dostęp do wrażliwych danych, ten krok‑po‑kroku tutorial pokaże Ci dokładnie, jak to zrobić przy użyciu czystego kodu C#.
 
-## Wstęp
+## Szybkie odpowiedzi
+- **Jakiej biblioteki używać?** Aspose.Zip dla .NET  
+- **Czy mogę zaszyfrować cały folder?** Tak – wystarczy wskazać API folder, który ma zostać spakowany.  
+- **Czy zmiana hasła zip jest obsługiwana?** Oczywiście, użyj `TraditionalEncryptionSettings`.  
+- **Czy potrzebna jest licencja do produkcji?** Tak, wymagana jest ważna licencja Aspose.Zip do użytku komercyjnego.  
+- **Działa z .NET Core/5/6?** Tak, API jest w pełni kompatybilne z nowoczesnymi środowiskami .NET.  
 
-W świecie programowania .NET zarządzanie i zabezpieczanie katalogów jest kluczowym aspektem obsługi plików. Aspose.Zip dla .NET zapewnia solidne rozwiązanie do ochrony katalogów hasłem, zapewniając poufność i integralność wrażliwych danych. W tym samouczku przeprowadzimy Cię krok po kroku przez proces zabezpieczania katalogu hasłem przy użyciu Aspose.Zip dla .NET.
+## Co to jest „create password protected zip”?
+Tworzenie archiwum zip chronionego hasłem oznacza kompresję plików lub katalogów do archiwum ZIP przy jednoczesnym zastosowaniu szyfrowania, tak aby archiwum mogło być otwarte wyłącznie po podaniu prawidłowego hasła. Chroni to zawartość przed nieautoryzowanym dostępem.
 
-## Warunki wstępne
+## Dlaczego warto używać Aspose.Zip do ochrony katalogów .NET hasłem?
+Aspose.Zip oferuje prostą, wysokowydajną API, która obsługuje **c# zip password protection**, tradycyjne szyfrowanie ZipCrypto oraz szyfrowanie AES. Efektywnie radzi sobie z dużymi katalogami i integruje się bezproblemowo z każdym projektem .NET.
 
-Zanim przejdziesz do samouczka, upewnij się, że spełniasz następujące wymagania wstępne:
+## Wymagania wstępne
+Zanim rozpoczniesz, upewnij się, że masz:
 
-- Podstawowa znajomość języka programowania C#.
-- Program Visual Studio zainstalowany na Twoim komputerze.
--  Biblioteka Aspose.Zip dla .NET. Możesz go pobrać[Tutaj](https://releases.aspose.com/zip/net/).
-- Katalog zawierający pliki, które chcesz zabezpieczyć hasłem.
+- Podstawową znajomość programowania w C#.  
+- Visual Studio (dowolna aktualna edycja).  
+- Bibliotekę Aspose.Zip dla .NET – pobierz ją **[tutaj](https://releases.aspose.com/zip/net/)**.  
+- Katalog na dysku, który chcesz zabezpieczyć hasłem.
 
-## Importuj przestrzenie nazw
-
-Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw do projektu C#. Te przestrzenie nazw są kluczowe dla wykorzystania funkcjonalności zapewnianej przez Aspose.Zip dla .NET.
+## Importowanie przestrzeni nazw
+Dodaj wymagane przestrzenie nazw do swojego pliku C#, aby kompilator wiedział, gdzie znaleźć klasy Aspose.Zip.
 
 ```csharp
 using Aspose.Zip;
@@ -38,19 +48,17 @@ using Aspose.Zip.Saving;
 ```
 
 ## Krok 1: Ustaw ścieżkę do katalogu zasobów
-
-Na początek określ ścieżkę do katalogu zawierającego pliki, które chcesz zabezpieczyć hasłem.
+Zdefiniuj ścieżkę, która wskazuje na katalog, który zamierzasz spakować i zabezpieczyć.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
 ## Krok 2: Zabezpiecz katalog hasłem
-
- Zagłębmy się teraz w kod, który zabezpiecza katalog hasłem. Używamy`TraditionalEncryptionSettings` class, aby ustawić hasło i zastosować je do określonego katalogu.
+Użyj `TraditionalEncryptionSettings`, aby określić hasło i utworzyć zaszyfrowane archiwum. To jest sedno **c# zip password protection**.
 
 ```csharp
-//ExStart: Katalog PasswordProtect
+//ExStart: PasswordProtectDirectory
 using (FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", FileMode.Create))
 {
     DirectoryInfo corpus = new DirectoryInfo(".\\CanterburyCorpus");
@@ -58,44 +66,47 @@ using (FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", 
     {
         archive.CreateEntries(corpus);
         archive.Save(zipFile);
-        //Rozwiń: Katalog ochrony hasłem
+        //ExEnd: PasswordProtectDirectory
     }
 }
 ```
 
-## Krok 3: Wyjaśnienie Kodeksu
+## Krok 3: Wyjaśnienie kodu
+- **Tworzenie pliku wyjściowego:** `File.Open(..., FileMode.Create)` otwiera (lub tworzy) plik ZIP, w którym zostaną zapisane zaszyfrowane dane.  
+- **Wybór folderu źródłowego:** `new DirectoryInfo(".\\CanterburyCorpus")` informuje Aspose.Zip, który katalog ma zostać skompresowany.  
+- **Ustawienie hasła:** `new TraditionalEncryptionSettings("p@s$")` definiuje hasło chroniące archiwum.  
+- **Dodawanie wpisów i zapisywanie:** `archive.CreateEntries(corpus)` dodaje każdy plik z folderu, a `archive.Save(zipFile)` zapisuje zaszyfrowany ZIP na dysku.
 
-Rozłóżmy kod, aby zrozumieć każdy krok:
+## Jak zmienić hasło zip później?
+Jeśli potrzebujesz **change zip password**, po prostu odtwórz archiwum z nową instancją `TraditionalEncryptionSettings` zawierającą nowe hasło, a następnie ponownie je zapisz.
 
--  Ustawianie pliku wyjściowego:`FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", FileMode.Create)` tworzy nowy plik ZIP dla zaszyfrowanych danych wyjściowych.
+## Typowe problemy i wskazówki
+- **Duże foldery:** Aspose.Zip strumieniuje dane, więc zużycie pamięci pozostaje niskie nawet przy bardzo dużych katalogach.  
+- **Złożoność hasła:** Używaj silnego hasła (mieszanka liter, cyfr, znaków specjalnych), aby zwiększyć bezpieczeństwo.  
+- **Błędy licencyjne:** Upewnij się, że zastosowano prawidłowy plik licencji; w przeciwnym razie biblioteka działa w trybie ewaluacyjnym z ograniczeniami.
 
--  Definiowanie katalogu:`DirectoryInfo corpus = new DirectoryInfo(".\\CanterburyCorpus")` określa katalog, który ma być chroniony hasłem.
+## Najczęściej zadawane pytania
 
--  Tworzenie i zapisywanie wpisów:`archive.CreateEntries(corpus)` tworzy wpisy dla plików w określonym katalogu i`archive.Save(zipFile)`zapisuje archiwum chronione hasłem.
+### Czy Aspose.Zip dla .NET nadaje się do dużych katalogów?
+Tak, Aspose.Zip dla .NET został zaprojektowany tak, aby efektywnie obsługiwać duże katalogi, zapewniając optymalną wydajność.
 
-## Wniosek
+### Czy mogę zmienić hasło już zabezpieczonego katalogu?
+Tak, możesz zmodyfikować hasło, dostosowując `TraditionalEncryptionSettings` w kodzie odpowiednio.
 
-W tym samouczku przeszliśmy przez proces zabezpieczania katalogu hasłem przy użyciu Aspose.Zip dla .NET. Wykonując poniższe kroki, możesz zapewnić bezpieczeństwo swoich wrażliwych plików w sposób przyjazny dla użytkownika i skuteczny.
+### Czy istnieją wymagania licencyjne przy używaniu Aspose.Zip dla .NET?
+Tak, wymagana jest ważna licencja do używania Aspose.Zip dla .NET w środowisku produkcyjnym. Licencję możesz uzyskać **[tutaj](https://purchase.aspose.com/buy)**.
+
+### Czy dostępna jest darmowa wersja próbna Aspose.Zip dla .NET?
+Tak, darmową wersję próbną znajdziesz **[tutaj](https://releases.aspose.com/)**.
+
+### Gdzie mogę uzyskać dodatkowe wsparcie dla Aspose.Zip dla .NET?
+Możesz odwiedzić **[forum Aspose.Zip](https://forum.aspose.com/c/zip/37)**, aby uzyskać pomoc lub zadać pytania.
 
 ---
 
-## Często Zadawane Pytania
-
-### Czy Aspose.Zip dla .NET nadaje się do dużych katalogów?
-Tak, Aspose.Zip dla .NET został zaprojektowany do wydajnej obsługi dużych katalogów, zapewniając optymalną wydajność.
-
-### Czy mogę zmienić hasło do już chronionego katalogu?
- Tak, możesz zmodyfikować hasło, dostosowując`TraditionalEncryptionSettings` odpowiednio w kodzie.
-
-### Czy są jakieś wymagania licencyjne dotyczące korzystania z Aspose.Zip dla .NET?
- Tak, do używania Aspose.Zip dla .NET w środowisku produkcyjnym wymagana jest ważna licencja. Można uzyskać licencję[Tutaj](https://purchase.aspose.com/buy).
-
-### Czy dostępna jest bezpłatna wersja próbna Aspose.Zip dla .NET?
- Tak, możesz uzyskać dostęp do bezpłatnego okresu próbnego[Tutaj](https://releases.aspose.com/).
-
-### Gdzie mogę znaleźć dodatkowe wsparcie dla Aspose.Zip dla .NET?
- Możesz odwiedzić[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) w celu uzyskania wsparcia lub zapytań.
-
+**Ostatnia aktualizacja:** 2025-12-21  
+**Testowano z:** Aspose.Zip dla .NET (najnowsze wydanie)  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

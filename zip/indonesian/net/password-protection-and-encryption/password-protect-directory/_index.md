@@ -1,35 +1,43 @@
 ---
-title: Direktori Perlindungan Kata Sandi di .NET dengan Tutorial Aspose.Zip
-linktitle: Direktori Perlindungan Kata Sandi
-second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
-description: Pelajari cara melindungi direktori dengan kata sandi di .NET menggunakan Aspose.Zip. Amankan file Anda dengan mudah dengan tutorial langkah demi langkah ini.
-weight: 10
+date: 2025-12-21
+description: Pelajari cara membuat file zip yang dilindungi kata sandi di .NET, mengenkripsi
+  folder, dan mengubah kata sandi zip menggunakan Aspose.Zip.
+linktitle: Password Protect Directory
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Buat zip yang dilindungi kata sandi untuk direktori .NET – Tutorial Aspose.Zip
 url: /id/net/password-protection-and-encryption/password-protect-directory/
+weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Direktori Perlindungan Kata Sandi di .NET dengan Tutorial Aspose.Zip
+# Buat zip terlindungi kata sandi untuk direktori .NET – Tutorial Aspose.Zip
 
+Dalam panduan ini Anda akan **membuat zip terlindungi kata sandi** untuk seluruh direktori menggunakan pustaka Aspose.Zip untuk .NET. Apakah Anda perlu **mengenkripsi folder**, mengamankan file cadangan, atau sekadar membatasi akses ke data sensitif, tutorial langkah‑demi‑langkah ini menunjukkan secara tepat cara melakukannya dengan kode C# yang bersih.
 
-## Perkenalan
+## Jawaban Cepat
+- **Perpustakaan apa yang direkomendasikan?** Aspose.Zip untuk .NET  
+- **Bisakah saya mengenkripsi seluruh folder?** Ya – cukup arahkan API ke folder yang ingin Anda zip.  
+- **Apakah mengubah kata sandi zip didukung?** Tentu saja, gunakan `TraditionalEncryptionSettings`.  
+- **Apakah saya memerlukan lisensi untuk produksi?** Lisensi Aspose.Zip yang valid diperlukan untuk penggunaan komersial.  
+- **Berfungsi dengan .NET Core/5/6?** Ya, API sepenuhnya kompatibel dengan runtime .NET modern.  
 
-Dalam dunia pengembangan .NET, pengelolaan dan pengamanan direktori merupakan aspek penting dalam penanganan file. Aspose.Zip untuk .NET memberikan solusi tangguh untuk direktori perlindungan kata sandi, memastikan kerahasiaan dan integritas data sensitif Anda. Dalam tutorial ini, kami akan memandu Anda melalui proses perlindungan kata sandi direktori langkah demi langkah, menggunakan Aspose.Zip untuk .NET.
+## Apa itu “membuat zip terlindungi kata sandi”?
+Membuat zip terlindungi kata sandi berarti mengompres file atau direktori ke dalam arsip ZIP sambil menerapkan enkripsi sehingga arsip hanya dapat dibuka dengan kata sandi yang benar. Ini melindungi isi dari akses tidak sah.
+
+## Mengapa menggunakan Aspose.Zip untuk melindungi direktori dengan kata sandi di .NET?
+Aspose.Zip menawarkan API yang sederhana dan berperforma tinggi yang mendukung **c# zip password protection**, enkripsi tradisional ZipCrypto, dan enkripsi AES. Ia menangani direktori besar secara efisien dan terintegrasi mulus dengan proyek .NET apa pun.
 
 ## Prasyarat
-
-Sebelum masuk ke tutorial, pastikan Anda memiliki prasyarat berikut:
-
-- Pemahaman dasar bahasa pemrograman C#.
-- Visual Studio diinstal pada mesin Anda.
--  Aspose.Zip untuk perpustakaan .NET. Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/zip/net/).
-- Direktori yang berisi file yang ingin Anda lindungi dengan kata sandi.
+- Pengetahuan dasar pemrograman C#.  
+- Visual Studio (edisi terbaru apa pun).  
+- Pustaka Aspose.Zip untuk .NET – unduh **[di sini](https://releases.aspose.com/zip/net/)**.  
+- Folder di disk yang ingin Anda lindungi dengan kata sandi.
 
 ## Impor Namespace
-
-Untuk memulai, Anda perlu mengimpor namespace yang diperlukan ke proyek C# Anda. Namespace ini sangat penting untuk memanfaatkan fungsionalitas yang disediakan oleh Aspose.Zip untuk .NET.
+Tambahkan namespace yang diperlukan ke file C# Anda sehingga compiler mengetahui di mana menemukan kelas Aspose.Zip.
 
 ```csharp
 using Aspose.Zip;
@@ -38,19 +46,17 @@ using Aspose.Zip.Saving;
 ```
 
 ## Langkah 1: Tetapkan Jalur ke Direktori Sumber Daya
-
-Pertama, tentukan jalur ke direktori yang berisi file yang ingin Anda lindungi dengan kata sandi.
+Tentukan jalur yang mengarah ke direktori yang ingin Anda zip dan lindungi.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
 ## Langkah 2: Lindungi Direktori dengan Kata Sandi
-
- Sekarang, mari kita pelajari kode yang melakukan perlindungan kata sandi pada direktori. Kami menggunakan`TraditionalEncryptionSettings` kelas untuk mengatur kata sandi dan menerapkannya ke direktori yang ditentukan.
+Gunakan `TraditionalEncryptionSettings` untuk menentukan kata sandi dan membuat arsip terenkripsi. Ini adalah inti dari **c# zip password protection**.
 
 ```csharp
-//ExStart: Kata SandiProtectDirectory
+//ExStart: PasswordProtectDirectory
 using (FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", FileMode.Create))
 {
     DirectoryInfo corpus = new DirectoryInfo(".\\CanterburyCorpus");
@@ -58,26 +64,24 @@ using (FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", 
     {
         archive.CreateEntries(corpus);
         archive.Save(zipFile);
-        //ExEnd: Direktori Perlindungan Kata Sandi
+        //ExEnd: PasswordProtectDirectory
     }
 }
 ```
 
 ## Langkah 3: Penjelasan Kode
+- **Membuat file output:** `File.Open(..., FileMode.Create)` membuka (atau membuat) file ZIP yang akan menyimpan data terenkripsi.  
+- **Memilih folder sumber:** `new DirectoryInfo(".\\CanterburyCorpus")` memberi tahu Aspose.Zip direktori mana yang akan dikompres.  
+- **Menerapkan kata sandi:** `new TraditionalEncryptionSettings("p@s$")` menetapkan kata sandi yang akan melindungi arsip.  
+- **Menambahkan entri & menyimpan:** `archive.CreateEntries(corpus)` menambahkan setiap file dalam folder, dan `archive.Save(zipFile)` menulis ZIP terenkripsi ke disk.
 
-Mari kita uraikan kodenya untuk memahami setiap langkah:
+## Bagaimana cara mengubah kata sandi zip nanti?
+Jika Anda perlu **mengubah kata sandi zip**, cukup buat ulang arsip dengan instance `TraditionalEncryptionSettings` baru yang berisi kata sandi baru, lalu simpan kembali.
 
--  Mengatur File Keluaran:`FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", FileMode.Create)` membuat file ZIP baru untuk keluaran terenkripsi.
-
--  Mendefinisikan Direktori:`DirectoryInfo corpus = new DirectoryInfo(".\\CanterburyCorpus")` menentukan direktori yang akan dilindungi kata sandi.
-
--  Membuat dan Menyimpan Entri:`archive.CreateEntries(corpus)` membuat entri untuk file di direktori yang ditentukan, dan`archive.Save(zipFile)`menyimpan arsip yang dilindungi kata sandi.
-
-## Kesimpulan
-
-Dalam tutorial ini, kita mempelajari proses melindungi direktori dengan kata sandi menggunakan Aspose.Zip untuk .NET. Dengan mengikuti langkah-langkah ini, Anda dapat memastikan keamanan file sensitif Anda dengan cara yang ramah pengguna dan efisien.
-
----
+## Masalah Umum & Tips
+- **Folder besar:** Aspose.Zip melakukan streaming data, sehingga penggunaan memori tetap rendah bahkan untuk direktori yang sangat besar.  
+- **Kompleksitas kata sandi:** Gunakan kata sandi yang kuat (campuran huruf, angka, simbol) untuk meningkatkan keamanan.  
+- **Kesalahan lisensi:** Pastikan Anda telah menerapkan file lisensi yang valid; jika tidak, pustaka akan berjalan dalam mode evaluasi dengan keterbatasan.
 
 ## Pertanyaan yang Sering Diajukan
 
@@ -85,17 +89,20 @@ Dalam tutorial ini, kita mempelajari proses melindungi direktori dengan kata san
 Ya, Aspose.Zip untuk .NET dirancang untuk menangani direktori besar secara efisien, memberikan kinerja optimal.
 
 ### Bisakah saya mengubah kata sandi untuk direktori yang sudah dilindungi?
- Ya, Anda dapat mengubah kata sandi dengan menyesuaikan`TraditionalEncryptionSettings` dalam kode yang sesuai.
+Ya, Anda dapat mengubah kata sandi dengan menyesuaikan `TraditionalEncryptionSettings` dalam kode sesuai kebutuhan.
 
 ### Apakah ada persyaratan lisensi untuk menggunakan Aspose.Zip untuk .NET?
- Ya, lisensi yang valid diperlukan untuk menggunakan Aspose.Zip untuk .NET di lingkungan produksi. Anda bisa mendapatkan lisensi[Di Sini](https://purchase.aspose.com/buy).
+Ya, lisensi yang valid diperlukan untuk menggunakan Aspose.Zip untuk .NET di lingkungan produksi. Anda dapat memperoleh lisensi **[di sini](https://purchase.aspose.com/buy)**.
 
-### Apakah ada uji coba gratis yang tersedia untuk Aspose.Zip untuk .NET?
- Ya, Anda dapat mengakses uji coba gratis[Di Sini](https://releases.aspose.com/).
+### Apakah tersedia percobaan gratis untuk Aspose.Zip untuk .NET?
+Ya, Anda dapat mengakses percobaan gratis **[di sini](https://releases.aspose.com/)**.
 
 ### Di mana saya dapat menemukan dukungan tambahan untuk Aspose.Zip untuk .NET?
- Anda dapat mengunjungi[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) untuk dukungan atau pertanyaan apa pun.
+Anda dapat mengunjungi **[forum Aspose.Zip](https://forum.aspose.com/c/zip/37)** untuk dukungan atau pertanyaan apa pun.
 
+**Terakhir Diperbarui:** 2025-12-21  
+**Diuji Dengan:** Aspose.Zip for .NET (latest release)  
+**Penulis:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
