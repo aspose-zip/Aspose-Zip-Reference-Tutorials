@@ -1,10 +1,11 @@
 ---
-date: 2025-12-10
-description: Aspose.Zip for .NET を使用して LZMA zip アーカイブの作成方法と、ストア圧縮 zip の使用方法を学びます。Bzip2、LZMA、PPMd、Enhanced
-  Deflate、Store メソッドを最適化します。
+date: 2026-02-12
+description: Aspose.Zip for .NET を使用して zip パスワードを追加し、LZMA zip アーカイブを作成する方法を学びましょう。この
+  zip 圧縮チュートリアルでは、Bzip2、LZMA（辞書サイズを含む）、PPMd、Enhanced Deflate、Store 圧縮、そして ASP.NET
+  による大容量ファイルの圧縮について解説します。
 linktitle: Optimizing Compression Settings
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: .NET 用 Aspose.Zip で LZMA zip アーカイブを作成する
+title: Aspose.Zip for .NET を使用して LZMA zip にパスワードを追加する
 url: /ja/net/file-compression/optimizing-compression-settings/
 weight: 12
 ---
@@ -13,30 +14,33 @@ weight: 12
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET の圧縮設定の最適化
+# Aspose.Zip for .NET を使用した LZMA zip にパスワードを追加する
 
-.NET 開発の世界では、効率的な **file compression** によってストレージコストを大幅に削減し、データ転送を高速化できます。ASP.NET Web アプリ、デスクトップユーティリティ、またはクラウドサービスを構築する場合でも、**create LZMA zip archive** の方法を知っていると、高圧縮率を実現する強力な利点が得られます。このチュートリアルでは、Bzip2、LZMA、PPMd、Enhanced Deflate、Store の各圧縮方式を順に解説し、シナリオに最適なアルゴリズムを選択し、設定を微調整して最適な結果を得る方法を紹介します。
+最新の .NET アプリケーションでは、**zip パスワードの追加**により高圧縮率の LZMA zip アーカイブを作成しながら機密データを保護でき、最高の圧縮率を実現できます。ASP.NET のファイル圧縮サービス、 大容量ファイルを扱うデスクトップユーティリティ、 またはクラウドベースのワークフローを構築する場合でも、本チュートリアルでは Aspose.Zip for .NET を使用してファイルを安全に圧縮する手順をステップバイステップで示します。
 
-## Quick Answers
-- **What is the primary benefit of LZMA compression?** Highest compression ratio with reasonable speed for most file types.  
-- **Which method stores files without compression?** Store compression (also called “store compression zip”).  
-- **Can I use these settings in an ASP.NET application?** Yes—simply reference Aspose.Zip in your project and call the same API.  
-- **Do I need a license for production use?** A commercial license is required for production; a free trial is available.  
-- **What .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+## クイック回答
+- **LZMA 圧縮の主な利点は何ですか？** ほとんどのファイルタイプで、合理的な速度で最高の圧縮率を提供します。  
+- **圧縮せずにファイルを保存するメソッドはどれですか？** Store 圧縮（「store compression zip」 とも呼ばれます）。  
+- **これらの設定を ASP.NET アプリケーションで使用できますか？** はい。プロジェクトに Aspose.Zip を参照し、同じ API を呼び出すだけです。  
+- **本番環境で使用するにはライセンスが必要ですか？** 本番環境では商用ライセンスが必要です。無料トライアルも利用可能です。  
+- **サポートされている .NET バージョンは何ですか？** .NET Framework 4.5 以上、.NET Core 3.1 以上、.NET 5/6/7。
 
-## “create LZMA zip archive” とは？
-LZMA zip アーカイブを作成するとは、1 つまたは複数のファイルを ZIP コンテナにパックし、LZMA アルゴリズムを適用して優れた圧縮率を実現することです。Aspose.Zip は低レベルの詳細を抽象化し、ビジネスロジックに集中できるようにします。
+## Aspose.Zip の「add zip password」とは？
 
-## Aspose.Zip for .NET のファイル圧縮を使用する理由
-- **Unified API** – Bzip2、LZMA、PPMd、Enhanced Deflate、Store をすべて同一インターフェイスで操作可能。  
-- **Performance‑tuned** – 高速処理のために最適化されたネイティブ実装。  
-- **ASP.NET friendly** – Web プロジェクト、バックグラウンドサービス、Azure Functions でもシームレスに動作。  
-- **Fine‑grained control** – 辞書サイズ、圧縮レベルなどを細かく調整可能。
+zip パスワードを追加するとは、ZIP アーカイブ内のエントリを暗号化し、パスワードを知っているユーザーだけがファイルを抽出できるようにすることです。Aspose.Zip は、すべての圧縮アルゴリズム（Bzip2、LZMA、PPMd、Enhanced Deflate、Store）で機能するシンプルな `SetPassword` メソッドを提供します。
+
+## .NET ファイル圧縮に Aspose.Zip を使用する理由
+
+- **統一された API** – Bzip2、LZMA、PPMd、Enhanced Deflate、Store すべてに対して一貫したインターフェイスを提供します。  
+- **パフォーマンス最適化** – 高速処理のために最適化されたネイティブ実装です。  
+- **ASP.NET フレンドリー** – Web プロジェクト、バックグラウンドサービス、Azure Functions でシームレスに動作します。  
+- **細かな制御** – 辞書サイズ、圧縮レベルを調整し、単一の呼び出しで zip パスワードを追加できます。  
+- **大容量ファイルの圧縮** を、データを直接出力ストリームにストリーミングすることで効率的に行えます。
 
 ## 前提条件
-- **Aspose.Zip for .NET Library** – [Aspose ドキュメント](https://reference.aspose.com/zip/net/) からダウンロードしてインストール。  
-- **Sample Text File** – 圧縮対象となるサンプルファイル（例: `sample.txt`）を用意。  
-- **.NET 開発環境** – Visual Studio 2022 もしくは互換性のある IDE。
+- **Aspose.Zip for .NET ライブラリ** – [Aspose ドキュメント](https://reference.aspose.com/zip/net/) からダウンロードしてインストールします。  
+- **サンプルテキストファイル** – 圧縮対象となるサンプルファイル（例: `sample.txt`）を用意します。  
+- **.NET 開発環境** – Visual Studio 2022 または互換性のある IDE。
 
 ## 名前空間のインポート
 
@@ -51,7 +55,7 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-それでは各圧縮設定を見ていきましょう。
+それでは、各圧縮設定を確認し、適切な場所で **zip パスワードを追加** する方法を見ていきましょう。
 
 ## Bzip2 圧縮設定の使用
 
@@ -65,13 +69,22 @@ using (FileStream zipFile = File.Open(dataDir + "Bzip2Compression_out.zip", File
         // Step 2: Create Entry
         archive.CreateEntry("sample.txt", dataDir + "sample.txt");
         
+        // Optional: protect the archive with a password
+        archive.SetPassword("MySecret123");
+        
         // Step 3: Save Archive
         archive.Save(zipFile);
     }
 }
 ```
 
-## Aspose.Zip を使用した LZMA zip アーカイブの作成方法
+*`SetPassword` の呼び出しは、Bzip2 圧縮アーカイブに **zip パスワードを追加** する方法を示しています。*
+
+## Aspose.Zip for .NET を使用して zip パスワードを追加する方法
+
+`Save` を呼び出す前に任意のアーカイブインスタンスにパスワードを設定できます。同じメソッドは LZMA、PPMd、Enhanced Deflate、Store 圧縮でも機能します。`SetPassword` の呼び出しはそのままで、圧縮設定オブジェクトを置き換えるだけです。
+
+## Aspose.Zip を使用して LZMA zip アーカイブを作成する方法
 
 ### 手順 1: LZMA 圧縮の初期化
 
@@ -83,11 +96,16 @@ using (FileStream zipFile = File.Open(dataDir + "LZMACompression_out.zip", FileM
         // Step 2: Create Entry
         archive.CreateEntry("sample.txt", dataDir + "sample.txt");
         
+        // Add password protection (LZMA supports it)
+        archive.SetPassword("StrongPwd!2026");
+        
         // Step 3: Save Archive
         archive.Save(zipFile);
     }
 }
 ```
+
+> **ヒント:** LZMA では、圧縮率とメモリ使用量の両方に影響を与える設定可能な **LZMA 辞書サイズ** を提供します。非常に大きなファイル向けに細かく調整する必要がある場合は、`new LzmaCompressionSettings { DictionarySize = 8 * 1024 * 1024 }` のように設定できます。
 
 ## PPMd 圧縮設定の使用
 
@@ -100,6 +118,9 @@ using (FileStream zipFile = File.Open(dataDir + "PPMdCompression_out.zip", FileM
     {
         // Step 2: Create Entry
         archive.CreateEntry("sample.txt", dataDir + "sample.txt");
+        
+        // Secure the archive
+        archive.SetPassword("PPMdPwd#2026");
         
         // Step 3: Save Archive
         archive.Save(zipFile);
@@ -119,13 +140,16 @@ using (FileStream zipFile = File.Open(dataDir + "EnhancedDeflateCompression_out.
         // Step 2: Create Entry
         archive.CreateEntry("sample.txt", dataDir + "sample.txt");
         
+        // Password protection works here as well
+        archive.SetPassword("DeflatePwd2026");
+        
         // Step 3: Save Archive
         archive.Save(zipFile);
     }
 }
 ```
 
-## Store 圧縮設定の使用 (store compression zip)
+## Store 圧縮設定の使用（store compression zip）
 
 ### 手順 1: Store 圧縮の初期化
 
@@ -137,44 +161,51 @@ using (FileStream zipFile = File.Open(dataDir + "StoreCompression_out.zip", File
         // Step 2: Create Entry
         archive.CreateEntry("sample.txt", dataDir + "sample.txt");
         
+        // Even for store compression you can add a password
+        archive.SetPassword("StorePwd2026");
+        
         // Step 3: Save Archive
         archive.Save(zipFile);
     }
 }
 ```
 
-> **Pro tip:** `dataDir` 変数を実際の作業ディレクトリに合わせて調整し、複数ファイルを単一アーカイブに追加する場合は同じ `Archive` インスタンスを再利用してください。
+> **プロのコツ:** `dataDir` 変数を実際の作業ディレクトリに合わせて調整し、単一のアーカイブに複数のファイルを追加する必要がある場合は同じ `Archive` インスタンスを再利用してください。
 
 ## よくある問題と解決策
-- **“File not found” エラー** – `dataDir` がパス区切り文字（`\` または `/`）で終わっているか、`sample.txt` が存在するか確認してください。  
-- **大容量ファイルでのメモリ消費** – `ArchiveEntrySettings` でストリーミングモードを有効にし、データを直接出力ストリームに書き込むようにします。  
-- **圧縮レベルの非互換** – 一部アルゴリズム（例: LZMA）では `DictionarySize` などの追加プロパティが公開されています。詳細は API ドキュメントをご参照ください。
+- **“File not found” エラー** – `dataDir` がパス区切り文字（`\\` または `/`）で終わっているか、`sample.txt` が存在するか確認してください。  
+- **大容量ファイルでのメモリ消費** – `ArchiveEntrySettings` を使用してストリーミングモードを有効にし、データを直接出力ストリームに書き込むようにします。  
+- **圧縮レベルの不一致** – 一部のアルゴリズム（例: LZMA）では `DictionarySize` などの追加プロパティが公開されています。より細かい制御が必要な場合は API ドキュメントを参照してください。  
+- **パスワードが適用されない** – `SetPassword` を `archive.Save(zipFile);` の *前に* 呼び出していることを確認してください。
 
-## Frequently Asked Questions
+## よくある質問
 
 **Q: Aspose.Zip for .NET を他の圧縮ライブラリと併用できますか？**  
-A: Aspose.Zip は組み込みアルゴリズム向けに設計されています。サードパーティ製ライブラリとの統合は可能ですが、Aspose API 以外でのカスタム処理が必要です。
+A: Aspose.Zip は組み込みのアルゴリズムと連携するよう設計されています。サードパーティのライブラリを統合することは可能ですが、Aspose API 以外でのカスタム処理が必要です。
 
-**Q: Aspose.Zip で作成した zip にパスワード保護を付けるには？**  
-A: Aspose.Zip はパスワード保護をサポートしています。`SetPassword` メソッドの詳細は [ドキュメント](https://reference.aspose.com/zip/net/) をご覧ください。
+**Q: Aspose.Zip で作成した zip にパスワード保護を追加するには？**  
+A: 保存する前に `Archive` オブジェクトの `SetPassword(string password)` メソッドを使用します。詳細は [ドキュメント](https://reference.aspose.com/zip/net/) を参照してください。
 
 **Q: 試用版はありますか？**  
 A: はい、[こちら](https://releases.aspose.com/) から試用版にアクセスできます。
 
-**Q: コミュニティサポートや質問はどこで受けられますか？**  
-A: サポートやディスカッションは [Aspose.Zip フォーラム](https://forum.aspose.com/c/zip/37) で行われています。
+**Q: コミュニティのサポートや質問はどこで得られますか？**  
+A: サポートやコミュニティディスカッションは [Aspose.Zip フォーラム](https://forum.aspose.com/c/zip/37) をご利用ください。
 
 **Q: 評価用の一時ライセンスは取得できますか？**  
-A: はい、[こちら](https://purchase.aspose.com/temporary-license/) から一時ライセンスを取得できます。
+A: はい、[こちら](https://purchase.aspose.com/temporary-license/) で一時ライセンスを取得できます。
 
-**Q: これが asp.net のファイル圧縮にどのように役立ちますか？**  
-A: ASP.NET コントローラやミドルウェアから同じ API を呼び出すことで、クライアントに送信する前にファイルをオンザフライで圧縮でき、帯域幅を削減し、パフォーマンス向上が期待できます。
+**Q: これが ASP.NET のファイル圧縮にどのように役立ちますか？**  
+A: ASP.NET のコントローラやミドルウェアから同じ API を呼び出すことで、クライアントに送信する前にファイルをリアルタイムで圧縮でき、帯域幅を削減し、実感できるパフォーマンスを向上させます。
+
+**Q: 大容量ファイルを効率的に圧縮する最適な方法は何ですか？**  
+A: ストリーミングモードと LZMA 圧縮、適切な `DictionarySize` を組み合わせます。これにより、巨大データセットに対してメモリ使用量と圧縮率のバランスが取れます。
 
 ---
 
-**Last Updated:** 2025-12-10  
-**Tested With:** Aspose.Zip 24.11 for .NET  
-**Author:** Aspose  
+**最終更新日:** 2026-02-12  
+**テスト環境:** Aspose.Zip 24.11 for .NET  
+**作者:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -1,11 +1,12 @@
 ---
-date: 2025-12-10
-description: Μάθετε να δημιουργείτε αρχείο zip LZMA και να χρησιμοποιείτε τη μέθοδο
-  αποθήκευσης (store) συμπίεσης zip με το Aspose.Zip για .NET. Βελτιστοποιήστε τις
-  μεθόδους Bzip2, LZMA, PPMd, Enhanced Deflate και Store.
+date: 2026-02-12
+description: Μάθετε πώς να προσθέτετε κωδικό πρόσβασης σε zip και να δημιουργείτε
+  αρχεία zip LZMA χρησιμοποιώντας το Aspose.Zip για .NET. Αυτό το σεμινάριο συμπίεσης
+  zip καλύπτει Bzip2, LZMA (συμπεριλαμβανομένου του μεγέθους λεξικού), PPMd, Enhanced
+  Deflate, Store compression και τη συμπίεση αρχείων μεγάλου μεγέθους σε ASP.NET.
 linktitle: Optimizing Compression Settings
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Δημιουργία αρχείου zip LZMA με τη χρήση του Aspose.Zip για .NET
+title: Προσθήκη κωδικού πρόσβασης zip σε LZMA zip με Aspose.Zip για .NET
 url: /el/net/file-compression/optimizing-compression-settings/
 weight: 12
 ---
@@ -14,30 +15,31 @@ weight: 12
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Βελτιστοποίηση Ρυθμίσεων Συμπίεσης με Aspose.Zip για .NET
+# Προσθήκη κωδικού πρόσβασης zip σε LZMA zip με Aspose.Zip για .NET
 
-Στον κόσμο της ανάπτυξης .NET, η αποδοτική **συμπίεση αρχείων** μπορεί να μειώσει δραστικά το κόστος αποθήκευσης και να επιταχύνει τη μεταφορά δεδομένων. Είτε δημιουργείτε μια εφαρμογή web ASP.NET, ένα επιτραπέζιο εργαλείο, είτε μια υπηρεσία cloud, η γνώση του πώς να **δημιουργήσετε LZMA zip archive** σας δίνει ένα ισχυρό πλεονέκτημα για συμπίεση υψηλού λόγου. Σε αυτό το tutorial θα περάσουμε από κάθε μέθοδο συμπίεσης — Bzip2, LZMA, PPMd, Enhanced Deflate και Store — ώστε να επιλέξετε τον κατάλληλο αλγόριθμο για το σενάριό σας και να ρυθμίσετε τις παραμέτρους για βέλτιστα αποτελέσματα.
+Σε σύγχρονες εφαρμογές .NET, **η προσθήκη κωδικού πρόσβασης zip** κατά τη δημιουργία ενός αρχείου LZMA zip υψηλής αναλογίας συμπίεσης μπορεί να προστατεύσει ευαίσθητα δεδομένα και να προσφέρει την καλύτερη δυνατή συμπίεση. Είτε δημιουργείτε μια υπηρεσία συμπίεσης αρχείων ASP.NET, ένα επιτραπέζιο εργαλείο που διαχειρίζεται μεγάλα αρχεία, είτε μια διαδικασία βασισμένη στο cloud, αυτό το tutorial σας δείχνει βήμα‑βήμα πώς να ασφαλίσετε και να συμπιέσετε τα αρχεία σας με το Aspose.Zip για .NET.
 
 ## Γρήγορες Απαντήσεις
-- **Ποιο είναι το κύριο όφελος της συμπίεσης LZMA;** Highest compression ratio with reasonable speed for most file types.  
-- **Ποια μέθοδος αποθηκεύει αρχεία χωρίς συμπίεση;** Store compression (also called “store compression zip”).  
-- **Μπορώ να χρησιμοποιήσω αυτές τις ρυθμίσεις σε μια εφαρμογή ASP.NET;** Yes—simply reference Aspose.Zip in your project and call the same API.  
-- **Χρειάζομαι άδεια για παραγωγική χρήση;** A commercial license is required for production; a free trial is available.  
+- **Ποιο είναι το κύριο όφελος της συμπίεσης LZMA;** Η υψηλότερη αναλογία συμπίεσης με λογική ταχύτητα για τις περισσότερες τύπους αρχείων.  
+- **Ποια μέθοδος αποθηκεύει αρχεία χωρίς συμπίεση;** Store compression (επίσης γνωστή ως “store compression zip”).  
+- **Μπορώ να χρησιμοποιήσω αυτές τις ρυθμίσεις σε μια εφαρμογή ASP.NET;** Ναι—απλώς αναφέρετε το Aspose.Zip στο έργο σας και καλέστε το ίδιο API.  
+- **Χρειάζομαι άδεια για χρήση σε παραγωγή;** Απαιτείται εμπορική άδεια για παραγωγή· διατίθεται δωρεάν δοκιμή.  
 - **Ποιες εκδόσεις .NET υποστηρίζονται;** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
-## Τι είναι το “create LZMA zip archive”;
-Η δημιουργία ενός LZMA zip archive σημαίνει τη συσκευασία ενός ή περισσότερων αρχείων σε ένα κοντέινερ ZIP εφαρμόζοντας τον αλγόριθμο LZMA για επίτευξη ανώτερης συμπίεσης. Το Aspose.Zip αφαιρεί τις λεπτομέρειες χαμηλού επιπέδου, επιτρέποντάς σας να εστιάσετε στη λογική της εφαρμογής.
+## Τι σημαίνει “προσθήκη κωδικού πρόσβασης zip” στο Aspose.Zip;
+Η προσθήκη κωδικού πρόσβασης zip σημαίνει κρυπτογράφηση των καταχωρίσεων μέσα σε ένα αρχείο ZIP ώστε μόνο οι χρήστες που γνωρίζουν τον κωδικό να μπορούν να εξάγουν τα αρχεία. Το Aspose.Zip παρέχει μια απλή μέθοδο `SetPassword` που λειτουργεί με κάθε αλγόριθμο συμπίεσης—Bzip2, LZMA, PPMd, Enhanced Deflate και Store.
 
 ## Γιατί να χρησιμοποιήσετε το Aspose.Zip για συμπίεση αρχείων .NET;
-- **Unified API** – One consistent interface for Bzip2, LZMA, PPMd, Enhanced Deflate, and Store.  
-- **Performance‑tuned** – Optimized native implementation for fast processing.  
-- **ASP.NET friendly** – Works seamlessly in web projects, background services, and Azure Functions.  
-- **Fine‑grained control** – Adjust dictionary size, compression level, and more.
+- **Ενοποιημένο API** – Μία συνεπής διεπαφή για Bzip2, LZMA, PPMd, Enhanced Deflate και Store.  
+- **Βελτιστοποιημένο για απόδοση** – Βελτιστοποιημένη υλοποίηση native για γρήγορη επεξεργασία.  
+- **Φιλικό προς ASP.NET** – Λειτουργεί απρόσκοπτα σε web projects, υπηρεσίες παρασκηνίου και Azure Functions.  
+- **Λεπτομερής έλεγχος** – Ρυθμίστε το μέγεθος λεξικού, το επίπεδο συμπίεσης και προσθέστε κωδικό πρόσβασης zip με μία κλήση.  
+- **Συμπιέστε μεγάλα αρχεία** αποδοτικά με τη ροή δεδομένων απευθείας στο output stream.
 
 ## Προαπαιτούμενα
-- **Aspose.Zip for .NET Library** – Download and install from the [Aspose documentation](https://reference.aspose.com/zip/net/).  
-- **Sample Text File** – Prepare a sample file (e.g., `sample.txt`) that you’ll compress.  
-- **.NET development environment** – Visual Studio 2022 or any compatible IDE.
+- **Βιβλιοθήκη Aspose.Zip for .NET** – Κατεβάστε και εγκαταστήστε από την [τεκμηρίωση Aspose](https://reference.aspose.com/zip/net/).  
+- **Δείγμα αρχείου κειμένου** – Προετοιμάστε ένα δείγμα αρχείου (π.χ., `sample.txt`) που θα συμπιέσετε.  
+- **Περιβάλλον ανάπτυξης .NET** – Visual Studio 2022 ή οποιοδήποτε συμβατό IDE.
 
 ## Εισαγωγή Namespaces
 
@@ -52,11 +54,11 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Τώρα ας εξερευνήσουμε κάθε ρύθμιση συμπίεσης.
+Τώρα ας εξερευνήσουμε κάθε ρύθμιση συμπίεσης και να δούμε πώς να **προσθέσετε κωδικό πρόσβασης zip** όπου είναι κατάλληλο.
 
-## Χρήση Ρυθμίσεων Συμπίεσης Bzip2
+## Χρήση ρυθμίσεων συμπίεσης Bzip2
 
-### Βήμα 1: Αρχικοποίηση Συμπίεσης Bzip2
+### Βήμα 1: Αρχικοποίηση συμπίεσης Bzip2
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "Bzip2Compression_out.zip", FileMode.Create))
@@ -66,15 +68,23 @@ using (FileStream zipFile = File.Open(dataDir + "Bzip2Compression_out.zip", File
         // Step 2: Create Entry
         archive.CreateEntry("sample.txt", dataDir + "sample.txt");
         
+        // Optional: protect the archive with a password
+        archive.SetPassword("MySecret123");
+        
         // Step 3: Save Archive
         archive.Save(zipFile);
     }
 }
 ```
 
-## Πώς να δημιουργήσετε LZMA zip archive χρησιμοποιώντας το Aspose.Zip
+*Η κλήση `SetPassword` δείχνει πώς να **προσθέσετε κωδικό πρόσβασης zip** σε ένα αρχείο συμπιεσμένο με Bzip2.*
 
-### Βήμα 1: Αρχικοποίηση Συμπίεσης LZMA
+## Πώς να προσθέσετε κωδικό πρόσβασης zip χρησιμοποιώντας το Aspose.Zip για .NET
+Μπορείτε να εφαρμόσετε κωδικό πρόσβασης σε οποιοδήποτε αντικείμενο αρχείου πριν καλέσετε το `Save`. Η ίδια μέθοδος λειτουργεί για συμπίεση LZMA, PPMd, Enhanced Deflate και Store. Απλώς αντικαταστήστε το αντικείμενο ρυθμίσεων συμπίεσης διατηρώντας την κλήση `SetPassword`.
+
+## Πώς να δημιουργήσετε αρχείο LZMA zip χρησιμοποιώντας το Aspose.Zip
+
+### Βήμα 1: Αρχικοποίηση συμπίεσης LZMA
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "LZMACompression_out.zip", FileMode.Create))
@@ -84,15 +94,20 @@ using (FileStream zipFile = File.Open(dataDir + "LZMACompression_out.zip", FileM
         // Step 2: Create Entry
         archive.CreateEntry("sample.txt", dataDir + "sample.txt");
         
+        // Add password protection (LZMA supports it)
+        archive.SetPassword("StrongPwd!2026");
+        
         // Step 3: Save Archive
         archive.Save(zipFile);
     }
 }
 ```
 
-## Χρήση Ρυθμίσεων Συμπίεσης PPMd
+> **Συμβουλή:** Το LZMA προσφέρει ένα ρυθμιζόμενο **μέγεθος λεξικού LZMA** που επηρεάζει τόσο την αναλογία συμπίεσης όσο και τη χρήση μνήμης. Μπορείτε να το ορίσετε μέσω `new LzmaCompressionSettings { DictionarySize = 8 * 1024 * 1024 }` εάν χρειάζεται να το ρυθμίσετε λεπτομερώς για πολύ μεγάλα αρχεία.
 
-### Βήμα 1: Αρχικοποίηση Συμπίεσης PPMd
+## Χρήση ρυθμίσεων συμπίεσης PPMd
+
+### Βήμα 1: Αρχικοποίηση συμπίεσης PPMd
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "PPMdCompression_out.zip", FileMode.Create))
@@ -102,15 +117,18 @@ using (FileStream zipFile = File.Open(dataDir + "PPMdCompression_out.zip", FileM
         // Step 2: Create Entry
         archive.CreateEntry("sample.txt", dataDir + "sample.txt");
         
+        // Secure the archive
+        archive.SetPassword("PPMdPwd#2026");
+        
         // Step 3: Save Archive
         archive.Save(zipFile);
     }
 }
 ```
 
-## Χρήση Ρυθμίσεων Συμπίεσης Enhanced Deflate
+## Χρήση ρυθμίσεων συμπίεσης Enhanced Deflate
 
-### Βήμα 1: Αρχικοποίηση Συμπίεσης Enhanced Deflate
+### Βήμα 1: Αρχικοποίηση συμπίεσης Enhanced Deflate
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "EnhancedDeflateCompression_out.zip", FileMode.Create))
@@ -120,13 +138,16 @@ using (FileStream zipFile = File.Open(dataDir + "EnhancedDeflateCompression_out.
         // Step 2: Create Entry
         archive.CreateEntry("sample.txt", dataDir + "sample.txt");
         
+        // Password protection works here as well
+        archive.SetPassword("DeflatePwd2026");
+        
         // Step 3: Save Archive
         archive.Save(zipFile);
     }
 }
 ```
 
-## Χρήση Ρυθμίσεων Store Compression (store compression zip)
+## Χρήση ρυθμίσεων Store Compression (store compression zip)
 
 ### Βήμα 1: Αρχικοποίηση Store Compression
 
@@ -138,41 +159,48 @@ using (FileStream zipFile = File.Open(dataDir + "StoreCompression_out.zip", File
         // Step 2: Create Entry
         archive.CreateEntry("sample.txt", dataDir + "sample.txt");
         
+        // Even for store compression you can add a password
+        archive.SetPassword("StorePwd2026");
+        
         // Step 3: Save Archive
         archive.Save(zipFile);
     }
 }
 ```
 
-> **Pro tip:** Προσαρμόστε τη μεταβλητή `dataDir` ώστε να δείχνει στον πραγματικό σας φάκελο εργασίας και επαναχρησιμοποιήστε το ίδιο αντικείμενο `Archive` εάν χρειάζεται να προσθέσετε πολλά αρχεία σε ένα μόνο αρχείο.
+> **Συμβουλή επαγγελματία:** Προσαρμόστε τη μεταβλητή `dataDir` ώστε να δείχνει στο πραγματικό σας φάκελο εργασίας και επαναχρησιμοποιήστε το ίδιο αντικείμενο `Archive` εάν χρειάζεται να προσθέσετε πολλά αρχεία σε ένα μόνο αρχείο.
 
-## Συνηθισμένα Προβλήματα & Λύσεις
-- **“File not found” errors** – Επαληθεύστε ότι το `dataDir` τελειώνει με διαχωριστικό διαδρομής (`\` ή `/`) και ότι το `sample.txt` υπάρχει.  
-- **Memory consumption with large files** – Χρησιμοποιήστε το `ArchiveEntrySettings` για να ενεργοποιήσετε τη λειτουργία streaming, η οποία γράφει τα δεδομένα απευθείας στο ρεύμα εξόδου.  
-- **Incompatible compression level** – Ορισμένοι αλγόριθμοι (π.χ., LZMA) εκθέτουν πρόσθετες ιδιότητες όπως το `DictionarySize`. Ανατρέξτε στην τεκμηρίωση API αν χρειάζεστε πιο λεπτομερή έλεγχο.
+## Συχνά Προβλήματα & Λύσεις
+- **Σφάλματα “File not found”** – Επαληθεύστε ότι το `dataDir` τελειώνει με διαχωριστικό διαδρομής (`\` ή `/`) και ότι το `sample.txt` υπάρχει.  
+- **Κατανάλωση μνήμης με μεγάλα αρχεία** – Χρησιμοποιήστε `ArchiveEntrySettings` για να ενεργοποιήσετε τη λειτουργία streaming, η οποία γράφει τα δεδομένα απευθείας στο output stream.  
+- **Ασυμβίβαστο επίπεδο συμπίεσης** – Ορισμένοι αλγόριθμοι (π.χ., LZMA) εκθέτουν πρόσθετες ιδιότητες όπως `DictionarySize`. Συμβουλευτείτε την τεκμηρίωση API εάν χρειάζεστε πιο λεπτομερή έλεγχο.  
+- **Ο κωδικός πρόσβασης δεν εφαρμόζεται** – Βεβαιωθείτε ότι καλείτε το `SetPassword` *πριν* το `archive.Save(zipFile);`.
 
 ## Συχνές Ερωτήσεις
 
-**Q: Μπορώ να χρησιμοποιήσω το Aspose.Zip για .NET με άλλες βιβλιοθήκες συμπίεσης;**  
-A: Aspose.Zip is designed to work with its built‑in algorithms. Integrating third‑party libraries is possible but requires custom handling outside the Aspose API.
+**Ε: Μπορώ να χρησιμοποιήσω το Aspose.Zip για .NET με άλλες βιβλιοθήκες συμπίεσης;**  
+Α: Το Aspose.Zip έχει σχεδιαστεί για να λειτουργεί με τους ενσωματωμένους αλγόριθμους του. Η ενσωμάτωση βιβλιοθηκών τρίτων είναι δυνατή, αλλά απαιτεί προσαρμοσμένη διαχείριση εκτός του API του Aspose.
 
-**Q: Πώς μπορώ να προσθέσω προστασία κωδικού σε ένα zip που δημιουργήθηκε με το Aspose.Zip;**  
-A: Aspose.Zip supports password protection. See the [documentation](https://reference.aspose.com/zip/net/) for the `SetPassword` method.
+**Ε: Πώς μπορώ να προσθέσω προστασία κωδικού πρόσβασης σε ένα zip που δημιουργήθηκε με το Aspose.Zip;**  
+Α: Χρησιμοποιήστε τη μέθοδο `SetPassword(string password)` στο αντικείμενο `Archive` πριν από την αποθήκευση. Δείτε την [τεκμηρίωση](https://reference.aspose.com/zip/net/) για περισσότερες λεπτομέρειες.
 
-**Q: Υπάρχει δοκιμαστική έκδοση που μπορώ να δοκιμάσω;**  
-A: Yes, you can access the trial version [here](https://releases.aspose.com/).
+**Ε: Υπάρχει δοκιμαστική έκδοση που μπορώ να δοκιμάσω;**  
+Α: Ναι, μπορείτε να αποκτήσετε πρόσβαση στη δοκιμαστική έκδοση [εδώ](https://releases.aspose.com/).
 
-**Q: Πού μπορώ να λάβω βοήθεια από την κοινότητα ή να θέσω ερωτήσεις;**  
-A: For support and community discussions, visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37).
+**Ε: Πού μπορώ να λάβω βοήθεια από την κοινότητα ή να θέσω ερωτήσεις;**  
+Α: Για υποστήριξη και συζητήσεις της κοινότητας, επισκεφθείτε το [φόρουμ Aspose.Zip](https://forum.aspose.com/c/zip/37).
 
-**Q: Μπορώ να αποκτήσω προσωρινή άδεια για αξιολόγηση;**  
-A: Yes, you can obtain a temporary license [here](https://purchase.aspose.com/temporary-license/).
+**Ε: Μπορώ να αποκτήσω προσωρινή άδεια για αξιολόγηση;**  
+Α: Ναι, μπορείτε να αποκτήσετε προσωρινή άδεια [εδώ](https://purchase.aspose.com/temporary-license/).
 
-**Q: Πώς αυτό βοηθά στη συμπίεση αρχείων asp.net;**  
-A: By calling the same API from an ASP.NET controller or middleware, you can compress files on‑the‑fly before sending them to the client, reducing bandwidth and improving perceived performance.
+**Ε: Πώς αυτό βοηθά στη συμπίεση αρχείων με asp.net;**  
+Α: Καλώντας το ίδιο API από έναν ελεγκτή ή middleware ASP.NET, μπορείτε να συμπιέζετε αρχεία εν κινήσει πριν τα στείλετε στον πελάτη, μειώνοντας το εύρος ζώνης και βελτιώνοντας την αντιληπτή απόδοση.
 
-**Τελευταία Ενημέρωση:** 2025-12-10  
-**Δοκιμάστηκε Με:** Aspose.Zip 24.11 for .NET  
+**Ε: Ποιος είναι ο καλύτερος τρόπος για να συμπιέσετε μεγάλα αρχεία αποδοτικά;**  
+Α: Συνδυάστε τη λειτουργία streaming με τη συμπίεση LZMA και ένα κατάλληλο `DictionarySize`. Αυτό εξισορροπεί τη χρήση μνήμης και την αναλογία συμπίεσης για τεράστιες συλλογές δεδομένων.
+
+**Τελευταία ενημέρωση:** 2026-02-12  
+**Δοκιμάστηκε με:** Aspose.Zip 24.11 for .NET  
 **Συγγραφέας:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
