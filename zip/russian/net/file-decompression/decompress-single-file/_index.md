@@ -9,9 +9,7 @@ url: /ru/net/file-decompression/decompress-single-file/
 weight: 12
 ---
 
- formatting.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

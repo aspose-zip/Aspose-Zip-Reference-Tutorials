@@ -10,10 +10,6 @@ url: /ar/net/file-decompression/decompress-stored-file/
 weight: 13
 ---
 
- remain unchanged.
-
-Proceed.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

@@ -10,21 +10,7 @@ url: /vi/net/file-decompression/decompress-stored-file/
 weight: 13
 ---
 
- keep as is? Should translate labels? Probably keep English? The instruction: translate all text content. So translate those labels.
-
-"**Last Updated:** 2026-02-17" -> "**Cập nhật lần cuối:** 2026-02-17". Keep bold.
-
-"**Tested With:** Aspose.Zip for .NET 24.12" -> "**Kiểm tra với:** Aspose.Zip for .NET 24.12".
-
-"**Author:** Aspose" -> "**Tác giả:** Aspose".
-
-Then closing shortcodes.
-
-Also there is a note: "For Vietnamese, ensure proper RTL formatting if needed" - not needed.
-
-Now produce final content with all translations, preserving code block placeholders and shortcodes.
-
-Let's craft final output.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

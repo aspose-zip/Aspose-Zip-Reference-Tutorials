@@ -58,6 +58,24 @@ Quản lý tệp hiệu quả trở nên dễ dàng với Aspose.Zip cho .NET. T
 
 Khám phá sức mạnh của Aspose.Zip cho .NET trong [Decompressing a Stored File using Aspose.Zip for .NET](./decompress-stored-file/). Bài hướng dẫn này cung cấp một hướng dẫn từng bước về cách giải nén hiệu quả các tệp đã lưu trữ, trang bị cho bạn một giải pháp mạnh mẽ cho việc xử lý tệp trong các dự án.
 
+## Hướng Dẫn Giải Nén Tập Tin
+### [Giải Nén Một Tập Tin với Aspose.Zip cho .NET](./decompress-file/)
+Khám phá thế giới nén tệp trong .NET với Aspose.Zip. Học cách giải nén tệp một cách dễ dàng.
+### [Giải Nén Nhiều Tập Tin sử dụng Aspose.Zip cho .NET](./decompress-multiple-files/)
+Học cách giải nén nhiều tệp bằng Aspose.Zip cho .NET. Thực hiện theo hướng dẫn từng bước để quản lý tệp hiệu quả.
+### [Giải Nén Một Tập Tin Đơn với Aspose.Zip cho .NET](./decompress-single-file/)
+Khám phá thế giới giải nén tệp liền mạch với Aspose.Zip cho .NET. Xử lý các tệp nén trong dự án C# của bạn một cách dễ dàng.
+### [Giải Nén Tập Tin Được Lưu Trữ sử dụng Aspose.Zip cho .NET](./decompress-stored-file/)
+Khám phá sức mạnh của Aspose.Zip cho .NET trong hướng dẫn từng bước về giải nén các tệp đã lưu trữ. Nâng cao kỹ năng phát triển phần mềm của bạn với giải pháp mạnh mẽ cho việc xử lý tệp hiệu quả.
+### [Giải Nén Thư Mục Nén vào Thư Mục trong Aspose.Zip cho .NET](./decompress-compressed-folder-directory/)
+Mở khóa tiềm năng của Aspose.Zip cho .NET! Học cách giải nén thư mục một cách dễ dàng với hướng dẫn từng bước này. Đắm mình vào thế giới nén và giải nén liền mạch.
+### [Giải Nén Tệp Bảo Vệ Bằng Mật Khẩu Truyền Thống trong Aspose.Zip cho .NET](./decompress-traditionally-password-protected-file/)
+Học cách giải nén các tệp được bảo vệ bằng mật khẩu truyền thống bằng Aspose.Zip cho .NET. Hướng dẫn từng bước cho việc tích hợp liền mạch.
+### [Giải Nén Wim thành Thư Mục trong Aspose.Zip cho .NET](./decompress-wim-folder/)
+Khám phá hướng dẫn từng bước về giải nén các kho lưu trữ Wim bằng Aspose.Zip cho .NET. Tải thư viện, làm theo tutorial, và quản lý các tệp lưu trữ trong ứng dụng .NET của bạn một cách hiệu quả.
+### [Giải Nén Xar thành Thư Mục trong Aspose.Zip cho .NET](./decompress-xar-folder/)
+Khám phá sức mạnh của Aspose.Zip cho .NET! Giải nén các kho lưu trữ Xar một cách dễ dàng với tutorial thân thiện này. Nâng cao trải nghiệm phát triển .NET của bạn.
+
 ## Giải Nén Thư Mục Zip và Các Kho Lưu Trữ Được Bảo Vệ Bằng Mật Khẩu
 
 Nếu bạn cần **giải nén thư mục zip** hoặc làm việc với một **giải nén zip được bảo vệ bằng mật khẩu**, Aspose.Zip xử lý cả hai trường hợp một cách liền mạch. Chỉ cần truyền đường dẫn đích và, khi cần, chuỗi mật khẩu vào phương thức giải nén. Điều này loại bỏ nhu cầu sử dụng công cụ bên ngoài và giữ cho codebase của bạn sạch sẽ.
@@ -100,24 +118,6 @@ A: Thư viện sử dụng tải lười và streaming, vì vậy chỉ mục hi
 ## Kết luận
 
 Aspose.Zip cho .NET chứng tỏ là một công cụ thay đổi cuộc chơi trong lĩnh vực giải nén tệp. Dù bạn đang xử lý tệp đơn, nhiều tệp, hay các tệp đã lưu trữ, thư viện này đơn giản hoá quy trình, làm cho nó trở nên dễ tiếp cận cho mọi cấp độ lập trình viên. Hãy khám phá các bài hướng dẫn, khai thác tiềm năng của Aspose.Zip cho .NET, và nâng cao kỹ năng phát triển phần mềm của bạn lên tầm cao mới. Khám phá thế giới nén và giải nén liền mạch với sự tự tin và hiệu quả.
-
-## Hướng Dẫn Giải Nén Tập Tin
-### [Giải Nén Một Tập Tin với Aspose.Zip cho .NET](./decompress-file/)
-Khám phá thế giới nén tệp trong .NET với Aspose.Zip. Học cách giải nén tệp một cách dễ dàng.
-### [Giải Nén Nhiều Tập Tin sử dụng Aspose.Zip cho .NET](./decompress-multiple-files/)
-Học cách giải nén nhiều tệp bằng Aspose.Zip cho .NET. Thực hiện theo hướng dẫn từng bước để quản lý tệp hiệu quả.
-### [Giải Nén Một Tập Tin Đơn với Aspose.Zip cho .NET](./decompress-single-file/)
-Khám phá thế giới giải nén tệp liền mạch với Aspose.Zip cho .NET. Xử lý các tệp nén trong dự án C# của bạn một cách dễ dàng.
-### [Giải Nén Tập Tin Được Lưu Trữ sử dụng Aspose.Zip cho .NET](./decompress-stored-file/)
-Khám phá sức mạnh của Aspose.Zip cho .NET trong hướng dẫn từng bước về giải nén các tệp đã lưu trữ. Nâng cao kỹ năng phát triển phần mềm của bạn với giải pháp mạnh mẽ cho việc xử lý tệp hiệu quả.
-### [Giải Nén Thư Mục Nén vào Thư Mục trong Aspose.Zip cho .NET](./decompress-compressed-folder-directory/)
-Mở khóa tiềm năng của Aspose.Zip cho .NET! Học cách giải nén thư mục một cách dễ dàng với hướng dẫn từng bước này. Đắm mình vào thế giới nén và giải nén liền mạch.
-### [Giải Nén Tệp Bảo Vệ Bằng Mật Khẩu Truyền Thống trong Aspose.Zip cho .NET](./decompress-traditionally-password-protected-file/)
-Học cách giải nén các tệp được bảo vệ bằng mật khẩu truyền thống bằng Aspose.Zip cho .NET. Hướng dẫn từng bước cho việc tích hợp liền mạch.
-### [Giải Nén Wim thành Thư Mục trong Aspose.Zip cho .NET](./decompress-wim-folder/)
-Khám phá hướng dẫn từng bước về giải nén các kho lưu trữ Wim bằng Aspose.Zip cho .NET. Tải thư viện, làm theo tutorial, và quản lý các tệp lưu trữ trong ứng dụng .NET của bạn một cách hiệu quả.
-### [Giải Nén Xar thành Thư Mục trong Aspose.Zip cho .NET](./decompress-xar-folder/)
-Khám phá sức mạnh của Aspose.Zip cho .NET! Giải nén các kho lưu trữ Xar một cách dễ dàng với tutorial thân thiện này. Nâng cao trải nghiệm phát triển .NET của bạn.
 
 ---
 

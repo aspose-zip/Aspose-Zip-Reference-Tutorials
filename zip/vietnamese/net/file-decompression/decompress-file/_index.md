@@ -9,11 +9,7 @@ url: /vi/net/file-decompression/decompress-file/
 weight: 10
 ---
 
- shortcode unchanged.
-
-Make sure to preserve all markdown formatting.
-
-Let's craft final output.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

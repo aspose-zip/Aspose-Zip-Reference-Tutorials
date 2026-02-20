@@ -53,6 +53,31 @@ weight: 21
 ## فك ضغط ملف مخزن باستخدام Aspose.Zip لـ .NET
 استكشف قوة Aspose.Zip لـ .NET في [Decompressing a Stored File using Aspose.Zip for .NET](./decompress-stored-file/). يقدم هذا الدليل دليلًا خطوة بخطوة حول فك ضغط الملفات المخزنة بكفاءة، مما يزودك بحل قوي لمعالجة الملفات بفعالية في مشاريعك.
 
+## دروس فك ضغط الملفات
+### [Decompressing a File with Aspose.Zip for .NET](./decompress-file/)
+استكشف عالم ضغط الملفات في .NET مع Aspose.Zip. تعلم فن فك ضغط الملفات بسهولة.
+
+### [Decompressing Multiple Files using Aspose.Zip for .NET](./decompress-multiple-files/)
+تعلم كيفية فك ضغط ملفات متعددة باستخدام Aspose.Zip لـ .NET. اتبع دليلنا خطوة بخطوة لإدارة ملفات فعّالة.
+
+### [Decompressing a Single File with Aspose.Zip for .NET](./decompress-single-file/)
+استكشف عالم فك ضغط الملفات بسلاسة مع Aspose.Zip لـ .NET. تعامل بسهولة مع الملفات المضغوطة في مشاريع C# الخاصة بك.
+
+### [Decompressing a Stored File using Aspose.Zip for .NET](./decompress-stored-file/)
+استكشف قوة Aspose.Zip لـ .NET في هذا الدليل خطوة بخطوة حول فك ضغط الملفات المخزنة. عزز مهاراتك في تطوير البرمجيات بحل قوي لمعالجة الملفات بكفاءة.
+
+### [Decompress Compressed Folder to Directory in Aspose.Zip for .NET](./decompress-compressed-folder-directory/)
+اكتشف إمكانات Aspose.Zip لـ .NET! تعلم كيفية فك ضغط المجلدات بسهولة من خلال هذا الدليل خطوة بخطوة. اغمر نفسك في عالم الضغط والاستخراج السلس.
+
+### [Decompress Traditionally Password Protected File in Aspose.Zip for .NET](./decompress-traditionally-password-protected-file/)
+تعلم كيفية فك ضغط الملفات المحمية بكلمة مرور تقليدية باستخدام Aspose.Zip لـ .NET. دليل خطوة بخطوة للتكامل السلس.
+
+### [Decompress Wim to Folder in Aspose.Zip for .NET](./decompress-wim-folder/)
+استكشف الدليل خطوة بخطوة حول فك ضغط أرشيفات Wim باستخدام Aspose.Zip لـ .NET. قم بتحميل المكتبة، اتبع الدرس، وأدر ملفات الأرشيف بفعالية في تطبيقات .NET الخاصة بك.
+
+### [Decompress Xar to Folder in Aspose.Zip for .NET](./decompress-xar-folder/)
+استكشف قوة Aspose.Zip لـ .NET! فك ضغط أرشيفات Xar بسهولة مع هذا الدرس الصديق للمستخدم. حسّن تجربة تطوير .NET الخاصة بك.
+
 ## فك ضغط مجلد Zip والأرشيفات المحمية بكلمة مرور
 إذا كنت بحاجة إلى **decompress zip folder** المحتويات أو العمل مع أرشيف **decompress password protected zip**، يتعامل Aspose.Zip مع كلا السيناريوهين بسلاسة. ما عليك سوى تمرير مسار الوجهة، وعند الحاجة، سلسلة كلمة المرور إلى طريقة الاستخراج. هذا يلغي الحاجة إلى أدوات خارجية ويحافظ على نظافة قاعدة الشيفرة الخاصة بك.
 
@@ -91,31 +116,6 @@ weight: 21
 
 ## الخاتمة
 يثبت Aspose.Zip لـ .NET أنه محرك تغيير في مجال فك ضغط الملفات. سواء كنت تتعامل مع ملفات فردية، أو ملفات متعددة، أو ملفات مخزنة، تبسط المكتبة العملية، مما يجعلها متاحة للمطورين على جميع المستويات. اغمر نفسك في الدروس، واكشف إمكانات Aspose.Zip لـ .NET، وارتق بمهاراتك في تطوير البرمجيات إلى آفاق جديدة. استكشف عالم الضغط والاستخراج السلس بثقة وكفاءة.
-
-## دروس فك ضغط الملفات
-### [Decompressing a File with Aspose.Zip for .NET](./decompress-file/)
-استكشف عالم ضغط الملفات في .NET مع Aspose.Zip. تعلم فن فك ضغط الملفات بسهولة.
-
-### [Decompressing Multiple Files using Aspose.Zip for .NET](./decompress-multiple-files/)
-تعلم كيفية فك ضغط ملفات متعددة باستخدام Aspose.Zip لـ .NET. اتبع دليلنا خطوة بخطوة لإدارة ملفات فعّالة.
-
-### [Decompressing a Single File with Aspose.Zip for .NET](./decompress-single-file/)
-استكشف عالم فك ضغط الملفات بسلاسة مع Aspose.Zip لـ .NET. تعامل بسهولة مع الملفات المضغوطة في مشاريع C# الخاصة بك.
-
-### [Decompressing a Stored File using Aspose.Zip for .NET](./decompress-stored-file/)
-استكشف قوة Aspose.Zip لـ .NET في هذا الدليل خطوة بخطوة حول فك ضغط الملفات المخزنة. عزز مهاراتك في تطوير البرمجيات بحل قوي لمعالجة الملفات بكفاءة.
-
-### [Decompress Compressed Folder to Directory in Aspose.Zip for .NET](./decompress-compressed-folder-directory/)
-اكتشف إمكانات Aspose.Zip لـ .NET! تعلم كيفية فك ضغط المجلدات بسهولة من خلال هذا الدليل خطوة بخطوة. اغمر نفسك في عالم الضغط والاستخراج السلس.
-
-### [Decompress Traditionally Password Protected File in Aspose.Zip for .NET](./decompress-traditionally-password-protected-file/)
-تعلم كيفية فك ضغط الملفات المحمية بكلمة مرور تقليدية باستخدام Aspose.Zip لـ .NET. دليل خطوة بخطوة للتكامل السلس.
-
-### [Decompress Wim to Folder in Aspose.Zip for .NET](./decompress-wim-folder/)
-استكشف الدليل خطوة بخطوة حول فك ضغط أرشيفات Wim باستخدام Aspose.Zip لـ .NET. قم بتحميل المكتبة، اتبع الدرس، وأدر ملفات الأرشيف بفعالية في تطبيقات .NET الخاصة بك.
-
-### [Decompress Xar to Folder in Aspose.Zip for .NET](./decompress-xar-folder/)
-استكشف قوة Aspose.Zip لـ .NET! فك ضغط أرشيفات Xar بسهولة مع هذا الدرس الصديق للمستخدم. حسّن تجربة تطوير .NET الخاصة بك.
 
 ---
 

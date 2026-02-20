@@ -54,6 +54,31 @@ Az Aspose.Zip for .NET segítségével a hatékony fájlkezelés gyerekjáték. 
 ## Tárolt fájl kicsomagolása az Aspose.Zip for .NET segítségével
 Fedezze fel az Aspose.Zip for .NET erejét a [Tárolt fájl kicsomagolása az Aspose.Zip for .NET segítségével](./decompress-stored-file/) című anyagban. Ez az oktatóanyag lépésről‑lépésre útmutatót nyújt a tárolt fájlok hatékony kicsomagolásához, erős megoldást biztosítva a projektekben való fájlkezeléshez.
 
+## Fájl kicsomagolási oktatóanyagok
+### [Fájl kicsomagolása az Aspose.Zip for .NET segítségével](./decompress-file/)
+Fedezze fel a fájl tömörítés világát a .NET-ben az Aspose.Zip segítségével. Tanulja meg a fájlok könnyed kicsomagolásának művészetét.
+
+### [Több fájl kicsomagolása az Aspose.Zip for .NET használatával](./decompress-multiple-files/)
+Tanulja meg, hogyan kicsomagoljon több fájlt az Aspose.Zip for .NET segítségével. Kövesse lépésről‑lépésre útmutatónkat a hatékony fájlkezeléshez.
+
+### [Egyetlen fájl kicsomagolása az Aspose.Zip for .NET segítségével](./decompress-single-file/)
+Fedezze fel a fájlok zökkenőmentes kicsomagolásának világát az Aspose.Zip for .NET segítségével. Könnyedén kezelje a tömörített fájlokat C# projektjeiben.
+
+### [Tárolt fájl kicsomagolása az Aspose.Zip for .NET segítségével](./decompress-stored-file/)
+Fedezze fel az Aspose.Zip for .NET erejét ebben a lépésről‑lépésre útmutatóban a tárolt fájlok kicsomagolásához. Fejlessze szoftverfejlesztési képességeit egy erős megoldással a hatékony fájlkezeléshez.
+
+### [Tömörített mappa kicsomagolása könyvtárba az Aspose.Zip for .NET-ben](./decompress-compressed-folder-directory/)
+Szabadítsa fel az Aspose.Zip for .NET lehetőségeit! Tanulja meg, hogyan kicsomagoljon könnyedén mappákat ebben a lépésről‑lépésre útmutatóban. Merüljön el a zökkenőmentes tömörítés és kicsomagolás világában.
+
+### [Hagyományosan jelszóval védett fájl kicsomagolása az Aspose.Zip for .NET-ben](./decompress-traditionally-password-protected-file/)
+Tanulja meg, hogyan kicsomagoljon hagyományosan jelszóval védett fájlokat az Aspose.Zip for .NET segítségével. Lépésről‑lépésre útmutató a zökkenőmentes integrációhoz.
+
+### [Wim kicsomagolása mappába az Aspose.Zip for .NET-ben](./decompress-wim-folder/)
+Fedezze fel a lépésről‑lépésre útmutatót a Wim archívumok kicsomagolásához az Aspose.Zip for .NET segítségével. Töltse le a könyvtárat, kövesse az oktatóanyagot, és hatékonyan kezelje az archívumfájlokat .NET alkalmazásaiban.
+
+### [Xar kicsomagolása mappába az Aspose.Zip for .NET-ben](./decompress-xar-folder/)
+Fedezze fel az Aspose.Zip for .NET erejét! Könnyedén kicsomagolhat XAR archívumokat ebben a felhasználóbarát oktatóanyagban. Fejlessze .NET fejlesztési élményét.
+
 ## Zip mappa és jelszóval védett archívumok kicsomagolása
 Ha **zip mappa** tartalmát kell kicsomagolnia, vagy egy **jelszóval védett zip** archívummal dolgozik, az Aspose.Zip zökkenőmentesen kezeli mindkét esetet. Egyszerűen adja meg a célútvonalat, és szükség esetén a jelszó karakterláncot a kicsomagolási metódusnak. Ez megszünteti a külső eszközök szükségességét és tisztán tartja a kódbázist.
 
@@ -92,31 +117,6 @@ A: A könyvtár lusta betöltést és streaminget használ, így csak a jelenleg
 
 ## Összegzés
 Az Aspose.Zip for .NET igazi áttörést jelent a fájlok kicsomagolásának területén. Akár egyetlen fájlt, akár több fájlt vagy tárolt fájlokat kezel, a könyvtár egyszerűsíti a folyamatot, így minden szintű fejlesztő számára hozzáférhetővé válik. Merüljön el az oktatóanyagokban, szabadítsa fel az Aspose.Zip for .NET lehetőségeit, és emelje szoftverfejlesztési képességeit új magasságokba. Fedezze fel a zökkenőmentes tömörítés és kicsomagolás világát magabiztossággal és hatékonysággal.
-
-## Fájl kicsomagolási oktatóanyagok
-### [Fájl kicsomagolása az Aspose.Zip for .NET segítségével](./decompress-file/)
-Fedezze fel a fájl tömörítés világát a .NET-ben az Aspose.Zip segítségével. Tanulja meg a fájlok könnyed kicsomagolásának művészetét.
-
-### [Több fájl kicsomagolása az Aspose.Zip for .NET használatával](./decompress-multiple-files/)
-Tanulja meg, hogyan kicsomagoljon több fájlt az Aspose.Zip for .NET segítségével. Kövesse lépésről‑lépésre útmutatónkat a hatékony fájlkezeléshez.
-
-### [Egyetlen fájl kicsomagolása az Aspose.Zip for .NET segítségével](./decompress-single-file/)
-Fedezze fel a fájlok zökkenőmentes kicsomagolásának világát az Aspose.Zip for .NET segítségével. Könnyedén kezelje a tömörített fájlokat C# projektjeiben.
-
-### [Tárolt fájl kicsomagolása az Aspose.Zip for .NET segítségével](./decompress-stored-file/)
-Fedezze fel az Aspose.Zip for .NET erejét ebben a lépésről‑lépésre útmutatóban a tárolt fájlok kicsomagolásához. Fejlessze szoftverfejlesztési képességeit egy erős megoldással a hatékony fájlkezeléshez.
-
-### [Tömörített mappa kicsomagolása könyvtárba az Aspose.Zip for .NET-ben](./decompress-compressed-folder-directory/)
-Szabadítsa fel az Aspose.Zip for .NET lehetőségeit! Tanulja meg, hogyan kicsomagoljon könnyedén mappákat ebben a lépésről‑lépésre útmutatóban. Merüljön el a zökkenőmentes tömörítés és kicsomagolás világában.
-
-### [Hagyományosan jelszóval védett fájl kicsomagolása az Aspose.Zip for .NET-ben](./decompress-traditionally-password-protected-file/)
-Tanulja meg, hogyan kicsomagoljon hagyományosan jelszóval védett fájlokat az Aspose.Zip for .NET segítségével. Lépésről‑lépésre útmutató a zökkenőmentes integrációhoz.
-
-### [Wim kicsomagolása mappába az Aspose.Zip for .NET-ben](./decompress-wim-folder/)
-Fedezze fel a lépésről‑lépésre útmutatót a Wim archívumok kicsomagolásához az Aspose.Zip for .NET segítségével. Töltse le a könyvtárat, kövesse az oktatóanyagot, és hatékonyan kezelje az archívumfájlokat .NET alkalmazásaiban.
-
-### [Xar kicsomagolása mappába az Aspose.Zip for .NET-ben](./decompress-xar-folder/)
-Fedezze fel az Aspose.Zip for .NET erejét! Könnyedén kicsomagolhat XAR archívumokat ebben a felhasználóbarát oktatóanyagban. Fejlessze .NET fejlesztési élményét.
 
 ---
 

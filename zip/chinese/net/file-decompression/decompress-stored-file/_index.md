@@ -48,7 +48,7 @@ weight: 13
 - Aspose.Zip for .NET Library：下载并安装 Aspose.Zip for .NET 库。你可以在[此处](https://releases.aspose.com/zip/net/)找到该库。  
 - Document Directory：在系统中创建一个目录，用于存放本教程所需的文件。
 
-## Import Namespaces
+## 导入命名空间
 
 让我们先导入项目所需的命名空间：
 
@@ -57,7 +57,7 @@ using Aspose.Zip;
 using System.IO;
 ```
 
-## How to Create Zip Without Compression
+## 如何创建不压缩的 ZIP 文件
 
 首先需要一个使用 **store** 方法（即无压缩）的 ZIP 归档。下面的示例代码由 Aspose.Zip 提供，作为辅助方法使用。运行后会在你的文档目录生成 `StoreMultipleFilesWithoutCompression_out.zip`。
 
@@ -65,13 +65,13 @@ using System.IO;
 StoreMultipleFilesWithoutCompression.Run();
 ```
 
-> **Pro tip:** 该辅助方法内部为每个条目设置了 `CompressionMethod.Store`，确保归档在创建时不进行任何数据压缩。
+> **专业提示：** 该辅助方法内部为每个条目设置了 `CompressionMethod.Store`，确保归档在创建时不进行任何数据压缩。
 
-## How to Open Zip and Extract Multiple Files
+## 如何打开 ZIP 文件并提取多个文件
 
 现在我们已经拥有一个存储型 ZIP，下面看看 **how to open zip** 并将文件提取出来的步骤。
 
-### Step 2.1: Opening the Zip File
+### 步骤 2.1：打开 ZIP 文件
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -84,7 +84,7 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 
 `Archive` 对象代表已打开的 ZIP，并通过 `Entries` 集合让你访问每个条目。
 
-### Step 2.2: Creating Extracted Files
+### 步骤 2.2：创建提取的文件
 
 ```csharp
         using (var extracted = File.Create(dataDir + "alice_extracted_store_out.txt"))
@@ -105,7 +105,7 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 
 这里我们 **read zip entry** 0，将其字节复制到新文件，并借助 `using` 语句自动关闭流。
 
-### Step 2.3: Repeating the Process for Another File
+### 步骤 2.3：对另一个文件重复此过程
 
 ```csharp
         using (var extracted = File.Create(dataDir + "asyoulik_extracted_store_out.txt"))

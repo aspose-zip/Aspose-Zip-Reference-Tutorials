@@ -9,11 +9,7 @@ url: /nl/net/file-decompression/decompress-file/
 weight: 10
 ---
 
- markdown formatting.
-
-Also note "step-by-step in order - do not skip sections". We'll keep order.
-
-Let's write.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

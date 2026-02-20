@@ -10,8 +10,6 @@ url: /ru/net/file-decompression/
 weight: 21
 ---
 
- produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
@@ -61,6 +59,24 @@ weight: 21
 
 Исследуйте возможности Aspose.Zip для .NET в руководстве [Decompressing a Stored File using Aspose.Zip for .NET](./decompress-stored-file/). Этот учебник предлагает пошаговое руководство по эффективной распаковке сохранённых файлов, предоставляя надёжное решение для работы с файлами в ваших проектах.
 
+## Учебники по распаковке файлов
+### [Decompressing a File with Aspose.Zip for .NET](./decompress-file/)
+Исследуйте мир сжатия файлов в .NET с помощью Aspose.Zip. Научитесь искусству лёгкой распаковки файлов.
+### [Decompressing Multiple Files using Aspose.Zip for .NET](./decompress-multiple-files/)
+Узнайте, как распаковать несколько файлов с помощью Aspose.Zip для .NET. Следуйте нашему пошаговому руководству для эффективного управления файлами.
+### [Decompressing a Single File with Aspose.Zip for .NET](./decompress-single-file/)
+Откройте бесшовный мир распаковки файлов с Aspose.Zip для .NET. Без труда работайте со сжатыми файлами в ваших проектах C#.
+### [Decompressing a Stored File using Aspose.Zip for .NET](./decompress-stored-file/)
+Исследуйте возможности Aspose.Zip для .NET в этом пошаговом руководстве по распаковке сохранённых файлов. Повышайте навыки разработки с надёжным решением для эффективной работы с файлами.
+### [Decompress Compressed Folder to Directory in Aspose.Zip for .NET](./decompress-compressed-folder-directory/)
+Откройте потенциал Aspose.Zip для .NET! Узнайте, как без труда распаковать папки с помощью этого пошагового руководства. Погрузитесь в мир бесшовного сжатия и извлечения.
+### [Decompress Traditionally Password Protected File in Aspose.Zip for .NET](./decompress-traditionally-password-protected-file/)
+Узнайте, как распаковать традиционно защищённые паролем файлы с помощью Aspose.Zip для .NET. Пошаговое руководство для бесшовной интеграции.
+### [Decompress Wim to Folder in Aspose.Zip for .NET](./decompress-wim-folder/)
+Изучите пошаговое руководство по распаковке Wim‑архивов с помощью Aspose.Zip для .NET. Скачайте библиотеку, следуйте учебнику и эффективно управляйте архивными файлами в ваших .NET‑приложениях.
+### [Decompress Xar to Folder in Aspose.Zip for .NET](./decompress-xar-folder/)
+Откройте возможности Aspose.Zip для .NET! Без труда распаковывайте Xar‑архивы с помощью этого удобного учебника. Улучшайте опыт разработки на .NET.
+
 ## Распаковка zip‑папки и архивов, защищённых паролем
 
 Если вам нужно **распаковать zip‑папку** или работать с **распаковкой zip‑архива, защищённого паролем**, Aspose.Zip без проблем справится с обеими задачами. Просто передайте путь назначения и, при необходимости, строку пароля в метод извлечения. Это устраняет необходимость во внешних инструментах и сохраняет ваш код чистым.
@@ -103,24 +119,6 @@ weight: 21
 ## Заключение
 
 Aspose.Zip для .NET является настоящим прорывом в области распаковки файлов. Независимо от того, работаете ли вы с одиночными файлами, множеством файлов или сохранёнными файлами, библиотека упрощает процесс, делая его доступным для разработчиков любого уровня. Изучайте учебники, раскрывайте потенциал Aspose.Zip для .NET и поднимайте свои навыки разработки на новый уровень. Откройте мир бесшовного сжатия и извлечения с уверенностью и эффективностью.
-
-## Учебники по распаковке файлов
-### [Decompressing a File with Aspose.Zip for .NET](./decompress-file/)
-Исследуйте мир сжатия файлов в .NET с помощью Aspose.Zip. Научитесь искусству лёгкой распаковки файлов.
-### [Decompressing Multiple Files using Aspose.Zip for .NET](./decompress-multiple-files/)
-Узнайте, как распаковать несколько файлов с помощью Aspose.Zip для .NET. Следуйте нашему пошаговому руководству для эффективного управления файлами.
-### [Decompressing a Single File with Aspose.Zip for .NET](./decompress-single-file/)
-Откройте бесшовный мир распаковки файлов с Aspose.Zip для .NET. Без труда работайте со сжатыми файлами в ваших проектах C#.
-### [Decompressing a Stored File using Aspose.Zip for .NET](./decompress-stored-file/)
-Исследуйте возможности Aspose.Zip для .NET в этом пошаговом руководстве по распаковке сохранённых файлов. Повышайте навыки разработки с надёжным решением для эффективной работы с файлами.
-### [Decompress Compressed Folder to Directory in Aspose.Zip for .NET](./decompress-compressed-folder-directory/)
-Откройте потенциал Aspose.Zip для .NET! Узнайте, как без труда распаковать папки с помощью этого пошагового руководства. Погрузитесь в мир бесшовного сжатия и извлечения.
-### [Decompress Traditionally Password Protected File in Aspose.Zip for .NET](./decompress-traditionally-password-protected-file/)
-Узнайте, как распаковать традиционно защищённые паролем файлы с помощью Aspose.Zip для .NET. Пошаговое руководство для бесшовной интеграции.
-### [Decompress Wim to Folder in Aspose.Zip for .NET](./decompress-wim-folder/)
-Изучите пошаговое руководство по распаковке Wim‑архивов с помощью Aspose.Zip для .NET. Скачайте библиотеку, следуйте учебнику и эффективно управляйте архивными файлами в ваших .NET‑приложениях.
-### [Decompress Xar to Folder in Aspose.Zip for .NET](./decompress-xar-folder/)
-Откройте возможности Aspose.Zip для .NET! Без труда распаковывайте Xar‑архивы с помощью этого удобного учебника. Улучшайте опыт разработки на .NET.
 
 ---
 

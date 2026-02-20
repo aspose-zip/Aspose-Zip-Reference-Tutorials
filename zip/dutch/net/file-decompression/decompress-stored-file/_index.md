@@ -10,21 +10,7 @@ url: /nl/net/file-decompression/decompress-stored-file/
 weight: 13
 ---
 
- translation.
-
-We'll translate headings:
-
-# Een opgeslagen bestand decomprimeren met Aspose.Zip voor .NET
-
-## Introductie
-
-...
-
-Quick Answers -> "Snelle antwoorden"
-
-Bullet headings keep bold.
-
-Now produce final.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

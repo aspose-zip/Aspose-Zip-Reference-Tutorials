@@ -11,24 +11,7 @@ url: /fr/net/file-decompression/decompress-single-file/
 weight: 12
 ---
 
-24.11  
-**Author:** Aspose  
-
-Translate labels: "Dernière mise à jour", "Testé avec", "Auteur". Keep dates same.
-
-So:
-
-**Dernière mise à jour :** 2026-02-17  
-**Testé avec :** Aspose.Zip for .NET 24.11  
-**Auteur :** Aspose  
-
-Then closing shortcodes.
-
-Now produce final content with all translations.
-
-Be careful to keep all shortcodes and code block placeholders exactly.
-
-Let's craft final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

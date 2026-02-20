@@ -9,11 +9,7 @@ url: /hi/net/file-decompression/decompress-file/
 weight: 10
 ---
 
--button >}}
-
-Make sure to preserve formatting.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

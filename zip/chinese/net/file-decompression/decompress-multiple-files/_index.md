@@ -8,19 +8,7 @@ url: /zh/net/file-decompression/decompress-multiple-files/
 weight: 11
 ---
 
--02-17" keep.
-
-"**Tested With:** Aspose.Zip 24.11 for .NET" keep.
-
-"**Author:** Aspose" keep.
-
-Then closing shortcodes.
-
-Then backtop button shortcode.
-
-Make sure to keep all shortcodes exactly.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -28,7 +16,7 @@ Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
 
 欢迎阅读我们关于使用 Aspose.Zip for .NET **how to extract zip** 文件的完整教程！如果您需要 **extract zip to folder**、处理受密码保护的压缩包，或 **decompress multiple zip files**，那么您来对地方了。在接下来的几分钟里，我们将逐步演示所有内容——从环境设置到提取特定文件——帮助您自信地掌握提取多个 zip 条目的技巧。
 
-## Quick Answers
+## 快速解答
 - **什么库是 .NET zip 提取的最佳选择？** Aspose.Zip for .NET  
 - **我可以一次提取多个 zip 条目吗？** 是的，使用 Archive API 您可以遍历每个条目。  
 - **生产环境需要许可证吗？** 非试用使用需要有效的 Aspose.Zip 许可证。  
@@ -55,7 +43,7 @@ Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
 
 现在，让我们开始逐步指南。
 
-## Import Namespaces
+## 导入命名空间
 
 在您的 .NET 项目中，首先导入 Aspose.Zip 所需的命名空间：
 
@@ -69,7 +57,7 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Step 1: Create a ZIP Archive .NET Style (Optional)
+## 步骤 1：创建 .NET 风格的 ZIP 压缩文件（可选）
 
 如果您已经有 ZIP 文件，可以跳过此步骤。否则，创建 .NET zip 存档非常简单，并有助于演示完整的提取流程。
 
@@ -80,9 +68,9 @@ string dataDir = "Your Document Directory";
 CompressMultipleFiles.Run();
 ```
 
-## Step 2: Decompress the Files (How to Extract ZIP)
+## 步骤 2：解压缩文件（如何解压 ZIP 文件）
 
-### Step 2.1: Opening the Compressed File
+### 步骤 2.1：打开压缩文件
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressMultipleFiles_out.zip", FileMode.Open))
@@ -91,7 +79,7 @@ using (FileStream zipFile = File.Open(dataDir + "CompressMultipleFiles_out.zip",
 }
 ```
 
-### Step 2.2: Listing Entries and Tracking Progress (Extract Multiple ZIP Entries)
+### 步骤 2.2：列出条目并跟踪进度（解压多个 ZIP 条目）
 
 ```csharp
 StringBuilder sb = new StringBuilder("Entries are: ");
@@ -114,7 +102,7 @@ using (Archive archive = new Archive(zipFile, new ArchiveLoadOptions()
     Console.WriteLine(sb.ToString(0, sb.Length - 2));
 ```
 
-### Step 2.3: Extracting the First Entry (Extract Specific File Zip)
+### 步骤 2.3：解压第一个条目（解压指定文件的 ZIP 文件）
 
 ```csharp
 using (var extracted = File.Create(dataDir + "alice_extracted_out.txt"))
@@ -126,7 +114,7 @@ using (var extracted = File.Create(dataDir + "alice_extracted_out.txt"))
 }
 ```
 
-### Step 2.4: Extracting the Second Entry (Extract ZIP to Folder)
+### 步骤 2.4：解压第二个条目（将 ZIP 文件解压到文件夹）
 
 ```csharp
 archive.Entries[1].Extract(dataDir + "asyoulik_extracted_out.txt");
@@ -134,16 +122,16 @@ archive.Entries[1].Extract(dataDir + "asyoulik_extracted_out.txt");
 
 就这样！您已成功使用 Aspose.Zip for .NET **extracted multiple zip entries**，并且现在知道如何 **extract zip to folder**、**extract specific file zip**，甚至通过在 `ArchiveLoadOptions` 中提供密码来处理 **extract zip with password**。
 
-## Common Issues and Solutions
+## 常见问题及解决方案
 
-| Issue | Reason | Fix |
+| 问题 | 原因 | 解决方法 |
 |-------|--------|-----|
 | **未创建输出文件** | `dataDir` 路径错误或缺少写入权限 | 验证目录是否存在且应用程序具有写入权限。 |
 | **进度显示 0%** | 条目大小报告为 0（空文件） | 确保源 ZIP 实际包含数据；如有必要重新创建存档。 |
 | **大型存档异常** | 内存不足 | 使用 `ArchiveLoadOptions` 并将 `ReadOnly = true` 设置为流式读取条目，而不是一次性加载全部。 |
 | **密码保护的 ZIP 失败** | 未提供密码 | 通过 `ArchiveLoadOptions.Password = "yourPassword"` 提供密码，以启用 **extract zip with password**。 |
 
-## FAQ
+## 常见问题解答
 
 **Q:** 我可以在商业和个人项目中使用 Aspose.Zip for .NET 吗？  
 **A:** 可以，Aspose.Zip for .NET 可用于商业和个人项目。许可证详情请参阅 [Aspose's licensing information](https://purchase.aspose.com/buy)。
@@ -160,15 +148,15 @@ archive.Entries[1].Extract(dataDir + "asyoulik_extracted_out.txt");
 **Q:** 使用 Aspose.Zip for .NET 有哪些系统要求？  
 **A:** 请参考 [documentation](https://reference.aspose.com/zip/net/) 了解详细的系统要求。
 
-## Conclusion
+## 总结
 
 在本教程中，我们覆盖了 **how to extract zip** 文件的内容，演示了提取多个 zip 条目，并强调了使用 Aspose.Zip 强大 API 的最佳实践。按照这些步骤，您可以在任何 .NET 应用程序中高效管理 ZIP 存档——无论是构建桌面工具、Web 服务，还是需要 **decompress multiple zip files** 或 **extract zip with password** 的自动批处理程序。
 
 ---
 
-**Last Updated:** 2026-02-17  
-**Tested With:** Aspose.Zip 24.11 for .NET  
-**Author:** Aspose  
+**上次更新：** 2026-02-17
+**测试版本：** Aspose.Zip 24.11 for .NET
+**作者：** Aspose 
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

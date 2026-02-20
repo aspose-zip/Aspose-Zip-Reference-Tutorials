@@ -11,24 +11,6 @@ url: /de/net/file-decompression/decompress-stored-file/
 weight: 13
 ---
 
-NET". Keep heading level.
-
-Similarly other headings.
-
-Translate paragraphs.
-
-Be careful with bullet points and bold.
-
-Also keep code block placeholders as is.
-
-Translate list items.
-
-Translate table content.
-
-Translate FAQ.
-
-Let's craft.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

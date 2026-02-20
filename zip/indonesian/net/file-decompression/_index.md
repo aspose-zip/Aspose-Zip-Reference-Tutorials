@@ -10,18 +10,7 @@ url: /id/net/file-decompression/
 weight: 21
 ---
 
- for .NET 24.12  
-**Author:** Aspose  
-
-Translate labels? The bold labels are "Last Updated", "Tested With", "Author". Should we translate them? Probably yes, but keep bold formatting. So "**Terakhir Diperbarui:** 2026-02-17". "**Diuji Dengan:** Aspose.Zip for .NET 24.12". "**Penulis:** Aspose". Keep dates unchanged.
-
-Then closing shortcodes.
-
-Now ensure we didn't miss any code blocks. There are none except inline code.
-
-Now produce final content with all translations, preserving shortcodes.
-
-Let's construct final output.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -70,6 +59,31 @@ Manajemen file yang efisien menjadi mudah dengan Aspose.Zip untuk .NET. Pada [Me
 
 Jelajahi kekuatan Aspose.Zip untuk .NET di [Mengurai File yang Disimpan menggunakan Aspose.Zip untuk .NET](./decompress-stored-file/). Tutorial ini menawarkan panduan langkah‑demi‑langkah tentang cara mengurai file yang disimpan secara efisien, memberi Anda solusi kuat untuk penanganan file yang efektif dalam proyek Anda.
 
+## Tutorial Dekompresi File
+### [Mengurai File dengan Aspose.Zip untuk .NET](./decompress-file/)
+Jelajahi dunia kompresi file di .NET dengan Aspose.Zip. Pelajari seni mengurai file dengan mudah.
+
+### [Mengurai Banyak File menggunakan Aspose.Zip untuk .NET](./decompress-multiple-files/)
+Pelajari cara mengurai banyak file menggunakan Aspose.Zip untuk .NET. Ikuti panduan langkah‑demi‑langkah kami untuk manajemen file yang efisien.
+
+### [Mengurai File Tunggal dengan Aspose.Zip untuk .NET](./decompress-single-file/)
+Jelajahi dunia dekompresi file yang mulus dengan Aspose.Zip untuk .NET. Tangani file terkompresi dengan mudah dalam proyek C# Anda.
+
+### [Mengurai File yang Disimpan menggunakan Aspose.Zip untuk .NET](./decompress-stored-file/)
+Jelajahi kekuatan Aspose.Zip untuk .NET dalam panduan langkah‑demi‑langkah ini tentang mengurai file yang disimpan. Tingkatkan keterampilan pengembangan perangkat lunak Anda dengan solusi kuat untuk penanganan file yang efisien.
+
+### [Mengekstrak Folder Terkompresi ke Direktori dengan Aspose.Zip untuk .NET](./decompress-compressed-folder-directory/)
+Manfaatkan potensi Aspose.Zip untuk .NET! Pelajari cara mengurai folder dengan mudah menggunakan panduan langkah‑demi‑langkah ini. Selami dunia kompresi dan ekstraksi yang mulus.
+
+### [Mengurai File yang Dilindungi Kata Sandi Secara Tradisional dengan Aspose.Zip untuk .NET](./decompress-traditionally-password-protected-file/)
+Pelajari cara mengurai file yang dilindungi kata sandi secara tradisional menggunakan Aspose.Zip untuk .NET. Panduan langkah‑demi‑langkah untuk integrasi yang mulus.
+
+### [Mengekstrak Wim ke Folder dengan Aspose.Zip untuk .NET](./decompress-wim-folder/)
+Jelajahi panduan langkah‑demi‑langkah tentang mengurai arsip Wim menggunakan Aspose.Zip untuk .NET. Unduh perpustakaan, ikuti tutorial, dan kelola file arsip secara efisien dalam aplikasi .NET Anda.
+
+### [Mengekstrak Xar ke Folder dengan Aspose.Zip untuk .NET](./decompress-xar-folder/)
+Jelajahi kekuatan Aspose.Zip untuk .NET! Mengurai arsip Xar dengan mudah menggunakan tutorial yang ramah pengguna ini. Tingkatkan pengalaman pengembangan .NET Anda.
+
 ## Mengurai Folder Zip dan Arsip yang Dilindungi Kata Sandi
 
 Jika Anda perlu **mengurai folder zip** atau bekerja dengan arsip **mengurai zip yang dilindungi kata sandi**, Aspose.Zip menangani kedua skenario tersebut dengan mulus. Cukup berikan jalur tujuan dan, bila diperlukan, string kata sandi ke metode ekstraksi. Ini menghilangkan kebutuhan akan alat eksternal dan menjaga basis kode Anda tetap bersih.
@@ -112,31 +126,6 @@ A: Perpustakaan menggunakan pemuatan malas dan streaming, sehingga hanya entri s
 ## Kesimpulan
 
 Aspose.Zip untuk .NET terbukti menjadi pengubah permainan dalam bidang dekompresi file. Baik Anda menangani file tunggal, banyak file, atau file yang disimpan, perpustakaan ini menyederhanakan proses, membuatnya dapat diakses bagi pengembang di semua level. Selami tutorial, buka potensi Aspose.Zip untuk .NET, dan tingkatkan keterampilan pengembangan perangkat lunak Anda ke tingkat baru. Jelajahi dunia kompresi dan ekstraksi yang mulus dengan percaya diri dan efisiensi.
-
-## Tutorial Dekompresi File
-### [Mengurai File dengan Aspose.Zip untuk .NET](./decompress-file/)
-Jelajahi dunia kompresi file di .NET dengan Aspose.Zip. Pelajari seni mengurai file dengan mudah.
-
-### [Mengurai Banyak File menggunakan Aspose.Zip untuk .NET](./decompress-multiple-files/)
-Pelajari cara mengurai banyak file menggunakan Aspose.Zip untuk .NET. Ikuti panduan langkah‑demi‑langkah kami untuk manajemen file yang efisien.
-
-### [Mengurai File Tunggal dengan Aspose.Zip untuk .NET](./decompress-single-file/)
-Jelajahi dunia dekompresi file yang mulus dengan Aspose.Zip untuk .NET. Tangani file terkompresi dengan mudah dalam proyek C# Anda.
-
-### [Mengurai File yang Disimpan menggunakan Aspose.Zip untuk .NET](./decompress-stored-file/)
-Jelajahi kekuatan Aspose.Zip untuk .NET dalam panduan langkah‑demi‑langkah ini tentang mengurai file yang disimpan. Tingkatkan keterampilan pengembangan perangkat lunak Anda dengan solusi kuat untuk penanganan file yang efisien.
-
-### [Mengekstrak Folder Terkompresi ke Direktori dengan Aspose.Zip untuk .NET](./decompress-compressed-folder-directory/)
-Manfaatkan potensi Aspose.Zip untuk .NET! Pelajari cara mengurai folder dengan mudah menggunakan panduan langkah‑demi‑langkah ini. Selami dunia kompresi dan ekstraksi yang mulus.
-
-### [Mengurai File yang Dilindungi Kata Sandi Secara Tradisional dengan Aspose.Zip untuk .NET](./decompress-traditionally-password-protected-file/)
-Pelajari cara mengurai file yang dilindungi kata sandi secara tradisional menggunakan Aspose.Zip untuk .NET. Panduan langkah‑demi‑langkah untuk integrasi yang mulus.
-
-### [Mengekstrak Wim ke Folder dengan Aspose.Zip untuk .NET](./decompress-wim-folder/)
-Jelajahi panduan langkah‑demi‑langkah tentang mengurai arsip Wim menggunakan Aspose.Zip untuk .NET. Unduh perpustakaan, ikuti tutorial, dan kelola file arsip secara efisien dalam aplikasi .NET Anda.
-
-### [Mengekstrak Xar ke Folder dengan Aspose.Zip untuk .NET](./decompress-xar-folder/)
-Jelajahi kekuatan Aspose.Zip untuk .NET! Mengurai arsip Xar dengan mudah menggunakan tutorial yang ramah pengguna ini. Tingkatkan pengalaman pengembangan .NET Anda.
 
 ---
 

@@ -8,12 +8,7 @@ title: Como extrair arquivos ZIP – como extrair zip
 url: /pt/net/file-decompression/decompress-multiple-files/
 weight: 11
 ---
-
--button >}}
-
-Make sure to keep them unchanged.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

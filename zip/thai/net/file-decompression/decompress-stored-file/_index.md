@@ -10,14 +10,6 @@ url: /th/net/file-decompression/decompress-stored-file/
 weight: 13
 ---
 
-Now produce final content with all translations.
-
-Be careful not to translate code block placeholders.
-
-Also keep markdown tables formatting.
-
-Let's craft translation.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

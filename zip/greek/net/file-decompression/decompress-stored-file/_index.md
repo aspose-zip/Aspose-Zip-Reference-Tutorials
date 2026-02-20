@@ -10,10 +10,6 @@ url: /el/net/file-decompression/decompress-stored-file/
 weight: 13
 ---
 
- translate list items.
-
-Let's produce final.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

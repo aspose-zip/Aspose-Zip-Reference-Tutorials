@@ -56,6 +56,24 @@ A gestão eficiente de arquivos se torna simples com Aspose.Zip para .NET. Em [D
 
 Explore o poder do Aspose.Zip para .NET em [Decompressing a Stored File using Aspose.Zip for .NET](./decompress-stored-file/). Este tutorial oferece um guia passo a passo sobre como descompactar arquivos armazenados de forma eficiente, capacitando você com uma solução robusta para o manuseio eficaz de arquivos em seus projetos.
 
+## Tutoriais de Descompactação de Arquivos
+### [Descompactando um Arquivo com Aspose.Zip para .NET](./decompress-file/)
+Explore o mundo da compressão de arquivos em .NET com Aspose.Zip. Aprenda a arte de descompactar arquivos sem esforço.
+### [Descompactando Vários Arquivos usando Aspose.Zip para .NET](./decompress-multiple-files/)
+Aprenda como descompactar vários arquivos usando Aspose.Zip para .NET. Siga nosso guia passo a passo para uma gestão de arquivos eficiente.
+### [Descompactando um Arquivo Único com Aspose.Zip para .NET](./decompress-single-file/)
+Explore o mundo sem costura da descompactação de arquivos com Aspose.Zip para .NET. Manipule arquivos compactados em seus projetos C# com facilidade.
+### [Descompactando um Arquivo Armazenado usando Aspose.Zip para .NET](./decompress-stored-file/)
+Explore o poder do Aspose.Zip para .NET neste guia passo a passo sobre descompactação de arquivos armazenados. Aprimore suas habilidades de desenvolvimento de software com uma solução robusta para o manuseio eficiente de arquivos.
+### [Descompactar Pasta Compactada para Diretório em Aspose.Zip para .NET](./decompress-compressed-folder-directory/)
+Desbloqueie o potencial do Aspose.Zip para .NET! Aprenda a descompactar pastas sem esforço com este guia passo a passo. Mergulhe no mundo da compressão e extração sem atritos.
+### [Descompactar Arquivo Tradicionalmente Protegido por Senha em Aspose.Zip para .NET](./decompress-traditionally-password-protected-file/)
+Aprenda a descompactar arquivos tradicionalmente protegidos por senha usando Aspose.Zip para .NET. Um guia passo a passo para integração sem falhas.
+### [Descompactar Wim para Pasta em Aspose.Zip para .NET](./decompress-wim-folder/)
+Explore o guia passo a passo sobre descompactação de arquivos Wim usando Aspose.Zip para .NET. Baixe a biblioteca, siga o tutorial e gerencie arquivos de arquivamento de forma eficiente em suas aplicações .NET.
+### [Descompactar Xar para Pasta em Aspose.Zip para .NET](./decompress-xar-folder/)
+Explore o poder do Aspose.Zip para .NET! Descompacte arquivos Xar sem esforço com este tutorial amigável. Aprimore sua experiência de desenvolvimento .NET.
+
 ## Descompactando Pastas Zip e Arquivos Protegidos por Senha
 
 Se você precisa **descompactar zip folder** ou trabalhar com um **decompress password protected zip**, o Aspose.Zip lida com ambos os cenários sem problemas. Basta passar o caminho de destino e, quando necessário, a string de senha para o método de extração. Isso elimina a necessidade de ferramentas externas e mantém seu código limpo.
@@ -98,24 +116,6 @@ A: A biblioteca usa carregamento preguiçoso e streaming, de modo que apenas a e
 ## Conclusão
 
 Aspose.Zip para .NET prova ser um divisor de águas no domínio da descompactação de arquivos. Seja lidando com arquivos individuais, múltiplos ou armazenados, a biblioteca simplifica o processo, tornando‑o acessível para desenvolvedores de todos os níveis. Explore os tutoriais, desbloqueie o potencial do Aspose.Zip para .NET e eleve suas habilidades de desenvolvimento de software a novos patamares. Explore o mundo da compressão e extração sem atritos com confiança e eficiência.
-
-## Tutoriais de Descompactação de Arquivos
-### [Descompactando um Arquivo com Aspose.Zip para .NET](./decompress-file/)
-Explore o mundo da compressão de arquivos em .NET com Aspose.Zip. Aprenda a arte de descompactar arquivos sem esforço.
-### [Descompactando Vários Arquivos usando Aspose.Zip para .NET](./decompress-multiple-files/)
-Aprenda como descompactar vários arquivos usando Aspose.Zip para .NET. Siga nosso guia passo a passo para uma gestão de arquivos eficiente.
-### [Descompactando um Arquivo Único com Aspose.Zip para .NET](./decompress-single-file/)
-Explore o mundo sem costura da descompactação de arquivos com Aspose.Zip para .NET. Manipule arquivos compactados em seus projetos C# com facilidade.
-### [Descompactando um Arquivo Armazenado usando Aspose.Zip para .NET](./decompress-stored-file/)
-Explore o poder do Aspose.Zip para .NET neste guia passo a passo sobre descompactação de arquivos armazenados. Aprimore suas habilidades de desenvolvimento de software com uma solução robusta para o manuseio eficiente de arquivos.
-### [Descompactar Pasta Compactada para Diretório em Aspose.Zip para .NET](./decompress-compressed-folder-directory/)
-Desbloqueie o potencial do Aspose.Zip para .NET! Aprenda a descompactar pastas sem esforço com este guia passo a passo. Mergulhe no mundo da compressão e extração sem atritos.
-### [Descompactar Arquivo Tradicionalmente Protegido por Senha em Aspose.Zip para .NET](./decompress-traditionally-password-protected-file/)
-Aprenda a descompactar arquivos tradicionalmente protegidos por senha usando Aspose.Zip para .NET. Um guia passo a passo para integração sem falhas.
-### [Descompactar Wim para Pasta em Aspose.Zip para .NET](./decompress-wim-folder/)
-Explore o guia passo a passo sobre descompactação de arquivos Wim usando Aspose.Zip para .NET. Baixe a biblioteca, siga o tutorial e gerencie arquivos de arquivamento de forma eficiente em suas aplicações .NET.
-### [Descompactar Xar para Pasta em Aspose.Zip para .NET](./decompress-xar-folder/)
-Explore o poder do Aspose.Zip para .NET! Descompacte arquivos Xar sem esforço com este tutorial amigável. Aprimore sua experiência de desenvolvimento .NET.
 
 ---
 

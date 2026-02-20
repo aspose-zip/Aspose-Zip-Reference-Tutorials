@@ -43,7 +43,7 @@ weight: 11
 
 Τώρα, ας ξεκινήσουμε με τον οδηγό βήμα‑βήμα.
 
-## Import Namespaces
+## Εισαγωγή χώρων ονομάτων
 
 Στο .NET project σας, ξεκινήστε εισάγοντας τα απαραίτητα namespaces για το Aspose.Zip:
 
@@ -57,7 +57,7 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Step 1: Create a ZIP Archive .NET Style (Optional)
+## Βήμα 1: Δημιουργία αρχείου ZIP σε στυλ .NET (Προαιρετικό)
 
 Αν έχετε ήδη ένα αρχείο ZIP, μπορείτε να παραλείψετε αυτό το βήμα. Διαφορετικά, η δημιουργία ενός zip archive .net είναι απλή και βοηθά στην πλήρη επίδειξη της ροής εξαγωγής.
 
@@ -68,9 +68,9 @@ string dataDir = "Your Document Directory";
 CompressMultipleFiles.Run();
 ```
 
-## Step 2: Decompress the Files (How to Extract ZIP)
+## Βήμα 2: Αποσυμπίεση των αρχείων (Πώς να εξαγάγετε το ZIP)
 
-### Step 2.1: Opening the Compressed File
+### Βήμα 2.1: Άνοιγμα του συμπιεσμένου αρχείου
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressMultipleFiles_out.zip", FileMode.Open))
@@ -79,7 +79,7 @@ using (FileStream zipFile = File.Open(dataDir + "CompressMultipleFiles_out.zip",
 }
 ```
 
-### Step 2.2: Listing Entries and Tracking Progress (Extract Multiple ZIP Entries)
+### Βήμα 2.2: Καταχώριση καταχωρίσεων και παρακολούθηση προόδου (Εξαγωγή πολλαπλών καταχωρίσεων ZIP)
 
 ```csharp
 StringBuilder sb = new StringBuilder("Entries are: ");
@@ -102,7 +102,7 @@ using (Archive archive = new Archive(zipFile, new ArchiveLoadOptions()
     Console.WriteLine(sb.ToString(0, sb.Length - 2));
 ```
 
-### Step 2.3: Extracting the First Entry (Extract Specific File Zip)
+### Βήμα 2.3: Εξαγωγή της πρώτης καταχώρησης (Εξαγωγή συγκεκριμένου αρχείου Zip)
 
 ```csharp
 using (var extracted = File.Create(dataDir + "alice_extracted_out.txt"))
@@ -114,7 +114,7 @@ using (var extracted = File.Create(dataDir + "alice_extracted_out.txt"))
 }
 ```
 
-### Step 2.4: Extracting the Second Entry (Extract ZIP to Folder)
+### Βήμα 2.4: Εξαγωγή της δεύτερης καταχώρησης (Εξαγωγή του ZIP σε φάκελο)
 
 ```csharp
 archive.Entries[1].Extract(dataDir + "asyoulik_extracted_out.txt");
@@ -126,12 +126,12 @@ archive.Entries[1].Extract(dataDir + "asyoulik_extracted_out.txt");
 
 | Πρόβλημα | Αιτία | Διόρθωση |
 |----------|-------|----------|
-| **No output files created** | Λάθος διαδρομή `dataDir` ή έλλειψη δικαιωμάτων εγγραφής | Επαληθεύστε ότι ο φάκελος υπάρχει και ότι η εφαρμογή έχει δικαιώματα εγγραφής. |
-| **Progress shows 0%** | Το μέγεθος της καταχώρησης αναφέρεται ως 0 (κενό αρχείο) | Βεβαιωθείτε ότι το πηγαίο ZIP περιέχει δεδομένα· δημιουργήστε ξανά το αρχείο αν χρειάζεται. |
-| **Exception on large archives** | Ανεπάρκεια μνήμης | Χρησιμοποιήστε `ArchiveLoadOptions` με `ReadOnly = true` για ροή των καταχωρήσεων αντί για πλήρη φόρτωση. |
-| **Password‑protected ZIP fails** | Δεν έχει δοθεί κωδικός | Παρέχετε τον κωδικό μέσω `ArchiveLoadOptions.Password = "yourPassword"` για να ενεργοποιήσετε το **extract zip with password**. |
+| **Δεν δημιουργήθηκαν αρχεία εξόδου** | Λάθος διαδρομή `dataDir` ή έλλειψη δικαιωμάτων εγγραφής | Επαληθεύστε ότι ο φάκελος υπάρχει και ότι η εφαρμογή έχει εγγραφές δικαιωμάτων. |
+| **Η πρόοδος δείχνει 0%** | Το μέγεθος της καταχώρησης αναφέρεται ως 0 (κενό αρχείο) | Βεβαιωθείτε ότι το πηγαίο ZIP περιέχει δεδομένα· δημιουργήστε ξανά το αρχείο αν χρειάζεται. |
+| **Εξαίρεση για μεγάλα αρχεία** | Ανεπάρκεια μνήμης | Χρησιμοποιήστε `ArchiveLoadOptions` με `ReadOnly = true` για ροή των καταχωρήσεων αντί για πλήρη φόρτωση. |
+| **Το ZIP που προστατεύεται με κωδικό αποτυγχάνει** | Δεν έχει δοθεί κωδικός | Παρέχετε τον κωδικό μέσω `ArchiveLoadOptions.Password = "yourPassword"` για να ενεργοποιήσετε το **extract zip with password**. |
 
-## FAQ
+## Συχνές ερωτήσεις
 
 **Ε:** Μπορώ να χρησιμοποιήσω το Aspose.Zip for .NET τόσο σε εμπορικά όσο και σε προσωπικά έργα;  
 **Α:** Ναι, το Aspose.Zip for .NET μπορεί να χρησιμοποιηθεί και σε εμπορικά και σε προσωπικά έργα. Για λεπτομέρειες αδειοδότησης, δείτε τις [πληροφορίες αδειοδότησης της Aspose](https://purchase.aspose.com/buy).

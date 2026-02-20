@@ -8,10 +8,6 @@ url: /zh-hant/net/file-decompression/decompress-file/
 weight: 10
 ---
 
- decompress.
-
-Proceed.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

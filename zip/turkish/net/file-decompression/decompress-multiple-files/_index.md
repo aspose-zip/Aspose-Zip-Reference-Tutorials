@@ -17,7 +17,7 @@ weight: 11
 
 Aspose.Zip for .NET kullanarak **how to extract zip** dosyaları hakkında kapsamlı öğreticimize hoş geldiniz! Eğer **extract zip to folder** yapmanız, şifre korumalı arşivleri yönetmeniz veya **decompress multiple zip files** ihtiyacınız varsa, doğru yerdesiniz. Önümüzdeki birkaç dakikada her şeyi—ortamı kurmaktan belirli dosyaları çıkarmaya kadar—adım adım göstereceğiz, böylece birden fazla zip girişini güvenle çıkarmayı öğrenebileceksiniz.
 
-## Quick Answers
+## Hızlı Cevaplar
 - **.NET zip çıkarımı için en iyi kütüphane hangisidir?** Aspose.Zip for .NET  
 - **Birden fazla zip girişini aynı anda çıkarabilir miyim?** Evet, Archive API'sini kullanarak her bir girişi döngüyle işleyebilirsiniz.  
 - **Üretim ortamında lisansa ihtiyacım var mı?** Deneme dışı kullanım için geçerli bir Aspose.Zip lisansı gereklidir.  

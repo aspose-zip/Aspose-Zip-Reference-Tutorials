@@ -10,11 +10,7 @@ url: /es/net/file-decompression/
 weight: 21
 ---
 
-top-button >}}
-
-All preserved.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -61,6 +57,31 @@ La gestión eficiente de archivos se vuelve sencilla con Aspose.Zip para .NET. E
 
 Explore el poder de Aspose.Zip para .NET en [Decompressing a Stored File using Aspose.Zip for .NET](./decompress-stored-file/). Este tutorial ofrece una guía paso a paso sobre cómo descomprimir eficientemente archivos almacenados, brindándole una solución robusta para el manejo efectivo de archivos en sus proyectos.
 
+## Tutoriales de descompresión de archivos
+### [Decompressing a File with Aspose.Zip for .NET](./decompress-file/)
+Explore el mundo de la compresión de archivos en .NET con Aspose.Zip. Aprenda el arte de descomprimir archivos sin esfuerzo.
+
+### [Decompressing Multiple Files using Aspose.Zip for .NET](./decompress-multiple-files/)
+Aprenda cómo descomprimir varios archivos usando Aspose.Zip para .NET. Siga nuestra guía paso a paso para una gestión eficiente de archivos.
+
+### [Decompressing a Single File with Aspose.Zip for .NET](./decompress-single-file/)
+Explore el mundo sin fisuras de la descompresión de archivos con Aspose.Zip para .NET. Maneje archivos comprimidos sin esfuerzo en sus proyectos C#.
+
+### [Decompressing a Stored File using Aspose.Zip for .NET](./decompress-stored-file/)
+Explore el poder de Aspose.Zip para .NET en esta guía paso a paso sobre la descompresión de archivos almacenados. Mejore sus habilidades de desarrollo de software con una solución robusta para el manejo eficiente de archivos.
+
+### [Decompress Compressed Folder to Directory in Aspose.Zip for .NET](./decompress-compressed-folder-directory/)
+¡Desbloquee el potencial de Aspose.Zip para .NET! Aprenda cómo descomprimir carpetas sin esfuerzo con esta guía paso a paso. Sumérjase en el mundo de la compresión y extracción sin fisuras.
+
+### [Decompress Traditionally Password Protected File in Aspose.Zip for .NET](./decompress-traditionally-password-protected-file/)
+Aprenda cómo descomprimir archivos tradicionalmente protegidos con contraseña usando Aspose.Zip para .NET. Una guía paso a paso para una integración sin problemas.
+
+### [Decompress Wim to Folder in Aspose.Zip for .NET](./decompress-wim-folder/)
+Explore la guía paso a paso sobre la descompresión de archivos Wim usando Aspose.Zip para .NET. Descargue la biblioteca, siga el tutorial y gestione eficientemente los archivos de archivo en sus aplicaciones .NET.
+
+### [Decompress Xar to Folder in Aspose.Zip for .NET](./decompress-xar-folder/)
+Explore el poder de Aspose.Zip para .NET! Descomprima archivos Xar sin esfuerzo con este tutorial fácil de usar. Mejore su experiencia de desarrollo .NET.
+
 ## Descomprimir carpetas zip y archivos protegidos con contraseña
 
 Si necesita **decompress zip folder** contenido o trabajar con un archivo **decompress password protected zip**, Aspose.Zip maneja ambos escenarios sin problemas. Simplemente pase la ruta de destino y, cuando sea necesario, la cadena de contraseña al método de extracción. Esto elimina la necesidad de herramientas externas y mantiene su base de código limpia.
@@ -101,31 +122,6 @@ A: La biblioteca utiliza carga diferida y streaming, por lo que solo la entrada 
 ## Conclusión
 
 Aspose.Zip para .NET demuestra ser un cambio radical en el ámbito de la descompresión de archivos. Ya sea que maneje archivos individuales, varios archivos o archivos almacenados, la biblioteca simplifica el proceso, haciéndolo accesible para desarrolladores de todos los niveles. Sumérjase en los tutoriales, desbloquee el potencial de Aspose.Zip para .NET y eleve sus habilidades de desarrollo de software a nuevas alturas. Explore el mundo de la compresión y extracción sin problemas con confianza y eficiencia.
-
-## Tutoriales de descompresión de archivos
-### [Decompressing a File with Aspose.Zip for .NET](./decompress-file/)
-Explore el mundo de la compresión de archivos en .NET con Aspose.Zip. Aprenda el arte de descomprimir archivos sin esfuerzo.
-
-### [Decompressing Multiple Files using Aspose.Zip for .NET](./decompress-multiple-files/)
-Aprenda cómo descomprimir varios archivos usando Aspose.Zip para .NET. Siga nuestra guía paso a paso para una gestión eficiente de archivos.
-
-### [Decompressing a Single File with Aspose.Zip for .NET](./decompress-single-file/)
-Explore el mundo sin fisuras de la descompresión de archivos con Aspose.Zip para .NET. Maneje archivos comprimidos sin esfuerzo en sus proyectos C#.
-
-### [Decompressing a Stored File using Aspose.Zip for .NET](./decompress-stored-file/)
-Explore el poder de Aspose.Zip para .NET en esta guía paso a paso sobre la descompresión de archivos almacenados. Mejore sus habilidades de desarrollo de software con una solución robusta para el manejo eficiente de archivos.
-
-### [Decompress Compressed Folder to Directory in Aspose.Zip for .NET](./decompress-compressed-folder-directory/)
-¡Desbloquee el potencial de Aspose.Zip para .NET! Aprenda cómo descomprimir carpetas sin esfuerzo con esta guía paso a paso. Sumérjase en el mundo de la compresión y extracción sin fisuras.
-
-### [Decompress Traditionally Password Protected File in Aspose.Zip for .NET](./decompress-traditionally-password-protected-file/)
-Aprenda cómo descomprimir archivos tradicionalmente protegidos con contraseña usando Aspose.Zip para .NET. Una guía paso a paso para una integración sin problemas.
-
-### [Decompress Wim to Folder in Aspose.Zip for .NET](./decompress-wim-folder/)
-Explore la guía paso a paso sobre la descompresión de archivos Wim usando Aspose.Zip para .NET. Descargue la biblioteca, siga el tutorial y gestione eficientemente los archivos de archivo en sus aplicaciones .NET.
-
-### [Decompress Xar to Folder in Aspose.Zip for .NET](./decompress-xar-folder/)
-Explore el poder de Aspose.Zip para .NET! Descomprima archivos Xar sin esfuerzo con este tutorial fácil de usar. Mejore su experiencia de desarrollo .NET.
 
 ---
 

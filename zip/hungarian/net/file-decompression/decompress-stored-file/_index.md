@@ -11,11 +11,7 @@ url: /hu/net/file-decompression/decompress-stored-file/
 weight: 13
 ---
 
- closing shortcodes, then backtop button shortcode.
-
-We must keep them.
-
-Let's construct final output.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

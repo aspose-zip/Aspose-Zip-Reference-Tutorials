@@ -10,16 +10,6 @@ url: /pt/net/file-decompression/decompress-stored-file/
 weight: 13
 ---
 
-Testado com:".
-
-**Author:** Aspose -> "Autor:".
-
-Then closing shortcodes.
-
-Make sure to keep placeholders unchanged.
-
-Now produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

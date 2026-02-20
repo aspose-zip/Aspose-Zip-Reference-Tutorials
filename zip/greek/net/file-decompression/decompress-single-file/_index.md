@@ -9,9 +9,7 @@ url: /el/net/file-decompression/decompress-single-file/
 weight: 12
 ---
 
- exactly.
-
-Let's construct final output.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

@@ -10,17 +10,7 @@ url: /de/net/file-decompression/decompress-single-file/
 weight: 12
 ---
 
-**Last Updated:** 2026-02-17" -> same.
-
-"**Tested With:** Aspose.Zip for .NET 24.11" -> same.
-
-"**Author:** Aspose" -> same.
-
-Then closing shortcodes.
-
-Make sure to keep all shortcodes exactly.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

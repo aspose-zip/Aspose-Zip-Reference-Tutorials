@@ -10,21 +10,7 @@ url: /es/net/file-decompression/decompress-stored-file/
 weight: 13
 ---
 
- produce final content.
-
-We need to translate:
-
-- Title: "# Decompressing a Stored File using Aspose.Zip for .NET" -> "# Descomprimiendo un archivo almacenado usando Aspose.Zip para .NET"
-
-- Introduction etc.
-
-Let's go section by section.
-
-Will keep markdown tables.
-
-Make sure to keep code block placeholders unchanged.
-
-Let's produce final.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

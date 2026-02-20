@@ -8,13 +8,7 @@ url: /zh/net/file-decompression/decompress-file/
 weight: 10
 ---
 
- blocks/products/products-backtop-button >}}
-
-Now produce final content with translations.
-
-Be careful to preserve markdown formatting exactly.
-
-Let's craft final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

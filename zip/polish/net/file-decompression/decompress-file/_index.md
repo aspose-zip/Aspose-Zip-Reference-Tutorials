@@ -10,24 +10,6 @@ url: /pl/net/file-decompression/decompress-file/
 weight: 10
 ---
 
- extraction?" etc.
-
-"Prerequisites", "Import Namespaces", ".NET Archive Extraction: Set Up Your Working Folder", "Step 1: Extract Lzip Archive C# (extract lzip archive c#)", "Common Issues and Solutions", table content, "Frequently Asked Questions", each Q/A, "Conclusion", etc.
-
-Also bullet lists.
-
-Make sure not to translate URLs, code placeholders.
-
-Also keep markdown formatting.
-
-Let's produce final translation.
-
-Check for any inline code: `LzipArchive.Extract`, `LzipArchive.IsValid`, etc. Keep as is.
-
-Also keep backticks.
-
-Now produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

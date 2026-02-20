@@ -53,6 +53,31 @@ weight: 21
 ## 使用 Aspose.Zip for .NET 解壓已儲存的檔案
 在 [Decompressing a Stored File using Aspose.Zip for .NET](./decompress-stored-file/) 中探索 Aspose.Zip for .NET 的強大功能。本教學提供逐步說明，教您有效解壓已儲存的檔案，為專案提供穩健的檔案處理解決方案。
 
+## 檔案解壓教學
+### [使用 Aspose.Zip for .NET 解壓單一檔案](./decompress-file/)
+探索 .NET 中的檔案壓縮世界，學習輕鬆解壓檔案的技巧。
+
+### [使用 Aspose.Zip for .NET 解壓多個檔案](./decompress-multiple-files/)
+學習如何使用 Aspose.Zip for .NET 解壓多個檔案。依照我們的逐步指南，實現高效的檔案管理。
+
+### [使用 Aspose.Zip for .NET 解壓單一檔案](./decompress-single-file/)
+探索 Aspose.Zip for .NET 無縫的檔案解壓世界，輕鬆在 C# 專案中處理壓縮檔案。
+
+### [使用 Aspose.Zip for .NET 解壓已儲存的檔案](./decompress-stored-file/)
+在此逐步指南中探索 Aspose.Zip for .NET 的強大功能，學習解壓已儲存的檔案。以穩健的解決方案提升您的軟體開發技能，實現高效的檔案處理。
+
+### [使用 Aspose.Zip for .NET 將壓縮資料夾解壓至目錄](./decompress-compressed-folder-directory/)
+發掘 Aspose.Zip for .NET 的潛力！學習如何透過此逐步指南輕鬆解壓資料夾。深入無縫的壓縮與解壓世界。
+
+### [使用 Aspose.Zip for .NET 解壓傳統密碼保護檔案](./decompress-traditionally-password-protected-file/)
+學習如何使用 Aspose.Zip for .NET 解壓傳統的密碼保護檔案。提供逐步指南，實現無縫整合。
+
+### [使用 Aspose.Zip for .NET 解壓 Wim 至資料夾](./decompress-wim-folder/)
+探索使用 Aspose.Zip for .NET 解壓 Wim 壓縮檔的逐步指南。下載函式庫，依照教學操作，於 .NET 應用程式中高效管理壓縮檔。
+
+### [使用 Aspose.Zip for .NET 解壓 Xar 至資料夾](./decompress-xar-folder/)
+探索 Aspose.Zip for .NET 的強大功能！透過此使用者友善的教學，輕鬆解壓 Xar 壓縮檔。提升您的 .NET 開發體驗。
+
 ## 解壓 Zip 資料夾與密碼保護的壓縮檔
 若您需要 **解壓 zip 資料夾** 內容或處理 **解壓受密碼保護的 zip** 壓縮檔，Aspose.Zip 可無縫支援兩種情況。只要將目標路徑傳入，必要時再提供密碼字串給解壓方法，即可免除外部工具的需求，保持程式碼乾淨。
 
@@ -91,31 +116,6 @@ A: 函式庫採用延遲載入與串流機制，僅將當前條目載入記憶�
 
 ## 結論
 Aspose.Zip for .NET 在檔案解壓領域可說是顛覆性工具。無論您處理單一檔案、多個檔案或已儲存的檔案，函式庫都能簡化流程，讓各層級開發者皆能輕鬆上手。深入教學，發掘 Aspose.Zip for .NET 的潛力，提升您的軟體開發技能至新高度。以自信與高效探索無縫的壓縮與解壓世界。
-
-## 檔案解壓教學
-### [使用 Aspose.Zip for .NET 解壓單一檔案](./decompress-file/)
-探索 .NET 中的檔案壓縮世界，學習輕鬆解壓檔案的技巧。
-
-### [使用 Aspose.Zip for .NET 解壓多個檔案](./decompress-multiple-files/)
-學習如何使用 Aspose.Zip for .NET 解壓多個檔案。依照我們的逐步指南，實現高效的檔案管理。
-
-### [使用 Aspose.Zip for .NET 解壓單一檔案](./decompress-single-file/)
-探索 Aspose.Zip for .NET 無縫的檔案解壓世界，輕鬆在 C# 專案中處理壓縮檔案。
-
-### [使用 Aspose.Zip for .NET 解壓已儲存的檔案](./decompress-stored-file/)
-在此逐步指南中探索 Aspose.Zip for .NET 的強大功能，學習解壓已儲存的檔案。以穩健的解決方案提升您的軟體開發技能，實現高效的檔案處理。
-
-### [使用 Aspose.Zip for .NET 將壓縮資料夾解壓至目錄](./decompress-compressed-folder-directory/)
-發掘 Aspose.Zip for .NET 的潛力！學習如何透過此逐步指南輕鬆解壓資料夾。深入無縫的壓縮與解壓世界。
-
-### [使用 Aspose.Zip for .NET 解壓傳統密碼保護檔案](./decompress-traditionally-password-protected-file/)
-學習如何使用 Aspose.Zip for .NET 解壓傳統的密碼保護檔案。提供逐步指南，實現無縫整合。
-
-### [使用 Aspose.Zip for .NET 解壓 Wim 至資料夾](./decompress-wim-folder/)
-探索使用 Aspose.Zip for .NET 解壓 Wim 壓縮檔的逐步指南。下載函式庫，依照教學操作，於 .NET 應用程式中高效管理壓縮檔。
-
-### [使用 Aspose.Zip for .NET 解壓 Xar 至資料夾](./decompress-xar-folder/)
-探索 Aspose.Zip for .NET 的強大功能！透過此使用者友善的教學，輕鬆解壓 Xar 壓縮檔。提升您的 .NET 開發體驗。
 
 ---
 

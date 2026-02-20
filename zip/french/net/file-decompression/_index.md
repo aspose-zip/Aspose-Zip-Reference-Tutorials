@@ -59,6 +59,24 @@ La gestion efficace des fichiers devient un jeu d’enfant avec Aspose.Zip pour 
 
 Explorez la puissance d’Aspose.Zip pour .NET dans [Décompression d’un fichier stocké avec Aspose.Zip pour .NET](./decompress-stored-file/). Ce tutoriel propose un guide pas à pas pour décompresser efficacement des fichiers stockés, vous offrant une solution robuste pour une gestion efficace des fichiers dans vos projets.
 
+## Tutoriels de décompression de fichiers
+### [Décompression d’un fichier avec Aspose.Zip pour .NET](./decompress-file/)
+Explorez le monde de la compression de fichiers en .NET avec Aspose.Zip. Apprenez l’art de décompresser des fichiers sans effort.
+### [Décompression de plusieurs fichiers avec Aspose.Zip pour .NET](./decompress-multiple-files/)
+Apprenez à décompresser plusieurs fichiers avec Aspose.Zip pour .NET. Suivez notre guide étape par étape pour une gestion efficace des fichiers.
+### [Décompression d’un fichier unique avec Aspose.Zip pour .NET](./decompress-single-file/)
+Explorez le monde fluide de la décompression de fichiers avec Aspose.Zip pour .NET. Gérez sans effort les fichiers compressés dans vos projets C#.
+### [Décompression d’un fichier stocké avec Aspose.Zip pour .NET](./decompress-stored-file/)
+Découvrez la puissance d’Aspose.Zip pour .NET dans ce guide pas à pas sur la décompression de fichiers stockés. Améliorez vos compétences en développement logiciel avec une solution robuste pour une gestion efficace des fichiers.
+### [Décompression d’un dossier compressé vers un répertoire avec Aspose.Zip pour .NET](./decompress-compressed-folder-directory/)
+Débloquez le potentiel d’Aspose.Zip pour .NET ! Apprenez à décompresser facilement des dossiers grâce à ce guide étape par étape. Plongez dans le monde d’une compression et extraction fluides.
+### [Décompression d’un fichier traditionnellement protégé par mot de passe avec Aspose.Zip pour .NET](./decompress-traditionally-password-protected-file/)
+Apprenez à décompresser des fichiers traditionnellement protégés par mot de passe avec Aspose.Zip pour .NET. Un guide pas à pas pour une intégration transparente.
+### [Décompression d’un fichier Wim vers un dossier avec Aspose.Zip pour .NET](./decompress-wim-folder/)
+Explorez le guide pas à pas sur la décompression d’archives Wim avec Aspose.Zip pour .NET. Téléchargez la bibliothèque, suivez le tutoriel et gérez efficacement les fichiers d’archive dans vos applications .NET.
+### [Décompression d’un fichier Xar vers un dossier avec Aspose.Zip pour .NET](./decompress-xar-folder/)
+Découvrez la puissance d’Aspose.Zip pour .NET ! Décompressez facilement les archives Xar grâce à ce tutoriel convivial. Améliorez votre expérience de développement .NET.
+
 ## Décompression de dossiers zip et d’archives protégées par mot de passe
 
 Si vous devez **décompresser le contenu d’un dossier zip** ou travailler avec une **archive zip protégée par mot de passe**, Aspose.Zip gère les deux scénarios de manière transparente. Il suffit de transmettre le chemin de destination et, le cas échéant, la chaîne de mot de passe à la méthode d’extraction. Cela élimine le besoin d’outils externes et garde votre base de code propre.
@@ -101,24 +119,6 @@ R : La bibliothèque utilise le chargement paresseux et le streaming, de sorte
 ## Conclusion
 
 Aspose.Zip pour .NET s’avère être un véritable changeur de jeu dans le domaine de la décompression de fichiers. Que vous manipuliez des fichiers uniques, multiples ou stockés, la bibliothèque simplifie le processus, le rendant accessible aux développeurs de tous niveaux. Plongez dans les tutoriels, libérez le potentiel d’Aspose.Zip pour .NET et élevez vos compétences en développement logiciel à de nouveaux sommets. Explorez le monde de la compression et de l’extraction fluides avec confiance et efficacité.
-
-## Tutoriels de décompression de fichiers
-### [Décompression d’un fichier avec Aspose.Zip pour .NET](./decompress-file/)
-Explorez le monde de la compression de fichiers en .NET avec Aspose.Zip. Apprenez l’art de décompresser des fichiers sans effort.
-### [Décompression de plusieurs fichiers avec Aspose.Zip pour .NET](./decompress-multiple-files/)
-Apprenez à décompresser plusieurs fichiers avec Aspose.Zip pour .NET. Suivez notre guide étape par étape pour une gestion efficace des fichiers.
-### [Décompression d’un fichier unique avec Aspose.Zip pour .NET](./decompress-single-file/)
-Explorez le monde fluide de la décompression de fichiers avec Aspose.Zip pour .NET. Gérez sans effort les fichiers compressés dans vos projets C#.
-### [Décompression d’un fichier stocké avec Aspose.Zip pour .NET](./decompress-stored-file/)
-Découvrez la puissance d’Aspose.Zip pour .NET dans ce guide pas à pas sur la décompression de fichiers stockés. Améliorez vos compétences en développement logiciel avec une solution robuste pour une gestion efficace des fichiers.
-### [Décompression d’un dossier compressé vers un répertoire avec Aspose.Zip pour .NET](./decompress-compressed-folder-directory/)
-Débloquez le potentiel d’Aspose.Zip pour .NET ! Apprenez à décompresser facilement des dossiers grâce à ce guide étape par étape. Plongez dans le monde d’une compression et extraction fluides.
-### [Décompression d’un fichier traditionnellement protégé par mot de passe avec Aspose.Zip pour .NET](./decompress-traditionally-password-protected-file/)
-Apprenez à décompresser des fichiers traditionnellement protégés par mot de passe avec Aspose.Zip pour .NET. Un guide pas à pas pour une intégration transparente.
-### [Décompression d’un fichier Wim vers un dossier avec Aspose.Zip pour .NET](./decompress-wim-folder/)
-Explorez le guide pas à pas sur la décompression d’archives Wim avec Aspose.Zip pour .NET. Téléchargez la bibliothèque, suivez le tutoriel et gérez efficacement les fichiers d’archive dans vos applications .NET.
-### [Décompression d’un fichier Xar vers un dossier avec Aspose.Zip pour .NET](./decompress-xar-folder/)
-Découvrez la puissance d’Aspose.Zip pour .NET ! Décompressez facilement les archives Xar grâce à ce tutoriel convivial. Améliorez votre expérience de développement .NET.
 
 ---
 
