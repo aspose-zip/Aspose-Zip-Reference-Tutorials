@@ -10,21 +10,7 @@ url: /pt/net/file-compression/using-parallelism-compress-files/
 weight: 17
 ---
 
-Quick Answers" section.
-
-Translate "What is parallel zip compression?" etc.
-
-Make sure to keep markdown formatting.
-
-Also the blockquote > **Pro tip:** ... translate.
-
-Also "Common Use Cases", "Common Issues & Tips", "Frequently Asked Questions", Q/A.
-
-Translate "Last Updated:", "Tested With:", "Author:".
-
-All good.
-
-Let's write final.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

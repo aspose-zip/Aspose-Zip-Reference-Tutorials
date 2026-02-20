@@ -9,20 +9,6 @@ url: /hi/net/file-decompression/decompress-compressed-folder-directory/
 weight: 14
 ---
 
- परीक्षण किया गया:" maybe keep English for product name.
-
-Translate: "**परीक्षण किया गया:** Aspose.Zip for .NET (latest release)"
-
-"**Author:** Aspose" -> "**लेखक:** Aspose"
-
-Then closing shortcodes.
-
-Then backtop button shortcode unchanged.
-
-Now ensure we preserve all markdown formatting.
-
-Let's assemble final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

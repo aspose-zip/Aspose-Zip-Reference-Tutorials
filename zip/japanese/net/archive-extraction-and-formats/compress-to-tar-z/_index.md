@@ -15,37 +15,37 @@ weight: 15
 
 # Aspose.Zip for .NET を使用してファイルを tar に追加し、TarZ に圧縮する
 
-## Introduction
+## はじめに
 
 **add files to tar** が必要で、アーカイブを TarZ 形式に圧縮したい場合、Aspose.Zip for .NET がプロセス全体を簡単にします。このチュートリアルでは、プロジェクトの設定から tar アーカイブの作成、ファイルの追加、最終的に圧縮された .tar.z ファイルの保存まで、すべての手順を順に解説します。最後まで読むと、任意の .NET アプリケーションに組み込める再利用可能なスニペットが手に入ります。
 
-## Quick Answers
+## クイックアンサー
 - **tar の作成を扱うライブラリは？** Aspose.Zip for .NET  
 - **コード行数は？** コメントを除く約 15 行  
 - **テストにライセンスは必要ですか？** 無料トライアルが利用可能です。製品版ではライセンスが必要です。  
 - **サポートされている .NET バージョンは？** .NET Framework 4.5 以上、.NET Core 3.1 以上、.NET 5/6 以上  
 - **フォルダーも圧縮できますか？** はい、ループを使ってディレクトリ全体を追加できます。
 
-## What is **add files to tar**?
+## **tar にファイルを追加する** とは？
 
 ファイルを tar アーカイブに追加すると、ディレクトリ構造とファイルメタデータを保持したまま、単一の非圧縮コンテナにまとめられます。Tar は古典的な Unix 形式で、今回のガイドで使用する TarZ 形式を含む多くの圧縮ワークフローの基盤となります。
 
-## Why add files to tar before compressing to TarZ?
+## TarZ に圧縮する前にファイルを tar に追加する理由
 - **ポータビリティ** – tar アーカイブはプラットフォーム間で動作し、個々のファイル処理を気にする必要がありません。  
 - **スピード** – tar コンテナの作成は高速で、続く Z 圧縮はサイズ削減のみに集中します。  
 - **互換性** – 多くのレガシーツールは gzip スタイルの圧縮を適用する前に `.tar` があることを前提としており、`.tar.z` はまさにそれを提供します。  
 
-### Why this matters for .NET developers
+### .NET 開発者にとってこれが重要な理由
 tar コンテナを使用すると、.NET のコードをシンプルかつ決定的に保てます。アーカイブをメモリ上で生成し、直接レスポンスにストリームしたり、ディスクに保存したりでき、一時的な zip ファイルを扱う必要がありません。このパターンは、ビルドパイプラインやログ集約、Linux ベースのサービスへ設定ファイルのセットを配布する場合に特に有用です。
 
-## Prerequisites
+## 前提条件
 
 コードに入る前に、以下が揃っていることを確認してください：
 
 - **Aspose.Zip for .NET** がインストールされていること。公式サイトから[こちら](https://releases.aspose.com/zip/net/)でダウンロードしてください。  
 - アーカイブしたいファイルが入っているフォルダー。プレースホルダーのパスを実際のディレクトリに置き換えてください。
 
-## Import Namespaces
+## 名前空間のインポート
 
 C# ファイルの先頭に必要な `using` 文を追加します：
 
@@ -54,11 +54,11 @@ using System;
 using Aspose.Zip.Tar;
 ```
 
-> **Pro tip:** パスを動的に構築する必要がある場合は `Path.Combine` を使用してください。異なる OS でパス区切り文字が欠落するのを防げます。
+> **プロのヒント:** パスを動的に構築する必要がある場合は `Path.Combine` を使用してください。異なる OS でパス区切り文字が欠落するのを防げます。
 
-## Step‑by‑Step Guide
+## ステップバイステップガイド
 
-### Step 1: Define Your Document Directory
+### ステップ 1: ドキュメントディレクトリを定義する
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -66,9 +66,9 @@ string dataDir = "Your Document Directory";
 
 > **Why this step is important:** `dataDir` は追加するすべてのファイルの基礎位置として機能します。単一の変数に保持することで、コードの保守性と複数アーカイブでの再利用が容易になります。
 
-### Step 2: Create a Tar Archive and add files
+### ステップ 2: Tar アーカイブを作成し、ファイルを追加する
 
-#### 2.1: Create the Tar archive instance
+#### 2.1: Tar アーカイブのインスタンスを作成する
 
 ```csharp
 using (TarArchive archive = new TarArchive())
@@ -79,9 +79,9 @@ using (TarArchive archive = new TarArchive())
 
 > `using` ブロックは `TarArchive` オブジェクトが適切に破棄され、ファイルハンドルやメモリバッファが解放されることを保証します。
 
-#### 2.2: Add files to the archive  
+#### 2.2: アーカイブにファイルを追加する
 
-Inside the `using` block, add each file you want to include:
+`using` ブロック内に、アーカイブに含める各ファイルを追加します。
 
 ```csharp
 archive.CreateEntry("alice29.txt", dataDir + "alice29.txt");
@@ -90,9 +90,9 @@ archive.CreateEntry("lcet10.txt", dataDir + "lcet10.txt");
 
 `CreateEntry` を必要なだけ繰り返すか、ディレクトリをループしてプログラム的に追加できます。例えば、`foreach (var file in Directory.GetFiles(dataDir))` ループを使えば、相対パスを保持しつつ任意の数のファイルを処理できます。
 
-#### 2.3: Save the compressed TarZ file  
+#### 2.3: 圧縮された TarZ ファイルを保存する
 
-After adding all entries, compress the tar archive to the `.tar.z` format:
+すべてのエントリを追加したら、tar アーカイブを `.tar.z` 形式に圧縮します。
 
 ```csharp
 archive.SaveZCompressed(dataDir + "archive.tar.z");
@@ -100,7 +100,7 @@ archive.SaveZCompressed(dataDir + "archive.tar.z");
 
 生成された `archive.tar.z` ファイルは `dataDir` で指定した同じフォルダーに配置されます。この単一の圧縮パッケージを TarZ を理解する任意のシステムに配布できます。
 
-## Common Issues and Solutions
+## よくある問題と解決策
 
 | 問題 | 原因 | 対策 |
 |-------|--------|-----|
@@ -108,12 +108,12 @@ archive.SaveZCompressed(dataDir + "archive.tar.z");
 | **アクセスが拒否されました** | 対象フォルダーの権限が不足しています | 適切な権限でアプリケーションを実行するか、書き込み可能なディレクトリを選択してください。 |
 | **圧縮ファイルが予想より大きい** | 元のファイルがすでに圧縮されている（例：画像、動画） | TarZ はテキストやログファイルに最適です。すでに圧縮されたファイルはそのままにしておくことを検討してください。 |
 
-### Common pitfalls to watch out for
+### 注意すべきよくある落とし穴
 - **末尾のスラッシュが欠落** – `dataDir` が `\` または `/` で終わっていないと、文字列結合で無効なパスが生成されます。  
 - **大規模ディレクトリ** – 数千ファイルを追加するとメモリを消費します。エントリをストリーミングするか、ファイルストリームに直接書き込む `TarArchive` のオーバーロード使用を検討してください。  
 - **エンコーディングの問題** – ASCII 以外のファイル名は明示的なエンコーディング処理が必要になる場合があります。Aspose.Zip はデフォルトで UTF‑8 を尊重しますが、対象プラットフォームで確認してください。
 
-## Frequently Asked Questions
+## よくある質問
 
 **Q: Aspose.Zip for .NET でフォルダー全体を圧縮できますか？**  
 A: もちろんです。`Directory.GetFiles` ループを使用し、各ファイルに対して `CreateEntry` を呼び出して相対パスを保持してください。
@@ -130,7 +130,7 @@ A: [Aspose.Zip フォーラム](https://forum.aspose.com/c/zip/37)にアクセ�
 **Q: Aspose.Zip for .NET の一時ライセンスは取得できますか？**  
 A: はい、一時ライセンスが必要な場合は[こちら](https://purchase.aspose.com/temporary-license/)から取得できます。
 
-## Conclusion
+## 結論
 
 これで **add files to tar** の方法と、Aspose.Zip for .NET を使用して結果を TarZ アーカイブに圧縮する手順を学びました。このアプローチにより、転送や保存、さらなる処理が容易なクリーンでポータブルなパッケージが得られます。スニペットをディレクトリのバッチ処理に適用したり、ビルドパイプラインに統合したり、他の Aspose コンポーネントと組み合わせて、よりリッチなドキュメントワークフローを実現してください。
 

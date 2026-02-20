@@ -9,14 +9,6 @@ url: /it/net/file-compression/modifying-zip-files/
 weight: 15
 ---
 
-.Zip 24.12 for .NET (keep). Translate "Tested With" maybe "Testato con". Keep.
-
-**Author:** Aspose (keep). Translate "Author" to "Autore". Keep.
-
-Now ensure all shortcodes remain.
-
-Now produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

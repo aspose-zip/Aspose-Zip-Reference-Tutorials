@@ -11,85 +11,41 @@ url: /el/net/file-compression/using-parallelism-compress-files/
 weight: 17
 ---
 
- Introduction". Keep same.
-
-Paragraph: translate.
-
-We must keep **bold** formatting.
-
-Let's translate step by step.
-
-I'll produce final markdown.
-
-Need to keep code block placeholders unchanged.
-
-Also need to keep links.
-
-Let's translate.
-
-I'll write Greek text.
-
-Be careful with bullet points.
-
-Also note "## Quick Answers" etc.
-
-Let's translate.
-
-Will keep "Aspose.Zip" unchanged.
-
-Will keep "API" unchanged.
-
-Will keep "C#" unchanged.
-
-Will keep "ParallelCompressInMemory" unchanged.
-
-Will keep "ParallelOptions" unchanged.
-
-Will keep "Archive.CreateEntry" unchanged.
-
-Will keep "Archive" unchanged.
-
-Will keep "ParallelOptions.MaxDegreeOfParallelism" unchanged.
-
-Will keep "Aspose.Zip forum" etc.
-
-Now produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # Συμπίεση πολλαπλών αρχείων c# με Aspose.Zip Parallel Compression
 
-## Introduction
+## Εισαγωγή
 
-Αν χρειάζεστε **zip multiple files c#** γρήγορα και αποδοτικά, η αξιοποίηση της παράλληλης επεξεργασίας είναι η σωστή επιλογή. Σε σύγχρονες εφαρμογές .NET, η δημιουργία μεγάλων αρχείων zip μπορεί να γίνει σημείο συμφόρησης—ιδιαίτερα όταν εργάζεστε με δεκάδες ή εκατοντάδες αρχεία. Το Aspose.Zip for .NET αφαιρεί αυτό το πρόβλημα προσφέροντας ενσωματωμένη **parallel zip compression** που κατανέμει την εργασία σε όλους τους διαθέσιμους πυρήνες CPU. Σε αυτό το tutorial θα περάσουμε από όλη τη διαδικασία: από τη ρύθμιση του περιβάλλοντος μέχρι την αποθήκευση ενός αρχείου zip με ενεργοποιημένη την παράλληλη συμπίεση.
+Αν χρειάζεστε **zip πολλαπλών αρχείων c#** γρήγορα και αποτελεσματικά, η αξιοποίηση της παράλληλης επεξεργασίας είναι η σωστή επιλογή. Σε σύγχρονες εφαρμογές .NET, η δημιουργία μεγάλων αρχείων zip μπορεί να γίνει σημείο συμφόρησης—ιδιαίτερα όταν εργάζεστε με δεκάδες ή εκατοντάδες αρχεία. Το Aspose.Zip for .NET αφαιρεί αυτό το πρόβλημα προσφέροντας ενσωματωμένη **parallel zip compression** που κατανέμει την εργασία σε όλους τους διαθέσιμους πυρήνες CPU. Σε αυτό το tutorial θα περάσουμε από όλη τη διαδικασία: από τη ρύθμιση του περιβάλλοντος μέχρι την αποθήκευση ενός αρχείου zip με την παράλληλη συμπίεση.
 
-## Quick Answers
-- **What is parallel zip compression?** Συμπιέζει πολλά αρχεία ταυτόχρονα, χρησιμοποιώντας πολλαπλά νήματα για να μειώσει τον συνολικό χρόνο επεξεργασίας.  
-- **Which .NET library supports it?** Το Aspose.Zip for .NET παρέχει ένα απλό API για παράλληλη συμπίεση.  
-- **Do I need a license for production?** Ναι—απαιτείται πλήρης άδεια· μια προσωρινή άδεια είναι διαθέσιμη για δοκιμές.  
-- **Can I add files to zip on the fly?** Απόλυτα—χρησιμοποιήστε `Archive.CreateEntry` για κάθε αρχείο που θέλετε να συμπεριλάβετε.  
+## Γρήγορες απαντήσεις
+- **What is parallel zip compression?** Συμπιέζει πολλά αρχεία ταυτόχρονα, χρησιμοποιώντας πολλαπλά νήματα για να μειώσει τον χρόνο επεξεργασίας.
+- **Ποια βιβλιοθήκη .NET το υποστηρίζει;** Το Aspose.Zip for .NET παρέχει ένα απλό API για παράλληλη συμπίεση.
+- **Do I need a license for production?** Ναι—απαιτείται πλήρης άδεια· μια προσωρινή άδεια είναι διαθέσιμη για δοκιμές.
+- **Μπορώ να προσθέσω αρχεία στο zip on the fly;** Απόλυτα—χρησιμοποιήστε `Archive.CreateEntry` για κάθε αρχείο που θέλετε να συμπεριλάβετε.
 - **Is it compatible with .NET 6/7?** Ναι, το API λειτουργεί σε όλες τις σύγχρονες εκδόσεις .NET.
 
-## What is zip multiple files c#?
-`zip multiple files c#` αναφέρεται στη δημιουργία ενός ενιαίου αρχείου ZIP που περιέχει πολλά μεμονωμένα αρχεία, χρησιμοποιώντας κώδικα C#. Όταν το συνδυάσετε με **parallel zip compression**, η βιβλιοθήκη επεξεργάζεται κάθε αρχείο σε ξεχωριστό νήμα, μειώνοντας δραστικά τον χρόνο που απαιτείται για την παραγωγή του τελικού αρχείου.
+## Τι είναι το zip πολλαπλά αρχεία c#;
+Το `zip multiple files c#` αναφέρεται στη δημιουργία ενός ενιαίου αρχείου ZIP που περιέχει πολλά μεμονωμένα αρχεία, χρησιμοποιώντας κώδικα C#. Όταν συνδυάσετε με **parallel zip compression**, η βιβλιοθήκη επεξεργάζεται κάθε αρχείο σε ξεχωριστό νήμα, μειώνοντας δραστικά τον χρόνο που χρειάζεται για την παραγωγή του τελικού αρχείου.
 
-## Why use Aspose.Zip for parallel compression?
-- **Speed:** Εκμεταλλεύεται πλήρως τους πολυπύρηνους επεξεργαστές, συχνά προσφέροντας 2‑3× ταχύτερη συμπίεση από τις σειριακές προσεγγίσεις.  
-- **Scalability:** Διαχειρίζεται μεγάλες παρτίδες αρχείων χωρίς γραμμική αύξηση του χρόνου επεξεργασίας.  
-- **Simplicity:** Το υψηλού επιπέδου API αφαιρεί την ανάγκη χειρισμού νημάτων, ώστε να εστιάσετε στη λογική της εφαρμογής σας.  
-- **Flexibility:** Λειτουργεί με οποιαδήποτε έκδοση .NET (Framework, Core, .NET 5/6/7) και ενσωματώνεται εύκολα σε υπάρχοντα έργα.
+## Γιατί να χρησιμοποιήσετε το Aspose.Zip για παράλληλη συμπίεση;
+- **Speed:** Εκμεταλλεύεται πλήρως τους πολυπύρηνους επεξεργαστές, συχνά προσφέροντας 2‑3× ταχύτερη συμπίεση από τις σειριακές προσεγγίσεις.
+- **Scalability:** Διαχειρίζεται μεγάλες παρτίδες αρχεία χωρίς γραμμική αύξηση του χρόνου επεξεργασίας.
+- **Simplicity:** Το υψηλό επίπεδο API αφαιρεί την ανάγκη χειρισμού, ώστε να εστιάσετε στη λογική σας.
+- **Flexibility** Λειτουργεί με την έκδοση .NET (Framework, Core, .NET5/6/7) και ενσωματώνεται εύκολα σε υπάρχοντα έργα.
 
-## Prerequisites
+## Προαπαιτούμενα
 
 Πριν ξεκινήσετε, βεβαιωθείτε ότι έχετε:
 
-- Βασικές γνώσεις C# και ανάπτυξης .NET.  
-- Το Aspose.Zip for .NET εγκατεστημένο. Μπορείτε να το κατεβάσετε **[here](https://releases.aspose.com/zip/net/)**.  
-- Μια προσωρινή ή πλήρη άδεια (η προσωρινή άδεια αρκεί για αυτό το tutorial).
+- Βασικές γνώσεις C# και ανάπτυξη .NET.
+- Το Aspose.Zip for .NET εγκατεστημένο. Μπορείτε να το κατεβάσετε **[εδώ](https://releases.aspose.com/zip/net/)**.
+- Μια προσωρινή ή πλήρης άδεια (η προσωρινή άδεια αρκεί για αυτό το tutorial).
 
-## Import Namespaces
+## Εισαγωγή χώρων ονομάτων
 
 Πρώτα, εισάγετε τα απαιτούμενα namespaces στο αρχείο C# ώστε ο μεταγλωττιστής να γνωρίζει πού βρίσκονται οι κλάσεις που θα χρησιμοποιήσετε.
 
@@ -100,7 +56,7 @@ using System.Text;
 using Aspose.Zip.Saving;
 ```
 
-## Step 1: Set Up Your Document Directory
+## Βήμα 1: Ρύθμιση του καταλόγου εγγράφων σας
 
 Ορίστε το φάκελο που περιέχει τα αρχεία που θέλετε να συμπιέσετε. Αυτή η διαδρομή αποθηκεύεται στη μεταβλητή `dataDir`.
 
@@ -108,7 +64,7 @@ using Aspose.Zip.Saving;
 string dataDir = "Your Document Directory";
 ```
 
-## Step 2: Initialize the Compression Process
+## Βήμα 2: Αρχικοποίηση της διαδικασίας συμπίεσης
 
 Ανοίξτε ένα νέο αρχείο ZIP για εγγραφή. Η δήλωση `using` εξασφαλίζει ότι η ροή αρχείου θα απελευθερωθεί σωστά μετά την ολοκλήρωση.
 
@@ -119,7 +75,7 @@ using (FileStream zipFile = File.Open(dataDir + "UsingParallelismToCompressFiles
 }
 ```
 
-## Step 3: Read and Compress Files in Parallel
+## Βήμα 3: Ανάγνωση και συμπίεση αρχείων παράλληλα
 
 Ανοίξτε κάθε πηγαίο αρχείο που σκοπεύετε να προσθέσετε στο αρχείο. Στο παράδειγμα αυτό δουλεύουμε με δύο κλασικά κείμενα, αλλά μπορείτε **add files to zip** για οποιονδήποτε αριθμό εγγράφων.
 
@@ -133,7 +89,7 @@ using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, Fi
 }
 ```
 
-## Step 4: Create Archive Entries
+## Βήμα 4: Δημιουργία καταχωρίσεων αρχειοθέτησης
 
 Δημιουργήστε μια παρουσία `Archive` και προσθέστε κάθε αρχείο ως ξεχωριστή καταχώρηση. Εδώ πραγματοποιείται το βήμα **create zip archive c#**.
 
@@ -146,7 +102,7 @@ using (var archive = new Archive())
 }
 ```
 
-## Step 5: Define Parallelism Criterion
+## Βήμα 5: Ορισμός κριτηρίου παραλληλίας
 
 Ρυθμίστε τη συμπίεση ώστε να εκτελείται παράλληλα ορίζοντας `ParallelOptions`. Η σημαία `ParallelCompressInMemory` λέει στο Aspose.Zip να χρησιμοποιεί πάντα παράλληλη επεξεργασία.
 
@@ -157,7 +113,7 @@ var parallelOptions = new ParallelOptions
 };
 ```
 
-## Step 6: Save the Compressed Archive
+## Βήμα 6: Αποθήκευση του συμπιεσμένου αρχείου
 
 Τέλος, γράψτε το αρχείο στο δίσκο με τις επιθυμητές επιλογές, συμπεριλαμβανομένου του κωδικοποίησης, ενός σχολίου και των ρυθμίσεων παράλληλης επεξεργασίας που ορίσατε προηγουμένως.
 
@@ -171,42 +127,42 @@ archive.Save(zipFile,
     });
 ```
 
-> **Pro tip:** Αν συμπιέζετε πολύ μεγάλα αρχεία, σκεφτείτε να ορίσετε το `ParallelOptions.MaxDegreeOfParallelism` σε τιμή μικρότερη από τον αριθμό των λογικών επεξεργαστών. Αυτό βοηθά το διακομιστή σας να παραμείνει ανταποκριτικό υπό φορτίο.
+> **Pro tip:** Αν συμπιέζετε πολύ μεγάλα αρχεία, σκεφτείτε να ορίσετε το `ParallelOptions.MaxDegreeOfParallelism` σε τιμή μικρότερη από τον αριθμό των λογικών επεξεργαστών. Αυτό βοηθά τον κριτικό σας να παραμείνει ανταποκρινόμενο υπό φορτίο.
 
-### Common Use Cases
+### Συνήθεις περιπτώσεις χρήσης
 
-- **Batch reporting:** Δημιουργία πακέτου zip με καθημερινές αναφορές CSV για downstream συστήματα.  
-- **Document archiving:** Αποθήκευση μεγάλων συλλογών PDF, εικόνων ή logs σε ένα ενιαίο αρχείο για backup.  
-- **Data export APIs:** Επιστροφή αρχείου zip που περιέχει πολλαπλά αρχεία δεδομένων σε έναν πελάτη μέσω μιας HTTP απόκρισης.
+- **Batch reporting:** Δημιουργία πακέτου zip με καθημερινές αναφορές CSV για downstream συστήματα.
+- **Αρχειοθέτηση εγγράφων:** Αποθήκευση μεγάλων συλλογών PDF, εικόνων ή αρχεία καταγραφής σε ένα ενιαίο αρχείο για backup.
+- **API εξαγωγής δεδομένων:** Επιστροφή αρχείου zip που περιέχει πολλαπλά αρχεία δεδομένων σε έναν πελάτη μέσω μιας απόκρισης HTTP.
 
-## Common Issues & Tips
+## Κοινά Θέματα & Συμβουλές
 
-- **Memory pressure on huge files:** Αντί να φορτώνετε ολόκληρο το αρχείο στη μνήμη, κάντε streaming του αρχείου σε τμήματα ή χρησιμοποιήστε τη λειτουργία `ParallelCompressInMemory` επιλεκτικά.  
-- **Thread safety:** Το API του Aspose.Zip είναι thread‑safe για παράλληλη λειτουργία, αλλά αποφύγετε την τροποποίηση του ίδιου `FileStream` από εξωτερικές πηγές ενώ η συμπίεση εκτελείται.  
-- **Performance tuning:** Πειραματιστείτε με το `ParallelOptions.MaxDegreeOfParallelism` αν χρειάζεται να περιορίσετε τη χρήση CPU σε κοινόχρηστους διακομιστές.  
+- **Πίεση μνήμης σε τεράστια αρχεία:** Αντί να φορτώσετε ολόκληρο το αρχείο στη μνήμη, κάντε streaming του αρχείου σε τμήματα ή χρησιμοποιήστε τη λειτουργία `ParallelCompressInMemory` επιλεκτικά.
+- **Thread security:** Το API του Aspose.Zip είναι thread-safe για παράλληλη λειτουργία, αλλά αποφύγετε την τροποποίηση του ίδιου `FileStream` από εξωτερικές πηγές ενώ η συμπίεση εκτελείται.
+- **Performance tuning:** Πειραματιστείτε με το `ParallelOptions.MaxDegreeOfParallelism` αν χρειάζεται να περιορίσετε τη χρήση CPU σε κοινόχρηστους διακομιστές.
 
-## Frequently Asked Questions
+## Συχνές Ερωτήσεις
 
-**Q: Can I use Aspose.Zip for .NET together with other compression libraries?**  
-A: Ναι, το Aspose.Zip μπορεί να συνυπάρξει με άλλες βιβλιοθήκες .NET· απλώς κρατήστε τα namespaces τους ξεχωριστά.
+**Ε: Μπορώ να χρησιμοποιήσω το Aspose.Zip για .NET μαζί με άλλες βιβλιοθήκες συμπίεσης;**
+A: Ναι, το Aspose.Zip μπορεί να συνυπάρξει με άλλες βιβλιοθήκες .NET· απλώς κρατήστε τα namespace τους ξεχωριστά.
 
-**Q: Is a temporary license available for testing purposes?**  
-A: Ναι, μπορείτε να αποκτήσετε προσωρινή άδεια για δοκιμές από **[here](https://purchase.aspose.com/temporary-license/)**.
+**Ε: Είναι διαθέσιμη μια προσωρινή άδεια για σκοπούς δοκιμής;**
+A: Ναι, μπορείτε να αποκτήσετε προσωρινή άδεια για δοκιμές από **[εδώ](https://purchase.aspose.com/temporary-license/)**.
 
-**Q: Where can I ask for help if I run into problems?**  
+**Ε: Πού μπορώ να ζητήσω βοήθεια αν αντιμετωπίσω προβλήματα;**
 A: Επισκεφθείτε το **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)** για υποστήριξη κοινότητας και συζητήσεις.
 
-**Q: Where can I find more code examples and detailed API docs?**  
+**Ε: Πού μπορώ να βρω περισσότερα παραδείγματα κώδικα και λεπτομερή έγγραφα API;**
 A: Εξερευνήστε την **[Aspose.Zip documentation](https://reference.aspose.com/zip/net/)** για ολοκληρωμένα παραδείγματα.
 
-**Q: How do I purchase a full license for Aspose.Zip?**  
-A: Μπορείτε να αγοράσετε το Aspose.Zip for .NET **[here](https://purchase.aspose.com/buy)**.
+**Ε: Πώς μπορώ να αγοράσω μια πλήρη άδεια χρήσης για το Aspose.Zip;**
+Α: Μπορείτε να αγοράσετε το Aspose.Zip για .NET **[εδώ](https://purchase.aspose.com/buy)**.
 
 ---
 
-**Last Updated:** 2026-02-15  
-**Tested With:** Aspose.Zip 24.11 for .NET  
-**Author:** Aspose  
+**Τελευταία ενημέρωση: ** 15-02-2026
+**Δοκιμασμένο με: ** Aspose.Zip 24.11 για .NET
+**Συγγραφέας:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

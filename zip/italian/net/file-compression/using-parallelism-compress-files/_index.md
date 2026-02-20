@@ -10,34 +10,6 @@ url: /it/net/file-compression/using-parallelism-compress-files/
 weight: 17
 ---
 
-Pro tip:** ... translate.
-
-### Common Use Cases
-
-Translate bullet points.
-
-## Common Issues & Tips
-
-Translate bullet points.
-
-## Frequently Asked Questions
-
-Translate Q&A, keep links unchanged.
-
-**Last Updated:** keep date.
-
-**Tested With:** keep.
-
-**Author:** keep.
-
-Close shortcodes.
-
-Add backtop button.
-
-Make sure not to translate URLs.
-
-Now produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

@@ -10,21 +10,7 @@ url: /tr/net/file-compression/modifying-zip-files/
 weight: 15
 ---
 
--15  
-**Test Edilen Sürüm:** Aspose.Zip 24.12 for .NET  
-**Yazar:** Aspose  
-
-Then closing shortcodes.
-
-Make sure to keep shortcodes exactly.
-
-Now produce final content with all translations.
-
-Check for any missed text: At top after shortcodes there is no other text.
-
-Make sure to keep blank lines as appropriate.
-
-Now craft final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

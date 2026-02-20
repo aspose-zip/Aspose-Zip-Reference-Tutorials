@@ -8,16 +8,6 @@ url: /ja/net/file-compression/modifying-zip-files/
 weight: 15
 ---
 
- with Japanese.
-
-Make sure to keep code block placeholders unchanged.
-
-Also tables need translation of headers and cells, but keep code etc.
-
-Translate table content but keep code snippets unchanged.
-
-Let's craft.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

@@ -16,35 +16,35 @@ weight: 17
 
 # zip beberapa file c# dengan Aspose.Zip Parallel Compression
 
-## Introduction
+## Perkenalan
 
-Jika Anda perlu **zip beberapa file c#** dengan cepat dan efisien, memanfaatkan pemrosesan paralel adalah cara yang tepat. Pada aplikasi .NET modern, membuat arsip zip besar dapat menjadi bottleneck—terutama ketika menangani puluhan atau ratusan file. Aspose.Zip untuk .NET menghilangkan masalah tersebut dengan menawarkan **parallel zip compression** bawaan yang menyebarkan pekerjaan ke semua core CPU yang tersedia. Pada tutorial ini kami akan membahas seluruh proses: mulai dari menyiapkan lingkungan hingga menyimpan arsip zip dengan paralelisme diaktifkan.
+Jika Anda perlu **zip beberapa file c#** dengan cepat dan efisien, memanfaatkan pemrosesan paralel adalah cara yang tepat. Pada aplikasi .NET modern, membuat arsip zip besar dapat menjadi hambatan—terutama ketika menangani puluhan atau ratusan file. Aspose.Zip untuk .NET menghilangkan masalah tersebut dengan menawarkan **parallel zip compression** bawaan yang menyebarkan pekerjaan ke semua core CPU yang tersedia. Pada tutorial ini kami akan membahas seluruh proses: mulai dari menyiapkan lingkungan hingga menyimpan arsip zip dengan paralelisme diaktifkan.
 
-## Quick Answers
-- **What is parallel zip compression?** Itu mengompres beberapa file sekaligus, menggunakan banyak thread untuk memotong waktu pemrosesan keseluruhan.  
-- **Which .NET library supports it?** Aspose.Zip untuk .NET menyediakan API sederhana untuk kompresi paralel.  
-- **Do I need a license for production?** Ya—lisensi penuh diperlukan; lisensi sementara tersedia untuk pengujian.  
-- **Can I add files to zip on the fly?** Tentu—gunakan `Archive.CreateEntry` untuk setiap file yang ingin Anda sertakan.  
-- **Is it compatible with .NET 6/7?** Ya, API ini bekerja pada semua runtime .NET modern.
+## Jawaban Cepat
+- **Apa itu kompresi zip paralel?** Itu mengompres beberapa file sekaligus, menggunakan banyak thread untuk memotong waktu pengiriman secara keseluruhan.
+- **Perpustakaan .NET mana yang mendukungnya?** Aspose.Zip untuk .NET menyediakan API sederhana untuk kompresi paralel.
+- **Apakah saya memerlukan lisensi untuk produksi?** Ya—lisensi penuh diperlukan; lisensi tersedia sementara untuk pengujian.
+- **Dapatkah saya menambahkan file ke zip dengan cepat?** Tentu—gunakan `Archive.CreateEntry` untuk setiap file yang ingin Anda sertakan.
+- **Apakah kompatibel dengan .NET 6/7?** Ya, API ini bekerja pada semua runtime .NET modern.
 
-## What is zip multiple files c#?
-`zip multiple files c#` mengacu pada praktik membuat satu arsip ZIP yang berisi banyak file individual, menggunakan kode C#. Ketika Anda menggabungkannya dengan **parallel zip compression**, perpustakaan memproses setiap file pada thread terpisah, secara dramatis mengurangi waktu yang dibutuhkan untuk menghasilkan arsip akhir.
+## Apa itu zip banyak file c#?
+`zip multiple files c#` mengacu pada praktik membuat satu arsip ZIP yang berisi banyak file individual, menggunakan kode C#. Ketika Anda menggabungkannya dengan **kompresi zip paralel**, perpustakaan memproses setiap file pada thread terpisah, secara dramatis mengurangi waktu yang dibutuhkan untuk menghasilkan arsip akhir.
 
-## Why use Aspose.Zip for parallel compression?
-- **Speed:** Memanfaatkan sepenuhnya CPU multi‑core, seringkali memberikan kompresi 2‑3× lebih cepat dibandingkan pendekatan sekvensial.  
-- **Scalability:** Menangani batch file besar tanpa peningkatan waktu pemrosesan yang linear.  
-- **Simplicity:** API tingkat tinggi mengabstraksi threading, sehingga Anda dapat fokus pada logika bisnis.  
-- **Flexibility:** Berfungsi dengan versi .NET apa pun (Framework, Core, .NET 5/6/7) dan terintegrasi bersih dengan proyek yang ada.
+## Mengapa menggunakan Aspose.Zip untuk kompresi paralel?
+- **Kecepatan:** Memanfaatkan sepenuhnya CPU multi‑core, seringkali memberikan kompresi 2‑3× lebih cepat dibandingkan pendekatan sekvensial.
+- **Skalabilitas:** menggabungkan file batch besar tanpa peningkatan waktu pemrosesan yang linier.
+- **Simplicity:** API tingkat tinggi mengabstraksi threading, sehingga Anda dapat fokus pada logika bisnis.
+- **Fleksibilitas:** Berfungsi dengan versi .NET apa pun (Framework, Core, .NET5/6/7) dan terintegrasi bersih dengan proyek yang ada.
 
-## Prerequisites
+## Prasyarat
 
 Sebelum kita mulai, pastikan Anda memiliki:
 
-- Pengetahuan dasar tentang C# dan pengembangan .NET.  
-- Aspose.Zip untuk .NET terinstal. Anda dapat mengunduhnya **[di sini](https://releases.aspose.com/zip/net/)**.  
-- Lisensi sementara atau penuh (lisensi sementara sudah cukup untuk tutorial ini).  
+- Pengetahuan dasar tentang C# dan pengembangan .NET.
+- Aspose.Zip untuk terinstal .NET. Anda dapat mengunduhnya **[di sini](https://releases.aspose.com/zip/net/)**.
+- Lisensi sementara atau penuh (lisensi sementara sudah cukup untuk tutorial ini).
 
-## Import Namespaces
+## Impor Namespace
 
 Pertama, bawa namespace yang diperlukan ke dalam file C# Anda agar compiler mengetahui di mana menemukan kelas yang akan Anda gunakan.
 
@@ -55,7 +55,7 @@ using System.Text;
 using Aspose.Zip.Saving;
 ```
 
-## Step 1: Set Up Your Document Directory
+## Langkah 1: Siapkan Direktori Dokumen Anda
 
 Tentukan folder yang berisi file yang ingin Anda kompres. Jalur ini disimpan dalam variabel `dataDir`.
 
@@ -63,7 +63,7 @@ Tentukan folder yang berisi file yang ingin Anda kompres. Jalur ini disimpan dal
 string dataDir = "Your Document Directory";
 ```
 
-## Step 2: Initialize the Compression Process
+## Langkah 2: Inisialisasi Proses Kompresi
 
 Buka file ZIP baru untuk menulis. Pernyataan `using` memastikan aliran file dibuang dengan benar setelah operasi selesai.
 
@@ -74,9 +74,9 @@ using (FileStream zipFile = File.Open(dataDir + "UsingParallelismToCompressFiles
 }
 ```
 
-## Step 3: Read and Compress Files in Parallel
+## Langkah 3: Baca dan Kompres File Secara Paralel
 
-Buka setiap file sumber yang ingin Anda tambahkan ke arsip. Pada contoh ini kami bekerja dengan dua teks klasik, tetapi Anda dapat **add files to zip** untuk sejumlah dokumen berapa pun.
+Buka setiap file sumber yang ingin Anda tambahkan ke arsip. Pada contoh ini kami bekerja dengan dua teks klasik, tetapi Anda dapat **menambahkan file ke zip** untuk sejumlah dokumen berapa pun.
 
 ```csharp
 using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
@@ -88,9 +88,9 @@ using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, Fi
 }
 ```
 
-## Step 4: Create Archive Entries
+## Langkah 4: Buat Entri Arsip
 
-Buat instance `Archive` dan tambahkan setiap file sebagai entri terpisah. Di sinilah langkah **create zip archive c#** terjadi.
+Buat instance `Archive` dan tambahkan setiap file sebagai entri terpisah. Di langkahnya **buat arsip zip c#** terjadi.
 
 ```csharp
 using (var archive = new Archive())
@@ -101,9 +101,9 @@ using (var archive = new Archive())
 }
 ```
 
-## Step 5: Define Parallelism Criterion
+## Langkah 5: Tentukan Kriteria Paralelisme
 
-Konfigurasikan kompresi agar berjalan paralel dengan mengatur `ParallelOptions`. Flag `ParallelCompressInMemory` memberi tahu Aspose.Zip untuk selalu menggunakan pemrosesan paralel.
+Konfigurasikan kompresi agar berjalan paralel dengan pengaturan `ParallelOptions`. Tandai `ParallelCompressInMemory` memberi tahu Aspose.Zip untuk selalu menggunakan pengiriman paralel.
 
 ```csharp
 var parallelOptions = new ParallelOptions
@@ -112,9 +112,9 @@ var parallelOptions = new ParallelOptions
 };
 ```
 
-## Step 6: Save the Compressed Archive
+## Langkah 6: Simpan Arsip Terkompresi
 
-Akhirnya, tulis arsip ke disk dengan opsi yang diinginkan, termasuk encoding, komentar, dan pengaturan paralel yang telah didefinisikan sebelumnya.
+Akhirnya, tulis arsip ke disk dengan opsi yang diinginkan, termasuk pengkodean, komentar, dan pengaturan paralel yang telah ditentukan sebelumnya.
 
 ```csharp
 archive.Save(zipFile,
@@ -126,42 +126,42 @@ archive.Save(zipFile,
     });
 ```
 
-> **Pro tip:** Jika Anda mengompres file yang sangat besar, pertimbangkan untuk mengatur `ParallelOptions.MaxDegreeOfParallelism` ke nilai yang lebih rendah daripada jumlah prosesor logis. Ini membantu menjaga server Anda tetap responsif saat beban tinggi.
+> **Tips pro:** Jika Anda mengompres file yang sangat besar, bersiaplah untuk mengatur `ParallelOptions.MaxDegreeOfParallelism` ke nilai yang lebih rendah daripada jumlah logika prosesor. Ini membantu menjaga server Anda tetap responsif saat beban tinggi.
 
-### Common Use Cases
+### Kasus Penggunaan Umum
 
-- **Batch reporting:** Hasilkan bundel zip laporan CSV harian untuk sistem downstream.  
-- **Document archiving:** Simpan koleksi besar PDF, gambar, atau log dalam satu arsip untuk backup.  
-- **Data export APIs:** Kembalikan file zip yang berisi beberapa file data ke klien dalam satu respons HTTP.
+- **Pelaporan batch:** Hasilkan bundel zip laporan CSV harian untuk sistem downstream.
+- **Pengarsipan dokumen:** Menyimpan koleksi besar PDF, gambar, atau log dalam satu arsip untuk cadangan.
+- **API ekspor data:** Kembalikan file zip yang berisi beberapa file data ke klien dalam satu respons HTTP.
 
-## Common Issues & Tips
+## Masalah & Tip Umum
 
-- **Memory pressure on huge files:** Alih-alih memuat seluruh file ke memori, alirkan file dalam potongan atau gunakan mode `ParallelCompressInMemory` secara selektif.  
-- **Thread safety:** API Aspose.Zip aman untuk thread pada mode paralel, tetapi hindari memodifikasi `FileStream` yang sama dari luar perpustakaan saat kompresi sedang berjalan.  
-- **Performance tuning:** Bereksperimenlah dengan `ParallelOptions.MaxDegreeOfParallelism` jika Anda perlu membatasi penggunaan CPU pada server bersama.  
+- **Tekanan memori pada file besar:** Alih-alih memuat seluruh file ke memori, alirkan file dalam potongan atau gunakan mode `ParallelCompressInMemory` secara akurasi.
+- **Keamanan thread:** API Aspose.Zip aman untuk thread pada mode paralel, tetapi hindari memodifikasi `FileStream` yang sama dari luar perpustakaan saat kompresi sedang berjalan.
+- **Penyetelan performa:** Bereksperimenlah dengan `ParallelOptions.MaxDegreeOfParallelism` jika Anda perlu membatasi penggunaan CPU pada server bersama.
 
-## Frequently Asked Questions
+## Pertanyaan yang Sering Diajukan
 
-**Q: Can I use Aspose.Zip for .NET together with other compression libraries?**  
-A: Ya, Aspose.Zip dapat berdampingan dengan perpustakaan .NET lainnya; cukup jaga namespace mereka tetap terpisah.
+**T: Dapatkah saya menggunakan Aspose.Zip untuk .NET bersama dengan pustaka kompresi lainnya?**
+A: Ya, Aspose.Zip dapat bergabung dengan perpustakaan .NET lainnya; cukup jaga namespace mereka tetap terpisah.
 
-**Q: Is a temporary license available for testing purposes?**  
+**T: Apakah lisensi sementara tersedia untuk tujuan pengujian?**
 A: Ya, Anda dapat memperoleh lisensi sementara untuk pengujian dari **[di sini](https://purchase.aspose.com/temporary-license/)**.
 
-**Q: Where can I ask for help if I run into problems?**  
+**Q: Di mana saya bisa meminta bantuan jika saya mengalami masalah?**
 A: Kunjungi **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)** untuk dukungan komunitas dan diskusi.
 
-**Q: Where can I find more code examples and detailed API docs?**  
-A: Jelajahi **[Aspose.Zip documentation](https://reference.aspose.com/zip/net/)** untuk contoh lengkap.
+**T: Di mana saya dapat menemukan lebih banyak contoh kode dan dokumen API terperinci?**
+A: Menjelajah **[Dokumentasi Aspose.Zip](https://reference.aspose.com/zip/net/)** untuk contoh lengkap.
 
-**Q: How do I purchase a full license for Aspose.Zip?**  
+**T: Bagaimana cara membeli lisensi penuh untuk Aspose.Zip?**
 A: Anda dapat membeli Aspose.Zip untuk .NET **[di sini](https://purchase.aspose.com/buy)**.
 
 ---
 
-**Last Updated:** 2026-02-15  
-**Tested With:** Aspose.Zip 24.11 untuk .NET  
-**Author:** Aspose  
+**Terakhir Diperbarui:** 15-02-2026
+**Diuji Dengan:** Aspose.Zip 24.11 untuk .NET
+**Penulis:** Beranggapan  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -10,20 +10,6 @@ url: /ar/net/file-compression/modifying-zip-files/
 weight: 15
 ---
 
-Then heading.
-
-Proceed.
-
-Will translate.
-
-Also translate table headings: Issue, Why it Happens, Fix -> Arabic: "المشكلة", "سبب حدوثها", "الحل"
-
-But ensure keep pipe separators.
-
-Also translate FAQ.
-
-Let's produce final output.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

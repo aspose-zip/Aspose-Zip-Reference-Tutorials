@@ -9,13 +9,7 @@ url: /th/net/file-compression/modifying-zip-files/
 weight: 15
 ---
 
-Then closing shortcodes.
-
-Finally backtop button shortcode unchanged.
-
-Make sure to keep all markdown formatting.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

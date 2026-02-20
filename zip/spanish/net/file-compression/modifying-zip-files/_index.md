@@ -10,9 +10,7 @@ url: /es/net/file-compression/modifying-zip-files/
 weight: 15
 ---
 
- block placeholders unchanged.
-
-Now produce final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

@@ -9,29 +9,7 @@ url: /sv/net/file-compression/modifying-zip-files/
 weight: 15
 ---
 
-:
-
-"---" keep.
-
-**Last Updated:** 2026-02-15 -> "Senast uppdaterad:" same format.
-
-**Tested With:** Aspose.Zip 24.12 for .NET -> "Testad med:".
-
-**Author:** Aspose -> "Författare:".
-
-Then closing shortcodes.
-
-Also there is a backtop button shortcode after main-wrap-class close.
-
-We must preserve all shortcodes exactly.
-
-Now produce final content with translations.
-
-Check for any leftover English words that need translation: "Create zip archive C#" etc. Already translated.
-
-Make sure to keep code block placeholders unchanged.
-
-Now craft final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

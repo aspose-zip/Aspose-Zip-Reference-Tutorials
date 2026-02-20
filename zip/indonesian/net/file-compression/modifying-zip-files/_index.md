@@ -10,7 +10,7 @@ url: /id/net/file-compression/modifying-zip-files/
 weight: 15
 ---
 
-.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

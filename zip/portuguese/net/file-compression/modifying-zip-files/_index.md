@@ -10,19 +10,7 @@ url: /pt/net/file-compression/modifying-zip-files/
 weight: 15
 ---
 
-- "Last Updated:" -> "Última atualização:"
-
-- "Tested With:" -> "Testado com:"
-
-- "Author:" -> "Autor:"
-
-Make sure to keep links unchanged.
-
-Also keep code block placeholders unchanged.
-
-Also keep shortcodes at top and bottom.
-
-Let's produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

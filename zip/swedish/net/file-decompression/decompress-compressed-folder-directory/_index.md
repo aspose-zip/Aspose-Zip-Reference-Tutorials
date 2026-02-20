@@ -9,10 +9,6 @@ url: /sv/net/file-decompression/decompress-compressed-folder-directory/
 weight: 14
 ---
 
-.
-
-Now produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

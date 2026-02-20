@@ -10,11 +10,7 @@ url: /fr/net/file-decompression/decompress-compressed-folder-directory/
 weight: 14
 ---
 
- shortcode.
-
-Make sure to keep all shortcodes exactly.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

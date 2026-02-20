@@ -10,9 +10,7 @@ url: /ru/net/file-compression/modifying-zip-files/
 weight: 15
 ---
 
- shortcodes unchanged.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

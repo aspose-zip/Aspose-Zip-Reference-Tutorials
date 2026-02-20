@@ -10,29 +10,7 @@ url: /cs/net/archive-extraction-and-formats/compress-to-tar-z/
 weight: 15
 ---
 
-here](https://purchase.aspose.com/temporary-license/).
-
-Translate.
-
-Next "## Conclusion" -> "## Závěr"
-
-Paragraph translate.
-
-Then horizontal rule "---" keep.
-
-Then "**Last Updated:** 2026-02-15" translate label.
-
-"**Tested With:** Aspose.Zip for .NET 24.11" translate label.
-
-"**Author:** Aspose" translate label.
-
-Then closing shortcodes.
-
-Finally backtop button shortcode unchanged.
-
-Make sure to keep markdown formatting.
-
-Now produce final output.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

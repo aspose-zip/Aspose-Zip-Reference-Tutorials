@@ -9,19 +9,7 @@ url: /ar/net/file-compression/using-parallelism-compress-files/
 weight: 17
 ---
 
-Let's produce Arabic translation.
-
-Be careful with bullet points: keep dash and space.
-
-Also keep > blockquote.
-
-Also keep code block placeholders as they are.
-
-Also keep shortcodes at end.
-
-Let's translate.
-
-I'll produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
