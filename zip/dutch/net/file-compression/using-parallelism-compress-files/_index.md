@@ -1,10 +1,11 @@
 ---
-date: 2025-12-10
-description: Leer parallelle bestandscompressie in .NET met Aspose.Zip. Comprimeer
-  meerdere bestanden efficiënt met onze stap‑voor‑stapgids.
-linktitle: Using Parallelism to Compress Files
-second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Parallelle bestandscompressie met Aspose.Zip voor .NET
+date: 2026-02-15
+description: Leer hoe je meerdere bestanden zippt in C# met Aspose.Zip voor .NET met
+  parallelle compressie. Stapsgewijze handleiding, codevoorbeelden en tips voor snelle,
+  schaalbare archieven.
+linktitle: Using Parallelism to Zip Multiple Files in C#
+second_title: Aspose.Zip .NET API – zip multiple files c# with Parallel Processing
+title: Hoe meerdere bestanden zippen in C# met Aspose.Zip Parallel Compression
 url: /nl/net/file-compression/using-parallelism-compress-files/
 weight: 17
 ---
@@ -13,35 +14,35 @@ weight: 17
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Parallelle bestandscompressie met Aspose.Zip voor .NET
+# zip meerdere bestanden c# met Aspose.Zip Parallel Compression
 
-## Introductie
+## Inleiding
 
-In de wereld van .NET‑ontwikkeling is **parallelle bestandscompressie** cruciaal voor het optimaliseren van opslagruimte en het versnellen van datatransmissie. Aspose.Zip voor .NET biedt een krachtige oplossing, en een van de opvallende kenmerken is de mogelijkheid om parallelisme te benutten voor bestandscompressie. In deze tutorial laten we je stap voor stap zien hoe je met Aspose.Zip voor .NET **meerdere bestanden** efficiënt kunt **comprimeren**.
+Als je **zip meerdere bestanden c#** snel en efficiënt wilt maken, is het benutten van parallelle verwerking de juiste aanpak. In moderne .NET‑toepassingen kan het aanmaken van grote zip‑archieven een knelpunt worden—vooral wanneer je te maken hebt met tientallen of honderden bestanden. Aspose.Zip voor .NET verwijdert dat probleem door ingebouwde **parallelle zip‑compressie** te bieden die het werk verdeelt over alle beschikbare CPU‑kernen. In deze tutorial lopen we het volledige proces door: van het opzetten van de omgeving tot het opslaan van een zip‑archief met ingeschakelde paralleliteit.
 
 ## Snelle antwoorden
-- **Wat is parallelle bestandscompressie?** Een techniek die meerdere bestanden gelijktijdig comprimeert, waarbij meerdere CPU‑kernen worden gebruikt om de totale verwerkingstijd te verkorten.  
-- **Welke bibliotheek ondersteunt dit in .NET?** Aspose.Zip voor .NET biedt ingebouwde opties voor parallelle compressie.  
-- **Heb ik een licentie nodig?** Een tijdelijke licentie is beschikbaar voor testdoeleinden; een volledige licentie is vereist voor productie.  
-- **Kan ik bestanden on‑the‑fly aan een zip toevoegen?** Ja—gebruik `Archive.CreateEntry` voor elk bestand dat je wilt opnemen.  
-- **Is het compatibel met .NET Core/5/6?** Absoluut, de API werkt op alle moderne .NET‑runtime‑omgevingen.
+- **Wat is parallelle zip‑compressie?** Het comprimeert meerdere bestanden tegelijk, met meerdere threads om de totale verwerkingstijd te verkorten.  
+- **Welke .NET‑bibliotheek ondersteunt dit?** Aspose.Zip voor .NET biedt een eenvoudige API voor parallelle compressie.  
+- **Heb ik een licentie nodig voor productie?** Ja—een volledige licentie is vereist; een tijdelijke licentie is beschikbaar voor testdoeleinden.  
+- **Kan ik bestanden on‑the‑fly aan een zip toevoegen?** Absoluut—gebruik `Archive.CreateEntry` voor elk bestand dat je wilt opnemen.  
+- **Is het compatibel met .NET 6/7?** Ja, de API werkt op alle moderne .NET‑runtime‑versies.
 
-## Wat is parallelle bestandscompressie?
-Parallelle bestandscompressie betekent dat de compressiewerkbelasting wordt verdeeld over meerdere threads of kernen, waardoor verschillende bestanden (of delen van een groot bestand) tegelijk kunnen worden gecomprimeerd. Deze aanpak verkort de tijd die nodig is om een **zip‑archief c#** te maken aanzienlijk ten opzichte van traditionele sequentiële compressie.
+## Wat is zip meerdere bestanden c#?
+`zip meerdere bestanden c#` verwijst naar het maken van één ZIP‑archief dat veel individuele bestanden bevat, met behulp van C#‑code. Wanneer je dit combineert met **parallelle zip‑compressie**, verwerkt de bibliotheek elk bestand in een aparte thread, waardoor de tijd die nodig is om het uiteindelijke archief te produceren drastisch wordt verkort.
 
 ## Waarom Aspose.Zip gebruiken voor parallelle compressie?
-- **Snelheid:** Benut volledig de multi‑core CPU’s.  
-- **Schaalbaarheid:** Verwerkt grote batches bestanden zonder een evenredige toename van de verwerkingstijd.  
-- **Eenvoud:** Hoog‑niveau API verbergt de complexiteit van threading.  
-- **Flexibiliteit:** Werkt met elke .NET‑versie en integreert soepel met bestaande codebases.
+- **Snelheid:** Benut volledig de multi‑core CPU’s, vaak 2‑3× snellere compressie dan sequentiële methoden.  
+- **Schaalbaarheid:** Verwerkt grote batches bestanden zonder een lineaire toename in verwerkingstijd.  
+- **Eenvoud:** Hoge‑niveau API abstraheert threading, zodat je je kunt concentreren op je bedrijfslogica.  
+- **Flexibiliteit:** Werkt met elke .NET‑versie (Framework, Core, .NET 5/6/7) en integreert moeiteloos in bestaande projecten.
 
-## Vereisten
+## Voorvereisten
 
 Voordat we beginnen, zorg dat je het volgende hebt:
 
 - Basiskennis van C# en .NET‑ontwikkeling.  
-- Aspose.Zip voor .NET‑bibliotheek geïnstalleerd. Je kunt deze **[hier](https://releases.aspose.com/zip/net/)** downloaden.  
-- Een begrip van standaard bestandscompressieconcepten.
+- Aspose.Zip voor .NET geïnstalleerd. Je kunt het **[hier](https://releases.aspose.com/zip/net/)** downloaden.  
+- Een tijdelijke of volledige licentie (de tijdelijke licentie is voldoende voor deze tutorial).  
 
 ## Namespaces importeren
 
@@ -75,7 +76,7 @@ using (FileStream zipFile = File.Open(dataDir + "UsingParallelismToCompressFiles
 
 ## Stap 3: Lees en comprimeer bestanden parallel
 
-Open elk bronbestand dat je aan het archief wilt toevoegen. In dit voorbeeld werken we met twee klassieke teksten, maar je kunt **bestanden aan zip toevoegen** voor elk aantal documenten.
+Open elk bronbestand dat je aan het archief wilt toevoegen. In dit voorbeeld werken we met twee klassieke teksten, maar je kunt **bestanden aan zip toevoegen** voor een willekeurig aantal documenten.
 
 ```csharp
 using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
@@ -89,7 +90,7 @@ using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, Fi
 
 ## Stap 4: Maak archief‑entries aan
 
-Maak een `Archive`‑instantie en voeg elk bestand als een aparte entry toe. Hier vindt de **create zip archive c#** stap plaats.
+Maak een `Archive`‑instantie en voeg elk bestand als een aparte entry toe. Dit is het moment waarop de **create zip archive c#** stap plaatsvindt.
 
 ```csharp
 using (var archive = new Archive())
@@ -102,7 +103,7 @@ using (var archive = new Archive())
 
 ## Stap 5: Definieer het parallelisme‑criterium
 
-Configureer de compressie om parallel te verlopen door `ParallelOptions` in te stellen. De vlag `ParallelCompressInMemory` vertelt Aspose.Zip om altijd parallel te verwerken.
+Configureer de compressie om parallel te draaien door `ParallelOptions` in te stellen. De vlag `ParallelCompressInMemory` vertelt Aspose.Zip om altijd parallel te verwerken.
 
 ```csharp
 var parallelOptions = new ParallelOptions
@@ -125,39 +126,40 @@ archive.Save(zipFile,
     });
 ```
 
-Gefeliciteerd! Je hebt zojuist **parallelle bestandscompressie** uitgevoerd met Aspose.Zip voor .NET, en **meerdere bestanden** efficiënt in één archief gecomprimeerd.
+> **Pro tip:** Als je zeer grote bestanden comprimeert, overweeg dan `ParallelOptions.MaxDegreeOfParallelism` in te stellen op een waarde lager dan het aantal logische processoren. Dit helpt je server responsief te houden onder belasting.
+
+### Veelvoorkomende gebruiksscenario's
+
+- **Batchrapportage:** Genereer een zip‑bundel met dagelijkse CSV‑rapporten voor downstream‑systemen.  
+- **Documentarchivering:** Bewaar grote collecties PDF’s, afbeeldingen of logbestanden in één archief voor backup.  
+- **Data‑export‑API’s:** Retourneer een zip‑bestand met meerdere data‑bestanden aan een client in één HTTP‑respons.
 
 ## Veelvoorkomende problemen & tips
 
-- **Grote bestanden:** Als je geheugenproblemen ondervindt, overweeg dan om bestanden in stukken te comprimeren in plaats van het volledige bestand in het geheugen te laden.  
-- **Thread‑veiligheid:** De Aspose.Zip‑API is thread‑safe in de parallelle modus; vermijd het wijzigen van dezelfde stream vanuit meerdere threads buiten de bibliotheek.  
-- **Prestatie‑afstemming:** Experimenteer met `ParallelOptions.MaxDegreeOfParallelism` als je het CPU‑gebruik op gedeelde servers wilt beperken.  
+- **Geheugendruk bij enorme bestanden:** Laad niet het volledige bestand in het geheugen, stream het bestand in delen of gebruik de `ParallelCompressInMemory`‑modus selectief.  
+- **Thread‑veiligheid:** De Aspose.Zip‑API is thread‑veilig in parallelle modus, maar vermijd het wijzigen van dezelfde `FileStream` buiten de bibliotheek terwijl compressie plaatsvindt.  
+- **Prestatie‑afstemming:** Experimenteer met `ParallelOptions.MaxDegreeOfParallelism` als je CPU‑gebruik op gedeelde servers moet beperken.  
 
-## FAQ's
+## Veelgestelde vragen
 
-### Q1: Kan ik Aspose.Zip voor .NET gebruiken met andere .NET‑bibliotheken?
+**Q: Kan ik Aspose.Zip voor .NET samen gebruiken met andere compressiebibliotheken?**  
+A: Ja, Aspose.Zip kan naast andere .NET‑bibliotheken bestaan; houd hun namespaces gescheiden.
 
-A1: Ja, Aspose.Zip voor .NET is ontworpen om naadloos te integreren met andere .NET‑bibliotheken.
+**Q: Is er een tijdelijke licentie beschikbaar voor testdoeleinden?**  
+A: Ja, je kunt een tijdelijke licentie voor testen verkrijgen **[hier](https://purchase.aspose.com/temporary-license/)**.
 
-### Q2: Is er een tijdelijke licentie beschikbaar voor testdoeleinden?
+**Q: Waar kan ik hulp vragen als ik tegen problemen aanloop?**  
+A: Bezoek het **[Aspose.Zip‑forum](https://forum.aspose.com/c/zip/37)** voor community‑ondersteuning en discussies.
 
-A2: Ja, je kunt een tijdelijke licentie voor testdoeleinden verkrijgen via **[hier](https://purchase.aspose.com/temporary-license/)**.
+**Q: Waar vind ik meer code‑voorbeelden en gedetailleerde API‑documentatie?**  
+A: Bekijk de **[Aspose.Zip‑documentatie](https://reference.aspose.com/zip/net/)** voor uitgebreide voorbeelden.
 
-### Q3: Waar vind ik extra ondersteuning of kan ik vragen stellen?
-
-A3: Bezoek het **[Aspose.Zip‑forum](https://forum.aspose.com/c/zip/37)** voor community‑ondersteuning en discussies.
-
-### Q4: Zijn er voorbeelden of documentatie beschikbaar?
-
-A4: Bekijk de **[Aspose.Zip‑documentatie](https://reference.aspose.com/zip/net/)** voor uitgebreide voorbeelden en documentatie.
-
-### Q5: Hoe kan ik Aspose.Zip voor .NET aanschaffen?
-
-A5: Je kunt Aspose.Zip voor .NET **[hier](https://purchase.aspose.com/buy)** aanschaffen.
+**Q: Hoe koop ik een volledige licentie voor Aspose.Zip?**  
+A: Je kunt Aspose.Zip voor .NET **[hier](https://purchase.aspose.com/buy)** aanschaffen.
 
 ---
 
-**Laatst bijgewerkt:** 2025-12-10  
+**Laatst bijgewerkt:** 2026-02-15  
 **Getest met:** Aspose.Zip 24.11 voor .NET  
 **Auteur:** Aspose  
 

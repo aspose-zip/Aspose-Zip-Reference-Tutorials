@@ -1,11 +1,10 @@
 ---
-date: 2025-12-10
-description: Odkryj potencjał Aspose.Zip dla .NET! Dowiedz się, jak bez wysiłku dekompresować
-  foldery dzięki temu przewodnikowi krok po kroku. Zanurz się w świecie płynnej kompresji
-  i dekompresji.
-linktitle: Decompress Compressed Folder to Directory
+date: 2026-02-15
+description: Dowiedz się, jak wyodrębnić plik zip do folderu przy użyciu Aspose.Zip
+  dla .NET, w tym archiwa chronione hasłem i szyfrowane rozpakowywanie zip.
+linktitle: extract zip to folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Rozpakuj skompresowany folder do katalogu w Aspose.Zip dla .NET
+title: Jak wyodrębnić zip do folderu przy użyciu Aspose.Zip dla .NET
 url: /pl/net/file-decompression/decompress-compressed-folder-directory/
 weight: 14
 ---
@@ -14,100 +13,104 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Jak wyodrębnić pliki ZIP przy użyciu Aspose.Zip dla .NET
+# Jak wyodrębnić zip do folderu przy użyciu Aspose.Zip dla .NET
 
 ## Wprowadzenie
 
-Witamy w świecie Aspose.Zip dla .NET – solidnej biblioteki, która umożliwia programistom łatwe operowanie na spakowanych folderach. Jeśli zastanawiasz się **jak wyodrębnić zip** w .NET, ten przewodnik ma wszystkie odpowiedzi. W tym tutorialu przyjrzymy się procesowi dekompresji spakowanego folderu do katalogu przy użyciu Aspose.Zip dla .NET. Przygotuj się, przeprowadzimy Cię krok po kroku, wyjaśniając wszystkie niuanse tego potężnego narzędzia.
+Jeśli potrzebujesz **extract zip to folder** szybko i niezawodnie w aplikacji .NET, Aspose.Zip dla .NET zapewnia czyste, wieloplatformowe API, które obsługuje zarówno zwykłe, jak i zaszyfrowane archiwa. W tym samouczku przeprowadzimy Cię przez wszystko, co jest potrzebne — od konfiguracji biblioteki po wyodrębnianie pliku ZIP chronionego hasłem — abyś mógł skupić się na logice biznesowej, a nie na niskopoziomowej obsłudze archiwów.
 
 ## Szybkie odpowiedzi
-- **Jaki jest główny cel Aspose.Zip?** Tworzenie, odczytywanie i wyodrębnianie archiwów ZIP w aplikacjach .NET.  
-- **Jak wyodrębnić zip** z hasłem? Użyj `ArchiveLoadOptions` z właściwością `DecryptionPassword`.  
-- **Czy mogę rozpakować zaszyfrowane archiwum** bez hasła? Nie – musisz podać prawidłowe hasło.  
-- **Jakie wersje .NET są obsługiwane?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
-- **Czy wymagana jest licencja do użytku produkcyjnego?** Tak, do komercyjnego użycia potrzebna jest ważna licencja Aspose.Zip.
+- **Jaki jest główny cel Aspose.Zip?** Aby tworzyć, odczytywać i **extract zip to folder** w aplikacjach .NET.  
+- **Jak wyodrębnić zip z hasłem?** Przekaż hasło za pomocą `ArchiveLoadOptions.DecryptionPassword`.  
+- **Czy mogę rozpakować zaszyfrowane archiwum bez hasła?** Nie — Aspose.Zip wymaga prawidłowego hasła, aby otworzyć zaszyfrowane archiwa.  
+- **Jakie wersje .NET są obsługiwane?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **Czy wymagana jest licencja do produkcji?** Tak, ważna licencja Aspose.Zip jest potrzebna do użytku komercyjnego.
 
-## Co to jest **how to extract zip**?
-Wyodrębnianie pliku ZIP oznacza odczytanie skompresowanych danych i zapisanie oryginalnych plików w docelowym katalogu. Aspose.Zip ukrywa szczegóły niskiego poziomu, pozwalając skupić się na logice biznesowej, a nie na obsłudze archiwów.
+## Co to jest **extract zip to folder**?
 
-## Dlaczego warto używać Aspose.Zip do zadań **how to unzip folder**?
-- **Proste API** – minimalny kod potrzebny do otwierania, odszyfrowywania i wyodrębniania archiwów.  
-- **Obsługa zaszyfrowanych archiwów** – idealne do bezpiecznej wymiany danych.  
-- **Cross‑platform** – działa na Windows, Linux i macOS z .NET Core/.NET 5+.  
-- **Brak zewnętrznych zależności** – nie wymaga instalacji natywnych narzędzi zip.
+Rozpakowywanie pliku ZIP oznacza odczytanie skompresowanych danych i zapisanie oryginalnych plików w docelowym katalogu na dysku. Aspose.Zip ukrywa szczegóły niskiego poziomu, umożliwiając wywołanie jednej metody do wykonania całej operacji.
+
+## Dlaczego warto używać Aspose.Zip do zadań **how to unzip zip**?
+
+- **Straightforward API** – minimalny kod do otwierania, odszyfrowywania i wyodrębniania archiwów.  
+- **Supports encrypted archives** – idealne do bezpiecznej wymiany danych.  
+- **Cross‑platform** – działa na Windows, Linux i macOS z .NET Core/.NET 5+.  
+- **No external dependencies** – nie wymaga instalacji natywnych narzędzi zip.  
 
 ## Wymagania wstępne
 
-Zanim rozpoczniemy, upewnij się, że masz następujące elementy:
+Zanim zaczniemy, upewnij się, że masz:
 
-- Biblioteka Aspose.Zip dla .NET: pobierz i zainstaluj ją z [dokumentacji Aspose.Zip dla .NET](https://reference.aspose.com/zip/net/).
+- Aspose.Zip for .NET Library: Pobierz i zainstaluj bibliotekę z [Aspose.Zip for .NET documentation](https://reference.aspose.com/zip/net/).
+- Środowisko programistyczne .NET (Visual Studio, VS Code lub dowolne IDE, które preferujesz).
+- (Opcjonalnie) Plik ZIP chroniony hasłem, jeśli chcesz wypróbować **extract zip with password**.
 
 ## Importowanie przestrzeni nazw
 
-W swoim projekcie .NET zaimportuj niezbędne przestrzenie nazw, aby korzystać z funkcjonalności Aspose.Zip:
+W swoim projekcie .NET zaimportuj niezbędne przestrzenie nazw, aby wykorzystać funkcje Aspose.Zip:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-Teraz rozbijmy podany przykład na kilka kroków, aby lepiej go zrozumieć.
+Teraz przeanalizujemy proces wyodrębniania krok po kroku.
 
-## Jak **unzip folder** – przewodnik krok po kroku
+## Jak **extract zip to folder** – przewodnik krok po kroku
 
-### Krok 1: Otwieranie spakowanego folderu
+### Krok 1: Otwórz plik ZIP (lub zaszyfrowane archiwum)
 
 ```csharp
 using (FileStream zipFile = File.Open(".\\all_corpus_encrypted.zip", FileMode.Open))
 ```
 
-Rozpocznij od otwarcia spakowanego folderu przy użyciu `FileStream`. Dostosuj ścieżkę pliku do struktury swojego projektu.
+Otwieramy plik ZIP za pomocą `FileStream`. Dostosuj ścieżkę, aby wskazywała na Twoje własne archiwum. Jeśli archiwum nie jest zaszyfrowane, ten sam kod działa w typowym scenariuszu **decompress zip folder**.
 
-### Krok 2: Tworzenie instancji Archive (odszyfrowywanie ZIP)
+### Krok 2: Utwórz instancję `Archive` (podaj hasło w razie potrzeby)
 
 ```csharp
 new Archive(zipFile, new ArchiveLoadOptions() { DecryptionPassword = "p@s$" })
 ```
 
-Utwórz obiekt `Archive`, przekazując strumień `zipFile` oraz opcjonalne parametry ładowania, takie jak hasło odszyfrowujące. To kluczowy krok, gdy musisz **unzip encrypted archive**.
+Konstruktor `Archive` przyjmuje strumień oraz obiekt `ArchiveLoadOptions`. Podanie `DecryptionPassword` to sposób, w jaki **extract zip with password** oraz obsługujesz przypadki **unzip encrypted archive**.
 
-### Krok 3: Wyodrębnianie do katalogu
+### Krok 3: Wyodrębnij zawartość do folderu docelowego
 
 ```csharp
 .ExtractToDirectory(".\\all_corpus_decrypted");
 ```
 
-Na koniec użyj metody `ExtractToDirectory`, aby zdekompresować i wyodrębnić zawartość spakowanego folderu do wskazanego katalogu. To kończy proces **how to decompress zip**.
+Wywołanie `ExtractToDirectory` zapisuje każdy wpis w archiwum do określonego katalogu, kończąc operację **extract zip to folder**. Metoda automatycznie utworzy docelowy folder, jeśli nie istnieje.
 
-Powtarzaj te kroki dla kolejnych spakowanych folderów, zapewniając płynną integrację z Aspose.Zip dla .NET.
+> **Wskazówka:** Jeśli potrzebujesz wyodrębnić tylko podzbiór plików, użyj przeciążenia przyjmującego delegata filtru zamiast wyodrębniać wszystko.
 
 ## Typowe problemy i rozwiązywanie
 
-- **Nieprawidłowe hasło** – jeśli hasło odszyfrowujące jest błędne, Aspose.Zip zgłosi wyjątek uwierzytelniania. Sprawdź dokładnie ciąg hasła.  
-- **Ścieżka nie istnieje** – upewnij się, że docelowy katalog istnieje lub pozwól, aby `ExtractToDirectory` utworzył go automatycznie.  
-- **Duże archiwa** – przy bardzo dużych plikach ZIP rozważ wyodrębnianie w partiach lub użycie API strumieniowego, aby zmniejszyć obciążenie pamięci.
+- **Incorrect password** – Aspose.Zip zgłasza wyjątek uwierzytelniania. Sprawdź ponownie ciąg hasła lub pobierz go bezpiecznie ze źródła konfiguracji.  
+- **Target path not found** – Upewnij się, że ścieżka docelowego katalogu jest prawidłowa; `ExtractToDirectory` utworzy brakujące foldery, ale ścieżka nadrzędna musi być dostępna.  
+- **Large archives** – W przypadku bardzo dużych plików ZIP rozważ wyodrębnianie wpis po wpisie przy użyciu API strumieniowego, aby utrzymać niskie zużycie pamięci.  
 
 ## Najczęściej zadawane pytania
 
-**P: Czy Aspose.Zip dla .NET obsługuje różne formaty kompresji?**  
-O: Tak, Aspose.Zip dla .NET wspiera popularne formaty kompresji, takie jak ZIP, GZIP i inne.
+**Q: Czy Aspose.Zip obsługuje inne formaty kompresji, takie jak GZIP?**  
+A: Tak, Aspose.Zip dla .NET obsługuje ZIP, GZIP i kilka innych popularnych formatów.
 
-**P: Czy mogę używać Aspose.Zip dla .NET w projektach komercyjnych i niekomercyjnych?**  
-O: Oczywiście, Aspose.Zip dla .NET może być wykorzystywany zarówno w aplikacjach komercyjnych, jak i niekomercyjnych.
+**Q: Czy mogę używać Aspose.Zip zarówno w projektach komercyjnych, jak i niekomercyjnych?**  
+A: Oczywiście. Ważna licencja jest wymagana w produkcji, ale możesz używać darmowej wersji próbnej do oceny.
 
-**P: Czy dostępna jest darmowa wersja próbna Aspose.Zip dla .NET?**  
-O: Tak, możesz wypróbować funkcje w wersji trial, odwiedzając [tutaj](https://releases.aspose.com/).
+**Q: Jak uzyskać tymczasową licencję do testów?**  
+A: Tymczasową licencję możesz uzyskać [tutaj](https://purchase.aspose.com/temporary-license/) do celów testowych.
 
-**P: Jak mogę uzyskać wsparcie dla Aspose.Zip dla .NET?**  
-O: Skorzystaj ze społeczności Aspose.Zip na [forum wsparcia](https://forum.aspose.com/c/zip/37).
+**Q: Gdzie mogę pobrać darmową wersję próbną Aspose.Zip?**  
+A: Odwiedź stronę próbną Aspose.Zip [tutaj](https://releases.aspose.com/), aby pobrać najnowszą wersję.
 
-**P: Czy potrzebuję tymczasowej licencji do testowania Aspose.Zip dla .NET?**  
-O: Tak, tymczasową licencję możesz pobrać [tutaj](https://purchase.aspose.com/temporary-license/) na potrzeby testów.
+**Q: Gdzie mogę poprosić o pomoc, jeśli napotkam problemy?**  
+A: Forum społeczności Aspose.Zip to świetne miejsce, aby uzyskać pomoc: [forum wsparcia](https://forum.aspose.com/c/zip/37).
 
 ---
 
-**Ostatnia aktualizacja:** 2025-12-10  
-**Testowane z:** Aspose.Zip dla .NET (najnowsze wydanie)  
+**Ostatnia aktualizacja:** 2026-02-15  
+**Testowano z:** Aspose.Zip for .NET (najnowsze wydanie)  
 **Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}

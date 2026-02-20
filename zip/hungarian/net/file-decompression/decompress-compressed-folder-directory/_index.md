@@ -1,11 +1,11 @@
 ---
-date: 2025-12-10
-description: Fedezze fel az Aspose.Zip for .NET lehetőségeit! Ismerje meg, hogyan
-  lehet könnyedén kibontani mappákat ebben a lépésről‑lépésre útmutatóban. Merüljön
-  el a zökkenőmentes tömörítés és kibontás világában.
-linktitle: Decompress Compressed Folder to Directory
+date: 2026-02-15
+description: Ismerje meg, hogyan lehet zip fájlt mappába kicsomagolni az Aspose.Zip
+  for .NET használatával, beleértve a jelszóval védett archívumokat és a titkosított
+  zip kicsomagolást.
+linktitle: extract zip to folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Tömörített mappa kitömörítése könyvtárba az Aspose.Zip for .NET-ben
+title: Hogyan lehet kicsomagolni zip fájlt mappába az Aspose.Zip for .NET segítségével
 url: /hu/net/file-decompression/decompress-compressed-folder-directory/
 weight: 14
 ---
@@ -14,101 +14,105 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# ZIP fájlok kicsomagolása Aspose.Zip for .NET segítségével
+# Hogyan csomagoljunk ki zip-et mappába az Aspose.Zip for .NET segítségével
 
 ## Bevezetés
 
-Üdvözöljük az Aspose.Zip for .NET világában, egy robusztus könyvtárban, amely lehetővé teszi a fejlesztők számára a tömörített mappák könnyed kezelését. Ha azon gondolkodik, **how to extract zip** fájlok .NET‑ben, ez az útmutató mindent lefed. Ebben a tutorialban részletesen bemutatjuk, hogyan lehet egy tömörített mappát egy könyvtárba kicsomagolni az Aspose.Zip for .NET használatával. Készüljön fel, hogy minden lépést alaposan megismerjen, és eloszlatjuk a hatékony eszköz bonyolultságát.
+Ha **zip-et mappába szeretnél kicsomagolni** gyorsan és megbízhatóan egy .NET alkalmazásban, az Aspose.Zip for .NET tiszta, platform‑független API‑t biztosít, amely egyszerűen kezeli a normál és a titkosított archívumokat egyaránt. Ebben az útmutatóban mindent végigvezetünk – a könyvtár beállításától a jelszóval védett ZIP fájl kicsomagolásáig – hogy a vállalati logikára koncentrálhass, a alacsony szintű archívumkezelés helyett.
 
 ## Gyors válaszok
-- **Mi az Aspose.Zip elsődleges célja?** ZIP archívumok létrehozása, olvasása és kicsomagolása .NET alkalmazásokban.  
-- **Hogyan lehet zip-et jelszóval kicsomagolni?** Használja az `ArchiveLoadOptions`‑t a `DecryptionPassword` tulajággal.  
-- **Kicsomagolhatok titkosított archívumot jelszó nélkül?** Nem – meg kell adni a helyes jelszót.  
-- **Mely .NET verziók támogatottak?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
-- **Szükséges licenc a termeléshez?** Igen, a kereskedelmi felhasználáshoz érvényes Aspose.Zip licenc szükséges.
+- **Mi az Aspose.Zip elsődleges célja?** ZIP fájlok létrehozása, olvasása és **zip-et mappába kicsomagolása** .NET alkalmazásokban.  
+- **Hogyan csomagolok ki zip-et jelszóval?** A jelszót a `ArchiveLoadOptions.DecryptionPassword` segítségével adhatod meg.  
+- **Kicsomagolhatok titkosított archívumot jelszó nélkül?** Nem – az Aspose.Zip-nek a helyes jelszó szükséges a titkosított archívumok megnyitásához.  
+- **Mely .NET verziók támogatottak?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **Szükséges licenc a termeléshez?** Igen, kereskedelmi felhasználáshoz érvényes Aspose.Zip licenc szükséges.
 
-## Mi a **how to extract zip**?
-A ZIP fájl kicsomagolása azt jelenti, hogy a tömörített adatot beolvassuk, és az eredeti fájlokat egy célkönyvtárba írjuk. Az Aspose.Zip elrejti az alacsony szintű részleteket, így Ön a üzleti logikára koncentrálhat ahelyett, hogy az archívumkezeléssel foglalkozna.
+## Mi az a **extract zip to folder**?
 
-## Miért használjuk az Aspose.Zip-et **how to unzip folder** feladatokhoz?
-- **Egyszerű API** – minimális kóddal nyithat, dekódolhat és kicsomagolhat archívumokat.  
-- **Titkosított archívumok támogatása** – tökéletes a biztonságos adatcseréhez.  
-- **Keresztplatformos** – Windows, Linux és macOS rendszereken működik .NET Core/.NET 5+ környezetben.  
-- **Nincsenek külső függőségek** – nem szükséges natív zip segédprogramokat telepíteni.
+A ZIP fájl kicsomagolása azt jelenti, hogy a tömörített adatot beolvassuk, majd az eredeti fájlokat egy célkönyvtárba írjuk a lemezen. Az Aspose.Zip elrejti az alacsony szintű részleteket, lehetővé téve, hogy egyetlen metódussal hajtsd végre a teljes műveletet.
+
+## Miért használjuk az Aspose.Zip-et **how to unzip zip** feladatokhoz?
+
+- **Egyszerű API** – minimális kóddal nyithatsz, dekódolhatsz és csomagolhatsz ki archívumokat.  
+- **Titkosított archívumok támogatása** – tökéletes biztonságos adatcseréhez.  
+- **Platform‑független** – Windows, Linux és macOS rendszereken is működik .NET Core/.NET 5+ környezetben.  
+- **Nincs külső függőség** – nem kell natív zip segédprogramokat telepíteni.  
 
 ## Előfeltételek
 
-Mielőtt nekivágnánk, győződjön meg róla, hogy a következő előfeltételek rendelkezésre állnak:
+Mielőtt elkezdenénk, győződj meg róla, hogy rendelkezel a következőkkel:
 
-- Aspose.Zip for .NET Library: Töltse le és telepítse a könyvtárat a [Aspose.Zip for .NET dokumentáció](https://reference.aspose.com/zip/net/) oldaláról.
+- Aspose.Zip for .NET könyvtár: Töltsd le és telepítsd a [Aspose.Zip for .NET dokumentációjából](https://reference.aspose.com/zip/net/).
+- .NET fejlesztői környezet (Visual Studio, VS Code vagy bármely kedvenc IDE).
+- (Opcionális) Jelszóval védett ZIP fájl, ha szeretnéd kipróbálni a **extract zip with password** funkciót.
 
 ## Névterek importálása
 
-A .NET projektjében importálja a szükséges névtereket az Aspose.Zip funkcióinak kihasználásához:
+A .NET projektedben importáld a szükséges névtereket az Aspose.Zip funkcionalitásának használatához:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-Most bontsuk le a megadott példát több lépésre a teljes körű megértés érdekében.
+Most bontsuk le a kicsomagolási folyamatot lépésről‑lépésre.
 
-## Hogyan **unzip folder** – Lépésről‑lépésre útmutató
+## Hogyan **extract zip to folder** – Lépés‑ről‑lépésre útmutató
 
-### 1. lépés: A tömörített mappa megnyitása
+### 1. lépés: A ZIP fájl (vagy titkosított archívum) megnyitása
 
 ```csharp
 using (FileStream zipFile = File.Open(".\\all_corpus_encrypted.zip", FileMode.Open))
 ```
 
-Kezdje a tömörített mappa megnyitásával egy `FileStream` segítségével. Igazítsa a fájl útvonalát a projekt struktúrájához.
+A ZIP fájlt egy `FileStream`‑mel nyitjuk meg. Állítsd be az elérési utat a saját archívumodra. Ha az archívum nincs titkosítva, ugyanaz a kód egy hagyományos **decompress zip folder** esetben is működik.
 
-### 2. lépés: Archívum példány létrehozása (ZIP dekódolása)
+### 2. lépés: `Archive` példány létrehozása (jelszó megadása szükség esetén)
 
 ```csharp
 new Archive(zipFile, new ArchiveLoadOptions() { DecryptionPassword = "p@s$" })
 ```
 
-Hozzon létre egy `Archive` objektumot, átadva a `zipFile` streamet, és opcionálisan megadva a betöltési beállításokat, például a dekódolási jelszót. Ez a kulcsfontosságú lépés, amikor **unzip encrypted archive** fájlokra van szükség.
+Az `Archive` konstruktor megkapja a streamet és egy `ArchiveLoadOptions` objektumot. A `DecryptionPassword` megadása a módja annak, hogy **extract zip with password** és **unzip encrypted archive** eseteket kezeljük.
 
-### 3. lépés: Kicsomagolás egy könyvtárba
+### 3. lépés: A tartalom kicsomagolása egy célkönyvtárba
 
 ```csharp
 .ExtractToDirectory(".\\all_corpus_decrypted");
 ```
 
-Végül használja az `ExtractToDirectory` metódust a tömörített mappa tartalmának kicsomagolásához a megadott könyvtárba. Ezzel befejeződik a **how to decompress zip** folyamat.
+Az `ExtractToDirectory` meghívása minden bejegyzést a megadott könyvtárba ír, befejezve a **extract zip to folder** műveletet. A metódus automatikusan létrehozza a célmappát, ha az nem létezik.
 
-Ismételje meg ezeket a lépéseket más tömörített mappák esetén, biztosítva a zökkenőmentes integrációt az Aspose.Zip for .NET‑tel.
+> **Pro tipp:** Ha csak egy részhalmazt szeretnél kicsomagolni, használd azt a túlterhelést, amely szűrő delegátot fogad a teljes kicsomagolás helyett.
 
 ## Gyakori problémák és hibaelhárítás
 
-- **Helytelen jelszó** – Ha a dekódolási jelszó hibás, az Aspose.Zip hitelesítési kivételt dob. Ellenőrizze a jelszó karakterláncot.  
-- **Az útvonal nem található** – Győződjön meg róla, hogy a célkönyvtár létezik, vagy engedje, hogy az `ExtractToDirectory` automatikusan létrehozza.  
-- **Nagy archívumok** – Nagyon nagy ZIP fájlok esetén fontolja meg a kicsomagolást darabokban vagy a streaming API‑k használatát a memóriaigény csökkentése érdekében.
+- **Helytelen jelszó** – Az Aspose.Zip hitelesítési kivételt dob. Ellenőrizd a jelszó karakterláncot, vagy szerezd be biztonságosan egy konfigurációs forrásból.  
+- **Célútvonal nem található** – Győződj meg róla, hogy a célkönyvtár elérési útja érvényes; az `ExtractToDirectory` létrehozza a hiányzó almappákat, de a szülő útvonalnak elérhetőnek kell lennie.  
+- **Nagy archívumok** – Nagyon nagy ZIP fájlok esetén fontold meg a bejegyzés‑szerinti kicsomagolást a streaming API‑val a memóriahasználat alacsonyan tartása érdekében.  
 
-## Gyakran ismételt kérdések
+## Gyakran feltett kérdések
 
-**K: Az Aspose.Zip for .NET kompatibilis különböző tömörítési formátumokkal?**  
-V: Igen, az Aspose.Zip for .NET támogatja a népszerű formátumokat, mint a ZIP, GZIP és továbbiakat.
+**K: Támogatja az Aspose.Zip más tömörítési formátumokat, például a GZIP‑et?**  
+V: Igen, az Aspose.Zip for .NET támogatja a ZIP, GZIP és több más általános formátumot.
 
-**K: Használhatom az Aspose.Zip for .NET‑et kereskedelmi és nem‑kereskedelmi projektekben egyaránt?**  
-V: Természetesen, az Aspose.Zip for .NET-et mind kereskedelmi, mind nem‑kereskedelmi alkalmazásokban használhatja.
+**K: Használhatom az Aspose.Zip-et kereskedelmi és nem‑kereskedelmi projektekben egyaránt?**  
+V: Természetesen. Licenc szükséges a termeléshez, de a ingyenes próbaverzióval értékelheted a megoldást.
 
-**K: Van ingyenes próbaverziója az Aspose.Zip for .NET‑nek?**  
-V: Igen, a funkciókat ingyenes próba verzióval is felfedezheti a [itt](https://releases.aspose.com/) található oldalon.
+**K: Hogyan szerezhetek ideiglenes licencet teszteléshez?**  
+V: Ideiglenes licencet [innen](https://purchase.aspose.com/temporary-license/) kaphatsz a teszteléshez.
 
-**K: Hol kaphatok támogatást az Aspose.Zip for .NET‑hez?**  
-V: Kérjen segítséget az Aspose.Zip közösségtől a [támogatási fórumon](https://forum.aspose.com/c/zip/37).
+**K: Hol tölthetem le az Aspose.Zip ingyenes próbaverzióját?**  
+V: Látogasd meg az Aspose.Zip próbaverzió oldalát [itt](https://releases.aspose.com/) a legújabb verzió letöltéséhez.
 
-**K: Szükségem van ideiglenes licencre az Aspose.Zip for .NET teszteléséhez?**  
-V: Igen, ideiglenes licencet szerezhet a [itt](https://purchase.aspose.com/temporary-license/) található oldalon tesztelési célokra.
+**K: Hol kérhetek segítséget, ha problémába ütközöm?**  
+V: Az Aspose.Zip közösségi fórum egy nagyszerű hely a támogatásért: [support forum](https://forum.aspose.com/c/zip/37).
 
 ---
 
-**Last Updated:** 2025-12-10  
-**Tested With:** Aspose.Zip for .NET (latest release)  
-**Author:** Aspose  
+**Utoljára frissítve:** 2026-02-15  
+**Tesztelve:** Aspose.Zip for .NET (legújabb kiadás)  
+**Szerző:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

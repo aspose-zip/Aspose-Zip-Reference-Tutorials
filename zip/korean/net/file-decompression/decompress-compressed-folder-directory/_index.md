@@ -1,10 +1,10 @@
 ---
-date: 2025-12-10
-description: Aspose.Zip for .NET의 잠재력을 활용하세요! 이 단계별 가이드를 통해 폴더를 손쉽게 압축 해제하는 방법을 배우세요.
-  원활한 압축 및 추출의 세계에 빠져보세요.
-linktitle: Decompress Compressed Folder to Directory
+date: 2026-02-15
+description: Aspose.Zip for .NET를 사용하여 zip 파일을 폴더로 추출하는 방법을 배우세요. 비밀번호로 보호된 아카이브와
+  암호화된 zip 추출도 포함됩니다.
+linktitle: extract zip to folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Aspose.Zip for .NET에서 압축된 폴더를 디렉터리로 압축 해제하기
+title: Aspose.Zip for .NET을 사용하여 zip 파일을 폴더에 추출하는 방법
 url: /ko/net/file-decompression/decompress-compressed-folder-directory/
 weight: 14
 ---
@@ -13,35 +13,37 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET를 사용한 ZIP 파일 추출 방법
+# Aspose.Zip for .NET를 사용하여 zip을 폴더에 추출하는 방법
 
-## Introduction
+## 소개
 
-Aspose.Zip for .NET의 세계에 오신 것을 환영합니다. 이 강력한 라이브러리는 개발자가 압축 폴더를 손쉽게 처리할 수 있도록 지원합니다. .NET에서 **how to extract zip** 파일을 추출하는 방법이 궁금하시다면, 이 가이드가 답을 드립니다. 이번 튜토리얼에서는 Aspose.Zip for .NET을 사용하여 압축 폴더를 디렉터리로 해제하는 과정을 자세히 살펴보겠습니다. 각 단계를 차근차근 진행하면서 이 강력한 도구의 복잡성을 쉽게 이해할 수 있도록 도와드립니다.
+.NET 애플리케이션에서 **extract zip to folder**를 빠르고 안정적으로 수행해야 할 경우, Aspose.Zip for .NET은 일반 및 암호화된 아카이브를 모두 처리할 수 있는 깔끔한 크로스‑플랫폼 API를 제공합니다. 이 튜토리얼에서는 라이브러리 설정부터 비밀번호로 보호된 ZIP 파일 추출까지 필요한 모든 과정을 단계별로 안내하므로, 저수준 아카이브 처리 대신 비즈니스 로직에 집중할 수 있습니다.
 
-## Quick Answers
-- **What is the primary purpose of Aspose.Zip?** ZIP 아카이브를 .NET 애플리케이션에서 생성, 읽기 및 추출합니다.  
-- **How to extract zip** with a password? `ArchiveLoadOptions`와 `DecryptionPassword` 속성을 사용합니다.  
-- **Can I unzip encrypted archive** without a password? 아니요 – 올바른 비밀번호를 제공해야 합니다.  
-- **What .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
-- **Is a license required for production?** 예, 상업적 사용을 위해서는 유효한 Aspose.Zip 라이선스가 필요합니다.
+## 빠른 답변
+- **Aspose.Zip의 주요 목적은 무엇인가요?** .NET 애플리케이션에서 생성, 읽기 및 **extract zip to folder**을 수행합니다.  
+- **비밀번호로 zip을 추출하려면 어떻게 하나요?** `ArchiveLoadOptions.DecryptionPassword`에 비밀번호를 전달합니다.  
+- **비밀번호 없이 암호화된 아카이브를 압축 해제할 수 있나요?** 아니요—Aspose.Zip은 암호화된 아카이브를 열기 위해 올바른 비밀번호가 필요합니다.  
+- **지원되는 .NET 버전은 무엇인가요?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **프로덕션에서 라이선스가 필요합니까?** 예, 상업적 사용을 위해서는 유효한 Aspose.Zip 라이선스가 필요합니다.
 
-## What is **how to extract zip**?
-**how to extract zip**란 ZIP 파일을 읽어 압축된 데이터를 해제하고 원본 파일을 대상 디렉터리에 기록하는 작업을 의미합니다. Aspose.Zip은 저수준 세부 사항을 추상화하여 아카이브 처리 대신 비즈니스 로직에 집중할 수 있게 해줍니다.
+## **extract zip to folder**란 무엇인가요?
 
-## Why use Aspose.Zip for **how to unzip folder** tasks?
-- **Straightforward API** – 아카이브를 열고, 복호화하고, 추출하는 최소한의 코드만으로 작업을 수행합니다.  
-- **Supports encrypted archives** – 보안 데이터 교환에 최적화된 암호화된 아카이브를 지원합니다.  
-- **Cross‑platform** – Windows, Linux, macOS에서 .NET Core/.NET 5+와 함께 동작합니다.  
-- **No external dependencies** – 별도의 네이티브 zip 유틸리티를 설치할 필요가 없습니다.
+ZIP 파일을 추출한다는 것은 압축된 데이터를 읽어 원본 파일을 디스크의 대상 디렉터리에 기록하는 것을 의미합니다. Aspose.Zip은 저수준 세부 사항을 추상화하여 단일 메서드 호출만으로 전체 작업을 수행할 수 있게 해줍니다.
 
-## Prerequisites
+## **how to unzip zip** 작업에 Aspose.Zip을 사용하는 이유
 
-이 과정을 시작하기 전에 다음 사전 조건을 확인하십시오:
+- **Straightforward API** – 아카이브를 열고, 복호화하고, 추출하는 최소한의 코드.  
+- **Supports encrypted archives** – 보안 데이터 교환에 적합합니다.  
+- **Cross‑platform** – .NET Core/.NET 5+와 함께 Windows, Linux, macOS에서 작동합니다.  
+- **No external dependencies** – 네이티브 zip 유틸리티를 설치할 필요가 없습니다.  
 
-- Aspose.Zip for .NET Library: [Aspose.Zip for .NET documentation](https://reference.aspose.com/zip/net/)에서 라이브러리를 다운로드하고 설치합니다.
+## 사전 요구 사항
 
-## Import Namespaces
+- Aspose.Zip for .NET 라이브러리: [Aspose.Zip for .NET documentation](https://reference.aspose.com/zip/net/)에서 라이브러리를 다운로드하고 설치합니다.
+- .NET 개발 환경 (Visual Studio, VS Code 또는 선호하는 IDE).
+- (선택) **extract zip with password**를 시도하려면 비밀번호로 보호된 ZIP 파일.
+
+## 네임스페이스 가져오기
 
 .NET 프로젝트에서 Aspose.Zip의 기능을 활용하려면 필요한 네임스페이스를 가져옵니다:
 
@@ -50,64 +52,64 @@ using Aspose.Zip;
 using System.IO;
 ```
 
-이제 예제를 여러 단계로 나누어 자세히 살펴보겠습니다.
+이제 추출 과정을 단계별로 살펴보겠습니다.
 
-## How to **unzip folder** – Step‑by‑Step Guide
+## **extract zip to folder** 단계별 가이드
 
-### Step 1: Opening the Compressed Folder
+### 단계 1: ZIP 파일 열기 (또는 암호화된 아카이브)
 
 ```csharp
 using (FileStream zipFile = File.Open(".\\all_corpus_encrypted.zip", FileMode.Open))
 ```
 
-`FileStream`을 사용하여 압축 폴더를 엽니다. 프로젝트 구조에 맞게 파일 경로를 조정하십시오.
+`FileStream`을 사용하여 ZIP 파일을 엽니다. 경로를 자신의 아카이브에 맞게 조정하세요. 아카이브가 암호화되지 않은 경우, 동일한 코드는 일반 **decompress zip folder** 시나리오에서도 작동합니다.
 
-### Step 2: Creating an Archive Instance (Decrypting the ZIP)
+### 단계 2: `Archive` 인스턴스 생성 (필요 시 비밀번호 제공)
 
 ```csharp
 new Archive(zipFile, new ArchiveLoadOptions() { DecryptionPassword = "p@s$" })
 ```
 
-`Archive` 객체를 생성하면서 `zipFile` 스트림과 선택적 로드 옵션(예: 복호화 비밀번호)을 전달합니다. 이는 **unzip encrypted archive** 파일을 처리할 때 핵심 단계입니다.
+`Archive` 생성자는 스트림과 `ArchiveLoadOptions` 객체를 받습니다. `DecryptionPassword`를 제공하는 것이 **extract zip with password**를 수행하고 **unzip encrypted archive** 상황을 처리하는 방법입니다.
 
-### Step 3: Extracting to a Directory
+### 단계 3: 내용을 대상 폴더에 추출
 
 ```csharp
 .ExtractToDirectory(".\\all_corpus_decrypted");
 ```
 
-`ExtractToDirectory` 메서드를 사용해 압축 폴더의 내용을 지정된 디렉터리로 해제합니다. 이를 통해 **how to decompress zip** 과정이 완료됩니다.
+`ExtractToDirectory`를 호출하면 아카이브의 모든 항목이 지정된 디렉터리에 기록되어 **extract zip to folder** 작업이 완료됩니다. 대상 폴더가 없으면 메서드가 자동으로 생성합니다.
 
-다른 압축 폴더에도 동일한 단계를 적용하여 Aspose.Zip for .NET과 원활하게 통합하십시오.
+> **팁:** 파일의 일부만 추출하려면 전체를 추출하는 대신 필터 대리자를 받는 오버로드를 사용하세요.
 
-## Common Issues & Troubleshooting
+## 일반적인 문제 및 해결 방법
 
-- **Incorrect password** – 복호화 비밀번호가 틀리면 Aspose.Zip이 인증 예외를 발생시킵니다. 비밀번호 문자열을 다시 확인하십시오.  
-- **Path not found** – 대상 디렉터리가 존재하는지 확인하거나 `ExtractToDirectory`가 자동으로 생성하도록 두십시오.  
-- **Large archives** – 매우 큰 ZIP 파일의 경우 청크 단위로 추출하거나 스트리밍 API를 사용해 메모리 부담을 줄이는 것을 고려하십시오.
+- **Incorrect password** – Aspose.Zip이 인증 예외를 발생시킵니다. 비밀번호 문자열을 다시 확인하거나 구성 소스에서 안전하게 가져오세요.  
+- **Target path not found** – 대상 디렉터리 경로가 유효한지 확인하세요; `ExtractToDirectory`는 누락된 폴더를 생성하지만 상위 경로에 접근 가능해야 합니다.  
+- **Large archives** – 매우 큰 ZIP 파일의 경우, 메모리 사용량을 낮게 유지하기 위해 스트리밍 API를 사용해 항목별로 추출하는 것을 고려하세요.  
 
-## Frequently Asked Questions
+## 자주 묻는 질문
 
-**Q: Is Aspose.Zip for .NET compatible with various compression formats?**  
-A: 예, Aspose.Zip for .NET은 ZIP, GZIP 등 인기 있는 압축 포맷을 지원합니다.
+**Q: Aspose.Zip이 GZIP과 같은 다른 압축 형식을 지원하나요?**  
+A: 예, Aspose.Zip for .NET은 ZIP, GZIP 및 기타 여러 일반 형식을 지원합니다.
 
-**Q: Can I use Aspose.Zip for .NET in both commercial and non‑commercial projects?**  
-A: 물론입니다. Aspose.Zip for .NET을 상업용 및 비상업용 애플리케이션 모두에서 사용할 수 있습니다.
+**Q: Aspose.Zip을 상업 및 비상업 프로젝트 모두에서 사용할 수 있나요?**  
+A: 물론입니다. 프로덕션에는 유효한 라이선스가 필요하지만 평가를 위해 무료 체험판을 사용할 수 있습니다.
 
-**Q: Is there a free trial available for Aspose.Zip for .NET?**  
-A: 예, [여기](https://releases.aspose.com/)에서 무료 체험판을 다운로드하여 기능을 확인할 수 있습니다.
+**Q: 테스트용 임시 라이선스를 어떻게 얻나요?**  
+A: 테스트 목적을 위해 [here](https://purchase.aspose.com/temporary-license/)에서 임시 라이선스를 받을 수 있습니다.
 
-**Q: How can I get support for Aspose.Zip for .NET?**  
-A: [지원 포럼](https://forum.aspose.com/c/zip/37)에서 Aspose.Zip 커뮤니티의 도움을 받을 수 있습니다.
+**Q: Aspose.Zip 무료 체험판을 어디서 다운로드하나요?**  
+A: 최신 버전을 다운로드하려면 Aspose.Zip 체험 페이지 [here](https://releases.aspose.com/)를 방문하세요.
 
-**Q: Do I need a temporary license for testing Aspose.Zip for .NET?**  
-A: 예, 테스트 목적이라면 [여기](https://purchase.aspose.com/temporary-license/)에서 임시 라이선스를 발급받을 수 있습니다.
+**Q: 문제가 발생하면 어디에 도움을 요청할 수 있나요?**  
+A: Aspose.Zip 커뮤니티 포럼은 도움을 받을 수 있는 좋은 장소입니다: [support forum](https://forum.aspose.com/c/zip/37).
 
 ---
 
-**Last Updated:** 2025-12-10  
-**Tested With:** Aspose.Zip for .NET (latest release)  
-**Author:** Aspose  
+**마지막 업데이트:** 2026-02-15  
+**테스트 환경:** Aspose.Zip for .NET (latest release)  
+**작성자:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

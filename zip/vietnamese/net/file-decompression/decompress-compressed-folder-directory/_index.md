@@ -1,11 +1,10 @@
 ---
-date: 2025-12-10
-description: Mở khóa tiềm năng của Aspose.Zip cho .NET! Tìm hiểu cách giải nén thư
-  mục một cách dễ dàng với hướng dẫn từng bước này. Đắm chìm vào thế giới nén và giải
-  nén liền mạch.
-linktitle: Decompress Compressed Folder to Directory
+date: 2026-02-15
+description: Tìm hiểu cách giải nén file zip vào thư mục bằng Aspose.Zip cho .NET,
+  bao gồm các tệp lưu trữ được bảo vệ bằng mật khẩu và việc giải nén zip được mã hóa.
+linktitle: extract zip to folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Giải nén thư mục nén vào thư mục trong Aspose.Zip cho .NET
+title: Cách giải nén zip vào thư mục bằng Aspose.Zip cho .NET
 url: /vi/net/file-decompression/decompress-compressed-folder-directory/
 weight: 14
 ---
@@ -14,33 +13,37 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Cách giải nén tệp ZIP với Aspose.Zip cho .NET
+# Cách giải nén zip vào thư mục với Aspose.Zip cho .NET
 
 ## Giới thiệu
 
-Chào mừng bạn đến với thế giới Aspose.Zip cho .NET, một thư viện mạnh mẽ giúp các nhà phát triển xử lý các thư mục nén một cách dễ dàng. Nếu bạn đang tự hỏi **cách giải nén zip** trong .NET, hướng dẫn này sẽ cung cấp cho bạn mọi thông tin cần thiết. Trong bài học này, chúng ta sẽ đi sâu vào quy trình giải nén một thư mục nén vào một thư mục đích bằng Aspose.Zip cho .NET. Hãy sẵn sàng, chúng tôi sẽ hướng dẫn bạn từng bước chi tiết, giải thích những khía cạnh phức tạp của công cụ mạnh mẽ này.
+Nếu bạn cần **extract zip to folder** một cách nhanh chóng và đáng tin cậy trong một ứng dụng .NET, Aspose.Zip cho .NET cung cấp cho bạn một API sạch sẽ, đa nền tảng, có khả năng xử lý cả các kho lưu trữ thường và được mã hóa. Trong hướng dẫn này, chúng tôi sẽ đi qua mọi thứ bạn cần—từ việc thiết lập thư viện đến việc giải nén tệp ZIP có bảo vệ bằng mật khẩu—để bạn có thể tập trung vào logic nghiệp vụ thay vì xử lý cấp thấp của kho lưu trữ.
 
-## Trả lời nhanh
-- **Mục đích chính của Aspose.Zip là gì?** Để tạo, đọc và giải nén các tệp ZIP trong các ứng dụng .NET.  
-- **Cách giải nén zip** có mật khẩu? Sử dụng `ArchiveLoadOptions` với thuộc tính `DecryptionPassword`.  
-- **Có thể giải nén tệp nén được mã hóa** mà không có mật khẩu không? Không – bạn phải cung cấp mật khẩu đúng.  
-- **Các phiên bản .NET nào được hỗ trợ?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
-- **Cần giấy phép cho môi trường sản xuất không?** Có, cần một giấy phép Aspose.Zip hợp lệ cho việc sử dụng thương mại.
+## Câu trả lời nhanh
+- **Mục đích chính của Aspose.Zip là gì?** Để tạo, đọc và **extract zip to folder** trong các ứng dụng .NET.  
+- **Làm thế nào để giải nén zip có mật khẩu?** Truyền mật khẩu qua `ArchiveLoadOptions.DecryptionPassword`.  
+- **Tôi có thể giải nén tệp nén được mã hóa mà không có mật khẩu không?** Không—Aspose.Zip yêu cầu mật khẩu đúng để mở các kho lưu trữ được mã hóa.  
+- **Các phiên bản .NET nào được hỗ trợ?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **Có cần giấy phép cho môi trường sản xuất không?** Có, cần một giấy phép Aspose.Zip hợp lệ cho việc sử dụng thương mại.
 
-## **Cách giải nén zip** là gì?
-Giải nén một tệp ZIP có nghĩa là đọc dữ liệu nén và ghi các tệp gốc vào thư mục đích. Aspose.Zip trừu tượng hoá các chi tiết mức thấp, cho phép bạn tập trung vào logic nghiệp vụ thay vì xử lý lưu trữ.
+## Extract zip to folder là gì?
 
-## Tại sao nên dùng Aspose.Zip cho các nhiệm vụ **giải nén thư mục**?
-- **API đơn giản** – ít mã để mở, giải mã và giải nén các tệp lưu trữ.  
-- **Hỗ trợ lưu trữ được mã hóa** – lý tưởng cho việc trao đổi dữ liệu an toàn.  
-- **Đa nền tảng** – hoạt động trên Windows, Linux và macOS với .NET Core/.NET 5+.  
+Giải nén một tệp ZIP có nghĩa là đọc dữ liệu nén và ghi các tệp gốc vào một thư mục đích trên đĩa. Aspose.Zip trừu tượng hoá các chi tiết cấp thấp, cho phép bạn gọi một phương thức duy nhất để thực hiện toàn bộ thao tác.
+
+## Tại sao nên sử dụng Aspose.Zip cho các tác vụ **how to unzip zip**?
+
+- **API đơn giản** – mã tối thiểu để mở, giải mã và giải nén các kho lưu trữ.  
+- **Hỗ trợ kho lưu trữ được mã hóa** – hoàn hảo cho việc trao đổi dữ liệu bảo mật.  
+- **Đa nền tảng** – hoạt động trên Windows, Linux và macOS với .NET Core/.NET 5+.  
 - **Không phụ thuộc bên ngoài** – không cần cài đặt các tiện ích zip gốc.
 
 ## Yêu cầu trước
 
-Trước khi bắt đầu, hãy chắc chắn rằng bạn đã chuẩn bị đầy đủ các yêu cầu sau:
+Trước khi bắt đầu, hãy chắc chắn rằng bạn đã có:
 
-- Thư viện Aspose.Zip cho .NET: Tải và cài đặt thư viện từ [tài liệu Aspose.Zip cho .NET](https://reference.aspose.com/zip/net/).
+- Thư viện Aspose.Zip cho .NET: Tải xuống và cài đặt thư viện từ [Aspose.Zip for .NET documentation](https://reference.aspose.com/zip/net/).
+- Môi trường phát triển .NET (Visual Studio, VS Code, hoặc bất kỳ IDE nào bạn thích).
+- (Tùy chọn) Một tệp ZIP có bảo vệ bằng mật khẩu nếu bạn muốn thử **extract zip with password**.
 
 ## Nhập không gian tên
 
@@ -51,63 +54,63 @@ using Aspose.Zip;
 using System.IO;
 ```
 
-Bây giờ, chúng ta sẽ phân tích ví dụ được cung cấp thành nhiều bước để hiểu một cách toàn diện.
+Bây giờ chúng ta sẽ phân tích quy trình giải nén từng bước.
 
-## Cách **giải nén thư mục** – Hướng dẫn từng bước
+## Cách **extract zip to folder** – Hướng dẫn từng bước
 
-### Bước 1: Mở thư mục nén
+### Bước 1: Mở tệp ZIP (hoặc tệp nén được mã hóa)
 
 ```csharp
 using (FileStream zipFile = File.Open(".\\all_corpus_encrypted.zip", FileMode.Open))
 ```
 
-Bắt đầu bằng cách mở thư mục nén bằng một `FileStream`. Điều chỉnh đường dẫn tệp theo cấu trúc dự án của bạn.
+Chúng ta mở tệp ZIP bằng một `FileStream`. Điều chỉnh đường dẫn để trỏ tới kho lưu trữ của bạn. Nếu kho lưu trữ không được mã hóa, cùng một đoạn mã vẫn hoạt động cho kịch bản **decompress zip folder** thông thường.
 
-### Bước 2: Tạo một thể hiện Archive (Giải mã ZIP)
+### Bước 2: Tạo một thể hiện `Archive` (cung cấp mật khẩu khi cần)
 
 ```csharp
 new Archive(zipFile, new ArchiveLoadOptions() { DecryptionPassword = "p@s$" })
 ```
 
-Khởi tạo một đối tượng `Archive`, truyền vào luồng `zipFile` và cung cấp các tùy chọn tải tùy chọn, chẳng hạn như mật khẩu giải mã trong trường hợp này. Đây là bước quan trọng khi bạn cần **giải nén tệp lưu trữ được mã hóa**.
+Constructor của `Archive` nhận luồng và một đối tượng `ArchiveLoadOptions`. Cung cấp `DecryptionPassword` là cách bạn **extract zip with password** và xử lý các trường hợp **unzip encrypted archive**.
 
-### Bước 3: Giải nén vào thư mục
+### Bước 3: Giải nén nội dung vào thư mục đích
 
 ```csharp
 .ExtractToDirectory(".\\all_corpus_decrypted");
 ```
 
-Cuối cùng, sử dụng phương thức `ExtractToDirectory` để giải nén và trích xuất nội dung của thư mục nén vào thư mục đích đã chỉ định. Điều này hoàn thành quy trình **cách giải nén zip**.
+Gọi `ExtractToDirectory` sẽ ghi mọi mục trong kho lưu trữ vào thư mục đã chỉ định, hoàn thành thao tác **extract zip to folder**. Phương thức sẽ tự động tạo thư mục đích nếu nó chưa tồn tại.
 
-Lặp lại các bước này cho các thư mục nén khác, đảm bảo tích hợp liền mạch với Aspose.Zip cho .NET.
+> **Mẹo chuyên nghiệp:** Nếu bạn chỉ cần giải nén một phần các tệp, hãy sử dụng overload chấp nhận một delegate lọc thay vì giải nén toàn bộ.
 
 ## Các vấn đề thường gặp & Khắc phục
 
-- **Mật khẩu không đúng** – Nếu mật khẩu giải mã sai, Aspose.Zip sẽ ném ra ngoại lệ xác thực. Hãy kiểm tra lại chuỗi mật khẩu.  
-- **Đường dẫn không tồn tại** – Đảm bảo thư mục đích tồn tại hoặc để `ExtractToDirectory` tự động tạo nó.  
-- **Lưu trữ lớn** – Đối với các tệp ZIP rất lớn, hãy cân nhắc giải nén theo từng phần hoặc sử dụng API streaming để giảm áp lực bộ nhớ.
+- **Mật khẩu không đúng** – Aspose.Zip ném ra ngoại lệ xác thực. Kiểm tra lại chuỗi mật khẩu hoặc lấy nó một cách an toàn từ nguồn cấu hình.  
+- **Đường dẫn đích không tồn tại** – Đảm bảo đường dẫn thư mục đích hợp lệ; `ExtractToDirectory` sẽ tạo các thư mục con thiếu, nhưng đường dẫn cha phải có quyền truy cập.  
+- **Kho lưu trữ lớn** – Đối với các tệp ZIP rất lớn, cân nhắc giải nén từng mục bằng API streaming để giảm mức sử dụng bộ nhớ.  
 
 ## Câu hỏi thường gặp
 
-**H: Aspose.Zip cho .NET có tương thích với các định dạng nén khác nhau không?**  
-Đ: Có, Aspose.Zip cho .NET hỗ trợ các định dạng nén phổ biến như ZIP, GZIP và nhiều hơn nữa.
+**Q: Aspose.Zip có hỗ trợ các định dạng nén khác như GZIP không?**  
+A: Có, Aspose.Zip cho .NET hỗ trợ ZIP, GZIP và một số định dạng phổ biến khác.
 
-**H: Tôi có thể sử dụng Aspose.Zip cho .NET trong cả dự án thương mại và phi thương mại không?**  
-Đ: Hoàn toàn có thể, bạn có thể sử dụng Aspose.Zip cho .NET trong cả hai loại dự án.
+**Q: Tôi có thể sử dụng Aspose.Zip trong cả dự án thương mại và phi thương mại không?**  
+A: Chắc chắn. Cần có giấy phép hợp lệ cho môi trường sản xuất, nhưng bạn có thể dùng bản dùng thử miễn phí để đánh giá.
 
-**H: Có bản dùng thử miễn phí cho Aspose.Zip cho .NET không?**  
-Đ: Có, bạn có thể khám phá các tính năng bằng bản dùng thử miễn phí bằng cách truy cập [tại đây](https://releases.aspose.com/).
+**Q: Làm sao tôi có thể lấy giấy phép tạm thời để thử nghiệm?**  
+A: Bạn có thể nhận giấy phép tạm thời từ [here](https://purchase.aspose.com/temporary-license/) cho mục đích thử nghiệm.
 
-**H: Làm sao tôi có thể nhận hỗ trợ cho Aspose.Zip cho .NET?**  
-Đ: Hãy tìm kiếm sự trợ giúp từ cộng đồng Aspose.Zip tại [diễn đàn hỗ trợ](https://forum.aspose.com/c/zip/37).
+**Q: Tôi có thể tải bản dùng thử miễn phí của Aspose.Zip ở đâu?**  
+A: Truy cập trang thử nghiệm Aspose.Zip [here](https://releases.aspose.com/) để tải phiên bản mới nhất.
 
-**H: Tôi có cần giấy phép tạm thời để thử nghiệm Aspose.Zip cho .NET không?**  
-Đ: Có, bạn có thể lấy giấy phép tạm thời từ [đây](https://purchase.aspose.com/temporary-license/) để thử nghiệm.
+**Q: Tôi có thể hỏi hỗ trợ nếu gặp vấn đề ở đâu?**  
+A: Diễn đàn cộng đồng Aspose.Zip là nơi tuyệt vời để nhận trợ giúp: [support forum](https://forum.aspose.com/c/zip/37).
 
 ---
 
-**Cập nhật lần cuối:** 2025-12-10  
-**Kiểm thử với:** Aspose.Zip cho .NET (phiên bản mới nhất)  
+**Cập nhật lần cuối:** 2026-02-15  
+**Đã kiểm tra với:** Aspose.Zip cho .NET (bản phát hành mới nhất)  
 **Tác giả:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
