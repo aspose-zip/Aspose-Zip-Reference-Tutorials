@@ -1,11 +1,11 @@
 ---
-date: 2025-12-10
-description: Pelajari cara mendekompresi banyak file dan folder zip di .NET dengan
-  Aspose.Zip. Ikuti contoh C# langkah demi langkah untuk mengekstrak arsip secara
-  efisien.
-linktitle: How to Decompress Multiple Files with Aspose.Zip for .NET
+date: 2026-02-17
+description: Pelajari cara mendekompresi file dengan Aspose.Zip untuk .NET, termasuk
+  cara mengekstrak folder zip dan mengekstrak arsip zip yang dilindungi kata sandi
+  menggunakan C#.
+linktitle: How to Decompress Files with Aspose.Zip for .NET
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Cara Mendekompresi Beberapa File dengan Aspose.Zip untuk .NET
+title: Cara Mendekompresi File dengan Aspose.Zip untuk .NET
 url: /id/net/file-decompression/
 weight: 21
 ---
@@ -14,109 +14,124 @@ weight: 21
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Cara Decompress Banyak File dengan Aspose.Zip untuk .NET
+# Cara Mengurai File dengan Aspose.Zip untuk .NET
 
-## Pengantar
+## Pendahuluan
 
-Kompresi file adalah aspek penting dalam pengembangan perangkat lunak, memungkinkan penyimpanan dan transmisi data yang efisien. Ketika Anda perlu **decompress multiple files** dengan cepat dan dapat diandalkan di lingkungan .NET, Aspose.Zip untuk .NET menyediakan API yang bersih dan berperforma tinggi yang menghilangkan kerumitan ekstraksi manual. Dalam panduan ini kami akan mengeksplorasi skenario umum—dari mengekstrak satu arsip hingga menangani file zip yang dilindungi password—sehingga Anda dapat memilih pendekatan yang tepat untuk proyek Anda.
+Ketika Anda perlu **mengurai file** dengan cepat dan dapat diandalkan dalam lingkungan .NET, Aspose.Zip untuk .NET menawarkan API yang bersih dan berperforma tinggi yang menghilangkan kerumitan ekstraksi manual. Baik Anda menangani satu arsip, sekumpulan file log, atau zip yang dilindungi kata sandi, panduan ini menunjukkan cara mengekstrak isi folder zip dan menangani arsip terenkripsi hanya dengan beberapa baris kode C#.
 
 ## Jawaban Cepat
-- **Apa yang dilakukan Aspose.Zip untuk .NET?** Ia menawarkan API sederhana untuk membuat, membaca, dan mengekstrak format ZIP, TAR, GZIP, dan format arsip lainnya dalam C#.
-- **Bisakah saya decompress multiple files sekaligus?** Ya, perpustakaan memungkinkan Anda mengekstrak semua entri dalam satu panggilan atau mengiterasinya satu per satu.
-- **Apakah ekstraksi yang dilindungi password didukung?** Tentu – Anda dapat menyediakan password untuk membuka arsip yang terenkripsi.
+- **Apa yang dilakukan Aspose.Zip untuk .NET?** Ini menawarkan API sederhana untuk membuat, membaca, dan mengekstrak format ZIP, TAR, GZIP, dan arsip lainnya dalam C#.
+- **Apakah saya dapat mengurai banyak file sekaligus?** Ya, perpustakaan ini memungkinkan Anda mengekstrak semua entri dalam satu panggilan atau mengiterasi mereka satu per satu.
+- **Apakah ekstraksi yang dilindungi kata sandi didukung?** Tentu – Anda dapat memberikan kata sandi untuk membuka arsip terenkripsi.
 - **Versi .NET mana yang didukung?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7 dan yang lebih baru.
 - **Apakah saya memerlukan lisensi untuk pengembangan?** Versi percobaan gratis dapat digunakan untuk evaluasi; lisensi komersial diperlukan untuk penggunaan produksi.
 
+## Cara Mengurai File Menggunakan Aspose.Zip untuk .NET
+Mengurai file dengan Aspose.Zip sangat sederhana. Perpustakaan menyediakan metode `Extract`, yang dapat menargetkan sebuah direktori, file tertentu, atau stream memori. Di bawah ini kami menjelaskan alur kerja tipikal:
+
+1. **Buat sebuah instance `Archive`** yang menunjuk ke file zip Anda.  
+2. **Panggil `Extract`** dengan folder tujuan.  
+3. **Opsional, berikan kata sandi** jika arsip terenkripsi (`extract password protected zip`).  
+
+Pendekatan ini bekerja untuk semua tipe arsip yang didukung oleh Aspose.Zip, termasuk zip tradisional, struktur folder zip, dan format modern seperti XAR dan WIM.
+
 ## Apa itu “decompress multiple files”?
 
-Decompress multiple files berarti mengekstrak setiap entri yang disimpan di dalam sebuah arsip (ZIP, TAR, dll.) dan secara opsional menuliskan setiap file ke direktori target. Operasi ini umum terjadi ketika Anda menerima data yang dibundel—file log, gambar, atau kumpulan konfigurasi—yang harus dibuka sebelum diproses.
+Mengurai banyak file berarti mengekstrak setiap entri yang disimpan di dalam sebuah arsip (ZIP, TAR, dll.) dan secara opsional menuliskan setiap file ke direktori target. Operasi ini umum ketika Anda menerima data yang dikemas—file log, gambar, atau kumpulan konfigurasi—yang harus dibongkar sebelum diproses.
 
-## Mengapa menggunakan Aspose.Zip untuk .NET untuk decompress multiple files?
+## Mengapa menggunakan Aspose.Zip untuk .NET untuk mengurai banyak file?
 
-- **Performance‑optimized** ekstraksi yang bekerja dengan arsip besar tanpa konsumsi memori berlebih.  
-- **Built‑in support** untuk ZIP klasik, format modern (XAR, WIM) dan arsip terenkripsi.  
-- **Straightforward C# syntax** – tidak perlu mengatur stream atau utilitas pihak ketiga.  
-- **Cross‑platform** kompatibilitas, memungkinkan Anda menjalankan kode yang sama di Windows, Linux, atau macOS.
+- **Ekstraksi yang dioptimalkan untuk kinerja** yang menangani arsip besar tanpa konsumsi memori berlebih.  
+- **Dukungan bawaan** untuk ZIP klasik, format modern (XAR, WIM) dan arsip terenkripsi.  
+- **Sintaks C# yang sederhana** – tidak perlu mengatur stream atau utilitas pihak ketiga (`aspose zip extract`).  
+- **Kompatibilitas lintas‑platform**, memungkinkan Anda menjalankan kode yang sama di Windows, Linux, atau macOS.  
 
-## Decompressing a File dengan Aspose.Zip untuk .NET
+## Mengurai File dengan Aspose.Zip untuk .NET
 
-Unlock the world of file compression in .NET by mastering the art of decompressing single files. The tutorial on [Decompressing a File with Aspose.Zip for .NET](./decompress-file/) provides a step‑by‑step guide, ensuring that even beginners can navigate through the process effortlessly. Dive into the intricacies of Aspose.Zip for .NET and enhance your skills in handling compressed files in C# projects.
+Temukan dunia kompresi file di .NET dengan menguasai seni mengurai file tunggal. Tutorial pada [Mengurai File dengan Aspose.Zip untuk .NET](./decompress-file/) menyediakan panduan langkah‑demi‑langkah, memastikan bahkan pemula dapat menavigasi proses ini dengan mudah. Selami seluk‑beluk Aspose.Zip untuk .NET dan tingkatkan kemampuan Anda dalam menangani file terkompresi pada proyek C#.
 
-## Decompressing Multiple Files menggunakan Aspose.Zip untuk .NET
+## Mengurai Banyak File menggunakan Aspose.Zip untuk .NET
 
-Efficient file management becomes a breeze with Aspose.Zip for .NET. In [Decompressing Multiple Files using Aspose.Zip for .NET](./decompress-multiple-files/), we guide you through the process of **decompressing multiple files**, optimizing your workflow. Follow our detailed steps to streamline your file handling and enhance your overall development experience.
+Manajemen file yang efisien menjadi mudah dengan Aspose.Zip untuk .NET. Pada [Mengurai Banyak File menggunakan Aspose.Zip untuk .NET](./decompress-multiple-files/), kami memandu Anda melalui proses **mengurai banyak file**, mengoptimalkan alur kerja Anda. Ikuti langkah‑demi‑langkah detail kami untuk menyederhanakan penanganan file dan meningkatkan pengalaman pengembangan secara keseluruhan.
 
-## Decompressing a Stored File menggunakan Aspose.Zip untuk .NET
+## Mengurai File yang Disimpan menggunakan Aspose.Zip untuk .NET
 
-Explore the power of Aspose.Zip for .NET in [Decompressing a Stored File using Aspose.Zip for .NET](./decompress-stored-file/). This tutorial offers a step‑by‑step guide on efficiently decompressing stored files, empowering you with a robust solution for effective file handling in your projects.
+Jelajahi kekuatan Aspose.Zip untuk .NET di [Mengurai File yang Disimpan menggunakan Aspose.Zip untuk .NET](./decompress-stored-file/). Tutorial ini menawarkan panduan langkah‑demi‑langkah tentang cara mengurai file yang disimpan secara efisien, memberi Anda solusi kuat untuk penanganan file yang efektif dalam proyek Anda.
 
-## Decompressing Zip Folder dan Arsip yang Dilindungi Password
+## Tutorial Dekompresi File
+### [Mengurai File dengan Aspose.Zip untuk .NET](./decompress-file/)
+Jelajahi dunia kompresi file di .NET dengan Aspose.Zip. Pelajari seni mengurai file dengan mudah.
 
-If you need to **decompress zip folder** contents or work with a **decompress password protected zip** archive, Aspose.Zip handles both scenarios seamlessly. Simply pass the destination path and, when required, the password string to the extraction method. This eliminates the need for external tools and keeps your codebase clean.
+### [Mengurai Banyak File menggunakan Aspose.Zip untuk .NET](./decompress-multiple-files/)
+Pelajari cara mengurai banyak file menggunakan Aspose.Zip untuk .NET. Ikuti panduan langkah‑demi‑langkah kami untuk manajemen file yang efisien.
+
+### [Mengurai File Tunggal dengan Aspose.Zip untuk .NET](./decompress-single-file/)
+Jelajahi dunia dekompresi file yang mulus dengan Aspose.Zip untuk .NET. Tangani file terkompresi dengan mudah dalam proyek C# Anda.
+
+### [Mengurai File yang Disimpan menggunakan Aspose.Zip untuk .NET](./decompress-stored-file/)
+Jelajahi kekuatan Aspose.Zip untuk .NET dalam panduan langkah‑demi‑langkah ini tentang mengurai file yang disimpan. Tingkatkan keterampilan pengembangan perangkat lunak Anda dengan solusi kuat untuk penanganan file yang efisien.
+
+### [Mengekstrak Folder Terkompresi ke Direktori dengan Aspose.Zip untuk .NET](./decompress-compressed-folder-directory/)
+Manfaatkan potensi Aspose.Zip untuk .NET! Pelajari cara mengurai folder dengan mudah menggunakan panduan langkah‑demi‑langkah ini. Selami dunia kompresi dan ekstraksi yang mulus.
+
+### [Mengurai File yang Dilindungi Kata Sandi Secara Tradisional dengan Aspose.Zip untuk .NET](./decompress-traditionally-password-protected-file/)
+Pelajari cara mengurai file yang dilindungi kata sandi secara tradisional menggunakan Aspose.Zip untuk .NET. Panduan langkah‑demi‑langkah untuk integrasi yang mulus.
+
+### [Mengekstrak Wim ke Folder dengan Aspose.Zip untuk .NET](./decompress-wim-folder/)
+Jelajahi panduan langkah‑demi‑langkah tentang mengurai arsip Wim menggunakan Aspose.Zip untuk .NET. Unduh perpustakaan, ikuti tutorial, dan kelola file arsip secara efisien dalam aplikasi .NET Anda.
+
+### [Mengekstrak Xar ke Folder dengan Aspose.Zip untuk .NET](./decompress-xar-folder/)
+Jelajahi kekuatan Aspose.Zip untuk .NET! Mengurai arsip Xar dengan mudah menggunakan tutorial yang ramah pengguna ini. Tingkatkan pengalaman pengembangan .NET Anda.
+
+## Mengurai Folder Zip dan Arsip yang Dilindungi Kata Sandi
+
+Jika Anda perlu **mengurai folder zip** atau bekerja dengan arsip **mengurai zip yang dilindungi kata sandi**, Aspose.Zip menangani kedua skenario tersebut dengan mulus. Cukup berikan jalur tujuan dan, bila diperlukan, string kata sandi ke metode ekstraksi. Ini menghilangkan kebutuhan akan alat eksternal dan menjaga basis kode Anda tetap bersih.
 
 ## Kasus Penggunaan Umum
 
-- **Batch processing** of log archives received from remote servers.  
-- **Automated deployment** scripts that unpack resource bundles before installation.  
-- **Data migration** where legacy zip files must be read and their contents stored in a database.  
+- **Pemrosesan batch** arsip log yang diterima dari server remote.  
+- **Skrip penyebaran otomatis** yang membongkar bundel sumber daya sebelum instalasi.  
+- **Migrasi data** dimana file zip lama harus dibaca dan isinya disimpan ke dalam basis data.  
 
 ## Tips & Praktik Terbaik
 
-- **Use streaming** when extracting very large files to keep memory usage low.  
-- **Validate file paths** after extraction to avoid directory‑traversal vulnerabilities.  
-- **Handle exceptions** such as `InvalidPasswordException` to provide clear user feedback.
+- **Gunakan streaming** saat mengekstrak file yang sangat besar untuk menjaga penggunaan memori tetap rendah.  
+- **Validasi jalur file** setelah ekstraksi untuk menghindari kerentanan traversal direktori.  
+- **Tangani pengecualian** seperti `InvalidPasswordException` untuk memberikan umpan balik pengguna yang jelas.  
 
 ## Pertanyaan yang Sering Diajukan
 
-**Q: Can I extract a zip archive directly to a memory stream?**  
-A: Yes, Aspose.Zip lets you read an entry into a `MemoryStream` without writing to disk.
+**Q: Apakah saya dapat mengekstrak arsip zip langsung ke stream memori?**  
+A: Ya, Aspose.Zip memungkinkan Anda membaca sebuah entri ke dalam `MemoryStream` tanpa menulis ke disk (`extract zip archive c#`).  
 
-**Q: Does the library support extracting to a specific folder structure?**  
-A: Absolutely. You can specify the output directory, and the API will recreate the archive’s internal folder hierarchy.
+**Q: Apakah perpustakaan ini mendukung ekstraksi ke struktur folder tertentu?**  
+A: Tentu. Anda dapat menentukan direktori output, dan API akan membuat kembali hierarki folder internal arsip.  
 
-**Q: How do I extract a password‑protected zip file in C#?**  
-A: Supply the password to the `Extract` method (e.g., `archive.Extract(outputPath, password)`).
+**Q: Bagaimana cara mengekstrak file zip yang dilindungi kata sandi dalam C#?**  
+A: Berikan kata sandi ke metode `Extract` (misalnya, `archive.Extract(outputPath, password)`).  
 
-**Q: Is there a way to list archive contents without extracting them?**  
-A: Yes, you can iterate over `archive.Entries` to inspect file names, sizes, and timestamps.
+**Q: Apakah ada cara untuk menampilkan isi arsip tanpa mengekstraknya?**  
+A: Ya, Anda dapat mengiterasi `archive.Entries` untuk memeriksa nama file, ukuran, dan cap waktu.  
 
-**Q: What if the archive contains duplicate file names?**  
-A: By default, the library overwrites existing files; you can change this behavior with the `OverwriteMode` option.
+**Q: Bagaimana jika arsip berisi nama file duplikat?**  
+A: Secara default, perpustakaan menimpa file yang ada; Anda dapat mengubah perilaku ini dengan opsi `OverwriteMode`.  
+
+**Q: Apakah saya dapat mengekstrak hanya entri terpilih dari folder zip?**  
+A: Ya, filter `archive.Entries` berdasarkan nama atau ekstensi dan panggil `Extract` pada entri yang dipilih.  
+
+**Q: Bagaimana Aspose.Zip menangani file zip besar pada perangkat dengan memori rendah?**  
+A: Perpustakaan menggunakan pemuatan malas dan streaming, sehingga hanya entri saat ini yang dimuat ke memori.  
 
 ## Kesimpulan
 
-Aspose.Zip for .NET proves to be a game‑changer in the realm of file decompression. Whether you're handling single files, multiple files, or stored files, the library simplifies the process, making it accessible for developers at all levels. Dive into the tutorials, unlock the potential of Aspose.Zip for .NET, and elevate your software development skills to new heights. Explore the world of seamless compression and extraction with confidence and efficiency.
-
-## Tutorial Decompress File
-### [Decompressing a File dengan Aspose.Zip untuk .NET](./decompress-file/)
-Explore the world of file compression in .NET with Aspose.Zip. Learn the art of decompressing files effortlessly.
-
-### [Decompressing Multiple Files menggunakan Aspose.Zip untuk .NET](./decompress-multiple-files/)
-Learn how to decompress multiple files using Aspose.Zip for .NET. Follow our step‑by‑step guide for efficient file management.
-
-### [Decompressing a Single File dengan Aspose.Zip untuk .NET](./decompress-single-file/)
-Explore the seamless world of file decompression with Aspose.Zip for .NET. Effortlessly handle compressed files in your C# projects.
-
-### [Decompressing a Stored File menggunakan Aspose.Zip untuk .NET](./decompress-stored-file/)
-Explore the power of Aspose.Zip for .NET in this step‑by‑step guide on decompressing stored files. Enhance your software development skills with a robust solution for efficient file handling.
-
-### [Decompress Compressed Folder to Directory in Aspose.Zip for .NET](./decompress-compressed-folder-directory/)
-Unlock the potential of Aspose.Zip for .NET! Learn how to effortlessly decompress folders with this step‑by‑step guide. Dive into the world of seamless compression and extraction.
-
-### [Decompress Traditionally Password Protected File in Aspose.Zip for .NET](./decompress-traditionally-password-protected-file/)
-Learn how to decompress traditionally password‑protected files using Aspose.Zip for .NET. A step‑by‑step guide for seamless integration.
-
-### [Decompress Wim to Folder in Aspose.Zip for .NET](./decompress-wim-folder/)
-Explore the step‑by‑step guide on decompressing Wim archives using Aspose.Zip for .NET. Download the library, follow the tutorial, and efficiently manage archive files in your .NET applications.
-
-### [Decompress Xar to Folder in Aspose.Zip for .NET](./decompress-xar-folder/)
-Explore the power of Aspose.Zip for .NET! Effortlessly decompress Xar archives with this user‑friendly tutorial. Enhance your .NET development experience.
+Aspose.Zip untuk .NET terbukti menjadi pengubah permainan dalam bidang dekompresi file. Baik Anda menangani file tunggal, banyak file, atau file yang disimpan, perpustakaan ini menyederhanakan proses, membuatnya dapat diakses bagi pengembang di semua level. Selami tutorial, buka potensi Aspose.Zip untuk .NET, dan tingkatkan keterampilan pengembangan perangkat lunak Anda ke tingkat baru. Jelajahi dunia kompresi dan ekstraksi yang mulus dengan percaya diri dan efisiensi.
 
 ---
 
-**Last Updated:** 2025-12-10  
-**Tested With:** Aspose.Zip for .NET 24.12  
-**Author:** Aspose
+**Terakhir Diperbarui:** 2026-02-17  
+**Diuji Dengan:** Aspose.Zip for .NET 24.12  
+**Penulis:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

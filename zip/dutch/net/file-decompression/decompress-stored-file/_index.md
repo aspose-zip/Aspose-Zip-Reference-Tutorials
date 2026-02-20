@@ -1,8 +1,8 @@
 ---
-date: 2025-12-16
-description: Leer hoe je een zip zonder compressie maakt en meerdere zip‑bestanden
+date: 2026-02-17
+description: Leer hoe je zip-bestanden zonder compressie maakt en meerdere zip-bestanden
   extraheert met Aspose.Zip voor .NET. Deze gids behandelt hoe je een zip opent, zip‑entry
-  leest en de C#‑stappen voor het uitpakken van zip uitvoert.
+  leest en de C#‑stappen voor het uitpakken van zip.
 linktitle: Decompressing a Stored File
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Zip maken zonder compressie & bestanden decomprimeren – Aspose.Zip
@@ -16,32 +16,39 @@ weight: 13
 
 # Een opgeslagen bestand decomprimeren met Aspose.Zip voor .NET
 
-## Inleiding
+## Introductie
 
-In moderne .NET‑toepassingen is **create zip without compression** een handige techniek wanneer je snelle archivering nodig hebt zonder de overhead van gegevensreductie. Aspose.Zip voor .NET maakt het eenvoudig om zulke archieven te maken en later **extract multiple zip files** uit te voeren. In deze tutorial zie je hoe je een zip opent, zip‑entry‑gegevens leest en stap‑voor‑stap een **C# extract zip**‑bewerking uitvoert.
+In moderne .NET‑applicaties is **create zip without compression** een handige techniek wanneer je snelle archivering nodig hebt zonder de overhead van gegevensreductie. Aspose.Zip voor .NET maakt het eenvoudig om zulke archieven te maken en later **extract multiple zip files** uit te voeren. In deze tutorial zie je hoe je een zip opent, zip‑entry‑gegevens leest en een **C# extract zip**‑bewerking stap voor stap uitvoert.
 
 ## Snelle antwoorden
-- **Wat is “create zip without compression”?** Het betekent dat bestanden aan een ZIP‑archief worden toegevoegd met de “store”‑methode, waardoor de gegevens ongewijzigd blijven.
-- **Welke bibliotheek behandelt dit in .NET?** Aspose.Zip voor .NET.
-- **Heb ik een licentie nodig om het voorbeeld uit te voeren?** Een gratis proefversie werkt voor ontwikkeling; een commerciële licentie is vereist voor productie.
-- **Kan ik meerdere bestanden tegelijk extraheren?** Ja – de tutorial toont hoe je **extract multiple zip files** in een lus kunt uitvoeren.
-- **Welke .NET‑versies worden ondersteund?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+- **What is “create zip without compression”?** Het betekent dat bestanden worden toegevoegd aan een ZIP‑archief met de “store”‑methode, waardoor de data ongewijzigd blijft.  
+- **Which library handles this in .NET?** Aspose.Zip for .NET.  
+- **Do I need a license to run the sample?** Een gratis proefversie werkt voor ontwikkeling; een commerciële licentie is vereist voor productie.  
+- **Can I extract several files at once?** Ja – de tutorial laat zien hoe je **extract multiple zip files** in een lus kunt uitvoeren.  
+- **What .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
 ## Wat is “create zip without compression”?
+
 Wanneer je een ZIP‑archief maakt met de **store**‑compressiemethode, wordt elk bestand exact zoals het is toegevoegd. Dit resulteert in een groter archief vergeleken met gecomprimeerde ZIP‑bestanden, maar de bewerking is veel sneller en de oorspronkelijke bytes blijven onaangetast – ideaal voor scenario’s waarbij snelheid of gegevensintegriteit belangrijker is dan grootte.
 
+## Begrijpen van de zip‑compressiemethode store
+
+De **zip compression method store** (ook wel de “store”‑methode genoemd) vertelt het ZIP‑formaat om elke stap van gegevensreductie over te slaan. Aspose.Zip stelt dit beschikbaar via de `CompressionMethod.Store`‑enum, waardoor je deze methode expliciet voor elke entry kunt kiezen. Het gebruik van de store‑methode is vooral handig wanneer je al gecomprimeerde mediabestanden (bijv. JPEG, MP3) verwerkt, waarbij extra compressie geen voordeel biedt.
+
 ## Waarom Aspose.Zip voor .NET gebruiken?
-- **Volledige controle** over compressieniveau (store vs. deflate).  
-- **Eenvoudige API** voor het lezen van entries, openen van zip‑bestanden en extraheren van gegevens.  
-- **Cross‑platform** ondersteuning voor .NET Framework, .NET Core en .NET 5+.
 
-## Voorvereisten
+- **Full control** over compressieniveau (store vs. deflate).  
+- **Simple API** voor het lezen van entries, openen van zip‑bestanden en extraheren van data.  
+- **Cross‑platform** ondersteuning voor .NET Framework, .NET Core en .NET 5+.  
+- **Built‑in handling** van grote archieven zonder alles in het geheugen te laden.
 
-Voordat we aan deze tutorial beginnen, zorg dat je de volgende zaken klaar hebt staan:
+## Vereisten
 
-- Aspose.Zip voor .NET‑bibliotheek: Download en installeer de Aspose.Zip voor .NET‑bibliotheek. Je kunt de bibliotheek vinden [hier](https://releases.aspose.com/zip/net/).
+Voordat we aan deze tutorial beginnen, zorg ervoor dat je de volgende zaken hebt:
 
-- Documentmap: Maak een map aan op je systeem waarin je de benodigde bestanden voor deze tutorial opslaat.
+- Aspose.Zip for .NET Library: Download en installeer de Aspose.Zip for .NET bibliotheek. Je vindt de bibliotheek [hier](https://releases.aspose.com/zip/net/).
+
+- Document Directory: Maak een map op je systeem waarin je de benodigde bestanden voor deze tutorial opslaat.
 
 ## Namespaces importeren
 
@@ -52,17 +59,17 @@ using Aspose.Zip;
 using System.IO;
 ```
 
-## Hoe een zip zonder compressie te maken
+## Hoe een zip maken zonder compressie
 
-Eerst hebben we een ZIP‑archief nodig dat de **store**‑methode gebruikt (d.w.z. geen compressie). De voorbeeldcode hieronder maakt zo’n archief en wordt geleverd door Aspose.Zip als een hulpmethode. Het uitvoeren ervan genereert `StoreMultipleFilesWithoutCompression_out.zip` in je documentmap.
+Eerst hebben we een ZIP‑archief nodig dat de **store**‑methode gebruikt (d.w.z. geen compressie). De voorbeeldcode hieronder maakt zo’n archief en wordt door Aspose.Zip geleverd als een hulpfunctie. Het uitvoeren ervan genereert `StoreMultipleFilesWithoutCompression_out.zip` in je documentmap.
 
 ```csharp
 StoreMultipleFilesWithoutCompression.Run();
 ```
 
-> **Pro tip:** De hulpmethode stelt intern `CompressionMethod.Store` in voor elke entry, waardoor het archief zonder enige gegevenscompressie wordt aangemaakt.
+> **Pro tip:** De hulpfunctie stelt intern `CompressionMethod.Store` in voor elke entry, waardoor het archief zonder enige gegevenscompressie wordt aangemaakt.
 
-## Hoe een zip te openen en meerdere bestanden te extraheren
+## Hoe een zip openen en meerdere bestanden extraheren
 
 Nu we een opgeslagen ZIP hebben, bekijken we **how to open zip** en de bestanden eruit halen.
 
@@ -121,55 +128,55 @@ Hier **read zip entry** 0, kopiëren we de bytes naar een nieuw bestand en slu
 }
 ```
 
-Door te itereren over `archive.Entries` kun je **extract multiple zip files** (of meerdere entries) met slechts een paar regels code.
+Door over `archive.Entries` te itereren, kun je **extract multiple zip files** (of meerdere entries) uitvoeren met slechts een paar regels code.
 
 ## Veelvoorkomende problemen en oplossingen
 
 | Probleem | Oorzaak | Oplossing |
 |----------|---------|-----------|
 | `FileNotFoundException` bij het openen van de ZIP | Verkeerd `dataDir`‑pad | Controleer of `dataDir` eindigt op een slash of gebruik `Path.Combine`. |
-| Geëxtraheerd bestand is leeg | Buffer niet geleegd | Het `using`‑blok leegt automatisch; zorg dat je de stream leest tot `bytesRead` 0 is (zoals getoond). |
-| Licentie‑exception | Uitvoeren zonder geldige licentie | Pas een proef‑ of permanente licentie toe vóór implementatie. |
+| Geëxtraheerd bestand is leeg | Buffer niet geleegd | Het `using`‑blok leegt automatisch; zorg ervoor dat je de stream leest tot `bytesRead` 0 is (zoals getoond). |
+| Licentie‑exception | Uitvoeren zonder geldige licentie | Pas een proef‑ of permanente licentie toe vóór productie. |
 
 ## Veelgestelde vragen
 
-### Q1: Is Aspose.Zip voor .NET compatibel met alle .NET‑frameworks?
+### Q1: Is Aspose.Zip for .NET compatibel met alle .NET‑frameworks?
 
-**A:** Ja, Aspose.Zip voor .NET is ontworpen om compatibel te zijn met diverse .NET‑frameworks, wat flexibiliteit biedt aan ontwikkelaars.
+**A:** Ja, Aspose.Zip for .NET is ontworpen om compatibel te zijn met diverse .NET‑frameworks, waardoor ontwikkelaars flexibiliteit hebben.
 
-### Q2: Kan ik Aspose.Zip voor .NET gebruiken in zowel commerciële als niet‑commerciële projecten?
+### Q2: Kan ik Aspose.Zip for .NET gebruiken in zowel commerciële als niet‑commerciële projecten?
 
-**A:** Ja, Aspose.Zip voor .NET kan worden gebruikt in zowel commerciële als niet‑commerciële projecten. Zie de [purchase page](https://purchase.aspose.com/buy) voor licentie‑details.
+**A:** Ja, Aspose.Zip for .NET kan worden gebruikt in zowel commerciële als niet‑commerciële projecten. Zie de [purchase page](https://purchase.aspose.com/buy) voor licentie‑details.
 
-### Q3: Hoe kan ik ondersteuning krijgen voor Aspose.Zip voor .NET?
+### Q3: Hoe kan ik ondersteuning krijgen voor Aspose.Zip for .NET?
 
-**A:** Voor ondersteuning, bezoek het [Aspose.Zip forum](https://forum.aspose.com/c/zip/37), waar een community van ontwikkelaars en experts je kunnen helpen.
+**A:** Voor ondersteuning, bezoek het [Aspose.Zip forum](https://forum.aspose.com/c/zip/37), waar een community van ontwikkelaars en experts je kan helpen.
 
-### Q4: Is er een gratis proefversie beschikbaar voor Aspose.Zip voor .NET?
+### Q4: Is er een gratis proefversie beschikbaar voor Aspose.Zip for .NET?
 
-**A:** Ja, je kunt de functies van Aspose.Zip voor .NET verkennen door een gratis proefversie te verkrijgen [hier](https://releases.aspose.com/).
+**A:** Ja, je kunt de functies van Aspose.Zip for .NET verkennen door een gratis proefversie te verkrijgen [hier](https://releases.aspose.com/).
 
-### Q5: Kan ik een tijdelijke licentie krijgen voor testdoeleinden?
+### Q5: Kan ik een tijdelijke licentie verkrijgen voor testdoeleinden?
 
-**A:** Ja, je kunt een tijdelijke licentie verkrijgen voor testen via [deze link](https://purchase.aspose.com/temporary-license/).
+**A:** Ja, je kunt een tijdelijke licentie voor testen verkrijgen via [this link](https://purchase.aspose.com/temporary-license/).
 
 ### Q6: Hoe lees ik een zip‑entry zonder het hele archief te extraheren?
 
-**A:** Gebruik `archive.Entries[index].Open()` om een stream voor een specifieke entry te krijgen, en lees vervolgens de bytes die je nodig hebt, zoals gedemonstreerd in de code hierboven.
+**A:** Gebruik `archive.Entries[index].Open()` om een stream voor een specifieke entry te krijgen, en lees vervolgens de benodigde bytes, zoals gedemonstreerd in de code hierboven.
 
 ### Q7: Wat is de beste manier om **extract multiple zip files** in een lus uit te voeren?
 
-**A:** Itereer over `archive.Entries` met een `foreach`‑lus, open elke entry‑stream en schrijf deze naar een bestemmingsbestand, vergelijkbaar met het patroon dat wordt getoond in Stap 2.2 en 2.3.
+**A:** Iterate over `archive.Entries` met een `foreach`‑lus, open elke entry‑stream en schrijf deze naar een bestemmingsbestand, vergelijkbaar met het patroon dat wordt getoond in Stap 2.2 en 2.3.
 
 ## Conclusie
 
-Het beheersen van **create zip without compression** en het daaropvolgende extractieproces is essentieel voor high‑performance .NET‑applicaties. Aspose.Zip voor .NET biedt een schone, intuïtieve API om **how to open zip**, elke **zip entry** te lezen en een **C# extract zip**‑bewerking uit te voeren met minimale code. Door deze gids te volgen, heb je geleerd hoe je een opgeslagen archief genereert, opent en de inhoud efficiënt extraheert.
+Het beheersen van **create zip without compression** en het daaropvolgende extractie‑proces is essentieel voor high‑performance .NET‑applicaties. Aspose.Zip for .NET biedt je een duidelijke, intuïtieve API om **how to open zip** uit te voeren, elke **zip entry** te lezen en een **C# extract zip**‑bewerking met minimale code te doen. Door deze gids te volgen, heb je geleerd hoe je een opgeslagen archief genereert, opent en de inhoud efficiënt extraheert.
 
 ---
 
-**Laatst bijgewerkt:** 2025-12-16  
-**Getest met:** Aspose.Zip voor .NET 24.12  
-**Auteur:** Aspose  
+**Last Updated:** 2026-02-17  
+**Tested With:** Aspose.Zip for .NET 24.12  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

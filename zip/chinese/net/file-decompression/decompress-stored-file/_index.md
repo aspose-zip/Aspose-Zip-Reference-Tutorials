@@ -1,6 +1,6 @@
 ---
-date: 2025-12-16
-description: 了解如何使用 Aspose.Zip for .NET 创建无压缩的 zip 并提取多个 zip 文件。本指南涵盖了如何打开 zip、读取
+date: 2026-02-17
+description: 学习如何使用 Aspose.Zip for .NET 创建无压缩的 zip 文件并提取多个 zip 文件。本指南涵盖如何打开 zip、读取
   zip 条目以及 C# 提取 zip 的步骤。
 linktitle: Decompressing a Stored File
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -17,55 +17,61 @@ weight: 13
 
 ## 介绍
 
-在现代 .NET 应用程序中，**create zip without compression** 是一种在需要快速归档且不想承担数据压缩开销时的实用技术。Aspose.Zip for .NET 让创建此类归档以及随后 **extract multiple zip files** 变得轻而易举。在本教程中，你将看到如何打开 zip、读取 zip 条目数据，并一步步完成 **C# extract zip** 操作。
+在现代 .NET 应用程序中，**create zip without compression** 是一种在需要快速归档且不希望进行数据压缩的情况下非常有用的技术。Aspose.Zip for .NET 让创建此类归档以及随后 **extract multiple zip files** 变得轻而易举。在本教程中，你将看到如何打开 zip、读取 zip entry 数据，并一步步执行 **C# extract zip** 操作。
 
 ## 快速答案
-- **什么是 “create zip without compression”？** 它指的是使用 “store” 方法向 ZIP 归档中添加文件，数据保持原样不压缩。
-- **哪个库在 .NET 中处理此功能？** Aspose.Zip for .NET。
-- **运行示例是否需要许可证？** 开发阶段可以使用免费试用版；生产环境需要商业许可证。
-- **可以一次提取多个文件吗？** 可以——本教程展示了如何在循环中 **extract multiple zip files**。
-- **支持哪些 .NET 版本？** .NET Framework 4.5+、.NET Core 3.1+、.NET 5/6/7。
+- **What is “create zip without compression”?** 它指的是使用 “store” 方法向 ZIP 归档中添加文件，数据保持原样不变。  
+- **Which library handles this in .NET?** Aspose.Zip for .NET。  
+- **Do I need a license to run the sample?** 开发阶段可使用免费试用版；生产环境需要商业许可证。  
+- **Can I extract several files at once?** 可以——本教程展示了在循环中 **extract multiple zip files** 的方法。  
+- **What .NET versions are supported?** .NET Framework 4.5+、.NET Core 3.1+、.NET 5/6/7。
 
 ## 什么是 “create zip without compression”？
-当你使用 **store** 压缩方法创建 ZIP 归档时，每个文件都会原样添加。与压缩的 ZIP 相比，这会产生更大的归档，但操作速度更快，且原始文件字节保持不变——非常适合对速度或数据完整性要求高于体积的场景。
+
+当你使用 **store** 压缩方法创建 ZIP 归档时，每个文件都会原样添加。这会导致归档体积大于使用压缩的 ZIP，但操作速度更快，且原始文件字节保持不变——非常适合对速度或数据完整性要求高于体积的场景。
+
+## 理解 zip compression method store
+
+**zip compression method store**（亦称 “store” 方法）指示 ZIP 格式跳过任何数据压缩步骤。Aspose.Zip 通过 `CompressionMethod.Store` 枚举公开此功能，允许你为每个条目显式选择该方法。当处理已经压缩的媒体文件（如 JPEG、MP3）时，使用 store 方法尤其方便，因为进一步压缩没有任何收益。
 
 ## 为什么使用 Aspose.Zip for .NET？
-- **完整控制** 压缩级别（store 与 deflate）。  
-- **简洁 API** 用于读取条目、打开 zip 文件以及提取数据。  
-- **跨平台** 支持 .NET Framework、.NET Core 和 .NET 5+。
+
+- **Full control**：可在存储（store）与压缩（deflate）之间自由选择。  
+- **Simple API**：提供读取条目、打开 zip 文件、提取数据的简洁接口。  
+- **Cross‑platform**：支持 .NET Framework、.NET Core 以及 .NET 5+。  
+- **Built‑in handling**：能够处理大型归档而无需一次性加载全部内容到内存。
 
 ## 前置条件
 
 在开始本教程之前，请确保已满足以下前置条件：
 
-- Aspose.Zip for .NET 库：下载并安装 Aspose.Zip for .NET 库。你可以在[此处](https://releases.aspose.com/zip/net/)找到该库。
-
-- 文档目录：在系统中创建一个目录，用于存放本教程所需的文件。
+- Aspose.Zip for .NET Library：下载并安装 Aspose.Zip for .NET 库。你可以在[此处](https://releases.aspose.com/zip/net/)找到该库。  
+- Document Directory：在系统中创建一个目录，用于存放本教程所需的文件。
 
 ## 导入命名空间
 
-首先，让我们为项目导入所需的命名空间：
+让我们先导入项目所需的命名空间：
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-## 如何创建无压缩的 Zip
+## 如何创建不压缩的 ZIP 文件
 
-首先我们需要一个使用 **store** 方法（即不压缩）的 ZIP 归档。下面的示例代码由 Aspose.Zip 提供，作为帮助方法。运行后会在你的文档目录中生成 `StoreMultipleFilesWithoutCompression_out.zip`。
+首先需要一个使用 **store** 方法（即无压缩）的 ZIP 归档。下面的示例代码由 Aspose.Zip 提供，作为辅助方法使用。运行后会在你的文档目录生成 `StoreMultipleFilesWithoutCompression_out.zip`。
 
 ```csharp
 StoreMultipleFilesWithoutCompression.Run();
 ```
 
-> **专业提示：** 该帮助方法内部为每个条目设置 `CompressionMethod.Store`，确保归档在创建时不进行任何数据压缩。
+> **专业提示：** 该辅助方法内部为每个条目设置了 `CompressionMethod.Store`，确保归档在创建时不进行任何数据压缩。
 
-## 如何打开 Zip 并提取多个文件
+## 如何打开 ZIP 文件并提取多个文件
 
-现在我们已有一个存储的 ZIP，下面来看 **how to open zip** 并将文件提取出来的步骤。
+现在我们已经拥有一个存储型 ZIP，下面看看 **how to open zip** 并将文件提取出来的步骤。
 
-### 步骤 2.1：打开 Zip 文件
+### 步骤 2.1：打开 ZIP 文件
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -124,9 +130,9 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 
 ## 常见问题及解决方案
 
-| 问题 | 原因 | 解决办法 |
-|-------|-------|-----|
-| 打开 ZIP 时出现 `FileNotFoundException` | `dataDir` 路径错误 | 确认 `dataDir` 以斜杠结尾或使用 `Path.Combine`。 |
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| `FileNotFoundException` 在打开 ZIP 时出现 | `dataDir` 路径错误 | 确认 `dataDir` 以斜杠结尾或使用 `Path.Combine`。 |
 | 提取的文件为空 | 缓冲区未刷新 | `using` 块会自动刷新；确保读取流直到 `bytesRead` 为 0（如示例所示）。 |
 | 许可证异常 | 未使用有效许可证运行 | 在部署前应用试用或正式许可证。 |
 
@@ -138,7 +144,7 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 
 ### Q2: 我可以在商业和非商业项目中使用 Aspose.Zip for .NET 吗？
 
-**A:** 可以，Aspose.Zip for .NET 可用于商业和非商业项目。请参阅[购买页面](https://purchase.aspose.com/buy)了解许可证详情。
+**A:** 可以，Aspose.Zip for .NET 可用于商业和非商业项目。许可证详情请参阅[购买页面](https://purchase.aspose.com/buy)。
 
 ### Q3: 如何获取 Aspose.Zip for .NET 的支持？
 
@@ -150,25 +156,25 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 
 ### Q5: 我可以获取临时许可证用于测试吗？
 
-**A:** 可以，访问[此链接](https://purchase.aspose.com/temporary-license/)获取临时测试许可证。
+**A:** 可以，访问[此链接](https://purchase.aspose.com/temporary-license/)获取临时许可证进行测试。
 
-### Q6: 如何在不提取整个归档的情况下读取 zip 条目？
+### Q6: 如何在不提取整个归档的情况下读取 zip entry？
 
-**A:** 使用 `archive.Entries[index].Open()` 获取特定条目的流，然后读取所需的字节，如上面的代码示例所示。
+**A:** 使用 `archive.Entries[index].Open()` 获取特定条目的流，然后读取所需的字节，正如上面的代码示例所示。
 
 ### Q7: 在循环中 **extract multiple zip files** 的最佳方式是什么？
 
-**A:** 使用 `foreach` 循环遍历 `archive.Entries`，打开每个条目的流并写入目标文件，类似于步骤 2.2 和 2.3 中展示的模式。
+**A:** 使用 `foreach` 循环遍历 `archive.Entries`，打开每个条目的流并写入目标文件，模式与 Step 2.2 与 2.3 中展示的相同。
 
 ## 结论
 
-掌握 **create zip without compression** 以及随后的提取过程对于高性能 .NET 应用至关重要。Aspose.Zip for .NET 为你提供了简洁直观的 API，帮助你 **how to open zip**、读取每个 **zip entry**，并以最少的代码完成 **C# extract zip** 操作。通过本指南，你已经学会了生成存储归档、打开它并高效提取内容的完整流程。
+掌握 **create zip without compression** 以及随后的提取过程对于高性能 .NET 应用至关重要。Aspose.Zip for .NET 为 **how to open zip**、读取每个 **zip entry**、以及执行 **C# extract zip** 操作提供了简洁直观的 API。通过本指南，你已经学会了生成存储型归档、打开它并高效提取其内容。
 
 ---
 
-**最后更新：** 2025-12-16  
-**测试环境：** Aspose.Zip for .NET 24.12  
-**作者：** Aspose  
+**Last Updated:** 2026-02-17  
+**Tested With:** Aspose.Zip for .NET 24.12  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

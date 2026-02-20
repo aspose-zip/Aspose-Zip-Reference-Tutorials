@@ -1,10 +1,10 @@
 ---
-date: 2025-12-14
-description: C# projelerinizde .NET için Aspose.Zip kullanarak zip dosyasını nasıl
-  açacağınızı ve tek bir zip dosyasını nasıl çıkaracağınızı öğrenin.
+date: 2026-02-17
+description: C# projelerinizde .NET için Aspose.Zip kullanarak zip ilerlemesini izlemeyi
+  ve zip dosyalarını açmayı, tek bir girdiyi çıkarmayı öğrenin.
 linktitle: Decompressing a Single File
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Zip'i Çöz c# – Aspose.Zip ile Tek Dosya Çıkarma
+title: c#'da zip ilerlemesini izleme – Aspose.Zip ile Tek Dosyayı Açma
 url: /tr/net/file-decompression/decompress-single-file/
 weight: 12
 ---
@@ -13,32 +13,32 @@ weight: 12
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Decompress zip c# – Aspose.Zip ile Tek Dosya Çıkarma
+# C# ile ZIP Dosyası Sıkıştırmasını İzleme – Aspose.Zip ile Tek Dosyayı Açma
 
-## Introduction
+## Giriş
 
-Eğer **decompress zip c#** dosyalarını açmanız ve yalnızca bir girişi çıkarmanız gerekiyorsa, Aspose.Zip for .NET bu işi basitleştirir. Bu öğreticide, bir ZIP arşivinden tek bir dosyanın nasıl çıkarılacağını, ilerlemenin nasıl izleneceğini ve sonucun temiz, sürdürülebilir bir şekilde nasıl ele alınacağını gösteren eksiksiz, gerçek‑dünya bir örnek üzerinden adım adım ilerleyeceğiz. Sonunda, zip çıkarma işlemini herhangi bir C# uygulamasına eklemek konusunda kendinize güveneceksiniz.
+ZIP dosyalarını açarken ve tek bir dosyayı çıkarırken **C# ile ZIP dosyasının sıkıştırmasını izlemeniz** gerekiyorsa, .NET için Aspose.Zip işinizi kolaylaştırır. Bu eğitimde, bir ZIP arşivinden tek bir dosyayı nasıl çıkaracağınızı, çıkarma işleminin gerçek zamanlı olarak nasıl izleneceğini ve sonucu temiz ve sürdürülebilir bir şekilde nasıl ele alacağınızı gösteren eksiksiz, gerçek dünya örneğini inceleyeceğiz. Sonunda, herhangi bir C# uygulamasına zip çıkarma özelliğini eklemek konusunda kendinize güven duyacaksınız.
 
-## Quick Answers
-- **What does this tutorial cover?** Decompressing a ZIP archive and extracting a single file using Aspose.Zip for .NET.  
-- **Which primary keyword is targeted?** decompress zip c#  
-- **Do I need a license?** A free trial works for development; a commercial license is required for production.  
-- **Is .NET Core supported?** Yes – the same code runs on .NET Framework and .NET Core.  
-- **How long does implementation take?** About 10‑15 minutes for a basic setup.
+## Hızlı Cevaplar
+- **Bu eğitim neyi kapsıyor?** C# ile zip dosyasının sıkıştırmasını izleme ve .NET için Aspose.Zip kullanarak bir ZIP arşivinden tek bir dosyayı çıkarma.
+- **Hangi anahtar kelime hedefleniyor?** C# ile zip dosyasının sıkıştırmasını izleme
+- **Lisansa ihtiyacım var mı?** Ücretsiz deneme sürümü geliştirme için geçerlidir; üretim için ticari lisans gereklidir.
+- **.NET Core destekleniyor mu?** Evet – aynı kod .NET Framework ve .NET Core üzerinde çalışır.
+- **Uygulama ne kadar sürer?** Temel bir kurulum için yaklaşık 10-15 dakika.
 
-## Prerequisites
+## Önkoşullar
 
-Tutoriala başlamadan önce aşağıdaki ön koşulların sağlandığından emin olun:
+Eğitime başlamadan önce, aşağıdaki önkoşulların yerinde olduğundan emin olun:
 
-- Aspose.Zip for .NET Library: Download and install the library from the [Aspose.Zip for .NET Documentation](https://reference.aspose.com/zip/net/).
-- Development Environment: Have a functional .NET development environment ready, including Visual Studio or any other compatible IDE.
-- Basic Understanding of C#: Familiarize yourself with the basics of C# programming.
+- Aspose.Zip for .NET Kütüphanesi: Kütüphaneyi [Aspose.Zip for .NET Belgelerinden](https://reference.aspose.com/zip/net/) indirip kurun.
+- Geliştirme Ortamı: Visual Studio veya uyumlu başka bir IDE dahil olmak üzere işlevsel bir .NET geliştirme ortamınız hazır olsun.
+- C# Temel Bilgisi: C# programlamanın temellerine aşina olun.
 
-Şimdi kodla biraz “ellerimizi kirletelim”!
+Şimdi, biraz kod yazmaya başlayalım!
 
-## Import Namespaces
+## Ad Alanlarını İçe Aktarma
 
-Aspose.Zip yolculuğunuza başlamak için gerekli ad alanlarını içe aktarın:
+Aspose.Zip yolculuğunuza başlamak için gerekli ad alanlarını içe aktararak başlayın:
 
 ```csharp
 using Aspose.Zip;
@@ -46,27 +46,42 @@ using System;
 using System.IO;
 ```
 
-## Step‑by‑Step Guide to Decompress zip c#
+## C#'da ZIP Dosyası Açma İşleminin İlerlemesini İzlemek Nedir?
 
-### Step 1: Set Your Document Directory
+ZIP dosya çıkarma işleminin ilerlemesini izlemek, özellikle büyük arşivler için kullanıcılara anında geri bildirim sağlar. Aspose.Zip, müdahale edebileceğiniz ilerleme olayları oluşturarak yüzdeleri görüntülemeyi veya kullanıcı arayüzü öğelerini güncellemeyi kolaylaştırır.
 
-Belgelerinizin saklandığı dizini belirtin. `"Your Document Directory"` ifadesini gerçek yol ile değiştirin.
+## C# Dosya Sıkıştırmasını Açmak İçin Aspose.Zip Neden Kullanılmalı?
+
+- **Harici bağımlılık yok** – tamamen .NET kütüphanesi.
+- **Büyük arşivleri destekler**, böylece bellek kullanımı düşük kalır.
+- **Yerleşik ilerleme olayları**, **C#'da ZIP dosya açma işlemini izlerken** kullanıcı arayüzüne geri bildirim sağlamayı kolaylaştırır.
+- **.NET Framework, .NET Core ve .NET 5/6'da çalışır**.
+- **Daha sonra arşiv oluşturmanız gerekiyorsa, birden fazla dosyayı zip olarak sıkıştırma özelliğine de sahiptir.**
+
+## Aspose.Zip kullanarak C# ile ZIP Dosyasını Açma
+
+Aşağıda, tek bir girdiyi ayıklamak ve konsolda ayıklama yüzdesini izlemek için izleyeceğiniz adımlar yer almaktadır.
+
+### Adım 1: Belge Dizininizi Belirleyin
+
+Belgelerinizin saklandığı dizini belirterek başlayın. "Belge Dizininiz" ifadesini gerçek yol ile değiştirin.
+
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-### Step 2: Create a Compressed File (Demo Setup)
+### Adım 2: Sıkıştırılmış Bir Dosya Oluşturun (Örnek Kurulum)
 
-Aşağıdaki çağrı, daha sonra açacağımız örnek bir ZIP dosyası oluşturur. Bu, zaten bir ZIP arşivine sahip olduğunuz tipik bir senaryoyu taklit eder.
+Aşağıdaki çağrı, daha sonra açacağımız örnek bir ZIP dosyası oluşturur. Bu, zaten bir ZIP arşiviniz olduğu tipik bir senaryoyu yansıtır.
 
 ```csharp
 CompressSingleFile.Run();
 ```
 
-### Step 3: Decompress the File – Extract Single Zip File
+### Adım 3: Dosyayı Açın – Tek ZIP Dosyasını Çıkarın
 
-Şimdi konunun kalbine inelim – tek bir girişi çıkaralım. Aşağıdaki kod ZIP arşivini açar, bir ilerleme işleyicisi ekler ve ilk girişi bir metin dosyasına çıkarır.
+Şimdi, işin özüne inelim – **zip ilerlemesini izlerken** tek bir girdiyi ayıklamak. Aşağıdaki kod, ZIP arşivini açar, bir ilerleme işleyici ekler ve ilk girdiyi bir metin dosyasına ayıklar.
 
 ```csharp
 // ExStart: DecompressSingleFile
@@ -89,52 +104,46 @@ using (FileStream fs = File.OpenRead(dataDir + "CompressSingleFile_out.zip"))
 }
 ```
 
-Bu snippet **tek bir zip girişini** gerçek‑zamanlı ilerleme (ör. “%30 decompressed”) ile çıkarır. `Entries[0]` indeksini değiştirerek arşiv içindeki başka bir dosyayı hedefleyebilirsiniz.
+Bu kod parçası, gerçek zamanlı ilerlemeyi yazdırırken (örneğin, "sıkıştırmanın %30'u açıldı") **tek bir zip girdisini çıkarır**. Arşiv içindeki herhangi bir dosyayı hedeflemek için dizini (`Entries[0]`) uyarlayabilirsiniz.
 
-## Why Use Aspose.Zip for C# File Decompression?
+## Sık Karşılaşılan Sorunlar ve İpuçları
 
-- **No external dependencies** – pure .NET library.  
-- **Supports large archives** with streaming, so memory usage stays low.  
-- **Built‑in progress events** make it easy to provide UI feedback.  
-- **Works across .NET Framework, .NET Core, and .NET 5/6**.
+- **Dosya yolu ayırıcıları** – platformlar arası güvenlik için `Path.Combine` kullanın.
+- **Şifre korumalı ZIP'ler** – çıkarmadan önce `archive.Password` değerini ayarlayın.
+- **Birden fazla girdi** – `archive.Entries` üzerinde döngü oluşturun ve `FileName` ile eşleştirin.
+- **Birden fazla dosyayı zip olarak sıkıştırma** – daha sonra birden fazla dosyayı paketlemeniz gerekirse, Aspose.Zip'in `AddFile` yöntemi API'den çıkmadan arşiv oluşturmanıza olanak tanır.
 
-## Common Issues & Tips
+## Sıkça Sorulan Sorular
 
-- **File path separators** – use `Path.Combine` for cross‑platform safety.  
-- **Password‑protected ZIPs** – set `archive.Password` before extracting.  
-- **Multiple entries** – loop through `archive.Entries` and match by `FileName`.  
+### S1: Aspose.Zip for .NET kullanarak birden fazla dosyayı sıkıştırabilir miyim?
 
-## Frequently Asked Questions
+C1: Evet, Aspose.Zip for .NET **birden fazla dosyayı zip dosyası olarak sıkıştırmayı** destekler. Ayrıntılı talimatlar için belgelere bakın.
 
-### Q1: Can I compress multiple files using Aspose.Zip for .NET?
+### S2: Aspose.Zip, .NET Core ile uyumlu mu?
 
-A1: Yes, Aspose.Zip for .NET supports compressing multiple files. Refer to the documentation for detailed instructions.
+C2: Kesinlikle! Aspose.Zip, hem .NET Framework hem de .NET Core ile sorunsuz bir şekilde entegre olur.
 
-### Q2: Is Aspose.Zip compatible with .NET Core?
+### S3: Şifre korumalı sıkıştırılmış dosyaları nasıl işleyebilirim?
 
-A2: Absolutely! Aspose.Zip seamlessly integrates with both .NET Framework and .NET Core.
+C3: Aspose.Zip, **şifre korumalı** arşivlerle çalışmak için yöntemler sunar. Rehberlik için belgelere bakın.
 
-### Q3: How can I handle password‑protected compressed files?
+### S4: Aspose.Zip kullanımı için herhangi bir lisanslama hususu var mı?
 
-A3: Aspose.Zip provides methods to work with password‑protected archives. Consult the documentation for guidance.
+C4: [Aspose web sitesindeki](https://purchase.aspose.com/buy) lisanslama bilgilerini inceleyin.
 
-### Q4: Are there any licensing considerations for using Aspose.Zip?
+### S5: Sorunlarla karşılaşırsam nereden yardım alabilirim?
 
-A4: Review the licensing information on the [Aspose website](https://purchase.aspose.com/buy).
+C5: Topluluk desteği için [Aspose.Zip Forumu](https://forum.aspose.com/c/zip/37) adresini ziyaret edin.
 
-### Q5: Where can I seek help if I encounter issues?
+## Sonuç
 
-A5: Visit the [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) for community support.
-
-## Conclusion
-
-Tebrikler! **decompress zip c#** konusundaki incelikleri başarıyla geçtiniz ve Aspose.Zip for .NET kullanarak tek bir dosyayı çıkardınız. Bu deseni uygulamalarınıza entegre ederek dosya işlemlerini kolaylaştırabilir, kullanıcı deneyimini iyileştirebilir ve kod tabanınızı temiz tutabilirsiniz.
+Tebrikler! Aspose.Zip for .NET kullanarak **zip ilerlemesini C# ile başarıyla izlediniz** ve tek bir dosyayı çıkardınız. Dosya işlemeyi kolaylaştırmak, kullanıcı deneyimini iyileştirmek ve kod tabanınızı temiz tutmak için bu modeli uygulamalarınıza entegre edin.
 
 ---
 
-**Last Updated:** 2025-12-14  
-**Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose  
+**Son Güncelleme:** 17.02.2026
+**Test Edilen Sürüm:** Aspose.Zip for .NET 24.11
+**Yazar:** Aspose 
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -1,10 +1,10 @@
 ---
-date: 2025-12-10
-description: Aspose.Zip を使用して .NET で複数のファイルやフォルダーを解凍する方法を学びましょう。アーカイブを効率的に抽出するためのステップバイステップ
-  C# の例をご覧ください。
-linktitle: How to Decompress Multiple Files with Aspose.Zip for .NET
+date: 2026-02-17
+description: Aspose.Zip for .NET を使用してファイルを解凍する方法を学びます。C# を使って zip フォルダーの抽出や、パスワード保護された
+  zip アーカイブの抽出方法も含まれます。
+linktitle: How to Decompress Files with Aspose.Zip for .NET
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: .NET 用 Aspose.Zip で複数ファイルを解凍する方法
+title: .NET 用 Aspose.Zip でファイルを解凍する方法
 url: /ja/net/file-decompression/
 weight: 21
 ---
@@ -13,102 +13,115 @@ weight: 21
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET を使用した複数ファイルの解凍方法
+# Aspose.Zip for .NET を使用したファイルの解凍方法
 
-## Introduction
+## はじめに
 
-ファイル圧縮はソフトウェア開発において重要な要素であり、効率的なデータ保存と転送を可能にします。**複数ファイルを解凍**する必要がある場合、.NET 環境で迅速かつ確実に処理できるよう、Aspose.Zip for .NET は手動抽出の手間を省くクリーンで高性能な API を提供します。本ガイドでは、単一アーカイブの抽出からパスワード保護された ZIP ファイルの取り扱いまで、一般的なシナリオを紹介し、プロジェクトに最適なアプローチを選択できるようにします。
+.NET 環境で **how to decompress files** を迅速かつ確実に行う必要があるとき、Aspose.Zip for .NET は手動での解凍の手間を排除する、クリーンで高性能な API を提供します。単一のアーカイブ、ログファイルのバッチ、またはパスワード保護された zip など、どのようなケースでも、本ガイドでは数行の C# コードで zip フォルダーの内容を抽出し、暗号化されたアーカイブを処理する方法を正確に示します。
 
-## Quick Answers
-- **Aspose.Zip for .NET は何をしますか？** C# で ZIP、TAR、GZIP などのアーカイブ形式を作成、読み取り、抽出するシンプルな API を提供します。
-- **複数ファイルを一度に解凍できますか？** はい、ライブラリは単一呼び出しで全エントリを抽出するか、個別にイテレートすることができます。
-- **パスワード保護された抽出はサポートされていますか？** もちろんです。暗号化されたアーカイブを解除するためにパスワードを指定できます。
-- **対応している .NET バージョンはどれですか？** .NET Framework 4.5 以降、.NET Core 3.1 以降、.NET 5/6/7 以降です。
-- **開発にライセンスは必要ですか？** 無料トライアルで評価は可能ですが、本番環境で使用する場合は商用ライセンスが必要です。
+## クイックアンサー
+- **Aspose.Zip for .NET はどのような機能がありますか？** C# で ZIP、TAR、GZIP などのアーカイブ形式を作成、読み込み、解凍するためのシンプルな API を提供します。
+- **複数のファイルを一度に解凍できますか？** はい。ライブラリを使用すると、1 回の呼び出しですべてのエントリを解凍することも、個別に反復処理することもできます。
+- **パスワード保護された解凍はサポートされていますか？** はい。暗号化されたアーカイブのロックを解除するには、パスワードを入力できます。
+- **どの .NET バージョンがサポートされていますか？** .NET Framework 4.5 以降、.NET Core 3.1 以降、.NET 5/6/7 以降。
+- **開発にはライセンスが必要ですか？** 評価には無料トライアル版をご利用いただけますが、本番環境での使用には商用ライセンスが必要です。
 
-## What is “decompress multiple files”?
+## Aspose.Zip for .NET を使用したファイルの解凍方法
+Aspose.Zip を使ったファイルの解凍は簡単です。ライブラリには、ディレクトリ、特定のファイル、またはメモリストリームをターゲットにできる `Extract` メソッドが用意されています。以下に、一般的なワークフローの概要を示します。
 
-複数ファイルを解凍するとは、アーカイブ（ZIP、TAR など）に格納されたすべてのエントリを取り出し、必要に応じて各ファイルを対象ディレクトリへ書き出すことを指します。この操作は、ログファイルや画像、設定セットなど、バンドルされたデータを受け取った際に、処理前に展開する必要がある場合に一般的です。
+1. **zip ファイルを指す `Archive` インスタンスを作成します**。
+2. **展開先フォルダーを指定して `Extract` を呼び出します**。
+3. アーカイブが暗号化されている場合は、**オプションでパスワードを渡します** (`extract password protected zip`)。
 
-## Why use Aspose.Zip for .NET to decompress multiple files?
+このアプローチは、従来の zip、zip フォルダー構造、XAR や WIM などの最新形式など、Aspose.Zip がサポートするあらゆるアーカイブ形式で機能します。
 
-- **Performance‑optimized** 抽出で、大容量アーカイブでも過剰なメモリ消費なしに動作します。  
-- **Built‑in support** クラシック ZIP に加え、XAR、WIM などの最新フォーマットや暗号化アーカイブもサポート。  
-- **Straightforward C# syntax** ストリームやサードパーティーツールを操作する必要がありません。  
-- **Cross‑platform** 互換性により、Windows、Linux、macOS で同一コードを実行できます。
+## 「複数ファイルの解凍」とは？
+複数ファイルの解凍とは、アーカイブ（ZIP、TAR など）に格納されているすべてのエントリを抽出し、必要に応じて各ファイルを対象ディレクトリに書き出すことを指します。この操作は、ログファイルや画像、設定セットなど、バンドルされたデータを受け取った際に、処理前に展開する必要がある場合に一般的です。
 
-## Decompressing a File with Aspose.Zip for .NET
+## 複数ファイルの解凍に Aspose.Zip for .NET を使う理由
+- **パフォーマンス最適化** された解凍機能により、メモリを過剰に消費することなく、大規模なアーカイブを処理できます。
+- 従来の ZIP、最新の形式 (XAR、WIM)、暗号化アーカイブを**内蔵サポート** しています。
+- **わかりやすい C# 構文** － ストリームやサードパーティ製ユーティリティ (`aspose zip extract`) の操作は不要です。
+- **クロスプラットフォーム** 互換性により、Windows、Linux、macOS で同じコードを実行できます。
 
-.NET におけるファイル圧縮の世界をマスターし、単一ファイルの解凍技術を習得しましょう。[Decompressing a File with Aspose.Zip for .NET](./decompress-file/) のチュートリアルはステップバイステップのガイドを提供し、初心者でも手軽にプロセスを進められるよう設計されています。Aspose.Zip for .NET の詳細に触れ、C# プロジェクトで圧縮ファイルを扱うスキルを向上させてください。
+## Aspose.Zip for .NET でファイルを解凍
+単一ファイルの解凍方法を習得することで、.NET におけるファイル圧縮の世界を解き放ちましょう。[Aspose.Zip for .NET でファイルを解凍](./decompress-file/) のチュートリアルでは、ステップバイステップのガイドが提供されており、初心者でも簡単にプロセスを進めることができます。 Aspose.Zip for .NET の高度な機能について学び、C# プロジェクトで圧縮ファイルを扱うスキルを高めましょう。
 
-## Decompressing Multiple Files using Aspose.Zip for .NET
+## Aspose.Zip for .NET を使用した複数ファイルの解凍
+Aspose.Zip for .NET を使えば、効率的なファイル管理が簡単になります。[Aspose.Zip for .NET を使用した複数ファイルの解凍](./decompress-multiple-files/) では、**複数ファイルの解凍** プロセスをガイドし、ワークフローを最適化します。詳細な手順に従ってファイル処理を効率化し、開発エクスペリエンス全体を向上させましょう。
 
-Aspose.Zip for .NET での効率的なファイル管理が可能になります。[Decompressing Multiple Files using Aspose.Zip for .NET](./decompress-multiple-files/) では、**複数ファイルを解凍**する手順を詳しく解説し、ワークフローの最適化を支援します。詳細な手順に従ってファイル処理を合理化し、開発体験全体を向上させましょう。
+## Aspose.Zip for .NET を使用した保存ファイルの解凍
+[Aspose.Zip for .NET を使用した保存ファイルの解凍](./decompress-stored-file/) で、Aspose.Zip for .NET のパワーを詳しくご覧ください。このチュートリアルでは、保存されたファイルを効率的に解凍する方法をステップバイステップで解説し、プロジェクトで効果的なファイル処理を実現する堅牢なソリューションを提供します。
 
-## Decompressing a Stored File using Aspose.Zip for .NET
+## ファイル解凍チュートリアル
+### [Aspose.Zip for .NET でファイルを解凍](./decompress-file/)
+Aspose.Zip を使って、.NET におけるファイル圧縮の世界を探求しましょう。ファイルを楽々と解凍する方法を学びましょう。
 
-[Decompressing a Stored File using Aspose.Zip for .NET](./decompress-stored-file/) で Aspose.Zip for .NET のパワーを体感してください。このチュートリアルは、保存されたファイルを効率的に解凍するステップバイステップガイドを提供し、プロジェクトでの効果的なファイル処理に役立つ堅牢なソリューションを提供します。
+### [Aspose.Zip for .NET で複数ファイルを解凍](./decompress-multiple-files/)
+Aspose.Zip for .NET を使用して複数のファイルを解凍する方法を学びましょう。効率的なファイル管理のためのステップバイステップガイドに従ってください。
 
-## Decompressing Zip Folder and Password‑Protected Archives
+### [Aspose.Zip for .NET で単一ファイルを解凍](./decompress-single-file/)
+Aspose.Zip for .NET で、シームレスなファイル解凍の世界を探求しましょう。C# プロジェクトで圧縮ファイルを楽々と処理できます。
 
-**zip フォルダー** の内容を解凍したり、**パスワード保護された zip** アーカイブを扱う必要がある場合でも、Aspose.Zip は両シナリオをシームレスに処理します。抽出メソッドに宛先パスを渡し、必要に応じてパスワード文字列を指定するだけで完了します。外部ツールの使用が不要になり、コードベースをすっきり保てます。
+### [Aspose.Zip for .NET を使用して保存ファイルを解凍する](./decompress-stored-file/)
+このステップバイステップガイドで、Aspose.Zip for .NET のパワーを体験してください。保存ファイルの解凍に関する堅牢なソリューションを活用して、ソフトウェア開発スキルを向上させましょう。
 
-## Common Use Cases
+### [Aspose.Zip for .NET で圧縮フォルダーをディレクトリに解凍する](./decompress-compressed-folder-directory/)
+Aspose.Zip for .NET の可能性を解き放ちましょう！このステップバイステップガイドで、フォルダーを簡単に解凍する方法を学びましょう。シームレスな圧縮と解凍の世界へ飛び込んでみましょう。
 
-- **Batch processing** リモートサーバーから受信したログアーカイブの一括処理。  
-- **Automated deployment** インストール前にリソースバンドルを展開する自動デプロイスクリプト。  
-- **Data migration** レガシー zip ファイルを読み取り、内容をデータベースに保存するデータ移行。
+### [Aspose.Zip for .NET で従来パスワード保護されたファイルを解凍する](./decompress-traditionally-password-protected-file/)
+Aspose.Zip for .NET を使用して、従来パスワード保護されたファイルを解凍する方法を学びましょう。シームレスな統合のためのステップバイステップガイド。
 
-## Tips & Best Practices
+### [Aspose.Zip for .NET で Wim をフォルダーに解凍](./decompress-wim-folder/)
+Aspose.Zip for .NET を使用して Wim アーカイブを解凍する方法をステップバイステップで解説します。ライブラリをダウンロードし、チュートリアルに従って操作すれば、.NET アプリケーションでアーカイブファイルを効率的に管理できます。
 
-- **Use streaming** 非常に大きなファイルを抽出する際はストリーミングを利用し、メモリ使用量を抑えましょう。  
-- **Validate file paths** 抽出後にファイルパスを検証し、ディレクトリトラバーサル脆弱性を防止します。  
-- **Handle exceptions** `InvalidPasswordException` などの例外を適切に処理し、ユーザーに明確なフィードバックを提供します。
+### [Aspose.Zip for .NET で Xar をフォルダーに解凍](./decompress-xar-folder/)
+Aspose.Zip for .NET のパワーを体感してください！このユーザーフレンドリーなチュートリアルで、Xar アーカイブを簡単に解凍できます。.NET 開発エクスペリエンスを向上させましょう。
 
-## Frequently Asked Questions
+## Zip フォルダーとパスワード保護されたアーカイブの解凍
+**Zip フォルダーの内容を解凍** する必要がある場合や、**パスワード保護された Zip アーカイブを解凍** する必要がある場合、Aspose.Zip はどちらのシナリオもシームレスに処理します。解凍先のパスと、必要に応じてパスワード文字列を解凍メソッドに渡すだけです。これにより、外部ツールが不要になり、コードベースをクリーンな状態に保つことができます。
 
-**Q: zip アーカイブを直接メモリストリームに抽出できますか？**  
-A: はい、Aspose.Zip を使用すればエントリを `MemoryStream` に読み込むことができ、ディスクへの書き込みは不要です。
+## 一般的なユースケース
+- リモートサーバーから受信したログアーカイブの**バッチ処理**。
+- インストール前にリソースバンドルを解凍する**自動デプロイメント**スクリプト。
+- 既存の Zip ファイルを読み取り、その内容をデータベースに保存する必要がある**データ移行**。
 
-**Q: 特定のフォルダー構造へ抽出することはサポートされていますか？**  
-A: 完全にサポートしています。出力ディレクトリを指定すれば、API がアーカイブ内部のフォルダー階層を再現します。
+## ヒントとベストプラクティス
+- 非常に大きなファイルを抽出する場合は、**ストリーミング** を使用することで、メモリ使用量を低く抑えることができます。
+- ディレクトリトラバーサルの脆弱性を回避するため、展開後に**ファイルパスを検証**します。
+- 明確なユーザーフィードバックを提供するために、`InvalidPasswordException` などの**例外を処理します**。
 
-**Q: C# でパスワード保護された zip ファイルを抽出する方法は？**  
-A: `Extract` メソッドにパスワードを渡します（例: `archive.Extract(outputPath, password)`）。
+## よくある質問
 
-**Q: 抽出せずにアーカイブ内容を一覧表示する方法はありますか？**  
-A: はい、`archive.Entries` をイテレートすれば、ファイル名、サイズ、タイムスタンプなどを確認できます。
+**Q: zip アーカイブをメモリストリームに直接展開できますか？**
+A: はい。Aspose.Zip では、ディスクに書き込むことなくエントリを `MemoryStream` に読み込むことができます (`extract zip archive c#`)。
 
-**Q: アーカイブに同名ファイルが複数含まれている場合は？**  
-A: デフォルトでは既存ファイルを上書きしますが、`OverwriteMode` オプションで動作を変更できます。
+**Q: ライブラリは特定のフォルダー構造への展開をサポートしていますか？**
+A: もちろんです。出力ディレクトリを指定すると、API がアーカイブの内部フォルダー階層を再作成します。
 
-## Conclusion
+**Q: パスワードで保護された zip ファイルを C# で展開するにはどうすればよいですか？**
+A: `Extract` メソッドにパスワードを渡します (例: `archive.Extract(outputPath, password)`)。
 
-Aspose.Zip for .NET はファイル解凍の分野におけるゲームチェンジャーです。単一ファイル、複数ファイル、保存ファイルのいずれを扱う場合でも、ライブラリはプロセスをシンプルにし、あらゆるレベルの開発者が利用できるようにします。チュートリアルに取り組み、Aspose.Zip for .NET の可能性を解き放ち、ソフトウェア開発スキルを新たな高みへと引き上げましょう。自信と効率を持って、シームレスな圧縮と抽出の世界を探求してください。
+**Q: アーカイブの内容を解凍せずに一覧表示する方法はありますか？**
+A: はい。`archive.Entries` を反復処理して、ファイル名、サイズ、タイムスタンプを調べることができます。
 
-## File Decompression Tutorials
-### [Decompressing a File with Aspose.Zip for .NET](./decompress-file/)
-.NET におけるファイル圧縮の世界を Aspose.Zip で体験し、ファイルを手軽に解凍する技術を学びましょう。
-### [Decompressing Multiple Files using Aspose.Zip for .NET](./decompress-multiple-files/)
-Aspose.Zip for .NET を使用した複数ファイルの解凍方法を学びます。効率的なファイル管理のためのステップバイステップガイドです。
-### [Decompressing a Single File with Aspose.Zip for .NET](./decompress-single-file/)
-Aspose.Zip for .NET でのシームレスなファイル解凍の世界をご紹介します。C# プロジェクトで圧縮ファイルを手軽に扱えます。
-### [Decompressing a Stored File using Aspose.Zip for .NET](./decompress-stored-file/)
-保存されたファイルの解凍に関するステップバイステップガイドで、Aspose.Zip for .NET のパワーを体感してください。効率的なファイル処理のための堅牢なソリューションを提供します。
-### [Decompress Compressed Folder to Directory in Aspose.Zip for .NET](./decompress-compressed-folder-directory/)
-Aspose.Zip for .NET の可能性を解き放ちましょう！このステップバイステップガイドでフォルダーを簡単に解凍する方法を学び、シームレスな圧縮と抽出の世界に飛び込みましょう。
-### [Decompress Traditionally Password Protected File in Aspose.Zip for .NET](./decompress-traditionally-password-protected-file/)
-Aspose.Zip for .NET を使用して従来型のパスワード保護ファイルを解凍する方法を学びます。シームレスな統合のためのステップバイステップガイドです。
-### [Decompress Wim to Folder in Aspose.Zip for .NET](./decompress-wim-folder/)
-Aspose.Zip for .NET を使用した Wim アーカイブの解凍に関するステップバイステップガイドをご覧ください。ライブラリをダウンロードし、チュートリアルに従って .NET アプリケーションでアーカイブファイルを効率的に管理しましょう。
-### [Decompress Xar to Folder in Aspose.Zip for .NET](./decompress-xar-folder/)
-Aspose.Zip for .NET のパワーをご体験ください！このユーザーフレンドリーなチュートリアルで Xar アーカイブを簡単に解凍し、.NET 開発体験を向上させましょう。
+**Q: アーカイブに重複するファイル名が含まれている場合はどうなりますか？**
+A: デフォルトでは、ライブラリは既存のファイルを上書きします。この動作は `OverwriteMode` オプションで変更できます。
+
+**Q: zip フォルダーから選択したエントリだけを解凍できますか？**
+A: はい。`archive.Entries` を名前または拡張子でフィルタリングし、選択したエントリに対して `Extract` を呼び出します。
+
+**Q: Aspose.Zip は、メモリの少ないデバイスで大きな zip ファイルをどのように処理しますか？**
+A: ライブラリは遅延読み込みとストリーミングを使用しているため、現在のエントリのみがメモリに読み込まれます。
+
+## 結論
+Aspose.Zip for .NET は、ファイル解凍の分野において画期的なツールです。単一のファイル、複数のファイル、あるいは保存されたファイルを扱う場合でも、このライブラリはプロセスを簡素化し、あらゆるレベルの開発者が利用できるようにします。チュートリアルを読み進めて、Aspose.Zip for .NET の可能性を解き放ち、ソフトウェア開発スキルを新たなレベルへと引き上げましょう。シームレスで確実な圧縮と解凍の世界を、自信を持って効率的に探求しましょう。
 
 ---
 
-**Last Updated:** 2025-12-10  
-**Tested With:** Aspose.Zip for .NET 24.12  
-**Author:** Aspose
+**最終更新日:** 2026年2月17日
+**テスト環境:** Aspose.Zip for .NET 24.12
+**作成者:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -1,10 +1,11 @@
 ---
-date: 2025-12-12
-description: Pelajari cara mendekompresi file .NET dengan cepat menggunakan Aspose.Zip.
-  Panduan langkah demi langkah untuk ekstraksi arsip .NET dan ekstraksi C# dari arsip.
+date: 2026-02-17
+description: Pelajari cara mendekompresi file zip C# dengan cepat menggunakan Aspose.Zip.
+  Panduan langkah demi langkah untuk ekstraksi arsip .NET dan contoh dekompresi file
+  C#.
 linktitle: Decompressing a File
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Mengekstrak File .NET Menggunakan Aspose.Zip
+title: Mengekstrak file zip C# menggunakan Aspose.Zip
 url: /id/net/file-decompression/decompress-file/
 weight: 10
 ---
@@ -13,37 +14,39 @@ weight: 10
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Mengekstrak File .NET Menggunakan Aspose.Zip
+# Mendekompresi file zip C# Menggunakan Aspose.Zip
 
-## Pendahuluan
+## Perkenalan
 
-Dalam dunia pengembangan .NET, mempelajari cara **decompress file .NET** secara efisien sangat penting untuk aplikasi yang kritis terhadap kinerja. Aspose.Zip untuk .NET menawarkan API yang bersih dan berperforma tinggi yang memungkinkan Anda menangani ekstraksi arsip .NET tanpa harus mengelola aliran tingkat rendah. Dalam tutorial ini kami akan membahas skenario **Aspose.Zip extraction** lengkap—membuka arsip Lzip dan mengekstrak isinya dengan hanya beberapa baris kode C#.
+Jika Anda perlu **mendekompresi file zip C#** dalam aplikasi .NET, Anda menginginkan solusi yang cepat, andal, dan mudah diperlukan. Aspose.Zip untuk .NET memberikan API berperforma tinggi yang menyembunyikan penanganan stream tingkat rendah sekaligus memberi Anda kontrol penuh atas proses ekstraksi. Pada tutorial ini kami akan membahas contoh **C# file decompression** lengkap—membuka arsip Lzip dan mengekstrak isinya hanya dengan beberapa baris kode.
 
 ## Jawaban Cepat
-- **Library apa yang menangani ekstraksi arsip .NET?** Aspose.Zip for .NET  
-- **Metode apa yang mengekstrak arsip Lzip dalam C#?** `LzipArchive.Extract`  
-- **Apakah saya memerlukan lisensi untuk produksi?** Ya, lisensi komersial diperlukan untuk penggunaan non‑evaluasi.  
-- **Versi .NET yang didukung?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
-- **Berapa lama ekstraksi dasar berlangsung?** Biasanya kurang dari satu detik untuk file kecil.
+- **Library apa yang menangani ekstraksi arsip .NET?** Aspose.Zip untuk .NET
+- **Metode apa yang mengekstrak arsip Lzip di C#?** `LzipArchive.Extract`
+- **Apakah saya memerlukan lisensi untuk produksi?** Ya, lisensi komersial diperlukan untuk penggunaan non‑evaluasi.
+- **Versi .NET yang didukung?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+- **Berapa lama ekstraksi dasar memakan waktu?** Biasanya kurang dari satu detik untuk file kecil.
 
-## Apa itu “decompress file .NET”?
-Mengekstrak file dalam .NET berarti membaca arsip terkompresi (misalnya ZIP, LZIP, GZIP) dan menulis kembali konten aslinya ke sistem file. Aspose.Zip menyederhanakan kompleksitas tersebut, memungkinkan Anda fokus pada logika bisnis daripada algoritma kompresi.
+## Apa itu “dekompresi file zip C#”?
+
+Mendekompresi file dalam .NET berarti membaca arsip terkompres (ZIP, LZIP, GZIP, dll.) dan menulis kembali konten aslinya ke file sistem. Aspose.Zip mengabstraksi algoritma kompresi sehingga Anda dapat fokus pada logika bisnis alih-alih aliran pipa.
 
 ## Mengapa menggunakan Aspose.Zip untuk ekstraksi arsip .NET?
-- **Zero‑dependency** – tidak ada binari native eksternal.  
-- **Rich format support** – ZIP, GZIP, TAR, LZIP, dan lainnya.  
-- **Thread‑safe API** – sempurna untuk layanan web dan pekerjaan latar belakang.  
-- **Comprehensive documentation** dan sumber daya **Aspose.Zip tutorial**.
+
+- **Zero‑dependency** – tidak ada biner asli eksternal.
+- **Format dukungan kaya** – ZIP, GZIP, TAR, LZIP, dan lainnya.
+- **API thread‑safe** – sempurna untuk layanan web dan latar belakang pekerjaan.
+- **Dokumentasi komprehensif** dan sumber daya **tutorial Aspose.Zip**.
 
 ## Prasyarat
 
-- **Aspose.Zip untuk .NET** – instal paket NuGet atau unduh pustaka. Anda dapat menemukan dokumentasi [di sini](https://reference.aspose.com/zip/net/).  
-- **Lingkungan pengembangan** – Visual Studio 2022, .NET 6 SDK, atau IDE apa pun yang mendukung C#.  
-- **Your Document Directory** – sebuah folder di disk tempat file terkompresi (`archive.lz`) berada dan tempat Anda ingin menyimpan file yang diekstrak.
+- **Aspose.Zip untuk .NET** – instal paket NuGet atau unduh perpustakaan. Anda dapat menemukan dokumentasi [di sini](https://reference.aspose.com/zip/net/).
+- **Lingkungan pengembangan** – Visual Studio 2022, .NET 6 SDK, atau IDE apa pun yang mendukung C#.
+- **Direktori Dokumen Anda** – folder di disk tempat file terkompres (`archive.lz`) berada dan tempat Anda ingin menyimpan file yang diekstrak.
 
 ## Impor Namespace
 
-First, import the namespaces required for file I/O and Aspose.Zip’s Lzip support:
+Pertama, impor namespace yang diperlukan untuk file I/O dan dukungan Lzip Aspose.Zip:
 
 ```csharp
 using System;
@@ -57,11 +60,11 @@ using Aspose.Zip.Lzip;
 string dataDir = "Your Document Directory";
 ```
 
-Ganti `"Your Document Directory"` dengan jalur absolut atau relatif yang berisi `archive.lz`. Menyimpan jalur dalam variabel membuat kode dapat digunakan kembali dan lebih mudah dipelihara.
+Ganti `"Direktori Dokumen Anda"` dengan jalur absolut atau relatif yang berisi `archive.lz`. Menyimpan jalur dalam variabel membuat kode dapat digunakan kembali dan lebih mudah dipelihara.
 
-## Langkah 1: Buka dan Ekstrak Arsip Lzip Menggunakan C#
+## Langkah 1: Ekstrak Arsip Lzip C# (ekstrak arsip lzip c#)
 
-Inti dari operasi **c# extract from archive** adalah blok `using` singkat yang membuka file Lzip dan menulis data terdekompresi ke file baru.
+Inti dari operasi **ekstraksi arsip c#** adalah blok `using` singkat yang membuka file Lzip dan menulis data yang telah didekompresi ke file baru.
 
 ```csharp
 //ExStart: OpenLzipArchive
@@ -76,47 +79,47 @@ using (var archive = new LzipArchive(Path.Combine(dataDir, "archive.lz")))
 Console.WriteLine("Successfully Opened Lzip Archive");
 ```
 
-Potongan kode ini menunjukkan pola **extract lzip archive c#**:
+Cuplikan ini menunjukkan pola **ekstrak lzip arsip c#**:
 
-1. **Create** sebuah instance `LzipArchive` yang menunjuk ke file sumber.  
-2. **Create** file tujuan (`output.txt`).  
-3. **Call** `Extract` untuk menulis byte yang terdekompresi.  
-4. Pernyataan `using` menjamin semua stream ditutup secara otomatis.
+1. **Buat** instance `LzipArchive` yang menunjuk ke file sumber.
+2. **Buat** file tujuan (`output.txt`).
+3. **Panggil** `Ekstrak` untuk menulis byte yang didekompresi.
+4. Pernyataan `using` menjamin bahwa semua aliran ditutup secara otomatis.
 
 ## Masalah Umum dan Solusinya
 
-| Gejala | Penyebab Kemungkinan | Solusi |
-|---------|----------------------|--------|
-| `FileNotFoundException` | Path `dataDir` salah | Verifikasi jalur folder dan pastikan `archive.lz` ada. |
+| Gejala | Penyebab Kemungkinan | Perbaikan |
+|---------|----------------------|-----------|
+| `FileNotFoundException` | Jalur `dataDir` salah | Verifikasi path folder dan pastikan `archive.lz` ada. |
 | `UnauthorizedAccessException` | Izin menulis tidak cukup | Jalankan aplikasi dengan hak istimewa yang tepat atau pilih folder yang dapat ditulisi. |
-| File output kosong | Arsip rusak atau bukan file Lzip | Pastikan file sumber adalah arsip Lzip yang valid; gunakan `LzipArchive.IsValid` jika diperlukan. |
+| File keluaran kosong | Arsip rusak atau bukan file Lzip | Pastikan sumber file adalah arsip Lzip yang valid; gunakan `LzipArchive.IsValid` jika diperlukan. |
 
 ## Pertanyaan yang Sering Diajukan
 
-**Q: Apakah Aspose.Zip kompatibel dengan semua aplikasi .NET?**  
-A: Ya, Aspose.Zip untuk .NET terintegrasi dengan proyek desktop, web, cloud, dan mikro‑service secara serupa.
+**Q: Apakah Aspose.Zip kompatibel dengan semua aplikasi .NET?**
+A: Ya, Aspose.Zip for .NET terintegrasi dengan proyek desktop, web, cloud, dan micro‑service secara seragam.
 
-**Q: Bisakah saya menggunakan Aspose.Zip untuk proyek pribadi maupun komersial?**  
-A: Tentu saja. Pustaka ini menawarkan lisensi fleksibel untuk evaluasi, penggunaan pribadi, dan komersial.
+**Q: Bisakah saya menggunakan Aspose.Zip untuk proyek pribadi maupun komersial?**
+J: Tentu saja. Perpustakaan ini menawarkan lisensi fleksibel untuk evaluasi, penggunaan pribadi, dan komersial.
 
-**Q: Bagaimana saya dapat mendapatkan dukungan untuk Aspose.Zip untuk .NET?**  
-A: Kunjungi [forum Aspose.Zip](https://forum.aspose.com/c/zip/37) untuk mengajukan pertanyaan dan berbagi pengalaman dengan komunitas.
+**Q: Bagaimana cara mendapatkan dukungan untuk Aspose.Zip untuk .NET?**
+A: Kunjungi [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) untuk mengajukan pertanyaan dan berbagi pengalaman dengan komunitas.
 
-**Q: Apakah tersedia percobaan gratis?**  
-A: Ya, Anda dapat menjelajahi fitur Aspose.Zip untuk .NET dengan mengunduh percobaan gratis [di sini](https://releases.aspose.com/).
+**Q: Apakah ada trial gratis yang tersedia?**
+A: Ya, Anda dapat menjelajahi fitur Aspose.Zip for .NET dengan mengunduh trial gratis [di sini](https://releases.aspose.com/).
 
-**Q: Di mana saya dapat membeli Aspose.Zip untuk .NET?**  
+**Q: Di mana saya dapat membeli Aspose.Zip untuk .NET?**
 A: Untuk membeli lisensi, kunjungi [halaman pembelian](https://purchase.aspose.com/buy).
 
 ## Kesimpulan
 
-Anda kini telah menguasai cara **decompress file .NET** menggunakan API Aspose.Zip yang sederhana. Pendekatan ini menyederhanakan ekstraksi arsip .NET, mengurangi kode boilerplate, dan skalabel untuk aplikasi berskala besar. Untuk skenario yang lebih mendalam—arsip yang dilindungi kata sandi, ekstraksi multi‑file, atau tingkat kompresi khusus—lihat [dokumentasi](https://reference.aspose.com/zip/net/) lengkap.
+Anda kini telah menguasai cara **mendekompresi file zip C#** menggunakan API sederhana Aspose.Zip. Pendekatan ini mencapai ekstraksi arsip .NET, mengurangi kode boilerplate, dan skalabel untuk aplikasi berukuran besar. Untuk skenario yang lebih mendalam—arsip yang dilindungi kata sandi, ekstraksi multi-file, atau tingkat kompresi khusus—lihat dokumentasi lengkap [di sini](https://reference.aspose.com/zip/net/).
 
 ---
 
-**Terakhir Diperbarui:** 2025-12-12  
-**Diuji Dengan:** Aspose.Zip 24.11 for .NET  
-**Penulis:** Aspose
+**Terakhir Diperbarui:** 2026-02-17
+**Diuji Dengan:** Aspose.Zip 24.11 untuk .NET
+**Pengarang:** Aspose 
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
