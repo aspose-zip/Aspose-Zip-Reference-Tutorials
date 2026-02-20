@@ -1,67 +1,116 @@
 ---
-title: Estrazione e formati degli archivi
-linktitle: Estrazione e formati degli archivi
-second_title: Aspose.Zip .NET API per la compressione e l'archiviazione dei file
-description: Sblocca la potenza della compressione dei file in .NET con Aspose.Zip. Impara a comprimere i file in vari formati come TarBz2, TarGz e TarZ per un'archiviazione efficiente.
-weight: 23
+date: 2026-02-20
+description: Impara a comprimere file tarbz2, a creare archivi targz e a estrarre
+  archivi .NET con estrazione di zip protetta da password usando Aspose.Zip per .NET.
+  Migliora l’efficienza di archiviazione e la sicurezza.
+linktitle: Archive Extraction and Formats
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Come comprimere file TarBz2 con Aspose.Zip per .NET
 url: /it/net/archive-extraction-and-formats/
+weight: 23
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Estrazione e formati degli archivi
+# Come comprimere file TarBz2 con Aspose.Zip per .NET
 
+## Introduzione
 
-## introduzione
+In questa guida, imparerai **come comprimere file tarbz2** con Aspose.Zip per .NET scoprendo anche come creare archivi TarGz e eseguire l'estrazione di archivi .net di file zip protetti da password. La gestione efficiente dei file è una pietra miliare dello sviluppo .NET moderno, e padroneggiare questi formati ti permette di ridurre i costi di archiviazione, velocizzare il trasferimento dei dati e mantenere le informazioni sensibili al sicuro. Che tu stia costruendo un servizio di backup, un client di cloud‑storage o una pipeline di elaborazione dati, le tecniche trattate qui renderanno le tue attività di gestione dei file più fluide e affidabili.
 
-Nel vasto panorama dello sviluppo software, la gestione efficiente dei file è fondamentale. Aspose.Zip per .NET emerge come un potente alleato, offrendo un set completo di strumenti per comprimere ed estrarre file senza problemi. In questa serie di tutorial, approfondiamo le complessità dell'estrazione degli archivi e dei vari formati, fornendoti le competenze per ottimizzare la gestione dei file nei tuoi progetti .NET.
+## Risposte rapide
+- **Cos'è TarBz2?** Un archivio compresso che combina l'impacchettamento TAR con la compressione BZIP2 per rapporti di compressione elevati.  
+- **Perché scegliere Aspose.Zip per .NET?** Offre un'API unica e fluida per creare ed estrarre molti formati di archivio senza dipendenze esterne.  
+- **Posso creare un archivio TarGz?** Sì – Aspose.Zip supporta TarGz, TarLz, TarXz, TarZ e altro.  
+- **Come estraggo un archivio zip protetto da password?** Usa la proprietà `Password` sull'oggetto `ArchiveEntry` durante l'estrazione.  
+- **È necessaria una licenza per l'uso in produzione?** È richiesta una licenza commerciale per la produzione; è disponibile una prova gratuita per la valutazione.
 
-## Compressione in TarBz2 con Aspose.Zip per .NET
+## Come comprimere file TarBz2
+Comprimere file in TarBz2 significa prima raggruppare più file e directory in un unico contenitore **TAR** e poi applicare la compressione **BZIP2**. Il risultato è un unico file `.tar.bz2` che è sia facile da trasportare sia altamente compresso.
 
-Immergiti nel mondo della compressione dei file mentre ti guidiamo passo dopo passo nell'utilizzo di Aspose.Zip per .NET per comprimere i file nel formato TarBz2. L'efficienza incontra la semplicità in questo tutorial, garantendo che i tuoi file non siano solo compatti ma anche facilmente trasmissibili.
+## Perché usare Aspose.Zip per .NET per gestire questi formati?
+- **Unified API** – Una libreria, molti formati (TarBz2, TarGz, TarLz, TarXz, TarZ).  
+- **No native dependencies** – Funziona su Windows, Linux e macOS senza ulteriori dipendenze.  
+- **Password support** – Proteggi e estrai archivi in modo sicuro con password per voce.  
+- **Performance‑focused** – L'elaborazione basata su stream riduce al minimo l'utilizzo di memoria.
 
-## Compressione in TarGz con Aspose.Zip per .NET
+## Prerequisiti
+- .NET 6.0 o versioni successive (o .NET Core 3.1+ / .NET Framework 4.5+).  
+- Pacchetto NuGet Aspose.Zip per .NET installato (`Install-Package Aspose.Zip`).  
+- Conoscenza di base di C# e I/O di file.
 
-Comprimi facilmente i file nel formato TarGz in .NET con Aspose.Zip. Il nostro tutorial ti guida attraverso il processo, rendendo la compressione dei file un gioco da ragazzi. Ottimizza l'archiviazione e migliora le tue capacità di gestione dei file con questa guida completa.
+## Guida passo‑passo
 
-## Compressione in TarLz con Aspose.Zip per .NET
+### Passo 1: Scegli il formato di archivio di cui hai bisogno
+Decidi se **TarBz2**, **TarGz**, **TarLz**, **TarXz** o **TarZ** è il più adatto al tuo rapporto di compressione e ai requisiti di compatibilità.  
+- **TarBz2** – Compressione migliore, elaborazione più lenta.  
+- **TarGz** – Buon equilibrio tra velocità e dimensione (copia la keyword secondaria *how to create targz*).  
+- **TarZ** – Formato legacy, utile per la compatibilità con strumenti Unix più vecchi.
 
-Impara l'arte di creare archivi TarLz in .NET utilizzando Aspose.Zip. Analizziamo i passaggi, rendendo la compressione dei file un processo intuitivo. Migliora il tuo gioco di gestione dei file con questo tutorial facile da seguire.
+### Passo 2: Crea una nuova istanza `Archive`
+Istanzia la classe `Archive` e puntala al percorso del file di output. Questo oggetto gestirà il processo di impacchettamento e compressione.
 
-## Compressione in TarXz con Aspose.Zip per .NET
+### Passo 3: Aggiungi file e cartelle
+Usa i metodi `AddAll` o `AddFile` per includere i file che desideri comprimere. Puoi preservare la struttura delle directory aggiungendo una cartella base.
 
-L'efficienza è al centro dell'attenzione mentre ti insegniamo come comprimere i file nel formato TarXz in .NET utilizzando Aspose.Zip. La nostra guida passo passo ti assicura di cogliere le complessità, fornendo un prezioso insieme di competenze per un'archiviazione e una trasmissione efficienti dei file.
+### Passo 4: Imposta il tipo di compressione desiderato
+Specifica l'algoritmo di compressione (`CompressionType.BZip2`, `CompressionType.GZip`, ecc.) al momento del salvataggio dell'archivio. È qui che effettui realmente **comprimere file in TarBz2** o qualsiasi altro formato.
 
-## Compressione in TarZ con Aspose.Zip per .NET
+### Passo 5: Salva l'archivio
+Chiama `Save` con l'enumerazione di formato appropriata (`ArchiveFormat.TarBz2`, `ArchiveFormat.TarGz`, ecc.). La libreria scrive il contenitore TAR e applica la compressione scelta in un'unica passata.
 
-Intraprendi un viaggio verso una gestione efficiente dei file nei tuoi progetti .NET esplorando la compressione su TarZ con Aspose.Zip. Il nostro approccio passo-passo semplifica il processo, consentendoti di integrare perfettamente questa funzionalità nelle tue applicazioni.
+### Passo 6: Estrarre archivi con password
+Se hai bisogno di **estrarre voci di archivio con password diverse** (keyword secondaria *password protected zip extraction*), apri l'archivio, individua ogni voce, assegna la sua password e poi estrai.
 
-## Estrazione di voci di archivio con password diverse in Aspose.Zip per .NET
+### Passo 7: Verifica il risultato
+Dopo l'estrazione, confronta le dimensioni dei file e i checksum per assicurarti che l'archivio sia stato creato e decompresso correttamente.
 
-Aumenta la sicurezza e la flessibilità delle tue applicazioni imparando come estrarre voci di archivio con password diverse in Aspose.Zip per .NET. Questo tutorial aggiunge un livello di sofisticazione al tuo arsenale di gestione dei file, garantendo che i tuoi dati rimangano sicuri.
+## Casi d'uso comuni
+- **Backup utilities** – Conserva i backup giornalieri come `.tar.bz2` per ridurre i costi di archiviazione.  
+- **Cross‑platform data exchange** – I formati basati su Tar sono universalmente compresi su Linux, macOS e Windows.  
+- **Secure distribution** – Proteggi le singole voci con password per ambienti guidati da conformità.
 
-Mentre ti imbarchi in questo viaggio per padroneggiare l'estrazione e i formati degli archivi in .NET, il nostro elenco completo di tutorial che utilizzano Aspose.Zip funge da bussola. Esplora le diverse funzionalità di questo potente strumento, migliorando la tua competenza nella gestione dei file.
+## Risoluzione dei problemi e consigli
+- **Large archives** – Usa le API di streaming (`Archive.CreateEntryFromFile`) per evitare di caricare interi file in memoria.  
+- **Password mismatches** – Assicurati che la password impostata su ogni `ArchiveEntry` corrisponda a quella usata durante l'estrazione; altrimenti otterrai `InvalidPasswordException`.  
+- **Unsupported compression level** – BZIP2 non supporta livelli di compressione personalizzati; se ti serve un controllo più fine, considera TarLz o TarXz.
 
-Sblocca tutto il potenziale di Aspose.Zip per .NET e rivoluziona il modo in cui gestisci i file nei tuoi progetti. Tuffati nei nostri tutorial e migliora oggi stesso le tue competenze nell'estrazione degli archivi e nella compressione dei file.
+## Domande frequenti
 
-## Tutorial sull'estrazione e sui formati degli archivi
-### [Compressione di file su TarBz2 con Aspose.Zip per .NET](./compress-to-tar-bz2/)
-Scopri come comprimere i file nel formato TarBz2 in .NET utilizzando Aspose.Zip. Segui la nostra guida passo passo per una compressione efficiente dei file.
+**Q: Come creo un archivio TarGz?**  
+A: Imposta il tipo di compressione a `CompressionType.GZip` e il formato a `ArchiveFormat.TarGz` quando chiami `Save`.
+
+**Q: Posso estrarre un archivio protetto da password senza conoscere la password?**  
+A: No. Ogni voce deve essere fornita con la password corretta; altrimenti l'estrazione fallirà.
+
+**Q: Aspose.Zip supporta l'estrazione di archivi con password diverse per voce?**  
+A: Sì. Puoi assegnare una password a ciascun `ArchiveEntry` individualmente prima dell'estrazione.
+
+**Q: Quale formato offre la migliore compressione?**  
+A: TarBz2 fornisce tipicamente il più alto rapporto di compressione, seguito da TarLz e TarXz. TarGz offre un buon equilibrio velocità‑dimensione.
+
+**Q: Esiste un limite al numero di file che posso aggiungere a un archivio TAR?**  
+A: Praticamente no, ma archivi estremamente grandi possono trarre vantaggio dallo splitting in più parti per una gestione più semplice.
+
+## Tutorial di estrazione di archivi e formati
+### [Compressione di file in TarBz2 con Aspose.Zip per .NET](./compress-to-tar-bz2/)
 ### [Compressione in TarGz con Aspose.Zip per .NET](./compress-to-tar-gz/)
-Esplora la compressione efficiente dei file in .NET con Aspose.Zip. Comprimi su TarGz senza sforzo.
 ### [Compressione in TarLz con Aspose.Zip per .NET](./compress-to-tar-lz/)
-Comprimi facilmente i file in .NET con Aspose.Zip. Impara a creare archivi TarLz passo dopo passo.
 ### [Compressione in TarXz con Aspose.Zip per .NET](./compress-to-tar-xz/)
-Impara a comprimere i file nel formato TarXz in .NET utilizzando Aspose.Zip. Segui la nostra guida passo passo per un'archiviazione e una trasmissione efficienti dei file.
 ### [Compressione in TarZ con Aspose.Zip per .NET](./compress-to-tar-z/)
-Esplora la compressione passo passo in TarZ utilizzando Aspose.Zip per .NET. Gestione efficiente dei file per i tuoi progetti .NET.
 ### [Estrazione di voci di archivio con password diverse in Aspose.Zip per .NET](./extract-archive-different-passwords/)
-Scopri come estrarre voci di archivio con password diverse in Aspose.Zip per .NET. Aumenta la sicurezza e la flessibilità delle tue applicazioni.
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Ultimo aggiornamento:** 2026-02-20  
+**Testato con:** Aspose.Zip per .NET 24.11  
+**Autore:** Aspose

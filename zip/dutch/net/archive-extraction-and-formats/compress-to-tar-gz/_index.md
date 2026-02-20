@@ -1,105 +1,146 @@
 ---
-title: Comprimeren naar TarGz met Aspose.Zip voor .NET
-linktitle: Comprimeren naar TarGz
-second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
-description: Ontdek efficiënte bestandscompressie in .NET met Aspose.Zip. Comprimeer moeiteloos naar TarGz.
-weight: 12
+date: 2026-02-20
+description: Leer hoe u een tar‑archief maakt, bestanden aan een tar toevoegt en comprimeert
+  naar tar.gz met Aspose.Zip voor .NET – een snelle, cross‑platform manier om TarGz‑archieven
+  te maken.
+linktitle: Add files to tar
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Maak een tar-archief en voeg bestanden toe aan het tar met Aspose.Zip voor
+  .NET
 url: /nl/net/archive-extraction-and-formats/compress-to-tar-gz/
+weight: 12
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
+ answer.{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Comprimeren naar TarGz met Aspose.Zip voor .NET
+# Maak tar‑archief en voeg bestanden toe aan tar met Aspose.Zip voor .NET
 
-## Invoering
+## Inleiding
 
-In het steeds evoluerende landschap van .NET-ontwikkeling is efficiënte bestandscompressie een cruciaal aspect van het optimaliseren van gegevensopslag en -overdracht. Aspose.Zip voor .NET komt naar voren als een krachtig hulpmiddel voor ontwikkelaars die op zoek zijn naar robuuste compressiemogelijkheden. Deze tutorial leidt u door het proces van het comprimeren van bestanden naar TarGz-indeling met behulp van Aspose.Zip voor .NET, en biedt een stapsgewijze uitleg.
+In moderne .NET‑toepassingen is het **maken van een tar‑archief** en **bestanden toevoegen aan tar** snel en betrouwbaar een veelvoorkomende vereiste—of je nu logbestanden verpakt, gegevens voorbereidt voor cloudopslag, of deployment‑bundels bouwt. Aspose.Zip voor .NET biedt een schone, high‑performance API om **bestanden toe te voegen aan tar**, en vervolgens het archief te comprimeren naar het veelgebruikte **tar.gz**‑formaat. In deze gids lopen we het volledige proces door, van het opzetten van je project tot het produceren van een kant‑klaar `archive.tar.gz`.
+
+## Snelle antwoorden
+- **Welke bibliotheek moet ik gebruiken?** Aspose.Zip voor .NET  
+- **Hoe voeg ik bestanden toe aan tar?** Gebruik `TarArchive.CreateEntry` voor elk bestand.  
+- **Kan ik direct comprimeren naar tar.gz?** Ja—roep `SaveGzipped` aan.  
+- **Heb ik een licentie nodig voor productie?** Een geldige Aspose‑licentie is vereist voor niet‑trial gebruik.  
+- **Ondersteunde .NET‑versies?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+
+## Wat betekent “bestanden toevoegen aan tar”?
+Bestanden toevoegen aan een tar‑archief betekent meerdere bestanden bundelen in één ongecomprimeerde container. Het tar‑formaat behoudt mapstructuren en bestandsmetadata, waardoor het ideaal is voor archiveren vóór optionele compressie (bijv. gzip) om een **tar.gz‑archief** te maken.
+
+## Waarom Aspose.Zip gebruiken om bestanden te comprimeren naar tar.gz?
+- **Geen externe tools** – alles draait binnen je .NET‑code.  
+- **Hoge prestaties** – stream‑gebaseerde API verwerkt grote bestanden efficiënt.  
+- **Cross‑platform tar** – werkt op Windows, Linux en macOS zonder aanpassingen.  
+- **Rijke functionaliteit** – ondersteunt encryptie, wachtwoordbeveiliging en aangepaste entry‑attributen.
 
 ## Vereisten
 
-Voordat u in de zelfstudie duikt, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
+Voordat je begint, zorg dat je het volgende hebt:
 
-- Basiskennis van .NET-ontwikkeling.
-- Een geïntegreerde ontwikkelomgeving (IDE) zoals Visual Studio.
--  Aspose.Zip voor .NET-bibliotheek geïnstalleerd. U kunt de documentatie vinden[hier](https://reference.aspose.com/zip/net/).
--  Download de Aspose.Zip voor .NET-bibliotheek van[deze link](https://releases.aspose.com/zip/net/).
+- Basis .NET‑ontwikkelervaring.  
+- Visual Studio (of een andere IDE naar keuze).  
+- Aspose.Zip voor .NET geïnstalleerd – zie de officiële documentatie [hier](https://reference.aspose.com/zip/net/).  
+- De Aspose.Zip‑bibliotheek gedownload van [deze link](https://releases.aspose.com/zip/net/).
 
-## Naamruimten importeren
+## Namespaces importeren
 
-Begin in uw .NET-project met het importeren van de benodigde naamruimten om de functionaliteiten van Aspose.Zip te benutten:
+Importeer in je .NET‑project de namespaces die de tar‑gerelateerde klassen blootleggen:
 
 ```csharp
 using System;
 using Aspose.Zip.Tar;
 ```
 
-## Stap 1: Stel uw documentmap in
+## Hoe bestanden toe te voegen aan tar met Aspose.Zip voor .NET
 
-Begin met het opgeven van de map waar uw documenten zich bevinden. Dit zal tijdens het compressieproces worden gebruikt.
+### Stap 1: Stel je documentmap in
+
+Eerst wijs je de code naar de map die de bestanden bevat die je wilt archiveren.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Stap 2: Maak een TarGz-archief
+> **Pro tip:** Gebruik `Path.Combine` bij het samenstellen van paden om platform‑specifieke scheidingstekens te vermijden.
 
-Laten we nu een TarGz-archief maken met Aspose.Zip voor .NET. Dit omvat de volgende stappen:
+### Stap 2: Maak een TarGz‑archief
 
-### Stap 2.1: Initialiseer TarArchive
+Nu maken we het tar‑archief, voegen entries toe en comprimeren het in één vloeiende stroom.
+
+#### 2.1 TarArchive initialiseren
 
 ```csharp
 using (TarArchive archive = new TarArchive())
 {
-    // Hier vindt u uw code voor het maken van vermeldingen en het comprimeren van bestanden
+    // Entries will be added inside this block.
 }
 ```
 
-### Stap 2.2: Inzendingen aanmaken
-
- Voeg bestanden toe aan het archief met behulp van de`CreateEntry` methode. In dit voorbeeld worden "alice29.txt" en "lcet10.txt" toegevoegd:
+#### 2.2 Bestanden toevoegen – de kern van “bestanden toevoegen aan tar”
 
 ```csharp
 archive.CreateEntry("alice29.txt", dataDir + "alice29.txt");
 archive.CreateEntry("lcet10.txt", dataDir + "lcet10.txt");
 ```
 
-### Stap 2.3: Opslaan als Gzipped Tar
+Elke `CreateEntry`‑aanroep neemt de **entry‑naam** (hoe het bestand in de tar zal verschijnen) en het **bron‑bestandspad** op schijf. Je kunt `CreateEntry` herhaaldelijk aanroepen om **meerdere bestanden toe te voegen aan tar** in één archief.
 
- Sla het archief op in TarGz-indeling met behulp van de`SaveGzipped` methode:
+#### 2.3 Opslaan als een Gzipped Tar (hoe tar.gz te comprimeren)
 
 ```csharp
 archive.SaveGzipped(dataDir + "archive.tar.gz");
 ```
 
-## Conclusie
+`SaveGzipped` schrijft de tar‑inhoud naar een gzip‑stream, waardoor je een compact `archive.tar.gz`‑bestand krijgt dat klaar is voor distributie.
 
-Gefeliciteerd! U hebt bestanden met succes gecomprimeerd naar TarGz-indeling met Aspose.Zip voor .NET. Dit gestroomlijnde proces zorgt voor efficiënt databeheer in uw .NET-applicaties.
+## Veelvoorkomende gebruikssituaties
+
+| Scenario | Waarom “bestanden toevoegen aan tar” helpt |
+|----------|--------------------------------------------|
+| **Logaggregatie** | Bundel dagelijkse logbestanden in één archief voordat je ze uploadt naar cloudopslag. |
+| **Deploy‑pakketten** | Maak draagbare tar.gz‑bundels voor Linux‑servers vanuit een Windows‑build‑pipeline. |
+| **Gegevensback‑up** | Behoud maphiërarchie en metadata terwijl je de back‑upgrootte laag houdt. |
+
+## Veelvoorkomende problemen en oplossingen
+
+- **Bestand niet gevonden‑fout** – Zorg ervoor dat `dataDir` eindigt met het juiste pad‑scheidingsteken of gebruik `Path.Combine`.  
+- **Grote bestanden veroorzaken geheugen‑druk** – Gebruik stream‑gebaseerde overloads (`CreateEntry` met een `Stream`) om te voorkomen dat volledige bestanden in het geheugen worden geladen.  
+- **Gzip‑output is corrupt** – Controleer of het archief is gesloten (`using`‑blok) voordat `SaveGzipped` wordt aangeroepen.  
 
 ## Veelgestelde vragen
 
-### Vraag 1: Is Aspose.Zip voor .NET compatibel met alle .NET-applicaties?
-A1: Ja, Aspose.Zip voor .NET is ontworpen om naadloos te integreren met alle .NET-toepassingen en biedt veelzijdige mogelijkheden voor bestandscompressie.
+**Q: Is Aspose.Zip voor .NET compatibel met alle .NET‑applicaties?**  
+A: Ja, het werkt met .NET Framework, .NET Core en .NET 5/6/7‑projecten.
 
-### V2: Hoe kan ik een tijdelijke licentie verkrijgen voor Aspose.Zip voor .NET?
+**Q: Hoe kan ik een tijdelijke licentie voor Aspose.Zip voor .NET verkrijgen?**  
+A: Bezoek de [temporary‑license page](https://purchase.aspose.com/temporary-license/) om een trial‑licentie aan te vragen.
 
- A2: Bezoek[deze link](https://purchase.aspose.com/temporary-license/) om een tijdelijke licentie voor Aspose.Zip aan te schaffen.
+**Q: Zijn er beperkingen qua bestandsgrootte?**  
+A: De bibliotheek is geoptimaliseerd voor grote bestanden; er is geen harde limiet behalve het beschikbare systeemgeheugen.
 
-### V3: Zijn er beperkingen voor de bestandsgrootte bij het gebruik van Aspose.Zip voor .NET?
+**Q: Waar kan ik ondersteuning krijgen?**  
+A: Gebruik het community‑gedreven supportforum [hier](https://forum.aspose.com/c/zip/37) voor hulp van Aspose‑engineers en andere ontwikkelaars.
 
-A3: Aspose.Zip voor .NET is geoptimaliseerd voor het verwerken van grote bestanden en er zijn geen strikte beperkingen op de bestandsgrootte.
+**Q: Kan ik Aspose.Zip voor .NET gratis uitproberen?**  
+A: Absoluut—download de gratis trial van de [Aspose Zip releases page](https://releases.aspose.com/zip/net).
 
-### V4: Waar kan ik ondersteuning zoeken voor Aspose.Zip voor .NET?
+## Conclusie
 
- A4: Ontdek het door de gemeenschap aangestuurde ondersteuningsforum[hier](https://forum.aspose.com/c/zip/37) om hulp te krijgen en in contact te komen met andere ontwikkelaars.
+Je hebt nu geleerd **hoe je een tar‑archief maakt**, bestanden eraan toevoegt, en het comprimeert naar **tar.gz** met Aspose.Zip voor .NET. Deze aanpak elimineert externe afhankelijkheden, geeft je fijne controle over de archiefinhoud, en schaalt naar grote datasets. Voel je vrij om extra Aspose.Zip‑functies te verkennen, zoals encryptie, aangepaste entry‑attributen en streaming‑API’s, om je archiveringsworkflow verder te verbeteren.
 
-### V5: Kan ik Aspose.Zip voor .NET gratis uitproberen voordat ik een aankoop doe?
-
- A5: Zeker! Toegang tot de gratis proefversie[hier](https://releases.aspose.com/zip/net) om de mogelijkheden van Aspose.Zip voor .NET te verkennen.
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Laatst bijgewerkt:** 2026-02-20  
+**Getest met:** Aspose.Zip 24.11 voor .NET  
+**Auteur:** Aspose

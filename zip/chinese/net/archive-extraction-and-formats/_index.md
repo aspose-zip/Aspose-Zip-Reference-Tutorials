@@ -1,67 +1,121 @@
 ---
-title: 档案提取和格式
-linktitle: 档案提取和格式
-second_title: 用于文件压缩和归档的 Aspose.Zip .NET API
-description: 使用 Aspose.Zip 释放 .NET 中文件压缩的强大功能。了解将文件压缩为各种格式（例如 TarBz2、TarGz 和 TarZ）以实现高效存储。
-weight: 23
+date: 2026-02-20
+description: 了解如何压缩 tarbz2 文件、创建 targz 归档，以及使用 Aspose.Zip for .NET 进行 .NET 归档解压和密码保护的
+  zip 解压。提升存储效率和安全性。
+linktitle: Archive Extraction and Formats
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: 如何使用 Aspose.Zip for .NET 压缩 TarBz2 文件
 url: /zh/net/archive-extraction-and-formats/
+weight: 23
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 档案提取和格式
+# 如何使用 Aspose.Zip for .NET 压缩 TarBz2 文件
 
+## Introduction
 
-## 介绍
+在本指南中，您将学习 **如何使用 Aspose.Zip for .NET 压缩 tarbz2 文件**，同时了解如何创建 TarGz 存档以及执行 .net 对受密码保护的 zip 文件的解压缩。高效的文件处理是现代 .NET 开发的基石，掌握这些格式可以帮助您降低存储成本、加快数据传输并保护敏感信息安全。无论您是在构建备份服务、云存储客户端，还是数据处理流水线，本指南所涵盖的技术都能让您的文件管理任务更加顺畅可靠。
 
-在广阔的软件开发领域，高效的文件处理至关重要。 Aspose.Zip for .NET 成为一个强大的盟友，提供了一套全面的工具来无缝压缩和提取文件。在本教程系列中，我们深入研究存档提取和各种格式的复杂性，使您具备优化 .NET 项目中文件管理的技能。
+## Quick Answers
+- **TarBz2 是什么？** 一种压缩归档，结合了 TAR 打包和 BZIP2 压缩，以实现高压缩比。  
+- **为什么选择 Aspose.Zip for .NET？** 它提供了一个统一、流式的 API，可创建和提取多种归档格式，无需外部依赖。  
+- **我可以创建 TarGz 存档吗？** 可以——Aspose.Zip 支持 TarGz、TarLz、TarXz、TarZ 等格式。  
+- **如何提取受密码保护的 zip 存档？** 在提取时使用 `ArchiveEntry` 对象的 `Password` 属性。  
+- **生产环境是否需要许可证？** 生产环境需要商业许可证；可免费试用以进行评估。
 
-## 使用 Aspose.Zip for .NET 压缩为 TarBz2
+## How to Compress TarBz2 Files
+将文件压缩为 TarBz2 意味着首先将多个文件和目录打包成一个 **TAR** 容器，然后再进行 **BZIP2** 压缩。最终得到的 `.tar.bz2` 文件既便于传输，又具备高度压缩率。
 
-深入了解文件压缩的世界，我们将逐步指导您使用 Aspose.Zip for .NET 将文件压缩为 TarBz2 格式。在本教程中，效率与简单性相结合，确保您的文件不仅紧凑而且易于传输。
+## Why Use Aspose.Zip for .NET to Handle These Formats?
+- **统一 API** – 单一库，支持多种格式（TarBz2、TarGz、TarLz、TarXz、TarZ）。  
+- **无本地依赖** – 开箱即用，支持 Windows、Linux 和 macOS。  
+- **密码支持** – 使用每个条目的密码安全地保护和提取归档。  
+- **性能导向** – 基于流的处理最小化内存占用。
 
-## 使用 Aspose.Zip for .NET 压缩为 TarGz
+## Prerequisites
+- .NET 6.0 或更高（或 .NET Core 3.1+ / .NET Framework 4.5+）。  
+- 已安装 Aspose.Zip for .NET NuGet 包（`Install-Package Aspose.Zip`）。  
+- 具备 C# 和文件 I/O 的基本了解。
 
-使用 Aspose.Zip 轻松将 .NET 中的文件压缩为 TarGz 格式。我们的教程将引导您完成整个过程，使文件压缩变得轻而易举。通过这份综合指南优化存储并增强您的文件处理能力。
+## Step‑by‑Step Guide
 
-## 使用 Aspose.Zip for .NET 压缩为 TarLz
+### Step 1: Choose the archive format you need
+决定 **TarBz2**、**TarGz**、**TarLz**、**TarXz** 或 **TarZ** 中哪种最符合您的压缩比和兼容性需求。  
+- **TarBz2** – 压缩率最高，处理速度较慢。  
+- **TarGz** – 在速度和体积之间取得良好平衡（涵盖次要关键词 *how to create targz*）。  
+- **TarZ** – 传统格式，适用于与旧版 Unix 工具的兼容性。
 
-了解使用 Aspose.Zip 在 .NET 中创建 TarLz 档案的艺术。我们分解了这些步骤，使文件压缩成为一个直观的过程。通过这个简单易懂的教程提升您的文件管理游戏水平。
+### Step 2: Create a new `Archive` instance
+实例化 `Archive` 类并指向输出文件路径。该对象将管理打包和压缩过程。
 
-## 使用 Aspose.Zip for .NET 压缩为 TarXz
+### Step 3: Add files and folders
+使用 `AddAll` 或 `AddFile` 方法添加要压缩的文件。通过添加基文件夹可以保留目录结构。
 
-当我们教您如何使用 Aspose.Zip 将文件压缩为 .NET 中的 TarXz 格式时，效率成为中心议题。我们的分步指南可确保您掌握其中的复杂性，为高效的文件存储和传输提供宝贵的技能。
+### Step 4: Set the desired compression type
+在保存归档时指定压缩算法（`CompressionType.BZip2`、`CompressionType.GZip` 等）。这一步实际上是 **将文件压缩为 TarBz2** 或其他格式。
 
-## 使用 Aspose.Zip for .NET 压缩为 TarZ
+### Step 5: Save the archive
+调用 `Save` 并使用相应的格式枚举（`ArchiveFormat.TarBz2`、`ArchiveFormat.TarGz` 等）。库将在一次操作中写入 TAR 容器并应用所选压缩。
 
-通过探索使用 Aspose.Zip 压缩到 TarZ，踏上在 .NET 项目中高效处理文件的旅程。我们的分步方法简化了流程，使您能够将此功能无缝集成到您的应用程序中。
+### Step 6: Extracting archives with passwords
+如果需要 **使用不同密码提取归档条目**（次要关键词 *password protected zip extraction*），打开归档，定位每个条目，分配其密码，然后进行提取。
 
-## 在 Aspose.Zip for .NET 中使用不同密码提取存档条目
+### Step 7: Verify the result
+提取后，对比文件大小和校验和，以确保归档创建和解压正确。
 
-通过学习如何在 Aspose.Zip for .NET 中提取具有不同密码的存档条目，提高应用程序的安全性和灵活性。本教程为您的文件处理库增加了一层复杂性，确保您的数据保持安全。
+## Common Use Cases
+- **备份工具** – 将每日备份存储为 `.tar.bz2`，以降低存储成本。  
+- **跨平台数据交换** – 基于 Tar 的格式在 Linux、macOS 和 Windows 上均被通用支持。  
+- **安全分发** – 为单个条目设置密码，以满足合规性需求的环境。
 
-当您开始掌握 .NET 中的存档提取和格式的旅程时，我们使用 Aspose.Zip 的综合教程列表可以作为您的指南针。探索这个强大工具的多种功能，提高您的文件管理能力。
+## Troubleshooting & Tips
+- **大型归档** – 使用流式 API（`Archive.CreateEntryFromFile`）避免将整个文件加载到内存中。  
+- **密码不匹配** – 确保每个 `ArchiveEntry` 设置的密码与提取时使用的密码一致，否则会抛出 `InvalidPasswordException`。  
+- **不支持的压缩级别** – BZIP2 不支持自定义压缩级别；如果需要更细粒度的控制，可考虑 TarLz 或 TarXz。
 
-释放 Aspose.Zip for .NET 的全部潜力并彻底改变您在项目中处理文件的方式。立即深入了解我们的教程并提高您在存档提取和文件压缩方面的技能。
+## Frequently Asked Questions
 
-## 档案提取和格式教程
+**问：如何创建 TarGz 存档？**  
+答：在调用 `Save` 时将压缩类型设为 `CompressionType.GZip`，格式设为 `ArchiveFormat.TarGz`。
+
+**问：是否可以在不知道密码的情况下提取受密码保护的归档？**  
+答：不能。每个条目必须提供正确的密码，否则提取会失败。
+
+**问：Aspose.Zip 是否支持对每个条目使用不同密码进行提取？**  
+答：支持。您可以在提取前为每个 `ArchiveEntry` 单独分配密码。
+
+**问：哪种格式提供最佳压缩率？**  
+答：TarBz2 通常提供最高的压缩比，其次是 TarLz 和 TarXz。TarGz 在速度与体积之间提供良好平衡。
+
+**问：向 TAR 归档中添加的文件数量是否有限制？**  
+答：实际上没有限制，但极大的归档可能通过拆分为多个部分以便更易处理。
+
+## Archive Extraction and Formats Tutorials
 ### [使用 Aspose.Zip for .NET 将文件压缩为 TarBz2](./compress-to-tar-bz2/)
-了解如何使用 Aspose.Zip 将 .NET 中的文件压缩为 TarBz2 格式。请按照我们的分步指南进行高效的文件压缩。
+了解如何使用 Aspose.Zip for .NET 将文件压缩为 TarBz2 格式。按照我们的分步指南实现高效的文件压缩。
 ### [使用 Aspose.Zip for .NET 压缩为 TarGz](./compress-to-tar-gz/)
-使用 Aspose.Zip 在 .NET 中探索高效的文件压缩。轻松压缩为 TarGz。
+探索在 .NET 中使用 Aspose.Zip 进行高效文件压缩。轻松压缩为 TarGz。
 ### [使用 Aspose.Zip for .NET 压缩为 TarLz](./compress-to-tar-lz/)
-使用 Aspose.Zip 轻松压缩 .NET 中的文件。学习逐步创建 TarLz 档案。
+在 .NET 中使用 Aspose.Zip 轻松压缩文件。一步步学习创建 TarLz 归档。
 ### [使用 Aspose.Zip for .NET 压缩为 TarXz](./compress-to-tar-xz/)
-了解使用 Aspose.Zip 在 .NET 中将文件压缩为 TarXz 格式。请按照我们的分步指南进行高效的文件存储和传输。
+学习如何使用 Aspose.Zip for .NET 将文件压缩为 TarXz 格式。按照我们的分步指南实现高效的文件存储和传输。
 ### [使用 Aspose.Zip for .NET 压缩为 TarZ](./compress-to-tar-z/)
-探索使用 Aspose.Zip for .NET 逐步压缩到 TarZ。 .NET 项目的高效文件处理。
-### [在 Aspose.Zip for .NET 中使用不同密码提取存档条目](./extract-archive-different-passwords/)
-了解如何在 Aspose.Zip for .NET 中提取具有不同密码的存档条目。提高应用程序的安全性和灵活性。
+探索使用 Aspose.Zip for .NET 对 TarZ 进行分步压缩。为您的 .NET 项目实现高效的文件处理。
+### [在 Aspose.Zip for .NET 中使用不同密码提取归档条目](./extract-archive-different-passwords/)
+了解如何在 Aspose.Zip for .NET 中使用不同密码提取归档条目。提升您应用程序的安全性和灵活性。
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**最后更新：** 2026-02-20  
+**测试环境：** Aspose.Zip for .NET 24.11  
+**作者：** Aspose

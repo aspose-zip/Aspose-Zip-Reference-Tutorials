@@ -1,10 +1,10 @@
 ---
-date: 2025-11-29
-description: .NET と Aspose.Zip を使用して、ファイルを tar に追加し、tarbz2 形式に圧縮する方法を学びます。このステップバイステップガイドでは、tarbz2
-  アーカイブを効率的に作成する方法を示します。
+date: 2026-02-20
+description: .NET と Aspose.Zip を使用して tar を圧縮し、TarBz2 アーカイブを作成する方法を学びましょう。このステップバイステップガイドでは、ファイルを
+  tar に追加し、tarbz2 ファイルを効率的に生成する方法を示します。
 linktitle: Compressing to TarBz2
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Aspose.Zip for .NET を使用してファイルを tar に追加し、TarBz2 に圧縮する
+title: Aspose.Zip for .NET を使用して tar を圧縮し、TarBz2 を作成する方法
 url: /ja/net/archive-extraction-and-formats/compress-to-tar-bz2/
 weight: 11
 ---
@@ -13,39 +13,42 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Tar にファイルを追加して TarBz2 に圧縮する方法（Aspose.Zip for .NET 使用）
+# Aspose.Zip for .NET を使用した tar の圧縮と TarBz2 の作成方法
 
-## Introduction
+## はじめに
 
-Welcome to our comprehensive guide on **how to add files to tar** and compress them to the TarBz2 format using Aspose.Zip for .NET. Whether you’re building a backup utility, delivering deployment packages, or simply need a compact archive for distribution, this tutorial walks you through every step with clear explanations and real‑world tips.
+Aspose.Zip for .NET を使用して **tar を圧縮** し、ファイルを tar アーカイブに追加し、さらに TarBz2 ファイルを作成するための包括的なガイドへようこそ。バックアップユーティリティの構築、デプロイパッケージの配布、あるいは単に配布用のコンパクトなアーカイブが必要な場合でも、本チュートリアルは明確な解説、実践的なヒント、具体的な例を交えて、すべての手順を丁寧に案内します。
 
-Before we start, let’s make sure you have everything you need.
+始める前に、必要なものがすべて揃っていることを確認しましょう。
 
-## Quick Answers
-- **What library should I use?** Aspose.Zip for .NET
-- **How long does the implementation take?** About 5‑10 minutes
-- **Do I need a license?** A temporary license is required for production; a free trial is available
-- **Can I compress multiple files?** Yes – add as many entries as you like to the Tar archive
-- **Is it compatible with .NET 6+?** Absolutely, Aspose.Zip supports .NET Framework and .NET Core/5/6
+## クイック回答
+- **どのライブラリを使用すべきですか？** Aspose.Zip for .NET
+- **実装にどれくらい時間がかかりますか？** 約5〜10分
+- **ライセンスは必要ですか？** 本番環境では一時ライセンスが必要です；無料トライアルが利用可能です
+- **複数のファイルを圧縮できますか？** はい – Tar アーカイブに好きなだけエントリを追加できます
+- **.NET 6+ と互換性がありますか？** もちろんです、Aspose.Zip は .NET Framework と .NET Core/5/6 をサポートしています
 
-## What is “add files to tar”?
-Adding files to a **tar** (Tape Archive) creates a single uncompressed container that preserves directory structure and file metadata. When you then apply Bzip2 compression, the result is a **tar.bz2** (TarBz2) archive—ideal for efficient storage and transfer.
+## tar の圧縮方法
 
-## Why compress files to TarBz2 with Aspose.Zip?
-- **Speed & Simplicity** – One‑line API calls handle both tar creation and Bzip2 compression.
-- **Cross‑platform** – Works on Windows, Linux, and macOS .NET runtimes.
-- **Fine‑grained control** – Choose which files to include, set custom entry names, and stream directly to disk.
+ファイルを **tar** (Tape Archive) に追加すると、ディレクトリ構造とファイルメタデータを保持した単一の非圧縮コンテナが作成されます。その後 Bzip2 圧縮を適用すると、**tar.bz2** (TarBz2) アーカイブが生成され、効率的な保存と転送に最適です。Aspose.Zip はこのプロセスをワンラインの操作で実行でき、tar の作成と Bzip2 圧縮の両方を内部で処理します。
 
-## Prerequisites
+## Aspose.Zip でファイルを TarBz2 に圧縮する理由
 
-- **Aspose.Zip for .NET** – Download the latest package from the official site: [https://releases.aspose.com/zip/net/](https://releases.aspose.com/zip/net/)
-- **Document Directory** – A folder that contains the files you want to archive. In the examples we reference it with the variable `dataDir`.
+- **Speed & Simplicity** – ワンラインの API 呼び出しで tar の作成と Bzip2 圧縮の両方を処理します。  
+- **Cross‑platform** – Windows、Linux、macOS の .NET ランタイムで動作します。  
+- **Fine‑grained control** – 含めるファイルを選択し、カスタムエントリ名を設定し、ディスクへ直接ストリームできます。  
+- **Robust .NET support** – **tar archive .net** シナリオ（コンソールアプリから Web サービスまで）に完全に対応しています。
 
-> **Pro tip:** Keep your source files in a dedicated folder to avoid accidental inclusion of unwanted files.
+## 前提条件
 
-## Import Namespaces
+- **Aspose.Zip for .NET** – 公式サイトから最新パッケージをダウンロードしてください: [https://releases.aspose.com/zip/net/](https://releases.aspose.com/zip/net/)
+- **Document Directory** – アーカイブしたいファイルが入っているフォルダーです。例では変数 `dataDir` で参照しています。
 
-First, import the required namespaces so you can access Aspose.Zip’s Tar and Bzip2 classes.
+> **プロのコツ:** ソースファイルは専用のフォルダーに保管し、不要なファイルが誤って含まれるのを防ぎましょう。
+
+## 名前空間のインポート
+
+まず、必要な名前空間をインポートして、Aspose.Zip の Tar および Bzip2 クラスにアクセスできるようにします。
 
 ```csharp
 using System;
@@ -54,19 +57,19 @@ using Aspose.Zip.Bzip2;
 using Aspose.Zip.Tar;
 ```
 
-## Step 1: Set the Document Directory
+## ステップ 1: Document Directory の設定
 
-Define the path that points to the folder holding the files you want to archive.
+アーカイブしたいファイルが格納されているフォルダーへのパスを定義します。
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-> Replace `"Your Document Directory"` with the absolute or relative path to your source folder.
+> `"Your Document Directory"` を、ソースフォルダーへの絶対パスまたは相対パスに置き換えてください。
 
-## Step 2: Add files to tar and create a TarBz2 archive
+## ステップ 2: ファイルを tar に追加し、TarBz2 アーカイブを作成する
 
-The core of the process is creating a `TarArchive`, adding entries, then wrapping it with a `Bzip2Archive`. The code below demonstrates **how to create tarbz2** in a clean, disposable‑pattern style.
+このプロセスの核心は `TarArchive` を作成し、エントリを追加し、そして `Bzip2Archive` でラップすることです。以下のコードは、クリーンで disposable パターンのスタイルで **tarbz2 の作成方法** を示しています。
 
 ```csharp
 //ExStart: CompressFile
@@ -83,48 +86,48 @@ using (Bzip2Archive bz2 = new Bzip2Archive())
 }
 ```
 
-- `CreateEntry` adds each file to the **tar** container.  
-- `bz2.SetSource(archive)` tells the Bzip2 archive to compress the entire tar stream.  
-- `bz2.Save(...)` writes the final **tar.bz2** file to disk.
+- `CreateEntry` は各ファイルを **tar** コンテナに追加します。  
+- `bz2.SetSource(archive)` は Bzip2 アーカイブに tar ストリーム全体を圧縮させます。  
+- `bz2.Save(...)` は最終的な **tar.bz2** ファイルをディスクに書き込みます。
 
-**Tip:** To **compress files to tarbz2** in bulk, simply repeat `archive.CreateEntry` for every file you need.
+**ヒント:** 複数のファイルを一括で **tarbz2 に圧縮** するには、必要なファイルごとに `archive.CreateEntry` を繰り返すだけです。
 
-## Common Issues & Solutions
+## よくある問題と解決策
 
 | Issue | Reason | Fix |
 |-------|--------|-----|
-| **File not found** error | Wrong `dataDir` path or missing file extension | Verify the full path and ensure the file exists. |
-| **Empty archive** | No entries added before `bz2.Save` | Add at least one `CreateEntry` call. |
-| **Permission denied** | Application lacks write permission to the output folder | Run the app with appropriate rights or choose a writable directory. |
+| **File not found** エラー | `dataDir` のパスが間違っている、またはファイル拡張子が欠如している | フルパスを確認し、ファイルが存在することを確認してください。 |
+| **Empty archive** | `bz2.Save` の前にエントリが追加されていない | 少なくとも1つの `CreateEntry` 呼び出しを追加してください。 |
+| **Permission denied** | アプリケーションが出力フォルダーへの書き込み権限を持っていない | 適切な権限でアプリを実行するか、書き込み可能なディレクトリを選択してください。 |
 
-## Frequently Asked Questions
+## よくある質問
 
-**Q: Is Aspose.Zip compatible with all .NET applications?**  
-A: Yes. It works with .NET Framework, .NET Core, .NET 5/6, and newer runtimes.
+**Q: Aspose.Zip はすべての .NET アプリケーションと互換性がありますか？**  
+A: はい。 .NET Framework、.NET Core、.NET 5/6、そして新しいランタイムでも動作します。
 
-**Q: Can I compress multiple files simultaneously?**  
-A: Absolutely. Call `CreateEntry` for each file before saving the archive.
+**Q: 複数のファイルを同時に圧縮できますか？**  
+A: もちろんです。アーカイブを保存する前に各ファイルに対して `CreateEntry` を呼び出してください。
 
-**Q: Where can I find additional documentation?**  
-A: Detailed docs are available [here](https://reference.aspose.com/zip/net/).
+**Q: 追加のドキュメントはどこで見つけられますか？**  
+A: 詳細なドキュメントは [here](https://reference.aspose.com/zip/net/) にあります。
 
-**Q: How do I obtain a temporary license for Aspose.Zip?**  
-A: You can request one [here](https://purchase.aspose.com/temporary-license/).
+**Q: Aspose.Zip の一時ライセンスはどのように取得できますか？**  
+A: [here](https://purchase.aspose.com/temporary-license/) からリクエストできます。
 
-**Q: Is there a free trial available?**  
-A: Yes, download a trial version [here](https://releases.aspose.com/).
+**Q: 無料トライアルは利用できますか？**  
+A: はい、トライアル版は [here](https://releases.aspose.com/) からダウンロードできます。
 
-## Conclusion
+## 結論
 
-You’ve now learned how to **add files to tar**, wrap them in a Bzip2 stream, and produce a **TarBz2** archive using Aspose.Zip for .NET. This technique is fast, reliable, and works across all modern .NET platforms. Feel free to experiment with larger file sets, custom entry names, or integrate the code into your own backup or deployment pipelines.
+これで、**tar にファイルを追加**し、Bzip2 ストリームでラップして、Aspose.Zip for .NET を使用して **TarBz2** アーカイブを作成する方法を学びました。この手法は高速で信頼性が高く、最新のすべての .NET プラットフォームで動作します。より大きなファイルセットやカスタムエントリ名で実験したり、コードを独自のバックアップやデプロイパイプラインに組み込んだりしてみてください。
 
-If you run into any challenges, the Aspose.Zip community is ready to help—just head over to the [Aspose.Zip support forum](https://forum.aspose.com/c/zip/37).
+問題が発生した場合は、Aspose.Zip コミュニティがサポートしますので、[Aspose.Zip support forum](https://forum.aspose.com/c/zip/37) にアクセスしてください。
 
 ---
 
-**Last Updated:** 2025-11-29  
-**Tested With:** Aspose.Zip for .NET (latest release)  
-**Author:** Aspose  
+**最終更新日:** 2026-02-20  
+**テスト環境:** Aspose.Zip for .NET (latest release)  
+**作者:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
