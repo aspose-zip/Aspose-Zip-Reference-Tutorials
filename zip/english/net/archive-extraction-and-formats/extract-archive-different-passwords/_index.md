@@ -1,10 +1,10 @@
 ---
-title: How to Extract Zip with Password Using Aspise.Zip for .NET
+title: How to Extract Zip with Password Using Aspose.Zip for .NET
 linktitle: Extracting Archive Entries with Different Passwords
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-description: Learn how to extract zip with password using Aspose.Zip for .NET, handling multiple password-protected entries efficiently.
+description: Learn how to extract zip with password using Aspose.Zip for .NET, an Aspose.Zip example that handles multiple password‑protected entries efficiently.
 weight: 10
-date: 2025-12-01
+date: 2026-02-23
 url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
 ---
 
@@ -14,21 +14,30 @@ url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
 
 # How to Extract Zip with Password Using Aspose.Zip for .NET
 
-In modern .NET applications, protecting sensitive data inside ZIP archives is a common requirement. This tutorial shows **how to extract zip with password** when each entry uses a different password, giving you fine‑grained control over security while keeping the extraction process straightforward.
+In modern .NET applications, protecting sensitive data inside ZIP archives is a common requirement. This tutorial shows **how to extract zip with password** when each entry uses a different password, giving you fine‑grained control over security while keeping the extraction process straightforward. By following this Aspose.Zip example you’ll see exactly how to perform password protected zip extraction for individual entries.
 
 ## Quick Answers
-- **What library should I use?** Aspose.Zip for .NET.
-- **Can I extract entries that have different passwords?** Yes—each entry can be opened with its own password.
-- **Do I need a license for production?** A commercial license is required; a free trial is available.
-- **Supported platforms?** .NET Framework, .NET Core, .NET 5/6+.
+- **What library should I use?** Aspose.Zip for .NET.  
+- **Can I extract entries that have different passwords?** Yes—each entry can be opened with its own password.  
+- **Do I need a license for production?** A commercial license is required; a free trial is available.  
+- **Supported platforms?** .NET Framework, .NET Core, .NET 5/6+.  
 - **Typical implementation time?** Around 10 minutes for a basic scenario.
+
+## What is “how to extract zip”?
+Extracting a ZIP archive means reading the compressed container and writing its contents to the file system. When the archive is password‑protected, you must also supply the correct password for each entry before the data can be decompressed.
+
+## Why Use Aspose.Zip for Password‑Protected Extraction?
+- **Granular security:** Each file can have its own password, reducing risk if a single password is compromised.  
+- **Flexibility:** You can decide programmatically which password to apply based on business logic (e.g., user roles).  
+- **Performance:** Aspose.Zip processes entries in‑memory, avoiding the need to unzip the whole archive first.  
+- **Cross‑platform support:** Works on Windows, Linux, and macOS with .NET 5/6+.
 
 ## Prerequisites
 
 Before we dive in, make sure you have:
 
-- **Aspose.Zip for .NET** installed in your project. You can find the official documentation [here](https://reference.aspose.com/zip/net/).
-- A .NET development environment (Visual Studio, Rider, or VS Code) targeting .NET 5 or later.
+- **Aspose.Zip for .NET** installed in your project. You can find the official documentation [here](https://reference.aspose.com/zip/net/).  
+- A .NET development environment (Visual Studio, Rider, or VS Code) targeting .NET 5 or later.  
 - A ZIP file that contains entries encrypted with **different passwords** (the sample used here is `different_password.zip`).
 
 ## Import Namespaces
@@ -52,11 +61,13 @@ string dataDir = "Your Document Directory";
 
 > **Pro tip:** Use `Path.Combine` for cross‑platform path building if you need to support Linux/macOS.
 
-## Step 2: Extract Archive Entries with Different Passwords
+## How to Extract Zip with Password Using Aspose.Zip
 
-Below we walk through the exact steps to open the archive and extract each entry using its own password.
+Below we walk through the exact steps to open the archive and extract each entry using its own password. This section demonstrates **extract zip with password** for every entry, which is the core of the “how to extract zip” process.
 
-### Step 2.1: Open the Zip File
+### Step 2: Extract Archive Entries with Different Passwords
+
+#### Step 2.1: Open the Zip File
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "\\different_password.zip", FileMode.Open))
@@ -70,7 +81,7 @@ using (FileStream zipFile = File.Open(dataDir + "\\different_password.zip", File
 
 The `Archive` object represents the ZIP container. Keeping the `FileStream` and `Archive` inside `using` blocks ensures all resources are released promptly.
 
-### Step 2.2: Extract the First Entry (Password = “first_pass”)
+#### Step 2.2: Extract the First Entry (Password = “first_pass”)
 
 ```csharp
 archive.Entries[0].Extract(dataDir + "alice29_extracted_pass_out.txt", "first_pass");
@@ -78,18 +89,22 @@ archive.Entries[0].Extract(dataDir + "alice29_extracted_pass_out.txt", "first_pa
 
 Here we **extract multiple zip entries** by addressing them via the `Entries` collection. The first entry is decrypted with the password `"first_pass"`.
 
-### Step 2.3: Extract the Second Entry (Password = “second_pass”)
+#### Step 2.3: Extract the Second Entry (Password = “second_pass”)
 
 ```csharp
 archive.Entries[1].Extract(dataDir + "asyoulik_extracted_pass_out.txt", "second_pass");
 ```
 
-The second entry uses a different password, demonstrating **password protected zip extraction** for each individual file.
+The second entry uses a different password, demonstrating **extract zip entry password** handling for each individual file.
+
+#### Step 2.4: (Optional) Loop Through All Entries
+
+If you need to **extract multiple zip entries** without hard‑coding indexes, you can iterate over `archive.Entries` and supply the appropriate password for each entry based on your own lookup logic. This pattern scales nicely when dealing with large archives.
 
 ## Why This Approach Matters
 
-- **Granular security:** Each file can have its own password, reducing the risk if a single password is compromised.
-- **Flexibility:** You can programmatically decide which password to apply based on business logic (e.g., user roles).
+- **Granular security:** Each file can have its own password, reducing the risk if a single password is compromised.  
+- **Flexibility:** You can programmatically decide which password to apply based on business logic (e.g., user roles).  
 - **Performance:** Aspose.Zip processes entries in‑memory, avoiding the need to unzip the whole archive first.
 
 ## Common Issues & Solutions
@@ -126,7 +141,7 @@ A5: To purchase Aspose.Zip, visit the [purchase page](https://purchase.aspose.co
 
 ---
 
-**Last Updated:** 2025-12-01  
+**Last Updated:** 2026-02-23  
 **Tested With:** Aspose.Zip for .NET 24.11 (latest at time of writing)  
 **Author:** Aspose  
 

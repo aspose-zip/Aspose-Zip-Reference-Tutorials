@@ -1,109 +1,105 @@
 ---
-date: 2025-11-30
-description: Erfahren Sie, wie Sie mit Aspose.Zip für .NET Zip‑Archive in .NET erstellen.
+date: 2026-02-23
+description: Lernen Sie, wie Sie mit Aspose.Zip für .NET ZIP-Archive in ASP.NET erstellen.
   Schritt‑für‑Schritt‑Anleitung zum effizienten Komprimieren und Dekomprimieren von
   Verzeichnissen in Ihren .NET‑Projekten.
-linktitle: Create zip archive .net – Directory and Folder Compression
+linktitle: Create zip archive asp.net – Directory and Folder Compression
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: ZIP-Archiv erstellen .net – Verzeichnis‑ und Ordnerkompression
+title: ZIP-Archiv in ASP.NET erstellen – Verzeichnis- und Ordnerkomprimierung
 url: /de/net/directory-and-folder-compression/
 weight: 22
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
+ paths, code, variable names. Good.
+
+Check for any stray formatting: The bullet lists use hyphens. Keep same.
+
+Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Zip-Archiv .net erstellen – Verzeichnis‑ und Ordnerkompression
+# Erstellen von Zip-Archiven asp.net – Verzeichnis- und Ordnerkomprimierung
 
 ## Einführung
 
-In der modernen .NET‑Entwicklung ist das **Erstellen von Zip‑Archiven .net**‑ähnlichen Dateien essenziell, um Speicherkosten zu senken, Deployments zu beschleunigen und die Dateiverteilung zu vereinfachen. Dieses Tutorial zeigt, wie Sie Aspose.Zip für .NET verwenden, um ganze Verzeichnisse zu komprimieren und später bei Bedarf wieder zu extrahieren. Egal, ob Sie eine CI/CD‑Pipeline aufbauen, Update‑Pakete bereitstellen oder einfach Log‑Dateien aufräumen – das Beherrschen der Zip‑Archiv‑Erstellung in .NET macht Ihre Projekte effizienter und professioneller.
+In der modernen .NET-Entwicklung ist das Erstellen von **create zip archive asp.net**‑artigen Dateien unerlässlich, um Speicherkosten zu senken, Deployments zu beschleunigen und die Dateiverteilung zu vereinfachen. Dieses Tutorial zeigt, wie man Aspose.Zip für .NET verwendet, um ganze Verzeichnisse zu komprimieren und bei Bedarf wieder zu extrahieren. Egal, ob Sie eine CI/CD‑Pipeline aufbauen, Update‑Pakete bereitstellen oder einfach Log‑Dateien aufräumen – das Beherrschen der Erstellung von Zip‑Archiven in .NET macht Ihre Projekte effizienter und professioneller.
 
-## Schnellantworten
-- **Welche Bibliothek sollte ich verwenden?** Aspose.Zip für .NET bietet eine einfache, leistungsstarke API zur Zip‑Archiv‑Erstellung.  
-- **Kann ich ein ganzes Verzeichnis mit einem Aufruf komprimieren?** Ja – Aspose.Zip kann ein Verzeichnis rekursiv in einer einzigen Methode komprimieren.  
+## Schnelle Antworten
+- **Welche Bibliothek sollte ich verwenden?** Aspose.Zip für .NET bietet eine einfache, hochleistungsfähige API zur Erstellung von Zip‑Archiven.  
+- **Kann ich einen gesamten Ordner mit einem Aufruf komprimieren?** Ja – Aspose.Zip kann ein Verzeichnis rekursiv mit einer einzigen Methode komprimieren.  
 - **Wird Passwortschutz unterstützt?** Absolut; Sie können beim Erstellen des Zip‑Archivs Verschlüsselung hinzufügen.  
 - **Benötige ich eine Lizenz für die Entwicklung?** Eine kostenlose Testversion reicht für die Evaluierung; für die Produktion ist eine kommerzielle Lizenz erforderlich.  
 - **Welche .NET‑Versionen sind kompatibel?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7 und später.
 
-## Was bedeutet „create zip archive .net“?
-Ein Zip‑Archiv in .NET zu erstellen bedeutet, eine oder mehrere Dateien und Ordner in einem einzigen *.zip*-Container zu bündeln, der effizienter gespeichert, übertragen oder heruntergeladen werden kann. Das Zip‑Format wird universell unterstützt und ist damit ideal für plattformübergreifende Szenarien.
+## Was ist “create zip archive asp.net”?
+Ein Zip‑Archiv in ASP.NET zu erstellen bedeutet, eine oder mehrere Dateien und Ordner in einem einzigen *.zip*-Container zu verpacken, der effizienter gespeichert, übertragen oder heruntergeladen werden kann. Das Zip‑Format wird universell unterstützt und ist daher ideal für plattformübergreifende Szenarien.
 
 ## Warum Aspose.Zip für .NET verwenden?
 - **Performance‑optimierte** Kompressionsalgorithmen, die große Verzeichnisse mit minimalem Speicherverbrauch verarbeiten.  
 - **Umfangreicher Funktionsumfang** – Verschlüsselung, geteilte Archive, benutzerdefinierte Kompressionsstufen und nahtlose Integration mit Streams.  
-- **Zero‑Dependency** – funktioniert sofort ohne externe Tools wie 7‑Zip oder WinRAR.  
-- **Konsistente API** über .NET Framework, .NET Core und .NET 5+ hinweg.
+- **Zero‑Dependency** – funktioniert sofort einsatzbereit, ohne externe Tools wie 7‑Zip oder WinRAR zu benötigen.  
+- **Konsistente API** über .NET Framework, .NET Core und .NET 5+.
 
 ## Voraussetzungen
 - Visual Studio 2022 (oder jede IDE, die .NET 6+ unterstützt)  
 - Aspose.Zip für .NET NuGet‑Paket (`Install-Package Aspose.Zip`)  
 - Grundlegende Kenntnisse in C# und Dateisystem‑Operationen  
 
-## Mühelose Verzeichnis‑Kompression mit Aspose.Zip für .NET
+## Wie man Ordner in .NET mit Aspose.Zip komprimiert
+1. **Instanziieren Sie das `ZipPackage`‑Objekt** – es repräsentiert das Archiv, das Sie erstellen möchten.  
+2. **Fügen Sie das Zielverzeichnis hinzu** mit der `AddFolder`‑Methode, die automatisch Unterordner und Dateien einschließt.  
+3. **Speichern Sie das Archiv** an einem gewünschten Ort mit der Erweiterung `.zip`.  
 
-Wenn Sie jemals Schwierigkeiten hatten, Speicherplatz in Ihren .NET‑Projekten zu verwalten, ist Aspose.Zip für .NET zur Rettung gekommen. Dieses Tutorial führt Sie durch den Prozess des **Erstellens von Zip‑Archiven .net** mühelos. Die robusten Funktionen von Aspose.Zip vereinfachen diese scheinbar komplexe Aufgabe und ermöglichen Ihnen, Speicher zu optimieren, ohne die Integrität Ihrer Daten zu gefährden.
+> *Hinweis:* Der tatsächliche C#‑Code für diese Schritte ist auf der verlinkten „Effortless Directory Compression“-Tutorialseite bereitgestellt.
 
-Stellen Sie sich vor, Sie reduzieren die Größe der Projektverzeichnisse, ohne Dateien zu verlieren. Aspose.Zip für .NET macht das möglich und bietet eine nahtlose Lösung für effizientes Speichermanagement. Dieses Tutorial zerlegt die Schritte, sodass selbst Anfänger die Konzepte verstehen und mit Zuversicht umsetzen können.
-
-### Wie man einen Ordner komprimiert
-
-1. **Instanziieren Sie das `ZipPackage`‑Objekt** – dies repräsentiert das Archiv, das Sie erstellen möchten.  
-2. **Fügen Sie das Zielverzeichnis hinzu** mit der Methode `AddFolder`, die automatisch Unterordner und Dateien einschließt.  
-3. **Speichern Sie das Archiv** an einem gewünschten Ort mit der Erweiterung `.zip`.
-
-> *Hinweis:* Der eigentliche C#‑Code für diese Schritte ist bereits auf der verlinkten Seite „Effortless Directory Compression“ bereitgestellt.
-
-## Mühelose Kompression für effizientes Speichern
-
-Aspose.Zip für .NET komprimiert nicht nur Verzeichnisse; es **optimiert den Speicherplatz**, ein entscheidender Faktor in modernen Entwicklungsprojekten. Tauchen Sie in das Tutorial ein und entdecken Sie, wie Sie das perfekte Gleichgewicht zwischen Datenintegrität und Reduzierung der Gesamtgröße Ihrer Verzeichnisse erreichen.
+## Hinzufügen von passwortgeschützten Zip‑.net‑Archiven
+Wenn Sie den Inhalt sichern müssen, geben Sie einfach ein `ZipPassword` beim Speichern des Archivs an und wählen Sie einen Verschlüsselungsalgorithmus wie AES‑256. Dadurch wird eine **password protected zip .net**‑Datei erstellt, die nur autorisierte Benutzer öffnen können.
 
 ## Entpacken eines Ordners mit Aspose.Zip für .NET
+Sobald Ihre Verzeichnisse komprimiert sind, ist der nächste logische Schritt, sie zu entpacken. Aspose.Zip für .NET macht die Extraktion ebenso einfach:
 
-Sobald Ihre Verzeichnisse komprimiert sind, ist der nächste logische Schritt, zu verstehen, wie man sie effektiv wieder entpackt. Aspose.Zip für .NET glänzt auch in diesem Bereich. Dieses Tutorial führt Sie durch das Meistern der Kunst, Ordner zu dekomprimieren, sodass Sie Kompressionsaufgaben mühelos bewältigen können.
+- Öffnen Sie die Zip‑Datei mit `ZipPackage` im Lesemodus.  
+- Rufen Sie `ExtractAll` oder `ExtractFolder` auf, um die ursprüngliche Struktur wiederherzustellen.  
 
-Verabschieden Sie sich von Kopfschmerzen beim Umgang mit komprimierten Ordnern. Aspose.Zip für .NET vereinfacht den gesamten Prozess und macht ihn für Entwickler aller Erfahrungsstufen zugänglich. Tauchen Sie in dieses Tutorial ein, um Einblicke in die Feinheiten der Dekompression zu erhalten und Ihren Projekt‑Workflow zu optimieren.
+Damit können Sie die Originaldateien zuverlässig ohne Datenverlust wiederherstellen.
 
-## Häufige Fallstricke & Tipps
-
+## Häufige Stolperfallen & Tipps
 - **Große Dateien:** Bei Dateien größer als 2 GB aktivieren Sie den **Zip64**‑Modus, um Größenbeschränkungen zu vermeiden.  
-- **Pfadlängen‑Probleme:** Verwenden Sie die Eigenschaft `UseLongFileNames`, wenn Ihre Ordnerhierarchie die Windows‑Grenze von 260 Zeichen überschreitet.  
-- **Performance‑Tipp:** Setzen Sie `CompressionLevel` auf `Fast` für schnelle Builds oder auf `Maximum`, wenn Sie das kleinste mögliche Archiv benötigen.
+- **Probleme mit Pfadlängen:** Verwenden Sie die `UseLongFileNames`‑Eigenschaft, wenn Ihre Ordnerhierarchie das Windows‑Limit von 260 Zeichen überschreitet.  
+- **Performance‑Tipp:** Setzen Sie `CompressionLevel` auf `Fast` für schnelle Builds oder auf `Maximum`, wenn Sie das kleinste mögliche Archiv benötigen.  
 
-## Mühelose Aufgabenbearbeitung für nahtlose Projekte
+## Praxisnahe Anwendungsfälle
+- **CI/CD‑Pipelines:** Packen Sie Build‑Artefakte in ein Zip‑Archiv, bevor Sie sie in einen NuGet‑Feed oder Artefakt‑Store veröffentlichen.  
+- **Log‑Rotation:** Komprimieren Sie alte Log‑Ordner nachts, um Speicherplatz zu sparen.  
+- **Software‑Updates:** Bündeln Sie Update‑Dateien in ein einzelnes Archiv für einfachen Download und Installation.  
 
-Indem Sie Aspose.Zip für .NET in Ihr Toolkit aufnehmen, komprimieren und dekomprimieren Sie nicht nur Ordner; Sie optimieren Ihren gesamten Projekt‑Workflow. Die hier bereitgestellten Tutorials dienen als Leitfaden, um die Komplexität von Kompressionsaufgaben zu meistern und diese Techniken nahtlos in Ihre Projekte zu integrieren.
-
-Zusammenfassend sind diese Verzeichnis‑ und Ordnerkompressions‑Tutorials Ihr Tor zu einer effizienteren und schlankeren .NET‑Entwicklungserfahrung. Aspose.Zip für .NET befähigt Sie, die Kontrolle über Ihren Speicherplatz zu übernehmen und ist ein wertvolles Asset für Entwickler, die ihre Projekte optimieren möchten, ohne die Datenintegrität zu gefährden. Steigern Sie Ihre Fähigkeiten, verbessern Sie Ihre Projekte – entdecken Sie die Welt der Verzeichnis‑ und Ordnerkompression mit Aspose.Zip für .NET.
-
-## Verzeichnis‑ und Ordnerkompressions‑Tutorials
-### [Mühelose Verzeichnis‑Kompression mit Aspose.Zip für .NET](./compress-directory/)
-Lernen Sie, Verzeichnisse mühelos mit Aspose.Zip für .NET zu komprimieren. Optimieren Sie Ihre .NET‑Entwicklung durch effizientes Speichermanagement.
+## Verzeichnis‑ und Ordnerkomprimierungs‑Tutorials
+### [Mühelose Verzeichniskomprimierung mit Aspose.Zip für .NET](./compress-directory/)
+Erfahren Sie, wie Sie Verzeichnisse mühelos mit Aspose.Zip für .NET komprimieren. Optimieren Sie Ihre .NET‑Entwicklung, indem Sie Speicherplatz effizient nutzen.
 ### [Entpacken eines Ordners mit Aspose.Zip für .NET](./decompress-folder/)
-Meistern Sie die Kunst, Ordner mit Aspose.Zip für .NET zu dekomprimieren. Handhaben Sie Kompressionsaufgaben in Ihren Projekten mühelos.
+Meistern Sie die Kunst des Entpackens von Ordnern mit Aspose.Zip für .NET. Bewältigen Sie Komprimierungsaufgaben in Ihren Projekten mühelos.
 
 ## Häufig gestellte Fragen
 
-**F: Kann ich ein passwortgeschütztes Zip‑Archiv mit Aspose.Zip erstellen?**  
+**Q: Kann ich ein passwortgeschütztes Zip‑Archiv mit Aspose.Zip erstellen?**  
 A: Ja. Beim Speichern des Archivs können Sie ein `ZipPassword` angeben und einen Verschlüsselungsalgorithmus wie AES‑256 wählen.
 
-**F: Unterstützt Aspose.Zip das Streaming großer Dateien, ohne sie vollständig in den Speicher zu laden?**  
+**Q: Unterstützt Aspose.Zip das Streamen großer Dateien, ohne sie vollständig in den Speicher zu laden?**  
 A: Absolut. Sie können mit `FileStream`‑Objekten arbeiten, sodass Sie Dateien jeder Größe effizient komprimieren oder extrahieren können.
 
-**F: Was, wenn ich ein großes Archiv in mehrere Teile aufteilen muss?**  
-A: Verwenden Sie die Methode `SplitArchive`, um eine maximale Teilgröße festzulegen; Aspose.Zip erstellt automatisch sequenzielle Split‑Dateien.
+**Q: Was, wenn ich ein großes Archiv in mehrere Teile aufteilen muss?**  
+A: Verwenden Sie die `SplitArchive`‑Methode, um eine maximale Teilgröße festzulegen; Aspose.Zip erstellt automatisch sequenzielle Teil‑Dateien.
 
-**F: Ist es möglich, Dateien zu einem bestehenden Zip‑Archiv hinzuzufügen?**  
-A: Ja. Öffnen Sie das Archiv im Modus `Update` und rufen Sie `AddFile` oder `AddFolder` auf, um neue Inhalte anzuhängen.
+**Q: Ist es möglich, Dateien zu einem bestehenden Zip‑Archiv hinzuzufügen?**  
+A: Ja. Öffnen Sie das Archiv im `Update`‑Modus und rufen Sie `AddFile` oder `AddFolder` auf, um neuen Inhalt anzuhängen.
 
-**F: Welche .NET‑Runtimes werden offiziell unterstützt?**  
-A: Aspose.Zip für .NET unterstützt .NET Framework 4.5+, .NET Core 3.1+, und .NET 5/6/7+.
+**Q: Welche .NET‑Runtimes werden offiziell unterstützt?**  
+A: Aspose.Zip für .NET unterstützt .NET Framework 4.5+, .NET Core 3.1+ und .NET 5/6/7+.
 
 ---
 
-**Zuletzt aktualisiert:** 2025-11-30  
-**Getestet mit:** Aspose.Zip für .NET 24.11  
+**Zuletzt aktualisiert:** 2026-02-23  
+**Getestet mit:** Aspose.Zip for .NET 24.11  
 **Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
