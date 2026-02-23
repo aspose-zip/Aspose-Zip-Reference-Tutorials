@@ -1,11 +1,11 @@
 ---
-date: 2025-11-30
-description: Aspose.Zip for .NET kullanarak .NET’te zip arşivi oluşturmayı öğrenin.
+date: 2026-02-23
+description: Aspose.Zip for .NET kullanarak asp.net'te zip arşivi oluşturmayı öğrenin.
   .NET projelerinizde dizinleri verimli bir şekilde sıkıştırmak ve açmak için adım
   adım rehber.
-linktitle: Create zip archive .net – Directory and Folder Compression
+linktitle: Create zip archive asp.net – Directory and Folder Compression
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Zip arşivi oluştur .net – Dizin ve Klasör Sıkıştırma
+title: asp.net'te zip arşivi oluşturma – Dizin ve Klasör Sıkıştırma
 url: /tr/net/directory-and-folder-compression/
 weight: 22
 ---
@@ -14,97 +14,89 @@ weight: 22
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Create zip archive .net – Directory and Folder Compression
+# zip arşivi oluştur asp.net – Dizin ve Klasör Sıkıştırma
 
-## Introduction
+## Giriş
 
-Modern .NET geliştirmede, **create zip archive .net**‑stil dosyalar oluşturmak, depolama maliyetlerini azaltmak, dağıtımları hızlandırmak ve dosya dağıtımını basitleştirmek için hayati öneme sahiptir. Bu öğreticide, Aspose.Zip for .NET kullanarak bütün dizinleri sıkıştırmayı ve gerektiğinde daha sonra çıkarmayı öğreneceksiniz. CI/CD boru hattı kuruyor, güncelleme paketleri sunuyor ya da sadece günlük dosyalarını düzenliyor olun, .NET’te zip arşivi oluşturma konusundaki ustalığınız projelerinizi daha verimli ve profesyonel hâle getirecektir.
+Modern .NET geliştirmede, **create zip archive asp.net**‑style dosyalar depolama maliyetlerini azaltmak, dağıtımları hızlandırmak ve dosya dağıtımını basitleştirmek için gereklidir. Bu öğreticide, Aspose.Zip for .NET kullanarak tüm dizinleri nasıl sıkıştıracağınızı ve gerektiğinde nasıl çıkaracağınızı göstereceğiz. CI/CD boru hattı oluşturuyor, güncelleme paketleri sunuyor ya da sadece log dosyalarını düzenliyor olun, .NET'te zip arşivi oluşturmayı öğrenmek projelerinizi daha verimli ve profesyonel hâle getirecektir.
 
-## Quick Answers
-- **What library should I use?** Aspose.Zip for .NET provides a simple, high‑performance API for zip archive creation.  
-- **Can I compress an entire folder with one call?** Yes – Aspose.Zip can compress a directory recursively in a single method.  
-- **Is password protection supported?** Absolutely; you can add encryption while creating the zip archive.  
-- **Do I need a license for development?** A free trial works for evaluation; a commercial license is required for production.  
-- **Which .NET versions are compatible?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7 and later.
+## Hızlı Yanıtlar
+- **Hangi kütüphaneyi kullanmalıyım?** Aspose.Zip for .NET, zip arşivi oluşturma için basit, yüksek‑performanslı bir API sağlar.  
+- **Tek bir çağrı ile tüm bir klasörü sıkıştırabilir miyim?** Evet – Aspose.Zip, bir dizini tek bir yöntemle özyinelemeli olarak sıkıştırabilir.  
+- **Şifre koruması destekleniyor mu?** Kesinlikle; zip arşivi oluştururken şifreleme ekleyebilirsiniz.  
+- **Geliştirme için bir lisansa ihtiyacım var mı?** Değerlendirme için ücretsiz deneme çalışır; üretim için ticari lisans gereklidir.  
+- **Hangi .NET sürümleri uyumludur?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7 ve sonrası.
 
-## What is “create zip archive .net”?
-Creating a zip archive in .NET means packaging one or more files and folders into a single *.zip* container that can be stored, transferred, or downloaded more efficiently. The zip format is universally supported, making it ideal for cross‑platform scenarios.
+## “create zip archive asp.net” nedir?
+ASP.NET'te zip arşivi oluşturmak, bir veya daha fazla dosya ve klasörü tek bir *.zip* konteynerine paketlemek anlamına gelir; bu konteyner daha verimli bir şekilde depolanabilir, aktarılabilir veya indirilebilir. Zip formatı evrensel olarak desteklenir ve çapraz platform senaryoları için idealdir.
 
-## Why use Aspose.Zip for .NET?
-- **Performance‑optimized** compression algorithms that handle large directories with minimal memory overhead.  
-- **Rich feature set** – encryption, split archives, custom compression levels, and seamless integration with streams.  
-- **Zero‑dependency** – works out‑of‑the‑box without needing external tools like 7‑Zip or WinRAR.  
-- **Consistent API** across .NET Framework, .NET Core, and .NET 5+.
+## Aspose.Zip for .NET neden kullanılmalı?
+- **Performance‑optimized** sıkıştırma algoritmaları, büyük dizinleri minimum bellek yüküyle işler.  
+- **Rich feature set** – şifreleme, bölünmüş arşivler, özelleştirilebilir sıkıştırma seviyeleri ve akışlarla sorunsuz entegrasyon.  
+- **Zero‑dependency** – 7‑Zip veya WinRAR gibi harici araçlara ihtiyaç duymadan kutudan çıktığı gibi çalışır.  
+- **Consistent API** .NET Framework, .NET Core ve .NET 5+ arasında tutarlıdır.
 
-## Prerequisites
-- Visual Studio 2022 (or any IDE that supports .NET 6+)  
-- Aspose.Zip for .NET NuGet package (`Install-Package Aspose.Zip`)  
-- Basic familiarity with C# and file‑system operations  
+## Ön Koşullar
+- Visual Studio 2022 (veya .NET 6+ destekleyen herhangi bir IDE)  
+- Aspose.Zip for .NET NuGet paketi (`Install-Package Aspose.Zip`)  
+- C# ve dosya sistemi işlemlerine temel aşinalık  
 
-## Effortless Directory Compression with Aspose.Zip for .NET
+## Aspose.Zip ile .net klasörünü nasıl sıkıştırılır
+1. **`ZipPackage` nesnesini örnekleyin** – bu, oluşturmak üzere olduğunuz arşivi temsil eder.  
+2. **`AddFolder` metodunu kullanarak hedef dizini ekleyin**, bu metod otomatik olarak alt klasörleri ve dosyaları dahil eder.  
+3. **Arşivi kaydedin** istediğiniz konuma `.zip` uzantısıyla.  
 
-If you've ever struggled with managing storage space in your .NET projects, Aspose.Zip for .NET is here to rescue. This tutorial guides you through the process of **creating zip archive .net** files effortlessly. Aspose.Zip's robust features simplify this seemingly complex task, allowing you to optimize storage without compromising the integrity of your data.
+> *Not:* Bu adımlar için gerçek C# kodu, bağlantılı “Effortless Directory Compression” öğretici sayfasında sağlanmıştır.
 
-Imagine reducing the size of your project's directories without sacrificing any files. Aspose.Zip for .NET makes it a reality, providing a seamless solution for efficient storage management. This tutorial breaks down the steps, ensuring that even beginners can grasp the concepts and implement them with confidence.
+## Şifre korumalı zip .net arşivleri ekleme
+İçeriği güvence altına almanız gerekiyorsa, arşivi kaydederken sadece bir `ZipPassword` sağlayın ve AES‑256 gibi bir şifreleme algoritması seçin. Bu, yalnızca yetkili kullanıcıların açabileceği bir **password protected zip .net** dosyası oluşturur.
 
-### How to compress a folder
+## Aspose.Zip for .NET ile Klasör Açma
+Direktörleriniz sıkıştırıldıktan sonra, bir sonraki mantıklı adım onları açmaktır. Aspose.Zip for .NET, çıkarmayı aynı derecede basit hale getirir:
 
-1. **Instantiate the `ZipPackage` object** – this represents the archive you are about to create.  
-2. **Add the target directory** using the `AddFolder` method, which automatically includes sub‑folders and files.  
-3. **Save the archive** to a desired location with a `.zip` extension.
+- `ZipPackage` ile zip dosyasını okuma modunda açın.  
+- Orijinal yapıyı geri yüklemek için `ExtractAll` veya `ExtractFolder` metodunu çağırın.  
 
-> *Note:* The actual C# code for these steps is already provided in the linked “Effortless Directory Compression” tutorial page.
+Bu, veri kaybı olmadan orijinal dosyaları güvenilir bir şekilde geri almanızı sağlar.
 
-## Effortless Compression for Efficient Storage
+## Yaygın Tuzaklar ve İpuçları
+- **Large files:** 2 GB'den büyük dosyalarla çalışırken, boyut sınırlamalarını önlemek için **Zip64** modunu etkinleştirin.  
+- **Path length issues:** Klasör hiyerarşiniz Windows'un 260 karakterlik sınırını aşıyorsa `UseLongFileNames` özelliğini kullanın.  
+- **Performance tip:** Hızlı derlemeler için `CompressionLevel` değerini `Fast` olarak ayarlayın, en küçük arşivi istediğinizde ise `Maximum` olarak ayarlayın.  
 
-Aspose.Zip for .NET doesn't just compress directories; it **optimizes storage space**, a crucial factor in modern development projects. Dive into the tutorial and discover how to achieve the perfect balance between preserving data and reducing the overall size of your directories.
+## Gerçek Dünya Kullanım Senaryoları
+- **CI/CD pipelines:** Derleme çıktılarınızı bir zip arşivine paketleyin, ardından bir NuGet akışı veya artefakt deposuna yayınlamadan önce.  
+- **Log rotation:** Eski log klasörlerini her gece sıkıştırarak disk alanı tasarrufu sağlayın.  
+- **Software updates:** Güncelleme dosyalarını tek bir arşivde toplayarak kolay indirme ve kurulum sağlayın.  
 
-## Decompressing a Folder with Aspose.Zip for .NET
+## Dizin ve Klasör Sıkıştırma Öğreticileri
+### [Aspose.Zip for .NET ile Sorunsuz Dizin Sıkıştırma](./compress-directory/)
+Aspose.Zip for .NET ile dizinleri sorunsuz bir şekilde sıkıştırmayı öğrenin. .NET geliştirmelerinizi depolama alanını verimli bir şekilde optimize ederek artırın.
+### [Aspose.Zip for .NET ile Klasör Açma](./decompress-folder/)
+Aspose.Zip for .NET ile klasör açma sanatını öğrenin. Projelerinizde sıkıştırma görevlerini sorunsuz bir şekilde yönetin.
 
-Once your directories are compressed, the next logical step is to understand how to decompress them effectively. Aspose.Zip for .NET excels in this arena too. This tutorial takes you on a journey of mastering the art of decompressing folders, ensuring that you handle compression tasks effortlessly.
+## Sıkça Sorulan Sorular
 
-Say goodbye to the headache of managing compressed folders. Aspose.Zip for .NET simplifies the entire process, making it accessible to developers of all levels. Dive into this tutorial to gain insights into the intricacies of decompression and streamline your project workflow.
+**Q: Aspose.Zip kullanarak şifre korumalı bir zip arşivi oluşturabilir miyim?**  
+A: Evet. Arşivi kaydederken bir `ZipPassword` sağlayabilir ve AES‑256 gibi bir şifreleme algoritması seçebilirsiniz.
 
-## Common Pitfalls & Tips
+**Q: Aspose.Zip, büyük dosyaları tamamen belleğe yüklemeden akış olarak destekliyor mu?**  
+A: Kesinlikle. `FileStream` nesneleriyle çalışabilirsiniz; bu, herhangi bir boyuttaki dosyaları verimli bir şekilde sıkıştırmanıza veya çıkarmanıza olanak tanır.
 
-- **Large files:** When dealing with files larger than 2 GB, enable the **Zip64** mode to avoid size limitations.  
-- **Path length issues:** Use the `UseLongFileNames` property if your folder hierarchy exceeds Windows' 260‑character limit.  
-- **Performance tip:** Set `CompressionLevel` to `Fast` for quick builds, or `Maximum` when you need the smallest possible archive.
+**Q: Büyük bir arşivi birden fazla parçaya bölmem gerekirse ne yapmalıyım?**  
+A: `SplitArchive` metodunu kullanarak maksimum parça boyutunu tanımlayın; Aspose.Zip otomatik olarak sıralı bölünmüş dosyalar oluşturacaktır.
 
-## Effortless Task Handling for Seamless Projects
+**Q: Mevcut bir zip arşivine dosya eklemek mümkün mü?**  
+A: Evet. Arşivi `Update` modunda açın ve yeni içerik eklemek için `AddFile` veya `AddFolder` metodunu çağırın.
 
-By incorporating Aspose.Zip for .NET into your toolkit, you're not just compressing and decompressing folders; you're optimizing your entire project workflow. The tutorials provided here act as your guide to navigating the complexities of compression tasks, ensuring that you can seamlessly integrate these techniques into your projects.
-
-In conclusion, these directory and folder compression tutorials are your gateway to a more efficient and streamlined .NET development experience. Aspose.Zip for .NET empowers you to take control of your storage space, providing a valuable asset for developers aiming to optimize their projects without compromising on data integrity. Boost your skills, enhance your projects—explore the world of directory and folder compression with Aspose.Zip for .NET.
-
-## Directory and Folder Compression Tutorials
-### [Effortless Directory Compression with Aspose.Zip for .NET](./compress-directory/)
-Learn to compress directories effortlessly with Aspose.Zip for .NET. Boost your .NET development by optimizing storage space efficiently.
-### [Decompressing a Folder with Aspose.Zip for .NET](./decompress-folder/)
-Master the art of decompressing folders with Aspose.Zip for .NET. Effortlessly handle compression tasks in your projects.
-
-## Frequently Asked Questions
-
-**Q: Can I create a password‑protected zip archive using Aspose.Zip?**  
-A: Yes. When saving the archive, you can supply a `ZipPassword` and choose an encryption algorithm such as AES‑256.
-
-**Q: Does Aspose.Zip support streaming large files without loading them entirely into memory?**  
-A: Absolutely. You can work with `FileStream` objects, allowing you to compress or extract files of any size efficiently.
-
-**Q: What if I need to split a large archive into multiple parts?**  
-A: Use the `SplitArchive` method to define a maximum part size; Aspose.Zip will automatically create sequential split files.
-
-**Q: Is it possible to add files to an existing zip archive?**  
-A: Yes. Open the archive in `Update` mode and call `AddFile` or `AddFolder` to append new content.
-
-**Q: Which .NET runtimes are officially supported?**  
-A: Aspose.Zip for .NET supports .NET Framework 4.5+, .NET Core 3.1+, and .NET 5/6/7+.
+**Q: .NET runtime'ları resmi olarak hangileri destekleniyor?**  
+A: Aspose.Zip for .NET, .NET Framework 4.5+, .NET Core 3.1+, ve .NET 5/6/7+ destekler.
 
 ---
 
-**Last Updated:** 2025-11-30  
-**Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose  
+**Son Güncelleme:** 2026-02-23  
+**Test Edildi:** Aspose.Zip for .NET 24.11  
+**Yazar:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
