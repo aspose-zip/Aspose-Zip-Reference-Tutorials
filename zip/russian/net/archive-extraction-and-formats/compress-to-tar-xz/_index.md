@@ -1,50 +1,54 @@
 ---
-date: 2025-12-05
-description: Узнайте, как создавать архивы tarxz в .NET и как сжимать файлы tarxz
-  с помощью Aspose.Zip для .NET. Следуйте этому пошаговому руководству для эффективного
-  хранения и передачи.
+date: 2026-02-23
+description: Узнайте, как добавлять файлы в tar и сжимать их в архив tarxz в .NET
+  с помощью Aspose.Zip. Следуйте этому пошаговому руководству для эффективного хранения
+  и передачи.
 linktitle: Compressing to TarXz
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Как создать tarxz‑архив в .NET с помощью Aspose.Zip
+title: Добавление файлов в tar и создание архива tarxz с помощью Aspose.Zip
 url: /ru/net/archive-extraction-and-formats/compress-to-tar-xz/
 weight: 14
 ---
+
+codes exactly.
+
+Now produce final content.
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Как создать tarxz архив .net с помощью Aspose.Zip
+# Добавление файлов в tar и создание tarxz архива с Aspose.Zip
 
 ## Введение
 
-Если вам нужно **создать tarxz архив .net**, Aspose.Zip for .NET делает процесс простым и надёжным. Независимо от того, упаковываете ли вы журналы, файлы конфигурации или любые другие ресурсы для хранения или передачи, сжатие в формате TarXz обеспечивает высокий коэффициент сжатия, сохраняя знакомую структуру tar. В этом руководстве мы подробно пройдём все шаги — включая фрагменты кода — чтобы вы могли уверенно интегрировать создание tarxz в свои .NET‑приложения.
+Если вам нужно **add files to tar** и затем **create a tarxz archive .net**, Aspose.Zip for .NET делает процесс простым и надёжным. Независимо от того, упаковываете ли вы журналы, файлы конфигурации или любые другие ресурсы для хранения или передачи, сжатие в формат TarXz даёт высокий коэффициент сжатия, сохраняя знакомую структуру tar. В этом руководстве мы пройдём все шаги — включая фрагменты кода — чтобы вы могли интегрировать создание tarxz в свои .NET‑приложения с уверенностью.
 
 ## Быстрые ответы
-- **Какой основной класс?** `TarArchive` from `Aspose.Zip.Tar`
-- **Как сжать tarxz?** Use `SaveXzCompressed` after adding entries
-- **Поддерживаемые версии .NET?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6
-- **Требуется ли лицензия?** Yes, a valid Aspose.Zip license for production
-- **Типичное время реализации?** ~5‑10 minutes
+- **What is the primary class?** `TarArchive` from `Aspose.Zip.Tar`
+- **How to compress tarxz?** Use `SaveXzCompressed` after adding entries
+- **Supported .NET versions?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6
+- **License needed?** Yes, a valid Aspose.Zip license for production
+- **Typical implementation time?** ~5‑10 minutes
 
-## Что такое TarXz архив?
+## Что такое архив TarXz?
 
-**TarXz архив** сочетает традиционный Unix‑контейнер `tar` с XZ‑сжатием. Часть tar объединяет несколько файлов в один поток, а XZ обеспечивает сильное, без потерь, сжатие. Этот формат популярен для распространения исходного кода, резервных копий и больших наборов данных, поскольку сохраняет структуру каталогов и достигает меньшего размера файлов, чем обычный tar или zip.
+**TarXz archive** сочетает традиционный Unix‑контейнер `tar` с XZ‑сжатием. Часть tar объединяет несколько файлов в один поток, а XZ обеспечивает сильное, без потерь, сжатие. Этот формат популярен для распространения исходного кода, резервных копий и больших наборов данных, потому что сохраняет структуру каталогов и достигает меньшего размера файлов, чем обычный tar или zip.
 
 ## Почему создавать tarxz архив .net с помощью Aspose.Zip?
 
-- **Высокий коэффициент сжатия** – XZ часто сжимает на 30‑50 % меньше, чем gzip.  
-- **Кросс‑платформенная совместимость** – файлы TarXz можно открыть в Linux, macOS и Windows.  
-- **Простой API** – Aspose.Zip абстрагирует детали низкого уровня, позволяя сосредоточиться на бизнес‑логике.  
-- **Без внешних инструментов** – Всё работает внутри вашего процесса .NET, идеально для облака или CI‑конвейеров.  
+- **High compression ratio** – XZ often compresses 30‑50 % smaller than gzip.  
+- **Cross‑platform compatibility** – TarXz files can be opened on Linux, macOS, and Windows.  
+- **Simple API** – Aspose.Zip abstracts the low‑level details, letting you focus on your business logic.  
+- **No external tools** – Everything runs inside your .NET process, perfect for cloud or CI pipelines.
 
-## Предварительные требования
+## Требования
 
 Перед началом убедитесь, что у вас есть:
 
-- **Aspose.Zip for .NET** installed (download from the official [Aspose.Zip documentation](https://reference.aspose.com/zip/net/)).  
-- Папка, содержащая файлы, которые вы хотите заархивировать. В примерах ниже эта папка указывается переменной `dataDir`.  
-- Действительная лицензия Aspose.Zip (необязательно для оценки, требуется для продакшна).  
+- **Aspose.Zip for .NET** установлен (скачайте с официальной [Aspose.Zip documentation](https://reference.aspose.com/zip/net/)).  
+- Папка, содержащая файлы, которые вы хотите заархивировать. В примерах ниже эта папка обозначена переменной `dataDir`.  
+- Действительная лицензия Aspose.Zip (необязательно для оценки, требуется для продакшн‑использования).
 
 ## Импорт пространств имён
 
@@ -55,7 +59,9 @@ using System;
 using Aspose.Zip.Tar;
 ```
 
-## Пошаговое руководство по созданию tarxz архива .net
+## Как добавить файлы в tar с помощью Aspose.Zip
+
+Ниже представлено пошаговое руководство, показывающее точно, как **add files to tar** перед их сжатием.
 
 ### Шаг 1: Инициализировать `TarArchive`
 
@@ -66,18 +72,18 @@ using (TarArchive archive = new TarArchive())
 {
 ```
 
-> **Совет:** Оператор `using` гарантирует правильное освобождение архива, освобождая любые неуправляемые ресурсы.
+> **Pro tip:** The `using` statement ensures the archive is properly disposed, releasing any unmanaged resources.
 
 ### Шаг 2: Добавить файлы в архив
 
-Добавьте каждый файл, который хотите включить. В этом примере мы добавляем два текстовых файла, но можете добавить столько записей, сколько потребуется.
+Добавьте каждый файл, который хотите включить. В этом примере мы добавляем два текстовых файла, но вы можете добавить столько записей, сколько потребуется.
 
 ```csharp
     archive.CreateEntry("alice29.txt", dataDir + "alice29.txt");
     archive.CreateEntry("lcet10.txt", dataDir + "lcet10.txt");
 ```
 
-> **Почему это важно:** Добавление записей до сжатия позволяет Aspose.Zip сначала построить tar‑контейнер, а затем применить XZ‑сжатие за один шаг.
+> **Why this matters:** Adding entries before compression lets Aspose.Zip build the tar container first, then apply XZ compression in a single step.
 
 ### Шаг 3: Сохранить архив с XZ‑сжатием
 
@@ -88,42 +94,46 @@ using (TarArchive archive = new TarArchive())
 }
 ```
 
-> **Результат:** Теперь у вас есть полностью сжатый файл `archive.tar.xz`, который можно передавать, хранить или распаковывать на любой платформе, поддерживающей TarXz.
+> **Result:** You now have a fully‑compressed `archive.tar.xz` file that can be transferred, stored, or unpacked on any platform that supports TarXz.
+
+## Как сжать tarxz файлы с помощью Aspose.Zip
+
+Процесс, показанный выше, по сути — это **how to compress tarxz** файлы: вы сначала добавляете файлы в tar‑контейнер (`add files to tar`), а затем вызываете `SaveXzCompressed`. Такой однострочный вызов устраняет необходимость во внешних инструментах командной строки и сохраняет всё внутри вашего кода .NET.
 
 ## Распространённые проблемы и решения
 
 | Проблема | Причина | Решение |
-|----------|---------|---------|
-| **“File not found” exception** | Неправильный путь `dataDir` | Убедитесь, что путь к директории заканчивается обратным слешем (`\`) или используйте `Path.Combine`. |
-| **Large memory usage** | Очень большие файлы сжимаются в памяти | Используйте `TarArchive` в режиме потоковой передачи (`SaveXzCompressed` перегрузка, принимающая `Stream`). |
-| **License not applied** | Отсутствует файл лицензии | Загрузите лицензию при старте приложения: `new Aspose.Zip.License().SetLicense("Aspose.Zip.lic");` |
+|----------|----------|----------|
+| **“File not found” exception** | Incorrect `dataDir` path | Verify the directory path ends with a backslash (`\`) or use `Path.Combine`. |
+| **Large memory usage** | Very large files being compressed in memory | Use `TarArchive` in streaming mode (`SaveXzCompressed` overload that accepts a `Stream`). |
+| **License not applied** | Missing license file | Load the license at application start: `new Aspose.Zip.License().SetLicense("Aspose.Zip.lic");` |
 
 ## Часто задаваемые вопросы
 
-**Q: Совместим ли Aspose.Zip со всеми средами .NET?**  
-**A:** Да, Aspose.Zip работает с .NET Framework 4.5+, .NET Core 3.1+, и .NET 5/6+. См. [documentation](https://reference.aspose.com/zip/net/) для деталей.
+**Q: Is Aspose.Zip compatible with all .NET environments?**  
+A: Yes, Aspose.Zip works with .NET Framework 4.5+, .NET Core 3.1+, and .NET 5/6+. See the [documentation](https://reference.aspose.com/zip/net/) for details.
 
-**Q: Как получить временную лицензию для Aspose.Zip?**  
-**A:** Вы можете запросить временную лицензию на странице [Aspose temporary‑license page](https://purchase.aspose.com/temporary-license/).
+**Q: How can I obtain a temporary license for Aspose.Zip?**  
+A: You can request a temporary license from the [Aspose temporary‑license page](https://purchase.aspose.com/temporary-license/).
 
-**Q: Есть ли дополнительные примеры для других форматов архивов?**  
-**A:** Конечно — изучите полный набор примеров в [Aspose.Zip API reference](https://reference.aspose.com/zip/net/).
+**Q: Are there additional examples for other archive formats?**  
+A: Absolutely—explore the full set of examples in the [Aspose.Zip API reference](https://reference.aspose.com/zip/net/).
 
-**Q: Где можно получить помощь или обсудить проблемы?**  
-**A:** Присоединяйтесь к обсуждению на форуме [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) для поддержки сообщества и официальных ответов.
+**Q: Where can I get help or discuss issues?**  
+A: Join the conversation on the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for community support and official answers.
 
-**Q: Можно ли попробовать Aspose.Zip бесплатно перед покупкой?**  
-**A:** Да, бесплатная пробная версия доступна на странице [Aspose.Zip download page](https://releases.aspose.com/zip/net).
+**Q: Can I try Aspose.Zip for free before buying?**  
+A: Yes, a free trial is available at the [Aspose.Zip download page](https://releases.aspose.com/zip/net).
 
 ## Заключение
 
-Следуя приведённым выше шагам, вы теперь знаете **как сжать tarxz** файлы и, что ещё важнее, **как создать tarxz архив .net** с помощью Aspose.Zip. Такой подход даёт компактный, переносимый пакет, который легко интегрировать в любой .NET‑рабочий процесс — будь то настольная утилита, веб‑служба или автоматизированный конвейер CI/CD.
+Следуя приведённым выше шагам, вы теперь знаете **how to add files to tar** и **compress tarxz** файлы, а главное — как **create tarxz archive .net** с помощью Aspose.Zip. Этот подход даёт компактный, переносимый пакет, который можно без проблем интегрировать в любой .NET‑рабочий процесс — будь то настольная утилита, веб‑служба или автоматизированный конвейер CI/CD.
 
 ---
 
-**Last Updated:** 2025-12-05  
-**Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose  
+**Последнее обновление:** 2026-02-23  
+**Тестировано с:** Aspose.Zip for .NET 24.11  
+**Автор:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
