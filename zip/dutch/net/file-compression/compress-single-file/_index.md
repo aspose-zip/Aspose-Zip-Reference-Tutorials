@@ -1,14 +1,41 @@
 ---
-date: 2025-12-09
-description: Leer hoe je een bestand toevoegt aan een zip en een bestand comprimeert
-  in .NET met Aspose.Zip. Volg deze stapsgewijze handleiding om snel een zip‑archief
-  in C# te maken.
+date: 2026-02-25
+description: Leer hoe u een zip‑archief maakt en een bestand toevoegt aan een zip
+  in .NET met Aspose.Zip. Volg deze stapsgewijze handleiding om snel een enkel bestand
+  in C# te comprimeren.
 linktitle: Compressing a Single File
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Hoe een bestand toevoegen aan een zip met Aspose.Zip voor .NET
+title: Hoe een zip-archief te maken en een bestand toe te voegen aan een zip met Aspose.Zip
+  voor .NET
 url: /nl/net/file-compression/compress-single-file/
 weight: 14
 ---
+
+. Also note rule 5: "For Dutch, ensure proper RTL formatting if needed" - not needed (Dutch LTR). So just translate.
+
+We must not translate shortcodes, links, code blocks, URLs, file paths. So translate visible text.
+
+Let's go through content.
+
+Start with shortcodes unchanged.
+
+Then heading "# Add File to Zip with Aspose.Zip for .NET" translate: "# Bestand toevoegen aan zip met Aspose.Zip voor .NET"
+
+Similarly other headings.
+
+Paragraphs: translate.
+
+Need to keep bold formatting **.
+
+Also lists.
+
+Tables: translate content but keep markdown table structure.
+
+Make sure not to translate URLs.
+
+Also code block placeholders remain.
+
+Let's produce final content.
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
@@ -16,16 +43,16 @@ weight: 14
 
 # Bestand toevoegen aan zip met Aspose.Zip voor .NET
 
-## Inleiding
+## Introductie
 
-In moderne .NET-ontwikkeling kan **een bestand aan een zip** toevoegen efficiënt de opslagkosten drastisch verlagen en de downloadtijden verbeteren. Aspose.Zip voor .NET biedt een schone, high‑performance API waarmee je **bestand .NET** projecten kunt comprimeren met slechts een paar regels code. In deze tutorial lopen we een volledig, hands‑on voorbeeld door dat laat zien hoe je een zip‑archief in C#‑stijl maakt, met een op `FileStream` gebaseerde aanpak.
+In moderne .NET‑ontwikkeling kan **een bestand aan een zip**‑archief toevoegen efficiënt de opslagkosten drastisch verlagen en de downloadtijden verbeteren. Aspose.Zip voor .NET biedt een nette, high‑performance API waarmee je **bestand .NET**‑projecten kunt comprimeren met slechts een paar regels code. In deze tutorial lopen we stap voor stap een volledig, hands‑on voorbeeld door dat laat zien hoe je **een zip‑archief maakt** in C#‑stijl, met een `FileStream`‑gebaseerde aanpak.
 
 ## Snelle antwoorden
-- **Welke bibliotheek moet ik gebruiken?** Aspose.Zip voor .NET
-- **Kan ik een bestand aan een zip toevoegen met één regel code?** Ja – `archive.CreateEntry(...)` doet het zware werk
-- **Heb ik een licentie nodig voor ontwikkeling?** Een gratis proefversie werkt voor testen; een licentie is vereist voor productie
-- **Welke .NET‑versies worden ondersteund?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7
-- **Is het veilig voor grote bestanden?** Ja, de bibliotheek streamt data, waardoor het geheugenverbruik laag blijft
+- **Welke bibliotheek moet ik gebruiken?** Aspose.Zip voor .NET  
+- **Kan ik een bestand aan zip toevoegen met één regel code?** Ja – `archive.CreateEntry(...)` doet het zware werk  
+- **Heb ik een licentie nodig voor ontwikkeling?** Een gratis proefversie werkt voor testen; een licentie is vereist voor productie  
+- **Welke .NET‑versies worden ondersteund?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7  
+- **Is het veilig voor grote bestanden?** Ja, de bibliotheek streamt data, zodat het geheugenverbruik laag blijft  
 
 ## Wat betekent “bestand toevoegen aan zip” in Aspose.Zip?
 
@@ -33,22 +60,22 @@ Een bestand aan een zip‑archief toevoegen betekent dat je een bestaand bestand
 
 ## Waarom Aspose.Zip voor .NET gebruiken?
 
-- **Prestaties‑geoptimaliseerd**: Streamt data direct, waardoor tijdelijke buffers worden vermeden.
-- **Rijke functionaliteit**: Ondersteunt encryptie, gesplitste archieven en aangepaste entry‑instellingen.
-- **Eenvoudige API**: Eén‑regelige entry‑creatie (`CreateEntry`) vermindert boilerplate.
-- **Cross‑platform**: Werkt op Windows, Linux en macOS met .NET Core/5+.
+- **Prestaties‑geoptimaliseerd**: Streamt data direct, zonder tijdelijke buffers.  
+- **Rijke functionaliteit**: Ondersteunt encryptie, gesplitste archieven en aangepaste entry‑instellingen.  
+- **Eenvoudige API**: Eén‑regelige entry‑creatie (`CreateEntry`) vermindert boilerplate.  
+- **Cross‑platform**: Werkt op Windows, Linux en macOS met .NET Core/5+.  
 
 ## Voorvereisten
 
-Zorg ervoor dat je het volgende hebt:
+Voordat je begint, zorg dat je het volgende hebt:
 
-- Basiskennis van C#‑programmeren.
-- Visual Studio (of een andere gewenste .NET‑IDE) geïnstalleerd.
-- Aspose.Zip voor .NET bibliotheek, die je kunt downloaden **[hier](https://releases.aspose.com/zip/net/)**.
+- Basiskennis van C#‑programmeren.  
+- Visual Studio (of een andere gewenste .NET‑IDE) geïnstalleerd.  
+- Aspose.Zip voor .NET‑bibliotheek, die je **[hier](https://releases.aspose.com/zip/net/)** kunt downloaden.
 
 ## Namespaces importeren
 
-Voeg eerst de vereiste namespaces toe in je C#‑bestand:
+Voeg eerst de benodigde namespaces toe in je C#‑bestand:
 
 ```csharp
 using Aspose.Zip;
@@ -70,7 +97,7 @@ string dataDir = "Your Document Directory";
 
 ## Stap 2: Maak een zip‑bestand met FileStream
 
-Open een `FileStream` die naar het uitvoer‑ZIP‑bestand wijst. Dit demonstreert de **zip‑bestand met filestream** techniek.
+Open een `FileStream` die naar het uitvoer‑ZIP‑bestand wijst. Dit demonstreert de **zip‑file using filestream**‑techniek.
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressSingleFile_out.zip", FileMode.Create))
@@ -80,7 +107,7 @@ De `using`‑statement garandeert dat de stream wordt gesloten en het bestand co
 
 ## Stap 3: Voeg een bestand toe aan het archief
 
-Open nu het bronbestand (`alice29.txt`) en voeg het toe aan het archief. Dit is de kern van de **c# compress file zip** operatie.
+Open nu het bronbestand (`alice29.txt`) en voeg het toe aan het archief. Dit is de kern van de **c# compress file zip**‑operatie.
 
 ```csharp
 using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
@@ -96,8 +123,8 @@ using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, Fi
 ```
 
 ### Hoe de code werkt
-- **FileStream‑configuratie** – Maakt een verbinding met het uitvoer‑ZIP‑bestand.
-- **CreateEntry** – Neemt de bron‑stream (`source1`) en schrijft deze in het archief onder de naam `"alice29.txt"`.
+- **FileStream Setup** – Stelt een verbinding in met het uitvoer‑ZIP‑bestand.  
+- **CreateEntry** – Neemt de bron‑stream (`source1`) en schrijft deze in het archief onder de naam `"alice29.txt"`.  
 - **Save** – Slaat de gecomprimeerde data op in `CompressSingleFile_out.zip`.
 
 Je kunt de `CreateEntry`‑aanroep herhalen voor extra bestanden, waardoor dit fragment een volledige **zip archive tutorial c#** wordt.
@@ -106,41 +133,40 @@ Je kunt de `CreateEntry`‑aanroep herhalen voor extra bestanden, waardoor dit f
 
 | Probleem | Reden | Oplossing |
 |----------|-------|-----------|
-| **File not found** | Incorrect `dataDir` path | Verify the directory string or use `Path.GetFullPath` for debugging |
-| **Access denied** | Insufficient file permissions | Run Visual Studio as administrator or grant write rights to the folder |
-| **Empty zip file** | `archive.Save` called outside the `using` block | Ensure `archive.Save(zipFile);` is inside the inner `using` block as shown |
+| **Bestand niet gevonden** | Onjuist `dataDir`‑pad | Controleer de map‑string of gebruik `Path.GetFullPath` voor debugging |
+| **Toegang geweigerd** | Onvoldoende bestandsrechten | Start Visual Studio als administrator of geef schrijfrechten aan de map |
+| **Leeg zip‑bestand** | `archive.Save` aangeroepen buiten het `using`‑blok | Zorg dat `archive.Save(zipFile);` binnen het binnenste `using`‑blok staat zoals getoond |
+
+## Waarom dit belangrijk is
+
+Programma­matig een zip‑archief maken is een veelvoorkomende eis wanneer je logs moet bundelen, rapporten moet exporteren of meerdere assets in één download aan een klant wilt leveren. Met de streaming‑API van Aspose.Zip kun je **compress single file**‑scenario’s aan en opschalen naar **zip multiple files** zonder het geheugen te overbelasten.
 
 ## Veelgestelde vragen
 
-### Q1: Kan ik meerdere bestanden in één archief comprimeren met Aspose.Zip voor .NET?
+**Q: Kan ik meerdere bestanden in één archief comprimeren met Aspose.Zip voor .NET?**  
+A: Absoluut! Je kunt de meegeleverde code aanpassen om meerdere bestanden te comprimeren door extra `CreateEntry`‑aanroepen toe te voegen vóór de `Save`‑methode.
 
-A1: Absoluut! Je kunt de meegeleverde code aanpassen om meerdere bestanden te comprimeren door extra `CreateEntry`‑aanroepen toe te voegen vóór de `Save`‑methode.
+**Q: Waar vind ik uitgebreide documentatie voor Aspose.Zip voor .NET?**  
+A: Bekijk de **[documentation](https://reference.aspose.com/zip/net/)** voor diepgaande inzichten in de mogelijkheden van Aspose.Zip.
 
-### Q2: Waar vind ik uitgebreide documentatie voor Aspose.Zip voor .NET?
+**Q: Is er een gratis proefversie beschikbaar voor Aspose.Zip voor .NET?**  
+A: Ja, je kunt een **[free trial](https://releases.aspose.com/)** krijgen om de functies te verkennen voordat je een aankoop doet.
 
-A2: Bekijk de **[documentation](https://reference.aspose.com/zip/net/)** voor diepgaande inzichten in de mogelijkheden van Aspose.Zip.
+**Q: Hoe kan ik een tijdelijke licentie verkrijgen voor Aspose.Zip voor .NET?**  
+A: Bezoek **[this link](https://purchase.aspose.com/temporary-license/)** om een tijdelijke licentie voor je ontwikkelbehoeften aan te schaffen.
 
-### Q3: Is er een gratis proefversie beschikbaar voor Aspose.Zip voor .NET?
-
-A3: Ja, je kunt een **[free trial](https://releases.aspose.com/)** krijgen om de functies te verkennen voordat je een aankoop doet.
-
-### Q4: Hoe kan ik een tijdelijke licentie verkrijgen voor Aspose.Zip voor .NET?
-
-A4: Bezoek **[this link](https://purchase.aspose.com/temporary-license/)** om een tijdelijke licentie voor je ontwikkelbehoeften aan te schaffen.
-
-### Q5: Waar kan ik ondersteuning zoeken of contact maken met de community voor Aspose.Zip voor .NET?
-
-A5: Word lid van de Aspose.Zip‑community op het **[support forum](https://forum.aspose.com/c/zip/37)** om hulp te krijgen van experts en mede‑ontwikkelaars.
+**Q: Waar kan ik ondersteuning vinden of contact opnemen met de community voor Aspose.Zip voor .NET?**  
+A: Word lid van de Aspose.Zip‑community op het **[support forum](https://forum.aspose.com/c/zip/37)** om hulp te krijgen van experts en mede‑ontwikkelaars.
 
 ## Conclusie
 
-Door deze stappen te volgen, weet je nu hoe je **bestand aan zip** archieven kunt toevoegen, **bestand .NET** projecten kunt comprimeren en robuuste zip‑archieven kunt maken met Aspose.Zip. Experimenteer met grotere bestanden, encryptie‑opties of gesplitste archieven om de kracht van de bibliotheek volledig te benutten.
+Door deze stappen te volgen, weet je nu hoe je **bestand aan zip** toevoegt, **bestand .NET**‑projecten comprimeert en **zip‑archief maakt** met Aspose.Zip. Experimenteer met grotere bestanden, encryptie‑opties of gesplitste archieven om de volledige kracht van de bibliotheek te benutten.
 
 ---
 
-**Last Updated:** 2025-12-09  
-**Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose  
+**Laatst bijgewerkt:** 2026-02-25  
+**Getest met:** Aspose.Zip voor .NET 24.11  
+**Auteur:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
