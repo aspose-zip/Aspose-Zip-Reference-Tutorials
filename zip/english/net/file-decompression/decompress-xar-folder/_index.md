@@ -1,22 +1,22 @@
 ---
-title: How to Extract Xar to Folder Using Aspose.Zip for .NET
+title: How to Extract Xar Archive to Folder Using Aspose.Zip for .NET
 linktitle: Decompress Xar to Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-description: Learn how to extract Xar archives and decompress Xar archive to a folder using Aspose.Zip for .NET. Follow this step‑by‑step guide.
+description: Learn how to extract xar archive and decompress xar file to a folder using Aspose.Zip for .NET. Follow this step‑by‑step guide.
 weight: 17
 url: /net/file-decompression/decompress-xar-folder/
-date: 2025-12-17
+date: 2026-02-28
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# How to Extract Xar to Folder Using Aspose.Zip for .NET
+# How to Extract Xar Archive to Folder Using Aspise.Zip for .NET
 
 ## Introduction
 
-If you're a .NET developer looking for a reliable way **how to extract xar**, Aspose.Zip for .NET provides a clean, high‑performance API. In this tutorial we’ll walk through the entire process of decompressing a Xar archive to a folder, explain why this approach saves you time, and show you the exact code you need to run.
+If you're a .NET developer who needs to **extract xar archive** files quickly and reliably, Aspose.Zip for .NET offers a clean, high‑performance API that handles the whole process without external tools. In this tutorial we’ll walk through every step required to decompress a Xar archive to a folder, explain why this method saves you time, and give you ready‑to‑run code. By the end, you’ll understand when to use this approach, how to integrate it into your project, and how to avoid common pitfalls.
 
 ## Quick Answers
 - **What does the library do?** It reads and extracts Xar archives without external tools.  
@@ -26,9 +26,11 @@ If you're a .NET developer looking for a reliable way **how to extract xar**, As
 - **Can I extract to a custom folder?** Yes—just specify the target path in `ExtractToDirectory`.
 
 ## What is “how to extract xar”?
+
 Extracting a Xar archive means reading the compressed package and writing its internal files to a directory on disk. This is useful when you receive XAR packages from macOS installers, backup utilities, or third‑party tools and need to process their contents in a .NET application.
 
 ## Why use Aspose.Zip for this task?
+
 - **Zero external dependencies** – pure .NET, no native binaries.  
 - **Stream‑based API** – works with files, memory streams, or network streams.  
 - **Robust error handling** – detailed exceptions help you troubleshoot corrupted archives.  
@@ -56,7 +58,7 @@ using Aspose.Zip.Xar;
 string dataDir = "Your Document Directory";
 ```
 
-Replace `"Your Document Directory"` with the absolute or relative path that contains `sample.xar` and where you want the output folder to be created.
+Replace `"Your Document Directory"` with the absolute or relative path that contains `sample.xar` and where you want the output folder to be created. Using `Path.Combine` later helps avoid path‑separator issues across operating systems.
 
 ## Step 2: Decompress Xar Archive
 
@@ -108,7 +110,7 @@ A: Currently, Xar archives do not support encryption; if you encounter a protect
 
 ---
 
-**Last Updated:** 2025-12-17  
+**Last Updated:** 2026-02-28  
 **Tested With:** Aspose.Zip 24.11 for .NET  
 **Author:** Aspose  
 

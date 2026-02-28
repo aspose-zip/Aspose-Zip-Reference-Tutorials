@@ -1,43 +1,65 @@
 ---
-date: 2025-12-17
+date: 2026-02-28
 description: Dowiedz się, jak wyodrębnić pliki WIM do folderu przy użyciu Aspose.Zip
-  dla .NET. Skorzystaj z tego przewodnika krok po kroku, aby skutecznie dekompresować
+  dla .NET. Postępuj zgodnie z tym przewodnikiem krok po kroku, aby efektywnie dekompresować
   archiwa WIM w swoich aplikacjach .NET.
 linktitle: Decompress Wim to Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Jak wyodrębnić plik WIM do folderu przy użyciu Aspose.Zip dla .NET
+title: Jak wyodrębnić WIM do folderu przy użyciu Aspose.Zip dla .NET
 url: /pl/net/file-decompression/decompress-wim-folder/
 weight: 16
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
+ (najnowsze wydanie)"
+
+**Author:** Aspose -> "Autor: Aspose"
+
+Then closing shortcodes.
+
+Make sure to keep all shortcodes unchanged.
+
+Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Jak wyodrębnić WIM do folderu przy użyciu Aspose.Zip dla .NET
+# Jak wyodrębnić plik WIM do folderu przy użyciu Aspose.Zip dla .NET
 
 ## Wprowadzenie
 
-Witamy w tym obszernym samouczku dotyczącym **jak wyodrębnić WIM** pliki do folderu przy użyciu Aspose.Zip dla .NET. Aspose.Zip to potężna biblioteka, która zapewnia płynne możliwości pracy z różnymi formatami archiwów w aplikacjach .NET. W tym samouczku poprowadzimy Cię krok po kroku przez proces dekompresji archiwum Wim do określonego folderu.
+Welcome to this comprehensive tutorial on **how to extract WIM** files to a folder using Aspose.Zip for .NET. Whether you’re building a deployment tool, a backup utility, or simply need to read the contents of a Windows Imaging Format archive, this guide walks you through the entire process—from setting up the environment to extracting the first image of a WIM file. You’ll see why Aspose.Zip is a reliable choice, how the API works under the hood, and what you can do after extraction.
 
 ## Szybkie odpowiedzi
-- **Jaka biblioteka jest rekomendowana?** Aspose.Zip for .NET  
+- **Jakiej biblioteki używać?** Aspose.Zip for .NET  
 - **Czy mogę wyodrębniać pliki WIM w .NET Core?** Tak, API działa z .NET Core, .NET 5+ i .NET 6+.  
-- **Czy potrzebna jest licencja do produkcji?** Licencja komercyjna jest wymagana do użytku produkcyjnego; dostępna jest darmowa wersja próbna.  
+- **Czy potrzebna jest licencja do produkcji?** Wymagana jest licencja komercyjna do użytku produkcyjnego; dostępna jest darmowa wersja próbna.  
 - **Jaka jest minimalna wersja .NET?** .NET Framework 4.5+ lub .NET Core 3.1+.  
-- **Jak długo trwa wyodrębnianie?** Zazwyczaj kilka sekund dla standardowych obrazów WIM; większe obrazy mogą zająć więcej czasu.
+- **Jak długo trwa wyodrębnianie?** Zazwyczaj kilka sekund dla standardowych obrazów WIM; większe obrazy mogą wymagać więcej czasu.
+
+## Czym jest plik WIM?
+
+A **WIM (Windows Imaging Format)** archive stores one or more disk images in a single, compressed file. It’s commonly used by Windows Setup, DISM, and deployment solutions. Each image inside a WIM can be treated like a virtual file system, which makes selective extraction very useful.
+
+## Dlaczego używać Aspose.Zip dla .NET?
+
+Aspose.Zip offers a pure‑managed, cross‑platform API that eliminates the need for native dependencies. It supports:
+
+* Direct access to individual images inside a WIM archive.  
+* Stream‑based operations that keep memory usage low.  
+* Seamless integration with both .NET Framework and .NET Core projects.  
+
+These features let you build reliable extraction tools without worrying about platform‑specific quirks.
 
 ## Wymagania wstępne
 
-Przed przystąpieniem do samouczka upewnij się, że spełniasz następujące wymagania:
+Before diving into the code, make sure you have the following:
 
-- Biblioteka Aspose.Zip: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Zip for .NET. Możesz ją pobrać ze [strony](https://releases.aspose.com/zip/net/).
-
-- Katalog dokumentów: Utwórz katalog dokumentów, w którym znajduje się plik archiwum Wim, który chcesz zdekompresować.
+- **Aspose.Zip Library** – Download the latest version from the [website](https://releases.aspose.com/zip/net/).  
+- **Archiwum WIM** – Place the `.wim` file you want to decompress in a known folder on your machine.  
+- **Środowisko programistyczne .NET** – Visual Studio, VS Code lub dowolny edytor obsługujący C#.
 
 ## Importowanie przestrzeni nazw
 
-Rozpocznij od zaimportowania niezbędnych przestrzeni nazw w swoim projekcie C#. Ten krok zapewnia dostęp do funkcjonalności Aspose.Zip.
+Begin by importing the necessary namespaces in your C# project. This step ensures that you have access to the Aspose.Zip classes.
 
 ```csharp
 using System.IO;
@@ -46,19 +68,19 @@ using Aspose.Zip.Wim;
 
 ## Jak wyodrębnić WIM do folderu
 
-Poniżej znajdziesz dokładne kroki, które pokazują **jak wyodrębnić WIM** archiwa przy użyciu Aspose.Zip. Postępuj ostrożnie według każdego kroku.
+Below you’ll find the exact steps that show **how to extract WIM** archives using Aspose.Zip. Follow each step carefully.
 
-### Krok 1: Ustaw swój katalog dokumentów
+### Krok 1: Ustaw katalog dokumentu
 
-Zdefiniuj ścieżkę katalogu, w którym znajduje się plik archiwum Wim. Zastąp `"Your Document Directory"` rzeczywistą ścieżką do swojego katalogu dokumentów.
+Define the directory path where your WIM archive file is located. Replace `"Your Document Directory"` with the actual path to your folder.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-### Krok 2: Dezakompresuj archiwum Wim
+### Krok 2: Rozpakuj archiwum WIM
 
-Otwórz plik archiwum Wim przy użyciu `FileStream`, a następnie wyodrębnij jego zawartość do określonego katalogu przy użyciu Aspose.Zip.
+Open the WIM archive file using a `FileStream` and then extract the contents of the first image to a target directory.
 
 ```csharp
 using (FileStream fs = File.OpenRead(dataDir + "corpus.wim"))
@@ -70,34 +92,38 @@ using (FileStream fs = File.OpenRead(dataDir + "corpus.wim"))
 }
 ```
 
-Ten fragment kodu odczytuje plik archiwum Wim, uzyskuje dostęp do jego pierwszego obrazu i wyodrębnia jego zawartość do określonego katalogu wyjściowego.
+The snippet reads the WIM file, accesses its first image (`Images[0]`), and writes all files to **DecompressWim_out**. You can change the index to extract a different image if the archive contains multiple ones.
 
-## Zakończenie
+## Typowe problemy i rozwiązania
 
-Gratulacje! Pomyślnie nauczyłeś się **jak wyodrębnić WIM** archiwa do folderu przy użyciu Aspose.Zip dla .NET. Ten prosty, a jednocześnie potężny proces pozwala efektywnie zarządzać i wyodrębniać dane z archiwów Wim w Twoich aplikacjach .NET.
+| Problem | Powód | Rozwiązanie |
+|---------|-------|-------------|
+| **`FileNotFoundException`** | Niepoprawny `dataDir` lub nazwa pliku | Zweryfikuj ścieżkę i upewnij się, że `corpus.wim` istnieje. |
+| **`UnauthorizedAccessException`** | Folder docelowy jest tylko do odczytu | Uruchom aplikację z odpowiednimi uprawnieniami lub wybierz folder z prawem zapisu. |
+| **Wydobywanie jest wolne** | Bardzo duży plik WIM lub słaby sprzęt | Rozważ wyodrębnienie konkretnego obrazu zamiast całego archiwum lub użyj asynchronicznych strumieni dla dużych plików. |
 
 ## Najczęściej zadawane pytania
 
-### Q1: Czy mogę używać Aspose.Zip dla .NET z innymi formatami archiwów?
-A1: Tak, Aspose.Zip obsługuje różne formaty archiwów, w tym ZIP, TAR, GZIP i inne.
+### Q1: Czy mogę używać Aspose.Zip dla .NET z innymi formatami archiwów?  
+**A:** Tak, Aspose.Zip obsługuje ZIP, TAR, GZIP, 7z i wiele innych formatów oprócz WIM.
 
-### Q2: Gdzie mogę znaleźć więcej przykładów i dokumentację dla Aspose.Zip?
-A2: Zapoznaj się z [dokumentacją Aspose.Zip](https://reference.aspose.com/zip/net/) dla szczegółowych przykładów i pełnej dokumentacji.
+### Q2: Gdzie mogę znaleźć więcej przykładów i dokumentacji dla Aspose.Zip?  
+**A:** Zapoznaj się z [dokumentacją Aspose.Zip](https://reference.aspose.com/zip/net/), aby uzyskać szczegółowe przykłady i kompleksowe przewodniki.
 
-### Q3: Czy dostępna jest darmowa wersja próbna Aspose.Zip dla .NET?
-A3: Tak, darmową wersję próbną można uzyskać [tutaj](https://releases.aspose.com/).
+### Q3: Czy dostępna jest bezpłatna wersja próbna Aspose.Zip dla .NET?  
+**A:** Tak, bezpłatną wersję próbną można pobrać [tutaj](https://releases.aspose.com/).
 
-### Q4: Jak uzyskać tymczasowe licencje dla Aspose.Zip dla .NET?
-A4: Uzyskaj tymczasowe licencje pod [tym linkiem](https://purchase.aspose.com/temporary-license/).
+### Q4: Jak uzyskać tymczasowe licencje dla Aspose.Zip dla .NET?  
+**A:** Uzyskaj tymczasowe licencje pod tym linkiem [this link](https://purchase.aspose.com/temporary-license/).
 
-### Q5: Gdzie mogę uzyskać wsparcie lub zadać pytania dotyczące Aspose.Zip dla .NET?
-A5: Odwiedź [forum Aspose.Zip](https://forum.aspose.com/c/zip/37) dla wsparcia i dyskusji.
+### Q5: Gdzie mogę uzyskać wsparcie lub zadać pytania dotyczące Aspose.Zip dla .NET?  
+**A:** Odwiedź [forum Aspose.Zip](https://forum.aspose.com/c/zip/37), aby uzyskać wsparcie i dyskusje społeczności.
 
 ---
 
-**Last Updated:** 2025-12-17  
-**Tested With:** Aspose.Zip for .NET (latest release)  
-**Author:** Aspose  
+**Ostatnia aktualizacja:** 2026-02-28  
+**Testowano z:** Aspose.Zip for .NET (najnowsze wydanie)  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

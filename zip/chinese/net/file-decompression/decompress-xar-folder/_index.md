@@ -1,9 +1,9 @@
 ---
-date: 2025-12-17
-description: 了解如何使用 Aspose.Zip for .NET 提取 Xar 存档并将其解压到文件夹。请按照本分步指南操作。
+date: 2026-02-28
+description: 了解如何使用 Aspose.Zip for .NET 提取 xar 存档并将 xar 文件解压到文件夹。请按照本分步指南操作。
 linktitle: Decompress Xar to Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: 如何使用 Aspose.Zip for .NET 将 Xar 解压到文件夹
+title: 如何使用 Aspose.Zip for .NET 将 Xar 存档提取到文件夹
 url: /zh/net/file-decompression/decompress-xar-folder/
 weight: 17
 ---
@@ -12,53 +12,55 @@ weight: 17
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 如何使用 Aspose.Zip for .NET 将 Xar 解压到文件夹
+# 使用 Aspise.Zip for .NET 将 Xar 存档解压到文件夹的方式
 
-## 介绍
+## Introduction
 
-如果您是一名 .NET 开发者，正在寻找可靠的 **how to extract xar** 方法，Aspose.Zip for .NET 提供了简洁、高性能的 API。在本教程中，我们将完整演示将 Xar 存档解压到文件夹的过程，说明此方法为何能为您节省时间，并展示您需要运行的完整代码。
+如果你是一名需要 **快速可靠地解压 xar 存档** 的 .NET 开发者，Aspose.Zip for .NET 提供了简洁、高性能的 API，能够在不依赖外部工具的情况下完成整个过程。在本教程中，我们将逐步演示如何将 Xar 存档解压到文件夹，说明此方法为何能为你节省时间，并提供可直接运行的代码示例。完成后，你将了解何时使用此方案、如何将其集成到项目中，以及如何规避常见陷阱。
 
-## 快速答案
-- **库的功能是什么？** 它可以在不使用外部工具的情况下读取并提取 Xar 存档。  
-- **支持哪些 .NET 版本？** .NET Framework 4.6+、.NET Core 3.1+、.NET 5/6+。  
-- **需要许可证吗？** 免费试用可用于开发；生产环境需要商业许可证。  
-- **实现需要多长时间？** 通常在 10 分钟以内。  
-- **可以解压到自定义文件夹吗？** 是的——只需在 `ExtractToDirectory` 中指定目标路径。
+## Quick Answers
+- **What does the library do?** It reads and extracts Xar archives without external tools.  
+- **Which .NET versions are supported?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6+.  
+- **Do I need a license?** A free trial works for development; a commercial license is required for production.  
+- **How long does implementation take?** Typically under 10 minutes.  
+- **Can I extract to a custom folder?** Yes—just specify the target path in `ExtractToDirectory`.
 
-## 什么是 “how to extract xar”？
-解压 Xar 存档意味着读取压缩包并将其内部文件写入磁盘上的目录。当您从 macOS 安装程序、备份工具或第三方工具收到 XAR 包，并需要在 .NET 应用程序中处理其内容时，这非常有用。
+## What is “how to extract xar”?
 
-## 为什么在此任务中使用 Aspose.Zip？
-- **零外部依赖** – 纯 .NET，无本机二进制文件。  
-- **基于流的 API** – 支持文件、内存流或网络流。  
-- **健壮的错误处理** – 详细的异常帮助您排查损坏的存档。  
-- **完整的 .NET 兼容性** – 在 Windows、Linux 和 macOS 运行时均可工作。
+Extracting a Xar archive means reading the compressed package and writing its internal files to a directory on disk. This is useful when you receive XAR packages from macOS installers, backup utilities, or third‑party tools and need to process their contents in a .NET application.
 
-## 前提条件
+## Why use Aspose.Zip for this task?
 
-在开始之前，请确保您具备以下条件：
+- **Zero external dependencies** – pure .NET, no native binaries.  
+- **Stream‑based API** – works with files, memory streams, or network streams.  
+- **Robust error handling** – detailed exceptions help you troubleshoot corrupted archives.  
+- **Full .NET compatibility** – works on Windows, Linux, and macOS runtimes.
 
-- **Aspose.Zip for .NET** – 集成到您的项目中。您可以从 [此处](https://releases.aspose.com/zip/net/) 下载。  
-- **Document Directory** – 您的解决方案中用于放置示例 `.xar` 文件和解压输出的文件夹。
+## Prerequisites
 
-## 导入命名空间
+Before we dive in, make sure you have the following:
 
-在您的 .NET 项目中，包含访问 Aspose.Zip 功能所需的命名空间：
+- **Aspose.Zip for .NET** – integrated into your project. You can download it from [here](https://releases.aspose.com/zip/net/).
+- **Document Directory** – a folder in your solution where the sample `.xar` file and the extracted output will reside.
+
+## Import Namespaces
+
+In your .NET project, include the necessary namespaces to access Aspose.Zip functionality:
 
 ```csharp
 using System.IO;
 using Aspose.Zip.Xar;
 ```
 
-## 步骤 1：定义文档目录
+## Step 1: Define Your Document Directory
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-将 `"Your Document Directory"` 替换为包含 `sample.xar` 且希望创建输出文件夹的绝对或相对路径。
+Replace `"Your Document Directory"` with the absolute or relative path that contains `sample.xar` and where you want the output folder to be created. Using `Path.Combine` later helps avoid path‑separator issues across operating systems.
 
-## 步骤 2：解压 Xar 存档
+## Step 2: Decompress Xar Archive
 
 ```csharp
 //ExStart: DecompressXarArchive
@@ -71,46 +73,46 @@ using (FileStream fs = File.OpenRead(dataDir + "sample.xar"))
 }
 ```
 
-此代码片段打开 Xar 文件，创建 `XarArchive` 实例，并将 **整个 decompress xar archive** 提取到 `DecompressXar_out`。该操作完全基于流，因而即使是大型包也能高效处理。
+This snippet opens the Xar file, creates an `XarArchive` instance, and extracts **the entire decompress xar archive** to `DecompressXar_out`. The operation is fully stream‑based, so it works efficiently even with large packages.
 
-## 步骤 3：运行代码
+## Step 3: Run the Code
 
-构建并运行您的应用程序。执行后，您将在文档目录下看到一个名为 `DecompressXar_out` 的新文件夹，里面包含原始 `.xar` 存档中打包的所有文件。
+Build and run your application. After execution, you’ll find a new folder named `DecompressXar_out` inside your document directory, containing all files that were packaged in the original `.xar` archive.
 
-## 常见问题与技巧
+## Common Issues & Tips
 
-- **文件未找到** – 确保 `File.OpenRead` 中的路径正确指向 `sample.xar`。使用 `Path.Combine` 可获得更安全的路径处理。  
-- **访问被拒绝** – 以足够的文件系统权限运行应用程序，尤其是在写入受保护目录时。  
-- **存档损坏** – Aspose.Zip 会抛出 `InvalidDataException`；请确认源 `.xar` 文件完整无损。
+- **File not found** – Ensure the path in `File.OpenRead` correctly points to `sample.xar`. Use `Path.Combine` for safer path handling.  
+- **Access denied** – Run the application with sufficient file‑system permissions, especially when writing to protected directories.  
+- **Corrupted archive** – Aspose.Zip throws `InvalidDataException`; verify the source `.xar` file is intact.
 
-## 常见问题解答
+## Frequently Asked Questions
 
-**问：Aspose.Zip 是否兼容最新的 .NET 框架版本？**  
-答：是的，Aspose.Zip 定期更新，以确保与最新的 .NET 框架版本兼容。具体细节请参阅 [文档](https://reference.aspose.com/zip/net/)。
+**Q: Is Aspose.Zip compatible with the latest .NET framework versions?**  
+A: Yes, Aspose.Zip is regularly updated to ensure compatibility with the latest .NET framework versions. Refer to the [documentation](https://reference.aspose.com/zip/net/) for specific details.
 
-**问：我可以在购买前试用 Aspose.Zip 吗？**  
-答：当然！您可以从 [此处](https://releases.aspose.com/) 下载免费试用版。
+**Q: Can I try Aspose.Zip before making a purchase?**  
+A: Absolutely! You can download a free trial version from [here](https://releases.aspose.com/).
 
-**问：如何获取 Aspose.Zip 的支持？**  
-答：如有任何疑问或需要帮助，请访问 [Aspose.Zip 论坛](https://forum.aspose.com/c/zip/37)。
+**Q: How can I get support for Aspose.Zip?**  
+A: For any queries or assistance, visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37).
 
-**问：Aspose.Zip 是否提供临时许可证？**  
-答：是的，可从 [此处](https://purchase.aspose.com/temporary-license/) 获取临时许可证。
+**Q: Are temporary licenses available for Aspose.Zip?**  
+A: Yes, temporary licenses can be obtained from [here](https://purchase.aspose.com/temporary-license/).
 
-**问：在哪里可以购买 Aspose.Zip for .NET？**  
-答：您可以在 [此处](https://purchase.aspose.com/buy) 购买 Aspose.Zip for .NET。
+**Q: Where can I purchase Aspose.Zip for .NET?**  
+A: You can purchase Aspose.Zip for .NET [here](https://purchase.aspose.com/buy).
 
-**问：我能只提取 Xar 存档中的特定文件吗？**  
-答：可以——使用 `archive.Entries` 枚举条目，并对选定的条目调用 `ExtractToFile`。
+**Q: Can I extract only specific files from a Xar archive?**  
+A: Yes—use `archive.Entries` to enumerate items and call `ExtractToFile` on selected entries.
 
-**问：库是否支持受密码保护的 Xar 文件？**  
-答：目前，Xar 存档不支持加密；如果遇到受保护的文件，需要在使用 Aspose.Zip 之前先解密。
+**Q: Does the library support password‑protected Xar files?**  
+A: Currently, Xar archives do not support encryption; if you encounter a protected file, you’ll need to decrypt it before using Aspose.Zip.
 
 ---
 
-**最后更新：** 2025-12-17  
-**测试环境：** Aspose.Zip 24.11 for .NET  
-**作者：** Aspose  
+**Last Updated:** 2026-02-28  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
