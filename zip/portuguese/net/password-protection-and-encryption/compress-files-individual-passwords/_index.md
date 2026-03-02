@@ -1,36 +1,51 @@
 ---
-title: Compactação segura de arquivos em .NET com Aspose.Zip
-linktitle: Compactar arquivos com senhas individuais
-second_title: API Aspose.Zip .NET para compactação e arquivamento de arquivos
-description: Aprenda como aprimorar a segurança de arquivos em aplicativos .NET! Siga nosso guia passo a passo sobre compactação de arquivos com senhas individuais usando Aspose.Zip para .NET.
-weight: 16
+date: 2026-03-02
+description: Aprenda a criar um arquivo zip protegido por senha e compactar arquivos
+  com senhas no .NET usando Aspose.Zip. Siga nosso guia passo a passo.
+linktitle: Compress Files with Individual Passwords
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Criar um Arquivo ZIP Protegido por Senha no .NET com Aspose.Zip
 url: /pt/net/password-protection-and-encryption/compress-files-individual-passwords/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Compactação segura de arquivos em .NET com Aspose.Zip
-
+# Criar um Arquivo ZIP Protegido por Senha em .NET com Aspose.Zip
 
 ## Introdução
 
-No mundo do desenvolvimento .NET, gerenciar e compactar arquivos com eficiência é uma tarefa crucial. Aspose.Zip for .NET fornece uma solução poderosa para compactação de arquivos, oferecendo vários recursos para aprimorar seus aplicativos. Um recurso notável é a capacidade de compactar arquivos com senhas individuais, proporcionando uma camada adicional de segurança. Neste tutorial, orientaremos você no processo de compactação de arquivos com senhas individuais usando Aspose.Zip para .NET.
+Quando você precisa compartilhar dados sensíveis, um **arquivo zip protegido por senha** é uma das maneiras mais simples e eficazes de manter as informações seguras. Em aplicações .NET, o Aspose.Zip facilita **compactar arquivos com senhas**, atribuindo a cada arquivo sua própria chave de criptografia. Neste tutorial você aprenderá exatamente como criar esse tipo de arquivo, por que isso é importante e onde pode aplicá‑lo em projetos do mundo real.
 
-## Pré-requisitos
+## Respostas Rápidas
+- **Qual biblioteca devo usar?** Aspose.Zip para .NET fornece suporte nativo a senhas por arquivo e múltiplos métodos de criptografia.  
+- **Quantas linhas de código?** Cerca de 30 linhas, incluindo configuração e gravação do arquivo.  
+- **Cada arquivo pode ter uma senha diferente?** Sim – você pode atribuir uma senha única a cada entrada.  
+- **Quais métodos de criptografia estão disponíveis?** ZipCrypto tradicional, AES‑128 e AES‑256.  
+- **Preciso de licença para produção?** Uma licença comercial é necessária para uso em produção; há uma versão de avaliação gratuita.
 
-Antes de mergulhar no tutorial, certifique-se de ter os seguintes pré-requisitos:
+## O que é um arquivo zip protegido por senha?
+Um arquivo zip protegido por senha é um arquivo compactado (ZIP) que requer uma senha para extrair seu conteúdo. A senha pode proteger todo o arquivo ou entradas individuais, e algoritmos modernos como AES‑128/256 fornecem criptografia forte.
 
--  Aspose.Zip para .NET: Certifique-se de ter a biblioteca Aspose.Zip instalada em seu projeto .NET. Você pode encontrar a documentação necessária[aqui](https://reference.aspose.com/zip/net/).
+## Por que compactar arquivos com senhas usando Aspose.Zip?
+- **Segurança granular** – atribua uma senha distinta por arquivo, ideal para cenários multi‑tenant.  
+- **Múltiplos padrões de criptografia** – escolha entre o legado ZipCrypto e o robusto AES.  
+- **Sem ferramentas externas** – tudo é tratado programaticamente dentro do seu código .NET.  
+- **Desempenho** – compressão rápida com Deflate mantendo o tamanho do arquivo pequeno.
 
--  Download: Se ainda não o fez, baixe a biblioteca Aspose.Zip para .NET em[esse link](https://releases.aspose.com/zip/net/).
+## Pré‑requisitos
 
-- Diretório de documentos: prepare um diretório contendo os arquivos que deseja compactar.
+Antes de começar, verifique se você tem:
 
-## Importar namespaces
+- **Aspose.Zip para .NET** – instale a biblioteca no seu projeto. Documentação detalhada está disponível [aqui](https://reference.aspose.com/zip/net/).  
+- **Baixe o pacote mais recente** se ainda não o fez, a partir deste [link](https://releases.aspose.com/zip/net/).  
+- Uma pasta contendo os arquivos que você deseja compactar.
 
-No seu projeto .NET, importe os namespaces necessários:
+## Importar Namespaces
+
+Adicione os namespaces necessários no topo do seu arquivo C#:
 
 ```csharp
 using Aspose.Zip;
@@ -38,17 +53,17 @@ using Aspose.Zip.Saving;
 using System.IO;
 ```
 
-## Etapa 1: definir o caminho do diretório de recursos
+## Etapa 1: Definir o Caminho do Diretório de Recursos
 
-Defina o caminho para o diretório de recursos onde seus arquivos estão localizados.
+Aponte o código para a pasta que contém os arquivos de origem:
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Etapa 2: compactar arquivos com senhas individuais
+## Etapa 2: Compactar Arquivos com Senhas Individuais
 
-Agora, vamos compactar arquivos com senhas individuais. Usaremos três arquivos de amostra (`alice29.txt`, `asyoulik.txt` , e`fields.c`) com senhas distintas para cada um.
+Agora criaremos um **arquivo zip protegido por senha** onde cada arquivo usa sua própria senha e método de criptografia. O exemplo usa três arquivos de amostra (`alice29.txt`, `asyoulik.txt` e `fields.c`) com senhas diferentes.
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPasswords_out.zip", FileMode.Create))
@@ -59,37 +74,46 @@ using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPass
 
     using (var archive = new Archive())
     {
-        // Compacte cada arquivo com uma senha individual
+        // Compress each file with an individual password
         archive.CreateEntry("alice29.txt", source1, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new TraditionalEncryptionSettings("pass1")));
         archive.CreateEntry("asyoulik.txt", source2, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new AesEcryptionSettings("pass2", EncryptionMethod.AES128)));
         archive.CreateEntry("fields.c", source3, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new AesEcryptionSettings("pass3", EncryptionMethod.AES256)));
         
-        // Salve os arquivos compactados
+        // Save the compressed files
         archive.Save(zipFile);
     }
 }
 ```
 
-## Conclusão
+### Como funciona
+- **CreateEntry** adiciona um arquivo ao arquivo zip.  
+- O quarto argumento (`ArchiveEntrySettings`) permite especificar tanto a compressão (`DeflateCompressionSettings`) quanto a criptografia (`TraditionalEncryptionSettings` ou `AesEcryptionSettings`).  
+- Ao passar uma string de senha diferente para cada entrada, você obtém um **arquivo zip protegido por senha** onde cada arquivo só pode ser desbloqueado com sua própria chave.
 
-Parabéns! Você aprendeu com sucesso como compactar arquivos com senhas individuais usando Aspose.Zip para .NET. Este recurso adiciona uma camada extra de segurança aos seus arquivos compactados, garantindo a confidencialidade.
+## Problemas Comuns & Solução de Problemas
 
-## Perguntas frequentes (FAQ)
+| Sintoma | Causa Provável | Solução |
+|---------|----------------|--------|
+| Falha na extração com “Wrong password” | Incompatibilidade de senha ou método de criptografia incorreto | Verifique a senha exata e assegure‑se de usar o mesmo `EncryptionMethod` ao extrair. |
+| O tamanho do arquivo é maior que o esperado | Uso de AES‑256 em arquivos de texto pequenos pode acrescentar sobrecarga | Para arquivos pequenos, AES‑128 pode ser suficiente e gera um arquivo menor. |
+| Exceção em tempo de execução ao chamar `archive.Save` | Falta de permissão de gravação na pasta de destino | Garanta que a aplicação tenha acesso de escrita a `dataDir` ou use outro caminho de saída. |
 
-### Posso usar métodos de criptografia diferentes para cada arquivo?
-Sim, Aspose.Zip for .NET permite usar diferentes métodos de criptografia para cada arquivo durante a compactação.
+## Perguntas Frequentes (FAQs)
 
-### Existe uma versão de teste disponível?
- Sim, você pode acessar a avaliação gratuita do Aspose.Zip for .NET[aqui](https://releases.aspose.com/).
+### Posso usar diferentes métodos de criptografia para cada arquivo?
+Sim, o Aspose.Zip para .NET permite combinar métodos de criptografia — ZipCrypto tradicional, AES‑128 e AES‑256 — em nível de arquivo.
 
-### Como posso obter suporte se encontrar problemas?
- Visite a[Fórum Aspose.Zip](https://forum.aspose.com/c/zip/37) pela assistência da comunidade e pelo apoio da Aspose.
+### Existe uma versão de avaliação disponível?
+Sim, você pode acessar a avaliação gratuita do Aspose.Zip para .NET [aqui](https://releases.aspose.com/).
 
-### Onde posso encontrar documentação detalhada para Aspose.Zip for .NET?
- A documentação está disponível[aqui](https://reference.aspose.com/zip/net/).
+### Como obter suporte caso eu encontre problemas?
+Visite o [fórum Aspose.Zip](https://forum.aspose.com/c/zip/37) para obter ajuda da comunidade e do suporte da Aspose.
 
-### Posso comprar uma licença temporária para fins de teste?
- Sim, você pode adquirir uma licença temporária[aqui](https://purchase.aspose.com/temporary-license/).
+### Onde encontrar documentação detalhada do Aspose.Zip para .NET?
+A documentação está disponível [aqui](https://reference.aspose.com/zip/net/).
+
+### Posso adquirir uma licença temporária para fins de teste?
+Sim, você pode obter uma licença temporária [aqui](https://purchase.aspose.com/temporary-license/).
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -97,3 +121,11 @@ Sim, Aspose.Zip for .NET permite usar diferentes métodos de criptografia para c
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Última atualização:** 2026-03-02  
+**Testado com:** Aspose.Zip para .NET (última versão)  
+**Autor:** Aspose  
+
+---
