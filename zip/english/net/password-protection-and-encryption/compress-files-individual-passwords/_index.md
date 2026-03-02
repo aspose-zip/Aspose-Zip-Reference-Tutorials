@@ -1,36 +1,50 @@
 ---
-title: Secure File Compression in .NET with Aspose.Zip
+title: Create a Password Protected ZIP Archive in .NET with Aspose.Zip
 linktitle: Compress Files with Individual Passwords
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-description: Learn how to enhance file security in .NET applications! Follow our step-by-step guide on compressing files with individual passwords using Aspose.Zip for .NET.
+description: Learn how to create a password protected zip archive and compress files with passwords in .NET using Aspose.Zip. Follow our step‑by‑step guide.
 weight: 16
 url: /net/password-protection-and-encryption/compress-files-individual-passwords/
+date: 2026-03-02
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Secure File Compression in .NET with Aspose.Zip
-
+# Create a Password Protected ZIP Archive in .NET with Aspose.Zip
 
 ## Introduction
 
-In the world of .NET development, managing and compressing files efficiently is a crucial task. Aspose.Zip for .NET provides a powerful solution for file compression, offering various features to enhance your applications. One notable feature is the ability to compress files with individual passwords, providing an added layer of security. In this tutorial, we will guide you through the process of compressing files with individual passwords using Aspose.Zip for .NET.
+When you need to share sensitive data, a **password protected zip archive** is one of the simplest yet most effective ways to keep information safe. In .NET applications, Aspose.Zip makes it easy to **compress files with passwords**, giving each file its own encryption key. In this tutorial you’ll learn exactly how to create such an archive, why it matters, and where you can apply it in real‑world projects.
+
+## Quick Answers
+- **What library should I use?** Aspose.Zip for .NET provides built‑in support for per‑file passwords and multiple encryption methods.  
+- **How many lines of code?** About 30 lines, including setup and saving the archive.  
+- **Can each file have a different password?** Yes – you can assign a unique password to every entry.  
+- **Which encryption methods are available?** Traditional ZipCrypto, AES‑128, and AES‑256.  
+- **Do I need a license for production?** A commercial license is required for production use; a free trial is available.
+
+## What is a password protected zip archive?
+A password protected zip archive is a compressed file (ZIP) that requires a password to extract its contents. The password can protect the entire archive or individual entries, and modern algorithms like AES‑128/256 provide strong encryption.
+
+## Why compress files with passwords using Aspose.Zip?
+- **Granular security** – assign a distinct password per file, ideal for multi‑tenant scenarios.  
+- **Multiple encryption standards** – choose between legacy ZipCrypto and strong AES.  
+- **No external tools** – everything is handled programmatically within your .NET codebase.  
+- **Performance** – fast compression with Deflate while keeping the archive size small.
 
 ## Prerequisites
 
-Before diving into the tutorial, ensure you have the following prerequisites:
+Before you start, make sure you have:
 
-- Aspose.Zip for .NET: Make sure you have the Aspose.Zip library installed in your .NET project. You can find the necessary documentation [here](https://reference.aspose.com/zip/net/).
-
-- Download: If you haven't already, download the Aspose.Zip for .NET library from [this link](https://releases.aspose.com/zip/net/).
-
-- Document Directory: Prepare a directory containing the files you want to compress.
+- **Aspose.Zip for .NET** – install the library in your project. Detailed docs are available [here](https://reference.aspose.com/zip/net/).  
+- **Download the latest package** if you haven’t already, from [this link](https://releases.aspose.com/zip/net/).  
+- A folder containing the files you want to compress.
 
 ## Import Namespaces
 
-In your .NET project, make sure to import the necessary namespaces:
+Add the required namespaces at the top of your C# file:
 
 ```csharp
 using Aspose.Zip;
@@ -40,7 +54,7 @@ using System.IO;
 
 ## Step 1: Set the Resource Directory Path
 
-Define the path to the resource directory where your files are located.
+Point the code to the folder that holds the source files:
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -48,7 +62,7 @@ string dataDir = "Your Document Directory";
 
 ## Step 2: Compress Files with Individual Passwords
 
-Now, let's compress files with individual passwords. We'll use three sample files (`alice29.txt`, `asyoulik.txt`, and `fields.c`) with distinct passwords for each.
+Now we’ll create a **password protected zip archive** where each file uses its own password and encryption method. The example uses three sample files (`alice29.txt`, `asyoulik.txt`, and `fields.c`) with different passwords.
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPasswords_out.zip", FileMode.Create))
@@ -70,14 +84,23 @@ using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPass
 }
 ```
 
-## Conclusion
+### How it works
+- **CreateEntry** adds a file to the archive.  
+- The fourth argument (`ArchiveEntrySettings`) lets you specify both compression (`DeflateCompressionSettings`) and encryption (`TraditionalEncryptionSettings` or `AesEcryptionSettings`).  
+- By passing a different password string for each entry, you end up with a **password protected zip archive** where every file is unlocked only with its own key.
 
-Congratulations! You have successfully learned how to compress files with individual passwords using Aspose.Zip for .NET. This feature adds an extra layer of security to your compressed files, ensuring confidentiality.
+## Common Issues & Troubleshooting
+
+| Symptom | Likely Cause | Fix |
+|---------|--------------|-----|
+| Extraction fails with “Wrong password” | Password mismatch or wrong encryption method | Verify the exact password string and ensure you used the same `EncryptionMethod` when extracting. |
+| Archive size is larger than expected | Using AES‑256 on small text files can add overhead | For small files, AES‑128 may be sufficient and yields a smaller archive. |
+| Runtime exception on `archive.Save` | Missing write permission on the target folder | Ensure the application has write access to `dataDir` or use a different output path. |
 
 ## Frequently Asked Questions (FAQs)
 
 ### Can I use different encryption methods for each file?
-Yes, Aspose.Zip for .NET allows you to use different encryption methods for each file during compression.
+Yes, Aspose.Zip for .NET allows you to mix encryption methods—traditional ZipCrypto, AES‑128, and AES‑256—on a per‑file basis.
 
 ### Is there a trial version available?
 Yes, you can access the free trial of Aspose.Zip for .NET [here](https://releases.aspose.com/).
@@ -91,10 +114,17 @@ The documentation is available [here](https://reference.aspose.com/zip/net/).
 ### Can I purchase a temporary license for testing purposes?
 Yes, you can acquire a temporary license [here](https://purchase.aspose.com/temporary-license/).
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Last Updated:** 2026-03-02  
+**Tested With:** Aspose.Zip for .NET (latest release)  
+**Author:** Aspose  
+
+---

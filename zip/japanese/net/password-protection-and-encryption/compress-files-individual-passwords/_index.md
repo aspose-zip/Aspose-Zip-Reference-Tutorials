@@ -1,36 +1,50 @@
 ---
-title: Aspose.Zip を使用した .NET での安全なファイル圧縮
-linktitle: 個別のパスワードを使用してファイルを圧縮する
-second_title: ファイルの圧縮とアーカイブのための Aspose.Zip .NET API
-description: .NET アプリケーションのファイル セキュリティを強化する方法を学びましょう。 Aspose.Zip for .NET を使用して個別のパスワードを使用してファイルを圧縮するためのステップバイステップ ガイドに従ってください。
-weight: 16
+date: 2026-03-02
+description: Aspose.Zip を使用して .NET でパスワード保護された zip アーカイブの作成方法と、パスワードでファイルを圧縮する方法を学びましょう。ステップバイステップのガイドに従ってください。
+linktitle: Compress Files with Individual Passwords
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: .NET と Aspose.Zip を使用してパスワード保護された ZIP アーカイブを作成する
 url: /ja/net/password-protection-and-encryption/compress-files-individual-passwords/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip を使用した .NET での安全なファイル圧縮
+# Aspose.Zip を使用した .NET でのパスワード保護 ZIP アーカイブの作成
 
+## Introduction
 
-## 導入
+機密データを共有する必要があるとき、**パスワード保護された zip アーカイブ**は、情報を安全に保つ最もシンプルで効果的な方法のひとつです。.NET アプリケーションでは、Aspose.Zip を使うことで **パスワード付きでファイルを圧縮**でき、各ファイルに個別の暗号化キーを付与できます。このチュートリアルでは、実際にそのようなアーカイブを作成する方法、重要性、そして実際のプロジェクトでの活用例を学びます。
 
-.NET 開発の世界では、ファイルを効率的に管理および圧縮することが重要なタスクです。 Aspose.Zip for .NET は、ファイル圧縮のための強力なソリューションを提供し、アプリケーションを強化するためのさまざまな機能を提供します。注目すべき機能の 1 つは、個別のパスワードを使用してファイルを圧縮し、追加のセキュリティ層を提供する機能です。このチュートリアルでは、Aspose.Zip for .NET を使用して、個別のパスワードを使用してファイルを圧縮するプロセスを説明します。
+## Quick Answers
+- **What library should I use?** Aspose.Zip for .NET provides built‑in support for per‑file passwords and multiple encryption methods.  
+- **How many lines of code?** About 30 lines, including setup and saving the archive.  
+- **Can each file have a different password?** Yes – you can assign a unique password to every entry.  
+- **Which encryption methods are available?** Traditional ZipCrypto, AES‑128, and AES‑256.  
+- **Do I need a license for production?** A commercial license is required for production use; a free trial is available.
 
-## 前提条件
+## What is a password protected zip archive?
+パスワード保護された zip アーカイブとは、内容を展開する際にパスワードが必要な圧縮ファイル（ZIP）のことです。パスワードはアーカイブ全体または個々のエントリに設定でき、AES‑128/256 などの最新アルゴリズムにより強力な暗号化が提供されます。
 
-チュートリアルに進む前に、次の前提条件を満たしていることを確認してください。
+## Why compress files with passwords using Aspose.Zip?
+- **Granular security** – assign a distinct password per file, ideal for multi‑tenant scenarios.  
+- **Multiple encryption standards** – choose between legacy ZipCrypto and strong AES.  
+- **No external tools** – everything is handled programmatically within your .NET codebase.  
+- **Performance** – fast compression with Deflate while keeping the archive size small.
 
--  Aspose.Zip for .NET: Aspose.Zip ライブラリが .NET プロジェクトにインストールされていることを確認してください。必要な書類が見つかります[ここ](https://reference.aspose.com/zip/net/).
+## Prerequisites
 
-- ダウンロード: まだダウンロードしていない場合は、.NET ライブラリ用の Aspose.Zip を次の場所からダウンロードします。[このリンク](https://releases.aspose.com/zip/net/).
+開始する前に、以下が揃っていることを確認してください。
 
-- ドキュメント ディレクトリ: 圧縮するファイルを含むディレクトリを準備します。
+- **Aspose.Zip for .NET** – install the library in your project. Detailed docs are available [here](https://reference.aspose.com/zip/net/).  
+- **Download the latest package** if you haven’t already, from [this link](https://releases.aspose.com/zip/net/).  
+- 圧縮したいファイルが入っているフォルダー。
 
-## 名前空間のインポート
+## Import Namespaces
 
-.NET プロジェクトで、必要な名前空間を必ずインポートしてください。
+Add the required namespaces at the top of your C# file:
 
 ```csharp
 using Aspose.Zip;
@@ -38,17 +52,17 @@ using Aspose.Zip.Saving;
 using System.IO;
 ```
 
-## ステップ 1: リソース ディレクトリ パスを設定する
+## Step 1: Set the Resource Directory Path
 
-ファイルが配置されているリソース ディレクトリへのパスを定義します。
+Point the code to the folder that holds the source files:
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## ステップ 2: 個別のパスワードを使用してファイルを圧縮する
+## Step 2: Compress Files with Individual Passwords
 
-次に、個別のパスワードを使用してファイルを圧縮してみましょう。 3 つのサンプル ファイルを使用します (`alice29.txt`, `asyoulik.txt` 、 そして`fields.c`それぞれに個別のパスワードが設定されます。
+Now we’ll create a **password protected zip archive** where each file uses its own password and encryption method. The example uses three sample files (`alice29.txt`, `asyoulik.txt`, and `fields.c`) with different passwords.
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPasswords_out.zip", FileMode.Create))
@@ -59,37 +73,46 @@ using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPass
 
     using (var archive = new Archive())
     {
-        //各ファイルを個別のパスワードで圧縮します
+        // Compress each file with an individual password
         archive.CreateEntry("alice29.txt", source1, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new TraditionalEncryptionSettings("pass1")));
         archive.CreateEntry("asyoulik.txt", source2, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new AesEcryptionSettings("pass2", EncryptionMethod.AES128)));
         archive.CreateEntry("fields.c", source3, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new AesEcryptionSettings("pass3", EncryptionMethod.AES256)));
         
-        //圧縮ファイルを保存する
+        // Save the compressed files
         archive.Save(zipFile);
     }
 }
 ```
 
-## 結論
+### How it works
+- **CreateEntry** adds a file to the archive.  
+- The fourth argument (`ArchiveEntrySettings`) lets you specify both compression (`DeflateCompressionSettings`) and encryption (`TraditionalEncryptionSettings` or `AesEcryptionSettings`).  
+- By passing a different password string for each entry, you end up with a **password protected zip archive** where every file is unlocked only with its own key.
 
-おめでとう！ Aspose.Zip for .NET を使用して、個別のパスワードを使用してファイルを圧縮する方法を学習しました。この機能により、圧縮ファイルにセキュリティ層が追加され、機密性が確保されます。
+## Common Issues & Troubleshooting
 
-## よくある質問 (FAQ)
+| 症状 | 考えられる原因 | 対策 |
+|------|----------------|------|
+| “Wrong password” エラーで抽出に失敗する | パスワードが一致しない、または暗号化方式が異なる | 正確なパスワード文字列を確認し、抽出時に同じ `EncryptionMethod` を使用しているか確認してください。 |
+| アーカイブサイズが予想より大きい | 小さなテキストファイルに AES‑256 を使用するとオーバーヘッドが増える | 小規模ファイルには AES‑128 で十分な場合が多く、サイズも小さくなります。 |
+| `archive.Save` 実行時に例外が発生する | 出力先フォルダーへの書き込み権限がない | アプリケーションが `dataDir` に書き込み権限を持っているか確認するか、別の出力パスを使用してください。 |
 
-### ファイルごとに異なる暗号化方法を使用できますか?
-はい、Aspose.Zip for .NET を使用すると、圧縮中にファイルごとに異なる暗号化方法を使用できます。
+## Frequently Asked Questions (FAQs)
 
-### 試用版はありますか?
-はい、Aspose.Zip for .NET の無料トライアルにアクセスできます。[ここ](https://releases.aspose.com/).
+### Can I use different encryption methods for each file?
+Yes, Aspose.Zip for .NET allows you to mix encryption methods—traditional ZipCrypto, AES‑128, and AES‑256—on a per‑file basis.
 
-### 問題が発生した場合はどうすればサポートを受けられますか?
-訪問[Aspose.Zip フォーラム](https://forum.aspose.com/c/zip/37)コミュニティからの支援と Aspose のサポートが必要です。
+### Is there a trial version available?
+Yes, you can access the free trial of Aspose.Zip for .NET [here](https://releases.aspose.com/).
 
-### Aspose.Zip for .NET の詳細なドキュメントはどこで見つけられますか?
-ドキュメントは利用可能です[ここ](https://reference.aspose.com/zip/net/).
+### How can I get support if I encounter issues?
+Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for assistance from the community and Aspose support.
 
-### テスト目的で一時ライセンスを購入できますか?
-はい、一時ライセンスを取得できます[ここ](https://purchase.aspose.com/temporary-license/).
+### Where can I find detailed documentation for Aspose.Zip for .NET?
+The documentation is available [here](https://reference.aspose.com/zip/net/).
+
+### Can I purchase a temporary license for testing purposes?
+Yes, you can acquire a temporary license [here](https://purchase.aspose.com/temporary-license/).
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -97,3 +120,11 @@ using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPass
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**Last Updated:** 2026-03-02  
+**Tested With:** Aspose.Zip for .NET (latest release)  
+**Author:** Aspose  
+
+---

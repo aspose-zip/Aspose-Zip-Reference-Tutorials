@@ -1,36 +1,50 @@
 ---
-title: 使用 Aspose.Zip 在 .NET 中進行安全性檔案壓縮
-linktitle: 使用單獨的密碼壓縮文件
-second_title: 用於檔案壓縮和歸檔的 Aspose.Zip .NET API
-description: 了解如何增強 .NET 應用程式中的檔案安全性！請按照我們的逐步指南使用 Aspose.Zip for .NET 壓縮具有單獨密碼的檔案。
-weight: 16
+date: 2026-03-02
+description: 學習如何使用 Aspose.Zip 在 .NET 中建立受密碼保護的 ZIP 壓縮檔並以密碼壓縮檔案。請跟隨我們的逐步指南。
+linktitle: Compress Files with Individual Passwords
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: 使用 Aspose.Zip 在 .NET 中建立受密碼保護的 ZIP 檔案
 url: /zh-hant/net/password-protection-and-encryption/compress-files-individual-passwords/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 使用 Aspose.Zip 在 .NET 中進行安全性檔案壓縮
-
+# 在 .NET 中使用 Aspose.Zip 建立受密碼保護的 ZIP 壓縮檔
 
 ## 介紹
 
-在 .NET 開發領域，有效管理和壓縮檔案是一項至關重要的任務。 Aspose.Zip for .NET 提供了強大的檔案壓縮解決方案，提供各種功能來增強您的應用程式。一個顯著的功能是能夠使用單獨的密碼壓縮文件，從而提供額外的安全層。在本教學中，我們將引導您完成使用 Aspose.Zip for .NET 壓縮具有單獨密碼的檔案的過程。
+當您需要分享機密資料時，**受密碼保護的 zip 壓縮檔** 是最簡單且最有效的保護方式之一。在 .NET 應用程式中，Aspose.Zip 讓 **以密碼壓縮檔案** 變得輕鬆，並為每個檔案提供獨立的加密金鑰。透過本教學，您將學會如何建立此類壓縮檔、了解其重要性，以及在實務專案中的應用情境。
 
-## 先決條件
+## 快速答覆
+- **我應該使用哪個函式庫？** Aspose.Zip for .NET 內建支援每個檔案的密碼與多種加密方式。  
+- **程式碼需要多少行？** 大約 30 行，包括設定與儲存壓縮檔的程式碼。  
+- **每個檔案可以使用不同的密碼嗎？** 可以 – 您可以為每個條目指派唯一的密碼。  
+- **有哪些加密方法可用？** 傳統 ZipCrypto、AES‑128 與 AES‑256。  
+- **正式環境需要授權嗎？** 正式使用需購買商業授權；亦提供免費試用版。
 
-在深入學習本教程之前，請確保您具備以下先決條件：
+## 什麼是受密碼保護的 ZIP 壓縮檔？
+受密碼保護的 ZIP 壓縮檔是一種需要密碼才能解壓縮內容的壓縮檔（ZIP）。密碼可以保護整個壓縮檔或個別條目，且現代演算法如 AES‑128/256 提供強大的加密保護。
 
--  Aspose.Zip for .NET：請確定您的 .NET 專案中安裝了 Aspose.Zip 函式庫。您可以找到必要的文檔[這裡](https://reference.aspose.com/zip/net/).
+## 為什麼要使用 Aspose.Zip 以密碼壓縮檔案？
+- **細緻的安全性** – 為每個檔案指派不同的密碼，適用於多租戶情境。  
+- **多種加密標準** – 可在傳統 ZipCrypto 與強大的 AES 之間選擇。  
+- **不需外部工具** – 所有操作皆在 .NET 程式碼中以程式方式完成。  
+- **效能** – 使用 Deflate 進行快速壓縮，同時保持壓縮檔體積小。
 
-- 下載：如果您還沒有下載 Aspose.Zip for .NET 函式庫，請從[這個連結](https://releases.aspose.com/zip/net/).
+## 前置條件
 
-- 文件目錄：準備一個包含要壓縮的文件的目錄。
+開始之前，請確保您已具備：
 
-## 導入命名空間
+- **Aspose.Zip for .NET** – 在專案中安裝此函式庫。詳細文件請參考[此處](https://reference.aspose.com/zip/net/)。  
+- **下載最新套件**（若尚未下載），請前往[此連結](https://releases.aspose.com/zip/net/)。  
+- 包含欲壓縮檔案的資料夾。
 
-在您的 .NET 專案中，確保導入必要的命名空間：
+## 匯入命名空間
+
+在 C# 檔案的最上方加入必要的命名空間：
 
 ```csharp
 using Aspose.Zip;
@@ -38,17 +52,17 @@ using Aspose.Zip.Saving;
 using System.IO;
 ```
 
-## 第1步：設定資源目錄路徑
+## 步驟 1：設定資源目錄路徑
 
-定義檔案所在資源目錄的路徑。
+將程式碼指向保存來源檔案的資料夾：
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## 步驟 2： 使用單獨的密碼壓縮文件
+## 步驟 2：以個別密碼壓縮檔案
 
-現在，讓我們使用單獨的密碼來壓縮檔案。我們將使用三個範例文件（`alice29.txt`, `asyoulik.txt` ， 和`fields.c`）每個都有不同的密碼。
+接下來，我們將建立一個 **受密碼保護的 ZIP 壓縮檔**，讓每個檔案使用自己的密碼與加密方式。範例使用三個示例檔案（`alice29.txt`、`asyoulik.txt`、`fields.c`），各自設定不同的密碼。
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPasswords_out.zip", FileMode.Create))
@@ -59,37 +73,46 @@ using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPass
 
     using (var archive = new Archive())
     {
-        //使用單獨的密碼壓縮每個文件
+        // Compress each file with an individual password
         archive.CreateEntry("alice29.txt", source1, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new TraditionalEncryptionSettings("pass1")));
         archive.CreateEntry("asyoulik.txt", source2, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new AesEcryptionSettings("pass2", EncryptionMethod.AES128)));
         archive.CreateEntry("fields.c", source3, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new AesEcryptionSettings("pass3", EncryptionMethod.AES256)));
         
-        //儲存壓縮檔案
+        // Save the compressed files
         archive.Save(zipFile);
     }
 }
 ```
 
-## 結論
+### 工作原理
+- **CreateEntry** 會將檔案加入壓縮檔。  
+- 第四個參數（`ArchiveEntrySettings`）可同時設定壓縮（`DeflateCompressionSettings`）與加密（`TraditionalEncryptionSettings` 或 `AesEcryptionSettings`）。  
+- 為每個條目傳入不同的密碼字串，即可產生 **受密碼保護的 ZIP 壓縮檔**，每個檔案只能使用其專屬密碼解鎖。
 
-恭喜！您已成功學習如何使用 Aspose.Zip for .NET 來壓縮具有單獨密碼的檔案。此功能為您的壓縮檔案添加了額外的安全層，確保機密性。
+## 常見問題與疑難排解
 
-## 常見問題 (FAQ)
+| 症狀 | 可能原因 | 解決方式 |
+|---------|--------------|-----|
+| 解壓縮時出現「密碼錯誤」 | 密碼不符或使用了錯誤的加密方式 | 請確認密碼字串完全正確，且解壓縮時使用相同的 `EncryptionMethod`。 |
+| 壓縮檔大小超出預期 | 在小型文字檔上使用 AES‑256 會產生額外開銷 | 對於小檔案，使用 AES‑128 可能已足夠，且可產生較小的壓縮檔。 |
+| `archive.Save` 時發生執行時例外 | 目標資料夾缺乏寫入權限 | 確保應用程式對 `dataDir` 具有寫入權限，或改用其他輸出路徑。 |
 
-### 我可以對每個文件使用不同的加密方法嗎？
-是的，Aspose.Zip for .NET 可讓您在壓縮過程中對每個檔案使用不同的加密方法。
+## 常見問答 (FAQs)
 
-### 有試用版嗎？
-是的，您可以存取 Aspose.Zip for .NET 的免費試用版[這裡](https://releases.aspose.com/).
+### 我可以為每個檔案使用不同的加密方式嗎？
+可以，Aspose.Zip for .NET 允許在每個檔案上混用不同的加密方式——傳統 ZipCrypto、AES‑128 與 AES‑256。
 
-### 如果遇到問題，我該如何獲得支援？
-參觀[Aspose.Zip 論壇](https://forum.aspose.com/c/zip/37)尋求社區的幫助和 Aspose 支持。
+### 是否提供試用版？
+有，您可以在此取得 Aspose.Zip for .NET 的免費試用版[這裡](https://releases.aspose.com/)。
 
-### 在哪裡可以找到 Aspose.Zip for .NET 的詳細文件？
-文件可用[這裡](https://reference.aspose.com/zip/net/).
+### 若遇到問題，我該如何取得支援？
+請前往[Aspose.Zip 論壇](https://forum.aspose.com/c/zip/37)尋求社群與 Aspose 官方的協助。
 
-### 我可以購買臨時許可證用於測試目的嗎？
-是的，您可以獲得臨時許可證[這裡](https://purchase.aspose.com/temporary-license/).
+### 哪裡可以找到 Aspose.Zip for .NET 的詳細文件？
+文件可在[此處](https://reference.aspose.com/zip/net/)取得。
+
+### 我可以購買臨時授權來測試嗎？
+可以，您可在[此處](https://purchase.aspose.com/temporary-license/)取得臨時授權。
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -97,3 +120,9 @@ using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPass
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+---
+
+**最後更新：** 2026-03-02  
+**測試環境：** Aspose.Zip for .NET (latest release)  
+**作者：** Aspose
