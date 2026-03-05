@@ -1,34 +1,51 @@
 ---
-title: Több fájl tömörítése titkosítással az Aspose.Zip .NET-ben
-linktitle: Több fájl tömörítése hagyományos titkosítással
-second_title: Aspose.Zip .NET API fájlok tömörítéséhez és archiválásához
-description: Ismerje meg, hogyan tömöríthet biztonságosan több fájlt hagyományos titkosítással az Aspose.Zip for .NET-ben. Növelje az adatvédelmet .NET-alkalmazásaiban.
-weight: 17
+date: 2026-03-05
+description: Tanulja meg, hogyan hozhat létre jelszóval védett zip fájlt, és titkosítással
+  tömörítheti a fájlokat az Aspose.Zip for .NET-ben. Biztonságosítsa archívumait jelszóval
+  védett zip .NET megoldásokkal.
+linktitle: Compress Multiple Files with Traditional Encryption
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Jelszóval védett ZIP létrehozása az Aspose.Zip .NET használatával
 url: /hu/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/
+weight: 17
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Több fájl tömörítése titkosítással az Aspose.Zip .NET-ben
-
+# Jelszóval védett ZIP létrehozása Aspose.Zip .NET használatával
 
 ## Bevezetés
 
-Üdvözöljük ebben a lépésenkénti oktatóanyagban, amely több fájl hagyományos titkosítással történő tömörítéséről szól az Aspose.Zip for .NET használatával. Az Aspose.Zip egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen dolgozzanak zip-archívumokkal .NET-alkalmazásaikban. Ebben az útmutatóban végigvezetjük a több fájl hagyományos titkosítással történő tömörítésének folyamatán, így biztosítva adatai biztonságát.
+Ebben az útmutatóban megtanulja, hogyan **hozzon létre jelszóval védett zip** fájlt több fájl egy archívumba való hozzáadásával. Az Aspose.Zip for .NET egyszerűvé teszi a **fájlok titkosított tömörítését**, egy biztonságos zip tömörítési munkafolyamatot biztosítva, amely Windows és Linux rendszereken egyaránt működik. Lépésről lépésre végigvezetjük a folyamaton, a zip jelszó beállításától a végleges archívum mentéséig, hogy védje a érzékeny adatokat .NET alkalmazásaiban.
+
+## Gyors válaszok
+- **Melyik könyvtár kezeli a jelszóval védett zip fájlokat?** Aspose.Zip for .NET  
+- **Hány fájlt adhatok hozzá?** Korlátlan – annyi bejegyzést adhat hozzá, amennyire csak szüksége van  
+- **Milyen titkosítást használ?** Hagyományos Zip titkosítás (PKZIP)  
+- **Szükség van licencre a termeléshez?** Igen, kereskedelmi licenc szükséges  
+- **Kompatibilis .NET Core-rel?** Teljesen – működik .NET 5/6 és .NET Core verziókkal  
+
+## Mi az a „jelszóval védett ZIP létrehozása”?
+A jelszóval védett zip létrehozása azt jelenti, hogy egy szabványos ZIP archívumot generálunk, ahol minden bejegyzés a megadott jelszóval van titkosítva. Ez megvédi a tartalmat a jogosulatlan hozzáféréstől, miközben az archívum kompatibilis marad a legtöbb kicsomagoló eszközzel.
+
+## Miért használjunk biztonságos ZIP tömörítést az Aspose.Zip segítségével?
+- **Keresztplatformos támogatás** – Windows, Linux és macOS rendszereken fut.  
+- **Nincs külső függőség** – tiszta .NET megvalósítás.  
+- **Hagyományos titkosítás** – kompatibilis a régi zip segédprogramokkal.  
+- **Egyszerű API** – egyszer állítsa be a jelszót, és annyi fájlt adjon hozzá, amennyit csak szeretne.  
 
 ## Előfeltételek
 
-Mielőtt belevágnánk az oktatóanyagba, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
+Mielőtt elkezdenénk, győződjön meg róla, hogy rendelkezik:
 
--  Aspose.Zip for .NET: Győződjön meg arról, hogy a fejlesztői környezetében telepítve van az Aspose.Zip for .NET könyvtár. Letöltheti innen[itt](https://releases.aspose.com/zip/net/).
+- **Aspose.Zip for .NET** telepítve. Letöltheti [innen](https://releases.aspose.com/zip/net/).  
+- Egy mappával, amely tartalmazza a archiválni kívánt fájlokat. Cserélje le a kódban a `"Your Document Directory"` szöveget a fájlok tényleges elérési útjára.  
 
--  Az Ön dokumentumkönyvtára: Cserélje ki`"Your Document Directory"` kódrészletben a dokumentumkönyvtár tényleges elérési útjával.
+## Névtér importálása
 
-## Névterek importálása
-
-A .NET-alkalmazásban kezdje a szükséges névterek importálásával. Ez lehetővé teszi az Aspose.Zip által biztosított funkciók elérését. Íme egy példa:
+A .NET projektjében importálja a szükséges névtereket, hogy használhassa az Aspose.Zip API-t:
 
 ```csharp
 using Aspose.Zip;
@@ -36,26 +53,28 @@ using Aspose.Zip.Saving;
 using System.IO;
 ```
 
-## 1. lépés: Állítsa be a Zip fájlt
+## Hogyan állítsuk be a ZIP jelszót és adjunk hozzá több fájlt a ZIP-hez
 
- Hozzon létre egy új zip fájlt a`Archive` osztály. Ebben a lépésben meg kell adnia a hagyományos titkosítási beállításokat is, amely jelszót biztosít a nagyobb biztonság érdekében.
+### 1. lépés: A ZIP fájl beállítása és a jelszó meghatározása  
+
+Először létrehozunk egy új archívumot, és a `TraditionalEncryptionSettings` segítségével konfiguráljuk a **zip jelszó beállítását**. Ez a lépés biztosítja, hogy minden hozzáadott bejegyzés ugyanazzal a jelszóval legyen titkosítva.
 
 ```csharp
 //ExStart: CompressMultipleFilesWithTraditionalEncryption
 using (FileStream zipFile = File.Open(".\\CompressMultipleFilesWithTraditionalEncryption_out.zip", FileMode.Create))
 {
-    // Archívum létrehozása hagyományos titkosítási beállításokkal
+    // Create archive with traditional encryption settings (password = "p@s$")
     using (var archive = new Archive(new ArchiveEntrySettings(null, new TraditionalEncryptionSettings("p@s$"))))
     {
-        // Folytassa a következő lépéssel...
+        // Continue to the next step...
     }
 }
 //ExEnd: CompressMultipleFilesWithTraditionalEncryption
 ```
 
-## 2. lépés: Fájlok hozzáadása az archívumhoz
+### 2. lépés: Több fájl hozzáadása az archívumhoz  
 
-Most adja hozzá a tömöríteni kívánt fájlokat az archívumhoz. Ebben a példában három fájlt adunk hozzá: „alice29.txt”, „asyoulik.txt” és „fields.c”.
+Most **több fájlt adunk hozzá a zip-hez**. Ebben a példában három mintaszövegfájlt adunk hozzá, de bármilyen fájltípus használható.
 
 ```csharp
 archive.CreateEntry("alice29.txt", source1);
@@ -63,43 +82,46 @@ archive.CreateEntry("asyoulik.txt", source2);
 archive.CreateEntry("fields.c", source3);
 ```
 
-## 3. lépés: Mentse el a ZIP-fájlt
+### 3. lépés: A ZIP fájl mentése  
 
-Mentse el a zip fájlt a hozzáadott bejegyzésekkel. Ez a lépés lezárja a tömörítési folyamatot.
+Végül az archívumot lemezre mentjük. Ezzel befejeződik a **jelszóval védett zip létrehozása** művelet.
 
 ```csharp
 archive.Save(zipFile);
 ```
 
-Gratulálunk! Sikeresen tömörített több fájlt hagyományos titkosítással az Aspose.Zip for .NET használatával.
+Gratulálunk! Sikeresen **jelszóval védett zip-et hozott létre** és **titkosított fájlok tömörítését** végezte el az Aspose.Zip for .NET segítségével.
 
-## Következtetés
+## Gyakori problémák és megoldások
 
-Ebben az oktatóanyagban megvizsgáltuk, hogyan lehet kihasználni az Aspose.Zip for .NET-et több fájl hagyományos titkosítással történő tömörítésére. Ez a folyamat biztosítja az adatok biztonságát, miközben hatékonyan kezeli a .NET-alkalmazások zip-archívumát.
+| Probléma | Miért fordul elő | Megoldás |
+|----------|------------------|----------|
+| **Jelszó nem alkalmazva** | A titkosítási beállítások kimaradtak az `Archive` létrehozásakor | Győződjön meg róla, hogy a `new TraditionalEncryptionSettings("yourPassword")` át van adva az `ArchiveEntrySettings`-nek. |
+| **Fájl nem található** | `source1`, `source2`, `source3` helytelen útvonalakra mutat | Használja a `File.ReadAllBytes(Path.Combine(yourFolder, "filename"))` metódust az adatok betöltéséhez. |
+| **Kompatibilitás a kicsomagoló eszközökkel** | Néhány modern eszköz AES titkosítást vár | A hagyományos titkosítás széles körben támogatott; ha AES-re van szüksége, használja a `AesEncryptionSettings`-t. |
+
+## Gyakran ismételt kérdések
+
+**K: Használhatom az Aspose.Zip for .NET-et Linuxon?**  
+V: Igen, az Aspose.Zip for .NET teljesen platformfüggetlen, és mind Windows, mind Linux környezetben működik.
+
+**K: Elérhető ingyenes próba?**  
+V: Igen, felfedezheti az Aspose.Zip for .NET ingyenes próbaverzióját [itt](https://releases.aspose.com/).
+
+**K: Hogyan kaphatok támogatást, ha problémáim vannak?**  
+V: Látogassa meg az [Aspose.Zip fórumot](https://forum.aspose.com/c/zip/37) a közösségi segítségért és a hivatalos támogatási lehetőségekért.
+
+**K: Az ideiglenes licencek használhatók értékeléshez?**  
+V: Teljesen – ideiglenes licencet szerezhet [itt](https://purchase.aspose.com/temporary-license/).
+
+**K: Hol találom a teljes API referenciát?**  
+V: Részletes dokumentáció elérhető [itt](https://reference.aspose.com/zip/net/).
 
 ---
 
-## GYIK
-
-### 1. Használhatom az Aspose.Zip for .NET fájlt Windows és Linux környezetben is?
-
-Igen, az Aspose.Zip for .NET Windows és Linux környezetekkel is kompatibilis, rugalmasságot biztosítva a fejlesztők számára.
-
-### 2. Elérhető ingyenes próbaverzió az Aspose.Zip for .NET számára?
-
- Igen, kipróbálhatja az Aspose.Zip .NET-hez ingyenes próbaverzióját[itt](https://releases.aspose.com/).
-
-### 3. Hogyan kaphatok támogatást az Aspose.Zip for .NET számára?
-
- Bármilyen támogatással vagy kérdéssel kapcsolatban keresse fel a[Aspose.Zip fórum](https://forum.aspose.com/c/zip/37).
-
-### 4. Rendelkezésre állnak-e ideiglenes licencek az Aspose.Zip for .NET számára?
-
- Igen, ideiglenes engedélyek szerezhetők be[itt](https://purchase.aspose.com/temporary-license/).
-
-### 5. Hol találom az Aspose.Zip for .NET részletes dokumentációját?
-
-Lásd a dokumentációt[itt](https://reference.aspose.com/zip/net/) mélyreható tájékoztatásért.
+**Last Updated:** 2026-03-05  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
