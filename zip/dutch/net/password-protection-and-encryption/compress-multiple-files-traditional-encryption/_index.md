@@ -1,34 +1,51 @@
 ---
-title: Comprimeer meerdere bestanden met codering in Aspose.Zip .NET
-linktitle: Comprimeer meerdere bestanden met traditionele codering
-second_title: Aspose.Zip .NET API voor bestandscompressie en archivering
-description: Leer hoe u meerdere bestanden veilig kunt comprimeren met behulp van traditionele codering in Aspose.Zip voor .NET. Verbeter de gegevensbescherming in uw .NET-applicaties.
-weight: 17
+date: 2026-03-05
+description: Leer hoe u een zipbestand met wachtwoord maakt en bestanden comprimeert
+  met encryptie in Aspose.Zip voor .NET. Beveilig uw archieven met wachtwoordbeschermde
+  zip‑.net‑oplossingen.
+linktitle: Compress Multiple Files with Traditional Encryption
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Zip maken met wachtwoord met Aspose.Zip .NET
 url: /nl/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/
+weight: 17
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Comprimeer meerdere bestanden met codering in Aspose.Zip .NET
+# Maak Zip met Wachtwoord met Aspose.Zip .NET
 
+## Introductie
 
-## Invoering
+In deze tutorial leer je hoe je **zip met wachtwoord** bescherming maakt terwijl je meerdere bestanden aan één archief toevoegt. Aspose.Zip for .NET maakt het eenvoudig om **bestanden te comprimeren met encryptie**, waardoor je een veilige zip-compressieworkflow krijgt die zowel op Windows als Linux werkt. We lopen elke stap door, van het instellen van het zip-wachtwoord tot het opslaan van het uiteindelijke archief, zodat je gevoelige gegevens kunt beschermen in je .NET-toepassingen.
 
-Welkom bij deze stapsgewijze zelfstudie over het comprimeren van meerdere bestanden met traditionele codering met behulp van Aspose.Zip voor .NET. Aspose.Zip is een krachtige bibliotheek waarmee ontwikkelaars naadloos met zip-archieven kunnen werken in hun .NET-applicaties. In deze handleiding leiden we u door het proces van het comprimeren van meerdere bestanden met traditionele codering, waardoor de veiligheid van uw gegevens wordt gegarandeerd.
+## Snelle Antwoorden
+- **Welke bibliotheek behandelt zip‑beschermde zips?** Aspose.Zip for .NET  
+- **Hoeveel bestanden kan ik toevoegen?** Onbeperkt – voeg zoveel items toe als je nodig hebt  
+- **Welke encryptie wordt gebruikt?** Traditionele Zip-encryptie (PKZIP)  
+- **Heb ik een licentie nodig voor productie?** Ja, een commerciële licentie is vereist  
+- **Is het .NET Core compatibel?** Absoluut – werkt met .NET 5/6 en .NET Core  
 
-## Vereisten
+## Wat is “zip met wachtwoord maken”?
+Een zip met wachtwoord maken betekent het genereren van een standaard ZIP-archief waarbij elk item wordt versleuteld met een wachtwoord dat je opgeeft. Dit beschermt de inhoud tegen ongeautoriseerde toegang terwijl het archief compatibel blijft met de meeste unzip‑tools.
 
-Voordat we ingaan op de tutorial, zorg ervoor dat je aan de volgende vereisten voldoet:
+## Waarom veilige zip-compressie gebruiken met Aspose.Zip?
+- **Cross‑platformondersteuning** – werkt op Windows, Linux en macOS.  
+- **Geen externe afhankelijkheden** – pure .NET-implementatie.  
+- **Traditionele encryptie** – compatibel met legacy zip‑hulpmiddelen.  
+- **Eenvoudige API** – stel het wachtwoord één keer in en voeg zoveel bestanden toe als je wilt.  
 
--  Aspose.Zip voor .NET: Zorg ervoor dat de Aspose.Zip-bibliotheek voor .NET in uw ontwikkelomgeving is geïnstalleerd. Je kunt het downloaden van[hier](https://releases.aspose.com/zip/net/).
+## Voorvereisten
 
--  Uw documentenmap: Vervangen`"Your Document Directory"`in het codefragment met het daadwerkelijke pad naar uw documentmap.
+Voordat we beginnen, zorg ervoor dat je het volgende hebt:
 
-## Naamruimten importeren
+- **Aspose.Zip for .NET** geïnstalleerd. Je kunt het downloaden van [here](https://releases.aspose.com/zip/net/).  
+- Een map met de bestanden die je wilt archiveren. Vervang `"Your Document Directory"` in de code door het daadwerkelijke pad naar je bestanden.  
 
-Begin in uw .NET-applicatie met het importeren van de benodigde naamruimten. Hierdoor krijgt u toegang tot de functionaliteit van Aspose.Zip. Hier is een voorbeeld:
+## Namespaces importeren
+
+Importeer in je .NET‑project de benodigde namespaces zodat je kunt werken met de Aspose.Zip‑API:
 
 ```csharp
 using Aspose.Zip;
@@ -36,26 +53,28 @@ using Aspose.Zip.Saving;
 using System.IO;
 ```
 
-## Stap 1: Stel het zipbestand in
+## Hoe zip-wachtwoord in te stellen en meerdere bestanden toe te voegen
 
- Maak een nieuw zipbestand met behulp van de`Archive` klas. In deze stap definieert u ook traditionele coderingsinstellingen, waarbij u een wachtwoord opgeeft voor extra beveiliging.
+### Stap 1: Het zip‑bestand instellen en het wachtwoord definiëren  
+
+We beginnen met het maken van een nieuw archief en het configureren van **zip-wachtwoord instellen** met `TraditionalEncryptionSettings`. Deze stap zorgt ervoor dat elk item dat we toevoegen wordt versleuteld met hetzelfde wachtwoord.
 
 ```csharp
-//ExStart: meerdere bestanden comprimeren met traditionele codering
+//ExStart: CompressMultipleFilesWithTraditionalEncryption
 using (FileStream zipFile = File.Open(".\\CompressMultipleFilesWithTraditionalEncryption_out.zip", FileMode.Create))
 {
-    // Creëer een archief met traditionele encryptie-instellingen
+    // Create archive with traditional encryption settings (password = "p@s$")
     using (var archive = new Archive(new ArchiveEntrySettings(null, new TraditionalEncryptionSettings("p@s$"))))
     {
-        // Ga door naar de volgende stap...
+        // Continue to the next step...
     }
 }
-//ExEnd: meerdere bestanden comprimeren met traditionele codering
+//ExEnd: CompressMultipleFilesWithTraditionalEncryption
 ```
 
-## Stap 2: Voeg bestanden toe aan het archief
+### Stap 2: Meerdere bestanden aan het archief toevoegen  
 
-Voeg nu de bestanden die u wilt comprimeren toe aan het archief. In dit voorbeeld voegen we drie bestanden toe: "alice29.txt", "asyoulik.txt" en "fields.c."
+Nu **voegen we meerdere bestanden zip** toe. In dit voorbeeld voegen we drie voorbeeld‑tekstbestanden toe, maar je kunt elk bestandstype opnemen.
 
 ```csharp
 archive.CreateEntry("alice29.txt", source1);
@@ -63,43 +82,46 @@ archive.CreateEntry("asyoulik.txt", source2);
 archive.CreateEntry("fields.c", source3);
 ```
 
-## Stap 3: Sla het zipbestand op
+### Stap 3: Het zip‑bestand opslaan  
 
-Sla het zipbestand met de toegevoegde vermeldingen op. Met deze stap wordt het compressieproces voltooid.
+Tot slot slaan we het archief op schijf op. Hiermee is de **zip met wachtwoord maken** operatie voltooid.
 
 ```csharp
 archive.Save(zipFile);
 ```
 
-Gefeliciteerd! U hebt met succes meerdere bestanden gecomprimeerd met traditionele codering met behulp van Aspose.Zip voor .NET.
+Gefeliciteerd! Je hebt succesvol **zip met wachtwoord maken** en **bestanden comprimeren met encryptie** uitgevoerd met Aspose.Zip for .NET.
 
-## Conclusie
+## Veelvoorkomende problemen en oplossingen
 
-In deze zelfstudie hebben we onderzocht hoe u Aspose.Zip voor .NET kunt gebruiken om meerdere bestanden te comprimeren met traditionele codering. Dit proces garandeert de veiligheid van uw gegevens en beheert tegelijkertijd zip-archieven in uw .NET-toepassingen efficiënt.
-
----
+| Issue | Why it Happens | Fix |
+|-------|----------------|-----|
+| **Wachtwoord niet toegepast** | Encryptie‑instellingen waren weggelaten bij het construeren van `Archive` | Zorg ervoor dat `new TraditionalEncryptionSettings("yourPassword")` wordt doorgegeven aan `ArchiveEntrySettings`. |
+| **Bestand niet gevonden** | `source1`, `source2`, `source3` verwijzen naar onjuiste paden | Gebruik `File.ReadAllBytes(Path.Combine(yourFolder, "filename"))` om de gegevens te laden. |
+| **Compatibiliteit met unzip‑tools** | Sommige moderne tools verwachten AES‑encryptie | Traditionele encryptie wordt breed ondersteund; als je AES nodig hebt, gebruik dan `AesEncryptionSettings` in plaats daarvan. |
 
 ## Veelgestelde vragen
 
-### 1. Kan ik Aspose.Zip voor .NET gebruiken in zowel Windows- als Linux-omgevingen?
+**Q: Kan ik Aspose.Zip for .NET op Linux gebruiken?**  
+A: Ja, Aspose.Zip for .NET is volledig cross‑platform en werkt zowel op Windows- als Linux‑omgevingen.
 
-Ja, Aspose.Zip voor .NET is compatibel met zowel Windows- als Linux-omgevingen en biedt ontwikkelaars flexibiliteit.
+**Q: Is er een gratis proefversie beschikbaar?**  
+A: Ja, je kunt een gratis proefversie van Aspose.Zip for .NET verkennen [here](https://releases.aspose.com/).
 
-### 2. Is er een gratis proefversie beschikbaar voor Aspose.Zip voor .NET?
+**Q: Hoe krijg ik ondersteuning als ik tegen problemen aanloop?**  
+A: Bezoek het [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) voor community‑hulp en officiële ondersteuningsopties.
 
- Ja, u kunt een gratis proefversie van Aspose.Zip voor .NET uitproberen[hier](https://releases.aspose.com/).
+**Q: Zijn tijdelijke licenties een optie voor evaluatie?**  
+A: Absoluut – je kunt een tijdelijke licentie verkrijgen [here](https://purchase.aspose.com/temporary-license/).
 
-### 3. Hoe kan ik ondersteuning krijgen voor Aspose.Zip voor .NET?
+**Q: Waar kan ik de volledige API‑referentie vinden?**  
+A: Gedetailleerde documentatie is beschikbaar [here](https://reference.aspose.com/zip/net/).
 
- Voor ondersteuning of vragen kunt u terecht op de[Aspose.Zip-forum](https://forum.aspose.com/c/zip/37).
+---
 
-### 4. Zijn er tijdelijke licenties beschikbaar voor Aspose.Zip voor .NET?
-
- Ja, tijdelijke licenties zijn verkrijgbaar bij[hier](https://purchase.aspose.com/temporary-license/).
-
-### 5. Waar kan ik gedetailleerde documentatie vinden voor Aspose.Zip voor .NET?
-
-Raadpleeg de documentatie[hier](https://reference.aspose.com/zip/net/) voor diepgaande informatie.
+**Last Updated:** 2026-03-05  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

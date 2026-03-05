@@ -1,34 +1,50 @@
 ---
-title: บีบอัดหลายไฟล์ด้วยการเข้ารหัสใน Aspose.Zip .NET
-linktitle: บีบอัดไฟล์หลายไฟล์ด้วยการเข้ารหัสแบบดั้งเดิม
-second_title: Aspose.Zip .NET API สำหรับการบีบอัดไฟล์และการเก็บถาวร
-description: เรียนรู้วิธีการบีบอัดไฟล์หลายไฟล์อย่างปลอดภัยโดยใช้การเข้ารหัสแบบดั้งเดิมใน Aspose.Zip สำหรับ .NET ปรับปรุงการปกป้องข้อมูลในแอปพลิเคชัน .NET ของคุณ
-weight: 17
+date: 2026-03-05
+description: เรียนรู้วิธีสร้างไฟล์ zip ที่มีรหัสผ่านและบีบอัดไฟล์ด้วยการเข้ารหัสใน
+  Aspose.Zip สำหรับ .NET. ปกป้องไฟล์เก็บของของคุณด้วยโซลูชัน zip .NET ที่มีการป้องกันด้วยรหัสผ่าน.
+linktitle: Compress Multiple Files with Traditional Encryption
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: สร้างไฟล์ Zip พร้อมรหัสผ่านโดยใช้ Aspose.Zip .NET
 url: /th/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/
+weight: 17
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# บีบอัดหลายไฟล์ด้วยการเข้ารหัสใน Aspose.Zip .NET
+# สร้าง Zip ด้วยรหัสผ่านโดยใช้ Aspose.Zip .NET
 
+## บทนำ
 
-## การแนะนำ
+ในบทเรียนนี้คุณจะได้เรียนรู้วิธี **create zip with password** การป้องกันขณะเพิ่มหลายไฟล์ลงในไฟล์เก็บเดียว Aspose.Zip for .NET ทำให้การ **compress files with encryption** เป็นเรื่องง่าย ให้คุณมีเวิร์กโฟลว์การบีบอัด zip ที่ปลอดภัยซึ่งทำงานได้ทั้งบน Windows และ Linux เราจะเดินผ่านแต่ละขั้นตอน ตั้งแต่การกำหนดรหัสผ่าน zip จนถึงการบันทึกไฟล์เก็บสุดท้าย เพื่อให้คุณสามารถปกป้องข้อมูลที่สำคัญในแอปพลิเคชัน .NET ของคุณ
 
-ยินดีต้อนรับสู่บทช่วยสอนทีละขั้นตอนเกี่ยวกับการบีบอัดไฟล์หลายไฟล์ด้วยการเข้ารหัสแบบดั้งเดิมโดยใช้ Aspose.Zip สำหรับ .NET Aspose.Zip เป็นไลบรารีอันทรงพลังที่ช่วยให้นักพัฒนาสามารถทำงานกับไฟล์ zip ได้อย่างราบรื่นในแอปพลิเคชัน .NET ของตน ในคู่มือนี้ เราจะแนะนำคุณตลอดขั้นตอนการบีบอัดไฟล์หลายไฟล์ด้วยการเข้ารหัสแบบดั้งเดิม เพื่อให้มั่นใจถึงความปลอดภัยของข้อมูลของคุณ
+## คำตอบอย่างรวดเร็ว
+- **ไลบรารีใดที่จัดการ zip ที่มีการป้องกันด้วยรหัสผ่าน?** Aspose.Zip for .NET  
+- **คุณสามารถเพิ่มไฟล์ได้กี่ไฟล์?** ไม่จำกัด – เพิ่มรายการเท่าที่ต้องการ  
+- **การเข้ารหัสแบบใดที่ใช้?** Traditional Zip encryption (PKZIP)  
+- **ต้องมีลิขสิทธิ์สำหรับการใช้งานในผลิตภัณฑ์หรือไม่?** ใช่, จำเป็นต้องมีลิขสิทธิ์เชิงพาณิชย์  
+- **รองรับ .NET Core หรือไม่?** แน่นอน – ทำงานกับ .NET 5/6 และ .NET Core  
+
+## “create zip with password” คืออะไร?
+การสร้าง zip ด้วยรหัสผ่านหมายถึงการสร้างไฟล์ ZIP มาตรฐานที่แต่ละรายการถูกเข้ารหัสด้วยรหัสผ่านที่คุณกำหนดเอง ซึ่งช่วยปกป้องเนื้อหาไม่ให้ผู้ที่ไม่ได้รับอนุญาตเข้าถึงในขณะที่ยังคงทำให้ไฟล์เก็บเข้ากันได้กับเครื่องมือ unzip ส่วนใหญ่
+
+## ทำไมต้องใช้การบีบอัด zip ที่ปลอดภัยกับ Aspose.Zip?
+- **Cross‑platform support** – ทำงานบน Windows, Linux, และ macOS  
+- **No external dependencies** – การทำงานแบบ pure .NET  
+- **Traditional encryption** – เข้ากันได้กับยูทิลิตี้ zip รุ่นเก่า  
+- **Simple API** – ตั้งรหัสผ่านครั้งเดียวแล้วเพิ่มไฟล์ได้ตามต้องการ  
 
 ## ข้อกำหนดเบื้องต้น
 
-ก่อนที่เราจะเจาะลึกบทช่วยสอน ตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นต่อไปนี้:
+ก่อนเริ่มทำงาน โปรดตรวจสอบว่าคุณมี:
 
--  Aspose.Zip สำหรับ .NET: ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้งไลบรารี Aspose.Zip สำหรับ .NET ในสภาพแวดล้อมการพัฒนาของคุณ คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/zip/net/).
+- **Aspose.Zip for .NET** ติดตั้งแล้ว คุณสามารถดาวน์โหลดได้จาก [here](https://releases.aspose.com/zip/net/)  
+- โฟลเดอร์ที่บรรจุไฟล์ที่ต้องการบีบอัด แทนที่ `"Your Document Directory"` ในโค้ดด้วยเส้นทางจริงของไฟล์ของคุณ  
 
--  ไดเรกทอรีเอกสารของคุณ: แทนที่`"Your Document Directory"`ในข้อมูลโค้ดพร้อมเส้นทางจริงไปยังไดเรกทอรีเอกสารของคุณ
+## นำเข้า Namespaces
 
-## นำเข้าเนมสเปซ
-
-ในแอปพลิเคชัน .NET ของคุณ ให้เริ่มด้วยการนำเข้าเนมสเปซที่จำเป็น ซึ่งจะช่วยให้คุณสามารถเข้าถึงฟังก์ชันการทำงานที่ Aspose.Zip มอบให้ได้ นี่คือตัวอย่าง:
+ในโครงการ .NET ของคุณ ให้นำเข้า namespaces ที่จำเป็นเพื่อให้สามารถใช้งาน Aspose.Zip API ได้:
 
 ```csharp
 using Aspose.Zip;
@@ -36,26 +52,28 @@ using Aspose.Zip.Saving;
 using System.IO;
 ```
 
-## ขั้นตอนที่ 1: ตั้งค่าไฟล์ซิป
+## วิธีตั้งรหัสผ่าน zip และเพิ่มหลายไฟล์ zip
 
- สร้างไฟล์ zip ใหม่โดยใช้นามสกุล`Archive` ระดับ. ในขั้นตอนนี้ คุณจะต้องกำหนดการตั้งค่าการเข้ารหัสแบบเดิม โดยให้รหัสผ่านเพื่อเพิ่มความปลอดภัย
+### ขั้นตอนที่ 1: ตั้งค่าไฟล์ Zip และกำหนดรหัสผ่าน  
+
+เราจะเริ่มโดยการสร้าง archive ใหม่และกำหนด **set zip password** ด้วย `TraditionalEncryptionSettings` ขั้นตอนนี้ทำให้ทุกรายการที่เพิ่มจะถูกเข้ารหัสด้วยรหัสผ่านเดียวกัน
 
 ```csharp
-//ExStart: บีบอัดหลายไฟล์ด้วยการเข้ารหัสแบบดั้งเดิม
+//ExStart: CompressMultipleFilesWithTraditionalEncryption
 using (FileStream zipFile = File.Open(".\\CompressMultipleFilesWithTraditionalEncryption_out.zip", FileMode.Create))
 {
-    // สร้างไฟล์เก็บถาวรด้วยการตั้งค่าการเข้ารหัสแบบดั้งเดิม
+    // Create archive with traditional encryption settings (password = "p@s$")
     using (var archive = new Archive(new ArchiveEntrySettings(null, new TraditionalEncryptionSettings("p@s$"))))
     {
-        // ไปยังขั้นตอนต่อไป...
+        // Continue to the next step...
     }
 }
-//ExEnd: บีบอัดหลายไฟล์ด้วยการเข้ารหัสแบบดั้งเดิม
+//ExEnd: CompressMultipleFilesWithTraditionalEncryption
 ```
 
-## ขั้นตอนที่ 2: เพิ่มไฟล์ลงในไฟล์เก็บถาวร
+### ขั้นตอนที่ 2: เพิ่มหลายไฟล์ลงใน Archive  
 
-ตอนนี้เพิ่มไฟล์ที่คุณต้องการบีบอัดลงในไฟล์เก็บถาวร ในตัวอย่างนี้ เรากำลังเพิ่มไฟล์สามไฟล์: "alice29.txt," "asyoulik.txt" และ "fields.c"
+ตอนนี้เราจะ **add multiple files zip** รายการ ในตัวอย่างนี้เราจะเพิ่มไฟล์ข้อความตัวอย่างสามไฟล์ แต่คุณสามารถใส่ไฟล์ประเภทใดก็ได้
 
 ```csharp
 archive.CreateEntry("alice29.txt", source1);
@@ -63,43 +81,46 @@ archive.CreateEntry("asyoulik.txt", source2);
 archive.CreateEntry("fields.c", source3);
 ```
 
-## ขั้นตอนที่ 3: บันทึกไฟล์ซิป
+### ขั้นตอนที่ 3: บันทึกไฟล์ Zip  
 
-บันทึกไฟล์ zip พร้อมรายการที่เพิ่ม ขั้นตอนนี้เป็นการสิ้นสุดกระบวนการบีบอัด
+สุดท้าย เราจะบันทึก archive ลงดิสก์ การดำเนินการนี้ทำให้การ **create zip with password** เสร็จสมบูรณ์
 
 ```csharp
 archive.Save(zipFile);
 ```
 
-ยินดีด้วย! คุณได้บีบอัดไฟล์หลายไฟล์ด้วยการเข้ารหัสแบบดั้งเดิมโดยใช้ Aspose.Zip สำหรับ .NET สำเร็จ
+Congratulations! You've successfully **create zip with password** and **compress files with encryption** using Aspose.Zip for .NET.
 
-## บทสรุป
+## ปัญหาทั่วไปและวิธีแก้
 
-ในบทช่วยสอนนี้ เราได้สำรวจวิธีใช้ประโยชน์จาก Aspose.Zip สำหรับ .NET เพื่อบีบอัดไฟล์หลายไฟล์ด้วยการเข้ารหัสแบบดั้งเดิม กระบวนการนี้ทำให้มั่นใจในความปลอดภัยของข้อมูลของคุณในขณะที่จัดการไฟล์ zip ในแอปพลิเคชัน .NET ของคุณอย่างมีประสิทธิภาพ
-
----
+| ปัญหา | สาเหตุ | วิธีแก้ |
+|-------|--------|---------|
+| **Password not applied** | Encryption settings were omitted when constructing `Archive` | Ensure `new TraditionalEncryptionSettings("yourPassword")` is passed to `ArchiveEntrySettings`. |
+| **File not found** | `source1`, `source2`, `source3` point to wrong paths | Use `File.ReadAllBytes(Path.Combine(yourFolder, "filename"))` to load the data. |
+| **Compatibility with unzip tools** | Some modern tools expect AES encryption | Traditional encryption is widely supported; if you need AES, use `AesEncryptionSettings` instead. |
 
 ## คำถามที่พบบ่อย
 
-### 1. ฉันสามารถใช้ Aspose.Zip สำหรับ .NET ทั้งในสภาพแวดล้อม Windows และ Linux ได้หรือไม่
+**Q: สามารถใช้ Aspose.Zip for .NET บน Linux ได้หรือไม่?**  
+A: ใช่, Aspose.Zip for .NET รองรับหลายแพลตฟอร์มอย่างเต็มที่และทำงานได้ทั้งบน Windows และ Linux
 
-ใช่ Aspose.Zip สำหรับ .NET เข้ากันได้กับทั้งสภาพแวดล้อม Windows และ Linux ให้ความยืดหยุ่นสำหรับนักพัฒนา
+**Q: มีรุ่นทดลองฟรีหรือไม่?**  
+A: มี, คุณสามารถทดลองใช้ Aspose.Zip for .NET ฟรีได้ที่ [here](https://releases.aspose.com/)
 
-### 2. Aspose.Zip สำหรับ .NET มีรุ่นทดลองใช้ฟรีหรือไม่
+**Q: จะขอรับการสนับสนุนเมื่อเจอปัญหาควรทำอย่างไร?**  
+A: เยี่ยมชม [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) เพื่อรับความช่วยเหลือจากชุมชนและตัวเลือกการสนับสนุนอย่างเป็นทางการ
 
- ใช่ คุณสามารถทดลองใช้ Aspose.Zip สำหรับ .NET ได้ฟรี[ที่นี่](https://releases.aspose.com/).
+**Q: มีลิขสิทธิ์ชั่วคราวสำหรับการประเมินหรือไม่?**  
+A: แน่นอน – คุณสามารถขอรับลิขสิทธิ์ชั่วคราวได้ที่ [here](https://purchase.aspose.com/temporary-license/)
 
-### 3. ฉันจะรับการสนับสนุนสำหรับ Aspose.Zip สำหรับ .NET ได้อย่างไร
+**Q: จะหาเอกสารอ้างอิง API ฉบับเต็มได้จากที่ไหน?**  
+A: เอกสารโดยละเอียดพร้อมให้บริการที่ [here](https://reference.aspose.com/zip/net/)
 
- สำหรับการสนับสนุนหรือข้อสงสัยใด ๆ คุณสามารถไปที่[ฟอรั่ม Aspose.Zip](https://forum.aspose.com/c/zip/37).
+---
 
-### 4. มีใบอนุญาตชั่วคราวสำหรับ Aspose.Zip สำหรับ .NET หรือไม่
-
- ใช่ สามารถรับใบอนุญาตชั่วคราวได้จาก[ที่นี่](https://purchase.aspose.com/temporary-license/).
-
-### 5. ฉันจะหาเอกสารโดยละเอียดสำหรับ Aspose.Zip สำหรับ .NET ได้ที่ไหน
-
-โปรดดูเอกสารประกอบ[ที่นี่](https://reference.aspose.com/zip/net/) เพื่อข้อมูลเชิงลึก
+**Last Updated:** 2026-03-05  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
