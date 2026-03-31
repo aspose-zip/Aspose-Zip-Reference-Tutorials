@@ -1,4 +1,4 @@
----
+﻿---
 title: How to Compress Files to TarBz2 and Explore Archive Formats with Aspose.Zip for .NET
 linktitle: Archive Extraction and Formats
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -35,7 +35,7 @@ Compressing files to TarBz2 means first bundling multiple files and directories 
 - **Performance‑focused** – Stream‑based processing minimizes memory footprint.
 
 ## Prerequisites
-- .NET 6.0 or later (or .NET Core 3.1+ / .NET Framework 4.5+).  
+- .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10.  
 - Aspose.Zip for .NET NuGet package installed (`Install-Package Aspose.Zip`).  
 - Basic understanding of C# and file I/O.
 

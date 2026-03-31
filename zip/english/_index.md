@@ -20,7 +20,7 @@ Welcome to the world of **Aspose.Zip**, where extracting zip files meets high‑
 - **What is the primary purpose of Aspose.Zip?** To create, compress, and extract zip archives efficiently in .NET.  
 - **Can Aspose.Zip extract zip files with a password?** Yes—support for password‑protected zip extraction is built‑in.  
 - **Is it possible to encrypt a zip archive while extracting?** You can decrypt encrypted archives during extraction and re‑encrypt them if required.  
-- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7+.  
+- **Which .NET versions are supported?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10.
 - **Do I need a license for production use?** A commercial license is required for production deployments; a free trial is available.
 
 ## What is “extract zip files”?

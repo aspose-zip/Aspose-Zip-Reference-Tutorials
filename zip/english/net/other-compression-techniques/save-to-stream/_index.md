@@ -1,4 +1,4 @@
----
+﻿---
 title: "zip file to stream c# using Aspose.Zip for .NET"
 linktitle: Saving to Stream 
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -22,7 +22,7 @@ Welcome! In this comprehensive tutorial you'll discover **how to zip file to str
 - **What does “zip file to stream c#” mean?** It means compressing data with the ZIP format and writing the result into a .NET `Stream` object instead of a physical file.  
 - **Which library handles this best?** Aspose.Zip for .NET provides a clean API for in‑memory compression.  
 - **Do I need a license for production?** Yes, a valid Aspose.Zip license is required for commercial use.  
-- **Supported .NET versions?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
+- **Supported .NET versions?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10  
 - **Typical use case?** Sending a zip archive as an HTTP response without touching the file system.
 
 ## Prerequisites

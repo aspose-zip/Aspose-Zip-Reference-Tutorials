@@ -1,4 +1,4 @@
----
+﻿---
 title: How to compress tar.lz with Aspose.Zip for .NET
 linktitle: Compressing to TarLz 
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -20,7 +20,7 @@ In modern .NET development, efficiently packaging files can dramatically improve
 - **What library should I use?** Aspose.Zip for .NET.
 - **How long does the implementation take?** About 5‑10 minutes for a basic example.
 - **Do I need a license?** A free trial works for testing; a commercial license is required for production.
-- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+- **Which .NET versions are supported?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10
 - **Can I compress multiple files at once?** Yes – just add more entries before saving.
 
 ## What is tar.lz compression?

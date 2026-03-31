@@ -1,4 +1,4 @@
----
+﻿---
 title: How to Add File to Zip Using Aspose.Zip for .NET
 linktitle: Compressing a Single File
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -22,7 +22,7 @@ In modern .NET development, **adding a file to zip** archives efficiently can dr
 - **What library should I use?** Aspose.Zip for .NET
 - **Can I add a file to zip with a single line of code?** Yes – `archive.CreateEntry(...)` does the heavy lifting
 - **Do I need a license for development?** A free trial works for testing; a license is required for production
-- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7
+- **Which .NET versions are supported?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10
 - **Is it safe for large files?** Yes, the library streams data, so memory usage stays low
 
 ## What is “add file to zip” in Aspose.Zip?
