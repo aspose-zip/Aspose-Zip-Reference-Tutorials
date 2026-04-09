@@ -2,10 +2,15 @@
 title: How to Zip Folder – Compress Directory with Aspose.Zip
 linktitle: Decompressing a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-description: Learn how to zip folder in .NET by compressing a directory to zip and extracting it back. This guide shows how to zip folder using Aspose.Zip for .NET.
+description: Learn how to compress directory to zip and extract zip to directory using Aspose.Zip for .NET. This guide covers zip folder programmatically and handling zip archives in .NET.
 weight: 11
 url: /net/directory-and-folder-compression/decompress-folder/
-date: 2026-02-07
+date: 2026-04-09
+keywords:
+- compress directory to zip
+- zip folder programmatically
+- extract zip to directory
+- extract zip archive .net
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -14,7 +19,7 @@ date: 2026-02-07
 
 # How to Zip Folder – Compress Directory with Aspose.Zip for .NET
 
-If you’re looking for a clear, **how to zip folder** solution in a .NET application, you’ve landed in the right spot. In this tutorial we’ll walk through the entire workflow—first we’ll **compress directory to zip**, then we’ll show you the exact steps to **extract zip to directory** (a.k.a. how to unzip folder). By the end you’ll have a reusable, programmatic pattern for zip folder operations that works across .NET Framework, .NET Core, and .NET 5/6+.
+If you’re looking for a clear, **compress directory to zip** solution in a .NET application, you’ve landed in the right spot. In this tutorial we’ll walk through the entire workflow—first we’ll **compress directory to zip**, then we’ll show you the exact steps to **extract zip to directory** (a.k.a. how to unzip folder). By the end you’ll have a reusable, programmatic pattern for zip folder operations that works across .NET Framework, .NET Core, and .NET 5/6+.
 
 ## Quick Answers
 - **What does “compress directory to zip” mean?** It means turning the contents of a folder into a single .zip file.  
@@ -23,8 +28,8 @@ If you’re looking for a clear, **how to zip folder** solution in a .NET applic
 - **Is a license required for production?** Yes, a commercial Aspose.Zip license is needed for non‑trial use.  
 - **Can I automate this in CI/CD pipelines?** Absolutely—just add the same code to your build scripts.
 
-## What is “how to zip folder”?
-**How to zip folder** simply means taking every file and sub‑folder inside a directory and packing them into a single compressed archive. This reduces storage size, speeds up transfers, and creates a portable package for deployment.
+## What is “compress directory to zip”?
+**Compress directory to zip** simply means taking every file and sub‑folder inside a directory and packing them into a single compressed archive. This reduces storage size, speeds up transfers, and creates a portable package for deployment.
 
 ## Why use Aspose.Zip for .NET?
 Aspose.Zip provides a **pure‑managed** API that requires no native DLLs, supports massive archives, and handles edge cases like **zip archive password protection** and Unicode file names automatically. It’s also optimized for performance, making it ideal when you need to zip folder programmatically in high‑throughput scenarios.
@@ -42,9 +47,9 @@ using Aspose.Zip;
 using System.IO;
 ```
 
-## Step‑by‑Step Guide
+## compress directory to zip – Step‑by‑step guide
 
-### Step 1: Compress Directory to Zip (zip folder programmatically)
+### Step 1: Zip folder programmatically
 We’ll create a zip file from the directory you plan to decompress later. The `CompressDirectory.Run()` helper does the heavy lifting.
 
 ```csharp
@@ -54,7 +59,7 @@ CompressDirectory.Run();
 
 > **Pro tip:** The `CompressDirectory` sample packs every file in `dataDir` into `CompressDirectory_out.zip`. Feel free to rename the output file to match your naming conventions.
 
-### Step 2: Decompress the Folder – How to Unzip Folder in .NET
+### Step 2: extract zip to directory – How to unzip folder in .NET
 
 #### Step 2.1: Open the Zip File
 Open the generated archive with a `FileStream`. This prepares the file for reading.
@@ -72,7 +77,7 @@ Instantiate the `Archive` object, which represents the zip container.
     {
 ```
 
-#### Step 2.3: Extract to Directory
+#### Step 2.3: extract zip archive .net
 Finally, extract the contents to a new folder. This is the **extract zip to directory** step.
 
 ```csharp
@@ -117,7 +122,7 @@ A: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for community
 
 ---
 
-**Last Updated:** 2026-02-07  
+**Last Updated:** 2026-04-09  
 **Tested With:** Aspose.Zip 24.11 for .NET  
 **Author:** Aspose  
 
