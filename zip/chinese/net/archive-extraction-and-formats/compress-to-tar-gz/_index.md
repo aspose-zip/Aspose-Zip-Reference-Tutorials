@@ -9,24 +9,6 @@ url: /zh/net/archive-extraction-and-formats/compress-to-tar-gz/
 weight: 12
 ---
 
-Make sure not to translate URLs.
-
-Also keep markdown formatting.
-
-Also note "Ensure proper RTL formatting if needed" but Chinese is LTR, ignore.
-
-Now produce the translated content.
-
-Let's translate:
-
-Title: "Create tar archive and add files to tar with Aspose.Zip for .NET" => "使用 Aspose.Zip for .NET 创建 tar 存档并向 tar 添加文件"
-
-Introduction: translate.
-
-Will keep **text** formatting.
-
-Now produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
@@ -148,15 +130,15 @@ archive.SaveGzipped(dataDir + "archive.tar.gz");
 
 您现在已经掌握了使用 Aspose.Zip for .NET **创建 tar 存档**、向其中 **添加文件** 并压缩为 **tar.gz** 的完整流程。这种方式消除了外部依赖，提供对存档内容的细粒度控制，并能够扩展至大规模数据集。欢迎进一步探索 Aspose.Zip 的其他功能，如加密、自定义条目属性以及流式 API，以进一步提升归档工作流。
 
+---
+
+**最后更新：** 2026-02-20  
+**测试环境：** Aspose.Zip 24.11 for .NET  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最后更新：** 2026-02-20  
-**测试环境：** Aspose.Zip 24.11 for .NET  
-**作者：** Aspose

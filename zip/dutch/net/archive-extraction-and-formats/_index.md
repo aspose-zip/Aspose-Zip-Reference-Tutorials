@@ -108,15 +108,15 @@ Ontdek stap‑voor‑stap compressie naar TarZ met Aspose.Zip voor .NET. Effici�
 ### [Archief‑items extraheren met verschillende wachtwoorden in Aspose.Zip voor .NET](./extract-archive-different-passwords/)
 Leer hoe je archief‑items met verschillende wachtwoorden extraheren in Aspose.Zip voor .NET. Verhoog de beveiliging en flexibiliteit in je applicaties.
 
+---
+
+**Last Updated:** 2026-02-20  
+**Tested With:** Aspose.Zip for .NET 24.11  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-20  
-**Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose

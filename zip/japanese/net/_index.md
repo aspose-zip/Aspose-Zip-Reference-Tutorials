@@ -90,15 +90,15 @@ A: .NET Framework 4.6 以降、.NET Core 3.1 以降、そしてすべての .NET
 
 ---
 
+**最終更新日:** 2026-02-20  
+**テスト環境:** Aspose.Zip for .NET 24.11  
+**作者:** Aspose
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最終更新日:** 2026-02-20  
-**テスト環境:** Aspose.Zip for .NET 24.11  
-**作者:** Aspose

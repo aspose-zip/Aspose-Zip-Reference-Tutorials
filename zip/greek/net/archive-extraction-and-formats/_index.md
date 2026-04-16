@@ -103,15 +103,15 @@ A: Στην πράξη όχι, αλλά εξαιρετικά μεγάλα αρχ
 ### [Συμπίεση σε TarZ με Aspose.Zip για .NET](./compress-to-tar-z/)
 ### [Εξαγωγή Καταχωρήσεων Αρχείου με Διαφορετικούς Κωδικούς στο Aspose.Zip για .NET](./extract-archive-different-passwords/)
 
+---
+
+**Τελευταία Ενημέρωση:** 2026-02-20  
+**Δοκιμάστηκε Με:** Aspose.Zip for .NET 24.11  
+**Συγγραφέας:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Τελευταία Ενημέρωση:** 2026-02-20  
-**Δοκιμάστηκε Με:** Aspose.Zip for .NET 24.11  
-**Συγγραφέας:** Aspose

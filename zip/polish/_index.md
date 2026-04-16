@@ -95,15 +95,15 @@ A: Wymagana jest płatna licencja Aspose.Zip do wdrożeń produkcyjnych; dostęp
 ## Zakończenie
 Masz teraz solidne podstawy do **rozpakowywania plików zip przy użyciu Aspose.Zip** w dowolnym środowisku .NET. Od obsługi archiwów chronionych hasłem po ponowne szyfrowanie danych w locie, Aspose.Zip zapewnia elastyczność i wydajność niezbędną do rzeczywistych zadań zarządzania plikami. Przeglądaj pozostałe samouczki zamieszczone powyżej, aby opanować kompresję, archiwizację katalogów i zaawansowane techniki szyfrowania.
 
+---
+
+**Ostatnia aktualizacja:** 2026-02-20  
+**Testowano z:** Aspose.Zip 24.11 for .NET  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ostatnia aktualizacja:** 2026-02-20  
-**Testowano z:** Aspose.Zip 24.11 for .NET  
-**Autor:** Aspose

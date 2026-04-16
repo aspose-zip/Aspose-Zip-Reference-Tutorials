@@ -102,15 +102,15 @@ A: Praticamente no, ma archivi estremamente grandi possono trarre vantaggio dall
 ### [Compressione in TarZ con Aspose.Zip per .NET](./compress-to-tar-z/)
 ### [Estrazione di voci di archivio con password diverse in Aspose.Zip per .NET](./extract-archive-different-passwords/)
 
+---
+
+**Ultimo aggiornamento:** 2026-02-20  
+**Testato con:** Aspose.Zip per .NET 24.11  
+**Autore:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ultimo aggiornamento:** 2026-02-20  
-**Testato con:** Aspose.Zip per .NET 24.11  
-**Autore:** Aspose

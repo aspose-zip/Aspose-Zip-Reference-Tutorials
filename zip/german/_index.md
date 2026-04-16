@@ -9,14 +9,6 @@ url: /de/
 weight: 11
 ---
 
-Then horizontal line and metadata lines: "Last Updated", "Tested With", "Author". Translate labels? Probably yes, but keep dates unchanged. Keep bold formatting.
-
-Now produce final content.
-
-Be careful with markdown formatting.
-
-Let's craft translation.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
@@ -103,15 +95,15 @@ A: Für Produktions‑Deployments ist eine kostenpflichtige Aspose.Zip‑Lizenz 
 ## Fazit
 Sie verfügen nun über ein solides Fundament, um **extract zip files with Aspose.Zip** in jeder .NET‑Umgebung durchzuführen. Vom Umgang mit passwortgeschützten Archiven bis hin zur on‑the‑fly‑Re‑Encryption bietet Aspose.Zip die Flexibilität und Performance, die Sie für reale Dateiverwaltungsaufgaben benötigen. Erkunden Sie die oben verlinkten Tutorials, um Kompression, Verzeichnisarchivierung und fortgeschrittene Verschlüsselungstechniken zu meistern.
 
+---
+
+**Zuletzt aktualisiert:** 2026-02-20  
+**Getestet mit:** Aspose.Zip 24.11 für .NET  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Zuletzt aktualisiert:** 2026-02-20  
-**Getestet mit:** Aspose.Zip 24.11 für .NET  
-**Autor:** Aspose

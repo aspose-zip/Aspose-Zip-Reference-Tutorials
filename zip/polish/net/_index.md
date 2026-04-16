@@ -9,17 +9,7 @@ url: /pl/net/
 weight: 10
 ---
 
--backtop-button >}}
-
-Then horizontal rule.
-
-Then metadata lines: "Last Updated:", "Tested With:", "Author:" translate labels but keep dates, versions.
-
-Now produce final content.
-
-Be careful not to translate URLs, file paths, code blocks (none). Also keep markdown formatting.
-
-Let's craft final output.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -101,15 +91,15 @@ A: .NET Framework 4.6+, .NET Core 3.1+ oraz wszystkie wydania .NET 5/6/7 są w p
 
 ---
 
+**Ostatnia aktualizacja:** 2026-02-20  
+**Testowano z:** Aspose.Zip for .NET 24.11  
+**Autor:** Aspose
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ostatnia aktualizacja:** 2026-02-20  
-**Testowano z:** Aspose.Zip for .NET 24.11  
-**Autor:** Aspose

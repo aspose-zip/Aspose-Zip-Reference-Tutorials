@@ -10,15 +10,7 @@ url: /nl/net/archive-extraction-and-formats/compress-to-tar-bz2/
 weight: 11
 ---
 
-ose"
-
-Then closing shortcodes.
-
-Finally backtop button shortcode.
-
-Make sure to keep all markdown formatting.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

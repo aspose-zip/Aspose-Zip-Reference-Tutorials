@@ -131,15 +131,15 @@ archive.SaveGzipped(dataDir + "archive.tar.gz");
 
 आपने अब **tar आर्काइव बनाना**, उसमें फ़ाइलें जोड़ना, और Aspose.Zip for .NET का उपयोग करके **tar.gz** में संकुचित करना सीख लिया है। यह तरीका बाहरी निर्भरताओं को समाप्त करता है, आपको आर्काइव सामग्री पर सूक्ष्म नियंत्रण देता है, और बड़े डेटा सेट्स के लिए स्केलेबल है। अतिरिक्त Aspose.Zip फीचर्स जैसे एन्क्रिप्शन, कस्टम एंट्री एट्रिब्यूट्स, और स्ट्रीमिंग API का अन्वेषण करें ताकि अपने आर्काइविंग वर्कफ़्लो को और बेहतर बना सकें।
 
+---
+
+**अंतिम अपडेट:** 2026-02-20  
+**परीक्षित संस्करण:** Aspose.Zip 24.11 for .NET  
+**लेखक:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**अंतिम अपडेट:** 2026-02-20  
-**परीक्षित संस्करण:** Aspose.Zip 24.11 for .NET  
-**लेखक:** Aspose

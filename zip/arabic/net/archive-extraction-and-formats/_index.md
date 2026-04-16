@@ -108,13 +108,6 @@ weight: 23
 ### [استخراج مدخلات الأرشيف بكلمات مرور مختلفة في Aspose.Zip لـ .NET](./extract-archive-different-passwords/)
 تعلم كيفية استخراج مدخلات الأرشيف بكلمات مرور مختلفة في Aspose.Zip لـ .NET. عزز الأمان والمرونة في تطبيقاتك.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **آخر تحديث:** 2026-02-20  
@@ -122,3 +115,10 @@ weight: 23
 **المؤلف:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

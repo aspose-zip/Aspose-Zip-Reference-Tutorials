@@ -11,7 +11,7 @@ url: /nl/net/archive-extraction-and-formats/compress-to-tar-gz/
 weight: 12
 ---
 
- answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -132,15 +132,15 @@ A: Absoluut—download de gratis trial van de [Aspose Zip releases page](https:/
 
 Je hebt nu geleerd **hoe je een tar‑archief maakt**, bestanden eraan toevoegt, en het comprimeert naar **tar.gz** met Aspose.Zip voor .NET. Deze aanpak elimineert externe afhankelijkheden, geeft je fijne controle over de archiefinhoud, en schaalt naar grote datasets. Voel je vrij om extra Aspose.Zip‑functies te verkennen, zoals encryptie, aangepaste entry‑attributen en streaming‑API’s, om je archiveringsworkflow verder te verbeteren.
 
+---
+
+**Laatst bijgewerkt:** 2026-02-20  
+**Getest met:** Aspose.Zip 24.11 voor .NET  
+**Auteur:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Laatst bijgewerkt:** 2026-02-20  
-**Getest met:** Aspose.Zip 24.11 voor .NET  
-**Auteur:** Aspose

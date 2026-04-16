@@ -131,15 +131,15 @@ A: Absolut—ladda ner den kostnadsfria provversionen från [Aspose Zip‑releas
 
 Du har nu lärt dig **hur man skapar ett tar‑arkiv**, lägger till filer i det och komprimerar det till **tar.gz** med Aspose.Zip för .NET. Detta tillvägagångssätt eliminerar externa beroenden, ger dig fin‑granulerad kontroll över arkivinnehållet och skalar för stora datamängder. Känn dig fri att utforska ytterligare Aspose.Zip‑funktioner såsom kryptering, anpassade postattribut och ström‑API:er för att ytterligare förbättra ditt arkiveringsflöde.
 
+---
+
+**Last Updated:** 2026-02-20  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-20  
-**Tested With:** Aspose.Zip 24.11 for .NET  
-**Author:** Aspose

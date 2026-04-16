@@ -89,15 +89,15 @@ Apprendi tecniche avanzate di compressione con Aspose.Zip for .NET. Eleva le tue
 **Q: Quali versioni di .NET sono ufficialmente supportate?**  
 **A:** .NET Framework 4.6+, .NET Core 3.1+ e tutte le versioni .NET 5/6/7 sono pienamente supportate.
 
+---
+
+**Ultimo aggiornamento:** 2026-02-20  
+**Testato con:** Aspose.Zip for .NET 24.11  
+**Autore:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ultimo aggiornamento:** 2026-02-20  
-**Testato con:** Aspose.Zip for .NET 24.11  
-**Autore:** Aspose

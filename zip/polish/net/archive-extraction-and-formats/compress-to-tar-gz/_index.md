@@ -131,15 +131,15 @@ A: Oczywiście — pobierz bezpłatną wersję próbną z [strony wydań Aspose 
 
 Teraz wiesz, **jak utworzyć archiwum tar**, dodać do niego pliki i skompresować je do **tar.gz** przy użyciu Aspose.Zip dla .NET. To podejście eliminuje zależności zewnętrzne, daje precyzyjną kontrolę nad zawartością archiwum i skaluje się do dużych zestawów danych. Zachęcamy do eksploracji dodatkowych funkcji Aspose.Zip, takich jak szyfrowanie, niestandardowe atrybuty wpisów i API strumieniowe, aby jeszcze bardziej usprawnić proces archiwizacji.
 
+---
+
+**Ostatnia aktualizacja:** 2026-02-20  
+**Testowano z:** Aspose.Zip 24.11 for .NET  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ostatnia aktualizacja:** 2026-02-20  
-**Testowano z:** Aspose.Zip 24.11 for .NET  
-**Autor:** Aspose

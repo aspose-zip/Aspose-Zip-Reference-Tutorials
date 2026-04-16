@@ -108,15 +108,15 @@ Entdecken Sie die Schritt‑für‑Schritt‑Komprimierung zu TarZ mit Aspose.Zi
 ### [Extrahieren von Archiv‑Einträgen mit unterschiedlichen Passwörtern in Aspose.Zip für .NET](./extract-archive-different-passwords/)
 Lernen Sie, wie Sie Archiv‑Einträge mit unterschiedlichen Passwörtern in Aspose.Zip für .NET extrahieren. Erhöhen Sie Sicherheit und Flexibilität in Ihren Anwendungen.
 
+---
+
+**Last Updated:** 2026-02-20  
+**Tested With:** Aspose.Zip for .NET 24.11  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-20  
-**Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose

@@ -10,15 +10,7 @@ url: /pt/net/archive-extraction-and-formats/compress-to-tar-gz/
 weight: 12
 ---
 
-" maybe keep as is? The phrase is part of text; but technical term maybe keep as is? It says keep technical terms in English; "add files to tar" is a phrase but maybe keep as is. Could translate but maybe keep as is. Safer to keep as is.
-
-Also bullet points etc.
-
-Let's produce translation.
-
-Be careful to preserve markdown formatting exactly.
-
-Let's produce final output.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -139,15 +131,15 @@ A: Absolutamente — baixe a versão de avaliação gratuita na [página de rele
 
 Agora você aprendeu **como criar um arquivo tar**, adicionar arquivos a ele e comprimir para **tar.gz** usando Aspose.Zip para .NET. Essa abordagem elimina dependências externas, oferece controle granular sobre o conteúdo do arquivo e escala para grandes volumes de dados. Sinta‑se à vontade para explorar recursos adicionais do Aspose.Zip, como criptografia, atributos personalizados de entrada e APIs de streaming para aprimorar ainda mais seu fluxo de arquivamento.
 
+---
+
+**Última atualização:** 2026-02-20  
+**Testado com:** Aspose.Zip 24.11 para .NET  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última atualização:** 2026-02-20  
-**Testado com:** Aspose.Zip 24.11 para .NET  
-**Autor:** Aspose

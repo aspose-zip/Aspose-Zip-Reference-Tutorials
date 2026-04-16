@@ -130,15 +130,15 @@ A: Természetesen — töltse le a ingyenes próbaverziót a [Aspose Zip rel
 
 Most már megtanulta, **hogyan hozzon létre tar archívumot**, hogyan adjon hozzá fájlokat, és hogyan tömörítse **tar.gz** formátumba az Aspose.Zip for .NET segítségével. Ez a megközelítés kiküszöböli a külső függőségeket, finomhangolt vezérlést biztosít az archívum tartalma felett, és nagy adathalmazokhoz is skálázható. Fedezze fel az Aspose.Zip további funkcióit, például a titkosítást, egyedi bejegyzés‑attribútumokat és a streaming API‑kat, hogy tovább fejlessze archiválási munkafolyamatát.
 
+---
+
+**Legutóbb frissítve:** 2026-02-20  
+**Tesztelve ezzel:** Aspose.Zip 24.11 for .NET  
+**Szerző:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Legutóbb frissítve:** 2026-02-20  
-**Tesztelve ezzel:** Aspose.Zip 24.11 for .NET  
-**Szerző:** Aspose

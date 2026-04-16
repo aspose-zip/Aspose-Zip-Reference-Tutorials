@@ -10,7 +10,7 @@ url: /de/net/archive-extraction-and-formats/compress-to-tar-bz2/
 weight: 11
 ---
 
- final.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

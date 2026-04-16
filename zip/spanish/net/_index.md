@@ -91,15 +91,15 @@ A: .NET Framework 4.6+, .NET Core 3.1+ y todas las versiones de .NET 5/6/7 son t
 
 ---
 
+**Última actualización:** 2026-02-20  
+**Probado con:** Aspose.Zip for .NET 24.11  
+**Autor:** Aspose
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última actualización:** 2026-02-20  
-**Probado con:** Aspose.Zip for .NET 24.11  
-**Autor:** Aspose

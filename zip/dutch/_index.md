@@ -95,15 +95,15 @@ A: Een betaalde Aspose.Zip‑licentie is vereist voor productie‑implementaties
 ## Conclusie
 Je hebt nu een solide basis voor **zip-bestanden extraheren met Aspose.Zip** in elke .NET‑omgeving. Van het omgaan met wachtwoord‑beveiligde archieven tot het on‑the‑fly opnieuw versleutelen van data, Aspose.Zip biedt de flexibiliteit en prestaties die je nodig hebt voor real‑world bestandsbeheer. Verken de andere tutorials hierboven om compressie, map‑archivering en geavanceerde versleutelingstechnieken onder de knie te krijgen.
 
+---
+
+**Last Updated:** 2026-02-20  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-20  
-**Tested With:** Aspose.Zip 24.11 for .NET  
-**Author:** Aspose

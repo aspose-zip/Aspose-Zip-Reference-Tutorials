@@ -10,11 +10,7 @@ url: /el/net/archive-extraction-and-formats/compress-to-tar-gz/
 weight: 12
 ---
 
- not fenced. Should we keep them as is. It's fine.
-
-Make sure we keep markdown formatting.
-
-Now produce final output.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -135,15 +131,15 @@ archive.SaveGzipped(dataDir + "archive.tar.gz");
 
 Τώρα έχετε μάθει **πώς να δημιουργήσετε αρχείο tar**, να προσθέσετε αρχεία σε αυτό, και να το συμπιέσετε σε **tar.gz** χρησιμοποιώντας το Aspose.Zip για .NET. Αυτή η προσέγγιση εξαλείφει εξωτερικές εξαρτήσεις, σας δίνει λεπτομερή έλεγχο του περιεχομένου του αρχείου και κλιμακώνεται σε μεγάλα σύνολα δεδομένων. Μη διστάσετε να εξερευνήσετε πρόσθετα χαρακτηριστικά του Aspose.Zip όπως κρυπτογράφηση, προσαρμοσμένα χαρακτηριστικά καταχώρησης και API ροής για περαιτέρω βελτίωση της διαδικασίας αρχειοθέτησης.
 
+---
+
+**Τελευταία ενημέρωση:** 2026-02-20  
+**Δοκιμή με:** Aspose.Zip 24.11 for .NET  
+**Συγγραφέας:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Τελευταία ενημέρωση:** 2026-02-20  
-**Δοκιμή με:** Aspose.Zip 24.11 for .NET  
-**Συγγραφέας:** Aspose

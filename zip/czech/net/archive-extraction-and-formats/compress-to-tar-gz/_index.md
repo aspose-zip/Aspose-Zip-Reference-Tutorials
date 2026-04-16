@@ -10,16 +10,6 @@ url: /cs/net/archive-extraction-and-formats/compress-to-tar-gz/
 weight: 12
 ---
 
-:" to "Poslední aktualizace:" maybe. But it's part of content after a horizontal rule. Should translate.
-
-"Tested With:" => "Testováno s:".
-
-"Author:" => "Autor:".
-
-Make sure to keep shortcodes.
-
-Now produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
@@ -141,15 +131,15 @@ A: Rozhodně — stáhněte si bezplatnou zkušební verzi z [stránky s vyd
 
 Nyní jste se naučili **jak vytvořit tar archiv**, přidat do něj soubory a komprimovat jej do **tar.gz** pomocí Aspose.Zip pro .NET. Tento přístup eliminuje externí závislosti, poskytuje jemnou kontrolu nad obsahem archivu a škáluje na velké datové sady. Neváhejte prozkoumat další funkce Aspose.Zip, jako je šifrování, vlastní atributy položek a streaming API, a dále tak vylepšit svůj archivní workflow.
 
+---
+
+**Poslední aktualizace:** 2026-02-20  
+**Testováno s:** Aspose.Zip 24.11 pro .NET  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Poslední aktualizace:** 2026-02-20  
-**Testováno s:** Aspose.Zip 24.11 pro .NET  
-**Autor:** Aspose

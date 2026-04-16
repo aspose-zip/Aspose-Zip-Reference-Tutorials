@@ -8,11 +8,7 @@ url: /ar/net/
 weight: 10
 ---
 
- missed items: The initial shortcodes lines remain unchanged.
-
-Make sure to keep code blocks? There are none besides inline code. No fenced code blocks.
-
-Now produce final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -92,15 +88,15 @@ Now produce final answer.{{< blocks/products/pf/main-wrap-class >}}
 **س: أي إصدارات .NET مدعومة رسميًا؟**  
 ج: .NET Framework 4.6+، .NET Core 3.1+، وجميع إصدارات .NET 5/6/7 مدعومة بالكامل.
 
+---
+
+**آخر تحديث:** 2026-02-20  
+**تم الاختبار مع:** Aspose.Zip for .NET 24.11  
+**المؤلف:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**آخر تحديث:** 2026-02-20  
-**تم الاختبار مع:** Aspose.Zip for .NET 24.11  
-**المؤلف:** Aspose

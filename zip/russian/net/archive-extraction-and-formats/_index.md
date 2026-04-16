@@ -108,13 +108,6 @@ weight: 23
 ### [Extracting Archive Entries with Different Passwords in Aspose.Zip for .NET](./extract-archive-different-passwords/)
 Узнайте, как извлекать записи архива с разными паролями в Aspose.Zip для .NET. Повышайте безопасность и гибкость ваших приложений.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Последнее обновление:** 2026-02-20  
@@ -122,3 +115,10 @@ weight: 23
 **Автор:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

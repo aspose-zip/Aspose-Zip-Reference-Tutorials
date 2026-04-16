@@ -9,7 +9,7 @@ url: /pt/
 weight: 11
 ---
 
- answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -96,15 +96,15 @@ A: Uma licença paga do Aspose.Zip é necessária para implantações em produç
 ## Conclusão
 Agora você tem uma base sólida para **extract zip files with Aspose.Zip** em qualquer ambiente .NET. Desde o manuseio de arquivos protegidos por senha até a re‑criptografia de dados em tempo real, o Aspose.Zip oferece a flexibilidade e desempenho necessários para tarefas reais de gerenciamento de arquivos. Explore os outros tutoriais vinculados acima para dominar compressão, arquivamento de diretórios e técnicas avançadas de criptografia.
 
+---
+
+**Última atualização:** 2026-02-20  
+**Testado com:** Aspose.Zip 24.11 para .NET  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última atualização:** 2026-02-20  
-**Testado com:** Aspose.Zip 24.11 para .NET  
-**Autor:** Aspose

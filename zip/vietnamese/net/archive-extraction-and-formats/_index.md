@@ -114,15 +114,15 @@ Khám phá quy trình nén thành TarZ bằng Aspose.Zip cho .NET. Xử lý tệ
 ### [Giải nén các mục trong kho lưu trữ với mật khẩu khác nhau trong Aspose.Zip cho .NET](./extract-archive-different-passwords/)
 Tìm hiểu cách giải nén các mục trong kho lưu trữ với mật khẩu khác nhau trong Aspose.Zip cho .NET. Tăng cường bảo mật và tính linh hoạt cho ứng dụng của bạn.
 
+---
+
+**Last Updated:** 2026-02-20  
+**Tested With:** Aspose.Zip for .NET 24.11  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-20  
-**Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose

@@ -91,15 +91,15 @@ J: .NET Framework 4.6+, .NET Core 3.1+, dan semua rilis .NET 5/6/7 didukung sepe
 
 ---
 
+**Terakhir Diperbarui:** 2026-02-20  
+**Diuji Dengan:** Aspose.Zip untuk .NET 24.11  
+**Penulis:** Aspose
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Terakhir Diperbarui:** 2026-02-20  
-**Diuji Dengan:** Aspose.Zip untuk .NET 24.11  
-**Penulis:** Aspose

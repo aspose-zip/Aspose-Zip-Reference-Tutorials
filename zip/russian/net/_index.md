@@ -9,9 +9,6 @@ url: /ru/net/
 weight: 10
 ---
 
- formatting.
-
-Let's construct translation.
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
@@ -71,27 +68,33 @@ Let's construct translation.
 Легко осваивайте продвинутые техники сжатия с Aspose.Zip for .NET. Повышайте навыки разработки, от извлечения в поток памяти до оптимизации хранения с помощью Lzma‑сжатия.
 
 ## Распространённые подводные камни и советы по устранению неполадок
-- **Large archives may exceed default memory limits** – Use streaming APIs (`CreateArchive(Stream)`) to keep memory usage low.  
-- **Password mismatches** – Ensure the same character encoding is used when setting and reading passwords.  
-- **Unsupported compression method** – Verify the target archive format supports the chosen algorithm (e.g., LZMA is not valid for plain ZIP).  
-- **Version mismatches** – Keep the Aspose.Zip NuGet package up‑to‑date to benefit from bug fixes and new format support.
+- **Большие архивы могут превышать стандартные ограничения памяти** – Используйте потоковые API (`CreateArchive(Stream)`), чтобы снизить потребление памяти.
+- **Несоответствие паролей** – Убедитесь, что при установке и чтении паролей используется одна и та же кодировка символов.
+- **Неподдерживаемый метод сжатия** – Убедитесь, что целевой формат архива поддерживает выбранный алгоритм (например, LZMA не подходит для обычного ZIP).
+- **Несоответствие версий** – Поддерживайте пакет Aspose.Zip NuGet в актуальном состоянии, чтобы воспользоваться исправлениями ошибок и поддержкой новых форматов.
 
 ## Часто задаваемые вопросы
 
-**Q: Can I create a zip archive without installing any external tools?**  
-A: Yes. Aspose.Zip for .NET is a pure .NET library; no native binaries or external utilities are required.
+**В: Можно ли создать ZIP-архив без установки каких-либо внешних инструментов?**
+О: Да. Aspose.Zip для .NET — это чистая библиотека .NET; не требуются собственные исполняемые файлы или внешние утилиты.
 
-**Q: Does Aspose.Zip support creating archives on the fly for web APIs?**  
-A: Absolutely. You can write directly to an `HttpResponse` stream, enabling on‑the‑fly zip generation without temporary files.
+**В: Поддерживает ли Aspose.Zip создание архивов на лету для веб-API?**
+О: Безусловно. Вы можете записывать данные непосредственно в поток `HttpResponse`, что позволяет создавать ZIP-архивы на лету без использования временных файлов.
 
-**Q: How do I add a password to an existing zip file?**  
-A: Open the archive with `ZipArchive.Open`, add the password using the `EncryptionOptions` object, then save the archive.
+**В: Как добавить пароль к существующему ZIP-файлу?**
+О: Откройте архив с помощью `ZipArchive.Open`, добавьте пароль, используя объект `EncryptionOptions`, затем сохраните архив.
 
-**Q: Is there a limit to the number of files I can compress?**  
-A: Practically no. The library handles millions of entries; just ensure sufficient disk space and stream buffering.
+**В: Существует ли ограничение на количество файлов, которые я могу сжать?**
+О: Практически нет. Библиотека обрабатывает миллионы записей; просто убедитесь в наличии достаточного дискового пространства и буферизации потока.
 
-**Q: Which .NET versions are officially supported?**  
-A: .NET Framework 4.6+, .NET Core 3.1+, and all .NET 5/6/7 releases are fully supported.
+**В: Какие версии .NET официально поддерживаются?**
+О: Полностью поддерживаются .NET Framework 4.6+, .NET Core 3.1+ и все версии .NET 5/6/7.
+
+---
+
+**Last Updated:** 2026-02-20  
+**Tested With:** Aspose.Zip for .NET 24.11  
+**Author:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -99,9 +102,3 @@ A: .NET Framework 4.6+, .NET Core 3.1+, and all .NET 5/6/7 releases are fully su
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-20  
-**Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose

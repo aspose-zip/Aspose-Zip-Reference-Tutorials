@@ -9,48 +9,44 @@ url: /th/net/archive-extraction-and-formats/compress-to-tar-gz/
 weight: 12
 ---
 
- with all translations.
-
-Be careful to preserve markdown formatting.
-
-Let's craft final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # สร้างไฟล์ tar archive และเพิ่มไฟล์ลงใน tar ด้วย Aspose.Zip สำหรับ .NET
 
-## Introduction
+## การแนะนำ
 
-ในแอปพลิเคชัน .NET สมัยใหม่, **การสร้าง tar archive** และ **การเพิ่มไฟล์ลงใน tar** อย่างรวดเร็วและเชื่อถือได้เป็นความต้องการทั่วไป—ไม่ว่าจะเป็นการบรรจุล็อก, การเตรียมข้อมูลสำหรับการจัดเก็บบนคลาวด์, หรือการสร้างแพ็กเกจการปรับใช้ Aspose.Zip สำหรับ .NET ให้ API ที่สะอาดและมีประสิทธิภาพสูงเพื่อ **เพิ่มไฟล์ลงใน tar**, จากนั้นบีบอัด archive ไปเป็นรูปแบบ **tar.gz** ที่ใช้กันอย่างแพร่หลาย ในคู่มือนี้เราจะเดินผ่านกระบวนการทั้งหมด ตั้งแต่การตั้งค่าโปรเจกต์จนถึงการผลิต `archive.tar.gz` ที่พร้อมจัดส่ง
+แอปพลิเคชัน .NET สมัยใหม่, ** การเก็บรักษา tar archive** และ ** ขอไฟล์ใน tar** ได้อย่างรวดเร็วและเชื่อถือได้เป็นคำขอทั่วไป— เพื่อบันทึก, การเตรียมข้อมูลสำหรับส่วนประกอบบนคลาวด์, หรือการสร้างศูนย์กลางใช้ Aspose.Zip สำหรับ .NET ให้ API ที่สะอาดและประสิทธิภาพเพื่อ ** เพิ่มไฟล์ใน tar**, ตรวจสอบการจัดเก็บข้อมูลไปสำรวจ **tar.gz** นำมาใช้พิจารณาในคู่มือนี้เราจะพิจารณาในทั้งหมดและโปรเจกต์จนถึงการผลิต `archive.tar.gz` ที่พร้อมจัดส่ง
 
-## Quick Answers
-- **ควรใช้ไลบรารีอะไร?** Aspose.Zip for .NET  
-- **จะเพิ่มไฟล์ลงใน tar อย่างไร?** Use `TarArchive.CreateEntry` for each file.  
-- **สามารถบีบอัดโดยตรงเป็น tar.gz ได้หรือไม่?** Yes—call `SaveGzipped`.  
-- **ต้องการใบอนุญาตสำหรับการใช้งานจริงหรือไม่?** A valid Aspose license is required for non‑trial use.  
-- **รุ่น .NET ที่รองรับ?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+## คำตอบด่วน
+- ** รองรับไลบรารีอะไร?** Aspose.Zip for .NET
+- ** โดยตรงไฟล์ลงใน tar อย่างไร?** ใช้ `TarArchive.CreateEntry` สำหรับแต่ละไฟล์
+- **สามารถติดตามโดยตรงเป็น tar.gz ได้ใช่ไหม** ใช่—โทร `SaveGzipped`
+- **ต้องการข้อมูลเพิ่มเติมจริงหรือไม่?** จำเป็นต้องมีใบอนุญาต Aspose ที่ถูกต้องสำหรับการใช้งานแบบไม่ทดลองใช้
+- **รุ่น .NET รองรับ?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7
 
-## What is “add files to tar”?
+## “เพิ่มไฟล์ใน tar” คืออะไร?
 
-การเพิ่มไฟล์ลงใน tar archive หมายถึงการบรรจุไฟล์หลายไฟล์เข้าเป็นคอนเทนเนอร์เดียวที่ไม่ได้บีบอัด รูปแบบ tar จะรักษาโครงสร้างไดเรกทอรีและเมตาดาต้าไฟล์ ทำให้เหมาะสำหรับการเก็บสำรองก่อนการบีบอัดเพิ่มเติม (เช่น gzip) เพื่อ **สร้าง tar.gz archive**.
+เพื่อที่จะลงไฟล์ tar หากต้องการทราบว่าไฟล์หลายไฟล์เข้าเป็นเพียงแค่ไฟล์เดียวเท่านั้นในการตรวจสอบ tar จะเป็นโครงสร้างการรักษาในทิศทางและเมตาดาต้าไฟล์นั้นจะต้องเก็บสำรองก่อนห้องโถงเพิ่มเติม (เช่น gzip) ไปที่ ** สร้าง tar.gz archive**
 
-## Why use Aspose.Zip to compress files to tar.gz?
+## เหตุใดจึงต้องใช้ Aspose.Zip เพื่อบีบอัดไฟล์เป็น tar.gz
 
-- **ไม่มีเครื่องมือภายนอก** – ทุกอย่างทำงานภายในโค้ด .NET ของคุณ.  
-- **ประสิทธิภาพสูง** – API ที่ใช้สตรีมจัดการไฟล์ขนาดใหญ่ได้อย่างมีประสิทธิภาพ.  
-- **tar ข้ามแพลตฟอร์ม** – ทำงานบน Windows, Linux, และ macOS โดยไม่ต้องแก้ไข.  
-- **ชุดคุณสมบัติครบครัน** – รองรับการเข้ารหัส, การป้องกันด้วยรหัสผ่าน, และแอตทริบิวต์ของรายการแบบกำหนดเอง.
+- **ไม่มีเครื่องมือภายนอก** – สามารถทำงานในโค้ด .NET ของคุณได้
+- **ข้อมูล** – API ที่ใช้สตรีมไฟล์ขนาดใหญ่มีประสิทธิภาพอย่างมีประสิทธิภาพ
+- **tar ข้ามแพลตฟอร์ม** – ทำงานบน Windows, Linux, และ macOS สามารถใช้แก้ไขได้
+- **ชุดคุณสมบัติครบครัน** – รองรับ, การป้องกันด้วยรหัสผ่าน, และการปฏิบัติตามรายการ.
 
-## Prerequisites
+## ข้อกำหนดเบื้องต้น
 
-ก่อนเริ่ม, โปรดตรวจสอบว่าคุณมี:
+ก่อนเริ่ม, กรุณาตรวจสอบคุณ:
 
-- ประสบการณ์การพัฒนา .NET พื้นฐาน.  
-- Visual Studio (หรือ IDE ที่คุณชื่นชอบ).  
-- Aspose.Zip for .NET installed – see the official documentation [here](https://reference.aspose.com/zip/net/).  
-- The Aspose.Zip library downloaded from [this link](https://releases.aspose.com/zip/net/).
+- การพัฒนา .NET พื้นฐาน
+- Visual Studio (หรือ IDE )
+- ติดตั้ง Aspose.Zip สำหรับ .NET แล้ว – ดูเอกสารประกอบอย่างเป็นทางการ [ที่นี่](https://reference.aspose.com/zip/net/)
+- ดาวน์โหลดไลบรารี Aspose.Zip จาก [ลิงก์นี้](https://releases.aspose.com/zip/net/)
 
-## Import Namespaces
+## นำเข้าเนมสเปซ
 
 ในโปรเจกต์ .NET ของคุณ, ให้ import namespaces ที่เปิดเผยคลาสที่เกี่ยวกับ tar:
 
@@ -59,9 +55,9 @@ using System;
 using Aspose.Zip.Tar;
 ```
 
-## How to add files to tar using Aspose.Zip for .NET
+## วิธีการเพิ่มไฟล์ลงในไฟล์ tar โดยใช้ Aspose.Zip สำหรับ .NET
 
-### Step 1: Set Your Document Directory
+### ขั้นตอนที่ 1: ตั้งค่าไดเร็กทอรีเอกสารของคุณ
 
 แรกเริ่ม, ให้ชี้โค้ดไปยังโฟลเดอร์ที่มีไฟล์ที่คุณต้องการบันทึกเป็น archive.
 
@@ -69,13 +65,13 @@ using Aspose.Zip.Tar;
 string dataDir = "Your Document Directory";
 ```
 
-> **Pro tip:** Use `Path.Combine` when building paths to avoid platform‑specific separator issues.
+> **เคล็ดลับ:** ใช้ `Path.Combine` เมื่อสร้างเส้นทางเพื่อหลีกเลี่ยงปัญหาเกี่ยวกับตัวคั่นเฉพาะแพลตฟอร์ม
 
-### Step 2: Create a TarGz Archive
+### ขั้นตอนที่ 2: สร้างไฟล์เก็บถาวร TarGz
 
 ตอนนี้เราจะสร้าง tar archive, เพิ่มรายการ, และบีบอัดในขั้นตอนเดียวที่ต่อเนื่องกัน.
 
-#### 2.1 Initialize the TarArchive
+#### 2.1 เริ่มต้นใช้งานไฟล์เก็บถาวร Tar
 
 ```csharp
 using (TarArchive archive = new TarArchive())
@@ -84,7 +80,7 @@ using (TarArchive archive = new TarArchive())
 }
 ```
 
-#### 2.2 Add Files – the core of “add files to tar”
+#### 2.2 เพิ่มไฟล์ – หัวใจสำคัญของการ “เพิ่มไฟล์ลงในไฟล์ tar”
 
 ```csharp
 archive.CreateEntry("alice29.txt", dataDir + "alice29.txt");
@@ -93,7 +89,7 @@ archive.CreateEntry("lcet10.txt", dataDir + "lcet10.txt");
 
 แต่ละการเรียก `CreateEntry` จะรับ **entry name** (ชื่อไฟล์ที่จะแสดงภายใน tar) และ **source file path** บนดิสก์ คุณสามารถเรียก `CreateEntry` ซ้ำหลายครั้งเพื่อ **add multiple files tar** ใน archive เดียวได้.
 
-#### 2.3 Save as a Gzipped Tar (how to compress tar.gz)
+#### 2.3 บันทึกเป็นไฟล์ Tar ที่บีบอัดด้วย Gzip (วิธีการบีบอัดไฟล์ tar.gz)
 
 ```csharp
 archive.SaveGzipped(dataDir + "archive.tar.gz");
@@ -101,40 +97,46 @@ archive.SaveGzipped(dataDir + "archive.tar.gz");
 
 `SaveGzipped` writes the tar contents to a gzip stream, giving you a compact `archive.tar.gz` file ready for distribution.
 
-## Common Use Cases
+## กรณีการใช้งานทั่วไป
 
-| สถานการณ์ | ทำไมการ “add files to tar” จึงช่วยได้ |
-|----------|------------------------------|
-| **การรวบรวมบันทึก** | รวมบันทึกประจำวันเป็นไฟล์ archive เดียวก่อนอัปโหลดไปยังคลาวด์สตอเรจ. |
-| **แพ็คเกจการปรับใช้** | สร้างแพ็กเกจ tar.gz พกพาสำหรับเซิร์ฟเวอร์ Linux จาก pipeline การสร้างบน Windows. |
-| **การสำรองข้อมูล** | รักษาโครงสร้างโฟลเดอร์และเมตาดาต้าไว้ขณะทำให้ขนาดการสำรองข้อมูลต่ำ. |
+| สถานการณ์ | ทำไมการ “เพิ่มไฟล์ลงใน tar” ต้องใช้ช่วยได้ |
+|----------|----------------------------------|
+| **รวมถึงบันทึก** | รวมบันทึกประจำวันเป็นไฟล์เก็บถาวรเดียวก่อนที่จะไปยังคลาวด์สตอเรจ |
+| **แพ็คเกจนี้จะใช้** | สร้างแพ็กเกจ tar.gz พกพาสำหรับแขก Linux จากไปป์ไลน์จำนวนมากบน Windows. |
+| **ในเวลา** | การรักษาเสถียรภาพและเมตาดาต้าไว้ในขณะที่ทำให้ขนาดพื้นที่ต่ำ |
 
-## Common Issues and Solutions
+## ปัญหาทั่วไปและแนวทางแก้ไข
 
-- **ข้อผิดพลาดไฟล์ไม่พบ** – Ensure `dataDir` ends with the appropriate path separator or use `Path.Combine`.  
-- **Large files cause memory pressure** – Use stream‑based overloads (`CreateEntry` with a `Stream`) to avoid loading entire files into memory.  
-- **Gzip output is corrupted** – Verify that the archive is closed (`using` block) before calling `SaveGzipped`.  
+- **ไม่พบไฟล์ไม่พบ** – ตรวจสอบให้แน่ใจว่า `dataDir` ลงท้ายด้วยตัวคั่นพาธที่เหมาะสม หรือใช้ `Path.Combine`
+- **ไฟล์ขนาดใหญ่ทำให้เกิดแรงกดดันต่อหน่วยความจำ** – ใช้การโอเวอร์โหลดตามสตรีม (`CreateEntry` ด้วย `Stream`) เพื่อหลีกเลี่ยงการโหลดไฟล์ทั้งหมดลงในหน่วยความจำ
+- **เอาต์พุต Gzip เสียหาย** – ตรวจสอบว่าไฟล์เก็บถาวรปิดแล้ว (`ใช้บล็อก`) ก่อนที่จะเรียก `SaveGzipped`
 
-## Frequently Asked Questions
+## คำถามที่พบบ่อย
 
-**Q: Aspose.Zip for .NET รองรับแอปพลิเคชัน .NET ทั้งหมดหรือไม่?**  
-A: Yes, it works with .NET Framework, .NET Core, and .NET 5/6/7 projects.
+**ถาม: Aspose.Zip สำหรับ .NET รองรับแอปพลิเคชัน .NET ไม่จำเป็นหรือไม่**
+ตอบ: ได้ ใช้งานได้กับโปรเจ็กต์ .NET Framework, .NET Core และ .NET 5/6/7
 
-**Q: จะขอรับใบอนุญาตชั่วคราวสำหรับ Aspose.Zip for .NET ได้อย่างไร?**  
-A: Visit the [temporary‑license page](https://purchase.aspose.com/temporary-license/) to request a trial license.
+**ถาม: จะสามารถรับชั่วคราวสำหรับ Aspose.Zip สำหรับ .NET ได้อย่างไร**
+ตอบ: ไปที่[หน้าใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) เพื่อขอใบอนุญาตรุ่นทดลองใช้
 
-**Q: มีข้อจำกัดเรื่องขนาดไฟล์หรือไม่?**  
-A: The library is optimized for large files; there is no hard size limit other than the available system memory.
+**ถาม: มีข้อจำกัดเรื่องขนาดไฟล์หรือเปล่า?**
+ตอบ: ไลบรารีนี้ได้รับการปรับให้เหมาะสมสำหรับไฟล์ขนาดใหญ่ ไม่มีการจำกัดขนาดฮาร์ดนอกเหนือจากหน่วยความจำระบบที่มีอยู่
 
-**Q: จะหาแหล่งสนับสนุนได้จากที่ไหน?**  
-A: Use the community‑driven support forum [here](https://forum.aspose.com/c/zip/37) for help from Aspose engineers and other developers.
+**ถาม: ที่นี่เป็นแหล่งสนับสนุนจากที่ไหน?**
+ตอบ: ใช้ฟอรัมสนับสนุนที่ขับเคลื่อนโดยชุมชน [ที่นี่](https://forum.aspose.com/c/zip/37) เพื่อขอความช่วยเหลือจากวิศวกร Aspose และนักพัฒนาอื่นๆ
 
-**Q: สามารถทดลองใช้ Aspose.Zip for .NET ได้ฟรีหรือไม่?**  
-A: Absolutely—download the free trial from the [Aspose Zip releases page](https://releases.aspose.com/zip/net).
+**คำถาม: เอกสารประกอบ Aspose.Zip for .NET ไม่จำเป็น?**
+ตอบ: แน่นอน ดาวน์โหลดรุ่นทดลองใช้ฟรีจาก [หน้าเผยแพร่ Aspose Zip](https://releases.aspose.com/zip/net)
 
-## Conclusion
+## บทสรุป
 
-คุณได้เรียนรู้ **วิธีสร้าง tar archive**, เพิ่มไฟล์ลงในนั้น, และบีบอัดเป็น **tar.gz** ด้วย Aspose.Zip for .NET แล้ว วิธีนี้ช่วยขจัดการพึ่งพาเครื่องมือภายนอก, ให้คุณควบคุมเนื้อหา archive อย่างละเอียด, และขยายได้กับชุดข้อมูลขนาดใหญ่ อย่าลังเลที่จะสำรวจคุณสมบัติเพิ่มเติมของ Aspose.Zip เช่น การเข้ารหัส, แอตทริบิวต์ของรายการแบบกำหนดเอง, และ API สตรีมมิ่ง เพื่อยกระดับกระบวนการบันทึกของคุณต่อไป
+เรียนรู้ **วิธีสร้าง tar archive**, โดยที่ไฟล์ลงในนั้น, และส่วนที่เป็น **tar.gz** ด้วย Aspose.Zip สำหรับ .NET แล้วจะช่วยขจัดการจัดเก็บข้อมูลภายนอกของเครื่องมือ, ให้คุณควบคุมเนื้อหาในการเก็บถาวร , และการขยายได้กับชุดข้อมูลขนาดใหญ่ ตรวจสอบคุณสมบัติเพิ่มเติมของ Aspose.Zip แปลว่า การตรวจสอบ, ของรายการของกฎ, และ API ให้คุณทราบถึงการยกระดับโปรแกรมบันทึกของคุณต่อไป
+
+---
+
+**อัปเดตล่าสุด:** 2026-02-20
+**ทดสอบกับ:** Aspose.Zip 24.11 สำหรับ .NET
+**ผู้เขียน:** สมมติ
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -142,9 +144,3 @@ A: Absolutely—download the free trial from the [Aspose Zip releases page](http
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-20  
-**Tested With:** Aspose.Zip 24.11 for .NET  
-**Author:** Aspose

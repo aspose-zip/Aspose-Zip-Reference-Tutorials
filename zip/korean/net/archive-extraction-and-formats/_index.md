@@ -107,15 +107,15 @@ Aspose.Zip for .NET을 사용한 TarZ 압축을 단계별로 살펴보세요. .N
 ### [Aspose.Zip for .NET에서 다른 비밀번호로 아카이브 엔트리 추출](./extract-archive-different-passwords/)
 Aspose.Zip for .NET에서 서로 다른 비밀번호를 가진 아카이브 엔트리를 추출하는 방법을 배웁니다. 애플리케이션의 보안성과 유연성을 향상시킵니다.
 
+---
+
+**Last Updated:** 2026-02-20  
+**Tested With:** Aspose.Zip for .NET 24.11  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-20  
-**Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose

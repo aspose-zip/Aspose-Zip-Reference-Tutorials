@@ -96,15 +96,15 @@ Bu rehber çıkarma üzerine odaklansa da, Aspose.Zip'in **compress files .net**
 ## Sonuç
 Artık herhangi bir .NET ortamında **extract zip files with Aspose.Zip** için sağlam bir temele sahipsiniz. Şifre korumalı arşivleri yönetmekten verileri anlık olarak yeniden şifrelemeye kadar, Aspose.Zip gerçek dünya dosya yönetimi görevleri için ihtiyaç duyduğunuz esneklik ve performansı sunar. Sıkıştırma, dizin arşivleme ve gelişmiş şifreleme tekniklerinde uzmanlaşmak için yukarıdaki diğer öğreticileri keşfedin.
 
+---
+
+**Son Güncelleme:** 2026-02-20  
+**Test Edilen:** Aspose.Zip 24.11 for .NET  
+**Yazar:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Son Güncelleme:** 2026-02-20  
-**Test Edilen:** Aspose.Zip 24.11 for .NET  
-**Yazar:** Aspose

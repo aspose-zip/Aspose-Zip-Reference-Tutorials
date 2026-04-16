@@ -9,10 +9,6 @@ url: /vi/
 weight: 11
 ---
 
-Let's translate.
-
-Will produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
@@ -99,13 +95,6 @@ A: Cần giấy phép Aspose.Zip trả phí cho các triển khai production; gi
 ## Kết luận
 Bạn đã có nền tảng vững chắc để **extract zip files with Aspose.Zip** trong bất kỳ môi trường .NET nào. Từ việc xử lý các archive được bảo vệ bằng mật khẩu đến việc mã hóa lại dữ liệu ngay lập tức, Aspose.Zip cung cấp cho bạn sự linh hoạt và hiệu năng cần thiết cho các nhiệm vụ quản lý tệp thực tế. Khám phá các tutorial khác được liên kết ở trên để thành thạo nén, lưu trữ thư mục, và các kỹ thuật mã hóa nâng cao.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Last Updated:** 2026-02-20  
@@ -113,3 +102,10 @@ Bạn đã có nền tảng vững chắc để **extract zip files with Aspose.
 **Author:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

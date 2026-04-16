@@ -95,13 +95,6 @@ A: Pro produkční nasazení je vyžadována placená licence Aspose.Zip; pro te
 ## Závěr
 Nyní máte solidní základ pro **extrahování souborů ZIP pomocí Aspose.Zip** v jakémkoli .NET prostředí. Od práce s archivy chráněnými heslem až po opakované šifrování dat za běhu, Aspose.Zip vám poskytuje flexibilitu a výkon potřebný pro reálné úkoly správy souborů. Prozkoumejte další tutoriály uvedené výše a osvojte si kompresi, archivaci adresářů a pokročilé šifrovací techniky.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Poslední aktualizace:** 2026-02-20  
@@ -109,3 +102,10 @@ Nyní máte solidní základ pro **extrahování souborů ZIP pomocí Aspose.Zip
 **Autor:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -8,12 +8,6 @@ url: /th/net/
 weight: 10
 ---
 
-Author:" => "ผู้เขียน:" Keep Aspose.
-
-Now ensure we keep all shortcodes exactly.
-
-Let's construct final output.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
@@ -94,15 +88,15 @@ A: โดยหลักการไม่มี. ไลบรารีสาม
 **Q: .NET เวอร์ชันใดที่รองรับอย่างเป็นทางการ?**  
 A: .NET Framework 4.6+, .NET Core 3.1+, และทุกเวอร์ชันของ .NET 5/6/7 ได้รับการสนับสนุนเต็มรูปแบบ  
 
+---
+
+**อัปเดตล่าสุด:** 2026-02-20  
+**ทดสอบด้วย:** Aspose.Zip for .NET 24.11  
+**ผู้เขียน:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**อัปเดตล่าสุด:** 2026-02-20  
-**ทดสอบด้วย:** Aspose.Zip for .NET 24.11  
-**ผู้เขียน:** Aspose

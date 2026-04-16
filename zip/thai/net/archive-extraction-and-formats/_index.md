@@ -9,10 +9,6 @@ url: /th/net/archive-extraction-and-formats/
 weight: 23
 ---
 
- markdown links unchanged.
-
-Proceed.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
@@ -111,15 +107,15 @@ Proceed.
 ### [Extracting Archive Entries with Different Passwords in Aspose.Zip for .NET](./extract-archive-different-passwords/)
 เรียนรู้วิธีสกัดรายการอาร์ไคฟ์ที่มีรหัสผ่านต่างกันใน Aspose.Zip สำหรับ .NET. เพิ่มความปลอดภัยและความยืดหยุ่นให้กับแอปพลิเคชันของคุณ.
 
+---
+
+**Last Updated:** 2026-02-20  
+**Tested With:** Aspose.Zip for .NET 24.11  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-20  
-**Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose

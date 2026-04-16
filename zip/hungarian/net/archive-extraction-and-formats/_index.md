@@ -10,7 +10,7 @@ url: /hu/net/archive-extraction-and-formats/
 weight: 23
 ---
 
-.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -108,15 +108,15 @@ Fedezze fel a lépésről‑lépésre történő tömörítést TarZ formátumba
 ### [Archívumbejegyzések kicsomagolása különböző jelszavakkal az Aspose.Zip for .NET‑ben](./extract-archive-different-passwords/)
 Tanulja meg, hogyan csomagoljon ki archívumbejegyzéseket különböző jelszavakkal az Aspose.Zip for .NET‑ben. Növelje alkalmazásai biztonságát és rugalmasságát.
 
+---
+
+**Last Updated:** 2026-02-20  
+**Tested With:** Aspose.Zip for .NET 24.11  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-20  
-**Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose

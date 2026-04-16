@@ -90,15 +90,15 @@ A: Praktisch gezien niet. De bibliotheek kan miljoenen items verwerken; zorg all
 **Q: Welke .NET‑versies worden officieel ondersteund?**  
 A: .NET Framework 4.6+, .NET Core 3.1+ en alle .NET 5/6/7‑releases worden volledig ondersteund.
 
+---
+
+**Laatst bijgewerkt:** 2026-02-20  
+**Getest met:** Aspose.Zip for .NET 24.11  
+**Auteur:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Laatst bijgewerkt:** 2026-02-20  
-**Getest met:** Aspose.Zip for .NET 24.11  
-**Auteur:** Aspose

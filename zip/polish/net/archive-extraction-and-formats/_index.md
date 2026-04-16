@@ -108,15 +108,15 @@ Poznaj krok po kroku kompresję do TarZ przy użyciu Aspose.Zip dla .NET. Efekty
 ### [Rozpakowywanie wpisów archiwum z różnymi hasłami w Aspose.Zip dla .NET](./extract-archive-different-passwords/)
 Dowiedz się, jak rozpakowywać wpisy archiwum z różnymi hasłami w Aspose.Zip dla .NET. Zwiększ bezpieczeństwo i elastyczność w swoich aplikacjach.
 
+---
+
+**Ostatnia aktualizacja:** 2026-02-20  
+**Testowano z:** Aspose.Zip for .NET 24.11  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ostatnia aktualizacja:** 2026-02-20  
-**Testowano z:** Aspose.Zip for .NET 24.11  
-**Autor:** Aspose

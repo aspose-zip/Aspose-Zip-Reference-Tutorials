@@ -94,15 +94,15 @@ C: .NET Framework 4.6+, .NET Core 3.1+ ve tüm .NET 5/6/7 sürümleri tam olarak
 
 ---
 
+**Son Güncelleme:** 2026-02-20  
+**Test Edildi:** Aspose.Zip for .NET 24.11  
+**Yazar:** Aspose
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Son Güncelleme:** 2026-02-20  
-**Test Edildi:** Aspose.Zip for .NET 24.11  
-**Yazar:** Aspose

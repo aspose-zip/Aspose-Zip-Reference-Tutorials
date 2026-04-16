@@ -89,15 +89,15 @@ A: Practically no. The library handles millions of entries; just ensure sufficie
 **Q: Vilka .NET‑versioner stöds officiellt?**  
 A: .NET Framework 4.6+, .NET Core 3.1+, and all .NET 5/6/7 releases are fully supported.
 
+---
+
+**Senast uppdaterad:** 2026-02-20  
+**Testat med:** Aspose.Zip for .NET 24.11  
+**Författare:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Senast uppdaterad:** 2026-02-20  
-**Testat med:** Aspose.Zip for .NET 24.11  
-**Författare:** Aspose

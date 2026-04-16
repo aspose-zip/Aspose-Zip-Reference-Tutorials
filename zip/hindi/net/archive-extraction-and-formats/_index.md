@@ -108,15 +108,15 @@ Aspose.Zip for .NET के साथ TarZ में संपीड़न के
 ### [Extracting Archive Entries with Different Passwords in Aspose.Zip for .NET](./extract-archive-different-passwords/)
 Aspose.Zip for .NET में विभिन्न पासवर्ड वाले अभिलेख प्रविष्टियों को निकालना सीखें। अपने अनुप्रयोगों में सुरक्षा और लचीलापन बढ़ाएँ।
 
+---
+
+**अंतिम अपडेट:** 2026-02-20  
+**परीक्षित संस्करण:** Aspose.Zip for .NET 24.11  
+**लेखक:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**अंतिम अपडेट:** 2026-02-20  
-**परीक्षित संस्करण:** Aspose.Zip for .NET 24.11  
-**लेखक:** Aspose

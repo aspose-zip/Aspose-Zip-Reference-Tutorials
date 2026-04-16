@@ -9,10 +9,6 @@ url: /id/
 weight: 11
 ---
 
- lists: fine.
-
-Now produce final output with all translated content, preserving formatting.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
@@ -99,15 +95,15 @@ A: Lisensi Aspose.Zip berbayar diperlukan untuk penerapan produksi; lisensi eval
 ## Kesimpulan
 Anda kini memiliki dasar yang kuat untuk **extract zip files with Aspose.Zip** di lingkungan .NET mana pun. Dari menangani arsip yang dilindungi password hingga mengenkripsi ulang data secara langsung, Aspose.Zip memberikan fleksibilitas dan kinerja yang Anda butuhkan untuk tugas manajemen file dunia nyata. Jelajahi tutorial lain yang ditautkan di atas untuk menguasai kompresi, pengarsipan direktori, dan teknik enkripsi lanjutan.
 
+---
+
+**Terakhir Diperbarui:** 2026-02-20  
+**Diuji Dengan:** Aspose.Zip 24.11 untuk .NET  
+**Penulis:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Terakhir Diperbarui:** 2026-02-20  
-**Diuji Dengan:** Aspose.Zip 24.11 untuk .NET  
-**Penulis:** Aspose

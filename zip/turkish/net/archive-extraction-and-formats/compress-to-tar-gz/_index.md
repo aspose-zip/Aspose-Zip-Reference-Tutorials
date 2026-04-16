@@ -10,7 +10,7 @@ url: /tr/net/archive-extraction-and-formats/compress-to-tar-gz/
 weight: 12
 ---
 
- final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -131,15 +131,15 @@ C: Kesinlikle—[Aspose Zip sürüm sayfasından](https://releases.aspose.com/zi
 
 Artık **tar arşivi oluşturma**, dosyaları ekleme ve **tar.gz** formatına sıkıştırma işlemlerini Aspose.Zip for .NET ile nasıl yapacağınızı öğrendiniz. Bu yaklaşım harici bağımlılıkları ortadan kaldırır, arşiv içeriği üzerinde ince ayar yapmanıza olanak tanır ve büyük veri setleriyle ölçeklenebilir. Şifreleme, özel giriş öznitelikleri ve akış API'leri gibi ek Aspose.Zip özelliklerini keşfederek arşivleme iş akışınızı daha da geliştirebilirsiniz.
 
+---
+
+**Son Güncelleme:** 2026-02-20  
+**Test Edilen:** Aspose.Zip 24.11 for .NET  
+**Yazar:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Son Güncelleme:** 2026-02-20  
-**Test Edilen:** Aspose.Zip 24.11 for .NET  
-**Yazar:** Aspose

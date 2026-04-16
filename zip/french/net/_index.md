@@ -90,15 +90,15 @@ R : Pratiquement aucune. La bibliothèque gère des millions d’entrées ; 
 **Q : Quelles versions de .NET sont officiellement prises en charge ?**  
 R : .NET Framework 4.6+, .NET Core 3.1+ et toutes les versions .NET 5/6/7 sont pleinement prises en charge.
 
+---
+
+**Dernière mise à jour :** 2026-02-20  
+**Testé avec :** Aspose.Zip for .NET 24.11  
+**Auteur :** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Dernière mise à jour :** 2026-02-20  
-**Testé avec :** Aspose.Zip for .NET 24.11  
-**Auteur :** Aspose

@@ -9,9 +9,7 @@ url: /ko/net/archive-extraction-and-formats/compress-to-tar-bz2/
 weight: 11
 ---
 
-All preserved.
-
-Now produce final content with translations. Ensure no extra explanations.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

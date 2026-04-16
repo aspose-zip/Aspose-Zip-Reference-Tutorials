@@ -10,9 +10,7 @@ url: /id/net/archive-extraction-and-formats/compress-to-tar-bz2/
 weight: 11
 ---
 
- same formatting. Ensure code block placeholders remain unchanged.
-
-Let's assemble.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

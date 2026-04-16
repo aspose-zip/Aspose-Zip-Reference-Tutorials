@@ -9,20 +9,6 @@ url: /ar/net/archive-extraction-and-formats/compress-to-tar-bz2/
 weight: 11
 ---
 
- need to translate the block content inside shortcodes? The shortcodes themselves are just wrappers; we keep them unchanged. The content inside them includes markdown headings etc. So translate everything except shortcodes, URLs, code placeholders.
-
-Let's produce final content.
-
-Be careful with markdown tables: translate column headers and cell content.
-
-Also translate "Last Updated", "Tested With", "Author". Keep them.
-
-Let's do translation.
-
-Will produce Arabic text.
-
-Proceed.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

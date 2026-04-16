@@ -10,9 +10,7 @@ url: /sv/net/archive-extraction-and-formats/
 weight: 23
 ---
 
- unchanged.
-
-Now produce final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -110,15 +108,15 @@ Utforska steg‑för‑steg‑komprimering till TarZ med Aspose.Zip för .NET. E
 ### [Extrahera arkivposter med olika lösenord i Aspose.Zip för .NET](./extract-archive-different-passwords/)
 Lär dig hur du extraherar arkivposter med olika lösenord i Aspose.Zip för .NET. Öka säkerheten och flexibiliteten i dina applikationer.
 
+---
+
+**Senast uppdaterad:** 2026-02-20  
+**Testad med:** Aspose.Zip för .NET 24.11  
+**Författare:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Senast uppdaterad:** 2026-02-20  
-**Testad med:** Aspose.Zip för .NET 24.11  
-**Författare:** Aspose

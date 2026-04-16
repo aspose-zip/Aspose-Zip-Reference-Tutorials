@@ -10,10 +10,6 @@ url: /vi/net/archive-extraction-and-formats/compress-to-tar-bz2/
 weight: 11
 ---
 
- keep link.
-
-Let's craft.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

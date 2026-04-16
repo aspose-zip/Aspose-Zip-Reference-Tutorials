@@ -10,22 +10,6 @@ url: /fr/net/archive-extraction-and-formats/
 weight: 23
 ---
 
- shortcode unchanged.
-
-Then "---" line.
-
-Then "**Last Updated:** 2026-02-20" keep same.
-
-"**Tested With:** Aspose.Zip for .NET 24.11" keep same.
-
-"**Author:** Aspose" keep same.
-
-Now produce final content.
-
-Be careful to preserve markdown formatting exactly.
-
-Let's craft translation.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
@@ -124,15 +108,15 @@ Explorez la compression étape par étape en TarZ avec Aspose.Zip pour .NET. Ges
 ### [Extraction d’entrées d’archive avec des mots de passe différents dans Aspose.Zip pour .NET](./extract-archive-different-passwords/)
 Apprenez à extraire des entrées d’archive avec des mots de passe différents dans Aspose.Zip pour .NET. Renforcez la sécurité et la flexibilité de vos applications.
 
+---
+
+**Last Updated:** 2026-02-20  
+**Tested With:** Aspose.Zip for .NET 24.11  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-20  
-**Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose

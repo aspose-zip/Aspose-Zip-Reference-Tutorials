@@ -90,15 +90,15 @@ A: Gyakorlatilag nincs. A könyvtár millió bejegyzést képes kezelni; csak bi
 **Q: Mely .NET verziók támogatottak hivatalosan?**  
 A: .NET Framework 4.6+, .NET Core 3.1+, és minden .NET 5/6/7 kiadás teljes mértékben támogatott.
 
+---
+
+**Legutóbb frissítve:** 2026-02-20  
+**Tesztelve a következővel:** Aspose.Zip for .NET 24.11  
+**Szerző:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Legutóbb frissítve:** 2026-02-20  
-**Tesztelve a következővel:** Aspose.Zip for .NET 24.11  
-**Szerző:** Aspose

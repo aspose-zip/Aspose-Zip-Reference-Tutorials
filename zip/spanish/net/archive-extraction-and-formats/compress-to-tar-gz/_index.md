@@ -10,7 +10,7 @@ url: /es/net/archive-extraction-and-formats/compress-to-tar-gz/
 weight: 12
 ---
 
-.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -125,15 +125,15 @@ A: Absolutely—download the free trial from the [Aspose Zip releases page](http
 
 Ahora ha aprendido **cómo crear un archivo tar**, agregar archivos a él y comprimirlo a **tar.gz** usando Aspose.Zip para .NET. Este enfoque elimina dependencias externas, le brinda un control detallado sobre el contenido del archivo y escala a grandes conjuntos de datos. Siéntase libre de explorar características adicionales de Aspose.Zip como cifrado, atributos de entrada personalizados y APIs de streaming para mejorar aún más su flujo de trabajo de archivado.
 
+---
+
+**Última actualización:** 2026-02-20  
+**Probado con:** Aspose.Zip 24.11 for .NET  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última actualización:** 2026-02-20  
-**Probado con:** Aspose.Zip 24.11 for .NET  
-**Autor:** Aspose

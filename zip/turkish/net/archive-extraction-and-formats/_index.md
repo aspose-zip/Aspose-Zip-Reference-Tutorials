@@ -10,9 +10,7 @@ url: /tr/net/archive-extraction-and-formats/
 weight: 23
 ---
 
-codes exactly.
-
-Now produce final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -110,15 +108,15 @@ Aspose.Zip for .NET ile TarZ sıkıştırmasını adım‑adım keşfedin. .NET 
 ### [Aspose.Zip for .NET'te Farklı Şifreli Arşiv Girişlerini Çıkarma](./extract-archive-different-passwords/)
 Aspose.Zip for .NET'te farklı şifreli arşiv girişlerini nasıl çıkaracağınızı öğrenin. Uygulamalarınızda güvenliği ve esnekliği artırın.
 
+---
+
+**Son Güncelleme:** 2026-02-20  
+**Test Edilen Versiyon:** Aspose.Zip for .NET 24.11  
+**Yazar:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Son Güncelleme:** 2026-02-20  
-**Test Edilen Versiyon:** Aspose.Zip for .NET 24.11  
-**Yazar:** Aspose

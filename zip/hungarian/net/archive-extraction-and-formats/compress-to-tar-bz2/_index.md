@@ -11,21 +11,7 @@ url: /hu/net/archive-extraction-and-formats/compress-to-tar-bz2/
 weight: 11
 ---
 
-ztelve:** Aspose.Zip for .NET (legújabb kiadás)" 
-
-**Author:** Aspose -> "**Szerző:** Aspose"
-
-Then closing shortcodes: keep.
-
-Then backtop button shortcode unchanged.
-
-Now produce final content with all translations.
-
-Check we didn't translate URLs or code block placeholders.
-
-Make sure markdown formatting preserved.
-
-Let's craft final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

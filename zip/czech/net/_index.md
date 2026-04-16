@@ -91,15 +91,16 @@ A: .NET Framework 4.6+, .NET Core 3.1+ a všechny verze .NET 5/6/7 jsou plně po
 
 ---
 
+
+**Poslední aktualizace:** 2026-02-20  
+**Testováno s:** Aspose.Zip pro .NET 24.11  
+**Autor:** Aspose
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Poslední aktualizace:** 2026-02-20  
-**Testováno s:** Aspose.Zip pro .NET 24.11  
-**Autor:** Aspose

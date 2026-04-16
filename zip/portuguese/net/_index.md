@@ -91,15 +91,15 @@ A: .NET Framework 4.6+, .NET Core 3.1+ e todas as versões .NET 5/6/7 são total
 
 ---
 
+**Última atualização:** 2026-02-20  
+**Testado com:** Aspose.Zip para .NET 24.11  
+**Autor:** Aspose
+
+---
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última atualização:** 2026-02-20  
-**Testado com:** Aspose.Zip para .NET 24.11  
-**Autor:** Aspose

@@ -96,15 +96,15 @@ A: A paid Aspose.Zip license is required for production deployments; a free eval
 ## Conclusion
 You now have a solid foundation for **extract zip files with Aspose.Zip** in any .NET environment. From handling password‑protected archives to re‑encrypting data on the fly, Aspose.Zip gives you the flexibility and performance you need for real‑world file management tasks. Explore the other tutorials linked above to master compression, directory archiving, and advanced encryption techniques.
 
+---
+
+**Utoljára frissítve:** 2026-02-20  
+**Tesztelve ezzel:** Aspose.Zip 24.11 for .NET  
+**Szerző:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Utoljára frissítve:** 2026-02-20  
-**Tesztelve ezzel:** Aspose.Zip 24.11 for .NET  
-**Szerző:** Aspose
