@@ -23,7 +23,7 @@ In modern .NET applications, **creating a tar archive** and **adding files to ta
 - **How do I add files to tar?** Use `TarArchive.CreateEntry` for each file.  
 - **Can I compress directly to tar.gz?** Yes—call `SaveGzipped`.  
 - **Do I need a license for production?** A valid Aspose license is required for non‑trial use.  
-- **Supported .NET versions?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+- **Supported .NET versions?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10
 
 ## What is “add files to tar”?
 Adding files to a tar archive means bundling multiple files into a single, uncompressed container. The tar format preserves directory structures and file metadata, making it ideal for archiving before optional compression (e.g., gzip) to **create tar.gz archive**.
@@ -111,7 +111,7 @@ archive.SaveGzipped(dataDir + "archive.tar.gz");
 ## Frequently Asked Questions
 
 **Q: Is Aspose.Zip for .NET compatible with all .NET applications?**  
-A: Yes, it works with .NET Framework, .NET Core, and .NET 5/6/7 projects.
+A: Yes, it works with .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10 projects.
 
 **Q: How can I obtain a temporary license for Aspose.Zip for .NET?**  
 A: Visit the [temporary‑license page](https://purchase.aspose.com/temporary-license/) to request a trial license.

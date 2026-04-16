@@ -1,4 +1,4 @@
----
+﻿---
 title: How to zip multiple files c# using Aspose.Zip Parallel Compression
 linktitle: Using Parallelism to Zip Multiple Files in C#
 second_title: Aspose.Zip .NET API – zip multiple files c# with Parallel Processing
@@ -32,7 +32,7 @@ If you need to **zip multiple files c#** quickly and efficiently, leveraging par
 - **Speed:** Takes full advantage of multi‑core CPUs, often delivering 2‑3× faster compression than sequential approaches.  
 - **Scalability:** Handles large batches of files without a linear increase in processing time.  
 - **Simplicity:** High‑level API abstracts threading, so you can focus on your business logic.  
-- **Flexibility:** Works with any .NET version (Framework, Core, .NET 5/6/7) and integrates cleanly with existing projects.
+- **Flexibility:** Works with any .NET version (.NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10) and integrates cleanly with existing projects.
 
 ## Prerequisites
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Create GZip Archive ASP.NET using Aspose.Zip for .NET
 linktitle: Opening a GZip Archive 
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -22,7 +22,7 @@ If you need to **create gzip archive ASP.NET** applications, Aspose.Zip provides
 - **What library handles GZip in ASP.NET?** Aspose.Zip for .NET  
 - **Can I extract a gzip file in C#?** Yes – the `GzipArchive` class does it in a few lines of code.  
 - **Do I need a license for production?** A valid Aspose.Zip license is required for commercial use.  
-- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
+- **Which .NET versions are supported?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10  
 - **Is there a free trial?** Absolutely – you can try Aspose.Zip without cost.
 
 ## What is “create gzip archive ASP.NET”?

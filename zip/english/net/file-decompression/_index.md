@@ -1,4 +1,4 @@
----
+﻿---
 title: How to Decompress Files with Aspose.Zip for .NET
 linktitle: How to Decompress Files with Aspose.Zip for .NET
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -22,7 +22,7 @@ When you need to **how to decompress files** quickly and reliably in a .NET envi
 - **What does Aspose.Zip for .NET do?** It offers a simple API to create, read, and extract ZIP, TAR, GZIP, and other archive formats in C#.
 - **Can I decompress multiple files at once?** Yes, the library lets you extract all entries in a single call or iterate over them individually.
 - **Is password‑protected extraction supported?** Absolutely – you can supply a password to unlock encrypted archives.
-- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7 and later.
+- **Which .NET versions are supported?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10
 - **Do I need a license for development?** A free trial works for evaluation; a commercial license is required for production use.
 
 ## How to Decompress Files Using Aspose.Zip for .NET

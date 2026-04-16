@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create SevenZip Entries – SevenZip Compression Guide"
 linktitle: SevenZip Compression
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -20,7 +20,7 @@ Welcome to our comprehensive guide on **create sevenzip entries** using Aspose.Z
 - **What is the primary purpose of Aspose.Zip for .NET?** To create, read, and manipulate ZIP, 7z, and other archive formats programmatically.  
 - **Which compression methods are supported for SevenZip?** LZMA2, BZip2, and Store (no compression).  
 - **Do I need a license for development?** A free trial works for evaluation; a commercial license is required for production.  
-- **What .NET versions are compatible?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
+- **What .NET versions are compatible?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10  
 - **How long does a basic implementation take?** Typically under 15 minutes for a simple “create sevenzip entries” scenario.
 
 ## What is “create sevenzip entries”?

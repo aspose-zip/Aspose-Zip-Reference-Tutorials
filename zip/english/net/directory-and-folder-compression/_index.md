@@ -23,7 +23,7 @@ In modern .NET development, **creating zip archive .net**‑style files is essen
 - **Can I compress an entire folder with one call?** Yes – Aspose.Zip can compress a directory recursively in a single method.  
 - **Is password protection supported?** Absolutely; you can add encryption while creating the zip archive.  
 - **Do I need a license for development?** A free trial works for evaluation; a commercial license is required for production.  
-- **Which .NET versions are compatible?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7 and later.
+- **Which .NET versions are compatible?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10.
 
 ## What is “create zip archive .net”?
 Creating a zip archive in .NET means packaging one or more files and folders into a single *.zip* container that can be stored, transferred, or downloaded more efficiently. The zip format is universally supported, making it ideal for cross‑platform scenarios.
@@ -32,7 +32,7 @@ Creating a zip archive in .NET means packaging one or more files and folders int
 - **Performance‑optimized** compression algorithms that handle large directories with minimal memory overhead.  
 - **Rich feature set** – encryption, split archives, custom compression levels, and seamless integration with streams.  
 - **Zero‑dependency** – works out‑of‑the‑box without needing external tools like 7‑Zip or WinRAR.  
-- **Consistent API** across .NET Framework, .NET Core, and .NET 5+.
+- **Consistent API** across .NET Framework, .NET Core, and .NET 5–10.
 
 ## Prerequisites
 - Visual Studio 2022 (or any IDE that supports .NET 6+)  
@@ -96,7 +96,7 @@ A: Use the `SplitArchive` method to define a maximum part size; Aspose.Zip will 
 A: Yes. Open the archive in `Update` mode and call `AddFile` or `AddFolder` to append new content.
 
 **Q: Which .NET runtimes are officially supported?**  
-A: Aspose.Zip for .NET supports .NET Framework 4.5+, .NET Core 3.1+, and .NET 5/6/7+.
+A: Aspose.Zip for .NET supports .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10.
 
 ---
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "How to Extract ZIP Files – how to extract zip"
 linktitle: Decompressing Multiple Files
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -20,7 +20,7 @@ Welcome to our comprehensive tutorial on **how to extract zip** files using Aspo
 - **What library is best for .NET zip extraction?** Aspose.Zip for .NET  
 - **Can I extract multiple zip entries at once?** Yes, using the Archive API you can iterate over each entry.  
 - **Do I need a license for production?** A valid Aspose.Zip license is required for non‑trial use.  
-- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
+- **Which .NET versions are supported?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10  
 - **Is there a free trial?** Absolutely – download it from the Aspose website.
 
 ## How to Extract ZIP Files – how to extract zip (Overview)
@@ -30,7 +30,7 @@ Extracting a ZIP archive means opening the compressed package, locating each ent
 ## Why Use Aspose.Zip for .NET?
 
 - **Robust performance** – Handles large archives with minimal memory overhead.  
-- **Full .NET support** – Works with .NET Framework, .NET Core, and .NET 5+.  
+- **Full .NET support** – Works with .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10.  
 - **Advanced features** – Progress tracking, password protection, and entry‑level extraction.  
 - **No external dependencies** – Pure managed code, no native DLLs required.
 
