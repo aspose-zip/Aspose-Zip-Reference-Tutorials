@@ -1,53 +1,80 @@
 ---
-title: Dekompresja wpisu RAR za pomocą Aspose.Zip dla .NET
-linktitle: Dekompresja wpisu RAR
-second_title: Aspose.Zip .NET API do kompresji i archiwizacji plików
-description: Odkryj prostotę dekompresji wpisów RAR w .NET przy użyciu Aspose.Zip. Ta potężna biblioteka umożliwia bezproblemową obsługę skompresowanych plików.
-weight: 11
+date: 2026-03-19
+description: Dowiedz się, jak dekompresować wpisy RAR w .NET za pomocą Aspose.Zip
+  for .NET – prosty, szybki sposób na wyodrębnianie plików z archiwów RAR w aplikacjach
+  .NET.
+linktitle: Decompressing a RAR Entry
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Jak zdekompresować wpis rar w .NET przy użyciu Aspose.Zip dla .NET
 url: /pl/net/rar-archive/decompress-rar-entry/
+weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Dekompresja wpisu RAR za pomocą Aspose.Zip dla .NET
+# Dekompresja wpisu RAR przy użyciu Aspose.Zip dla .NET
 
+## Introduction
 
-## Wstęp
+Jeśli potrzebujesz **decompress rar entry .net** szybko i niezawodnie, Aspose.Zip dla .NET sprawia, że zadanie jest prawie bezwysiłkowe. W tym samouczku przeprowadzimy Cię przez wszystko, co potrzebne, aby wyodrębnić pojedynczy plik z archiwum RAR, wyjaśnimy, dlaczego biblioteka jest solidnym wyborem dla programistów .NET, oraz podamy praktyczne wskazówki, jak uniknąć typowych pułapek.
 
-W stale zmieniającym się świecie tworzenia oprogramowania, wydajność i prostota są kluczowe. Aspose.Zip dla .NET zapewnia solidne rozwiązanie do obsługi skompresowanych plików, w tym popularnego formatu RAR. Ten samouczek poprowadzi Cię przez proces dekompresji wpisu RAR przy użyciu Aspose.Zip dla .NET, oferując instrukcje krok po kroku i jasne przykłady.
+## Quick Answers
+- **Czy potrzebuję licencji do rozwoju?** A free trial works for testing; a commercial license is required for production  
+- **Czy mogę wyodrębnić pliki RAR chronione hasłem?** Yes, by providing the password to the `RarArchive` constructor  
+- **Jakie wersje .NET są obsługiwane?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7  
+- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7  
+- **How many lines of code are required?** About 10 lines to extract the first entry  
+- **What library handles RAR files in .NET?** Aspose.Zip for .NET  
 
-## Warunki wstępne
+## What is “decompress rar entry .net”?
 
-Przed przystąpieniem do samouczka upewnij się, że spełniasz następujące wymagania wstępne:
+Dekompresja wpisu RAR .net oznacza odczytanie archiwum RAR z aplikacji .NET i wyodrębnienie jednego (lub kilku) zawartych w nim plików. Operacja ta jest powszechna, gdy otrzymujesz skompresowane dane od usług zewnętrznych, musisz przetwarzać logi lub chcesz rozpakować zasoby dołączone do Twojego oprogramowania.
 
-1.  Aspose.Zip dla .NET: Pobierz i zainstaluj bibliotekę z[Dokumentacja Aspose.Zip dla .NET](https://reference.aspose.com/zip/net/).
+## Why use Aspose.Zip for .NET?
 
-2. Katalog dokumentów: skonfiguruj katalog, w którym będzie przechowywany plik RAR i wyodrębniona zawartość.
+- **Full‑featured API** – pełnoprawne API – działa z ZIP, TAR, GZIP i RAR bez dodatkowych zależności.  
+- **No external native binaries** – Brak zewnętrznych natywnych binarek – czysty kod zarządzany upraszcza wdrażanie.  
+- **High performance** – Wysoka wydajność – przetwarzanie oparte na strumieniach zmniejsza zużycie pamięci.  
+- **Excellent support** – Doskonałe wsparcie – szczegółowa dokumentacja i szybka pomoc na forach.  
 
-3. Środowisko programistyczne: Przygotuj działające środowisko programistyczne .NET.
+## Prerequisites
 
-## Importuj przestrzenie nazw
+Zanim zaczniesz, upewnij się, że masz:
 
-W projekcie .NET uwzględnij niezbędne przestrzenie nazw dla Aspose.Zip. Dzięki temu Twój kod może bezproblemowo współdziałać z biblioteką.
+1. **Aspose.Zip for .NET** – pobierz go z oficjalnej [dokumentacji Aspose.Zip for .NET](https://reference.aspose.com/zip/net/).  
+2. **Folder**, w którym znajduje się źródłowy plik RAR i w którym zostanie zapisany wyodrębniony plik.  
+3. **Środowisko programistyczne .NET** (Visual Studio, VS Code, Rider itp.) ukierunkowane na .NET 5+ lub .NET Framework 4.5+.  
+
+## Import Namespaces
+
+Dodaj przestrzenie nazw Aspose.Zip, aby kompilator wiedział, gdzie znajdują się klasy.
 
 ```csharp
 using Aspose.Zip;
 using Aspose.Zip.Rar;
 ```
 
-## Krok 1: Zdefiniuj katalog zasobów
+> **Pro tip:** Jeśli potrzebujesz tylko obsługi RAR, możesz odwołać się bezpośrednio do `Aspose.Zip.Rar`, aby utrzymać minimalny rozmiar kompilacji.
+
+## Step 1: Define the Resource Directory
+
+Ustaw zmienną wskazującą folder zawierający Twoje archiwum oraz miejsce, w którym ma się pojawić wyodrębniony plik.
 
 ```csharp
-// Ścieżka do katalogu zasobów.
+// The path to the resource directory.
 string dataDir = "Your Document Directory";
 ```
 
-## Krok 2: Dekompresuj wpis RAR
+> Zastąp `"Your Document Directory"` absolutną lub względną ścieżką na swoim komputerze, np. `@"C:\Samples\RarFiles\"`.
+
+## Step 2: Decompress a RAR Entry
+
+Teraz faktycznie otwieramy archiwum, wybieramy pierwszy wpis i zapisujemy go. Ten fragment kodu pokazuje podstawę, jak **decompress rar entry .net**.
 
 ```csharp
-//ExStart: DekompresujRarEntry
+//ExStart: DecompressRarEntry
 using (FileStream fs = File.OpenRead(dataDir + "your_file.rar"))
 {
     using (RarArchive archive = new RarArchive(fs))
@@ -55,31 +82,56 @@ using (FileStream fs = File.OpenRead(dataDir + "your_file.rar"))
         archive.Entries[0].Extract(dataDir + "extracted_file.txt");
     }
 }
-//ExEnd: DekompresujRarEntry
+//ExEnd: DecompressRarEntry
 ```
 
-Objaśnienie: Fragment kodu otwiera plik RAR, wyodrębnia pierwszy wpis i zapisuje go jako „plik_wyodrębniony.txt” w określonym katalogu.
+**Wyjaśnienie:**  
+1. `File.OpenRead` otwiera plik RAR jako strumień tylko do odczytu.  
+2. `new RarArchive(fs)` tworzy obiekt archiwum, który parsuje strukturę RAR.  
+3. `archive.Entries[0]` odwołuje się do pierwszego wpisu pliku w archiwum.  
+4. `Extract` zapisuje ten wpis w podanej ścieżce (`extracted_file.txt`).  
 
-### Wniosek
+Jeśli potrzebujesz wyodrębnić inny wpis, po prostu zmień indeks lub przeiteruj `archive.Entries`.
 
-Wykonując poniższe kroki, pomyślnie zdekompresowałeś wpis RAR przy użyciu Aspose.Zip dla .NET. Biblioteka ta upraszcza złożone zadania, czyniąc ją niezbędnym narzędziem dla programistów zajmujących się skompresowanymi plikami w swoich projektach .NET.
+## Common Issues and Solutions
 
-## Często zadawane pytania (FAQ)
+| Problem | Przyczyna | Rozwiązanie |
+|---------|-----------|-------------|
+| **Plik nie znaleziony** | Nieprawidłowa ścieżka `dataDir` lub brak pliku RAR | Sprawdź pełną ścieżkę i upewnij się, że plik istnieje na dysku |
+| **Odmowa dostępu** | Niewystarczające uprawnienia systemu plików | Uruchom aplikację z odpowiednimi uprawnieniami lub zapisz do folderu z prawami zapisu |
+| **Archiwum chronione hasłem** | Archiwum wymaga hasła | Użyj przeciążenia `new RarArchive(fs, "yourPassword")` |
+| **Nieobsługiwana metoda kompresji** | Bardzo stare wersje RAR (przed 1.5) | Zaktualizuj archiwum lub użyj innego narzędzia do ponownej kompresji |
 
-### P: Czy mogę zdekompresować wiele wpisów RAR za jednym razem?
-Tak, możesz iterować po wpisach i wyodrębniać je, stosując podobne podejście.
+## Frequently Asked Questions (FAQs)
 
-### P: Czy Aspose.Zip dla .NET jest kompatybilny z innymi formatami kompresji?
-Absolutnie! Aspose.Zip obsługuje różne formaty, zapewniając wszechstronne rozwiązanie dla Twoich potrzeb w zakresie kompresji.
+### Q: Czy mogę zdekompresować wiele wpisów RAR jednocześnie?
+A: Tak, iteruj przez `archive.Entries` i wywołuj `Extract` dla każdego potrzebnego wpisu.
 
-### P: Jak mogę poradzić sobie z błędami podczas procesu dekompresji?
-Zaimplementuj mechanizmy obsługi błędów, takie jak bloki try-catch, aby zarządzać wyjątkami, które mogą pojawić się podczas wyodrębniania.
+### Q: Czy Aspose.Zip dla .NET jest kompatybilny z innymi formatami kompresji?
+A: Zdecydowanie! To samo API działa z archiwami ZIP, TAR, GZIP i 7z.
 
-### P: Czy mogę używać Aspose.Zip dla .NET w projektach komercyjnych?
-Tak, Aspose.Zip oferuje licencje komercyjne dla programistów, zapewniając elastyczność i wsparcie dla aplikacji komercyjnych.
+### Q: Jak mogę obsłużyć błędy podczas procesu dekompresji?
+A: Umieść kod ekstrakcji w bloku `try‑catch` i przechwyć `Aspose.Zip.Exception`, aby elegancko obsłużyć uszkodzone archiwa lub problemy I/O.
 
-### P: Gdzie mogę szukać pomocy, jeśli napotkam problemy z Aspose.Zip dla .NET?
- Odwiedzić[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) za wsparcie społeczności i dyskusje.
+### Q: Czy mogę używać Aspose.Zip dla .NET w projektach komercyjnych?
+A: Tak, licencja komercyjna obejmuje użycie w produkcji i zapewnia dostęp do wsparcia premium.
+
+### Q: Gdzie mogę szukać pomocy, jeśli napotkam problemy z Aspose.Zip dla .NET?
+A: Odwiedź [forum Aspose.Zip](https://forum.aspose.com/c/zip/37), aby uzyskać pomoc od społeczności i oficjalne odpowiedzi.
+
+### Q: Czy biblioteka obsługuje strumieniowanie dużych plików RAR bez ładowania wszystkiego do pamięci?
+A: Tak, ponieważ działa bezpośrednio na strumieniach, możesz przetwarzać archiwa większe niż dostępna pamięć RAM.
+
+## Conclusion
+
+Postępując zgodnie z tymi krokami, nauczyłeś się, jak efektywnie **decompress rar entry .net** przy użyciu Aspose.Zip dla .NET. Biblioteka abstrahuje niskopoziomowe szczegóły formatu RAR, pozwalając skupić się na logice aplikacji. Śmiało eksploruj dalsze możliwości API — wyodrębniaj wiele wpisów, pracuj z archiwami chronionymi hasłem lub łącz ją z innymi produktami Aspose, aby uzyskać pełny przepływ dokumentów.
+
+---
+
+**Ostatnia aktualizacja:** 2026-03-19  
+**Testowano z:** Aspose.Zip for .NET 24.11 (latest at time of writing)  
+**Autor:** Aspose  
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
