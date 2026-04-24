@@ -1,11 +1,17 @@
 ---
-date: 2025-12-21
-description: Scopri come proteggere con password i file zip usando Aspose.Zip per
-  .NET con crittografia AES. Segui la nostra guida passo passo per una protezione
+date: 2026-04-24
+description: Scopri come **creare file zip protetti da password** usando Aspose.Zip
+  per .NET con crittografia AES. Segui la nostra guida passo‑passo per una protezione
   ottimale.
-linktitle: Password Protect with AES
+keywords:
+- create password protected zip
+- how to encrypt zip
+- aes 256 zip encryption
+- password protect zip
+- aspose zip encryption
+linktitle: Protezione con password tramite AES
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Proteggi con password i file ZIP con crittografia AES usando Aspose.Zip
+title: Crea file ZIP protetti da password con crittografia AES usando Aspose.Zip
 url: /it/net/password-protection-and-encryption/password-protect-with-aes/
 weight: 11
 ---
@@ -14,35 +20,35 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Proteggi con password i file ZIP con crittografia AES usando Aspose.Zip
+# Crea file ZIP protetti da password con crittografia AES usando Aspose.Zip
 
 ## Introduzione
 
-Nel panorama digitale odierno, gli **archivi zip protetti da password** sono un modo fondamentale per mantenere al sicuro i dati riservati durante la condivisione. Aspose.Zip per .NET rende semplice crittografare i file zip con algoritmi AES standard del settore, offrendoti la certezza che solo gli utenti autorizzati possano aprire l'archivio. In questo tutorial vedremo **come crittografare zip** con chiavi AES a 128‑bit, 192‑bit e 256‑bit, e mostreremo come comprimere file con protezione tramite password in poche righe di C#.
+Nel panorama digitale odierno, spesso è necessario **creare zip protetto da password** per mantenere al sicuro i dati riservati durante la condivisione. Aspose.Zip per .NET rende semplice crittografare i tuoi file zip con algoritmi AES standard del settore, garantendoti che solo gli utenti autorizzati possano aprire l'archivio. In questo tutorial vedremo **come crittografare zip** con chiavi AES a 128 bit, 192 bit e 256 bit, e ti mostreremo come comprimere i file con una password per l'archivio zip in poche righe di C#.
 
 ## Risposte rapide
-- **Cosa significa “password protect zip”?** Indica l'applicazione di una crittografia basata su password (ad es., AES) a un archivio ZIP, in modo che il suo contenuto non possa essere aperto senza la password corretta.  
-- **Quali lunghezze di chiave AES sono supportate?** Aspose.Zip supporta la crittografia AES‑128, AES‑192 e AES‑256.  
-- **È necessaria una licenza per provare?** È disponibile una versione di prova gratuita di Aspose.Zip; una licenza è richiesta per l'uso in produzione.  
-- **Posso usarlo con .NET Core?** Sì, la libreria funziona con .NET Framework, .NET Core e .NET 5/6+.  
-- **AES‑256 è l'opzione più sicura?** Sì, AES‑256 offre il livello di sicurezza più elevato tra i metodi supportati.
+- **What does “password protect zip” mean?** Significa applicare una crittografia basata su password (ad es., AES) a un archivio ZIP in modo che il suo contenuto non possa essere aperto senza la password corretta.  
+- **Which AES key lengths are supported?** Aspose.Zip supporta la crittografia AES‑128, AES‑192 e AES‑256.  
+- **Do I need a license to try this?** È disponibile una versione di prova gratuita di Aspose.Zip; è necessaria una licenza per l'uso in produzione.  
+- **Can I use this with .NET Core?** Sì, la libreria funziona con .NET Framework, .NET Core e .NET 5/6+.  
+- **Is AES‑256 the most secure option?** Sì, AES‑256 offre il livello di sicurezza più elevato tra i metodi supportati.
 
-## Cos'è la protezione con password di un zip?
-Proteggere con password un file ZIP significa applicare la crittografia all'archivio in modo che le sue voci siano illeggibili finché non viene fornita la password corretta. AES (Advanced Encryption Standard) è l'algoritmo preferito perché è veloce, ampiamente supportato e soddisfa gli standard di sicurezza moderni.
+## Cos'è creare zip protetto da password?
+Creare un zip protetto da password significa crittografare l'archivio in modo che ogni voce sia illeggibile finché non viene fornita la password corretta. AES (Advanced Encryption Standard) è l'algoritmo preferito perché è veloce, ampiamente supportato e soddisfa gli standard di sicurezza moderni.
 
 ## Perché usare la crittografia AES per gli archivi ZIP?
-- **Sicurezza forte:** AES‑256 offre una chiave a 256 bit, rendendo gli attacchi di forza bruta praticamente impraticabili.  
-- **Compatibilità cross‑platform:** La maggior parte degli strumenti di archiviazione comprende i ZIP crittografati con AES, così i destinatari possono aprirli con software standard.  
-- **API semplice:** Aspose.Zip astrae i dettagli crittografici complessi, permettendoti di concentrarti sulla logica di business.
+- **Strong security:** AES‑256 offre una chiave a 256 bit, rendendo gli attacchi brute‑force praticamente impraticabili.  
+- **Cross‑platform compatibility:** La maggior parte degli strumenti di archiviazione comprende i ZIP crittografati con AES, così i destinatari possono aprirli con software standard.  
+- **Simple API:** Aspose.Zip astrae i dettagli crittografici complessi, permettendoti di concentrarti sulla logica di business.
 
 ## Prerequisiti
 
 Prima di iniziare, assicurati di avere:
 
-- **Aspose.Zip per .NET** integrato nel tuo progetto. Puoi scaricarlo [qui](https://releases.aspose.com/zip/net/).
+- **Aspose.Zip for .NET** integrato nel tuo progetto. Puoi scaricarlo [here](https://releases.aspose.com/zip/net/).
 - Una cartella contenente i file da comprimere (ci riferiremo a essa come `dataDir`).
 
-## Importare i namespace
+## Importa namespace
 
 ```csharp
 using Aspose.Zip;
@@ -50,7 +56,7 @@ using Aspose.Zip.Saving;
 using System.IO;
 ```
 
-## Come crittografare i file zip con AES‑128
+## Come creare zip protetto da password con AES‑128
 
 In questo primo passo creiamo un archivio ZIP e lo proteggiamo con **AES‑128**. La password `"p@s$"` è usata per bloccare l'archivio.
 
@@ -70,11 +76,11 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES128_out.z
 //ExEnd: PasswordProtectWithAES128
 ```
 
-> **Suggerimento professionale:** Conserva le password in un vault sicuro; non inserirle mai direttamente nel codice di produzione.
+> **Pro tip:** Conserva le tue password in un vault sicuro; non inserirle mai direttamente nel codice di produzione.
 
-## Come crittografare i file zip con AES‑192
+## Come creare zip protetto da password con AES‑192
 
-Se ti serve un livello di protezione più elevato, passa a **AES‑192**. Il codice è identico; cambia solo il valore di `EncryptionMethod`.
+Se ti serve un livello di protezione più forte, passa a **AES‑192**. Il codice è identico; cambia solo il `EncryptionMethod`.
 
 ```csharp
 //ExStart:PasswordProtectWithAES192
@@ -92,7 +98,7 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES192_out.z
 //ExEnd:PasswordProtectWithAES192
 ```
 
-## Come crittografare i file zip con AES‑256 (aes 256 zip encryption)
+## Come creare zip protetto da password con AES‑256 (aes 256 zip encryption)
 
 Per la massima sicurezza, utilizza **AES‑256**. Questa è l'impostazione consigliata per dati aziendali sensibili o settori regolamentati.
 
@@ -112,40 +118,38 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES256_out.z
 //ExEnd:PasswordProtectWithAES256 
 ```
 
-> **Nota:** AES‑256 è spesso indicato come *aes 256 zip encryption* nella documentazione e nelle query di ricerca.
+> **Note:** AES‑256 è spesso indicato come *aes 256 zip encryption* nella documentazione e nelle query di ricerca.
 
 ## Problemi comuni e soluzioni
 
 | Problema | Causa | Soluzione |
 |----------|-------|-----------|
-| Errore “Invalid password” durante l'apertura dell'archivio | Password errata o metodo di crittografia non corrispondente | Verifica la stringa della password e assicurati che lo stesso `EncryptionMethod` sia usato sia per la creazione sia per l'estrazione. |
-| L'archivio non può essere aperto con vecchi strumenti di decompressione | Gli strumenti più vecchi potrebbero non supportare la crittografia AES | Usa un'utilità di decompressione moderna (ad es., 7‑Zip) o scegli la crittografia ZIP standard se è necessaria la compatibilità. |
-| File di grandi dimensioni causano pressione sulla memoria | L'intero file viene caricato in memoria prima della compressione | Esegui lo streaming del file usando `FileStream` (come mostrato) ed evita di caricare l'intero contenuto in un array di byte. |
+| “Invalid password” error when opening the archive | Password errata o metodo di crittografia non corrispondente | Verifica la stringa della password e assicurati che lo stesso `EncryptionMethod` sia usato sia per la creazione sia per l'estrazione. |
+| Archive cannot be opened in older unzip tools | Gli strumenti più vecchi potrebbero non supportare la crittografia AES | Usa un'utilità di decompressione moderna (ad esempio 7‑Zip) o scegli la crittografia ZIP standard se è necessaria la compatibilità. |
+| Large files cause memory pressure | L'intero file viene caricato in memoria prima della compressione | Esegui lo streaming del file usando `FileStream` (come mostrato) ed evita di caricare l'intero contenuto in un array di byte. |
 
-## Altre domande frequenti
+## Domande frequenti
 
-**D: Come crittografo un file zip in C# usando Aspose.Zip?**  
-R: Usa la classe `AesEcryptionSettings` con il `EncryptionMethod` desiderato (AES128, AES192 o AES256) come mostrato negli esempi di codice sopra.
+**Q: Come posso crittografare un file zip in C# usando Aspose.Zip?**  
+A: Usa la classe `AesEcryptionSettings` con il `EncryptionMethod` desiderato (AES128, AES192, o AES256) come mostrato negli snippet di codice sopra.
 
-**D: Posso comprimere file con protezione password in un unico passaggio?**  
-R: Sì, Aspose.Zip consente di aggiungere voci all'archivio e applicare la crittografia AES nella stessa chiamata `CreateEntry`, come illustrato.
+**Q: Posso comprimere i file con protezione password in un unico passaggio?**  
+A: Sì, Aspose.Zip ti consente di aggiungere voci all'archivio e applicare la crittografia AES nella stessa chiamata `CreateEntry`, come mostrato.
 
-**D: Aspose.Zip supporta la crittografia di archivi di grandi dimensioni (più GB)?**  
-R: Assolutamente. Eseguendo lo streaming dei file con `FileStream`, è possibile crittografare archivi di dimensioni virtualmente illimitate senza caricare tutto in memoria.
+**Q: Aspose.Zip supporta la crittografia di archivi di grandi dimensioni (più GB)?**  
+A: Assolutamente. Eseguendo lo streaming dei file con `FileStream`, puoi crittografare archivi di praticamente qualsiasi dimensione senza caricare tutto in memoria.
 
-**D: Esiste un modo per verificare l'integrità di un zip crittografato dopo la creazione?**  
-R: Puoi aprire l'archivio con la stessa password e leggere nuovamente le voci; qualsiasi discrepanza genererà un'eccezione che indica corruzione.
+**Q: Esiste un modo per verificare l'integrità di un zip crittografato dopo la creazione?**  
+A: Puoi aprire l'archivio con la stessa password e leggere nuovamente le voci; qualsiasi discrepanza genererà un'eccezione che indica corruzione.
 
-**D: AES‑256 influisce sul rapporto di compressione?**  
-R: La crittografia viene applicata dopo la compressione, quindi il rapporto di compressione rimane invariato; solo il payload crittografato è leggermente più grande a causa di un piccolo overhead.
+**Q: AES‑256 influisce sul rapporto di compressione?**  
+A: La crittografia viene applicata dopo la compressione, quindi il rapporto di compressione rimane lo stesso; solo il payload crittografato è più grande di un piccolo overhead.
 
 ---
 
-**Ultimo aggiornamento:** 2025-12-21  
-**Testato con:** Aspose.Zip per .NET 24.11 (latest)  
+**Ultimo aggiornamento:** 2026-04-24  
+**Testato con:** Aspose.Zip for .NET 24.11 (latest)  
 **Autore:** Aspose  
-
----
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
