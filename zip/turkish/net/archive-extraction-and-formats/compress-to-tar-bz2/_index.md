@@ -1,9 +1,15 @@
 ---
-date: 2026-02-20
+date: 2026-04-24
 description: .NET'te Aspose.Zip ile tar sıkıştırmayı ve TarBz2 arşivi oluşturmayı
-  öğrenin. Bu adım adım kılavuz, dosyaları tar'a eklemeyi ve tarbz2 dosyalarını verimli
+  öğrenin. Bu adım adım rehber, dosyaları tar'a eklemeyi ve tarbz2 dosyalarını verimli
   bir şekilde üretmeyi gösterir.
-linktitle: Compressing to TarBz2
+keywords:
+- how to compress tar
+- add files to tar
+- asp zip
+- create tarbz2 archive
+- tar archive .net
+linktitle: TarBz2'ye Sıkıştırma
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Aspose.Zip for .NET ile tar sıkıştırma ve TarBz2 oluşturma
 url: /tr/net/archive-extraction-and-formats/compress-to-tar-bz2/
@@ -16,38 +22,38 @@ weight: 11
 
 # Tar sıkıştırma ve Aspose.Zip for .NET ile TarBz2 oluşturma
 
-## Giriiş
+## Giriş
 
-Aspose.Zip for .NET kullanarak **tar sıkıştırma** ve bir tar arşivine dosya ekleme, ardından bir TarBz2 dosya oluşturma genel rehberimize hoş geldiniz. Yedekleme aracı oluşturma, mevcut paketler ya da sadece mevcut için kapsamlı bir arşiv gereksinimi sunuyor, bu kılavuzda her şeyin net açıklamaları, gerçek dünya ipuçları ve örnekler pratik boyutlar gösteriliyor.
+Bu öğreticide **tar sıkıştırma** arşivlerini nasıl sıkıştıracağınızı ve **Aspose.Zip** .NET kütüphanesini kullanarak kompakt bir **TarBz2** dosyasına nasıl dönüştüreceğinizi keşfedeceksiniz. Yedekleme aracı oluşturuyor, dağıtım paketleri yayımlıyor ya da sadece dağıtım için hafif bir paket ihtiyacınız olsun, aşağıdaki adımlar tar'a dosya eklemeyi, Bzip2 sıkıştırmasını uygulamayı ve paylaşmaya hazır bir arşiv üretmeyi size gösterecek.
 
-Başlamadan önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olun.
+İlerlemeye başlamadan önce, bu kılavuzda daha sonra listelenen önkoşullara sahip olduğunuzdan emin olun, böylece sorunsuz bir şekilde takip edebilirsiniz.
 
 ## Hızlı Yanıtlar
-- **Hangi üyeliğini kullanmalı mıyım?** Aspose.Zip for .NET
-- **Uygulama ne kadar sürer?** Yaklaşık 5‑10 dakika
-- **Lisans gerekiyor mu?** Üretim için geçici bir lisans gereklidir; ücretsiz deneme sürümü mevcut
-- **Birden fazla parça sıkıştırılabilir mi?** Evet – Tar arşivine istediğiniz kadar giriş yapabilirsiniz
-- **.NET 6+ ile uyumlu mu?** kesinlikle, Aspose.Zip .NET Framework ve .NET Core/5/6'yı
+- **Hangi kütüphaneyi kullanmalıyım?** Aspose.Zip for .NET  
+- **Uygulama ne kadar sürer?** Yaklaşık 5‑10 dakika  
+- **Lisans gerekli mi?** Üretim için geçici bir lisans gerekir; ücretsiz deneme mevcuttur  
+- **Birden fazla dosyayı sıkıştırabilir miyim?** Evet – tar arşivine istediğiniz kadar giriş ekleyebilirsiniz  
+- **.NET 6+ ile uyumlu mu?** Kesinlikle, Aspose.Zip .NET Framework ve .NET Core/5/6'yı destekler  
 
-## Katran nasıl sıkıştırılır
+## TarBz2 arşivi nedir?
 
-Dosyaları bir **tar** (Teyp Arşivi) arşivine ayrılabilir, dizin taşınabilir ve dosya meta korumalı, tek bir sıkıştırılmamış konteyner oluşturur. Ayrıca Bzip2 sıkıştırması uygulandınızda sonuç **tar.bz2** (TarBz2) arşivi olur—verimli depolama ve depolama için kullanılabilir. Aspose.Zip bu sürecin tek satırda toplanmasıyla, hem tar oluşturmayı hem de Bzip2 sıkıştırmasını arka planda halleder.
+**TarBz2** dosyası, geleneksel **tar** konteynerini (dizin yapısını ve dosya meta verilerini korur) **Bzip2** sıkıştırmasıyla birleştirir ve yüksek sıkıştırmalı bir `.tar.bz2` paketi oluşturur. Bu format, sıkıştırma oranı ile açma hızı arasında iyi bir denge sunduğu için Unix benzeri sistemlerde popülerdir.
 
-## Dosyaları neden Aspose.Zip ile TarBz2'ye sıkıştırmalısınız?
+## Neden dosyaları TarBz2 ile Aspose.Zip kullanarak sıkıştırmalısınız?
 
-- **Hız ve Basitlik** – Tek satır API çağrılarını hem tar oluşturmayı hem de Bzip2 sıkıştırmasını yönetir.
-- **Çapraz platformu** – Windows, Linux ve macOS .NET çalışma zamanlarında çalışır.
-- **İnce ayarlı kontrol** – Hangi dosyaların dahil edilmesini seçin, özel giriş reklamlarını belirleyin ve doğrudan diske akıtın.
-- **Güçlü .NET desteği** – Konsol uygulamalarının web servislerine kadar **tar arşivi .net** senaryolarıyla tamamen uyumludur.
+- **Hız ve Basitlik** – Tek satır API çağrıları hem tar oluşturmayı hem de Bzip2 sıkıştırmasını yönetir.  
+- **Çapraz platform** – Windows, Linux ve macOS .NET çalışma zamanlarında çalışır.  
+- **İnce ayarlı kontrol** – Hangi dosyaların dahil edileceğini seçin, özel giriş adları belirleyin ve doğrudan diske akıtın.  
+- **Güçlü .NET desteği** – Konsol uygulamalarından web servislerine kadar **tar archive .net** senaryoları için mükemmeldir.  
 
 ## Önkoşullar
 
-- **Aspose.Zip for .NET** – Resmi siteden en son paket indir: [https://releases.aspose.com/zip/net/](https://releases.aspose.com/zip/net/)
-- **Belge Dizini** – İstediğiniz dosyaları içeren bir klasörde arşivlemek. Örneklerde bu klasöre `dataDir` değişkeniyle referans veriyoruz.
+- **Aspose.Zip for .NET** – Resmi siteden en son paketi indirin: [https://releases.aspose.com/zip/net/](https://releases.aspose.com/zip/net/)  
+- **Document Directory** – Arşivlemek istediğiniz dosyaları içeren bir klasör. Örneklerde bu klasöre `dataDir` değişkeniyle atıfta bulunuyoruz.
 
-> **Pro ipucu:** İstenmeyen dosyaların yanlışlıkla dahil edilmesini engellemek için kaynak dosyalarınızı ayrı bir klasörde tutun.
+> **Pro ipucu:** İstenmeyen dosyaların yanlışlıkla dahil edilmesini önlemek için kaynak dosyalarınızı ayrı bir klasörde tutun.
 
-## Ad Alanlarını İçe Aktar
+## Ad Alanlarını İçe Aktarın
 
 İlk olarak, Aspose.Zip’in Tar ve Bzip2 sınıflarına erişebilmek için gerekli ad alanlarını içe aktarın.
 
@@ -58,7 +64,7 @@ using Aspose.Zip.Bzip2;
 using Aspose.Zip.Tar;
 ```
 
-## Adım 1: Belge Dizinini Ayarlayın
+## Adım 1: Document Directory'yi Ayarla
 
 Arşivlemek istediğiniz dosyaları içeren klasöre işaret eden yolu tanımlayın.
 
@@ -66,11 +72,11 @@ Arşivlemek istediğiniz dosyaları içeren klasöre işaret eden yolu tanımlay
 string dataDir = "Your Document Directory";
 ```
 
-> `\"Your Document Directory\"` ifadesini kaynak klasörünüzün mutlak ya da göreli yolu ile değiştirin.
+> `"Your Document Directory"` ifadesini kaynak klasörünüzün mutlak ya da göreli yolu ile değiştirin.
 
 ## Adım 2: Dosyaları tar'a ekleyin ve bir TarBz2 arşivi oluşturun
 
-İşlemin temel adımı bir `TarArchive` oluşturmak, girişler eklemek ve ardından bir `Bzip2Archive` ile sarmaktır. Aşağıdaki kod, **tarbz2 nasıl oluşturulur** göstermek için temiz, disposable‑pattern stilinde hazırlanmıştır.
+İşlemin temel kısmı bir `TarArchive` oluşturmak, girişler eklemek ve ardından bir `Bzip2Archive` ile sarmaktır. Aşağıdaki kod, **tar nasıl oluşturulur** ve **TarBz2**'ye nasıl sıkıştırılır gösteren temiz, disposable‑pattern stilinde bir örnek sunar.
 
 ```csharp
 //ExStart: CompressFile
@@ -87,46 +93,48 @@ using (Bzip2Archive bz2 = new Bzip2Archive())
 }
 ```
 
-- `CreateEntry` her dosyayı **tar** konteynerine ekler.  
+- `CreateEntry` **tar'a dosya ekler** – arşivde ihtiyaç duyduğunuz her dosya için bu yöntemi çağırabilirsiniz.  
 - `bz2.SetSource(archive)` Bzip2 arşivine tüm tar akışını sıkıştırmasını söyler.  
-- `bz2.Save(...)` son **tar.bz2** dosyasını diske yazar.
+- `bz2.Save(...)` son **TarBz2** dosyasını diske yazar.
 
-**İpucu:** Bir kerede birden fazla dosyayı **tarbz2’ye sıkıştırmak** için ihtiyacınız olan her dosya için `archive.CreateEntry` çağrısını tekrarlamanız yeterlidir.
+**İpucu:** Toplu olarak **tar'a dosya eklemek** için, `bz2.Save` çağırmadan önce her dosya için `archive.CreateEntry` komutunu tekrarlamanız yeterlidir.
 
 ## Yaygın Sorunlar ve Çözümler
 
 | Sorun | Sebep | Çözüm |
-|----------|-----------|-----|
-| **Dosya hatası** hatası | `dataDir` yolunun yanlış olması ya da dosya uzantısının eksik olması | Tam yolu doğrulayın ve dosyanın mevcut olduğundan emin olun. |
-| **Boş arşiv** | `bz2.Save` öncesinde giriş yapılmamış | En az bir `CreateEntry` kapsamını tamamlayın. |
-| **İzin reddedildi** | Uygulamanın dağıtıldığı sisteme yazma izni yok | Uygulamayı gerekli izinlerle çalıştırın veya yazılabilir bir dizin seçin. |
+|-------|--------|-----|
+| **Dosya bulunamadı** hatası | `dataDir` yolu yanlış veya dosya uzantısı eksik | Tam yolu doğrulayın ve dosyanın mevcut olduğundan emin olun. |
+| **Boş arşiv** | `bz2.Save` öncesinde giriş eklenmemiş | En az bir `CreateEntry` çağrısı ekleyin. |
+| **İzin reddedildi** | Uygulamanın çıktı klasörüne yazma izni yok | Uygulamayı uygun yetkilerle çalıştırın veya yazılabilir bir dizin seçin. |
 
 ## Sıkça Sorulan Sorular
 
-**S: Aspose.Zip tüm .NET uygulamalarıyla uyumlu mu?**
-C: Evet. .NET Framework, .NET Core, .NET 5/6 ve daha yeni çalışma zamanlarıyla çalışmaktadır.
+**S: Aspose.Zip tüm .NET uygulamalarıyla uyumlu mu?**  
+C: Evet. .NET Framework, .NET Core, .NET 5/6 ve daha yeni çalışma zamanlarıyla çalışır.
 
-**S: Birden fazla sayıda aynı anda sıkıştırılabilir miyim?**
-C: elbette. Arşivi kaydetmeden önce dosyası için `CreateEntry` çağırın.
+**S: Birden fazla dosyayı aynı anda sıkıştırabilir miyim?**  
+C: Kesinlikle. Arşivi kaydetmeden önce her dosya için `CreateEntry` çağırın.
 
-**S: Ek bilgileri nerede öğrenebilirim?**
-C: Ayrıntılı dokümantasyon [burada](https://reference.aspose.com/zip/net/) mevcuttur.
+**S: Ek belgeleri nerede bulabilirim?**  
+C: Ayrıntılı belgeler [burada](https://reference.aspose.com/zip/net/) mevcuttur.
 
-**S: Aspose.Zip için geçici bir lisans nasıl alabilirim?**
+**S: Aspose.Zip için geçici bir lisans nasıl alabilirim?**  
 C: Bir lisansı [buradan](https://purchase.aspose.com/temporary-license/) talep edebilirsiniz.
 
-**S: Ücretsiz deneme sürümü mevcut mu?**
-C: Evet, deneme yazılımı [buradan](https://releases.aspose.com/) indirebilirsiniz.
+**S: Ücretsiz deneme mevcut mu?**  
+C: Evet, deneme sürümünü [buradan](https://releases.aspose.com/) indirebilirsiniz.
 
-## Çözüm
+## Sonuç
 
-Artık **dosyaları tar’a eklemeyi**, Bzip2 verisiyle sarmayı ve Aspose.Zip for .NET kullanarak bir **TarBz2** arşivi üretebileceğiniz malzemeleriniz. Bu teknik hızlı, güvenilir ve tüm modern .NET platformlarında çalışır. Daha büyük dosya kitapları, özel giriş adlarıyla denemeler yapabilir veya kodu kendi yedekleme ya da mevcut satırlarınıza entegre edebilirsiniz.
+Artık **tar sıkıştırma** yöntemini, dosyaları eklemeyi ve sonucu bir Bzip2 akışıyla sarmalayarak **TarBz2** arşivi üretmeyi Aspose.Zip for .NET kullanarak öğrendiniz. Bu yaklaşım hızlı, güvenilir ve tüm modern .NET platformlarında çalışır. Daha büyük dosya setleri, özel giriş adlarıyla denemeler yapabilir veya kodu kendi yedekleme ya da dağıtım hatlarınıza entegre edebilirsiniz.
 
-Herhangi bir sorunla karşılaşırsanız, Aspose.Zip sisteminin yardımcı olmaya hazır—tek yapılması gereken [Aspose.Zip destek forumuna](https://forum.aspose.com/c/zip/37) göz atmak.
+Herhangi bir sorunla karşılaşırsanız, Aspose.Zip topluluğu yardımcı olmaya hazır—sadece [Aspose.Zip destek forumuna](https://forum.aspose.com/c/zip/37) gidin.
 
-**Son Güncelleme:** 2026-02-20
-**Edilen'i test edin:** Aspose.Zip for .NET (en son sürüm)
-**Yazar:** Aspose  
+---
+
+**Last Updated:** 2026-04-24  
+**Tested With:** Aspose.Zip for .NET (latest release)  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
