@@ -1,11 +1,17 @@
 ---
-date: 2026-02-17
-description: Leer hoe je zip‑voortgang in C# kunt monitoren en zip‑bestanden kunt
-  decomprimeren, waarbij je een enkel item extraheert met Aspose.Zip voor .NET in
-  je C#‑projecten.
-linktitle: Decompressing a Single File
+date: 2026-04-24
+description: Leer hoe je zip‑bestanden kunt uitpakken met C# en de voortgang van het
+  uitpakken kunt monitoren terwijl je een zip‑bestand met één bestand uitpakt met
+  Aspose.Zip voor .NET.
+keywords:
+- extract zip c#
+- decompress single file zip
+- compress multiple files zip
+- password protected zip c#
+- extract zip entry .net
+linktitle: Een enkel bestand decomprimeren
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Zip‑voortgang monitoren c# – Enkel bestand decomprimeren met Aspose.Zip
+title: zip uitpakken c# – Voortgang monitoren & enkel bestand uitpakken
 url: /nl/net/file-decompression/decompress-single-file/
 weight: 12
 ---
@@ -14,32 +20,32 @@ weight: 12
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Monitor zip voortgang c# – Eén bestand decomprimeren met Aspose.Zip
+# extract zip c# – Volg voortgang & extraheer enkel bestand
 
-## Introduction
+## Introductie
 
-Als je **monitor zip progress c#** moet uitvoeren terwijl je zip‑bestanden uitpakt en slechts één entry haalt, maakt Aspose.Zip voor .NET het werk eenvoudig. In deze tutorial lopen we een compleet, real‑world voorbeeld door dat laat zien hoe je een enkel bestand uit een ZIP‑archief extraheert, de extractievoortgang in realtime bekijkt en het resultaat op een nette, onderhoudbare manier afhandelt. Aan het einde kun je zip‑extractie toevoegen aan elke C#‑applicatie.
+Als je **extract zip c#** en ook **monitor zip progress c#** moet uitvoeren terwijl je slechts één entry haalt, maakt Aspose.Zip for .NET het werk eenvoudig. In deze tutorial lopen we een volledig, real‑world voorbeeld door dat laat zien hoe je een enkel bestand uit een ZIP‑archief extraheert, de voortgang van het uitpakken in realtime bekijkt, en het resultaat op een nette, onderhoudbare manier afhandelt. Aan het einde ben je in staat zip‑extractie toe te voegen aan elke C#‑applicatie.
 
-## Quick Answers
-- **Waar gaat deze tutorial over?** Monitoring zip progress c# en het extraheren van een enkel bestand uit een ZIP‑archief met Aspose.Zip voor .NET.  
-- **Welk primair trefwoord wordt getarget?** monitor zip progress c#  
+## Snelle antwoorden
+- **Waar gaat deze tutorial over?** Monitoring zip progress c# en het extraheren van een enkel bestand uit een ZIP‑archief met Aspose.Zip for .NET.  
+- **Welk primair trefwoord is gericht?** extract zip c#  
 - **Heb ik een licentie nodig?** Een gratis proefversie werkt voor ontwikkeling; een commerciële licentie is vereist voor productie.  
-- **Wordt .NET Core ondersteund?** Ja – dezelfde code werkt op .NET Framework en .NET Core.  
+- **Wordt .NET Core ondersteund?** Ja – dezelfde code draait op .NET Framework en .NET Core.  
 - **Hoe lang duurt de implementatie?** Ongeveer 10‑15 minuten voor een basisopzet.
 
-## Prerequisites
+## Vereisten
 
-Voordat je aan de tutorial begint, zorg dat je de volgende zaken klaar hebt staan:
+Voordat je in de tutorial duikt, zorg ervoor dat je de volgende vereisten hebt:
 
 - Aspose.Zip for .NET Library: Download en installeer de bibliotheek vanaf de [Aspose.Zip for .NET Documentation](https://reference.aspose.com/zip/net/).
 - Development Environment: Zorg voor een functionele .NET‑ontwikkelomgeving, inclusief Visual Studio of een andere compatibele IDE.
-- Basic Understanding of C#: Maak jezelf vertrouwd met de basisprincipes van C#‑programmeren.
+- Basic Understanding of C#: Maak je vertrouwd met de basis van C#‑programmeren.
 
-Now, let's get our hands dirty with some code!
+Laten we nu de handen uit de mouwen steken met wat code!
 
-## Import Namespaces
+## Namespaces importeren
 
-Begin met het importeren van de benodigde namespaces om je Aspose.Zip‑avontuur te starten:
+Begin met het importeren van de benodigde namespaces om je Aspose.Zip‑reis te starten:
 
 ```csharp
 using Aspose.Zip;
@@ -47,41 +53,41 @@ using System;
 using System.IO;
 ```
 
-## What is monitor zip progress c#?
+## Wat is extract zip c# en waarom voortgang monitoren?
 
-Het monitoren van de voortgang van een ZIP‑extractie geeft gebruikers directe feedback, vooral bij grote archieven. Aspose.Zip genereert voortgangs‑events waar je op kunt abonneren, waardoor het eenvoudig is om percentages weer te geven of UI‑elementen bij te werken.
+Het uitpakken van een ZIP‑archief in C# geeft je toegang tot de bestanden erin, terwijl het monitoren van de voortgang realtime feedback aan gebruikers biedt—vooral belangrijk bij grote archieven. Aspose.Zip genereert voortgangs‑events waar je op kunt abonneren, waardoor het eenvoudig is percentages weer te geven of UI‑elementen bij te werken.
 
-## Why Use Aspose.Zip for C# File Decompression?
+## Waarom Aspose.Zip gebruiken voor C# bestandsdecompressie?
 
-- **No external dependencies** – pure .NET library.  
-- **Supports large archives** with streaming, so memory usage stays low.  
-- **Built‑in progress events** make it easy to provide UI feedback while you **monitor zip progress c#**.  
+- **No external dependencies** – pure .NET bibliotheek.  
+- **Supports large archives** met streaming, zodat het geheugenverbruik laag blijft.  
+- **Built‑in progress events** maken het eenvoudig om UI‑feedback te geven terwijl je **monitor zip progress c#**.  
 - **Works across .NET Framework, .NET Core, and .NET 5/6**.  
-- **Also capable of compressing multiple files zip** if you need to create archives later.
+- **Also capable of compress multiple files zip** als je later archieven wilt maken.
 
-## How to decompress zip c# using Aspose.Zip
+## Hoe een enkel bestand zip decomprimeren met Aspose.Zip
 
-Hieronder staan de stappen die je volgt om een enkele entry te extraheren en de extractie‑percentage in de console te bekijken.
+Hieronder staan de stappen die je volgt om een enkel entry te extraheren en het extractiepercentage in de console te bekijken.
 
-### Step 1: Set Your Document Directory
+### Stap 1: Stel je documentdirectory in
 
-Geef de map op waar je documenten zijn opgeslagen. Vervang `"Your Document Directory"` door het daadwerkelijke pad.
+Begin met het opgeven van de map waarin je documenten zijn opgeslagen. Vervang `"Your Document Directory"` door het daadwerkelijke pad.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-### Step 2: Create a Compressed File (Demo Setup)
+### Stap 2: Maak een gecomprimeerd bestand (Demo‑opzet)
 
-De volgende aanroep maakt een voorbeeld‑ZIP‑bestand dat we later zullen decomprimeren. Dit weerspiegelt een typische situatie waarin je al een ZIP‑archief hebt.
+De volgende aanroep maakt een voorbeeld‑ZIP‑bestand dat we later zullen decomprimeren. Dit weerspiegelt een typisch scenario waarin je al een ZIP‑archief hebt.
 
 ```csharp
 CompressSingleFile.Run();
 ```
 
-### Step 3: Decompress the File – Extract Single Zip File
+### Stap 3: Decompress het bestand – Extraheer enkel ZIP‑bestand
 
-Laten we nu naar het hart van de zaak gaan – het extraheren van de enkele entry terwijl je **monitor zip progress c#**. De code hieronder opent het ZIP‑archief, koppelt een voortgangs‑handler en extraheert de eerste entry naar een tekstbestand.
+Laten we nu de kern van de zaak induiken – het extraheren van de enkele entry terwijl **monitor zip progress c#**. De onderstaande code opent het ZIP‑archief, koppelt een voortgangs‑handler, en extraheert de eerste entry naar een tekstbestand.
 
 ```csharp
 // ExStart: DecompressSingleFile
@@ -104,46 +110,53 @@ using (FileStream fs = File.OpenRead(dataDir + "CompressSingleFile_out.zip"))
 }
 ```
 
-Dit fragment **extracts a single zip entry** while printing real‑time progress (e.g., “30% decompressed”). You can adapt the index (`Entries[0]`) to target any other file inside the archive.
+Deze codefragment **extracts a single zip entry** terwijl realtime voortgang wordt afgedrukt (bijv. “30% decompressed”). Je kunt de index (`Entries[0]`) aanpassen om een ander bestand in het archief te targeten.
 
-## Common Issues & Tips
+## Extract zip entry .net – Tips & Best Practices
 
-- **File path separators** – use `Path.Combine` for cross‑platform safety.  
-- **Password‑protected ZIPs** – set `archive.Password` before extracting.  
-- **Multiple entries** – loop through `archive.Entries` and match by `FileName`.  
-- **Compress multiple files zip** – if you later need to bundle several files, Aspose.Zip’s `AddFile` method lets you create archives without leaving the API.
+- **Path handling** – gebruik `Path.Combine(dataDir, "file.zip")` om platform‑specifieke scheidingstekenproblemen te vermijden.  
+- **Password‑protected zip c#** – stel `archive.Password = "yourPassword"` in vóór het aanroepen van `Extract`.  
+- **Multiple entries** – loop door `archive.Entries` en match op `FileName` wanneer je meer dan één bestand moet extraheren.  
+- **compress multiple files zip** – later kun je `archive.AddFile(path)` aanroepen om meerdere bestanden te bundelen in een nieuw archief.
 
-## Frequently Asked Questions
+## Veelvoorkomende problemen & Tips
 
-### Q1: Can I compress multiple files using Aspose.Zip for .NET?
+- **File path separators** – gebruik `Path.Combine` voor cross‑platform veiligheid.  
+- **Password‑protected ZIPs** – stel `archive.Password` in vóór het extraheren.  
+- **Multiple entries** – loop door `archive.Entries` en match op `FileName`.  
+- **Compress multiple files zip** – als je later meerdere bestanden moet bundelen, laat de `AddFile`‑methode van Aspose.Zip je archieven maken zonder de API te verlaten.
 
-A1: Yes, Aspose.Zip for .NET supports **compress multiple files zip**. Refer to the documentation for detailed instructions.
+## Veelgestelde vragen
 
-### Q2: Is Aspose.Zip compatible with .NET Core?
+### Q1: Kan ik meerdere bestanden comprimeren met Aspose.Zip for .NET?
 
-A2: Absolutely! Aspose.Zip seamlessly integrates with both .NET Framework and .NET Core.
+**A:** Ja, Aspose.Zip for .NET ondersteunt **compress multiple files zip**. Raadpleeg de documentatie voor gedetailleerde instructies.
 
-### Q3: How can I handle password‑protected compressed files?
+### Q2: Is Aspose.Zip compatibel met .NET Core?
 
-A3: Aspose.Zip provides methods to work with password‑protected archives. Consult the documentation for guidance.
+**A:** Absoluut! Aspose.Zip integreert naadloos met zowel .NET Framework als .NET Core.
 
-### Q4: Are there any licensing considerations for using Aspose.Zip?
+### Q3: Hoe kan ik wachtwoord‑beveiligde gecomprimeerde bestanden afhandelen?
 
-A4: Review the licensing information on the [Aspose website](https://purchase.aspose.com/buy).
+**A:** Aspose.Zip biedt methoden om met wachtwoord‑beveiligde archieven te werken. Stel de `Password`‑eigenschap in op het `Archive`‑object vóór het extraheren.
 
-### Q5: Where can I seek help if I encounter issues?
+### Q4: Zijn er licentie‑overwegingen voor het gebruik van Aspose.Zip?
 
-A5: Visit the [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) for community support.
+**A:** Bekijk de licentie‑informatie op de [Aspose website](https://purchase.aspose.com/buy).
 
-## Conclusion
+### Q5: Waar kan ik hulp zoeken als ik problemen ondervind?
 
-Gefeliciteerd! Je hebt met succes **monitor zip progress c#** uitgevoerd en een enkel bestand geëxtraheerd met Aspose.Zip voor .NET. Integreer dit patroon in je applicaties om bestandsbeheer te stroomlijnen, de gebruikerservaring te verbeteren en je codebase schoon te houden.
+**A:** Bezoek het [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) voor community‑ondersteuning.
+
+## Conclusie
+
+Gefeliciteerd! Je hebt met succes **extract zip c#** uitgevoerd en de zip‑voortgang gemonitord terwijl je een enkel bestand extraheerde met Aspose.Zip for .NET. Neem dit patroon op in je applicaties om bestandsafhandeling te stroomlijnen, de gebruikerservaring te verbeteren en je codebase schoon te houden.
 
 ---
 
-**Last Updated:** 2026-02-17  
-**Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose  
+**Laatst bijgewerkt:** 2026-04-24  
+**Getest met:** Aspose.Zip for .NET 24.11  
+**Auteur:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
