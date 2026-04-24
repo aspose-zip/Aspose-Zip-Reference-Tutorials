@@ -1,12 +1,14 @@
 ---
-date: 2025-12-21
-description: Tìm hiểu cách mở các tệp lưu trữ được mã hóa (AES) bằng Aspose.Zip cho
-  .NET. Hướng dẫn từng bước này cho bạn biết cách giải mã các tệp zip được bảo vệ
-  bằng mật khẩu và giải nén các tệp zip được bảo vệ trong C#.
-linktitle: Decompress AES Encrypted Stored File
+date: 2026-04-24
+description: Tìm hiểu cách giải nén các tệp zip được bảo vệ bằng mật khẩu bằng Aspose.Zip
+  cho .NET. Hướng dẫn từng bước này trình bày việc giải mã AES và giải nén trong C#.
+keywords:
+- extract password protected zip
+- Aspose.Zip AES decryption
+- .NET zip extraction
+linktitle: Giải nén tệp đã lưu được mã hoá AES
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Mở kho lưu trữ được mã hóa bằng Aspose.Zip cho .NET – Giải mã các tệp được
-  mã hóa AES
+title: Giải nén zip có mật khẩu bằng Aspose.Zip cho .NET
 url: /vi/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/
 weight: 19
 ---
@@ -15,60 +17,62 @@ weight: 19
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Mở lưu trữ được mã hoá với Aspose.Zip cho .NET – Giải mã tệp AES
+# Trích xuất tệp zip được bảo vệ bằng mật khẩu với Aspose.Zip cho .NET
 
 ## Giới thiệu
 
-Chào mừng! Trong hướng dẫn toàn diện này, bạn sẽ học **cách mở các tệp lưu trữ được mã hoá** sử dụng mã hoá AES với Aspose.Zip cho .NET. Dù bạn đang xây dựng một tiện ích desktop hay một dịch vụ phía server, khả năng *giải mã zip có mật khẩu* và *giải nén zip được bảo vệ* là một yêu cầu phổ biến. Chúng tôi sẽ hướng dẫn toàn bộ quy trình, từ thiết lập môi trường đến việc trích xuất nội dung của tệp ZIP được mã hoá AES trong C#.
+Chào mừng! Trong hướng dẫn toàn diện này, bạn sẽ học **cách trích xuất zip được bảo vệ bằng mật khẩu** sử dụng mã hóa AES với Aspose.Zip cho .NET. Cho dù bạn đang xây dựng một tiện ích desktop, một dịch vụ dựa trên đám mây, hay một công việc batch tự động, khả năng *giải mã zip được bảo vệ bằng mật khẩu* và *giải nén zip được bảo vệ* là một yêu cầu thường gặp. Chúng tôi sẽ hướng dẫn từng bước mọi thứ bạn cần — từ cài đặt thư viện đến việc stream nội dung đã giải mã ra đĩa — trong mã C# sạch sẽ và dễ theo dõi.
 
 ## Câu trả lời nhanh
-- **“Mở lưu trữ được mã hoá” có nghĩa là gì?** Nó đề cập đến việc đọc một tệp ZIP có mật khẩu và trích xuất nội dung của nó một cách lập trình.  
-- **Thư viện nào xử lý giải mã AES?** Aspose.Zip cho .NET cung cấp hỗ trợ tích hợp cho các lưu trữ được mã hoá AES.  
-- **Tôi có cần giấy phép cho môi trường production không?** Có, cần giấy phép thương mại cho việc sử dụng trong production; một bản dùng thử miễn phí có sẵn.  
-- **Có thể dùng với .NET 6+ không?** Hoàn toàn có – thư viện nhắm tới .NET Standard 2.0 và hoạt động với .NET 6, .NET 7 và các phiên bản sau.  
-- **Luồng code điển hình là gì?** Tải lưu trữ với mật khẩu, xác định entry, và stream dữ liệu đã giải mã tới một tệp.
+- **“extract password protected zip” có nghĩa là gì?** Đây là quá trình mở một tệp ZIP được bảo vệ bằng mật khẩu và truy xuất nội dung của nó một cách lập trình.  
+- **Thư viện nào xử lý giải mã AES?** Aspose.Zip cho .NET cung cấp hỗ trợ AES‑256 bản địa mà không cần phụ thuộc bổ sung.  
+- **Tôi có cần giấy phép cho môi trường production không?** Có – cần giấy phép thương mại cho production; bản dùng thử miễn phí có sẵn để đánh giá.  
+- **Có thể sử dụng với .NET 6+ không?** Chắc chắn – thư viện nhắm tới .NET Standard 2.0 và hoạt động với .NET 6, .NET 7 và các phiên bản sau.  
+- **Luồng mã điển hình là gì?** Tải archive với mật khẩu, xác định entry, và stream các byte đã giải mã tới một tệp.  
 
-## “Mở lưu trữ được mã hoá” là thao tác gì?
+## Cách trích xuất tệp zip được bảo vệ bằng mật khẩu
 
-Mở một lưu trữ được mã hoá có nghĩa là tải một tệp ZIP đã được bảo vệ bằng mật khẩu (mặc định là AES‑256) và sau đó đọc các entry của nó mà không cần thực hiện giải mã thủ công. Aspose.Zip trừu tượng hoá các chi tiết mật mã, cho phép bạn tập trung vào logic nghiệp vụ.
+Dưới đây là hướng dẫn chi tiết từng bước cho thấy cách mở một archive được mã hóa AES và ghi entry đã giải mã ra đĩa.
 
-## Tại sao nên dùng Aspose.Zip cho C# để giải mã tệp ZIP AES?
+### Hoạt động “open encrypted archive” là gì?
 
-- **Hỗ trợ đầy đủ AES** – Tự động xử lý các khóa 128‑, 192‑ và 256‑bit.  
-- **API đơn giản** – Chỉ một dòng code để cung cấp mật khẩu (`DecryptionPassword`).  
-- **Không phụ thuộc bên ngoài** – Không cần đóng gói OpenSSL hay các thư viện native khác.  
-- **Xử lý lỗi mạnh mẽ** – Ném ra các exception rõ ràng cho mật khẩu sai hoặc lưu trữ bị hỏng.  
+Mở một archive được mã hóa có nghĩa là tải một tệp ZIP đã được bảo vệ bằng mật khẩu (mặc định AES‑256) và sau đó đọc các entry mà không cần xử lý mật mã thủ công. Aspose.Zip trừu tượng hoá các chi tiết mức thấp, cho phép bạn tập trung vào logic nghiệp vụ.
 
-## Điều kiện tiên quyết
+### Tại sao nên sử dụng Aspose.Zip cho C# để giải mã tệp ZIP AES?
 
-Trước khi chúng ta đi vào code, hãy chắc chắn rằng bạn đã chuẩn bị các điều kiện sau:
+- **Full AES support** – Tự động xử lý các khóa 128‑, 192‑ và 256‑bit.  
+- **Simple API** – Một dòng mã để cung cấp mật khẩu (`DecryptionPassword`).  
+- **No external dependencies** – Không cần gói OpenSSL hay các thư viện native khác.  
+- **Robust error handling** – Ném ra các ngoại lệ rõ ràng khi mật khẩu sai hoặc archive bị hỏng.  
+
+## Yêu cầu trước
+
+Trước khi chúng ta bắt đầu với mã, hãy chắc chắn rằng bạn đã có các yêu cầu sau:
 
 - Aspose.Zip cho .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Zip. Bạn có thể tìm tài liệu [tại đây](https://reference.aspose.com/zip/net/).
+- Tệp mẫu được mã hóa AES: Tải xuống tệp mẫu AES từ [liên kết này](https://releases.aspose.com/zip/net/).
+- Thư mục tài liệu của bạn: Tạo một thư mục nơi bạn muốn lưu tệp đã giải nén. Thay thế “Your Document Directory” trong đoạn mã bằng đường dẫn thực tế của bạn.
 
-- Tệp mẫu được mã hoá AES: Tải về tệp mẫu được mã hoá AES từ [liên kết này](https://releases.aspose.com/zip/net/).
+## Nhập không gian tên
 
-- Thư mục tài liệu của bạn: Tạo một thư mục nơi bạn muốn lưu trữ tệp đã giải nén. Thay thế "Your Document Directory" trong đoạn code bằng đường dẫn thực tế của bạn.
-
-## Nhập các Namespace
-
-Trong đoạn code mẫu, bạn sẽ thấy việc sử dụng nhiều namespace. Hãy chắc chắn bao gồm chúng trong dự án của bạn:
+Trong đoạn mã được cung cấp, bạn sẽ thấy việc sử dụng các không gian tên khác nhau. Hãy chắc chắn bao gồm chúng trong dự án của bạn:
 
 ```csharp
 using System.IO;
 using Aspose.Zip;
 ```
 
-## Bước 1: Định nghĩa thư mục tài nguyên
+## Bước 1: Xác định Thư mục Tài nguyên
 
-Xác định đường dẫn tới thư mục chứa tệp ZIP được mã hoá và nơi sẽ ghi tệp đã giải nén.
+Xác định đường dẫn tới thư mục chứa tệp ZIP đã mã hóa của bạn và nơi tệp đã giải nén sẽ được ghi.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Bước 2: Mở lưu trữ được mã hoá
+## Bước 2: Mở Archive Được Mã Hóa
 
-Constructor `Archive` nhận một đối tượng `ArchiveLoadOptions` cho phép bạn thiết lập `DecryptionPassword`. Đây là phần cốt lõi của thao tác **decrypt zip password**.
+Constructor `Archive` chấp nhận một đối tượng `ArchiveLoadOptions` nơi bạn có thể đặt `DecryptionPassword`. Đây là phần cốt lõi của hoạt động **decrypt zip password**.
 
 ```csharp
 using (FileStream fs = File.OpenRead(dataDir + "StoreMutlipleFilesWithoutCompressionWithPassword_out.zip"))
@@ -83,9 +87,9 @@ using (FileStream fs = File.OpenRead(dataDir + "StoreMutlipleFilesWithoutCompres
 }
 ```
 
-## Bước 3: Giải nén entry được mã hoá
+## Bước 3: Giải nén Entry Được Mã Hóa
 
-Sau khi mở lưu trữ, bạn có thể đọc entry đầu tiên (hoặc bất kỳ entry nào bạn cần) và ghi các byte đã giải mã vào tệp đầu ra. Điều này minh họa **c# extract encrypted zip** theo cách streaming.
+Bây giờ archive đã được mở, bạn có thể đọc entry đầu tiên (hoặc bất kỳ entry nào bạn cần) và ghi các byte đã giải mã vào tệp đầu ra. Điều này minh họa **c# extract encrypted zip** theo cách stream.
 
 ```csharp
 using (var decompressed = archive.Entries[0].Open())
@@ -99,42 +103,41 @@ using (var decompressed = archive.Entries[0].Open())
 }
 ```
 
-## Các vấn đề thường gặp và giải pháp
+## Vấn đề thường gặp và Giải pháp
 
-| Vấn đề | Nguyên nhân | Giải pháp |
-|-------|-------------|----------|
-| **Lỗi mật khẩu không đúng** | `DecryptionPassword` không khớp với mật khẩu đã dùng để mã hoá lưu trữ. | Kiểm tra lại chuỗi mật khẩu; nhớ rằng nó phân biệt chữ hoa và chữ thường. |
-| **ArchiveLoadOptions không được nhận diện** | Sử dụng phiên bản cũ của Aspose.Zip không có overload này. | Cập nhật lên phiên bản mới nhất của Aspose.Zip cho .NET. |
-| **Các tệp lớn gây áp lực bộ nhớ** | Đọc toàn bộ tệp vào bộ nhớ. | Sử dụng cách streaming như trong ví dụ trên (đọc có buffer). |
-
-## Kết luận
-
-Chúc mừng! Bạn đã học cách **mở lưu trữ được mã hoá**, giải mã các entry ZIP AES, và **giải nén zip được bảo vệ** bằng Aspose.Zip cho .NET. Quy trình này cung cấp cho bạn một cách đáng tin cậy để xử lý các tệp ZIP an toàn trong bất kỳ ứng dụng C# nào.
+| Issue | Why It Happens | Fix |
+|-------|----------------|-----|
+| **Lỗi mật khẩu không đúng** | `DecryptionPassword` không khớp với mật khẩu được dùng để mã hóa archive. | Xác minh chuỗi mật khẩu; nhớ rằng nó phân biệt chữ hoa và chữ thường. |
+| **ArchiveLoadOptions không được nhận dạng** | Sử dụng phiên bản cũ của Aspose.Zip không có overload này. | Cập nhật lên phiên bản mới nhất của Aspose.Zip cho .NET. |
+| **Các tệp lớn gây áp lực bộ nhớ** | Đọc toàn bộ tệp vào bộ nhớ. | Sử dụng cách tiếp cận stream như trên (đọc có bộ đệm). |
 
 ## Câu hỏi thường gặp
 
-### Tôi có thể dùng Aspose.Zip cho .NET với các thuật toán mã hoá khác không?
-Aspose.Zip chủ yếu hỗ trợ mã hoá AES. Kiểm tra tài liệu để biết các cập nhật mới nhất.
+### Tôi có thể sử dụng Aspose.Zip cho .NET với các thuật toán mã hóa khác không?
+
+Aspose.Zip chủ yếu hỗ trợ mã hóa AES. Kiểm tra tài liệu để biết các thuật toán mới được thêm.
 
 ### Có phiên bản dùng thử không?
+
 Có, bạn có thể truy cập bản dùng thử miễn phí [tại đây](https://releases.aspose.com/).
 
-### Làm sao để nhận hỗ trợ cho Aspose.Zip cho .NET?
-Truy cập diễn đàn hỗ trợ [tại đây](https://forum.aspose.com/c/zip/37) để được cộng đồng trợ giúp.
+### Làm thế nào để tôi nhận được hỗ trợ cho Aspose.Zip cho .NET?
 
-### Những định dạng tệp nào được hỗ trợ cho nén và giải nén?
+Truy cập diễn đàn hỗ trợ [tại đây](https://forum.aspose.com/c/zip/37) để nhận trợ giúp từ cộng đồng.
+
+### Các định dạng tệp nào được hỗ trợ cho nén và giải nén?
+
 Aspose.Zip hỗ trợ nhiều định dạng, bao gồm ZIP, 7z và TAR. Tham khảo tài liệu để biết danh sách đầy đủ.
 
 ### Tôi có thể sử dụng Aspose.Zip cho mục đích thương mại không?
-Có, bạn có thể mua giấy phép [tại đây](https://purchase.aspose.com/buy) cho việc sử dụng thương mại.
+
+Có, bạn có thể mua giấy phép [tại đây](https://purchase.aspose.com/buy) để sử dụng thương mại.
 
 ---
 
-**Cập nhật lần cuối:** 2025-12-21  
+**Cập nhật lần cuối:** 2026-04-24  
 **Đã kiểm tra với:** Aspose.Zip 24.11 cho .NET  
 **Tác giả:** Aspose  
-
----
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

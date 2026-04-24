@@ -1,11 +1,14 @@
 ---
-date: 2025-12-21
-description: Lär dig hur du öppnar krypterade arkivfiler (AES) med Aspose.Zip för
-  .NET. Denna steg‑för‑steg‑guide visar hur du dekrypterar zip‑filer som är lösenordsskyddade
-  och dekomprimerar skyddade zip‑arkiv i C#.
-linktitle: Decompress AES Encrypted Stored File
+date: 2026-04-24
+description: Lär dig hur du extraherar lösenordsskyddade zip‑filer med Aspose.Zip
+  för .NET. Denna steg‑för‑steg‑guide visar AES‑dekryptering och extrahering i C#.
+keywords:
+- extract password protected zip
+- Aspose.Zip AES decryption
+- .NET zip extraction
+linktitle: Dekomprimera AES‑krypterad lagrad fil
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Öppna krypterat arkiv med Aspose.Zip för .NET – Dekryptera AES‑krypterade filer
+title: Extrahera lösenordsskyddad zipfil med Aspose.Zip för .NET
 url: /sv/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/
 weight: 19
 ---
@@ -14,46 +17,45 @@ weight: 19
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Öppna krypterat arkiv med Aspose.Zip för .NET – Dekryptera AES-krypterade filer
+# Extrahera lösenordsskyddad zip med Aspose.Zip för .NET
 
 ## Introduktion
 
-Välkommen! I den här omfattande handledningen kommer du att lära dig **hur man öppnar krypterade arkiv** som använder AES‑kryptering med Aspose.Zip för .NET. Oavsett om du bygger ett skrivbordsverktyg eller en server‑sidig tjänst är förmågan att *dekryptera zip‑lösenordsskyddade* arkiv och *dekomprimera skyddade zip*‑filer ett vanligt krav. Vi går igenom hela processen, från att sätta upp miljön till att extrahera innehållet i en AES‑krypterad ZIP‑fil i C#.
+Välkommen! I den här omfattande handledningen kommer du att lära dig **hur man extraherar lösenordsskyddade zip**‑filer som använder AES‑kryptering med Aspose.Zip för .NET. Oavsett om du bygger ett skrivbordsverktyg, en molnbaserad tjänst eller ett automatiserat batch‑jobb, är förmågan att *dekryptera zip‑lösenordsskyddade* arkiv och *dekomprimera skyddade zip*‑filer ett vanligt krav. Vi går igenom allt du behöver — från att installera biblioteket till att streama det dekrypterade innehållet till disk — i ren, lätt‑följd C#‑kod.
 
 ## Snabba svar
-- **Vad betyder ”öppna krypterade arkiv”?** Det syftar på att läsa en lösenordsskyddad ZIP-fil och extrahera dess innehåll programmatiskt.
-- **Vilket bibliotek hanterar AES-dekryptering?** Aspose.Zip för .NET har inbyggt stöd för AES-krypterade arkiv.
-- **Behöver jag en licens för produktion?** Ja, en kommersiell licens krävs för produktionsanvändning; en gratis provperiod finns tillgänglig.
-- **Kan jag använda detta med .NET 6+?** Absolut – biblioteket riktar sig mot .NET Standard 2.0 och fungerar med .NET 6, .NET 7 och senare.
-- **Vad är det typiska kodflödet?** Ladda arkivet med ett lösenord, leta reda på posten och strömma den dekrypterade informationen till en fil.
+- **Vad betyder “extrahera lösenordsskyddad zip”?** Det är processen att öppna ett lösenordsskyddat ZIP‑arkiv och hämta dess innehåll programmässigt.  
+- **Vilket bibliotek hanterar AES‑dekryptering?** Aspose.Zip för .NET erbjuder inbyggt AES‑256‑stöd utan extra beroenden.  
+- **Behöver jag en licens för produktion?** Ja – en kommersiell licens krävs för produktion; en gratis provversion finns tillgänglig för utvärdering.  
+- **Kan jag använda detta med .NET 6+?** Absolut – biblioteket riktar sig mot .NET Standard 2.0 och fungerar med .NET 6, .NET 7 och senare.  
+- **Hur ser den typiska kodflödet ut?** Ladda arkivet med ett lösenord, lokalisera posten och streama de dekrypterade bytena till en fil.
 
-## Vad är en ”öppna krypterade arkiv”-operation?
+## Så extraherar du lösenordsskyddade zip-filer
 
-Att öppna ett krypterat arkiv innebär att ladda en ZIP-fil som har säkrats med ett lösenord (AES-256 som standard) och sedan läsa dess poster utan manuell dekryptering. Aspose.Zip abstraherar de kryptografiska detaljerna, vilket låter dig fokusera på affärslogiken.
+Följande är en steg‑för‑steg‑guide som visar exakt hur man öppnar ett AES‑krypterat arkiv och skriver den dekrypterade posten till disk.
 
-## Varför använda Aspose.Zip för C# för att dekryptera AES ZIP-filer?
+### Vad är en “öppna krypterat arkiv”-operation?
 
-- **Fullständigt AES-stöd** – Hanterar 128-, 192- och 256-bitars nycklar automatiskt.
+Att öppna ett krypterat arkiv innebär att ladda en ZIP‑fil som har säkrats med ett lösenord (AES‑256 som standard) och sedan läsa dess poster utan manuell kryptografisk hantering. Aspose.Zip abstraherar de lågnivådetaljerna, så att du kan fokusera på din affärslogik.
 
-- **Enkelt API** – En rad kod för att ange lösenordet (`DecryptionPassword`).
+### Varför använda Aspose.Zip för C# för att dekryptera AES ZIP-filer?
 
-- **Inga externa beroenden** – Inget behov av att paketera OpenSSL eller andra inbyggda bibliotek.
-
-- **Robust felhantering** – Utlöser tydliga undantag för felaktiga lösenord eller skadade arkiv.
+- **Fullt AES‑stöd** – Hanterar automatiskt 128‑, 192‑ och 256‑bit nycklar.  
+- **Enkelt API** – En rad kod för att ange lösenordet (`DecryptionPassword`).  
+- **Inga externa beroenden** – Ingen behov av att paketera OpenSSL eller andra inhemska bibliotek.  
+- **Robust felhantering** – Kastar tydliga undantag för fel lösenord eller korrupta arkiv.  
 
 ## Förutsättningar
 
-Innan vi går in på koden, se till att du har följande förutsättningar på plats:
+Innan vi dyker ner i koden, se till att du har följande förutsättningar på plats:
 
-- Aspose.Zip för .NET: Se till att du har Aspose.Zip-biblioteket installerat. Du hittar dokumentationen [här](https://reference.aspose.com/zip/net/).
-
-- Exempel på AES-krypterad fil: Ladda ner en exempelfil med AES-kryptering från [denna länk](https://releases.aspose.com/zip/net/).
-
-- Din dokumentkatalog: Skapa en katalog där du vill lagra den dekomprimerade filen. Ersätt "Din dokumentkatalog" i kodavsnittet med din faktiska sökväg till katalogen.
+- Aspose.Zip för .NET: Säkerställ att du har Aspose.Zip‑biblioteket installerat. Du kan hitta dokumentationen [här](https://reference.aspose.com/zip/net/).
+- Exempel på AES‑krypterad fil: Ladda ner en exempel‑AES‑krypterad fil från [denna länk](https://releases.aspose.com/zip/net/).
+- Din dokumentkatalog: Skapa en mapp där du vill lagra den dekomprimerade filen. Ersätt “Your Document Directory” i kodsnutten med din faktiska katalogsökväg.
 
 ## Importera namnrymder
 
-I det medföljande kodavsnittet kommer du att se användningen av olika namnrymder. Se till att inkludera dessa i ditt projekt:
+I den medföljande kodsnutten kommer du att märka användningen av olika namnrymder. Se till att inkludera dessa i ditt projekt:
 
 ```csharp
 using System.IO;
@@ -62,7 +64,7 @@ using Aspose.Zip;
 
 ## Steg 1: Definiera resurskatalogen
 
-Ange sökvägen till mappen som innehåller din krypterade ZIP-fil och var den extraherade filen ska skrivas.
+Ange sökvägen till mappen som innehåller din krypterade ZIP‑fil och där den extraherade filen ska skrivas.
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -70,7 +72,7 @@ string dataDir = "Your Document Directory";
 
 ## Steg 2: Öppna det krypterade arkivet
 
-Konstruktorn `Archive` accepterar ett `ArchiveLoadOptions`-objekt där du kan ställa in `DecryptionPassword`. Detta är kärnan i operationen **decrypt zip password**.
+`Archive`‑konstruktorn accepterar ett `ArchiveLoadOptions`‑objekt där du kan ange `DecryptionPassword`. Detta är kärnan i **decrypt zip password**‑operationen.
 
 ```csharp
 using (FileStream fs = File.OpenRead(dataDir + "StoreMutlipleFilesWithoutCompressionWithPassword_out.zip"))
@@ -85,9 +87,9 @@ using (FileStream fs = File.OpenRead(dataDir + "StoreMutlipleFilesWithoutCompres
 }
 ```
 
-## Steg 3: Packa upp den krypterade posten
+## Steg 3: Dekomprimera den krypterade posten
 
-Nu när arkivet är öppet kan du läsa den första posten (eller vilken post du än behöver) och skriva de dekrypterade bytena till utdatafilen. Detta demonstrerar **c# extrahera krypterad zip** på ett strömmande sätt.
+När arkivet är öppnat kan du läsa den första posten (eller någon annan post du behöver) och skriva de dekrypterade bytena till utdatafilen. Detta demonstrerar **c# extract encrypted zip** i en streaming‑metod.
 
 ```csharp
 using (var decompressed = archive.Entries[0].Open())
@@ -103,38 +105,34 @@ using (var decompressed = archive.Entries[0].Open())
 
 ## Vanliga problem och lösningar
 
-| Problem | Varför det händer | Åtgärda |
-|-------|---------------|------|
-| **Felaktigt lösenordsfel** | `DecryptionPassword` matchar inte det som användes för att kryptera arkivet. | Verifiera lösenordssträngen; kom ihåg att den är skiftlägeskänslig. |
-| **ArchiveLoadOptions känns inte igen** | Använder en äldre version av Aspose.Zip som saknar denna överbelastning. | Uppdatera till den senaste versionen av Aspose.Zip för .NET. |
-| **Stora filer orsakar minnesbelastning** | Läser hela filen in i minnet. | Använd strömningsmetoden som visas ovan (buffrad läsning). |
-
-## Slutsats
-
-Grattis! Du har framgångsrikt lärt dig hur du **öppnar krypterade arkivfiler**, dekrypterar AES-krypterade ZIP-poster och **packar upp skyddade zip-arkiv** med Aspose.Zip för .NET. Detta arbetsflöde ger dig ett tillförlitligt sätt att hantera säkra ZIP-filer i alla C#-applikationer.
+| Problem | Varför det händer | Lösning |
+|-------|----------------|-----|
+| **Felaktigt lösenord‑fel** | `DecryptionPassword` matchar inte det som användes för att kryptera arkivet. | Verifiera lösenordet; kom ihåg att det är skiftlägeskänsligt. |
+| **ArchiveLoadOptions känns inte igen** | Använder en äldre version av Aspose.Zip som saknar detta överlagring. | Uppdatera till den senaste Aspose.Zip för .NET‑utgåvan. |
+| **Stora filer orsakar minnespress** | Läser in hela filen i minnet. | Använd streaming‑metoden som visas ovan (buffrad läsning). |
 
 ## Vanliga frågor
 
 ### Kan jag använda Aspose.Zip för .NET med andra krypteringsalgoritmer?
-Aspose.Zip stöder främst AES-kryptering. Kontrollera dokumentationen för de senaste uppdateringarna.
+**Aspose.Zip** stödjer främst AES‑kryptering. Kontrollera dokumentationen för eventuella nylagda algoritmer.
 
-### Finns det en testversion tillgänglig?
-Ja, du kan få tillgång till en gratis testversion [här](https://releases.aspose.com/).
+### Finns en provversion tillgänglig?
+Ja, du kan få en gratis provversion [här](https://releases.aspose.com/).
 
 ### Hur kan jag få support för Aspose.Zip för .NET?
 Besök supportforumet [här](https://forum.aspose.com/c/zip/37) för att få hjälp från communityn.
 
 ### Vilka filformat stöds för komprimering och dekomprimering?
-Aspose.Zip stöder olika format, inklusive ZIP, 7z och TAR. Se dokumentationen för en omfattande lista.
+Aspose.Zip stödjer olika format, inklusive ZIP, 7z och TAR. Se dokumentationen för en komplett lista.
 
 ### Kan jag använda Aspose.Zip för kommersiella ändamål?
-Ja, du kan köpa en licens [här](https://purchase.aspose.com/buy) för kommersiellt bruk.
+Ja, du kan köpa en licens [här](https://purchase.aspose.com/buy) för kommersiell användning.
 
 ---
 
-**Senast uppdaterad:** 2025-12-21
-**Testad med:** Aspose.Zip 24.11 för .NET
-**Författare:** Aspose
+**Senast uppdaterad:** 2026-04-24  
+**Testat med:** Aspose.Zip 24.11 för .NET  
+**Författare:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
