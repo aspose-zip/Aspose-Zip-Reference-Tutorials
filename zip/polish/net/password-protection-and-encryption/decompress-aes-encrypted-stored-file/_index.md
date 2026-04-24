@@ -1,12 +1,15 @@
 ---
-date: 2025-12-21
-description: Dowiedz się, jak otwierać zaszyfrowane pliki archiwów (AES) przy użyciu
-  Aspose.Zip dla .NET. Ten przewodnik krok po kroku pokazuje, jak odszyfrować pliki
-  zip chronione hasłem i rozpakować chronione archiwa zip w języku C#.
-linktitle: Decompress AES Encrypted Stored File
+date: 2026-04-24
+description: Dowiedz się, jak wyodrębniać chronione hasłem pliki zip przy użyciu Aspose.Zip
+  dla .NET. Ten przewodnik krok po kroku pokazuje odszyfrowywanie AES i ekstrakcję
+  w C#.
+keywords:
+- extract password protected zip
+- Aspose.Zip AES decryption
+- .NET zip extraction
+linktitle: Dekompresuj zaszyfrowany AES zapisany plik
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Otwórz zaszyfrowane archiwum przy użyciu Aspose.Zip dla .NET – odszyfrowywanie
-  plików zaszyfrowanych AES
+title: Rozpakuj chroniony hasłem plik ZIP przy użyciu Aspose.Zip dla .NET
 url: /pl/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/
 weight: 19
 ---
@@ -15,24 +18,28 @@ weight: 19
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Otwieranie zaszyfrowanego archiwum przy użyciu Aspose.Zip dla .NET – odszyfrowywanie plików AES
+# Wyodrębnij chroniony hasłem plik zip przy użyciu Aspose.Zip dla .NET
 
 ## Wprowadzenie
 
-Witamy! W tym kompleksowym samouczku nauczysz się **jak otworzyć zaszyfrowane archiwum** przy użyciu szyfrowania AES w Aspose.Zip dla .NET. Niezależnie od tego, czy tworzysz aplikację desktopową, czy usługę po stronie serwera, możliwość *odszyfrowania archiwów zip chronionych hasłem* oraz *dekompresji chronionych zip* jest powszechnym wymogiem. Przejdziemy przez cały proces, od konfiguracji środowiska po wyodrębnienie zawartości pliku ZIP zaszyfrowanego AES w C#.
+Witamy! W tym kompleksowym samouczku nauczysz się **jak wyodrębnić chronione hasłem pliki zip** używające szyfrowania AES z Aspose.Zip dla .NET. Niezależnie od tego, czy tworzysz narzędzie desktopowe, usługę w chmurze, czy zautomatyzowane zadanie wsadowe, możliwość *odszyfrowania archiwów zip chronionych hasłem* i *dekompresji chronionych zip* jest częstym wymaganiem. Przeprowadzimy Cię przez wszystko, czego potrzebujesz — od instalacji biblioteki po strumieniowe zapisywanie odszyfrowanej zawartości na dysk — w czystym, łatwym do zrozumienia kodzie C#.
 
 ## Szybkie odpowiedzi
-- **Co oznacza „otworzyć zaszyfrowane archiwum”?** Odnosi się to do odczytywania pliku ZIP chronionego hasłem i programowego wyodrębniania jego zawartości.  
-- **Która biblioteka obsługuje odszyfrowywanie AES?** Aspose.Zip dla .NET zapewnia wbudowaną obsługę archiwów zaszyfrowanych AES.  
-- **Czy potrzebna jest licencja do produkcji?** Tak, do użytku produkcyjnego wymagana jest licencja komercyjna; dostępna jest darmowa wersja próbna.  
-- **Czy mogę używać tego z .NET 6+?** Oczywiście – biblioteka jest przeznaczona dla .NET Standard 2.0 i działa z .NET 6, .NET 7 oraz nowszymi.  
-- **Jaki jest typowy przepływ kodu?** Załaduj archiwum z hasłem, znajdź wpis i strumieniuj odszyfrowane dane do pliku.
+- **Co oznacza „wyodrębnić chroniony hasłem zip”?** To proces otwierania zabezpieczonego hasłem archiwum ZIP i programowego pobierania jego zawartości.  
+- **Która biblioteka obsługuje odszyfrowywanie AES?** Aspose.Zip dla .NET oferuje natywną obsługę AES‑256 bez dodatkowych zależności.  
+- **Czy potrzebna jest licencja do produkcji?** Tak – wymagana jest licencja komercyjna; dostępna jest darmowa wersja próbna do oceny.  
+- **Czy mogę używać tego z .NET 6+?** Oczywiście – biblioteka celuje w .NET Standard 2.0 i działa z .NET 6, .NET 7 i nowszymi wersjami.  
+- **Jaki jest typowy przepływ kodu?** Załaduj archiwum z hasłem, znajdź wpis i strumieniowo zapisz odszyfrowane bajty do pliku.
 
-## Czym jest operacja „otworzyć zaszyfrowane archiwum”?
+## Jak wyodrębnić chronione hasłem pliki zip
 
-Otwieranie zaszyfrowanego archiwum oznacza załadowanie pliku ZIP zabezpieczonego hasłem (domyślnie AES‑256) i następnie odczytanie jego wpisów bez ręcznego odszyfrowywania. Aspose.Zip abstrahuje szczegóły kryptograficzne, pozwalając skupić się na logice biznesowej.
+Poniżej znajduje się przewodnik krok po kroku, który dokładnie pokazuje, jak otworzyć zaszyfrowane AES archiwum i zapisać odszyfrowany wpis na dysku.
 
-## Dlaczego warto używać Aspose.Zip dla C# do odszyfrowywania plików AES ZIP?
+### Czym jest operacja „otwarcia zaszyfrowanego archiwum”?
+
+Otwarcie zaszyfrowanego archiwum oznacza załadowanie pliku ZIP zabezpieczonego hasłem (domyślnie AES‑256) i odczytanie jego wpisów bez ręcznego obsługiwania kryptografii. Aspose.Zip abstrahuje szczegóły niskiego poziomu, pozwalając skupić się na logice biznesowej.
+
+### Dlaczego używać Aspose.Zip dla C# do odszyfrowania plików ZIP AES?
 
 - **Pełne wsparcie AES** – Automatycznie obsługuje klucze 128‑, 192‑ i 256‑bitowe.  
 - **Proste API** – Jedna linia kodu, aby podać hasło (`DecryptionPassword`).  
@@ -45,11 +52,11 @@ Zanim przejdziemy do kodu, upewnij się, że spełniasz następujące wymagania:
 
 - Aspose.Zip dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Zip. Dokumentację znajdziesz [tutaj](https://reference.aspose.com/zip/net/).
 - Przykładowy plik zaszyfrowany AES: Pobierz przykładowy plik zaszyfrowany AES z [tego linku](https://releases.aspose.com/zip/net/).
-- Twój katalog dokumentów: Utwórz katalog, w którym chcesz przechowywać zdekompresowany plik. Zamień „Your Document Directory” w fragmencie kodu na rzeczywistą ścieżkę katalogu.
+- Twój katalog dokumentów: Utwórz folder, w którym chcesz przechowywać rozpakowany plik. Zastąp „Your Document Directory” w fragmencie kodu rzeczywistą ścieżką do katalogu.
 
 ## Importowanie przestrzeni nazw
 
-W podanym fragmencie kodu zauważysz użycie różnych przestrzeni nazw. Upewnij się, że uwzględniasz je w swoim projekcie:
+W dostarczonym fragmencie kodu zauważysz użycie różnych przestrzeni nazw. Upewnij się, że są one uwzględnione w Twoim projekcie:
 
 ```csharp
 using System.IO;
@@ -81,9 +88,9 @@ using (FileStream fs = File.OpenRead(dataDir + "StoreMutlipleFilesWithoutCompres
 }
 ```
 
-## Krok 3: Dekompresuj zaszyfrowany wpis
+## Krok 3: Rozpakuj zaszyfrowany wpis
 
-Teraz, gdy archiwum jest otwarte, możesz odczytać pierwszy wpis (lub dowolny potrzebny) i zapisać odszyfrowane bajty do pliku wyjściowego. To pokazuje **c# extract encrypted zip** w trybie strumieniowym.
+Teraz, gdy archiwum jest otwarte, możesz odczytać pierwszy wpis (lub dowolny potrzebny) i zapisać odszyfrowane bajty do pliku wyjściowego. To demonstruje **c# extract encrypted zip** w trybie strumieniowym.
 
 ```csharp
 using (var decompressed = archive.Entries[0].Open())
@@ -97,22 +104,18 @@ using (var decompressed = archive.Entries[0].Open())
 }
 ```
 
-## Częste problemy i rozwiązania
+## Typowe problemy i rozwiązania
 
 | Problem | Dlaczego się pojawia | Rozwiązanie |
-|---------|----------------------|-------------|
-| **Błąd nieprawidłowego hasła** | `DecryptionPassword` nie pasuje do tego użytego do zaszyfrowania archiwum. | Zweryfikuj ciąg hasła; pamiętaj, że jest rozróżniana wielkość liter. |
-| **ArchiveLoadOptions nie rozpoznane** | Używasz starszej wersji Aspose.Zip, która nie posiada tego przeciążenia. | Zaktualizuj do najnowszej wersji Aspose.Zip dla .NET. |
-| **Duże pliki powodują obciążenie pamięci** | Czytanie całego pliku do pamięci. | Użyj podejścia strumieniowego pokazanego powyżej (odczyt buforowany). |
-
-## Zakończenie
-
-Gratulacje! Pomyślnie nauczyłeś się **otwierać zaszyfrowane archiwum**, odszyfrowywać wpisy ZIP zaszyfrowane AES oraz **dekompresować chronione zip** przy użyciu Aspose.Zip dla .NET. Ten przepływ pracy zapewnia niezawodny sposób obsługi bezpiecznych plików ZIP w dowolnej aplikacji C#.
+|-------|----------------|-----|
+| **Błąd nieprawidłowego hasła** | `DecryptionPassword` nie pasuje do tego użytego przy szyfrowaniu archiwum. | Sprawdź poprawność ciągu hasła; pamiętaj, że jest rozróżniana wielkość liter. |
+| **ArchiveLoadOptions nie rozpoznane** | Używasz starszej wersji Aspose.Zip, która nie zawiera tego przeciążenia. | Zaktualizuj do najnowszej wersji Aspose.Zip dla .NET. |
+| **Duże pliki powodują obciążenie pamięci** | Czytanie całego pliku do pamięci. | Skorzystaj z podejścia strumieniowego pokazanego powyżej (odczyt buforowany). |
 
 ## Najczęściej zadawane pytania
 
 ### Czy mogę używać Aspose.Zip dla .NET z innymi algorytmami szyfrowania?
-Aspose.Zip głównie obsługuje szyfrowanie AES. Sprawdź dokumentację, aby uzyskać najnowsze informacje.
+Aspose.Zip głównie obsługuje szyfrowanie AES. Sprawdź dokumentację pod kątem ewentualnych nowo dodanych algorytmów.
 
 ### Czy dostępna jest wersja próbna?
 Tak, darmową wersję próbną możesz uzyskać [tutaj](https://releases.aspose.com/).
@@ -124,13 +127,13 @@ Odwiedź forum wsparcia [tutaj](https://forum.aspose.com/c/zip/37), aby uzyskać
 Aspose.Zip obsługuje różne formaty, w tym ZIP, 7z i TAR. Zapoznaj się z dokumentacją, aby uzyskać pełną listę.
 
 ### Czy mogę używać Aspose.Zip do celów komercyjnych?
-Tak, możesz zakupić licencję [tutaj](https://purchase.aspose.com/buy) do użytku komercyjnego.
+Tak, licencję komercyjną możesz zakupić [tutaj](https://purchase.aspose.com/buy).
 
 ---
 
-**Ostatnia aktualizacja:** 2025-12-21  
-**Testowano z:** Aspose.Zip 24.11 for .NET  
-**Autor:** Aspose
+**Ostatnia aktualizacja:** 2026-04-24  
+**Testowano z:** Aspose.Zip 24.11 dla .NET  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

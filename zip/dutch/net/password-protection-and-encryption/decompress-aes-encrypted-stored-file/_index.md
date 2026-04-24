@@ -1,12 +1,14 @@
 ---
-date: 2025-12-21
-description: Leer hoe u versleutelde archiefbestanden (AES) kunt openen met Aspose.Zip
-  voor .NET. Deze stapsgewijze handleiding laat zien hoe u zip‑bestanden met wachtwoord
-  kunt ontsleutelen en beschermde zip‑archieven kunt decomprimeren in C#.
-linktitle: Decompress AES Encrypted Stored File
+date: 2026-04-24
+description: Leer hoe u met Aspose.Zip voor .NET zip‑bestanden met wachtwoord kunt
+  uitpakken. Deze stapsgewijze handleiding toont AES‑decryptie en extractie in C#.
+keywords:
+- extract password protected zip
+- Aspose.Zip AES decryption
+- .NET zip extraction
+linktitle: Decomprimeer AES-versleuteld opgeslagen bestand
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Open versleuteld archief met Aspose.Zip voor .NET – AES‑versleutelde bestanden
-  ontsleutelen
+title: Wachtwoordbeveiligde zip uitpakken met Aspose.Zip voor .NET
 url: /nl/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/
 weight: 19
 ---
@@ -15,60 +17,62 @@ weight: 19
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Open Versleuteld Archief met Aspose.Zip voor .NET – AES‑versleutelde bestanden ontsleutelen
+# Wachtwoordbeveiligde zip extraheren met Aspose.Zip voor .NET
 
 ## Inleiding
 
-Welkom! In deze uitgebreide tutorial leer je **hoe je een versleuteld archief** kunt openen dat AES‑versleuteling gebruikt met Aspose.Zip voor .NET. Of je nu een desktop‑utility of een server‑side service bouwt, het kunnen *decrypt zip password‑protected* archieven en *decompress protected zip* bestanden is een veelvoorkomende eis. We lopen het volledige proces door, van het opzetten van de omgeving tot het uitpakken van de inhoud van een AES‑versleuteld ZIP‑bestand in C#.
+Welkom! In deze uitgebreide tutorial leer je **hoe je wachtwoordbeveiligde zip**-bestanden kunt extraheren die AES‑versleuteling gebruiken met Aspose.Zip voor .NET. Of je nu een desktop‑utility, een cloud‑gebaseerde service of een geautomatiseerde batch‑taak bouwt, het kunnen *decrypt zip password‑protected* archieven en *decompress protected zip* bestanden is een veelvoorkomende eis. We lopen alles door wat je nodig hebt — van het installeren van de bibliotheek tot het streamen van de gedecrypteerde inhoud naar schijf — in schone, gemakkelijk‑te‑volgen C#‑code.
 
-## Snelle Antwoorden
-- **Wat betekent “open encrypted archive”?** Het verwijst naar het lezen van een wachtwoord‑beveiligd ZIP‑bestand en het programmatisch extraheren van de inhoud.  
-- **Welke bibliotheek verzorgt AES‑ontsleuteling?** Aspose.Zip voor .NET biedt ingebouwde ondersteuning voor AES‑versleutelde archieven.  
-- **Heb ik een licentie nodig voor productie?** Ja, een commerciële licentie is vereist voor productie; een gratis proefversie is beschikbaar.  
-- **Kan ik dit gebruiken met .NET 6+?** Absoluut – de bibliotheek richt zich op .NET Standard 2.0 en werkt met .NET 6, .NET 7 en later.  
-- **Wat is de typische code‑stroom?** Laad het archief met een wachtwoord, vind de entry, en stream de ontsleutelde data naar een bestand.
+## Snelle antwoorden
+- **Wat betekent “extract password protected zip”?** Het is het proces van het openen van een met wachtwoord beveiligd ZIP‑archief en het programmatisch ophalen van de inhoud.  
+- **Welke bibliotheek behandelt AES‑decryptie?** Aspose.Zip voor .NET biedt native AES‑256‑ondersteuning zonder extra afhankelijkheden.  
+- **Heb ik een licentie nodig voor productie?** Ja – een commerciële licentie is vereist voor productie; een gratis proefversie is beschikbaar voor evaluatie.  
+- **Kan ik dit gebruiken met .NET 6+?** Absoluut – de bibliotheek richt zich op .NET Standard 2.0 en werkt met .NET 6, .NET 7 en later.  
+- **Wat is de typische codeflow?** Laad het archief met een wachtwoord, vind de entry, en stream de gedecrypteerde bytes naar een bestand.
 
-## Wat is een “open encrypted archive” bewerking?
+## Hoe wachtwoordbeveiligde zip‑bestanden te extraheren
 
-Een versleuteld archief openen betekent een ZIP‑bestand laden dat beveiligd is met een wachtwoord (standaard AES‑256) en vervolgens de entries lezen zonder handmatige ontsleuteling. Aspose.Zip abstraheert de cryptografische details, zodat je je kunt concentreren op de bedrijfslogica.
+Hieronder vind je een stapsgewijze gids die precies laat zien hoe je een AES‑versleuteld archief opent en de gedecrypteerde entry naar schijf schrijft.
 
-## Waarom Aspose.Zip voor C# gebruiken om AES‑ZIP‑bestanden te ontsleutelen?
+### Wat is een “open encrypted archive” operatie?
 
-- **Volledige AES‑ondersteuning** – Handelt automatisch 128‑, 192‑ en 256‑bit sleutels af.  
+Een versleuteld archief openen betekent een ZIP‑bestand laden dat is beveiligd met een wachtwoord (standaard AES‑256) en vervolgens de entries lezen zonder handmatige cryptografische afhandeling. Aspose.Zip abstraheert de low‑level details, zodat je je kunt concentreren op je bedrijfslogica.
+
+### Waarom Aspose.Zip voor C# gebruiken om AES ZIP‑bestanden te decrypten?
+
+- **Volledige AES‑ondersteuning** – Behandelt automatisch 128‑, 192‑ en 256‑bit sleutels.  
 - **Eenvoudige API** – Eén regel code om het wachtwoord op te geven (`DecryptionPassword`).  
-- **Geen externe afhankelijkheden** – Geen noodzaak om OpenSSL of andere native libraries mee te leveren.  
-- **Robuuste foutafhandeling** – Gooit duidelijke uitzonderingen bij verkeerde wachtwoorden of beschadigde archieven.  
+- **Geen externe afhankelijkheden** – Geen noodzaak om OpenSSL of andere native libraries te bundelen.  
+- **Robuuste foutafhandeling** – Gooit duidelijke uitzonderingen bij verkeerde wachtwoorden of corrupte archieven.  
 
 ## Vereisten
 
-Voordat we in de code duiken, zorg dat je de volgende zaken klaar hebt staan:
+Voordat we in de code duiken, zorg ervoor dat je de volgende vereisten hebt:
 
-- Aspose.Zip voor .NET: Zorg dat de Aspose.Zip‑bibliotheek geïnstalleerd is. Je kunt de documentatie vinden [hier](https://reference.aspose.com/zip/net/).
-
-- Voorbeeld AES‑versleuteld bestand: Download een voorbeeld‑AES‑versleuteld bestand via [deze link](https://releases.aspose.com/zip/net/).
-
-- Jouw Documentmap: Maak een map aan waar je het uitgepakte bestand wilt opslaan. Vervang “Your Document Directory” in de code‑snippet door je eigen pad.
+- Aspose.Zip voor .NET: Zorg ervoor dat je de Aspose.Zip‑bibliotheek geïnstalleerd hebt. Je kunt de documentatie vinden [hier](https://reference.aspose.com/zip/net/).
+- Voorbeeld AES‑versleuteld bestand: Download een voorbeeld AES‑versleuteld bestand via [deze link](https://releases.aspose.com/zip/net/).
+- Je documentmap: Maak een map aan waar je het gedecomprimeerde bestand wilt opslaan. Vervang “Your Document Directory” in de code‑snippet door je eigen pad.
 
 ## Namespaces importeren
 
-In de meegeleverde code‑snippet zie je verschillende namespaces. Zorg dat je deze in je project opneemt:
+In de meegeleverde code‑snippet zie je het gebruik van verschillende namespaces. Zorg ervoor dat je deze in je project opneemt:
 
 ```csharp
 using System.IO;
 using Aspose.Zip;
 ```
 
-## Stap 1: Definieer de Resource‑directory
+## Stap 1: Definieer de resource‑map
 
-Geef het pad op naar de map die je versleutelde ZIP‑bestand bevat en waar het uitgepakte bestand naartoe wordt geschreven.
+Geef het pad op naar de map die je versleutelde ZIP‑bestand bevat en waar het geëxtraheerde bestand wordt weggeschreven.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Stap 2: Open het Versleutelde Archief
+## Stap 2: Open het versleutelde archief
 
-De `Archive`‑constructor accepteert een `ArchiveLoadOptions`‑object waarin je de `DecryptionPassword` kunt instellen. Dit is de kern van de **decrypt zip password** bewerking.
+De `Archive`‑constructor accepteert een `ArchiveLoadOptions`‑object waarin je de `DecryptionPassword` kunt instellen. Dit is de kern van de **decrypt zip password** operatie.
 
 ```csharp
 using (FileStream fs = File.OpenRead(dataDir + "StoreMutlipleFilesWithoutCompressionWithPassword_out.zip"))
@@ -83,9 +87,9 @@ using (FileStream fs = File.OpenRead(dataDir + "StoreMutlipleFilesWithoutCompres
 }
 ```
 
-## Stap 3: Decompress de Versleutelde Entry
+## Stap 3: Decompress de versleutelde entry
 
-Nu het archief geopend is, kun je de eerste entry (of een andere gewenste entry) lezen en de ontsleutelde bytes naar het uitvoerbestand schrijven. Dit toont **c# extract encrypted zip** in een streaming‑manier.
+Nu het archief geopend is, kun je de eerste entry (of elke gewenste entry) lezen en de gedecrypteerde bytes naar het uitvoerbestand schrijven. Dit demonstreert **c# extract encrypted zip** in een streaming‑manier.
 
 ```csharp
 using (var decompressed = archive.Entries[0].Open())
@@ -99,42 +103,41 @@ using (var decompressed = archive.Entries[0].Open())
 }
 ```
 
-## Veelvoorkomende Problemen en Oplossingen
+## Veelvoorkomende problemen en oplossingen
 
 | Probleem | Waarom het gebeurt | Oplossing |
-|----------|--------------------|----------|
-| **Incorrect password error** | De `DecryptionPassword` komt niet overeen met het wachtwoord dat gebruikt is om het archief te versleutelen. | Controleer de wachtwoord‑string; onthoud dat deze hoofdlettergevoelig is. |
-| **ArchiveLoadOptions not recognized** | Een oudere versie van Aspose.Zip wordt gebruikt die deze overload niet bevat. | Update naar de nieuwste Aspose.Zip voor .NET release. |
-| **Large files cause memory pressure** | Het volledige bestand wordt in het geheugen geladen. | Gebruik de streaming‑aanpak zoals hierboven (gebufferde leesoperatie). |
+|----------|--------------------|-----------|
+| **Onjuiste wachtwoordfout** | De `DecryptionPassword` komt niet overeen met die gebruikt om het archief te versleutelen. | Controleer de wachtwoordstring; onthoud dat deze hoofdlettergevoelig is. |
+| **ArchiveLoadOptions niet herkend** | Gebruik van een oudere versie van Aspose.Zip die deze overload niet bevat. | Werk bij naar de nieuwste Aspose.Zip voor .NET release. |
+| **Grote bestanden veroorzaken geheugenbelasting** | Het volledige bestand in het geheugen lezen. | Gebruik de hierboven getoonde streaming‑aanpak (gebufferde leesoperatie). |
 
-## Conclusie
-
-Gefeliciteerd! Je hebt nu geleerd hoe je **open encrypted archive**‑bestanden kunt openen, AES‑versleutelde ZIP‑entries kunt ontsleutelen en **decompress protected zip**‑archieven kunt uitpakken met Aspose.Zip voor .NET. Deze workflow biedt een betrouwbare manier om beveiligde ZIP‑bestanden te verwerken in elke C#‑applicatie.
-
-## Veelgestelde Vragen
+## Veelgestelde vragen
 
 ### Kan ik Aspose.Zip voor .NET gebruiken met andere encryptie‑algoritmen?
-Aspose.Zip ondersteunt voornamelijk AES‑encryptie. Bekijk de documentatie voor de laatste updates.
+
+Aspose.Zip ondersteunt voornamelijk AES‑encryptie. Controleer de documentatie voor eventuele nieuw toegevoegde algoritmen.
 
 ### Is er een proefversie beschikbaar?
+
 Ja, je kunt een gratis proefversie krijgen [hier](https://releases.aspose.com/).
 
 ### Hoe kan ik ondersteuning krijgen voor Aspose.Zip voor .NET?
-Bezoek het support‑forum [hier](https://forum.aspose.com/c/zip/37) voor hulp van de community.
+
+Bezoek het ondersteuningsforum [hier](https://forum.aspose.com/c/zip/37) om hulp van de community te krijgen.
 
 ### Welke bestandsformaten worden ondersteund voor compressie en decompressie?
-Aspose.Zip ondersteunt diverse formaten, waaronder ZIP, 7z en TAR. Raadpleeg de documentatie voor een volledige lijst.
 
-### Mag ik Aspose.Zip commercieel gebruiken?
+Aspose.Zip ondersteunt verschillende formaten, waaronder ZIP, 7z en TAR. Raadpleeg de documentatie voor een volledige lijst.
+
+### Kan ik Aspose.Zip commercieel gebruiken?
+
 Ja, je kunt een licentie aanschaffen [hier](https://purchase.aspose.com/buy) voor commercieel gebruik.
 
 ---
 
-**Last Updated:** 2025-12-21  
-**Tested With:** Aspose.Zip 24.11 for .NET  
-**Author:** Aspose  
-
----
+**Laatste update:** 2026-04-24  
+**Getest met:** Aspose.Zip 24.11 voor .NET  
+**Auteur:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
