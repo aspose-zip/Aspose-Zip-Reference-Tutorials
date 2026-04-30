@@ -20,7 +20,7 @@ If you're a .NET developer who needs to **extract xar archive** files quickly an
 
 ## Quick Answers
 - **What does the library do?** It reads and extracts Xar archives without external tools.  
-- **Which .NET versions are supported?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6+.  
+- **Which .NET versions are supported?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10.  
 - **Do I need a license?** A free trial works for development; a commercial license is required for production.  
 - **How long does implementation take?** Typically under 10 minutes.  
 - **Can I extract to a custom folder?** Yes—just specify the target path in `ExtractToDirectory`.

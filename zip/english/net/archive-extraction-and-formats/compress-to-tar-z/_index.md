@@ -1,4 +1,4 @@
----
+﻿---
 title: "Add files to tar and compress to TarZ with Aspose.Zip for .NET"
 linktitle: "Compressing to TarZ"
 second_title: "Aspose.Zip .NET API for Files Compression & Archiving"
@@ -22,7 +22,7 @@ If you need to **add files to tar** and then compress the archive to the TarZ fo
 - **What library handles tar creation?** Aspose.Zip for .NET  
 - **How many lines of code?** About 15 lines (excluding comments)  
 - **Do I need a license for testing?** A free trial is available; a license is required for production.  
-- **Supported .NET versions?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+  
+- **Supported .NET versions?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10  
 - **Can I compress folders, not just files?** Yes – you can add entire directories with a loop.
 
 ## What is **add files to tar**?

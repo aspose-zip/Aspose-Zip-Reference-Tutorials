@@ -1,4 +1,4 @@
----
+﻿---
 title: How to Compress LZMA in Aspose.Zip for .NET
 linktitle: Compress to Lzma
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -22,7 +22,7 @@ In this tutorial, you'll learn **how to compress LZMA** in Aspose.Zip for .NET, 
 - **What library is required?** Aspose.Zip for .NET  
 - **Which algorithm does this guide cover?** LZMA compression  
 - **Do I need a license?** A temporary license is sufficient for testing; a full license is required for production.  
-- **What .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
+- **What .NET versions are supported?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10  
 - **How long does the implementation take?** Typically under 10 minutes for a basic file.
 
 ## How to Compress LZMA

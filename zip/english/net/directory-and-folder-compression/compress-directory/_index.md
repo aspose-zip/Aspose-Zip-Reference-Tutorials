@@ -1,4 +1,4 @@
----
+﻿---
 title: How to Zip Folder Using Aspose.Zip for .NET
 linktitle: How to Zip a Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -19,7 +19,7 @@ In this tutorial you’ll discover **how to zip folder** quickly and reliably wi
 ## Quick Answers
 - **What does Aspose.Zip do?** It provides a simple .NET API for creating and extracting ZIP archives without external dependencies.  
 - **How long does the implementation take?** Typically under 10 minutes for a basic folder compression.  
-- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, and .NET 5/6+.  
+- **Which .NET versions are supported?** .NET Framework 2.0\u20134.8.1, .NET Core 2.0\u20133.1, and .NET 5\u201310  
 - **Do I need a license for production?** Yes, a commercial license is required for production use.  
 - **Can I compress multiple folders at once?** Absolutely—use the `CreateEntries` method on any `DirectoryInfo` collection to **zip multiple folders** in a single run.
 

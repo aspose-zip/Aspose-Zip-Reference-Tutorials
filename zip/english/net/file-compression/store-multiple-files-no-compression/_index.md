@@ -1,4 +1,4 @@
----
+﻿---
 title: Create uncompressed zip .net using Aspose.Zip for .NET
 linktitle: Storing Multiple Files Without Compression
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -21,7 +21,7 @@ In modern .NET development, **creating an uncompressed zip .net** can dramatical
 - **Why avoid compression?** To speed up archiving, preserve original file sizes for downstream processing, or meet regulatory requirements that forbid data alteration.  
 - **Which Aspose.Zip class handles this?** `ArchiveEntrySettings` combined with `StoreCompressionSettings`.  
 - **Do I need a license?** A free trial works for testing; a commercial license is required for production.  
-- **Supported .NET versions?** .NET Framework, .NET Core, .NET 5/6/7 and later.  
+- **Supported .NET versions?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10.  
 
 ## What is create uncompressed zip .net?
 Creating an uncompressed ZIP means adding each file to a ZIP container using the *store* compression method. The files remain byte‑for‑byte identical to the originals, which is ideal when you want fast archiving or need to keep the data unchanged.

@@ -1,4 +1,4 @@
----
+﻿---
 title: How to Extract WIM to Folder Using Aspose.Zip for .NET
 linktitle: Decompress Wim to Folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -20,9 +20,9 @@ Welcome to this comprehensive tutorial on **how to extract WIM** files to a fold
 
 ## Quick Answers
 - **What library is recommended?** Aspose.Zip for .NET  
-- **Can I extract WIM files on .NET Core?** Yes, the API works with .NET Core, .NET 5+, and .NET 6+.  
+- **Can I extract WIM files on .NET Core?** Yes, the API works with .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10.  
 - **Do I need a license for production?** A commercial license is required for production use; a free trial is available.  
-- **What is the minimum .NET version?** .NET Framework 4.5+ or .NET Core 3.1+.  
+- **What is the minimum .NET version?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10.  
 - **How long does the extraction take?** Typically a few seconds for standard WIM images; larger images may take longer.
 
 ## What is a WIM file?

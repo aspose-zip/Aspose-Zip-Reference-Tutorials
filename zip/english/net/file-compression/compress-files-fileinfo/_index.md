@@ -22,7 +22,7 @@ If you need to **create a zip archive** programmatically, Aspose.Zip for .NET gi
 - **What is the easiest way to create a zip archive?** Use Aspose.Zip’s `Archive` class together with `FileInfo` objects.  
 - **Can I add multiple files at once?** Yes – just create a `FileInfo` for each file and call `CreateEntry`.  
 - **Do I need a special license for ASP.NET?** A commercial Aspose.Zip license is required for production; a free trial works for evaluation.  
-- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
+- **Which .NET versions are supported?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10.  
 - **Is the API thread‑safe?** Yes, as long as each thread works with its own `Archive` instance.
 
 ## What is a Zip Archive and Why Create One?
@@ -32,7 +32,7 @@ A zip archive bundles one or more files into a single, compressed container. Thi
 - **Zero external dependencies** – pure .NET implementation.  
 - **Full control over compression level and encoding** (ASCII, UTF‑8, etc.).  
 - **Supports large files** (> 4 GB) and password protection.  
-- **Consistent API across .NET Framework, .NET Core, and .NET 5+**.
+- **Consistent API across .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10**.
 
 ## Prerequisites
 

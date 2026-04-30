@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create Zip Archive .NET – File Compression with Aspose.Zip"
 linktitle: "Create Zip Archive .NET"
 second_title: "Aspose.Zip .NET API for Files Compression & Archiving"
@@ -23,7 +23,7 @@ Creating a **zip archive .NET** is a common requirement for any modern applicati
 - **Which library is recommended?** Aspose.Zip for .NET – a fully‑featured, commercial‑grade API.  
 - **Do I need a license?** A free trial is available; a license is required for production use.  
 - **Can I modify an existing zip?** Yes, use the “modify zip file c#” capabilities built into Aspose.Zip.  
-- **Supported .NET versions?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+- **Supported .NET versions?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10
 
 ## Compressing Files with Aspose.Zip for .NET
 Compressing files is a fundamental aspect of file management. With Aspose.Zip for .NET, this task becomes not only efficient but also highly customizable. Follow our comprehensive tutorial on [Compressing a File with Aspose.Zip for .NET](./compress-file/) to learn the step‑by‑step process. Whether you're a seasoned developer or a beginner, our guide will ensure you grasp the nuances of effective file compression effortlessly.
@@ -80,7 +80,7 @@ Learn to compress files efficiently in .NET using Aspose.Zip. Harness the power 
 ## Frequently Asked Questions
 
 **Q: Can I use Aspose.Zip to create a zip archive .net on .NET Core?**  
-A: Absolutely. Aspose.Zip fully supports .NET Core 3.1 and later, as well as .NET 5/6/7.
+A: Absolutely. Aspose.Zip fully supports .NET Core 2.0–3.1, and .NET 5–10.
 
 **Q: How do I modify an existing archive without extracting it first?**  
 A: Use the “modify zip file c#” APIs – you can add, delete, or rename entries directly on the archive stream.

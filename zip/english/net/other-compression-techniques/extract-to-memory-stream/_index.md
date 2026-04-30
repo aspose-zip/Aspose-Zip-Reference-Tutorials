@@ -1,4 +1,4 @@
----
+﻿---
 title: How to Extract ZIP to Memory Stream with Aspose.Zip for .NET
 linktitle: Extracting to Memory Stream 
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -23,7 +23,7 @@ If you’re looking for a reliable way to **how to extract zip** archives direct
 - **Can I extract to a MemoryStream?** Yes – use `CopyTo` on the opened archive.  
 - **Supported formats?** ZIP, GZIP, TAR, and more.  
 - **Do I need a license for development?** A free trial works for testing; a license is required for production.  
-- **Which .NET versions are compatible?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+- **Which .NET versions are compatible?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10
 
 ## What is Aspose.Zip?
 
@@ -106,7 +106,7 @@ Even though the example focuses on a GZIP file, the same pattern works for ZIP a
 ## Frequently Asked Questions
 
 **Q: Is Aspose.Zip compatible with all versions of .NET?**  
-A: Yes, Aspose.Zip supports .NET Framework 4.5+, .NET Core 3.1+, and .NET 5/6/7, making it versatile for modern applications.
+A: Yes, Aspose.Zip supports .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10, making it versatile for modern applications.
 
 **Q: Can I use Aspose.Zip to create ZIP archives as well?**  
 A: Absolutely. The library provides both extraction and creation APIs, allowing you to build ZIP files programmatically.
