@@ -128,42 +128,6 @@ Because the API works with `FileInfo`, you never have to load whole files into m
 | **OutOfMemoryException on large files** | Loading whole file into memory | `FileInfo` streams the file; ensure you are not reading the file into a byte array elsewhere. |
 | **Permission denied** | Application lacks write permission for the output folder | Run the app with appropriate rights or choose a writable directory. |
 
-## Frequently Asked Questions
-
-**Q: Can I add password protection to the zip archive?**  
-A: Yes. After creating the `Archive`, set `archive.Password = "yourPassword"` before calling `Save`.
-
-**Q: Is it possible to update an existing zip file?**  
-A: Aspose.Zip supports opening an existing archive with `Archive.Open` and then adding new entries.
-
-**Q: How do I compress files in an ASP.NET MVC controller?**  
-A: The same code works; just ensure the output stream is returned as a `FileResult` to the client.
-
-**Q: Does Aspose.Zip support encryption algorithms?**  
-A: It supports standard ZipCrypto and AES‑256 encryption.
-
-**Q: What if I need to compress a folder recursively?**  
-A: Loop through `Directory.GetFiles` (and sub‑folders) and create a `FileInfo` for each file, then add them to the archive.
-
-## Additional FAQ
-
-**Q: How do I create zip archive .net for large data sets?**  
-A: Use `FileInfo` objects to stream data and set `CompressionLevel` in `ArchiveSaveOptions` for optimal performance.
-
-**Q: Can I use Aspose.Zip in a .NET Core web API (zip files asp.net core)?**  
-A: Absolutely – the library is fully compatible with .NET Core 3.1 and later.
-
-**Q: Is there a way to add folder to zip without writing a custom loop?**  
-A: Aspose.Zip does not have a single “add folder” method, but iterating with `DirectoryInfo` is lightweight and gives you full control over entry names.
-
-**Q: Does zip archive password protection affect compression speed?**  
-A: Enabling encryption adds a small overhead, but the impact is minimal for most use cases.
-
-**Q: What licensing is required for commercial deployment?**  
-A: A paid Aspose.Zip license is required for production; a free trial can be used for development and testing.
-
-## Existing FAQ Section (kept unchanged)
-
 ### FAQ's
 
 #### Q1: Is Aspose.Zip compatible with all file types?

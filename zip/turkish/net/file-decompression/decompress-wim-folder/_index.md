@@ -10,22 +10,6 @@ url: /tr/net/file-decompression/decompress-wim-folder/
 weight: 16
 ---
 
-Then:
-
-**Last Updated:** 2026-02-28  
-**Tested With:** Aspose.Zip for .NET (latest release)  
-**Author:** Aspose  
-
-Translate labels: "Last Updated" -> "Son Güncelleme". "Tested With" -> "Test Edilen". "Author" -> "Yazar". Keep dates unchanged.
-
-Then closing shortcodes.
-
-Also there is a backtop button shortcode after.
-
-We must ensure we keep all shortcodes unchanged.
-
-Now produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

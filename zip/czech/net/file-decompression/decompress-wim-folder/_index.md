@@ -10,17 +10,7 @@ url: /cs/net/file-decompression/decompress-wim-folder/
 weight: 16
 ---
 
-". Keep technical term.
-
-"**Author:** Aspose" -> "**Autor:** Aspose".
-
-Then closing shortcodes.
-
-Finally backtop button shortcode unchanged.
-
-Make sure to keep all markdown formatting, code block placeholders unchanged.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

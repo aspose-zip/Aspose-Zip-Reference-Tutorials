@@ -9,11 +9,7 @@ url: /zh-hant/net/file-decompression/decompress-wim-folder/
 weight: 16
 ---
 
-- Keep shortcodes at bottom.
-
-Make sure to preserve markdown formatting.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

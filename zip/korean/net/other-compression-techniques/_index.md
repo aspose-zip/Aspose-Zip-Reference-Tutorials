@@ -9,11 +9,7 @@ url: /ko/net/other-compression-techniques/
 weight: 27
 ---
 
- "## Quick Answers" bullet list uses markdown bullet dash. Keep same.
-
-Make sure to keep code formatting for backticks.
-
-Now produce final output.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

@@ -128,63 +128,28 @@ using (var archive = new Archive())
 | **OutOfMemoryException บนไฟล์ขนาดใหญ่** | โหลดไฟล์ทั้งหมดเข้าสู่หน่วยความจำ | `FileInfo` สตรีมไฟล์; ตรวจสอบว่าคุณไม่ได้อ่านไฟล์เป็นอาร์เรย์ไบต์ที่อื่น. |
 | **Permission denied** | แอปไม่มีสิทธิ์เขียนในโฟลเดอร์ผลลัพธ์ | รันแอปด้วยสิทธิ์ที่เหมาะสมหรือเลือกไดเรกทอรีที่เขียนได้. |
 
-## คำถามที่พบบ่อย
+### คำถามที่พบบ่อย
 
-**ถาม: ฉันสามารถเพิ่มการป้องกันด้วยรหัสผ่านให้กับ zip archive ได้หรือไม่?**  
-ตอบ: ได้. หลังจากสร้าง `Archive`, ตั้งค่า `archive.Password = "yourPassword"` ก่อนเรียก `Save`.
+#### ถาม 1: Aspose.Zip รองรับไฟล์ทุกประเภทหรือไม่?
 
-**ถาม: สามารถอัปเดตไฟล์ zip ที่มีอยู่ได้หรือไม่?**  
-ตอบ: Aspose.Zip รองรับการเปิด archive ที่มีอยู่ด้วย `Archive.Open` แล้วเพิ่มรายการใหม่.
+ตอบ 1: Aspose.Zip รองรับไฟล์หลากหลายประเภท ทำให้การบีบอัดมีความยืดหยุ่นสูง
 
-**ถาม: ฉันจะบีบอัดไฟล์ในคอนโทรลเลอร์ ASP.NET MVC อย่างไร?**  
-ตอบ: โค้ดเดียวกันทำงานได้; เพียงให้แน่ใจว่าสตรีมผลลัพธ์ถูกส่งกลับเป็น `FileResult` ให้กับไคลเอนต์.
+### ถาม 2: ฉันสามารถใช้ Aspose.Zip สำหรับโครงการเชิงพาณิชย์ได้หรือไม่?
 
-**ถาม: Aspose.Zip รองรับอัลกอริทึมการเข้ารหัสหรือไม่?**  
-ตอบ: รองรับ ZipCrypto มาตรฐานและการเข้ารหัส AES‑256.
+ตอบ 2: ได้อย่างแน่นอน! เยี่ยมชม [หน้าซื้อ](https://purchase.aspose.com/buy) ของเราเพื่อดูตัวเลือกการอนุญาตใช้งาน
 
-**ถาม: ถ้าฉันต้องการบีบอัดโฟลเดอร์แบบเรียกซ้ำลึก (recursive) จะทำอย่างไร?**  
-ตอบ: วนลูปผ่าน `Directory.GetFiles` (และโฟลเดอร์ย่อย) แล้วสร้าง `FileInfo` สำหรับแต่ละไฟล์, จากนั้นเพิ่มเข้า archive.
+### ถาม 3: ฉันจะขอรับการสนับสนุนสำหรับ Aspose.Zip ได้อย่างไร?
 
-## คำถามเพิ่มเติม
+ตอบ 3: เข้าร่วมชุมชนของเราใน [ฟอรัม Aspose.Zip](https://forum.aspose.com/c/zip/37) เพื่อขอความช่วยเหลือและพูดคุย
 
-**ถาม: ฉันจะสร้าง zip archive .net สำหรับชุดข้อมูลขนาดใหญ่ได้อย่างไร?**  
-ตอบ: ใช้ `FileInfo` เพื่อสตรีมข้อมูลและตั้งค่า `CompressionLevel` ใน `ArchiveSaveOptions` เพื่อประสิทธิภาพที่ดีที่สุด.
+#### ถาม 4: มีการทดลองใช้ฟรีหรือไม่?
 
-**ถาม: ฉันสามารถใช้ Aspose.Zip ใน .NET Core web API (zip files asp.net core) ได้หรือไม่?**  
-ตอบ: แน่นอน – ไลบรารีเข้ากันได้เต็มที่กับ .NET Core 3.1 ขึ้นไป.
+ตอบ 4: มี คุณสามารถรับ [การทดลองใช้ฟรีที่นี่](https://releases.aspose.com/)
 
-**ถาม: มีวิธีเพิ่มโฟลเดอร์ลงใน zip โดยไม่ต้องเขียนลูปกำหนดเองหรือไม่?**  
-ตอบ: Aspose.Zip ไม่มีเมธอด “add folder” เดียว, แต่การวนลูปด้วย `DirectoryInfo` มีน้ำหนักเบาและให้การควบคุมเต็มที่ต่อชื่อรายการ.
 
-**ถาม: การป้องกันด้วยรหัสผ่านของ zip archive มีผลต่อความเร็วการบีบอัดหรือไม่?**  
-ตอบ: การเปิดใช้งานการเข้ารหัสเพิ่มภาระเล็กน้อย, แต่ผลกระทบโดยรวมน้อยสำหรับการใช้งานส่วนใหญ่.
+#### Q5: ฉันจะขอรับใบอนุญาตใช้งาน Aspose.Zip ชั่วคราวได้อย่างไร?
 
-**ถาม: ต้องการไลเซนส์แบบใดสำหรับการใช้งานเชิงพาณิชย์?**  
-ตอบ: จำเป็นต้องมีไลเซนส์ Aspose.Zip แบบชำระเงินสำหรับการผลิต; รุ่นทดลองฟรีสามารถใช้สำหรับการพัฒนาและทดสอบ.
-
-## Existing FAQ Section (kept unchanged)
-
-### FAQ's
-
-#### Q1: Is Aspose.Zip compatible with all file types?
-
-A1: Aspose.Zip supports a wide range of file types, ensuring versatility in compression.
-
-#### Q2: Can I use Aspose.Zip for commercial projects?
-
-A2: Absolutely! Visit our [purchase page](https://purchase.aspose.com/buy) to explore licensing options.
-
-#### Q3: How can I get support for Aspose.Zip?
-
-A3: Join our community on the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for assistance and discussions.
-
-#### Q4: Is there a free trial available?
-
-A4: Yes, you can grab your [free trial here](https://releases.aspose.com/).
-
-#### Q5: How can I obtain a temporary license for Aspose.Zip?
-
-A5: Visit [this link](https://purchase.aspose.com/temporary-license/) for information on obtaining a temporary license.
+A5: กรุณาเยี่ยมชม [ลิงก์นี้](https://purchase.aspose.com/temporary-license/) เพื่อดูข้อมูลเกี่ยวกับการขอรับใบอนุญาตใช้งานชั่วคราว
 
 ## สรุป
 

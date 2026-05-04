@@ -10,26 +10,6 @@ url: /cs/net/other-compression-techniques/
 weight: 27
 ---
 
-, .NET 6, .NET 7, and newer releases.
-
-Translate.
-
----
-
-**Last Updated:** 2026-02-28  
-**Tested With:** Aspose.Zip for .NET (latest release)  
-**Author:** Aspose  
-
-Translate these labels but keep dates.
-
-Finally closing shortcodes.
-
-Now produce final content with all translations.
-
-Be careful to preserve markdown formatting, headings, lists, bold etc.
-
-Let's craft final output.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

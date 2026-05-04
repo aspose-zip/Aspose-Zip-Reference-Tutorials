@@ -11,20 +11,6 @@ url: /ru/net/other-compression-techniques/entries-with-different-passwords/
 weight: 13
 ---
 
-лы с паролем и зашифровать записи ZIP разными паролями с помощью Aspose.Zip для .NET"
-
-Similarly other headings.
-
-We must keep code block placeholders unchanged.
-
-Translate bullet points etc.
-
-Also tables.
-
-Make sure to keep markdown formatting.
-
-Let's produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

@@ -10,10 +10,6 @@ url: /fr/net/file-decompression/decompress-xar-folder/
 weight: 17
 ---
 
- markdown formatting.
-
-Let's craft.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

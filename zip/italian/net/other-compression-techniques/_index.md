@@ -11,10 +11,6 @@ url: /it/net/other-compression-techniques/
 weight: 27
 ---
 
- translate.
-
-Let's write.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

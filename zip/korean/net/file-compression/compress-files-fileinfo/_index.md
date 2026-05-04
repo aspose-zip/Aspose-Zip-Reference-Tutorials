@@ -129,42 +129,6 @@ API가 `FileInfo`와 함께 작동하므로 전체 파일을 메모리로 로드
 | **OutOfMemoryException on large files** | 파일을 전체 메모리로 로드 | `FileInfo`는 스트리밍을 사용합니다; 다른 곳에서 파일을 바이트 배열로 읽지 않도록 하세요. |
 | **Permission denied** | 출력 폴더에 대한 쓰기 권한 부족 | 적절한 권한으로 실행하거나 쓰기 가능한 디렉터리를 선택하세요. |
 
-## 자주 묻는 질문
-
-**Q: zip 압축 파일에 비밀번호 보호를 추가할 수 있나요?**  
-A: 가능합니다. `Archive`를 만든 뒤 `archive.Password = "yourPassword"`를 설정하고 `Save`를 호출하면 됩니다.
-
-**Q: 기존 zip 파일을 업데이트할 수 있나요?**  
-A: `Archive.Open`으로 기존 아카이브를 연 뒤 새 엔트리를 추가하면 됩니다.
-
-**Q: ASP.NET MVC 컨트롤러에서 파일을 압축하려면 어떻게 해야 하나요?**  
-A: 동일한 코드를 사용하면 되며, 출력 스트림을 `FileResult`로 반환하면 클라이언트에 전달됩니다.
-
-**Q: Aspose.Zip이 지원하는 암호화 알고리즘은 무엇인가요?**  
-A: 표준 ZipCrypto와 AES‑256 암호화를 지원합니다.
-
-**Q: 폴더를 재귀적으로 압축하려면 어떻게 해야 하나요?**  
-A: `Directory.GetFiles`와 하위 폴더를 순회하면서 각 파일에 대해 `FileInfo`를 만들고 아카이브에 추가하면 됩니다.
-
-## 추가 FAQ
-
-**Q: 대용량 데이터 세트를 위해 zip 압축 파일을 만들려면?**  
-A: `FileInfo` 객체로 스트리밍하고 `ArchiveSaveOptions`에서 `CompressionLevel`을 설정해 최적의 성능을 얻으세요.
-
-**Q: .NET Core 웹 API에서 Aspose.Zip을 사용할 수 있나요 (zip files asp.net core)?**  
-A: 물론입니다 – 라이브러리는 .NET Core 3.1 이상과 완벽히 호환됩니다.
-
-**Q: 커스텀 루프 없이 폴더를 zip에 추가할 방법이 있나요?**  
-A: Aspose.Zip에 단일 “add folder” 메서드는 없지만, `DirectoryInfo`를 이용한 반복은 가볍고 엔트리 이름을 자유롭게 제어할 수 있습니다.
-
-**Q: zip 압축 파일에 비밀번호 보호를 하면 압축 속도에 영향을 주나요?**  
-A: 암호화를 활성화하면 약간의 오버헤드가 발생하지만, 대부분의 사용 사례에서는 영향이 미미합니다.
-
-**Q: 상용 배포에 필요한 라이선스는?**  
-A: 프로덕션에서는 유료 Aspose.Zip 라이선스가 필요합니다; 개발 및 테스트용으로는 무료 체험판을 사용할 수 있습니다.
-
-## 기존 FAQ 섹션 (변경 없음)
-
 ### FAQ's
 
 #### Q1: Aspose.Zip이 모든 파일 형식을 지원하나요?

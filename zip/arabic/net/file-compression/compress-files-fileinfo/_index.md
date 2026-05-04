@@ -131,63 +131,27 @@ using (var archive = new Archive())
 | **OutOfMemoryException عند الملفات الكبيرة** | تحميل الملف بالكامل إلى الذاكرة | `FileInfo` يبث الملف؛ تأكد من عدم قراءته إلى مصفوفة بايت في مكان آخر. |
 | **رفض الإذن** | التطبيق لا يملك صلاحية كتابة للمجلد الهدف | شغّل التطبيق بصلاحيات مناسبة أو اختر دليلًا قابلًا للكتابة. |
 
-## الأسئلة المتكررة
+### الأسئلة الشائعة
 
-**س: هل يمكنني إضافة حماية بكلمة مرور إلى أرشيف zip؟**  
-ج: نعم. بعد إنشاء كائن `Archive`، عيّن `archive.Password = "yourPassword"` قبل استدعاء `Save`.
+#### س1: هل Aspose.Zip متوافق مع جميع أنواع الملفات؟
 
-**س: هل يمكن تحديث ملف zip موجود؟**  
-ج: يدعم Aspose.Zip فتح أرشيف موجود باستخدام `Archive.Open` ثم إضافة إدخالات جديدة.
+ج1: يدعم Aspose.Zip نطاقًا واسعًا من أنواع الملفات، مما يضمن مرونةً في الضغط.
 
-**س: كيف أضغط ملفات في وحدة تحكم ASP.NET MVC؟**  
-ج: الكود نفسه يعمل؛ فقط تأكّد من إرجاع التيار كـ `FileResult` للعميل.
+### س2: هل يمكنني استخدام Aspose.Zip للمشاريع التجارية؟
 
-**س: هل يدعم Aspose.Zip خوارزميات تشفير؟**  
-ج: يدعم تشفير ZipCrypto القياسي وتشفير AES‑256.
+ج2: بالتأكيد! تفضل بزيارة [صفحة الشراء](https://purchase.aspose.com/buy) للاطلاع على خيارات الترخيص.
 
-**س: ماذا لو أردت ضغط مجلد بشكل متكرر؟**  
-ج: قم بالتكرار عبر `Directory.GetFiles` (والأدلة الفرعية) وأنشئ `FileInfo` لكل ملف، ثم أضفه إلى الأرشيف.
+### س3: كيف يمكنني الحصول على دعم لـ Aspose.Zip؟
 
-## أسئلة إضافية
+ج3: انضم إلى مجتمعنا على [منتدى Aspose.Zip](https://forum.aspose.com/c/zip/37) للحصول على المساعدة والمشاركة في المناقشات.
 
-**س: كيف أنشئ أرشيف zip .net لمجموعات بيانات كبيرة؟**  
-ج: استخدم كائنات `FileInfo` لبث البيانات واضبط `CompressionLevel` في `ArchiveSaveOptions` للحصول على أفضل أداء.
+### س4: هل تتوفر نسخة تجريبية مجانية؟
 
-**س: هل يمكنني استخدام Aspose.Zip في واجهة برمجة تطبيقات ويب .NET Core (zip files asp.net core)؟**  
-ج: بالتأكيد – المكتبة متوافقة تمامًا مع .NET Core 3.1 وما بعده.
+ج4: نعم، يمكنك الحصول على [النسخة التجريبية المجانية من هنا](https://releases.aspose.com/).
 
-**س: هل هناك طريقة لإضافة مجلد إلى zip دون كتابة حلقة مخصصة؟**  
-ج: لا توجد طريقة “إضافة مجلد” واحدة في Aspose.Zip، لكن التكرار باستخدام `DirectoryInfo` خفيف الوزن ويمنحك تحكمًا كاملًا في أسماء الإدخالات.
+#### س٥: كيف يمكنني الحصول على ترخيص مؤقت لبرنامج Aspose.Zip؟
 
-**س: هل تؤثر حماية كلمة المرور على سرعة الضغط؟**  
-ج: إضافة التشفير يضيف قليلًا من الحمل، لكن الأثر ضئيل في معظم الحالات.
-
-**س: ما الترخيص المطلوب للنشر التجاري؟**  
-ج: يلزم الحصول على ترخيص مدفوع لـ Aspose.Zip للإنتاج؛ يمكن استخدام النسخة التجريبية للتطوير والاختبار.
-
-## قسم الأسئلة المتكررة (مُحافظ عليه دون تعديل)
-
-### FAQ's
-
-#### Q1: Is Aspose.Zip compatible with all file types?
-
-A1: Aspose.Zip supports a wide range of file types, ensuring versatility in compression.
-
-#### Q2: Can I use Aspose.Zip for commercial projects?
-
-A2: Absolutely! Visit our [purchase page](https://purchase.aspose.com/buy) to explore licensing options.
-
-#### Q3: How can I get support for Aspose.Zip?
-
-A3: Join our community on the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for assistance and discussions.
-
-#### Q4: Is there a free trial available?
-
-A4: Yes, you can grab your [free trial here](https://releases.aspose.com/).
-
-#### Q5: How can I obtain a temporary license for Aspose.Zip?
-
-A5: Visit [this link](https://purchase.aspose.com/temporary-license/) for information on obtaining a temporary license.
+ج٥: تفضل بزيارة [هذا الرابط](https://purchase.aspose.com/temporary-license/) للاطلاع على معلومات حول كيفية الحصول على ترخيص مؤقت.
 
 ## الخلاصة
 

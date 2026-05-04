@@ -131,63 +131,27 @@ Mivel az API a `FileInfo`‑val dolgozik, soha nem kell az egész fájlt memóri
 | **OutOfMemoryException nagy fájloknál** | A teljes fájl betöltése a memóriába | A `FileInfo` streameli a fájlt; ügyelj arra, hogy máshol ne olvasd be bájt‑tömbbe. |
 | **Permission denied** | Az alkalmazásnak nincs írási joga a kimeneti mappához | Futtasd az alkalmazást megfelelő jogosultságokkal, vagy válassz írható könyvtárat. |
 
-## Gyakran Ismételt Kérdések
+### GYIK
 
-**Q: Hozzáadhatok jelszóvédelmet a zip archívumhoz?**  
-A: Igen. Az `Archive` létrehozása után állítsd be `archive.Password = "yourPassword"`‑t a `Save` hívása előtt.
+#### 1. kérdés: Az Aspose.Zip kompatibilis az összes fájltípussal?
 
-**Q: Lehet-e frissíteni egy már létező zip fájlt?**  
-A: Az Aspose.Zip támogatja egy meglévő archívum megnyitását a `Archive.Open`‑nal, majd új bejegyzések hozzáadását.
+1. válasz: Az Aspose.Zip számos fájltípust támogat, így biztosítva a sokoldalú tömörítést.
 
-**Q: Hogyan tömöríthetek fájlokat egy ASP.NET MVC vezérlőben?**  
-A: Ugyanez a kód működik; csak győződj meg róla, hogy a kimeneti streamet `FileResult`‑ként adod vissza a kliensnek.
+#### 2. kérdés: Használhatom az Aspose.Zip-et kereskedelmi projektekhez?
 
-**Q: Támogatja az Aspose.Zip a titkosítási algoritmusokat?**  
-A: Igen, támogatja a szabványos ZipCrypto és az AES‑256 titkosítást.
+2. válasz: Természetesen! Látogassa meg a [vásárlási oldalunkat](https://purchase.aspose.com/buy) a licencelési lehetőségek megismeréséhez.
 
-**Q: Mit tegyek, ha rekurzívan kell tömöríteni egy mappát?**  
-A: Iterálj a `Directory.GetFiles`‑en (és az almappákon) és minden fájlhoz hozz létre egy `FileInfo`‑t, majd add hozzá az archívumhoz.
+#### 3. kérdés: Hogyan kaphatok támogatást az Aspose.Zip-hez?
 
-## További GYIK
+3. válasz: Csatlakozzon közösségünkhöz az [Aspose.Zip fórumon](https://forum.aspose.com/c/zip/37) segítségért és beszélgetésekért.
 
-**Q: Hogyan hozhatok létre zip archívumot .net‑en nagy adathalmazokhoz?**  
-A: Használd a `FileInfo` objektumokat az adat streameléséhez, és állítsd be a `CompressionLevel`‑t az `ArchiveSaveOptions`‑ban a legjobb teljesítményért.
+#### 4. kérdés: Van elérhető ingyenes próbaverzió?
 
-**Q: Használhatom az Aspose.Zip‑et egy .NET Core web API‑ban (zip files asp.net core)?**  
-A: Természetesen – a könyvtár teljesen kompatibilis a .NET Core 3.1‑el és újabb verziókkal.
+4. válasz: Igen, letöltheti az [ingyenes próbaverziót itt](https://releases.aspose.com/).
 
-**Q: Van-e mód a mappa zip‑hez adására anélkül, hogy egyedi ciklust írnánk?**  
-A: Az Aspose.Zip nem rendelkezik egyetlen “add folder” metódussal, de a `DirectoryInfo`‑val való iterálás könnyű, és teljes kontrollt ad a bejegyzésnevek felett.
+#### 5. kérdés: Hogyan szerezhetek ideiglenes licencet az Aspose.Zip-hez?
 
-**Q: Befolyásolja a zip archívum jelszóvédelem a tömörítési sebességet?**  
-A: A titkosítás kis extra terhet jelent, de a legtöbb esetben a hatás elhanyagolható.
-
-**Q: Milyen licenc szükséges a kereskedelmi üzemeltetéshez?**  
-A: Egy fizetett Aspose.Zip licenc szükséges a termeléshez; ingyenes próba használható fejlesztéshez és teszteléshez.
-
-## Existing FAQ Section (kept unchanged)
-
-### FAQ's
-
-#### Q1: Is Aspose.Zip compatible with all file types?
-
-A1: Aspose.Zip supports a wide range of file types, ensuring versatility in compression.
-
-#### Q2: Can I use Aspose.Zip for commercial projects?
-
-A2: Absolutely! Visit our [purchase page](https://purchase.aspose.com/buy) to explore licensing options.
-
-#### Q3: How can I get support for Aspose.Zip?
-
-A3: Join our community on the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for assistance and discussions.
-
-#### Q4: Is there a free trial available?
-
-A4: Yes, you can grab your [free trial here](https://releases.aspose.com/).
-
-#### Q5: How can I obtain a temporary license for Aspose.Zip?
-
-A5: Visit [this link](https://purchase.aspose.com/temporary-license/) for information on obtaining a temporary license.
+5. válasz: Az ideiglenes licenc beszerzésével kapcsolatos információkért látogassa meg [ezt a linket](https://purchase.aspose.com/temporary-license/).
 
 ## Összegzés
 

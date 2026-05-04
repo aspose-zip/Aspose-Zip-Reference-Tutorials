@@ -129,42 +129,6 @@ using (var archive = new Archive())
 | **大文件导致 OutOfMemoryException** | 将整个文件加载到内存 | `FileInfo` 会流式读取文件；确保未在其他地方将文件读取为字节数组。 |
 | **权限被拒绝** | 应用程序对输出文件夹没有写权限 | 以适当权限运行应用或选择可写目录。 |
 
-## 常见问答
-
-**Q: 能为 zip 存档添加密码保护吗？**  
-A: 可以。在调用 `Save` 之前，创建 `Archive` 后设置 `archive.Password = "yourPassword"`。
-
-**Q: 能否更新已有的 zip 文件？**  
-A: Aspose.Zip 支持使用 `Archive.Open` 打开现有存档，然后添加新条目。
-
-**Q: 如何在 ASP.NET MVC 控制器中压缩文件？**  
-A: 同样的代码即可使用，只需确保将输出流作为 `FileResult` 返回给客户端。
-
-**Q: Aspose.Zip 支持哪些加密算法？**  
-A: 支持标准的 ZipCrypto 和 AES‑256 加密。
-
-**Q: 如果需要递归压缩文件夹该怎么办？**  
-A: 遍历 `Directory.GetFiles`（以及子文件夹），为每个文件创建 `FileInfo`，然后添加到存档中。
-
-## 其他 FAQ
-
-**Q: 如何为大数据集创建 .net zip 存档？**  
-A: 使用 `FileInfo` 对象进行流式处理，并在 `ArchiveSaveOptions` 中设置 `CompressionLevel` 以获得最佳性能。
-
-**Q: 能在 .NET Core Web API（zip files asp.net core）中使用 Aspose.Zip 吗？**  
-A: 完全可以——该库与 .NET Core 3.1 及更高版本兼容。
-
-**Q: 有没有办法在不编写自定义循环的情况下将文件夹添加到 zip？**  
-A: Aspose.Zip 没有单独的 “add folder” 方法，但使用 `DirectoryInfo` 进行遍历轻量且可完全控制条目名称。
-
-**Q: zip 存档的密码保护会影响压缩速度吗？**  
-A: 启用加密会带来少量开销，但对大多数使用场景影响微乎其微。
-
-**Q: 商业部署需要什么许可证？**  
-A: 生产环境需要付费的 Aspose.Zip 许可证；开发和测试可使用免费试用版。
-
-## 现有 FAQ 部分（保持不变）
-
 ### FAQ's
 
 #### Q1: Aspose.Zip 是否兼容所有文件类型？

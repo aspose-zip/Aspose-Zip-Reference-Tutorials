@@ -11,9 +11,7 @@ url: /cs/net/other-compression-techniques/entries-with-different-passwords/
 weight: 13
 ---
 
- preserved with pipes.
-
-Let's craft final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

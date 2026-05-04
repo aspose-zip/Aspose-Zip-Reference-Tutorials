@@ -9,32 +9,6 @@ url: /pt/net/file-decompression/decompress-xar-folder/
 weight: 17
 ---
 
-Translate.
-
-## Common Issues & Tips
-
-Translate bullet points.
-
-## Frequently Asked Questions
-
-Translate Q&A.
-
-Need to keep markdown formatting: **Q:** etc.
-
-Make sure links unchanged.
-
-At end:
-
-**Last Updated:** 2026-02-28  
-**Tested With:** Aspose.Zip 24.11 for .NET  
-**Author:** Aspose  
-
-Translate labels? "Last Updated" maybe keep English? Should translate to Portuguese: "Última atualização". "Tested With" -> "Testado com". "Author" -> "Autor". Keep dates unchanged.
-
-Then closing shortcodes.
-
-Let's craft translation.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

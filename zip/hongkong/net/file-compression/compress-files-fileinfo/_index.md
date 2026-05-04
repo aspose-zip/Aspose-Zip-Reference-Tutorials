@@ -129,63 +129,27 @@ using (var archive = new Archive())
 | **大型檔案發生 OutOfMemoryException** | 將整個檔案載入記憶體 | `FileInfo` 會串流檔案；確保未在其他地方將檔案讀入 byte 陣列。 |
 | **權限被拒絕** | 應用程式沒有寫入輸出資料夾的權限 | 以適當的權限執行應用程式，或改用可寫入的目錄。 |
 
-## 常見問答
+### 常見問題解答
 
-**Q: 可以為 zip 壓縮檔加入密碼保護嗎？**  
-A: 可以。建立 `Archive` 後，於呼叫 `Save` 前設定 `archive.Password = "yourPassword"`。
+#### 問題1：Aspose.Zip 是否相容於所有檔案類型？
 
-**Q: 能否更新已存在的 zip 檔案？**  
-A: Aspose.Zip 支援使用 `Archive.Open` 開啟既有壓縮檔，然後加入新條目。
+答1：Aspose.Zip 支援多種檔案類型，確保壓縮的彈性。
 
-**Q: 如何在 ASP.NET MVC 控制器中壓縮檔案？**  
-A: 同樣的程式碼即可使用，只要確保將輸出串流以 `FileResult` 回傳給客戶端。
+#### 問題2：我可以將 Aspose.Zip 用於商業專案嗎？
 
-**Q: Aspose.Zip 支援哪些加密演算法？**  
-A: 支援標準的 ZipCrypto 與 AES‑256 加密。
+答2：當然可以！請造訪我們的[購買頁面](https://purchase.aspose.com/buy)以了解授權選項。
 
-**Q: 若需遞迴壓縮整個資料夾，該怎麼做？**  
-A: 迭代 `Directory.GetFiles`（以及子資料夾），為每個檔案建立 `FileInfo`，再加入至 Archive。
+#### 問題3：如何獲得 Aspose.Zip 的支援？
 
-## 其他 FAQ
+答3：加入我們的[Aspose.Zip 論壇](https://forum.aspose.com/c/zip/37)社區，取得協助並參與討論。
 
-**Q: 如何在 .NET 中為大型資料集建立 zip 壓縮檔？**  
-A: 使用 `FileInfo` 物件串流資料，並在 `ArchiveSaveOptions` 中設定 `CompressionLevel` 以取得最佳效能。
+#### 問題4：是否有免費試用版？
 
-**Q: 可以在 .NET Core Web API（zip files asp.net core）中使用 Aspose.Zip 嗎？**  
-A: 當然可以——此函式庫完全相容於 .NET Core 3.1 及以上版本。
+答4：是的，您可以[在此處](https://releases.aspose.com/)取得免費試用版。
 
-**Q: 有沒有不需要自行撰寫迴圈就能將資料夾加入 zip 的方法？**  
-A: Aspose.Zip 沒有單一的「加入資料夾」方法，但使用 `DirectoryInfo` 迭代既輕量又能完整控制條目名稱。
+#### 問題5：如何取得 Aspose.Zip 的臨時授權？
 
-**Q: zip 壓縮檔的密碼保護會影響壓縮速度嗎？**  
-A: 啟用加密會產生少量額外開銷，但對大多數使用情境影響不大。
-
-**Q: 商業部署需要什麼授權？**  
-A: 生產環境必須購買 Aspose.Zip 授權；開發與測試可使用免費試用版。
-
-## 現有 FAQ 區段（保持不變）
-
-### FAQ's
-
-#### Q1: Is Aspose.Zip compatible with all file types?
-
-A1: Aspose.Zip supports a wide range of file types, ensuring versatility in compression.
-
-#### Q2: Can I use Aspose.Zip for commercial projects?
-
-A2: Absolutely! Visit our [purchase page](https://purchase.aspose.com/buy) to explore licensing options.
-
-#### Q3: How can I get support for Aspose.Zip?
-
-A3: Join our community on the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for assistance and discussions.
-
-#### Q4: Is there a free trial available?
-
-A4: Yes, you can grab your [free trial here](https://releases.aspose.com/).
-
-#### Q5: How can I obtain a temporary license for Aspose.Zip?
-
-A5: Visit [this link](https://purchase.aspose.com/temporary-license/) for information on obtaining a temporary license.
+A5：請造訪[此連結](https://purchase.aspose.com/temporary-license/)以了解有關取得臨時許可證的資訊。
 
 ## 結論
 

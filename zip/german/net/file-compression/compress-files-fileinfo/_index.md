@@ -11,10 +11,6 @@ url: /de/net/file-compression/compress-files-fileinfo/
 weight: 11
 ---
 
- preserve markdown tables.
-
-Let's craft translation.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
@@ -135,63 +131,27 @@ Da die API mit `FileInfo` arbeitet, müssen Sie nie ganze Dateien in den Speiche
 | **OutOfMemoryException bei großen Dateien** | Ganze Datei wird in den Speicher geladen | `FileInfo` streamt die Datei; sicherstellen, dass Sie die Datei nicht anderweitig in ein Byte‑Array einlesen. |
 | **Zugriff verweigert** | Anwendung hat keine Schreibrechte für das Ausgabeverzeichnis | Anwendung mit entsprechenden Rechten ausführen oder ein beschreibbares Verzeichnis wählen. |
 
-## Häufig gestellte Fragen
+### Häufig gestellte Fragen
 
-**F: Kann ich dem Zip‑Archiv einen Passwortschutz hinzufügen?**  
-A: Ja. Nachdem Sie das `Archive` erstellt haben, setzen Sie `archive.Password = "yourPassword"` bevor Sie `Save` aufrufen.
+#### F1: Ist Aspose.Zip mit allen Dateitypen kompatibel?
 
-**F: Ist es möglich, ein bestehendes Zip‑Archiv zu aktualisieren?**  
-A: Aspose.Zip unterstützt das Öffnen eines bestehenden Archivs mit `Archive.Open` und anschließend das Hinzufügen neuer Einträge.
+A1: Aspose.Zip unterstützt eine Vielzahl von Dateitypen und bietet so vielseitige Komprimierungsmöglichkeiten.
 
-**F: Wie komprimiere ich Dateien in einem ASP.NET MVC‑Controller?**  
-A: Der gleiche Code funktioniert; stellen Sie nur sicher, dass der Ausgabestream als `FileResult` an den Client zurückgegeben wird.
+#### F2: Kann ich Aspose.Zip für kommerzielle Projekte verwenden?
 
-**F: Unterstützt Aspose.Zip Verschlüsselungsalgorithmen?**  
-A: Es unterstützt das standardmäßige ZipCrypto und AES‑256‑Verschlüsselung.
+A2: Selbstverständlich! Besuchen Sie unsere [Kaufseite](https://purchase.aspose.com/buy), um sich über die Lizenzoptionen zu informieren.
 
-**F: Was, wenn ich einen Ordner rekursiv komprimieren muss?**  
-A: Durchlaufen Sie `Directory.GetFiles` (und Unterordner) und erstellen Sie für jede Datei ein `FileInfo`, das Sie dann dem Archiv hinzufügen.
+#### F3: Wie erhalte ich Support für Aspose.Zip?
 
-## Zusätzliche FAQ
+A3: Treten Sie unserer Community im [Aspose.Zip-Forum](https://forum.aspose.com/c/zip/37) bei, um Hilfe zu erhalten und sich mit anderen auszutauschen.
 
-**F: Wie erstelle ich ein Zip‑Archiv .net für große Datenmengen?**  
-A: Verwenden Sie `FileInfo`‑Objekte zum Streamen der Daten und setzen Sie `CompressionLevel` in `ArchiveSaveOptions` für optimale Leistung.
+#### F4: Gibt es eine kostenlose Testversion?
 
-**F: Kann ich Aspose.Zip in einer .NET Core Web‑API (zip files asp.net core) verwenden?**  
-A: Absolut – die Bibliothek ist vollständig kompatibel mit .NET Core 3.1 und späteren Versionen.
+A4: Ja, Sie können Ihre [kostenlose Testversion hier](https://releases.aspose.com/) herunterladen.
 
-**F: Gibt es eine Möglichkeit, einen Ordner zu Zip hinzuzufügen, ohne eine eigene Schleife zu schreiben?**  
-A: Aspose.Zip bietet keine einzelne „add folder“‑Methode, aber das Durchlaufen mit `DirectoryInfo` ist leichtgewichtig und gibt Ihnen volle Kontrolle über die Eintragsnamen.
+#### F5: Wie erhalte ich eine temporäre Lizenz für Aspose.Zip?
 
-**F: Beeinflusst der Passwortschutz die Kompressionsgeschwindigkeit?**  
-A: Die Aktivierung der Verschlüsselung verursacht einen kleinen Overhead, der jedoch für die meisten Anwendungsfälle minimal ist.
-
-**F: Welche Lizenzierung ist für den kommerziellen Einsatz erforderlich?**  
-A: Für die Produktion ist eine kostenpflichtige Aspose.Zip‑Lizenz nötig; eine kostenlose Testversion kann für Entwicklung und Tests verwendet werden.
-
-## Vorhandener FAQ‑Abschnitt (unverändert)
-
-### FAQ's
-
-#### Q1: Is Aspose.Zip compatible with all file types?
-
-A1: Aspose.Zip supports a wide range of file types, ensuring versatility in compression.
-
-#### Q2: Can I use Aspose.Zip for commercial projects?
-
-A2: Absolutely! Visit our [purchase page](https://purchase.aspose.com/buy) to explore licensing options.
-
-#### Q3: How can I get support for Aspose.Zip?
-
-A3: Join our community on the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for assistance and discussions.
-
-#### Q4: Is there a free trial available?
-
-A4: Yes, you can grab your [free trial here](https://releases.aspose.com/).
-
-#### Q5: How can I obtain a temporary license for Aspose.Zip?
-
-A5: Visit [this link](https://purchase.aspose.com/temporary-license/) for information on obtaining a temporary license.
+A5: Unter [diesem Link](https://purchase.aspose.com/temporary-license/) finden Sie Informationen zum Erhalt einer temporären Lizenz.
 
 ## Fazit
 

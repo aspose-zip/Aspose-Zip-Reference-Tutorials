@@ -10,25 +10,6 @@ url: /hu/net/file-decompression/decompress-xar-folder/
 weight: 17
 ---
 
-NET  
-**Author:** Aspose  
-
-Translate labels but keep dates.
-
-**Last Updated:** -> "**Utolsó frissítés:**"
-
-**Tested With:** -> "**Tesztelve a következővel:**"
-
-**Author:** -> "**Szerző:**"
-
-Then closing shortcodes.
-
-Finally backtop button shortcode.
-
-Make sure to keep all shortcodes exactly.
-
-Now produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

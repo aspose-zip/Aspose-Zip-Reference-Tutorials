@@ -11,7 +11,7 @@ url: /tr/net/other-compression-techniques/entries-with-different-passwords/
 weight: 13
 ---
 
- answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

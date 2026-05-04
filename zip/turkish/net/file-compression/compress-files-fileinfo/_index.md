@@ -11,9 +11,7 @@ url: /tr/net/file-compression/compress-files-fileinfo/
 weight: 11
 ---
 
- preserved.
-
-Now craft final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -133,63 +131,27 @@ API `FileInfo` ile çalıştığı için, tüm dosyaları belleğe yüklemeniz g
 | **Büyük dosyalarda OutOfMemoryException** | Tüm dosyanın belleğe yüklenmesi | `FileInfo` dosyayı akış olarak okur; başka bir yerde dosyayı byte dizisine okumadığınızdan emin olun. |
 | **İzin reddedildi** | Uygulamanın çıktı klasörü için yazma izni yok | Uygulamayı uygun izinlerle çalıştırın veya yazılabilir bir dizin seçin. |
 
-## Sıkça Sorulan Sorular
+### Sıkça Sorulan Sorular
 
-**S: Zip arşivine şifre koruması ekleyebilir miyim?**  
-C: Evet. `Archive` oluşturduktan sonra `Save` çağırmadan önce `archive.Password = "yourPassword"` ayarlayın.
+#### S1: Aspose.Zip tüm dosya türleriyle uyumlu mu?
 
-**S: Mevcut bir zip dosyasını güncelleyebilir miyim?**  
-C: Aspose.Zip, `Archive.Open` ile mevcut bir arşivi açmayı ve ardından yeni girişler eklemeyi destekler.
+C1: Aspose.Zip, sıkıştırmada çok yönlülük sağlayarak geniş bir dosya türü yelpazesini destekler.
 
-**S: ASP.NET MVC denetleyicisinde dosyaları nasıl sıkıştırırım?**  
-C: Aynı kod çalışır; sadece çıktı akışını istemciye `FileResult` olarak döndürdüğünüzden emin olun.
+#### S2: Aspose.Zip'i ticari projeler için kullanabilir miyim?
 
-**S: Aspose.Zip şifreleme algoritmalarını destekliyor mu?**  
-C: Standart ZipCrypto ve AES‑256 şifrelemeyi destekler.
+C2: Kesinlikle! Lisanslama seçeneklerini incelemek için [satın alma sayfamızı](https://purchase.aspose.com/buy) ziyaret edin.
 
-**S: Klasörü yinelemeli (recursive) olarak sıkıştırmam gerekirse?**  
-C: `Directory.GetFiles` (ve alt klasörler) üzerinden döngü kurup her dosya için bir `FileInfo` oluşturun, ardından arşive ekleyin.
+#### S3: Aspose.Zip için nasıl destek alabilirim?
 
-## Ek SSS
+C3: Yardım ve tartışmalar için [Aspose.Zip forumunda](https://forum.aspose.com/c/zip/37) topluluğumuza katılın.
 
-**S: Büyük veri setleri için .net zip arşivi nasıl oluştururum?**  
-C: Veri akışı için `FileInfo` nesnelerini kullanın ve optimal performans için `ArchiveSaveOptions` içinde `CompressionLevel` ayarlayın.
+#### S4: Ücretsiz deneme sürümü mevcut mu?
 
-**S: .NET Core web API'de (zip files asp.net core) Aspose.Zip kullanabilir miyim?**  
-C: Kesinlikle – kütüphane .NET Core 3.1 ve sonrası ile tam uyumludur.
+C4: Evet, [ücretsiz deneme sürümünüzü buradan](https://releases.aspose.com/) edinebilirsiniz.
 
-**S: Özel bir döngü yazmadan klasörü zip'e eklemenin bir yolu var mı?**  
-C: Aspose.Zip tek bir “add folder” yöntemi sunmaz, ancak `DirectoryInfo` ile yineleme hafiftir ve giriş adları üzerinde tam kontrol sağlar.
+#### S5: Aspose.Zip için geçici lisansı nasıl edinebilirim?
 
-**S: Zip arşivi şifre koruması sıkıştırma hızını etkiler mi?**  
-C: Şifreleme etkinleştirildiğinde küçük bir ek yük eklenir, ancak çoğu kullanım senaryosunda etkisi çok azdır.
-
-**S: Ticari dağıtım için hangi lisans gerekir?**  
-C: Üretim için ücretli bir Aspose.Zip lisansı gerekir; geliştirme ve test için ücretsiz deneme kullanılabilir.
-
-## Existing FAQ Section (kept unchanged)
-
-### FAQ's
-
-#### Q1: Is Aspose.Zip compatible with all file types?
-
-A1: Aspose.Zip supports a wide range of file types, ensuring versatility in compression.
-
-#### Q2: Can I use Aspose.Zip for commercial projects?
-
-A2: Absolutely! Visit our [purchase page](https://purchase.aspose.com/buy) to explore licensing options.
-
-#### Q3: How can I get support for Aspose.Zip?
-
-A3: Join our community on the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for assistance and discussions.
-
-#### Q4: Is there a free trial available?
-
-A4: Yes, you can grab your [free trial here](https://releases.aspose.com/).
-
-#### Q5: How can I obtain a temporary license for Aspose.Zip?
-
-A5: Visit [this link](https://purchase.aspose.com/temporary-license/) for information on obtaining a temporary license.
+C5: Geçici lisans edinme hakkında bilgi için [bu bağlantıyı](https://purchase.aspose.com/temporary-license/) ziyaret edin.
 
 ## Sonuç
 

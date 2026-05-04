@@ -131,72 +131,36 @@ Como a API trabalha com `FileInfo`, você nunca precisa carregar arquivos inteir
 | **OutOfMemoryException em arquivos grandes** | Carregamento de todo o arquivo na memória | `FileInfo` faz streaming do arquivo; garanta que você não esteja lendo o arquivo em um array de bytes em outro lugar. |
 | **Permissão negada** | Aplicação não tem permissão de escrita na pasta de saída | Execute o aplicativo com direitos adequados ou escolha um diretório gravável. |
 
-## Perguntas Frequentes
+### Perguntas Frequentes
 
-**P: Posso adicionar proteção por senha ao arquivo zip?**  
-R: Sim. Após criar o `Archive`, defina `archive.Password = "yourPassword"` antes de chamar `Save`.
+#### P1: O Aspose.Zip é compatível com todos os tipos de arquivo?
 
-**P: É possível atualizar um arquivo zip existente?**  
-R: Aspose.Zip suporta abrir um arquivo existente com `Archive.Open` e então adicionar novas entradas.
+R1: O Aspose.Zip suporta uma ampla variedade de tipos de arquivo, garantindo versatilidade na compressão.
 
-**P: Como comprimir arquivos em um controlador ASP.NET MVC?**  
-R: O mesmo código funciona; basta garantir que o stream de saída seja retornado como um `FileResult` ao cliente.
+#### P2: Posso usar o Aspose.Zip em projetos comerciais?
 
-**P: O Aspose.Zip suporta algoritmos de criptografia?**  
-R: Ele suporta criptografia padrão ZipCrypto e AES‑256.
+R2: Com certeza! Visite nossa [página de compra](https://purchase.aspose.com/buy) para explorar as opções de licenciamento.
 
-**P: E se eu precisar comprimir uma pasta recursivamente?**  
-R: Percorra `Directory.GetFiles` (e sub‑pastas) e crie um `FileInfo` para cada arquivo, então adicione‑os ao arquivo.
+#### P3: Como posso obter suporte para o Aspose.Zip?
 
-## FAQ Adicional
+R3: Participe da nossa comunidade no [fórum do Aspose.Zip](https://forum.aspose.com/c/zip/37) para obter assistência e participar de discussões.
 
-**P: Como criar um arquivo zip .net para grandes conjuntos de dados?**  
-R: Use objetos `FileInfo` para fazer streaming dos dados e defina `CompressionLevel` em `ArchiveSaveOptions` para desempenho ideal.
+#### P4: Existe uma versão de avaliação gratuita disponível?
 
-**P: Posso usar Aspose.Zip em uma API web .NET Core (zip files asp.net core)?**  
-R: Absolutamente – a biblioteca é totalmente compatível com .NET Core 3.1 e posteriores.
+R4: Sim, você pode obter sua [versão de avaliação gratuita aqui](https://releases.aspose.com/).
 
-**P: Existe uma maneira de adicionar pasta a zip sem escrever um loop personalizado?**  
-R: Aspose.Zip não possui um método único “add folder”, mas iterar com `DirectoryInfo` é leve e dá controle total sobre os nomes das entradas.
+#### Q5: Como posso obter uma licença temporária do Aspose.Zip?
 
-**P: A proteção por senha do arquivo zip afeta a velocidade de compressão?**  
-R: Habilitar a criptografia adiciona uma pequena sobrecarga, mas o impacto é mínimo na maioria dos casos.
-
-**P: Qual licenciamento é necessário para implantação comercial?**  
-R: Uma licença paga do Aspose.Zip é necessária para produção; um trial gratuito pode ser usado para desenvolvimento e testes.
-
-## Existing FAQ Section (kept unchanged)
-
-### FAQ's
-
-#### Q1: Is Aspose.Zip compatible with all file types?
-
-A1: Aspose.Zip supports a wide range of file types, ensuring versatility in compression.
-
-#### Q2: Can I use Aspose.Zip for commercial projects?
-
-A2: Absolutely! Visit our [purchase page](https://purchase.aspose.com/buy) to explore licensing options.
-
-#### Q3: How can I get support for Aspose.Zip?
-
-A3: Join our community on the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for assistance and discussions.
-
-#### Q4: Is there a free trial available?
-
-A4: Yes, you can grab your [free trial here](https://releases.aspose.com/).
-
-#### Q5: How can I obtain a temporary license for Aspose.Zip?
-
-A5: Visit [this link](https://purchase.aspose.com/temporary-license/) for information on obtaining a temporary license.
+R5: Visite [este link](https://purchase.aspose.com/temporary-license/) para obter informações sobre como obter uma licença temporária.
 
 ## Conclusão
 
-Agora você sabe **como adicionar pasta ao zip** e **como criar arquivos zip** usando Aspose.Zip para .NET, como **adicionar arquivos ao zip**, e por que esse método é ideal para ASP.NET e outras aplicações .NET. Experimente diferentes níveis de compressão, codificações e opções de criptografia para adaptar o arquivo às suas necessidades exatas. Boa compressão!
+Agora você sabe **como adicionar pasta ao zip** e **como criar arquivos zip** usando Aspose.Zip para .NET, como **adicionar arquivos ao zip**, e por que esse método é ideal para ASP.NET e outras aplicações .NET. Experimente diferentes níveis de variação, codificações e opções de criptografia para adaptar o arquivo às suas necessidades específicas. Boa avaliação!
 
 ---
 
-**Última atualização:** 2026-02-28  
-**Testado com:** Aspose.Zip for .NET 24.12 (latest)  
+**Última atualização:** 28/02/2026
+**Testado com:** Aspose.Zip para .NET 24.12 (mais recente)
 **Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}

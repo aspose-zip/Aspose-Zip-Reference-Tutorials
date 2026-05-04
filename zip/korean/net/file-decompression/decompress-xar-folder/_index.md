@@ -9,11 +9,7 @@ url: /ko/net/file-decompression/decompress-xar-folder/
 weight: 17
 ---
 
- end.
-
-Make sure not to translate any URLs.
-
-Now write final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

@@ -11,31 +11,7 @@ url: /de/net/other-compression-techniques/entries-with-different-passwords/
 weight: 13
 ---
 
-", "Quick Answers", etc.
-
-- All bullet points.
-
-- Table entries.
-
-- FAQ.
-
-- Conclusion.
-
-- "Last Updated", "Tested With", "Author".
-
-Make sure to keep code block placeholders unchanged.
-
-Also keep markdown links unchanged.
-
-Let's craft translation.
-
-Be careful with "Aspose.Zip" stays same.
-
-Translate "How to compress files with password and encrypt ZIP entries with different passwords using Aspose.Zip for .NET" to "Wie man Dateien mit Passwort komprimiert und ZIP-Einträge mit unterschiedlichen Passwörtern verschlüsselt mit Aspose.Zip für .NET".
-
-Similarly other headings.
-
-Now produce final.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

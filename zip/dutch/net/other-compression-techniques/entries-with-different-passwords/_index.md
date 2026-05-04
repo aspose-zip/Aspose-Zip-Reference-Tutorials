@@ -11,9 +11,7 @@ url: /nl/net/other-compression-techniques/entries-with-different-passwords/
 weight: 13
 ---
 
-Make sure to keep all code block placeholders unchanged.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

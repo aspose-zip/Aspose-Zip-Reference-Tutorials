@@ -11,19 +11,7 @@ url: /id/net/file-compression/compress-files-fileinfo/
 weight: 11
 ---
 
- other markdown links: none else.
-
-Check tables: we translated header row and cells.
-
-Check list items: all translated.
-
-Check headings: all translated except unchanged section.
-
-Check code block placeholders: unchanged.
-
-Check shortcodes: unchanged.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -145,63 +133,27 @@ Karena API bekerja dengan `FileInfo`, Anda tidak pernah perlu memuat seluruh fil
 | **OutOfMemoryException pada file besar** | Memuat seluruh file ke memori | `FileInfo` melakukan streaming file; pastikan Anda tidak membaca file ke dalam array byte di tempat lain. |
 | **Izin ditolak** | Aplikasi tidak memiliki izin menulis untuk folder output | Jalankan aplikasi dengan hak yang sesuai atau pilih direktori yang dapat ditulis. |
 
-## Pertanyaan yang Sering Diajukan
+### Pertanyaan yang Sering Diajukan (FAQ)
 
-**T: Bisakah saya menambahkan perlindungan kata sandi ke arsip zip?**  
-J: Ya. Setelah membuat `Archive`, setel `archive.Password = "yourPassword"` sebelum memanggil `Save`.
+#### T1: Apakah Aspose.Zip kompatibel dengan semua jenis file?
 
-**T: Apakah memungkinkan memperbarui file zip yang sudah ada?**  
-J: Aspose.Zip mendukung membuka arsip yang ada dengan `Archive.Open` dan kemudian menambahkan entri baru.
+J1: Aspose.Zip mendukung berbagai jenis file, memastikan fleksibilitas dalam kompresi.
 
-**T: Bagaimana cara mengompres file dalam controller ASP.NET MVC?**  
-J: Kode yang sama berfungsi; pastikan aliran output dikembalikan sebagai `FileResult` ke klien.
+#### T2: Dapatkah saya menggunakan Aspose.Zip untuk proyek komersial?
 
-**T: Apakah Aspose.Zip mendukung algoritma enkripsi?**  
-J: Ia mendukung enkripsi standar ZipCrypto dan AES‑256.
+J2: Tentu saja! Kunjungi [halaman pembelian](https://purchase.aspose.com/buy) kami untuk menjelajahi opsi lisensi.
 
-**T: Bagaimana jika saya perlu mengompres folder secara rekursif?**  
-J: Lakukan loop melalui `Directory.GetFiles` (dan sub‑folder) dan buat `FileInfo` untuk setiap file, lalu tambahkan ke arsip.
+#### T3: Bagaimana saya bisa mendapatkan dukungan untuk Aspose.Zip?
 
-## FAQ Tambahan
+J3: Bergabunglah dengan komunitas kami di [forum Aspose.Zip](https://forum.aspose.com/c/zip/37) untuk mendapatkan bantuan dan diskusi.
 
-**T: Bagaimana cara membuat arsip zip .net untuk kumpulan data besar?**  
-J: Gunakan objek `FileInfo` untuk streaming data dan setel `CompressionLevel` di `ArchiveSaveOptions` untuk kinerja optimal.
+#### T4: Apakah tersedia uji coba gratis?
 
-**T: Bisakah saya menggunakan Aspose.Zip dalam API web .NET Core (zip files asp.net core)?**  
-J: Tentu – perpustakaan ini sepenuhnya kompatibel dengan .NET Core 3.1 dan yang lebih baru.
+J4: Ya, Anda dapat mendapatkan [uji coba gratis Anda di sini](https://releases.aspose.com/).
 
-**T: Apakah ada cara menambahkan folder ke zip tanpa menulis loop khusus?**  
-J: Aspose.Zip tidak memiliki metode “add folder” tunggal, tetapi iterasi dengan `DirectoryInfo` ringan dan memberi Anda kontrol penuh atas nama entri.
+#### T5: Bagaimana cara mendapatkan lisensi sementara untuk Aspose.Zip?
 
-**T: Apakah perlindungan kata sandi pada arsip zip memengaruhi kecepatan kompresi?**  
-J: Mengaktifkan enkripsi menambah overhead kecil, tetapi dampaknya minimal untuk kebanyakan kasus penggunaan.
-
-**T: Lisensi apa yang diperlukan untuk penyebaran komersial?**  
-J: Lisensi Aspose.Zip berbayar diperlukan untuk produksi; versi percobaan gratis dapat digunakan untuk pengembangan dan pengujian.
-
-## Existing FAQ Section (kept unchanged)
-
-### FAQ's
-
-#### Q1: Is Aspose.Zip compatible with all file types?
-
-A1: Aspose.Zip supports a wide range of file types, ensuring versatility in compression.
-
-#### Q2: Can I use Aspose.Zip for commercial projects?
-
-A2: Absolutely! Visit our [purchase page](https://purchase.aspose.com/buy) to explore licensing options.
-
-#### Q3: How can I get support for Aspose.Zip?
-
-A3: Join our community on the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for assistance and discussions.
-
-#### Q4: Is there a free trial available?
-
-A4: Yes, you can grab your [free trial here](https://releases.aspose.com/).
-
-#### Q5: How can I obtain a temporary license for Aspose.Zip?
-
-A5: Visit [this link](https://purchase.aspose.com/temporary-license/) for information on obtaining a temporary license.
+J5: Kunjungi [tautan ini](https://purchase.aspose.com/temporary-license/) untuk informasi tentang cara mendapatkan lisensi sementara.
 
 ## Kesimpulan
 

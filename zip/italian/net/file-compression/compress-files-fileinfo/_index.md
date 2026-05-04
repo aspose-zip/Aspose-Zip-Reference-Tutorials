@@ -131,63 +131,27 @@ Poiché l'API lavora con `FileInfo`, non dovrai mai caricare interi file in memo
 | **OutOfMemoryException su file grandi** | Caricamento dell'intero file in memoria | `FileInfo` trasmette il file; assicurati di non leggere il file in un array di byte altrove. |
 | **Permesso negato** | L'applicazione non ha i permessi di scrittura sulla cartella di destinazione | Esegui l'app con i diritti appropriati o scegli una directory scrivibile. |
 
-## Domande frequenti
+### Domande frequenti
 
-**D: Posso aggiungere la protezione con password all'archivio zip?**  
-R: Sì. Dopo aver creato l'`Archive`, imposta `archive.Password = "yourPassword"` prima di chiamare `Save`.
+#### D1: Aspose.Zip è compatibile con tutti i tipi di file?
 
-**D: È possibile aggiornare un file zip esistente?**  
-R: Aspose.Zip supporta l'apertura di un archivio esistente con `Archive.Open` e quindi l'aggiunta di nuove voci.
+R1: Aspose.Zip supporta un'ampia gamma di tipi di file, garantendo versatilità nella compressione.
 
-**D: Come comprimo i file in un controller ASP.NET MVC?**  
-R: Lo stesso codice funziona; basta assicurarsi che lo stream di output venga restituito come `FileResult` al client.
+#### D2: Posso usare Aspose.Zip per progetti commerciali?
 
-**D: Aspose.Zip supporta algoritmi di crittografia?**  
-R: Supporta la crittografia standard ZipCrypto e AES‑256.
+R2: Certamente! Visita la nostra [pagina di acquisto](https://purchase.aspose.com/buy) per scoprire le opzioni di licenza.
 
-**D: Cosa fare se devo comprimere una cartella in modo ricorsivo?**  
-R: Scorri `Directory.GetFiles` (e le sottocartelle) creando un `FileInfo` per ogni file, quindi aggiungili all'archivio.
+#### D3: Come posso ottenere supporto per Aspose.Zip?
 
-## FAQ aggiuntive
+R3: Unisciti alla nostra community sul [forum di Aspose.Zip](https://forum.aspose.com/c/zip/37) per ricevere assistenza e partecipare alle discussioni.
 
-**D: Come creo un archivio zip .net per grandi set di dati?**  
-R: Usa gli oggetti `FileInfo` per lo streaming dei dati e imposta `CompressionLevel` in `ArchiveSaveOptions` per ottenere le migliori prestazioni.
+#### D4: È disponibile una versione di prova gratuita?
 
-**D: Posso usare Aspose.Zip in una Web API .NET Core (zip files asp.net core)?**  
-R: Assolutamente sì – la libreria è pienamente compatibile con .NET Core 3.1 e versioni successive.
+R4: Sì, puoi scaricare la tua [versione di prova gratuita qui](https://releases.aspose.com/).
 
-**D: Esiste un modo per aggiungere una cartella a zip senza scrivere un ciclo personalizzato?**  
-R: Aspose.Zip non dispone di un metodo unico “add folder”, ma iterare con `DirectoryInfo` è leggero e ti dà il pieno controllo sui nomi delle voci.
+#### D5: Come posso ottenere una licenza temporanea per Aspose.Zip?
 
-**D: La protezione con password influisce sulla velocità di compressione?**  
-R: L'abilitazione della crittografia aggiunge un piccolo overhead, ma l'impatto è minimo nella maggior parte dei casi d'uso.
-
-**D: Quale licenza è necessaria per il deployment commerciale?**  
-R: È richiesta una licenza a pagamento di Aspose.Zip per la produzione; una versione di prova gratuita può essere usata per sviluppo e test.
-
-## Sezione FAQ esistente (invariata)
-
-### FAQ's
-
-#### Q1: Is Aspose.Zip compatible with all file types?
-
-A1: Aspose.Zip supports a wide range of file types, ensuring versatility in compression.
-
-#### Q2: Can I use Aspose.Zip for commercial projects?
-
-A2: Absolutely! Visit our [purchase page](https://purchase.aspose.com/buy) to explore licensing options.
-
-#### Q3: How can I get support for Aspose.Zip?
-
-A3: Join our community on the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for assistance and discussions.
-
-#### Q4: Is there a free trial available?
-
-A4: Yes, you can grab your [free trial here](https://releases.aspose.com/).
-
-#### Q5: How can I obtain a temporary license for Aspose.Zip?
-
-A5: Visit [this link](https://purchase.aspose.com/temporary-license/) for information on obtaining a temporary license.
+R5: Visita [questo link](https://purchase.aspose.com/temporary-license/) per informazioni su come ottenere una licenza temporanea.
 
 ## Conclusione
 

@@ -11,10 +11,6 @@ url: /de/net/other-compression-techniques/
 weight: 27
 ---
 
- as they are.
-
-Proceed.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

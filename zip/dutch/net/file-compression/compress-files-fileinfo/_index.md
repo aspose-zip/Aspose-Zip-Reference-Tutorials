@@ -131,63 +131,27 @@ Omdat de API werkt met `FileInfo`, hoef je nooit hele bestanden in het geheugen 
 | **OutOfMemoryException bij grote bestanden** | Het volledige bestand in het geheugen laden | `FileInfo` streamt het bestand; zorg dat je het bestand niet elders in een byte‑array laadt. |
 | **Toegang geweigerd** | Applicatie heeft geen schrijfrechten voor de output‑map | Voer de app uit met de juiste rechten of kies een schrijfbare directory. |
 
-## Veelgestelde vragen
+### Veelgestelde vragen
 
-**V: Kan ik wachtwoordbeveiliging toevoegen aan het zip‑archief?**  
-A: Ja. Nadat je de `Archive` hebt aangemaakt, stel je `archive.Password = "yourPassword"` in vóór het aanroepen van `Save`.
+#### V1: Is Aspose.Zip compatibel met alle bestandstypen?
 
-**V: Is het mogelijk een bestaand zip‑bestand bij te werken?**  
-A: Aspose.Zip ondersteunt het openen van een bestaand archief met `Archive.Open` en vervolgens nieuwe entries toevoegen.
+A1: Aspose.Zip ondersteunt een breed scala aan bestandstypen, wat zorgt voor veelzijdigheid in compressie.
 
-**V: Hoe comprimeer ik bestanden in een ASP.NET MVC‑controller?**  
-A: Dezelfde code werkt; zorg er alleen voor dat de output‑stream wordt geretourneerd als een `FileResult` naar de client.
+#### V2: Kan ik Aspose.Zip gebruiken voor commerciële projecten?
 
-**V: Ondersteunt Aspose.Zip encryptie‑algoritmen?**  
-A: Het ondersteunt standaard ZipCrypto en AES‑256 encryptie.
+A2: Absoluut! Ga naar onze [aankooppagina](https://purchase.aspose.com/buy) om de licentiemogelijkheden te bekijken.
 
-**V: Wat als ik een map recursief moet comprimeren?**  
-A: Loop door `Directory.GetFiles` (en sub‑mappen) en maak een `FileInfo` voor elk bestand, voeg ze vervolgens toe aan het archief.
+#### V3: Hoe kan ik ondersteuning krijgen voor Aspose.Zip?
 
-## Extra FAQ
+A3: Word lid van onze community op het [Aspose.Zip-forum](https://forum.aspose.com/c/zip/37) voor hulp en discussies.
 
-**V: Hoe maak ik een zip‑archief .net voor grote datasets?**  
-A: Gebruik `FileInfo`‑objecten om data te streamen en stel `CompressionLevel` in `ArchiveSaveOptions` in voor optimale prestaties.
+#### V4: Is er een gratis proefversie beschikbaar?
 
-**V: Kan ik Aspose.Zip gebruiken in een .NET Core web‑API (zip files asp.net core)?**  
-A: Absoluut – de bibliotheek is volledig compatibel met .NET Core 3.1 en later.
+A4: Ja, u kunt uw [gratis proefversie hier](https://releases.aspose.com/) downloaden.
 
-**V: Is er een manier om een map toe te voegen aan zip zonder een eigen lus te schrijven?**  
-A: Aspose.Zip heeft geen enkele “add folder”‑methode, maar itereren met `DirectoryInfo` is lichtgewicht en geeft volledige controle over de entry‑namen.
+#### V5: Hoe kan ik een tijdelijke licentie voor Aspose.Zip verkrijgen?
 
-**V: Heeft wachtwoordbeveiliging van zip‑archief invloed op de compressiesnelheid?**  
-A: Encryptie voegt een kleine overhead toe, maar de impact is minimaal voor de meeste gebruikssituaties.
-
-**V: Welke licentie is vereist voor commerciële inzet?**  
-A: Een betaalde Aspose.Zip‑licentie is vereist voor productie; een gratis proefversie kan worden gebruikt voor ontwikkeling en testen.
-
-## Bestaande FAQ‑sectie (ongewijzigd)
-
-### FAQ's
-
-#### Q1: Is Aspose.Zip compatible with all file types?
-
-A1: Aspose.Zip supports a wide range of file types, ensuring versatility in compression.
-
-#### Q2: Can I use Aspose.Zip for commercial projects?
-
-A2: Absolutely! Visit our [purchase page](https://purchase.aspose.com/buy) to explore licensing options.
-
-#### Q3: How can I get support for Aspose.Zip?
-
-A3: Join our community on the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for assistance and discussions.
-
-#### Q4: Is there a free trial available?
-
-A4: Yes, you can grab your [free trial here](https://releases.aspose.com/).
-
-#### Q5: How can I obtain a temporary license for Aspose.Zip?
-
-A5: Visit [this link](https://purchase.aspose.com/temporary-license/) for information on obtaining a temporary license.
+A5: Ga naar [deze link](https://purchase.aspose.com/temporary-license/) voor informatie over het verkrijgen van een tijdelijke licentie.
 
 ## Conclusie
 

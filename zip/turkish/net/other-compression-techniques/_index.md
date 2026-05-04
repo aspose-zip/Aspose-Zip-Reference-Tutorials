@@ -11,17 +11,7 @@ url: /tr/net/other-compression-techniques/
 weight: 27
 ---
 
- sure all markdown formatting preserved.
-
-Check for any code blocks: none.
-
-Check for any inline code: backticks preserved.
-
-Check for shortcodes: unchanged.
-
-Check for links: we changed visible text but kept URLs.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

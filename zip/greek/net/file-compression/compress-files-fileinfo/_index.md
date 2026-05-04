@@ -131,63 +131,27 @@ using (var archive = new Archive())
 | **OutOfMemoryException σε μεγάλα αρχεία** | Φόρτωση ολόκληρου του αρχείου στη μνήμη | Το `FileInfo` κάνει streaming του αρχείου· βεβαιωθείτε ότι δεν διαβάζετε το αρχείο σε byte array αλλού. |
 | **Άρνηση πρόσβασης** | Η εφαρμογή δεν έχει δικαίωμα εγγραφής στον φάκελο εξόδου | Εκτελέστε την εφαρμογή με τα κατάλληλα δικαιώματα ή επιλέξτε έναν εγγράψιμο φάκελο. |
 
-## Συχνές Ερωτήσεις
+### Συχνές ερωτήσεις
 
-**Μ: Μπορώ να προσθέσω προστασία με κωδικό στο αρχείο zip;**  
-Α: Ναι. Μετά τη δημιουργία του `Archive`, ορίστε `archive.Password = "yourPassword"` πριν καλέσετε `Save`.
+#### Ε1: Είναι το Aspose.Zip συμβατό με όλους τους τύπους αρχείων;
 
-**Μ: Είναι δυνατόν να ενημερώσετε ένα υπάρχον αρχείο zip;**  
-Α: Το Aspose.Zip υποστηρίζει το άνοιγμα υπάρχοντος archive με `Archive.Open` και στη συνέχεια την προσθήκη νέων καταχωρήσεων.
+A1: Το Aspose.Zip υποστηρίζει ένα ευρύ φάσμα τύπων αρχείων, εξασφαλίζοντας ευελιξία στη συμπίεση.
 
-**Μ: Πώς να συμπιέσω αρχεία σε έναν ελεγκτή ASP.NET MVC;**  
-Α: Ο ίδιος κώδικας λειτουργεί· απλώς βεβαιωθείτε ότι η ροή εξόδου επιστρέφεται ως `FileResult` στον πελάτη.
+#### Ε2: Μπορώ να χρησιμοποιήσω το Aspose.Zip για εμπορικά έργα;
 
-**Μ: Υποστηρίζει το Aspose.Zip αλγορίθμους κρυπτογράφησης;**  
-Α: Υποστηρίζει τα πρότυπα ZipCrypto και AES‑256 encryption.
+A2: Απολύτως! Επισκεφθείτε τη [σελίδα αγοράς](https://purchase.aspose.com/buy) για να εξερευνήσετε επιλογές αδειοδότησης.
 
-**Μ: Τι κάνω αν χρειάζεται να συμπιέσω έναν φάκελο αναδρομικά;**  
-Α: Διασχίστε το `Directory.GetFiles` (και υποφακέλους) και δημιουργήστε `FileInfo` για κάθε αρχείο, έπειτα προσθέστε τα στο archive.
+#### Ε3: Πώς μπορώ να λάβω υποστήριξη για το Aspose.Zip;
 
-## Πρόσθετες Συχνές Ερωτήσεις
+A3: Γίνετε μέλος της κοινότητάς μας στο [φόρουμ Aspose.Zip](https://forum.aspose.com/c/zip/37) για βοήθεια και συζητήσεις.
 
-**Μ: Πώς να δημιουργήσω αρχείο zip .net για μεγάλα σύνολα δεδομένων;**  
-Α: Χρησιμοποιήστε αντικείμενα `FileInfo` για streaming των δεδομένων και ορίστε `CompressionLevel` στο `ArchiveSaveOptions` για βέλτιστη απόδοση.
+#### Ε4: Υπάρχει διαθέσιμη δωρεάν δοκιμαστική περίοδος;
 
-**Μ: Μπορώ να χρησιμοποιήσω το Aspose.Zip σε ένα .NET Core web API (zip files asp.net core);**  
-Α: Απόλυτα – η βιβλιοθήκη είναι πλήρως συμβατή με .NET Core 3.1 και νεότερες εκδόσεις.
+A4: Ναι, μπορείτε να αποκτήσετε τη [δωρεάν δοκιμαστική περίοδο εδώ](https://releases.aspose.com/).
 
-**Μ: Υπάρχει τρόπος να προσθέσω φάκελο σε zip χωρίς να γράψω προσαρμοσμένο βρόχο;**  
-Α: Το Aspose.Zip δεν διαθέτει ενιαία μέθοδο “add folder”, αλλά η επανάληψη με `DirectoryInfo` είναι ελαφριά και σας δίνει πλήρη έλεγχο στα ονόματα των καταχωρήσεων.
+#### Ε5: Πώς μπορώ να αποκτήσω μια προσωρινή άδεια χρήσης για το Aspose.Zip;
 
-**Μ: Η προστασία με κωδικό ενός αρχείου zip επηρεάζει την ταχύτητα συμπίεσης;**  
-Α: Η ενεργοποίηση της κρυπτογράφησης προσθέτει μικρή επιβάρυνση, αλλά η επίδραση είναι ελάχιστη για τις περισσότερες περιπτώσεις.
-
-**Μ: Ποια άδεια απαιτείται για εμπορική ανάπτυξη;**  
-Α: Απαιτείται πληρωμένη άδεια Aspose.Zip για παραγωγή· μια δωρεάν δοκιμή μπορεί να χρησιμοποιηθεί για ανάπτυξη και δοκιμές.
-
-## Existing FAQ Section (kept unchanged)
-
-### FAQ's
-
-#### Q1: Is Aspose.Zip compatible with all file types?
-
-A1: Aspose.Zip supports a wide range of file types, ensuring versatility in compression.
-
-#### Q2: Can I use Aspose.Zip for commercial projects?
-
-A2: Absolutely! Visit our [purchase page](https://purchase.aspose.com/buy) to explore licensing options.
-
-#### Q3: How can I get support for Aspose.Zip?
-
-A3: Join our community on the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for assistance and discussions.
-
-#### Q4: Is there a free trial available?
-
-A4: Yes, you can grab your [free trial here](https://releases.aspose.com/).
-
-#### Q5: How can I obtain a temporary license for Aspose.Zip?
-
-A5: Visit [this link](https://purchase.aspose.com/temporary-license/) for information on obtaining a temporary license.
+A5: Επισκεφθείτε [αυτόν τον σύνδεσμο](https://purchase.aspose.com/temporary-license/) για πληροφορίες σχετικά με την απόκτηση προσωρινής άδειας.
 
 ## Συμπέρασμα
 

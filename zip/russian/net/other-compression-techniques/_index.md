@@ -44,69 +44,71 @@ weight: 27
 
 ## Открытие архива GZip с Aspose.Zip для .NET
 
-**How to open GZip archive** using Aspose.Zip is as simple as creating a `GZipArchive` instance from a file path or a stream. The library automatically detects the GZip format, exposes the underlying entry, and lets you read or extract it. This approach eliminates the need for third‑party utilities or manual header parsing.
+**Как открыть архив GZip** с помощью Aspose.Zip очень просто: достаточно создать экземпляр `GZipArchive` из пути к файлу или потока. Библиотека автоматически определяет формат GZip, предоставляет доступ к базовой записи и позволяет читать или извлекать её. Такой подход исключает необходимость использования сторонних утилит или ручного анализа заголовка.
 
 ## Сохранение в поток с Aspose.Zip для .NET
 
-Saving compressed data to a stream is a common requirement when you want to send files over HTTP, store them in a database, or pass them to another service. With Aspose.Zip you can create a `ZipArchive`, add entries, and then write the entire archive to any `Stream` object—whether it’s a `MemoryStream`, `FileStream`, or a custom network stream.
+Сохранение сжатых данных в поток — распространённое требование, когда вы хотите отправлять файлы по HTTP, хранить их в базе данных или передавать в другой сервис. С помощью Aspose.Zip вы можете создать `ZipArchive`, добавить записи, а затем записать весь архив в любой объект `Stream` — будь то `MemoryStream`, `FileStream` или пользовательский сетевой поток.
 
-## Записи с разными паролями в Aspose.Zip для .NET
 
-Security‑sensitive applications often require different protection levels for individual files inside a ZIP archive. Aspose.Zip allows you to assign a unique password to each entry, giving you fine‑grained control over access. This is especially useful for multi‑tenant SaaS platforms where each tenant’s data must remain isolated.
+## Записи с различными паролями в Aspose.Zip для .NET
 
-### Как установить пароль ZIP для конкретной записи
+Приложения, чувствительные к безопасности, часто требуют разных уровней защиты для отдельных файлов внутри ZIP-архива. Aspose.Zip позволяет назначать уникальный пароль каждой записи, обеспечивая точный контроль доступа. Это особенно полезно для многопользовательских SaaS-платформ, где данные каждого клиента должны оставаться изолированными.
 
-When you add an entry, use the `EntryOptions.Password` property to **how to set zip password** for that entry only. Other entries can remain unprotected, which is perfect for scenarios where only certain files need encryption.
+### Как установить пароль ZIP для записи
 
-### Лучшие практики пароля записи ZIP
+При добавлении записи используйте свойство `EntryOptions.Password`, чтобы **настроить пароль ZIP** только для этой записи. Другие записи могут оставаться незащищенными, что идеально подходит для сценариев, где шифрование требуется только для определенных файлов.
 
-A **zip entry password** should be strong and stored securely (e.g., using Azure Key Vault). By assigning passwords per entry, you avoid a single point of failure and comply with data‑privacy regulations.
+### Лучшие практики шифрования записей ZIP
+
+**Пароль для записи ZIP** должен быть надежным и храниться в безопасном месте (например, с помощью Azure Key Vault). Назначая пароли для каждой записи, вы избегаете единой точки отказа и соблюдаете правила защиты данных.
+
 
 ## Сжатие в LZMA с Aspose.Zip для .NET
 
-LZMA provides higher compression ratios than traditional Deflate, making it ideal for large data sets, logs, or assets that need to be transferred efficiently. Aspose.Zip’s LZMA implementation integrates seamlessly with the standard ZIP workflow, so you can switch algorithms with minimal code changes while enjoying reduced storage footprints.
+LZMA обеспечивает более высокие коэффициенты сжатия, чем традиционный Deflate, что делает его идеальным для больших наборов данных, журналов или ресурсов, которые необходимо эффективно передавать. Реализация LZMA в Aspose.Zip легко интегрируется со стандартным рабочим процессом ZIP, поэтому вы можете переключать алгоритмы с минимальными изменениями кода, при этом уменьшая занимаемое место на диске.
 
-## Другие учебные материалы по техникам сжатия
+## Другие учебные материалы по технике сжатия
 
-Below are the dedicated tutorials that dive deeper into each of the topics mentioned above. Each guide includes step‑by‑step instructions, code snippets, and best‑practice recommendations.
+Ниже приведены подробные руководства, которые углубляются в каждую из упомянутых выше тем. Каждое руководство включает пошаговые инструкции, фрагменты кода и рекомендации по передовой практике.
 
-### [Extracting to Memory Stream with Aspose.Zip for .NET](./extract-to-memory-stream/)
-Explore Aspose.Zip for .NET: Effortlessly extract archives to a MemoryStream in this step‑by‑step guide. Elevate your .NET development with ease.
+### [Извлечение в поток памяти с помощью Aspose.Zip для .NET](./extract-to-memory-stream/)
+Изучите Aspose.Zip для .NET: легко извлекайте архивы в MemoryStream с помощью этого пошагового руководства. Легко повысьте уровень своей разработки .NET.
 
-### [Opening a GZip Archive with Aspose.Zip for .NET](./open-gzip-archive/)
-Learn how to open GZip archives in .NET effortlessly using Aspose.Zip. Follow our step‑by‑step guide for efficient and seamless file handling.
+### [Открытие GZip-архива с помощью Aspose.Zip для .NET](./open-gzip-archive/)
+Узнайте, как легко открывать GZip-архивы в .NET с помощью Aspose.Zip. Следуйте нашему пошаговому руководству для эффективной и беспроблемной работы с файлами.
 
-### [Saving to Stream with Aspose.Zip for .NET](./save-to-stream/)
-Learn to save compressed data to a stream with Aspose.Zip for .NET. Enhance your .NET development skills with this step‑by‑step guide.
+### [Сохранение в поток с помощью Aspose.Zip для .NET](./save-to-stream/)
+Узнайте, как сохранять сжатые данные в поток с помощью Aspose.Zip для .NET. Улучшите свои навыки разработки на .NET с помощью этого пошагового руководства.
 
-### [Entries with Different Passwords in Aspose.Zip for .NET](./entries-with-different-passwords/)
-Explore the power of Aspose.Zip for .NET with our step‑by‑step guide on managing ZIP archives with different passwords. Enhance security and flexibility in your applications.
+### [Записи с разными паролями в Aspose.Zip для .NET](./entries-with-different-passwords/)
+Изучите возможности Aspose.Zip для .NET с помощью нашего пошагового руководства по управлению ZIP-архивами с разными паролями. Повысьте безопасность и гибкость ваших приложений.
 
-### [Compress to Lzma in Aspose.Zip for .NET](./compress-to-lzma/)
-Learn how to compress files using Aspose.Zip for .NET with the powerful LZMA algorithm. Optimize storage and enhance data transfer efficiency effortlessly.
+### [Сжатие в LZMA в Aspose.Zip для .NET](./compress-to-lzma/)
+Узнайте, как сжимать файлы с помощью Aspose.Zip для .NET с использованием мощного алгоритма LZMA. Оптимизируйте хранение и повысьте эффективность передачи данных без особых усилий.
 
 ## Часто задаваемые вопросы
 
-**Q: Can I use Aspose.Zip to process large files (several GB) without running out of memory?**  
-A: Yes. By streaming data directly from files or network sources into `MemoryStream` or custom streams, you avoid loading the entire archive into memory.
+**В: Могу ли я использовать Aspose.Zip для обработки больших файлов (несколько ГБ) без исчерпания памяти?**
+О: Да. Передавая данные непосредственно из файлов или сетевых источников в `MemoryStream` или пользовательские потоки, вы избегаете загрузки всего архива в память.
 
-**Q: Does Aspose.Zip support both synchronous and asynchronous APIs?**  
-A: The library provides synchronous methods for most operations; you can wrap them in `Task.Run` for asynchronous patterns if needed.
+**В: Поддерживает ли Aspose.Zip как синхронные, так и асинхронные API?**
+О: Библиотека предоставляет синхронные методы для большинства операций; при необходимости вы можете обернуть их в `Task.Run` для асинхронных шаблонов.
 
-**Q: How do I set a password for a specific entry while leaving others unprotected?**  
-A: When adding an entry, use the `EntryOptions.Password` property for that entry only; other entries remain password‑free.
+**В: Как установить пароль для конкретной записи, оставив другие незащищенными?**
+О: При добавлении записи используйте свойство `EntryOptions.Password` только для этой записи; для других записей пароль не требуется.
 
-**Q: Is LZMA compression compatible with standard ZIP tools?**  
-A: Most modern ZIP utilities recognize LZMA entries, but older tools may not. Aspose.Zip ensures the archive follows the ZIP specification.
+**В: Совместимо ли сжатие LZMA со стандартными инструментами ZIP?**
+О: Большинство современных утилит ZIP распознают записи LZMA, но более старые инструменты могут этого не делать. Aspose.Zip гарантирует, что архив соответствует спецификации ZIP.
 
-**Q: What licensing options are available for Aspose.Zip?**  
-A: A free trial is provided for evaluation. Production use requires a commercial license, with options for perpetual or subscription models.
+**В: Какие варианты лицензирования доступны для Aspose.Zip?**
+О: Для ознакомления предоставляется бесплатная пробная версия. Для использования в производственной среде требуется коммерческая лицензия с возможностью выбора бессрочной или подписной модели.
 
-**Q: How can I programmatically change the password of an existing ZIP entry?**  
-A: Use the `UpdateEntry` method with new `EntryOptions.Password` – this is the recommended way to **how to set zip password** after the archive has been created.
+**В: Как программно изменить пароль существующей записи ZIP?**
+О: Используйте метод `UpdateEntry` с новым свойством `EntryOptions.Password` — это рекомендуемый способ **установки пароля ZIP** после создания архива.
 
-**Q: Does Aspose.Zip work with .NET 7 and later versions?**  
-A: Yes, the library is fully compatible with .NET 5, .NET 6, .NET 7, and newer releases.
+**В: Работает ли Aspose.Zip с .NET 7 и более поздними версиями?**
+О: Да, библиотека полностью совместима с .NET 5, .NET 6, .NET 7 и более новыми версиями.
 
 ---
 

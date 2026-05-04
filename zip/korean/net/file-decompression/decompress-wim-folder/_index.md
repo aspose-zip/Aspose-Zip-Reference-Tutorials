@@ -9,17 +9,7 @@ url: /ko/net/file-decompression/decompress-wim-folder/
 weight: 16
 ---
 
- about Aspose.Zip for .NET?" => "Aspose.Zip for .NET에 대한 지원을 받거나 질문을 어디에 할 수 있나요?" Answer.
-
-Footer: "Last Updated:" => "마지막 업데이트:" etc.
-
-Now produce final markdown with shortcodes unchanged.
-
-Be careful not to translate code block placeholders.
-
-Also keep **bold** formatting.
-
-Let's craft final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

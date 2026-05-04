@@ -11,7 +11,7 @@ url: /cs/net/file-compression/compress-files-fileinfo/
 weight: 11
 ---
 
- final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -131,63 +131,27 @@ Protože API pracuje s `FileInfo`, nikdy nemusíte načítat celé soubory do pa
 | **OutOfMemoryException u velkých souborů** | Načítání celého souboru do paměti | `FileInfo` soubor streamuje; ujistěte se, že jinde soubor nečtete do pole bajtů. |
 | **Přístup zamítnut** | Aplikace nemá právo zápisu do výstupní složky | Spusťte aplikaci s odpovídajícími právy nebo vyberte zapisovatelný adresář. |
 
-## Často kladené otázky
+### Často kladené otázky
 
-**Q: Mohu přidat ochranu heslem do ZIP archivu?**  
-A: Ano. Po vytvoření `Archive` nastavte `archive.Password = "yourPassword"` před voláním `Save`.
+#### Otázka 1: Je Aspose.Zip kompatibilní se všemi typy souborů?
 
-**Q: Je možné aktualizovat existující ZIP soubor?**  
-A: Aspose.Zip podporuje otevření existujícího archivu pomocí `Archive.Open` a následné přidání nových položek.
+Odpověď 1: Aspose.Zip podporuje širokou škálu typů souborů, což zajišťuje všestrannost komprese.
 
-**Q: Jak komprimovat soubory v ASP.NET MVC kontroleru?**  
-A: Stejný kód funguje; jen zajistěte, aby výstupní proud byl vrácen jako `FileResult` klientovi.
+#### Otázka 2: Mohu Aspose.Zip použít pro komerční projekty?
 
-**Q: Podporuje Aspose.Zip šifrovací algoritmy?**  
-A: Podporuje standardní ZipCrypto a AES‑256 šifrování.
+Odpověď 2: Rozhodně! Navštivte naši [stránku nákupu](https://purchase.aspose.com/buy) a prozkoumejte možnosti licencování.
 
-**Q: Co když potřebuji rekurzivně komprimovat složku?**  
-A: Projděte `Directory.GetFiles` (a podadresáře) a pro každý soubor vytvořte `FileInfo`, poté jej přidejte do archivu.
+#### Otázka 3: Jak mohu získat podporu pro Aspose.Zip?
 
-## Další FAQ
+Odpověď 3: Připojte se k naší komunitě na [fóru Aspose.Zip](https://forum.aspose.com/c/zip/37) pro pomoc a diskuzi.
 
-**Q: Jak vytvořit ZIP archiv v .NET pro velké datové sady?**  
-A: Použijte objekty `FileInfo` pro streamování dat a nastavte `CompressionLevel` v `ArchiveSaveOptions` pro optimální výkon.
+#### Otázka 4: Je k dispozici bezplatná zkušební verze?
 
-**Q: Můžu použít Aspose.Zip v .NET Core web API (zip files asp.net core)?**  
-A: Rozhodně – knihovna je plně kompatibilní s .NET Core 3.1 a novějšími verzemi.
+Odpověď 4: Ano, svou [bezplatnou zkušební verzi si můžete stáhnout zde](https://releases.aspose.com/).
 
-**Q: Existuje způsob, jak přidat složku do ZIP bez psaní vlastního cyklu?**  
-A: Aspose.Zip nemá jednorázovou metodu „add folder“, ale iterace pomocí `DirectoryInfo` je nenáročná a dává vám plnou kontrolu nad názvy položek.
+#### Otázka 5: Jak mohu získat dočasnou licenci pro Aspose.Zip?
 
-**Q: Ovlivňuje ochrana heslem rychlost komprese ZIP archivu?**  
-A: Šifrování přidává malou režii, ale dopad je pro většinu případů minimální.
-
-**Q: Jaká licence je potřeba pro komerční nasazení?**  
-A: Pro produkci je vyžadována placená licence Aspose.Zip; pro vývoj a testování stačí bezplatná zkušební verze.
-
-## Existující sekce FAQ (zůstává nezměněna)
-
-### FAQ's
-
-#### Q1: Is Aspose.Zip compatible with all file types?
-
-A1: Aspose.Zip supports a wide range of file types, ensuring versatility in compression.
-
-#### Q2: Can I use Aspose.Zip for commercial projects?
-
-A2: Absolutely! Visit our [purchase page](https://purchase.aspose.com/buy) to explore licensing options.
-
-#### Q3: How can I get support for Aspose.Zip?
-
-A3: Join our community on the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for assistance and discussions.
-
-#### Q4: Is there a free trial available?
-
-A4: Yes, you can grab your [free trial here](https://releases.aspose.com/).
-
-#### Q5: How can I obtain a temporary license for Aspose.Zip?
-
-A5: Visit [this link](https://purchase.aspose.com/temporary-license/) for information on obtaining a temporary license.
+A5: Informace o získání dočasné licence naleznete na [tomto odkazu](https://purchase.aspose.com/temporary-license/).
 
 ## Závěr
 

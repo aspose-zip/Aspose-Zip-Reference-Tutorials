@@ -11,22 +11,6 @@ url: /pt/net/other-compression-techniques/entries-with-different-passwords/
 weight: 13
 ---
 
- "# How to compress files with password and encrypt ZIP entries with different passwords using Aspose.Zip for .NET"
-
-Translate to Portuguese: "Como compactar arquivos com senha e criptografar entradas ZIP com senhas diferentes usando Aspose.Zip para .NET"
-
-Similarly other headings.
-
-Proceed.
-
-Also tables: translate headers and content but keep URLs unchanged.
-
-Make sure not to translate URLs.
-
-Translate list items.
-
-Let's craft.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

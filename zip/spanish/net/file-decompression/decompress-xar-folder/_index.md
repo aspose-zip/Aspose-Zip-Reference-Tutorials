@@ -9,9 +9,7 @@ url: /es/net/file-decompression/decompress-xar-folder/
 weight: 17
 ---
 
- shortcodes and placeholders.
-
-Let's craft.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
