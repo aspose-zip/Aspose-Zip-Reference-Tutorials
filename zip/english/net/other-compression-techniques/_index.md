@@ -2,8 +2,8 @@
 title: "How to Open GZip Archive and Other Compression Techniques with Aspose.Zip for .NET"
 linktitle: "How to Open GZip Archive"
 second_title: "Aspose.Zip .NET API for Files Compression & Archiving"
-description: "Learn how to open GZip archive and master other compression techniques with Aspose.Zip for .NET. Boost your .NET apps with memory streams, LZMA, and password‑protected ZIPs."
-date: 2025-12-17
+description: "Learn how to open gzip archive, how to set zip password, and other compression techniques with Aspose.Zip for .NET. Boost your .NET apps with memory streams, LZMA, and per‑entry passwords."
+date: 2026-02-28
 weight: 27
 url: /net/other-compression-techniques/
 ---
@@ -16,7 +16,7 @@ url: /net/other-compression-techniques/
 
 ## Introduction
 
-If you're a .NET developer looking to **how to open GZip archive** and expand your toolbox with modern compression methods, you’ve come to the right place. Aspose.Zip for .NET provides a clean, high‑performance API that lets you work with GZip files, memory streams, LZMA compression, and even ZIP entries protected by different passwords. In this tutorial series we’ll walk through each technique step‑by‑step, explaining why it matters and how you can apply it in real‑world projects.
+If you're a .NET developer looking to **how to open gzip archive** and expand your toolbox with modern compression methods, you’ve come to the right place. Aspose.Zip for .NET provides a clean, high‑performance API that lets you work with GZip files, memory streams, LZMA compression, and even ZIP entries protected by different passwords. In this tutorial series we’ll walk through each technique step‑by‑step, explaining why it matters and how you can apply it in real‑world projects.
 
 ## Quick Answers
 - **What is the primary way to open a GZip archive in .NET?** Use `Aspose.Zip`’s `GZipArchive` class to load the stream directly.  
@@ -34,7 +34,7 @@ Opening a GZip archive with Aspose.Zip means loading the compressed data into a 
 - **Performance:** Optimized native code ensures fast compression and decompression.  
 - **Flexibility:** Work with streams, files, or in‑memory data seamlessly.  
 - **Advanced Features:** LZMA compression, per‑entry passwords, and direct GZip handling.  
-- **Cross‑Platform:** Fully supported on .NET Framework, .NET Core, and .NET 5/6+.  
+- **Cross‑Platform:** Fully supported on .NET Framework, .NET Core, and .NET 5/6+.  
 
 ## Extracting to Memory Stream with Aspose.Zip for .NET
 
@@ -50,9 +50,17 @@ Saving compressed data to a stream is a common requirement when you want to send
 
 ## Entries with Different Passwords in Aspose.Zip for .NET
 
-Security-sensitive applications often require different protection levels for individual files inside a ZIP archive. Aspose.Zip allows you to assign a unique password to each entry, giving you fine‑grained control over access. This is especially useful for multi‑tenant SaaS platforms where each tenant’s data must remain isolated.
+Security‑sensitive applications often require different protection levels for individual files inside a ZIP archive. Aspose.Zip allows you to assign a unique password to each entry, giving you fine‑grained control over access. This is especially useful for multi‑tenant SaaS platforms where each tenant’s data must remain isolated.
 
-## Compress to Lzma in Aspose.Zip for .NET
+### How to set ZIP password for a specific entry
+
+When you add an entry, use the `EntryOptions.Password` property to **how to set zip password** for that entry only. Other entries can remain unprotected, which is perfect for scenarios where only certain files need encryption.
+
+### ZIP entry password best practice
+
+A **zip entry password** should be strong and stored securely (e.g., using Azure Key Vault). By assigning passwords per entry, you avoid a single point of failure and comply with data‑privacy regulations.
+
+## Compress to LZMA in Aspose.Zip for .NET
 
 LZMA provides higher compression ratios than traditional Deflate, making it ideal for large data sets, logs, or assets that need to be transferred efficiently. Aspose.Zip’s LZMA implementation integrates seamlessly with the standard ZIP workflow, so you can switch algorithms with minimal code changes while enjoying reduced storage footprints.
 
@@ -92,9 +100,15 @@ A: Most modern ZIP utilities recognize LZMA entries, but older tools may not. As
 **Q: What licensing options are available for Aspose.Zip?**  
 A: A free trial is provided for evaluation. Production use requires a commercial license, with options for perpetual or subscription models.
 
+**Q: How can I programmatically change the password of an existing ZIP entry?**  
+A: Use the `UpdateEntry` method with new `EntryOptions.Password` – this is the recommended way to **how to set zip password** after the archive has been created.
+
+**Q: Does Aspose.Zip work with .NET 7 and later versions?**  
+A: Yes, the library is fully compatible with .NET 5, .NET 6, .NET 7, and newer releases.
+
 ---
 
-**Last Updated:** 2025-12-17  
+**Last Updated:** 2026-02-28  
 **Tested With:** Aspose.Zip for .NET (latest release)  
 **Author:** Aspose  
 
