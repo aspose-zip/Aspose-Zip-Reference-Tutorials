@@ -1,10 +1,10 @@
 ---
-date: 2025-12-18
-description: Aspose.Zip for .NET を使用して、異なるパスワードで zip ファイルを暗号化する方法を学びましょう。このガイドでは、パスワード付きでファイルを圧縮し、C#
-  で 7z アーカイブを作成する方法を示します。
+date: 2026-02-28
+description: Aspose.Zip for .NET を使用して、パスワード付きでファイルを圧縮し ZIP アーカイブを暗号化する方法を学びます。7z
+  のパスワード保護や C# におけるファイルごとの ZIP パスワード設定もカバーしています。
 linktitle: Entries with Different Passwords
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: .NET 用 Aspose.Zip で異なるパスワードを使用して ZIP ファイルを暗号化する方法
+title: Aspose.Zip for .NET を使用して、パスワードでファイルを圧縮し、ZIP エントリを別々のパスワードで暗号化する方法
 url: /ja/net/other-compression-techniques/entries-with-different-passwords/
 weight: 13
 ---
@@ -13,40 +13,41 @@ weight: 13
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET でエントリごとに異なるパスワードで ZIP ファイルを暗号化する方法
+# パスワードでファイルを圧縮し、異なるパスワードでZIPエントリを暗号化する方法（Aspose.Zip for .NET）
 
 ## はじめに
 
-エントリごとに個別のパスワードを設定して **ZIP を暗号化する方法** を探しているなら、ここが最適です。このチュートリアルでは、Aspose.Zip ライブラリ for .NET を使用して、すべてのファイルがユニークなパスワードで保護された 7‑zip アーカイブを作成する手順を詳しく解説します。最後まで読むと、エントリ単位の暗号化が重要な理由、設定方法、そして自分のプロジェクトで結果を確認する方法が分かります。
+**パスワードでファイルを圧縮**し、各エントリに個別のパスワードを付与したい場合は、ここが最適です。このチュートリアルでは、Aspose.Zip ライブラリ for .NET を使用して、すべてのファイルがユニークなパスワードで保護された 7‑zip アーカイブを作成する手順を詳しく解説します。最後まで読むと、エントリ単位の暗号化が重要な理由、設定方法、そして自分のプロジェクトで結果を確認する方法が理解できるようになります。
 
 ## クイック回答
-- **「encrypt zip」とは何ですか？** パスワードベースの保護（AES または ZipCrypto）を ZIP/7z アーカイブの内容に適用することです。  
-- **各エントリに異なるパスワードを設定できますか？** はい。Aspose.Zip ではファイルごとに別々のパスワードを割り当てられます。  
+- **“encrypt zip” とは何ですか？** パスワードベースの保護（AES または ZipCrypto）を ZIP/7z アーカイブの内容に適用することを意味します。  
+- **各エントリに異なるパスワードを設定できますか？** はい — Aspose.Zip を使えば、ファイルごとに別々のパスワードを割り当てることができます。  
 - **対応している .NET バージョンは？** 最新の .NET Framework、.NET Core、.NET 5/6 すべてに対応しています。  
-- **本番環境でライセンスは必要ですか？** 本番利用には商用ライセンスが必要です。無料トライアルも利用可能です。  
-- **サンプルで使用している圧縮形式は？** AES‑256 暗号化を施した 7z アーカイブを作成します。
+- **本番環境でライセンスは必要ですか？** 商用利用には商用ライセンスが必要です。無料トライアルも利用可能です。  
+- **サンプルで使用している圧縮形式は？** サンプルは AES‑256 暗号化付きの 7z アーカイブを作成します。
 
-## Aspose.Zip での「how to encrypt zip」とは？
+## Aspose.Zip for .NET を使用したパスワード付きファイル圧縮方法
+このセクションでは、主要な質問に直接答え、以降のステップバイステップガイドの土台を築きます。
 
-ZIP（または 7z）ファイルを暗号化するとは、エントリを保護し、正しいパスワードがなければ開けないようにすることです。Aspose.Zip for .NET は従来の ZipCrypto と、より強力な AES 暗号化の両方をサポートし、エントリ単位で暗号化設定を指定できるため、細かなセキュリティ制御が可能です。
+## Aspose.Zip で “zip を暗号化する方法” とは？
+ZIP（または 7z）ファイルを暗号化するとは、エントリを保護し、正しいパスワードがなければ開けないようにすることです。Aspose.Zip for .NET は従来の ZipCrypto と、より強力な AES 暗号化の両方をサポートし、エントリ単位で暗号化設定を指定できるため、細かいセキュリティ制御が可能です。
 
 ## エントリごとに異なるパスワードを使用する理由
-
-- **セキュリティの分離:** 1 つのパスワードが漏洩しても、他のファイルは保護されたままです。  
-- **規制遵守:** 業界によってはデータカテゴリごとに別々の認証情報が求められます。  
-- **ユーザー別アクセス:** 1 つのアーカイブを複数のユーザーに配布し、各ユーザーが許可されたファイルだけを解凍できるようにできます。
+- **セキュリティ分離:** 1 つのパスワードが漏洩しても、他のファイルは保護されたままです。  
+- **規制遵守:** 業界によっては、データカテゴリごとに別々の認証情報が求められます。  
+- **ユーザー別アクセス:** 1 つのアーカイブを複数のユーザーに配布し、各ユーザーが許可されたファイルだけを開くことができます。
 
 ## 前提条件
 
-作業を始める前に以下を用意してください。
+始める前に以下を用意してください。
 
-- **Aspose.Zip for .NET** がインストール済み – 公式の[ドキュメント](https://reference.aspose.com/zip/net/)でダウンロードとインストール手順をご確認ください。  
-- ソースファイルを格納するフォルダー（「Document Directory」）  
-- C# と Visual Studio（またはお好みの .NET IDE）に関する基本的な知識
+- **Aspose.Zip for .NET** がインストール済み — ダウンロードとインストール手順は公式 [documentation](https://reference.aspose.com/zip/net/) を参照してください。  
+- ソースファイルを保存するフォルダー（「Document Directory」）をローカルに用意。  
+- C# と Visual Studio（またはお好みの .NET IDE）に基本的に慣れていること。
 
 ## 名前空間のインポート
 
-必要なクラスが含まれる名前空間を取り込みます。
+必要なクラスが含まれる名前空間をインポートします。
 
 ```csharp
 using Aspose.Zip.Saving;
@@ -59,7 +60,7 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## 手順 1: ドキュメントディレクトリを設定
+## ステップ 1: ドキュメントディレクトリの設定
 
 アーカイブ対象のファイルが格納されているパスを定義します。
 
@@ -67,9 +68,9 @@ using System.Threading.Tasks;
 string dataDir = "Your Document Directory";
 ```
 
-## 手順 2: 異なるパスワードでエントリを作成
+## ステップ 2: 異なるパスワードでエントリを作成
 
-チュートリアルの核心です。新しい 7z ファイルを開き、3 つの `FileInfo` オブジェクトを作成し、それぞれに固有の AES パスワードを付与してエントリとして追加します。
+チュートリアルの核心です。新しい 7z ファイルを開き、3 つの `FileInfo` オブジェクトを作成し、それぞれに独自の AES パスワードでエントリとして追加します。
 
 ```csharp
 //ExStart: EntriesWithDifferentPasswords
@@ -91,16 +92,16 @@ using (FileStream sevenZipFile = File.Open("archive.7z", FileMode.Create))
 //ExEnd: EntriesWithDifferentPasswords
 ```
 
-### 動作の概要
+### 仕組み
 
 - `SevenZipArchive` は 7‑z アーカイブのコンテナです。  
-- `CreateEntry` はエントリ名、ソースファイル、上書きフラグ、`SevenZipEntrySettings` オブジェクトを受け取ります。  
-- `SevenZipEntrySettings` では、圧縮設定 (`SevenZipStoreCompressionSettings`) と暗号化設定 (`SevenZipAESEncryptionSettings`) の 2 つのオブジェクトを提供します。  
-- 各呼び出しで **異なるパスワード**（`"test1"`、`"test2"`、`"test3"`）を指定し、エントリ単位の保護を実現しています。
+- `CreateEntry` はエントリ名、ソースファイル、上書きフラグ、そして `SevenZipEntrySettings` オブジェクトを受け取ります。  
+- `SevenZipEntrySettings` 内では、圧縮用の設定オブジェクト（`SevenZipStoreCompressionSettings`）と暗号化用の設定オブジェクト（`SevenZipAESEncryptionSettings`）の 2 つを提供します。  
+- 各呼び出しで **異なるパスワード**（`"test1"`、`"test2"`、`"test3"`）を指定し、エントリ単位の保護を実現します。
 
-## 手順 3: 検証
+## ステップ 3: 検証
 
-アーカイブ保存後、簡単な確認メッセージを出力します。
+アーカイブが保存されたら、簡単な確認メッセージを出力します。
 
 ```csharp
 Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Settings");
@@ -108,15 +109,15 @@ Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Set
 
 プログラムを実行し、7‑Zip などのツールで `archive.7z` を開いてみてください。エントリごとにパスワード入力が求められ、パスワードがそれぞれ異なることが確認できます。
 
-## よくある問題と対策
+## 一般的な問題と解決策
 
-| 問題 | 原因 | 対策 |
-|------|------|------|
-| **パスワードが正しくないエラー** | パスワード文字列に余分なスペースや不可視文字が含まれている | パスワード文字列を `Trim()` して渡す（`new SevenZipAESEncryptionSettings(password.Trim())`） |
-| **古いツールでアーカイブが開けない** | 7z で使用される AES‑256 暗号化をサポートしていない | 最新の抽出ツール（7‑Zip 19.00 以降）を使用 |
-| **ファイルがアーカイブに追加されない** | ソースファイルのパスが間違っている、またはファイルが存在しない | `dataDir` とファイル名を確認するか、`Path.Combine(dataDir, "data1.bin")` のように組み立て直す |
+| Issue | Reason | Fix |
+|-------|--------|-----|
+| **Incorrect password error** | パスワード文字列に余分なスペースや不可視文字が含まれている。 | パスワード文字列を `Trim` してください（`new SevenZipAESEncryptionSettings(password.Trim())`）。 |
+| **Archive not opening in older tools** | 一部の旧式 ZIP ツールは 7z で使用される AES‑256 暗号化に対応していません。 | 最新の抽出ツール（7‑Zip 19.00 以上）を使用してください。 |
+| **File not added to archive** | ソースファイルのパスが間違っている、またはファイルが存在しない。 | `dataDir` とファイル名を確認するか、`Path.Combine(dataDir, "data1.bin")` を使用してください。 |
 
-## FAQ（よくある質問）
+## よくある質問
 
 ### Q1: Aspose.Zip for .NET はすべての .NET バージョンに対応していますか？
 
@@ -124,29 +125,29 @@ A1: はい、Aspose.Zip for .NET はすべての .NET フレームワーク バ�
 
 ### Q2: 商用プロジェクトで Aspose.Zip for .NET を使用できますか？
 
-A2: もちろんです！Aspose.Zip for .NET には商用ライセンスがあり、購入方法は[こちら](https://purchase.aspose.com/buy)でご確認いただけます。
+A2: もちろんです！Aspose.Zip for .NET には商用ライセンスが用意されており、購入方法の詳細は [here](https://purchase.aspose.com/buy) にあります。
 
 ### Q3: 無料トライアルはありますか？
 
-A3: はい、無料トライアルで Aspose.Zip for .NET の機能を体験できます。[こちら](https://releases.aspose.com/)から開始してください。
+A3: はい、Aspose.Zip for .NET の機能を無料トライアルでお試しいただけます。開始は [here](https://releases.aspose.com/) から。
 
 ### Q4: Aspose.Zip for .NET のサポートはどこで受けられますか？
 
-A4: ご質問やサポートが必要な場合は、[Aspose.Zip フォーラム](https://forum.aspose.com/c/zip/37)をご利用ください。
+A4: ご質問やサポートが必要な場合は、[Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) をご利用ください。
 
-### Q5: 永続的なライセンスがなくても Aspose.Zip for .NET を使用できますか？
+### Q5: 永続的なライセンスなしで Aspose.Zip for .NET を使用できますか？
 
-A5: はい、短期利用向けに一時ライセンスを取得できます。詳細は[こちら](https://purchase.aspose.com/temporary-license/)をご覧ください。
+A5: はい、短期的なニーズに合わせた一時ライセンスを取得できます。詳細は [here](https://purchase.aspose.com/temporary-license/) をご覧ください。
 
 ## 結論
 
-Aspose.Zip for .NET を使って、エントリごとに異なるパスワードで **ZIP を暗号化する方法** を習得しました。この手法により、ファイルごとに個別の保護を実現でき、厳格なセキュリティ要件やユーザー別配布をシンプルに行えます。圧縮設定やファイル数を増やしたり、Web サービスに組み込んでオンデマンドで安全なアーカイブを生成するなど、ぜひ色々試してみてください。
+**パスワードでファイルを圧縮し、エントリ単位で異なるパスワードを使用して ZIP アーカイブを暗号化する方法** を Aspose.Zip for .NET で学びました。この手法により、各ファイルを個別に保護でき、より厳しいセキュリティ要件に対応しつつ、ユーザー別の配布も簡単になります。圧縮設定やファイル数を増やしたり、Web サービスに組み込んでリアルタイムに安全なアーカイブを生成したりと、ぜひ色々試してみてください。
 
 ---
 
-**最終更新日:** 2025-12-18  
-**テスト環境:** Aspose.Zip for .NET 24.12（執筆時点での最新バージョン）  
-**作者:** Aspose  
+**Last Updated:** 2026-02-28  
+**Tested With:** Aspose.Zip for .NET 24.12 (latest at time of writing)  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

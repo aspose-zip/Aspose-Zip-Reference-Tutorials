@@ -1,4 +1,4 @@
----
+﻿---
 title: Decompress zip file C# Using Aspose.Zip
 linktitle: Decompressing a File 
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -22,7 +22,7 @@ If you need to **decompress zip file C#** in a .NET application, you’ll want a
 - **What library handles .NET archive extraction?** Aspose.Zip for .NET  
 - **Which method extracts an Lzip archive in C#?** `LzipArchive.Extract`  
 - **Do I need a license for production?** Yes, a commercial license is required for non‑evaluation use.  
-- **Supported .NET versions?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
+- **Supported .NET versions?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10  
 - **How long does the basic extraction take?** Typically under a second for small files.
 
 ## What is “decompress zip file C#”?

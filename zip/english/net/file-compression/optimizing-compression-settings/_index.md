@@ -14,28 +14,28 @@ date: 2026-02-12
 
 # Add zip password to LZMA zip with Aspose.Zip for .NET
 
-In modern .NET applications, **adding zip password** while creating a high‑ratio LZMA zip archive can protect sensitive data and still give you the best possible compression. Whether you’re building an ASP.NET file compression service, a desktop utility that handles large files, or a cloud‑based workflow, this tutorial shows you step‑by‑step how to secure and compress your files with Aspose.Zip for .NET.
+In modern .NET applications, **adding zip password** while creating a high‑ratio LZMA zip archive can protect sensitive data and still give you the best possible compression. Whether you're building an ASP.NET file compression service, a desktop utility that handles large files, or a cloud‑based workflow, this tutorial shows you step‑by‑step how to secure and compress your files with Aspose.Zip for .NET.
 
 ## Quick Answers
 - **What is the primary benefit of LZMA compression?** Highest compression ratio with reasonable speed for most file types.  
-- **Which method stores files without compression?** Store compression (also called “store compression zip”).  
+- **Which method stores files without compression?** Store compression (also called "store compression zip").  
 - **Can I use these settings in an ASP.NET application?** Yes—simply reference Aspose.Zip in your project and call the same API.  
 - **Do I need a license for production use?** A commercial license is required for production; a free trial is available.  
-- **What .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+- **What .NET versions are supported?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10.
 
-## What is “add zip password” in Aspose.Zip?
-Adding a zip password means encrypting the entries inside a ZIP archive so that only users who know the password can extract the files. Aspose.Zip provides a simple `SetPassword` method that works with every compression algorithm—Bzip2, LZMA, PPMd, Enhanced Deflate, and Store.
+## What is "add zip password" in Aspose.Zip?
+Adding a zip password means encrypting the entries inside a ZIP archive so that only users who know the password can extract the files. Aspose.Zip supports both traditional encryption and AES encryption (128, 192, or 256-bit). Encryption settings are passed as the second argument to `ArchiveEntrySettings` when constructing the `Archive`—there is no separate `SetPassword` method.
 
 ## Why use Aspose.Zip for .NET file compression?
 - **Unified API** – One consistent interface for Bzip2, LZMA, PPMd, Enhanced Deflate, and Store.  
 - **Performance‑tuned** – Optimized native implementation for fast processing.  
 - **ASP.NET friendly** – Works seamlessly in web projects, background services, and Azure Functions.  
-- **Fine‑grained control** – Adjust dictionary size, compression level, and add zip password with a single call.  
+- **Fine‑grained control** – Adjust dictionary size, compression level, and encryption with a single constructor call.  
 - **Compress large files** efficiently by streaming data directly to the output stream.
 
 ## Prerequisites
 - **Aspose.Zip for .NET Library** – Download and install from the [Aspose documentation](https://reference.aspose.com/zip/net/).  
-- **Sample Text File** – Prepare a sample file (e.g., `sample.txt`) that you’ll compress.  
+- **Sample Text File** – Prepare a sample file (e.g., `sample.txt`) that you'll compress.  
 - **.NET development environment** – Visual Studio 2022 or any compatible IDE.
 
 ## Import Namespaces
@@ -51,52 +51,61 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Now let’s explore each compression setting and see how to **add zip password** where appropriate.
+Now let's explore each compression setting and see how to **add zip password** where appropriate.
 
 ## Using Bzip2 Compression Settings
 
-### Step 1: Initialize Bzip2 Compression
+### Step 1: Initialize Bzip2 Compression with Traditional Encryption
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "Bzip2Compression_out.zip", FileMode.Create))
 {
-    using (Archive archive = new Archive(new ArchiveEntrySettings(new Bzip2CompressionSettings())))
+    using (FileStream source1 = File.Open(dataDir + "sample.txt", FileMode.Open, FileAccess.Read))
     {
-        // Step 2: Create Entry
-        archive.CreateEntry("sample.txt", dataDir + "sample.txt");
-        
-        // Optional: protect the archive with a password
-        archive.SetPassword("MySecret123");
-        
-        // Step 3: Save Archive
-        archive.Save(zipFile);
+        using (var archive = new Archive(new ArchiveEntrySettings(
+            new Bzip2CompressionSettings(),
+            new TraditionalEncryptionSettings("MySecret123"))))
+        {
+            // Step 2: Create Entry
+            archive.CreateEntry("sample.txt", source1);
+
+            // Step 3: Save Archive
+            archive.Save(zipFile);
+        }
     }
 }
 ```
 
-*The `SetPassword` call demonstrates how to **add zip password** to a Bzip2‑compressed archive.*
+*Password protection is applied via `TraditionalEncryptionSettings` passed directly to `ArchiveEntrySettings`.*
 
 ## How to add zip password using Aspose.Zip for .NET
 
-You can apply a password to any archive instance before calling `Save`. The same method works for LZMA, PPMd, Enhanced Deflate, and Store compression. Just replace the compression settings object while keeping the `SetPassword` call.
+Encryption settings are provided at archive construction time as the second argument to `ArchiveEntrySettings`. Aspose.Zip supports two approaches:
+
+- **Traditional encryption** – `new TraditionalEncryptionSettings("password")`
+- **AES encryption** – `new AesEcryptionSettings("password", EncryptionMethod.AES256)` (also AES128, AES192)
+
+The same pattern works for every compression algorithm—Bzip2, LZMA, PPMd, Enhanced Deflate, and Store. Just swap the first argument (compression settings) while keeping the encryption settings object.
 
 ## How to create LZMA zip archive using Aspose.Zip
 
-### Step 1: Initialize LZMA Compression
+### Step 1: Initialize LZMA Compression with AES256 Encryption
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "LZMACompression_out.zip", FileMode.Create))
 {
-    using (Archive archive = new Archive(new ArchiveEntrySettings(new LzmaCompressionSettings())))
+    using (FileStream source1 = File.Open(dataDir + "sample.txt", FileMode.Open, FileAccess.Read))
     {
-        // Step 2: Create Entry
-        archive.CreateEntry("sample.txt", dataDir + "sample.txt");
-        
-        // Add password protection (LZMA supports it)
-        archive.SetPassword("StrongPwd!2026");
-        
-        // Step 3: Save Archive
-        archive.Save(zipFile);
+        using (var archive = new Archive(new ArchiveEntrySettings(
+            new LzmaCompressionSettings(),
+            new AesEcryptionSettings("StrongPwd!2026", EncryptionMethod.AES256))))
+        {
+            // Step 2: Create Entry
+            archive.CreateEntry("sample.txt", source1);
+
+            // Step 3: Save Archive
+            archive.Save(zipFile);
+        }
     }
 }
 ```
@@ -105,63 +114,69 @@ using (FileStream zipFile = File.Open(dataDir + "LZMACompression_out.zip", FileM
 
 ## Using PPMd Compression Settings
 
-### Step 1: Initialize PPMd Compression
+### Step 1: Initialize PPMd Compression with AES256 Encryption
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "PPMdCompression_out.zip", FileMode.Create))
 {
-    using (Archive archive = new Archive(new ArchiveEntrySettings(new PPMdCompressionSettings())))
+    using (FileStream source1 = File.Open(dataDir + "sample.txt", FileMode.Open, FileAccess.Read))
     {
-        // Step 2: Create Entry
-        archive.CreateEntry("sample.txt", dataDir + "sample.txt");
-        
-        // Secure the archive
-        archive.SetPassword("PPMdPwd#2026");
-        
-        // Step 3: Save Archive
-        archive.Save(zipFile);
+        using (var archive = new Archive(new ArchiveEntrySettings(
+            new PPMdCompressionSettings(),
+            new AesEcryptionSettings("PPMdPwd#2026", EncryptionMethod.AES256))))
+        {
+            // Step 2: Create Entry
+            archive.CreateEntry("sample.txt", source1);
+
+            // Step 3: Save Archive
+            archive.Save(zipFile);
+        }
     }
 }
 ```
 
 ## Using Enhanced Deflate Compression Settings
 
-### Step 1: Initialize Enhanced Deflate Compression
+### Step 1: Initialize Enhanced Deflate Compression with AES256 Encryption
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "EnhancedDeflateCompression_out.zip", FileMode.Create))
 {
-    using (Archive archive = new Archive(new ArchiveEntrySettings(new EnhancedDeflateCompressionSettings())))
+    using (FileStream source1 = File.Open(dataDir + "sample.txt", FileMode.Open, FileAccess.Read))
     {
-        // Step 2: Create Entry
-        archive.CreateEntry("sample.txt", dataDir + "sample.txt");
-        
-        // Password protection works here as well
-        archive.SetPassword("DeflatePwd2026");
-        
-        // Step 3: Save Archive
-        archive.Save(zipFile);
+        using (var archive = new Archive(new ArchiveEntrySettings(
+            new EnhancedDeflateCompressionSettings(),
+            new AesEcryptionSettings("DeflatePwd2026", EncryptionMethod.AES256))))
+        {
+            // Step 2: Create Entry
+            archive.CreateEntry("sample.txt", source1);
+
+            // Step 3: Save Archive
+            archive.Save(zipFile);
+        }
     }
 }
 ```
 
 ## Using Store Compression Settings (store compression zip)
 
-### Step 1: Initialize Store Compression
+### Step 1: Initialize Store Compression with Traditional Encryption
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "StoreCompression_out.zip", FileMode.Create))
 {
-    using (Archive archive = new Archive(new ArchiveEntrySettings(new StoreCompressionSettings())))
+    using (FileStream source1 = File.Open(dataDir + "sample.txt", FileMode.Open, FileAccess.Read))
     {
-        // Step 2: Create Entry
-        archive.CreateEntry("sample.txt", dataDir + "sample.txt");
-        
-        // Even for store compression you can add a password
-        archive.SetPassword("StorePwd2026");
-        
-        // Step 3: Save Archive
-        archive.Save(zipFile);
+        using (var archive = new Archive(new ArchiveEntrySettings(
+            new StoreCompressionSettings(),
+            new TraditionalEncryptionSettings("StorePwd2026"))))
+        {
+            // Step 2: Create Entry
+            archive.CreateEntry("sample.txt", source1);
+
+            // Step 3: Save Archive
+            archive.Save(zipFile);
+        }
     }
 }
 ```
@@ -169,10 +184,10 @@ using (FileStream zipFile = File.Open(dataDir + "StoreCompression_out.zip", File
 > **Pro tip:** Adjust the `dataDir` variable to point to your actual working directory, and reuse the same `Archive` instance if you need to add multiple files to a single archive.
 
 ## Common Issues & Solutions
-- **“File not found” errors** – Verify that `dataDir` ends with a path separator (`\` or `/`) and that `sample.txt` exists.  
+- **"File not found" errors** – Verify that `dataDir` ends with a path separator (`\` or `/`) and that `sample.txt` exists.  
 - **Memory consumption with large files** – Use `ArchiveEntrySettings` to enable streaming mode, which writes data directly to the output stream.  
 - **Incompatible compression level** – Some algorithms (e.g., LZMA) expose additional properties like `DictionarySize`. Consult the API docs if you need finer control.  
-- **Password not applied** – Ensure you call `SetPassword` *before* `archive.Save(zipFile);`.
+- **Password not applied** – Ensure the encryption settings object is passed as the second argument to `ArchiveEntrySettings` at construction time, not after the archive is created.
 
 ## Frequently Asked Questions
 
@@ -180,7 +195,7 @@ using (FileStream zipFile = File.Open(dataDir + "StoreCompression_out.zip", File
 A: Aspose.Zip is designed to work with its built‑in algorithms. Integrating third‑party libraries is possible but requires custom handling outside the Aspose API.
 
 **Q: How can I add password protection to a zip created with Aspose.Zip?**  
-A: Use the `SetPassword(string password)` method on the `Archive` object before saving. See the [documentation](https://reference.aspose.com/zip/net/) for more details.
+A: Pass either `TraditionalEncryptionSettings` or `AesEcryptionSettings` as the second argument to `ArchiveEntrySettings` when constructing the `Archive`. See the [documentation](https://docs.aspose.com/zip/net/password-protecting-archives/) for full examples.
 
 **Q: Is there a trial version I can test?**  
 A: Yes, you can access the trial version [here](https://releases.aspose.com/).

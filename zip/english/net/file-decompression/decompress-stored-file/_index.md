@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create Zip Without Compression & Decompress Files – Aspose.Zip"
 linktitle: Decompressing a Stored File
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -23,7 +23,7 @@ In modern .NET applications, **create zip without compression** is a useful tech
 - **Which library handles this in .NET?** Aspose.Zip for .NET.  
 - **Do I need a license to run the sample?** A free trial works for development; a commercial license is required for production.  
 - **Can I extract several files at once?** Yes – the tutorial shows how to **extract multiple zip files** in a loop.  
-- **What .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+- **What .NET versions are supported?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10.
 
 ## What is “create zip without compression”?
 

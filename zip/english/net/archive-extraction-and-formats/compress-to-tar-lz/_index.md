@@ -17,6 +17,7 @@ date: 2026-02-23
 In modern .NET development, efficiently packaging files can dramatically improve deployment size and network transfer times. **Compress multiple files tar** is a frequent requirement when you need a lightweight, LZ‑compressed TAR archive for backups, distribution, or cloud uploads. In this tutorial we’ll walk through a clear, step‑by‑step **tar.lz compression example** using the Aspose.Zip library, so you can quickly create a **tar.lz archive** in your own applications.
 
 ## Quick Answers
+
 - **What library should I use?** Aspose.Zip for .NET.  
 - **How long does the implementation take?** About 5‑10 minutes for a basic example.  
 - **Do I need a license?** A free trial works for testing; a commercial license is required for production.  

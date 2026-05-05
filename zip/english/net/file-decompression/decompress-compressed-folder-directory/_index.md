@@ -1,4 +1,4 @@
----
+﻿---
 title: How to extract zip to folder with Aspose.Zip for .NET
 linktitle: extract zip to folder
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -22,7 +22,7 @@ If you need to **extract zip to folder** quickly and reliably in a .NET applicat
 - **What is the primary purpose of Aspose.Zip?** To create, read, and **extract zip to folder** in .NET applications.  
 - **How do I extract zip with password?** Pass the password via `ArchiveLoadOptions.DecryptionPassword`.  
 - **Can I unzip encrypted archive without a password?** No—Aspose.Zip requires the correct password to open encrypted archives.  
-- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+.  
+- **Which .NET versions are supported?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10.  
 - **Is a license required for production?** Yes, a valid Aspose.Zip license is needed for commercial use.
 
 ## What is **extract zip to folder**?

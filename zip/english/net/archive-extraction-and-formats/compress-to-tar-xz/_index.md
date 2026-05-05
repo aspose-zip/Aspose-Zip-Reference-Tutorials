@@ -21,7 +21,7 @@ If you need to **add files to tar** and then **create a tarxz archive .net**, As
 ## Quick Answers
 - **What is the primary class?** `TarArchive` from `Aspose.Zip.Tar`
 - **How to compress tarxz?** Use `SaveXzCompressed` after adding entries
-- **Supported .NET versions?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6
+- **Supported .NET versions?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10
 - **License needed?** Yes, a valid Aspose.Zip license for production
 - **Typical implementation time?** ~5‑10 minutes
 
@@ -105,7 +105,7 @@ The process shown above is essentially **how to compress tarxz** files: you firs
 ## Frequently Asked Questions
 
 **Q: Is Aspose.Zip compatible with all .NET environments?**  
-A: Yes, Aspose.Zip works with .NET Framework 4.5+, .NET Core 3.1+, and .NET 5/6+. See the [documentation](https://reference.aspose.com/zip/net/) for details.
+A: Yes, Aspose.Zip works with .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10 See the [documentation](https://reference.aspose.com/zip/net/) for details.
 
 **Q: How can I obtain a temporary license for Aspose.Zip?**  
 A: You can request a temporary license from the [Aspose temporary‑license page](https://purchase.aspose.com/temporary-license/).
