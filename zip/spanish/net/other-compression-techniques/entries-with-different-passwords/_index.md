@@ -1,9 +1,15 @@
 ---
-date: 2026-02-28
+date: 2026-05-05
 description: Aprende a comprimir archivos con contraseña y cifrar archivos ZIP usando
-  Aspose.Zip para .NET, cubriendo la protección con contraseña de 7z y la contraseña
+  Aspose.Zip para .NET, cubriendo la protección con contraseña en 7z y la contraseña
   por archivo ZIP en C#.
-linktitle: Entries with Different Passwords
+keywords:
+- compress files with password
+- how to encrypt zip
+- aes 256 zip encryption
+- encrypt zip entries
+- per file zip password
+linktitle: Entradas con contraseñas diferentes
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Cómo comprimir archivos con contraseña y cifrar entradas ZIP con diferentes
   contraseñas usando Aspose.Zip para .NET
@@ -19,31 +25,31 @@ weight: 13
 
 ## Introducción
 
-Si necesitas **comprimir archivos con contraseña** y asignar a cada entrada su propia contraseña, has llegado al lugar correcto. En este tutorial recorreremos paso a paso los pasos exactos para crear un archivo 7‑zip donde cada archivo está protegido con una contraseña única, usando la biblioteca Aspose.Zip para .NET. Al final comprenderás por qué el cifrado por entrada es importante, cómo configurarlo y cómo verificar el resultado en tus propios proyectos.
+Si necesitas **comprimir archivos con contraseña** y asignar a cada entrada su propia contraseña, has llegado al lugar correcto. En este tutorial recorreremos los pasos exactos para crear un archivo 7‑zip donde cada archivo está protegido con una contraseña única, usando la biblioteca Aspose.Zip para .NET. Al final comprenderás por qué el cifrado por entrada es importante, cómo configurarlo y cómo verificar el resultado en tus propios proyectos.
 
 ## Respuestas rápidas
 - **¿Qué significa “encrypt zip”?** Significa aplicar protección basada en contraseña (AES o ZipCrypto) al contenido de un archivo ZIP/7z.  
-- **¿Puede cada entrada tener una contraseña diferente?** Sí—Aspose.Zip te permite asignar contraseñas distintas por archivo.  
+- **¿Puede cada entrada tener una contraseña diferente?** Sí—Aspose.Zip permite asignar contraseñas distintas por archivo.  
 - **¿Qué versiones de .NET son compatibles?** Todas las versiones modernas de .NET Framework, .NET Core y .NET 5/6.  
 - **¿Necesito una licencia para producción?** Se requiere una licencia comercial para uso en producción; hay una prueba gratuita disponible.  
 - **¿Qué formato de compresión se usa en el ejemplo?** El ejemplo crea un archivo 7z con cifrado AES‑256.
 
-## Cómo comprimir archivos con contraseña usando Aspose.Zip para .NET
-En esta sección respondemos la pregunta principal directamente y preparamos el terreno para la guía paso a paso que sigue.
-
 ## ¿Qué es “how to encrypt zip” con Aspose.Zip?
-Cifrar un archivo ZIP (o 7z) significa asegurar sus entradas para que no puedan abrirse sin la contraseña correcta. Aspose.Zip para .NET soporta tanto el clásico ZipCrypto como el cifrado AES más fuerte, y permite especificar la configuración de cifrado por entrada, dándote un control granular sobre la seguridad.
+Cifrar un archivo ZIP (o 7z) significa asegurar sus entradas para que no puedan abrirse sin la contraseña correcta. Aspose.Zip para .NET admite tanto ZipCrypto clásico como el cifrado AES más fuerte, y permite especificar la configuración de cifrado por entrada, brindándote un control granular sobre la seguridad.
 
-## ¿Por qué usar contraseñas diferentes para cada entrada?
-- **Segmentación de seguridad:** Si una contraseña se ve comprometida, los demás archivos siguen protegidos.  
-- **Cumplimiento normativo:** Algunas industrias requieren credenciales separadas para diferentes categorías de datos.  
-- **Acceso específico por usuario:** Puedes distribuir un único archivo a varios usuarios, cada uno desbloqueando solo los archivos que tiene autorización para ver.
+## ¿Por qué comprimir archivos con contraseña?
+- **Segmentation de seguridad:** Si una contraseña se ve comprometida, los demás archivos permanecen protegidos.  
+- **Cumplimiento normativo:** Algunas industrias exigen credenciales separadas para diferentes categorías de datos.  
+- **Distribución específica por usuario:** Un solo archivo puede enviarse a muchos usuarios, cada uno desbloqueando solo los archivos que está autorizado a ver.
+
+## ¿Por qué usar cifrado zip AES 256?
+AES‑256 es el estándar industrial actual para cifrado simétrico fuerte. En comparación con ZipCrypto, resiste los ataques de fuerza bruta modernos y es totalmente compatible con 7‑Zip y otros extractores contemporáneos. Cuando necesitas **aes 256 zip encryption**, Aspose.Zip hace que la configuración sea sencilla.
 
 ## Requisitos previos
 
 Antes de comenzar, asegúrate de tener:
 
-- **Aspose.Zip para .NET** instalado – consulta la [documentación oficial](https://reference.aspose.com/zip/net/) para descargar e instalar.  
+- **Aspose.Zip for .NET** instalado – consulta la [documentación](https://reference.aspose.com/zip/net/) oficial para descargar e instalar.  
 - Una carpeta en tu máquina donde mantendrás los archivos fuente (el “Document Directory”).  
 - Familiaridad básica con C# y Visual Studio (o tu IDE .NET preferido).
 
@@ -62,7 +68,7 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Paso 1: Establecer tu Document Directory
+## Paso 1: Establecer su Directorio de Documentos
 
 Define la ruta que contiene los archivos que deseas archivar.
 
@@ -72,7 +78,7 @@ string dataDir = "Your Document Directory";
 
 ## Paso 2: Crear entradas con contraseñas diferentes
 
-Aquí está el núcleo del tutorial. Abrimos un nuevo archivo 7z, creamos tres objetos `FileInfo` y añadimos cada uno como una entrada con su propia contraseña AES.
+Este es el núcleo del tutorial. Abrimos un nuevo archivo 7z, creamos tres objetos `FileInfo` y añadimos cada uno como una entrada con su propia contraseña AES.
 
 ```csharp
 //ExStart: EntriesWithDifferentPasswords
@@ -94,7 +100,7 @@ using (FileStream sevenZipFile = File.Open("archive.7z", FileMode.Create))
 //ExEnd: EntriesWithDifferentPasswords
 ```
 
-### Cómo funciona
+### Cómo funciona esto
 
 - `SevenZipArchive` es el contenedor para un archivo 7‑z.  
 - `CreateEntry` recibe el nombre de la entrada, el archivo fuente, una bandera para sobrescribir y un objeto `SevenZipEntrySettings`.  
@@ -111,13 +117,22 @@ Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Set
 
 Ejecuta el programa y luego intenta abrir `archive.7z` con una herramienta como 7‑Zip. Te pedirá una contraseña para cada entrada, confirmando que las contraseñas son efectivamente distintas.
 
-## Problemas comunes y soluciones
+## Cifrar entradas zip con contraseña por archivo zip – mejores prácticas
+
+Cuando **encrypt zip entries** usando una contraseña por archivo, ten en cuenta estos consejos:
+
+1. **Usa contraseñas fuertes y únicas** – evita palabras comunes y la reutilización.  
+2. **Almacena las contraseñas de forma segura** – considera un gestor de contraseñas o una bóveda segura si necesitas distribuirlas.  
+3. **Prueba con múltiples herramientas** – asegura que tanto 7‑Zip como WinRAR puedan leer el archivo, ya que algunas herramientas antiguas pueden no soportar AES‑256.  
+4. **Documenta la correspondencia contraseña‑archivo** – un CSV sencillo (archivo, contraseña) ayuda a los administradores a rastrear qué contraseña pertenece a cada entrada.
+
+## Protección con contraseña de archivos zip – errores comunes
 
 | Problema | Razón | Solución |
-|-------|--------|-----|
+|----------|-------|----------|
 | **Error de contraseña incorrecta** | La cadena de contraseña contiene espacios extra o caracteres invisibles. | Recorta las cadenas de contraseña (`new SevenZipAESEncryptionSettings(password.Trim())`). |
-| **El archivo no se abre en herramientas antiguas** | Algunas herramientas ZIP heredadas no soportan el cifrado AES‑256 usado por 7z. | Usa un extractor moderno (7‑Zip 19.00+). |
-| **Archivo no añadido al archivo comprimido** | La ruta del archivo fuente es incorrecta o el archivo no existe. | Verifica `dataDir` y los nombres de archivo, o usa `Path.Combine(dataDir, "data1.bin")`. |
+| **El archivo no se abre en herramientas antiguas** | Algunas herramientas ZIP heredadas no admiten el cifrado AES‑256 usado por 7z. | Utiliza un extractor moderno (7‑Zip 19.00+). |
+| **Archivo no añadido al archivo** | La ruta del archivo fuente es incorrecta o el archivo no existe. | Verifica `dataDir` y los nombres de archivo, o usa `Path.Combine(dataDir, "data1.bin")`. |
 
 ## Preguntas frecuentes
 
@@ -143,12 +158,12 @@ A5: Sí, puedes obtener una licencia temporal para tus necesidades a corto plazo
 
 ## Conclusión
 
-Acabas de aprender **cómo comprimir archivos con contraseña** y cifrar archivos ZIP con contraseñas por entrada usando Aspose.Zip para .NET. Esta técnica te brinda la flexibilidad de proteger cada archivo individualmente, cumpliendo requisitos de seguridad más estrictos y simplificando la distribución específica por usuario. Siéntete libre de experimentar con otras configuraciones de compresión, conjuntos de archivos más grandes, o integrar esta lógica en un servicio web que genere archivos seguros sobre la marcha.
+Acabas de aprender **cómo comprimir archivos con contraseña** y cifrar archivos ZIP con contraseñas por entrada usando Aspose.Zip para .NET. Esta técnica te brinda la flexibilidad de proteger cada archivo individualmente, cumpliendo requisitos de seguridad más estrictos y simplificando la distribución específica por usuario. Siéntete libre de experimentar con otras configuraciones de compresión, conjuntos de archivos más grandes o integrar esta lógica en un servicio web que genere archivos seguros al vuelo.
 
 ---
 
-**Última actualización:** 2026-02-28  
-**Probado con:** Aspose.Zip para .NET 24.12 (última versión al momento de escribir)  
+**Última actualización:** 2026-05-05  
+**Probado con:** Aspose.Zip for .NET 24.12 (última versión al momento de escribir)  
 **Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}

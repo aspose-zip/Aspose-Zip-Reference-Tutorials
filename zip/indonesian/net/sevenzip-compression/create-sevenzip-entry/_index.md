@@ -1,10 +1,17 @@
 ---
-date: 2025-12-25
-description: Kuasi Aspose.Zip untuk .NET untuk membuat arsip 7z terenkripsi. Contoh
-  Aspose.Zip ini menunjukkan cara menambahkan file ke 7z dengan enkripsi dan kompresi.
-linktitle: Create SevenZip Entry
+date: 2026-05-05
+description: Pelajari cara mengenkripsi arsip 7z menggunakan Aspose.Zip untuk .NET.
+  Panduan ini menunjukkan cara menambahkan file ke 7z, mengatur enkripsi AES, dan
+  menghasilkan arsip 7z yang aman.
+keywords:
+- how to encrypt 7z
+- add file to 7z
+- how to set aes
+- generate 7z archive
+- add multiple files 7z
+linktitle: Buat Entri SevenZip
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Cara Membuat Arsip 7z Terenkripsi dengan Aspose.Zip untuk .NET
+title: Cara Mengenkripsi Arsip 7z dengan Aspose.Zip untuk .NET
 url: /id/net/sevenzip-compression/create-sevenzip-entry/
 weight: 11
 ---
@@ -13,34 +20,34 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Buat Arsip 7z Terenkripsi dengan Aspose.Zip untuk .NET
+# Cara Mengenkripsi Arsip 7z dengan Aspose.Zip untuk .NET
 
 ## Pendahuluan
 
-Dalam tutorial ini Anda akan belajar **cara membuat 7z terenkripsi** menggunakan pustaka Aspose.Zip untuk .NET. Baik Anda perlu melindungi data sensitif, mematuhi kebijakan keamanan, atau sekadar mengompres file secara efisien, panduan ini akan membawa Anda melalui setiap langkah—dari menyiapkan proyek hingga memastikan bahwa arsip berhasil dibuat. Mari kita mulai dan lihat betapa mudahnya menambahkan file ke arsip 7z dengan enkripsi AES.
+Dalam tutorial ini Anda akan belajar **how to encrypt 7z** file menggunakan library Aspose.Zip untuk .NET. Apakah Anda perlu melindungi data sensitif, mematuhi kebijakan keamanan, atau sekadar mengompres file secara efisien, panduan ini akan memandu Anda melalui setiap langkah—dari menyiapkan proyek hingga memastikan arsip berhasil dibuat. Mari kita mulai dan lihat betapa mudahnya **add file to 7z** dengan enkripsi AES dan menghasilkan arsip 7z yang dapat diandalkan.
 
 ## Jawaban Cepat
-- **Apa arti “create encrypted 7z”?** Artinya menghasilkan arsip 7‑zip yang dilindungi dengan enkripsi AES.
-- **Perpustakaan mana yang digunakan?** Aspose.Zip untuk .NET.
-- **Apakah saya memerlukan lisensi?** Lisensi sementara sudah cukup untuk pengujian; lisensi penuh diperlukan untuk produksi.
-- **Apakah saya dapat menambahkan banyak file?** Ya, Anda dapat memanggil `CreateEntry` berulang kali untuk setiap file.
-- **Apakah enkripsi AES didukung?** Ya, Aspose.Zip mendukung enkripsi AES‑256 untuk arsip 7z.
+- **What does “create encrypted 7z” mean?** Itu berarti menghasilkan arsip 7‑zip yang dilindungi dengan enkripsi AES.  
+- **Which library is used?** Aspose.Zip untuk .NET.  
+- **Do I need a license?** Lisensi sementara cukup untuk pengujian; lisensi penuh diperlukan untuk produksi.  
+- **Can I add multiple files?** Ya—panggil `CreateEntry` berulang kali untuk **add multiple files 7z**.  
+- **Is AES encryption supported?** Ya, Aspose.Zip mendukung **how to set AES**‑256 encryption untuk arsip 7z.  
 
-## Apa itu Arsip 7z Terenkripsi?
-Arsip 7z adalah format kontainer kompresi tinggi. Ketika Anda **membuat arsip 7z terenkripsi**, kontennya diacak menggunakan enkripsi AES, sehingga tidak dapat dibaca tanpa kata sandi yang benar. Ini ideal untuk mentransmisikan atau menyimpan file rahasia dengan aman.
+## Apa itu Arsip 7z yang Dienkripsi?
+Arsip 7z adalah format kontainer kompresi tinggi. Ketika Anda **create encrypted 7z** arsip, kontennya diacak menggunakan enkripsi AES, sehingga tidak dapat dibaca tanpa kata sandi yang benar. Ini ideal untuk mentransmisikan atau menyimpan file rahasia secara aman.
 
-## Mengapa Menggunakan Aspose.Zip untuk File 7z Terenkripsi?
-- **Integrasi .NET penuh** – bekerja dengan .NET Framework, .NET Core, dan .NET 5/6.  
-- **Dukungan AES‑256 bawaan** – tidak memerlukan alat eksternal.  
-- **API sederhana** – pemanggilan satu baris untuk menambahkan file dan menyimpan arsip.  
-- **Lintas‑platform** – berjalan di Windows, Linux, dan macOS.
+## Mengapa Menggunakan Aspose.Zip untuk File 7z yang Dienkripsi?
+- **Full .NET integration** – bekerja dengan .NET Framework, .NET Core, dan .NET 5/6.  
+- **Built‑in AES‑256 support** – tidak perlu alat eksternal; Anda dapat dengan mudah mempelajari **how to set AES**.  
+- **Simple API** – pemanggilan satu baris untuk **add file to 7z** dan menyimpan arsip.  
+- **Cross‑platform** – berjalan di Windows, Linux, dan macOS.
 
 ## Prasyarat
 
-Sebelum memulai, pastikan Anda memiliki hal‑hal berikut:
+Sebelum memulai, pastikan Anda memiliki hal berikut:
 
-- **Aspose.Zip untuk .NET Library** – unduh di [sini](https://releases.aspose.com/zip/net/).
-- **Folder yang dapat ditulisi** di mesin Anda tempat arsip akan disimpan.
+- **Aspose.Zip for .NET Library** – unduh di [sini](https://releases.aspose.com/zip/net/).  
+- **Folder yang dapat ditulisi** di mesin Anda tempat arsip akan disimpan.  
 - **File sumber** (misalnya `file.dat`) yang ingin Anda kompres dan enkripsi.
 
 ## Impor Namespace
@@ -55,15 +62,15 @@ using Aspose.Zip.SevenZip;
 
 ### Langkah 1: Tentukan Direktori Kerja
 
-Atur path ke folder yang berisi file sumber yang ingin Anda kompres.
+Atur jalur ke folder yang berisi file sumber yang ingin Anda kompres.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-Ganti `"Your Document Directory"` dengan path sebenarnya di mesin Anda.
+Ganti `"Your Document Directory"` dengan jalur sebenarnya di mesin Anda.
 
-### Langkah 2: Buat Entri 7z Terenkripsi
+### Langkah 2: Buat Entri 7z yang Dienkripsi
 
 Inti tutorial – kami membuka aliran file baru, membuat `SevenZipArchive`, menambahkan entri, dan menyimpan arsip. Contoh ini menambahkan satu file (`file.dat`) sebagai `data.bin` di dalam arsip.
 
@@ -80,7 +87,7 @@ using (FileStream sevenZipFile = File.Open("archive.7z", FileMode.Create))
 //ExEnd: CreateSevenZipEntry
 ```
 
-> **Pro tip:** Untuk mengaktifkan enkripsi AES, atur properti `Encryption` pada `SevenZipArchive` sebelum memanggil `Save`. (Properti ini dihilangkan di sini agar contoh tetap singkat.)
+> **Pro tip:** Untuk mengaktifkan enkripsi AES, set properti `Encryption` pada `SevenZipArchive` sebelum memanggil `Save`. (Properti ini dihilangkan di sini untuk menjaga contoh tetap singkat.)
 
 ### Langkah 3: Konfirmasi Keberhasilan
 
@@ -92,42 +99,42 @@ Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Set
 
 ### Langkah 4: Verifikasi Arsip (Opsional)
 
-Setelah program dijalankan, buka folder yang berisi `archive.7z` dan coba buka dengan klien 7‑zip. Anda akan diminta memasukkan kata sandi jika Anda menambahkan enkripsi pada Langkah 2.
+Setelah program berjalan, buka folder yang berisi `archive.7z` dan coba buka dengan klien 7‑zip. Anda akan diminta memasukkan kata sandi jika Anda menambahkan enkripsi pada Langkah 2. Langkah ini juga memungkinkan Anda **verify 7z password**.
 
 ## Masalah Umum & Solusi
 
 | Masalah | Penyebab | Solusi |
 |-------|-------|-----|
-| **File tidak ditemukan** | Path `dataDir` atau nama file sumber salah | Periksa kembali path dan pastikan `file.dat` ada. |
-| **Akses ditolak** | Izin menulis tidak cukup | Jalankan aplikasi dengan hak istimewa atau pilih folder yang dapat ditulisi. |
-| **Enkripsi tidak diterapkan** | Pengaturan enkripsi pada arsip tidak ada | Set `archive.Encryption = EncryptionAlgorithm.Aes256;` sebelum `Save`. |
+| **File not found** | `dataDir` atau nama file sumber tidak tepat | Periksa kembali jalur dan pastikan `file.dat` ada. |
+| **Access denied** | Izin menulis tidak cukup | Jalankan aplikasi dengan hak istimewa atau pilih folder yang dapat ditulisi. |
+| **Encryption not applied** | Pengaturan enkripsi pada arsip tidak disetel | Set `archive.Encryption = EncryptionAlgorithm.Aes256;` sebelum `Save`. |
 
 ## Pertanyaan yang Sering Diajukan
 
-### T: Bisakah saya menggunakan Aspose.Zip untuk .NET dengan format arsip lain?
-Aspose.Zip terutama fokus pada format ZIP dan 7z. Untuk menangani format lain, jelajahi pustaka khusus yang dirancang untuk format tersebut.
+**Q: Can I add more than one file to the same 7z archive?**  
+A: Tentu saja. Panggil `archive.CreateEntry` untuk setiap file yang ingin Anda **add file to 7z** atau **add multiple files 7z**.  
 
-### T: Bagaimana cara mengekstrak file dari arsip zip menggunakan Aspose.Zip?
-Manfaatkan fitur ekstraksi yang disediakan Aspose.Zip, seperti metode `ExtractToDirectory`, untuk dengan mudah mengekstrak file dari arsip zip.
+**Q: How do I specify the password for AES encryption?**  
+A: Gunakan properti `Password` pada `SevenZipArchive` sebelum menyimpan, misalnya `archive.Password = "YourStrongPassword";`. Ini memungkinkan Anda kemudian **verify 7z password** saat mengekstrak.  
 
-### T: Apakah Aspose.Zip cocok untuk aplikasi berskala besar?
-Tentu saja! Aspose.Zip dirancang untuk menangani aplikasi berskala besar, menyediakan kemampuan manipulasi arsip zip yang efisien.
+**Q: Does Aspose.Zip support other archive formats?**  
+A: Aspose.Zip terutama fokus pada format ZIP dan 7z. Untuk format lain, pertimbangkan library khusus.  
 
-### T: Apakah ada pertimbangan lisensi untuk menggunakan Aspose.Zip?
-Ya, pastikan Anda memiliki lisensi yang valid. Untuk penggunaan sementara atau eksplorasi, Anda dapat memperoleh lisensi sementara [di sini](https://purchase.aspose.com/temporary-license/).
+**Q: Is a license required for production use?**  
+A: Ya. Anda dapat memperoleh lisensi sementara untuk evaluasi [di sini](https://purchase.aspose.com/temporary-license/).  
 
-### T: Di mana saya dapat mencari bantuan atau terhubung dengan komunitas untuk Aspose.Zip?
-Kunjungi [forum Aspose.Zip](https://forum.aspose.com/c/zip/37) untuk meminta dukungan, mengajukan pertanyaan, dan terhubung dengan komunitas.
+**Q: Where can I get community support?**  
+A: Kunjungi [forum Aspose.Zip](https://forum.aspose.com/c/zip/37) untuk mengajukan pertanyaan dan berbagi pengalaman.
 
 ## Kesimpulan
 
-Anda kini memiliki dasar yang kuat untuk **membuat arsip 7z terenkripsi** dengan Aspose.Zip untuk .NET. Dengan mengikuti langkah‑langkah di atas, Anda dapat mengompres file secara aman, menambahkannya ke dalam kontainer 7z, dan bahkan mengaktifkan enkripsi AES bila diperlukan. Jangan ragu untuk memperluas contoh ini dengan menambahkan lebih banyak entri, mengatur kata sandi, atau mengintegrasikannya ke dalam alur kerja yang lebih besar.
+Anda kini memiliki dasar yang kuat untuk **how to encrypt 7z** arsip dengan Aspose.Zip untuk .NET. Dengan mengikuti langkah‑langkah di atas, Anda dapat mengompres file secara aman, menambahkannya ke kontainer 7z, dan bahkan mengaktifkan enkripsi AES bila diperlukan. Jangan ragu untuk memperluas contoh ini dengan menambahkan lebih banyak entri, mengatur kata sandi, atau mengintegrasikannya ke dalam alur kerja yang lebih besar seperti pipeline cadangan otomatis.
 
 ---
 
-**Terakhir Diperbarui:** 2025-12-25  
-**Diuji Dengan:** Aspose.Zip untuk .NET 24.11  
-**Penulis:** Aspose
+**Last Updated:** 2026-05-05  
+**Tested With:** Aspose.Zip for .NET 24.11  
+**Author:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -1,11 +1,17 @@
 ---
-date: 2025-12-25
-description: Aspose.Zip for .NET'i şifreli 7z arşivleri oluşturmak için ustalaşın.
-  Bu Aspose.Zip örneği, şifreleme ve sıkıştırma ile bir dosyayı 7z'ye nasıl ekleyeceğinizi
-  gösterir.
-linktitle: Create SevenZip Entry
+date: 2026-05-05
+description: Aspose.Zip for .NET kullanarak 7z arşivlerini nasıl şifreleyeceğinizi
+  öğrenin. Bu kılavuz, 7z'ye dosya eklemeyi, AES şifrelemesini ayarlamayı ve güvenli
+  bir 7z arşivi oluşturmayı gösterir.
+keywords:
+- how to encrypt 7z
+- add file to 7z
+- how to set aes
+- generate 7z archive
+- add multiple files 7z
+linktitle: SevenZip Girişi Oluştur
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Aspose.Zip for .NET ile Şifreli 7z Arşivi Nasıl Oluşturulur
+title: Aspose.Zip for .NET ile 7z Arşivini Şifreleme
 url: /tr/net/sevenzip-compression/create-sevenzip-entry/
 weight: 11
 ---
@@ -14,39 +20,39 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET ile Şifreli 7z Arşivi Oluşturma
+# 7z Arşivini Aspose.Zip for .NET ile Şifreleme
 
-## Giriiş
+## Giriş
 
-Bu öğreticide, Aspose.Zip .NET kütüphanesini kullanarak **şifreli 7z** dosyalarını oluşturmayı dosyalar. Hassas veri korumanız, güvenlik politikalarına uymanız veya sadece dosyaları verimli bir şekilde sıkıştırmanız, bu kılavuz projeyi takip edebilmeniz ve arşivin başarıyla dahil edildiğini sürekli olarak her adım boyutunu gösterene kadar. Hadi başlatma ve AES şifrelemesiyle birleştiğinde 7z arşivine eklemenin ne kadar kolay olduğunu görelim.
+Bu öğreticide, Aspose.Zip kütüphanesini .NET için kullanarak **how to encrypt 7z** dosyalarını öğreneceksiniz. Hassas verileri korumanız, güvenlik politikalarına uymanız ya da sadece dosyaları verimli bir şekilde sıkıştırmanız gerekse, bu kılavuz projeyi kurmaktan arşivin başarıyla oluşturulduğunu doğrulamaya kadar her adımı size gösterir. Hadi başlayalım ve **add file to 7z** işleminin AES şifrelemesiyle ne kadar kolay olduğunu ve güvenilir bir 7z arşivi oluşturmayı görelim.
 
 ## Hızlı Yanıtlar
-- **“şifrelenmiş 7z oluştur” ne anlaşılıyor?** AES şifrelemesiyle korunan bir 7‑zip arşivi oluşturmak demektir.
-- **Hangi kütüphanesi kullanılıyor?** Aspose.Zip for .NET.
-- **Lisans gerekli mi?** Test için geçici bir lisans yeterlidir; üretim için tam lisans gereklidir.
-- **Birden fazla dosya seçeneği var mı?** Evet, her dosyayı için `CreateEntry` yöntemini tekrar çağırabilirsiniz.
-- **AES şifrelemesi destekleniyor mu?** Evet, Aspose.Zip 7z arşivleri için AES‑256 şifrelemesini desteklemek.
+- **What does “create encrypted 7z” mean?** Bu, AES şifrelemesiyle korunan bir 7‑zip arşivi oluşturmak anlamına gelir.  
+- **Which library is used?** Aspose.Zip for .NET.  
+- **Do I need a license?** Test için geçici bir lisans yeterlidir; üretim için tam lisans gereklidir.  
+- **Can I add multiple files?** Evet—`CreateEntry` metodunu tekrarlayarak **add multiple files 7z** ekleyebilirsiniz.  
+- **Is AES encryption supported?** Evet, Aspose.Zip, 7z arşivleri için **how to set AES**‑256 şifrelemeyi destekler.  
 
-## Şifreli 7z Arşivi nedir?
-7z arşivi, yüksek sıkıştırmaya sahip bir konteyner formatıdır. **Şifreli 7z** arşivleri oluşturulmuş, içeriğin AES şifrelemesiyle ayrılması ve doğru şifre olmadan okunamaması. Bu, gizli dosyaları güvenli bir şekilde iletmek veya depolamak için idealdir.
+## Şifreli 7z Arşivi Nedir?
+7z arşivi, yüksek sıkıştırmalı bir konteyner formatıdır. **create encrypted 7z** arşivleri oluşturduğunuzda, içerik AES şifrelemesiyle karıştırılır ve doğru şifre olmadan okunamaz. Bu, gizli dosyaları güvenli bir şekilde iletmek veya depolamak için idealdir.
 
-## Şifreli 7z Dosyaları için Neden Aspose.Zip Kullanılmalı?
-- **Tam .NET Karma** – .NET Framework, .NET Core ve .NET 5/6 ile çalışır.
-- **Yerleşik AES‑256 desteği** – harici araçlara ihtiyaç yoktur.
-- **Basit API** – dosya değiştirme ve arşivi tek satır kodla yapılır.
-- **Çapraz platformu** – Windows, Linux ve macOS üzerinde çalışır.
+## Şifreli 7z Dosyaları İçin Aspose.Zip Neden Kullanılmalı?
+- **Full .NET integration** – .NET Framework, .NET Core ve .NET 5/6 ile çalışır.  
+- **Built‑in AES‑256 support** – harici araçlara gerek yok; **how to set AES**'i kolayca öğrenebilirsiniz.  
+- **Simple API** – **add file to 7z** ve arşivi kaydetmek için tek satır çağrıları.  
+- **Cross‑platform** – Windows, Linux ve macOS üzerinde çalışır.
 
 ## Önkoşullar
 
 Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-- **Aspose.Zip for .NET Library** – indirmek için [buraya](https://releases.aspose.com/zip/net/) tıklayın.
-- **Yazılabilir bir klasör** – arşivin kaydedileceği makinenizdeki klasör.
-- **Kaynak dosyası** (ör. `file.dat`) – dosyayı sıkıştırmak ve saklamak istediğiniz.
+- **Aspose.Zip for .NET Library** – indirmek için [buraya](https://releases.aspose.com/zip/net/) tıklayın.  
+- **A writable folder** on your machine where the archive will be saved.  
+- **A source file** (e.g., `file.dat`) that you want to compress and encrypt.
 
-## Ad Alanlarını İçe Aktar
+## Ad Alanlarını İçe Aktarma
 
-Gerekli ad alanını C# dosyanızın en üstüne ekleyin:
+C# dosyanızın en üstüne gerekli ad alanını ekleyin:
 
 ```csharp
 using Aspose.Zip.SevenZip;
@@ -54,22 +60,19 @@ using Aspose.Zip.SevenZip;
 
 ## Adım Adım Kılavuz
 
-### Adım 1: Çalışma Dizinini Tanımlayın
+### Adım 1: Çalışma Dizinini Tanımlama
 
-Sıkıştırmak istediğiniz kaynak dosyayı içeren klasörün yolunu ayarlayın.
+Sıkıştırmak istediğiniz kaynak dosyanın bulunduğu klasörün yolunu ayarlayın.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
+`"Your Document Directory"` ifadesini makinenizdeki gerçek yol ile değiştirin.
 
-"Belge Dizininiz"" ifadesini makinenizdeki gerçek yolla değiştirin.
+### Adım 2: Şifreli 7z Girişi Oluşturma
 
-"Belge Dizininiz"" ifadesini makinenizde gerçek yol ile girin.
-
-### Adım 2: Şifrelenmiş 7z Girişini Oluşturun
-
-Bu eğitimin özü – yeni bir dosya akışı açıyoruz, bir `SevenZipArchive` oluşturuyoruz, bir giriş ekliyoruz ve arşivi kaydediyoruz. Bu örnek, arşivin içine `data.bin` olarak tek bir dosya (`file.dat`) ekler.
+Öğreticinin çekirdeği – yeni bir dosya akışı açar, bir `SevenZipArchive` oluşturur, bir giriş ekler ve arşivi kaydederiz. Bu örnek, tek bir dosyayı (`file.dat`) arşiv içinde `data.bin` olarak ekler.
 
 ```csharp
 //ExStart: CreateSevenZipEntry
@@ -84,53 +87,53 @@ using (FileStream sevenZipFile = File.Open("archive.7z", FileMode.Create))
 //ExEnd: CreateSevenZipEntry
 ```
 
-> **İpucu:** AES şifrelemesini etkinleştirmek için `SevenZipArchive` üzerindeki `Encryption` özelliğini `Save` yönteminden önce girin. (Örneği kısa tutmak için bu özellik burada gösterilmemiştir.)
+> **Pro tip:** AES şifrelemesini etkinleştirmek için `Save` metodunu çağırmadan önce `SevenZipArchive` üzerindeki `Encryption` özelliğini ayarlayın. (Örneği kısa tutmak için özellik burada atlanmıştır.)
 
-### 3. Adım: Başarıyı Onaylayın
+### Adım 3: Başarıyı Doğrulama
 
-İşlemin hatasız tamamlandığını bilmeniz için dostane bir mesaj yazdırın.
+İşlemin hatasız tamamlandığını bilmeniz için dostça bir mesaj yazdırın.
 
 ```csharp
 Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Settings");
 ```
 
-### Adım 4: Arşivi Doğrulayın (İsteğe Bağlı)
+### Adım 4: Arşivi Doğrulama (İsteğe Bağlı)
 
-Program çalıştıktan sonra `archive.7z'yi içeren klasöre gidin ve onu 7‑zip istemcisiyle açmayı deneyin. Adım 2'de şifreleme eklediyseniz sizden bir parola istenmelidir.
+Program çalıştıktan sonra `archive.7z` dosyasının bulunduğu klasöre gidin ve bir 7‑zip istemcisiyle açmayı deneyin. Adım 2'de şifreleme eklediyseniz bir şifre sorulacaktır. Bu adım ayrıca **verify 7z password** işlemini de test etmenizi sağlar.
 
 ## Yaygın Sorunlar ve Çözümler
 
-| Sorun | Sebep | Çözüm |
-|----------|----------|-----|
-| **Dosya bulunamadı** | Yanlış `dataDir` veya kaynak dosya adı | Yolu tekrar kontrol edin ve `file.dat` dosyalarının mevcut olduğundan emin olun. |
-| **Erişim reddedildi** | Yetersiz yazma izinleri | Uygulamayı yönetici olarak çalıştırın veya yazılabilir bir klasör seçin. |
-| **Şifreleme uygulanmadı** | Arşivde şifreleme ayarının eksik olması | `Save` yönteminden önce `archive.Encryption = EncryptionAlgorithm.Aes256;` ayarlayın. |
+| Sorun | Neden | Çözüm |
+|-------|-------|-----|
+| **File not found** | `dataDir` veya kaynak dosya adının yanlış olması | Yolu tekrar kontrol edin ve `file.dat` dosyasının mevcut olduğundan emin olun. |
+| **Access denied** | Yetersiz yazma izinleri | Uygulamayı yükseltilmiş yetkilerle çalıştırın veya yazılabilir bir klasör seçin. |
+| **Encryption not applied** | Arşivde şifreleme ayarlarının eksik olması | `Save` metodundan önce `archive.Encryption = EncryptionAlgorithm.Aes256;` ayarlayın. |
 
 ## Sıkça Sorulan Sorular
 
-### S: Aspose.Zip for .NET'i diğer arşiv formatlarıyla kullanabilir miyim?
-Aspose.Zip öncelikle ZIP ve 7z formatlarına odaklanır. Diğer formatları işlemek için veya formatlara özel kütüphaneleri inceleyin.
+**Q: Aynı 7z arşivine birden fazla dosya ekleyebilir miyim?**  
+A: Kesinlikle. `archive.CreateEntry` metodunu eklemek istediğiniz her dosya için **add file to 7z** veya **add multiple files 7z** olarak çağırın.  
 
-### S: Aspose.Zip'i kullanarak zip arşivindeki dosyaları nasıl çıkarabilirim?
-Aspose.Zip'in `ExtractToDirectory` gibi çıkarma özelliklerini zip arşivinden dosyaları kullanarak kolayca çıkarabilirsiniz.
+**Q: AES şifrelemesi için şifreyi nasıl belirlerim?**  
+A: `SevenZipArchive` üzerinde `Password` özelliğini kaydetmeden önce kullanın, örneğin `archive.Password = "YourStrongPassword";`. Bu, çıkarma sırasında **verify 7z password** işlemini yapmanıza olanak tanır.  
 
-### S: Aspose.Zip büyük ölçekli uygulamalar için uygun mudur?
-Evet! Aspose.Zip büyük ayarlar uygulamaları için tasarlanmış ve verimli zip arşivi manipülasyonu sağlar.
+**Q: Aspose.Zip diğer arşiv formatlarını destekliyor mu?**  
+A: Aspose.Zip öncelikle ZIP ve 7z formatlarına odaklanır. Diğer formatlar için özel kütüphaneleri değerlendirin.  
 
-### S: Aspose.Zip kullanımında lisanslamayla ilgili hususlar var mı?
-Evet, geçerli bir lisansa sahip olmanız gerekir. Geçici kullanım veya bozulma için geçici bir lisans alabilirsiniz [buradan](https://purchase.aspose.com/temporary-license/).
+**Q: Üretim kullanımında lisans gerekli mi?**  
+A: Evet. Değerlendirme için geçici bir lisans alabilirsiniz [buradan](https://purchase.aspose.com/temporary-license/).  
 
-### S: Aspose.Zip için nereden yardım alabilirim veya toplulukla bağlantı kurabilirim?
-Aspose.Zip forumunu ziyaret ederek destek alabilir, sorularınızı sorabilir ve topluca iletişim kurabilirsiniz: [Aspose.Zip forumu](https://forum.aspose.com/c/zip/37).
+**Q: Topluluk desteğini nereden alabilirim?**  
+A: Sorular sormak ve deneyimlerinizi paylaşmak için [Aspose.Zip forumunu](https://forum.aspose.com/c/zip/37) ziyaret edin.  
 
-## Çözüm
+## Sonuç
 
-Artık Aspose.Zip for .NET ile **şifreli 7z** arşivleri oluşturmak için sağlam bir temel fayda. Yukarıdaki bilgileri kaydetme dosyalarını güvenli bir şekilde sıkıştırabilir, 7z konteynerine paketleyebilir ve AES şifrelemesini etkinleştirebilirsiniz. Daha fazla girişi birleştirerek, şifre belirleyerek veya bu örneği daha büyük iş akışlarına entegre ederek örneği genişletebilirsiniz.
+Artık Aspose.Zip for .NET ile **how to encrypt 7z** arşivleri için sağlam bir temele sahipsiniz. Yukarıdaki adımları izleyerek dosyaları güvenli bir şekilde sıkıştırabilir, bir 7z konteynerine ekleyebilir ve gerektiğinde AES şifrelemesini etkinleştirebilirsiniz. Daha fazla giriş ekleyerek, şifreler belirleyerek veya otomatik yedekleme hatları gibi daha büyük iş akışlarına entegre ederek bu örneği genişletmekten çekinmeyin.
 
 ---
 
-**Son Güncelleme:** 2025-12-25
-**Edilen'i Test Edin:** Aspose.Zip for .NET 24.11
+**Son Güncelleme:** 2026-05-05  
+**Test Edilen Versiyon:** Aspose.Zip for .NET 24.11  
 **Yazar:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
