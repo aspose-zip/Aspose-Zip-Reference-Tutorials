@@ -1,10 +1,17 @@
 ---
-date: 2025-12-25
-description: Opanuj Aspose.Zip dla .NET, aby tworzyć zaszyfrowane archiwa 7z. Ten
-  przykład Aspose.Zip pokazuje, jak dodać plik do 7z z szyfrowaniem i kompresją.
-linktitle: Create SevenZip Entry
+date: 2026-05-05
+description: Dowiedz się, jak szyfrować archiwa 7z przy użyciu Aspose.Zip dla .NET.
+  Ten przewodnik pokazuje, jak dodać plik do 7z, ustawić szyfrowanie AES i wygenerować
+  bezpieczne archiwum 7z.
+keywords:
+- how to encrypt 7z
+- add file to 7z
+- how to set aes
+- generate 7z archive
+- add multiple files 7z
+linktitle: Utwórz wpis SevenZip
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Jak utworzyć zaszyfrowane archiwum 7z przy użyciu Aspose.Zip dla .NET
+title: Jak zaszyfrować archiwum 7z przy użyciu Aspose.Zip dla .NET
 url: /pl/net/sevenzip-compression/create-sevenzip-entry/
 weight: 11
 ---
@@ -13,37 +20,35 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Utwórz zaszyfrowane archiwum 7z przy użyciu Aspose.Zip dla .NET
+# Jak zaszyfrować archiwum 7z przy użyciu Aspose.Zip dla .NET
 
 ## Wprowadzenie
 
-W tym samouczku dowiesz się **jak tworzyć zaszyfrowane pliki 7z** przy użyciu biblioteki Aspose.Zip dla .NET. Niezależnie od tego, czy musisz chronić wrażliwe dane, spełniać wymogi polityk bezpieczeństwa, czy po prostu efektywnie kompresować pliki, ten przewodnik poprowadzi Cię przez każdy krok — od skonfigurowania projektu po potwierdzenie, że archiwum zostało pomyślnie utworzone. Zanurzmy się i zobaczmy, jak łatwo dodać plik do archiwum 7z z szyfrowaniem AES.
+W tym samouczku nauczysz się **jak zaszyfrować 7z** pliki przy użyciu biblioteki Aspose.Zip dla .NET. Niezależnie od tego, czy musisz chronić wrażliwe dane, spełniać wymogi bezpieczeństwa, czy po prostu efektywnie kompresować pliki, ten przewodnik przeprowadzi Cię przez każdy krok — od konfiguracji projektu po potwierdzenie, że archiwum zostało pomyślnie utworzone. Zanurzmy się i zobaczmy, jak łatwo **dodać plik do 7z** z szyfrowaniem AES i wygenerować niezawodne archiwum 7z.
 
 ## Szybkie odpowiedzi
-- **Co oznacza „create encrypted 7z”?** Oznacza to generowanie archiwum 7‑zip chronionego szyfrowaniem AES.
-- **Jakiej biblioteki użyto?** Aspose.Zip for .NET.
-- **Czy potrzebna jest licencja?** Tymczasowa licencja wystarczy do testów; pełna licencja jest wymagana w środowisku produkcyjnym.
-- **Czy mogę dodać wiele plików?** Tak, możesz wywoływać `CreateEntry` wielokrotnie dla każdego pliku.
-- **Czy szyfrowanie AES jest obsługiwane?** Tak, Aspose.Zip obsługuje szyfrowanie AES‑256 dla archiwów 7z.
+- **Co oznacza „create encrypted 7z”?** It means generating a 7‑zip archive that is protected with AES encryption.  
+- **Jakiej biblioteki użyto?** Aspose.Zip for .NET.  
+- **Czy potrzebna jest licencja?** A temporary license is sufficient for testing; a full license is required for production.  
+- **Czy mogę dodać wiele plików?** Yes—call `CreateEntry` repeatedly to **add multiple files 7z**.  
+- **Czy szyfrowanie AES jest obsługiwane?** Yes, Aspose.Zip supports **how to set AES**‑256 encryption for 7z archives.  
 
 ## Co to jest zaszyfrowane archiwum 7z?
-
-Archiwum 7z to format kontenera o wysokim stopniu kompresji. Gdy **tworzysz zaszyfrowane archiwa 7z**, zawartość jest mieszana przy użyciu szyfrowania AES, co sprawia, że jest nieczytelna bez właściwego hasła. Jest to idealne rozwiązanie do bezpiecznego przesyłania lub przechowywania poufnych plików.
+Archiwum 7z to format kontenera o wysokiej kompresji. Gdy **create encrypted 7z** archiwa, zawartość jest mieszana przy użyciu szyfrowania AES, co sprawia, że jest nieczytelna bez właściwego hasła. Jest to idealne rozwiązanie do bezpiecznego przesyłania lub przechowywania poufnych plików.
 
 ## Dlaczego używać Aspose.Zip do zaszyfrowanych plików 7z?
+- **Pełna integracja z .NET** – działa z .NET Framework, .NET Core oraz .NET 5/6.  
+- **Wbudowane wsparcie AES‑256** – nie potrzebujesz zewnętrznych narzędzi; możesz łatwo dowiedzieć się **how to set AES**.  
+- **Proste API** – jednowierszowe wywołania do **add file to 7z** i zapis archiwum.  
+- **Wieloplatformowy** – działa na Windows, Linux i macOS.  
 
-- **Pełna integracja z .NET** – działa z .NET Framework, .NET Core oraz .NET 5/6.
-- **Wbudowane wsparcie AES‑256** – nie wymaga zewnętrznych narzędzi.
-- **Proste API** – jednowierszowe wywołania do dodawania plików i zapisywania archiwum.
-- **Wieloplatformowość** – działa na Windows, Linux i macOS.
+## Wymagania wstępne
 
-## Prerequisites
+Zanim zaczniemy, upewnij się, że masz następujące elementy:
 
-Before we start, ensure you have the following:
-
-- **Biblioteka Aspose.Zip for .NET** – pobierz ją [tutaj](https://releases.aspose.com/zip/net/).
-- **Folder z prawem zapisu** na Twoim komputerze, w którym zostanie zapisane archiwum.
-- **Plik źródłowy** (np. `file.dat`), który chcesz skompresować i zaszyfrować.
+- **Aspose.Zip for .NET Library** – pobierz go [tutaj](https://releases.aspose.com/zip/net/).  
+- **Folder zapisywalny** na twoim komputerze, w którym zostanie zapisane archiwum.  
+- **Plik źródłowy** (np. `file.dat`), który chcesz skompresować i zaszyfrować.  
 
 ## Importowanie przestrzeni nazw
 
@@ -63,7 +68,7 @@ Set the path to the folder that contains the source file you want to compress.
 string dataDir = "Your Document Directory";
 ```
 
-Replace `"Your Document Directory"` with the actual path on your machine.
+Zastąp `"Your Document Directory"` rzeczywistą ścieżką na swoim komputerze.
 
 ### Krok 2: Utwórz zaszyfrowany wpis 7z
 
@@ -82,7 +87,7 @@ using (FileStream sevenZipFile = File.Open("archive.7z", FileMode.Create))
 //ExEnd: CreateSevenZipEntry
 ```
 
-> **Wskazówka:** Aby włączyć szyfrowanie AES, ustaw właściwość `Encryption` na obiekcie `SevenZipArchive` przed wywołaniem `Save`. (Właściwość została pominięta, aby przykład był zwięzły.)
+> **Pro tip:** Aby włączyć szyfrowanie AES, ustaw właściwość `Encryption` na obiekcie `SevenZipArchive` przed wywołaniem `Save`. (Właściwość została pominięta, aby przykład był zwięzły.)
 
 ### Krok 3: Potwierdź sukces
 
@@ -94,45 +99,40 @@ Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Set
 
 ### Krok 4: Zweryfikuj archiwum (opcjonalnie)
 
-After the program runs, navigate to the folder containing `archive.7z` and try opening it with a 7‑zip client. You should be prompted for a password if you added encryption in Step 2.
+After the program runs, navigate to the folder containing `archive.7z` and try opening it with a 7‑zip client. You should be prompted for a password if you added encryption in Step 2. This step also lets you **verify 7z password** handling.
 
-## Częste problemy i rozwiązania
+## Typowe problemy i rozwiązania
 
 | Problem | Przyczyna | Rozwiązanie |
 |-------|-------|-----|
-| **File not found** | Nieprawidłowy `dataDir` lub nazwa pliku źródłowego | Sprawdź ponownie ścieżkę i upewnij się, że `file.dat` istnieje. |
-| **Access denied** | Brak wystarczających uprawnień do zapisu | Uruchom aplikację z podwyższonymi uprawnieniami lub wybierz folder z prawem zapisu. |
-| **Encryption not applied** | Brak ustawień szyfrowania w archiwum | Ustaw `archive.Encryption = EncryptionAlgorithm.Aes256;` przed `Save`. |
+| **Plik nie znaleziony** | Nieprawidłowy `dataDir` lub nazwa pliku źródłowego | Sprawdź ponownie ścieżkę i upewnij się, że `file.dat` istnieje. |
+| **Odmowa dostępu** | Brak wystarczających uprawnień do zapisu | Uruchom aplikację z podwyższonymi uprawnieniami lub wybierz folder zapisywalny. |
+| **Szyfrowanie nie zastosowane** | Brak ustawień szyfrowania w archiwum | Ustaw `archive.Encryption = EncryptionAlgorithm.Aes256;` przed `Save`. |
 
 ## Najczęściej zadawane pytania
 
-### P: Czy mogę używać Aspose.Zip for .NET z innymi formatami archiwów?
+**Q: Czy mogę dodać więcej niż jeden plik do tego samego archiwum 7z?**  
+A: Oczywiście. Wywołaj `archive.CreateEntry` dla każdego pliku, który chcesz **add file to 7z** lub **add multiple files 7z**.  
 
-Aspose.Zip primarily focuses on ZIP and 7z formats. For handling other formats, explore specific libraries tailored to those formats.
+**Q: Jak określić hasło dla szyfrowania AES?**  
+A: Użyj właściwości `Password` w obiekcie `SevenZipArchive` przed zapisem, np. `archive.Password = "YourStrongPassword";`. Pozwala to później **verify 7z password** przy wyodrębnianiu.  
 
-### P: Jak mogę wyodrębnić pliki z archiwum zip przy użyciu Aspose.Zip?
+**Q: Czy Aspose.Zip obsługuje inne formaty archiwów?**  
+A: Aspose.Zip koncentruje się głównie na formatach ZIP i 7z. Dla innych formatów rozważ dedykowane biblioteki.  
 
-Utilize the extraction features provided by Aspose.Zip, such as the `ExtractToDirectory` method, to effortlessly extract files from a zip archive.
+**Q: Czy licencja jest wymagana do użytku produkcyjnego?**  
+A: Tak. Tymczasową licencję do oceny możesz uzyskać [tutaj](https://purchase.aspose.com/temporary-license/).  
 
-### P: Czy Aspose.Zip jest odpowiedni dla aplikacji o dużej skali?
+**Q: Gdzie mogę uzyskać wsparcie społeczności?**  
+A: Odwiedź [forum Aspose.Zip](https://forum.aspose.com/c/zip/37), aby zadawać pytania i dzielić się doświadczeniami.  
 
-Absolutely! Aspose.Zip is designed to handle large‑scale applications, providing efficient zip archive manipulation capabilities.
+## Podsumowanie
 
-### P: Czy istnieją kwestie licencyjne przy używaniu Aspose.Zip?
-
-Yes, ensure you have a valid license. For temporary usage or exploration, you can obtain a temporary license [here](https://purchase.aspose.com/temporary-license/).
-
-### P: Gdzie mogę uzyskać pomoc lub połączyć się ze społecznością Aspose.Zip?
-
-Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) to seek support, ask questions, and connect with the community.
-
-## Zakończenie
-
-You now have a solid foundation for **creating encrypted 7z** archives with Aspose.Zip for .NET. By following the steps above, you can securely compress files, add them to a 7z container, and even enable AES encryption when needed. Feel free to expand this example by adding more entries, setting passwords, or integrating it into larger workflows.
+Masz teraz solidne podstawy do **how to encrypt 7z** archiwów przy użyciu Aspose.Zip dla .NET. Postępując zgodnie z powyższymi krokami, możesz bezpiecznie kompresować pliki, dodawać je do kontenera 7z i w razie potrzeby włączać szyfrowanie AES. Śmiało rozbudowuj ten przykład, dodając kolejne wpisy, ustawiając hasła lub integrując go z większymi przepływami pracy, takimi jak zautomatyzowane pipeline'y backupu.
 
 ---
 
-**Ostatnia aktualizacja:** 2025-12-25  
+**Ostatnia aktualizacja:** 2026-05-05  
 **Testowano z:** Aspose.Zip for .NET 24.11  
 **Autor:** Aspose
 
