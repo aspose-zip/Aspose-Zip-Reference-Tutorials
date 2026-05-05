@@ -133,15 +133,15 @@ C4: Geçici lisans için [bu bağlantıyı](https://purchase.aspose.com/temporar
 **S5: Aspose.Zip'i nereden satın alabilirim?**  
 C5: Aspose.Zip'i satın almak için [satın alma sayfasını](https://purchase.aspose.com/buy) ziyaret edin.
 
+---
+
+**Son Güncelleme:** 2026-02-23  
+**Test Edilen Versiyon:** Aspose.Zip for .NET 24.11 (yazım anındaki en son sürüm)  
+**Yazar:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Son Güncelleme:** 2026-02-23  
-**Test Edilen Versiyon:** Aspose.Zip for .NET 24.11 (yazım anındaki en son sürüm)  
-**Yazar:** Aspose

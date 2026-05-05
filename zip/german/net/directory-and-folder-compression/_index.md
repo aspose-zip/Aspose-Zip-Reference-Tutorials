@@ -10,11 +10,7 @@ url: /de/net/directory-and-folder-compression/
 weight: 22
 ---
 
- paths, code, variable names. Good.
-
-Check for any stray formatting: The bullet lists use hyphens. Keep same.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

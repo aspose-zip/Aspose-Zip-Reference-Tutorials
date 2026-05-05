@@ -133,15 +133,15 @@ A4: 获取临时许可证，请访问[此链接](https://purchase.aspose.com/tem
 **Q5: 我在哪里可以购买 Aspose.Zip？**  
 A5: 购买 Aspose.Zip，请访问[购买页面](https://purchase.aspose.com/buy)。
 
+---
+
+**最后更新：** 2026-02-23  
+**测试环境：** Aspose.Zip for .NET 24.11（撰写时的最新版本）  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最后更新：** 2026-02-23  
-**测试环境：** Aspose.Zip for .NET 24.11（撰写时的最新版本）  
-**作者：** Aspose

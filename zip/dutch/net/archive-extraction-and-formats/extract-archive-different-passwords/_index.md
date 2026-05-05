@@ -134,15 +134,15 @@ A4: Voor een tijdelijke licentie, bezoek [deze link](https://purchase.aspose.com
 **Q5: Waar kan ik Aspose.Zip kopen?**  
 A5: Om Aspose.Zip te kopen, bezoek de [aankooppagina](https://purchase.aspose.com/buy).
 
+---
+
+**Laatst bijgewerkt:** 2026-02-23  
+**Getest met:** Aspose.Zip for .NET 24.11 (latest op het moment van schrijven)  
+**Auteur:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Laatst bijgewerkt:** 2026-02-23  
-**Getest met:** Aspose.Zip for .NET 24.11 (latest op het moment van schrijven)  
-**Auteur:** Aspose

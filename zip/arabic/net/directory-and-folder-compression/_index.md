@@ -9,30 +9,6 @@ url: /ar/net/directory-and-folder-compression/
 weight: 22
 ---
 
- link text? Actually it's not a link, just quoted. Should we translate? The rule: keep technical terms in English. That phrase is a title; could keep English. We'll translate note but keep the quoted English phrase unchanged.
-
-Also bullet lists: translate each bullet.
-
-Also the FAQ: translate Q and A but keep code snippets.
-
-Also the "Last Updated", "Tested With", "Author". Translate labels.
-
-Make sure to preserve markdown formatting.
-
-Let's produce final content.
-
-Be careful with Arabic direction: we can just write Arabic text; markdown will handle.
-
-Let's start.
-
-We'll keep the opening shortcodes as is.
-
-Now translate.
-
-I'll produce Arabic translation.
-
-Proceed.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

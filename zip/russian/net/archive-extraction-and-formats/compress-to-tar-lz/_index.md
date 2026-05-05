@@ -129,13 +129,6 @@ string dataDir = "Your Document Directory";
 **Q:** Где получить помощь, если возникнут проблемы?  
 **A:** Посетите [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) для поддержки сообщества и официальной помощи.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Последнее обновление:** 2026-02-23  
@@ -143,3 +136,10 @@ string dataDir = "Your Document Directory";
 **Автор:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

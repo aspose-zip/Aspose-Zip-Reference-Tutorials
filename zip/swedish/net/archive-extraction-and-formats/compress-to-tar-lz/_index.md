@@ -129,13 +129,6 @@ Du vet nu **how to compress tar.lz**‑filer med Aspose.Zip för .NET, oavsett o
 **Q:** Var kan jag få hjälp om jag stöter på problem?  
 **A:** Besök [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) för community‑support och officiell hjälp.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Senast uppdaterad:** 2026-02-23  
@@ -143,3 +136,10 @@ Du vet nu **how to compress tar.lz**‑filer med Aspose.Zip för .NET, oavsett o
 **Författare:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

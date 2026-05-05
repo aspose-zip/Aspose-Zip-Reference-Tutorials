@@ -9,17 +9,7 @@ url: /zh-hant/net/archive-extraction-and-formats/extract-archive-different-passw
 weight: 10
 ---
 
-
-
-**測試環境：** Aspose.Zip for .NET 24.11 (latest at time of writing)
-
-**作者：** Aspose
-
-Now ensure no extra spaces.
-
-Now produce final content with all translations.
-
-Let's assemble.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -143,15 +133,15 @@ A4: 前往[此連結](https://purchase.aspose.com/temporary-license/) 申請臨�
 **Q5: 我該從哪裡購買 Aspose.Zip？**  
 A5: 前往[購買頁面](https://purchase.aspose.com/buy) 進行購買。
 
+---
+
+**最後更新：** 2026-02-23  
+**測試環境：** Aspose.Zip for .NET 24.11 (latest at time of writing)  
+**作者：** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最後更新：** 2026-02-23  
-**測試環境：** Aspose.Zip for .NET 24.11 (latest at time of writing)  
-**作者：** Aspose

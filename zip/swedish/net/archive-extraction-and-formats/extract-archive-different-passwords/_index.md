@@ -133,15 +133,15 @@ A4: För en tillfällig licens, besök [denna länk](https://purchase.aspose.com
 **Q5: Var kan jag köpa Aspose.Zip?**  
 A5: För att köpa Aspose.Zip, besök [köpsidan](https://purchase.aspose.com/buy).
 
+---
+
+**Senast uppdaterad:** 2026-02-23  
+**Testat med:** Aspose.Zip for .NET 24.11 (latest at time of writing)  
+**Författare:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Senast uppdaterad:** 2026-02-23  
-**Testat med:** Aspose.Zip for .NET 24.11 (latest at time of writing)  
-**Författare:** Aspose

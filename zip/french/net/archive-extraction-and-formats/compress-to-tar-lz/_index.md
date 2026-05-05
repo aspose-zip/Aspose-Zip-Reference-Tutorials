@@ -126,13 +126,6 @@ Vous savez maintenant **how to compress tar.lz** fichiers en utilisant Aspose.Zi
 **Q :** Où puis‑je obtenir de l'aide en cas de problème ?  
 **A :** Consultez le [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) pour le support communautaire et l'assistance officielle.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Dernière mise à jour :** 2026-02-23  
@@ -140,3 +133,10 @@ Vous savez maintenant **how to compress tar.lz** fichiers en utilisant Aspose.Zi
 **Auteur :** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

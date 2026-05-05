@@ -129,13 +129,6 @@ Nyní víte, **jak komprimovat tar.lz** soubory pomocí Aspose.Zip pro .NET, ať
 **Q:** Kde získám pomoc, pokud narazím na problémy?  
 **A:** Navštivte [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) pro komunitní podporu a oficiální asistenci.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Poslední aktualizace:** 2026-02-23  
@@ -143,3 +136,10 @@ Nyní víte, **jak komprimovat tar.lz** soubory pomocí Aspose.Zip pro .NET, ať
 **Autor:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

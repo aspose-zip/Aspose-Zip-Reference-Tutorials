@@ -134,15 +134,15 @@ A4: Untuk lisensi sementara, kunjungi [tautan ini](https://purchase.aspose.com/t
 **Q5: Di mana saya dapat membeli Aspose.Zip?**  
 A5: Untuk membeli Aspose.Zip, kunjungi [halaman pembelian](https://purchase.aspose.com/buy).
 
+---
+
+**Terakhir Diperbarui:** 2026-02-23  
+**Diuji Dengan:** Aspose.Zip untuk .NET 24.11 (terbaru pada saat penulisan)  
+**Penulis:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Terakhir Diperbarui:** 2026-02-23  
-**Diuji Dengan:** Aspose.Zip untuk .NET 24.11 (terbaru pada saat penulisan)  
-**Penulis:** Aspose

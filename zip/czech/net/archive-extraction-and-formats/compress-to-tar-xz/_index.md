@@ -10,9 +10,7 @@ url: /cs/net/archive-extraction-and-formats/compress-to-tar-xz/
 weight: 14
 ---
 
- unchanged.
-
-Now produce final output.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

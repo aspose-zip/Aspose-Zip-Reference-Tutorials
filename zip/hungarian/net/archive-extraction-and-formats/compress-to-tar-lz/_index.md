@@ -129,15 +129,15 @@ Most már tudja, **how to compress tar.lz** fájlok létrehozását az Aspose.Zi
 **Q:** Hol kaphatok segítséget, ha problémákba ütközöm?  
 **A:** Látogassa meg az [Aspose.Zip fórumot](https://forum.aspose.com/c/zip/37) a közösségi támogatás és hivatalos segítség érdekében.
 
+---
+
+**Last Updated:** 2026-02-23  
+**Tested With:** Aspose.Zip for .NET (latest release)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-23  
-**Tested With:** Aspose.Zip for .NET (latest release)  
-**Author:** Aspose

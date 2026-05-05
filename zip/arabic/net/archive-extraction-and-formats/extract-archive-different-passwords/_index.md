@@ -132,15 +132,15 @@ archive.Entries[1].Extract(dataDir + "asyoulik_extracted_pass_out.txt", "second_
 **س5: أين يمكنني شراء Aspose.Zip؟**  
 ج5: لشراء Aspose.Zip، زر [صفحة الشراء](https://purchase.aspose.com/buy).
 
+---
+
+**آخر تحديث:** 2026-02-23  
+**تم الاختبار مع:** Aspose.Zip for .NET 24.11 (latest at time of writing)  
+**المؤلف:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**آخر تحديث:** 2026-02-23  
-**تم الاختبار مع:** Aspose.Zip for .NET 24.11 (latest at time of writing)  
-**المؤلف:** Aspose

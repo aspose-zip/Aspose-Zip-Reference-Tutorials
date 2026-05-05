@@ -9,11 +9,7 @@ url: /sv/net/directory-and-folder-compression/
 weight: 22
 ---
 
- formatting.
-
-Also keep shortcodes at start and end.
-
-Let's produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

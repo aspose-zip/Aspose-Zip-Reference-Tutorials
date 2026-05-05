@@ -10,24 +10,6 @@ url: /hu/net/archive-extraction-and-formats/compress-to-tar-xz/
 weight: 14
 ---
 
-:** 2026-02-23 -> keep date.
-
-**Tested With:** Aspose.Zip for .NET 24.11 -> keep.
-
-**Author:** Aspose -> keep.
-
-Then closing shortcodes.
-
-Now produce final content with same markdown.
-
-Let's translate.
-
-I'll write Hungarian translations.
-
-Be careful with bold formatting.
-
-Proceed.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

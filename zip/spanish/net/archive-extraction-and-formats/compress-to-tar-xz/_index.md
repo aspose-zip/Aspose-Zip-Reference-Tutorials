@@ -10,29 +10,7 @@ url: /es/net/archive-extraction-and-formats/compress-to-tar-xz/
 weight: 14
 ---
 
- there additional examples for other archive formats? => etc.
-
-Q: Where can I get help or discuss issues? => etc.
-
-Q: Can I try Aspose.Zip for free before buying? => etc.
-
-Conclusion: translate.
-
-Last Updated, Tested With, Author: keep as is? Probably translate labels but keep dates.
-
-"Last Updated:" => "Última actualización:" etc.
-
-"Tested With:" => "Probado con:" etc.
-
-"Author:" => "Autor:".
-
-Then closing shortcodes.
-
-Also include backtop button shortcode unchanged.
-
-Make sure to keep markdown formatting.
-
-Let's craft final output.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

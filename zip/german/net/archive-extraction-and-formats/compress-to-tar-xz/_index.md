@@ -10,32 +10,6 @@ url: /de/net/archive-extraction-and-formats/compress-to-tar-xz/
 weight: 14
 ---
 
-ose.Zip download page](https://releases.aspose.com/zip/net).
-
-Translate.
-
-Next "## Conclusion" -> "## Fazit"
-
-Paragraph translate.
-
-Then "---" keep.
-
-Then "**Last Updated:** 2026-02-23" keep but translate "Last Updated" maybe "Zuletzt aktualisiert". Keep bold formatting.
-
-**Tested With:** Aspose.Zip for .NET 24.11 keep.
-
-**Author:** Aspose keep.
-
-Then closing shortcodes.
-
-Finally backtop button shortcode.
-
-Make sure to keep all shortcodes unchanged.
-
-Now produce final content.
-
-Let's craft translation.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

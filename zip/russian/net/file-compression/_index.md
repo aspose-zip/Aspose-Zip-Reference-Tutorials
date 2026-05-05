@@ -10,10 +10,6 @@ url: /ru/net/file-compression/
 weight: 20
 ---
 
- bullet lines? Not needed.
-
-Now produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

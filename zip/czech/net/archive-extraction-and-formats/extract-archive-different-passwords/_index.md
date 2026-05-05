@@ -9,7 +9,7 @@ url: /cs/net/archive-extraction-and-formats/extract-archive-different-passwords/
 weight: 10
 ---
 
- content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -133,13 +133,6 @@ A4: Pro dočasnou licenci navštivte [tento odkaz](https://purchase.aspose.com/t
 **Q5: Kde mohu zakoupit Aspose.Zip?**  
 A5: Pro nákup Aspose.Zip navštivte [stránku nákupu](https://purchase.aspose.com/buy).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Poslední aktualizace:** 2026-02-23  
@@ -147,3 +140,10 @@ A5: Pro nákup Aspose.Zip navštivte [stránku nákupu](https://purchase.aspose.
 **Autor:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

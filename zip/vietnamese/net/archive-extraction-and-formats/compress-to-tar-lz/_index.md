@@ -130,15 +130,15 @@ Bây giờ bạn đã biết **how to compress tar.lz** bằng Aspose.Zip cho .N
 **Q:** Tôi có thể nhận hỗ trợ ở đâu nếu gặp vấn đề?  
 **A:** Truy cập [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) để được cộng đồng và hỗ trợ chính thức giúp đỡ.
 
+---
+
+**Cập nhật lần cuối:** 2026-02-23  
+**Đã kiểm tra với:** Aspose.Zip for .NET (latest release)  
+**Tác giả:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Cập nhật lần cuối:** 2026-02-23  
-**Đã kiểm tra với:** Aspose.Zip for .NET (latest release)  
-**Tác giả:** Aspose

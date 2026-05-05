@@ -10,8 +10,6 @@ url: /vi/net/directory-and-folder-compression/
 weight: 22
 ---
 
-.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

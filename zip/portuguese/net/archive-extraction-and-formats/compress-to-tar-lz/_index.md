@@ -9,10 +9,6 @@ url: /pt/net/archive-extraction-and-formats/compress-to-tar-lz/
 weight: 13
 ---
 
- need to keep shortcodes at top and bottom unchanged.
-
-Proceed.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
@@ -133,13 +129,6 @@ Agora você sabe **como compress tar.lz** arquivos usando Aspose.Zip para .NET, 
 **Q:** Onde posso obter ajuda se encontrar problemas?  
 **A:** Visite o [fórum Aspose.Zip](https://forum.aspose.com/c/zip/37) para suporte da comunidade e assistência oficial.
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Última atualização:** 2026-02-23  
@@ -147,3 +136,10 @@ Agora você sabe **como compress tar.lz** arquivos usando Aspose.Zip para .NET, 
 **Autor:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

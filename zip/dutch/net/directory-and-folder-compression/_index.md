@@ -10,12 +10,6 @@ url: /nl/net/directory-and-folder-compression/
 weight: 22
 ---
 
-? Actually note is blockquote, not code. No fenced code blocks present. So fine.
-
-Now produce final content with all translations.
-
-Let's assemble.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

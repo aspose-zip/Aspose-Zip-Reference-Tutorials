@@ -9,17 +9,7 @@ url: /it/net/archive-extraction-and-formats/compress-to-tar-lz/
 weight: 13
 ---
 
--23 -> **Ultimo aggiornamento:** 2026-02-23
-
-**Tested With:** Aspose.Zip for .NET (latest release) -> **Testato con:** Aspose.Zip for .NET (latest release)
-
-**Author:** Aspose -> **Autore:** Aspose
-
-Now produce final content with all translations.
-
-Check we preserved all shortcodes, code block placeholders, markdown links, images (none). Ensure headings count.
-
-Now produce final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -139,15 +129,15 @@ Ora sai **how to compress tar.lz** file usando Aspose.Zip per .NET, sia che tu s
 **Q:** Dove posso ottenere aiuto se riscontro problemi?  
 **A:** Visita il [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) per supporto della community e assistenza ufficiale.
 
+---
+
+**Ultimo aggiornamento:** 2026-02-23  
+**Testato con:** Aspose.Zip for .NET (latest release)  
+**Autore:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ultimo aggiornamento:** 2026-02-23  
-**Testato con:** Aspose.Zip for .NET (latest release)  
-**Autore:** Aspose

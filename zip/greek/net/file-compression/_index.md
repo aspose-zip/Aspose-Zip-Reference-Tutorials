@@ -11,17 +11,7 @@ url: /el/net/file-compression/
 weight: 20
 ---
 
- closing shortcodes.
-
-Then backtop button shortcode.
-
-All good.
-
-Now produce final content with translations.
-
-Be careful to keep markdown formatting exactly.
-
-Let's craft final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

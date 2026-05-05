@@ -134,13 +134,6 @@ A4: Para uma licença temporária, visite [este link](https://purchase.aspose.co
 **Q5: Onde posso comprar o Aspose.Zip?**  
 A5: Para adquirir o Aspose.Zip, visite a [página de compra](https://purchase.aspose.com/buy).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Última atualização:** 2026-02-23  
@@ -148,3 +141,10 @@ A5: Para adquirir o Aspose.Zip, visite a [página de compra](https://purchase.as
 **Autor:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

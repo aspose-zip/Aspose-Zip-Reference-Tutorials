@@ -10,18 +10,6 @@ url: /tr/net/archive-extraction-and-formats/compress-to-tar-xz/
 weight: 14
 ---
 
-. So table headers also translate. Keep pipe separators.
-
-But need to keep content inside code snippets (like `TarArchive`) unchanged.
-
-Also translate bullet points.
-
-Let's translate.
-
-I'll write Turkish.
-
-Proceed.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

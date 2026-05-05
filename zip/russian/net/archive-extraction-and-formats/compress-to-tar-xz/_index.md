@@ -10,10 +10,6 @@ url: /ru/net/archive-extraction-and-formats/compress-to-tar-xz/
 weight: 14
 ---
 
-codes exactly.
-
-Now produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

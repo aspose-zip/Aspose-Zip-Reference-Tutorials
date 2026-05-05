@@ -127,15 +127,15 @@ Artık Aspose.Zip for .NET kullanarak **tar.lz nasıl sıkıştırılır** dosya
 **Q:** Sorun yaşarsam nereden yardım alabilirim?  
 **A:** Topluluk desteği ve resmi yardım için [Aspose.Zip forumunu](https://forum.aspose.com/c/zip/37) ziyaret edin.
 
+---
+
+**Son Güncelleme:** 2026-02-23  
+**Test Edilen:** Aspose.Zip for .NET (son sürüm)  
+**Yazar:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Son Güncelleme:** 2026-02-23  
-**Test Edilen:** Aspose.Zip for .NET (son sürüm)  
-**Yazar:** Aspose

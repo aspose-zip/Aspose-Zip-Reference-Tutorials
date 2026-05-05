@@ -11,29 +11,7 @@ url: /el/net/archive-extraction-and-formats/extract-archive-different-passwords/
 weight: 10
 ---
 
-πανάληψη σε όλες τις καταχωρήσεις"
-
-- "Why This Approach Matters" => "Γιατί αυτή η προσέγγιση είναι σημαντική"
-
-- bullet points same.
-
-- "Common Issues & Solutions" table: translate headers Issue, Reason, Fix; also each row content.
-
-- "Frequently Asked Questions" => "Συχνές Ερωτήσεις"
-
-- Q1 etc. Translate questions and answers.
-
-- "Last Updated:" => "Τελευταία ενημέρωση:"
-
-- "Tested With:" => "Δοκιμάστηκε με:"
-
-- "Author:" => "Συγγραφέας:"
-
-- Also "products-backtop-button" shortcode unchanged.
-
-Make sure to keep markdown formatting.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -157,13 +135,6 @@ archive.Entries[1].Extract(dataDir + "asyoulik_extracted_pass_out.txt", "second_
 **Ε5: Πού μπορώ να αγοράσω το Aspose.Zip;**  
 Α5: Για να αγοράσετε το Aspose.Zip, επισκεφθείτε τη [σελίδα αγοράς](https://purchase.aspose.com/buy).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Τελευταία ενημέρωση:** 2026-02-23  
@@ -171,3 +142,10 @@ archive.Entries[1].Extract(dataDir + "asyoulik_extracted_pass_out.txt", "second_
 **Συγγραφέας:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

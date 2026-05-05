@@ -9,9 +9,7 @@ url: /th/net/directory-and-folder-compression/
 weight: 22
 ---
 
- link URLs same.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

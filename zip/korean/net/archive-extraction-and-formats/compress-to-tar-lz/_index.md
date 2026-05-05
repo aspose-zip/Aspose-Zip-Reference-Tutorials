@@ -129,15 +129,15 @@ string dataDir = "Your Document Directory";
 **Q:** 문제가 발생하면 어디에서 도움을 받을 수 있나요?  
 **A:** 커뮤니티 지원 및 공식 지원을 위해 [Aspose.Zip 포럼](https://forum.aspose.com/c/zip/37)을 방문하세요.
 
+---
+
+**마지막 업데이트:** 2026-02-23  
+**테스트 환경:** Aspose.Zip for .NET (최신 릴리스)  
+**작성자:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**마지막 업데이트:** 2026-02-23  
-**테스트 환경:** Aspose.Zip for .NET (최신 릴리스)  
-**작성자:** Aspose

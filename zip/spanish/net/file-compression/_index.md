@@ -10,11 +10,7 @@ url: /es/net/file-compression/
 weight: 20
 ---
 
- (**text**) as originally.
-
-We have some bold in Q&A: "**Q:**" etc. Keep.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

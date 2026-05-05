@@ -134,15 +134,15 @@ A4: Für eine temporäre Lizenz besuchen Sie [diesen Link](https://purchase.aspo
 **F5: Wo kann ich Aspose.Zip kaufen?**  
 A5: Um Aspose.Zip zu erwerben, besuchen Sie die [Kaufseite](https://purchase.aspose.com/buy).
 
+---
+
+**Zuletzt aktualisiert:** 2026-02-23  
+**Getestet mit:** Aspose.Zip für .NET 24.11 (aktuell zum Zeitpunkt der Erstellung)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Zuletzt aktualisiert:** 2026-02-23  
-**Getestet mit:** Aspose.Zip für .NET 24.11 (aktuell zum Zeitpunkt der Erstellung)  
-**Autor:** Aspose

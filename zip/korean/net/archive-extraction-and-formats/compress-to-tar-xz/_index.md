@@ -9,16 +9,6 @@ url: /ko/net/archive-extraction-and-formats/compress-to-tar-xz/
 weight: 14
 ---
 
- "Last Updated:" maybe keep as "마지막 업데이트:" etc.
-
-Also keep dates unchanged.
-
-Then closing shortcodes.
-
-Then backtop button shortcode.
-
-Let's produce final.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

@@ -10,25 +10,7 @@ url: /fr/net/directory-and-folder-compression/
 weight: 22
 ---
 
- "**Q : Quels runtimes .NET sont officiellement supportés ?**"
-
-Answer translate.
-
-Then horizontal line? Actually there is "---". Keep same.
-
-Then "**Last Updated:** 2026-02-23" keep same date.
-
-"**Tested With:** Aspose.Zip for .NET 24.11" keep.
-
-"**Author:** Aspose" keep.
-
-Then closing shortcodes.
-
-Also note rule: "For French, ensure proper RTL formatting if needed" Not needed.
-
-Now produce final content with same shortcodes and markdown.
-
-Let's construct final output.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

@@ -135,15 +135,15 @@ A4: Ideiglenes licencért látogasd meg [ezt a linket](https://purchase.aspose.c
 **Q5: Hol vásárolhatom meg az Aspose.Zip-et?**  
 A5: Az Aspose.Zip megvásárlásához látogasd meg a [vásárlási oldalt](https://purchase.aspose.com/buy).
 
+---
+
+**Utolsó frissítés:** 2026-02-23  
+**Tesztelve ezzel:** Aspose.Zip for .NET 24.11 (a legújabb a írás időpontjában)  
+**Szerző:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Utolsó frissítés:** 2026-02-23  
-**Tesztelve ezzel:** Aspose.Zip for .NET 24.11 (a legújabb a írás időpontjában)  
-**Szerző:** Aspose

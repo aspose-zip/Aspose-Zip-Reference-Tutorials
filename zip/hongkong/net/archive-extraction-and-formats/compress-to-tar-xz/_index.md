@@ -27,7 +27,7 @@ weight: 14
 
 ## TarXz 壓縮檔是什麼？
 
-A **TarXz archive** combines the traditional Unix `tar` container with XZ compression. The tar part bundles multiple files into a single stream, while XZ provides strong, lossless compression. This format is popular for distributing source code, backups, and large data sets because it retains directory structures and achieves smaller file sizes than plain tar or zip.
+TarXz 歸檔檔案結合了傳統的 Unix `tar` 容器和 XZ 壓縮技術。 tar 部分將多個檔案打包成一個檔案流，而 XZ 則提供強大的無損壓縮。這種格式常用於分發原始程式碼、備份檔案和大型資料集，因為它保留了目錄結構，並且比普通的 tar 或 zip 檔案更小。
 
 ## 為何使用 Aspose.Zip 在 .NET 中建立 tarxz 壓縮檔？
 
@@ -104,20 +104,20 @@ using (TarArchive archive = new TarArchive())
 
 ## 常見問答
 
-**Q: Aspose.Zip 是否相容所有 .NET 環境？**  
-A: Yes, Aspose.Zip works with .NET Framework 4.5+, .NET Core 3.1+, and .NET 5/6+. See the [documentation](https://reference.aspose.com/zip/net/) for details.
+**問： Aspose.Zip 是否相容所有 .NET 環境？**  
+答：是的，Aspose.Zip 支援 .NET Framework 4.5+、.NET Core 3.1+ 和 .NET 5/6+。詳情請參閱[文件](https://reference.aspose.com/zip/net/)。
 
-**Q: 如何取得 Aspose.Zip 的臨時授權？**  
-A: You can request a temporary license from the [Aspose temporary‑license page](https://purchase.aspose.com/temporary-license/).
+**問： 如何取得 Aspose.Zip 的臨時授權？**  
+答：您可以從[Aspose 臨時許可證頁面](https://purchase.aspose.com/temporary-license/)申請臨時許可證。
 
-**Q: 是否有其他壓縮格式的範例？**  
-A: Absolutely—explore the full set of examples in the [Aspose.Zip API reference](https://reference.aspose.com/zip/net/).
+**問： 是否有其他壓縮格式的範例？**  
+答：當然可以－您可以瀏覽[Aspose.Zip API 參考](https://reference.aspose.com/zip/net/)中的完整範例集。
 
-**Q: 哪裡可以取得協助或討論問題？**  
-A: Join the conversation on the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for community support and official answers.
+**問： 哪裡可以取得協助或討論問題？**  
+答：加入[Aspose.Zip 論壇](https://forum.aspose.com/c/zip/37)參與討論，獲取社群支持和官方答案。
 
-**Q: 購買前能否免費試用 Aspose.Zip？**  
-A: Yes, a free trial is available at the [Aspose.Zip download page](https://releases.aspose.com/zip/net).
+**問： 購買前能否免費試用 Aspose.Zip？**  
+答：是的，您可以在[Aspose.Zip 下載頁面](https://releases.aspose.com/zip/net)取得免費試用版。
 
 ## 結論
 

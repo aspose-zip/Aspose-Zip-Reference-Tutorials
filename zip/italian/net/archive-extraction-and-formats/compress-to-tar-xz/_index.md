@@ -10,19 +10,7 @@ url: /it/net/archive-extraction-and-formats/compress-to-tar-xz/
 weight: 14
 ---
 
- "Ultimo aggiornamento". Keep date.
-
-"Tested With" => "Testato con"
-
-"Author" => "Autore"
-
-Backtop button shortcode unchanged.
-
-Now produce final content.
-
-Make sure to preserve markdown headings (#, ##, ###). Keep code block placeholders unchanged.
-
-Let's write.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

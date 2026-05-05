@@ -9,14 +9,6 @@ url: /vi/net/archive-extraction-and-formats/extract-archive-different-passwords/
 weight: 10
 ---
 
-".
-
-Make sure to keep bold formatting.
-
-Now produce final content with all translations.
-
-Let's craft.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
@@ -141,13 +133,6 @@ A4: Đối với giấy phép tạm thời, hãy truy cập [liên kết này](h
 **Q5: Tôi có thể mua Aspose.Zip ở đâu?**  
 A5: Để mua Aspose.Zip, hãy truy cập [trang mua hàng](https://purchase.aspose.com/buy).
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
-
 ---
 
 **Cập nhật lần cuối:** 2026-02-23  
@@ -155,3 +140,10 @@ A5: Để mua Aspose.Zip, hãy truy cập [trang mua hàng](https://purchase.asp
 **Tác giả:** Aspose  
 
 ---
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

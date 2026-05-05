@@ -10,21 +10,7 @@ url: /el/net/directory-and-folder-compression/
 weight: 22
 ---
 
- "---". Keep.
-
-Then "**Last Updated:** 2026-02-23" keep same.
-
-"**Tested With:** Aspose.Zip for .NET 24.11" keep same.
-
-"**Author:** Aspose" keep same.
-
-Then closing shortcodes.
-
-Also there is a backtop button shortcode after.
-
-Make sure to keep all markdown formatting.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

@@ -10,13 +10,7 @@ url: /hi/net/archive-extraction-and-formats/extract-archive-different-passwords/
 weight: 10
 ---
 
-:** Aspose"
-
-Now produce final content with all translations.
-
-Be careful to preserve markdown formatting, code block placeholders, shortcodes.
-
-Let's craft final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
@@ -140,15 +134,15 @@ A4: अस्थायी लाइसेंस के लिए, [इस लि
 **Q5: Aspose.Zip कहाँ खरीद सकता हूँ?**  
 A5: Aspose.Zip खरीदने के लिए, [खरीद पेज](https://purchase.aspose.com/buy) पर जाएँ।
 
+---
+
+**अंतिम अपडेट:** 2026-02-23  
+**परीक्षण किया गया:** Aspose.Zip for .NET 24.11 (latest at time of writing)  
+**लेखक:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**अंतिम अपडेट:** 2026-02-23  
-**परीक्षण किया गया:** Aspose.Zip for .NET 24.11 (latest at time of writing)  
-**लेखक:** Aspose
