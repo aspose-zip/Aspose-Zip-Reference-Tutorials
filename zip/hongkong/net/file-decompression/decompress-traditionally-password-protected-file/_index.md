@@ -9,9 +9,7 @@ url: /zh-hant/net/file-decompression/decompress-traditionally-password-protected
 weight: 15
 ---
 
-.
-
-Proceed to write final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

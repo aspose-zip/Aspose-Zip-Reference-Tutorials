@@ -9,24 +9,6 @@ url: /it/net/file-compression/compress-file/
 weight: 10
 ---
 
-.
-
-Let's produce the translated version.
-
-We need to translate headings: "How to Compress Files with Aspose.Zip for .NET" => "Come comprimere file con Aspose.Zip per .NET". etc.
-
-Translate paragraphs.
-
-Make sure to keep code block placeholders unchanged.
-
-Also translate table content but keep code snippets unchanged.
-
-Translate FAQ questions and answers.
-
-Make sure to keep markdown formatting.
-
-Let's craft.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
@@ -116,39 +98,6 @@ Console.WriteLine("Successfully Compressed Files");
 | **Accesso negato** | L’applicazione non ha i permessi per leggere i file sorgente o scrivere l’archivio. | Esegui l’app con privilegi appropriati o regola le ACL della cartella. |
 | **File di grandi dimensioni causano OutOfMemory** | Caricamento di file molto grandi interamente in memoria. | Processa i file tramite stream o suddividi l’archivio in più parti. |
 
-## Domande frequenti
-
-### Q1: Posso usare Aspose.Zip per .NET in progetti commerciali?
-
-A1: Sì, puoi. Per ottenere una licenza, visita [qui](https://purchase.aspose.com/buy).
-
-### Q2: È disponibile una versione di prova gratuita?
-
-A2: Sì, puoi esplorare la libreria con una prova gratuita [qui](https://releases.aspose.com/).
-
-### Q3: Dove posso trovare la documentazione dettagliata?
-
-A3: Consulta la documentazione [qui](https://reference.aspose.com/zip/net/).
-
-### Q4: Come posso ottenere supporto o fare domande?
-
-A4: Visita il forum della community [qui](https://forum.aspose.com/c/zip/37).
-
-### Q5: Sono disponibili licenze temporanee?
-
-A5: Sì, puoi ottenere licenze temporanee [qui](https://purchase.aspose.com/temporary-license/).
-
-## FAQ aggiuntive
-
-**D: Aspose.Zip supporta altri formati di archivio oltre a Cpio?**  
-R: Sì, la libreria gestisce anche i formati Zip, Tar e GZip, offrendoti flessibilità per diversi casi d’uso.
-
-**D: Posso aggiungere protezione con password all’archivio?**  
-R: Sebbene Cpio non supporti la crittografia, la classe ZipArchive di Aspose.Zip fornisce metodi per impostare password.
-
-**D: L’API è compatibile con .NET Core?**  
-R: Assolutamente. Lo stesso codice funziona su .NET Core, .NET 5 e .NET 6 senza modifiche.
-
 ## FAQ
 
 **D: Cosa succede se la directory sorgente contiene sottocartelle?**  
@@ -167,15 +116,15 @@ R: La libreria gestisce file superiori a 2 GB; tuttavia, assicurati che il pro
 
 Congratulazioni! Hai imparato **come comprimere file** usando Aspose.Zip per .NET, creato un archivio Cpio e scoperto le insidie più comuni. Questa potente libreria può ora diventare una parte fondamentale del tuo flusso di lavoro di gestione dei file, sia che tu stia archiviando log, impacchettando risorse o preparando dati per il trasferimento.
 
+---
+
+**Ultimo aggiornamento:** 2026-02-25  
+**Testato con:** Aspose.Zip per .NET 24.12 (ultima release)  
+**Autore:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Ultimo aggiornamento:** 2026-02-25  
-**Testato con:** Aspose.Zip per .NET 24.12 (ultima release)  
-**Autore:** Aspose

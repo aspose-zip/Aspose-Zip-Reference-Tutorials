@@ -98,39 +98,6 @@ Console.WriteLine("Successfully Compressed Files");
 | **Accès refusé** | L’application n’a pas les permissions nécessaires pour lire les fichiers source ou écrire l’archive. | Exécutez l’application avec les privilèges appropriés ou ajustez les ACL du dossier. |
 | **Fichiers volumineux provoquant OutOfMemory** | Chargement de très gros fichiers en mémoire d’un seul coup. | Traitez les fichiers par flux ou divisez l’archive en plusieurs parties. |
 
-## Questions fréquemment posées
-
-### Q1 : Puis‑je utiliser Aspose.Zip pour .NET dans des projets commerciaux ?
-
-R1 : Oui, vous pouvez. Pour obtenir une licence, visitez [ici](https://purchase.aspose.com/buy).
-
-### Q2 : Un essai gratuit est‑il disponible ?
-
-R2 : Oui, vous pouvez explorer la bibliothèque avec un essai gratuit [ici](https://releases.aspose.com/).
-
-### Q3 : Où puis‑je trouver la documentation détaillée ?
-
-R3 : Consultez la documentation [ici](https://reference.aspose.com/zip/net/).
-
-### Q4 : Comment obtenir du support ou poser des questions ?
-
-R4 : Visitez le forum communautaire [ici](https://forum.aspose.com/c/zip/37).
-
-### Q5 : Des licences temporaires sont‑elles disponibles ?
-
-R5 : Oui, vous pouvez obtenir des licences temporaires [ici](https://purchase.aspose.com/temporary-license/).
-
-## FAQ supplémentaires
-
-**Q : Aspose.Zip prend‑il en charge d’autres formats d’archive que le Cpio ?**  
-R : Oui, la bibliothèque gère également les formats Zip, Tar et GZip, vous offrant ainsi de la flexibilité selon les cas d’utilisation.
-
-**Q : Puis‑je ajouter une protection par mot de passe à l’archive ?**  
-R : Bien que le Cpio ne supporte pas le chiffrement, la classe `ZipArchive` d’Aspose.Zip propose des méthodes pour définir des mots de passe.
-
-**Q : L’API est‑elle compatible avec .NET Core ?**  
-R : Absolument. Le même code fonctionne sur .NET Core, .NET 5 et .NET 6 sans modifications.
-
 ## FAQ
 
 **Q : Que se passe‑t‑il si le répertoire source contient des sous‑dossiers ?**  
@@ -149,15 +116,15 @@ R : La bibliothèque fonctionne avec des fichiers supérieurs à 2 Go ; to
 
 Félicitations ! Vous avez appris **comment compresser des fichiers** avec Aspose.Zip pour .NET, créé une archive Cpio et exploré les pièges courants. Cette bibliothèque puissante peut désormais devenir une composante centrale de votre flux de travail de gestion de fichiers, que vous archiviez des journaux, empaquetiez des ressources ou prépariez des données pour le transfert.
 
+---
+
+**Dernière mise à jour :** 2026-02-25  
+**Testé avec :** Aspose.Zip pour .NET 24.12 (dernière version)  
+**Auteur :** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Dernière mise à jour :** 2026-02-25  
-**Testé avec :** Aspose.Zip pour .NET 24.12 (dernière version)  
-**Auteur :** Aspose

@@ -11,17 +11,7 @@ url: /it/net/file-decompression/decompress-traditionally-password-protected-file
 weight: 15
 ---
 
- block placeholders: keep as is.
-
-Check any other bold text: we kept.
-
-Check "asp zip .net" lower case; we left as is.
-
-Check "Performance‑optimized" hyphen; we kept.
-
-Check "asp zip .net" maybe keep same.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

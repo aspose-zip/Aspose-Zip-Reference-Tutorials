@@ -17,7 +17,7 @@ weight: 15
 
 パスワード付き ZIP の抽出は、機密ファイルを保護または共有する必要がある .NET 開発者にとって日常的な作業です。このチュートリアルでは、**Aspose.Zip for .NET** ライブラリを使用して **パスワード付き ZIP を抽出する方法** を学び、同じアプローチで **パスワード保護された ZIP を解凍** したり、**パスワード保護された ZIP を解凍** したり、**c# unzip password protected** 操作を数行のコードで実行できることを確認します。
 
-## Quick Answers
+## 簡単な回答
 - **ZIP ファイルを扱うための主要クラスは何ですか？** `Archive`（Aspose.Zip 名前空間から）。  
 - **パスワードを指定するメソッドはどれですか？** `ArchiveLoadOptions` を介して `DecryptionPassword` を渡します。  
 - **.NET Core でパスワード保護された ZIP を解凍できますか？** はい、Aspose.Zip は .NET Framework、.NET Core、そして .NET 5/6+ をサポートしています。  

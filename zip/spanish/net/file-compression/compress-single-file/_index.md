@@ -11,11 +11,7 @@ url: /es/net/file-compression/compress-single-file/
 weight: 14
 ---
 
- URLs inside markdown links.
-
-Also keep **bold** formatting.
-
-Let's produce final answer.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

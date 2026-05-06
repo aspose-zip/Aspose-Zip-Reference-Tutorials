@@ -97,39 +97,6 @@ Console.WriteLine("Successfully Compressed Files");
 | **Access denied** | Application lacks permission to read source files or write the archive. | Run the app with appropriate privileges or adjust folder ACLs. |
 | **Large files cause OutOfMemory** | Loading very large files into memory at once. | Process files in streams or split the archive into multiple parts. |
 
-## Frequently Asked Questions
-
-### Q1: Can I use Aspose.Zip for .NET in commercial projects?
-
-A1: Yes, you can. To get a license, visit [here](https://purchase.aspose.com/buy).
-
-### Q2: Is there a free trial available?
-
-A2: Yes, you can explore the library with a free trial [here](https://releases.aspose.com/).
-
-### Q3: Where can I find detailed documentation?
-
-A3: Refer to the documentation [here](https://reference.aspose.com/zip/net/).
-
-### Q4: How can I get support or ask questions?
-
-A4: Visit the community forum [here](https://forum.aspose.com/c/zip/37).
-
-### Q5: Are temporary licenses available?
-
-A5: Yes, you can obtain temporary licenses [here](https://purchase.aspose.com/temporary-license/).
-
-## Additional FAQs
-
-**Q: Does Aspose.Zip support other archive formats besides Cpio?**  
-A: Yes, the library also handles Zip, Tar, and GZip formats, giving you flexibility for different use cases.
-
-**Q: Can I add password protection to the archive?**  
-A: While Cpio does not support encryption, Aspose.Zip’s ZipArchive class provides methods to set passwords.
-
-**Q: Is the API compatible with .NET Core?**  
-A: Absolutely. The same code works on .NET Core, .NET 5, and .NET 6 without changes.
-
 ## FAQ
 
 **Q: What happens if the source directory contains sub‑folders?**  
@@ -148,15 +115,15 @@ A: The library works with files larger than 2 GB; however, ensure your process
 
 Congratulations! You've learned **how to compress files** using Aspose.Zip for .NET, created a Cpio archive, and explored common pitfalls. This powerful library can now become a core part of your file‑management workflow, whether you're archiving logs, packaging resources, or preparing data for transfer.
 
+---
+
+**Last Updated:** 2026-02-25  
+**Tested With:** Aspose.Zip for .NET 24.12 (latest release)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-25  
-**Tested With:** Aspose.Zip for .NET 24.12 (latest release)  
-**Author:** Aspose

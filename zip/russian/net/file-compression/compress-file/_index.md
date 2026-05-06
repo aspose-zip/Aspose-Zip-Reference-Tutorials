@@ -9,24 +9,6 @@ url: /ru/net/file-compression/compress-file/
 weight: 10
 ---
 
- themselves; they are placeholders. Should not translate them. If there were actual code blocks, we would keep code unchanged. But there are no code blocks shown; just placeholders. So just keep them.
-
-Translate text, keep bullet points, tables. Translate table content but keep structure.
-
-We need to translate "Last Updated:" etc.
-
-Make sure to keep markdown formatting.
-
-Let's produce translation.
-
-Be careful with bullet points and list items.
-
-Also note "## Quick Answers" etc.
-
-Translate headings: keep same heading levels but translate text.
-
-Let's produce.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
@@ -118,39 +100,6 @@ Console.WriteLine("Successfully Compressed Files");
 
 ## Часто задаваемые вопросы
 
-### В1: Можно ли использовать Aspose.Zip для .NET в коммерческих проектах?
-
-О1: Да, можно. Чтобы получить лицензию, перейдите [сюда](https://purchase.aspose.com/buy).
-
-### В2: Доступна ли бесплатная пробная версия?
-
-О2: Да, библиотеку можно опробовать бесплатно [здесь](https://releases.aspose.com/).
-
-### В3: Где найти подробную документацию?
-
-О3: Обратитесь к документации [здесь](https://reference.aspose.com/zip/net/).
-
-### В4: Как получить поддержку или задать вопросы?
-
-О4: Посетите форум сообщества [здесь](https://forum.aspose.com/c/zip/37).
-
-### В5: Есть ли временные лицензии?
-
-О5: Да, временные лицензии можно получить [здесь](https://purchase.aspose.com/temporary-license/).
-
-## Дополнительные FAQ
-
-**В: Поддерживает ли Aspose.Zip другие форматы архивов, кроме Cpio?**  
-О: Да, библиотека также работает с форматами Zip, Tar и GZip, предоставляя гибкость для разных сценариев.
-
-**В: Можно ли добавить защиту паролем к архиву?**  
-О: Хотя Cpio не поддерживает шифрование, класс `ZipArchive` в Aspose.Zip предоставляет методы для установки пароля.
-
-**В: Совместим ли API с .NET Core?**  
-О: Абсолютно. Один и тот же код работает на .NET Core, .NET 5 и .NET 6 без изменений.
-
-## FAQ
-
 **В: Что происходит, если исходный каталог содержит подпапки?**  
 О: `CreateEntries` рекурсивно сканирует подпапки, автоматически добавляя их файлы в архив.
 
@@ -167,15 +116,15 @@ Console.WriteLine("Successfully Compressed Files");
 
 Поздравляем! Вы узнали **как сжимать файлы** с помощью Aspose.Zip для .NET, создали архив Cpio и ознакомились с распространёнными подводными камнями. Эта мощная библиотека теперь может стать ядром вашего рабочего процесса по управлению файлами, будь то архивирование журналов, упаковка ресурсов или подготовка данных к передаче.
 
+---
+
+**Последнее обновление:** 2026-02-25  
+**Тестировано с:** Aspose.Zip для .NET 24.12 (последний релиз)  
+**Автор:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Последнее обновление:** 2026-02-25  
-**Тестировано с:** Aspose.Zip для .NET 24.12 (последний релиз)  
-**Автор:** Aspose

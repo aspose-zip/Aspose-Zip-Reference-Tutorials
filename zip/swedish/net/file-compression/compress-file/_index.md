@@ -100,39 +100,6 @@ Console.WriteLine("Successfully Compressed Files");
 
 ## Vanliga frågor
 
-### Q1: Kan jag använda Aspose.Zip för .NET i kommersiella projekt?
-
-A1: Ja, du kan. För att få en licens, besök [här](https://purchase.aspose.com/buy).
-
-### Q2: Finns en gratis provversion?
-
-A2: Ja, du kan utforska biblioteket med en gratis provversion [här](https://releases.aspose.com/).
-
-### Q3: Var kan jag hitta detaljerad dokumentation?
-
-A3: Referera till dokumentationen [här](https://reference.aspose.com/zip/net/).
-
-### Q4: Hur kan jag få support eller ställa frågor?
-
-A4: Besök community‑forumet [här](https://forum.aspose.com/c/zip/37).
-
-### Q5: Finns tillfälliga licenser?
-
-A5: Ja, du kan få tillfälliga licenser [här](https://purchase.aspose.com/temporary-license/).
-
-## Ytterligare vanliga frågor
-
-**Q: Stöder Aspose.Zip andra arkivformat förutom Cpio?**  
-A: Ja, biblioteket hanterar även Zip, Tar och GZip‑format, vilket ger dig flexibilitet för olika användningsfall.
-
-**Q: Kan jag lägga till lösenordsskydd för arkivet?**  
-A: Även om Cpio inte stödjer kryptering, erbjuder Aspose.Zip’s ZipArchive‑klass metoder för att sätta lösenord.
-
-**Q: Är API:et kompatibelt med .NET Core?**  
-A: Absolut. Samma kod fungerar på .NET Core, .NET 5 och .NET 6 utan ändringar.
-
-## FAQ
-
 **Q: Vad händer om källkatalogen innehåller undermappar?**  
 A: `CreateEntries` skannar undermappar rekursivt och lägger automatiskt till deras filer i arkivet.
 
@@ -149,15 +116,15 @@ A: Biblioteket fungerar med filer större än 2 GB; se dock till att din proce
 
 Grattis! Du har lärt dig **hur man komprimerar filer** med Aspose.Zip för .NET, skapat ett Cpio‑arkiv och utforskat vanliga fallgropar. Detta kraftfulla bibliotek kan nu bli en kärnkomponent i ditt filhanterings‑arbetsflöde, oavsett om du arkiverar loggar, paketerar resurser eller förbereder data för överföring.
 
+---
+
+**Senast uppdaterad:** 2026-02-25  
+**Testat med:** Aspose.Zip for .NET 24.12 (latest release)  
+**Författare:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Senast uppdaterad:** 2026-02-25  
-**Testat med:** Aspose.Zip for .NET 24.12 (latest release)  
-**Författare:** Aspose

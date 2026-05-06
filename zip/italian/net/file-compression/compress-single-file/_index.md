@@ -11,16 +11,6 @@ url: /it/net/file-compression/compress-single-file/
 weight: 14
 ---
 
- bullet points, table content, etc.
-
-Also note "For Italian, ensure proper RTL formatting if needed" - Italian is LTR, ignore.
-
-Let's produce final content.
-
-We need to keep the shortcodes at top and bottom.
-
-Proceed.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

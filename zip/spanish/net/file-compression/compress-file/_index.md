@@ -100,39 +100,6 @@ Console.WriteLine("Successfully Compressed Files");
 
 ## Preguntas frecuentes
 
-### Q1: ¿Puedo usar Aspose.Zip para .NET en proyectos comerciales?
-
-A1: Sí, puedes. Para obtener una licencia, visita [aquí](https://purchase.aspose.com/buy).
-
-### Q2: ¿Hay una prueba gratuita disponible?
-
-A2: Sí, puedes explorar la biblioteca con una prueba gratuita [aquí](https://releases.aspose.com/).
-
-### Q3: ¿Dónde puedo encontrar documentación detallada?
-
-A3: Consulta la documentación [aquí](https://reference.aspose.com/zip/net/).
-
-### Q4: ¿Cómo puedo obtener soporte o hacer preguntas?
-
-A4: Visita el foro de la comunidad [aquí](https://forum.aspose.com/c/zip/37).
-
-### Q5: ¿Están disponibles licencias temporales?
-
-A5: Sí, puedes obtener licencias temporales [aquí](https://purchase.aspose.com/temporary-license/).
-
-## Preguntas frecuentes adicionales
-
-**P: ¿Aspose.Zip admite otros formatos de archivo además de Cpio?**  
-R: Sí, la biblioteca también maneja formatos Zip, Tar y GZip, brindándote flexibilidad para diferentes casos de uso.
-
-**P: ¿Puedo agregar protección con contraseña al archivo?**  
-R: Aunque Cpio no soporta cifrado, la clase ZipArchive de Aspose.Zip proporciona métodos para establecer contraseñas.
-
-**P: ¿La API es compatible con .NET Core?**  
-R: Absolutamente. El mismo código funciona en .NET Core, .NET 5 y .NET 6 sin cambios.
-
-## Preguntas frecuentes
-
 **P: ¿Qué ocurre si el directorio fuente contiene subcarpetas?**  
 R: `CreateEntries` escanea recursivamente las subcarpetas, agregando sus archivos al archivo automáticamente.
 
@@ -149,15 +116,15 @@ R: La biblioteca funciona con archivos mayores de 2 GB; sin embargo, asegúrat
 
 ¡Felicidades! Has aprendido **cómo comprimir archivos** usando Aspose.Zip para .NET, creado un archivo Cpio y explorado los problemas comunes. Esta poderosa biblioteca ahora puede convertirse en una parte central de tu flujo de trabajo de gestión de archivos, ya sea que estés archivando registros, empaquetando recursos o preparando datos para su transferencia.
 
+---
+
+**Última actualización:** 2026-02-25  
+**Probado con:** Aspose.Zip para .NET 24.12 (última versión)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última actualización:** 2026-02-25  
-**Probado con:** Aspose.Zip para .NET 24.12 (última versión)  
-**Autor:** Aspose

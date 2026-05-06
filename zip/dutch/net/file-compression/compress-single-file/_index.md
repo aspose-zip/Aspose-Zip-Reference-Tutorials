@@ -11,32 +11,6 @@ url: /nl/net/file-compression/compress-single-file/
 weight: 14
 ---
 
-. Also note rule 5: "For Dutch, ensure proper RTL formatting if needed" - not needed (Dutch LTR). So just translate.
-
-We must not translate shortcodes, links, code blocks, URLs, file paths. So translate visible text.
-
-Let's go through content.
-
-Start with shortcodes unchanged.
-
-Then heading "# Add File to Zip with Aspose.Zip for .NET" translate: "# Bestand toevoegen aan zip met Aspose.Zip voor .NET"
-
-Similarly other headings.
-
-Paragraphs: translate.
-
-Need to keep bold formatting **.
-
-Also lists.
-
-Tables: translate content but keep markdown table structure.
-
-Make sure not to translate URLs.
-
-Also code block placeholders remain.
-
-Let's produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

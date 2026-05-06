@@ -11,18 +11,6 @@ url: /ru/net/file-decompression/decompress-traditionally-password-protected-file
 weight: 15
 ---
 
- list.
-
-Translate each Q and answer.
-
-Make sure to keep code formatting like `Archive`.
-
-Then other sections.
-
-Make sure to keep markdown formatting.
-
-Let's craft.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

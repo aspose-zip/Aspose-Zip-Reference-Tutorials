@@ -17,34 +17,36 @@ weight: 13
 
 今日のスピーディなデジタル環境では、**zip multiple files c#** は、ストレージコスト削減、ファイル転送速度向上、または関連ドキュメントをまとめてダウンロードさせる必要がある開発者にとって一般的な要件です。Aspose.Zip for .NET は、**add files to zip**、**zip archive c#** の作成、そして小さなテキストファイルから大容量バイナリ資産までを数行の C# コードだけで扱える、クリーンで高性能な API を提供します。
 
-## Quick Answers
-- **What does Aspose.Zip do?** It provides a .NET library that lets you create, read, and update ZIP archives without external dependencies.  
-- **How many files can I compress?** Unlimited – the library streams data, so even gigabyte‑size files are handled efficiently.  
-- **Do I need a license for development?** A free trial works for evaluation; a commercial license is required for production use.  
-- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7+.  
-- **Can I add a comment to the archive?** Yes – use `ArchiveSaveOptions.ArchiveComment`.
+## よくある質問
+- **Aspose.Zip は何をしますか？** 外部依存関係なしで ZIP アーカイブを作成、読み取り、更新できる .NET ライブラリを提供します。
+- **圧縮できるファイルの数は？** 無制限です。ライブラリはデータをストリーミングするため、ギガバイトサイズのファイルでも効率的に処理できます。
+- **開発にはライセンスが必要ですか？** 無料トライアルは評価用として使用できます。本番環境での使用には商用ライセンスが必要です。
+- **サポートされている .NET バージョンは？** .NET Framework 4.5 以降、.NET Core 3.1 以降、.NET 5/6/7 以降。
+- **アーカイブにコメントを追加できますか？** はい。`ArchiveSaveOptions.ArchiveComment` を使用してください。
 
-## What is “zip multiple files c#”?
-Compressing several files into a single ZIP archive using C# code is often referred to as “zip multiple files c#”. The process involves opening each source file, creating entries in an archive, and finally saving the archive to disk.
+## 「複数のファイルを C# で圧縮する」とは？
 
-## Why use Aspose.Zip for this task?
-- **No external tools** – everything runs inside your .NET application.  
-- **Full control over encoding and comments** – perfect for multilingual filenames.  
-- **High compression ratios** – configurable compression levels.  
-- **Robust error handling** – ideal for enterprise‑grade solutions.  
-- **Password protection support** – you can secure archives with a password when needed (see “zip archive password protection” below).
+C# コードを使用して複数のファイルを 1 つの ZIP アーカイブに圧縮することを「複数のファイルを C# で圧縮する」と呼びます。このプロセスでは、各ソースファイルを開き、アーカイブにエントリを作成し、最後にアーカイブをディスクに保存します。
 
-## Prerequisites
+## このタスクに Aspose.Zip を使用する理由
 
-Before diving into the tutorial, make sure you have the following prerequisites in place:
+- **外部ツール不要** – すべての処理は .NET アプリケーション内で実行されます。
+- **エンコーディングとコメントを完全に制御** – 多言語ファイル名に最適です。
+- **高い圧縮率** – 圧縮レベルを構成できます。
+- **堅牢なエラー処理** – エンタープライズグレードのソリューションに最適です。
+- **パスワード保護対応** – 必要に応じてアーカイブをパスワードで保護できます（下記の「zip アーカイブのパスワード保護」を参照）。
 
-- **Aspose.Zip for .NET** – download it from the [Aspose.Zip documentation](https://reference.aspose.com/zip/net/).  
-- **Document Directory** – a folder that contains the files you want to compress. In the examples below we use the variable `dataDir` to represent this path.  
-- **Basic Understanding of C#** – the code snippets use standard C# constructs.
+## 前提条件
 
-## Import Namespaces
+チュートリアルを開始する前に、以下の前提条件を満たしていることを確認してください。
 
-In your C# code, start by importing the necessary namespaces. These namespaces provide access to the functionality required for file compression.
+- **Aspose.Zip for .NET** – [Aspose.Zip ドキュメント](https://reference.aspose.com/zip/net/) からダウンロードしてください。
+- **ドキュメントディレクトリ** – 圧縮するファイルを含むフォルダ。以下の例では、このパスを表すために変数 `dataDir` を使用します。
+- **C# の基礎知識** – コードスニペットは標準的な C# 構文を使用しています。
+
+## 名前空間のインポート
+
+C# コードでは、まず必要な名前空間をインポートします。これらの名前空間は、ファイル圧縮に必要な機能へのアクセスを提供します。
 
 ```csharp
 using Aspose.Zip;
@@ -53,36 +55,36 @@ using System.Text;
 using Aspose.Zip.Saving;
 ```
 
-## Step 1: Define the Document Directory
+## ステップ 1: ドキュメント ディレクトリの定義
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-Replace `"Your Document Directory"` with the actual path to the folder that holds the files you want to zip.
+`"Your Document Directory"` を、圧縮したいファイルが格納されているフォルダへの実際のパスに置き換えてください。
 
-## Step 2: Compress Multiple Files – Full Walkthrough
+## ステップ 2: 複数ファイルの圧縮 – 完全ガイド
 
-Below is a **c# zip file example** that shows how to **how to compress multiple files** and **how to create zip file** programmatically.
+以下は、**複数のファイルを圧縮する方法**と、**プログラムで ZIP ファイルを作成する方法**を示す **C# による ZIP ファイルの例**です。
 
-### Step 2.1: Open the Zip File (Create the Archive)
+### ステップ 2.1: ZIP ファイルを開く (アーカイブの作成)
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressMultipleFiles_out.zip", FileMode.Create))
 ```
 
-This line creates a new ZIP file called `CompressMultipleFiles_out.zip` in the target directory. The `FileMode.Create` flag ensures the file is overwritten if it already exists.
+この行は、ターゲット ディレクトリに `CompressMultipleFiles_out.zip` という名前の新しい ZIP ファイルを作成します。`FileMode.Create` フラグは、ファイルが既に存在する場合に上書きすることを保証します。
 
-### Step 2.2: Open Source Files
+### ステップ 2.2: ソース ファイルを開く
 
 ```csharp
 using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
 using (FileStream source2 = File.Open(dataDir + "asyoulik.txt", FileMode.Open, FileAccess.Read))
 ```
 
-Here we open two sample text files (`alice29.txt` and `asyoulik.txt`). You can add as many `using (FileStream …)` statements as needed – each one represents a file you want to **add files to zip**.
+ここでは、2 つのサンプル テキスト ファイル (`alice29.txt` と `asyoulik.txt`) を開きます。 `using (FileStream …)` ステートメントは必要なだけ追加できます。各ステートメントは、**zipファイルに追加するファイル**を表します。
 
-### Step 2.3: Create Archive and Add Entries
+### ステップ 2.3: アーカイブの作成とエントリの追加
 
 ```csharp
 using (var archive = new Archive())
@@ -91,61 +93,68 @@ using (var archive = new Archive())
     archive.CreateEntry("asyoulik.txt", source2);
 ```
 
-The `Archive` object represents the in‑memory ZIP container. `CreateEntry` adds each opened stream as a separate entry inside the archive. The first argument is the name that will appear inside the ZIP file.
+`Archive` オブジェクトは、メモリ上のZIPコンテナを表します。`CreateEntry` は、開いている各ストリームをアーカイブ内の個別のエントリとして追加します。最初の引数は、ZIPファイル内に表示される名前です。
 
-### Step 2.4: Save the Zip File
+### ステップ 2.4: ZIPファイルの保存
 
 ```csharp
 archive.Save(zipFile, new ArchiveSaveOptions() { Encoding = Encoding.ASCII, ArchiveComment = "There are two poems from Canterbury corpus" });
 }
 ```
 
-`archive.Save` writes the compressed data to the `zipFile` stream. We also specify an ASCII encoding for file names and add a friendly comment describing the archive’s contents.
+`archive.Save` は圧縮データを `zipFile` ストリームに書き込みます。ファイル名にはASCIIエンコーディングを指定し、アーカイブの内容を説明する分かりやすいコメントも追加します。
 
-## Why This Matters
+## なぜこれが重要なのか
 
-Creating a **zip archive c#** on the fly is especially useful when you need to:
+**zipアーカイブをC#で**動的に作成することは、次のような場合に特に役立ちます。
 
-- Offer a single download for multiple reports generated on demand.
-- Transfer large batches of images or logs from a server to a client efficiently.
-- Store backups of configuration files in a compact, portable format.
+- オンデマンドで生成された複数のレポートを一度にダウンロードできるようにする。
 
-## Common Issues and Solutions
+- 大量のイメージやログをサーバーからクライアントに効率的に転送する。
 
-| Issue | Why it Happens | Fix |
+- 設定ファイルのバックアップをコンパクトで持ち運びやすい形式で保存する。
+
+## よくある問題と解決策
+
+| 問題 | 原因 | 解決策 |
 |-------|----------------|-----|
-| **File not found** | Incorrect `dataDir` path or missing source file. | Verify the path and ensure the files exist on disk. |
-| **OutOfMemoryException** on very large files | Loading entire file into memory. | Use streaming (as shown) – the library processes data in chunks. |
-| **Incorrect file names in ZIP** | Using a non‑ASCII encoding for Unicode filenames. | Switch to `Encoding.UTF8` in `ArchiveSaveOptions`. |
-| **Archive appears empty** | Forgetting to call `archive.Save`. | Ensure the `Save` method is executed inside the `using` block. |
-| **Need password protection** | By default archives are unencrypted. | Set `ArchiveSaveOptions.Password` to a strong password before calling `Save`. |
+| **ファイルが見つかりません** | `dataDir` パスが間違っているか、ソースファイルが見つかりません。| パスを確認し、ファイルがディスク上に存在することを確認してください。|
+| **OutOfMemoryException** が非常に大きいファイルの場合 | ファイル全体をメモリにロードしている可能性があります。| ストリーミングを使用してください（図を参照）。ライブラリはデータをチャンク単位で処理します。| | **ZIPファイル内のファイル名が正しくありません** | Unicodeファイル名に非ASCIIエンコーディングを使用しています。| `ArchiveSaveOptions`で`Encoding.UTF8`に変更してください。|
+| **アーカイブが空です** | `archive.Save`の呼び出しを忘れています。| `using`ブロック内で`Save`メソッドが実行されていることを確認してください。|
+| **パスワード保護が必要です** | デフォルトではアーカイブは暗号化されていません。| `Save`を呼び出す前に、`ArchiveSaveOptions.Password`に強力なパスワードを設定してください。|
 
-## Frequently Asked Questions
+## よくある質問
 
-**Q: Can I compress files of different formats using Aspose.Zip for .NET?**  
-A: Yes, Aspose.Zip supports any file type – you simply provide a stream, and the library handles the rest.
+**Q: Aspose.Zip for .NETを使用して、異なる形式のファイルを圧縮できますか？** 
 
-**Q: Is Aspose.Zip suitable for large file compression?**  
-A: Absolutely. The library streams data, so even multi‑gigabyte files can be compressed without excessive memory usage.
+A: はい、Aspose.Zipはあらゆるファイル形式をサポートしています。ストリームを提供するだけで、ライブラリが残りの処理を行います。
 
-**Q: How can I get support for Aspose.Zip for .NET?**  
-A: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for community help, or purchase a [temporary license](https://purchase.aspose.com/temporary-license/) for dedicated assistance.
+**Q: Aspose.Zipは大きなファイルの圧縮に適していますか？** 
 
-**Q: Are there free trials available?**  
-A: Yes, you can explore the product with a [free trial](https://releases.aspose.com/zip/net) before deciding to buy.
+A: もちろんです。このライブラリはデータをストリーミングするため、数ギガバイトのファイルでも過剰なメモリ使用量なしに圧縮できます。
 
-**Q: Where can I find the full documentation?**  
-A: Detailed API references and examples are available in the [Aspose.Zip documentation](https://reference.aspose.com/zip/net/).
+**Q: Aspose.Zip for .NET のサポートを受けるにはどうすればよいですか？** 
 
-## Conclusion
+A: コミュニティによるサポートが必要な場合は、[Aspose.Zip フォーラム](https://forum.aspose.com/c/zip/37) にアクセスするか、専用サポートをご希望の場合は [一時ライセンス](https://purchase.aspose.com/temporary-license/) をご購入ください。
 
-You’ve now seen a complete **c# zip file example** that demonstrates **how to compress multiple files**, **how to create zip archive c#**, and how to **add files to zip** using Aspose.Zip for .NET. This approach not only saves storage space but also simplifies file distribution in web, desktop, or cloud applications. Feel free to experiment by adding more `CreateEntry` calls, adjusting compression levels, or embedding password protection – the Aspose.Zip API gives you the flexibility to tailor ZIP archives to any scenario.
+**Q: 無料トライアルはありますか？** 
+
+A: はい、[無料トライアル](https://releases.aspose.com/zip/net) で製品をお試しいただけます。ご購入前にぜひご検討ください。
+
+**Q: 完全なドキュメントはどこで入手できますか？** 
+
+A: 詳細な API リファレンスとサンプルは、[Aspose.Zip ドキュメント](https://reference.aspose.com/zip/net/) に掲載されています。
+
+
+## まとめ
+
+これで、**複数のファイルを圧縮する方法**、**C#でZIPアーカイブを作成する方法**、**Aspose.Zip for .NETを使用してZIPファイルにファイルを追加する方法**を示す、**C#によるZIPファイル作成の完全なサンプル**をご覧いただきました。このアプローチは、ストレージ容量を節約するだけでなく、Web、デスクトップ、クラウドアプリケーションにおけるファイル配布を簡素化します。`CreateEntry`呼び出しを追加したり、圧縮レベルを調整したり、パスワード保護を組み込んだりするなど、自由に試してみてください。Aspose.Zip APIは、あらゆるシナリオに合わせてZIPアーカイブをカスタマイズできる柔軟性を提供します。
 
 ---
 
-**Last Updated:** 2026-02-25  
-**Tested With:** Aspose.Zip 24.11 for .NET  
-**Author:** Aspose  
+**最終更新日:** 2026年2月25日
+**テスト環境:** Aspose.Zip 24.11 for .NET
+**作成者:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

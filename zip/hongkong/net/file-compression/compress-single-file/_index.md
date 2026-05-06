@@ -8,16 +8,6 @@ url: /zh-hant/net/file-compression/compress-single-file/
 weight: 14
 ---
 
-問題". Keep technical terms in English.
-
-Let's translate.
-
-We need to keep code block placeholders unchanged.
-
-Also tables: translate headers and cells.
-
-Let's produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

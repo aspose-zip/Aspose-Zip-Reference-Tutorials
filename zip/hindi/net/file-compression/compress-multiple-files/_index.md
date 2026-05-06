@@ -10,20 +10,6 @@ url: /hi/net/file-compression/compress-multiple-files/
 weight: 13
 ---
 
- as is? The instruction: translate all text content naturally to Hindi. So we should translate "Last Updated" and "Tested With" and "Author". Let's translate:
-
-"**अंतिम अद्यतन:** 2026-02-25"
-
-"**परीक्षित संस्करण:** Aspose.Zip 24.11 for .NET"
-
-"**लेखक:** Aspose"
-
-Now close shortcodes.
-
-Make sure we keep all shortcodes exactly.
-
-Now produce final content.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

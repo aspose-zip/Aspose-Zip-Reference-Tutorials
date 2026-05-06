@@ -15,39 +15,39 @@ weight: 14
 
 # Aspose.Zip for .NET ile Zip'e Dosya Ekleme
 
-## Introduction
+## Giriiş
 
-Modern .NET geliştirmede, **adding a file to zip** arşivlerini verimli bir şekilde eklemek depolama maliyetlerini büyük ölçüde azaltabilir ve indirme sürelerini iyileştirebilir. Aspose.Zip for .NET, sadece birkaç satır kodla **compress file .NET** projelerinizi sıkıştırmanızı sağlayan temiz, yüksek performanslı bir API sunar. Bu öğreticide, `FileStream` tabanlı bir yaklaşım kullanarak C# tarzında **create zip archive** nasıl yapılacağını gösteren eksiksiz, uygulamalı bir örnek üzerinden ilerleyeceğiz.
+Modern .NET geliştirmede, **zip'e dosya ekleme** arşivlerini verimli bir şekilde ayırma depolama maliyetlerini büyük oranda azaltır ve indirme sürelerini iyileştirebilir. Aspose.Zip for .NET, yalnızca birkaç satır kodla **compress file .NET** projelerinizi sıkıştırmanızı sağlayan temiz, yüksek performanslı bir API sunar. Bu öğreticide, `FileStream` tabanlı bir yaklaşım kullanarak C# yazılımı kullanarak **create zip archive** nasıl başlatılacağını gösteren eksiksiz, uygulamalı bir örnek üzerinden ilerleyin.
 
-## Quick Answers
-- **Hangi kütüphaneyi kullanmalıyım?** Aspose.Zip for .NET  
-- **Bir satır kodla zip'e dosya ekleyebilir miyim?** Yes – `archive.CreateEntry(...)` does the heavy lifting  
-- **Geliştirme için lisansa ihtiyacım var mı?** A free trial works for testing; a license is required for production  
-- **Hangi .NET sürümleri destekleniyor?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7  
-- **Büyük dosyalar için güvenli mi?** Yes, the library streams data, so memory usage stays low  
+## Hızlı Yanıtlar
+- **Hangi üyeliğini kullanmalı mıyım?** Aspose.Zip for .NET
+- **Bir satır kodla zip'e dosya olabilir mi?** Evet – `archive.CreateEntry(...)` ağır yükü kaldırır
+- **Geliştirme için lisansa ihtiyacım var mı?** Ücretsiz deneme sürümü test amaçlı çalışır; üretim için lisans gereklidir
+- **Hangi .NET uzantısı destekleniyor mu?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7
+- **Büyük dosyalar için güvenli mi?** Evet, kitaplık veri akışı sağlar, böylece bellek kullanımı düşük kalır
 
-## What is “add file to zip” in Aspose.Zip?
+## Aspose.Zip'te “zip'e dosya ekle” nedir?
 
-Bir zip arşivine dosya eklemek, diskte (veya bellekte) mevcut bir dosyayı alıp ZIP dosya spesifikasyonuna uygun sıkıştırılmış bir konteynere yazmak anlamına gelir. Aspose.Zip, düşük seviyeli detayları soyutlayarak, kontrol toplamı hesaplamaları veya sıkıştırma algoritmalarıyla uğraşmak yerine iş mantığına odaklanmanızı sağlar.
+Bir zip arşivine dosya seçme, disket (veya bellekte) mevcut bir şekilde alıp ZIP dosya spesifikasyonuna uygun sıkıştırılmış bir konteynere yazma yazma yöntemi ile gelir. Aspose.Zip, düşük seviyedeki ayrıntıları soyutlayarak, kontrol toplama hesaplamalarını veya sıkıştırmalarıyla uğraşmak yerine iş mantığına odaklanmanızı sağlar.
 
-## Why use Aspose.Zip for .NET?
+## Neden .NET için Aspose.Zip kullanılmalı?
 
-- **Performance‑optimized**: Verileri doğrudan akıtarak geçici tamponları önler.  
-- **Rich feature set**: Şifreleme, bölünmüş arşivler ve özel giriş ayarlarını destekler.  
-- **Simple API**: Tek satır giriş oluşturma (`CreateEntry`) gereksiz kodu azaltır.  
-- **Cross‑platform**: .NET Core/5+ ile Windows, Linux ve macOS'ta çalışır.  
+- **Performans optimize edilmiştir**: Verileri doğrudan akıtarak geçici tamponları önler.
+- **Zengin özellik seti**: Şifreleme, kopya arşivler ve özel giriş işlemlerinin gerçekleştirilmesi.
+- **Basit API**: Tek satır giriş oluşturma (`CreateEntry`) gereksiz kodu azaltır.
+- **Platformlar arası**: .NET Core/5+ ile Windows, Linux ve macOS'ta çalışır.
 
-## Prerequisites
+## Önkoşullar
 
-Başlamadan önce şunların olduğundan emin olun:
+Başlamadan önce gelişmelerin olduğundan emin olun:
 
-- C# programlama temelleri.  
-- Visual Studio (veya tercih ettiğiniz .NET IDE) yüklü.  
+- C# programlama temelleri.
+- Visual Studio (veya tercih ettiğiniz .NET IDE) yüklü.
 - Aspose.Zip for .NET kütüphanesi, **[here](https://releases.aspose.com/zip/net/)** adresinden indirebilirsiniz.
 
-## Import Namespaces
+## Ad Alanlarını İçe Aktar
 
-İlk olarak, C# dosyanıza gerekli ad alanlarını ekleyin:
+İlk olarak, C# dosyanıza gerekli reklamları ekleyin:
 
 ```csharp
 using Aspose.Zip;
@@ -55,7 +55,7 @@ using System.IO;
 using Aspose.Zip.Saving;
 ```
 
-## Step 1: Set Up Your Document Directory
+## Adım 1: Belge Dizininizi Kurun
 
 Sıkıştırmak istediğiniz kaynak dosyayı içeren klasörü tanımlayın. Yer tutucuyu makinenizdeki gerçek yol ile değiştirin.
 
@@ -65,7 +65,7 @@ string dataDir = "Your Document Directory";
 
 > **Pro tip:** Platform bağımsız yollar için `Path.Combine` kullanın, örneğin `Path.Combine(dataDir, "alice29.txt")`.
 
-## Step 2: Create a Zip File Using FileStream
+## Adım 2: FileStream Kullanarak Bir Zip Dosyası Oluşturun
 
 `FileStream`'i açarak çıktı ZIP dosyasına işaret edin. Bu, **zip file using filestream** tekniğini gösterir.
 
@@ -75,7 +75,7 @@ using (FileStream zipFile = File.Open(dataDir + "CompressSingleFile_out.zip", Fi
 
 `using` ifadesi, akışın kapatılmasını ve dosyanın doğru şekilde boşaltılmasını garanti eder.
 
-## Step 3: Add a File to the Archive
+## Adım 3: Arşive Bir Dosya Ekleyin
 
 Şimdi kaynak dosyayı (`alice29.txt`) açın ve arşive ekleyin. Bu, **c# compress file zip** işleminin çekirdeğidir.
 
@@ -92,50 +92,50 @@ using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, Fi
 }
 ```
 
-### How the code works
-- **FileStream Setup** – Çıktı ZIP dosyasına bir bağlantı kurar.  
-- **CreateEntry** – Kaynak akışı (`source1`) alır ve `"alice29.txt"` adıyla arşive yazar.  
-- **Save** – Sıkıştırılmış veriyi `CompressSingleFile_out.zip` dosyasına kaydeder.
+### Kod nasıl çalışır?
+- **FileStream Kurulumu** – ZIP dosyasından bir sürücü yükler.
+- **CreateEntry** – Kaynak koleksiyonu (`source1`) alır ve `"alice29.txt"` adıyla arşive yazar.
+- **Kaydet** – Sıkıştırılmış veriyi `CompressSingleFile_out.zip` dosyasına kaydeder.
 
-Ek dosyalar için `CreateEntry` çağrısını tekrarlayabilirsiniz, bu kod parçacığını tam bir **zip archive tutorial c#** haline getirerek.
+Ek dosyalar için `CreateEntry` çağrısını tekrarlayabilirsiniz, bu kod parçacığını tam bir **zip arşivi öğreticisi c#** haline getirerek.
 
-## Common Issues and Solutions
+## Yaygın Sorunlar ve Çözümler
 
 | Sorun | Sebep | Çözüm |
-|-------|--------|-----|
-| **File not found** | Yanlış `dataDir` yolu | Dizin dizesini doğrulayın veya hata ayıklama için `Path.GetFullPath` kullanın |
-| **Access denied** | Yetersiz dosya izinleri | Visual Studio'yu yönetici olarak çalıştırın veya klasöre yazma izinleri verin |
-| **Empty zip file** | `archive.Save` ifadesi `using` bloğu dışında çağrıldı | `archive.Save(zipFile);` ifadesinin gösterildiği gibi iç `using` bloğu içinde olduğundan emin olun |
+|----------|-----------|-----|
+| **Dosya bulunamadı** | Yanlış `dataDir` yolu | Dizinin dizesini doğrulayın veya hata ayıklamak için `Path.GetFullPath` kullanın |
+| **Erişim reddedildi** | Yetersiz dosya izinleri | Visual Studio'yu yönetici olarak çalıştırın veya bilgisayara yazma izinleri verin |
+| **Boş zip dosyası** | `archive.Save` ifadesi `kullanmanın dışında kalanın çağrıldı | `archive.Save(zipFile);`ın gösterildiği gibi iç `kullanılarak, içinde kaldığından emin olun |
 
-## Why This Matters
+## Bu Neden Önemli?
 
-Programatik olarak zip arşivi oluşturmak, günlükleri paketlemeniz, raporları dışa aktarmanız veya birden fazla varlığı tek bir indirme ile müşteriye teslim etmeniz gerektiğinde sık karşılaşılan bir gereksinimdir. Aspose.Zip'in akış API'si, **compress single file** senaryolarını yönetmenizi ve **zip multiple files**'a ölçeklendirmenizi, bellek tüketimini artırmadan sağlar.
+Programatik olarak zip arşivi oluşturmak, günlüklerinizi paketlemeniz, raporları aktarmanız veya birden fazla varlığı tek bir indirme ile güncel teslim tarihleriniz sık kurallar bir özelliklerdir. Aspose.Zip'in veri API'si, **tek dosya sıkıştırma** senaryolarını yönetmenizi ve **zip birden fazla dosya**'a ölçeklendirmenizi, bellek tüketimini artırmadan sağlar.
 
-## Frequently Asked Questions
+## Sıkça Sorulan Sorular
 
-**Q: Aspose.Zip for .NET kullanarak tek bir arşivde birden fazla dosyayı sıkıştırabilir miyim?**  
-A: Kesinlikle! Sağlanan kodu, `Save` metodundan önce ek `CreateEntry` çağrıları ekleyerek birden fazla dosyayı sıkıştıracak şekilde uyarlayabilirsiniz.
+**S: Aspose.Zip for .NET kullanarak tek bir arşivde birden fazla sıkıştırılabilir miyim?**
+C: elbette! Sağlanan kodu, `Save` yönteminden önce ek `CreateEntry` çağrılarını birleştirerek fazladan sıkıştırılacak şekilde uyarlayabilirsiniz.
 
-**Q: Aspose.Zip for .NET için kapsamlı belgeleri nerede bulabilirim?**  
-A: Aspose.Zip'in yeteneklerine dair derinlemesine bilgiler için **[documentation](https://reference.aspose.com/zip/net/)** adresini inceleyin.
+**S: Aspose.Zip for .NET için özet bilgilerin nerede olduğunu öğrenebilir miyim?**
+A: Aspose.Zip'in kapasitesine ilişkin bilgiler için **[documentation](https://reference.aspose.com/zip/net/)** adresini inceleyin.
 
-**Q: Aspose.Zip for .NET için ücretsiz deneme sürümü mevcut mu?**  
-A: Evet, satın almadan önce özellikleri keşfetmek için **[free trial](https://releases.aspose.com/)** alabilirsiniz.
+**S: Aspose.Zip for .NET için ücretsiz deneme sürümü mevcut mu?**
+C: Evet, satın almadan önce özelliklerini ayırmak için **[ücretsiz deneme](https://releases.aspose.com/)** alabilirsiniz.
 
-**Q: Aspose.Zip for .NET için geçici lisans nasıl alınır?**  
-A: Geliştirme ihtiyaçlarınız için geçici lisans edinmek üzere **[this link](https://purchase.aspose.com/temporary-license/)** adresini ziyaret edin.
+**S: Aspose.Zip for .NET için geçici lisans nasıl alınır?**
+A: Geliştirme ihtiyaçları için geçici lisans edinmek üzere **[bu bağlantı](https://purchase.aspose.com/temporary-license/)** adresini ziyaret edin.
 
-**Q: Aspose.Zip for .NET için destek alabileceğim veya toplulukla iletişime geçebileceğim yer neresi?**  
-A: Uzmanlardan ve diğer geliştiricilerden yardım almak için Aspose.Zip topluluğuna **[support forum](https://forum.aspose.com/c/zip/37)** üzerinden katılabilirsiniz.
+**S: Aspose.Zip for .NET için destek alabileceğim veya toplulukla iletişim alanında geçebileceğim yer?**
+A: Aspose.Zip'e uzmanlardan ve diğer geliştiricilerden yardım almak için **[destek forumu](https://forum.aspose.com/c/zip/37)** üzerinden katılabilirsiniz.
 
-## Conclusion
+## Çözüm
 
-Bu adımları izleyerek artık **add file to zip**, **compress file .NET** projelerini ve Aspose.Zip kullanarak **create zip archive** işlemlerini nasıl yapacağınızı biliyorsunuz. Kütüphanenin gücünden tam olarak yararlanmak için daha büyük dosyalar, şifreleme seçenekleri veya bölünmüş arşivlerle denemeler yapın.
+Bu adımları izleyerek artık **dosyayı zip'e ekle**, **dosyayı sıkıştırıp .NET** projelerini ve Aspose.Zip kullanarak **zip arşivi oluştur** becerilerinin nasıl öğrenildiğini biliyoruz. Kütüphanenin gücünden tam olarak yararlanmak için daha büyük dosyalar, şifreleme seçenekleri veya bölünmüş arşivlerle denemeler yapın.
 
 ---
 
-**Son Güncelleme:** 2026-02-25  
-**Test Edilen Versiyon:** Aspose.Zip for .NET 24.11  
+**Son Güncelleme:** 2026-02-25
+**Edilen Sürümünü Test Edin:** Aspose.Zip for .NET 24.11
 **Yazar:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}

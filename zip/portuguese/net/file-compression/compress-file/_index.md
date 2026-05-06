@@ -100,39 +100,6 @@ Console.WriteLine("Successfully Compressed Files");
 
 ## Perguntas Frequentes
 
-### Q1: Posso usar Aspose.Zip para .NET em projetos comerciais?
-
-A1: Sim, você pode. Para obter uma licença, visite [aqui](https://purchase.aspose.com/buy).
-
-### Q2: Existe um teste gratuito disponível?
-
-A2: Sim, você pode explorar a biblioteca com um teste gratuito [aqui](https://releases.aspose.com/).
-
-### Q3: Onde posso encontrar documentação detalhada?
-
-A3: Consulte a documentação [aqui](https://reference.aspose.com/zip/net/).
-
-### Q4: Como posso obter suporte ou fazer perguntas?
-
-A4: Visite o fórum da comunidade [aqui](https://forum.aspose.com/c/zip/37).
-
-### Q5: Licenças temporárias estão disponíveis?
-
-A5: Sim, você pode obter licenças temporárias [aqui](https://purchase.aspose.com/temporary-license/).
-
-## FAQs Adicionais
-
-**Q: O Aspose.Zip suporta outros formatos de arquivo além de Cpio?**  
-A: Sim, a biblioteca também lida com formatos Zip, Tar e GZip, oferecendo flexibilidade para diferentes casos de uso.
-
-**Q: Posso adicionar proteção por senha ao arquivo?**  
-A: Embora o Cpio não suporte criptografia, a classe ZipArchive do Aspose.Zip fornece métodos para definir senhas.
-
-**Q: A API é compatível com .NET Core?**  
-A: Absolutamente. O mesmo código funciona no .NET Core, .NET 5 e .NET 6 sem alterações.
-
-## FAQ
-
 **Q: O que acontece se o diretório de origem contiver sub‑pastas?**  
 A: `CreateEntries` varre sub‑pastas recursivamente, adicionando seus arquivos ao arquivo automaticamente.
 
@@ -149,15 +116,15 @@ A: A biblioteca funciona com arquivos maiores que 2 GB; porém, garanta que se
 
 Parabéns! Você aprendeu **como compactar arquivos** usando Aspose.Zip para .NET, criou um arquivo Cpio e explorou armadilhas comuns. Esta biblioteca poderosa pode agora se tornar parte central do seu fluxo de trabalho de gerenciamento de arquivos, seja arquivando logs, empacotando recursos ou preparando dados para transferência.
 
+---
+
+**Última atualização:** 2026-02-25  
+**Testado com:** Aspose.Zip for .NET 24.12 (última versão)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Última atualização:** 2026-02-25  
-**Testado com:** Aspose.Zip for .NET 24.12 (última versão)  
-**Autor:** Aspose

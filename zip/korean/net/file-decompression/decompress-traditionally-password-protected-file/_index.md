@@ -10,9 +10,7 @@ url: /ko/net/file-decompression/decompress-traditionally-password-protected-file
 weight: 15
 ---
 
- for any shortcodes: top and bottom remain.
-
-Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

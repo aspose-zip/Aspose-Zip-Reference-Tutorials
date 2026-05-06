@@ -98,39 +98,6 @@ Console.WriteLine("Successfully Compressed Files");
 | **Přístup odepřen** | Aplikace nemá oprávnění číst zdrojové soubory nebo zapisovat archiv. | Spusťte aplikaci s odpovídajícími oprávněními nebo upravte ACL adresáře. |
 | **Velké soubory způsobují OutOfMemory** | Načítání velmi velkých souborů najednou do paměti. | Zpracovávejte soubory pomocí streamů nebo rozdělte archiv na více částí. |
 
-## Často kladené otázky
-
-### Q1: Mohu používat Aspose.Zip pro .NET v komerčních projektech?
-
-A1: Ano, můžete. Pro získání licence navštivte [zde](https://purchase.aspose.com/buy).
-
-### Q2: Je k dispozici bezplatná zkušební verze?
-
-A2: Ano, knihovnu můžete vyzkoušet zdarma [zde](https://releases.aspose.com/).
-
-### Q3: Kde najdu podrobnou dokumentaci?
-
-A3: Dokumentaci najdete [zde](https://reference.aspose.com/zip/net/).
-
-### Q4: Jak mohu získat podporu nebo položit otázku?
-
-A4: Navštivte komunitní fórum [zde](https://forum.aspose.com/c/zip/37).
-
-### Q5: Jsou k dispozici dočasné licence?
-
-A5: Ano, dočasné licence získáte [zde](https://purchase.aspose.com/temporary-license/).
-
-## Další časté otázky
-
-**Q: Podporuje Aspose.Zip jiné formáty archivů kromě Cpio?**  
-A: Ano, knihovna také pracuje s formáty Zip, Tar a GZip, což vám dává flexibilitu pro různé scénáře.
-
-**Q: Mohu přidat ochranu heslem k archivu?**  
-A: Zatímco Cpio šifrování nepodporuje, třída `ZipArchive` v Aspose.Zip poskytuje metody pro nastavení hesla.
-
-**Q: Je API kompatibilní s .NET Core?**  
-A: Rozhodně. Stejný kód funguje na .NET Core, .NET 5 i .NET 6 bez úprav.
-
 ## FAQ
 
 **Q: Co se stane, pokud zdrojový adresář obsahuje podadresáře?**  
@@ -149,15 +116,15 @@ A: Knihovna pracuje se soubory většími než 2 GB; ujistěte se však, že p
 
 Gratulujeme! Naučili jste se **jak komprimovat soubory** pomocí Aspose.Zip pro .NET, vytvořili Cpio archiv a prozkoumali běžné úskalí. Tato výkonná knihovna se nyní může stát jádrem vašeho workflow pro správu souborů, ať už archivujete logy, balíte zdroje nebo připravujete data k přenosu.
 
+---
+
+**Poslední aktualizace:** 2026-02-25  
+**Testováno s:** Aspose.Zip pro .NET 24.12 (nejnovější verze)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Poslední aktualizace:** 2026-02-25  
-**Testováno s:** Aspose.Zip pro .NET 24.12 (nejnovější verze)  
-**Autor:** Aspose

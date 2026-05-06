@@ -98,39 +98,6 @@ Console.WriteLine("Successfully Compressed Files");
 | **Toegang geweigerd** | De applicatie heeft geen toestemming om bronbestanden te lezen of het archief te schrijven. | Voer de app uit met de juiste rechten of pas de map‑ACL’s aan. |
 | **Grote bestanden veroorzaken OutOfMemory** | Zeer grote bestanden in één keer in het geheugen laden. | Verwerk bestanden via streams of splits het archief in meerdere delen. |
 
-## Veelgestelde vragen
-
-### Q1: Kan ik Aspose.Zip voor .NET gebruiken in commerciële projecten?
-
-A1: Ja, dat kan. Om een licentie te krijgen, ga naar [hier](https://purchase.aspose.com/buy).
-
-### Q2: Is er een gratis proefversie beschikbaar?
-
-A2: Ja, je kunt de bibliotheek verkennen met een gratis proefversie [hier](https://releases.aspose.com/).
-
-### Q3: Waar vind ik gedetailleerde documentatie?
-
-A3: Raadpleeg de documentatie [hier](https://reference.aspose.com/zip/net/).
-
-### Q4: Hoe kan ik ondersteuning krijgen of vragen stellen?
-
-A4: Bezoek het communityforum [hier](https://forum.aspose.com/c/zip/37).
-
-### Q5: Zijn tijdelijke licenties beschikbaar?
-
-A5: Ja, je kunt tijdelijke licenties verkrijgen [hier](https://purchase.aspose.com/temporary-license/).
-
-## Aanvullende veelgestelde vragen
-
-**Q: Ondersteunt Aspose.Zip andere archiefformaten naast Cpio?**  
-A: Ja, de bibliotheek verwerkt ook Zip-, Tar- en GZip‑formaten, waardoor je flexibel bent voor verschillende use‑cases.
-
-**Q: Kan ik wachtwoordbeveiliging toevoegen aan het archief?**  
-A: Hoewel Cpio geen encryptie ondersteunt, biedt de ZipArchive‑klasse van Aspose.Zip methoden om wachtwoorden in te stellen.
-
-**Q: Is de API compatibel met .NET Core?**  
-A: Absoluut. dezelfde code werkt op .NET Core, .NET 5 en .NET 6 zonder aanpassingen.
-
 ## FAQ
 
 **Q: Wat gebeurt er als de bronmap sub‑mappen bevat?**  
@@ -149,15 +116,15 @@ A: De bibliotheek werkt met bestanden groter dan 2 GB; zorg er echter voor dat
 
 Gefeliciteerd! Je hebt geleerd **hoe bestanden te comprimeren** met Aspose.Zip voor .NET, een Cpio‑archief gemaakt en veelvoorkomende valkuilen verkend. Deze krachtige bibliotheek kan nu een kernonderdeel worden van je bestands‑beheer workflow, of je nu logbestanden archiveert, resources verpakt of data voorbereidt voor overdracht.
 
+---
+
+**Laatst bijgewerkt:** 2026-02-25  
+**Getest met:** Aspose.Zip for .NET 24.12 (latest release)  
+**Auteur:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Laatst bijgewerkt:** 2026-02-25  
-**Getest met:** Aspose.Zip for .NET 24.12 (latest release)  
-**Auteur:** Aspose

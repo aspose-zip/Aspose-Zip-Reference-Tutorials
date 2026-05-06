@@ -11,7 +11,7 @@ url: /pl/net/file-decompression/decompress-traditionally-password-protected-file
 weight: 15
 ---
 
- produce final content.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

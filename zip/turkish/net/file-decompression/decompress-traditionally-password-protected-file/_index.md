@@ -11,10 +11,6 @@ url: /tr/net/file-decompression/decompress-traditionally-password-protected-file
 weight: 15
 ---
 
- block placeholders.
-
-Let's craft translation.
-
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}

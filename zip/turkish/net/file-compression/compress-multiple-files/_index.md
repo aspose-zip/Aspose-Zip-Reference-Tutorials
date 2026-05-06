@@ -10,7 +10,7 @@ url: /tr/net/file-compression/compress-multiple-files/
 weight: 13
 ---
 
- placeholders.{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 

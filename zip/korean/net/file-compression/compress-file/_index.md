@@ -97,39 +97,6 @@ Console.WriteLine("Successfully Compressed Files");
 | **Access denied** | 애플리케이션에 소스 파일을 읽거나 아카이브를 쓸 권한이 없습니다. | 적절한 권한으로 앱을 실행하거나 폴더 ACL을 조정하세요. |
 | **Large files cause OutOfMemory** | 매우 큰 파일을 한 번에 메모리로 로드합니다. | 스트림으로 파일을 처리하거나 아카이브를 여러 파트로 나누세요. |
 
-## 자주 묻는 질문
-
-### Q1: Aspose.Zip for .NET을 상업 프로젝트에 사용할 수 있나요?
-
-A1: 예, 사용할 수 있습니다. 라이선스를 받으려면 [여기](https://purchase.aspose.com/buy)를 방문하세요.
-
-### Q2: 무료 체험판을 사용할 수 있나요?
-
-A2: 예, 무료 체험판은 [여기](https://releases.aspose.com/)에서 확인할 수 있습니다.
-
-### Q3: 자세한 문서는 어디에서 찾을 수 있나요?
-
-A3: 문서는 [여기](https://reference.aspose.com/zip/net/)에서 확인하세요.
-
-### Q4: 지원을 받거나 질문을 할 수 있는 곳은 어디인가요?
-
-A4: 커뮤니티 포럼은 [여기](https://forum.aspose.com/c/zip/37)에서 이용할 수 있습니다.
-
-### Q5: 임시 라이선스를 받을 수 있나요?
-
-A5: 예, 임시 라이선스는 [여기](https://purchase.aspose.com/temporary-license/)에서 얻을 수 있습니다.
-
-## 추가 FAQ
-
-**Q: Aspose.Zip이 Cpio 외에 다른 아카이브 형식을 지원하나요?**  
-A: 예, 라이브러리는 Zip, Tar, GZip 형식도 처리하므로 다양한 사용 사례에 유연하게 대응할 수 있습니다.
-
-**Q: 아카이브에 비밀번호 보호를 추가할 수 있나요?**  
-A: Cpio는 암호화를 지원하지 않지만, Aspose.Zip의 ZipArchive 클래스를 사용하면 비밀번호 설정 메서드를 이용할 수 있습니다.
-
-**Q: API가 .NET Core와 호환되나요?**  
-A: 물론입니다. 동일한 코드는 .NET Core, .NET 5, .NET 6에서도 별도 수정 없이 동작합니다.
-
 ## FAQ
 
 **Q: 소스 디렉터리에 하위 폴더가 포함되어 있으면 어떻게 되나요?**  
@@ -148,15 +115,15 @@ A: 라이브러리는 2 GB 이상의 파일도 처리할 수 있지만, 메모
 
 축하합니다! 이제 Aspose.Zip for .NET을 사용해 **how to compress files**을 수행하고 Cpio 아카이브를 생성했으며 일반적인 함정도 파악했습니다. 이 강력한 라이브러리는 로그 아카이브, 리소스 패키징, 데이터 전송 준비 등 파일 관리 워크플로우의 핵심 요소가 될 수 있습니다.
 
+---
+
+**마지막 업데이트:** 2026-02-25  
+**테스트 환경:** Aspose.Zip for .NET 24.12 (최신 릴리스)  
+**작성자:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**마지막 업데이트:** 2026-02-25  
-**테스트 환경:** Aspose.Zip for .NET 24.12 (최신 릴리스)  
-**작성자:** Aspose

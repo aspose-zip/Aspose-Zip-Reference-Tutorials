@@ -100,39 +100,6 @@ Console.WriteLine("Successfully Compressed Files");
 
 ## Häufig gestellte Fragen
 
-### Q1: Kann ich Aspose.Zip für .NET in kommerziellen Projekten verwenden?
-
-A1: Ja, Sie können. Um eine Lizenz zu erhalten, besuchen Sie [hier](https://purchase.aspose.com/buy).
-
-### Q2: Gibt es eine kostenlose Testversion?
-
-A2: Ja, Sie können die Bibliothek mit einer kostenlosen Testversion [hier](https://releases.aspose.com/) erkunden.
-
-### Q3: Wo finde ich detaillierte Dokumentation?
-
-A3: Siehe die Dokumentation [hier](https://reference.aspose.com/zip/net/).
-
-### Q4: Wie kann ich Support erhalten oder Fragen stellen?
-
-A4: Besuchen Sie das Community‑Forum [hier](https://forum.aspose.com/c/zip/37).
-
-### Q5: Sind temporäre Lizenzen verfügbar?
-
-A5: Ja, Sie können temporäre Lizenzen [hier](https://purchase.aspose.com/temporary-license/) erhalten.
-
-## Zusätzliche FAQ
-
-**Q: Unterstützt Aspose.Zip neben Cpio noch andere Archivformate?**  
-A: Ja, die Bibliothek verarbeitet auch Zip-, Tar‑ und GZip‑Formate und bietet Ihnen damit Flexibilität für verschiedene Anwendungsfälle.
-
-**Q: Kann ich dem Archiv einen Passwortschutz hinzufügen?**  
-A: Während Cpio keine Verschlüsselung unterstützt, stellt die ZipArchive‑Klasse von Aspose.Zip Methoden zum Setzen von Passwörtern bereit.
-
-**Q: Ist die API mit .NET Core kompatibel?**  
-A: Absolut. Der gleiche Code funktioniert auf .NET Core, .NET 5 und .NET 6 ohne Änderungen.
-
-## FAQ
-
 **Q: Was passiert, wenn das Quellverzeichnis Unterordner enthält?**  
 A: `CreateEntries` durchsucht Unterordner rekursiv und fügt deren Dateien automatisch dem Archiv hinzu.
 
@@ -149,15 +116,15 @@ A: Die Bibliothek arbeitet mit Dateien größer als 2 GB; stellen Sie jedoch s
 
 Herzlichen Glückwunsch! Sie haben **wie man Dateien komprimiert** mit Aspose.Zip für .NET gelernt, ein Cpio‑Archiv erstellt und gängige Stolperfallen erkundet. Diese leistungsstarke Bibliothek kann nun zu einem Kernbestandteil Ihres Dateimanagement‑Workflows werden, egal ob Sie Protokolle archivieren, Ressourcen paketieren oder Daten für den Transfer vorbereiten.
 
+---
+
+**Zuletzt aktualisiert:** 2026-02-25  
+**Getestet mit:** Aspose.Zip for .NET 24.12 (neueste Version)  
+**Autor:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Zuletzt aktualisiert:** 2026-02-25  
-**Getestet mit:** Aspose.Zip for .NET 24.12 (neueste Version)  
-**Autor:** Aspose

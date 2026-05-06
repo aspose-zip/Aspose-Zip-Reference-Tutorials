@@ -98,39 +98,6 @@ Console.WriteLine("Successfully Compressed Files");
 | **Akses ditolak** | Aplikasi tidak memiliki izin untuk membaca file sumber atau menulis arsip. | Jalankan aplikasi dengan hak istimewa yang sesuai atau sesuaikan ACL folder. |
 | **File besar menyebabkan OutOfMemory** | Memuat file yang sangat besar ke memori sekaligus. | Proses file dalam aliran atau bagi arsip menjadi beberapa bagian. |
 
-## Pertanyaan yang Sering Diajukan
-
-### Q1: Bisakah saya menggunakan Aspose.Zip untuk .NET dalam proyek komersial?
-
-A1: Ya, Anda bisa. Untuk mendapatkan lisensi, kunjungi [di sini](https://purchase.aspose.com/buy).
-
-### Q2: Apakah tersedia versi percobaan gratis?
-
-A2: Ya, Anda dapat menjelajahi perpustakaan dengan versi percobaan gratis [di sini](https://releases.aspose.com/).
-
-### Q3: Di mana saya dapat menemukan dokumentasi detail?
-
-A3: Lihat dokumentasi [di sini](https://reference.aspose.com/zip/net/).
-
-### Q4: Bagaimana saya dapat mendapatkan dukungan atau mengajukan pertanyaan?
-
-A4: Kunjungi forum komunitas [di sini](https://forum.aspose.com/c/zip/37).
-
-### Q5: Apakah lisensi sementara tersedia?
-
-A5: Ya, Anda dapat memperoleh lisensi sementara [di sini](https://purchase.aspose.com/temporary-license/).
-
-## Additional FAQs
-
-**Q: Apakah Aspose.Zip mendukung format arsip lain selain Cpio?**  
-A: Ya, perpustakaan ini juga menangani format Zip, Tar, dan GZip, memberi Anda fleksibilitas untuk berbagai kasus penggunaan.
-
-**Q: Bisakah saya menambahkan perlindungan kata sandi ke arsip?**  
-A: Meskipun Cpio tidak mendukung enkripsi, kelas ZipArchive dari Aspose.Zip menyediakan metode untuk mengatur kata sandi.
-
-**Q: Apakah API kompatibel dengan .NET Core?**  
-A: Tentu saja. Kode yang sama berfungsi pada .NET Core, .NET 5, dan .NET 6 tanpa perubahan.
-
 ## FAQ
 
 **Q: Apa yang terjadi jika direktori sumber berisi sub‑folder?**  
@@ -149,15 +116,15 @@ A: Perpustakaan ini bekerja dengan file yang lebih besar dari 2 GB; namun, pas
 
 Selamat! Anda telah mempelajari **cara mengompres file** menggunakan Aspose.Zip untuk .NET, membuat arsip Cpio, dan mengeksplorasi jebakan umum. Perpustakaan yang kuat ini kini dapat menjadi bagian inti dari alur kerja manajemen file Anda, baik saat mengarsipkan log, mengemas sumber daya, atau menyiapkan data untuk transfer.
 
+---
+
+**Last Updated:** 2026-02-25  
+**Tested With:** Aspose.Zip for .NET 24.12 (latest release)  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Last Updated:** 2026-02-25  
-**Tested With:** Aspose.Zip for .NET 24.12 (latest release)  
-**Author:** Aspose

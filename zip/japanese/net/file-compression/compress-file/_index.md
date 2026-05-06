@@ -95,39 +95,6 @@ Console.WriteLine("Successfully Compressed Files");
 | **アクセス拒否** | アプリケーションにソースファイルの読み取りまたはアーカイブの書き込み権限がありません。 | 適切な権限でアプリを実行するか、フォルダーの ACL を調整してください。 |
 | **大きなファイルで OutOfMemory が発生** | 非常に大きなファイルを一度にメモリに読み込んでいるため。 | ストリームでファイルを処理するか、アーカイブを複数に分割してください。 |
 
-## よくある質問
-
-### Q1: Aspose.Zip for .NET を商用プロジェクトで使用できますか？
-
-A1: はい、可能です。ライセンス取得は [here](https://purchase.aspose.com/buy) から。
-
-### Q2: 無料トライアルは利用可能ですか？
-
-A2: はい、無料トライアルでライブラリを試すことができます [here](https://releases.aspose.com/)。
-
-### Q3: 詳細なドキュメントはどこで見つけられますか？
-
-A3: ドキュメントは [here](https://reference.aspose.com/zip/net/) にあります。
-
-### Q4: サポートや質問はどこで受けられますか？
-
-A4: コミュニティフォーラムは [here](https://forum.aspose.com/c/zip/37) で利用できます。
-
-### Q5: 一時ライセンスは利用可能ですか？
-
-A5: はい、一時ライセンスは [here](https://purchase.aspose.com/temporary-license/) から取得できます。
-
-## 追加のFAQ
-
-**Q: Aspose.Zip は Cpio 以外のアーカイブ形式もサポートしていますか？**  
-A: はい、Zip、Tar、GZip 形式も取り扱うため、さまざまなユースケースに柔軟に対応できます。
-
-**Q: アーカイブにパスワード保護を付与できますか？**  
-A: Cpio は暗号化をサポートしていませんが、Aspose.Zip の ZipArchive クラスではパスワード設定用メソッドが用意されています。
-
-**Q: API は .NET Core と互換性がありますか？**  
-A: 完全に互換性があります。同じコードが .NET Core、.NET 5、.NET 6 でもそのまま動作します。
-
 ## FAQ
 
 **Q: ソースディレクトリにサブフォルダーが含まれている場合はどうなりますか？**  
@@ -146,15 +113,15 @@ A: ライブラリは 2 GB を超えるファイルも扱えますが、メモ
 
 おめでとうございます！Aspose.Zip for .NET を使って **ファイルを圧縮する方法** を習得し、Cpio アーカイブの作成と一般的な落とし穴の回避方法を学びました。この強力なライブラリは、ログのアーカイブ、リソースのパッケージ化、データ転送の準備など、ファイル管理ワークフローの中心的な役割を果たすことでしょう。
 
+---
+
+**最終更新日:** 2026-02-25  
+**テスト環境:** Aspose.Zip for .NET 24.12（最新リリース）  
+**作者:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**最終更新日:** 2026-02-25  
-**テスト環境:** Aspose.Zip for .NET 24.12（最新リリース）  
-**作者:** Aspose

@@ -15,33 +15,33 @@ weight: 15
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# extract zip with password using Aspose.Zip for .NET
+# ekstrak zip dengan kata sandi menggunakan Aspose.Zip untuk .NET
 
-Mengekstrak zip dengan password adalah tugas rutin bagi pengembang .NET yang perlu melindungi atau berbagi file rahasia. Dalam tutorial ini Anda akan belajar **how to extract zip with password** menggunakan pustaka **Aspose.Zip for .NET**, dan Anda akan melihat bagaimana pendekatan yang sama memungkinkan Anda **decompress password protected zip** arsip, **unzip password protected zip** file, serta melakukan operasi **c# unzip password protected** dengan hanya beberapa baris kode.
+Mengekstrak zip dengan kata sandi adalah tugas rutin bagi pengembang .NET yang perlu melindungi atau berbagi file rahasia. Dalam tutorial ini Anda akan belajar **cara mengekstrak zip dengan kata sandi** menggunakan pustaka **Aspose.Zip for .NET**, dan Anda akan melihat bagaimana pendekatan yang sama memungkinkan Anda **dekompresi zip yang dilindungi kata sandi** arsip, **unzip file zip yang dilindungi kata sandi**, serta melakukan operasi **c# unzip kata sandi yang dilindungi** hanya dengan beberapa baris kode.
 
-## Quick Answers
-- **What is the primary class for handling zip files?** `Archive` dari namespace Aspose.Zip.  
-- **Which method supplies the password?** Berikan `DecryptionPassword` melalui `ArchiveLoadOptions`.  
-- **Can I unzip password protected zip files in .NET Core?** Ya, Aspose.Zip mendukung .NET Framework, .NET Core, dan .NET 5/6+.  
-- **Do I need a license for development?** Lisensi sementara cukup untuk pengujian; lisensi penuh diperlukan untuk produksi.  
-- **How many lines of code are needed?** Kurang dari 20 baris (tidak termasuk using statements).
+## Jawaban Cepat
+- **Apa kelas utama untuk menangani file zip?** `Arsip` dari namespace Aspose.Zip.
+- **Metode manakah yang memberikan kata sandi?** Berikan `DecryptionPassword` melalui `ArchiveLoadOptions`.
+- **Dapatkah saya mengekstrak file zip yang dilindungi kata sandi di .NET Core?** Ya, Aspose.Zip mendukung .NET Framework, .NET Core, dan .NET5/6+.
+- **Apakah saya memerlukan lisensi untuk pengembangan?** Lisensi sementara cukup untuk pengujian; lisensi penuh diperlukan untuk produksi.
+- **Berapa baris kode yang dibutuhkan?** Kurang dari 20 baris (tidak termasuk menggunakan pernyataan).
 
-## What is “extract zip with password”?
-Mengekstrak zip dengan password berarti membaca arsip ZIP terenkripsi, memberikan password yang benar, dan membiarkan pustaka mendekripsi serta mengekstrak file yang terdapat di dalamnya. Inilah inti dari **password protected zip extraction**.
+## Apa itu “ekstrak zip dengan kata sandi”?
+Mengekstrak zip dengan password berarti membaca arsip ZIP yang terenkripsi, memberikan password yang benar, dan membiarkan pustaka mendekripsi serta mengekstrak file yang terdapat di dalamnya. Inilah inti dari **ekstraksi zip yang dilindungi kata sandi**.
 
-## Why use Aspose.Zip for this task?
-- **Full .NET support** – bekerja dengan .NET Framework, .NET Core, dan versi .NET yang lebih baru.  
-- **Traditional encryption handling** – mendukung metode legacy ZipCrypto yang digunakan oleh banyak alat lama.  
-- **Simple API** – hanya beberapa pemanggilan yang diperlukan untuk memberikan password dan membaca entri.  
-- **Performance‑optimized** – aliran diproses secara efisien, cocok untuk arsip besar.  
-- **asp zip .net** terus dipelihara dan menyertakan dokumentasi yang komprehensif.
+## Mengapa menggunakan Aspose.Zip untuk tugas ini?
+- **Dukungan .NET penuh** – bekerja dengan .NET Framework, .NET Core, dan versi .NET yang lebih baru.
+- **Penanganan enkripsi tradisional** – mendukung metode ZipCrypto lawas yang digunakan oleh banyak alat lama.
+- **API Sederhana** – hanya beberapa panggilan yang diperlukan untuk memberikan kata sandi dan membaca entri.
+- **Kinerja‑optimal** – aliran diproses secara efisien, cocok untuk arsip besar.
+- **asp zip .net** terus dipelihara dan mencakup dokumentasi yang komprehensif.
 
-## Prerequisites
-- Visual Studio 2022 atau lebih baru (lingkungan pengembangan .NET apa pun).  
-- Pustaka Aspose.Zip untuk .NET yang ditambahkan melalui NuGet (`Aspose.Zip`).  
-- Familiaritas dasar dengan I/O file C#.
+## Prasyarat
+- Visual Studio 2022 atau lebih baru (lingkungan pengembangan .NET apa pun).
+- Pustaka Aspose.Zip untuk .NET yang ditambahkan melalui NuGet (`Aspose.Zip`).
+- Familiaritas dasar dengan file I/O C#.
 
-## Import Namespaces
+## Impor Namespace
 Pertama, bawa namespace yang diperlukan ke dalam ruang lingkup:
 
 ```csharp
@@ -49,17 +49,17 @@ using Aspose.Zip;
 using System.IO;
 ```
 
-## Step 1: Create a password‑protected ZIP (Run Password Protection on a File)
-Sebelum kita dapat mendemonstrasikan ekstraksi, kita memerlukan zip yang dilindungi dengan password tradisional. Potongan kode di bawah ini membuat arsip semacam itu (Anda dapat menggunakan yang sudah ada jika sudah memilikinya):
+## Langkah 1: Buat ZIP yang dilindungi kata sandi (Jalankan Perlindungan Kata Sandi pada File)
+Sebelum kita dapat mendemonstrasikan ekstraksi, kita memerlukan zip yang dilindungi dengan kata sandi tradisional. Potongan kode di bawah ini membuat arsip semacam itu (Anda dapat menggunakan yang sudah ada jika sudah memilikinya):
 
 ```csharp
 string dataDir = "Your Document Directory";
 PasswordProtectArchiveWithTraditionalPassword.Run(); // Run password protection on a file example to use it later
 ```
 
-> **Pro tip:** Ganti `"Your Document Directory"` dengan jalur absolut tempat Anda menyimpan file uji.
+> **Tips pro:** Ganti `"Direktori Dokumen Anda"` dengan jalur absolut tempat Anda menyimpan file uji.
 
-## Step 2: Decompress Traditionally Password‑Protected File
+## Langkah 2: Dekompresi File yang Biasanya Dilindungi Kata Sandi
 Sekarang mari kita ekstrak kontennya. Kode di bawah ini menunjukkan secara tepat bagaimana **c# unzip password protected** arsip menggunakan Aspose.Zip:
 
 ```csharp
@@ -88,45 +88,47 @@ using (FileStream fs = File.OpenRead(dataDir + "CompressWithTraditionalEncryptio
 
 Dalam potongan kode ini kami:
 
-1. Membuka file ZIP terenkripsi sebagai aliran baca‑saja.  
-2. Membuat file baru (`alice_extracted_out.txt`) tempat data yang didekompresi akan ditulis.  
-3. Menginstansiasi `Archive` dengan `ArchiveLoadOptions`, menyertakan password (`"p@s$"`).  
+1. Membuka file ZIP terenkripsi sebagai aliran baca‑saja.
+2. Membuat file baru (`alice_extracted_out.txt`) tempat data yang didekompresi akan ditulis.
+3. Menginstansiasi `Archive` dengan `ArchiveLoadOptions`, menyertakan password (`"p@s$"`).
 4. Mengakses entri pertama dalam arsip (asumsi satu file) dan menyalin bajetnya ke file output.
 
-Ketika kode selesai, Anda akan berhasil **extract zip with password** dan memperoleh konten file asli.
+Ketika kode selesai, Anda akan berhasil **ekstrak zip dengan kata sandi** dan memperoleh file konten asli.
 
-## Common Pitfalls & How to Avoid Them
-| Issue | Cause | Solution |
+## Kesalahan Umum & Cara Menghindarinya
+| Edisi | Penyebab | Solusi |
 |-------|-------|----------|
-| “Invalid password” exception | Wrong password string or missing `DecryptionPassword` | Double‑check the password and ensure it’s supplied via `ArchiveLoadOptions`. |
-| No entries found | Archive is empty or path is incorrect | Verify the ZIP file path and inspect the archive with a tool like 7‑Zip. |
-| Large files cause memory pressure | Reading entire file into memory | Use a buffered read/write loop (as shown) to process data in chunks. |
+| Pengecualian “Kata sandi tidak valid” | String kata sandi salah atau `DecryptionPassword` | Periksa kembali sandi dan pastikan sandi diberikan melalui `ArchiveLoadOptions`. |
 
-## Frequently Asked Questions
+| Tidak ada entri yang ditemukan | Arsip kosong atau jalur salah | Verifikasi jalur file ZIP dan periksa arsip dengan alat seperti 7-Zip. |
 
-**Q:** *Is Aspose.Zip suitable for large compressed files?*  
-**A:** Yes, Aspose.Zip is optimized for both small and large archives, ensuring efficient **decompress password protected zip** operations.
+| File besar menyebabkan tekanan memori | Membaca seluruh file ke dalam memori | Gunakan loop baca/tulis buffer (seperti yang ditunjukkan) untuk memproses data dalam potongan-potongan. |
 
-**Q:** *Can I use Aspose.Zip with other .NET libraries?*  
-**A:** Absolutely, Aspose.Zip integrates smoothly with any .NET library, allowing you to combine it with logging, dependency injection, or cloud storage solutions.
+## Pertanyaan yang Sering Diajukan
 
-**Q:** *Are there encryption options besides the traditional password?*  
-**A:** Yes, Aspose.Zip also supports AES‑based encryption methods for stronger security, but the traditional ZipCrypto method is ideal for compatibility with older tools.
+**T:** *Apakah Aspose.Zip cocok untuk file terkompresi besar?*
+**J:** Ya, Aspose.Zip dioptimalkan untuk arsip kecil dan besar, memastikan operasi **dekompresi zip yang dilindungi kata sandi** yang efisien.
 
-**Q:** *Where can I get help from the community?*  
-**A:** You can ask questions and share experiences on the [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37).
+**T:** *Bisakah saya menggunakan Aspose.Zip dengan pustaka .NET lainnya?*
+**J:** Tentu saja, Aspose.Zip terintegrasi dengan lancar dengan pustaka .NET apa pun, memungkinkan Anda untuk menggabungkannya dengan solusi pencatatan, injeksi ketergantungan, atau penyimpanan cloud.
 
-**Q:** *How do I obtain a temporary license for testing?*  
-**A:** Visit the Aspose temporary‑license page at [Aspose.Purchase](https://purchase.aspose.com/temporary-license/) to request a trial key.
+**T:** *Apakah ada opsi enkripsi selain kata sandi tradisional?*
+**J:** Ya, Aspose.Zip juga mendukung metode enkripsi berbasis AES untuk keamanan yang lebih kuat, tetapi metode ZipCrypto tradisional ideal untuk kompatibilitas dengan alat-alat lama.
 
-## Conclusion
-You now have a complete, production‑ready example for **extract zip with password** using **Aspose.Zip for .NET**. By supplying the password through `ArchiveLoadOptions`, you can reliably **unzip password protected zip** files in any .NET application—whether you’re targeting .NET Framework, .NET Core, or .NET 5/6+. Feel free to explore additional encryption options, handle multiple entries, or integrate this logic into larger file‑processing pipelines.
+**T:** *Di mana saya bisa mendapatkan bantuan dari komunitas?*
+**J:** Anda dapat mengajukan pertanyaan dan berbagi pengalaman di [Forum Aspose.Zip](https://forum.aspose.com/c/zip/37).
+
+**T:** *Bagaimana cara mendapatkan lisensi sementara untuk pengujian?*
+**J:** Kunjungi halaman lisensi sementara Aspose di [Aspose.Purchase](https://purchase.aspose.com/temporary-license/) untuk meminta kunci uji coba.
+
+## Kesimpulan
+Anda sekarang memiliki contoh lengkap dan siap produksi untuk **ekstraksi zip dengan kata sandi** menggunakan **Aspose.Zip untuk .NET**. Dengan memasukkan kata sandi melalui `ArchiveLoadOptions`, Anda dapat dengan andal **membuka file zip yang dilindungi kata sandi** di aplikasi .NET apa pun—baik Anda menargetkan .NET Framework, .NET Core, atau .NET5/6+. Jangan ragu untuk menjelajahi opsi enkripsi tambahan, menangani beberapa entri, atau mengintegrasikan logika ini ke dalam alur pemrosesan file yang lebih besar.
 
 ---
 
-**Last Updated:** 2026-02-25  
-**Tested With:** Aspose.Zip 24.11 for .NET  
-**Author:** Aspose  
+**Terakhir Diperbarui:** 2026-02-25
+**Diuji Dengan:** Aspose.Zip 24.11 untuk .NET
+**Penulis:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
