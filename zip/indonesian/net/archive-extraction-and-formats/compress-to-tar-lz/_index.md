@@ -1,10 +1,10 @@
 ---
-date: 2025-12-01
-description: Pelajari cara mengompres file tar.lz di .NET dengan Aspose.Zip dan membuat
-  arsip tar.lz dengan mudah.
+date: 2026-02-23
+description: Pelajari cara mengompres beberapa file menjadi tar menggunakan Aspose.Zip
+  untuk .NET dan membuat arsip tar.lz secara efisien.
 linktitle: Compressing to TarLz
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Cara mengompres tar.lz dengan Aspose.Zip untuk .NET
+title: Cara mengompres beberapa file tar dengan Aspose.Zip untuk .NET
 url: /id/net/archive-extraction-and-formats/compress-to-tar-lz/
 weight: 13
 ---
@@ -13,45 +13,48 @@ weight: 13
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Cara mengompres tar.lz dengan Aspose.Zip untuk .NET
+# Cara mengompres beberapa file tar dengan Aspose.Zip untuk .NET
 
-Dalam pengembangan .NET modern, mengemas file secara efisien dapat secara dramatis meningkatkan ukuran penyebaran dan waktu transfer jaringan. **Cara mengompres tar.lz** adalah kebutuhan umum ketika Anda memerlukan arsip TAR yang ringan dan terkompresi LZ. Dalam tutorial ini kami akan memandu Anda melalui contoh **kompresi tar.lz** yang jelas, langkah demi langkah menggunakan pustaka Aspose.Zip, sehingga Anda dapat dengan cepat membuat arsip tar.lz dalam aplikasi Anda sendiri.
+Dalam pengembangan .NET modern, mengemas file secara efisien dapat secara dramatis meningkatkan ukuran penyebaran dan waktu transfer jaringan. **Compress multiple files tar** adalah kebutuhan yang sering muncul ketika Anda memerlukan arsip TAR yang ringan dan terkompresi LZ untuk cadangan, distribusi, atau unggahan ke cloud. Pada tutorial ini kami akan memandu Anda melalui contoh **tar.lz compression** langkah‑demi‑langkah menggunakan pustaka Aspose.Zip, sehingga Anda dapat dengan cepat membuat **arsip tar.lz** dalam aplikasi Anda sendiri.
 
 ## Jawaban Cepat
-- **Perpustakaan apa yang harus saya gunakan?** Aspose.Zip untuk .NET.  
-- **Berapa lama implementasinya?** Sekitar 5‑10 menit untuk contoh dasar.  
-- **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk pengujian; lisensi komersial diperlukan untuk produksi.  
-- **Versi .NET apa yang didukung?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
-- **Bisakah saya mengompres beberapa file sekaligus?** Ya – cukup tambahkan lebih banyak entri sebelum menyimpan.
+- **Library apa yang harus saya gunakan?** Aspose.Zip untuk .NET.
+- **Berapa lama implementasinya?** Sekitar 5‑10 menit untuk contoh dasar.
+- **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk pengujian; lisensi komersial diperlukan untuk produksi.
+- **Versi .NET apa yang didukung?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+- **sepertinya saya mengompres beberapa file sekaligus?** Ya – cukup menambahkan lebih banyak entri sebelum menyimpan.
+
+## Cara mengompres banyak file tar
+Bagian ini secara langsung menjawab kata kunci utama dan menunjukkan langkah‑langkah yang tepat untuk **compress multiple files tar** menggunakan Aspose.Zip. Pendekatan ini berfungsi untuk jumlah file berapapun, dan Anda dapat dengan mudah menyesuaikannya dengan struktur folder Anda sendiri.
 
 ## Apa itu kompresi tar.lz?
-`tar.lz` adalah arsip TAR yang telah dikompresi menggunakan algoritma LZMA (sering disebut hanya **LZ**). Ini menggabungkan kesederhanaan pengelompokan file TAR dengan rasio kompresi tinggi LZ, menjadikannya ideal untuk file cadangan, distribusi paket, atau skenario apa pun di mana bandwidth penting.
+`tar.lz` adalah arsip TAR yang telah dikompresi menggunakan algoritma LZMA (sering disebut hanya **LZ**). Ia menggabungkan penghematan pengelompokan file TAR dengan kompresi tinggi LZ, menjadikannya rasio ideal untuk cadangan file, distribusi paket, atau skenario apa pun di mana bandwidth penting.
 
 ## Mengapa menggunakan Aspose.Zip untuk .NET?
-Aspose.Zip menyembunyikan detail tingkat rendah pembuatan arsip, memberikan API berorientasi objek yang bersih. Anda mendapatkan:
+Aspose.Zip menyajikan detail tingkat rendah pembuatan arsip, memberikan Anda API berorientasi objek yang bersih. Anda mendapatkan:
 
-* **Tanpa ketergantungan eksternal** – implementasi .NET murni.  
-* **Dukungan lintas‑platform** – berfungsi di Windows, Linux, dan macOS.  
-* **Kompresi LZ bawaan** – tidak perlu menginstal alat native tambahan.  
-* **Penanganan error yang kuat** – pengecualian bersifat deskriptif, memudahkan debugging.
+* **Tanpa ketergantungan eksternal** – implementasi murni .NET.
+* **Dukungan lintas platform** – berfungsi di Windows, Linux, dan macOS.
+* **Kompresi LZ bawaan** – tidak perlu menginstal alat native tambahan.
+* **Penanganan kesalahan yang kuat** – menerjemahkannya bersifat deskriptif, memudahkan proses debugging.
 
 ## Prasyarat
-Sebelum Anda memulai, pastikan Anda memiliki:
+Sebelum memulai, pastikan Anda memiliki:
 
-- **Pustaka Aspose.Zip untuk .NET** – unduh dari [sini](https://releases.aspose.com/zip/net/).  
-- Sebuah folder yang berisi file yang ingin Anda arsipkan. Path ke folder ini akan disimpan dalam variabel `dataDir` (Anda akan mengaturnya pada Langkah 3).
+- **Aspose.Zip untuk .NET** – unduh dari [di sini](https://releases.aspose.com/zip/net/).
+- Sebuah folder yang berisi file‑file yang ingin Anda arsipkan. Jalur ke folder ini akan disimpan dalam variabel `dataDir` (akan Anda atur pada Langkah3).
 
 ## Impor Namespace
-Tambahkan namespace yang diperlukan agar kompiler mengetahui di mana menemukan kelas yang akan kami gunakan.
+Tambahkan namespace yang diperlukan agar compiler mengetahui di mana menemukan kelas‑kelas yang akan kita gunakan.
 
 ```csharp
 using System;
 using Aspose.Zip.Tar;
 ```
 
-## Cara membuat arsip tar.lz – Panduan Langkah‑demi‑Langkah
+## Cara membuat arsip tar.lz – Panduan Langkah demi Langkah
 
-### Langkah 1: Kompres satu file
+### Langkah1: Kompres satu file
 Contoh pertama menunjukkan skenario paling dasar – menambahkan satu file ke arsip TAR dan kemudian menyimpannya sebagai file **tar.lz**.
 
 ```csharp
@@ -65,12 +68,12 @@ using (TarArchive archive = new TarArchive())
 
 **Penjelasan**
 
-- `new TarArchive()` membuat kontainer TAR kosong.  
-- `CreateEntry` menambahkan file `alice29.txt` dari `dataDir` Anda.  
+- `new TarArchive()` membuat kontainer TAR kosong.
+- `CreateEntry` menambahkan file `alice29.txt` dari `dataDir` Anda.
 - `SaveLzipped` menulis arsip ke disk dan menerapkan kompresi LZ, menghasilkan `archive.tar.lz`.
 
-### Langkah 2: Kompres beberapa file dalam satu arsip
-Seringkali Anda perlu menggabungkan beberapa file bersama. Cukup panggil `CreateEntry` untuk setiap file sebelum menyimpan.
+### Langkah2: Kompres banyak file dalam satu arsip
+Seringkali Anda perlu menggabungkan beberapa file sekaligus. Cukup panggil `CreateEntry` untuk setiap file sebelum menyimpan. Ini menampilkan **tambahkan file ke tar lz** dan secara efektif **kompres beberapa file tar**.
 
 ```csharp
 //ExStart: CompressMultipleFiles
@@ -84,11 +87,11 @@ using (TarArchive archive = new TarArchive())
 
 **Penjelasan**
 
-- Kode mengikuti pola yang sama seperti Langkah 1, tetapi menambahkan entri kedua (`lcet10.txt`).  
-- Anda dapat mengulangi `CreateEntry` sebanyak yang diperlukan; pustaka menangani struktur TAR internal secara otomatis.
+- Kode mengikuti pola yang sama seperti Langkah1, tetapi menambahkan entri kedua (`lcet10.txt`).
+- Anda dapat memulai kembali `CreateEntry` sebanyak yang diperlukan; pustaka akan menangani struktur TAR internal secara otomatis.
 
-### Langkah 3: Tentukan direktori dokumen Anda
-Ganti placeholder dengan path sebenarnya tempat file sumber Anda berada. Path ini digunakan oleh contoh-contoh di atas.
+### Langkah3: Tentukan direktori dokumen Anda
+Ganti placeholder dengan jalur sebenarnya tempat file sumber Anda berada. Jalur ini digunakan oleh contoh‑contoh di atas.
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -96,35 +99,43 @@ string dataDir = "Your Document Directory";
 
 **Penjelasan**
 
-- Atur `dataDir` ke path folder yang lengkap, misalnya `@"C:\MyFiles\"`.  
-- Menyimpan direktori dalam variabel membuat kode dapat digunakan kembali dan lebih mudah dipelihara.
+- Atur `dataDir` ke jalur folder yang lengkap, misalnya `@"C:\MyFiles\"`.
+- menyimpan direktori dalam variabel membuat kode dapat digunakan kembali dan lebih mudah dipelihara.
 
-## Kesulitan umum & pemecahan masalah
-| Gejala | Penyebab kemungkinan | Solusi |
+## Kesalahan umum & pemecahan masalah
+| Gejala | Kemungkinan penyebab | Perbaiki |
 |---------|--------------|-----|
-| `FileNotFoundException` saat menjalankan contoh | `dataDir` mengarah ke folder yang tidak ada atau nama file salah ketik | Verifikasi path dan nama file; gunakan `Path.Combine` untuk keamanan. |
-| File output berukuran **0 KB** | `archive.SaveLzipped` dipanggil sebelum ada entri yang ditambahkan | Pastikan setidaknya satu pemanggilan `CreateEntry` sebelum `SaveLzipped`. |
-| Kompresi terasa lambat | File besar dengan ukuran buffer default | Pertimbangkan memproses file dalam potongan atau menggunakan I/O asynchronous jika kinerja sangat penting. |
+| `FileNotFoundException` saat menjalankan contoh | `dataDir` mengarahkan ke folder yang tidak ada atau nama file salah ketik | Verifikasi jalur dan nama file; gunakan `Path.Combine` untuk keamanan. |
+| Keluaran file berukuran **0KB** | `archive.SaveLzipped` dipanggil sebelum ada entri yang ditambahkan | Pastikan setidaknya satu pemanggilan `CreateEntry` terjadi sebelum `SaveLzipped`. |
+| Kompresi terasa lambat | File besar dengan ukuran buffer default | memproses file dalam potongan atau menggunakan I/O asinkron jika kinerja kritis. |
 
 ## Kesimpulan
-Anda kini tahu **cara mengompres file tar.lz** menggunakan Aspose.Zip untuk .NET, baik Anda menangani satu dokumen maupun kumpulan file. **Contoh kompresi tar.lz** ini menunjukkan cara yang bersih dan siap produksi untuk membuat arsip ringan yang dapat dengan mudah dipindahkan atau disimpan.
+Anda kini tahu **cara mengompres tar.lz** menggunakan Aspose.Zip untuk .NET, baik untuk satu dokumen maupun kumpulan file. Contoh **tar.lz compression** ini menampilkan cara bersih dan siap produksi untuk **membuat arsip tar lz** yang dapat dengan mudah dipindahkan atau disimpan.
 
 ## Pertanyaan yang Sering Diajukan
 
-**Q:** Bisakah saya mengompres file dengan ukuran berapa pun menggunakan Aspose.Zip untuk .NET?  
-**A:** Ya, pustaka menangani file kecil maupun sangat besar; pastikan Anda memiliki memori dan ruang disk yang cukup untuk struktur TAR sementara.
+**Q:** Bisakah saya mengompres file berukuran apa pun dengan Aspose.Zip untuk .NET?
+**A:** Ya, perpustakaan menangani file baik kecil maupun sangat besar; pastikan Anda memiliki memori dan ruang disk yang cukup untuk struktur TAR sementara.
 
-**Q:** Apakah kode ini kompatibel dengan rilis Aspose.Zip terbaru?  
-**A:** Contoh ini menargetkan versi saat ini; selalu perbarui paket NuGet untuk perbaikan bug dan fitur baru.
+**Q:** Apakah kode ini kompatibel dengan rilis terbaru Aspose.Zip?
+**A:** Contoh ini menargetkan versi saat ini; selalu perbarui paket NuGet untuk mendapatkan perbaikan bug dan fitur baru.
 
-**Q:** Apakah ada pertimbangan lisensi?  
-**A:** Lisensi komersial diperlukan untuk penggunaan produksi. Lihat detail lisensi di [situs Aspose](https://purchase.aspose.com/buy).
+**Q:** Apakah ada pertimbangan lisensi?
+**A:** Lisensi komersial diperlukan untuk penggunaan produksi. Lihat detail lisensi di [Situs web Aspose](https://purchase.aspose.com/buy).
 
-**Q:** Bisakah saya menggunakan ini dalam proyek komersial?  
+**Q:** Bisakah saya menggunakan ini dalam proyek komersial?
 **A:** Tentu – setelah Anda memiliki lisensi yang valid, Anda dapat menyematkan pustaka ini dalam aplikasi komersial apa pun.
 
-**Q:** Di mana saya dapat mendapatkan bantuan jika mengalami masalah?  
-**A:** Kunjungi [forum Aspose.Zip](https://forum.aspose.com/c/zip/37) untuk dukungan komunitas dan bantuan resmi.
+**Q:** Di mana saya dapat mendapatkan bantuan jika mengalami masalah?
+**A:** Kunjungi [Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) untuk dukungan komunitas dan bantuan resmi.
+
+---
+
+**Terakhir Diperbarui:** 23-02-2026
+**Diuji Dengan:** Aspose.Zip untuk .NET (rilis terbaru)
+**Penulis:** Beranggapan  
+
+---
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
@@ -132,9 +143,3 @@ Anda kini tahu **cara mengompres file tar.lz** menggunakan Aspose.Zip untuk .NET
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
----
-
-**Terakhir Diperbarui:** 2025-12-01  
-**Diuji Dengan:** Aspose.Zip untuk .NET (rilis terbaru)  
-**Penulis:** Aspose

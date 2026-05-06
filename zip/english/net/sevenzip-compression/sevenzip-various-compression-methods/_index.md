@@ -1,4 +1,4 @@
----
+﻿---
 title: How to Create 7z Files – Aspose.Zip for .NET Tutorial
 linktitle: SevenZip with Various Compression Methods
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -23,7 +23,7 @@ If you need to **how to create 7z** archives programmatically in a .NET applicat
 - **Which compression method gives the best ratio?** LZMA2 usually delivers the highest compression for mixed data.  
 - **Can I create a 7z without any compression?** Yes—use the Store (no compression) method.  
 - **Do I need a license for development?** A free trial is available; a license is required for production use.  
-- **Is this compatible with .NET 6/7?** Absolutely—Aspose.Zip supports .NET Framework, .NET Core, and .NET 5+.
+- **Is this compatible with .NET 6/7?** Absolutely—Aspose.Zip supports .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10.
 
 ## What Are the Seven Zip Compression Methods?
 

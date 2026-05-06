@@ -1,28 +1,28 @@
 ---
-title: How to Create Zip Archive Using Aspose.Zip for .NET – Compress Files with FileInfo
+title: How to Add Folder to Zip Using Aspose.Zip for .NET – Compress Files with FileInfo
 linktitle: Compress Files using FileInfo
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-description: Learn how to create zip archive and add files to zip using Aspose.Zip for .NET. This step‑by‑step guide shows how to compress files with FileInfo in ASP.NET projects.
+description: Learn how to add folder to zip and add files to zip using Aspose.Zip for .NET. This step‑by‑step guide shows how to compress files with FileInfo in ASP.NET projects.
 weight: 11
 url: /net/file-compression/compress-files-fileinfo/
-date: 2025-12-05
+date: 2026-02-28
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# How to Create Zip Archive Using Aspose.Zip for .NET
+# How to Add Folder to Zip Using Aspose.Zip for .NET
 
 ## Introduction
 
-If you need to **create a zip archive** programmatically, Aspose.Zip for .NET gives you a clean, high‑performance API that works in any .NET (including ASP.NET) application. In this tutorial we’ll walk through compressing files with the `FileInfo` class, show you how to **add files to zip**, and explain why this approach is ideal for modern .NET projects. Let’s get started!
+If you need to **create a zip archive** programmatically, Aspose.Zip for .NET gives you a clean, high‑performance API that works in any .NET (including ASP.NET) application. In this tutorial we’ll walk through compressing files with the `FileInfo` class, show you how to **add files to zip**, and explain why this approach is ideal for modern .NET projects. We’ll also cover how to **add folder to zip** so you can bundle whole directories in a single step. Let’s get started!
 
 ## Quick Answers
 - **What is the easiest way to create a zip archive?** Use Aspose.Zip’s `Archive` class together with `FileInfo` objects.  
 - **Can I add multiple files at once?** Yes – just create a `FileInfo` for each file and call `CreateEntry`.  
 - **Do I need a special license for ASP.NET?** A commercial Aspose.Zip license is required for production; a free trial works for evaluation.  
-- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
+- **Which .NET versions are supported?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10.  
 - **Is the API thread‑safe?** Yes, as long as each thread works with its own `Archive` instance.
 
 ## What is a Zip Archive and Why Create One?
@@ -32,7 +32,7 @@ A zip archive bundles one or more files into a single, compressed container. Thi
 - **Zero external dependencies** – pure .NET implementation.  
 - **Full control over compression level and encoding** (ASCII, UTF‑8, etc.).  
 - **Supports large files** (> 4 GB) and password protection.  
-- **Consistent API across .NET Framework, .NET Core, and .NET 5+**.
+- **Consistent API across .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10**.
 
 ## Prerequisites
 
@@ -109,6 +109,16 @@ Finally, persist the archive to the `FileStream` you opened earlier. Here we use
 
 When the `using` blocks exit, the streams are automatically closed and the zip file is ready for use.
 
+## How to Add Folder to Zip Using Aspose.Zip
+
+If you need to **add folder to zip** rather than individual files, the process is straightforward:
+
+1. **Enumerate the folder** with `DirectoryInfo.GetFiles` (and optionally `GetDirectories` for recursion).  
+2. **Create a `FileInfo`** for each discovered file.  
+3. **Call `CreateEntry`** with a relative path that includes the folder name, e.g., `"MyFolder/Report.pdf"`.  
+
+Because the API works with `FileInfo`, you never have to load whole files into memory, making it safe for large directories. This technique also works for **zip multiple files asp.net** scenarios where you generate a report set on the fly and need to deliver it as a single archive.
+
 ## Common Issues & Solutions
 
 | Issue | Cause | Fix |
@@ -117,25 +127,6 @@ When the `using` blocks exit, the streams are automatically closed and the zip f
 | **Incorrect filename encoding** | Using the default encoding with non‑ASCII names | Set `Encoding = Encoding.UTF8` in `ArchiveSaveOptions`. |
 | **OutOfMemoryException on large files** | Loading whole file into memory | `FileInfo` streams the file; ensure you are not reading the file into a byte array elsewhere. |
 | **Permission denied** | Application lacks write permission for the output folder | Run the app with appropriate rights or choose a writable directory. |
-
-## Frequently Asked Questions
-
-**Q: Can I add password protection to the zip archive?**  
-A: Yes. After creating the `Archive`, set `archive.Password = "yourPassword"` before calling `Save`.
-
-**Q: Is it possible to update an existing zip file?**  
-A: Aspose.Zip supports opening an existing archive with `Archive.Open` and then adding new entries.
-
-**Q: How do I compress files in an ASP.NET MVC controller?**  
-A: The same code works; just ensure the output stream is sent back as a `FileResult` to the client.
-
-**Q: Does Aspose.Zip support encryption algorithms?**  
-A: It supports standard ZipCrypto and AES‑256 encryption.
-
-**Q: What if I need to compress a folder recursively?**  
-A: Loop through `Directory.GetFiles` (and sub‑folders) and create a `FileInfo` for each file, then add them to the archive.
-
-## Existing FAQ Section (kept unchanged)
 
 ### FAQ's
 
@@ -161,11 +152,11 @@ A5: Visit [this link](https://purchase.aspose.com/temporary-license/) for inform
 
 ## Conclusion
 
-You now know **how to create zip archive** files using Aspose.Zip for .NET, how to **add files to zip**, and why this method is ideal for ASP.NET and other .NET applications. Experiment with different compression levels, encodings, and encryption options to tailor the archive to your exact needs. Happy compressing!
+You now know **how to add folder to zip** and **how to create zip archive** files using Aspose.Zip for .NET, how to **add files to zip**, and why this method is ideal for ASP.NET and other .NET applications. Experiment with different compression levels, encodings, and encryption options to tailor the archive to your exact needs. Happy compressing!
 
 ---
 
-**Last Updated:** 2025-12-05  
+**Last Updated:** 2026-02-28  
 **Tested With:** Aspose.Zip for .NET 24.12 (latest)  
 **Author:** Aspose  
 

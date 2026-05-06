@@ -1,4 +1,4 @@
----
+﻿---
 title: zip multiple files c# – Effortless Compression with Aspose.Zip for .NET
 linktitle: How to Compress Multiple Files 
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -20,7 +20,7 @@ In today's fast‑paced digital world, **zip multiple files c#** is a common req
 - **What does Aspose.Zip do?** It provides a .NET library that lets you create, read, and update ZIP archives without external dependencies.  
 - **How many files can I compress?** Unlimited – the library streams data, so even gigabyte‑size files are handled efficiently.  
 - **Do I need a license for development?** A free trial works for evaluation; a commercial license is required for production use.  
-- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7+.  
+- **Which .NET versions are supported?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10  
 - **Can I add a comment to the archive?** Yes – use `ArchiveSaveOptions.ArchiveComment`.
 
 ## What is “zip multiple files c#”?

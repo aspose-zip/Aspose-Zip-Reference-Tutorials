@@ -1,4 +1,4 @@
----
+﻿---
 title: Compress files C# using Aspose.Zip – Create & Modify Zip
 linktitle: Modifying Zip Files 
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -24,7 +24,7 @@ In this tutorial you’ll learn how to **modify a zip file C#**, extract inner z
 - **Can Aspose.Zip create zip archive C#?** Yes – the `Archive` class lets you build and edit zip files directly in C#.
 - **How do I extract inner zip files?** Open the outer entry as a stream, create a second `Archive` from that stream, then enumerate its entries.
 - **Do I need a license for development?** A free trial works for evaluation; a commercial license is required for production.
-- **Supported .NET versions?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6/7.
+- **Supported .NET versions?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10
 - **Typical run time for the sample?** Less than a second for a few megabytes of data.
 
 ## How to compress files C# using Aspose.Zip
@@ -53,7 +53,7 @@ Before you start, make sure you have:
 
 1. **Aspose.Zip for .NET** installed in your project. You can download it **[here](https://releases.aspose.com/zip/net/)**.  
 2. A folder that holds the source zip files you’ll be working with. Replace `"Your Document Directory"` in the code snippets with the actual path on your machine.  
-3. A .NET development environment (Visual Studio, VS Code, or Rider) targeting .NET Framework 4.6+ or .NET Core 3.1+.
+3. A .NET development environment (Visual Studio, VS Code, or Rider) targeting .NET Framework 2.0–4.8.1 or .NET Core 2.0–3.1, or .NET 5–10.
 
 ## Import Namespaces
 
