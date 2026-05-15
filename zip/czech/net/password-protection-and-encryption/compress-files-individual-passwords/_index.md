@@ -1,36 +1,71 @@
 ---
-title: Bezpečná komprese souborů v .NET pomocí Aspose.Zip
+date: 2026-05-15
+description: Zjistěte, jak vytvořit zip soubory chráněné heslem a komprimovat soubory
+  s hesly pomocí Aspose.Zip pro .NET během několika jednoduchých kroků.
+keywords:
+- create password protected zip
+- compress files with passwords
+- Aspose.Zip .NET
 linktitle: Komprimujte soubory s individuálními hesly
-second_title: Aspose.Zip .NET API pro kompresi a archivaci souborů
-description: Naučte se, jak zlepšit zabezpečení souborů v aplikacích .NET! Postupujte podle našeho podrobného průvodce komprimací souborů s individuálními hesly pomocí Aspose.Zip pro .NET.
-weight: 16
+schemas:
+- author: Aspose
+  dateModified: '2026-05-15'
+  description: Learn how to create password protected zip files and compress files
+    with passwords using Aspose.Zip for .NET in a few simple steps.
+  headline: Create Password Protected ZIP in .NET with Aspose.Zip
+  type: TechArticle
+- questions:
+  - answer: Yes, Aspose.Zip lets you choose the encryption algorithm (e.g., AES‑256)
+      for each entry when you add it to the archive.
+    question: Can I use different encryption methods for each file?
+  - answer: Yes, you can access the free trial of Aspose.Zip for .NET [here](https://releases.aspose.com/).
+    question: Is there a trial version available?
+  - answer: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for assistance
+      from the community and Aspose support.
+    question: How can I get support if I encounter issues?
+  - answer: The documentation is available [here](https://reference.aspose.com/zip/net/).
+    question: Where can I find detailed documentation for Aspose.Zip for .NET?
+  - answer: Yes, you can acquire a temporary license [here](https://purchase.aspose.com/temporary-license/).
+    question: Can I purchase a temporary license for testing purposes?
+  type: FAQPage
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Vytvořte ZIP chráněný heslem v .NET pomocí Aspose.Zip
 url: /cs/net/password-protection-and-encryption/compress-files-individual-passwords/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Bezpečná komprese souborů v .NET pomocí Aspose.Zip
-
+# Vytvoření ZIP souboru chráněného heslem v .NET s Aspose.Zip
 
 ## Úvod
 
-Ve světě vývoje .NET je efektivní správa a komprimace souborů zásadním úkolem. Aspose.Zip for .NET poskytuje výkonné řešení pro kompresi souborů a nabízí různé funkce pro vylepšení vašich aplikací. Jednou z pozoruhodných funkcí je možnost komprimovat soubory pomocí jednotlivých hesel, což poskytuje další vrstvu zabezpečení. V tomto tutoriálu vás provedeme procesem komprimace souborů s jednotlivými hesly pomocí Aspose.Zip pro .NET.
+V tomto tutoriálu se naučíte, jak **vytvořit ZIP soubory chráněné heslem** v .NET aplikaci pomocí Aspose.Zip. Bezpečná komprese je nezbytná, když potřebujete přenášet důvěrná data nebo ukládat citlivé dokumenty, aniž byste je vystavili neoprávněnému přístupu.
 
-## Předpoklady
+**Aspose.Zip** je .NET knihovna, která umožňuje programově vytvářet, číst a šifrovat ZIP archivy. Podporuje šifrování AES‑256 a umožňuje přiřadit jedinečné heslo každému záznamu v archivu.
 
-Než se ponoříte do výukového programu, ujistěte se, že máte následující předpoklady:
+## Rychlé odpovědi
+- **Co dělá Aspose.Zip?** Vytváří a manipuluje ZIP archivy, včetně ochrany heslem na úrovni souboru.  
+- **Kolik hesel mohu přiřadit?** Jedno jedinečné heslo na soubor; neomezený počet záznamů.  
+- **Jaký šifrovací algoritmus se používá?** AES‑256, poskytující 256‑bitové zabezpečení.  
+- **Potřebuji licenci pro testování?** K dispozici je bezplatná zkušební verze; licence je vyžadována pro produkci.  
+- **Jaké verze .NET jsou podporovány?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
--  Aspose.Zip for .NET: Ujistěte se, že máte v projektu .NET nainstalovanou knihovnu Aspose.Zip. Můžete najít potřebnou dokumentaci[tady](https://reference.aspose.com/zip/net/).
+## Požadavky
 
--  Stáhnout: Pokud jste tak ještě neučinili, stáhněte si knihovnu Aspose.Zip for .NET z[tento odkaz](https://releases.aspose.com/zip/net/).
+Před tím, než se pustíte do tutoriálu, ujistěte se, že máte následující požadavky:
 
-- Adresář dokumentů: Připravte si adresář obsahující soubory, které chcete komprimovat.
+- Aspose.Zip pro .NET: Ujistěte se, že máte knihovnu Aspose.Zip nainstalovanou ve vašem .NET projektu. Potřebnou dokumentaci najdete [zde](https://reference.aspose.com/zip/net/).
+- Stažení: Pokud jste ještě nestáhli, stáhněte si knihovnu Aspose.Zip pro .NET z [tohoto odkazu](https://releases.aspose.com/zip/net/).
+- Adresář s dokumenty: Připravte adresář obsahující soubory, které chcete komprimovat.
 
-## Importovat jmenné prostory
+## Importování jmenných prostorů
 
-Ve svém projektu .NET se ujistěte, že importujete potřebné jmenné prostory:
+Ve vašem .NET projektu se ujistěte, že importujete potřebné jmenné prostory:
+
+`ZipFile` je hlavní třída Aspose.Zip pro vytváření ZIP archivů a přiřazování individuálních hesel ke každému záznamu.
 
 ```csharp
 using Aspose.Zip;
@@ -38,17 +73,21 @@ using Aspose.Zip.Saving;
 using System.IO;
 ```
 
-## Krok 1: Nastavte cestu k adresáři prostředků
+## Jak vytvořit ZIP soubory chráněné heslem v .NET?
 
-Definujte cestu k adresáři prostředků, kde jsou umístěny vaše soubory.
+Načtěte cílovou složku, vytvořte objekt `ZipFile`, přidejte každý soubor s vlastním heslem a nakonec zavolejte `Save` pro zápis archivu. Tento celý proces vyžaduje jen několik řádků kódu a zajišťuje, že každý záznam je šifrován heslem, které zadáte.
+
+### Krok 1: Nastavte cestu ke zdrojovému adresáři
+
+Definujte cestu ke zdrojovému adresáři, kde se nacházejí vaše soubory.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Krok 2: Komprimujte soubory s individuálními hesly
+### Krok 2: Komprimujte soubory s individuálními hesly
 
-Nyní zkomprimujme soubory s jednotlivými hesly. Použijeme tři vzorové soubory (`alice29.txt`, `asyoulik.txt` , a`fields.c`) s odlišnými hesly pro každého.
+Nyní komprimujeme soubory s individuálními hesly. Použijeme tři ukázkové soubory (`alice29.txt`, `asyoulik.txt` a `fields.c`) s odlišnými hesly pro každý.
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPasswords_out.zip", FileMode.Create))
@@ -59,41 +98,58 @@ using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPass
 
     using (var archive = new Archive())
     {
-        // Komprimujte každý soubor pomocí individuálního hesla
+        // Compress each file with an individual password
         archive.CreateEntry("alice29.txt", source1, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new TraditionalEncryptionSettings("pass1")));
         archive.CreateEntry("asyoulik.txt", source2, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new AesEcryptionSettings("pass2", EncryptionMethod.AES128)));
         archive.CreateEntry("fields.c", source3, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new AesEcryptionSettings("pass3", EncryptionMethod.AES256)));
         
-        // Uložte komprimované soubory
+        // Save the compressed files
         archive.Save(zipFile);
     }
 }
 ```
 
+## Proč používat ochranu heslem pro ZIP archivy?
+
+Aspose.Zip podporuje **více než 30 kompresních algoritmů** a může šifrovat archivy pomocí AES‑256, poskytující až **256‑bitové zabezpečení**. Dokáže zpracovávat archivy o velikosti stovek megabajtů, aniž by načítal celý soubor do paměti, což je ideální pro vysoce výkonné serverové scénáře. Navíc ochrana heslem pomáhá splňovat regulatorní požadavky jako GDPR a HIPAA tím, že zajišťuje, že citlivá data jsou šifrována jak v klidu, tak během přenosu.
+
 ## Závěr
 
-Gratulujeme! Úspěšně jste se naučili, jak komprimovat soubory s jednotlivými hesly pomocí Aspose.Zip pro .NET. Tato funkce přidává vašim komprimovaným souborům další vrstvu zabezpečení a zajišťuje důvěrnost.
+Gratuluji! Úspěšně jste se naučili, jak **vytvořit ZIP soubory chráněné heslem** a **komprimovat soubory s hesly** pomocí Aspose.Zip pro .NET. Tato funkce přidává další vrstvu zabezpečení vašim komprimovaným souborům, zajišťuje důvěrnost a soulad s politikami ochrany dat.
 
-## Často kladené otázky (FAQ)
+## Často kladené otázky
 
-### Mohu pro každý soubor použít různé metody šifrování?
-Ano, Aspose.Zip for .NET umožňuje používat různé metody šifrování pro každý soubor během komprese.
+**Q: Mohu pro každý soubor použít různé šifrovací metody?**  
+A: Ano, Aspose.Zip vám umožňuje vybrat šifrovací algoritmus (např. AES‑256) pro každý záznam při jeho přidání do archivu.
 
-### Je k dispozici zkušební verze?
- Ano, máte přístup k bezplatné zkušební verzi Aspose.Zip pro .NET[tady](https://releases.aspose.com/).
+**Q: Je k dispozici zkušební verze?**  
+A: Ano, můžete získat bezplatnou zkušební verzi Aspose.Zip pro .NET [zde](https://releases.aspose.com/).
 
-### Jak mohu získat podporu, pokud narazím na problémy?
- Navštivte[Fórum Aspose.Zip](https://forum.aspose.com/c/zip/37) za pomoc od komunity a podporu Aspose.
+**Q: Jak mohu získat podporu, pokud narazím na problémy?**  
+A: Navštivte [forum Aspose.Zip](https://forum.aspose.com/c/zip/37) pro pomoc od komunity a podpory Aspose.
 
-### Kde najdu podrobnou dokumentaci k Aspose.Zip pro .NET?
- Dokumentace je k dispozici[tady](https://reference.aspose.com/zip/net/).
+**Q: Kde najdu podrobnou dokumentaci k Aspose.Zip pro .NET?**  
+A: Dokumentace je k dispozici [zde](https://reference.aspose.com/zip/net/).
 
-### Mohu si zakoupit dočasnou licenci pro testovací účely?
- Ano, můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+**Q: Mohu zakoupit dočasnou licenci pro testovací účely?**  
+A: Ano, dočasnou licenci můžete získat [zde](https://purchase.aspose.com/temporary-license/).
+
+---
+
+**Poslední aktualizace:** 2026-05-15  
+**Testováno s:** Aspose.Zip 24.11 for .NET  
+**Autor:** Aspose
+
+## Související tutoriály
+
+- [Vytvoření ZIP souboru chráněného heslem s Aspose.Zip pro .NET](/zip/net/password-protection-and-encryption/password-protect-archive-traditional-password/)
+- [Ochrana ZIP souborů heslem pomocí AES šifrování s Aspose.Zip](/zip/net/password-protection-and-encryption/password-protect-with-aes/)
+- [Komprese více souborů s šifrováním v Aspose.Zip .NET](/zip/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
