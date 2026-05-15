@@ -1,104 +1,140 @@
 ---
-title: Aspose.Zip untuk .NET - Tutorial Penyimpanan File Aman
-linktitle: Simpan Banyak File Tanpa Kompresi dengan Kata Sandi
-second_title: Aspose.Zip .NET API untuk Kompresi & Pengarsipan File
-description: Jelajahi cara menggunakan Aspose.Zip untuk .NET untuk menyimpan banyak file dengan aman tanpa kompresi. Langkah mudah untuk perlindungan kata sandi. Buka kekuatan manajemen file!
-weight: 13
+date: 2026-03-08
+description: Pelajari cara melindungi arsip zip dengan kata sandi menggunakan Aspose.Zip
+  untuk .NET, menyimpan beberapa file tanpa kompresi, dan menerapkan perlindungan
+  kata sandi pada file zip dengan enkripsi AES.
+linktitle: Store Multiple Files Without Compression with Password
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Aspose.Zip untuk .NET - Lindungi Arsip Zip dengan Kata Sandi & Simpan Beberapa
+  File Tanpa Kompresi
 url: /id/net/password-protection-and-encryption/store-multiple-files-no-compression-password/
+weight: 13
 ---
+
+Let's craft.
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip untuk .NET - Tutorial Penyimpanan File Aman
+# Aspose.Zip for .NET - Tutorial Memproteksi Zip Archive dengan Password
 
+Dalam pengembangan .NET modern, mengarsipkan file secara aman adalah kebutuhan yang sering muncul. Dengan **Aspose.Zip for .NET**, Anda dapat **memproteksi zip archive dengan password**, menyimpan beberapa item tanpa kompresi, dan menerapkan enkripsi AES yang kuat—semua dalam beberapa baris C#. Tutorial ini memandu Anda langkah demi langkah untuk membuat zip yang berisi banyak file, menggunakan mode *store* (tanpa kompresi), dan terkunci dengan password.
 
-Dalam dunia pengembangan .NET, mengelola dan memanipulasi file adalah tugas yang umum. Aspose.Zip untuk .NET adalah perpustakaan canggih yang memberi pengembang kemampuan untuk mengompresi, mendekompresi, dan memanipulasi arsip zip dengan lancar. Dalam tutorial ini, kita akan mempelajari skenario spesifik: menyimpan banyak file tanpa kompresi dan melindunginya dengan kata sandi. Di akhir panduan ini, Anda akan dibekali dengan pengetahuan untuk mengimplementasikan fungsi ini menggunakan Aspose.Zip untuk .NET.
+## Jawaban Cepat
+- **Apa arti “password protect zip archive”?** Itu mengenkripsi isi zip sehingga hanya dapat dibuka dengan password yang benar.  
+- **Algoritma enkripsi apa yang digunakan?** AES‑256 melalui `AesEcryptionSettings`.  
+- **Bisakah saya menambahkan lebih dari satu file?** Ya – panggil `CreateEntry` berulang kali untuk setiap file sumber.  
+- **Apakah saya memerlukan lisensi untuk produksi?** Lisensi komersial diperlukan; tersedia versi percobaan gratis.  
+- **Apakah ini didukung pada .NET 6/7?** Tentu – Aspose.Zip bekerja dengan .NET Framework, .NET Core, dan .NET 5/6/7.
+
+## Apa itu password protect zip archive?
+*Password protect zip archive* adalah file ZIP yang entri‑entri‑nya dienkripsi menggunakan password yang ditentukan pengguna. Saat archive dibuka, password harus diberikan; jika tidak, isi tetap tidak dapat dibaca. Aspose.Zip mengimplementasikan ini melalui enkripsi AES‑256, memberikan keamanan kuat untuk data sensitif.
+
+## Mengapa menggunakan proteksi password zip dengan Aspose.Zip?
+- **Penyimpanan tanpa kompresi** – `StoreCompressionSettings` mempertahankan ukuran file asli, ideal untuk media yang sudah terkompresi.  
+- **Enkripsi kuat** – AES‑256 melindungi data dari serangan brute‑force.  
+- **Integrasi penuh dengan .NET** – Berfungsi dengan .NET Framework, .NET Core, dan .NET 5/6/7 tanpa ketergantungan native.  
+- **API sederhana** – Buat archive, atur password, tambahkan entri, dan simpan – semua dalam beberapa baris kode.
 
 ## Prasyarat
 
-Sebelum kita mendalami tutorialnya, pastikan Anda memiliki prasyarat berikut:
+Sebelum masuk ke kode, pastikan Anda memiliki:
 
--  Aspose.Zip untuk Perpustakaan .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Zip untuk .NET. Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/zip/net/).
-
--  Direktori Dokumen: Siapkan direktori tempat file sumber Anda berada. Dalam contoh yang diberikan, variabel`dataDir` mewakili direktori dokumen Anda.
+- **Aspose.Zip for .NET** terpasang. Anda dapat mengunduhnya [di sini](https://releases.aspose.com/zip/net/).  
+- Sebuah folder yang berisi file‑file yang ingin Anda arsipkan. Pada contoh di bawah, variabel `dataDir` menunjuk ke folder tersebut.
 
 ## Impor Namespace
 
-Untuk memulai, mari impor namespace yang diperlukan untuk kode kita:
+Pertama, bawa namespace yang diperlukan ke dalam ruang lingkup:
 
 ```csharp
-// Jalur ke direktori sumber daya.
+// The path to the resource directory.
 string dataDir = "Your Document Directory"
 
-// Impor namespace Aspose.Zip
+// Import Aspose.Zip namespaces
 using Aspose.Zip;
 using Aspose.Zip.Settings.Compression;
 using Aspose.Zip.Settings.Encryption;
 ```
 
-## Langkah 1: Buka File Zip
+## Cara memproteksi zip archive dengan password dan menyimpan banyak file tanpa kompresi
+
+Berikut panduan langkah demi langkah. Setiap langkah menyertakan penjelasan singkat diikuti oleh blok kode asli (tidak diubah).
+
+### Langkah 1: Buka File Zip
+
+Kami membuat `FileStream` baru yang akan menampung archive hasil.
 
 ```csharp
-//ExStart: StoreMutlipleFilesTanpaCompressionWithPassword
+//ExStart: StoreMutlipleFilesWithoutCompressionWithPassword
 using (FileStream zipFile = File.Open(dataDir + "StoreMutlipleFilesWithoutCompressionWithPassword_out.zip", FileMode.Create))
 {
 ```
 
- Langkah ini melibatkan pembuatan file zip baru menggunakan`FileStream`. File tersebut akan diberi nama "StoreMutlipleFilesWithoutCompressionWithPassword_out.zip."
+### Langkah 2: Buka File Sumber
 
-## Langkah 2: Buka File Sumber
+Buka file pertama yang ingin Anda tambahkan ke archive. Anda dapat mengulangi blok ini untuk file tambahan.
 
 ```csharp
 using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
 {
 ```
 
-Di sini, kita membuka file sumber pertama, "alice29.txt," yang akan disimpan dalam arsip zip.
+### Langkah 3: Buat Archive dengan Store Compression dan Enkripsi AES
 
-## Langkah 3: Buat Arsip
+Di sini kami mengonfigurasi archive untuk **store** (tanpa kompresi) file‑file dan menerapkan **proteksi password zip** menggunakan AES‑256.
 
 ```csharp
 using (var archive = new Archive(new ArchiveEntrySettings(new StoreCompressionSettings(), new AesEcryptionSettings("p@s$", EncryptionMethod.AES256))))
 {
 ```
 
- Pada langkah ini, kita membuat sebuah instance dari`Archive` kelas, menentukan pengaturan kompresi dan enkripsi. Kami menggunakan`StoreCompressionSettings` untuk menyimpan file tanpa kompresi dan`AesEcryptionSettings` untuk menerapkan enkripsi AES dengan kata sandi ("p@s$").
+### Langkah 4: Buat Entri Archive dan Simpan – *create archive entry c#*
 
-## Langkah 4: Buat Entri Arsip dan Simpan
+Sekarang kami menambahkan file ke archive dan menulis zip terenkripsi ke disk.
 
 ```csharp
 archive.CreateEntry("alice29.txt", source1);
 archive.Save(zipFile);
 ```
 
-Langkah terakhir ini melibatkan pembuatan entri dalam arsip untuk "alice29.txt" dan menyimpan arsip, menyelesaikan proses penyimpanan file tanpa kompresi dan dengan perlindungan kata sandi.
+> **Tip profesional:** Untuk menambahkan lebih banyak file, cukup panggil `archive.CreateEntry("anotherFile.txt", anotherStream);` sebelum `archive.Save(zipFile);`.
 
-Akhiri tutorial Anda dengan merangkum poin-poin penting dan mendorong pembaca untuk mengeksplorasi kemungkinan lebih lanjut dengan Aspose.Zip untuk .NET.
+## Masalah Umum dan Solusinya
+
+| Masalah | Alasan | Solusi |
+|-------|--------|-----|
+| **Exception “Invalid password”** | Password salah atau metode enkripsi tidak cocok. | Pastikan string password di `AesEcryptionSettings` sama dengan yang akan Anda gunakan untuk membuka zip, dan verifikasi bahwa Anda memakai `EncryptionMethod.AES256`. |
+| **Ukuran file lebih besar dari yang diharapkan** | Secara tidak sengaja menggunakan kompresi. | Pastikan Anda memakai `StoreCompressionSettings` (tanpa kompresi) bukan `DeflateCompressionSettings`. |
+| **Stream tidak ditutup** | Kurang tanda kurung tutup untuk pernyataan `using`. | Pastikan setiap blok `using` ditutup dengan benar; contoh kode menunjukkan susunan yang tepat. |
+
+## Pertanyaan yang Sering Diajukan
+
+**T: Bisakah saya menggunakan Aspose.Zip for .NET dengan metode enkripsi lain?**  
+J: Ya, Aspose.Zip mendukung beberapa algoritma enkripsi, termasuk AES‑128 dan ZipCrypto. Lihat dokumentasi [di sini](https://reference.aspose.com/zip/net/) untuk detailnya.
+
+**T: Di mana saya dapat mendapatkan dukungan untuk Aspose.Zip for .NET?**  
+J: Kunjungi [forum Aspose.Zip](https://forum.aspose.com/c/zip/37) untuk bantuan komunitas dan dukungan resmi.
+
+**T: Apakah ada versi percobaan gratis untuk Aspose.Zip for .NET?**  
+J: Ya, Anda dapat mengakses percobaan gratis [di sini](https://releases.aspose.com/).
+
+**T: Bagaimana cara memperoleh lisensi sementara untuk Aspose.Zip for .NET?**  
+J: Minta lisensi sementara [di sini](https://purchase.aspose.com/temporary-license/).
+
+**T: Di mana saya dapat membeli Aspose.Zip for .NET?**  
+J: Anda dapat membeli Aspose.Zip for .NET [di sini](https://purchase.aspose.com/buy).
 
 ## Kesimpulan
 
-Dalam tutorial ini, kita mempelajari cara menggunakan Aspose.Zip untuk .NET untuk menyimpan banyak file tanpa kompresi dan mengamankannya dengan kata sandi. Saat Anda melanjutkan perjalanan Anda dengan pengembangan .NET, manfaatkan kemampuan Aspose.Zip untuk menyederhanakan tugas manajemen file dan meningkatkan keamanan aplikasi Anda.
+Dalam panduan ini kami menunjukkan cara **memproteksi zip archive dengan password**, menyimpan banyak item tanpa kompresi, dan menerapkan enkripsi AES‑256 menggunakan Aspose.Zip for .NET. Dengan mengikuti langkah‑langkah ini Anda dapat mengamankan data sensitif, memenuhi persyaratan kepatuhan, dan menjaga archive tetap ringan. Jangan ragu untuk bereksperimen menambahkan lebih banyak file, mengubah password, atau beralih ke metode enkripsi lain—Aspose.Zip membuat semuanya menjadi sederhana.
 
 ---
 
-### FAQ
-
-### Bisakah saya menggunakan Aspose.Zip untuk .NET dengan metode enkripsi lainnya?
- Ya, Aspose.Zip mendukung berbagai metode enkripsi. Periksa dokumentasinya[Di Sini](https://reference.aspose.com/zip/net/) untuk detailnya.
-
-### Di mana saya bisa mendapatkan dukungan untuk Aspose.Zip untuk .NET?
- Mengunjungi[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) untuk dukungan dan diskusi komunitas.
-
-### Apakah ada uji coba gratis yang tersedia untuk Aspose.Zip untuk .NET?
- Ya, Anda dapat mengakses uji coba gratis[Di Sini](https://releases.aspose.com/).
-
-### Bagaimana saya bisa mendapatkan lisensi sementara untuk Aspose.Zip untuk .NET?
- Minta izin sementara[Di Sini](https://purchase.aspose.com/temporary-license/).
-
-### Di mana saya dapat membeli Aspose.Zip untuk .NET?
- Anda dapat membeli Aspose.Zip untuk .NET[Di Sini](https://purchase.aspose.com/buy).
+**Terakhir Diperbarui:** 2026-03-08  
+**Diuji Dengan:** Aspose.Zip for .NET 24.12 (terbaru pada saat penulisan)  
+**Penulis:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

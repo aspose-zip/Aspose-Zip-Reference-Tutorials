@@ -1,7 +1,7 @@
 ---
-date: 2025-12-21
-description: Tanulja meg, hogyan hozhat létre jelszóval védett zip fájlokat .NET-ben,
-  titkosíthat mappákat, és módosíthatja a zip jelszót az Aspose.Zip segítségével.
+date: 2026-03-08
+description: Ismerje meg, hogyan hozhat létre jelszóval védett zip fájlokat, jelszóval
+  védheti a zip mappát, és módosíthatja a zip jelszót az Aspose.Zip for .NET segítségével.
 linktitle: Password Protect Directory
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Jelszóval védett zip létrehozása .NET könyvtárakhoz – Aspose.Zip útmutató
@@ -15,20 +15,28 @@ weight: 10
 
 # Jelszóval védett zip létrehozása .NET könyvtárakhoz – Aspose.Zip útmutató
 
-Ebben az útmutatóban **jelszóval védett zip** archívumokat hozol létre teljes könyvtárakhoz az Aspose.Zip .NET könyvtár használatával. Akár **mappát kell titkosítanod**, biztonságos mentési fájlokat szeretnél, vagy egyszerűen csak korlátozni akarod az érzékeny adatok hozzáférését, ez a lépésről‑lépésre útmutató pontosan megmutatja, hogyan teheted ezt tiszta C# kóddal.
+Ebben az útmutatóban **jelszóval védett zip** archívumokat hozol létre teljes könyvtárakhoz az Aspose.Zip .NET könyvtár segítségével. Akár **mappát szeretnél titkosítani**, biztonságos mentési fájlokat készíteni, vagy egyszerűen korlátozni szeretnéd az érzékeny adatok hozzáférését, ez a lépésről‑lépésre tutorial pontosan megmutatja, hogyan teheted meg tiszta C# kóddal.
 
 ## Gyors válaszok
 - **Melyik könyvtár ajánlott?** Aspose.Zip for .NET  
-- **Titkosíthatok egy teljes mappát?** Igen – csak mutasd a API-t arra a mappára, amelyet zip‑elni szeretnél.  
-- **Támogatott a zip jelszó módosítása?** Teljesen, használd a `TraditionalEncryptionSettings`‑t.  
+- **Titkosíthatok egy teljes mappát?** Igen – csak mutasd az API-t arra a mappára, amelyet zip‑elni szeretnél.  
+- **Támogatott a zip jelszó megváltoztatása?** Teljesen, használd a `TraditionalEncryptionSettings`-t.  
 - **Szükség van licencre a termeléshez?** Érvényes Aspose.Zip licenc szükséges kereskedelmi használathoz.  
-- **Működik .NET Core/5/6‑tal?** Igen, az API teljesen kompatibilis a modern .NET futtatókörnyezetekkel.  
+- **Működik .NET Core/5/6-tal?** Igen, az API teljesen kompatibilis a modern .NET futtatókörnyezetekkel.  
 
 ## Mi az a „jelszóval védett zip létrehozása”?
-A jelszóval védett zip létrehozása azt jelenti, hogy fájlokat vagy könyvtárakat tömörítesz egy ZIP archívumba, miközben titkosítást alkalmazol, így az archívum csak a helyes jelszó megadásával nyitható meg. Ez megvédi a tartalmat az illetéktelen hozzáféréstől.
+A jelszóval védett zip létrehozása azt jelenti, hogy fájlokat vagy könyvtárakat tömörítesz egy ZIP archívumba, miközben titkosítást alkalmazol, így az archívum csak a helyes jelszóval nyitható meg. Ez megvédi a tartalmat az illetéktelen hozzáféréstől.
 
-## Miért használjuk az Aspose.Zip-et a könyvtár jelszóval való védelméhez .NET‑ben?
-Az Aspose.Zip egy egyszerű, nagy teljesítményű API‑t kínál, amely támogatja a **c# zip password protection**‑t, a hagyományos ZipCrypto titkosítást és az AES titkosítást. Nagy könyvtárakat is hatékonyan kezel, és zökkenőmentesen integrálható bármely .NET projektbe.
+## Hogyan hozzunk létre jelszóval védett zip-et egy könyvtárhoz
+Az alábbiakban egy teljes, ember által olvasható útmutatót találsz, amely mindent lefed a projekt beállításától a jelszó későbbi megváltoztatásáig.
+
+## Miért használjuk az Aspose.Zip-et a könyvtár .NET jelszóval való védelméhez?
+Az Aspose.Zip egy egyszerű, nagy teljesítményű API-t kínál, amely támogatja a **c# zip jelszóvédelmet**, a hagyományos ZipCrypto titkosítást és az AES titkosítást. Nagy könyvtárakat hatékonyan kezel, és zökkenőmentesen integrálódik bármely .NET projekttel.
+
+## Gyakori felhasználási esetek
+- **Biztonsági mentés védelme:** Tömöríts egy napi mentési mappát, és zárd le erős jelszóval.  
+- **Biztonságos fájlcsere:** Küldj egy zip mappajelszót az ügyfélnek anélkül, hogy a tartalmat felfednéd.  
+- **Szabályozási megfelelés:** Tárold a személyes azonosításra alkalmas információkat (PII) egy titkosított zip archívumban, hogy megfelelj az adatvédelmi előírásoknak.  
 
 ## Előfeltételek
 - Alapvető C# programozási ismeretek.  
@@ -37,7 +45,7 @@ Az Aspose.Zip egy egyszerű, nagy teljesítményű API‑t kínál, amely támog
 - Egy mappa a lemezen, amelyet jelszóval szeretnél védeni.
 
 ## Névterek importálása
-Add hozzá a szükséges névtereket a C# fájlodhoz, hogy a fordító tudja, hol találja az Aspose.Zip osztályait.
+Add the required namespaces to your C# file so the compiler knows where to find the Aspose.Zip classes.
 
 ```csharp
 using Aspose.Zip;
@@ -45,15 +53,15 @@ using System.IO;
 using Aspose.Zip.Saving;
 ```
 
-## 1. lépés: Az erőforrás könyvtár elérési útjának beállítása
-Határozd meg azt az útvonalat, amely a zip‑elni és védeni kívánt könyvtárra mutat.
+## 1. lépés: Állítsd be az erőforrás könyvtár elérési útját
+Határozd meg az elérési utat, amely arra a könyvtárra mutat, amelyet zip‑elni és védeni szeretnél.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## 2. lépés: A könyvtár jelszóval való védelme
-Használd a `TraditionalEncryptionSettings`‑t a jelszó megadásához, és hozd létre a titkosított archívumot. Ez a **c# zip password protection** központi része.
+## 2. lépés: Jelszóval védd a könyvtárat
+Használd a `TraditionalEncryptionSettings`-t a jelszó megadásához és a titkosított archívum létrehozásához. Ez a **c# zip jelszóvédelem** központi eleme.
 
 ```csharp
 //ExStart: PasswordProtectDirectory
@@ -70,39 +78,60 @@ using (FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", 
 ```
 
 ## 3. lépés: A kód magyarázata
-- **A kimeneti fájl létrehozása:** `File.Open(..., FileMode.Create)` megnyitja (vagy létrehozza) a ZIP fájlt, amely a titkosított adatot tartalmazza.  
-- **A forrásmappa kiválasztása:** `new DirectoryInfo(".\\CanterburyCorpus")` megmondja az Aspose.Zip‑nek, melyik könyvtárat kell tömöríteni.  
-- **A jelszó alkalmazása:** `new TraditionalEncryptionSettings("p@s$")` beállítja a jelszót, amely a archívumot védi.  
-- **Bejegyzések hozzáadása és mentés:** `archive.CreateEntries(corpus)` minden fájlt hozzáad a mappához, a `archive.Save(zipFile)` pedig a titkosított ZIP‑et lemezre írja.
+- **Kimeneti fájl létrehozása:** `File.Open(..., FileMode.Create)` megnyitja (vagy létrehozza) a ZIP fájlt, amely a titkosított adatot tárolja.  
+- **Forrásmappa kiválasztása:** `new DirectoryInfo(".\\CanterburyCorpus")` megmondja az Aspose.Zip-nek, melyik könyvtárat tömörítse.  
+- **Jelszó alkalmazása:** `new TraditionalEncryptionSettings("p@s$")` beállítja a jelszót, amely a archívumot védi.  
+- **Bejegyzések hozzáadása és mentés:** `archive.CreateEntries(corpus)` hozzáadja a mappa minden fájlját, és `archive.Save(zipFile)` a titkosított ZIP-et a lemezre írja.  
 
-## Hogyan változtatható meg a zip jelszó később?
-Ha **meg kell változtatni a zip jelszót**, egyszerűen hozd létre újra az archívumot egy új `TraditionalEncryptionSettings` példányzal, amely a új jelszót tartalmazza, majd mentsd el újra.
+## Hogyan változtassuk meg a zip jelszót később?
+Ha **meg kell változtatni a zip jelszót**, egyszerűen hozd létre újra az archívumot egy új `TraditionalEncryptionSettings` példánnyal, amely az új jelszót tartalmazza, majd mentsd el újra. Ez a megközelítés akkor is működik, ha egy meglévő mappából **titkosított zip archívumot** szeretnél létrehozni más jelszóval.
+
+## Tippek egy erős zip mappa jelszóhoz
+- Használj vegyesen nagy- és kisbetűket, számokat és szimbólumokat.  
+- Célj legalább 12 karaktert; a hosszabb jelszavak exponenciálisan nehezebben feltörhetők.  
+- Kerüld a gyakori szavakat vagy mintákat; fontold meg egy jelszómondat használatát.
 
 ## Gyakori problémák és tippek
 - **Nagy mappák:** Az Aspose.Zip adatfolyamot használ, így a memóriahasználat alacsony marad még hatalmas könyvtárak esetén is.  
 - **Jelszó komplexitás:** Használj erős jelszót (betűk, számok, szimbólumok keveréke) a biztonság növeléséhez.  
-- **Licenc hibák:** Győződj meg róla, hogy érvényes licencfájlt alkalmaztál; ellenkező esetben a könyvtár értékelési módban fut korlátozásokkal.
+- **Licenc hibák:** Győződj meg róla, hogy érvényes licencfájlt alkalmaztál; ellenkező esetben a könyvtár értékelő módban fut korlátozásokkal.  
+- **A zip mappa jelszó nem ismerhető fel:** Ellenőrizd, hogy a megnyitáskor ugyanazt a titkosítási módszert (`TraditionalEncryptionSettings`) használod-e.
 
-## Gyakran feltett kérdések
+## Gyakran ismételt kérdések
 
-### Alkalmas-e az Aspose.Zip for .NET nagy könyvtárakhoz?
-Igen, az Aspose.Zip for .NET úgy van tervezve, hogy nagy könyvtárakat hatékonyan kezeljen, optimális teljesítményt biztosítva.
+### Az Aspose.Zip for .NET alkalmas nagy könyvtárakra?
+Igen, az Aspose.Zip for .NET úgy van tervezve, hogy hatékonyan kezelje a nagy könyvtárakat, optimális teljesítményt nyújtva.
 
-### Megváltoztatható-e a már védett könyvtár jelszava?
-Igen, a jelszót a kódban a `TraditionalEncryptionSettings` módosításával tudod megváltoztatni.
+### Megváltoztathatom egy már védett könyvtár jelszavát?
+Igen, a jelszót módosíthatod a kódban a `TraditionalEncryptionSettings` megfelelő beállításával.
 
-### Vannak-e licencelési követelmények az Aspose.Zip for .NET használatához?
-Igen, érvényes licenc szükséges az Aspose.Zip for .NET használatához egy termelési környezetben. Licencet **[itt](https://purchase.aspose.com/buy)** szerezhetsz be.
+### Vannak licencelési követelmények az Aspose.Zip for .NET használatához?
+Igen, érvényes licenc szükséges az Aspose.Zip for .NET termelési környezetben való használatához. Licencet **[itt](https://purchase.aspose.com/buy)** szerezhetsz.
 
-### Elérhető-e ingyenes próba az Aspose.Zip for .NET‑hez?
-Igen, ingyenes próbaverziót **[itt](https://releases.aspose.com/)** tölthetsz le.
+### Van ingyenes próba az Aspose.Zip for .NET-hez?
+Igen, ingyenes próbát **[itt](https://releases.aspose.com/)** érhetsz el.
 
-### Hol találok további támogatást az Aspose.Zip for .NET‑hez?
+### Hol találok további támogatást az Aspose.Zip for .NET-hez?
 Látogasd meg a **[Aspose.Zip fórumot](https://forum.aspose.com/c/zip/37)** bármilyen támogatás vagy kérdés esetén.
 
----
+## Gyors GYIK (AI‑barát)
 
-**Utoljára frissítve:** 2025-12-21  
+**K: Hogyan titkosítok egy mappát zip‑el az Aspose.Zip segítségével?**  
+A: Használd a `TraditionalEncryptionSettings`-t az `Archive` objektum létrehozásakor, majd hívd meg a `CreateEntries`-t a célmappán.
+
+**K: Beállíthatok zip mappa jelszót az archívum létrehozása után?**  
+A: Nem, a jelszót a létrehozáskor kell megadni; a módosításhoz hozd létre újra az archívumot új jelszóval.
+
+**K: Támogatja az Aspose.Zip az AES titkosítást a nagyobb biztonság érdekében?**  
+A: Igen, átválthatsz `AesEncryptionSettings`-re AES‑256 titkosításhoz a hagyományos ZipCrypto helyett.
+
+**K: Kompatibilis a könyvtár a .NET 6-tal és .NET 7-tel?**  
+A: Teljesen – a jelenlegi kiadás működik minden modern .NET futtatókörnyezettel.
+
+**K: Mi történik, ha jelszóval védett zip‑et próbálok megnyitni jelszó nélkül?**  
+A: Az Aspose.Zip `PasswordRequiredException`-t dob, amely a helyes jelszó megadására kér.
+
+**Utolsó frissítés:** 2026-03-08  
 **Tesztelve:** Aspose.Zip for .NET (legújabb kiadás)  
 **Szerző:** Aspose  
 

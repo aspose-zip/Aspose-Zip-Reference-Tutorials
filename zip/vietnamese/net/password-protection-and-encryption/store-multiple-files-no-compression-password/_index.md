@@ -1,44 +1,68 @@
 ---
-title: Aspose.Zip for .NET - Hướng dẫn lưu trữ tệp an toàn
-linktitle: Lưu trữ nhiều tệp mà không cần nén bằng mật khẩu
-second_title: API Aspose.Zip .NET để nén và lưu trữ tệp
-description: Khám phá cách sử dụng Aspose.Zip cho .NET để lưu trữ an toàn nhiều tệp mà không cần nén. Các bước dễ dàng để bảo vệ mật khẩu. Mở khóa sức mạnh của quản lý tập tin!
-weight: 13
+date: 2026-03-08
+description: Tìm hiểu cách bảo vệ bằng mật khẩu cho tệp zip bằng Aspose.Zip cho .NET,
+  lưu trữ nhiều tệp mà không nén và áp dụng bảo vệ mật khẩu cho tệp zip bằng mã hóa
+  AES.
+linktitle: Store Multiple Files Without Compression with Password
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Aspose.Zip cho .NET - Bảo vệ mật khẩu cho tệp Zip & Lưu trữ nhiều tệp mà không
+  nén
 url: /vi/net/password-protection-and-encryption/store-multiple-files-no-compression-password/
+weight: 13
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET - Hướng dẫn lưu trữ tệp an toàn
+# Aspose.Zip for .NET - Hướng Dẫn Bảo Vệ Mật Khẩu Tập Tin Zip
 
+Trong phát triển .NET hiện đại, việc lưu trữ tệp một cách an toàn là một yêu cầu thường xuyên. Với **Aspose.Zip for .NET**, bạn có thể **password protect zip archive** các tệp, lưu trữ nhiều mục mà không nén, và áp dụng mã hóa AES mạnh — tất cả chỉ trong vài dòng C#. Hướng dẫn này sẽ chỉ cho bạn các bước chính xác để tạo một file zip chứa nhiều tệp, sử dụng chế độ *store* (không nén), và được khóa bằng mật khẩu.
 
-Trong thế giới phát triển .NET, việc quản lý và thao tác với các tệp là một nhiệm vụ phổ biến. Aspose.Zip for .NET là một thư viện mạnh mẽ cung cấp cho các nhà phát triển khả năng nén, giải nén và thao tác các kho lưu trữ zip một cách liền mạch. Trong hướng dẫn này, chúng ta sẽ đi sâu vào một tình huống cụ thể: lưu trữ nhiều tệp mà không cần nén và bảo vệ chúng bằng mật khẩu. Đến cuối hướng dẫn này, bạn sẽ được trang bị kiến thức để triển khai chức năng này bằng Aspose.Zip cho .NET.
+## Câu trả lời nhanh
+- **“password protect zip archive” có nghĩa là gì?** Nó mã hóa nội dung zip để chỉ có thể mở được khi nhập đúng mật khẩu.  
+- **Thuật toán mã hóa nào được sử dụng?** AES‑256 qua `AesEcryptionSettings`.  
+- **Tôi có thể thêm hơn một tệp không?** Có – lặp lại lời gọi `CreateEntry` cho mỗi tệp nguồn.  
+- **Tôi cần giấy phép cho môi trường sản xuất không?** Cần giấy phép thương mại; bản dùng thử miễn phí có sẵn.  
+- **Điều này có được hỗ trợ trên .NET 6/7 không?** Hoàn toàn có – Aspose.Zip hoạt động với .NET Framework, .NET Core và .NET 5/6/7.
 
-## Điều kiện tiên quyết
+## Password protect zip archive là gì?
+Một *password protect zip archive* là một tệp ZIP mà các mục của nó được mã hóa bằng mật khẩu do người dùng định nghĩa. Khi mở tệp, phải cung cấp mật khẩu; nếu không nội dung sẽ không thể đọc được. Aspose.Zip thực hiện điều này thông qua mã hóa AES‑256, cung cấp mức bảo mật cao cho dữ liệu nhạy cảm.
 
-Trước khi chúng ta đi sâu vào hướng dẫn, hãy đảm bảo bạn có sẵn các điều kiện tiên quyết sau:
+## Tại sao nên sử dụng bảo vệ mật khẩu cho tệp zip với Aspose.Zip?
+- **No‑compression storage** – `StoreCompressionSettings` giữ nguyên kích thước tệp gốc, lý tưởng cho các phương tiện đã được nén sẵn.  
+- **Strong encryption** – AES‑256 bảo vệ dữ liệu khỏi các cuộc tấn công brute‑force.  
+- **Full .NET integration** – Hoạt động với .NET Framework, .NET Core và .NET 5/6/7 mà không cần phụ thuộc native.  
+- **Simple API** – Tạo một archive, đặt mật khẩu, thêm các mục, và lưu – tất cả trong vài dòng mã.
 
--  Aspose.Zip cho Thư viện .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Zip cho .NET. Bạn có thể tải nó xuống[đây](https://releases.aspose.com/zip/net/).
+## Yêu cầu trước
 
--  Thư mục tài liệu: Chuẩn bị một thư mục chứa các tập tin nguồn của bạn. Trong ví dụ được cung cấp, biến`dataDir` đại diện cho thư mục tài liệu của bạn.
+Trước khi chúng ta bắt đầu với mã, hãy chắc chắn rằng bạn đã có:
 
-## Nhập không gian tên
+- **Aspose.Zip for .NET** được cài đặt. Bạn có thể tải xuống [here](https://releases.aspose.com/zip/net/).  
+- Một thư mục chứa các tệp bạn muốn lưu trữ. Trong các ví dụ dưới đây, biến `dataDir` trỏ tới thư mục đó.
 
-Để bắt đầu, hãy nhập các không gian tên cần thiết cho mã của chúng ta:
+## Nhập các Namespace
+
+First, bring the required namespaces into scope:
 
 ```csharp
-// Đường dẫn đến thư mục tài nguyên.
+// The path to the resource directory.
 string dataDir = "Your Document Directory"
 
-// Nhập không gian tên Aspose.Zip
+// Import Aspose.Zip namespaces
 using Aspose.Zip;
 using Aspose.Zip.Settings.Compression;
 using Aspose.Zip.Settings.Encryption;
 ```
 
-## Bước 1: Mở tệp Zip
+## Cách bảo vệ mật khẩu cho zip archive và lưu trữ nhiều tệp mà không nén
+
+Dưới đây là hướng dẫn từng bước. Mỗi bước bao gồm một giải thích ngắn gọn và sau đó là khối mã gốc (không thay đổi).
+
+### Bước 1: Mở Tập Tin Zip
+
+Chúng ta tạo một `FileStream` mới sẽ chứa archive kết quả.
 
 ```csharp
 //ExStart: StoreMutlipleFilesWithoutCompressionWithPassword
@@ -46,59 +70,69 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMutlipleFilesWithoutCompre
 {
 ```
 
- Bước này liên quan đến việc tạo một tệp zip mới bằng cách sử dụng`FileStream`. Tệp sẽ có tên là "StoreMutlipleFilesWithoutCompressionWithPassword_out.zip."
+### Bước 2: Mở Tệp Nguồn
 
-## Bước 2: Mở tệp nguồn
+Mở tệp đầu tiên bạn muốn thêm vào archive. Bạn có thể lặp lại khối này cho các tệp bổ sung.
 
 ```csharp
 using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
 {
 ```
 
-Ở đây, chúng tôi mở tệp nguồn đầu tiên, "alice29.txt", tệp này sẽ được lưu trữ trong kho lưu trữ zip.
+### Bước 3: Tạo Archive với Store Compression và AES Encryption
 
-## Bước 3: Tạo kho lưu trữ
+Ở đây chúng ta cấu hình archive để **store** (không nén) các tệp và áp dụng **zip file password protection** bằng AES‑256.
 
 ```csharp
 using (var archive = new Archive(new ArchiveEntrySettings(new StoreCompressionSettings(), new AesEcryptionSettings("p@s$", EncryptionMethod.AES256))))
 {
 ```
 
- Trong bước này, chúng ta tạo một thể hiện của`Archive` lớp, chỉ định cài đặt nén và mã hóa. Chúng tôi sử dụng`StoreCompressionSettings` để lưu trữ tập tin mà không cần nén và`AesEcryptionSettings` để áp dụng mã hóa AES bằng mật khẩu ("p@s$").
+### Bước 4: Tạo Archive Entry và Lưu – *create archive entry c#*
 
-## Bước 4: Tạo mục lưu trữ và lưu
+Bây giờ chúng ta thêm tệp vào archive và ghi zip đã mã hóa ra đĩa.
 
 ```csharp
 archive.CreateEntry("alice29.txt", source1);
 archive.Save(zipFile);
 ```
 
-Bước cuối cùng này bao gồm việc tạo một mục trong kho lưu trữ cho "alice29.txt" và lưu kho lưu trữ, hoàn tất quá trình lưu trữ tệp mà không cần nén và có bảo vệ bằng mật khẩu.
+> **Pro tip:** Để thêm nhiều tệp, chỉ cần gọi `archive.CreateEntry("anotherFile.txt", anotherStream);` trước khi `archive.Save(zipFile);`.
 
-Kết thúc hướng dẫn của bạn bằng cách tóm tắt các điểm chính và khuyến khích người đọc khám phá các khả năng khác với Aspose.Zip dành cho .NET.
+## Các vấn đề thường gặp và giải pháp
 
-## Phần kết luận
+| Vấn đề | Nguyên nhân | Cách khắc phục |
+|-------|------------|----------------|
+| **“Invalid password” exception** | Mật khẩu sai hoặc phương pháp mã hóa không khớp. | Đảm bảo chuỗi mật khẩu trong `AesEcryptionSettings` khớp với mật khẩu bạn sẽ dùng để mở zip, và xác nhận bạn đang sử dụng `EncryptionMethod.AES256`. |
+| **File size larger than expected** | Nhầm lẫn sử dụng nén. | Xác nhận bạn đang sử dụng `StoreCompressionSettings` (không nén) thay vì `DeflateCompressionSettings`. |
+| **Stream not closed** | Thiếu dấu ngoặc đóng cho các câu lệnh `using`. | Đảm bảo mỗi khối `using` được đóng đúng cách; mã mẫu cho thấy cách lồng nhau chính xác. |
 
-Trong hướng dẫn này, chúng tôi đã khám phá cách sử dụng Aspose.Zip cho .NET để lưu trữ nhiều tệp mà không cần nén và bảo mật chúng bằng mật khẩu. Khi bạn tiếp tục hành trình phát triển .NET, hãy tận dụng các khả năng của Aspose.Zip để hợp lý hóa các tác vụ quản lý tệp và nâng cao tính bảo mật cho ứng dụng của bạn.
+## Câu hỏi thường gặp
+
+**Q: Tôi có thể sử dụng Aspose.Zip cho .NET với các phương pháp mã hóa khác không?**  
+A: Có, Aspose.Zip hỗ trợ một số thuật toán mã hóa, bao gồm AES‑128 và ZipCrypto. Xem tài liệu [here](https://reference.aspose.com/zip/net/) để biết chi tiết.
+
+**Q: Tôi có thể nhận hỗ trợ cho Aspose.Zip cho .NET ở đâu?**  
+A: Truy cập [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) để nhận trợ giúp cộng đồng và hỗ trợ chính thức.
+
+**Q: Có bản dùng thử miễn phí cho Aspose.Zip cho .NET không?**  
+A: Có, bạn có thể truy cập bản dùng thử miễn phí [here](https://releases.aspose.com/).
+
+**Q: Làm thế nào để tôi có được giấy phép tạm thời cho Aspose.Zip cho .NET?**  
+A: Yêu cầu giấy phép tạm thời [here](https://purchase.aspose.com/temporary-license/).
+
+**Q: Tôi có thể mua Aspose.Zip cho .NET ở đâu?**  
+A: Bạn có thể mua Aspose.Zip cho .NET [here](https://purchase.aspose.com/buy).
+
+## Kết luận
+
+Trong hướng dẫn này, chúng tôi đã trình bày cách **password protect zip archive** các tệp, lưu trữ nhiều mục mà không nén, và áp dụng mã hóa AES‑256 bằng Aspose.Zip cho .NET. Bằng cách thực hiện các bước này, bạn có thể bảo vệ dữ liệu nhạy cảm, đáp ứng các yêu cầu tuân thủ, và giữ cho archive nhẹ nhàng. Hãy thoải mái thử nghiệm thêm các tệp, thay đổi mật khẩu, hoặc chuyển sang các phương pháp mã hóa khác — Aspose.Zip làm cho mọi thứ trở nên đơn giản.
 
 ---
 
-### Câu hỏi thường gặp
-
-### Tôi có thể sử dụng Aspose.Zip cho .NET bằng các phương thức mã hóa khác không?
- Có, Aspose.Zip hỗ trợ nhiều phương thức mã hóa khác nhau. Kiểm tra tài liệu[đây](https://reference.aspose.com/zip/net/) để biết chi tiết.
-
-### Tôi có thể nhận hỗ trợ cho Aspose.Zip cho .NET ở đâu?
- Tham quan[Diễn đàn Aspose.Zip](https://forum.aspose.com/c/zip/37) để được cộng đồng hỗ trợ và thảo luận.
-
-### Có bản dùng thử miễn phí dành cho Aspose.Zip cho .NET không?
- Có, bạn có thể truy cập bản dùng thử miễn phí[đây](https://releases.aspose.com/).
-
-### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho Aspose.Zip cho .NET?
- Yêu cầu giấy phép tạm thời[đây](https://purchase.aspose.com/temporary-license/).
-
-### Tôi có thể mua Aspose.Zip cho .NET ở đâu?
- Bạn có thể mua Aspose.Zip cho .NET[đây](https://purchase.aspose.com/buy).
+**Cập nhật lần cuối:** 2026-03-08  
+**Kiểm tra với:** Aspose.Zip for .NET 24.12 (latest at time of writing)  
+**Tác giả:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

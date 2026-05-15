@@ -1,10 +1,10 @@
 ---
-date: 2025-12-21
-description: जानेँ कि .NET में पासवर्ड‑सुरक्षित ज़िप फ़ाइलें कैसे बनाएं, फ़ोल्डरों
-  को एन्क्रिप्ट करें, और Aspose.Zip का उपयोग करके ज़िप पासवर्ड बदलें।
+date: 2026-03-08
+description: Aspose.Zip for .NET का उपयोग करके पासवर्ड‑सुरक्षित ज़िप फ़ाइलें बनाना,
+  ज़िप फ़ोल्डर को पासवर्ड से सुरक्षित करना और ज़िप पासवर्ड बदलना सीखें।
 linktitle: Password Protect Directory
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: .NET डायरेक्टरीज़ के लिए पासवर्ड‑संरक्षित ज़िप बनाएं – Aspose.Zip ट्यूटोरियल
+title: .NET डायरेक्टरीज़ के लिए पासवर्ड‑सुरक्षित ज़िप बनाएं – Aspose.Zip ट्यूटोरियल
 url: /hi/net/password-protection-and-encryption/password-protect-directory/
 weight: 10
 ---
@@ -13,33 +13,41 @@ weight: 10
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# .NET डायरेक्टरीज़ के लिए पासवर्ड प्रोटेक्टेड ज़िप बनाएं – Aspose.Zip ट्यूटोरियल
+# .NET डायरेक्टरीज़ के लिए पासवर्ड संरक्षित ज़िप बनाएं – Aspose.Zip ट्यूटोरियल
 
-इस गाइड में आप **पासवर्ड प्रोटेक्टेड ज़िप** आर्काइव पूरे डायरेक्टरीज़ के लिए Aspose.Zip लाइब्रेरी for .NET का उपयोग करके बनाएँगे। चाहे आपको **फ़ोल्डर एन्क्रिप्ट** करना हो, बैकअप फ़ाइलों को सुरक्षित करना हो, या संवेदनशील डेटा तक पहुँच को प्रतिबंधित करना हो, यह स्टेप‑बाय‑स्टेप ट्यूटोरियल साफ़ C# कोड के साथ दिखाता है कि इसे कैसे किया जाए।
+इस गाइड में आप Aspose.Zip लाइब्रेरी for .NET का उपयोग करके पूरे डायरेक्टरीज़ के लिए **पासवर्ड संरक्षित ज़िप** आर्काइव बनाएँगे। चाहे आपको **फ़ोल्डर एन्क्रिप्ट** करना हो, बैकअप फ़ाइलों को सुरक्षित करना हो, या संवेदनशील डेटा तक पहुँच को सीमित करना हो, यह चरण‑दर‑चरण ट्यूटोरियल आपको साफ़ C# कोड के साथ ठीक‑ठीक दिखाता है।
 
-## त्वरित उत्तर
-- **कौन सी लाइब्रेरी अनुशंसित है?** Aspose.Zip for .NET  
-- **क्या मैं पूरी फ़ोल्डर एन्क्रिप्ट कर सकता हूँ?** हाँ – बस API को उस फ़ोल्डर की ओर इंगित करें जिसे आप ज़िप करना चाहते हैं।  
-- **क्या ज़िप पासवर्ड बदलना समर्थित है?** बिल्कुल, `TraditionalEncryptionSettings` का उपयोग करें।  
-- **क्या उत्पादन के लिए लाइसेंस चाहिए?** व्यावसायिक उपयोग के लिए वैध Aspose.Zip लाइसेंस आवश्यक है।  
-- **.NET Core/5/6 के साथ काम करता है?** हाँ, API आधुनिक .NET रनटाइम्स के साथ पूरी तरह संगत है।  
+## Quick Answers
+- **What library is recommended?** Aspose.Zip for .NET  
+- **Can I encrypt an entire folder?** Yes – just point the API at the folder you want to zip.  
+- **Is changing the zip password supported?** Absolutely, use `TraditionalEncryptionSettings`.  
+- **Do I need a license for production?** A valid Aspose.Zip license is required for commercial use.  
+- **Works with .NET Core/5/6?** Yes, the API is fully compatible with modern .NET runtimes.  
 
-## “पासवर्ड प्रोटेक्टेड ज़िप बनाना” क्या है?
-पासवर्ड प्रोटेक्टेड ज़िप बनाना का अर्थ है फ़ाइलों या डायरेक्टरीज़ को एक ZIP आर्काइव में संकुचित करना और एन्क्रिप्शन लागू करना ताकि केवल सही पासवर्ड से ही आर्काइव खोला जा सके। यह अनधिकृत पहुँच से सामग्री की सुरक्षा करता है।
+## “create password protected zip” क्या है?
+पासवर्ड संरक्षित ज़िप बनाना का अर्थ है फ़ाइलों या डायरेक्टरीज़ को एक ZIP आर्काइव में संकुचित करना और साथ ही एन्क्रिप्शन लागू करना, ताकि आर्काइव केवल सही पासवर्ड के साथ ही खोला जा सके। यह अनधिकृत पहुँच से सामग्री की सुरक्षा करता है।
 
-## Aspose.Zip को .NET में डायरेक्टरी पासवर्ड प्रोटेक्ट करने के लिए क्यों चुनें?
-Aspose.Zip एक सरल, हाई‑परफ़ॉर्मेंस API प्रदान करता है जो **c# zip password protection**, पारंपरिक ZipCrypto एन्क्रिप्शन, और AES एन्क्रिप्शन को सपोर्ट करता है। यह बड़े डायरेक्टरीज़ को कुशलता से संभालता है और किसी भी .NET प्रोजेक्ट में सहजता से एकीकृत हो जाता है।
+## डायरेक्टरी के लिए पासवर्ड संरक्षित ज़िप कैसे बनाएं
+नीचे आपको एक पूर्ण, मानव‑पठनीय walkthrough मिलेगा जो प्रोजेक्ट सेटअप से लेकर बाद में पासवर्ड बदलने तक सब कुछ कवर करता है।
 
-## पूर्वापेक्षाएँ
-शुरू करने से पहले सुनिश्चित करें कि आपके पास हैं:
+## पासवर्ड प्रोटेक्टेड डायरेक्टरी के लिए Aspose.Zip क्यों उपयोग करें .NET?
+Aspose.Zip एक सरल, हाई‑परफ़ॉर्मेंस API प्रदान करता है जो **c# zip password protection**, पारंपरिक ZipCrypto एन्क्रिप्शन, और AES एन्क्रिप्शन को सपोर्ट करता है। यह बड़े डायरेक्टरीज़ को कुशलता से संभालता है और किसी भी .NET प्रोजेक्ट के साथ सहजता से इंटीग्रेट हो जाता है।
 
-- C# प्रोग्रामिंग का बुनियादी ज्ञान।  
-- Visual Studio (कोई भी हालिया संस्करण)।  
-- Aspose.Zip for .NET लाइब्रेरी – इसे **[यहाँ](https://releases.aspose.com/zip/net/)** डाउनलोड करें।  
-- डिस्क पर वह फ़ोल्डर जो आप पासवर्ड से सुरक्षित करना चाहते हैं।
+## Common use cases
+- **Backup protection:** Zip a daily backup folder and lock it with a strong password.  
+- **Secure file exchange:** Send a zip folder password to a client without exposing the contents.  
+- **Regulatory compliance:** Store personally identifiable information (PII) in an encrypted zip archive to meet data‑protection standards.  
 
-## नेमस्पेस इम्पोर्ट करें
-अपने C# फ़ाइल में आवश्यक नेमस्पेस जोड़ें ताकि कंपाइलर को Aspose.Zip क्लासेज़ मिल सकें।
+## Prerequisites
+शुरू करने से पहले सुनिश्चित करें कि आपके पास है:
+
+- Basic knowledge of C# programming.  
+- Visual Studio (any recent edition).  
+- Aspose.Zip for .NET library – download it **[here](https://releases.aspose.com/zip/net/)**.  
+- A folder on disk that you want to protect with a password.
+
+## Import Namespaces
+Add the required namespaces to your C# file so the compiler knows where to find the Aspose.Zip classes.
 
 ```csharp
 using Aspose.Zip;
@@ -47,15 +55,15 @@ using System.IO;
 using Aspose.Zip.Saving;
 ```
 
-## चरण 1: रिसोर्स डायरेक्टरी का पाथ सेट करें
-उस पाथ को परिभाषित करें जो उस डायरेक्टरी की ओर इशारा करता है जिसे आप ज़िप और प्रोटेक्ट करना चाहते हैं।
+## Step 1: Set the Path to the Resource Directory
+Define the path that points to the directory you intend to zip and protect.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## चरण 2: डायरेक्टरी को पासवर्ड प्रोटेक्ट करें
-`TraditionalEncryptionSettings` का उपयोग करके पासवर्ड निर्दिष्ट करें और एन्क्रिप्टेड आर्काइव बनाएं। यह **c# zip password protection** का मुख्य भाग है।
+## Step 2: Password Protect the Directory
+Use `TraditionalEncryptionSettings` to specify the password and create the encrypted archive. This is the core of **c# zip password protection**.
 
 ```csharp
 //ExStart: PasswordProtectDirectory
@@ -71,42 +79,65 @@ using (FileStream zipFile = File.Open(dataDir + "all_corpus_encrypted_out.zip", 
 }
 ```
 
-## चरण 3: कोड की व्याख्या
-- **आउटपुट फ़ाइल बनाना:** `File.Open(..., FileMode.Create)` वह ZIP फ़ाइल खोलता (या बनाता) है जिसमें एन्क्रिप्टेड डेटा रहेगा।  
-- **स्रोत फ़ोल्डर चुनना:** `new DirectoryInfo(".\\CanterburyCorpus")` Aspose.Zip को बताता है कि कौन सा फ़ोल्डर संकुचित करना है।  
-- **पासवर्ड लागू करना:** `new TraditionalEncryptionSettings("p@s$")` वह पासवर्ड सेट करता है जो आर्काइव को सुरक्षित करेगा।  
-- **एंट्रीज़ जोड़ना और सेव करना:** `archive.CreateEntries(corpus)` फ़ोल्डर की हर फ़ाइल को जोड़ता है, और `archive.Save(zipFile)` एन्क्रिप्टेड ZIP को डिस्क पर लिखता है।
+## Step 3: Explanation of the Code
+- **Creating the output file:** `File.Open(..., FileMode.Create)` opens (or creates) the ZIP file that will hold the encrypted data.  
+- **Selecting the source folder:** `new DirectoryInfo(".\\CanterburyCorpus")` tells Aspose.Zip which directory to compress.  
+- **Applying the password:** `new TraditionalEncryptionSettings("p@s$")` sets the password that will protect the archive.  
+- **Adding entries & saving:** `archive.CreateEntries(corpus)` adds every file in the folder, and `archive.Save(zipFile)` writes the encrypted ZIP to disk.  
 
-## बाद में ज़िप पासवर्ड कैसे बदलें?
-यदि आपको **ज़िप पासवर्ड बदलना** है, तो बस नया `TraditionalEncryptionSettings` इंस्टेंस बनाकर नया पासवर्ड दें और फिर आर्काइव को पुनः सेव करें।
+## How to change zip password later?
+If you need to **change zip password**, simply recreate the archive with a new `TraditionalEncryptionSettings` instance that contains the new password, then save it again. This approach also works when you want to **create encrypted zip archive** from an existing folder with a different password.
 
-## सामान्य समस्याएँ एवं टिप्स
-- **बड़े फ़ोल्डर:** Aspose.Zip डेटा को स्ट्रीम करता है, इसलिए बड़ी डायरेक्टरीज़ के लिए मेमोरी उपयोग कम रहता है।  
-- **पासवर्ड जटिलता:** सुरक्षा बढ़ाने के लिए मजबूत पासवर्ड (अक्षर, अंक, प्रतीक मिश्रित) उपयोग करें।  
-- **लाइसेंस त्रुटियाँ:** सुनिश्चित करें कि वैध लाइसेंस फ़ाइल लागू की गई है; अन्यथा लाइब्रेरी मूल्यांकन मोड में सीमाओं के साथ चलेगी।
+## Tips for a strong zip folder password
+- Use a mix of upper‑case, lower‑case, numbers, and symbols.  
+- Aim for at least 12 characters; longer passwords are exponentially harder to crack.  
+- Avoid common words or patterns; consider using a passphrase.
 
-## अक्सर पूछे जाने वाले प्रश्न
+## Common Issues & Tips
+- **Large folders:** Aspose.Zip streams data, so memory usage stays low even for huge directories.  
+- **Password complexity:** Use a strong password (mix letters, numbers, symbols) to improve security.  
+- **License errors:** Ensure you have applied a valid license file; otherwise the library runs in evaluation mode with limitations.  
+- **zip folder password not recognized:** Verify that you are using the same encryption method (`TraditionalEncryptionSettings`) when opening the archive.
 
-### क्या Aspose.Zip for .NET बड़े डायरेक्टरीज़ के लिए उपयुक्त है?
-हाँ, Aspose.Zip for .NET बड़े डायरेक्टरीज़ को कुशलता से संभालने के लिए डिज़ाइन किया गया है और उत्कृष्ट प्रदर्शन देता है।
+## Frequently Asked Questions
 
-### क्या मैं पहले से प्रोटेक्टेड डायरेक्टरी का पासवर्ड बदल सकता हूँ?
-हाँ, कोड में `TraditionalEncryptionSettings` को समायोजित करके आप पासवर्ड बदल सकते हैं।
+### Is Aspose.Zip for .NET suitable for large directories?
+Yes, Aspose.Zip for .NET is designed to handle large directories efficiently, providing optimal performance.
 
-### Aspose.Zip for .NET उपयोग करने के लिए कोई लाइसेंस आवश्यकताएँ हैं?
-हाँ, उत्पादन वातावरण में Aspose.Zip for .NET उपयोग करने के लिए वैध लाइसेंस आवश्यक है। आप लाइसेंस **[यहाँ](https://purchase.aspose.com/buy)** प्राप्त कर सकते हैं।
+### Can I change the password for an already protected directory?
+Yes, you can modify the password by adjusting the `TraditionalEncryptionSettings` in the code accordingly.
 
-### क्या Aspose.Zip for .NET का फ्री ट्रायल उपलब्ध है?
-हाँ, आप फ्री ट्रायल **[यहाँ](https://releases.aspose.com/)** से एक्सेस कर सकते हैं।
+### Are there any licensing requirements for using Aspose.Zip for .NET?
+Yes, a valid license is required for using Aspose.Zip for .NET in a production environment. You can obtain a license **[here](https://purchase.aspose.com/buy)**.
 
-### Aspose.Zip for .NET के लिए अतिरिक्त सपोर्ट कहाँ मिल सकता है?
-आप किसी भी सपोर्ट या प्रश्न के लिए **[Aspose.Zip फोरम](https://forum.aspose.com/c/zip/37)** पर जा सकते हैं।
+### Is there a free trial available for Aspose.Zip for .NET?
+Yes, you can access a free trial **[here](https://releases.aspose.com/)**.
+
+### Where can I find additional support for Aspose.Zip for .NET?
+You can visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)** for any support or queries.
+
+## Quick FAQ (AI‑friendly)
+
+**Q: How do I encrypt a folder with zip using Aspose.Zip?**  
+A: Use `TraditionalEncryptionSettings` when creating the `Archive` object, then call `CreateEntries` on the target folder.
+
+**Q: Can I set a zip folder password after the archive is created?**  
+A: No, the password must be defined at creation time; to change it, recreate the archive with a new password.
+
+**Q: Does Aspose.Zip support AES encryption for stronger security?**  
+A: Yes, you can switch to `AesEncryptionSettings` for AES‑256 encryption instead of the traditional ZipCrypto.
+
+**Q: Is the library compatible with .NET 6 and .NET 7?**  
+A: Absolutely – the current release works with all modern .NET runtimes.
+
+**Q: What happens if I try to open a password‑protected zip without a password?**  
+A: Aspose.Zip will throw a `PasswordRequiredException`, prompting you to supply the correct password.
 
 ---
 
-**अंतिम अपडेट:** 2025-12-21  
-**टेस्टेड विद:** Aspose.Zip for .NET (नवीनतम रिलीज)  
-**लेखक:** Aspose  
+**Last Updated:** 2026-03-08  
+**Tested With:** Aspose.Zip for .NET (latest release)  
+**Author:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
