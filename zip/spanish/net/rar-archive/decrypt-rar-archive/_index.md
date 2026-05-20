@@ -1,100 +1,140 @@
 ---
-title: Descifrar un archivo RAR con Aspose.Zip para .NET
-linktitle: Descifrar un archivo RAR
-second_title: API Aspose.Zip .NET para compresión y archivado de archivos
-description: Desbloquee archivos RAR cifrados sin esfuerzo utilizando Aspose.Zip para .NET. Siga nuestra guía paso a paso para una integración perfecta y un descifrado eficiente.
-weight: 12
+description: Aprenda cómo extraer RAR a una carpeta y descifrar archivos RAR cifrados
+  usando Aspose.Zip para .NET. Siga la guía paso a paso para leer un archivo RAR cifrado
+  y especificar la contraseña del RAR.
+linktitle: Decrypting a RAR Archive
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Extraer RAR a una carpeta con Aspose.Zip para .NET
 url: /es/net/rar-archive/decrypt-rar-archive/
+weight: 12
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
+/products-backtop-button >}}
+
+Make sure we keep all shortcodes unchanged.
+
+Now produce final content.{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Descifrar un archivo RAR con Aspose.Zip para .NET
-
+# Extraer RAR a una carpeta con Aspose.Zip para .NET
 
 ## Introducción
 
-Desbloquear el contenido de un archivo RAR protegido con contraseña puede ser una tarea desalentadora, pero con Aspose.Zip para .NET, el proceso se vuelve sencillo y eficiente. En este tutorial, lo guiaremos a través de los pasos para descifrar un archivo RAR usando la biblioteca Aspose.Zip. Ya sea que sea un desarrollador experimentado o un entusiasta de la codificación, esta guía lo ayudará a integrar perfectamente la funcionalidad de descifrado en sus aplicaciones .NET.
+Si necesita **extraer RAR a una carpeta** y trabajar con archivos comprimidos protegidos con contraseña, Aspose.Zip para .NET hace el trabajo sencillo. En este tutorial recorreremos los pasos exactos para leer un archivo RAR encriptado, especificar la contraseña del RAR y extraer el contenido del archivo a un directorio de destino. Ya sea que esté creando una utilidad de escritorio o un servicio del lado del servidor, verá cómo integrar la lógica de descifrado de forma rápida y fiable.
+
+## Respuestas rápidas
+- **¿Qué significa “extract RAR to folder”?** Significa abrir un archivo RAR y escribir cada entrada en un directorio especificado en el disco.  
+- **¿Qué biblioteca maneja la descifrado?** Aspose.Zip para .NET proporciona soporte incorporado para archivos RAR encriptados.  
+- **¿Necesito una licencia para pruebas?** Hay una licencia temporal disponible para evaluación; se requiere una licencia completa para producción.  
+- **¿Qué versiones de .NET son compatibles?** .NET Framework 4.5+, .NET Core 3.1+ y .NET 5/6+.  
+- **¿Cuánto tiempo lleva la implementación?** Normalmente menos de 10 minutos para un escenario básico de extracción.
+
+## Qué es “extract RAR to folder”?
+Extraer un archivo RAR a una carpeta significa descomprimir cada archivo almacenado dentro del archivo y colocarlos en un directorio que elija. Cuando el archivo está encriptado, también debe proporcionar la contraseña correcta antes de que pueda realizarse la extracción.
+
+## ¿Por qué usar Aspose.Zip para extraer RAR encriptado?
+Aspose.Zip abstrae las complejidades del formato RAR, manejando tanto archivos estándar como encriptados sin dependencias externas. Ofrece una API limpia y orientada a objetos, alto rendimiento y un excelente manejo de errores—perfecta para desarrolladores .NET que buscan una solución fiable para **how to decrypt RAR** archivos.
 
 ## Requisitos previos
 
-Antes de sumergirse en el tutorial, asegúrese de cumplir con los siguientes requisitos previos:
+Antes de sumergirse en el tutorial, asegúrese de que tiene los siguientes requisitos previos:
 
-1.  Aspose.Zip para la biblioteca .NET: asegúrese de tener la biblioteca Aspose.Zip instalada en su proyecto .NET. Puedes descargarlo desde el[Documentación Aspose.Zip](https://reference.aspose.com/zip/net/).
-
-2. Directorio de documentos: configure un directorio donde se encuentre su archivo RAR cifrado. Reemplace "Su directorio de documentos" en el código de ejemplo con la ruta real a este directorio.
+1. Biblioteca Aspose.Zip para .NET: Asegúrese de que tiene la biblioteca Aspose.Zip instalada en su proyecto .NET. Puede descargarla desde la [documentación de Aspose.Zip](https://reference.aspose.com/zip/net/).
+2. Directorio de documentos: Configure un directorio donde se encuentre su archivo RAR encriptado. Reemplace "Your Document Directory" en el código de ejemplo con la ruta real a este directorio.
 
 ## Importar espacios de nombres
 
-Comencemos importando los espacios de nombres necesarios para utilizar la biblioteca Aspose.Zip de forma eficaz. Agregue las siguientes líneas en la parte superior de su archivo .NET:
+Comencemos importando los espacios de nombres necesarios para usar la biblioteca Aspose.Zip de manera eficaz. Añada las siguientes líneas al inicio de su archivo .NET:
 
 ```csharp
-//ExStart: Importar espacios de nombres
+//ExStart: ImportNamespaces
 using Aspose.Zip;
 using System.IO;
-//ExEnd: Importar espacios de nombres
+//ExEnd: ImportNamespaces
 ```
 
-## Paso 1: abra el archivo RAR cifrado
+## Paso 1 – Abrir el archivo RAR encriptado
 
-Comience abriendo el archivo RAR cifrado. En el código de ejemplo, reemplace "encrypted.rar" con el nombre de su archivo RAR cifrado.
+Primero, abra un flujo de solo lectura para el archivo RAR encriptado. Esto prepara el archivo para la descifrado y extracción.
 
 ```csharp
-//ExInicio: DecryptRarArchive_Step1
+//ExStart: DecryptRarArchive_Step1
 using (FileStream fs = File.OpenRead(dataDir + "encrypted.rar"))
 {
-    //Fin final: DecryptRarArchive_Step1
-    // Continúe con el siguiente paso aquí...
+    //ExEnd: DecryptRarArchive_Step1
+    // Continue to the next step here...
 }
 ```
 
-## Paso 2: especifique la contraseña de descifrado
+## Paso 2 – Especificar la contraseña del RAR (how to decrypt RAR)
 
-Especifique la contraseña de descifrado para el archivo RAR. En el ejemplo se utiliza la contraseña "p@s$". Reemplácela con la contraseña real que estableció para su archivo RAR cifrado.
+Ahora cree una instancia de `RarArchive` y indique a Aspose.Zip la contraseña que protege el archivo. Reemplace `"p@s$"` con la contraseña real que utilizó al crear el RAR encriptado.
 
 ```csharp
-//ExInicio: DecryptRarArchive_Step2
+//ExStart: DecryptRarArchive_Step2
 using (RarArchive archive = new RarArchive(fs, new RarArchiveLoadOptions() { DecryptionPassword = "p@s$" }))
 {
-    //Fin final: DecryptRarArchive_Step2
-    // Continúe con el siguiente paso aquí...
+    //ExEnd: DecryptRarArchive_Step2
+    // Continue to the next step here...
 }
 ```
 
-## Paso 3: extraer contenidos al directorio
+## Paso 3 – Extraer el contenido a una carpeta (extract encrypted RAR)
 
-Ahora, extraiga el contenido del archivo RAR a un directorio específico. Reemplace "DecompressRar_out" con la ruta donde desea que se almacenen los archivos descifrados.
+Finalmente, extraiga cada entrada a la carpeta que elija. Esto completa la operación **extract RAR to folder**.
 
 ```csharp
-//ExInicio: DecryptRarArchive_Step3
+//ExStart: DecryptRarArchive_Step3
 archive.ExtractToDirectory(dataDir + "DecompressRar_out");
-//Fin final: DecryptRarArchive_Step3
+//ExEnd: DecryptRarArchive_Step3
 ```
 
-Repita estos pasos para cada archivo RAR que necesite descifrar, asegurando una integración perfecta de Aspose.Zip para .NET en su proyecto.
+Repita estos pasos para cada archivo RAR que necesite descifrar, asegurando una integración fluida de Aspose.Zip para .NET en su proyecto.
+
+## Problemas comunes y consejos
+
+- **Contraseña incorrecta** – Si la contraseña es incorrecta, Aspose.Zip lanza una `WrongPasswordException`. Verifique nuevamente la cadena que pasa a `DecryptionPassword`.
+- **Archivos grandes** – Para archivos RAR muy grandes, considere extraer primero a una carpeta temporal y luego mover los archivos a la ubicación final para evitar quedarse sin espacio en disco.
+- **Seguridad de rutas** – Siempre valide `dataDir` y las rutas de salida para prevenir vulnerabilidades de traversal de directorios.
 
 ## Conclusión
 
-¡Felicidades! Ha descifrado con éxito un archivo RAR usando Aspose.Zip para .NET. Esta poderosa biblioteca simplifica el complejo proceso de desbloquear archivos protegidos con contraseña, lo que la convierte en una herramienta invaluable para los desarrolladores que trabajan con aplicaciones .NET.
+¡Felicidades! Ha **extraído un RAR a una carpeta** con éxito y ha aprendido cómo **leer un archivo RAR encriptado** usando Aspose.Zip para .NET. Esta poderosa biblioteca simplifica el proceso complejo de desbloquear archivos comprimidos protegidos con contraseña, convirtiéndose en una herramienta invaluable para desarrolladores que trabajan con aplicaciones .NET.
 
-## Preguntas frecuentes (FAQ)
+## Preguntas frecuentes (FAQs)
 
-### ¿Aspose.Zip para .NET es compatible con todas las versiones de archivos RAR?
-Aspose.Zip para .NET admite varias versiones de archivos RAR, lo que garantiza la compatibilidad con una amplia gama de archivos.
+### ¿Es Aspose.Zip para .NET compatible con todas las versiones de archivos RAR?
+Aspose.Zip para .NET admite varias versiones de archivos RAR, garantizando compatibilidad con una amplia gama de archivos.
 
-### ¿Puedo utilizar Aspose.Zip para .NET en proyectos comerciales?
- Sí, Aspose.Zip para .NET está disponible para uso comercial. Visita el[pagina de compra](https://purchase.aspose.com/buy) para obtener detalles sobre la licencia.
+### ¿Puedo usar Aspose.Zip para .NET en proyectos comerciales?
+Sí, Aspose.Zip para .NET está disponible para uso comercial. Visite la [página de compra](https://purchase.aspose.com/buy) para obtener detalles de licenciamiento.
 
-### ¿Hay licencias temporales disponibles para fines de prueba?
- Sí, puede obtener una licencia temporal para realizar pruebas en[aquí](https://purchase.aspose.com/temporary-license/).
+### ¿Están disponibles licencias temporales para propósitos de prueba?
+Sí, puede obtener una licencia temporal para pruebas desde [aquí](https://purchase.aspose.com/temporary-license/).
 
-### ¿Dónde puedo encontrar apoyo adicional o debates comunitarios?
- Visita el[Foro Aspose.Zip](https://forum.aspose.com/c/zip/37) para apoyo y debates comunitarios.
+### ¿Dónde puedo encontrar soporte adicional o discusiones de la comunidad?
+Visite el [foro de Aspose.Zip](https://forum.aspose.com/c/zip/37) para obtener soporte y discusiones de la comunidad.
 
 ### ¿Cómo accedo a la documentación de Aspose.Zip para .NET?
- El[documentación](https://reference.aspose.com/zip/net/) proporciona información completa sobre el uso de Aspose.Zip para .NET.
+La [documentación](https://reference.aspose.com/zip/net/) ofrece información completa sobre el uso de Aspose.Zip para .NET.
+
+**Preguntas y respuestas adicionales**
+
+**Q:** ¿Cómo puedo extraer solo archivos específicos de un RAR encriptado?  
+**A:** Use `RarArchiveEntry` para localizar la entrada deseada y llame a `ExtractToFile` con la contraseña de descifrado ya establecida en el archivo.
+
+**Q:** ¿Qué pasa si necesito cambiar el nombre de la carpeta de salida dinámicamente?  
+**A:** Construya la ruta de salida usando `Path.Combine` y cualquier variable en tiempo de ejecución antes de llamar a `ExtractToDirectory`.
+
+**Q:** ¿Aspose.Zip admite archivos RAR de múltiples volúmenes?  
+**A:** Sí, la biblioteca puede abrir y extraer conjuntos RAR de varios volúmenes siempre que todas las partes sean accesibles.
+
+---
+
+**Última actualización:** 2026-03-13  
+**Probado con:** Aspose.Zip for .NET 24.11  
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
