@@ -1,9 +1,57 @@
 ---
-date: 2026-02-15
-description: 學習如何使用 Aspose.Zip for .NET 在 C# 中壓縮檔案、修改 zip 檔、提取內部 zip 條目，並在一步一步的教學裡建立平面壓縮檔。
-linktitle: Modifying Zip Files
+date: 2026-05-30
+description: 了解如何使用 Aspose.Zip for .NET 於 C# 壓縮檔案、修改 zip 檔案、提取內部 zip 條目，並在記憶體中建立平面壓縮檔案。
+keywords:
+- compress files c#
+- create zip archive c#
+- modify zip file c#
+- aspose.zip .net
+- zip archive in memory c#
+linktitle: 修改 Zip 檔案
+schemas:
+- author: Aspose
+  dateModified: '2026-05-30'
+  description: Learn how to compress files C# with Aspose.Zip for .NET, modify zip
+    file C#, extract inner zip entries, and create flat archives in memory.
+  headline: Compress files C# using Aspose.Zip – Create & Modify Zip
+  type: TechArticle
+- description: Learn how to compress files C# with Aspose.Zip for .NET, modify zip
+    file C#, extract inner zip entries, and create flat archives in memory.
+  name: Compress files C# using Aspose.Zip – Create & Modify Zip
+  steps:
+  - name: Open the Outer Zip File
+    text: We start by opening the existing archive (`outer.zip`). The `using` statement
+      ensures the file is closed automatically.
+  - name: Identify Inner Zip Entries
+    text: Next, we scan the outer archive for entries that end with `.zip`. Those
+      are the **inner zip files** we want to extract.
+  - name: Extract Inner Entries
+    text: Now we treat each inner zip as its own `Archive`. This is where we **extract
+      inner zip files** and collect their content in memory.
+  - name: Delete Inner Archive Entries
+    text: Having captured the data we need, we remove the original inner zip entries
+      from the outer archive. This step is essentially **delete zip entry C#** logic.
+  - name: Add Modified Entries to Outer Zip
+    text: Finally, we re‑insert the extracted files back into the outer archive, effectively
+      flattening the structure, and save the result as `flatten.zip`. By following
+      these five steps you’ve **compress files C#** into a tidy, flat archive that
+      no longer contains nested zip layers.
+  type: HowTo
+- questions:
+  - answer: Aspose.Zip is optimized for .NET, but Aspose offers equivalent libraries
+      for Java, C++, and Python that follow the same API concepts.
+    question: Can I use Aspose.Zip for .NET with other programming languages?
+  - answer: Yes, you can access the free trial **[here](https://releases.aspose.com/)**.
+    question: Is there a free trial available for Aspose.Zip for .NET?
+  - answer: For support and discussions, visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)**.
+    question: How do I get support for Aspose.Zip for .NET?
+  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/)**.
+    question: Can I purchase a temporary license for Aspose.Zip for .NET?
+  - answer: The documentation is available **[here](https://reference.aspose.com/zip/net/)**.
+    question: Where can I find the documentation for Aspose.Zip for .NET?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: 使用 Aspose.Zip 在 C# 中壓縮檔案 – 建立與修改 Zip
+title: 使用 Aspose.Zip 壓縮 C# 檔案 – 建立與修改 Zip
 url: /zh-hant/net/file-compression/modifying-zip-files/
 weight: 15
 ---
@@ -12,48 +60,39 @@ weight: 15
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 使用 Aspose.Zip for .NET 建立 zip 壓縮檔 (C#)
+# 使用 Aspose.Zip 壓縮檔案 C# – 建立與修改 Zip
 
-## 簡介
+## 介紹
 
-在 C# 中壓縮檔案是一項常見需求，無論是傳送資料、建立備份，或是降低儲存成本。Aspose.Zip for .NET 省去低階的繁瑣工作，讓您專注於 **想要達成的目標**——無論是建立全新的壓縮檔、平坦化巢狀 zip 檔，或是更新現有套件。
+在需要傳輸資料、備份日誌或減少儲存成本時，壓縮檔案 C# 是常見需求。使用 Aspose.Zip for .NET 進行 **Compress files C#** 可讓您省去低層次的處理，專注於業務目標——無論是建立全新壓縮檔、展平巢狀 zip 檔，或即時更新現有套件。本教學將帶您完成 **modify zip file C#**、提取內部 zip 條目、刪除不需要的項目，最後將 **compress files C#** 成為一個乾淨、扁平的壓縮檔，適用於任何 .NET 環境。
 
-本教學將教您如何 **在 C# 中修改 zip 檔**、擷取內部 zip 條目、刪除不需要的項目，最後 **在 C# 中壓縮檔案** 成為乾淨、平坦的壓縮檔。此方法非常適用於檔案處理服務、自動化部署管線，或任何需要以程式方式處理 zip 壓縮檔的情境。
+## `Archive` 類別
 
-## 快速答覆
-- **Aspose.Zip 能否在 C# 中建立 zip 壓縮檔？** 是 – `Archive` 類別讓您直接在 C# 中建立與編輯 zip 檔。
-- **如何擷取內部 zip 檔？** 將外層條目以串流開啟，從該串流建立第二個 `Archive`，再列舉其條目。
-- **開發是否需要授權？** 免費試用可用於評估；正式上線需購買商業授權。
-- **支援的 .NET 版本？** .NET Framework 4.6 以上、.NET Core 3.1 以上、.NET 5/6/7。
-- **範例的典型執行時間？** 幾 MB 資料在一秒以下。
+`Archive` 類別代表一個 zip 壓縮檔，並提供建立、讀取與修改其條目的方法。
 
-## 使用 Aspose.Zip 在 C# 中壓縮檔案
+## 快速解答
+- **Aspose.Zip 能否在 C# 中建立 zip 壓縮檔？** Yes – the `Archive` class lets you build and edit zip files directly in C#.
+- **如何提取內部 zip 檔案？** Open the outer entry as a stream, create a second `Archive` from that stream, then enumerate its entries.
+- **開發是否需要授權？** A free trial works for evaluation; a commercial license is required for production.
+- **支援的 .NET 版本？** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10
+- **範例的典型執行時間？** Less than a second for a few megabytes of data.
 
-在深入程式碼之前，先說明為何您會選擇 Aspose.Zip 而非其他函式庫：
+## 什麼是 “compress files C#”？
 
-- **純 .NET 實作** – 無需原生 DLL，讓部署至雲端服務變得輕鬆。  
-- **完整控制條目** – 您可以即時新增、刪除、重新命名或取代檔案，這在程式化 **修改 zip 檔 (C#)** 時至關重要。  
-- **以串流為中心的 API** – 直接操作 `MemoryStream` 物件，適合記憶體內處理或無伺服器函式。  
-- **支援巢狀壓縮檔** – 可在不寫入暫存檔至磁碟的情況下擷取內部 zip 檔。
+在 C# 中建立 zip 壓縮檔表示以程式方式產生一個 `.zip` 檔案，該檔案可包含任意數量的檔案或資料夾，並可選擇套用壓縮等級、加密或自訂中繼資料。Aspose.Zip 抽象化 zip 規格，讓您專注於應用程式中重要的邏輯。
 
-## 什麼是「在 C# 中建立 zip 壓縮檔」？
+## 為何在 .NET 中使用 Aspose.Zip？
 
-在 C# 中建立 zip 壓縮檔指的是以程式方式產生 `.zip` 檔案，該檔案可包含任意數量的檔案或資料夾，並可選擇套用壓縮等級、加密或自訂中繼資料。Aspose.Zip 抽象化了這些複雜性，讓您專注於業務邏輯，而非 zip 檔案格式本身。
-
-## 為何使用 Aspose.Zip for .NET？
-
-- **無外部相依性** – 純 .NET 函式庫，無需原生 DLL。  
-- **完整控制條目** – 可即時新增、刪除、重新命名或取代檔案。  
-- **以串流為中心的 API** – 使用 `MemoryStream` 物件，完美適用於雲端或記憶體內情境。  
-- **穩健處理巢狀壓縮檔** – 可輕鬆 **擷取內部 zip 檔**，無需在磁碟上產生暫存檔。
+Aspose.Zip 支援 **50 多種輸入與輸出格式**——包括 ZIP、TAR、GZIP、BZIP2 以及 7z，且能在不將整個檔案載入記憶體的情況下處理 **數百 MB** 的壓縮檔。其純受管理實作消除原生 DLL 依賴，使部署至 Azure Functions、AWS Lambda 或 Docker 容器時毫無障礙。
 
 ## 前置條件
 
 在開始之前，請確保您已具備以下條件：
 
-1. 已在專案中安裝 **Aspose.Zip for .NET**。您可於 **[此處](https://releases.aspose.com/zip/net/)** 下載。  
-2. 一個存放來源 zip 檔的資料夾。請將程式碼片段中的 `"Your Document Directory"` 替換為您機器上的實際路徑。  
-3. .NET 開發環境（Visual Studio、VS Code 或 Rider），目標為 .NET Framework 4.6 以上或 .NET Core 3.1 以上。
+1. 在專案中安裝 **Aspose.Zip for .NET**。您可以在 **[此處](https://releases.aspose.com/zip/net/)** 下載。  
+   您也可以在主要發行頁面的 **[此處](https://releases.aspose.com/)** 瀏覽所有 Aspose 產品。  
+2. 一個存放來源 zip 檔案的資料夾。請在程式碼片段中將 `"Your Document Directory"` 替換為您機器上的實際路徑。  
+3. 一個 .NET 開發環境（Visual Studio、VS Code 或 Rider），目標為 .NET Framework 2.0–4.8.1、 .NET Core 2.0–3.1 或 .NET 5–10。
 
 ## 匯入命名空間
 
@@ -69,13 +108,19 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## 使用 Aspose.Zip 在 C# 中修改 zip 檔
+`MemoryStream` 是一個在記憶體中儲存資料的 .NET 串流，讓您在不進行磁碟 I/O 的情況下處理檔案。
 
-以下為逐步指南，說明如何開啟現有壓縮檔、擷取內部 zip 條目、平坦化結構，最後儲存為新壓縮檔。
+## 如何使用 Aspose.Zip 壓縮檔案 C#
 
-### 步驟 1：開啟外層 Zip 檔  
+載入外部壓縮檔，展平所有巢狀 zip 條目，並將結果儲存於記憶體中——只需幾個簡潔步驟。此方法讓您完全掌控每個條目，能全程在記憶體中操作，且避免在磁碟上產生暫存檔。
 
-我們先開啟現有的壓縮檔 (`outer.zip`)。`using` 陳述式會自動確保檔案被關閉。
+## 如何使用 Aspose.Zip 修改 zip 檔案 C#
+
+開啟現有壓縮檔，提取內部 zip 檔案，刪除原始檔，並將提取的內容重新插入為扁平結構。此流程完全以串流為中心，意味著您可在無伺服器環境中執行，而不需觸及檔案系統。
+
+### 步驟 1：開啟外部 Zip 檔案  
+
+我們先開啟現有的壓縮檔 (`outer.zip`)。`using` 陳述式可確保檔案自動關閉。
 
 ```csharp
 using (Archive outer = new Archive(dataDir + "outer.zip"))
@@ -84,9 +129,9 @@ using (Archive outer = new Archive(dataDir + "outer.zip"))
 }
 ```
 
-### 步驟 2：辨識內部 Zip 條目  
+### 步驟 2：識別內部 Zip 條目  
 
-接著，我們掃描外層壓縮檔，找出以 `.zip` 結尾的條目。這些即是我們想要擷取的 **內部 zip 檔**。
+接著，我們掃描外部壓縮檔中以 `.zip` 結尾的條目。這些即是我們想要提取的 **inner zip files**。
 
 ```csharp
 List<ArchiveEntry> entriesToDelete = new List<ArchiveEntry>();
@@ -106,9 +151,9 @@ foreach (ArchiveEntry entry in outer.Entries)
 }
 ```
 
-### 步驟 3：擷取內部條目  
+### 步驟 3：提取內部條目  
 
-現在，我們將每個內部 zip 視為獨立的 `Archive`。在此步驟中，我們 **擷取內部 zip 檔**，並將其內容收集於記憶體中。
+現在，我們將每個內部 zip 視為獨立的 `Archive`。此處即是 **extract inner zip files** 並在記憶體中收集其內容的步驟。
 
 ```csharp
 using (Archive inner = new Archive(innerCompressed))
@@ -126,7 +171,7 @@ using (Archive inner = new Archive(innerCompressed))
 
 ### 步驟 4：刪除內部壓縮檔條目  
 
-取得所需資料後，我們從外層壓縮檔中移除原始的內部 zip 條目。此步驟即為 **在 C# 中刪除 zip 條目** 的邏輯。
+取得所需資料後，我們從外部壓縮檔中移除原始的內部 zip 條目。此步驟本質上即為 **delete zip entry C#** 的邏輯。
 
 ```csharp
 foreach (ArchiveEntry e in entriesToDelete)
@@ -135,9 +180,9 @@ foreach (ArchiveEntry e in entriesToDelete)
 }
 ```
 
-### 步驟 5：將修改後的條目加入外層 Zip  
+### 步驟 5：將修改後的條目加入外部 Zip  
 
-最後，我們將擷取的檔案重新插入外層壓縮檔，實現結構平坦化，並將結果儲存為 `flatten.zip`。
+最後，我們將提取的檔案重新插入外部壓縮檔，實際上展平結構，並將結果儲存為 `flatten.zip`。
 
 ```csharp
 for (int i = 0; i < namesToInsert.Count; i++)
@@ -148,47 +193,47 @@ for (int i = 0; i < namesToInsert.Count; i++)
 outer.Save(dataDir + "flatten.zip");
 ```
 
-透過上述五個步驟，您已 **在 C# 中建立 zip 壓縮檔**，其內容與原始檔相同，但已去除巢狀 zip 層級。
+透過這五個步驟，您已將 **compress files C#** 成為一個整潔、扁平的壓縮檔，且不再包含巢狀 zip 層級。
 
 ## 常見問題與解決方案
 
-| 問題 | 為何發生 | 解決方式 |
-|------|----------|----------|
-| 開啟內部壓縮檔時發生 `ArgumentNullException` | `innerCompressed` 串流位置在結尾 | 在建立 `Archive` 前呼叫 `innerCompressed.Position = 0;` |
-| 大檔案導致高記憶體使用量 | 所有內部條目皆存於 `MemoryStream` 物件 | 對於極大檔案，可使用磁碟暫存檔 (`Path.GetTempFileName()`) |
-| 平坦化後遺失條目 | 忘記將擷取的內容加入 `contentToInsert` 清單 | 確認在內層迴圈中呼叫 `contentToInsert.Add(content);` |
+| 問題 | 為何會發生 | 解決方式 |
+|------|------------|----------|
+| `ArgumentNullException` 在開啟內部壓縮檔時 | `innerCompressed` 串流位置位於結尾 | 在建立 `Archive` 前呼叫 `innerCompressed.Position = 0;` |
+| 大型檔案導致記憶體使用量高 | 所有內部條目皆儲存在 `MemoryStream` 物件中 | 對於非常大的壓縮檔，使用磁碟上的暫存檔 (`Path.GetTempFileName()`) |
+| 展平後遺失條目 | 忘記將提取的內容加入 `contentToInsert` 清單 | 確保在內部迴圈中呼叫 `contentToInsert.Add(content);` |
 
 ## 常見問答
 
-### Q1：我可以在其他程式語言中使用 Aspose.Zip for .NET 嗎？
+**Q: 我可以在 .NET 之外的其他程式語言中使用 Aspose.Zip 嗎？**  
+A: Aspose.Zip 為 .NET 最佳化，但 Aspose 亦提供相同 API 概念的 Java、C++ 與 Python 等等效函式庫。
 
-A1：Aspose.Zip 主要設計給 .NET 應用程式使用。但 Aspose 也提供多種程式語言的函式庫，皆針對各自環境量身打造。
+**Q: 是否有 Aspose.Zip for .NET 的免費試用版？**  
+A: 有，您可於 **[此處](https://releases.aspose.com/)** 取得免費試用版。
 
-### Q2：是否提供 Aspose.Zip for .NET 的免費試用？
+**Q: 如何取得 Aspose.Zip for .NET 的支援？**  
+A: 如需支援與討論，請前往 **[Aspose.Zip 論壇](https://forum.aspose.com/c/zip/37)**。
 
-A2：是的，您可於 **[此處](https://releases.aspose.com/)** 取得免費試用。
+**Q: 我可以購買 Aspose.Zip for .NET 的臨時授權嗎？**  
+A: 可以，您可於 **[此處](https://purchase.aspose.com/temporary-license/)** 取得臨時授權。
 
-### Q3：如何取得 Aspose.Zip for .NET 的支援？
+**Q: 我可以在哪裡找到 Aspose.Zip for .NET 的文件？**  
+A: 文件可於 **[此處](https://reference.aspose.com/zip/net/)** 取得。
 
-A3：欲取得支援與討論，請前往 **[Aspose.Zip 論壇](https://forum.aspose.com/c/zip/37)**。
+## 相關教學
 
-### Q4：我可以購買 Aspose.Zip for .NET 的臨時授權嗎？
+- [如何使用 Aspose.Zip for .NET 建立 Zip 壓縮檔並加入檔案](/zip/net/file-compression/compress-single-file/)
+- [zip 多個檔案 c# – 使用 Aspose.Zip for .NET 輕鬆壓縮](/zip/net/file-compression/compress-multiple-files/)
+- [如何使用 Aspose.Zip for .NET 以密碼壓縮檔案並以不同密碼加密 ZIP 條目](/zip/net/other-compression-techniques/entries-with-different-passwords/)
 
-A4：是的，您可於 **[此處](https://purchase.aspose.com/temporary-license/)** 取得臨時授權。
-
-### Q5：在哪裡可以找到 Aspose.Zip for .NET 的文件？
-
-A5：文件可於 **[此處](https://reference.aspose.com/zip/net/)** 取得。
-
----
-
-**最後更新：** 2026-02-15  
-**測試環境：** Aspose.Zip 24.12 for .NET  
-**作者：** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
+{{< blocks/products/products-backtop-button >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/products-backtop-button >}}
+---
+
+**最後更新：** 2026-05-30  
+**測試環境：** Aspose.Zip 24.12 for .NET  
+**作者：** Aspose

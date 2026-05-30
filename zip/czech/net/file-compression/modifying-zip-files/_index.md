@@ -1,11 +1,58 @@
 ---
-date: 2026-02-15
-description: Naučte se, jak komprimovat soubory v C# pomocí Aspose.Zip pro .NET, upravovat
-  zip soubory v C#, extrahovat vnitřní položky zipu a vytvářet ploché archivy v podrobném
-  návodu krok za krokem.
-linktitle: Modifying Zip Files
+date: 2026-05-30
+description: Naučte se, jak komprimovat soubory C# pomocí Aspose.Zip pro .NET, upravovat
+  zip soubor C#, extrahovat vnitřní zip položky a vytvářet ploché archivy v paměti.
+keywords:
+- compress files c#
+- create zip archive c#
+- modify zip file c#
+- aspose.zip .net
+- zip archive in memory c#
+linktitle: Úprava Zip souborů
+schemas:
+- author: Aspose
+  dateModified: '2026-05-30'
+  description: Learn how to compress files C# with Aspose.Zip for .NET, modify zip
+    file C#, extract inner zip entries, and create flat archives in memory.
+  headline: Compress files C# using Aspose.Zip – Create & Modify Zip
+  type: TechArticle
+- description: Learn how to compress files C# with Aspose.Zip for .NET, modify zip
+    file C#, extract inner zip entries, and create flat archives in memory.
+  name: Compress files C# using Aspose.Zip – Create & Modify Zip
+  steps:
+  - name: Open the Outer Zip File
+    text: We start by opening the existing archive (`outer.zip`). The `using` statement
+      ensures the file is closed automatically.
+  - name: Identify Inner Zip Entries
+    text: Next, we scan the outer archive for entries that end with `.zip`. Those
+      are the **inner zip files** we want to extract.
+  - name: Extract Inner Entries
+    text: Now we treat each inner zip as its own `Archive`. This is where we **extract
+      inner zip files** and collect their content in memory.
+  - name: Delete Inner Archive Entries
+    text: Having captured the data we need, we remove the original inner zip entries
+      from the outer archive. This step is essentially **delete zip entry C#** logic.
+  - name: Add Modified Entries to Outer Zip
+    text: Finally, we re‑insert the extracted files back into the outer archive, effectively
+      flattening the structure, and save the result as `flatten.zip`. By following
+      these five steps you’ve **compress files C#** into a tidy, flat archive that
+      no longer contains nested zip layers.
+  type: HowTo
+- questions:
+  - answer: Aspose.Zip is optimized for .NET, but Aspose offers equivalent libraries
+      for Java, C++, and Python that follow the same API concepts.
+    question: Can I use Aspose.Zip for .NET with other programming languages?
+  - answer: Yes, you can access the free trial **[here](https://releases.aspose.com/)**.
+    question: Is there a free trial available for Aspose.Zip for .NET?
+  - answer: For support and discussions, visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)**.
+    question: How do I get support for Aspose.Zip for .NET?
+  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/)**.
+    question: Can I purchase a temporary license for Aspose.Zip for .NET?
+  - answer: The documentation is available **[here](https://reference.aspose.com/zip/net/)**.
+    question: Where can I find the documentation for Aspose.Zip for .NET?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Komprimujte soubory v C# pomocí Aspose.Zip – Vytváření a úprava ZIP
+title: Komprimovat soubory C# pomocí Aspose.Zip – Vytvářet a upravovat Zip
 url: /cs/net/file-compression/modifying-zip-files/
 weight: 15
 ---
@@ -14,52 +61,43 @@ weight: 15
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Vytvoření zip archivu C# pomocí Aspose.Zip pro .NET
+# Komprimovat soubory C# pomocí Aspose.Zip – Vytvořit a upravit Zip
 
 ## Úvod
 
-Komprimování souborů v C# je běžná potřeba, když potřebujete odesílat data, vytvářet zálohy nebo snižovat náklady na úložiště. Aspose.Zip pro .NET odstraňuje nízkoúrovňové detaily a umožňuje vám soustředit se na **co** chcete dosáhnout – ať už jde o vytvoření zcela nového archivu, zploštění vnořených zip souborů nebo aktualizaci existujícího balíčku.  
+Komprimování souborů C# je častá potřeba, když musíte odeslat data, zálohovat logy nebo snížit náklady na úložiště. **Compress files C#** s Aspose.Zip pro .NET vám umožní vynechat nízkoúrovňové detaily a soustředit se na obchodní cíl — ať už vytváříte zcela nový archiv, zplošťujete vnořené zip soubory nebo během běhu aktualizujete existující balíček. Tento tutoriál vás provede **modify zip file C#**, extrahováním vnitřních zip položek, mazáním nežádoucích položek a nakonec **compress files C#** do čistého, plochého archivu, který funguje v libovolném .NET prostředí.
 
-V tomto tutoriálu se naučíte, jak **modifikovat zip soubor v C#**, extrahovat vnitřní zip položky, smazat nechtěné položky a nakonec **komprimovat soubory v C#** do čistého, plochého archivu. Tento přístup funguje perfektně pro služby zpracování souborů, automatizované nasazovací pipeline nebo jakýkoli scénář, kde potřebujete programově pracovat se zip archivy.
+## Třída `Archive`
+
+Třída `Archive` představuje zip archiv a poskytuje metody pro vytvoření, čtení a úpravu jeho položek.
 
 ## Rychlé odpovědi
-- **Může Aspose.Zip vytvořit zip archiv v C#?** Ano – třída `Archive` vám umožňuje přímo v C# vytvářet a upravovat zip soubory.  
-- **Jak extrahuji vnitřní zip soubory?** Otevřete vnější položku jako stream, vytvořte druhý `Archive` z tohoto streamu a poté projděte jeho položky.  
-- **Potřebuji licenci pro vývoj?** Bezplatná zkušební verze funguje pro hodnocení; pro produkci je vyžadována komerční licence.  
-- **Podporované verze .NET?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6/7.  
-- **Typický čas běhu ukázky?** Méně než sekunda pro několik megabajtů dat.
+- **Může Aspose.Zip vytvořit zip archiv C#?** Ano — třída `Archive` vám umožní přímo v C# vytvářet a upravovat zip soubory.
+- **Jak extrahovat vnitřní zip soubory?** Otevřete vnější položku jako stream, vytvořte druhý `Archive` z tohoto streamu a poté enumerujte jeho položky.
+- **Potřebuji licenci pro vývoj?** Bezplatná zkušební verze funguje pro hodnocení; pro produkci je vyžadována komerční licence.
+- **Podporované verze .NET?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1 a .NET 5–10
+- **Typický čas běhu vzorku?** Méně než sekunda pro několik megabajtů dat.
 
-## Jak komprimovat soubory C# pomocí Aspose.Zip
+## Co je “compress files C#”?
 
-Než se ponoříme do kódu, objasněme, proč byste si mohli vybrat Aspose.Zip místo jiných knihoven:
+Vytvoření zip archivu v C# znamená programově generovat soubor `.zip`, který může obsahovat libovolný počet souborů nebo složek, volitelně s úrovněmi komprese, šifrováním nebo vlastními metadaty. Aspose.Zip abstrahuje specifikaci zip, takže se můžete soustředit na logiku, která je pro vaši aplikaci podstatná.
 
-- **Čistá .NET implementace** – žádné nativní DLL, což usnadňuje nasazení do cloudových služeb.  
-- **Plná kontrola nad položkami** – můžete přidávat, mazat, přejmenovávat nebo nahrazovat soubory za běhu, což je nezbytné, když potřebujete **modifikovat zip soubor v C#** programově.  
-- **Stream‑centrické API** – pracujte přímo s objekty `MemoryStream`, ideální pro in‑memory zpracování nebo serverless funkce.  
-- **Podpora vnořených archivů** – extrahování vnitřních zip souborů bez zápisu dočasných souborů na disk.
+## Proč použít Aspose.Zip pro .NET?
 
-## Co je „vytvořit zip archiv C#“?
-
-Vytvoření zip archivu v C# znamená programově vygenerovat soubor `.zip`, který může obsahovat libovolný počet souborů nebo složek, volitelně s nastavením úrovně komprese, šifrování nebo vlastních metadat. Aspose.Zip abstrahuje složitost a umožňuje vám soustředit se na obchodní logiku místo samotného formátu zip souboru.
-
-## Proč používat Aspose.Zip pro .NET?
-
-- **Žádné externí závislosti** – čistá .NET knihovna, žádné nativní DLL.  
-- **Plná kontrola nad položkami** – přidávejte, mazejte, přejmenovávejte nebo nahrazujte soubory za běhu.  
-- **Stream‑centrické API** – pracujte s objekty `MemoryStream`, ideální pro cloud nebo in‑memory scénáře.  
-- **Robustní práce s vnořenými archivy** – snadno **extrahujte vnitřní zip soubory** bez dočasných souborů na disku.
+Aspose.Zip podporuje **více než 50 vstupních a výstupních formátů** — včetně ZIP, TAR, GZIP, BZIP2 a 7z — a dokáže zpracovávat archivy o **stovkách megabajtů** bez načítání celého souboru do paměti. Jeho čistě spravovaná implementace eliminuje závislosti na nativních DLL, což usnadňuje nasazení do Azure Functions, AWS Lambda nebo Docker kontejnerů.
 
 ## Požadavky
 
-Než začnete, ujistěte se, že máte:
+Před zahájením se ujistěte, že máte:
 
-1. **Aspose.Zip for .NET** nainstalovaný ve vašem projektu. Můžete jej stáhnout **[zde](https://releases.aspose.com/zip/net/)**.  
-2. Složku, která obsahuje zdrojové zip soubory, se kterými budete pracovat. Nahraďte `"Your Document Directory"` v ukázkách kódu skutečnou cestou na vašem počítači.  
-3. Vývojové prostředí .NET (Visual Studio, VS Code nebo Rider) cílící na .NET Framework 4.6+ nebo .NET Core 3.1+.
+1. **Aspose.Zip pro .NET** nainstalovaný ve vašem projektu. Můžete jej stáhnout **[zde](https://releases.aspose.com/zip/net/)**.  
+   Všechny produkty Aspose můžete procházet na hlavní stránce vydání **[zde](https://releases.aspose.com/)**.  
+2. Složku, která obsahuje zdrojové zip soubory, se kterými budete pracovat. Nahraďte `"Your Document Directory"` v ukázkovém kódu skutečnou cestou na vašem počítači.  
+3. Vývojové prostředí .NET (Visual Studio, VS Code nebo Rider) cílící na .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1 nebo .NET 5–10.
 
-## Importování jmenných prostorů
+## Importovat jmenné prostory
 
-Nejprve načtěte požadované jmenné prostory:
+Nejprve načtěte požadované jmenné prostory do rozsahu:
 
 ```csharp
 using Aspose.Zip;
@@ -71,11 +109,17 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Jak modifikovat zip soubor C# s Aspose.Zip
+`MemoryStream` je .NET stream, který ukládá data v paměti, což vám umožní pracovat se soubory bez I/O na disku.
 
-Níže je krok‑za‑krokem průvodce, který vás provede otevřením existujícího archivu, extrahováním vnitřních zip položek, zploštěním struktury a nakonec uložením nového archivu.
+## Jak komprimovat soubory C# pomocí Aspose.Zip
 
-### Krok 1: Otevření vnějšího zip souboru  
+Načtěte svůj vnější archiv, zploštěte všechny vnořené zip položky a uložte výsledek do paměti — v několika stručných krocích. Tento přístup vám dává plnou kontrolu nad každou položkou, umožňuje pracovat kompletně v paměti a vyhýbá se dočasným souborům na disku.
+
+## Jak upravit zip soubor C# pomocí Aspose.Zip
+
+Otevřete existující archiv, vytáhněte vnitřní zip soubory, smažte originály a znovu vložte extrahovaný obsah jako plochou strukturu. Proces je zcela stream‑centrický, což znamená, že jej můžete spustit v serverless prostředích bez dotyku souborového systému.
+
+### Krok 1: Otevřít vnější zip soubor  
 
 Začínáme otevřením existujícího archivu (`outer.zip`). Příkaz `using` zajistí automatické uzavření souboru.
 
@@ -86,9 +130,9 @@ using (Archive outer = new Archive(dataDir + "outer.zip"))
 }
 ```
 
-### Krok 2: Identifikace vnitřních zip položek  
+### Krok 2: Identifikovat vnitřní zip položky  
 
-Dále prohledáme vnější archiv na položky, které končí na `.zip`. Tyto jsou **vnitřní zip soubory**, které chceme extrahovat.
+Dále prohledáme vnější archiv na položky končící na `.zip`. Tyto jsou **vnitřní zip soubory**, které chceme extrahovat.
 
 ```csharp
 List<ArchiveEntry> entriesToDelete = new List<ArchiveEntry>();
@@ -108,7 +152,7 @@ foreach (ArchiveEntry entry in outer.Entries)
 }
 ```
 
-### Krok 3: Extrahování vnitřních položek  
+### Krok 3: Extrahovat vnitřní položky  
 
 Nyní zacházíme s každým vnitřním zipem jako s vlastním `Archive`. Zde **extrahujeme vnitřní zip soubory** a shromažďujeme jejich obsah v paměti.
 
@@ -126,9 +170,9 @@ using (Archive inner = new Archive(innerCompressed))
 }
 ```
 
-### Krok 4: Smazání vnitřních archivních položek  
+### Krok 4: Smazat vnitřní archivní položky  
 
-Po zachycení potřebných dat odstraníme původní vnitřní zip položky z vnějšího archivu. Tento krok je v podstatě logikou **delete zip entry C#**.
+Po zachycení potřebných dat odstraníme původní vnitřní zip položky z vnějšího archivu. Tento krok je v podstatě logika **delete zip entry C#**.
 
 ```csharp
 foreach (ArchiveEntry e in entriesToDelete)
@@ -137,9 +181,9 @@ foreach (ArchiveEntry e in entriesToDelete)
 }
 ```
 
-### Krok 5: Přidání upravených položek do vnějšího zipu  
+### Krok 5: Přidat upravené položky do vnějšího zipu  
 
-Nakonec znovu vložíme extrahované soubory zpět do vnějšího archivu, čímž efektivně zploštíme strukturu, a výsledek uložíme jako `flatten.zip`.
+Nakonec znovu vložíme extrahované soubory zpět do vnějšího archivu, efektivně zploštíme strukturu, a výsledek uložíme jako `flatten.zip`.
 
 ```csharp
 for (int i = 0; i < namesToInsert.Count; i++)
@@ -150,47 +194,47 @@ for (int i = 0; i < namesToInsert.Count; i++)
 outer.Save(dataDir + "flatten.zip");
 ```
 
-Dodržením těchto pěti kroků jste **vytvořili zip archiv C#**, který obsahuje stejné soubory jako originál, ale bez vnořených zip vrstev.
+Dodržením těchto pěti kroků jste **compress files C#** vytvořili úhledný, plochý archiv, který již neobsahuje vnořené zip vrstvy.
 
 ## Časté problémy a řešení
 
-| Problém | Proč k tomu dochází | Řešení |
-|---------|----------------------|--------|
-| `ArgumentNullException` při otevírání vnitřního archivu | Pozice streamu `innerCompressed` je na konci | Před vytvořením `Archive` zavolejte `innerCompressed.Position = 0;` |
-| Velké soubory způsobují vysokou spotřebu paměti | Všechny vnitřní položky jsou uloženy v objektech `MemoryStream` | Pro velmi velké archivy použijte dočasné soubory na disku (`Path.GetTempFileName()`) |
-| Chybějící položky po zploštění | Zapomenutí přidat extrahovaný obsah do seznamu `contentToInsert` | Ujistěte se, že voláte `contentToInsert.Add(content);` uvnitř vnitřní smyčky |
+| Problém | Proč se to děje | Oprava |
+|-------|----------------|-----|
+| `ArgumentNullException` při otevírání vnitřního archivu | Pozice streamu `innerCompressed` je na konci | Zavolejte `innerCompressed.Position = 0;` před vytvořením `Archive` |
+| Velké soubory způsobují vysokou spotřebu paměti | Všechny vnitřní položky jsou uloženy v objektech `MemoryStream` | Použijte dočasné soubory na disku (`Path.GetTempFileName()`) pro velmi velké archivy |
+| Chybějící položky po zploštění | Zapomenutí přidat extrahovaný obsah do seznamu `contentToInsert` | Ujistěte se, že `contentToInsert.Add(content);` je voláno uvnitř vnitřní smyčky |
 
 ## Často kladené otázky
 
-### Q1: Mohu použít Aspose.Zip pro .NET s jinými programovacími jazyky?
+**Q: Mohu použít Aspose.Zip pro .NET s jinými programovacími jazyky?**  
+A: Aspose.Zip je optimalizován pro .NET, ale Aspose nabízí ekvivalentní knihovny pro Java, C++ a Python, které používají stejné API koncepty.
 
-A1: Aspose.Zip je primárně určen pro .NET aplikace. Nicméně Aspose poskytuje knihovny pro různé programovací jazyky, každou přizpůsobenou jejich prostředí.
+**Q: Je k dispozici bezplatná zkušební verze pro Aspose.Zip pro .NET?**  
+A: Ano, bezplatnou zkušební verzi můžete získat **[zde](https://releases.aspose.com/)**.
 
-### Q2: Je k dispozici bezplatná zkušební verze pro Aspose.Zip pro .NET?
+**Q: Jak získám podporu pro Aspose.Zip pro .NET?**  
+A: Pro podporu a diskuze navštivte **[Aspose.Zip fórum](https://forum.aspose.com/c/zip/37)**.
 
-A2: Ano, bezplatnou zkušební verzi můžete získat **[zde](https://releases.aspose.com/)**.
+**Q: Mohu zakoupit dočasnou licenci pro Aspose.Zip pro .NET?**  
+A: Ano, dočasnou licenci můžete získat **[zde](https://purchase.aspose.com/temporary-license/)**.
 
-### Q3: Jak získám podporu pro Aspose.Zip pro .NET?
+**Q: Kde najdu dokumentaci pro Aspose.Zip pro .NET?**  
+A: Dokumentace je dostupná **[zde](https://reference.aspose.com/zip/net/)**.
 
-A3: Pro podporu a diskuse navštivte **[forum Aspose.Zip](https://forum.aspose.com/c/zip/37)**.
+## Související tutoriály
 
-### Q4: Mohu zakoupit dočasnou licenci pro Aspose.Zip pro .NET?
+- [Jak vytvořit zip archiv a přidat soubor do zipu pomocí Aspose.Zip pro .NET](/zip/net/file-compression/compress-single-file/)
+- [zip více souborů c# – Snadná komprese s Aspose.Zip pro .NET](/zip/net/file-compression/compress-multiple-files/)
+- [Jak komprimovat soubory s heslem a šifrovat ZIP položky různými hesly pomocí Aspose.Zip pro .NET](/zip/net/other-compression-techniques/entries-with-different-passwords/)
 
-A4: Ano, dočasnou licenci můžete získat **[zde](https://purchase.aspose.com/temporary-license/)**.
-
-### Q5: Kde najdu dokumentaci pro Aspose.Zip pro .NET?
-
-A5: Dokumentace je dostupná **[zde](https://reference.aspose.com/zip/net/)**.
-
----
-
-**Poslední aktualizace:** 2026-02-15  
-**Testováno s:** Aspose.Zip 24.12 pro .NET  
-**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
+{{< blocks/products/products-backtop-button >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/products-backtop-button >}}
+---
+
+**Poslední aktualizace:** 2026-05-30  
+**Testováno s:** Aspose.Zip 24.12 pro .NET  
+**Autor:** Aspose

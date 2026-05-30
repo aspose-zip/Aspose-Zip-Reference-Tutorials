@@ -1,9 +1,58 @@
 ---
-date: 2026-02-15
-description: Aspose.Zip for .NET を使用した C# でのファイル圧縮方法、zip ファイルの変更、内部エントリの抽出、フラットアーカイブの作成をステップバイステップのチュートリアルで学びましょう。
-linktitle: Modifying Zip Files
+date: 2026-05-30
+description: Aspose.Zip for .NET を使用した C# でのファイル圧縮方法、C# での zip ファイルの変更、内部 zip エントリの抽出、メモリ内でのフラット
+  アーカイブの作成方法を学びます。
+keywords:
+- compress files c#
+- create zip archive c#
+- modify zip file c#
+- aspose.zip .net
+- zip archive in memory c#
+linktitle: Zip ファイルの変更
+schemas:
+- author: Aspose
+  dateModified: '2026-05-30'
+  description: Learn how to compress files C# with Aspose.Zip for .NET, modify zip
+    file C#, extract inner zip entries, and create flat archives in memory.
+  headline: Compress files C# using Aspose.Zip – Create & Modify Zip
+  type: TechArticle
+- description: Learn how to compress files C# with Aspose.Zip for .NET, modify zip
+    file C#, extract inner zip entries, and create flat archives in memory.
+  name: Compress files C# using Aspose.Zip – Create & Modify Zip
+  steps:
+  - name: Open the Outer Zip File
+    text: We start by opening the existing archive (`outer.zip`). The `using` statement
+      ensures the file is closed automatically.
+  - name: Identify Inner Zip Entries
+    text: Next, we scan the outer archive for entries that end with `.zip`. Those
+      are the **inner zip files** we want to extract.
+  - name: Extract Inner Entries
+    text: Now we treat each inner zip as its own `Archive`. This is where we **extract
+      inner zip files** and collect their content in memory.
+  - name: Delete Inner Archive Entries
+    text: Having captured the data we need, we remove the original inner zip entries
+      from the outer archive. This step is essentially **delete zip entry C#** logic.
+  - name: Add Modified Entries to Outer Zip
+    text: Finally, we re‑insert the extracted files back into the outer archive, effectively
+      flattening the structure, and save the result as `flatten.zip`. By following
+      these five steps you’ve **compress files C#** into a tidy, flat archive that
+      no longer contains nested zip layers.
+  type: HowTo
+- questions:
+  - answer: Aspose.Zip is optimized for .NET, but Aspose offers equivalent libraries
+      for Java, C++, and Python that follow the same API concepts.
+    question: Can I use Aspose.Zip for .NET with other programming languages?
+  - answer: Yes, you can access the free trial **[here](https://releases.aspose.com/)**.
+    question: Is there a free trial available for Aspose.Zip for .NET?
+  - answer: For support and discussions, visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)**.
+    question: How do I get support for Aspose.Zip for .NET?
+  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/)**.
+    question: Can I purchase a temporary license for Aspose.Zip for .NET?
+  - answer: The documentation is available **[here](https://reference.aspose.com/zip/net/)**.
+    question: Where can I find the documentation for Aspose.Zip for .NET?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Aspose.Zip を使用した C# でのファイル圧縮 – Zip の作成と変更
+title: Aspose.Zip を使用した C# でファイルを圧縮 – Zip の作成と変更
 url: /ja/net/file-compression/modifying-zip-files/
 weight: 15
 ---
@@ -12,48 +61,39 @@ weight: 15
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET を使用した C# の zip アーカイブ作成
+# Aspose.Zip を使用した C# のファイル圧縮 – 作成と変更
 
 ## はじめに
 
-ファイルの圧縮は、データの配布、バックアップ作成、またはストレージコスト削減が必要なときに一般的な要件です。Aspose.Zip for .NET は低レベルの処理を抽象化し、**what** you want to achieve に集中できるようにします。たとえば、新しいアーカイブの作成、入れ子になった zip ファイルの平坦化、既存パッケージの更新などです。
+ファイルを C# で圧縮する必要は、データを配布したり、ログをバックアップしたり、ストレージコストを削減したりする際に頻繁に発生します。**Aspose.Zip for .NET** を使えば、低レベルの実装を意識せずにビジネスロジックに集中できます。新規アーカイブの作成、入れ子になった zip の平坦化、既存パッケージのオンザフライ更新など、**C# で zip ファイルを変更**、内部 zip エントリの抽出、不要アイテムの削除、そして最終的に **C# でファイルを圧縮** して、どの .NET 環境でも動作するクリーンなフラットアーカイブを作成する手順を解説します。
 
-このチュートリアルでは、**modify a zip file C#** の方法、内部 zip エントリの抽出、不要なアイテムの削除、そして最終的に **compress files C#** してクリーンでフラットなアーカイブを作成する手順を学びます。このアプローチは、ファイル処理サービス、自動デプロイパイプライン、または zip アーカイブをプログラムで操作する必要があるあらゆるシナリオに最適です。
+## `Archive` クラス
+
+`Archive` クラスは zip アーカイブを表し、エントリの作成、読み取り、変更のためのメソッドを提供します。
 
 ## クイック回答
-- **Can Aspose.Zip create zip archive C#?** Yes – the `Archive` class lets you build and edit zip files directly in C#.
-- **How do I extract inner zip files?** Open the outer entry as a stream, create a second `Archive` from that stream, then enumerate its entries.
-- **Do I need a license for development?** A free trial works for evaluation; a commercial license is required for production.
-- **Supported .NET versions?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6/7.
-- **Typical run time for the sample?** Less than a second for a few megabytes of data.
+- **Aspose.Zip は C# で zip アーカイブを作成できますか？** はい – `Archive` クラスを使えば C# で直接 zip ファイルの作成・編集が可能です。
+- **内部 zip ファイルを抽出するには？** 外部エントリをストリームとして開き、そのストリームから新しい `Archive` を作成し、エントリを列挙します。
+- **開発にライセンスは必要ですか？** 評価用の無料トライアルは利用可能ですが、本番環境では商用ライセンスが必要です。
+- **対応 .NET バージョンは？** .NET Framework 2.0–4.8.1、.NET Core 2.0–3.1、.NET 5–10
+- **サンプルの実行時間は？** 数メガバイト程度のデータであれば 1 秒未満です。
 
-## Aspose.Zip を使用した C# でのファイル圧縮方法
+## 「compress files C#」とは？
 
-コードに入る前に、なぜ他のライブラリではなく Aspose.Zip を選ぶべきかを整理しておきましょう。
+C# で zip アーカイブを作成することは、プログラム上で `.zip` ファイルを生成し、任意の数のファイルやフォルダーを格納し、圧縮レベルや暗号化、カスタムメタデータを適用できることを意味します。Aspose.Zip は zip 仕様を抽象化し、アプリケーションのロジックに集中できるようにします。
 
-- **Pure .NET implementation** – ネイティブ DLL が不要なので、クラウドサービスへのデプロイが簡単です。  
-- **Full control over entries** – ファイルの追加、削除、名前変更、置換がリアルタイムで行えるため、**modify zip file C#** をプログラムで実装する際に必須です。  
-- **Stream‑centric API** – `MemoryStream` オブジェクトと直接やり取りでき、インメモリ処理やサーバーレス関数に最適です。  
-- **Nested archive support** – 一時ファイルをディスクに書き出すことなく、内部 zip ファイルの抽出が可能です。
+## .NET で Aspose.Zip を使用する理由
 
-## “create zip archive C#” とは？
-
-C# で zip アーカイブを作成するとは、プログラム上で `.zip` ファイルを生成し、任意の数のファイルやフォルダーを格納できるようにすることです。圧縮レベル、暗号化、カスタムメタデータの設定も可能です。Aspose.Zip はこの複雑さを抽象化し、zip 形式そのものではなくビジネスロジックに集中できるようにします。
-
-## .NET 向け Aspose.Zip を選ぶ理由
-
-- **No external dependencies** – 純粋な .NET ライブラリで、ネイティブ DLL が不要です。  
-- **Full control over entries** – 追加、削除、名前変更、置換が自由に行えます。  
-- **Stream‑centric API** – `MemoryStream` オブジェクトでの操作が可能で、クラウドやインメモリシナリオに最適です。  
-- **Robust handling of nested archives** – 一時ファイルを作成せずに **extract inner zip files** が簡単に行えます。
+Aspose.Zip は **50 以上の入出力形式**（ZIP、TAR、GZIP、BZIP2、7z など）をサポートし、**数百メガバイト規模のアーカイブ**でも全体をメモリに読み込まずに処理できます。純粋なマネージド実装のため、ネイティブ DLL への依存がなく、Azure Functions、AWS Lambda、Docker コンテナへのデプロイがシームレスです。
 
 ## 前提条件
 
 開始する前に以下を確認してください。
 
-1. プロジェクトに **Aspose.Zip for .NET** がインストールされていること。**[こちら](https://releases.aspose.com/zip/net/)** からダウンロードできます。  
-2. ソース zip ファイルを格納したフォルダーがあること。コードスニペット中の `"Your Document Directory"` を実際のパスに置き換えてください。  
-3. .NET 開発環境（Visual Studio、VS Code、Rider など）で、.NET Framework 4.6+ または .NET Core 3.1+ をターゲットにしていること。
+1. プロジェクトに **Aspose.Zip for .NET** がインストールされていること。ダウンロードは **[こちら](https://releases.aspose.com/zip/net/)** から。  
+   すべての Aspose 製品はメインリリースページ **[こちら](https://releases.aspose.com/)** で参照できます。  
+2. 作業対象となるソース zip ファイルを格納したフォルダーを用意すること。コードスニペット中の `"Your Document Directory"` を実際のパスに置き換えてください。  
+3. .NET 開発環境（Visual Studio、VS Code、Rider など）で、.NET Framework 2.0–4.8.1、.NET Core 2.0–3.1、または .NET 5–10 をターゲットにしていること。
 
 ## 名前空間のインポート
 
@@ -69,13 +109,19 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Aspose.Zip で zip ファイル C# を変更する方法
+`MemoryStream` はメモリ上にデータを保持する .NET ストリームで、ディスク I/O を伴わずにファイル操作が可能です。
 
-以下は、既存アーカイブを開き、内部 zip エントリを抽出し、構造を平坦化し、最終的に新しいアーカイブとして保存するまでのステップバイステップガイドです。
+## Aspose.Zip を使用した C# のファイル圧縮手順
+
+外部アーカイブを読み込み、入れ子になった zip エントリを平坦化し、結果をメモリ上に保存するだけの数ステップで実現できます。この方法は各エントリを完全に制御でき、ディスク上の一時ファイルを作成せずに済みます。
+
+## Aspose.Zip で zip ファイルを C# から変更する手順
+
+既存アーカイブを開き、内部 zip を抽出し、元のエントリを削除して、抽出したコンテンツをフラット構造として再挿入します。すべてストリーム中心で行うため、サーバーレス環境でもファイルシステムに触れずに実行できます。
 
 ### 手順 1: 外部 Zip ファイルを開く  
 
-既存のアーカイブ (`outer.zip`) を開きます。`using` 文によりファイルは自動的にクローズされます。
+既存アーカイブ (`outer.zip`) を開きます。`using` 文によりファイルは自動的にクローズされます。
 
 ```csharp
 using (Archive outer = new Archive(dataDir + "outer.zip"))
@@ -86,7 +132,7 @@ using (Archive outer = new Archive(dataDir + "outer.zip"))
 
 ### 手順 2: 内部 Zip エントリを特定  
 
-外部アーカイブ内で拡張子が `.zip` で終わるエントリを走査します。これらが抽出対象の **inner zip files** です。
+外部アーカイブ内で拡張子が `.zip` で終わるエントリを走査します。これらが抽出対象の **内部 zip ファイル** です。
 
 ```csharp
 List<ArchiveEntry> entriesToDelete = new List<ArchiveEntry>();
@@ -108,7 +154,7 @@ foreach (ArchiveEntry entry in outer.Entries)
 
 ### 手順 3: 内部エントリを抽出  
 
-各内部 zip を独自の `Archive` として扱い、**extract inner zip files** を実行し、メモリ上に内容を収集します。
+各内部 zip を独自の `Archive` として扱い、**内部 zip ファイルを抽出**し、メモリ上に内容を保持します。
 
 ```csharp
 using (Archive inner = new Archive(innerCompressed))
@@ -126,7 +172,7 @@ using (Archive inner = new Archive(innerCompressed))
 
 ### 手順 4: 内部アーカイブエントリを削除  
 
-必要なデータを取得したら、外部アーカイブから元の内部 zip エントリを削除します。これは実質的に **delete zip entry C#** のロジックです。
+必要なデータを取得したら、外部アーカイブから元の内部 zip エントリを削除します。これは実質的に **C# で zip エントリを削除** するロジックです。
 
 ```csharp
 foreach (ArchiveEntry e in entriesToDelete)
@@ -135,9 +181,9 @@ foreach (ArchiveEntry e in entriesToDelete)
 }
 ```
 
-### 手順 5: 修正したエントリを外部 Zip に追加  
+### 手順 5: 修正済みエントリを外部 Zip に追加  
 
-抽出したファイルを外部アーカイブに再挿入し、構造を平坦化した上で `flatten.zip` として保存します。
+抽出したファイルを外部アーカイブに再挿入し、構造を平坦化して `flatten.zip` として保存します。
 
 ```csharp
 for (int i = 0; i < namesToInsert.Count; i++)
@@ -148,47 +194,47 @@ for (int i = 0; i < namesToInsert.Count; i++)
 outer.Save(dataDir + "flatten.zip");
 ```
 
-この 5 つの手順を実行することで、元のファイルはそのままに、入れ子になった zip 層が除去された **create zip archive C#** が完成します。
+これら 5 ステップを実行すれば、**C# でファイルを圧縮**し、入れ子 zip がなくなった整然としたフラットアーカイブが完成します。
 
 ## よくある問題と対策
 
-| Issue | Why it Happens | Fix |
-|-------|----------------|-----|
-| `ArgumentNullException` when opening inner archive | `innerCompressed` stream position is at the end | Call `innerCompressed.Position = 0;` before creating the `Archive` |
-| Large files cause high memory usage | All inner entries are stored in `MemoryStream` objects | Use temporary files on disk (`Path.GetTempFileName()`) for very large archives |
-| Missing entries after flattening | Forgetting to add the extracted content to `contentToInsert` list | Ensure `contentToInsert.Add(content);` is called inside the inner loop |
+| 問題 | 発生理由 | 対策 |
+|------|----------|------|
+| `ArgumentNullException` が内部アーカイブを開くときに発生 | `innerCompressed` ストリームの位置が末尾にある | `Archive` を作成する前に `innerCompressed.Position = 0;` を呼び出す |
+| 大容量ファイルでメモリ使用量が高くなる | すべての内部エントリを `MemoryStream` に保持している | 非常に大きなアーカイブの場合はディスク上の一時ファイル (`Path.GetTempFileName()`) を使用する |
+| 平坦化後にエントリが欠落する | 抽出したコンテンツを `contentToInsert` リストに追加し忘れている | 内部ループ内で必ず `contentToInsert.Add(content);` を呼び出す |
 
-## FAQ（よくある質問）
+## FAQ
 
-### Q1: Aspose.Zip for .NET は他のプログラミング言語でも使えますか？
+**Q: Aspose.Zip for .NET を他のプログラミング言語でも使えますか？**  
+A: Aspose.Zip は .NET 向けに最適化されていますが、Java、C++、Python 用の同等ライブラリも提供されており、同様の API コンセプトを共有しています。
 
-A1: Aspose.Zip は主に .NET アプリケーション向けに設計されています。ただし、Aspose は各種プログラミング言語向けにライブラリを提供しており、環境に合わせて選択できます。
+**Q: Aspose.Zip for .NET の無料トライアルはありますか？**  
+A: はい、無料トライアルは **[こちら](https://releases.aspose.com/)** から入手できます。
 
-### Q2: Aspose.Zip for .NET の無料トライアルはありますか？
+**Q: Aspose.Zip for .NET のサポートはどこで受けられますか？**  
+A: サポートやディスカッションは **[Aspose.Zip フォーラム](https://forum.aspose.com/c/zip/37)** で行われています。
 
-A2: はい、無料トライアルは **[こちら](https://releases.aspose.com/)** から入手できます。
+**Q: Aspose.Zip for .NET の一時ライセンスは購入できますか？**  
+A: はい、一時ライセンスは **[こちら](https://purchase.aspose.com/temporary-license/)** から取得可能です。
 
-### Q3: Aspose.Zip for .NET のサポートはどこで受けられますか？
+**Q: Aspose.Zip for .NET のドキュメントはどこにありますか？**  
+A: ドキュメントは **[こちら](https://reference.aspose.com/zip/net/)** にあります。
 
-A3: サポートやディスカッションは **[Aspose.Zip フォーラム](https://forum.aspose.com/c/zip/37)** で行われています。
+## 関連チュートリアル
 
-### Q4: Aspose.Zip for .NET の一時ライセンスは購入できますか？
+- [How to Create Zip Archive and Add File to Zip Using Aspose.Zip for .NET](/zip/net/file-compression/compress-single-file/)
+- [zip multiple files c# – Effortless Compression with Aspose.Zip for .NET](/zip/net/file-compression/compress-multiple-files/)
+- [How to compress files with password and encrypt ZIP entries with different passwords using Aspose.Zip for .NET](/zip/net/other-compression-techniques/entries-with-different-passwords/)
 
-A4: はい、一時ライセンスは **[こちら](https://purchase.aspose.com/temporary-license/)** から取得可能です。
-
-### Q5: Aspose.Zip for .NET のドキュメントはどこにありますか？
-
-A5: ドキュメントは **[こちら](https://reference.aspose.com/zip/net/)** にあります。
-
----
-
-**最終更新日:** 2026-02-15  
-**テスト環境:** Aspose.Zip 24.12 for .NET  
-**作者:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
+{{< blocks/products/products-backtop-button >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/products-backtop-button >}}
+---
+
+**Last Updated:** 2026-05-30  
+**Tested With:** Aspose.Zip 24.12 for .NET  
+**Author:** Aspose

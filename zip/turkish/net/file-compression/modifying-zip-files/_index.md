@@ -1,11 +1,59 @@
 ---
-date: 2026-02-15
-description: Aspose.Zip for .NET ile C#’ta dosyaları sıkıştırmayı, zip dosyasını C#’ta
-  değiştirmeyi, iç zip girişlerini çıkarmayı ve adım adım bir öğreticide düz arşivler
-  oluşturmayı öğrenin.
-linktitle: Modifying Zip Files
+date: 2026-05-30
+description: Aspose.Zip for .NET ile C# dosyalarını nasıl sıkıştıracağınızı, zip dosyasını
+  C#'ta nasıl değiştireceğinizi, iç zip girişlerini nasıl çıkaracağınızı ve bellekte
+  düz arşivler nasıl oluşturacağınızı öğrenin.
+keywords:
+- compress files c#
+- create zip archive c#
+- modify zip file c#
+- aspose.zip .net
+- zip archive in memory c#
+linktitle: Zip Dosyalarını Değiştirme
+schemas:
+- author: Aspose
+  dateModified: '2026-05-30'
+  description: Learn how to compress files C# with Aspose.Zip for .NET, modify zip
+    file C#, extract inner zip entries, and create flat archives in memory.
+  headline: Compress files C# using Aspose.Zip – Create & Modify Zip
+  type: TechArticle
+- description: Learn how to compress files C# with Aspose.Zip for .NET, modify zip
+    file C#, extract inner zip entries, and create flat archives in memory.
+  name: Compress files C# using Aspose.Zip – Create & Modify Zip
+  steps:
+  - name: Open the Outer Zip File
+    text: We start by opening the existing archive (`outer.zip`). The `using` statement
+      ensures the file is closed automatically.
+  - name: Identify Inner Zip Entries
+    text: Next, we scan the outer archive for entries that end with `.zip`. Those
+      are the **inner zip files** we want to extract.
+  - name: Extract Inner Entries
+    text: Now we treat each inner zip as its own `Archive`. This is where we **extract
+      inner zip files** and collect their content in memory.
+  - name: Delete Inner Archive Entries
+    text: Having captured the data we need, we remove the original inner zip entries
+      from the outer archive. This step is essentially **delete zip entry C#** logic.
+  - name: Add Modified Entries to Outer Zip
+    text: Finally, we re‑insert the extracted files back into the outer archive, effectively
+      flattening the structure, and save the result as `flatten.zip`. By following
+      these five steps you’ve **compress files C#** into a tidy, flat archive that
+      no longer contains nested zip layers.
+  type: HowTo
+- questions:
+  - answer: Aspose.Zip is optimized for .NET, but Aspose offers equivalent libraries
+      for Java, C++, and Python that follow the same API concepts.
+    question: Can I use Aspose.Zip for .NET with other programming languages?
+  - answer: Yes, you can access the free trial **[here](https://releases.aspose.com/)**.
+    question: Is there a free trial available for Aspose.Zip for .NET?
+  - answer: For support and discussions, visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)**.
+    question: How do I get support for Aspose.Zip for .NET?
+  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/)**.
+    question: Can I purchase a temporary license for Aspose.Zip for .NET?
+  - answer: The documentation is available **[here](https://reference.aspose.com/zip/net/)**.
+    question: Where can I find the documentation for Aspose.Zip for .NET?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Aspose.Zip kullanarak C# ile dosyaları sıkıştırma – Zip Oluşturma ve Değiştirme
+title: C# ile dosyaları sıkıştırma Aspose.Zip – Zip Oluşturma ve Değiştirme
 url: /tr/net/file-compression/modifying-zip-files/
 weight: 15
 ---
@@ -14,52 +62,43 @@ weight: 15
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# C# ile Aspose.Zip for .NET kullanarak zip arşivi oluşturma
+# C# ile Dosyaları Sıkıştırma – Aspose.Zip Kullanarak Zip Oluşturma ve Değiştirme
 
 ## Giriş
 
-C# ile dosya sıkıştırma, verileri gönderme, yedekleme oluşturma veya depolama maliyetlerini azaltma ihtiyacı olduğunda yaygın bir gereksinimdir. Aspose.Zip for .NET düşük seviyeli ayrıntıları ortadan kaldırır ve **ne** başarmak istediğinize odaklanmanızı sağlar—ister yeni bir arşiv oluşturmak, iç içe zip dosyalarını düzleştirmek, ister mevcut bir paketi güncellemek olsun.
+C# ile dosyaları sıkıştırmak, veri gönderimi, günlük yedekleme veya depolama maliyetlerini azaltma ihtiyacı olduğunda sık karşılaşılan bir durumdur. **Compress files C#** Aspose.Zip for .NET ile düşük seviyeli işlemleri atlamanızı ve iş hedefinize odaklanmanızı sağlar—ister yeni bir arşiv oluşturuyor olun, iç içe zip dosyalarını düzleştiriyor olun, ister mevcut paketi anında güncelliyor olun. Bu öğreticide **modify zip file C#** adımlarını, iç zip girdilerini çıkarma, istenmeyen öğeleri silme ve sonunda **compress files C#** işlemini temiz, düz bir arşive dönüştürme sürecini gösteriyoruz; bu arşiv herhangi bir .NET ortamında çalışır.
 
-Bu öğreticide **zip dosyasını C# ile değiştirmeyi**, iç zip girişlerini çıkarmayı, istenmeyen öğeleri silmeyi ve sonunda **dosyaları C# ile sıkıştırarak** temiz, düz bir arşiv elde etmeyi öğreneceksiniz. Bu yaklaşım dosya işleme hizmetleri, otomatik dağıtım hatları veya zip arşivlerini programlı olarak yönetmeniz gereken herhangi bir senaryo için mükemmel çalışır.
+## `Archive` sınıfı
+
+`Archive` sınıfı bir zip arşivini temsil eder ve girdilerini oluşturma, okuma ve değiştirme yöntemleri sağlar.
 
 ## Hızlı Yanıtlar
-- **Aspose.Zip C# ile zip arşivi oluşturabilir mi?** Evet – `Archive` sınıfı zip dosyalarını doğrudan C# içinde oluşturup düzenlemenizi sağlar.
-- **İç zip dosyalarını nasıl çıkarırım?** Dış girişi bir akış olarak açın, bu akıştan ikinci bir `Archive` oluşturun ve ardından girişlerini listeleyin.
+- **Aspose.Zip C# ile zip arşivi oluşturabilir mi?** Evet – the `Archive` class lets you build and edit zip files directly in C#.
+- **İç zip dosyalarını nasıl çıkarırım?** Dış girdiyi bir akış olarak açın, o akıştan ikinci bir `Archive` oluşturun ve ardından girdilerini enumerate edin.
 - **Geliştirme için lisansa ihtiyacım var mı?** Değerlendirme için ücretsiz deneme çalışır; üretim için ticari lisans gereklidir.
-- **Desteklenen .NET sürümleri?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6/7.
+- **Desteklenen .NET sürümleri?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, ve .NET 5–10
 - **Örnek için tipik çalışma süresi?** Birkaç megabayt veri için bir saniyeden az.
 
-## Aspose.Zip kullanarak C# ile dosyaları sıkıştırma
+## “compress files C#” nedir?
 
-Koda girmeden önce, Aspose.Zip'i diğer kütüphanelerin üzerine neden tercih edebileceğinizi açıklayalım:
+C# içinde bir zip arşivi oluşturmak, programlı olarak herhangi bir sayıda dosya veya klasör içerebilen bir `.zip` dosyası üretmek anlamına gelir; isteğe bağlı olarak sıkıştırma seviyeleri, şifreleme veya özel meta veriler uygulanabilir. Aspose.Zip zip spesifikasyonunu soyutlayarak uygulamanız için önemli olan mantığa odaklanmanızı sağlar.
 
-- **Saf .NET uygulaması** – yerel DLL'ler yok, bulut hizmetlerine dağıtımı sorunsuz hâle getirir.
-- **Girişler üzerinde tam kontrol** – dosyaları anında ekleyebilir, silebilir, yeniden adlandırabilir veya değiştirebilirsiniz; bu, **zip dosyasını C# ile değiştirme** programlı olarak gerektiğinde çok önemlidir.
-- **Akış‑merkezli API** – `MemoryStream` nesneleriyle doğrudan çalışır, bellek içi işleme veya sunucusuz fonksiyonlar için idealdir.
-- **İç içe arşiv desteği** – iç zip dosyalarını diske geçici dosya yazmadan çıkarır.
+## .NET için Aspose.Zip neden kullanılmalı?
 
-## “C# ile zip arşivi oluşturma” nedir?
+Aspose.Zip **50+ giriş ve çıkış formatını** destekler—ZIP, TAR, GZIP, BZIP2 ve 7z dahil—ve **yüzlerce megabayt** boyutundaki arşivleri tüm dosyayı belleğe yüklemeden işleyebilir. Saf‑yönetilen uygulaması yerel DLL bağımlılıklarını ortadan kaldırır, Azure Functions, AWS Lambda veya Docker konteynerlerine dağıtımı sorunsuz hâle getirir.
 
-C# içinde zip arşivi oluşturmak, isteğe bağlı olarak sıkıştırma seviyeleri, şifreleme veya özel meta veriler uygulayarak, herhangi bir sayıda dosya veya klasör içerebilen bir `.zip` dosyasını programlı olarak üretmek anlamına gelir. Aspose.Zip karmaşıklığı soyutlayarak, zip dosya formatı yerine iş mantığına odaklanmanızı sağlar.
+## Ön Koşullar
 
-## .NET için Aspose.Zip'i neden kullanmalısınız?
+Başlamadan önce şunların kurulu olduğundan emin olun:
 
-- **Harici bağımlılık yok** – saf .NET kütüphanesi, yerel DLL'ler yok.
-- **Girişler üzerinde tam kontrol** – dosyaları anında ekleyebilir, silebilir, yeniden adlandırabilir veya değiştirebilirsiniz.
-- **Akış‑merkezli API** – `MemoryStream` nesneleriyle çalışır, bulut veya bellek içi senaryolar için mükemmeldir.
-- **İç içe arşivlerin sağlam yönetimi** – diskte geçici dosya olmadan **iç zip dosyalarını kolayca çıkarır**.
-
-## Önkoşullar
-
-Başlamadan önce, şunların olduğundan emin olun:
-
-1. Projenizde **Aspose.Zip for .NET** yüklü. **[buradan](https://releases.aspose.com/zip/net/)** indirebilirsiniz.  
+1. Projenize **Aspose.Zip for .NET** kurulu olduğundan emin olun. **[buradan](https://releases.aspose.com/zip/net/)** indirebilirsiniz.  
+   Tüm Aspose ürünlerine ana sürüm sayfasından **[buradan](https://releases.aspose.com/)** göz atabilirsiniz.  
 2. Üzerinde çalışacağınız kaynak zip dosyalarını tutan bir klasör. Kod parçacıklarındaki `"Your Document Directory"` ifadesini makinenizdeki gerçek yol ile değiştirin.  
-3. .NET Framework 4.6+ veya .NET Core 3.1+ hedefleyen bir .NET geliştirme ortamı (Visual Studio, VS Code veya Rider).
+3. .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1 veya .NET 5–10 hedefleyen bir .NET geliştirme ortamı (Visual Studio, VS Code veya Rider).
 
 ## Ad Alanlarını İçe Aktarma
 
-İlk olarak, gerekli ad alanlarını kapsam içine alın:
+İlk olarak, gerekli ad alanlarını kapsam içine getirin:
 
 ```csharp
 using Aspose.Zip;
@@ -71,9 +110,15 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Aspose.Zip ile C# zip dosyasını nasıl değiştirilir
+`MemoryStream` bellekte veri depolayan bir .NET akışıdır ve dosyalarla disk I/O'su olmadan çalışmanıza olanak tanır.
 
-Aşağıda, mevcut bir arşivi açma, iç zip girişlerini çıkarma, yapıyı düzleştirme ve sonunda yeni bir arşiv kaydetme adımlarını adım adım gösteren bir rehber bulacaksınız.
+## Aspose.Zip kullanarak C# ile dosyaları sıkıştırma
+
+Dış arşivinizi yükleyin, iç içe zip girdilerini düzleştirin ve sonucu bellekte kaydedin—birkaç kısa adımda. Bu yaklaşım her bir girdiyi tam kontrol etmenizi sağlar, tamamen bellek içinde çalışmanıza izin verir ve diskte geçici dosyalar oluşmasını önler.
+
+## Aspose.Zip ile C# zip dosyasını değiştirme
+
+Mevcut arşivi açın, iç zip dosyalarını çıkarın, orijinal dosyaları silin ve çıkarılan içeriği düz bir yapı olarak yeniden ekleyin. İşlem tamamen akış‑merkezli olduğundan dosya sistemine dokunmadan sunucusuz ortamlarda çalıştırabilirsiniz.
 
 ### Adım 1: Dış Zip Dosyasını Açma  
 
@@ -86,9 +131,9 @@ using (Archive outer = new Archive(dataDir + "outer.zip"))
 }
 ```
 
-### Adım 2: İç Zip Girişlerini Belirleme  
+### Adım 2: İç Zip Girdilerini Belirleme  
 
-Sonra, dış arşivi `.zip` ile biten girişler için tararız. Bunlar çıkarmak istediğimiz **iç zip dosyaları**dır.
+Ardından, dış arşivi `.zip` ile biten girdiler için tararız. Bunlar çıkarmak istediğimiz **inner zip files** (iç zip dosyaları)dır.
 
 ```csharp
 List<ArchiveEntry> entriesToDelete = new List<ArchiveEntry>();
@@ -108,9 +153,9 @@ foreach (ArchiveEntry entry in outer.Entries)
 }
 ```
 
-### Adım 3: İç Girişleri Çıkarma  
+### Adım 3: İç Girdileri Çıkarma  
 
-Şimdi her iç zip'i kendi `Archive` nesnesi gibi ele alıyoruz. İşte **iç zip dosyalarını çıkardığımız** ve içeriklerini bellek içinde topladığımız yer.
+Şimdi her iç zip'i kendi `Archive` nesnesi gibi ele alıyoruz. Burada **extract inner zip files** (iç zip dosyalarını çıkarma) yapıyor ve içeriklerini bellekte topluyoruz.
 
 ```csharp
 using (Archive inner = new Archive(innerCompressed))
@@ -126,9 +171,9 @@ using (Archive inner = new Archive(innerCompressed))
 }
 ```
 
-### Adım 4: İç Arşiv Girişlerini Silme  
+### Adım 4: İç Arşiv Girdilerini Silme  
 
-İhtiyacımız olan veriyi yakaladıktan sonra, dış arşivden orijinal iç zip girişlerini kaldırıyoruz. Bu adım temelde **zip girişini C# ile silme** mantığıdır.
+İhtiyacımız olan veriyi yakaladıktan sonra, dış arşivden orijinal iç zip girdilerini kaldırıyoruz. Bu adım temelde **delete zip entry C#** mantığını içerir.
 
 ```csharp
 foreach (ArchiveEntry e in entriesToDelete)
@@ -137,7 +182,7 @@ foreach (ArchiveEntry e in entriesToDelete)
 }
 ```
 
-### Adım 5: Değiştirilmiş Girişleri Dış Zip'e Ekleme  
+### Adım 5: Değiştirilmiş Girdileri Dış Zip'e Ekleme  
 
 Son olarak, çıkarılan dosyaları dış arşive yeniden ekliyoruz, yapıyı etkili bir şekilde düzleştiriyor ve sonucu `flatten.zip` olarak kaydediyoruz.
 
@@ -150,45 +195,47 @@ for (int i = 0; i < namesToInsert.Count; i++)
 outer.Save(dataDir + "flatten.zip");
 ```
 
-Bu beş adımı izleyerek, orijinaliyle aynı dosyaları içeren ancak iç içe zip katmanları olmayan bir **C# zip arşivi oluşturmuş** oldunuz.
+Bu beş adımı izleyerek **compress files C#** işlemini gerçekleştirdiniz ve iç içe zip katmanları içermeyen düzenli, düz bir arşiv elde ettiniz.
 
 ## Yaygın Sorunlar ve Çözümler
 
 | Sorun | Neden Oluşur | Çözüm |
 |-------|----------------|-----|
-| `ArgumentNullException` when opening inner archive | `innerCompressed` stream position is at the end | `Archive` oluşturulmadan önce `innerCompressed.Position = 0;` çağırın |
-| Large files cause high memory usage | All inner entries are stored in `MemoryStream` objects | Çok büyük arşivler için diskte geçici dosyalar (`Path.GetTempFileName()`) kullanın |
-| Missing entries after flattening | Forgetting to add the extracted content to `contentToInsert` list | `contentToInsert.Add(content);` ifadesinin iç döngü içinde çağrıldığından emin olun |
+| `ArgumentNullException` iç arşiv açılırken | `innerCompressed` akışının konumu sonundadır | `Archive` oluşturulmadan önce `innerCompressed.Position = 0;` çağırın |
+| Büyük dosyalar yüksek bellek kullanımı oluşturur | Tüm iç girdiler `MemoryStream` nesnelerinde depolanır | Çok büyük arşivler için diskte geçici dosyalar (`Path.GetTempFileName()`) kullanın |
+| Düzleştirmeden sonra eksik girdiler | Çıkarılan içeriği `contentToInsert` listesine eklemeyi unutmak | `contentToInsert.Add(content);` ifadenin iç döngü içinde çağrıldığından emin olun |
 
 ## Sıkça Sorulan Sorular
 
-### S1: Aspose.Zip for .NET'i diğer programlama dilleriyle kullanabilir miyim?
+**S: Aspose.Zip for .NET'i diğer programlama dilleriyle kullanabilir miyim?**  
+C: Aspose.Zip .NET için optimize edilmiştir, ancak Aspose aynı API kavramlarını izleyen Java, C++ ve Python için eşdeğer kütüphaneler sunar.
 
-C1: Aspose.Zip öncelikle .NET uygulamaları için tasarlanmıştır. Ancak, Aspose çeşitli programlama dilleri için, her birine uygun kütüphaneler sunar.
+**S: Aspose.Zip for .NET için ücretsiz deneme mevcut mu?**  
+C: Evet, ücretsiz denemeye **[buradan](https://releases.aspose.com/)** erişebilirsiniz.
 
-### S2: Aspose.Zip for .NET için ücretsiz deneme mevcut mu?
+**S: Aspose.Zip for .NET için desteği nasıl alabilirim?**  
+C: Destek ve tartışmalar için **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)** adresini ziyaret edin.
 
-C2: Evet, ücretsiz denemeye **[buradan](https://releases.aspose.com/)** ulaşabilirsiniz.
+**S: Aspose.Zip for .NET için geçici bir lisans satın alabilir miyim?**  
+C: Evet, geçici lisansı **[buradan](https://purchase.aspose.com/temporary-license/)** alabilirsiniz.
 
-### S3: Aspose.Zip for .NET için destek nasıl alınır?
+**S: Aspose.Zip for .NET dokümantasyonunu nerede bulabilirim?**  
+C: Dokümantasyon **[buradan](https://reference.aspose.com/zip/net/)** mevcuttur.
 
-C3: Destek ve tartışmalar için **[Aspose.Zip forumunu](https://forum.aspose.com/c/zip/37)** ziyaret edin.
+## İlgili Öğreticiler
 
-### S4: Aspose.Zip for .NET için geçici lisans satın alabilir miyim?
+- [Aspose.Zip for .NET Kullanarak Zip Arşivi Oluşturma ve Dosya Ekleme](/zip/net/file-compression/compress-single-file/)
+- [c# ile birden fazla dosyayı zipleme – Aspose.Zip for .NET ile Sorunsuz Sıkıştırma](/zip/net/file-compression/compress-multiple-files/)
+- [Aspose.Zip for .NET ile şifreli dosya sıkıştırma ve ZIP girdilerini farklı şifrelerle şifreleme](/zip/net/other-compression-techniques/entries-with-different-passwords/)
 
-C4: Evet, geçici bir lisansı **[buradan](https://purchase.aspose.com/temporary-license/)** alabilirsiniz.
-
-### S5: Aspose.Zip for .NET dokümantasyonunu nerede bulabilirim?
-
-C5: Dokümantasyon **[burada](https://reference.aspose.com/zip/net/)** mevcuttur.
-
-**Son Güncelleme:** 2026-02-15  
-**Test Edilen Sürüm:** Aspose.Zip 24.12 for .NET  
-**Yazar:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
+{{< blocks/products/products-backtop-button >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
-{{< blocks/products/products-backtop-button >}}
+---
+
+**Son Güncelleme:** 2026-05-30  
+**Test Edilen Versiyon:** Aspose.Zip 24.12 for .NET  
+**Yazar:** Aspose
