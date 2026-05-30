@@ -1,9 +1,37 @@
 ---
-date: 2026-02-15
+date: 2026-05-30
 description: Μάθετε πώς να προσθέτετε αρχεία σε tar και να τα συμπιέζετε σε TarZ χρησιμοποιώντας
-  το Aspose.Zip για .NET – ένας οδηγός βήμα‑προς‑βήμα για αποδοτική διαχείριση αρχείων
+  το Aspose.Zip για .NET – ένας οδηγός βήμα προς βήμα για αποδοτική διαχείριση αρχείων
   .NET.
-linktitle: Compressing to TarZ
+keywords:
+- add files to tar
+- add directory to tar
+- compress folders to tar
+- compress files .net
+linktitle: Συμπίεση σε TarZ
+schemas:
+- author: Aspose
+  dateModified: '2026-05-30'
+  description: Learn how to add files to tar and compress them to TarZ using Aspose.Zip
+    for .NET – a step‑by‑step guide for efficient .NET file handling.
+  headline: Add files to tar and compress to TarZ with Aspose.Zip for .NET
+  type: TechArticle
+- questions:
+  - answer: Absolutely. Use a `Directory.GetFiles` loop and call `CreateEntry` for
+      each file, preserving relative paths.
+    question: Can I compress entire folders with Aspose.Zip for .NET?
+  - answer: Yes, you can explore the capabilities of Aspose.Zip for .NET by downloading
+      the free trial [here](https://releases.aspose.com/).
+    question: Is there a trial version available for Aspose.Zip for .NET?
+  - answer: The documentation is available [here](https://reference.aspose.com/zip/net/),
+      providing detailed insights into the library's features and usage.
+    question: Where can I find comprehensive documentation for Aspose.Zip for .NET?
+  - answer: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) to seek
+      assistance, share experiences, and connect with the community.
+    question: How can I get support for Aspose.Zip for .NET?
+  - answer: Yes, if you need a temporary license, you can obtain one [here](https://purchase.aspose.com/temporary-license/).
+    question: Can I obtain a temporary license for Aspose.Zip for .NET?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Προσθήκη αρχείων σε tar και συμπίεση σε TarZ με το Aspose.Zip για .NET
 url: /el/net/archive-extraction-and-formats/compress-to-tar-z/
@@ -14,61 +42,70 @@ weight: 15
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Προσθήκη αρχείων σε tar και συμπίεση σε TarZ με Aspose.Zip για .NET
+# Προσθήκη αρχείων σε tar και συμπίεση σε TarZ με Aspise.Zip για .NET
 
 ## Εισαγωγή
 
-Αν χρειάζεστε **add files to tar** και στη συνέχεια να συμπιέσετε το αρχείο σε μορφή TarZ, το Aspose.Zip για .NET κάνει όλη τη διαδικασία άνετη. Σε αυτό το tutorial θα περάσουμε από κάθε βήμα — από τη ρύθμιση του έργου σας μέχρι τη δημιουργία ενός tar archive, την προσθήκη αρχείων και, τέλος, την αποθήκευση ενός συμπιεσμένου .tar.z αρχείου. Στο τέλος θα έχετε ένα επαναχρησιμοποιήσιμο snippet που μπορείτε να ενσωματώσετε σε οποιαδήποτε εφαρμογή .NET.
+Αν χρειάζεστε να **add files to tar** και στη συνέχεια να συμπιέσετε το αρχείο σε μορφή TarZ, το Aspose.Zip για .NET κάνει όλη τη διαδικασία απλή. Σε αυτό το tutorial θα περάσουμε βήμα προς βήμα—από τη ρύθμιση του έργου σας μέχρι τη δημιουργία ενός tar αρχείου, την προσθήκη αρχείων και, τέλος, την αποθήκευση ενός συμπιεσμένου .tar.z αρχείου. Στο τέλος θα έχετε ένα επαναχρησιμοποιήσιμο snippet που μπορείτε να ενσωματώσετε σε οποιαδήποτε εφαρμογή .NET, είτε διαχειρίζεστε μερικά αρχεία ρυθμίσεων είτε ολόκληρο δέντρο καταλόγου.
 
 ## Γρήγορες Απαντήσεις
-- **What library handles tar creation?** Aspose.Zip for .NET  
-- **How many lines of code?** About 15 lines (excluding comments)  
-- **Do I need a license for testing?** A free trial is available; a license is required for production.  
-- **Supported .NET versions?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6+  
-- **Can I compress folders, not just files?** Yes – you can add entire directories with a loop.
+- **Ποια βιβλιοθήκη διαχειρίζεται τη δημιουργία tar;** Aspose.Zip for .NET  
+- **Πόσες γραμμές κώδικα;** Περίπου 15 γραμμές (χωρίς τα σχόλια)  
+- **Χρειάζομαι άδεια για δοκιμή;** Διατίθεται δωρεάν δοκιμή· απαιτείται άδεια για παραγωγή.  
+- **Υποστηριζόμενες εκδόσεις .NET;** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, και .NET 5–10  
+- **Μπορώ να συμπιέσω φακέλους, όχι μόνο αρχεία;** Ναι – μπορείτε να προσθέσετε ολόκληρους καταλόγους με βρόχο.
 
 ## Τι είναι **add files to tar**;
-Η προσθήκη αρχείων σε ένα tar archive τα ομαδοποιεί σε ένα ενιαίο, μη συμπιεσμένο κοντέινερ που διατηρεί τη δομή των καταλόγων και τα μεταδεδομένα των αρχείων. Το Tar είναι μια κλασική μορφή Unix και λειτουργεί ως βάση για πολλές ροές εργασίας συμπίεσης, συμπεριλαμβανομένου του μορφότυπου TarZ που χρησιμοποιείται σε αυτόν τον οδηγό.
+Η λειτουργία **add files to tar** ομαδοποιεί τα επιλεγμένα αρχεία σε ένα ενιαίο, μη συμπιεσμένο tar container, διατηρώντας τη δομή των καταλόγων και τα μεταδεδομένα.  
+Η φόρτωση αρχείων σε ένα tar αρχείο είναι το πρώτο βήμα πριν από οποιαδήποτε πρόσθετη συμπίεση όπως το TarZ, επειδή η μορφή tar παρέχει ένα ντετερμινιστικό, ανεξάρτητο από πλατφόρμα πακέτο που οι αλγόριθμοι συμπίεσης μπορούν να επεξεργαστούν αποδοτικά.
 
 ## Γιατί να προσθέσετε αρχεία σε tar πριν τη συμπίεση σε TarZ;
-- **Portability** – Ένα tar archive λειτουργεί σε όλες τις πλατφόρμες χωρίς να χρειάζεται να διαχειρίζεστε μεμονωμένα αρχεία.  
-- **Speed** – Η δημιουργία του tar container είναι γρήγορη· η επόμενη Z‑συμπίεση εστιάζει μόνο στη μείωση του μεγέθους.  
-- **Compatibility** – Πολλά παλιά εργαλεία αναμένουν ένα `.tar` πριν εφαρμόσουν συμπίεση τύπου gzip, που είναι ακριβώς αυτό που παρέχει το `.tar.z`.  
+Η δημιουργία ενός tar container πρώτα απομονώνει τη λογική συσκευασίας από το βήμα της συμπίεσης, προσφέροντας τρία μετρήσιμα οφέλη. Διαχωρίζοντας αυτά τα στάδια αποκτάτε ένα προβλέψιμο, επαναλήψιμο αρχείο που μπορεί να συμπιεστεί ανεξάρτητα, καθιστώντας ευκολότερη τη μέτρηση των αναλογιών συμπίεσης και την επαναχρησιμοποίηση του ίδιου tar για διαφορετικούς αλγόριθμους συμπίεσης.  
+1. **Portability** – Ένα αρχείο `.tar` μπορεί να αποσυμπιεστεί σε οποιοδήποτε σύστημα τύπου Unix χωρίς επιπλέον βιβλιοθήκες.  
+2. **Speed** – Η δημιουργία tar είναι ουσιαστικά μια λειτουργία αντιγραφής ροής· η επακόλουθη Z‑συμπίεση εστιάζει μόνο στη μείωση του μεγέθους, συνήθως μειώνοντας το 30‑70 % των αρχικών δεδομένων.  
+3. **Compatibility** – Πολλά παλιά εργαλεία (π.χ., `tar`, `gzip`) αναμένουν ένα `.tar` πριν εφαρμόσουν συμπίεση τύπου gzip, ακριβώς όπως αντιπροσωπεύει η επέκταση `.tar.z`.
 
-### Γιατί αυτό είναι σημαντικό για προγραμματιστές .NET
-Η χρήση ενός tar container σας επιτρέπει να διατηρήσετε τον κώδικα .NET απλός και προβλέψιμος. Μπορείτε να δημιουργήσετε το archive στη μνήμη, να το ρέξετε απευθείας σε μια απόκριση ή να το αποθηκεύσετε στο δίσκο χωρίς να ασχοληθείτε με προσωρινά zip αρχεία. Αυτό το μοτίβο είναι ιδιαίτερα χρήσιμο για pipelines κατασκευής, συγκέντρωση logs ή όταν χρειάζεται να στείλετε ένα σύνολο αρχείων ρυθμίσεων σε μια υπηρεσία βασισμένη σε Linux.
+### Γιατί αυτό έχει σημασία για προγραμματιστές .NET
+Η χρήση ενός tar container σας επιτρέπει να διατηρήσετε τον κώδικα .NET απλό και ντετερμινιστικό. Μπορείτε να δημιουργήσετε το αρχείο στη μνήμη, να το μεταδώσετε απευθείας σε μια απάντηση ή να το αποθηκεύσετε στο δίσκο χωρίς να ασχοληθείτε με προσωρινά zip αρχεία. Αυτό το πρότυπο είναι ιδιαίτερα χρήσιμο για pipelines κατασκευής, συγκέντρωση logs ή όταν χρειάζεται να αποστείλετε ένα σύνολο αρχείων ρυθμίσεων σε μια υπηρεσία βασισμένη σε Linux.
 
 ## Προαπαιτούμενα
 
-Πριν βουτήξουμε στον κώδικα, βεβαιωθείτε ότι έχετε:
+Πριν βυθιστούμε στον κώδικα, βεβαιωθείτε ότι έχετε:
 
 - **Aspose.Zip for .NET** εγκατεστημένο. Κατεβάστε το από την επίσημη ιστοσελίδα [here](https://releases.aspose.com/zip/net/).  
 - Έναν φάκελο στον υπολογιστή σας που περιέχει τα αρχεία που θέλετε να αρχειοθετήσετε. Αντικαταστήστε τη διαδρομή placeholder με τον πραγματικό σας κατάλογο.
 
 ## Εισαγωγή Namespaces
 
-Προσθέστε τις απαιτούμενες δηλώσεις `using` στην κορυφή του αρχείου C#:
+Προσθέστε τις απαιτούμενες δηλώσεις `using` στην αρχή του αρχείου C# σας:
 
 ```csharp
 using System;
 using Aspose.Zip.Tar;
 ```
 
-> **Pro tip:** Χρησιμοποιήστε `Path.Combine` αν χρειάζεται να δημιουργήσετε διαδρομές δυναμικά· αποφεύγει την έλλειψη διαχωριστών διαδρομών σε διαφορετικά λειτουργικά συστήματα.
+> **Συμβουλή:** Χρησιμοποιήστε `Path.Combine` εάν χρειάζεται να δημιουργήσετε διαδρομές δυναμικά· αποφεύγει την έλλειψη διαχωριστών διαδρομών σε διαφορετικά λειτουργικά συστήματα.
 
-## Οδηγός βήμα‑βήμα
+## Πώς να προσθέσετε αρχεία σε tar χρησιμοποιώντας το Aspose.Zip για .NET;
 
-### Βήμα 1: Ορίστε τον κατάλογο εγγράφων σας
+Φορτώστε τον πηγαίο κατάλογο, δημιουργήστε μια παρουσία `TarArchive`, προσθέστε κάθε αρχείο (ή ολόκληρο υπο‑κατάλογο) και τέλος καλέστε `Save` με τη σημαία συμπίεσης TarZ. Αυτή η ροή από άκρη σε άκρη απαιτεί μόνο λίγες γραμμές κώδικα και λειτουργεί σε όλα τα υποστηριζόμενα .NET runtime.
+
+### Αγκύρωση ορισμού
+Η κλάση `TarArchive` είναι το βασικό αντικείμενο του Aspose.Zip που αντιπροσωπεύει ένα tar container το οποίο μπορείτε να γεμίσετε με καταχωρήσεις.
+
+### Οδηγός βήμα‑βήμα
+
+### Βήμα 1: Ορίστε τον Κατάλογο Εγγράφων σας
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-> **Why this step is important:** Η μεταβλητή `dataDir` λειτουργεί ως η βασική θέση για κάθε αρχείο που θα προσθέσετε. Η διατήρησή της σε μία μόνο μεταβλητή καθιστά τον κώδικα εύκολο στη συντήρηση και επαναχρησιμοποίηση σε πολλαπλά archives.
+> **Γιατί είναι σημαντικό αυτό το βήμα:** Το `dataDir` λειτουργεί ως η βασική τοποθεσία για κάθε αρχείο που θα προσθέσετε. Η διατήρησή του σε μία μεταβλητή καθιστά τον κώδικα εύκολο στη συντήρηση και επαναχρησιμοποίηση σε πολλαπλά αρχεία.
 
 ### Βήμα 2: Δημιουργήστε ένα Tar Archive και προσθέστε αρχεία
 
-#### 2.1: Δημιουργήστε το αντικείμενο Tar archive
+#### 2.1: Δημιουργήστε την παρουσία Tar archive
 
 ```csharp
 using (TarArchive archive = new TarArchive())
@@ -77,9 +114,11 @@ using (TarArchive archive = new TarArchive())
 }
 ```
 
-> Το μπλοκ `using` εγγυάται ότι το αντικείμενο `TarArchive` αποδεσμεύεται σωστά, απελευθερώνοντας τυχόν χειριστές αρχείων ή μνήμης.
+> Το μπλοκ `using` εγγυάται ότι το αντικείμενο `TarArchive` απελευθερώνεται σωστά, απελευθερώνοντας τυχόν χειριστές αρχείων ή μνήμες.
 
-#### 2.2: Προσθήκη αρχείων στο archive  
+#### 2.2: Προσθήκη αρχείων στο αρχείο  
+
+`CreateEntry` προσθέτει ένα αρχείο στο tar archive, καθορίζοντας το όνομα και τη ροή περιεχομένου.  
 
 Μέσα στο μπλοκ `using`, προσθέστε κάθε αρχείο που θέλετε να συμπεριλάβετε:
 
@@ -88,61 +127,69 @@ archive.CreateEntry("alice29.txt", dataDir + "alice29.txt");
 archive.CreateEntry("lcet10.txt", dataDir + "lcet10.txt");
 ```
 
-Μπορείτε να επαναλάβετε το `CreateEntry` για όσα αρχεία χρειάζεστε, ή να κάνετε βρόχο σε έναν κατάλογο για να τα προσθέσετε προγραμματιστικά. Για παράδειγμα, ένας βρόχος `foreach (var file in Directory.GetFiles(dataDir))` θα σας επιτρέψει να διαχειριστείτε έναν αυθαίρετο αριθμό αρχείων διατηρώντας τις σχετικές τους διαδρομές.
+Μπορείτε να επαναλάβετε το `CreateEntry` για όσα αρχεία χρειάζεστε, ή να κάνετε βρόχο μέσω ενός καταλόγου για να τα προσθέσετε προγραμματιστικά. Για παράδειγμα, ένας βρόχος `foreach (var file in Directory.GetFiles(dataDir))` θα σας επιτρέψει να διαχειριστείτε έναν αυθαίρετο αριθμό αρχείων διατηρώντας τις σχετικές τους διαδρομές.
 
 #### 2.3: Αποθήκευση του συμπιεσμένου αρχείου TarZ  
 
-Αφού προσθέσετε όλες τις καταχωρήσεις, συμπιέστε το tar archive στη μορφή `.tar.z`:
+`Save` γράφει το αρχείο στο δίσκο και εφαρμόζει την επιλεγμένη μορφή συμπίεσης.  
+
+Μετά την προσθήκη όλων των καταχωρήσεων, συμπιέστε το tar archive στη μορφή `.tar.z`:
 
 ```csharp
 archive.SaveZCompressed(dataDir + "archive.tar.z");
 ```
 
-Το παραγόμενο αρχείο `archive.tar.z` θα βρίσκεται στον ίδιο φάκελο που ορίσατε στο `dataDir`. Τώρα μπορείτε να στείλετε αυτό το μοναδικό, συμπιεσμένο πακέτο σε οποιοδήποτε σύστημα που υποστηρίζει TarZ.
+Το προκύπτον `archive.tar.z` αρχείο θα βρίσκεται στον ίδιο φάκελο που καθορίσατε στο `dataDir`. Μπορείτε τώρα να στείλετε αυτό το μοναδικό, συμπιεσμένο πακέτο σε οποιοδήποτε σύστημα που καταλαβαίνει το TarZ.
 
-## Κοινά Προβλήματα και Λύσεις
+## Συχνά Προβλήματα και Λύσεις
 
-| Issue | Reason | Fix |
-|-------|--------|-----|
-| **File not found** | Wrong path or missing file extension | Verify `dataDir` ends with a path separator and the filenames are correct. |
-| **Access denied** | Insufficient permissions on the target folder | Run the application with appropriate rights or choose a writable directory. |
-| **Compressed file is larger than expected** | Original files already compressed (e.g., images, videos) | TarZ works best on text or log files; consider leaving already‑compressed files as‑is. |
+| Πρόβλημα | Αιτία | Διόρθωση |
+|----------|-------|----------|
+| **Αρχείο δεν βρέθηκε** | Λάθος διαδρομή ή λείπει η επέκταση αρχείου | Επαληθεύστε ότι το `dataDir` τελειώνει με διαχωριστικό διαδρομής και ότι τα ονόματα αρχείων είναι σωστά. |
+| **Πρόσβαση απορρίφθηκε** | Ανεπαρκή δικαιώματα στον φάκελο προορισμού | Εκτελέστε την εφαρμογή με τα κατάλληλα δικαιώματα ή επιλέξτε έναν φάκελο εγγραφής. |
+| **Το συμπιεσμένο αρχείο είναι μεγαλύτερο από το αναμενόμενο** | Τα αρχικά αρχεία είναι ήδη συμπιεσμένα (π.χ., εικόνες, βίντεο) | Το TarZ λειτουργεί καλύτερα σε αρχεία κειμένου ή logs· σκεφτείτε να αφήσετε τα ήδη συμπιεσμένα αρχεία ως έχουν. |
 
-### Κοινά λάθη που πρέπει να προσέξετε
-- **Missing trailing slash** – Αν το `dataDir` δεν τελειώνει με `\` ή `/`, η συνένωση συμβολοσειρών θα δημιουργήσει μη έγκυρη διαδρομή.  
-- **Large directories** – Η προσθήκη χιλιάδων αρχείων μπορεί να καταναλώσει μνήμη· σκεφτείτε τη ροή καταχωρήσεων ή τη χρήση του overload του `TarArchive` που γράφει απευθείας σε ροή αρχείου.  
-- **Encoding issues** – Τα ονόματα αρχείων που δεν είναι ASCII μπορεί να χρειάζονται ρητή διαχείριση κωδικοποίησης· το Aspose.Zip σέβεται UTF‑8 από προεπιλογή, αλλά ελέγξτε την στο στόχο σύστημα.
+### Συνηθισμένα λάθη που πρέπει να προσέξετε
+- **Missing trailing slash** – Εάν το `dataDir` δεν τελειώνει με `\` ή `/`, η συνένωση συμβολοσειρών θα δημιουργήσει μη έγκυρη διαδρομή.  
+- **Large directories** – Η προσθήκη χιλιάδων αρχείων μπορεί να καταναλώσει μνήμη· σκεφτείτε τη ροή καταχωρήσεων ή τη χρήση της υπερφόρτωσης `TarArchive` που γράφει απευθείας σε ροή αρχείου.  
+- **Encoding issues** – Τα ονόματα αρχείων που δεν είναι ASCII μπορεί να απαιτούν ρητή διαχείριση κωδικοποίησης· το Aspose.Zip σέβεται UTF‑8 εξ ορισμού, αλλά επαληθεύστε στην πλατφόρμα-στόχο.
 
 ## Συχνές Ερωτήσεις
 
-**Q: Μπορώ να συμπιέσω ολόκληρους φακέλους με Aspose.Zip για .NET;**  
-A: Absolutely. Use a `Directory.GetFiles` loop and call `CreateEntry` for each file, preserving relative paths.
+**Q: Μπορώ να συμπιέσω ολόκληρους φακέλους με το Aspose.Zip για .NET;**  
+A: Απόλυτα. Χρησιμοποιήστε έναν βρόχο `Directory.GetFiles` και καλέστε `CreateEntry` για κάθε αρχείο, διατηρώντας τις σχετικές διαδρομές.
 
-**Q: Υπάρχει διαθέσιμη δοκιμαστική έκδοση για Aspose.Zip για .NET;**  
-A: Yes, you can explore the capabilities of Aspose.Zip for .NET by downloading the free trial [here](https://releases.aspose.com/).
+**Q: Υπάρχει διαθέσιμη δοκιμαστική έκδοση για το Aspose.Zip για .NET;**  
+A: Ναι, μπορείτε να εξερευνήσετε τις δυνατότητες του Aspose.Zip για .NET κατεβάζοντας τη δωρεάν δοκιμή [here](https://releases.aspose.com/).
 
-**Q: Πού μπορώ να βρω ολοκληρωμένη τεκμηρίωση για Aspose.Zip για .NET;**  
-A: The documentation is available [here](https://reference.aspose.com/zip/net/), providing detailed insights into the library's features and usage.
+**Q: Πού μπορώ να βρω ολοκληρωμένη τεκμηρίωση για το Aspose.Zip για .NET;**  
+A: Η τεκμηρίωση είναι διαθέσιμη [here](https://reference.aspose.com/zip/net/), παρέχοντας λεπτομερείς πληροφορίες για τις δυνατότητες και τη χρήση της βιβλιοθήκης.
 
-**Q: Πώς μπορώ να λάβω υποστήριξη για Aspose.Zip για .NET;**  
-A: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) to seek assistance, share your experiences, and connect with the community.
+**Q: Πώς μπορώ να λάβω υποστήριξη για το Aspose.Zip για .NET;**  
+A: Επισκεφθείτε το [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) για βοήθεια, ανταλλαγή εμπειριών και σύνδεση με την κοινότητα.
 
-**Q: Μπορώ να αποκτήσω προσωρινή άδεια για Aspose.Zip για .NET;**  
-A: Yes, if you need a temporary license, you can obtain one [here](https://purchase.aspose.com/temporary-license/).
+**Q: Μπορώ να αποκτήσω προσωρινή άδεια για το Aspose.Zip για .NET;**  
+A: Ναι, εάν χρειάζεστε προσωρινή άδεια, μπορείτε να την αποκτήσετε [here](https://purchase.aspose.com/temporary-license/).
 
 ## Συμπέρασμα
 
-Έχετε μάθει πώς να **add files to tar** και να συμπιέσετε το αποτέλεσμα σε ένα TarZ archive χρησιμοποιώντας το Aspose.Zip για .NET. Αυτή η προσέγγιση σας παρέχει ένα καθαρό, φορητό πακέτο που μπορεί να μεταφερθεί, αποθηκευτεί ή επεξεργαστεί περαιτέρω με ευκολία. Μη διστάσετε να προσαρμόσετε το snippet για μαζική επεξεργασία καταλόγων, ενσωμάτωση σε pipelines κατασκευής ή συνδυασμό με άλλα στοιχεία του Aspose για πιο πλούσιες ροές εργασίας εγγράφων.
+Τώρα έχετε μάθει πώς να **add files to tar** και να συμπιέσετε το αποτέλεσμα σε ένα αρχείο TarZ χρησιμοποιώντας το Aspose.Zip για .NET. Αυτή η προσέγγιση σας παρέχει ένα καθαρό, φορητό πακέτο που μπορεί να μεταφερθεί, αποθηκευτεί ή επεξεργαστεί περαιτέρω εύκολα. Μη διστάσετε να προσαρμόσετε το snippet για μαζική επεξεργασία καταλόγων, ενσωμάτωσή του σε pipelines κατασκευής ή συνδυασμό του με άλλα στοιχεία Aspose για πιο πλούσιες ροές εργασίας εγγράφων.
 
 ---
 
-**Last Updated:** 2026-02-15  
+**Last Updated:** 2026-05-30  
 **Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose 
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+**Author:** Aspose  
 
 {{< blocks/products/products-backtop-button >}}
+
+## Σχετικά Μαθήματα
+
+- [Δημιουργία tar αρχείου και προσθήκη αρχείων σε tar με Aspose.Zip για .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
+- [Πώς να συμπιέσετε tar και να δημιουργήσετε TarBz2 με Aspose.Zip για .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
+- [Πώς να συμπιέσετε πολλαπλά αρχεία tar με Aspose.Zip για .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-lz/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
