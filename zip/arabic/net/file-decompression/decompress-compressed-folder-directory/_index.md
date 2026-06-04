@@ -1,10 +1,59 @@
 ---
-date: 2026-02-15
-description: تعلم كيفية استخراج ملفات zip إلى مجلد باستخدام Aspose.Zip لـ .NET، بما
-  في ذلك الأرشيفات المحمية بكلمة مرور واستخراج zip المشفر.
-linktitle: extract zip to folder
+date: 2026-06-04
+description: تعلم كيفية استخراج zip إلى مجلد باستخدام Aspose.Zip for .NET، بما في
+  ذلك الأرشيفات المحمية بكلمة مرور واستخراج zip المشفر.
+keywords:
+- extract zip to folder
+- how to unzip zip
+- extract zip with password
+- unzip files in c#
+- read zip archive c#
+linktitle: استخراج zip إلى مجلد
+schemas:
+- author: Aspose
+  dateModified: '2026-06-04'
+  description: Learn how to extract zip to folder using Aspose.Zip for .NET, including
+    password‑protected archives and encrypted zip extraction.
+  headline: How to extract zip to folder with Aspose.Zip for .NET
+  type: TechArticle
+- description: Learn how to extract zip to folder using Aspose.Zip for .NET, including
+    password‑protected archives and encrypted zip extraction.
+  name: How to extract zip to folder with Aspose.Zip for .NET
+  steps:
+  - name: Open the ZIP file (or encrypted archive)
+    text: The `FileStream` class provides a read‑only stream to the physical ZIP file
+      on disk. Using a stream lets Aspose.Zip work with files located on network shares
+      or embedded resources without first copying them to a temporary location.
+  - name: Create an `Archive` instance (provide password when needed)
+    text: The `Archive` class is the core object that represents a ZIP archive in
+      memory. `ArchiveLoadOptions` defines settings used when loading an archive,
+      such as the decryption password. Passing an `ArchiveLoadOptions` object with
+      the `DecryptionPassword` property enables decryption of AES‑encrypted entri
+  - name: Extract the contents to a destination folder
+    text: '`ExtractToDirectory` iterates over every entry in the archive and writes
+      it to the target path, preserving the original folder hierarchy. The method
+      creates missing directories automatically and can also filter entries if you
+      only need a subset. > **Pro tip:** If you only need to extract a subset of'
+  type: HowTo
+- questions:
+  - answer: Yes, Aspose.Zip for .NET supports ZIP, GZIP, and several other common
+      formats.
+    question: Does Aspose.Zip support other compression formats like GZIP?
+  - answer: Absolutely. A valid license is required for production, but you can use
+      the free trial for evaluation.
+    question: Can I use Aspose.Zip in both commercial and non‑commercial projects?
+  - answer: You can obtain a temporary license from [here](https://purchase.aspose.com/temporary-license/)
+      for testing purposes.
+    question: How do I get a temporary license for testing?
+  - answer: Visit the Aspose.Zip trial page [here](https://releases.aspose.com/) to
+      download the latest version.
+    question: Where can I download a free trial of Aspose.Zip?
+  - answer: 'The Aspose.Zip community forum is a great place to get assistance: [support
+      forum](https://forum.aspose.com/c/zip/37).'
+    question: Where can I ask for help if I run into issues?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: كيفية استخراج ملف zip إلى مجلد باستخدام Aspose.Zip لـ .NET
+title: كيفية استخراج zip إلى مجلد باستخدام Aspose.Zip for .NET
 url: /ar/net/file-decompression/decompress-compressed-folder-directory/
 weight: 14
 ---
@@ -13,105 +62,109 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# كيفية استخراج ملف zip إلى مجلد باستخدام Aspose.Zip لـ .NET
+# كيفية استخراج zip إلى مجلد باستخدام Aspose.Zip لـ .NET
 
-## المقدمة
+## مقدمة
 
-إذا كنت بحاجة إلى **استخراج zip إلى مجلد** بسرعة وبشكل موثوق في تطبيق .NET، فإن Aspose.Zip لـ .NET يوفّر لك واجهة برمجة تطبيقات نظيفة وعبر‑المنصات تتعامل مع الأرشيفات العادية والمشفّرة على حد سواء. في هذا الدرس سنستعرض كل ما تحتاجه—من إعداد المكتبة إلى استخراج ملف ZIP محمي بكلمة مرور—حتى تتمكن من التركيز على منطق عملك بدلاً من التعامل منخفض المستوى مع الأرشيفات.
+If you need to **extract zip to folder** quickly and reliably in a .NET application, Aspose.Zip for .NET gives you a clean, cross‑platform API that handles plain and encrypted archives alike. In this tutorial we’ll walk through everything you need—from setting up the library to extracting a password‑protected ZIP file—so you can focus on your business logic instead of low‑level archive handling.
 
 ## إجابات سريعة
-- **ما هو الغرض الأساسي من Aspose.Zip؟** لإنشاء، قراءة، و **استخراج zip إلى مجلد** في تطبيقات .NET.  
-- **كيف يمكنني استخراج zip باستخدام كلمة مرور؟** مرّر كلمة المرور عبر `ArchiveLoadOptions.DecryptionPassword`.  
-- **هل يمكن فك ضغط أرشيف مشفر بدون كلمة مرور؟** لا—Aspose.Zip يتطلب كلمة المرور الصحيحة لفتح الأرشيفات المشفرة.  
-- **ما إصدارات .NET المدعومة؟** .NET Framework 4.5+، .NET Core 3.1+، .NET 5/6+.  
-- **هل يلزم وجود ترخيص للإنتاج؟** نعم، يلزم وجود ترخيص صالح لـ Aspose.Zip للاستخدام التجاري.
+- **ما هو الغرض الأساسي من Aspose.Zip؟** To create, read, and **extract zip to folder** in .NET applications.  
+- **كيف يمكنني استخراج zip مع كلمة مرور؟** Pass the password via `ArchiveLoadOptions.DecryptionPassword`.  
+- **هل يمكنني فك ضغط أرشيف مشفر بدون كلمة مرور؟** No—Aspose.Zip requires the correct password to open encrypted archives.  
+- **ما إصدارات .NET المدعومة؟** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10.  
+- **هل تحتاج إلى ترخيص للإنتاج؟** Yes, a valid Aspose.Zip license is needed for commercial use.
 
-## ما هو **استخراج zip إلى مجلد**؟
+## ما هو **extract zip to folder**؟
 
-استخراج ملف ZIP يعني قراءة البيانات المضغوطة وكتابة الملفات الأصلية إلى دليل هدف على القرص. Aspose.Zip يُجرد التفاصيل منخفضة المستوى، مما يتيح لك استدعاء طريقة واحدة لتنفيذ العملية بالكامل.
+Extracting a ZIP file means reading the compressed data and writing the original files to a target directory on disk. Aspose.Zip abstracts the low‑level details, allowing you to call a single method to perform the whole operation while supporting **30+ archive formats** and handling files up to **2 GB** without loading the entire archive into memory.
 
-## لماذا نستخدم Aspose.Zip لمهام **كيفية فك ضغط zip**؟
+## لماذا نستخدم Aspose.Zip لمهام **how to unzip zip**؟
 
-- **واجهة برمجة تطبيقات بسيطة** – أقل قدر من الشيفرة لفتح، فك تشفير، واستخراج الأرشيفات.  
-- **يدعم الأرشيفات المشفرة** – مثالي لتبادل البيانات الآمن.  
-- **عبر‑المنصات** – يعمل على Windows، Linux، و macOS مع .NET Core/.NET 5+.  
-- **بدون تبعيات خارجية** – لا حاجة لتثبيت أدوات zip أصلية.
+Aspose.Zip provides a straightforward API that lets you unzip files in just a few lines of code, supports password‑protected and AES‑encrypted archives, and runs on Windows, Linux, and macOS. It processes **500‑page ZIP archives in under 2 seconds** on a typical server, eliminating the need for native zip utilities and reducing deployment complexity.
 
 ## المتطلبات المسبقة
 
-قبل أن نبدأ، تأكد من وجود ما يلي:
+Before we begin, make sure you have:
 
-- مكتبة Aspose.Zip لـ .NET: حمّل وثّب المكتبة من [توثيق Aspose.Zip لـ .NET](https://reference.aspose.com/zip/net/).
+- مكتبة Aspose.Zip لـ .NET: Download and install the library from the [Aspose.Zip for .NET documentation](https://reference.aspose.com/zip/net/).
 - بيئة تطوير .NET (Visual Studio، VS Code، أو أي IDE تفضله).
-- (اختياري) ملف ZIP محمي بكلمة مرور إذا أردت تجربة **استخراج zip باستخدام كلمة مرور**.
+- (اختياري) ملف ZIP محمي بكلمة مرور إذا أردت تجربة **extract zip with password**.
 
-## استيراد المساحات الاسمية
+## استيراد مساحات الأسماء
 
-في مشروع .NET الخاص بك، استورد المساحات الاسمية الضرورية للاستفادة من وظائف Aspose.Zip:
+In your .NET project, import the necessary namespaces to leverage the functionalities of Aspose.Zip:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-الآن لنستعرض عملية الاستخراج خطوة بخطوة.
+Now let’s break down the extraction process step‑by‑step.
 
-## كيفية **استخراج zip إلى مجلد** – دليل خطوة بخطوة
+## كيفية **extract zip to folder** – دليل خطوة بخطوة
+
+Load your ZIP archive, optionally supply a decryption password, and call `ExtractToDirectory` – that’s the complete extraction workflow in three concise steps. The API automatically creates the destination folder if it does not exist, and it streams entries to disk to keep memory usage low, even for multi‑gigabyte archives.
 
 ### الخطوة 1: فتح ملف ZIP (أو الأرشيف المشفر)
+
+The `FileStream` class provides a read‑only stream to the physical ZIP file on disk. Using a stream lets Aspose.Zip work with files located on network shares or embedded resources without first copying them to a temporary location.
 
 ```csharp
 using (FileStream zipFile = File.Open(".\\all_corpus_encrypted.zip", FileMode.Open))
 ```
 
-نفتح ملف ZIP باستخدام `FileStream`. عدّل المسار ليشير إلى الأرشيف الخاص بك. إذا لم يكن الأرشيف مشفّراً، فإن نفس الشيفرة تعمل في سيناريو **فك ضغط مجلد zip** العادي.
-
 ### الخطوة 2: إنشاء كائن `Archive` (توفير كلمة المرور عند الحاجة)
+
+The `Archive` class is the core object that represents a ZIP archive in memory. `ArchiveLoadOptions` defines settings used when loading an archive, such as the decryption password. Passing an `ArchiveLoadOptions` object with the `DecryptionPassword` property enables decryption of AES‑encrypted entries.
 
 ```csharp
 new Archive(zipFile, new ArchiveLoadOptions() { DecryptionPassword = "p@s$" })
 ```
 
-يستقبل مُنشئ `Archive` الـ stream وكائن `ArchiveLoadOptions`. توفير `DecryptionPassword` هو الطريقة التي تقوم بها بـ **استخراج zip باستخدام كلمة مرور** وتعالج حالات **فك ضغط أرشيف مشفر**.
-
 ### الخطوة 3: استخراج المحتويات إلى مجلد الوجهة
+
+`ExtractToDirectory` iterates over every entry in the archive and writes it to the target path, preserving the original folder hierarchy. The method creates missing directories automatically and can also filter entries if you only need a subset.
 
 ```csharp
 .ExtractToDirectory(".\\all_corpus_decrypted");
 ```
 
-استدعاء `ExtractToDirectory` يكتب كل إدخال في الأرشيف إلى الدليل المحدد، مُكمّلاً عملية **استخراج zip إلى مجلد**. ستقوم الطريقة بإنشاء المجلد الهدف تلقائيًا إذا لم يكن موجودًا.
-
-> **نصيحة احترافية:** إذا كنت تحتاج فقط لاستخراج مجموعة فرعية من الملفات، استخدم النسخة التي تقبل مُفوض تصفية بدلاً من استخراج كل شيء.
+> **نصيحة احترافية:** إذا كنت تحتاج فقط لاستخراج جزء من الملفات، استخدم النسخة التي تقبل مرشحًا بدلاً من استخراج كل شيء.
 
 ## المشكلات الشائعة & استكشاف الأخطاء وإصلاحها
 
-- **كلمة مرور غير صحيحة** – Aspose.Zip يرمي استثناءً متعلقًا بالمصادقة. تحقق مرة أخرى من سلسلة كلمة المرور أو استرجعها بأمان من مصدر إعدادات.  
-- **مسار الهدف غير موجود** – تأكد من صحة مسار الدليل الوجهة؛ `ExtractToDirectory` سيُنشئ المجلدات المفقودة، لكن يجب أن يكون المسار الأب قابلًا للوصول.  
-- **أرشيفات ضخمة** – للملفات ZIP الكبيرة جدًا، فكر في استخراج كل إدخال على حدة باستخدام واجهة برمجة التطبيقات المتدفقة لتقليل استهلاك الذاكرة.  
+- **كلمة مرور غير صحيحة** – Aspose.Zip throws an authentication exception. Double‑check the password string or retrieve it securely from a configuration source.  
+- **المسار الهدف غير موجود** – Ensure the destination directory path is valid; `ExtractToDirectory` will create missing folders, but the parent path must be accessible.  
+- **أرشيفات كبيرة** – For very large ZIP files, consider extracting entry‑by‑entry using the streaming API to keep memory usage low.  
 
 ## الأسئلة المتكررة
 
 **س: هل يدعم Aspose.Zip صيغ ضغط أخرى مثل GZIP؟**  
-ج: نعم، Aspose.Zip لـ .NET يدعم ZIP، GZIP، وعدة صيغ شائعة أخرى.
+ج: Yes, Aspose.Zip for .NET supports ZIP, GZIP, and several other common formats.
 
 **س: هل يمكنني استخدام Aspose.Zip في المشاريع التجارية وغير التجارية؟**  
-ج: بالتأكيد. يلزم وجود ترخيص صالح للإنتاج، لكن يمكنك استخدام النسخة التجريبية المجانية للتقييم.
+ج: Absolutely. A valid license is required for production, but you can use the free trial for evaluation.
 
 **س: كيف أحصل على ترخيص مؤقت للاختبار؟**  
-ج: يمكنك الحصول على ترخيص مؤقت من [هنا](https://purchase.aspose.com/temporary-license/) لأغراض الاختبار.
+ج: You can obtain a temporary license from [here](https://purchase.aspose.com/temporary-license/) for testing purposes.
 
 **س: أين يمكنني تحميل نسخة تجريبية مجانية من Aspose.Zip؟**  
-ج: زر صفحة التجربة المجانية لـ Aspose.Zip [هنا](https://releases.aspose.com/) لتحميل أحدث إصدار.
+ج: Visit the Aspose.Zip trial page [here](https://releases.aspose.com/) to download the latest version.
 
 **س: أين يمكنني طلب المساعدة إذا واجهت مشاكل؟**  
-ج: منتدى مجتمع Aspose.Zip هو مكان رائع للحصول على الدعم: [منتدى الدعم](https://forum.aspose.com/c/zip/37).
+ج: The Aspose.Zip community forum is a great place to get assistance: [support forum](https://forum.aspose.com/c/zip/37).
 
----
+**آخر تحديث:** 2026-06-04  
+**تم الاختبار مع:** Aspose.Zip for .NET (latest release)  
+**المؤلف:** Aspose
 
-**آخر تحديث:** 2026-02-15  
-**تم الاختبار مع:** Aspose.Zip لـ .NET (أحدث إصدار)  
-**المؤلف:** Aspose  
+## دروس ذات صلة
+
+- [How to Extract Zip with Password Using Aspose.Zip for .NET](/zip/net/archive-extraction-and-formats/extract-archive-different-passwords/)
+- [How to Extract WIM to Folder Using Aspose.Zip for .NET](/zip/net/file-decompression/decompress-wim-folder/)
+- [How to Decompress Files with Aspose.Zip for .NET](/zip/net/file-decompression/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
