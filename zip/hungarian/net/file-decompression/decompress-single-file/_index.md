@@ -1,11 +1,17 @@
 ---
-date: 2026-02-17
-description: Tanulja meg, hogyan figyelheti a zip folyamatot C#-ban, és hogyan csomagolhat
-  ki zip fájlokat, egyetlen bejegyzést kicsomagolva az Aspose.Zip for .NET segítségével
-  C# projektjeiben.
-linktitle: Decompressing a Single File
+date: 2026-04-24
+description: Tanulja meg, hogyan lehet zip fájlt kicsomagolni C#-ban, és nyomon követni
+  a zip folyamatot egyetlen fájlt tartalmazó zip kibontása közben az Aspose.Zip for
+  .NET segítségével.
+keywords:
+- extract zip c#
+- decompress single file zip
+- compress multiple files zip
+- password protected zip c#
+- extract zip entry .net
+linktitle: Egyetlen fájl kitömörítése
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Zip folyamat monitorozása C# – Egyetlen fájl kibontása Aspose.Zip‑kel
+title: zip kicsomagolás C# – Folyamat nyomon követése és egyetlen fájl kicsomagolása
 url: /hu/net/file-decompression/decompress-single-file/
 weight: 12
 ---
@@ -14,32 +20,32 @@ weight: 12
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# ZIP előrehaladás monitorozása C# – Egyetlen fájl kitömörítése az Aspose.Zip segítségével
+# zip kicsomagolás C# – Folyamat figyelése és egyetlen fájl kicsomagolása
 
 ## Bevezetés
 
-Ha **monitor zip progress c#** funkcióra van szüksége a zip fájlok kitömörítése közben, és csak egy bejegyzést szeretne kinyerni, az Aspose.Zip for .NET egyszerű megoldást kínál. Ebben az útmutatóban egy komplett, valós példán keresztül mutatjuk be, hogyan lehet egyetlen fájlt kicsomagolni egy ZIP archívumból, valós időben nyomon követni a kitömörítés előrehaladását, és az eredményt tiszta, karbantartható módon kezelni. A végére magabiztosan tud majd zip kitömörítést beépíteni bármely C# alkalmazásba.
+Ha **extract zip c#**-ra és **monitor zip progress c#**-ra van szükséged, miközben csak egy bejegyzést húzol ki, az Aspose.Zip for .NET egyszerűvé teszi a feladatot. Ebben az útmutatóban egy teljes, valós példán keresztül mutatjuk be, hogyan lehet egyetlen fájlt kicsomagolni egy ZIP archívumból, valós időben figyelni a kicsomagolás folyamatát, és az eredményt tiszta, karbantartható módon kezelni. A végére magabiztosan tudod majd a zip kicsomagolást bármely C# alkalmazásba beépíteni.
 
 ## Gyors válaszok
-- **Miről szól ez az útmutató?** ZIP előrehaladás monitorozása C# és egyetlen fájl kitömörítése egy ZIP archívumból az Aspose.Zip for .NET használatával.  
-- **Melyik elsődleges kulcsszóra fókuszál?** monitor zip progress c#  
-- **Szükségem van licencre?** Egy ingyenes próba elegendő fejlesztéshez; a termeléshez kereskedelmi licenc szükséges.  
-- **Támogatott a .NET Core?** Igen – ugyanaz a kód fut .NET Framework és .NET Core környezetben is.  
-- **Mennyi időt vesz igénybe a megvalósítás?** Körülbelül 10‑15 perc egy alapbeállításhoz.
+- **Mire terjed ez az útmutató?** Monitoring zip progress c# and extracting a single file from a ZIP archive using Aspose.Zip for .NET.  
+- **Melyik elsődleges kulcsszóra fókuszál?** extract zip c#  
+- **Szükségem van licencre?** A ingyenes próba a fejlesztéshez működik; a termeléshez kereskedelmi licenc szükséges.  
+- **Támogatott a .NET Core?** Igen – ugyanaz a kód fut a .NET Framework és a .NET Core alatt.  
+- **Mennyi időt vesz igénybe a megvalósítás?** Körülbelül 10‑15 perc egy alap beállításhoz.
 
-## Előkövetelmények
+## Előfeltételek
 
-Mielőtt belemerülnénk az útmutatóba, győződjön meg róla, hogy az alábbiak rendelkezésre állnak:
+Mielőtt belemerülnél az útmutatóba, győződj meg róla, hogy a következő előfeltételek rendelkezésre állnak:
 
-- Aspose.Zip for .NET Library: Töltse le és telepítse a könyvtárat a [Aspose.Zip for .NET Documentation](https://reference.aspose.com/zip/net/) oldalról.  
-- Fejlesztői környezet: Legyen működő .NET fejlesztői környezet, például Visual Studio vagy bármely más kompatibilis IDE.  
-- Alapvető C# ismeretek: Ismerkedjen meg a C# programozás alapjaival.
+- Aspose.Zip for .NET Library: Töltsd le és telepítsd a könyvtárat a [Aspose.Zip for .NET Documentation](https://reference.aspose.com/zip/net/) oldalról.
+- Fejlesztői környezet: Legyen egy működő .NET fejlesztői környezet, beleértve a Visual Studio-t vagy bármely más kompatibilis IDE-t.
+- Alap C# ismeretek: Ismerkedj meg a C# programozás alapjaival.
 
-Most vágjunk bele a kódba!
+Most vágjunk bele némi kóddal!
 
 ## Névterek importálása
 
-Kezdje a szükséges névterek importálásával, hogy elindítsa az Aspose.Zip használatát:
+Kezdd a szükséges névterek importálásával, hogy elindítsd az Aspose.Zip használatát:
 
 ```csharp
 using Aspose.Zip;
@@ -47,41 +53,41 @@ using System;
 using System.IO;
 ```
 
-## Mi az a zip előrehaladás monitorozása C#?
+## Mi az extract zip c# és miért fontos a folyamat figyelése?
 
-A ZIP kitömörítés előrehaladásának nyomon követése azonnali visszajelzést ad a felhasználóknak, különösen nagy archívumok esetén. Az Aspose.Zip előrehaladási eseményeket bocsát ki, amelyekre fel lehet iratkozni, így könnyen megjeleníthetőek a százalékos értékek vagy frissíthetők a UI elemek.
+A ZIP archívum kicsomagolása C#-ban hozzáférést biztosít a benne lévő fájlokhoz, míg a folyamat figyelése valós idejű visszajelzést ad a felhasználóknak – különösen nagy archívumok esetén fontos. Az Aspose.Zip előrehaladási eseményeket bocsát ki, amelyeket fel tudsz iratkozni, így egyszerűen megjelenítheted a százalékos arányt vagy frissítheted a felhasználói felület elemeit.
 
 ## Miért használjuk az Aspose.Zip-et C# fájl kitömörítéshez?
 
-- **Külső függőségek hiánya** – tiszta .NET könyvtár.  
-- **Nagy archívumok támogatása** streaminggel, így a memóriahasználat alacsony marad.  
-- **Beépített előrehaladási események** megkönnyítik a UI visszajelzés nyújtását, miközben **monitor zip progress c#**.  
-- **Működik .NET Framework, .NET Core és .NET 5/6 környezetben**.  
-- **Képes több fájl zip‑el tömörítésére** is, ha később archívumot kell létrehozni.
+- **Nincs külső függőség** – tiszta .NET könyvtár.  
+- **Támogatja a nagy archívumokat** streaminggel, így a memóriahasználat alacsony marad.  
+- **Beépített előrehaladási események** megkönnyítik a UI visszajelzés biztosítását, miközben **monitor zip progress c#**.  
+- **Működik .NET Framework, .NET Core és .NET 5/6 alatt**.  
+- **Képes több fájl zip tömörítésére** is, ha később archívumot kell létrehozni.
 
-## Hogyan tömörítsünk ki zip-et C#-ban az Aspose.Zip használatával
+## Hogyan tömörítsünk ki egyetlen fájlt zip segítségével az Aspose.Zip használatával
 
-Az alábbi lépések segítségével egyetlen bejegyzést fogunk kicsomagolni, és a konzolban figyelhetjük a kitömörítés százalékát.
+Az alábbiakban a lépések szerepelnek, amelyekkel egyetlen bejegyzést csomagolsz ki, és a konzolban figyeled a kicsomagolás százalékát.
 
-### 1. lépés: Dokumentumkönyvtár beállítása
+### 1. lépés: Állítsd be a dokumentum könyvtáradat
 
-Adja meg azt a könyvtárat, ahol a dokumentumok tárolva vannak. Cserélje le a `"Your Document Directory"` értéket a tényleges útvonalra.
+Kezdd azzal, hogy megadod azt a könyvtárat, ahol a dokumentumaid tárolva vannak. Cseréld le a "Your Document Directory"-t a tényleges útvonalra.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-### 2. lépés: Tömörített fájl létrehozása (Demo beállítás)
+### 2. lépés: Hozz létre egy tömörített fájlt (Demo beállítás)
 
-Az alábbi hívás egy mintázott ZIP fájlt hoz létre, amelyet később kitömörítünk. Ez egy tipikus szituációt modellez, amikor már rendelkezik egy ZIP archívummal.
+Az alábbi hívás egy mintázott ZIP fájlt hoz létre, amelyet később kicsomagolunk. Ez egy tipikus helyzetet tükröz, amikor már rendelkezel egy ZIP archívummal.
 
 ```csharp
 CompressSingleFile.Run();
 ```
 
-### 3. lépés: Fájl kitömörítése – Egyetlen zip fájl kicsomagolása
+### 3. lépés: Fájl kicsomagolása – Egyetlen ZIP fájl kicsomagolása
 
-Most merüljünk el a lényegben – egyetlen bejegyzés kicsomagolása **monitor zip progress c#** közben. Az alábbi kód megnyitja a ZIP archívumot, csatol egy előrehaladási kezelőt, és az első bejegyzést egy szövegfájlba extrahálja.
+Most merüljünk el a lényegben – egyetlen bejegyzés kicsomagolása **monitor zip progress c#** közben. Az alábbi kód megnyitja a ZIP archívumot, csatol egy előrehaladási kezelőt, és az első bejegyzést egy szövegfájlba kicsomagolja.
 
 ```csharp
 // ExStart: DecompressSingleFile
@@ -104,46 +110,53 @@ using (FileStream fs = File.OpenRead(dataDir + "CompressSingleFile_out.zip"))
 }
 ```
 
-Ez a kódrészlet **egyetlen zip bejegyzést csomagol ki**, miközben valós időben kiírja az előrehaladást (pl. „30% decompressed”). Az indexet (`Entries[0]`) módosíthatja, hogy a archívum bármely más fájlját célozza meg.
+Ez a kódrészlet **egyetlen zip bejegyzést csomagol ki**, miközben valós idejű előrehaladást (pl. „30% kicsomagolva”) ír ki. A `Entries[0]` indexet módosíthatod, hogy a archívum bármely más fájlját célozd meg.
+
+## ZIP bejegyzés kicsomagolása .net – Tippek és legjobb gyakorlatok
+
+- **Útvonal kezelése** – használd a `Path.Combine(dataDir, "file.zip")`-t a platform‑specifikus elválasztók problémáinak elkerülése érdekében.  
+- **Password‑protected zip c#** – állítsd be a `archive.Password = "yourPassword"` értéket az `Extract` hívása előtt.  
+- **Multiple entries** – iterálj a `archive.Entries`-en, és a `FileName` alapján egyeztesd, ha egynél több fájlt kell kicsomagolni.  
+- **compress multiple files zip** – később meghívhatod a `archive.AddFile(path)`-t, hogy több fájlt egy új archívumba csomagolj.
 
 ## Gyakori problémák és tippek
 
-- **Fájl útvonal elválasztók** – használja a `Path.Combine`-t a platformok közötti biztonságért.  
-- **Jelszóval védett ZIP-ek** – állítsa be az `archive.Password`-t a kitömörítés előtt.  
-- **Több bejegyzés** – iteráljon a `archive.Entries`-en és egyeztesse a `FileName`-nel.  
-- **Több fájl zip‑el tömörítése** – ha később több fájlt kell egy archívumba csomagolni, az Aspose.Zip `AddFile` metódusa lehetővé teszi az archívumok létrehozását az API-n belül.
+- **Fájl útvonal elválasztók** – használd a `Path.Combine`-t a platform‑független biztonság érdekében.  
+- **Password‑protected ZIPs** – állítsd be a `archive.Password`-t a kicsomagolás előtt.  
+- **Multiple entries** – iterálj a `archive.Entries`-en, és a `FileName` alapján egyeztesd.  
+- **Compress multiple files zip** – ha később több fájlt kell egy archívumba csomagolni, az Aspose.Zip `AddFile` metódusa lehetővé teszi az archívumok létrehozását anélkül, hogy elhagynád az API-t.
 
-## Gyakran ismételt kérdések
+## Gyakran feltett kérdések
 
-### Q1: Tömöríthetek több fájlt az Aspose.Zip for .NET használatával?
+### Q1: Több fájlt tudok tömöríteni az Aspose.Zip for .NET használatával?
 
-**A1:** Igen, az Aspose.Zip for .NET támogatja a **compress multiple files zip** funkciót. Tekintse meg a dokumentációt a részletes útmutatóért.
+**A:** Igen, az Aspose.Zip for .NET támogatja a **compress multiple files zip** funkciót. Tekintsd meg a dokumentációt a részletes útmutatóért.
 
 ### Q2: Az Aspose.Zip kompatibilis a .NET Core-val?
 
-**A2:** Teljesen! Az Aspose.Zip zökkenőmentesen integrálódik mind a .NET Framework, mind a .NET Core környezetbe.
+**A:** Teljesen! Az Aspose.Zip zökkenőmentesen integrálódik mind a .NET Framework, mind a .NET Core környezetbe.
 
-### Q3: Hogyan kezelhetem a jelszóval védett tömörített fájlokat?
+### Q3: Hogyan kezeljem a jelszóval védett tömörített fájlokat?
 
-**A3:** Az Aspose.Zip módszereket biztosít a jelszóval védett archívumok kezelésére. Tekintse meg a dokumentációt útmutatásért.
+**A:** Az Aspose.Zip módszereket biztosít a jelszóval védett archívumok kezelésére. Állítsd be a `Password` tulajdonságot az `Archive` objektumon a kicsomagolás előtt.
 
 ### Q4: Vannak licencelési szempontok az Aspose.Zip használatakor?
 
-**A4:** Tekintse át a licencinformációkat az [Aspose weboldalán](https://purchase.aspose.com/buy).
+**A:** Tekintsd át a licencinformációkat az [Aspose website](https://purchase.aspose.com/buy) oldalon.
 
-### Q5: Hol kérhetek segítséget, ha problémába ütközöm?
+### Q5: Hol kérhetek segítséget, ha problémáim adódnak?
 
-**A5:** Látogassa meg az [Aspose.Zip Fórumot](https://forum.aspose.com/c/zip/37) a közösségi támogatásért.
+**A:** Látogasd meg a [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) közösségi támogatásért.
 
-## Összegzés
+## Következtetés
 
-Gratulálunk! Sikeresen **monitor zip progress c#**-t hajtott végre, és egyetlen fájlt kicsomagolt az Aspose.Zip for .NET segítségével. Alkalmazza ezt a mintát alkalmazásaiban a fájlkezelés egyszerűsítésére, a felhasználói élmény javítására és a kódbázis tisztán tartására.
+Gratulálunk! Sikeresen **extract zip c#**-t hajtottál végre, és figyelted a zip folyamatot egyetlen fájl kicsomagolása közben az Aspose.Zip for .NET használatával. Ezt a mintát integráld az alkalmazásaidba a fájlkezelés egyszerűsítése, a felhasználói élmény javítása és a kódbázis tisztán tartása érdekében.
 
 ---
 
-**Last Updated:** 2026-02-17  
-**Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose  
+**Utoljára frissítve:** 2026-04-24  
+**Tesztelve ezzel:** Aspose.Zip for .NET 24.11  
+**Szerző:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -1,9 +1,15 @@
 ---
-date: 2026-02-17
-description: 學習如何在 C# 中監控 ZIP 壓縮進度與解壓縮 ZIP 檔案，並在您的 C# 專案中使用 Aspose.Zip for .NET 提取單一條目。
-linktitle: Decompressing a Single File
+date: 2026-04-24
+description: 學習如何使用 C# 解壓 ZIP，並在使用 Aspose.Zip for .NET 解壓單一檔案的 ZIP 時監控壓縮進度。
+keywords:
+- extract zip c#
+- decompress single file zip
+- compress multiple files zip
+- password protected zip c#
+- extract zip entry .net
+linktitle: 解壓縮單一檔案
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: 監測 ZIP 進度 C# – 使用 Aspose.Zip 解壓單一檔案
+title: 解壓縮 zip C# – 監控進度與提取單一檔案
 url: /zh-hant/net/file-decompression/decompress-single-file/
 weight: 12
 ---
@@ -12,32 +18,32 @@ weight: 12
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 監控 zip 進度 c# – 使用 Aspose.Zip 解壓單一檔案
+# 提取 zip c# – 監控進度與提取單一檔案
 
-## 簡介
+## 介紹
 
-如果您在解壓 zip 檔案並只取出單一項目時需要 **monitor zip progress c#**，Aspose.Zip for .NET 能讓這項工作變得相當簡單。在本教學中，我們將逐步示範一個完整且貼近實務的範例，說明如何從 ZIP 壓縮檔中抽取單一檔案、即時觀察解壓進度，並以乾淨且易於維護的方式處理結果。完成後，您將能自信地在任何 C# 應用程式中加入 zip 解壓功能。
+如果您需要 **extract zip c#** 並且在僅提取單一項目時 **monitor zip progress c#**，Aspose.Zip for .NET 能讓這項工作變得簡單。在本教學中，我們將逐步示範一個完整、實務的範例，說明如何從 ZIP 壓縮檔中提取單一檔案、即時監控解壓進度，並以乾淨且易於維護的方式處理結果。完成後，您將能自信地在任何 C# 應用程式中加入 zip 提取功能。
 
-## 快速解答
-- **本教學涵蓋什麼內容？** 監控 zip 進度 c# 並使用 Aspose.Zip for .NET 從 ZIP 壓縮檔中抽取單一檔案。  
-- **主要目標關鍵字是？** monitor zip progress c#  
-- **需要授權嗎？** 開發階段可使用免費試用版；正式上線需購買商業授權。  
+## 快速回答
+- **本教學涵蓋什麼內容？** 使用 Aspose.Zip for .NET 監控 zip progress c# 並從 ZIP 壓縮檔中提取單一檔案。  
+- **目標主要關鍵字為？** extract zip c#  
+- **我需要授權嗎？** 免費試用可用於開發；正式上線需購買商業授權。  
 - **支援 .NET Core 嗎？** 支援 – 相同程式碼可在 .NET Framework 與 .NET Core 上執行。  
-- **實作大約需要多久？** 基本設定約需 10‑15 分鐘。
+- **實作需要多久？** 基本設定約需 10‑15 分鐘。
 
-## 前提條件
+## 前置條件
 
-在開始教學之前，請先確保具備以下前置條件：
+在開始教學之前，請確保已具備以下前置條件：
 
-- Aspose.Zip for .NET Library：從 [Aspose.Zip for .NET Documentation](https://reference.aspose.com/zip/net/) 下載並安裝。  
-- 開發環境：具備可運作的 .NET 開發環境，例如 Visual Studio 或其他相容的 IDE。  
-- 基本的 C# 知識：熟悉 C# 程式語言的基礎概念。
+- Aspose.Zip for .NET 函式庫：從 [Aspose.Zip for .NET Documentation](https://reference.aspose.com/zip/net/) 下載並安裝。  
+- 開發環境：具備可運作的 .NET 開發環境，包含 Visual Studio 或其他相容的 IDE。  
+- C# 基礎知識：熟悉 C# 程式語言的基本概念。
 
 現在，讓我們動手寫程式碼吧！
 
 ## 匯入命名空間
 
-先匯入必要的命名空間，展開您的 Aspose.Zip 之旅：
+首先匯入必要的命名空間，以展開 Aspose.Zip 的使用旅程：
 
 ```csharp
 using Aspose.Zip;
@@ -45,41 +51,41 @@ using System;
 using System.IO;
 ```
 
-## 如何在 C# 中監控 ZIP 壓縮進度？
+## 什麼是 extract zip c# 以及為何要監控進度？
 
-監控 ZIP 解壓的進度可以即時向使用者提供回饋，特別是面對大型壓縮檔時。Aspose.Zip 會拋出進度事件，您只要訂閱即可輕鬆顯示百分比或更新 UI 元件。
+在 C# 中解壓 ZIP 壓縮檔可取得其中的檔案，而監控進度則能即時向使用者提供回饋——對於大型壓縮檔尤為重要。Aspose.Zip 會觸發進度事件，您可以接收這些事件，輕鬆顯示百分比或更新 UI 元件。
 
-## 為什麼要使用 Aspose.Zip 進行 C# 檔案解壓縮？
+## 為何使用 Aspose.Zip 進行 C# 檔案解壓？
 
 - **無外部相依性** – 純 .NET 函式庫。  
-- **支援大型壓縮檔**，採用串流方式，記憶體使用量保持低。  
+- **支援大型壓縮檔**，採用串流方式，降低記憶體使用量。  
 - **內建進度事件**，讓您在 **monitor zip progress c#** 時輕鬆提供 UI 回饋。  
-- **跨平台相容**，可於 .NET Framework、.NET Core 以及 .NET 5/6 上執行。  
-- **亦能壓縮多個檔案 zip**，若日後需要建立壓縮檔亦相當方便。
+- **相容於 .NET Framework、.NET Core 以及 .NET 5/6**。  
+- **亦支援 compress multiple files zip**，若日後需要建立壓縮檔亦可使用。
 
-## 如何使用 Aspose.Zip 解壓縮 C# ZIP 文件
+## 如何使用 Aspose.Zip 解壓單一檔案 zip
 
-以下步驟將示範如何抽取單一項目，並在主控台上即時顯示解壓百分比。
+以下步驟將示範如何提取單一項目，並在主控台中顯示解壓百分比。
 
 ### 步驟 1：設定文件目錄
 
-先指定文件所在的目錄，將 `"Your Document Directory"` 替換為實際路徑。
+首先指定文件儲存的目錄。將 `"Your Document Directory"` 替換為實際路徑。
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-### 步驟 2：建立壓縮檔案（示範設定）
+### 步驟 2：建立壓縮檔（示範設定）
 
-以下程式碼會產生一個示範用的 ZIP 檔，供稍後解壓使用。這模擬了您已經擁有 ZIP 壓縮檔的常見情境。
+以下程式碼會建立一個示範用的 ZIP 檔，稍後我們會對其解壓。這類似您已擁有 ZIP 壓縮檔的常見情境。
 
 ```csharp
 CompressSingleFile.Run();
 ```
 
-### 步驟 3：解壓縮檔案 – 提取單一 ZIP 文件
+### 步驟 3：解壓檔案 – 提取單一 zip 檔案
 
-現在進入重點 – 在 **monitor zip progress c#** 的同時抽取單一項目。以下程式碼會開啟 ZIP 壓縮檔、掛載進度處理程序，並將第一個條目解壓至文字檔。
+現在，我們進入重點 – 在 **monitoring zip progress c#** 的同時提取單一項目。以下程式碼會開啟 ZIP 壓縮檔、掛接進度處理程序，並將第一個項目解壓至文字檔。
 
 ```csharp
 // ExStart: DecompressSingleFile
@@ -102,47 +108,53 @@ using (FileStream fs = File.OpenRead(dataDir + "CompressSingleFile_out.zip"))
 }
 ```
 
-此程式碼 **抽取單一 zip 條目**，同時在主控台印出即時進度（例如「30% 解壓完成」）。您可自行將 `Entries[0]` 改為其他索引，以抽取壓縮檔內的其他檔案。
+此程式碼片段 **extracts a single zip entry**，同時列印即時進度（例如「30% decompressed」）。您可調整索引 (`Entries[0]`) 以針對壓縮檔內的其他檔案。
 
-## 常見問題及技巧
+## Extract zip entry .net – 提示與最佳實踐
+
+- **路徑處理** – 使用 `Path.Combine(dataDir, "file.zip")` 以避免平台特定的分隔符問題。  
+- **Password‑protected zip c#** – 在呼叫 `Extract` 前設定 `archive.Password = "yourPassword"`。  
+- **Multiple entries** – 若需提取多個檔案，請遍歷 `archive.Entries` 並以 `FileName` 進行比對。  
+- **compress multiple files zip** – 之後可呼叫 `archive.AddFile(path)` 將多個檔案打包成新壓縮檔。
+
+## 常見問題與提示
 
 - **檔案路徑分隔符** – 使用 `Path.Combine` 以確保跨平台安全。  
-- **受密碼保護的 ZIP** – 在解壓前設定 `archive.Password`。  
-- **多個條目** – 迭代 `archive.Entries` 並以 `FileName` 進行比對。  
-- **Compress multiple files zip** – 若日後需要一次打包多個檔案，Aspose.Zip 的 `AddFile` 方法可在不離開 API 的情況下建立壓縮檔。
+- **Password‑protected ZIP** – 在解壓前設定 `archive.Password`。  
+- **Multiple entries** – 遍歷 `archive.Entries` 並以 `FileName` 匹配。  
+- **Compress multiple files zip** – 若日後需打包多個檔案，Aspose.Zip 的 `AddFile` 方法可直接建立壓縮檔。
 
+## 常見問答
 
-## 常見問題解答
+### Q1：我可以使用 Aspose.Zip for .NET 壓縮多個檔案嗎？
 
-### 問題1：我可以使用 Aspose.Zip for .NET 壓縮多個檔案嗎？
+**A：** 可以，Aspose.Zip for .NET 支援 **compress multiple files zip**。請參考文件取得詳細說明。
 
-答1：可以，Aspose.Zip for .NET 支援**壓縮多個檔案（zip 格式）**。請參閱文件以取得詳細說明。
+### Q2：Aspose.Zip 相容於 .NET Core 嗎？
 
-### 問題2：Aspose.Zip 與 .NET Core 相容嗎？
+**A：** 當然！Aspose.Zip 可無縫整合於 .NET Framework 與 .NET Core。
 
-答2：完全相容！ Aspose.Zip 可以與 .NET Framework 和 .NET Core 無縫整合。
+### Q3：如何處理受密碼保護的壓縮檔？
 
-### 問題3：如何處理受密碼保護的壓縮檔案？
+**A：** Aspose.Zip 提供處理受密碼保護壓縮檔的方法。請在解壓前於 `Archive` 物件設定 `Password` 屬性。
 
-答3：Aspose.Zip 提供了處理受密碼保護的壓縮檔案的方法。請參閱文件以取得指導。
+### Q4：使用 Aspose.Zip 有哪些授權考量？
 
-### 問題4：使用 Aspose.Zip 是否有任何許可的注意事項？
+**A：** 請參閱 [Aspose website](https://purchase.aspose.com/buy) 上的授權資訊。
 
-答4：請查看 [Aspose 網站](https://purchase.aspose.com/buy) 上的授權資訊。
+### Q5：若遇到問題，我該向哪裡尋求協助？
 
-### 問題5：如果遇到問題，我該如何尋求協助？
-
-A5：請造訪 [Aspose.Zip 論壇](https://forum.aspose.com/c/zip/37) 取得社群支持。
+**A：** 前往 [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) 取得社群支援。
 
 ## 結論
 
-恭喜您！您已成功 **monitor zip progress c#** 並使用 Aspose.Zip for .NET 抽取單一檔案。將此模式套用於您的應用程式，可簡化檔案處理流程、提升使用者體驗，並保持程式碼庫的整潔。
+恭喜！您已成功使用 Aspose.Zip for .NET **extract zip c#**，同時在提取單一檔案時監控 zip 進度。將此模式整合至您的應用程式，可簡化檔案處理、提升使用者體驗，並保持程式碼庫整潔。
 
 ---
 
-**上次更新：** 2026-02-17
-**測試版本：** Aspose.Zip for .NET 24.11
-**作者：** Aspose 
+**最後更新：** 2026-04-24  
+**測試環境：** Aspose.Zip for .NET 24.11  
+**作者：** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

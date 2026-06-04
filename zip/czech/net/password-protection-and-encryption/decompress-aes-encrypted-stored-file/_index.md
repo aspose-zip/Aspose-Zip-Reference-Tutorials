@@ -1,12 +1,14 @@
 ---
-date: 2025-12-21
-description: Naučte se, jak otevřít šifrované archivní soubory (AES) pomocí Aspose.Zip
-  pro .NET. Tento krok‑za‑krokem průvodce vám ukáže, jak dešifrovat zip soubory chráněné
-  heslem a rozbalit chráněné zip archivy v C#.
-linktitle: Decompress AES Encrypted Stored File
+date: 2026-04-24
+description: Naučte se, jak pomocí Aspose.Zip pro .NET extrahovat zip soubory chráněné
+  heslem. Tento podrobný průvodce ukazuje AES dešifrování a extrakci v C#.
+keywords:
+- extract password protected zip
+- Aspose.Zip AES decryption
+- .NET zip extraction
+linktitle: Rozbalit AES šifrovaný uložený soubor
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Otevřete šifrovaný archiv pomocí Aspose.Zip pro .NET – Dešifrování souborů
-  šifrovaných AES
+title: Extrahovat zip chráněný heslem pomocí Aspose.Zip pro .NET
 url: /cs/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/
 weight: 19
 ---
@@ -15,39 +17,43 @@ weight: 19
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Otevření šifrovaného archivu pomocí Aspose.Zip pro .NET – Dešifrování souborů šifrovaných AES
+# Extrahování zip souborů chráněných heslem pomocí Aspose.Zip pro .NET
 
 ## Úvod
 
-Vítejte! V tomto komplexním tutoriálu se naučíte **jak otevřít šifrovaný archiv** soubory, které používají šifrování AES s Aspose.Zip pro .NET. Ať už vytváříte desktopovou utilitu nebo server‑side službu, schopnost *dešifrovat zip chráněné heslem* archivy a *rozbalit chráněný zip* soubory je běžná požadavek. Provedeme vás celým procesem, od nastavení prostředí až po extrahování obsahu AES‑šifrovaného ZIP souboru v C#.
+Vítejte! V tomto komplexním tutoriálu se naučíte **jak extrahovat zip chráněný heslem** soubory, které používají AES šifrování s Aspose.Zip pro .NET. Ať už vytváříte desktopovou utilitu, cloudovou službu nebo automatizovaný dávkový úkol, schopnost *dešifrovat zip chráněný heslem* archivů a *rozbalit chráněný zip* soubory je častou požadavkem. Provedeme vás vším, co potřebujete – od instalace knihovny po streamování dešifrovaného obsahu na disk – v čistém, snadno sledovatelném C# kódu.
 
 ## Rychlé odpovědi
-- **Co znamená „otevřít šifrovaný archiv“?** Odkazuje na čtení ZIP souboru chráněného heslem a programové extrahování jeho obsahu.  
-- **Která knihovna provádí AES dešifrování?** Aspose.Zip pro .NET poskytuje vestavěnou podporu pro AES‑šifrované archivy.  
-- **Potřebuji licenci pro produkci?** Ano, pro produkční použití je vyžadována komerční licence; je k dispozici bezplatná zkušební verze.  
-- **Mohu to použít s .NET 6+?** Rozhodně – knihovna cílí na .NET Standard 2.0 a funguje s .NET 6, .NET 7 a novějšími.  
+- **Co znamená „extrahovat zip chráněný heslem“?** Jedná se o proces otevření ZIP archivu zabezpečeného heslem a programatické získání jeho obsahu.  
+- **Která knihovna provádí AES dešifrování?** Aspose.Zip pro .NET nabízí nativní podporu AES‑256 bez dalších závislostí.  
+- **Potřebuji licenci pro produkci?** Ano – pro produkční použití je vyžadována komerční licence; k vyzkoušení je k dispozici bezplatná zkušební verze.  
+- **Mohu to použít s .NET 6+?** Rozhodně – knihovna cílí na .NET Standard 2.0 a funguje s .NET 6, .NET 7 a novějšími verzemi.  
 - **Jaký je typický tok kódu?** Načtěte archiv s heslem, najděte položku a streamujte dešifrovaná data do souboru.
 
-## Co je operace „otevřít šifrovaný archiv“?
+## Jak extrahovat zip soubory chráněné heslem
 
-Otevření šifrovaného archivu znamená načtení ZIP souboru, který byl zabezpečen heslem (ve výchozím nastavení AES‑256) a následné čtení jeho položek bez ručního dešifrování. Aspose.Zip abstrahuje kryptografické detaily, což vám umožňuje soustředit se na obchodní logiku.
+Níže najdete krok‑za‑krokem návod, který přesně ukazuje, jak otevřít AES‑šifrovaný archiv a zapsat dešifrovanou položku na disk.
 
-## Proč použít Aspose.Zip pro C# k dešifrování AES ZIP souborů?
+### Co je operace „otevřít šifrovaný archiv“?
 
-- **Plná podpora AES** – Automaticky pracuje s 128‑, 192‑ a 256‑bitovými klíči.  
-- **Jednoduché API** – Jedna řádka kódu pro zadání hesla (`DecryptionPassword`).  
-- **Žádné externí závislosti** – Není nutné zahrnovat OpenSSL nebo jiné nativní knihovny.  
-- **Robustní zpracování chyb** – Vyhazuje jasné výjimky při špatných heslech nebo poškozených archivech.  
+Otevření šifrovaného archivu znamená načíst ZIP soubor, který byl zabezpečen heslem (ve výchozím nastavení AES‑256), a poté číst jeho položky bez ručního kryptografického zpracování. Aspose.Zip abstrahuje nízkoúrovňové detaily, takže se můžete soustředit na svou obchodní logiku.
+
+### Proč použít Aspose.Zip pro C# k dešifrování AES ZIP souborů?
+
+- **Plná podpora AES** – Automaticky zpracovává klíče 128‑, 192‑ a 256‑bitové.  
+- **Jednoduché API** – Jeden řádek kódu pro zadání hesla (`DecryptionPassword`).  
+- **Žádné externí závislosti** – Není potřeba balit OpenSSL nebo jiné nativní knihovny.  
+- **Robustní zpracování chyb** – Vyhazuje srozumitelné výjimky při špatných heslech nebo poškozených archivech.  
 
 ## Požadavky
 
-Než se ponoříme do kódu, ujistěte se, že máte následující požadavky připravené:
+Než se ponoříme do kódu, ujistěte se, že máte následující předpoklady:
 
 - Aspose.Zip pro .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Zip. Dokumentaci najdete [zde](https://reference.aspose.com/zip/net/).
-- Ukázkový AES šifrovaný soubor: Stáhněte si ukázkový AES šifrovaný soubor z [tohoto odkazu](https://releases.aspose.com/zip/net/).
-- Váš adresář dokumentů: Nastavte adresář, kam chcete uložit rozbalený soubor. Nahraďte „Your Document Directory“ v ukázce kódu skutečnou cestou k vašemu adresáři.
+- Ukázkový soubor šifrovaný AES: Stáhněte si ukázkový soubor šifrovaný AES z [tohoto odkazu](https://releases.aspose.com/zip/net/).
+- Váš adresář dokumentů: Vytvořte složku, kam chcete ukládat rozbalené soubory. Nahraďte „Your Document Directory“ v ukázce kódu skutečnou cestou k adresáři.
 
-## Importujte jmenné prostory
+## Importovat jmenné prostory
 
 V poskytnuté ukázce kódu si všimnete použití různých jmenných prostorů. Ujistěte se, že je zahrnete do svého projektu:
 
@@ -56,15 +62,15 @@ using System.IO;
 using Aspose.Zip;
 ```
 
-## Krok 1: Definujte adresář zdrojů
+## Krok 1: Definovat adresář zdrojů
 
-Zadejte cestu ke složce, která obsahuje váš šifrovaný ZIP soubor a kam bude zapisován rozbalený soubor.
+Zadejte cestu ke složce, která obsahuje váš šifrovaný ZIP soubor, a kam bude zapsán extrahovaný soubor.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Krok 2: Otevřete šifrovaný archiv
+## Krok 2: Otevřít šifrovaný archiv
 
 Konstruktor `Archive` přijímá objekt `ArchiveLoadOptions`, kde můžete nastavit `DecryptionPassword`. Toto je jádro operace **decrypt zip password**.
 
@@ -81,9 +87,9 @@ using (FileStream fs = File.OpenRead(dataDir + "StoreMutlipleFilesWithoutCompres
 }
 ```
 
-## Krok 3: Rozbalte šifrovaný záznam
+## Krok 3: Rozbalit šifrovaný záznam
 
-Jakmile je archiv otevřen, můžete přečíst první položku (nebo jakoukoli potřebnou) a zapsat dešifrovaná data do výstupního souboru. Toto demonstruje **c# extract encrypted zip** ve streamovacím režimu.
+Jakmile je archiv otevřen, můžete přečíst první položku (nebo jakoukoli jinou, kterou potřebujete) a zapsat dešifrovaná data do výstupního souboru. Toto demonstruje **c# extract encrypted zip** ve streamovacím režimu.
 
 ```csharp
 using (var decompressed = archive.Entries[0].Open())
@@ -100,37 +106,33 @@ using (var decompressed = archive.Entries[0].Open())
 ## Časté problémy a řešení
 
 | Problém | Proč se vyskytuje | Řešení |
-|---------|-------------------|--------|
+|-------|----------------|-----|
 | **Chyba nesprávného hesla** | `DecryptionPassword` neodpovídá heslu použitému k šifrování archivu. | Ověřte řetězec hesla; pamatujte, že rozlišuje velká a malá písmena. |
-| **ArchiveLoadOptions není rozpoznáno** | Používáte starší verzi Aspose.Zip, která tuto přetížení nemá. | Aktualizujte na nejnovější verzi Aspose.Zip pro .NET. |
+| **ArchiveLoadOptions není rozpoznáno** | Používáte starší verzi Aspose.Zip, která tuto přetížení neobsahuje. | Aktualizujte na nejnovější verzi Aspose.Zip pro .NET. |
 | **Velké soubory způsobují tlak na paměť** | Čtení celého souboru do paměti. | Použijte výše ukázaný streamovací přístup (čtení po blocích). |
-
-## Závěr
-
-Gratulujeme! Úspěšně jste se naučili, jak **otevřít šifrovaný archiv** soubory, dešifrovat AES‑šifrované ZIP položky a **rozbalit chráněný zip** archivy pomocí Aspose.Zip pro .NET. Tento postup vám poskytuje spolehlivý způsob, jak pracovat se zabezpečenými ZIP soubory v jakékoli C# aplikaci.
 
 ## Často kladené otázky
 
 ### Mohu použít Aspose.Zip pro .NET s jinými šifrovacími algoritmy?
-Aspose.Zip primárně podporuje šifrování AES. Zkontrolujte dokumentaci pro nejnovější aktualizace.
+Aspose.Zip primárně podporuje AES šifrování. Zkontrolujte dokumentaci pro případně nově přidané algoritmy.
 
 ### Je k dispozici zkušební verze?
-Ano, můžete získat bezplatnou zkušební verzi [zde](https://releases.aspose.com/).
+Ano, k bezplatné zkušební verzi máte přístup [zde](https://releases.aspose.com/).
 
 ### Jak mohu získat podporu pro Aspose.Zip pro .NET?
 Navštivte fórum podpory [zde](https://forum.aspose.com/c/zip/37) a získejte pomoc od komunity.
 
 ### Jaké formáty souborů jsou podporovány pro kompresi a dekompresi?
-Aspose.Zip podporuje různé formáty, včetně ZIP, 7z a TAR. Podívejte se do dokumentace pro úplný seznam.
+Aspose.Zip podporuje různé formáty, včetně ZIP, 7z a TAR. Kompletní seznam najdete v dokumentaci.
 
 ### Mohu použít Aspose.Zip pro komerční účely?
-Ano, můžete zakoupit licenci [zde](https://purchase.aspose.com/buy) pro komerční použití.
+Ano, komerční licenci můžete zakoupit [zde](https://purchase.aspose.com/buy).
 
 ---
 
-**Poslední aktualizace:** 2025-12-21  
+**Poslední aktualizace:** 2026-04-24  
 **Testováno s:** Aspose.Zip 24.11 pro .NET  
-**Autor:** Aspose
+**Autor:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

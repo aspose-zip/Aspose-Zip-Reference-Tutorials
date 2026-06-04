@@ -1,10 +1,16 @@
 ---
-date: 2025-12-21
-description: Aspose.Zip for .NET'i AES şifrelemesiyle kullanarak zip dosyalarını şifreyle
-  korumayı öğrenin. En iyi koruma için adım adım rehberimizi izleyin.
-linktitle: Password Protect with AES
+date: 2026-04-24
+description: Aspose.Zip for .NET'i AES şifrelemesiyle kullanarak **şifre korumalı
+  zip** dosyaları oluşturmayı öğrenin. Optimum koruma için adım adım rehberimizi izleyin.
+keywords:
+- create password protected zip
+- how to encrypt zip
+- aes 256 zip encryption
+- password protect zip
+- aspose zip encryption
+linktitle: AES ile Şifre Korumalı
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Aspose.Zip ile AES Şifreleme Kullanarak ZIP Dosyalarını Parola ile Koruyun
+title: Aspose.Zip kullanarak AES şifreleme ile parola korumalı ZIP dosyaları oluşturun
 url: /tr/net/password-protection-and-encryption/password-protect-with-aes/
 weight: 11
 ---
@@ -13,33 +19,33 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# AES Şifreleme Kullanarak Aspose.Zip ile ZIP Dosyalarını Şifreleme
+# Aspose.Zip kullanarak AES Şifreleme ile Parola Koruması Olan ZIP Dosyaları Oluşturma
 
 ## Giriş
 
-Günümüz dijital ortamında, **password protect zip** arşivleri, gizli verileri paylaşırken güvenli tutmanın temel bir yoludur. Aspose.Zip for .NET, endüstri standardı AES algoritmalarıyla zip dosyalarınızı şifrelemeyi son derece basit hâle getirir ve yalnızca yetkili kullanıcıların arşivi açabileceğinden emin olmanızı sağlar. Bu öğreticide, 128‑bit, 192‑bit ve 256‑bit AES anahtarlarıyla **how to encrypt zip** dosyalarını nasıl şifreleyeceğimizi adım adım gösterecek ve sadece birkaç C# satırıyla şifre korumalı dosya sıkıştırmanın nasıl yapılacağını öğreteceğiz.
+Günümüz dijital ortamında, gizli verileri paylaşırken güvenli tutmak için sık sık **parola korumalı zip** arşivleri oluşturmanız gerekir. .NET için Aspose.Zip, endüstri standardı AES algoritmalarıyla zip dosyalarınızı şifrelemeyi kolaylaştırır ve yalnızca yetkili kullanıcıların arşivi açabileceğinden emin olmanızı sağlar. Bu öğreticide, **zip dosyalarını nasıl şifreleyeceğinizi** 128‑bit, 192‑bit ve 256‑bit AES anahtarlarıyla adım adım gösterecek ve sadece birkaç C# satırıyla zip arşivi parolasıyla dosyaları nasıl sıkıştıracağınızı göstereceğiz.
 
 ## Hızlı Yanıtlar
-- **“password protect zip” ne anlama geliyor?** Bir ZIP arşivine şifre‑tabanlı bir şifreleme (ör. AES) uygulanmasıdır; böylece içeriği doğru şifre olmadan açılamaz.  
-- **Hangi AES anahtar uzunlukları destekleniyor?** Aspose.Zip, AES‑128, AES‑192 ve AES‑256 şifrelemelerini destekler.  
-- **Bunu denemek için lisansa ihtiyacım var mı?** Aspose.Zip’in ücretsiz deneme sürümü mevcuttur; üretim kullanımı için lisans gereklidir.  
+- **Parola korumalı zip ne anlama gelir?** Bu, bir ZIP arşivine parola‑tabanlı şifreleme (ör. AES) uygulamak anlamına gelir; böylece içeriği doğru parola olmadan açılamaz.  
+- **Hangi AES anahtar uzunlukları destekleniyor?** Aspose.Zip, AES‑128, AES‑192 ve AES‑256 şifrelemeyi destekler.  
+- **Bunu denemek için lisansa ihtiyacım var mı?** Aspose.Zip'in ücretsiz deneme sürümü mevcuttur; üretim kullanımı için lisans gereklidir.  
 - **Bunu .NET Core ile kullanabilir miyim?** Evet, kütüphane .NET Framework, .NET Core ve .NET 5/6+ ile çalışır.  
 - **AES‑256 en güvenli seçenek mi?** Evet, AES‑256, desteklenen yöntemler arasında en yüksek güvenlik seviyesini sunar.
 
-## password protect zip nedir?
-Bir ZIP dosyasını şifreyle korumak, arşivin içindeki girdileri doğru şifre girilene kadar karıştırılmış hâle getirmek anlamına gelir. AES (Advanced Encryption Standard), hızlı, geniş çapta desteklenen ve modern güvenlik standartlarını karşılayan tercih edilen algoritmadır.
+## Parola korumalı zip oluşturmak nedir?
+Parola korumalı zip oluşturmak, arşivi şifrelemek ve her bir girdiyi doğru parola girilene kadar karıştırılmış hâle getirmek anlamına gelir. AES (Advanced Encryption Standard), hızlı, geniş çapta desteklenen ve modern güvenlik standartlarını karşılayan tercih edilen algoritmadır.
 
-## ZIP arşivleri için AES şifrelemesi neden kullanılmalı?
-- **Güçlü güvenlik:** AES‑256, 256‑bit anahtar gücü sunar; bu da kaba kuvvet saldırılarını pratikte imkânsız kılar.  
-- **Çapraz platform uyumluluğu:** Çoğu arşiv aracı AES‑şifreli ZIP’leri anlayabilir, böylece alıcılar standart yazılımlarla dosyaları açabilir.  
+## ZIP arşivleri için neden AES şifrelemesi kullanılmalı?
+- **Güçlü güvenlik:** AES‑256, 256‑bit anahtar gücü sunar ve kaba kuvvet saldırılarını pratik olarak imkânsız kılar.  
+- **Çapraz platform uyumluluğu:** Çoğu arşiv aracı AES‑şifreli ZIP'leri anlayabilir, böylece alıcılar bunları standart yazılımlarla açabilir.  
 - **Basit API:** Aspose.Zip, karmaşık kriptografik detayları soyutlayarak iş mantığınıza odaklanmanızı sağlar.
 
 ## Önkoşullar
 
-Başlamadan önce şunların kurulu olduğundan emin olun:
+Başlamadan önce şunların olduğundan emin olun:
 
-- **Aspose.Zip for .NET** projenize entegre edilmiş olmalı. İndirmek için [buraya](https://releases.aspose.com/zip/net/) tıklayın.  
-- Sıkıştırmak istediğiniz dosyaları içeren bir klasör (örnek olarak `dataDir` olarak adlandıracağız).
+- **Aspose.Zip for .NET** projenize entegre edilmiş. Bunu [buradan](https://releases.aspose.com/zip/net/) indirebilirsiniz.
+- Sıkıştırmak istediğiniz dosyaları içeren bir klasör (biz buna `dataDir` diyeceğiz).
 
 ## Ad Alanlarını İçe Aktarın
 
@@ -49,9 +55,9 @@ using Aspose.Zip.Saving;
 using System.IO;
 ```
 
-## AES‑128 ile zip dosyalarını nasıl şifreleyebilirsiniz
+## AES‑128 ile parola korumalı zip nasıl oluşturulur
 
-Bu ilk adımda bir ZIP arşivi oluşturup **AES‑128** ile koruyoruz. Arşivi kilitlemek için `"p@s$"` şifresi kullanılıyor.
+Bu ilk adımda bir ZIP arşivi oluşturuyor ve **AES‑128** ile koruyoruz. Arşivi kilitlemek için `"p@s$"` parolası kullanılır.
 
 ```csharp
 //ExStart:PasswordProtectWithAES128
@@ -69,11 +75,11 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES128_out.z
 //ExEnd: PasswordProtectWithAES128
 ```
 
-> **Pro ipucu:** Şifrelerinizi güvenli bir kasada tutun; üretim kodunda asla sabit kodlamayın.
+> **Pro ipucu:** Parolalarınızı güvenli bir kasada tutun; üretim kodunda asla sabit kodlamayın.
 
-## AES‑192 ile zip doslarını nasıl şifreleyebilirsiniz
+## AES‑192 ile parola korumalı zip nasıl oluşturulur
 
-Daha güçlü bir koruma seviyesine ihtiyacınız varsa **AES‑192**’ye geçin. Kod aynı kalır; yalnızca `EncryptionMethod` değişir.
+Daha güçlü bir koruma seviyesine ihtiyacınız varsa, **AES‑192**'ye geçin. Kod aynı kalır; sadece `EncryptionMethod` değişir.
 
 ```csharp
 //ExStart:PasswordProtectWithAES192
@@ -91,9 +97,9 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES192_out.z
 //ExEnd:PasswordProtectWithAES192
 ```
 
-## AES‑256 ile zip doslarını nasıl şifreleyebilirsiniz (aes 256 zip encryption)
+## AES‑256 (aes 256 zip encryption) ile parola korumalı zip nasıl oluşturulur
 
-En yüksek güvenlik için **AES‑256** kullanın. Hassas kurumsal veriler veya düzenlemeye tabi sektörler için önerilen ayardır.
+En yüksek güvenlik için **AES‑256** kullanın. Bu, hassas kurumsal veri veya düzenlemeye tabi sektörler için önerilen ayardır.
 
 ```csharp
 //ExStart:PasswordProtectWithAES256
@@ -111,38 +117,38 @@ using (FileStream zipFile = File.Open(dataDir + "PasswordProtectWithAES256_out.z
 //ExEnd:PasswordProtectWithAES256 
 ```
 
-> **Not:** AES‑256, dokümantasyon ve arama sorgularında sıkça *aes 256 zip encryption* olarak adlandırılır.
+> **Not:** AES‑256, belgelerde ve arama sorgularında sık sık *aes 256 zip encryption* olarak adlandırılır.
 
-## Yaygın Sorunlar ve Çözümleri
+## Yaygın Sorunlar ve Çözümler
 
 | Sorun | Neden | Çözüm |
-|-------|-------|-------|
-| Arşivi açarken “Invalid password” hatası | Yanlış şifre veya eşleşmeyen şifreleme yöntemi | Şifre dizesini kontrol edin ve oluşturma ile çıkarma sırasında aynı `EncryptionMethod` kullanıldığından emin olun. |
-| Eski unzip araçları arşivi açamıyor | Eski araçlar AES şifrelemeyi desteklemeyebilir | Modern bir unzip aracı (ör. 7‑Zip) kullanın veya uyumluluk gerekiyorsa standart ZIP şifrelemesini seçin. |
-| Büyük dosyalar bellek baskısına neden oluyor | Dosya sıkıştırılmadan önce belleğe tamamen yüklüyor | `FileStream` kullanarak dosyayı akış halinde işleyin (gösterildiği gibi) ve tüm içeriği bir byte dizisine yüklemekten kaçının. |
+|-------|-------|-----|
+| Arşivi açarken “Geçersiz parola” hatası | Yanlış parola veya eşleşmeyen şifreleme yöntemi | Parola dizesini doğrulayın ve oluşturma ve çıkarma sırasında aynı `EncryptionMethod` kullanıldığından emin olun. |
+| Arşiv eski unzip araçlarıyla açılamıyor | Eski araçlar AES şifrelemesini desteklemeyebilir | Modern bir unzip yardımcı programı (ör. 7‑Zip) kullanın veya uyumluluk gerekiyorsa standart ZIP şifrelemesini seçin. |
+| Büyük dosyalar bellek baskısına neden olur | Dosyanın tamamı sıkıştırmadan önce belleğe yüklenir | `FileStream` kullanarak dosyayı akış halinde işleyin (gösterildiği gibi) ve tüm içeriği bir bayt dizisine yüklemekten kaçının. |
 
-## Ek Sıkça Sorulan Sorular
+## Sıkça Sorulan Sorular
 
-**Q: Aspose.Zip kullanarak C# ile zip dosyasını nasıl şifrelerim?**  
-A: Yukarıdaki kod örneklerinde gösterildiği gibi `AesEcryptionSettings` sınıfını istediğiniz `EncryptionMethod` (AES128, AES192 veya AES256) ile kullanın.
+**S: C# kullanarak Aspose.Zip ile zip dosyasını nasıl şifrelerim?**  
+C: Yukarıdaki kod örneklerinde gösterildiği gibi, istediğiniz `EncryptionMethod` (AES128, AES192 veya AES256) ile `AesEcryptionSettings` sınıfını kullanın.
 
-**Q: Tek bir adımda şifre korumalı dosyaları sıkıştırabilir miyim?**  
-A: Evet, Aspose.Zip, `CreateEntry` çağrısında aynı anda girdileri arşive eklemenize ve AES şifrelemesi uygulamanıza olanak tanır.
+**S: Dosyaları tek adımda parola korumasıyla sıkıştırabilir miyim?**  
+C: Evet, Aspose.Zip, arşive giriş eklemenize ve aynı `CreateEntry` çağrısında AES şifrelemesini uygulamanıza olanak tanır, örnek gibi.
 
-**Q: Aspose.Zip büyük arşivleri (birden fazla GB) şifrelemeyi destekliyor mu?**  
-A: Kesinlikle. `FileStream` ile dosyaları akış halinde işleyerek, tüm içeriği belleğe yüklemeden neredeyse sınırsız boyutta arşivleri şifreleyebilirsiniz.
+**S: Aspose.Zip büyük arşivleri (birkaç GB) şifrelemeyi destekliyor mu?**  
+C: Kesinlikle. Dosyaları `FileStream` ile akış halinde işleyerek, her şeyi belleğe yüklemeden neredeyse her boyutta arşivi şifreleyebilirsiniz.
 
-**Q: Oluşturulan şifreli zip’in bütünlüğünü doğrulamanın bir yolu var mı?**  
-A: Aynı şifreyle arşivi açıp girdileri tekrar okuyabilirsiniz; herhangi bir uyumsuzluk bir istisna fırlatarak bozulmayı gösterir.
+**S: Oluşturulduktan sonra şifreli zip'in bütünlüğünü doğrulamanın bir yolu var mı?**  
+C: Aynı parola ile arşivi açıp girişleri tekrar okuyabilirsiniz; herhangi bir uyumsuzluk, bozulmayı gösteren bir istisna fırlatır.
 
-**Q: AES‑256 sıkıştırma oranını etkiler mi?**  
-A: Şifreleme sıkıştırmadan sonra uygulanır, bu yüzden sıkıştırma oranı aynı kalır; sadece şifreli veri küçük bir ek yükle büyür.
+**S: AES‑256 sıkıştırma oranını etkiler mi?**  
+C: Şifreleme, sıkıştırmadan sonra uygulanır, bu yüzden sıkıştırma oranı aynı kalır; sadece şifreli veri, küçük bir ek yükle biraz daha büyük olur.
 
 ---
 
-**Son Güncelleme:** 2025-12-21  
-**Test Edilen:** Aspose.Zip for .NET 24.11 (latest)  
-**Yazar:** Aspose
+**Son Güncelleme:** 2026-04-24  
+**Test Edilen Versiyon:** Aspose.Zip for .NET 24.11 (latest)  
+**Yazar:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

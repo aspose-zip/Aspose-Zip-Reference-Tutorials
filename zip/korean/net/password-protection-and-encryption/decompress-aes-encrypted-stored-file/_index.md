@@ -1,10 +1,14 @@
 ---
-date: 2025-12-21
-description: Aspose.Zip for .NET을 사용하여 암호화된 아카이브 파일(AES)을 여는 방법을 배워보세요. 이 단계별 가이드는
-  zip 비밀번호 보호 파일을 복호화하고 C#에서 보호된 zip 아카이브를 압축 해제하는 방법을 보여줍니다.
-linktitle: Decompress AES Encrypted Stored File
+date: 2026-04-24
+description: Aspose.Zip for .NET를 사용하여 비밀번호로 보호된 zip 파일을 추출하는 방법을 배웁니다. 이 단계별 가이드는
+  C#에서 AES 복호화 및 추출을 보여줍니다.
+keywords:
+- extract password protected zip
+- Aspose.Zip AES decryption
+- .NET zip extraction
+linktitle: AES 암호화된 저장 파일 압축 해제
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Aspose.Zip for .NET으로 암호화된 아카이브 열기 – AES 암호화 파일 복호화
+title: Aspose.Zip for .NET을 사용하여 비밀번호로 보호된 ZIP 압축 풀기
 url: /ko/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/
 weight: 19
 ---
@@ -13,60 +17,62 @@ weight: 19
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET를 사용하여 암호화된 아카이브 열기 – AES 암호화 파일 복호화
+# Aspose.Zip for .NET을 사용한 비밀번호 보호 ZIP 추출
 
 ## 소개
 
-환영합니다! 이 기본 튜토리얼에서는 **AES 필러를 사용하는 필러화된 아카이브** 파일을 Aspose.Zip for .NET으로 여는 방법을 배웁니다. 임시 헬리콥터를 만드는 서버-사이드 서비스를 구축하는 것은, *비밀번호로 보호된 zip을 복호화*하고 *보호된 zip 파일을 압축 해제하는* 것은 일반적인 요구 사항입니다. 환경 설정부터 C#에서 AES‑암호화된 ZIP 파일의 내용을 추출하는 전체 과정까지만으로 안내합니다.
+Welcome! In this comprehensive tutorial you’ll learn **비밀번호 보호 ZIP 추출 방법** files that use AES encryption with Aspose.Zip for .NET. Whether you’re building a desktop utility, a cloud‑based service, or an automated batch job, being able to *비밀번호 보호 ZIP 복호화* archives and *보호된 ZIP 압축 해제* files is a frequent requirement. We’ll walk through everything you need—from installing the library to streaming the decrypted content to disk—in clean, easy‑to‑follow C# code.
 
 ## 빠른 답변
-- **“암호의 작가 작곡가”가 무엇을 의미하는지?**로 포레스트된 ZIP 파일을 이해하여 프로그램적으로 내용을 추출하는 것을 의미합니다.
-- **어떤 클래스가 AES 복호화를 담당하는건가요?** Aspose.Zip for .NET이 AES‑암호화 아카이브에 대한 내장 지원을 제공합니다.
-- **프로덕션에 권한이 필요한가요?** 무료 체험판을 이용하실 수 있습니다.
-- **.NET 6+와 함께 사용할 수 있습니까?** 물론입니다 – 교실은 .NET Standard 2.0을 타깃으로 하며 .NET 6, .NET 7 및 이후 버전에서도 동작합니다.
-- ** 독창적인 코드는 어떻게 됩니까?** 포스틱으로 압축을 로드하고, 가져온 것을 찾았고, 복호화된 데이터를 파일로 스트리밍합니다.
+- **“비밀번호 보호 ZIP 추출”이란 무엇인가요?** It’s the process of opening a password‑secured ZIP archive and retrieving its contents programmatically.  
+- **어떤 라이브러리가 AES 복호화를 처리하나요?** Aspose.Zip for .NET offers native AES‑256 support without extra dependencies.  
+- **프로덕션에 라이선스가 필요합니까?** Yes – a commercial license is required for production; a free trial is available for evaluation.  
+- **.NET 6+와 함께 사용할 수 있나요?** Absolutely – the library targets .NET Standard 2.0 and works with .NET 6, .NET 7, and later.  
+- **일반적인 코드 흐름은 어떻게 되나요?** Load the archive with a password, locate the entry, and stream the decrypted bytes to a file.
 
-## '암호화된 아카이브 열기' 작업이란 무엇인가요?
+## 비밀번호 보호 ZIP 파일 추출 방법
 
-푸시된 아카이브를 연다는 것은 포레스트(기본 값은 AES‑256)로 보호된 ZIP 파일을 로드한 뒤에, 매뉴얼 복호화 외에는 읽을 수 있는 것을 의미합니다. Aspose.Zip은 세부적인 세부 사항을 추상화하여 비즈니스에 집중할 수 있을 것 같습니다.
+Below is a step‑by‑step guide that shows exactly how to open an AES‑encrypted archive and write the decrypted entry to disk.
 
-## AES ZIP 파일을 해독하기 위해 C#용 Aspose.Zip을 사용하는 이유는 무엇입니까?
+### “암호화된 아카이브 열기” 작업이란?
 
-- **완전한 AES 지원** – 128‑, 192‑ 및 256비트 키를 자동으로 처리합니다.
-- **간단한 API** – 포스틱(`DecryptionPassword`)를 제공하는 한 줄 코드만 필요합니다.
-- **외부 종속성 없음** – OpenSSL 등이 존재하는 것을 번들링할 필요가 없습니다.
-- **강력한 오류 처리** – 잘못된 포스트나 징조에 의해 제거된 얼룩을 제거합니다.
+Opening an encrypted archive means loading a ZIP file that has been secured with a password (AES‑256 by default) and then reading its entries without manual cryptographic handling. Aspose.Zip abstracts the low‑level details, letting you focus on your business logic.
 
-## 전제조건
+### AES ZIP 파일을 복호화하기 위해 C#에서 Aspose.Zip을 사용하는 이유는?
 
-코드 작성을 시작하기 전에 다음 사항을 확인하세요:
+- **Full AES support** – Handles 128‑, 192‑ and 256‑bit keys automatically.  
+- **Simple API** – One line of code to supply the password (`DecryptionPassword`).  
+- **No external dependencies** – No need to bundle OpenSSL or other native libraries.  
+- **Robust error handling** – Throws clear exceptions for wrong passwords or corrupted archives.  
 
-- Aspose.Zip for .NET: Aspose.Zip 라이브러리가 설치되어 있어야 합니다. 문서는 [여기](https://reference.aspose.com/zip/net/)에서 받을 수 있습니다.
+## 사전 요구 사항
 
-- 샘플 AES 암호화 파일: 샘플 AES 파일은 [이 링크](https://releases.aspose.com/zip/net/)에서 다운로드하세요.
+Before we dive into the code, make sure you have the following prerequisites in place:
 
-- 귀하의 문서 디렉토리: 압축 해제 파일을 디버깅을 설정합니다. 코드 스니펫의 "Your Document Directory"를 실제 위치로 바꾸세요.
+- Aspose.Zip for .NET: Ensure that you have the Aspose.Zip library installed. You can find the documentation [here](https://reference.aspose.com/zip/net/).
+- Sample AES Encrypted File: Download a sample AES encrypted file from [this link](https://releases.aspose.com/zip/net/).
+- Your Document Directory: Set up a folder where you want to store the decompressed file. Replace “Your Document Directory” in the code snippet with your actual directory path.
 
 ## 네임스페이스 가져오기
 
-제공된 코드 스니펫에서 다양한 네임스페이스가 사용되는 것을 볼 수 있습니다. 프로젝트에 다음 네임스페이스를 포함하세요:
+In the code snippet provided, you'll notice the usage of various namespaces. Make sure to include these in your project:
 
 ```csharp
 using System.IO;
 using Aspose.Zip;
 ```
 
-## 1단계: 리소스 디렉터리 정의
+## 단계 1: 리소스 디렉터리 정의
 
-암호화된 ZIP 파일이 위치한 폴더와 추출된 파일이 기록될 폴더의 경로를 지정합니다.
+Specify the path to the folder that contains your encrypted ZIP file and where the extracted file will be written.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## 2단계: 암호화된 아카이브 열기
+## 단계 2: 암호화된 아카이브 열기
 
-`Archive` 생성자는 `ArchiveLoadOptions`를 수신하여 `DecryptionPassword`에 접근할 수 있습니다. 이것이 **zip 비밀번호 해독** 작업의 핵심입니다.
+The `Archive` constructor accepts an `ArchiveLoadOptions` object where you can set the `DecryptionPassword`. This is the core of the **decrypt zip password** operation.
 
 ```csharp
 using (FileStream fs = File.OpenRead(dataDir + "StoreMutlipleFilesWithoutCompressionWithPassword_out.zip"))
@@ -81,9 +87,9 @@ using (FileStream fs = File.OpenRead(dataDir + "StoreMutlipleFilesWithoutCompres
 }
 ```
 
-## 3단계: 암호화된 항목의 압축 풀기
+## 단계 3: 암호화된 엔트리 압축 해제
 
-아카이브가 열리면 첫 번째 엔트리(또는 필요한 엔트리)를 읽고 복호화된 바이트를 출력 파일에 기록합니다. 이는 **c# extract encrypted zip**을 스트리밍 방식으로 보여줍니다.
+Now that the archive is opened, you can read the first entry (or any entry you need) and write the decrypted bytes to the output file. This demonstrates **c# extract encrypted zip** in a streaming fashion.
 
 ```csharp
 using (var decompressed = archive.Entries[0].Open())
@@ -97,42 +103,41 @@ using (var decompressed = archive.Entries[0].Open())
 }
 ```
 
-## 일반적인 문제 및 해결 방법
+## 일반적인 문제와 해결책
 
-| 이슈 | 왜 이런 일이 일어나는가 | 수정 |
-|-------|---|----|
-| **잘못된 비밀번호 오류** | `DecryptionPassword`가 아카이브를 찾을 때 사용된 포스트와 일치하지 않습니다. | 포스틱 문자열을 연결하세요; 대를 구분합니다. |
-| **ArchiveLoadOptions가 인식되지 않음** | 해당 오버로드를 지원하지 않는 오래된 버전의 Aspose.Zip을 사용하고 있습니다. | .NET용 최신 Aspose.Zip을 업데이트하세요. |
-| **대형 파일로 인해 메모리 압박이 발생함** | 파일 전체를 메모리로 검색해 보세요. | 압도적인 트리밍(버퍼링 로고)을 사용하세요. |
-
-## 결론
-
-축하합니다! 이제 **암호화된 아카이브** 파일을 표시하고, AES‑암호화된 ZIP을 복호화하며, **보호된 zip** 압축을 압축 해제하는 방법을 Aspose.Zip for .NET을 통해 숙달되었습니다. 이 워크플로우는 모든 C#의 보안 ZIP 파일을 처리할 수 있는 방법을 제공합니다.
+| 문제 | 발생 원인 | 해결 방법 |
+|-------|----------------|-----|
+| **잘못된 비밀번호 오류** | The `DecryptionPassword` does not match the one used to encrypt the archive. | Verify the password string; remember it is case‑sensitive. |
+| **ArchiveLoadOptions 인식 안 됨** | Using an older version of Aspose.Zip that lacks this overload. | Update to the latest Aspose.Zip for .NET release. |
+| **대용량 파일로 메모리 압박 발생** | Reading the whole file into memory. | Use the streaming approach shown above (buffered read). |
 
 ## 자주 묻는 질문
 
 ### Aspose.Zip for .NET을 다른 암호화 알고리즘과 함께 사용할 수 있나요?
-Aspose.Zip은 주로 AES 파일을 지원합니다. 최신 업데이트는 문서를 확인하세요.
 
-### 체험판이 있나요?
-예, 무료 체험판은 [여기](https://releases.aspose.com/)에서 이용하실 수 있습니다.
+Aspose.Zip primarily supports AES encryption. Check the documentation for any newly added algorithms.
 
-### .NET용 Aspose.Zip에 대한 지원은 어떻게 받을 수 있나요?
-커뮤니티 지원은 [여기](https://forum.aspose.com/c/zip/37)에서 보낼 수 있습니다.
+### 체험판이 제공되나요?
 
-### 압축 및 압축 풀기가 지원되는 파일 형식은 무엇입니까?
-Aspose.Zip은 ZIP, 7z, TAR 등 다양한 형식을 지원합니다. 자세한 목록은 문서를 참고하세요.
+Yes, you can access a free trial [here](https://releases.aspose.com/).
+
+### Aspose.Zip for .NET에 대한 지원을 어떻게 받을 수 있나요?
+
+Visit the support forum [here](https://forum.aspose.com/c/zip/37) to get assistance from the community.
+
+### 압축 및 압축 해제에 지원되는 파일 형식은 무엇인가요?
+
+Aspose.Zip supports various formats, including ZIP, 7z, and TAR. Refer to the documentation for a comprehensive list.
 
 ### Aspose.Zip을 상업적 목적으로 사용할 수 있나요?
-예, 인스턴스를 사용하는 곳은 [여기](https://purchase.aspose.com/buy)에서 구매하는 것입니다.
+
+Yes, you can purchase a license [here](https://purchase.aspose.com/buy) for commercial use.
 
 ---
 
-**최종 업데이트:** 2025-12-21
-**테스트 대상:** .NET용 Aspose.Zip 24.11
-**저자:** Aspose  
-
----
+**마지막 업데이트:** 2026-04-24  
+**테스트 환경:** Aspose.Zip 24.11 for .NET  
+**작성자:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
