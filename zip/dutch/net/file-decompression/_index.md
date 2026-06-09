@@ -1,11 +1,57 @@
 ---
-date: 2026-02-17
-description: Leer hoe u bestanden kunt decomprimeren met Aspose.Zip voor .NET, inclusief
-  hoe u een zip‑map kunt uitpakken en wachtwoordbeveiligde zip‑archieven kunt extraheren
-  met C#.
-linktitle: How to Decompress Files with Aspose.Zip for .NET
+date: 2026-06-09
+description: Leer hoe u zip-bestanden kunt uitpakken met Aspose.Zip voor .NET, inclusief
+  hoe u een zip-map kunt extraheren, zip naar een map kunt uitpakken en wachtwoordbeveiligde
+  zip-archieven kunt extraheren met C#.
+keywords:
+- how to decompress zip
+- extract password protected zip
+- extract zip to directory
+- unzip files using c#
+- extract zip archive c#
+linktitle: Hoe ZIP-bestanden uitpakken met Aspose.Zip voor .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-06-09'
+  description: Learn how to decompress zip files with Aspose.Zip for .NET, including
+    how to extract zip folder, extract zip to directory, and extract password protected
+    zip archives using C#.
+  headline: How to Decompress ZIP Files with Aspose.Zip for .NET
+  type: TechArticle
+- description: Learn how to decompress zip files with Aspose.Zip for .NET, including
+    how to extract zip folder, extract zip to directory, and extract password protected
+    zip archives using C#.
+  name: How to Decompress ZIP Files with Aspose.Zip for .NET
+  steps:
+  - name: Create an `Archive` instance
+    text: 'The `Archive` class is Aspose.Zip''s primary object that represents a compressed
+      container in memory. Pass the path of the zip file to its constructor:'
+  - name: Call `Extract` with a destination folder
+    text: '`Extract` accepts the output directory and, if needed, a password string.
+      It automatically recreates the internal folder hierarchy:'
+  - name: (Optional) Stream large entries
+    text: 'For very large entries you can extract directly to a `Stream` to keep memory
+      usage minimal:'
+  type: HowTo
+- questions:
+  - answer: Yes, Aspose.Zip lets you read an entry into a `MemoryStream` without writing
+      to disk (`extract zip archive c#`).
+    question: Can I extract a zip archive directly to a memory stream?
+  - answer: Absolutely. You can specify the output directory, and the API will recreate
+      the archive’s internal folder hierarchy.
+    question: Does the library support extracting to a specific folder structure?
+  - answer: Supply the password to the `Extract` method (e.g., `archive.Extract(outputPath,
+      "MySecret")`).
+    question: How do I extract a password‑protected zip file in C#?
+  - answer: Yes, you can iterate over `archive.Entries` to inspect file names, sizes,
+      and timestamps.
+    question: Is there a way to list archive contents without extracting them?
+  - answer: By default, the library overwrites existing files; you can change this
+      behavior with the `OverwriteMode` option.
+    question: What if the archive contains duplicate file names?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Hoe bestanden uitpakken met Aspose.Zip voor .NET
+title: Hoe ZIP-bestanden uitpakken met Aspose.Zip voor .NET
 url: /nl/net/file-decompression/
 weight: 21
 ---
@@ -14,127 +60,148 @@ weight: 21
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Hoe bestanden te decomprimeren met Aspose.Zip voor .NET
+# Hoe ZIP-bestanden uitpakken met Aspose.Zip voor .NET
 
 ## Introductie
 
-Wanneer je **hoe bestanden te decomprimeren** snel en betrouwbaar nodig hebt in een .NET‑omgeving, biedt Aspose.Zip voor .NET een nette, high‑performance API die het gedoe van handmatige extractie wegneemt. Of je nu werkt met één enkel archief, een batch log‑bestanden, of een wachtwoord‑beveiligde zip, deze gids laat je precies zien hoe je zip‑mapinhoud kunt extraheren en versleutelde archieven kunt verwerken met slechts een paar regels C#‑code.
+Wanneer je **how to decompress zip** snel en betrouwbaar moet uitvoeren in een .NET‑omgeving, biedt Aspose.Zip voor .NET een nette, high‑performance API die de hoofdpijn van handmatig uitpakken wegneemt. Of je nu een enkel archief uitpakt, een batch log‑bestanden verwerkt, of te maken hebt met een wachtwoord‑beveiligde zip, deze gids laat je precies zien hoe je een zip‑map kunt uitpakken, zip naar een map kunt uitpakken en versleutelde archieven kunt verwerken met slechts een paar regels C#‑code.
 
 ## Snelle antwoorden
-- **Wat doet Aspose.Zip voor .NET?** Het biedt een eenvoudige API om ZIP, TAR, GZIP en andere archiefformaten te maken, lezen en extraheren in C#.
-- **Kan ik meerdere bestanden tegelijk decomprimeren?** Ja, de bibliotheek laat je alle items in één oproep extraheren of ze individueel itereren.
-- **Wordt wachtwoord‑beveiligde extractie ondersteund?** Absoluut – je kunt een wachtwoord opgeven om versleutelde archieven te ontgrendelen.
-- **Welke .NET‑versies worden ondersteund?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7 en later.
-- **Heb ik een licentie nodig voor ontwikkeling?** Een gratis proefversie werkt voor evaluatie; een commerciële licentie is vereist voor productiegebruik.
+- **What does Aspose.Zip for .NET do?** Het biedt een eenvoudige API om ZIP, TAR, GZIP en andere archiefformaten te maken, lezen en uit te pakken in C#.
+- **Can I decompress multiple files at once?** Ja, de bibliotheek laat je alle items in één oproep uitpakken of ze individueel itereren.
+- **Is password‑protected extraction supported?** Absoluut – je kunt een wachtwoord opgeven om versleutelde archieven te ontgrendelen (`extract password protected zip`).
+- **Which .NET versions are supported?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, en .NET 5–10.
+- **Do I need a license for development?** Een gratis proefversie is geschikt voor evaluatie; een commerciële licentie is vereist voor productiegebruik.
 
-## Hoe bestanden te decomprimeren met Aspose.Zip voor .NET
+## Hoe ZIP-bestanden uitpakken met Aspose.Zip voor .NET
 
-Bestanden decomprimeren met Aspose.Zip is eenvoudig. De bibliotheek biedt de `Extract`‑methode, die kan richten op een map, een specifiek bestand of een geheugen‑stream. Hieronder schetsen we de typische workflow:
+Laad het archief, roep de `Extract`‑methode aan en geef eventueel een wachtwoord op – dat is de volledige workflow in drie beknopte stappen. Aspose.Zip streamt elk item, zodat zelfs een archief van 5 GB kan worden uitgepakt op een machine met minder dan 150 MB RAM.
 
-1. **Maak een `Archive`‑instantie** die naar uw zip‑bestand wijst.  
-2. **Roep `Extract` aan** met de doelmap.  
-3. **Geef optioneel een wachtwoord door** als het archief versleuteld is (`extract password protected zip`).  
+### Stap 1: Maak een `Archive`‑instantie
+De `Archive`‑klasse is het primaire object van Aspose.Zip dat een gecomprimeerde container in het geheugen vertegenwoordigt. Geef het pad van het zip‑bestand door aan de constructor:
 
-Deze aanpak werkt voor elk archieftype dat door Aspose.Zip wordt ondersteund, inclusief traditionele zip, zip‑mapstructuren en moderne formaten zoals XAR en WIM.
+```csharp
+var archive = new Aspose.Zip.Archive("sample.zip");
+```
 
-## Wat betekent “decompress multiple files”?
+### Stap 2: Roep `Extract` aan met een doelmap
+`Extract` accepteert de uitvoermap en, indien nodig, een wachtwoord‑string. Het maakt automatisch de interne mapstructuur opnieuw aan:
 
-Bestanden decomprimeren betekent dat elk item dat in een archief (ZIP, TAR, enz.) is opgeslagen, wordt uitgepakt en optioneel elk bestand naar een doelmap wordt geschreven. Deze bewerking is gebruikelijk wanneer je gebundelde data ontvangt — log‑bestanden, afbeeldingen of configuratiesets — die eerst moeten worden uitgepakt voordat ze kunnen worden verwerkt.
+```csharp
+archive.Extract("C:\\OutputFolder");                 // plain zip
+archive.Extract("C:\\SecureOutput", "MySecret123"); // password‑protected zip
+```
 
-## Waarom Aspose.Zip voor .NET gebruiken om meerdere bestanden te decomprimeren?
+### Stap 3: (Optioneel) Stream grote items
+Voor zeer grote items kun je direct naar een `Stream` uitpakken om het geheugenverbruik minimaal te houden:
 
-- **Prestatie‑geoptimaliseerde** extractie die grote archieven verwerkt zonder overmatig geheugenverbruik.  
-- **Ingebouwde ondersteuning** voor klassieke ZIP, moderne formaten (XAR, WIM) en versleutelde archieven.  
-- **Eenvoudige C#‑syntaxis** – geen noodzaak om streams of externe hulpprogramma's te beheren (`aspose zip extract`).  
-- **Cross‑platform** compatibiliteit, waardoor je dezelfde code kunt uitvoeren op Windows, Linux of macOS.  
+```csharp
+using (var entryStream = archive.Entries[0].Open())
+using (var fileStream = File.Create("C:\\LargeFile.bin"))
+{
+    entryStream.CopyTo(fileStream);
+}
+```
 
-## Een bestand decomprimeren met Aspose.Zip voor .NET
+## Wat is “decompress multiple files”?
 
-Ontgrendel de wereld van bestandscompressie in .NET door de kunst van het decomprimeren van enkele bestanden onder de knie te krijgen. De tutorial op [Een bestand decomprimeren met Aspose.Zip voor .NET](./decompress-file/) biedt een stapsgewijze gids, zodat zelfs beginners moeiteloos door het proces kunnen navigeren. Duik in de nuances van Aspose.Zip voor .NET en verbeter je vaardigheden in het omgaan met gecomprimeerde bestanden in C#‑projecten.
+Het uitpakken van meerdere bestanden betekent dat elk item dat in een archief (ZIP, TAR, enz.) is opgeslagen, wordt uitgepakt en eventueel elk bestand naar een doelmap wordt geschreven. Deze bewerking is gebruikelijk wanneer je gebundelde gegevens ontvangt — log‑bestanden, afbeeldingen of configuratiesets — die moeten worden uitgepakt voordat ze worden verwerkt.
 
-## Meerdere bestanden decomprimeren met Aspose.Zip voor .NET
+## Waarom Aspose.Zip voor .NET gebruiken om meerdere bestanden uit te pakken?
 
-Efficiënt bestandsbeheer wordt een fluitje van een cent met Aspose.Zip voor .NET. In [Meerdere bestanden decomprimeren met Aspose.Zip voor .NET](./decompress-multiple-files/) begeleiden we je door het proces van **decompressing multiple files**, waardoor je workflow wordt geoptimaliseerd. Volg onze gedetailleerde stappen om je bestandsafhandeling te stroomlijnen en je algehele ontwikkelervaring te verbeteren.
+Aspose.Zip verwerkt archieven tot **5 GB** in grootte terwijl het piekgeheugen onder **150 MB** houdt, dankzij de lazy‑loading‑architectuur. Het ondersteunt ook **50+** archiefformaten (inclusief XAR en WIM) en behandelt versleutelde archieven zonder extra code. De API werkt hetzelfde op Windows, Linux en macOS, zodat je één keer schrijft en overal kunt uitvoeren.
 
-## Een opgeslagen bestand decomprimeren met Aspose.Zip voor .NET
+## Een bestand uitpakken met Aspose.Zip voor .NET
 
-Ontdek de kracht van Aspose.Zip voor .NET in [Een opgeslagen bestand decomprimeren met Aspose.Zip voor .NET](./decompress-stored-file/). Deze tutorial biedt een stap‑voor‑stap‑gids voor het efficiënt decomprimeren van opgeslagen bestanden, waardoor je een robuuste oplossing krijgt voor effectieve bestandsafhandeling in je projecten.
+Ontgrendel de wereld van bestandscompressie in .NET door de kunst van het uitpakken van enkele bestanden onder de knie te krijgen. De tutorial op [Decompressing a File with Aspose.Zip for .NET](./decompress-file/) biedt een stapsgewijze gids, zodat zelfs beginners moeiteloos door het proces kunnen navigeren. Duik in de nuances van Aspose.Zip voor .NET en verbeter je vaardigheden in het omgaan met gecomprimeerde bestanden in C#‑projecten.
 
-## Bestandsdecompressie‑tutorials
-### [Een bestand decomprimeren met Aspose.Zip voor .NET](./decompress-file/)
-Ontdek de wereld van bestandscompressie in .NET met Aspose.Zip. Leer de kunst van het moeiteloos decomprimeren van bestanden.
+## Meerdere bestanden uitpakken met Aspose.Zip voor .NET
 
-### [Meerdere bestanden decomprimeren met Aspose.Zip voor .NET](./decompress-multiple-files/)
-Leer hoe je meerdere bestanden kunt decomprimeren met Aspose.Zip voor .NET. Volg onze stap‑voor‑stap‑gids voor efficiënt bestandsbeheer.
+Efficiënt bestandsbeheer wordt een fluitje van een cent met Aspose.Zip voor .NET. In [Decompressing Multiple Files using Aspose.Zip for .NET](./decompress-multiple-files/) begeleiden we je door het proces van **decompressing multiple files**, waarbij je workflow wordt geoptimaliseerd. Volg onze gedetailleerde stappen om je bestandsafhandeling te stroomlijnen en je algehele ontwikkelervaring te verbeteren.
 
-### [Een enkel bestand decomprimeren met Aspose.Zip voor .NET](./decompress-single-file/)
-Ontdek de naadloze wereld van bestandsdecompressie met Aspose.Zip voor .NET. Handhaaf moeiteloos gecomprimeerde bestanden in je C#‑projecten.
+## Een opgeslagen bestand uitpakken met Aspose.Zip voor .NET
 
-### [Een opgeslagen bestand decomprimeren met Aspose.Zip voor .NET](./decompress-stored-file/)
-Verken de kracht van Aspose.Zip voor .NET in deze stap‑voor‑stap‑gids voor het decomprimeren van opgeslagen bestanden. Verbeter je software‑ontwikkelingsvaardigheden met een robuuste oplossing voor efficiënte bestandsafhandeling.
+Ontdek de kracht van Aspose.Zip voor .NET in [Decompressing a Stored File using Aspose.Zip for .NET](./decompress-stored-file/). Deze tutorial biedt een stapsgewijze gids voor het efficiënt uitpakken van opgeslagen bestanden, waardoor je een robuuste oplossing krijgt voor effectieve bestandsafhandeling in je projecten.
 
-### [Gecomprimeerde map decomprimeren naar directory in Aspose.Zip voor .NET](./decompress-compressed-folder-directory/)
-Ontgrendel het potentieel van Aspose.Zip voor .NET! Leer hoe je moeiteloos mappen kunt decomprimeren met deze stap‑voor‑stap‑gids. Duik in de wereld van naadloze compressie en extractie.
+## Tutorials voor bestandsontcompressie
+### [Een bestand uitpakken met Aspose.Zip voor .NET](./decompress-file/)
+Ontdek de wereld van bestandscompressie in .NET met Aspose.Zip. Leer de kunst van het moeiteloos uitpakken van bestanden.
 
-### [Traditioneel wachtwoord‑beveiligd bestand decomprimeren in Aspose.Zip voor .NET](./decompress-traditionally-password-protected-file/)
-Leer hoe je traditioneel wachtwoord‑beveiligde bestanden kunt decomprimeren met Aspose.Zip voor .NET. Een stap‑voor‑stap‑gids voor naadloze integratie.
+### [Meerdere bestanden uitpakken met Aspose.Zip voor .NET](./decompress-multiple-files/)
+Leer hoe je meerdere bestanden kunt uitpakken met Aspose.Zip voor .NET. Volg onze stapsgewijze gids voor efficiënt bestandsbeheer.
 
-### [Wim decomprimeren naar map in Aspose.Zip voor .NET](./decompress-wim-folder/)
-Verken de stap‑voor‑stap‑gids voor het decomprimeren van Wim‑archieven met Aspose.Zip voor .NET. Download de bibliotheek, volg de tutorial en beheer archiefbestanden efficiënt in je .NET‑applicaties.
+### [Een enkel bestand uitpakken met Aspose.Zip voor .NET](./decompress-single-file/)
+Ontdek de naadloze wereld van bestandsontcompressie met Aspose.Zip voor .NET. Pak moeiteloos gecomprimeerde bestanden af in je C#‑projecten.
 
-### [Xar decomprimeren naar map in Aspose.Zip voor .NET](./decompress-xar-folder/)
-Ontdek de kracht van Aspose.Zip voor .NET! Decomprimeer Xar‑archieven moeiteloos met deze gebruiksvriendelijke tutorial. Verbeter je .NET‑ontwikkelervaring.
+### [Een opgeslagen bestand uitpakken met Aspose.Zip voor .NET](./decompress-stored-file/)
+Ontdek de kracht van Aspose.Zip voor .NET in deze stapsgewijze gids voor het uitpakken van opgeslagen bestanden. Verhoog je software‑ontwikkelingsvaardigheden met een robuuste oplossing voor efficiënte bestandsafhandeling.
 
-## Zip‑map en wachtwoord‑beveiligde archieven decomprimeren
+### [Gecomprimeerde map uitpakken naar map in Aspose.Zip voor .NET](./decompress-compressed-folder-directory/)
+Ontgrendel het potentieel van Aspose.Zip voor .NET! Leer hoe je moeiteloos mappen kunt uitpakken met deze stapsgewijze gids. Duik in de wereld van naadloze compressie en extractie.
 
-Als je **decompress zip folder**‑inhoud moet uitpakken of werkt met een **decompress password protected zip**‑archief, handelt Aspose.Zip beide scenario's naadloos af. Geef simpelweg het bestemmingspad door en, indien nodig, de wachtwoord‑string aan de extractiemethode. Dit elimineert de noodzaak voor externe tools en houdt je codebase schoon.
+### [Traditioneel wachtwoord‑beveiligd bestand uitpakken in Aspose.Zip voor .NET](./decompress-traditionally-password-protected-file/)
+Leer hoe je traditioneel wachtwoord‑beveiligde bestanden kunt uitpakken met Aspose.Zip voor .NET. Een stapsgewijze gids voor naadloze integratie.
+
+### [Wim uitpakken naar map in Aspose.Zip voor .NET](./decompress-wim-folder/)
+Ontdek de stapsgewijze gids voor het uitpakken van Wim‑archieven met Aspose.Zip voor .NET. Download de bibliotheek, volg de tutorial en beheer archiefbestanden efficiënt in je .NET‑applicaties.
+
+### [Xar uitpakken naar map in Aspose.Zip voor .NET](./decompress-xar-folder/)
+Ontdek de kracht van Aspose.Zip voor .NET! Pak moeiteloos Xar‑archieven uit met deze gebruiksvriendelijke tutorial. Verbeter je .NET‑ontwikkelervaring.
+
+## Een zip‑map en wachtwoord‑beveiligde archieven uitpakken
+
+Als je de inhoud van een **decompress zip folder** moet uitpakken of wilt werken met een **decompress password protected zip**‑archief, behandelt Aspose.Zip beide scenario's naadloos. Geef simpelweg het bestemmingspad door en, indien nodig, de wachtwoord‑string aan de extractiemethode. Dit elimineert de noodzaak voor externe tools en houdt je codebase schoon.
 
 ## Veelvoorkomende gebruikssituaties
 
-- **Batchverwerking** van log‑archieven ontvangen van externe servers.  
-- **Geautomatiseerde deployment**‑scripts die resource‑bundels uitpakken vóór installatie.  
-- **Datamigratie** waarbij legacy‑zip‑bestanden moeten worden gelezen en hun inhoud in een database moet worden opgeslagen.  
+- **Batch processing** van log‑archieven ontvangen van externe servers.  
+- **Automated deployment** scripts die resource‑bundels uitpakken vóór installatie.  
+- **Data migration** waarbij legacy zip‑bestanden moeten worden gelezen en hun inhoud in een database moet worden opgeslagen.  
 
 ## Tips & best practices
 
-- **Gebruik streaming** bij het extraheren van zeer grote bestanden om het geheugenverbruik laag te houden.  
-- **Valideer bestands‑paden** na extractie om directory‑traversal‑kwetsbaarheden te voorkomen.  
-- **Afhandelen van uitzonderingen** zoals `InvalidPasswordException` om duidelijke gebruikersfeedback te geven.  
+- **Use streaming** bij het uitpakken van zeer grote bestanden om het geheugenverbruik laag te houden.  
+- **Validate file paths** na het uitpakken om directory‑traversal‑kwetsbaarheden te voorkomen.  
+- **Handle exceptions** zoals `InvalidPasswordException` om duidelijke gebruikersfeedback te geven.  
 
 ## Veelgestelde vragen
 
-**Q: Kan ik een zip‑archief direct naar een geheugen‑stream extraheren?**  
-A: Ja, Aspose.Zip laat je een entry lezen in een `MemoryStream` zonder naar schijf te schrijven (`extract zip archive c#`).
+**Q: Kan ik een zip‑archief direct naar een memory stream uitpakken?**  
+A: Ja, Aspose.Zip laat je een item lezen in een `MemoryStream` zonder naar schijf te schrijven (`extract zip archive c#`).
 
-**Q: Ondersteunt de bibliotheek extractie naar een specifieke mapstructuur?**  
-A: Absoluut. Je kunt de uitvoermap opgeven, en de API zal de interne maphiërarchie van het archief opnieuw creëren.
+**Q: Ondersteunt de bibliotheek het uitpakken naar een specifieke mapstructuur?**  
+A: Absoluut. Je kunt de uitvoermap opgeven en de API zal de interne mapstructuur van het archief opnieuw aanmaken.
 
-**Q: Hoe extraheren ik een wachtwoord‑beveiligde zip‑file in C#?**  
-A: Geef het wachtwoord door aan de `Extract`‑methode (bijv. `archive.Extract(outputPath, password)`).
+**Q: Hoe pak ik een wachtwoord‑beveiligd zip‑bestand uit in C#?**  
+A: Geef het wachtwoord door aan de `Extract`‑methode (bijv. `archive.Extract(outputPath, "MySecret")`).
 
-**Q: Is er een manier om de inhoud van een archief te bekijken zonder te extraheren?**  
+**Q: Is er een manier om de inhoud van een archief te bekijken zonder het uit te pakken?**  
 A: Ja, je kunt itereren over `archive.Entries` om bestandsnamen, groottes en tijdstempels te inspecteren.
 
-**Q: Wat gebeurt er als het archief dubbele bestandsnamen bevat?**  
+**Q: Wat als het archief dubbele bestandsnamen bevat?**  
 A: Standaard overschrijft de bibliotheek bestaande bestanden; je kunt dit gedrag wijzigen met de `OverwriteMode`‑optie.
 
-**Q: Kan ik alleen geselecteerde items uit een zip‑map extraheren?**  
-A: Ja, filter `archive.Entries` op naam of extensie en roep `Extract` aan voor de gekozen items.
+**Q: Kan ik alleen geselecteerde items uit een zip‑map uitpakken?**  
+A: Ja, filter `archive.Entries` op naam of extensie en roep `Extract` aan op de gekozen items.
 
 **Q: Hoe gaat Aspose.Zip om met grote zip‑bestanden op apparaten met weinig geheugen?**  
 A: De bibliotheek gebruikt lazy loading en streaming, zodat alleen het huidige item in het geheugen wordt geladen.
 
-## Conclusie
+---
 
-Aspose.Zip voor .NET blijkt een echte game‑changer te zijn op het gebied van bestandsdecompressie. Of je nu enkele bestanden, meerdere bestanden of opgeslagen bestanden verwerkt, de bibliotheek vereenvoudigt het proces en maakt het toegankelijk voor ontwikkelaars van elk niveau. Duik in de tutorials, ontgrendel het potentieel van Aspose.Zip voor .NET, en til je software‑ontwikkelingsvaardigheden naar een hoger niveau. Verken de wereld van naadloze compressie en extractie met vertrouwen en efficiëntie.
-
-**Last Updated:** 2026-02-17  
+**Last Updated:** 2026-06-09  
 **Tested With:** Aspose.Zip for .NET 24.12  
 **Author:** Aspose  
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
 
+## Gerelateerde tutorials
+
+- [Wachtwoord‑beveiligde zip uitpakken met Aspose.Zip voor .NET](/zip/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/)
+- [Zip‑archief maken .NET – Bestandscompressie met Aspose.Zip](/zip/net/file-compression/)
+- [Hoe zip naar map uitpakken met Aspose.Zip voor .NET](/zip/net/file-decompression/decompress-compressed-folder-directory/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

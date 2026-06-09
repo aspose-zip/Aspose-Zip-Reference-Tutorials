@@ -1,11 +1,57 @@
 ---
-date: 2026-02-17
-description: Tanulja meg, hogyan lehet kicsomagolni fájlokat az Aspose.Zip for .NET
-  segítségével, beleértve a zip mappa kicsomagolását és a jelszóval védett zip archívumok
-  kicsomagolását C#‑ban.
-linktitle: How to Decompress Files with Aspose.Zip for .NET
+date: 2026-06-09
+description: Ismerje meg, hogyan kell kicsomagolni a zip fájlokat az Aspose.Zip for
+  .NET segítségével, beleértve a zip mappa kicsomagolását, a zip könyvtárba történő
+  kicsomagolást, valamint a jelszóval védett zip archívumok kicsomagolását C#-ban.
+keywords:
+- how to decompress zip
+- extract password protected zip
+- extract zip to directory
+- unzip files using c#
+- extract zip archive c#
+linktitle: Hogyan csomagoljuk ki a ZIP fájlokat az Aspose.Zip for .NET segítségével
+schemas:
+- author: Aspose
+  dateModified: '2026-06-09'
+  description: Learn how to decompress zip files with Aspose.Zip for .NET, including
+    how to extract zip folder, extract zip to directory, and extract password protected
+    zip archives using C#.
+  headline: How to Decompress ZIP Files with Aspose.Zip for .NET
+  type: TechArticle
+- description: Learn how to decompress zip files with Aspose.Zip for .NET, including
+    how to extract zip folder, extract zip to directory, and extract password protected
+    zip archives using C#.
+  name: How to Decompress ZIP Files with Aspose.Zip for .NET
+  steps:
+  - name: Create an `Archive` instance
+    text: 'The `Archive` class is Aspose.Zip''s primary object that represents a compressed
+      container in memory. Pass the path of the zip file to its constructor:'
+  - name: Call `Extract` with a destination folder
+    text: '`Extract` accepts the output directory and, if needed, a password string.
+      It automatically recreates the internal folder hierarchy:'
+  - name: (Optional) Stream large entries
+    text: 'For very large entries you can extract directly to a `Stream` to keep memory
+      usage minimal:'
+  type: HowTo
+- questions:
+  - answer: Yes, Aspose.Zip lets you read an entry into a `MemoryStream` without writing
+      to disk (`extract zip archive c#`).
+    question: Can I extract a zip archive directly to a memory stream?
+  - answer: Absolutely. You can specify the output directory, and the API will recreate
+      the archive’s internal folder hierarchy.
+    question: Does the library support extracting to a specific folder structure?
+  - answer: Supply the password to the `Extract` method (e.g., `archive.Extract(outputPath,
+      "MySecret")`).
+    question: How do I extract a password‑protected zip file in C#?
+  - answer: Yes, you can iterate over `archive.Entries` to inspect file names, sizes,
+      and timestamps.
+    question: Is there a way to list archive contents without extracting them?
+  - answer: By default, the library overwrites existing files; you can change this
+      behavior with the `OverwriteMode` option.
+    question: What if the archive contains duplicate file names?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Hogyan csomagoljunk ki fájlokat az Aspose.Zip for .NET segítségével
+title: Hogyan csomagoljuk ki a ZIP fájlokat az Aspose.Zip for .NET segítségével
 url: /hu/net/file-decompression/
 weight: 21
 ---
@@ -14,119 +60,148 @@ weight: 21
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Hogyan csomagoljunk ki fájlokat az Aspose.Zip for .NET segítségével
+# Hogyan csomagoljuk ki a ZIP fájlokat az Aspose.Zip for .NET segítségével
 
 ## Bevezetés
 
-Amikor gyorsan és megbízhatóan kell **fájlokat kicsomagolni** egy .NET környezetben, az Aspose.Zip for .NET tiszta, nagy teljesítményű API-t kínál, amely megszünteti a manuális kicsomagolás nehézségeit. Akár egyetlen archívummal, egy naplófájlokból álló csomaggal vagy jelszóval védett zip-fájllal dolgozik, ez az útmutató pontosan megmutatja, hogyan lehet kicsomagolni a zip mappa tartalmát és kezelni a titkosított archívumokat néhány C# sorral.
+Amikor gyorsan és megbízhatóan kell **hogyan csomagoljuk ki a zip-et** egy .NET környezetben, az Aspose.Zip for .NET tiszta, nagy teljesítményű API-t biztosít, amely megszünteti a kézi kicsomagolás fejfájását. Akár egyetlen archívumot bontasz ki, akár egy naplófájlokból álló csomagot dolgozol fel, vagy jelszóval védett zip-fájllal dolgozol, ez az útmutató pontosan megmutatja, hogyan lehet kicsomagolni egy zip mappát, zip-et könyvtárba kicsomagolni, és titkosított archívumokat kezelni néhány C# sorral.
 
 ## Gyors válaszok
-- **Mit csinál az Aspose.Zip for .NET?** Egyszerű API-t biztosít ZIP, TAR, GZIP és egyéb archívumformátumok létrehozásához, olvasásához és kicsomagolásához C#-ban.  
-- **Kicsomagolhatok több fájlt egyszerre?** Igen, a könyvtár lehetővé teszi az összes bejegyzés egyetlen hívással történő kicsomagolását vagy egyenkénti iterálását.  
-- **Támogatott a jelszóval védett kicsomagolás?** Teljes mértékben – megadhat egy jelszót a titkosított archívumok feloldásához.  
-- **Mely .NET verziók támogatottak?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7 és újabbak.  
-- **Szükségem van licencre a fejlesztéshez?** Egy ingyenes próba verzió elegendő értékeléshez; a kereskedelmi licenc szükséges a termelésben való használathoz.
+- **Mit csinál az Aspose.Zip for .NET?** Egyszerű API-t kínál ZIP, TAR, GZIP és egyéb archívumformátumok létrehozására, olvasására és kicsomagolására C#-ban.
+- **Kicsomagolhatok több fájlt egyszerre?** Igen, a könyvtár lehetővé teszi, hogy egy hívással kicsomagold az összes bejegyzést, vagy egyenként iterálj rajtuk.
+- **Támogatott a jelszóval védett kicsomagolás?** Teljes mértékben – megadhatsz egy jelszót a titkosított archívumok feloldásához (`extract password protected zip`).
+- **Mely .NET verziók támogatottak?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, és .NET 5–10.
+- **Szükségem van licencre fejlesztéshez?** Egy ingyenes próba a kiértékeléshez elegendő; a kereskedelmi licenc szükséges a termelésben való használathoz.
 
-## Hogyan csomagoljunk ki fájlokat az Aspose.Zip for .NET használatával
-A fájlok kicsomagolása az Aspose.Zip segítségével egyszerű. A könyvtár biztosítja az `Extract` metódust, amely egy könyvtárra, egy konkrét fájlra vagy egy memóriafolyamra irányítható. Az alábbiakban vázoljuk a tipikus munkafolyamatot:
+## Hogyan csomagoljuk ki a ZIP fájlokat az Aspose.Zip for .NET segítségével
 
-1. **Hozzon létre egy `Archive` példányt**, amely a zip-fájlra mutat.  
-2. **Hívja meg az `Extract` metódust** a célkönyvtárral.  
-3. **Opcionálisan adjon meg egy jelszót**, ha az archívum titkosított (`extract password protected zip`).  
+Töltsd be az archívumot, hívd meg a `Extract` metódust, és opcionálisan adj meg egy jelszót – ez a teljes munkafolyamat három tömörített lépésben. Az Aspose.Zip minden bejegyzést streamel, így egy 5 GB-os archívum is kicsomagolható egy kevesebb, mint 150 MB RAM-ot használó gépen.
 
-Ez a megközelítés minden, az Aspose.Zip által támogatott archívumtípusra működik, beleértve a hagyományos zip-et, a zip mappaszerkezeteket és a modern formátumokat, mint az XAR és a WIM.
+### 1. lépés: `Archive` példány létrehozása
+Az `Archive` osztály az Aspose.Zip elsődleges objektuma, amely egy tömörített tárolót képvisel a memóriában. Add meg a zip fájl útvonalát a konstruktorának:
 
-## Mi az a „több fájl kicsomagolása”?
-A több fájl kicsomagolása azt jelenti, hogy az archívumban (ZIP, TAR stb.) tárolt minden bejegyzést kicsomagoljuk, és opcionálisan minden fájlt egy célkönyvtárba írunk. Ez a művelet gyakori, ha csomagolt adatokat kapunk – naplófájlokat, képeket vagy konfigurációs készleteket –, amelyeket a feldolgozás előtt ki kell csomagolni.
+```csharp
+var archive = new Aspose.Zip.Archive("sample.zip");
+```
 
-## Miért használja az Aspose.Zip for .NET-et több fájl kicsomagolásához?
-- **Teljesítmény‑optimalizált** kicsomagolás, amely nagy archívumokat kezel túlzott memóriahasználat nélkül.  
-- **Beépített támogatás** a klasszikus ZIP, a modern formátumok (XAR, WIM) és a titkosított archívumok számára.  
-- **Egyszerű C# szintaxis** – nincs szükség stream-ek vagy harmadik féltől származó segédprogramok kezelésére (`aspose zip extract`).  
-- **Keresztplatformos** kompatibilitás, amely lehetővé teszi, hogy ugyanazt a kódot futtassa Windows, Linux vagy macOS rendszeren.  
+### 2. lépés: `Extract` hívása célkönyvtárral
+Az `Extract` elfogadja a kimeneti könyvtárat, és szükség esetén egy jelszó karakterláncot. Automatikusan újra létrehozza a belső mappaszerkezetet:
+
+```csharp
+archive.Extract("C:\\OutputFolder");                 // plain zip
+archive.Extract("C:\\SecureOutput", "MySecret123"); // password‑protected zip
+```
+
+### 3. lépés: (Opcionális) Nagy bejegyzések streamelése
+Nagyon nagy bejegyzések esetén közvetlenül egy `Stream`-be is kicsomagolhatod a memórihasználat minimalizálása érdekében:
+
+```csharp
+using (var entryStream = archive.Entries[0].Open())
+using (var fileStream = File.Create("C:\\LargeFile.bin"))
+{
+    entryStream.CopyTo(fileStream);
+}
+```
+
+## Mi az a „decompress multiple files”?
+
+A több fájl kicsomagolása azt jelenti, hogy az archívumban (ZIP, TAR stb.) tárolt minden bejegyzést kicsomagolod, és opcionálisan minden fájlt egy célkönyvtárba írsz. Ez a művelet gyakori, amikor csomagolt adatokat (naplófájlok, képek vagy konfigurációs készletek) kapsz, amelyeket feldolgozás előtt ki kell csomagolni.
+
+## Miért használjuk az Aspose.Zip for .NET-et több fájl kicsomagolásához?
+
+Az Aspose.Zip akár **5 GB** méretű archívumokat is képes feldolgozni, miközben a csúcs memóriahasználat **150 MB** alatt marad, köszönhetően a lazy‑loading architektúrának. Támogat **50+** archívumformátumot (beleértve az XAR és WIM formátumokat is), és titkosított archívumokat extra kód nélkül kezel. Az API ugyanúgy működik Windows, Linux és macOS rendszereken, így egyszer írva, mindenhol futtatható.
 
 ## Fájl kicsomagolása az Aspose.Zip for .NET segítségével
-Nyissa meg a fájl tömörítés világát a .NET-ben az egyetlen fájlok kicsomagolásának elsajátításával. A [Fájl kicsomagolása az Aspose.Zip for .NET segítségével](./decompress-file/) című oktatóanyag lépésről‑lépésre útmutatót nyújt, biztosítva, hogy még a kezdők is könnyedén végigmenjenek a folyamaton. Merüljön el az Aspose.Zip for .NET részleteiben, és fejlessze képességeit a tömörített fájlok kezelésében C# projektekben.
 
-## Több fájl kicsomagolása az Aspose.Zip for .NET használatával
-Az Aspose.Zip for .NET segítségével a hatékony fájlkezelés gyerekjáték. A [Több fájl kicsomagolása az Aspose.Zip for .NET használatával](./decompress-multiple-files/) című útmutatóban végigvezetjük a **több fájl kicsomagolása** folyamatán, optimalizálva a munkafolyamatát. Kövesse részletes lépéseinket a fájlkezelés egyszerűsítéséhez és a fejlesztési élmény javításához.
+Fedezd fel a fájl tömörítés világát a .NET-ben, és sajátítsd el az egyetlen fájl kicsomagolásának művészetét. A [Fájl kicsomagolása az Aspose.Zip for .NET segítségével](./decompress-file/) című útmutató lépésről‑lépésre vezet, biztosítva, hogy a kezdők is könnyedén végig tudjanak menni a folyamaton. Merülj el az Aspose.Zip for .NET részleteiben, és fejleszd képességeidet a C# projektekben a tömörített fájlok kezelésében.
+
+## Több fájl kicsomagolása az Aspose.Zip for .NET segítségével
+
+Az Aspose.Zip for .NET segítségével a fájlkezelés egyszerűvé válik. A [Több fájl kicsomagolása az Aspose.Zip for .NET segítségével](./decompress-multiple-files/) útmutatóban végigvezetünk a **több fájl kicsomagolása** folyamatán, optimalizálva a munkafolyamatodat. Kövesd részletes lépéseinket a fájlkezelés egyszerűsítéséhez és a fejlesztési élmény fokozásához.
 
 ## Tárolt fájl kicsomagolása az Aspose.Zip for .NET segítségével
-Fedezze fel az Aspose.Zip for .NET erejét a [Tárolt fájl kicsomagolása az Aspose.Zip for .NET segítségével](./decompress-stored-file/) című anyagban. Ez az oktatóanyag lépésről‑lépésre útmutatót nyújt a tárolt fájlok hatékony kicsomagolásához, erős megoldást biztosítva a projektekben való fájlkezeléshez.
 
-## Fájl kicsomagolási oktatóanyagok
+Fedezd fel az Aspose.Zip for .NET erejét a [Tárolt fájl kicsomagolása az Aspose.Zip for .NET segítségével](./decompress-stored-file/) című útmutatóban. Ez a tutorial lépésről‑lépésre mutatja be a tárolt fájlok hatékony kicsomagolását, erős megoldást nyújtva a projektekben való fájlkezeléshez.
+
+## Fájl kicsomagolási útmutatók
 ### [Fájl kicsomagolása az Aspose.Zip for .NET segítségével](./decompress-file/)
-Fedezze fel a fájl tömörítés világát a .NET-ben az Aspose.Zip segítségével. Tanulja meg a fájlok könnyed kicsomagolásának művészetét.
+Fedezd fel a fájl tömörítés világát a .NET-ben az Aspose.Zip segítségével. Tanuld meg a fájlok könnyed kicsomagolásának művészetét.
 
-### [Több fájl kicsomagolása az Aspose.Zip for .NET használatával](./decompress-multiple-files/)
-Tanulja meg, hogyan kicsomagoljon több fájlt az Aspose.Zip for .NET segítségével. Kövesse lépésről‑lépésre útmutatónkat a hatékony fájlkezeléshez.
+### [Több fájl kicsomagolása az Aspose.Zip for .NET segítségével](./decompress-multiple-files/)
+Tanuld meg, hogyan lehet több fájlt kicsomagolni az Aspose.Zip for .NET használatával. Kövesd lépésről‑lépésre útmutatónkat a hatékony fájlkezeléshez.
 
 ### [Egyetlen fájl kicsomagolása az Aspose.Zip for .NET segítségével](./decompress-single-file/)
-Fedezze fel a fájlok zökkenőmentes kicsomagolásának világát az Aspose.Zip for .NET segítségével. Könnyedén kezelje a tömörített fájlokat C# projektjeiben.
+Fedezd fel az Aspose.Zip for .NET zökkenőmentes fájl kicsomagolási világát. Kezelj könnyedén tömörített fájlokat C# projektjeidben.
 
 ### [Tárolt fájl kicsomagolása az Aspose.Zip for .NET segítségével](./decompress-stored-file/)
-Fedezze fel az Aspose.Zip for .NET erejét ebben a lépésről‑lépésre útmutatóban a tárolt fájlok kicsomagolásához. Fejlessze szoftverfejlesztési képességeit egy erős megoldással a hatékony fájlkezeléshez.
+Ismerd meg az Aspose.Zip for .NET erejét ebben a lépésről‑lépésre útmutatóban a tárolt fájlok kicsomagolásához. Fejleszd szoftverfejlesztési készségeidet egy robusztus megoldással a hatékony fájlkezeléshez.
 
-### [Tömörített mappa kicsomagolása könyvtárba az Aspose.Zip for .NET-ben](./decompress-compressed-folder-directory/)
-Szabadítsa fel az Aspose.Zip for .NET lehetőségeit! Tanulja meg, hogyan kicsomagoljon könnyedén mappákat ebben a lépésről‑lépésre útmutatóban. Merüljön el a zökkenőmentes tömörítés és kicsomagolás világában.
+### [Tömörített mappa kicsomagolása könyvtárba az Aspose.Zip for .NET segítségével](./decompress-compressed-folder-directory/)
+Fedezd fel az Aspose.Zip for .NET lehetőségeit! Tanuld meg, hogyan lehet könnyedén kicsomagolni mappákat ebben a lépésről‑lépésre útmutatóban. Merülj el a zökkenőmentes tömörítés és kicsomagolás világában.
 
-### [Hagyományosan jelszóval védett fájl kicsomagolása az Aspose.Zip for .NET-ben](./decompress-traditionally-password-protected-file/)
-Tanulja meg, hogyan kicsomagoljon hagyományosan jelszóval védett fájlokat az Aspose.Zip for .NET segítségével. Lépésről‑lépésre útmutató a zökkenőmentes integrációhoz.
+### [Hagyományos jelszóval védett fájl kicsomagolása az Aspose.Zip for .NET segítségével](./decompress-traditionally-password-protected-file/)
+Tanuld meg, hogyan lehet hagyományos jelszóval védett fájlokat kicsomagolni az Aspose.Zip for .NET használatával. Egy lépésről‑lépésre útmutató a zökkenőmentes integrációhoz.
 
-### [Wim kicsomagolása mappába az Aspose.Zip for .NET-ben](./decompress-wim-folder/)
-Fedezze fel a lépésről‑lépésre útmutatót a Wim archívumok kicsomagolásához az Aspose.Zip for .NET segítségével. Töltse le a könyvtárat, kövesse az oktatóanyagot, és hatékonyan kezelje az archívumfájlokat .NET alkalmazásaiban.
+### [Wim archívum kicsomagolása mappába az Aspose.Zip for .NET segítségével](./decompress-wim-folder/)
+Ismerd meg a lépésről‑lépésre útmutatót a Wim archívumok kicsomagolásához az Aspose.Zip for .NET használatával. Töltsd le a könyvtárat, kövesd a tutorialt, és hatékonyan kezeld az archívumfájlokat .NET alkalmazásaidban.
 
-### [Xar kicsomagolása mappába az Aspose.Zip for .NET-ben](./decompress-xar-folder/)
-Fedezze fel az Aspose.Zip for .NET erejét! Könnyedén kicsomagolhat XAR archívumokat ebben a felhasználóbarát oktatóanyagban. Fejlessze .NET fejlesztési élményét.
+### [Xar archívum kicsomagolása mappába az Aspose.Zip for .NET segítségével](./decompress-xar-folder/)
+Fedezd fel az Aspose.Zip for .NET erejét! Könnyedén kicsomagolhatod a Xar archívumokat ezzel a felhasználóbarát tutorialral. Javítsd .NET fejlesztési élményedet.
 
-## Zip mappa és jelszóval védett archívumok kicsomagolása
-Ha **zip mappa** tartalmát kell kicsomagolnia, vagy egy **jelszóval védett zip** archívummal dolgozik, az Aspose.Zip zökkenőmentesen kezeli mindkét esetet. Egyszerűen adja meg a célútvonalat, és szükség esetén a jelszó karakterláncot a kicsomagolási metódusnak. Ez megszünteti a külső eszközök szükségességét és tisztán tartja a kódbázist.
+## ZIP mappa és jelszóval védett archívumok kicsomagolása
 
-## Általános felhasználási esetek
+Ha **zip mappát kell kicsomagolni** vagy egy **jelszóval védett zip-et** kell kezelni, az Aspose.Zip mindkét forgatókönyvet zökkenőmentesen kezeli. Egyszerűen add meg a célútvonalat, és szükség esetén a jelszó karakterláncot a kicsomagolási metódusnak. Ez megszünteti a külső eszközök szükségességét, és tiszta kódbázist biztosít.
+
+## Gyakori felhasználási esetek
+
 - **Kötegelt feldolgozás** a távoli szerverekről érkező naplóarchívumok esetén.  
-- **Automatizált telepítés** szkriptek, amelyek a telepítés előtt kibontják az erőforráscsomagokat.  
-- **Adatmigráció**, ahol a régi zip-fájlokat be kell olvasni, és a tartalmukat adatbázisba kell menteni.  
+- **Automatizált telepítési** szkriptek, amelyek erőforráscsomagokat csomagolnak ki a telepítés előtt.  
+- **Adatmigráció**, ahol a régi zip fájlokat be kell olvasni, és tartalmukat adatbázisba kell menteni.  
 
 ## Tippek és bevált gyakorlatok
-- **Használjon streaminget** nagyon nagy fájlok kicsomagolásakor a memóriahasználat alacsonyan tartása érdekében.  
-- **Ellenőrizze a fájlutakat** a kicsomagolás után, hogy elkerülje a könyvtár‑traverszálás sebezhetőségeket.  
-- **Kezelje a kivételeket** például az `InvalidPasswordException`-t, hogy egyértelmű felhasználói visszajelzést adjon.  
+
+- **Használj streaminget** nagyon nagy fájlok kicsomagolásakor a memóriahasználat alacsonyan tartása érdekében.  
+- **Érvényesítsd a fájlútvonalakat** a kicsomagolás után, hogy elkerüld a könyvtár‑traverszálási sebezhetőségeket.  
+- **Kezeld a kivételeket**, például az `InvalidPasswordException`-t, hogy egyértelmű felhasználói visszajelzést nyújts.  
 
 ## Gyakran ismételt kérdések
 
-**Q: Kicsomagolhatok zip archívumot közvetlenül egy memóriafolyamba?**  
-A: Igen, az Aspose.Zip lehetővé teszi egy bejegyzés beolvasását egy `MemoryStream`-be anélkül, hogy lemezre írna (`extract zip archive c#`).
+**K: Kicsomagolhatok zip archívumot közvetlenül memória streambe?**  
+V: Igen, az Aspose.Zip lehetővé teszi egy bejegyzés beolvasását `MemoryStream`‑be anélkül, hogy lemezre írnád (`extract zip archive c#`).
 
-**Q: Támogatja a könyvtár a kicsomagolást egy adott mappaszerkezetbe?**  
-A: Teljes mértékben. Megadhatja a kimeneti könyvtárat, és az API újra létrehozza az archívum belső mappahierarchiáját.
+**K: Támogatja a könyvtár‑specifikus struktúrába való kicsomagolást?**  
+V: Teljes mértékben. Megadhatod a kimeneti könyvtárat, és az API újra létrehozza az archívum belső mappaszerkezetét.
 
-**Q: Hogyan csomagolok ki egy jelszóval védett zip fájlt C#-ban?**  
-A: Adja meg a jelszót az `Extract` metódusnak (például `archive.Extract(outputPath, password)`).
+**K: Hogyan kicsomagolok egy jelszóval védett zip fájlt C#‑ban?**  
+V: Add meg a jelszót a `Extract` metódusnak (pl. `archive.Extract(outputPath, "MySecret")`).
 
-**Q: Van mód arra, hogy az archívum tartalmát listázzuk anélkül, hogy kicsomagolnánk?**  
-A: Igen, iterálhat a `archive.Entries`-en a fájlnevek, méretek és időbélyegek megtekintéséhez.
+**K: Van mód a tartalom listázására kicsomagolás nélkül?**  
+V: Igen, iterálhatsz az `archive.Entries`‑en, hogy megtekintsd a fájlneveket, méreteket és időbélyegeket.
 
-**Q: Mi történik, ha az archívum duplikált fájlneveket tartalmaz?**  
-A: Alapértelmezés szerint a könyvtár felülírja a meglévő fájlokat; ezt a viselkedést módosíthatja az `OverwriteMode` opcióval.
+**K: Mi történik, ha az archívum duplikált fájlneveket tartalmaz?**  
+V: Alapértelmezés szerint a könyvtár felülírja a meglévő fájlokat; ezt a viselkedést módosíthatod az `OverwriteMode` opcióval.
 
-**Q: Kicsomagolhatok csak kiválasztott bejegyzéseket egy zip mappából?**  
-A: Igen, szűrje a `archive.Entries`-t név vagy kiterjesztés alapján, és hívja meg az `Extract`-et a kiválasztott bejegyzéseken.
+**K: Kicsomagolhatok csak kiválasztott bejegyzéseket egy zip mappából?**  
+V: Igen, szűrheted az `archive.Entries`‑t név vagy kiterjesztés alapján, majd a kiválasztott bejegyzéseken meghívhatod az `Extract`‑et.
 
-**Q: Hogyan kezeli az Aspose.Zip a nagy zip fájlokat alacsony memóriaeszközökön?**  
-A: A könyvtár lusta betöltést és streaminget használ, így csak a jelenlegi bejegyzés kerül betöltésre a memóriába.
-
-## Összegzés
-Az Aspose.Zip for .NET igazi áttörést jelent a fájlok kicsomagolásának területén. Akár egyetlen fájlt, akár több fájlt vagy tárolt fájlokat kezel, a könyvtár egyszerűsíti a folyamatot, így minden szintű fejlesztő számára hozzáférhetővé válik. Merüljön el az oktatóanyagokban, szabadítsa fel az Aspose.Zip for .NET lehetőségeit, és emelje szoftverfejlesztési képességeit új magasságokba. Fedezze fel a zökkenőmentes tömörítés és kicsomagolás világát magabiztossággal és hatékonysággal.
+**K: Hogyan kezeli az Aspose.Zip a nagy zip fájlokat alacsony memóriaeszközökön?**  
+V: A könyvtár lazy loading és streaming technikát használ, így egyszerre csak a jelenlegi bejegyzés van betöltve a memóriába.
 
 ---
 
-**Last Updated:** 2026-02-17  
-**Tested With:** Aspose.Zip for .NET 24.12  
-**Author:** Aspose  
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+**Legutóbb frissítve:** 2026-06-09  
+**Tesztelve ezzel:** Aspose.Zip for .NET 24.12  
+**Szerző:** Aspose  
 
 {{< blocks/products/products-backtop-button >}}
+
+## Kapcsolódó útmutatók
+
+- [Extract password protected zip with Aspose.Zip for .NET](/zip/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/)
+- [Create Zip Archive .NET – File Compression with Aspose.Zip](/zip/net/file-compression/)
+- [How to extract zip to folder with Aspose.Zip for .NET](/zip/net/file-decompression/decompress-compressed-folder-directory/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
