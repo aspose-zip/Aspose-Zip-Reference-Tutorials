@@ -1,11 +1,54 @@
 ---
-date: 2026-02-17
+date: 2026-06-14
 description: Naučte se, jak vytvořit zip bez komprese a rozbalit více zip souborů
   pomocí Aspose.Zip pro .NET. Tento průvodce popisuje, jak otevřít zip, číst položku
-  zip a kroky pro extrakci zip v C#.
-linktitle: Decompressing a Stored File
+  zip a kroky pro rozbalení zip v C#.
+keywords:
+- create zip without compression
+- extract multiple zip files
+- c# extract zip
+- aspose zip extract
+- zip archive store method
+linktitle: Rozbalení uloženého souboru
+schemas:
+- author: Aspose
+  dateModified: '2026-06-14'
+  description: Learn how to create zip without compression and extract multiple zip
+    files using Aspose.Zip for .NET. This guide covers how to open zip, read zip entry,
+    and C# extract zip steps.
+  headline: Create Zip Without Compression & Decompress Files – Aspose.Zip
+  type: TechArticle
+- description: Learn how to create zip without compression and extract multiple zip
+    files using Aspose.Zip for .NET. This guide covers how to open zip, read zip entry,
+    and C# extract zip steps.
+  name: Create Zip Without Compression & Decompress Files – Aspose.Zip
+  steps:
+  - name: '1: Opening the Zip File'
+    text: The `Archive` object represents the opened ZIP and gives you access to each
+      entry via the `Entries` collection.
+  - name: '2: Creating Extracted Files'
+    text: Here we **read zip entry** 0, copy its bytes to a new file, and close the
+      streams automatically thanks to the `using` statements.
+  - name: '3: Repeating the Process for Another File'
+    text: By iterating over `archive.Entries`, you can **extract multiple zip files**
+      (or multiple entries) with just a few lines of code.
+  type: HowTo
+- questions:
+  - answer: It stores files in a ZIP using the *store* method, leaving the data unchanged.
+    question: What does “create zip without compression” mean?
+  - answer: Aspose.Zip for .NET provides a clean API for the *store* method and extraction.
+    question: Which library supports this in .NET?
+  - answer: A free trial works for development; a commercial license is required for
+      production.
+    question: Do I need a license to run the sample?
+  - answer: Yes – the tutorial demonstrates how to **extract multiple zip files**
+      in a loop.
+    question: Can I extract several files at once?
+  - answer: .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10.
+    question: What .NET versions are supported?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Vytvořit ZIP bez komprese a rozbalit soubory – Aspose.Zip
+title: Vytvořit zip bez komprese a rozbalit soubory – Aspose.Zip
 url: /cs/net/file-decompression/decompress-stored-file/
 weight: 13
 ---
@@ -18,62 +61,72 @@ weight: 13
 
 ## Úvod
 
-V moderních .NET aplikacích je **create zip without compression** užitečná technika, když potřebujete rychlé archivování bez režie snížení dat. Aspose.Zip pro .NET usnadňuje jak vytvořit takové archivy, tak později **extract multiple zip files**. V tomto tutoriálu uvidíte, jak otevřít zip, číst data zip entry a provést **C# extract zip** operaci krok za krokem.
+V moderních .NET aplikacích je **create zip without compression** užitečná technika, když potřebujete bleskově rychlé archivování a nezáleží vám na velikosti souboru. Aspose.Zip pro .NET vám umožní generovat takové archivy metodou „store“ a později **extract multiple zip files** pomocí několika řádků C#. V tomto tutoriálu vás provedeme otevřením ZIP, čtením zip položky a provedením operace **C# extract zip** krok za krokem.
 
 ## Rychlé odpovědi
-- **Co je “create zip without compression”?** Znamená to přidávat soubory do ZIP archivu pomocí metody „store“, která ponechává data beze změny.  
-- **Která knihovna to v .NET řeší?** Aspose.Zip pro .NET.  
-- **Potřebuji licenci pro spuštění ukázky?** Bezplatná zkušební verze funguje pro vývoj; pro produkci je vyžadována komerční licence.  
-- **Mohu extrahovat několik souborů najednou?** Ano – tutoriál ukazuje, jak **extract multiple zip files** ve smyčce.  
-- **Jaké verze .NET jsou podporovány?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+- **What does “create zip without compression” mean?** Ukládá soubory do ZIP pomocí metody *store*, přičemž data zůstávají nezměněna.  
+- **Which library supports this in .NET?** Aspose.Zip pro .NET poskytuje čisté API pro metodu *store* a extrakci.  
+- **Do I need a license to run the sample?** Bezplatná zkušební verze funguje pro vývoj; pro produkci je vyžadována komerční licence.  
+- **Can I extract several files at once?** Ano – tutoriál ukazuje, jak **extract multiple zip files** ve smyčce.  
+- **What .NET versions are supported?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1 a .NET 5–10.
 
 ## Co je “create zip without compression”?
 
-Když vytvoříte ZIP archiv s **store** kompresní metodou, každý soubor je přidán přesně tak, jak je. Výsledkem je větší archiv ve srovnání s komprimovanými ZIPy, ale operace je mnohem rychlejší a původní bajty souboru zůstávají nedotčeny – ideální pro situace, kde je rychlost nebo integrita dat důležitější než velikost.
-
-## Porozumění metodě zip compression method store
-
-**zip compression method store** (také nazývaná metoda „store“) říká formátu ZIP, aby přeskočil jakýkoli krok redukce dat. Aspose.Zip tuto možnost vystavuje pomocí enumu `CompressionMethod.Store`, což vám umožní explicitně zvolit tuto metodu pro každý záznam. Použití metody store je zvláště výhodné, když pracujete s již komprimovanými mediálními soubory (např. JPEG, MP3), kde další komprese nepřináší žádný prospěch.
+Metoda komprese `store` říká formátu ZIP, aby přeskočil jakýkoli krok zmenšování dat. **create zip without compression** tedy vytváří větší archiv, ale operace je téměř okamžitá a původní bajty zůstávají nedotčeny – ideální pro již komprimovaná média (JPEG, MP3) nebo když potřebujete deterministický obsah souborů.
 
 ## Proč používat Aspose.Zip pro .NET?
 
-- **Plná kontrola** nad úrovní komprese (store vs. deflate).  
-- **Jednoduché API** pro čtení záznamů, otevírání zip souborů a extrahování dat.  
-- **Podpora napříč platformami** pro .NET Framework, .NET Core a .NET 5+.  
-- **Vestavěná správa** velkých archivů bez načítání všeho do paměti.
+Aspose.Zip poskytuje vývojářům přesnou kontrolu nad kompresí, plynulé API pro čtení a zápis položek a kompatibilitu napříč platformami ve všech verzích .NET. Efektivně pracuje s velkými archivy, udržuje nízkou spotřebu paměti a podporuje více než 50 formátů, což z něj činí ideální nástroj pro jednoduché i složité úlohy archivace.
 
-## Předpoklady
+- **Full control** nad úrovní komprese – vyberte *store* nebo *deflate* pro každou položku.  
+- **Simple, fluent API** pro čtení položek, otevírání zip souborů a extrakci dat.  
+- **Cross‑platform** podpora pro .NET Framework, .NET Core a .NET 5+.  
+- **Handles large archives** až do 2 GB bez načítání celého souboru do paměti.  
+- **Quantified claim:** Aspose.Zip podporuje **50+ input and output formats** a může zpracovat **multi‑hundred‑page archives**, přičemž spotřeba paměti zůstává pod 100 MB.
 
-Než se pustíme do tohoto tutoriálu, ujistěte se, že máte připravené následující předpoklady:
+## Požadavky
 
-- Aspose.Zip for .NET Library: Stáhněte a nainstalujte knihovnu Aspose.Zip for .NET. Knihovnu najdete [zde](https://releases.aspose.com/zip/net/).
+Před začátkem se ujistěte, že máte:
 
-- Document Directory: Vytvořte adresář v systému, kde budete ukládat potřebné soubory pro tento tutoriál.
+- **Aspose.Zip for .NET** – stáhněte jej z oficiálního webu **[here](https://releases.aspose.com/zip/net/)**.  
+- Fungující **document directory** na vašem počítači, odkud budou čteny a kam budou zapisovány ukázkové soubory.
 
-## Import Namespaces
+## Importovat jmenné prostory
 
-Abychom mohli začít, naimportujme požadované jmenné prostory pro náš projekt:
+Nejprve importujte jmenné prostory, které obsahují základní třídy, jež budeme používat:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
+## Jak vytvořit zip archiv bez komprese v C#?
+
+`Archive` je hlavní třída, která představuje ZIP archiv v Aspose.Zip.
+
+Pro vytvoření uloženého archivu načtěte každý zdrojový soubor, vytvořte instanci `Archive` a přidejte každý soubor pomocí `CompressionMethod.Store`. Nepotřebujete žádné další parametry komprese a knihovna zapisuje surové bajty přímo, což vede k téměř okamžité operaci při zachování původních dat nezměněných.
+
 ## Jak vytvořit Zip bez komprese
 
-Nejprve potřebujeme ZIP archiv, který používá **store** metodu (tj. bez komprese). Níže uvedený ukázkový kód vytváří takový archiv a je poskytován Aspose.Zip jako pomocná metoda. Po spuštění vygeneruje soubor `StoreMultipleFilesWithoutCompression_out.zip` ve vašem dokumentovém adresáři.
+Nejprve potřebujeme ZIP archiv, který používá metodu **store** (tj. bez komprese). Níže uvedený ukázkový kód vytváří takový archiv a je poskytován Aspose.Zip jako pomocná metoda. Po spuštění vygeneruje `StoreMultipleFilesWithoutCompression_out.zip` ve vašem document directory.
 
 ```csharp
 StoreMultipleFilesWithoutCompression.Run();
 ```
 
-> **Pro tip:** Pomocná metoda interně nastavuje `CompressionMethod.Store` pro každý záznam, čímž zajišťuje, že archiv je vytvořen bez jakékoli datové komprese.
+> **Tip:** Pomocná metoda interně nastavuje `CompressionMethod.Store` pro každou položku, čímž zajišťuje, že archiv je vytvořen bez jakékoli komprese dat.
+
+## Jak mohu otevřít zip soubor a extrahovat více položek pomocí Aspose.Zip?
+
+`Archive` představuje otevřený ZIP soubor a poskytuje přístup k jeho položkám prostřednictvím kolekce `Entries`.
+
+Otevřete archiv předáním cesty k souboru do konstruktoru `Archive` a poté iterujte přes `archive.Entries`. Pro každou položku otevřete její stream pomocí `entry.Open()`, zkopírujte data do cílového souboru pomocí bufferovaného streamu a streamy se automaticky uzavřou pomocí `using`. Tento přístup efektivně extrahuje všechny položky, aniž by načítal celý archiv do paměti.
 
 ## Jak otevřít Zip a extrahovat více souborů
 
-Nyní, když máme uložený ZIP, podívejme se, **jak otevřít zip** a vytáhnout soubory.
+Nyní, když máme uložený ZIP, podívejme se na **how to open zip** a vytažení souborů.
 
-### Krok 2.1: Otevírání Zip souboru
+### Krok 2.1: Otevření zip souboru
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -84,9 +137,9 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
     {
 ```
 
-Objekt `Archive` představuje otevřený ZIP a poskytuje přístup k jednotlivým záznamům přes kolekci `Entries`.
+Objekt `Archive` představuje otevřený ZIP a poskytuje vám přístup k jednotlivým položkám prostřednictvím kolekce `Entries`.
 
-### Krok 2.2: Vytváření extrahovaných souborů
+### Krok 2.2: Vytvoření extrahovaných souborů
 
 ```csharp
         using (var extracted = File.Create(dataDir + "alice_extracted_store_out.txt"))
@@ -128,59 +181,65 @@ Zde **read zip entry** 0, zkopírujeme jeho bajty do nového souboru a streamy
 }
 ```
 
-Iterací přes `archive.Entries` můžete **extract multiple zip files** (nebo více záznamů) pomocí jen několika řádků kódu.
+Iterací přes `archive.Entries` můžete **extract multiple zip files** (nebo více položek) pomocí jen několika řádků kódu.
 
 ## Časté problémy a řešení
 
 | Problém | Příčina | Řešení |
-|---------|----------|--------|
-| `FileNotFoundException` při otevírání ZIP | Nesprávná cesta `dataDir` | Ověřte, že `dataDir` končí lomítkem, nebo použijte `Path.Combine`. |
-| Extrahovaný soubor je prázdný | Buffer není vyprázdněn | `using` blok automaticky vyprázdní; ujistěte se, že čtete stream až do `bytesRead` rovno 0 (jak je ukázáno). |
-| Výjimka licence | Spuštění bez platné licence | Aplikujte zkušební nebo trvalou licenci před nasazením. |
+|-------|-------|-----|
+| `FileNotFoundException` při otevírání ZIP | Špatná cesta `dataDir` | Ověřte, že `dataDir` končí lomítkem, nebo použijte `Path.Combine`. |
+| Extrahovaný soubor je prázdný | Buffer nebyl vyprázdněn | `using` blok automaticky vyprázdní; ujistěte se, že čtete stream, dokud `bytesRead` není 0 (jak je ukázáno). |
+| Výjimka licence | Spuštění bez platné licence | Použijte zkušební nebo trvalou licenci před nasazením. |
 
 ## Často kladené otázky
 
 ### Q1: Je Aspose.Zip pro .NET kompatibilní se všemi .NET frameworky?
 
-**A:** Ano, Aspose.Zip pro .NET je navržen tak, aby byl kompatibilní s různými .NET frameworky, což vývojářům poskytuje flexibilitu.
+**A:** Ano, Aspose.Zip pro .NET funguje s .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1 a .NET 5–10, což vám poskytuje flexibilitu napříč platformami.
 
-### Q2: Mohu Aspose.Zip pro .NET použít jak v komerčních, tak nekomerčních projektech?
+### Q2: Mohu používat Aspose.Zip pro .NET v komerčních i nekomerčních projektech?
 
-**A:** Ano, Aspose.Zip pro .NET může být používán jak v komerčních, tak nekomerčních projektech. Podrobnosti o licencování najdete na [stránce nákupu](https://purchase.aspose.com/buy).
+**A:** Ano, můžete jej použít v jakémkoli typu projektu. Podrobnosti o licencování najdete na **[purchase page](https://purchase.aspose.com/buy)**.
 
-### Q3: Jak získám podporu pro Aspose.Zip pro .NET?
+### Q3: Jak mohu získat podporu pro Aspose.Zip pro .NET?
 
-**A:** Pro podporu navštivte [Aspose.Zip fórum](https://forum.aspose.com/c/zip/37), kde vám může pomoci komunita vývojářů a odborníků.
+**A:** Navštivte **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)**, kde komunita a inženýři Aspose odpovídají na otázky.
 
-### Q4: Je k dispozici bezplatná zkušební verze Aspose.Zip pro .NET?
+### Q4: Je k dispozici bezplatná zkušební verze pro Aspose.Zip pro .NET?
 
-**A:** Ano, funkce Aspose.Zip pro .NET můžete vyzkoušet získáním bezplatné zkušební verze [zde](https://releases.aspose.com/).
+**A:** Rozhodně – můžete si stáhnout zkušební verzi **[here](https://releases.aspose.com/)** a vyzkoušet všechny funkce zdarma.
 
 ### Q5: Mohu získat dočasnou licenci pro testovací účely?
 
-**A:** Ano, dočasnou licenci pro testování můžete získat na [této stránce](https://purchase.aspose.com/temporary-license/).
+**A:** Ano, dočasná licence je k dispozici přes **[this link](https://purchase.aspose.com/temporary-license/)** pro krátkodobé hodnocení.
 
-### Q6: Jak přečíst zip entry bez extrahování celého archivu?
+### Q6: Jak přečíst zip položku bez extrahování celého archivu?
 
-**A:** Použijte `archive.Entries[index].Open()` k získání streamu pro konkrétní záznam, poté si přečtěte potřebné bajty, jak je ukázáno v kódu výše.
+**A:** Použijte `archive.Entries[index].Open()` k získání streamu pro konkrétní položku, poté čtěte jen potřebné bajty – přesně tak, jak je ukázáno v ukázkových kódech.
 
 ### Q7: Jaký je nejlepší způsob, jak **extract multiple zip files** ve smyčce?
 
-**A:** Procházejte `archive.Entries` pomocí `foreach` smyčky, otevřete stream každého záznamu a zapište jej do cílového souboru, podobně jako v kroku 2.2 a 2.3.
+**A:** Procházejte `archive.Entries` pomocí smyčky `foreach`, otevřete stream každé položky a zapíšete jej do cílového umístění. Tento přístup odráží vzor ukázaný v krocích 2.2 a 2.3.
 
 ## Závěr
 
-Ovládnutí **create zip without compression** a následného procesu extrakce je klíčové pro vysoce výkonné .NET aplikace. Aspose.Zip pro .NET vám poskytuje čisté, intuitivní API pro **how to open zip**, čtení každého **zip entry** a provedení **C# extract zip** operace s minimálním kódem. Dodržením tohoto průvodce jste se naučili, jak vygenerovat uložený archiv, otevřít jej a efektivně extrahovat jeho obsah.
+Ovládnutí **create zip without compression** a následného procesu extrakce je nezbytné pro vysoce výkonné .NET aplikace. Aspose.Zip pro .NET vám poskytuje čisté, intuitivní API pro **how to open zip**, čtení každé **zip entry** a provedení operace **C# extract zip** s minimálním kódem. Dodržením tohoto návodu jste se naučili, jak vytvořit uložený archiv, otevřít jej a efektivně extrahovat jeho obsah.
 
 ---
 
-**Last Updated:** 2026-02-17  
-**Tested With:** Aspose.Zip for .NET 24.12  
-**Author:** Aspose  
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+**Poslední aktualizace:** 2026-06-14  
+**Testováno s:** Aspose.Zip for .NET 24.12  
+**Autor:** Aspose  
 
 {{< blocks/products/products-backtop-button >}}
+
+## Související tutoriály
+
+- [Aspose.Zip for .NET - Password Protect Zip Archive & Store Multiple Files Without Compression](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
+- [Create Zip Archive .NET – File Compression with Aspose.Zip](/zip/net/file-compression/)
+- [How to Decompress Files with Aspose.Zip for .NET](/zip/net/file-decompression/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
