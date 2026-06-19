@@ -1,11 +1,78 @@
 ---
-date: 2026-02-20
-description: जानिए कैसे tarbz2 फ़ाइलों को संकुचित किया जाए, कैसे targz आर्काइव बनाएँ,
-  और .net आर्काइव निष्कर्षण के साथ पासवर्ड‑सुरक्षित ज़िप निष्कर्षण Aspose.Zip for
-  .NET का उपयोग करके किया जाए। स्टोरेज दक्षता और सुरक्षा को बढ़ाएँ।
-linktitle: Archive Extraction and Formats
+date: 2026-06-19
+description: Aspose.Zip for .NET का उपयोग करके tar फ़ाइलों को संपीड़ित करना, targz
+  अभिलेख बनाना, और पासवर्ड‑सुरक्षित zip फ़ाइलों को निकालना सीखें – जिससे संग्रहण दक्षता
+  और सुरक्षा में वृद्धि होती है।
+keywords:
+- how to compress tar
+- extract password zip
+- aspose zip compress
+- aspose zip extract
+- create targz archive
+linktitle: आर्काइव निष्कर्षण और स्वरूप
+schemas:
+- author: Aspose
+  dateModified: '2026-06-19'
+  description: Learn how to compress tar files, create targz archives, and extract
+    password‑protected zip files using Aspose.Zip for .NET – boosting storage efficiency
+    and security.
+  headline: How to Compress Tar Files with Aspose.Zip for .NET
+  type: TechArticle
+- description: Learn how to compress tar files, create targz archives, and extract
+    password‑protected zip files using Aspose.Zip for .NET – boosting storage efficiency
+    and security.
+  name: How to Compress Tar Files with Aspose.Zip for .NET
+  steps:
+  - name: Choose the archive format you need
+    text: 'Decide which tar‑based format best matches your compression‑speed trade‑off:
+      - **TarBz2** – Highest compression ratio (≈30 % smaller than TarGz) but slower.
+      - **TarGz** – Good balance of speed and size; ideal for most cloud‑storage scenarios.
+      - **TarLz / TarXz** – Very high compression with moderate'
+  - name: Create a new `Archive` instance
+    text: '`Archive` is the top‑level object that represents a single archive file
+      in memory. The `Archive` class manages the packing and compression workflow,
+      exposing methods to add entries and write the final file.'
+  - name: Add files and folders
+    text: You can add an entire directory tree with `AddAll` or add individual files
+      with `AddFile`. Preserving the original folder hierarchy is as simple as passing
+      the base directory path.
+  - name: Set the desired compression type
+    text: '`CompressionType` enumerates the supported algorithms. `CompressionType`
+      defines the algorithm (BZip2, GZip, LZMA, XZ, etc.) that will be applied to
+      the TAR stream during saving.'
+  - name: Save the archive
+    text: '`ArchiveFormat` is an enum set (e.g., `TarBz2`, `TarGz`) that tells the
+      writer which container and compression to use. Calling `Save` writes the archive
+      to disk using the selected format.'
+  - name: Extracting archives with passwords
+    text: '`ArchiveEntry` represents a single file or directory entry inside an archive.
+      To extract a password‑protected zip, open the archive, locate each `ArchiveEntry`,
+      assign its `Password` property, and call `Extract`. This per‑entry password
+      model lets you protect individual files inside a single zip.'
+  - name: Verify the result
+    text: After extraction, compare file sizes and SHA‑256 checksums to confirm that
+      the archive round‑trip preserved data integrity.
+  type: HowTo
+- questions:
+  - answer: Set `CompressionType.GZip` and use `ArchiveFormat.TarGz` when calling
+      `Save`. This produces a `.tar.gz` file in a single step.
+    question: How do I create a TarGz archive?
+  - answer: No. Each entry must be supplied with the correct password; extraction
+      fails with an `InvalidPasswordException` otherwise.
+    question: Can I extract a password‑protected archive without knowing the password?
+  - answer: Yes. Assign a password to each `ArchiveEntry` individually before calling
+      `Extract`.
+    question: Does Aspose.Zip support extracting archives with different passwords
+      per entry?
+  - answer: TarBz2 typically yields the smallest size, followed by TarLz and TarXz.
+      TarGz offers a faster, still‑effective alternative.
+    question: Which format gives the best compression?
+  - answer: Practically none, but extremely large archives (>10 GB) may benefit from
+      splitting into multiple parts for easier handling.
+    question: Is there a limit to the number of files I can add to a TAR archive?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: .NET के लिए Aspose.Zip के साथ TarBz2 फ़ाइलों को कैसे संपीड़ित करें
+title: Aspose.Zip for .NET के साथ Tar फ़ाइलों को संपीड़ित करने का तरीका
 url: /hi/net/archive-extraction-and-formats/
 weight: 23
 ---
@@ -14,108 +81,125 @@ weight: 23
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET के साथ TarBz2 फ़ाइलों को कैसे संपीड़ित करें
+# Aspose.Zip for .NET के साथ Tar फ़ाइलों को संपीड़ित कैसे करें
 
 ## परिचय
 
-इस गाइड में, आप **Aspose.Zip for .NET** के साथ tarbz2 फ़ाइलों को संपीड़ित करना सीखेंगे तथा TarGz अभिलेख बनाना और पासवर्ड‑सुरक्षित zip फ़ाइलों की .net अभिलेख निष्कर्षण कैसे करें, यह भी जानेंगे। कुशल फ़ाइल हैंडलिंग आधुनिक .NET विकास की नींव है, और इन फ़ॉर्मैट्स में निपुणता से आप स्टोरेज लागत घटा सकते हैं, डेटा ट्रांसफ़र गति बढ़ा सकते हैं, और संवेदनशील जानकारी को सुरक्षित रख सकते हैं। चाहे आप बैकअप सेवा, क्लाउड‑स्टोरेज क्लाइंट, या डेटा‑प्रोसेसिंग पाइपलाइन बना रहे हों, यहाँ कवर की गई तकनीकें आपके फ़ाइल‑मैनेजमेंट कार्यों को अधिक सुगम और विश्वसनीय बनाएँगी।
+इस गाइड में आप **Tar फ़ाइलों को संपीड़ित** करने के लिए Aspose.Zip for .NET का उपयोग करना सीखेंगे, TarGz अभिलेख बनाना सीखेंगे, और पासवर्ड‑सुरक्षित zip अभिलेखों को निकालना देखेंगे। कुशल अभिलेख प्रबंधन आधुनिक .NET डेवलपर्स के लिए एक मुख्य कौशल है—चाहे आप बैकअप सेवा, क्लाउड‑स्टोरेज क्लाइंट, या डेटा‑प्रोसेसिंग पाइपलाइन बना रहे हों, इन फ़ॉर्मैट्स में महारत हासिल करने से स्टोरेज लागत घटती है, ट्रांसफ़र गति बढ़ती है, और संवेदनशील डेटा सुरक्षित रहता है।
 
 ## त्वरित उत्तर
 - **TarBz2 क्या है?** एक संपीड़ित अभिलेख जो TAR पैकेजिंग को BZIP2 संपीड़न के साथ मिलाता है, जिससे उच्च संपीड़न अनुपात मिलता है।  
-- **Aspose.Zip for .NET क्यों चुनें?** यह कई अभिलेख फ़ॉर्मैट बनाने और निकालने के लिए एकल, सहज API प्रदान करता है, बिना बाहरी निर्भरताओं के।  
+- **Aspose.Zip for .NET क्यों चुनें?** यह बाहरी निर्भरताओं के बिना कई अभिलेख फ़ॉर्मैट बनाने और निकालने के लिए एकल, सहज API प्रदान करता है।  
 - **क्या मैं TarGz अभिलेख बना सकता हूँ?** हाँ – Aspose.Zip TarGz, TarLz, TarXz, TarZ, और अधिक का समर्थन करता है।  
-- **पासवर्ड‑सुरक्षित zip अभिलेख को कैसे निकालूँ?** निष्कर्षण के समय `ArchiveEntry` ऑब्जेक्ट पर `Password` प्रॉपर्टी का उपयोग करें।  
-- **उत्पादन उपयोग के लिए लाइसेंस चाहिए?** उत्पादन के लिए एक वाणिज्यिक लाइसेंस आवश्यक है; मूल्यांकन के लिए एक मुफ्त ट्रायल उपलब्ध है।
+- **पासवर्ड‑सुरक्षित zip अभिलेख को कैसे निकालें?** निकासी के समय `ArchiveEntry` ऑब्जेक्ट पर `Password` प्रॉपर्टी का उपयोग करें।  
+- **उत्पादन उपयोग के लिए लाइसेंस चाहिए?** उत्पादन के लिए एक व्यावसायिक लाइसेंस आवश्यक है; मूल्यांकन के लिए एक मुफ्त ट्रायल उपलब्ध है।
 
-## TarBz2 फ़ाइलों को संपीड़ित करने का तरीका
-TarBz2 में फ़ाइलें संपीड़ित करने का अर्थ है पहले कई फ़ाइलों और डायरेक्टरीज़ को एक **TAR** कंटेनर में बंडल करना और फिर **BZIP2** संपीड़न लागू करना। परिणामस्वरूप एक एकल `.tar.bz2` फ़ाइल बनती है, जो परिवहन में आसान और अत्यधिक संपीड़ित होती है।
+## Tar संपीड़न क्या है?
+Tar (Tape Archive) एक कंटेनर फ़ॉर्मैट है जो कई फ़ाइलों और डायरेक्टरीज़ को बिना संपीड़न के एक ही स्ट्रीम में बंडल करता है। जब आप BZIP2, GZip, LZMA, या XZ जैसे संपीड़न एल्गोरिद्म लागू करते हैं, तो परिणाम **tar‑आधारित अभिलेख** जैसे `.tar.bz2`, `.tar.gz`, `.tar.lz` आदि होता है। ये फ़ॉर्मैट Linux, macOS, और Windows में व्यापक रूप से समर्थित हैं, जिससे वे क्रॉस‑प्लेटफ़ॉर्म डेटा एक्सचेंज के लिए आदर्श बनते हैं।
 
 ## इन फ़ॉर्मैट्स को संभालने के लिए Aspose.Zip for .NET क्यों उपयोग करें?
-- **एकीकृत API** – एक लाइब्रेरी, कई फ़ॉर्मैट (TarBz2, TarGz, TarLz, TarXz, TarZ)।  
-- **कोई नेटिव निर्भरताएँ नहीं** – Windows, Linux, और macOS पर तुरंत काम करता है।  
-- **पासवर्ड समर्थन** – प्रत्येक प्रविष्टि के पासवर्ड के साथ अभिलेख को सुरक्षित रूप से संरक्षित और निकालें।  
-- **प्रदर्शन‑उन्मुख** – स्ट्रीम‑आधारित प्रोसेसिंग मेमोरी फुटप्रिंट को न्यूनतम करता है।
+Aspose.Zip **एकीकृत, निर्भरतामुक्त API** प्रदान करता है जो 50+ अभिलेख और संपीड़न फ़ॉर्मैट का समर्थन करता है, जिसमें TarBz2, TarGz, TarLz, TarXz, और TarZ शामिल हैं। यह Windows, Linux, और macOS पर चलता है, और इसकी स्ट्रीम‑आधारित आर्किटेक्चर मल्टी‑हंड्रेड‑मेगाबाइट अभिलेखों के लिए भी मेमोरी उपयोग को 10 MB से कम रखती है। पासवर्ड सुरक्षा अंतर्निहित है, जिससे अतिरिक्त लाइब्रेरी के बिना प्रति‑एंट्री एन्क्रिप्शन संभव होता है।
 
 ## पूर्वापेक्षाएँ
-- .NET 6.0 या बाद का (या .NET Core 3.1+ / .NET Framework 4.5+)।  
+- .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, या .NET 5–10।  
 - Aspose.Zip for .NET NuGet पैकेज स्थापित (`Install-Package Aspose.Zip`)।  
-- C# और फ़ाइल I/O की बुनियादी समझ।
+- C# फ़ाइल I/O और .NET प्रोजेक्ट सिस्टम की बुनियादी समझ।
 
 ## चरण‑दर‑चरण गाइड
 
-### चरण 1: वह अभिलेख फ़ॉर्मैट चुनें जिसकी आपको आवश्यकता है
-निर्णय लें कि **TarBz2**, **TarGz**, **TarLz**, **TarXz**, या **TarZ** आपके संपीड़न अनुपात और संगतता आवश्यकताओं के अनुसार सबसे उपयुक्त है।  
-- **TarBz2** – सर्वोत्तम संपीड़न, प्रक्रिया धीमी।  
-- **TarGz** – गति और आकार का अच्छा संतुलन (द्वितीयक कीवर्ड *how to create targz* को कवर करता है)।  
-- **TarZ** – पुराना फ़ॉर्मैट, पुराने Unix टूल्स के साथ संगतता के लिए उपयोगी।
+### Tar फ़ाइलों को संपीड़ित करने का सीधा उत्तर
+`Archive` एक अभिलेख फ़ाइल का प्रतिनिधित्व करता है और एंट्री जोड़ने तथा सहेजने के मेथड प्रदान करता है।  
+एक `Archive` इंस्टेंस बनाएं, उन फ़ाइलों को जोड़ें जिन्हें आप बंडल करना चाहते हैं, `CompressionType.BZip2` सेट करें, और `ArchiveFormat.TarBz2` के साथ `Save` कॉल करें। लाइब्रेरी TAR कंटेनर लिखती है और एक ही स्ट्रीमिंग पास में इसे संपीड़ित करती है, इसलिए आप पूरे अभिलेख को मेमोरी में लोड नहीं करते।
 
-### चरण 2: एक नया `Archive` इंस्टेंस बनाएं
-`Archive` क्लास को इंस्टैंशिएट करें और आउटपुट फ़ाइल पाथ निर्दिष्ट करें। यह ऑब्जेक्ट पैकिंग और संपीड़न प्रक्रिया को प्रबंधित करेगा।
+### चरण 1: आवश्यक अभिलेख फ़ॉर्मैट चुनें
+निर्णय लें कि कौन सा tar‑आधारित फ़ॉर्मैट आपके संपीड़न‑गति ट्रेड‑ऑफ़ से सबसे बेहतर मेल खाता है:
+
+- **TarBz2** – सबसे उच्च संपीड़न अनुपात (TarGz से ≈30 % छोटा) लेकिन धीमा।  
+- **TarGz** – गति और आकार का अच्छा संतुलन; अधिकांश क्लाउड‑स्टोरेज परिदृश्यों के लिए आदर्श।  
+- **TarLz / TarXz** – बहुत उच्च संपीड़न, मध्यम गति; अभिलेखीय स्टोरेज के लिए उपयोगी।  
+- **TarZ** – पुराने Unix टूल्स के साथ संगतता के लिए लेगेसी फ़ॉर्मैट।
+
+### चरण 2: नया `Archive` इंस्टेंस बनाएं
+`Archive` वह टॉप‑लेवल ऑब्जेक्ट है जो मेमोरी में एकल अभिलेख फ़ाइल का प्रतिनिधित्व करता है।  
+
+`Archive` क्लास पैकिंग और संपीड़न वर्कफ़्लो को प्रबंधित करती है, एंट्री जोड़ने और अंतिम फ़ाइल लिखने के मेथड प्रदान करती है।
 
 ### चरण 3: फ़ाइलें और फ़ोल्डर जोड़ें
-फ़ाइलों को संपीड़ित करने के लिए `AddAll` या `AddFile` मेथड का उपयोग करें। आप बेस फ़ोल्डर जोड़कर डायरेक्टरी संरचना को संरक्षित रख सकते हैं।
+आप `AddAll` के साथ पूरी डायरेक्टरी ट्री जोड़ सकते हैं या `AddFile` के साथ व्यक्तिगत फ़ाइलें जोड़ सकते हैं। मूल फ़ोल्डर पदानुक्रम को बनाए रखना बस बेस डायरेक्टरी पाथ पास करने जितना सरल है।
 
 ### चरण 4: वांछित संपीड़न प्रकार सेट करें
-अभिलेख को सहेजते समय संपीड़न एल्गोरिद्म (`CompressionType.BZip2`, `CompressionType.GZip`, आदि) निर्दिष्ट करें। यही वह जगह है जहाँ आप वास्तव में **फ़ाइलों को TarBz2 में संपीड़ित** करेंगे या किसी अन्य फ़ॉर्मैट में।
+`CompressionType` समर्थित एल्गोरिद्म को सूचीबद्ध करता है।  
+
+`CompressionType` वह एल्गोरिद्म (BZip2, GZip, LZMA, XZ, आदि) निर्धारित करता है जिसे सहेजते समय TAR स्ट्रीम पर लागू किया जाएगा।
 
 ### चरण 5: अभिलेख सहेजें
-उचित फ़ॉर्मैट एन्नम (`ArchiveFormat.TarBz2`, `ArchiveFormat.TarGz`, आदि) के साथ `Save` कॉल करें। लाइब्रेरी एक ही पास में TAR कंटेनर लिखती है और चुनी हुई संपीड़न लागू करती है।
+`ArchiveFormat` एक एनोम सेट है (जैसे `TarBz2`, `TarGz`) जो राइटर को बताता है कि कौन सा कंटेनर और संपीड़न उपयोग करना है।  
+
+`Save` कॉल चयनित फ़ॉर्मैट के साथ अभिलेख को डिस्क पर लिखता है।
 
 ### चरण 6: पासवर्ड के साथ अभिलेख निकालना
-यदि आपको **विभिन्न पासवर्ड वाले अभिलेख प्रविष्टियों को निकालना** है (द्वितीयक कीवर्ड *password protected zip extraction*), तो अभिलेख खोलें, प्रत्येक प्रविष्टि खोजें, उसका पासवर्ड असाइन करें, और फिर निकालें।
+`ArchiveEntry` अभिलेख के भीतर एकल फ़ाइल या डायरेक्टरी एंट्री का प्रतिनिधित्व करता है।  
+
+पासवर्ड‑सुरक्षित zip को निकालने के लिए, अभिलेख खोलें, प्रत्येक `ArchiveEntry` खोजें, उसकी `Password` प्रॉपर्टी सेट करें, और `Extract` कॉल करें। यह प्रति‑एंट्री पासवर्ड मॉडल आपको एक ही zip में व्यक्तिगत फ़ाइलों को सुरक्षित करने की अनुमति देता है।
 
 ### चरण 7: परिणाम सत्यापित करें
-निकालने के बाद, फ़ाइल आकार और चेकसम की तुलना करके सुनिश्चित करें कि अभिलेख सही ढंग से बनाया और अनज़िप किया गया है।
+निकासी के बाद, फ़ाइल आकार और SHA‑256 चेकसम की तुलना करें ताकि यह पुष्टि हो सके कि अभिलेख राउंड‑ट्रिप ने डेटा अखंडता बनाए रखी है।
 
 ## सामान्य उपयोग केस
-- **बैकअप यूटिलिटीज़** – दैनिक बैकअप को `.tar.bz2` के रूप में संग्रहीत करें ताकि स्टोरेज लागत कम हो।  
-- **क्रॉस‑प्लेटफ़ॉर्म डेटा एक्सचेंज** – Tar‑आधारित फ़ॉर्मैट Linux, macOS, और Windows पर सार्वभौमिक रूप से समझे जाते हैं।  
-- **सुरक्षित वितरण** – अनुपालन‑आधारित वातावरण में व्यक्तिगत प्रविष्टियों को पासवर्ड से सुरक्षित रखें।
+- **बैकअप यूटिलिटीज़** – दैनिक बैकअप को `.tar.bz2` के रूप में संग्रहीत करें ताकि स्टोरेज लागत में 30 % तक कमी आए।  
+- **क्रॉस‑प्लेटफ़ॉर्म डेटा एक्सचेंज** – Tar‑आधारित फ़ॉर्मैट Linux, macOS, और Windows टूल्स द्वारा मूल रूप से समझे जाते हैं।  
+- **सुरक्षित वितरण** – संवेदनशील एंट्रीज़ को पासवर्ड असाइन करें, जिससे अतिरिक्त एन्क्रिप्शन टूल्स के बिना अनुपालन आवश्यकताओं को पूरा किया जा सके।
 
-## समस्या निवारण एवं सुझाव
-- **बड़ी अभिलेख** – पूरी फ़ाइल को मेमोरी में लोड करने से बचने के लिए स्ट्रीमिंग API (`Archive.CreateEntryFromFile`) का उपयोग करें।  
-- **पासवर्ड असंगति** – प्रत्येक `ArchiveEntry` पर सेट किया गया पासवर्ड निष्कर्षण के दौरान उपयोग किए गए पासवर्ड से मेल खाता हो, अन्यथा `InvalidPasswordException` मिलेगा।  
-- **असमर्थित संपीड़न स्तर** – BZIP2 कस्टम संपीड़न स्तर का समर्थन नहीं करता; यदि आपको अधिक नियंत्रण चाहिए तो TarLz या TarXz पर विचार करें।
+## समस्या निवारण एवं टिप्स
+- **बड़े अभिलेख** – मेमोरी उपयोग कम रखने के लिए स्ट्रीमिंग API (`Archive.CreateEntryFromFile`) को प्राथमिकता दें।  
+- **पासवर्ड असंगतता** – प्रत्येक `ArchiveEntry` पर सेट किया गया पासवर्ड बिल्कुल मेल खाना चाहिए; अन्यथा `InvalidPasswordException` फेंका जाता है।  
+- **संपीड़न स्तर** – BZIP2 कस्टम स्तर प्रदान नहीं करता; यदि आपको अधिक नियंत्रण चाहिए तो LZMA (`CompressionType.LZMA`) या XZ (`CompressionType.XZ`) पर स्विच करें।  
 
 ## अक्सर पूछे जाने वाले प्रश्न
 
-**प्र: मैं TarGz अभिलेख कैसे बनाऊँ?**  
-उ: `Save` कॉल करते समय संपीड़न प्रकार को `CompressionType.GZip` और फ़ॉर्मैट को `ArchiveFormat.TarGz` सेट करें।
+**प्रश्न: मैं TarGz अभिलेख कैसे बनाऊँ?**  
+उत्तर: `CompressionType.GZip` सेट करें और `Save` कॉल करते समय `ArchiveFormat.TarGz` उपयोग करें। इससे एक ही चरण में `.tar.gz` फ़ाइल बनती है।
 
-**प्र: क्या मैं पासवर्ड‑सुरक्षित अभिलेख को बिना पासवर्ड जाने निकाल सकता हूँ?**  
-उ: नहीं। प्रत्येक प्रविष्टि को सही पासवर्ड प्रदान करना आवश्यक है; अन्यथा निष्कर्षण विफल होगा।
+**प्रश्न: क्या मैं पासवर्ड‑सुरक्षित अभिलेख को बिना पासवर्ड के निकाल सकता हूँ?**  
+उत्तर: नहीं। प्रत्येक एंट्री को सही पासवर्ड प्रदान करना आवश्यक है; अन्यथा निकासी `InvalidPasswordException` के साथ विफल होगी।
 
-**प्र: क्या Aspose.Zip विभिन्न प्रविष्टियों के लिए अलग‑अलग पासवर्ड के साथ अभिलेख निकालने का समर्थन करता है?**  
-उ: हाँ। आप प्रत्येक `ArchiveEntry` को अलग‑अलग पासवर्ड असाइन कर सकते हैं, फिर निकाल सकते हैं।
+**प्रश्न: क्या Aspose.Zip विभिन्न एंट्रीज़ के लिए अलग‑अलग पासवर्ड के साथ अभिलेख निकालने का समर्थन करता है?**  
+उत्तर: हाँ। `Extract` कॉल करने से पहले प्रत्येक `ArchiveEntry` को व्यक्तिगत रूप से पासवर्ड असाइन करें।
 
-**प्र: कौन सा फ़ॉर्मैट सबसे अच्छा संपीड़न देता है?**  
-उ: सामान्यतः TarBz2 सबसे अधिक संपीड़न अनुपात देता है, उसके बाद TarLz और TarXz। TarGz गति‑से‑आकार का अच्छा संतुलन प्रदान करता है।
+**प्रश्न: कौन सा फ़ॉर्मैट सबसे अच्छा संपीड़न देता है?**  
+उत्तर: सामान्यतः TarBz2 सबसे छोटा आकार देता है, उसके बाद TarLz और TarXz आते हैं। TarGz तेज़ लेकिन अभी भी प्रभावी विकल्प है।
 
-**प्र: क्या TAR अभिलेख में जोड़ने योग्य फ़ाइलों की संख्या पर कोई सीमा है?**  
-उ: व्यावहारिक रूप से कोई सीमा नहीं है, लेकिन अत्यधिक बड़े अभिलेख को प्रबंधित करने में आसानी के लिए कई भागों में विभाजित करना लाभदायक हो सकता है।
+**प्रश्न: क्या TAR अभिलेख में जोड़ने योग्य फ़ाइलों की संख्या पर कोई सीमा है?**  
+उत्तर: व्यावहारिक रूप से कोई सीमा नहीं है, लेकिन अत्यधिक बड़े अभिलेख (>10 GB) को संभालने में आसान बनाने के लिए कई भागों में विभाजित करना लाभदायक हो सकता है।
 
-## अभिलेख निष्कर्षण और फ़ॉर्मैट ट्यूटोरियल्स
-### [File Compressing to TarBz2 with Aspose.Zip for .NET](./compress-to-tar-bz2/)
+## अभिलेख निकासी और फ़ॉर्मैट ट्यूटोरियल
+### [Aspose.Zip for .NET के साथ TarBz2 फ़ाइल संपीड़न](./compress-to-tar-bz2/)
 .NET में Aspose.Zip का उपयोग करके फ़ाइलों को TarBz2 फ़ॉर्मैट में संपीड़ित करना सीखें। कुशल फ़ाइल संपीड़न के लिए हमारा चरण‑दर‑चरण गाइड देखें।  
-### [Compressing to TarGz with Aspose.Zip for .NET](./compress-to-tar-gz/)
-.NET में Aspose.Zip के साथ प्रभावी फ़ाइल संपीड़न का अन्वेषण करें। TarGz को आसानी से संपीड़ित करें।  
-### [Compressing to TarLz with Aspose.Zip for .NET](./compress-to-tar-lz/)
-.NET में Aspose.Zip के साथ फ़ाइलों को सहजता से संपीड़ित करें। चरण‑दर‑चरण TarLz अभिलेख बनाना सीखें।  
-### [Compressing to TarXz with Aspose.Zip for .NET](./compress-to-tar-xz/)
-Aspose.Zip का उपयोग करके .NET में फ़ाइलों को TarXz फ़ॉर्मैट में संपीड़ित करना सीखें। कुशल फ़ाइल स्टोरेज और ट्रांसमिशन के लिए हमारा गाइड फॉलो करें।  
-### [Compressing to TarZ with Aspose.Zip for .NET](./compress-to-tar-z/)
-Aspose.Zip for .NET के साथ TarZ में संपीड़न के चरण‑दर‑चरण निर्देशों का अन्वेषण करें। आपके .NET प्रोजेक्ट्स के लिए प्रभावी फ़ाइल हैंडलिंग।  
-### [Extracting Archive Entries with Different Passwords in Aspose.Zip for .NET](./extract-archive-different-passwords/)
-Aspose.Zip for .NET में विभिन्न पासवर्ड वाले अभिलेख प्रविष्टियों को निकालना सीखें। अपने अनुप्रयोगों में सुरक्षा और लचीलापन बढ़ाएँ।
+### [Aspose.Zip for .NET के साथ TarGz में संपीड़न](./compress-to-tar-gz/)
+.NET में Aspose.Zip के साथ कुशल फ़ाइल संपीड़न का अन्वेषण करें। TarGz में आसानी से संपीड़ित करें।  
+### [Aspose.Zip for .NET के साथ TarLz में संपीड़न](./compress-to-tar-lz/)
+.NET में Aspose.Zip के साथ फ़ाइलों को आसानी से संपीड़ित करें। चरण‑दर‑चरण TarLz अभिलेख बनाना सीखें।  
+### [Aspose.Zip for .NET के साथ TarXz में संपीड़न](./compress-to-tar-xz/)
+Aspose.Zip का उपयोग करके .NET में फ़ाइलों को TarXz फ़ॉर्मैट में संपीड़ित करना सीखें। कुशल स्टोरेज और ट्रांसमिशन के लिए हमारा गाइड देखें।  
+### [Aspose.Zip for .NET के साथ TarZ में संपीड़न](./compress-to-tar-z/)
+Aspose.Zip for .NET का उपयोग करके TarZ में चरण‑दर‑चरण संपीड़न का अन्वेषण करें। आपके .NET प्रोजेक्ट्स के लिए कुशल फ़ाइल हैंडलिंग।  
+### [Aspose.Zip for .NET में विभिन्न पासवर्ड वाले अभिलेख एंट्रीज़ को निकालना](./extract-archive-different-passwords/)
+Aspose.Zip for .NET में विभिन्न पासवर्ड वाले अभिलेख एंट्रीज़ को निकालना सीखें। अपने अनुप्रयोगों में सुरक्षा और लचीलापन बढ़ाएँ।
 
 ---
 
-**अंतिम अपडेट:** 2026-02-20  
+**अंतिम अपडेट:** 2026-06-19  
 **परीक्षित संस्करण:** Aspose.Zip for .NET 24.11  
 **लेखक:** Aspose
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+## संबंधित ट्यूटोरियल
 
+- [Aspose.Zip for .NET के साथ tar अभिलेख बनाना और फ़ाइलें जोड़ना](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
+- [Aspose.Zip for .NET के साथ tar संपीड़ित करना और TarBz2 बनाना](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
+- [Aspose.Zip के साथ फ़ाइलें जोड़ना और tarxz अभिलेख बनाना](/zip/net/archive-extraction-and-formats/compress-to-tar-xz/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
