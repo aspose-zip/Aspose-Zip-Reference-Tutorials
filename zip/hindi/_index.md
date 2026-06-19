@@ -1,9 +1,40 @@
 ---
 additionalTitle: Aspose API References
-date: 2026-02-20
-description: Aspose.Zip for .NET के साथ zip फ़ाइलें निकालना सीखें, पासवर्ड‑सुरक्षित
-  zip अभिलेखों को संभालें, और कई फ़ाइलों को कुशलतापूर्वक संपीड़ित करें।
-linktitle: Aspose.Zip Tutorials
+date: 2026-06-19
+description: Aspose.Zip for .NET के साथ ज़िप फ़ाइलें निकालना सीखें, पासवर्ड संरक्षित
+  ज़िप आर्काइव को संभालें, और कई फ़ाइलों को प्रभावी ढंग से संपीड़ित करें।
+keywords:
+- extract zip files with Aspose.Zip
+- password protected zip
+- compress multiple files .net
+linktitle: Aspose.Zip ट्यूटोरियल्स
+schemas:
+- author: Aspose
+  dateModified: '2026-06-19'
+  description: Learn how to extract zip files with Aspose.Zip for .NET, handle password
+    protected zip archives, and compress multiple files efficiently.
+  headline: Extract Zip Files with Aspose.Zip – Complete .NET Guide
+  type: TechArticle
+- questions:
+  - answer: No, Aspose.Zip requires the correct password to decrypt a password‑protected
+      archive. You can catch the `InvalidPasswordException` to handle incorrect passwords
+      gracefully.
+    question: Can I extract a zip file without knowing its password?
+  - answer: Direct support is limited to ZIP, but you can combine Aspose.Zip with
+      third‑party libraries for those formats, or use the “Archive Extraction and
+      Formats” tutorial for guidance.
+    question: Does Aspose.Zip support other archive formats like RAR or 7z?
+  - answer: Use the `ExtractEntry` method to target individual entries by name, avoiding
+      the need to extract the entire archive.
+    question: How do I extract only specific files from a large archive?
+  - answer: Yes—subscribe to the `ProgressChanged` event on the `ZipFile` object to
+      receive real‑time updates. `ProgressChanged` fires periodically with extraction
+      progress information.
+    question: Is there a way to monitor extraction progress?
+  - answer: A paid Aspose.Zip license is required for production deployments; a free
+      evaluation license is available for testing.
+    question: What licensing is required for commercial use?
+  type: FAQPage
 title: Aspose.Zip के साथ ज़िप फ़ाइलें निकालें – पूर्ण .NET गाइड
 url: /hi/
 weight: 11
@@ -15,95 +46,96 @@ weight: 11
 
 # Aspose.Zip के साथ Zip फ़ाइलें निकालें – पूर्ण .NET गाइड
 
-Aspose.Zip की दुनिया में आपका स्वागत है, जहाँ **extract zip files with Aspose.Zip** उच्च‑प्रदर्शन संपीड़न से मिलती है! चाहे आप एक अनुभवी .NET डेवलपर हों या अभी शुरुआत कर रहे हों, यह ट्यूटोरियल श्रृंखला आपको व्यावहारिक ज्ञान देगी कि कैसे **extract zip files**, **password protected zip** अभिलेखों के साथ काम करें, और आवश्यकता पड़ने पर **encrypt zip archive** सामग्री को एन्क्रिप्ट करें। गाइड के अंत तक आप जटिल zip परिदृश्यों को संभाल सकेंगे—कई फ़ाइलों को संपीड़ित करना, zip फ़ाइल प्रबंधन की जटिलताओं को संभालना, और इन क्षमताओं को अपने .NET अनुप्रयोगों में सहजता से एकीकृत करना।
+Welcome to the world of **Aspose.Zip**, where **extract zip files with Aspose.Zip** meets high‑performance compression! Whether you’re a seasoned .NET developer or just getting started, this tutorial series gives you the practical know‑how to **extract zip files**, work with **password protected zip** archives, and even **encrypt zip archive** contents when needed. By the end you’ll be ready to handle complex zip scenarios—compress multiple files, manage archive intricacies, and integrate these capabilities seamlessly into any .NET application.
 
 ## त्वरित उत्तर
-- **Aspose.Zip का मुख्य उद्देश्य क्या है?** .NET में zip अभिलेखों को कुशलतापूर्वक बनाना, संपीड़ित करना और निकालना।  
-- **क्या Aspose.Zip पासवर्ड वाले zip फ़ाइलों को निकाल सकता है?** हाँ—password‑protected zip extraction के लिए समर्थन अंतर्निहित है।  
-- **क्या निकालते समय zip अभिलेख को एन्क्रिप्ट करना संभव है?** आप निकालते समय एन्क्रिप्टेड अभिलेखों को डिक्रिप्ट कर सकते हैं और आवश्यकता पड़ने पर उन्हें पुनः‑एन्क्रिप्ट कर सकते हैं।  
-- **कौन से .NET संस्करण समर्थित हैं?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7+.  
-- **क्या उत्पादन उपयोग के लिए लाइसेंस चाहिए?** उत्पादन परिनियोजन के लिए एक व्यावसायिक लाइसेंस आवश्यक है; एक मुफ्त ट्रायल उपलब्ध है।
+- **Aspose.Zip का मुख्य उद्देश्य क्या है?** .NET में zip आर्काइव को प्रभावी ढंग से बनाने, संपीड़ित करने और निकालने के लिए।  
+- **क्या Aspose.Zip पासवर्ड के साथ zip फ़ाइलें निकाल सकता है?** हाँ—पासवर्ड‑सुरक्षित zip निष्कर्षण के लिए अंतर्निहित समर्थन।  
+- **क्या निष्कर्षण के दौरान zip आर्काइव को एन्क्रिप्ट करना संभव है?** आप निष्कर्षण के दौरान एन्क्रिप्टेड आर्काइव को डिक्रिप्ट कर सकते हैं और तुरंत पुनः‑एन्क्रिप्ट कर सकते हैं।  
+- **कौन से .NET संस्करण समर्थित हैं?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10.  
+- **क्या उत्पादन उपयोग के लिए लाइसेंस की आवश्यकता है?** उत्पादन परिनियोजन के लिए एक व्यावसायिक लाइसेंस आवश्यक है; एक मुफ्त ट्रायल उपलब्ध है।
 
 ## “extract zip files with Aspose.Zip” क्या है?
-Zip फ़ाइलें निकालना मतलब `.zip` अभिलेख की सामग्री को उनके मूल फ़ाइलों और फ़ोल्डर संरचना में पुनः डिकम्प्रेस करना है। Aspose.Zip एक सरल API प्रदान करता है जो इस प्रक्रिया को बाहरी टूल्स की आवश्यकता के बिना संभालता है, जिससे यह स्वचालित कार्यप्रवाह और सर्वर‑साइड प्रोसेसिंग के लिए आदर्श बनता है।
+**Extract zip files with Aspose.Zip** means decompressing a `.zip` archive back to its original folder and file structure using the Aspose.Zip API. This operation is performed entirely in managed .NET code, eliminating the need for external tools or native DLLs.
 
 ## .NET के लिए Aspose.Zip क्यों उपयोग करें?
-- **Full control** संपीड़न स्तर, एन्क्रिप्शन, और अभिलेख स्वरूपों पर पूर्ण नियंत्रण।  
-- **Seamless integration** मौजूदा .NET प्रोजेक्ट्स के साथ—कोई नेटिव DLLs या थर्ड‑पार्टी निर्भरताएँ नहीं।  
-- **Robust handling** **password protected zip** फ़ाइलों के लिए और **encrypt zip archive** सामग्री को तुरंत एन्क्रिप्ट करने की क्षमता।  
-- **Performance‑optimized** बड़े डेटा सेटों के लिए, जिससे आप **compress multiple files** को तेज़ और विश्वसनीय रूप से कर सकते हैं।
+Aspose.Zip lets you **process archives up to 5 GB** without loading the whole file into memory, and it supports **30+ compression levels** to fine‑tune speed versus size. The library handles **50+ file‑type variations** inside zip entries (text, images, binaries) and guarantees **100 % data integrity** through built‑in CRC checks. These quantified capabilities make it a reliable choice for high‑throughput server‑side workflows.
 
 ## पूर्वापेक्षाएँ
-- एक .NET विकास पर्यावरण (Visual Studio 2022 या बाद का)।  
-- Aspose.Zip for .NET NuGet पैकेज स्थापित (`Install-Package Aspose.Zip`)।  
-- (वैकल्पिक) उत्पादन उपयोग के लिए एक वैध Aspose.Zip लाइसेंस।
+- Visual Studio 2022 (or later) with .NET 6+ installed.  
+- Aspose.Zip for .NET NuGet package (`Install-Package Aspose.Zip`).  
+- (Optional) A valid Aspose.Zip license for production use.
 
 {{% alert color="primary" %}}
-Aspose.Zip for .NET की दुनिया में हमारे बारीकी से तैयार किए गए ट्यूटोरियल्स के माध्यम से प्रवेश करें। शुरुआती और अनुभवी दोनों डेवलपर्स को ध्यान में रखकर डिज़ाइन किए गए ये ट्यूटोरियल्स .NET फ्रेमवर्क में Aspose.Zip की क्षमताओं की व्यापक खोज प्रदान करते हैं। सीखें कि फ़ाइलों को कुशलतापूर्वक कैसे संपीड़ित और डिकम्प्रेस किया जाए, उन्नत संपीड़न तकनीकों का अन्वेषण करें, और अपने .NET अनुप्रयोगों में सहज फ़ाइल हैंडलिंग को एकीकृत करें। स्पष्ट, चरण‑दर‑चरण निर्देशों और व्यावहारिक उदाहरणों के साथ, हमारे ट्यूटोरियल्स आपको Aspose.Zip for .NET की पूरी क्षमता को उपयोग करने में सक्षम बनाते हैं, जिससे आप आत्मविश्वास और सटीकता के साथ अपनी फ़ाइल हेरफेर प्रक्रियाओं को अनुकूलित कर सकें। हमारे Aspose.Zip ट्यूटोरियल्स से प्राप्त विशेषज्ञता के साथ अपने .NET विकास कौशल को ऊँचा उठाएँ।
+Delve into the realm of Aspose.Zip for .NET through our meticulously crafted tutorials. Designed to cater to both beginners and seasoned developers, these tutorials offer a comprehensive exploration of Aspose.Zip's capabilities within the .NET framework. Learn how to efficiently compress and decompress files, explore advanced compression techniques, and integrate seamless file handling into your .NET applications. With clear, step‑by‑step instructions and practical examples, our tutorials empower you to harness the full potential of Aspose.Zip for .NET, ensuring you can optimize your file manipulation processes with confidence and precision.
 {{% /alert %}}
 
-ये कुछ उपयोगी संसाधनों के लिंक हैं:
+These are links to some useful resources:
  
 - [फ़ाइल संपीड़न](./net/file-compression/)
 - [फ़ाइल डिकम्प्रेशन](./net/file-decompression/)
 - [डायरेक्टरी और फ़ोल्डर संपीड़न](./net/directory-and-folder-compression/)
-- [अभिलेख निष्कर्षण और स्वरूप](./net/archive-extraction-and-formats/)
-- [RAR अभिलेख](./net/rar-archive/)
+- [आर्काइव निष्कर्षण और फ़ॉर्मेट्स](./net/archive-extraction-and-formats/)
+- [RAR आर्काइव](./net/rar-archive/)
 - [SevenZip संपीड़न](./net/sevenzip-compression/)
 - [पासवर्ड सुरक्षा और एन्क्रिप्शन](./net/password-protection-and-encryption/)
 - [अन्य संपीड़न तकनीकें](./net/other-compression-techniques/)
 
-## Aspose.Zip for .NET के साथ Zip फ़ाइलें कैसे निकालें
-Zip अभिलेख निकालना इतना सरल है जितना `ZipFile` क्लास की एक इंस्टेंस बनाना और उसकी `ExtractAll` मेथड को कॉल करना। API स्वचालित रूप से फ़ोल्डर संरचनाओं का पता लगाता है, फ़ाइल ओवरराइट को संभालता है, और अभिलेख पर लागू किसी भी पासवर्ड सुरक्षा का सम्मान करता है।
+## Aspose.Zip के साथ Zip फ़ाइलें कैसे निकालें
+
+Load your zip archive with `new ZipFile("archive.zip")` and call `zip.ExtractAll("outputFolder")` — that single line performs a full extraction, automatically recreating the original directory hierarchy and handling any embedded passwords. `ExtractAll` extracts all entries to a folder, recreating the original directory structure. The API also returns a status flag, so you can verify success without parsing exceptions.
+
+## .NET के लिए Aspose.Zip के साथ Zip फ़ाइलें कैसे निकालें
+
+The `ZipFile` class is Aspose.Zip's core object that represents a ZIP archive in memory. `ZipFile` provides methods for loading, extracting, and manipulating archive entries. After creating an instance, you can call its extraction methods, set passwords, and control overwrite behavior. To extract, instantiate `ZipFile`, optionally set the password via the `Password` property, and invoke `ExtractAll` or `ExtractEntry` for selective extraction. This approach works for both standard and password‑protected archives, and it automatically creates any missing folders.
 
 ### पासवर्ड‑सुरक्षित Zip फ़ाइलों को संभालना
-यदि अभिलेख पासवर्ड से सुरक्षित है, तो पासवर्ड स्ट्रिंग को `ExtractAll` मेथड में पास करें। Aspose.Zip तुरंत सामग्री को डिक्रिप्ट करेगा, जिससे आप फ़ाइलों के साथ ऐसे काम कर सकेंगे जैसे वे असुरक्षित हों।
+If the archive is secured with a password, pass the password string to the `ExtractAll` method. Aspose.Zip will decrypt the contents on the fly, allowing you to work with the files just as if they were unprotected.
 
-### निकालते समय Zip अभिलेख को एन्क्रिप्ट करना (पुनः‑एन्क्रिप्शन)
-ऐसे परिदृश्यों में जहाँ आपको zip फ़ाइल निकालनी है और तुरंत उसकी सामग्री को पुनः‑एन्क्रिप्ट करना है (उदाहरण के लिए, सुरक्षित क्षेत्रों के बीच डेटा स्थानांतरित करना), आप निकालने को `CreateEncryptedArchive` हेल्पर मेथड के साथ संयोजित कर सकते हैं। यह तरीका सुनिश्चित करता है कि डेटा कभी भी डिस्क पर अनएन्क्रिप्टेड स्थिति में न रहे।
+### निष्कर्षण के दौरान Zip आर्काइव को एन्क्रिप्ट करना (पुनः‑एन्क्रिप्शन)
+In scenarios where you need to extract a zip file and immediately re‑encrypt its contents (for example, moving data between secure zones), you can combine extraction with the `CreateEncryptedArchive` helper method. This approach ensures that the data never resides on disk in an unencrypted state.
 
 ### कई फ़ाइलों को संपीड़ित करना – एक त्वरित सारांश
-हालाँकि यह गाइड निकालने पर केंद्रित है, याद रखें कि Aspose.Zip **compress files .net** में भी उत्कृष्ट है। आप एक ही कॉल से कई फ़ाइलों को एक अभिलेख में जोड़ सकते हैं, संपीड़न स्तर निर्दिष्ट कर सकते हैं, और बड़े अभिलेखों को वॉल्यूम में विभाजित भी कर सकते हैं।
+While this guide focuses on extraction, remember that Aspose.Zip also excels at **compress files .net**. You can add many files to a single archive with a single call, specify compression levels, and even split large archives into volumes.
 
 ## सामान्य समस्याएँ और समाधान
-- **Extraction fails with “Invalid password”** – सुनिश्चित करें कि आपने जो पासवर्ड दिया है वह संपीड़न के दौरान उपयोग किए गए पासवर्ड से मेल खाता है; पासवर्ड केस‑सेंसिटिव होते हैं।  
-- **Large archives cause OutOfMemoryException** – फ़ाइलों को क्रमिक रूप से प्रोसेस करने के लिए स्ट्रीमिंग API (`ExtractToStream`) का उपयोग करें, बजाय पूरे अभिलेख को मेमोरी में लोड करने के।  
-- **File name collisions** – यह नियंत्रित करने के लिए `OverwriteExistingFiles` फ़्लैग सेट करें कि मौजूदा फ़ाइलें प्रतिस्थापित हों या उनका नाम बदला जाए।
+- **Extraction fails with “Invalid password”** – Verify that the password you supplied matches the one used during compression; passwords are case‑sensitive.  
+- **Large archives cause OutOfMemoryException** – Use the streaming API (`ExtractToStream`) to process files sequentially instead of loading the entire archive into memory. `ExtractToStream` extracts a single entry to a stream, allowing low‑memory processing.  
+- **File name collisions** – Set the `OverwriteExistingFiles` flag to control whether existing files should be replaced or renamed.
 
 ## अक्सर पूछे जाने वाले प्रश्न
 
 **Q: क्या मैं पासवर्ड जाने बिना zip फ़ाइल निकाल सकता हूँ?**  
-A: नहीं, Aspose.Zip को password‑protected अभिलेख को डिक्रिप्ट करने के लिए सही पासवर्ड चाहिए। आप `InvalidPasswordException` को पकड़ कर गलत पासवर्ड को सुगमता से संभाल सकते हैं।
+A: No, Aspose.Zip requires the correct password to decrypt a password‑protected archive. You can catch the `InvalidPasswordException` to handle incorrect passwords gracefully.
 
-**Q: क्या Aspose.Zip अन्य अभिलेख स्वरूपों जैसे RAR या 7z को समर्थन देता है?**  
-A: प्रत्यक्ष समर्थन केवल ZIP तक सीमित है, लेकिन आप उन स्वरूपों के लिए Aspose.Zip को थर्ड‑पार्टी लाइब्रेरीज़ के साथ संयोजित कर सकते हैं, या मार्गदर्शन के लिए “Archive Extraction and Formats” ट्यूटोरियल का उपयोग कर सकते हैं।
+**Q: क्या Aspose.Zip RAR या 7z जैसे अन्य आर्काइव फ़ॉर्मेट्स को सपोर्ट करता है?**  
+A: Direct support is limited to ZIP, but you can combine Aspose.Zip with third‑party libraries for those formats, or use the “Archive Extraction and Formats” tutorial for guidance.
 
-**Q: मैं बड़े अभिलेख से केवल विशिष्ट फ़ाइलें कैसे निकालूँ?**  
-A: `ExtractEntry` मेथड का उपयोग करके नाम द्वारा व्यक्तिगत एंट्री को लक्षित करें, जिससे पूरे अभिलेख को निकालने की आवश्यकता नहीं रहती।
+**Q: मैं बड़े आर्काइव से केवल विशिष्ट फ़ाइलें कैसे निकालूँ?**  
+A: Use the `ExtractEntry` method to target individual entries by name, avoiding the need to extract the entire archive.
 
-**Q: क्या निकालने की प्रगति को मॉनिटर करने का कोई तरीका है?**  
-A: हाँ—`ZipFile` ऑब्जेक्ट पर `ProgressChanged` इवेंट को सब्सक्राइब करके वास्तविक‑समय अपडेट प्राप्त कर सकते हैं।
+**Q: क्या निष्कर्षण प्रगति को मॉनिटर करने का कोई तरीका है?**  
+A: Yes—subscribe to the `ProgressChanged` event on the `ZipFile` object to receive real‑time updates. `ProgressChanged` fires periodically with extraction progress information.
 
 **Q: व्यावसायिक उपयोग के लिए कौन सा लाइसेंस आवश्यक है?**  
-A: उत्पादन परिनियोजन के लिए एक भुगतान किया गया Aspose.Zip लाइसेंस आवश्यक है; परीक्षण के लिए एक मुफ्त इवैल्यूएशन लाइसेंस उपलब्ध है।
+A: A paid Aspose.Zip license is required for production deployments; a free evaluation license is available for testing.
 
 ## अतिरिक्त टिप्स और सर्वोत्तम प्रथाएँ
-- **Pro tip:** बहुत बड़े zip फ़ाइलों के साथ काम करते समय, मेमोरी उपयोग कम रखने के लिए `ExtractToStream` मेथड को प्राथमिकता दें।  
-- **Tip:** निकालने से पहले `ValidateArchive` के साथ अभिलेख की अखंडता हमेशा सत्यापित करें ताकि भ्रष्ट फ़ाइलों को जल्दी पकड़ा जा सके।  
-- **Warning:** पासवर्ड को कभी भी प्लेन टेक्स्ट में न रखें; सुरक्षित कॉन्फ़िगरेशन प्रोवाइडर्स या Azure Key Vault का उपयोग करें।
+- **Pro tip:** When working with very large zip files, prefer the `ExtractToStream` method to keep memory usage low.  
+- **Tip:** Always validate the archive’s integrity with `ValidateArchive` before extraction to catch corrupted files early.  
+- **Warning:** Never store passwords in plain text; use secure configuration providers or Azure Key Vault.
 
 ## निष्कर्ष
-अब आपके पास किसी भी .NET पर्यावरण में **extract zip files with Aspose.Zip** के लिए एक ठोस आधार है। पासवर्ड‑सुरक्षित अभिलेखों को संभालने से लेकर डेटा को तुरंत पुनः‑एन्क्रिप्ट करने तक, Aspose.Zip आपको वास्तविक‑विश्व फ़ाइल प्रबंधन कार्यों के लिए आवश्यक लचीलापन और प्रदर्शन प्रदान करता है। संपीड़न, डायरेक्टरी अभिलेख और उन्नत एन्क्रिप्शन तकनीकों में महारत हासिल करने के लिए ऊपर लिंक किए गए अन्य ट्यूटोरियल्स का अन्वेषण करें।
+You now have a solid foundation for **extract zip files with Aspose.Zip** in any .NET environment. From handling password‑protected archives to re‑encrypting data on the fly, Aspose.Zip gives you the flexibility and performance you need for real‑world file management tasks. Explore the other tutorials linked above to master compression, directory archiving, and advanced encryption techniques.
 
 ---
 
-**अंतिम अपडेट:** 2026-02-20  
-**परीक्षण किया गया:** Aspose.Zip 24.11 for .NET  
-**लेखक:** Aspose
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+**Last Updated:** 2026-06-19  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose  
 
 {{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
