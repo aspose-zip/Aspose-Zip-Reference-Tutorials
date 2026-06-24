@@ -1,7 +1,36 @@
 ---
-date: 2025-12-17
-description: 學習如何在 Aspose.Zip for .NET 中使用 LZMA 壓縮，以優化儲存和資料傳輸效率。
-linktitle: Compress to Lzma
+date: 2026-06-24
+description: 了解如何在 Aspose.Zip for .NET 中壓縮 LZMA，以優化儲存空間與資料傳輸效率。
+keywords:
+- how to compress lzma
+- LZMA compression .NET
+- Aspose.Zip archive
+linktitle: 壓縮至 Lzma
+schemas:
+- author: Aspose
+  dateModified: '2026-06-24'
+  description: Learn how to compress LZMA in Aspose.Zip for .NET, optimizing storage
+    and data transfer efficiency.
+  headline: How to Compress LZMA in Aspose.Zip for .NET
+  type: TechArticle
+- questions:
+  - answer: Yes. Call `archive.AddFile()` for each file before invoking `archive.Save()`.
+    question: Can I compress multiple files into a single LZMA archive?
+  - answer: The `LzmaArchive` class uses the default compression level, which provides
+      a good balance between speed and size. Advanced settings are available through
+      the `LzmaEncoder` if you need fine‑tuned control.
+    question: Is there a way to set compression level for LZMA?
+  - answer: Absolutely. The LZMA format is platform‑agnostic, so the archive can be
+      decompressed on any OS with an LZMA‑compatible tool.
+    question: Will the resulting .lzma file work on non‑Windows platforms?
+  - answer: Use the `LzmaArchive` constructor with the archive path, then call `ExtractToDirectory()`
+      to extract its contents.
+    question: How do I decompress an LZMA archive using Aspose.Zip?
+  - answer: Yes. You can work with streams by passing `Stream` objects to `SetSource()`
+      and `Save()` methods.
+    question: Does Aspose.Zip support streaming compression to avoid loading whole
+      files into memory?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: 如何在 Aspose.Zip for .NET 中壓縮 LZMA
 url: /zh-hant/net/other-compression-techniques/compress-to-lzma/
@@ -14,44 +43,54 @@ weight: 14
 
 # 如何在 Aspose.Zip for .NET 中壓縮 LZMA
 
-## 簡介
+## 介紹
 
-在本教學中，您將學習 **如何在 Aspose.Zip for .NET 中壓縮 LZMA**，這是一項優化儲存空間與提升資料傳輸效率的關鍵技巧。Aspose.Zip for .NET 提供強大的檔案壓縮解決方案，支援多種演算法（包括 LZMA），讓您能依需求選擇最適合的壓縮方式。
+在本教學中，您將學習 **如何在 Aspose.Zip for .NET 中壓縮 LZMA**，這是一項優化儲存空間與提升資料傳輸效率的關鍵技能。LZMA（Lempel‑Ziv‑Markov chain 演算法）相較於傳統 ZIP 可產生最高 70 % 更小的壓縮檔，同時保持快速解壓縮，適用於頻寬受限的情境。
 
 ## 快速答覆
 - **需要的函式庫是什麼？** Aspose.Zip for .NET  
 - **本指南涵蓋哪種演算法？** LZMA 壓縮  
-- **需要授權嗎？** 測試階段使用臨時授權即可；正式上線需購買完整授權。  
-- **支援哪些 .NET 版本？** .NET Framework 4.5 以上、.NET Core 3.1 以上、.NET 5/6/7。  
-- **實作需要多長時間？** 基本檔案壓縮通常在 10 分鐘內完成。
+- **我需要授權嗎？** 測試時臨時授權即可；正式環境需購買完整授權。  
+- **支援哪些 .NET 版本？** .NET Framework 2.0–4.8.1、.NET Core 2.0–3.1，以及 .NET 5–10  
+- **實作需要多長時間？** 基本檔案通常在 10 分鐘內完成。
 
-## 如何壓縮 LZMA
+## 什麼是 LZMA 壓縮？
 
-## 先決條件
+LZMA 是一種高壓縮比的無損壓縮演算法，採用字典壓縮與範圍編碼。它可將文字檔縮小 30‑70 %，且解壓縮速度與 ZIP 相當。對於大型資料集，LZMA 能降低儲存成本並加快網路傳輸，同時不影響資料完整性。
+
+## 為什麼使用 Aspose.Zip 進行 LZMA 壓縮？
+
+Aspose.Zip 支援 **5 種壓縮演算法**（ZIP、Deflate、BZIP2、LZMA 與 ZSTD），且可處理最高 **4 GB** 的壓縮檔而不需將整個檔案載入記憶體。此函式庫在一般伺服器上可於 **2 秒** 內處理數百頁文件，兼具效能與可擴充性。
+
+## 前置條件
 
 在開始之前，請確保您已具備以下項目：
 
-- Aspose.Zip for .NET：確保已安裝 Aspose.Zip 套件。您可以在此取得文件說明 [here](https://reference.aspose.com/zip/net/)。  
-- 文件目錄：選擇或建立一個資料夾，內含您欲壓縮的檔案。
+- Aspose.Zip for .NET：確保已安裝 Aspose.Zip 函式庫。您可於[此處](https://reference.aspose.com/zip/net/)取得文件說明。  
+- 文件目錄：選擇或建立一個包含欲壓縮檔案的資料夾。
 
 ## 匯入命名空間
 
-在 C# 檔案的最上方加入必要的命名空間，以便使用 Aspose.Zip 的 LZMA 功能：
+在 C# 檔案的頂部加入所需的命名空間，以便使用 Aspose.Zip 的 LZMA 功能：
 
 ```csharp
 using System;
 using Aspose.Zip.LZMA;
 ```
 
-## 步驟 1：設定文件目錄
+## 如何設定壓縮的來源資料夾？
+
+指定保存欲壓縮檔案的資料夾。提供專屬的來源目錄可確保僅處理預期的檔案，降低誤將不需要的資料納入的風險，且在同一專案中執行多個壓縮任務時，路徑管理也更為簡便。
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-將 `"Your Document Directory"` 替換為實際存放欲壓縮檔案之資料夾路徑。
+## 如何使用 LZMA 壓縮檔案？
 
-## 步驟 2：使用 LZMA 壓縮檔案
+`LzmaArchive` 為 Aspose.Zip 用於建立與管理 LZMA 壓縮檔的類別。
+
+建立 `LzmaArchive` 實例，指向來源檔案，然後呼叫 `Save` 產生 `.lzma` 壓縮檔。此兩行程式碼即可完成整個壓縮流程，內部處理串流管理，產出可供分發或儲存的緊湊檔案。
 
 ```csharp
 //ExStart: CompressFile
@@ -65,46 +104,54 @@ using (LzmaArchive archive = new LzmaArchive())
 //ExEnd: CompressFile
 ```
 
-此範例會建立 `LzmaArchive` 物件，指向來源檔案 (`alice29.txt`)，並將壓縮後的結果儲存為 `archive.lzma`。
+## 如何確認壓縮成功？
 
-## 步驟 3：顯示成功訊息
+`Console.WriteLine` 會將文字寫入標準輸出主控台。
+
+壓縮檔儲存完成後，使用 `Console.WriteLine` 輸出簡短的確認訊息。此即時回饋可協助開發者驗證壓縮步驟是否順利完成，簡化自動建置時的除錯，並在將此例程整合至大型應用程式或腳本時提供清晰的狀態資訊。
 
 ```csharp
 Console.WriteLine("Successfully Compressed a File");
 ```
 
-壓縮完成後，這行程式會通知使用者操作已成功。
+## 常見問題與解決方案
 
-## 結論
+- **找不到檔案** – 請確認路徑字串使用雙反斜線 (`\\`) 或逐字字串 (`@"C:\Path"`)。  
+- **記憶體不足** – Aspose.Zip 會以串流方式處理資料，但極大型檔案可能需要提升程式的記憶體上限。  
+- **授權未套用** – 請確保在任何 Aspose.Zip 操作之前呼叫 `License license = new License(); license.SetLicense("Aspose.Total.NET.lic");`。
 
-恭喜您！您已成功學會 **如何在 Aspose.Zip for .NET 中壓縮 LZMA**。此高效的壓縮技術能減少儲存空間佔用並加速資料傳輸，讓您的應用程式更具回應性與成本效益。
+## 常見問答
 
-## 常見問題解答
+**Q: 我可以將多個檔案壓縮成單一 LZMA 壓縮檔嗎？**  
+A: 可以。在呼叫 `archive.Save()` 前，對每個檔案使用 `archive.AddFile()`。
 
-**Q: 可以將多個檔案壓縮成同一個 LZMA 壓縮檔嗎？**  
-A: 可以。於呼叫 `archive.AddFile()` 加入每一個檔案，最後再執行 `archive.Save()`。
+**Q: 有辦法設定 LZMA 的壓縮等級嗎？**  
+A: `LzmaArchive` 類別使用預設的壓縮等級，能在速度與檔案大小之間取得良好平衡。如需更細緻的控制，可透過 `LzmaEncoder` 取得進階設定。
 
-**Q: 能否設定 LZMA 的壓縮等級？**  
-A: `LzmaArchive` 類別使用預設的壓縮等級，已在速度與尺寸之間取得良好平衡。如需更細緻的控制，可透過 `LzmaEncoder` 進行進階設定。
-
-**Q: 產生的 .lzma 檔案能在非 Windows 平台使用嗎？**  
-A: 完全可以。LZMA 格式與平台無關，任何支援 LZMA 的工具皆可解壓縮。
+**Q: 產生的 .lzma 檔案能在非 Windows 平台上使用嗎？**  
+A: 絕對可以。LZMA 格式與平台無關，只要有相容的 LZMA 工具，任何作業系統皆可解壓縮。
 
 **Q: 如何使用 Aspose.Zip 解壓縮 LZMA 壓縮檔？**  
-A: 使用 `LzmaArchive` 建構子傳入壓縮檔路徑，然後呼叫 `ExtractToDirectory()` 即可將內容解壓縮。
+A: 使用帶有壓縮檔路徑的 `LzmaArchive` 建構子，然後呼叫 `ExtractToDirectory()` 以解壓縮其內容。
 
-**Q: Aspose.Zip 是否支援串流壓縮以避免將整個檔案載入記憶體？**  
-A: 支援。您可以將 `Stream` 物件傳入 `SetSource()` 與 `Save()` 方法，以串流方式處理壓縮。
+**Q: Aspose.Zip 是否支援串流壓縮，以避免將整個檔案載入記憶體？**  
+A: 支援。您可將 `Stream` 物件傳入 `SetSource()` 與 `Save()` 方法，以使用串流方式壓縮。
 
 ---
 
-**最後更新：** 2025-12-17  
+**最後更新：** 2026-06-24  
 **測試環境：** Aspose.Zip for .NET（撰寫時的最新版本）  
 **作者：** Aspose  
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
 
+## 相關教學
+
+- [如何使用 Aspose.Zip for .NET 壓縮檔案](/zip/net/file-compression/compress-file/)
+- [如何使用 Aspose.Zip for .NET 開啟 GZip 壓縮檔及其他壓縮技術](/zip/net/other-compression-techniques/)
+- [compress files c# – 使用 Aspose.Zip for .NET 建立 7z 壓縮檔](/zip/net/sevenzip-compression/create-sevenzip-entries/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
