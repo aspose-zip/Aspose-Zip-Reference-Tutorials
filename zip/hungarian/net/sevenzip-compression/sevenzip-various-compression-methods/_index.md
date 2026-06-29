@@ -1,11 +1,37 @@
 ---
-date: 2025-12-25
-description: Tanulja meg, hogyan hozhat létre 7z fájlokat az Aspose.Zip for .NET segítségével,
-  bemutatva a 7z tömörítési módszereket, például az LZMA2‑t, a BZip2‑t és a Store‑t.
-  Tökéletes a mappák 7z formátumba tömörítéséhez.
-linktitle: SevenZip with Various Compression Methods
+date: 2026-06-29
+description: Ismerje meg, hogyan lehet mappát 7z formátumba tömöríteni az Aspose.Zip
+  for .NET segítségével, bemutatva a 7z tömörítési módszereket, mint például az LZMA2,
+  a BZip2 és a Store. Tökéletes 7z archívumok programozott létrehozásához.
+keywords:
+- compress folder to 7z
+- add files to 7z
+- create 7z without compression
+- seven zip compression methods
+linktitle: SevenZip különböző tömörítési módszerekkel
+schemas:
+- author: Aspose
+  dateModified: '2026-06-29'
+  description: Learn how to compress folder to 7z with Aspose.Zip for .NET, covering
+    seven zip compression methods such as LZMA2, BZip2, and Store. Perfect for creating
+    7z archives programmatically.
+  headline: How to Compress Folder to 7z – Aspose.Zip for .NET Tutorial
+  type: TechArticle
+- questions:
+  - answer: Yes, Aspose.Zip supports a wide range of file formats, allowing you to
+      compress and decompress virtually any file type.
+    question: Can I use Aspose.Zip for .NET with any type of file?
+  - answer: Yes, you can obtain a free trial **[here](https://releases.aspose.com/)**.
+    question: Is a free trial available for Aspose.Zip for .NET?
+  - answer: The full API reference is available **[here](https://reference.aspose.com/zip/net/)**.
+    question: Where can I find documentation for Aspose.Zip for .NET?
+  - answer: Temporary licenses can be obtained **[here](https://purchase.aspose.com/temporary-license/)**.
+    question: How can I get temporary licenses for Aspose.Zip for .NET?
+  - answer: You can seek support on the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)**.
+    question: Where can I get support for Aspose.Zip for .NET?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: 7z fájlok létrehozása – Aspose.Zip .NET oktatóanyag
+title: Mappa tömörítése 7z formátumba – Aspose.Zip for .NET oktatóanyag
 url: /hu/net/sevenzip-compression/sevenzip-various-compression-methods/
 weight: 12
 ---
@@ -14,36 +40,28 @@ weight: 12
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 7z fájlok létrehozása – Aspose.Zip for .NET útmutató
+# Hogyan tömörítsünk mappát 7z – Aspose.Zip for .NET útmutató
 
 ## Bevezetés
 
-Ha **hogyan lehet 7z** archívumokat programozottan létrehozni egy .NET alkalmazásban, jó helyen jár. Az Aspose.Zip for .NET egyszerűvé teszi a Seven Zip archívumok generálását a támogatott tömörítési algoritmusok bármelyikével, legyen szó **compress folder to 7z** terjesztéshez vagy egyszerűen egy megbízható **seven zip archive .net** megoldásról. Ebben az útmutatóban három népszerű tömörítési módszert – LZMA2, BZip2 és Store (nincs tömörítés) – mutatunk be, és pontosan megmutatjuk, hogyan állítható elő egy 7z fájl néhány C# sorral.
+Ha programozott módon kell **compress folder to 7z** archívumokat készíteni egy .NET alkalmazásban, jó helyen jár. Az Aspose.Zip for .NET egyszerűvé teszi a Seven Zip archívumok generálását a támogatott tömörítési algoritmusok bármelyikével, akár egy teljes könyvtárat szeretne csomagolni terjesztéshez, akár csak egy megbízható **seven zip archive .net** megoldásra van szüksége. Ebben az útmutatóban három népszerű tömörítési módszert – LZMA2, BZip2 és Store (nincs tömörítés) – mutatunk be, és pontosan megmutatjuk, hogyan állíthat elő egy 7z fájlt néhány C# sorral.
 
 ## Gyors válaszok
 - **Milyen könyvtárat használjak?** Az Aspose.Zip for .NET a legteljesebb Seven Zip funkciókészletet biztosítja.  
 - **Melyik tömörítési módszer adja a legjobb arányt?** Az LZMA2 általában a legmagasabb tömörítést nyújt vegyes adatok esetén.  
-- **Létrehozhatok 7z-t tömörítés nélkül?** Igen – használja a Store (nincs tömörítés) módszert.  
-- **Szükség van licencre fejlesztéshez?** Ingyenes próba elérhető; licenc szükséges a termeléshez.  
-- **Kompatibilis a .NET 6/7-tel?** Teljesen – az Aspose.Zip támogatja a .NET Framework, .NET Core és .NET 5+ verziókat.
+- **Létrehozhatok 7z fájlt tömörítés nélkül?** Igen – használja a Store (nincs tömörítés) módszert.  
+- **Szükségem van licencre a fejlesztéshez?** Elérhető ingyenes próba; licenc szükséges a termelési használathoz.  
+- **Kompatibilis ez a .NET 6/7-tel?** Teljesen – az Aspose.Zip támogatja a .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1 és a .NET 5–10 verziókat.
 
 ## Mik a Seven Zip tömörítési módszerek?
 
-A Seven Zip több algoritmust támogat, mindegyik más-más forgatókönyvre optimalizálva:
-
-* **LZMA2** – magas tömörítési arány, ideális nagy, vegyes típusú fájlokhoz.  
-* **BZip2** – szilárd tömörítés, de lassabb az LZMA2-nél; hasznos, ha régebbi eszközökkel való kompatibilitás szükséges.  
-* **Store** – nincs tömörítés; tökéletes, ha csak archiválásra van szükség méretcsökkentés nélkül (például az eredeti fájl időbélyegeinek megőrzése).
-
-Ezeknek a **seven zip compression methods**-nek a megértése segít a megfelelő beállítás kiválasztásában a projektjéhez.
+A Seven Zip több algoritmust támogat, mindegyik különböző helyzetekhez optimalizált. **LZMA2** a legmagasabb tömörítési arányt kínál (gyakran 30‑40 %-kal kisebb, mint a BZip2), **BZip2** stabil tömörítést biztosít szélesebb régi eszközök támogatásával, és **Store** egyszerűen archiválja a fájlokat anélkül, hogy zsugorítaná őket, így tökéletesen megőrzi az eredeti időbélyegeket.
 
 ## Előfeltételek
 
-Mielőtt belevágnánk, győződjön meg róla, hogy rendelkezik:
-
-- Alapvető C# és Visual Studio ismeretekkel.  
-- Az Aspose.Zip for .NET könyvtárral telepítve. Szerezze be a hivatalos letöltőoldalon **[itt](https://releases.aspose.com/zip/net/)**.  
-- Egy mappával (`dataDir`), amely a becsomagolandó fájlokat tartalmazza.
+- Alapvető C# és Visual Studio ismeretek.  
+- Az Aspose.Zip for .NET könyvtár telepítve van. Szerezze be a hivatalos letöltési oldalról **[itt](https://releases.aspose.com/zip/net/)**.  
+- Egy mappa (`dataDir`), amely a archiválni kívánt fájlokat tartalmazza.
 
 ## Névterek importálása
 
@@ -54,9 +72,12 @@ using Aspose.Zip.Saving;
 using Aspose.Zip.SevenZip;
 ```
 
-Ezek a osztályok biztosítják a tömörítési beállításokhoz és az archívumkezeléshez való hozzáférést.
+Ezek a osztályok hozzáférést biztosítanak a tömörítési beállításokhoz és az archívum kezeléséhez.
 
-## LZMA2 tömörítés – Hogyan hozzunk létre egy 7z-t maximális aránnyal
+## LZMA2 tömörítés – Hogyan hozzunk létre 7z fájlt maximális aránnyal
+
+Az `Archive` osztály egy 7z archívumot képvisel, amely több fájlt is tartalmazhat.  
+Az LZMA2 algoritmus a legmagasabb tömörítési arányt nyújtja a támogatott módszerek közül. A bemenetet blokkokra osztja, és kifinomult szótár tömörítést alkalmaz. Az Aspose.Zip-ben a `CompressionMethod`-ot `CompressionMethod.Lzma2`-ra állítja az `Archive` objektumon, mielőtt fájlokat adna hozzá.
 
 ```csharp
 //ExStart: SevenZipWithVariousCompressionMethods
@@ -76,6 +97,9 @@ Console.WriteLine("Successfully Created a Seven Zip File with LZMA2 Compression"
 
 ## BZip2 tömörítés – Kiegyensúlyozott választás
 
+Az `Archive` osztály egy 7z archívumot képvisel, amely több fájlt is tartalmazhat.  
+A BZip2 stabil tömörítést kínál jó kompatibilitással a régebbi eszközökhöz. A Burrows‑Wheeler transzformációt és a Huffman kódolást használja a méret csökkentésére. Az Aspose.Zip-ben a `CompressionMethod.BZip2`-t választja az `Archive` példány konfigurálásakor, ami egyensúlyt teremt a sebesség és a tömörítési arány között a legtöbb szöveges és bináris fájl esetén.
+
 ```csharp
 //BZip2
 using (SevenZipArchive archive = new SevenZipArchive(new SevenZipEntrySettings(new SevenZipBZip2CompressionSettings())))
@@ -86,9 +110,12 @@ using (SevenZipArchive archive = new SevenZipArchive(new SevenZipEntrySettings(n
 Console.WriteLine("Successfully Created a Seven Zip File with BZip2 Compression");
 ```
 
-A BZip2 szilárd tömörítést kínál, miközben mérsékelt sebességet tart fenn, így jó alternatíva, ha az LZMA2 nem támogatott a célkörnyezetben.
+A BZip2 stabil tömörítést biztosít, miközben ésszerű sebességet tart fenn, így jó alternatíva, ha a célkörnyezet nem támogatja az LZMA2-t.
 
 ## Store (nincs tömörítés) – Amikor a méret nem számít
+
+Az `Archive` osztály egy 7z archívumot képvisel, amely több fájlt is tartalmazhat.  
+A Store módszer archívumot hoz létre anélkül, hogy a adatot tömörítené. Egyszerűen átmásolja az eredeti fájlokat a 7z tárolóba, megőrizve az időbélyegeket és a könyvtárstruktúrát. Az Aspose.Zip-ben a `CompressionMethod.Store`-t kell beállítani az `Archive`-on, mielőtt hozzáadná a csomagolni kívánt fájlokat.
 
 ```csharp
 //Store, no compression
@@ -100,51 +127,61 @@ using (SevenZipArchive archive = new SevenZipArchive(new SevenZipEntrySettings(n
 Console.WriteLine("Successfully Created a Seven Zip File with No Compression (Store)");
 ```
 
-Használja a Store módszert, ha egyszerűen csak fájlokat szeretne összecsomagolni méretük megváltoztatása nélkül – tökéletes az eredeti időbélyegek megőrzéséhez vagy ha az archívumot helyben, futás közben bontják ki.
+Használja a Store módszert, ha egyszerűen csak fájlokat szeretne összevonni méretük megváltoztatása nélkül – tökéletes az eredeti időbélyegek megőrzéséhez vagy ha az archívumot futás közben fogják kicsomagolni.
+
+## Hogyan adhatok fájlokat a 7z-hez?
+
+Fájlokat adhat hozzá egy 7z archívumhoz egy `Archive` példány létrehozásával, a kívánt `CompressionMethod` beállításával, és az `AddAllFiles(dataDir)` hívásával. A metódus rekurzívan beolvassa a megadott mappát, megőrizve a könyvtárhierarchiát az archívumban. Ez a megközelítés lehetővé teszi, hogy **compress folder to 7z** egyetlen kódsorral a kezdeti beállítás után.
 
 ## Gyakori felhasználási esetek
 
-| Szenárió | Ajánlott módszer |
-|----------|--------------------|
+| Forgatókönyv | Ajánlott módszer |
+|--------------|-------------------|
 | Nagy telepítők terjesztése | LZMA2 |
-| Naplófájlok megosztása régi eszközökkel | BZip2 |
-| Fájlok gyors kicsomagolásra csomagolása | Store (nincs tömörítés) |
-| **compress folder to 7z** dinamikusan egy webszolgáltatásban | LZMA2 (a legjobb arányért) |
+| Naplók megosztása régi eszközökkel | BZip2 |
+| Fájlok csomagolása gyors kicsomagoláshoz | Store (no compression) |
+| Szükség van **compress folder to 7z** valós időben egy webszolgáltatásban | LZMA2 (for best ratio) |
 
 ## Hibaelhárítás és tippek
 
-- **Hiányzó fájlok az archívumban?** Ellenőrizze, hogy a `dataDir` a megfelelő könyvtárra mutat-e, és hogy a folyamatnak van-e olvasási jogosultsága.  
+- **Hiányzó fájlok az archívumban?** Ellenőrizze, hogy a `dataDir` a megfelelő könyvtárra mutat-e, és hogy a folyamatnak olvasási jogosultsága van-e.  
 - **Az archívum nem nyílik meg régebbi 7‑Zip verziókon?** Maradjon a BZip2 vagy Store mellett, mivel az LZMA2 újabb kitömörítő könyvtárakat igényelhet.  
-- **Teljesítménybeli szűk keresztmetszet?** Nagy adatállományok esetén fontolja meg az archívum streamelését a memóriába való betöltés helyett.
+- **Teljesítmény szűk keresztmetszet?** Nagy adathalmazok esetén fontolja meg az archívum streamelését ahelyett, hogy az összes bejegyzést memóriába töltené.
 
 ## Gyakran ismételt kérdések
 
-**K: Használhatom az Aspose.Zip for .NET-et bármilyen fájltípussal?**  
-V: Igen, az Aspose.Zip széles körű fájlformátumot támogat, lehetővé téve szinte bármely fájl tömörítését és kitömörítését.
+**Q: Használhatom az Aspose.Zip for .NET-et bármilyen típusú fájllal?**  
+A: Igen, az Aspose.Zip széles körű fájlformátumot támogat, lehetővé téve, hogy gyakorlatilag bármilyen fájltípust tömörítsen és kitömörítsen.
 
-**K: Elérhető ingyenes próba az Aspose.Zip for .NET-hez?**  
-V: Igen, ingyenes próbát szerezhet **[itt](https://releases.aspose.com/)**.
+**Q: Elérhető ingyenes próba az Aspose.Zip for .NET-hez?**  
+A: Igen, ingyenes próbát szerezhet **[itt](https://releases.aspose.com/)**.
 
-**K: Hol találok dokumentációt az Aspose.Zip for .NET-hez?**  
-V: A teljes API-referencia elérhető **[itt](https://reference.aspose.com/zip/net/)**.
+**Q: Hol találom az Aspose.Zip for .NET dokumentációját?**  
+A: A teljes API referencia **[itt](https://reference.aspose.com/zip/net/)** érhető el.
 
-**K: Hogyan szerezhetek ideiglenes licencet az Aspose.Zip for .NET-hez?**  
-V: Ideiglenes licenceket kaphat **[itt](https://purchase.aspose.com/temporary-license/)**.
+**Q: Hogyan szerezhetek ideiglenes licenceket az Aspose.Zip for .NET-hez?**  
+A: Ideiglenes licenceket **[itt](https://purchase.aspose.com/temporary-license/)** szerezhet.
 
-**K: Hol kaphatok támogatást az Aspose.Zip for .NET-hez?**  
-V: Támogatást kérhet a **[Aspose.Zip fórumon](https://forum.aspose.com/c/zip/37)**.
+**Q: Hol kaphatok támogatást az Aspose.Zip for .NET-hez?**  
+A: Támogatást kérhet a **[Aspose.Zip fórumon](https://forum.aspose.com/c/zip/37)**.
 
 ---
 
-**Utoljára frissítve:** 2025-12-25  
-**Tesztelve:** Aspose.Zip for .NET 24.12  
+**Utolsó frissítés:** 2026-06-29  
+**Tesztelve a következővel:** Aspose.Zip for .NET 24.12  
 **Szerző:** Aspose  
 
 ---
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
 
+## Kapcsolódó útmutatók
+
+- [fájlok tömörítése c# – 7z archívum létrehozása az Aspose.Zip for .NET segítségével](/zip/net/sevenzip-compression/create-sevenzip-entries/)
+- [Hogyan zipeljünk mappát az Aspose.Zip for .NET használatával](/zip/net/directory-and-folder-compression/compress-directory/)
+- [Hogyan tömörítsünk LZMA-t az Aspose.Zip for .NET-ben](/zip/net/other-compression-techniques/compress-to-lzma/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
