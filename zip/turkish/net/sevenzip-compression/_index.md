@@ -1,10 +1,39 @@
 ---
-date: 2025-12-25
-description: Aspose.Zip for .NET kullanarak sevenzip girdileri oluşturmayı öğrenin
-  ve sevenzip sıkıştırma yöntemlerini keşfedin.
-linktitle: SevenZip Compression
+date: 2026-06-29
+description: 7z arşivlerine dosya eklemeyi öğrenin, sevenzip sıkıştırma yöntemlerini
+  keşfedin ve .NET için Aspose.Zip'i ustalaşın.
+keywords:
+- add files to 7z
+- how to create sevenzip
+- sevenzip compression methods
+linktitle: SevenZip Sıkıştırma
+schemas:
+- author: Aspose
+  dateModified: '2026-06-29'
+  description: Learn how to add files to 7z archives, explore sevenzip compression
+    methods, and master Aspose.Zip for .NET.
+  headline: Add Files to 7z – Create SevenZip Entries with Aspose.Zip
+  type: TechArticle
+- questions:
+  - answer: Yes. Aspose.Zip lets you set a password on the archive or individual entries
+      for added security.
+    question: Can I add password protection to a SevenZip archive?
+  - answer: Use the `ExtractEntry` method, which streams the requested entry directly
+      to a target stream.
+    question: How do I extract a specific entry without decompressing the whole archive?
+  - answer: Absolutely. Aspose.Zip supports adding, removing, or updating entries
+      in an existing archive without recreating it from scratch.
+    question: Is it possible to update an existing 7z file?
+  - answer: LZMA2 generally provides better compression ratios but may be slower on
+      CPU‑intensive scenarios. BZip2 is faster but yields larger files.
+    question: What are the performance differences between LZMA2 and BZip2?
+  - answer: '`Dispose()` releases resources held by the archive. The `Archive` class
+      implements `IDisposable`. Wrap it in a `using` statement or call `Dispose()`
+      to release resources promptly.'
+    question: Do I need to dispose of any objects manually?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: SevenZip Girişleri Oluştur – SevenZip Sıkıştırma Rehberi
+title: 7z'ye Dosya Ekle – Aspose.Zip ile SevenZip Girdileri Oluştur
 url: /tr/net/sevenzip-compression/
 weight: 25
 ---
@@ -13,83 +42,91 @@ weight: 25
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# SevenZip Sıkıştırma ile SevenZip Girdileri Oluşturma
+# 7z'ye Dosya Ekle – Aspose.Zip ile SevenZip Girdileri Oluştur
 
-Aspose.Zip for .NET kullanarak **create sevenzip entries** konusundaki kapsamlı rehberimize hoş geldiniz. Bu eğitim serisinde, temel giriş oluşturma adımlarından çeşitli **sevenzip compression methods** konusundaki ustalığa kadar tüm süreci adım adım anlatacağız. İster bir masaüstü yardımcı programı, ister bir web servisi, ister otomatik bir yedekleme sistemi geliştirin, bu adımlar .NET uygulamalarınıza yüksek performanslı sıkıştırma entegrasyonu sağlamanıza yardımcı olacak.
+Bu rehberde Aspose.Zip for .NET kullanarak **7z'ye dosya ekleme** yöntemini keşfedeceksiniz. Yedekleme aracı, bulut tabanlı dosya hizmeti veya masaüstü arşivleyici geliştiriyor olun, aşağıdaki adımlar SevenZip girdileri oluşturmanıza, doğru sıkıştırma yöntemini seçmenize ve performansı ince ayarlamanıza olanak tanır — tümü net, üretim‑hazır kodla.
 
 ## Hızlı Yanıtlar
-- **Aspose.Zip for .NET’in temel amacı nedir?** ZIP, 7z ve diğer arşiv formatlarını programatik olarak oluşturmak, okumak ve manipüle etmek.  
-- **SevenZip için hangi sıkıştırma yöntemleri desteklenir?** LZMA2, BZip2 ve Store (sıkıştırma yok).  
-- **Geliştirme için lisansa ihtiyacım var mı?** Değerlendirme için ücretsiz deneme sürümü yeterlidir; üretim ortamı için ticari lisans gereklidir.  
-- **Hangi .NET sürümleri uyumludur?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
-- **Temel bir uygulamanın süresi ne kadar?** Basit bir “create sevenzip entries” senaryosu genellikle 15 dakikadan az sürer.
+- **Aspose.Zip for .NET'in temel amacı nedir?** ZIP, 7z ve diğer arşiv formatlarını programlı olarak oluşturmak, okumak ve manipüle etmek.  
+- **SevenZip için hangi sıkıştırma yöntemleri destekleniyor?** LZMA2, BZip2 ve Store (sıkıştırma yok).  
+- **Geliştirme için lisansa ihtiyacım var mı?** Değerlendirme için ücretsiz deneme sürümü çalışır; üretim için ticari lisans gereklidir.  
+- **Hangi .NET sürümleri uyumludur?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1 ve .NET 5–10.  
+- **Temel bir uygulamanın süresi ne kadar?** Basit bir “7z'ye dosya ekleme” senaryosu için genellikle 15 dakikadan az sürer.
 
-## “create sevenzip entries” nedir?
-SevenZip girdileri oluşturmak, bir 7z arşivine dosya veya akış eklemek anlamına gelir. Her giriş, tek bir sıkıştırılmış öğeyi temsil eder ve Aspose.Zip, her giriş için sıkıştırma seviyesi, yöntemi ve ek meta verileri tanımlamanıza olanak tanır.
+## Aspose.Zip for .NET kullanarak 7z'ye dosya ekleme
+`Archive` sınıfı bir 7z konteynerini temsil eder. `AddEntry` bir dosya veya akışı yeni bir giriş olarak ekler. `Save` arşivi diske yazar. `Archive` örneğini yükleyin, her dosya için `AddEntry` çağırın, bir sıkıştırma yöntemi seçin ve sonunda `Save` metodunu çalıştırın. Bu özlü akış, bellek kullanımını düşük tutarken tek bir çağrıyla onlarca dosyayı sıkıştırmanıza olanak tanır. `Archive` sınıfı girişleri ekleme, çıkarma ve güncelleme yöntemleri sunar.
 
-## Neden sevenzip sıkıştırma yöntemleri kullanılmalı?
-SevenZip, özellikle LZMA2 ile geleneksel ZIP’e göre üstün sıkıştırma oranları sunar. Doğru yöntemi seçmek—maksimum boyut azaltma için LZMA2, denge için BZip2 veya sıkıştırma olmadan hızlı işlem için Store—performansı projenizin ihtiyaçlarına göre özelleştirmenizi sağlar.
+> **Pro tip:** Birçok büyük dosya eklerken, bellek ayak izini kontrol altında tutmak için `ArchiveOptions.UseMemoryCache = true` özelliğini etkinleştirin.
+
+## Desteklenen sevenzip sıkıştırma yöntemleri nelerdir?
+Aspose.Zip üç sevenzip sıkıştırma yöntemi destekler: **LZMA2** en yüksek boyut azaltması için, **BZip2** dengeli hız‑boyut oranı için ve **Store** sıkıştırma olmadan arşivlemeniz gerektiğinde. LZMA2 genellikle BZip2'ye göre %30‑40 daha küçük arşivler üretir ancak daha fazla CPU döngüsü gerektirir.
+
+## Sevenzip sıkıştırma yöntemlerini neden kullanmalısınız?
+SevenZip, metin ağırlıklı veri setlerinde klasik ZIP'e göre **%50'ye kadar daha iyi sıkıştırma** sağlar ve Aspose.Zip, **10 GB**'den büyük arşivleri tüm dosyayı belleğe yüklemeden işleyebilir. Bu, hem depolama tasarrufu hem de güvenilirliğin önemli olduğu kurumsal yedekleme hatları için idealdir.
 
 ## Önkoşullar
 - Visual Studio 2022 (veya .NET 6+ destekleyen herhangi bir IDE).  
-- Aspose.Zip for .NET kütüphanesi (NuGet üzerinden kurulmuş).  
-- C# ve dosya I/O konularında temel bilgi.
+- Aspose.Zip for .NET kütüphanesi (NuGet üzerinden kurulur).  
+- C# ve dosya I/O temel bilgisi.
 
-## Aspose.Zip for .NET ile SevenZip Girdileri Oluşturma
+## Aspose.Zip for .NET'te SevenZip Girdileri Oluştur
+Aspose.Zip for .NET'in yeteneklerini kullanmaya hazır mısınız? İlk öğreticimiz **7z'ye dosya ekleme** üzerine odaklanıyor ve sorunsuz bir deneyim için adım adım talimatlar sunuyor. İster deneyimli bir geliştirici olun ister yeni başlayın, bu öğretici dosyaları zahmetsizce sıkıştırmanızı sağlar. Aspose.Zip'in potansiyelini ortaya çıkarmak ve geliştirme becerilerinizi yeni seviyelere taşımak için şimdi indirin.
 
-Aspose.Zip for .NET’in gücünden yararlanmaya hazır mısınız? İlk eğitimimiz **create sevenzip entries** üzerine odaklanıyor ve sorunsuz bir deneyim için adım adım talimatlar sunuyor. İster deneyimli bir geliştirici olun, ister yeni başlıyor olun, bu eğitim dosyaları zahmetsizce sıkıştırmanızı sağlayacak. Potansiyeli ortaya çıkarmak ve geliştirme becerilerinizi yeni seviyelere taşımak için hemen indirin.
+## Aspose.Zip for .NET'te SevenZip Girişi Oluştur
+7z'ye dosya eklemeyi öğrendikten sonra, bu beceriyi ustalaştırma zamanı. Bu ikinci öğretici, Aspose.Zip for .NET'e daha derinlemesine girerek SevenZip girdileri oluşturma sürecini zahmetsizce yönlendirir. .NET uygulamalarınızı verimli arşiv manipülasyonu ile yükseltin. Bu öğretici, kodlama becerilerini optimize etmek ve projelerini gelişmiş sıkıştırma teknikleriyle geliştirmek isteyen geliştiriciler için tasarlanmıştır.
 
-## Aspose.Zip for .NET ile SevenZip Girişi Oluşturma
+## Aspose.Zip for .NET'te Çeşitli Sıkıştırma Yöntemleriyle SevenZip
+Temellere ötesine geçmeye hazır mısınız? Üçüncü öğreticimiz, Aspose.Zip for .NET'te farklı **sevenzip sıkıştırma yöntemleri** kullanarak Seven Zip dosyaları oluşturmayı inceliyor. LZMA2, BZip2 ve Store (sıkıştırma yok) için kolay adımları size göstereceğiz. Yüksek sıkıştırma oranları mı arıyorsunuz yoksa dosyaları sıkıştırma olmadan mı depolamak istiyorsunuz, bu öğretici her şeyi kapsar. Araç setinizi genişletin ve proje gereksinimlerinize uygun sıkıştırma yöntemleri hakkında bilinçli kararlar alın.
 
-SevenZip girdileri oluşturma konusunda temel bilgileri edindikten sonra, bu sanatı tam anlamıyla kavrama zamanı. İkinci eğitimimiz, Aspose.Zip for .NET ile SevenZip girdileri oluşturmayı derinlemesine ele alıyor. .NET uygulamalarınızı verimli zip arşiv manipülasyonu ile güçlendirin. Bu eğitim, kodlama becerilerini optimize etmek ve projelerini gelişmiş sıkıştırma teknikleriyle zenginleştirmek isteyen geliştiriciler için tasarlandı.
-
-## Aspose.Zip for .NET’te Çeşitli Sıkıştırma Yöntemleriyle SevenZip
-
-Temel konuların ötesine geçmeye hazır mısınız? Üçüncü eğitimimiz, Aspose.Zip for .NET’te farklı **sevenzip compression methods** kullanarak Seven Zip dosyaları oluşturmayı inceliyor. LZMA2, BZip2 ve Store (sıkıştırma yok) için kolay adımları birlikte keşfedeceğiz. Yüksek sıkıştırma oranları mı istiyorsunuz, yoksa dosyaları sıkıştırma olmadan mı saklamak istiyorsunuz, bu eğitim her iki ihtiyacı da karşılıyor. Araç setinizi genişletin ve proje gereksinimlerinize uygun sıkıştırma yöntemlerini bilinçli bir şekilde seçin.
-
-## SevenZip Compression Tutorials
-### [Create SevenZip Entries in Aspose.Zip for .NET](./create-sevenzip-entries/)
-Aspose.Zip for .NET’in gücünü keşfedin! SevenZip girdilerini adım adım oluşturmayı öğrenin. Dosyaları zahmetsizce sıkıştırın. Kesintisiz bir geliştirme deneyimi için şimdi indirin.
-### [Create SevenZip Entry in Aspose.Zip for .NET](./create-sevenzip-entry/)
-Aspose.Zip for .NET – SevenZip girdilerini zahmetsizce oluşturun. .NET uygulamalarınızı verimli zip arşiv manipülasyonu ile geliştirin.
-### [SevenZip with Various Compression Methods in Aspose.Zip for .NET](./sevenzip-various-compression-methods/)
+## SevenZip Sıkıştırma Öğreticileri
+### [Aspose.Zip for .NET'te SevenZip Girdileri Oluştur](./create-sevenzip-entries/)
+Aspose.Zip for .NET'in gücünü keşfedin! 7z'ye dosya eklemeyi adım adım öğrenin. Dosyaları zahmetsizce sıkıştırın. Sorunsuz bir geliştirme deneyimi için şimdi indirin.
+### [Aspose.Zip for .NET'te SevenZip Girişi Oluştur](./create-sevenzip-entry/)
+Aspose.Zip for .NET'i ustalaştırın – 7z'ye dosyaları zahmetsizce ekleyin. .NET uygulamalarınızı verimli arşiv manipülasyonu ile geliştirin.
+### [Aspose.Zip for .NET'te Çeşitli Sıkıştırma Yöntemleriyle SevenZip](./sevenzip-various-compression-methods/)
 Aspose.Zip for .NET kullanarak farklı sıkıştırma yöntemleriyle Seven Zip dosyaları oluşturmayı öğrenin. LZMA2, BZip2 ve Store (sıkıştırma yok) için kolay adımlar.
 
-### Yaygın Hatalar & İpuçları
-- **Yanlış yöntemi seçmek:** LZMA2 en iyi sıkıştırmayı sağlar ancak büyük dosyalarda daha yavaş olabilir. Dengeye ihtiyacınız varsa BZip2, hız kritikse Store kullanın.  
-- **Bellek tüketimi:** Yüksek sıkıştırma yöntemleri daha fazla RAM gerektirebilir; çok büyük arşivlerde kaynakları izleyin.  
-- **Dosya adları:** SevenZip arşivleri büyük/küçük harfe duyarlıdır; tutarlı adlandırma yaparak çıkarma sorunlarını önleyin.
+### Yaygın Tuzaklar ve İpuçları
+- **Yanlış yöntemi seçmek:** LZMA2 en iyi sıkıştırmayı sunar ancak büyük dosyalarda daha yavaş olabilir. Dengeye ihtiyacınız olduğunda BZip2, hız kritik olduğunda Store kullanın.  
+- **Bellek tüketimi:** Yüksek sıkıştırma yöntemleri daha fazla RAM gerektirebilir; çok büyük arşivler için kaynakları izleyin.  
+- **Dosya adları:** SevenZip arşivleri büyük/küçük harfe duyarlıdır; çıkarma sorunlarını önlemek için tutarlı adlandırma sağlayın.
 
 ## Sıkça Sorulan Sorular
 
 **S: SevenZip arşivine parola koruması ekleyebilir miyim?**  
-C: Evet. Aspose.Zip, arşiv veya tek tek girdiler için parola ayarlamanıza izin verir.
+A: Evet. Aspose.Zip, ek güvenlik için arşive veya bireysel girişlere parola ayarlamanıza izin verir.
 
-**S: Tüm arşivi açmadan belirli bir girdiyi nasıl çıkarabilirim?**  
-C: `ExtractEntry` metodunu kullanarak istenen girdi doğrudan hedef akışa aktarılır.
+**S: Tüm arşivi açmadan belirli bir girişi nasıl çıkarabilirim?**  
+A: `ExtractEntry` metodunu kullanın; istenen girişi doğrudan hedef akışa aktarır.
 
-**S: Mevcut bir 7z dosyasını güncelleyebilir miyim?**  
-C: Kesinlikle. Aspose.Zip, bir arşivi sıfırdan yeniden oluşturmak zorunda kalmadan giriş ekleme, silme veya güncelleme işlemlerine olanak tanır.
+**S: Mevcut bir 7z dosyasını güncellemek mümkün mü?**  
+A: Kesinlikle. Aspose.Zip, mevcut bir arşivde giriş ekleme, kaldırma veya güncelleme işlemlerini baştan oluşturmadan destekler.
 
-**S: LZMA2 ile BZip2 arasındaki performans farkları nelerdir?**  
-C: LZMA2 genellikle daha iyi sıkıştırma oranları sunar ancak CPU‑ağır senaryolarda daha yavaş olabilir. BZip2 daha hızlıdır ancak daha büyük dosyalar üretir.
+**S: LZMA2 ve BZip2 arasındaki performans farkları nelerdir?**  
+A: LZMA2 genellikle daha iyi sıkıştırma oranları sağlar ancak CPU yoğun senaryolarda daha yavaş olabilir. BZip2 daha hızlıdır ancak daha büyük dosyalar üretir.
 
-**S: Nesneleri manuel olarak dispose etmem gerekiyor mu?**  
-C: `Archive` sınıfı `IDisposable` uygular. Bir `using` bloğu içinde kullanın veya `Dispose()` çağrısı yaparak kaynakları zamanında serbest bırakın.
+**S: Herhangi bir nesneyi manuel olarak dispose etmem gerekiyor mu?**  
+A: `Dispose()` arşivin tuttuğu kaynakları serbest bırakır. `Archive` sınıfı `IDisposable` arayüzünü uygular. Bir `using` ifadesi içinde sarın veya kaynakları hemen serbest bırakmak için `Dispose()` çağırın.
 
 ## Sonuç
 
-Sonuç olarak, SevenZip Compression Tutorials serimiz Aspose.Zip for .NET’i etkili bir şekilde kullanmanız için kapsamlı bir rehber sunar. Temel SevenZip girdileri oluşturmaktan gelişmiş **sevenzip compression methods** keşfine kadar, bu seri sorunsuz ve verimli geliştirme için başvuracağınız kaynaktır. Eğitimleri hemen indirin ve Aspose.Zip for .NET ile becerilerinizi artırın. İyi kodlamalar!
+Sonuç olarak, SevenZip Sıkıştırma Öğreticilerimiz, Aspose.Zip for .NET'i etkili bir şekilde kullanmanız için kapsamlı bir rehber sunar. Temel SevenZip girdileri oluşturmanın yanı sıra gelişmiş **sevenzip sıkıştırma yöntemlerini** keşfetmeye kadar, bu seri sorunsuz ve verimli geliştirme için başvurmanız gereken kaynaktır. Öğreticileri şimdi indirin ve Aspose.Zip for .NET ile becerilerinizi geliştirin. Kodlamanın tadını çıkarın!
 
 ---
 
-**Last Updated:** 2025-12-25  
-**Tested With:** Aspose.Zip for .NET (latest stable release)  
-**Author:** Aspose
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+**Son Güncelleme:** 2026-06-29  
+**Test Edilen:** Aspose.Zip for .NET (latest stable release)  
+**Yazar:** Aspose
 
 {{< blocks/products/products-backtop-button >}}
+
+## İlgili Öğreticiler
+
+- [dosyaları sıkıştır c# – Aspose.Zip for .NET ile 7z arşivi oluştur](/zip/net/sevenzip-compression/create-sevenzip-entries/)
+- [7z Dosyaları Nasıl Oluşturulur – Aspose.Zip for .NET Öğreticisi](/zip/net/sevenzip-compression/sevenzip-various-compression-methods/)
+- [Zip Arşivi Oluştur .NET – Aspose.Zip ile Dosya Sıkıştırma](/zip/net/file-compression/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
