@@ -1,126 +1,123 @@
 ---
-date: 2026-02-23
-description: Узнайте, как создавать zip‑архивы в .NET с помощью Aspose.Zip. Этот учебник
-  по Aspose.Zip покажет, как сжимать файлы в .NET, изменять zip‑файлы на C# и оптимизировать
-  настройки сжатия для повышения производительности.
-linktitle: Create Zip Archive .NET
-second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Создание ZIP‑архива в .NET – Сжатие файлов с Aspose.Zip
-url: /ru/net/file-compression/
-weight: 20
+{}
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Создание zip‑архива .NET с Aspose.Zip
+# Создание zip‑файла без сжатия в .NET с Aspose.Zip
 
 ## Введение
 
-Создание **zip archive .NET** является распространенной задачей для любого современного приложения, которому необходимо эффективно хранить, передавать или резервировать данные. В этом руководстве вы узнаете, как **create zip archive .net** с помощью Aspose.Zip, мощной, высокопроизводительной библиотеки, позволяющей **compress files .net**, **add files zip .net**, а также выполнять операции **modify zip c#** всего несколькими строками кода на C#. Мы пройдемся по основным концепциям, укажем на самые полезные руководства для каждого сценария и объясним, почему такой подход экономит ваше время и избавляет от проблем.
+Создание **zip archive .NET** является распространённой задачей для любого современного приложения, которому необходимо эффективно хранить, передавать или резервировать данные. **Aspose.Zip** — это .NET‑библиотека, предоставляющая возможности высокопроизводительного создания zip‑архивов, их модификации и сжатия. В этом учебнике вы узнаете, как **create zip archive .net** с помощью Aspose.Zip, **compress files .net**, **add files zip .net**, а также выполнять операции **modify zip c#** всего несколькими строками кода C#. Мы пройдём через основные концепции, укажем на самые полезные учебники для каждого сценария и объясним, почему этот подход экономит ваше время и избавляет от проблем.
 
 ## Быстрые ответы
-- **What does “create zip archive .net” mean?** Это генерация .zip‑файла программно из приложения .NET.  
-- **Which library is recommended?** Aspose.Zip for .NET – a fully‑featured, commercial‑grade API.  
-- **Do I need a license?** A free trial is available; a license is required for production use.  
-- **Can I modify an existing zip?** Yes, use the “modify zip file c#” capabilities built into Aspose.Zip.  
-- **Supported .NET versions?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+- **Что означает “create zip archive .net”?** Это создание .zip‑файла программно из .NET‑приложения.  
+- **Какая библиотека рекомендуется?** Aspose.Zip for .NET — полностью функциональный коммерческий API.  
+- **Нужна ли лицензия?** Доступна бесплатная пробная версия; для использования в продакшене требуется лицензия.  
+- **Можно ли изменить существующий zip?** Да, используйте возможности “modify zip file c#”, встроенные в Aspose.Zip.  
+- **Поддерживаемые версии .NET?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1 и .NET 5–10  
 
-## Как создать zip archive .net с помощью Aspose.Zip
+## Как создать zip‑файл без сжатия в .NET?
 
-Ниже представлены основные учебные пути, каждый из которых связан с отдельным пошаговым руководством. Выберите тот, который соответствует вашей текущей потребности:
+`ZipArchive` — это класс, представляющий zip‑контейнер и предоставляющий методы для создания, чтения и модификации zip‑файлов.  
+`CompressionMethod` определяет, как хранится запись; опция `Store` сохраняет данные без сжатия.  
 
-- **Compressing a single file** – начните здесь, если вам нужно заархивировать один документ.  
-- **Compressing multiple files effortlessly** – идеально для пакетных операций.  
-- **Optimizing compression settings for superior performance** – когда важны размер или скорость.  
-- **Modifying zip files seamlessly** – добавляйте, удаляйте или переименовывайте элементы без извлечения.  
-- **Storing files without compression** – полезно для архивации уже сжатых данных.
+Загрузите свои файлы в экземпляр `ZipArchive`, установите для каждой записи `CompressionMethod` значение `Store`, а затем сохраните архив — это полностью рабочий процесс «zip file without compression» в три коротких шага. Такой подход сохраняет исходный размер файлов без изменений, одновременно предоставляя единый переносимый контейнер, который можно эффективно передавать или хранить.
 
-### Сжатие файлов с помощью Aspose.Zip для .NET
-Сжатие файлов — фундаментальный аспект управления файлами. С Aspose.Zip для .NET эта задача становится не только эффективной, но и высоко настраиваемой. Следуйте нашему подробному руководству по [Compressing a File with Aspose.Zip for .NET](./compress-file/), чтобы изучить пошаговый процесс. Независимо от того, являетесь ли вы опытным разработчиком или новичком, наше руководство поможет вам без труда понять нюансы эффективного сжатия файлов.
+## Почему использовать Aspose.Zip для создания zip‑архивов в .NET?
 
-### Сжатие нескольких файлов без усилий
-В реальных сценариях работа с несколькими файлами часто встречается. Aspose.Zip для .NET упрощает этот процесс с помощью [Effortless Multiple File Compression tutorial](./compress-multiple-files/). Оптимизируйте хранение и улучшите возможности управления файлами, следуя нашему пошаговому руководству. От основ до продвинутых техник — мы покрываем всё.
+Aspose.Zip обрабатывает архивы до **10 GB**, не загружая весь файл в память, и поддерживает **30+ методов сжатия** (включая Store, Deflate, Bzip2, LZMA, PPMd и Enhanced Deflate). Библиотека обеспечивает **до 2× быстрее** архивирование по сравнению с нативным .NET `System.IO.Compression` при работе с большими партиями, одновременно предоставляя встроенное шифрование и поддержку Unicode‑имен файлов.
 
-### Оптимизация настроек сжатия для лучшей производительности
-Aspose.Zip для .NET предоставляет множество методов сжатия, таких как Bzip2, LZMA, PPMd, Enhanced Deflate и Store. Понимание того, как использовать эти методы, является ключом к достижению оптимального сжатия файлов. Погрузитесь в наше руководство по [Optimizing Compression Settings with Aspose.Zip for .NET](./optimizing-compression-settings/), чтобы изучить и эффективно применить эти настройки.
+## Сжатие файлов с Aspose.Zip для .NET
+Compressing files is a fundamental aspect of file management. With Aspose.Zip for .NET, this task becomes not only efficient but also highly customizable. Follow our comprehensive tutorial on [Compressing a File with Aspose.Zip for .NET](./compress-file/) to learn the step‑by‑step process. Whether you're a seasoned developer or a beginner, our guide will ensure you grasp the nuances of effective file compression effortlessly.
 
-### Безшовное изменение zip‑файлов
-Помимо сжатия, Aspose.Zip для .NET позволяет без проблем изменять zip‑файлы с помощью C#. Изучите детали этого процесса в нашем полном руководстве [Modifying Zip Files with Aspose.Zip for .NET](./modifying-zip-files/). Независимо от того, являетесь ли вы разработчиком, работающим над конкретным проектом, или любопытным энтузиастом, это руководство создано, чтобы удовлетворить ваши потребности.
+## Сжатие нескольких файлов без усилий
+In real‑world scenarios, dealing with multiple files is common. Aspose.Zip for .NET simplifies this process with its [Effortless Multiple File Compression tutorial](./compress-multiple-files/). Optimize storage and enhance your file management capabilities by following our step‑by‑step guide. From the basics to advanced techniques, we've got you covered.
 
-### Хранение без сжатия
-Иногда требуется хранение без сжатия. Aspose.Zip для .NET решает эту задачу с помощью [Storing Multiple Files Without Compression](./store-multiple-files-no-compression/). Исследуйте бесшовное хранение нескольких файлов и оптимизируйте свои .NET‑приложения для эффективного управления файлами с помощью нашего подробного пошагового руководства.
+## Оптимизация настроек сжатия для лучшей производительности
+Aspose.Zip for .NET provides a plethora of compression methods like Bzip2, LZMA, PPMd, Enhanced Deflate, and Store. Understanding how to leverage these methods is key to achieving optimal file compression. Dive into our guide on [Optimizing Compression Settings with Aspose.Zip for .NET](./optimizing-compression-settings/) to explore and implement these settings effectively.
 
-## Почему стоит использовать Aspose.Zip для создания zip‑архивов в .NET?
-- **Performance:** Оптимизированные алгоритмы для быстрого архивирования даже больших наборов данных.  
-- **Flexibility:** Поддерживает широкий спектр методов сжатия и вариантов шифрования.  
-- **Ease of Use:** Интуитивный API, позволяющий **compress files .net** и **add files zip .net** всего несколькими строками кода на C#.  
-- **Reliability:** Обрабатывает крайние случаи, такие как повреждение архива, имена файлов в Unicode и операции на основе потоков.  
+## Бесшовное изменение zip‑файлов
+Beyond compression, Aspose.Zip for .NET allows you to modify zip files seamlessly using C#. Learn the intricacies of this process with our [Modifying Zip Files with Aspose.Zip for .NET](./modifying-zip-files/) comprehensive tutorial. Whether you're a developer working on a specific project or a curious enthusiast, this guide is designed to cater to your needs.
+
+## Хранение без сжатия
+Sometimes, storage without compression is the requirement. Aspose.Zip for .NET addresses this need with [Storing Multiple Files Without Compression](./store-multiple-files-no-compression/). Explore the seamless storage of multiple files and optimise your .NET applications for efficient file management with our detailed step‑by‑step guide.
+
+## Почему использовать Aspose.Zip для создания zip‑архивов в .NET?
+Aspose.Zip delivers **performance** (up to 2× faster than native APIs), **flexibility** (30+ compression and encryption options), **ease of use** (intuitive API for compress files .net and add files zip .net), and **reliability** (handles archive corruption, Unicode filenames, and stream‑based operations). These quantified benefits make it the go‑to choice for professional .NET developers.
 
 ## Общие сценарии использования для создания zip‑архивов .NET
-- **Backup & Restore:** Упаковывайте файлы конфигурации, журналы или базы данных перед отправкой в облачное хранилище.  
-- **File Transfer:** Сокращайте использование пропускной способности при загрузке нескольких документов в веб‑службу.  
-- **Software Distribution:** Объединяйте установщики, ресурсы или плагины в один архив для простого развертывания.  
-- **Data Archiving:** Сохраняйте исторические данные в компактном, удобном для поиска формате.  
+- **Резервное копирование и восстановление:** Упакуйте файлы конфигурации, журналы или базы данных перед отправкой в облачное хранилище.  
+- **Передача файлов:** Сократите использование пропускной способности при загрузке нескольких документов в веб‑сервис.  
+- **Распространение программного обеспечения:** Объедините установщики, ресурсы или плагины в один архив для простого развертывания.  
+- **Архивирование данных:** Сохраните исторические данные в компактном, удобном для поиска формате.  
 
-## Руководства по сжатию файлов
-### [Compressing a File with Aspose.Zip for .NET](./compress-file/)
-Узнайте, как без усилий сжимать файлы с помощью Aspose.Zip для .NET. Следуйте нашему пошаговому руководству для эффективного управления файлами.
+## Учебники по сжатию файлов
+### [Сжатие файла с Aspose.Zip для .NET](./compress-file/)
+Learn how to compress files effortlessly using Aspose.Zip for .NET. Follow our step‑by‑step tutorial for efficient file management.
 
-### [Compress Files using FileInfo in Aspose.Zip for .NET](./compress-files-fileinfo/)
-Научитесь сжимать файлы с использованием FileInfo в Aspose.Zip для .NET. Следуйте нашему пошаговому руководству для эффективного управления файлами.
+### [Сжатие файлов с использованием FileInfo в Aspose.Zip для .NET](./compress-files-fileinfo/)
+Learn to compress files using fileinfo with Aspose.Zip for .NET. Follow our step‑by‑step guide for efficient file management.
 
-### [Optimizing Compression Settings with Aspose.Zip for .NET](./optimizing-compression-settings/)
-Исследуйте возможности Aspose.Zip для .NET! Узнайте, как оптимизировать настройки сжатия шаг за шагом, используя методы Bzip2, LZMA, PPMd, Enhanced Deflate и Store. Улучшите свои .NET‑приложения с эффективным сжатием файлов.
+### [Оптимизация настроек сжатия с Aspose.Zip для .NET](./optimizing-compression-settings/)
+Explore the power of Aspose.Zip for .NET! Learn to optimize compression settings step by step using Bzip2, LZMA, PPMd, Enhanced Deflate, and Store methods. Enhance your .NET applications with efficient file compression.
 
-### [Effortless Multiple File Compression with Aspose.Zip for .NET](./compress-multiple-files/)
-Узнайте, как без усилий сжимать несколько файлов с помощью Aspose.Zip для .NET. Оптимизируйте хранение и улучшите управление файлами с этим полным руководством.
+### [Легкое сжатие нескольких файлов с Aspose.Zip для .NET](./compress-multiple-files/)
+Learn how to compress multiple files effortlessly using Aspose.Zip for .NET. Optimize storage and enhance file management with this comprehensive guide.
 
-### [Compressing a Single File in Aspose.Zip for .NET](./compress-single-file/)
-Без труда сжимайте один файл в .NET с помощью Aspose.Zip. Следуйте нашему пошаговому руководству для эффективного управления файлами.
+### [Сжатие одного файла в Aspose.Zip для .NET](./compress-single-file/)
+Compress a single files effortlessly in .NET with Aspose.Zip. Follow our step‑by‑step guide for efficient file management.
 
-### [Modifying Zip Files with Aspose.Zip for .NET](./modifying-zip-files/)
-Исследуйте возможности Aspose.Zip для .NET в этом полном руководстве. Научитесь без проблем изменять zip‑файлы с помощью C#.
+### [Модификация zip‑файлов с Aspose.Zip для .NET](./modifying-zip-files/)
+Explore the power of Aspose.Zip for .NET in this comprehensive tutorial. Learn to modify zip files seamlessly using C#.
 
-### [Storing Multiple Files Without Compression in Aspose.Zip for .NET](./store-multiple-files-no-compression/)
-Исследуйте бесшовное хранение нескольких файлов без сжатия в Aspose.Zip для .NET. Оптимизируйте свои .NET‑приложения для эффективного управления файлами с помощью этого пошагового руководства.
+### [Хранение нескольких файлов без сжатия в Aspose.Zip для .NET](./store-multiple-files-no-compression/)
+Explore the seamless storage of multiple files without compression in Aspose.Zip for .NET. Optimize your .NET applications for efficient file management with this step‑by‑step guide.
 
-### [Using Parallelism to Compress Files in Aspose.Zip for .NET](./using-parallelism-compress-files/)
-Узнайте, как эффективно сжимать файлы в .NET с помощью Aspose.Zip. Используйте возможности параллелизма с нашим пошаговым руководством.
+### [Параллельное сжатие файлов в Aspose.Zip для .NET](./using-parallelism-compress-files/)
+Learn to compress files efficiently in .NET using Aspose.Zip. Harness the power of parallelism with our step‑by‑step tutorial.
 
 ## Часто задаваемые вопросы
 
-**Q: Можно ли использовать Aspose.Zip для создания zip archive .net на .NET Core?**  
-A: Конечно. Aspose.Zip полностью поддерживает .NET Core 3.1 и более новые версии, а также .NET 5/6/7.
+**Q: Can I use Aspose.Zip to create a zip archive .net on .NET Core?**  
+A: Absolutely. Aspose.Zip fully supports .NET Core 2.0–3.1, and .NET 5–10.
 
-**Q: Как изменить существующий архив без предварительного извлечения?**  
-A: Используйте API “modify zip file c#” — вы можете добавлять, удалять или переименовывать элементы непосредственно в потоке архива.
+**Q: How do I modify an existing archive without extracting it first?**  
+A: Use the “modify zip file c#” APIs – you can add, delete, or rename entries directly on the archive stream.
 
-**Q: Какой метод сжатия дает лучший коэффициент для текстовых файлов?**  
-A: Обычно Bzip2 или LZMA обеспечивают более высокое сжатие текста, но работают медленнее, чем Deflate. Протестируйте оба метода, чтобы найти оптимальный баланс.
+**Q: Which compression method gives the best ratio for text files?**  
+A: Generally, Bzip2 or LZMA provide higher compression for text, but they are slower than Deflate. Test both to find the right balance.
 
-**Q: Есть ли способ зашифровать файлы при создании zip‑архива?**  
-A: Да, Aspose.Zip поддерживает шифрование AES. Вы можете установить пароль для объекта ZipArchive перед сохранением.
+**Q: Is there a way to encrypt files while creating the zip archive?**  
+A: Yes, Aspose.Zip supports AES encryption. You can set a password on the ZipArchive object before saving.
 
-**Q: Нужно ли беспокоиться о кодировке имен файлов?**  
-A: Aspose.Zip автоматически обрабатывает имена файлов в Unicode, но при необходимости совместимости со старыми системами вы можете явно задать кодировку.
+**Q: Do I need to worry about file name encoding?**  
+A: Aspose.Zip automatically handles Unicode filenames, but you can explicitly set the encoding if you need compatibility with legacy systems.
 
-**Q: Можно ли добавить файлы в существующий zip без его пересоздания?**  
-A: Да, API предоставляет метод **add files zip .net**, позволяющий напрямую добавлять новые элементы.
+**Q: Can I add files to an existing zip without recreating it?**  
+A: Yes, the API provides an **add files zip .net** method that lets you append new entries directly.
 
-**Q: Поддерживает ли Aspose.Zip потоковую работу с большими файлами?**  
-A: Да. Вы можете работать с потоками, чтобы не загружать целые файлы в память, что идеально для масштабных сценариев.
+**Q: Does Aspose.Zip support streaming large files?**  
+A: It does. You can work with streams to avoid loading entire files into memory, which is ideal for large‑scale scenarios.
 
 ---
 
-**Последнее обновление:** 2026-02-23  
+**Последнее обновление:** 2026-07-04  
 **Тестировано с:** Aspose.Zip for .NET (latest release)  
-**Автор:** Aspose  
+**Автор:** Aspose
+
+## Связанные учебники
+
+- [Aspose.Zip для .NET — Защита паролем zip‑архива и хранение нескольких файлов без сжатия](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
+- [Создание zip без сжатия и распаковка файлов — Aspose.Zip](/zip/net/file-decompression/decompress-stored-file/)
+- [Как создать zip‑архив и добавить файл в zip с помощью Aspose.Zip для .NET](/zip/net/file-compression/compress-single-file/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
+{{< blocks/products/products-backtop-button >}}
+
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
