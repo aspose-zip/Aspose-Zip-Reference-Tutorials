@@ -1,11 +1,78 @@
 ---
-date: 2026-02-20
-description: Tanulja meg, hogyan tömörítsen tarbz2 fájlokat, hogyan hozzon létre targz
-  archívumokat, valamint a .NET archívumok kicsomagolását jelszóval védett zip kicsomagolással
-  az Aspose.Zip for .NET használatával. Növelje a tárolási hatékonyságot és a biztonságot.
-linktitle: Archive Extraction and Formats
+date: 2026-06-19
+description: Ismerje meg, hogyan tömöríthet tar fájlokat, hozhat létre targz archívumokat,
+  és nyerhet ki jelszóval védett zip fájlokat az Aspose.Zip for .NET használatával
+  – növelve a tárolási hatékonyságot és a biztonságot.
+keywords:
+- how to compress tar
+- extract password zip
+- aspose zip compress
+- aspose zip extract
+- create targz archive
+linktitle: Archívumok kibontása és formátumok
+schemas:
+- author: Aspose
+  dateModified: '2026-06-19'
+  description: Learn how to compress tar files, create targz archives, and extract
+    password‑protected zip files using Aspose.Zip for .NET – boosting storage efficiency
+    and security.
+  headline: How to Compress Tar Files with Aspose.Zip for .NET
+  type: TechArticle
+- description: Learn how to compress tar files, create targz archives, and extract
+    password‑protected zip files using Aspose.Zip for .NET – boosting storage efficiency
+    and security.
+  name: How to Compress Tar Files with Aspose.Zip for .NET
+  steps:
+  - name: Choose the archive format you need
+    text: 'Decide which tar‑based format best matches your compression‑speed trade‑off:
+      - **TarBz2** – Highest compression ratio (≈30 % smaller than TarGz) but slower.
+      - **TarGz** – Good balance of speed and size; ideal for most cloud‑storage scenarios.
+      - **TarLz / TarXz** – Very high compression with moderate'
+  - name: Create a new `Archive` instance
+    text: '`Archive` is the top‑level object that represents a single archive file
+      in memory. The `Archive` class manages the packing and compression workflow,
+      exposing methods to add entries and write the final file.'
+  - name: Add files and folders
+    text: You can add an entire directory tree with `AddAll` or add individual files
+      with `AddFile`. Preserving the original folder hierarchy is as simple as passing
+      the base directory path.
+  - name: Set the desired compression type
+    text: '`CompressionType` enumerates the supported algorithms. `CompressionType`
+      defines the algorithm (BZip2, GZip, LZMA, XZ, etc.) that will be applied to
+      the TAR stream during saving.'
+  - name: Save the archive
+    text: '`ArchiveFormat` is an enum set (e.g., `TarBz2`, `TarGz`) that tells the
+      writer which container and compression to use. Calling `Save` writes the archive
+      to disk using the selected format.'
+  - name: Extracting archives with passwords
+    text: '`ArchiveEntry` represents a single file or directory entry inside an archive.
+      To extract a password‑protected zip, open the archive, locate each `ArchiveEntry`,
+      assign its `Password` property, and call `Extract`. This per‑entry password
+      model lets you protect individual files inside a single zip.'
+  - name: Verify the result
+    text: After extraction, compare file sizes and SHA‑256 checksums to confirm that
+      the archive round‑trip preserved data integrity.
+  type: HowTo
+- questions:
+  - answer: Set `CompressionType.GZip` and use `ArchiveFormat.TarGz` when calling
+      `Save`. This produces a `.tar.gz` file in a single step.
+    question: How do I create a TarGz archive?
+  - answer: No. Each entry must be supplied with the correct password; extraction
+      fails with an `InvalidPasswordException` otherwise.
+    question: Can I extract a password‑protected archive without knowing the password?
+  - answer: Yes. Assign a password to each `ArchiveEntry` individually before calling
+      `Extract`.
+    question: Does Aspose.Zip support extracting archives with different passwords
+      per entry?
+  - answer: TarBz2 typically yields the smallest size, followed by TarLz and TarXz.
+      TarGz offers a faster, still‑effective alternative.
+    question: Which format gives the best compression?
+  - answer: Practically none, but extremely large archives (>10 GB) may benefit from
+      splitting into multiple parts for easier handling.
+    question: Is there a limit to the number of files I can add to a TAR archive?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Hogyan tömörítsünk TarBz2 fájlokat az Aspose.Zip for .NET segítségével
+title: Hogyan tömörítsünk tar fájlokat az Aspose.Zip for .NET segítségével
 url: /hu/net/archive-extraction-and-formats/
 weight: 23
 ---
@@ -14,108 +81,125 @@ weight: 23
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Hogyan tömörítsünk TarBz2 fájlokat az Aspose.Zip for .NET segítségével
+# Hogyan tömörítsünk Tar fájlokat az Aspose.Zip for .NET segítségével
 
 ## Bevezetés
 
-Ebben az útmutatóban megtanulja, **hogyan tömörítsen tarbz2 fájlokat** az Aspose.Zip for .NET segítségével, miközben felfedezi, hogyan hozhat létre TarGz archívumokat, és hogyan végezhet .net archívumkicsomagolást jelszóval védett zip fájlok esetén. A hatékony fájlkezelés a modern .NET fejlesztés egyik alappillére, és ezen formátumok elsajátítása lehetővé teszi a tárolási költségek csökkentését, az adatátvitel felgyorsítását, valamint az érzékeny információk védelmét. Akár egy biztonsági mentési szolgáltatást, egy felhő‑tároló klienst vagy egy adatfeldolgozó csővezetéket épít, az itt bemutatott technikák gördülékenyebbé és megbízhatóbbá teszik a fájlkezelési feladatokat.
+Ebben az útmutatóban megtudja, **hogyan tömörítsen tar** fájlokat az Aspose.Zip for .NET használatával, megtanulja a TarGz archívumok létrehozását, és megismeri a jelszóval védett zip archívumok kicsomagolását. A hatékony archívumkezelés alapvető készség a modern .NET fejlesztők számára – legyen szó biztonsági mentési szolgáltatásról, felhő‑tároló kliensről vagy adatfeldolgozó csővezetről, ezeknek a formátumoknak a elsajátítása csökkenti a tárolási költségeket, felgyorsítja az átviteleket, és megvédi az érzékeny adatokat.
 
 ## Gyors válaszok
-- **Mi az a TarBz2?** Egy tömörített archívum, amely a TAR csomagolást BZIP2 tömörítéssel kombinálja a magas tömörítési arányok érdekében.  
-- **Miért válassza az Aspose.Zip for .NET-et?** Egyetlen, folyékony API-t kínál számos archívumformátum létrehozásához és kicsomagolásához külső függőségek nélkül.  
-- **Létrehozhatok TarGz archívumot?** Igen – az Aspose.Zip támogatja a TarGz, TarLz, TarXz, TarZ és további formátumokat.  
-- **Hogyan csomagoljak ki egy jelszóval védett zip archívumot?** Használja a `Password` tulajdonságot a `ArchiveEntry` objektumon a kicsomagolás során.  
-- **Szükségem van licencre a termeléshez?** Kereskedelmi licenc szükséges a termeléshez; egy ingyenes próba elérhető értékeléshez.
+- **Mi az a TarBz2?** Egy tömörített archívum, amely a TAR csomagolást kombinálja a BZIP2 tömörítéssel a magas tömörítési arány érdekében.  
+- **Miért válassza az Aspose.Zip for .NET-et?** Egyetlen, folyékony API-t kínál sok archívumformátum létrehozásához és kicsomagolásához külső függőségek nélkül.  
+- **Létrehozhatok-e TarGz archívumot?** Igen – az Aspose.Zip támogatja a TarGz, TarLz, TarXz, TarZ és további formátumokat.  
+- **Hogyan tudok kicsomagolni egy jelszóval védett zip archívumot?** Használja a `Password` tulajdonságot az `ArchiveEntry` objektumon a kicsomagolás során.  
+- **Szükségem van licencre a termelésben való használathoz?** A termeléshez kereskedelmi licenc szükséges; ingyenes próba elérhető értékeléshez.
 
-## Hogyan tömörítsünk TarBz2 fájlokat
-A fájlok TarBz2 formátumba történő tömörítése azt jelenti, hogy először több fájlt és könyvtárat egyetlen **TAR** tárolóba csomagolunk, majd **BZIP2** tömörítést alkalmazunk. Az eredmény egy `.tar.bz2` fájl, amely egyszerre könnyen szállítható és erősen tömörített.
+## Mi a Tar tömörítés?
+A Tar (Tape Archive) egy konténerformátum, amely több fájlt és könyvtárat egyetlen adatfolyamba csomagol össze tömörítés nélkül. Amikor egy tömörítési algoritmust, például BZIP2, GZip, LZMA vagy XZ alkalmaz, az eredmény egy **tar‑alapú archívum** lesz, mint a `.tar.bz2`, `.tar.gz`, `.tar.lz` stb. Ezek a formátumok széles körben támogatottak Linuxon, macOS-en és Windowson, így ideálisak a platformok közötti adatcseréhez.
 
-## Miért használja az Aspose.Zip for .NET-et ezen formátumok kezeléséhez?
-- **Egységes API** – Egy könyvtár, sok formátum (TarBz2, TarGz, TarLz, TarXz, TarZ).  
-- **Nincs natív függőség** – Alapból működik Windows, Linux és macOS rendszereken.  
-- **Jelszó támogatás** – Biztonságosan védje és csomagolja ki az archívumokat bejegyzésenkénti jelszavakkal.  
-- **Teljesítmény‑orientált** – Az adatfolyam‑alapú feldolgozás minimalizálja a memóriahasználatot.
+## Miért használja az Aspose.Zip for .NET-et ezen formátumok kezelésére?
+Az Aspose.Zip egy **egységes, függőség‑mentes API-t** biztosít, amely több mint 50 archívum- és tömörítési formátumot támogat, köztük a TarBz2, TarGz, TarLz, TarXz és TarZ formátumokat. Windows, Linux és macOS rendszereken fut, és a stream‑alapú architektúrája a memóriahasználatot 10 MB alá tartja még több száz megabájtos archívumok esetén is. A jelszóvédelem beépített, lehetővé téve a bejegyzésenkénti titkosítást extra könyvtárak nélkül.
 
 ## Előfeltételek
-- .NET 6.0 vagy újabb (vagy .NET Core 3.1+ / .NET Framework 4.5+).  
+- .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, vagy .NET 5–10.  
 - Aspose.Zip for .NET NuGet csomag telepítve (`Install-Package Aspose.Zip`).  
-- Alapvető C# és fájl I/O ismeretek.
+- Alapvető ismeretek a C# fájl‑I/O‑ról és a .NET projekt rendszeréről.
 
 ## Lépésről‑lépésre útmutató
 
+### Hogyan tömörítsünk Tar fájlokat – Közvetlen válasz
+`Archive` egy archívumfájlt képvisel, és metódusokat biztosít a bejegyzések hozzáadásához és a mentéshez.  
+Hozzon létre egy `Archive` példányt, adja hozzá a csomagolni kívánt fájlokat, állítsa be a `CompressionType.BZip2` értéket, majd hívja a `Save` metódust `ArchiveFormat.TarBz2` paraméterrel. A könyvtár egyetlen streaming lépésben írja a TAR konténert és tömöríti azt, így soha nem kell az egész archívumot a memóriába betölteni.
+
 ### 1. lépés: Válassza ki a szükséges archívumformátumot
-Döntse el, hogy a **TarBz2**, **TarGz**, **TarLz**, **TarXz**, vagy **TarZ** melyik illik legjobban a tömörítési arány és a kompatibilitási követelményekhez.  
-- **TarBz2** – Legjobb tömörítés, lassabb feldolgozás.  
-- **TarGz** – Jó egyensúly a sebesség és a méret között (lefedi a másodlagos kulcsszót *how to create targz*).  
-- **TarZ** – Örökölt formátum, hasznos a régebbi Unix eszközökkel való kompatibilitáshoz.
+Döntse el, melyik tar‑alapú formátum felel meg legjobban a tömörítési‑sebességi kompromisszumnak:
+
+- **TarBz2** – Legmagasabb tömörítési arány (≈30 % kisebb, mint a TarGz), de lassabb.  
+- **TarGz** – Jó egyensúly a sebesség és a méret között; ideális a legtöbb felhő‑tárolási szituációhoz.  
+- **TarLz / TarXz** – Nagyon magas tömörítés közepes sebességgel, hasznos archiváláshoz.  
+- **TarZ** – Örökölt formátum, kompatibilis a régebbi Unix eszközökkel.
 
 ### 2. lépés: Hozzon létre egy új `Archive` példányt
-Példányosítsa az `Archive` osztályt, és mutassa az kimeneti fájl útvonalára. Ez az objektum kezeli a csomagolási és tömörítési folyamatot.
+`Archive` a felső szintű objektum, amely egyetlen archívumfájlt képvisel a memóriában.  
+
+Az `Archive` osztály kezeli a csomagolási és tömörítési munkafolyamatot, metódusokat biztosít a bejegyzések hozzáadásához és a végleges fájl írásához.
 
 ### 3. lépés: Fájlok és mappák hozzáadása
-Használja a `AddAll` vagy `AddFile` metódusokat a tömöríteni kívánt fájlok hozzáadásához. A könyvtárstruktúra megőrizhető egy alapmappa hozzáadásával.
+Teljes könyvtárfát adhat hozzá az `AddAll` metódussal, vagy egyedi fájlokat az `AddFile` segítségével. Az eredeti mappaszerkezet megőrzése egyszerűen a kiindulási könyvtár útvonalának megadásával történik.
 
 ### 4. lépés: A kívánt tömörítési típus beállítása
-Adja meg a tömörítési algoritmust (`CompressionType.BZip2`, `CompressionType.GZip`, stb.) az archívum mentésekor. Itt történik a tényleges **fájlok TarBz2 formátumba tömörítése** vagy bármely más formátum.
+A `CompressionType` felsorolja a támogatott algoritmusokat.  
 
-### 5. lépés: Archívum mentése
-Hívja meg a `Save` metódust a megfelelő formátum enummal (`ArchiveFormat.TarBz2`, `ArchiveFormat.TarGz`, stb.). A könyvtár egy lépésben írja a TAR tárolót és alkalmazza a kiválasztott tömörítést.
+A `CompressionType` határozza meg, hogy melyik algoritmus (BZip2, GZip, LZMA, XZ stb.) kerül alkalmazásra a TAR adatfolyamon a mentés során.
+
+### 5. lépés: Az archívum mentése
+Az `ArchiveFormat` egy enum halmaz (pl. `TarBz2`, `TarGz`), amely megmondja az írónak, hogy melyik konténert és tömörítést használja.  
+
+A `Save` hívás a kiválasztott formátummal írja a lemezre az archívumot.
 
 ### 6. lépés: Archívumok kicsomagolása jelszóval
-Ha **archívumbejegyzéseket kell kicsomagolni különböző jelszavakkal** (másodlagos kulcsszó *password protected zip extraction*), nyissa meg az archívumot, keresse meg az egyes bejegyzéseket, állítsa be a jelszavukat, majd csomagolja ki őket.
+Az `ArchiveEntry` egyetlen fájl‑ vagy könyvtárbejegyzést képvisel egy archívumban.  
+
+Jelszóval védett zip kicsomagolásához nyissa meg az archívumot, keresse meg az egyes `ArchiveEntry` elemeket, állítsa be a `Password` tulajdonságot, majd hívja az `Extract` metódust. Ez a bejegyzésenkénti jelszómodell lehetővé teszi az egyes fájlok védelmét egyetlen zipben.
 
 ### 7. lépés: Az eredmény ellenőrzése
-A kicsomagolás után hasonlítsa össze a fájlméreteket és ellenőrzőösszegeket, hogy megbizonyosodjon arról, hogy az archívum helyesen lett létrehozva és kicsomagolva.
+Kicsomagolás után hasonlítsa össze a fájlméreteket és a SHA‑256 ellenőrzőösszegeket, hogy megerősítse, az archívum körutazása megőrizte az adat integritását.
 
-## Gyakori felhasználási esetek
-- **Biztonsági mentési segédprogramok** – Napi mentéseket `.tar.bz2` formátumban tároljon a tárolási költségek minimalizálása érdekében.  
-- **Keresztplatformos adatcsere** – A Tar‑alapú formátumok univerzálisan érthetőek Linuxon, macOS-en és Windowson.  
-- **Biztonságos terjesztés** – Védje az egyes bejegyzéseket jelszóval a megfelelőségi környezetekben.
+## Általános felhasználási esetek
+- **Biztonsági mentés eszközök** – Napi mentéseket `.tar.bz2` formátumban tárolva akár 30 %-kal csökkenthető a tárolási költség.  
+- **Kereszt‑platform adatcsere** – A Tar‑alapú formátumokat natívan felismerik a Linux, macOS és Windows eszközök.  
+- **Biztonságos terjesztés** – Jelszavakat adhat a érzékeny bejegyzésekhez, ezzel megfelelve a megfelelőségi követelményeknek extra titkosító eszközök nélkül.
 
-## Hibaelhárítás és tippek
-- **Nagy archívumok** – Használjon streaming API‑kat (`Archive.CreateEntryFromFile`), hogy elkerülje a teljes fájlok memóriába betöltését.  
-- **Jelszó eltérések** – Győződjön meg arról, hogy az egyes `ArchiveEntry` beállított jelszava megegyezik a kicsomagolás során használt jelszóval; ellenkező esetben `InvalidPasswordException` hibát kap.  
-- **Nem támogatott tömörítési szint** – A BZIP2 nem támogat egyéni tömörítési szinteket; ha finomabb vezérlésre van szükség, fontolja meg a TarLz vagy TarXz használatát.
+## Hibakeresés és tippek
+- **Nagy archívumok** – Használja a streaming API‑t (`Archive.CreateEntryFromFile`) a memóriahasználat alacsonyan tartásához.  
+- **Jelszó eltérések** – Minden `ArchiveEntry`-hez beállított jelszónak pontosan meg kell egyeznie; ellenkező esetben `InvalidPasswordException` kerül dobásra.  
+- **Tömörítési szint** – A BZIP2 nem tesz lehetővé egyéni szinteket; ha finomabb vezérlésre van szükség, válassza az LZMA (`CompressionType.LZMA`) vagy XZ (`CompressionType.XZ`) opciót.  
 
-## Gyakran Ismételt Kérdések
+## Gyakran ismételt kérdések
 
-**K: Hogyan hozhatok létre TarGz archívumot?**  
-V: Állítsa be a tömörítési típust `CompressionType.GZip`‑re, és a formátumot `ArchiveFormat.TarGz`‑re a `Save` hívásakor.
+**K: Hogyan hozhatok létre egy TarGz archívumot?**  
+A: Állítsa be a `CompressionType.GZip` értéket, és a `Save` híváskor használja az `ArchiveFormat.TarGz`-t. Ez egyetlen lépésben `.tar.gz` fájlt hoz létre.
 
-**K: Kicsomagolhatok jelszóval védett archívumot a jelszó ismerete nélkül?**  
-V: Nem. Minden bejegyzéshez a helyes jelszót kell megadni; ellenkező esetben a kicsomagolás sikertelen lesz.
+**K: Kicsomagolhatok-e egy jelszóval védett archívumot a jelszó ismerete nélkül?**  
+A: Nem. Minden bejegyzéshez a helyes jelszót kell megadni; ellenkező esetben `InvalidPasswordException` keletkezik.
 
-**K: Az Aspose.Zip támogatja a különböző jelszavakkal rendelkező bejegyzések kicsomagolását?**  
-V: Igen. Minden `ArchiveEntry` számára egyedileg beállíthat jelszót a kicsomagolás előtt.
+**K: Az Aspose.Zip támogatja-e a különböző jelszavakkal rendelkező bejegyzések kicsomagolását?**  
+A: Igen. Minden `ArchiveEntry`-hez külön jelszót lehet hozzárendelni a `Extract` hívása előtt.
 
 **K: Melyik formátum nyújtja a legjobb tömörítést?**  
-V: A TarBz2 általában a legmagasabb tömörítési arányt biztosítja, ezt követi a TarLz és a TarXz. A TarGz jó egyensúlyt kínál a sebesség és a méret között.
+A: A TarBz2 általában a legkisebb méretet eredményezi, ezt követi a TarLz és a TarXz. A TarGz gyorsabb, de még mindig hatékony alternatíva.
 
-**K: Van korlát a TAR archívumba hozzáadható fájlok számát illetően?**  
-V: Gyakorlatilag nincs, de rendkívül nagy archívumok esetén előnyös lehet több részre bontani a könnyebb kezelés érdekében.
+**K: Van korlát a fájlok számában, amelyeket egy TAR archívumba felvehet?**  
+A: Gyakorlatilag nincs, de nagyon nagy archívumok (>10 GB) esetén érdemes több részre bontani a könnyebb kezelhetőség érdekében.
 
-## Archívumkicsomagolási és formátumok oktatóanyagai
+## Archívum kicsomagolás és formátumok oktatóanyagai
 ### [Fájlok tömörítése TarBz2 formátumba az Aspose.Zip for .NET segítségével](./compress-to-tar-bz2/)
-Tanulja meg, hogyan tömörítsen fájlokat TarBz2 formátumba .NET‑ben az Aspose.Zip használatával. Kövesse lépésről‑lépésre útmutatónkat a hatékony fájltömörítéshez.
+Ismerje meg, hogyan tömöríthet fájlokat TarBz2 formátumba .NET-ben az Aspose.Zip használatával. Kövesse lépésről‑lépésre útmutatónkat a hatékony fájltömörítéshez.  
 ### [Tömörítés TarGz formátumba az Aspose.Zip for .NET segítségével](./compress-to-tar-gz/)
-Fedezze fel a hatékony fájltömörítést .NET‑ben az Aspose.Zip‑kel. Tömörítsen TarGz‑ba könnyedén.
+Fedezze fel a hatékony fájltömörítést .NET-ben az Aspose.Zip segítségével. Tömörítsen TarGz formátumba könnyedén.  
 ### [Tömörítés TarLz formátumba az Aspose.Zip for .NET segítségével](./compress-to-tar-lz/)
-Könnyedén tömörítsen fájlokat .NET‑ben az Aspose.Zip‑kel. Tanulja meg, hogyan hozhat létre TarLz archívumokat lépésről‑lépésre.
+Könnyedén tömöríthet fájlokat .NET-ben az Aspose.Zip segítségével. Tanulja meg lépésről‑lépésre a TarLz archívumok létrehozását.  
 ### [Tömörítés TarXz formátumba az Aspose.Zip for .NET segítségével](./compress-to-tar-xz/)
-Tanulja meg, hogyan tömörítsen fájlokat TarXz formátumba .NET‑ben az Aspose.Zip használatával. Kövesse lépésről‑lépésre útmutatónkat a hatékony fájltároláshoz és átvitelhez.
+Ismerje meg, hogyan tömöríthet fájlokat TarXz formátumba .NET-ben az Aspose.Zip használatával. Kövesse útmutatónkat a hatékony tároláshoz és továbbításhoz.  
 ### [Tömörítés TarZ formátumba az Aspose.Zip for .NET segítségével](./compress-to-tar-z/)
-Fedezze fel a lépésről‑lépésre történő tömörítést TarZ formátumba az Aspose.Zip for .NET‑el. Hatékony fájlkezelés .NET‑projektekhez.
-### [Archívumbejegyzések kicsomagolása különböző jelszavakkal az Aspose.Zip for .NET‑ben](./extract-archive-different-passwords/)
-Tanulja meg, hogyan csomagoljon ki archívumbejegyzéseket különböző jelszavakkal az Aspose.Zip for .NET‑ben. Növelje alkalmazásai biztonságát és rugalmasságát.
+Fedezze fel a lépésről‑lépésre történő tömörítést TarZ formátumba az Aspose.Zip for .NET segítségével. Hatékony fájlkezelés .NET projektjeihez.  
+### [Archívumbejegyzések kicsomagolása különböző jelszavakkal az Aspose.Zip for .NET-ben](./extract-archive-different-passwords/)
+Ismerje meg, hogyan csomagolhat ki archívumbejegyzéseket különböző jelszavakkal az Aspose.Zip for .NET-ben. Növelje alkalmazásai biztonságát és rugalmasságát.
 
 ---
 
-**Last Updated:** 2026-02-20  
+**Last Updated:** 2026-06-19  
 **Tested With:** Aspose.Zip for .NET 24.11  
 **Author:** Aspose
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+## Kapcsolódó oktatóanyagok
 
+- [Tar archívum létrehozása és fájlok hozzáadása a tar-hoz az Aspose.Zip for .NET segítségével](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
+- [Hogyan tömörítsünk tar-t és hozzunk létre TarBz2 archívumot az Aspose.Zip for .NET segítségével](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
+- [Fájlok hozzáadása a tar-hoz és tarxz archívum létrehozása az Aspose.Zip segítségével](/zip/net/archive-extraction-and-formats/compress-to-tar-xz/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 

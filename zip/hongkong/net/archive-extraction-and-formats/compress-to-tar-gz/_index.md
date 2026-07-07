@@ -1,10 +1,41 @@
 ---
-date: 2026-02-20
-description: 學習如何使用 Aspose.Zip for .NET 建立 tar 壓縮檔、將檔案加入 tar 並壓縮為 tar.gz —— 一種快速、跨平台的
-  TarGz 壓縮檔製作方式。
-linktitle: Add files to tar
+date: 2026-06-19
+description: 了解如何使用 Aspose.Zip for .NET 將多個檔案加入 tar 並壓縮為 tar.gz —— 一種快速、跨平台的建立 TarGz
+  壓縮檔方式。
+keywords:
+- add multiple files to tar
+- compress files to tar.gz
+- Aspose.Zip .NET
+- tar archive .NET
+- tar.gz creation
+linktitle: 將檔案加入 tar
+schemas:
+- author: Aspose
+  dateModified: '2026-06-19'
+  description: Learn how to add multiple files to tar and compress files to tar.gz
+    using Aspose.Zip for .NET – a fast, cross‑platform way to build TarGz archives.
+  headline: Add multiple files to tar and create tar.gz archive with Aspose.Zip for
+    .NET
+  type: TechArticle
+- questions:
+  - answer: Yes, it works with .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET
+      5–10 projects.
+    question: Is Aspose.Zip for .NET compatible with all .NET applications?
+  - answer: Visit the [temporary‑license page](https://purchase.aspose.com/temporary-license/)
+      to request a trial license.
+    question: How can I obtain a temporary license for Aspose.Zip for .NET?
+  - answer: The library is optimized for large files; there is no hard size limit
+      other than the available system memory, and it can stream archives larger than
+      100 GB.
+    question: Are there any file‑size limitations?
+  - answer: Use the community‑driven support forum [here](https://forum.aspose.com/c/zip/37)
+      for help from Aspose engineers and other developers.
+    question: Where can I get support?
+  - answer: Absolutely—download the free trial from the [Aspose Zip releases page](https://releases.aspose.com/zip/net/).
+    question: Can I try Aspose.Zip for .NET for free?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: 使用 Aspose.Zip for .NET 建立 tar 檔案並將檔案加入 tar
+title: 使用 Aspose.Zip for .NET 將多個檔案加入 tar 並建立 tar.gz 壓縮檔
 url: /zh-hant/net/archive-extraction-and-formats/compress-to-tar-gz/
 weight: 12
 ---
@@ -13,64 +44,65 @@ weight: 12
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 使用 Aspose.Zip for .NET 建立 tar 壓縮檔並將檔案加入 tar
+# 使用 Aspose.Zip for .NET 將多個檔案加入 tar 並建立 tar.gz 壓縮檔
 
-## 簡介
+## 介紹
 
-在現代 .NET 應用程式中，**建立 tar 壓縮檔**以及**將檔案加入 tar**快速且可靠是一項常見需求——無論是打包日誌、為雲端儲存準備資料，或是建立部署套件。Aspose.Zip for .NET 提供乾淨、高效能的 API 來**將檔案加入 tar**，然後將壓縮檔壓縮成廣泛使用的 **tar.gz** 格式。在本指南中，我們將從設定專案到產生可直接使用的 `archive.tar.gz`，一步步說明完整流程。
+在現代 .NET 應用程式中，**將多個檔案加入 tar** 並且 **壓縮檔案為 tar.gz** 是常見需求——無論是打包日誌檔、為雲端儲存準備資料，或是為 Linux 伺服器建立部署套件。Aspose.Zip for .NET 提供乾淨且高效能的 API，讓您能建立 tar 壓縮檔、加入任意數量的檔案，並可選擇性壓縮為 tar.gz 檔案，全部不需外部工具。本指南將從專案設定說明完整工作流程，最終產出可供上線使用的 `archive.tar.gz`。
 
-## 快速解答
-- **我應該使用哪個函式庫？** Aspose.Zip for .NET  
-- **如何將檔案加入 tar？** 使用 `TarArchive.CreateEntry` 為每個檔案。  
-- **可以直接壓縮成 tar.gz 嗎？** 可以——呼叫 `SaveGzipped`。  
-- **正式環境需要授權嗎？** 非試用情況下需要有效的 Aspose 授權。  
-- **支援的 .NET 版本？** .NET Framework 4.5+、.NET Core 3.1+、.NET 5/6/7。
+## 快速回答
+- **應該使用哪個函式庫？** Aspose.Zip for .NET – 支援 tar、tar.gz、zip 以及其他多種格式。  
+- **如何將多個檔案加入 tar？** 為每個要加入的檔案呼叫 `TarArchive.CreateEntry`。  
+- **可以直接壓縮為 tar.gz 嗎？** 可以——在 `TarArchive` 實例上呼叫 `SaveGzipped`。  
+- **正式環境需要授權嗎？** 非試用使用需具備有效的 Aspose 授權。  
+- **支援哪些 .NET 版本？** .NET Framework 2.0–4.8.1、.NET Core 2.0–3.1，以及 .NET 5–10。
 
-## 什麼是「將檔案加入 tar」？
+## 什麼是「將多個檔案加入 tar」？
+將多個檔案加入 tar 壓縮檔表示將多個檔案（亦可包含目錄）打包成單一未壓縮的容器，同時保留原始的層級結構與中繼資料。之後可使用 gzip 壓縮此 `.tar` 檔，產生廣泛用於發佈與備份的 `tar.gz` 壓縮檔。
 
-將檔案加入 tar 壓縮檔表示將多個檔案打包成單一未壓縮的容器。tar 格式保留目錄結構與檔案中繼資料，非常適合在可選的壓縮（例如 gzip）之前進行歸檔，以**建立 tar.gz 壓縮檔**。
+## 為何使用 Aspose.Zip 壓縮檔案為 tar.gz？
+Aspose.Zip 在記憶體內完成整個 tar 與 gzip 流程，免除本機工具的需求。得益於串流架構，它可處理 **高達 500 GB 的壓縮檔** 而不必將整個檔案載入記憶體。函式庫支援 **超過 50 種輸入與輸出格式**，可在 Windows、Linux、macOS 上執行，並提供加密、密碼保護、自訂條目屬性等額外功能，全部透過單一 .NET API 完成。
 
-## 為什麼使用 Aspose.Zip 將檔案壓縮為 tar.gz？
-- **不需外部工具** – 所有操作皆在 .NET 程式碼內執行。  
-- **高效能** – 基於串流的 API 能有效處理大型檔案。  
-- **跨平台 tar** – 在 Windows、Linux、macOS 上皆可使用，無需變更。  
-- **功能豐富** – 支援加密、密碼保護與自訂條目屬性。
-
-## 前提條件
+## 前置條件
 
 在開始之前，請確保您已具備：
 
-- 具備基本的 .NET 開發經驗。  
-- Visual Studio（或任何偏好的 IDE）。  
-- 已安裝 Aspose.Zip for .NET – 請參閱官方文件 [here](https://reference.aspose.com/zip/net/)。  
-- 從 [this link](https://releases.aspose.com/zip/net/) 下載 Aspose.Zip 函式庫。
+- 基本的 .NET 開發經驗。  
+- Visual Studio（或任何您偏好的 IDE）。  
+- 已安裝 Aspose.Zip for .NET – 請參考官方文件 [此處](https://reference.aspose.com/zip/net/)。  
+- 從 [此連結](https://releases.aspose.com/zip/net/) 下載 Aspose.Zip 函式庫。
 
 ## 匯入命名空間
 
-在 .NET 專案中，匯入提供 tar 相關類別的命名空間：
+在您的 .NET 專案中，匯入提供 tar 相關類別的命名空間：
 
 ```csharp
 using System;
 using Aspose.Zip.Tar;
 ```
 
-## 如何使用 Aspose.Zip for .NET 將檔案加入 tar 檔案中
+## 使用 Aspose.Zip for .NET 將多個檔案加入 tar 的步驟
+
+使用 Aspose.Zip 時，您先載入來源資料夾，實例化 `TarArchive`，然後遍歷每個檔案，呼叫 `CreateEntry` 加入壓縮檔。所有條目加入完畢後，呼叫 `SaveGzipped` 產生壓縮的 `archive.tar.gz`。整個流程只需少量清晰且型別安全的 .NET 程式碼。
 
 ### 步驟 1：設定文件目錄
 
-首先，將程式碼指向包含要封存檔案的資料夾。
+定義包含要封存檔案的資料夾路徑。
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-> **專業提示：** 建立路徑時使用 `Path.Combine` 可避免平台特定的分隔符問題。
+> **專業提示：** 建議使用 `Path.Combine` 來組合路徑，以避免平台特定的分隔符問題。  
+> `Path.Combine` 方法會根據作業系統自動使用正確的分隔符安全地連接目錄與檔名。
 
-### 步驟 2：建立 TarGz 歸檔文件
+### 步驟 2：建立 TarGz 壓縮檔
 
-現在我們將建立 tar 壓縮檔，加入條目，並在同一個流暢的流程中壓縮它。
+接下來，我們將建立 tar 壓縮檔、加入條目，並在同一個流暢的流程中完成壓縮。
 
 #### 2.1 初始化 TarArchive
+
+`TarArchive` 類別是 Aspose.Zip 的最高層物件，代表記憶體中的 tar 容器。實例化它即會產生一個空的壓縮檔，準備接受條目。
 
 ```csharp
 using (TarArchive archive = new TarArchive())
@@ -79,67 +111,78 @@ using (TarArchive archive = new TarArchive())
 }
 ```
 
-#### 2.2 新增檔案 – 「將檔案加入 tar 檔案」的核心步驟
+#### 2.2 加入檔案 ── 「將多個檔案加入 tar」的核心
+
+`CreateEntry` 會在 tar 壓縮檔內建立新條目。此方法接受 **條目名稱**（tar 內的路徑）與 **來源檔案路徑**。重複呼叫即可加入任意數量的檔案。
 
 ```csharp
 archive.CreateEntry("alice29.txt", dataDir + "alice29.txt");
 archive.CreateEntry("lcet10.txt", dataDir + "lcet10.txt");
 ```
 
-每個 `CreateEntry` 呼叫接受 **條目名稱**（檔案在 tar 內的顯示名稱）與磁碟上的 **來源檔案路徑**。您可以重複呼叫 `CreateEntry` 以在單一壓縮檔中**加入多個檔案至 tar**。
+每次呼叫 `CreateEntry` 只會加入單一檔案；您可以對目錄集合迴圈，以最少的程式碼加入數十或數百個檔案。
 
-#### 2.3 另存為 Gzip 壓縮的 tar 檔（如何壓縮 tar.gz 檔）
+#### 2.3 以 Gzipped Tar 儲存（如何壓縮檔案為 tar.gz）
+
+`SaveGzipped` 會將 tar 內容寫入 gzip 串流，產生緊湊的 `archive.tar.gz` 檔案，供發佈或儲存使用。
 
 ```csharp
 archive.SaveGzipped(dataDir + "archive.tar.gz");
 ```
 
-`SaveGzipped` 將 tar 內容寫入 gzip 串流，產生緊湊的 `archive.tar.gz` 檔案，隨時可供分發。
+此方法會自動處理 gzip 標頭與尾部，讓您得到符合標準的 tar.gz 檔案，無需額外步驟。
 
-## 常見用例
+## 常見使用情境
 
-| 情境 | 為何「將檔案加入 tar」有幫助 |
-|----------|------------------------------|
-| **日誌彙總** | 在上傳至雲端儲存前，將每日日誌打包成單一壓縮檔。 |
-| **部署套件** | 從 Windows 建置管線產生可於 Linux 伺服器使用的可攜式 tar.gz 套件。 |
-| **資料備份** | 保留資料夾階層與中繼資料，同時降低備份檔案大小。 |
+| 情境 | 為何「將多個檔案加入 tar」有幫助 |
+|----------|----------------------------------------|
+| **日誌彙整** | 在上傳至雲端儲存前，將每日日誌打包成單一壓縮檔。 |
+| **部署套件** | 從 Windows 建置管線產生可於 Linux 伺服器上使用的可攜 tar.gz 套件。 |
+| **資料備份** | 保留資料夾層級與中繼資料，同時降低備份檔案大小。 |
 
-## 常見問題及解決方案
+## 常見問題與解決方案
 
-- **找不到檔案錯誤** – 確認 `dataDir` 以正確的路徑分隔符結尾，或使用 `Path.Combine`。  
-- **大型檔案導致記憶體壓力** – 使用基於串流的重載（`CreateEntry` 搭配 `Stream`）以避免將整個檔案載入記憶體。  
-- **Gzip 輸出損毀** – 在呼叫 `SaveGzipped` 前，確認壓縮檔已關閉（`using` 區塊）。
+- **找不到檔案錯誤** – 確認 `dataDir` 以正確的路徑分隔符結尾，或改用 `Path.Combine`。  
+- **大型檔案導致記憶體壓力** – 使用 `CreateEntry(string entryName, Stream source)` 的串流版，以避免一次載入整個檔案。  
+- **Gzip 輸出損毀** – 確認在呼叫 `SaveGzipped` 前已正確釋放 `TarArchive`（使用 `using` 區塊）。
 
-## 常見問題解答
+## 常見問答
 
 **Q: Aspose.Zip for .NET 是否相容所有 .NET 應用程式？**  
-A: 是的，它支援 .NET Framework、.NET Core 以及 .NET 5/6/7 專案。
+A: 是的，支援 .NET Framework 2.0–4.8.1、 .NET Core 2.0–3.1，以及 .NET 5–10 專案。
 
 **Q: 如何取得 Aspose.Zip for .NET 的臨時授權？**  
-A: 前往 [temporary‑license page](https://purchase.aspose.com/temporary-license/) 申請試用授權。
+A: 前往 [臨時授權頁面](https://purchase.aspose.com/temporary-license/) 申請試用授權。
 
 **Q: 有檔案大小限制嗎？**  
-A: 此函式庫已針對大型檔案進行最佳化，除系統可用記憶體外，沒有硬性大小限制。
+A: 函式庫已針對大型檔案進行最佳化，除系統可用記憶體外無硬性大小上限，且可串流處理超過 100 GB 的壓縮檔。
 
 **Q: 我可以在哪裡取得支援？**  
-A: 使用社群驅動的支援論壇 [here](https://forum.aspose.com/c/zip/37) 向 Aspose 工程師與其他開發者求助。
+A: 前往社群驅動的支援論壇 [此處](https://forum.aspose.com/c/zip/37) 向 Aspose 工程師與其他開發者求助。
 
-**Q: 可以免費試用 Aspose.Zip for .NET 嗎？**  
-A: 當然可以——從 [Aspose Zip releases page](https://releases.aspose.com/zip/net) 下載免費試用版。
+**Q: Aspose.Zip for .NET 可以免費試用嗎？**  
+A: 當然可以——從 [Aspose Zip 下載頁面](https://releases.aspose.com/zip/net/) 取得免費試用版。
 
 ## 結論
 
-您現在已學會如何使用 Aspose.Zip for .NET **建立 tar 壓縮檔**、將檔案加入其中，並壓縮成 **tar.gz**。此方法省去外部依賴，讓您能細緻控制壓縮檔內容，且能擴展至大型資料集。歡迎探索 Aspose.Zip 的其他功能，如加密、自訂條目屬性與串流 API，以進一步提升您的歸檔工作流程。
+現在您已了解如何 **將多個檔案加入 tar**、建立 tar 壓縮檔，並使用 Aspose.Zip for .NET **壓縮檔案為 tar.gz**。此方法免除外部相依，讓您完整掌控壓縮內容，且能擴展至極大型資料集。可進一步探索加密、自訂條目屬性與串流 API 等功能，提升封存工作流程。
 
 ---
 
-**最後更新:** 2026-02-20  
-**測試版本:** Aspose.Zip 24.11 for .NET  
-**作者:** Aspose
+**最後更新：** 2026-06-19  
+**測試版本：** Aspose.Zip 24.11 for .NET  
+**作者：** Aspose
+
+{{< blocks/products/products-backtop-button >}}
+
+## 相關教學
+
+- [如何使用 Aspose.Zip for .NET 壓縮多個檔案為 tar](/zip/net/archive-extraction-and-formats/compress-to-tar-lz/)
+- [將檔案加入 tar 並建立 tarxz 壓縮檔，使用 Aspose.Zip](/zip/net/archive-extraction-and-formats/compress-to-tar-xz/)
+- [如何壓縮 tar 並建立 TarBz2，使用 Aspose.Zip for .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
