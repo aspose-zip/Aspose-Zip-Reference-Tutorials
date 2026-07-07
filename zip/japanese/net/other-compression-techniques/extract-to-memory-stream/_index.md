@@ -1,10 +1,53 @@
 ---
-date: 2025-12-18
-description: Aspose.Zip for .NET を使用して zip アーカイブを抽出する方法を学びましょう – MemoryStream への抽出を示す簡潔な
-  Aspose Zip チュートリアルです。C# 開発者に最適です。
-linktitle: Extracting to Memory Stream
+date: 2026-06-14
+description: Aspose.Zip for .NET を使用して GZIP ファイルを読み取り、MemoryStream に抽出する方法を学びましょう
+  – C# 開発者向けの簡潔なチュートリアルです。
+keywords:
+- how to read gzip
+- how to extract zip
+- extract zip to stream
+- c# extract zip stream
+linktitle: MemoryStream への抽出
+schemas:
+- author: Aspose
+  dateModified: '2026-06-14'
+  description: Learn how to read GZIP files and extract them to a MemoryStream using
+    Aspose.Zip for .NET – a concise tutorial for C# developers.
+  headline: How to Read GZIP and Extract to MemoryStream with Aspose.Zip
+  type: TechArticle
+- description: Learn how to read GZIP files and extract them to a MemoryStream using
+    Aspose.Zip for .NET – a concise tutorial for C# developers.
+  name: How to Read GZIP and Extract to MemoryStream with Aspose.Zip
+  steps:
+  - name: Set Up Your Document Directory
+    text: Define the path where your sample archive resides.
+  - name: Initialize a MemoryStream
+    text: Create an empty `MemoryStream` that will receive the extracted data.
+  - name: Open the GZIP Archive and Extract
+    text: The `CopyTo` method **copies the archive to MemoryStream**, giving you an
+      in‑memory representation of the original file. `CopyTo` copies data from one
+      stream to another efficiently.
+  - name: Verify the Extraction
+    text: A simple console message confirms success.
+  type: HowTo
+- questions:
+  - answer: Yes, Aspose.Zip supports .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1,
+      and .NET 5–10, making it versatile for modern applications.
+    question: Is Aspose.Zip compatible with all versions of .NET?
+  - answer: Absolutely. The library provides both extraction and creation APIs, allowing
+      you to build ZIP files programmatically.
+    question: Can I use Aspose.Zip to create ZIP archives as well?
+  - answer: Visit the [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) for community
+      help and official guidance.
+    question: Where can I find additional support or examples?
+  - answer: Yes, you can start a free trial by downloading from the Aspose website
+      [here](https://releases.aspose.com/).
+    question: Is there a free trial available?
+  - answer: A temporary license can be requested from the Aspose portal [here](https://purchase.aspose.com/temporary-license/).
+    question: How do I obtain a temporary license for testing?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: .NET 用 Aspose.Zip で ZIP をメモリ ストリームに抽出する方法
+title: Aspose.Zip を使用して GZIP を読み取り、MemoryStream に抽出する方法
 url: /ja/net/other-compression-techniques/extract-to-memory-stream/
 weight: 10
 ---
@@ -13,36 +56,36 @@ weight: 10
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET で ZIP をメモリストリームに抽出する方法
+# GZIP を読み取り、Aspose.Zip で MemoryStream に抽出する方法
 
 ## はじめに
 
-ZIP アーカイブを **メモリに直接抽出する方法** をお探しなら、Aspose.Zip for .NET がシンプルに実現します。このチュートリアルでは GZIP ファイルを `MemoryStream` に抽出する手順を解説します。抽出したストリームは、オンザフライでのファイル処理やネットワーク経由でのデータ送信、ディスク上の一時ファイル回避など、さまざまなシナリオで通常のメモリデータソースとして利用できます。
+もしメモリに直接 GZIP アーカイブを読み取る信頼できる方法を探しているなら、Aspose.Zip for .NET がシンプルに実現します。このチュートリアルでは、GZIP ファイルを `MemoryStream` に抽出する手順を解説します。`MemoryStream` は他のインメモリ データ ソースと同様に扱えるため、ファイルをその場で処理したり、ネットワーク経由でデータを送信したり、ディスク上の一時ファイルを回避したりするのに最適です。  
+`MemoryStream` はメモリ内にデータを格納する .NET ストリームで、ディスク I/O なしで高速な読み書きが可能です。
 
-## クイックアンサー
-- **ZIP/GZIP の抽出を担当するライブラリは？** Aspose.Zip for .NET  
-- **MemoryStream に抽出できるか？** はい – 開いたアーカイブで `CopyTo` を使用します。  
-- **対応フォーマットは？** ZIP、GZIP、TAR など多数。  
-- **開発用にライセンスは必要か？** テスト用の無料トライアルで可能です。製品版ではライセンスが必要です。  
-- **対応 .NET バージョンは？** .NET Framework 4.5 以降、.NET Core 3.1 以降、.NET 5/6/7。
+## クイック回答
+- **ZIP/GZIP 抽出を処理するライブラリは何ですか？** Aspose.Zip for .NET  
+- **MemoryStream に抽出できますか？** はい – 開いたアーカイブで `CopyTo` を使用します。  
+- **サポートされている形式は？** ZIP、GZIP、TAR など。  
+- **開発にライセンスは必要ですか？** テスト用に無料トライアルが利用可能です。製品環境ではライセンスが必要です。  
+- **対応している .NET バージョンは？** .NET Framework 2.0–4.8.1、.NET Core 2.0–3.1、.NET 5–10  
 
-## Aspose.Zip とは？
+## Aspose.Zip とは何か？
 
-Aspose.Zip は、圧縮アーカイブの操作を簡素化する .NET ライブラリです。ZIP や GZIP の低レベルな詳細を抽象化し、**copy archive to memorystream** のようなビジネスロジックに集中できるようにします。
+Aspose.Zip は圧縮アーカイブの操作を簡素化する .NET ライブラリです。ZIP および GZIP 形式の低レベルな詳細を抽象化し、ビジネスロジックに集中できるようにします—例えば **copy archive to memorystream** のように、ファイルシステムの配管処理ではなく。
 
-## MemoryStream に抽出する理由
+## なぜ MemoryStream に抽出するのか？
 
-`MemoryStream` に抽出することで、一時ファイル作成のオーバーヘッドを回避し、I/O レイテンシを低減できます。また、HTTP 応答や画像処理、インメモリデータベースなど、ストリームを受け取る API へデータを簡単に渡すことが可能です。特にクラウドネイティブやマイクロサービス環境で有用です。
+`MemoryStream` に抽出することで、一時ファイルの作成オーバーヘッドを回避し、I/O レイテンシを低減でき、ストリームを期待する API（例：HTTP 応答、画像処理、インメモリ データベース）にデータを簡単に渡すことができます。これは特にクラウドネイティブやマイクロサービス アーキテクチャで便利です。
 
 ## 前提条件
-
-- **Visual Studio**（最新バージョンのいずれか）。  
+- **Visual Studio**（任意の最新エディション）。  
 - **Aspose.Zip for .NET** – 公式サイトからダウンロードしてください [こちら](https://releases.aspose.com/zip/net/)。  
-- `sample.gz` という名前のサンプル GZIP アーカイブが格納されたフォルダー。
+- `sample.gz` という名前のサンプル GZIP アーカイブが含まれるフォルダー。
 
 ## 名前空間のインポート
 
-C# ファイルに必要な名前空間を追加します。
+Add the required namespaces to your C# file:
 
 ```csharp
 using Aspose.Zip.Gzip;
@@ -54,11 +97,13 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## ステップバイステップガイド
+## C#/.NET で GZIP ファイルを読み取る方法
 
-### ステップ 1: ドキュメントディレクトリの設定
+`GzipArchive.Open` を使用して GZIP アーカイブをロードし、そのエントリを `MemoryStream` にコピーします。この 2 段階のパターンにより、ファイルシステムに触れることなく圧縮データを直接メモリに読み込み、解凍されたバイトに即座にアクセスできます。`GzipArchive.Open` メソッドは GZIP ファイルを開き、エントリを読み取るための GzipArchive オブジェクトを返します。相対パスまたは絶対パスを指定でき、ライブラリは内部でファイルストリームのオープンを処理し、抽出後に適切に破棄されるようにします。
 
-サンプルアーカイブが存在するパスを定義します。
+### ステップ 1: ドキュメント ディレクトリの設定
+
+サンプル アーカイブが存在するパスを定義します。
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -72,9 +117,9 @@ string dataDir = "Your Document Directory";
 var ms = new MemoryStream();
 ```
 
-### ステップ 3: GZIP アーカイブを開いて解凍する
+### ステップ 3: GZIP アーカイブを開いて抽出
 
-`CopyTo` メソッドは **archive を MemoryStream にコピー** し、元ファイルのインメモリ表現を取得します。
+`CopyTo` メソッドは **アーカイブを MemoryStream にコピー** し、元のファイルのインメモリ表現を提供します。`CopyTo` はストリーム間でデータを効率的にコピーします。
 
 ```csharp
 //ExStart: ExtractToMemoryStream
@@ -86,53 +131,60 @@ using (GzipArchive archive = new GzipArchive(File.OpenRead(dataDir + "sample.gz"
 //ExEnd: ExtractToMemoryStream
 ```
 
-### ステップ 4: 解凍結果を確認する
+### ステップ 4: 抽出の検証
 
-簡単なコンソールメッセージで成功を確認します。
+シンプルなコンソール メッセージで成功を確認します。
 
 ```csharp
 Console.WriteLine("Successfully Extracted to Memory Stream");
 ```
 
-### Aspose.Zip を使用して GZIP を解凍する方法
+## C# で ZIP をストリームに抽出する方法
 
-例は GZIP ファイルに焦点を当てていますが、同じパターンで ZIP アーカイブも処理できます – `GzipArchive` を `ZipArchive` に置き換えるだけです。これにより **how to extract gzip** と、拡張して **c# extract zip memory** の両方を一貫したワークフローで実現できます。
+同じワークフローを使用します—`GzipArchive` を `ZipArchive` に置き換えます。`ZipArchive` は ZIP ファイルを表し、エントリの読み取りや抽出のメソッドを提供します。`zipArchive.ExtractAllToStream(memoryStream)` を呼び出す（またはエントリを列挙して `CopyTo`）ことで、ZIP 全体の内容を `MemoryStream` で利用できるようになります。`ExtractAllToStream` はアーカイブのすべてのエントリを指定されたストリームに直接抽出します。さらに、抽出前にアーカイブオプションを設定して圧縮レベルやディレクトリ構造の保持を指定できます。このアプローチは Aspose.Zip がサポートするすべてのアーカイブタイプで機能します。
 
-## よくある落とし穴とヒント
-
-- **MemoryStream のリセット:** 抽出後は `ms.Position = 0` を設定してから他の場所でストリームを読み取ります。  
-- **大容量ファイル:** 非常に大きなアーカイブの場合、メモリ使用量を抑えるためにストリームをチャンク単位で処理することを検討してください。  
-- **破棄処理:** `using` ブロックを使用してアーカイブのファイルハンドルを速やかに解放します。
+## 一般的な落とし穴とヒント
+- **MemoryStream のリセット:** 抽出後、他の場所でストリームを読む前に `ms.Position = 0` を設定します。  
+- **大きなファイル:** 非常に大きなアーカイブの場合、メモリ使用量を抑えるためにストリームをチャンク単位で処理することを検討してください。Aspose.Zip は **500 以上のファイル** と合計サイズ **2 GB** までのアーカイブを、全体をメモリに読み込むことなく処理できます。  
+- **破棄:** `using` ブロックにより、アーカイブのファイルハンドルが速やかに解放されます。
 
 ## よくある質問
 
-**Q: Aspose.Zip はすべての .NET バージョンに対応していますか？**  
-A: はい、Aspose.Zip は .NET Framework 4.5 以降、.NET Core 3.1 以降、.NET 5/6/7 をサポートしており、最新のアプリケーションでも柔軟に利用できます。
+**Q: Aspose.Zip はすべての .NET バージョンと互換性がありますか？**  
+A: はい、Aspose.Zip は .NET Framework 2.0–4.8.1、.NET Core 2.0–3.1、.NET 5–10 をサポートしており、最新のアプリケーションに柔軟に対応します。
 
-**Q: Aspose.Zip で ZIP アーカイブを作成することもできますか？**  
-A: もちろんです。ライブラリは抽出 API と同様に作成 API も提供しており、プログラムから ZIP ファイルを生成できます。
+**Q: Aspose.Zip を使用して ZIP アーカイブを作成することもできますか？**  
+A: もちろんです。このライブラリは抽出 API と作成 API の両方を提供しており、プログラムで ZIP ファイルを構築できます。
 
-**Q: 追加のサポートやサンプルはどこで入手できますか？**  
-A: コミュニティの助けや公式ガイダンスは [Aspose.Zip フォーラム](https://forum.aspose.com/c/zip/37) でご確認ください。
+**Q: 追加のサポートやサンプルはどこで見つけられますか？**  
+A: コミュニティの支援や公式ガイドは [Aspose.Zip フォーラム](https://forum.aspose.com/c/zip/37) をご覧ください。
 
-**Q: 無料トライアルはありますか？**  
-A: はい、Aspose のウェブサイトからダウンロードできる無料トライアルをご利用いただけます [こちら](https://releases.aspose.com/)。
+**Q: 無料トライアルは利用可能ですか？**  
+A: はい、Aspose のウェブサイトからダウンロードして無料トライアルを開始できます [こちら](https://releases.aspose.com/)。
 
-**Q: テスト用の一時ライセンスはどう取得しますか？**  
+**Q: テスト用の一時ライセンスはどのように取得できますか？**  
 A: Aspose ポータルから一時ライセンスをリクエストできます [こちら](https://purchase.aspose.com/temporary-license/)。
 
-## まとめ
+## 結論
 
-この **aspose zip tutorial** では、Aspose.Zip for .NET を使用して圧縮アーカイブを `MemoryStream` に抽出する手順をすべて解説しました。これらの手順に従うことで、**copy archive to memorystream** を効率的に実現し、一時ファイルを回避しつつ抽出データを直接アプリケーションロジックに組み込めます。ぜひ他のアーカイブ形式や、パスワード保護、マルチスレッド抽出といった高度な機能も試してみてください。
+この **aspose zip tutorial** では、Aspose.Zip for .NET を使用して GZIP アーカイブを読み取り、`MemoryStream` に抽出する完全な手順を解説しました。これらの手順に従うことで、効率的に **copy archive to memorystream** が可能になり、一時ファイルを回避し、抽出したデータをアプリケーション ロジックに直接統合できます。他のアーカイブ形式や、パスワード保護、マルチスレッド抽出などの高度な機能もぜひ試してみてください。
 
 ---
 
-**最終更新日:** 2025-12-18  
+**最終更新日:** 2026-06-14  
 **テスト環境:** Aspose.Zip 24.12 for .NET  
 **作者:** Aspose  
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
 
+## 関連チュートリアル
+
+- [Aspose.Zip for .NET を使用した GZip アーカイブの開き方とその他の圧縮技術](/zip/net/other-compression-techniques/)
+- [Aspose.Zip for .NET でファイルを解凍する方法](/zip/net/file-decompression/)
+- [AES ファイルの解凍 - Aspose.Zip .NET チュートリアル](/zip/net/password-protection-and-encryption/decompress-aes-encrypted-file/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 

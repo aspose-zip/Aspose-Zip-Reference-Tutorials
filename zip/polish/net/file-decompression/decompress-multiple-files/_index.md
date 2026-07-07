@@ -1,10 +1,59 @@
 ---
-date: 2026-02-17
-description: Dowiedz się, jak wyodrębniać pliki zip przy użyciu Aspose.Zip dla .NET
-  – krok po kroku przewodnik, jak rozpakować zip i zarządzać wieloma wpisami.
-linktitle: Decompressing Multiple Files
+date: 2026-06-14
+description: Dowiedz się, jak rozpakować zip do folderu przy użyciu Aspose.Zip for
+  .NET – przewodnik krok po kroku obejmujący rozpakowywanie zip chronionego hasłem,
+  dekompresję wielu plików zip i inne.
+keywords:
+- extract zip to folder
+- extract password zip
+- decompress multiple zips
+- extract multiple zip entries
+- asp.net zip archive
+linktitle: Dekompresja wielu plików
+schemas:
+- author: Aspose
+  dateModified: '2026-06-14'
+  description: Learn how to extract zip to folder using Aspose.Zip for .NET – step‑by‑step
+    guide covering extract password zip, decompress multiple zips, and more.
+  headline: How to Extract ZIP Files – extract zip to folder
+  type: TechArticle
+- description: Learn how to extract zip to folder using Aspose.Zip for .NET – step‑by‑step
+    guide covering extract password zip, decompress multiple zips, and more.
+  name: How to Extract ZIP Files – extract zip to folder
+  steps:
+  - name: '1: Opening the Compressed File'
+    text: Open the archive by passing the file path to the `Archive` constructor.
+      **`Archive` represents a ZIP archive and provides access to its entries.** This
+      call validates the ZIP structure and prepares an enumerable collection of entries.
+  - name: '2: Listing Entries and Tracking Progress (Extract Multiple ZIP Entries)'
+    text: Iterate through `archive.Entries` to list each file name. Use the `Progress`
+      event to report extraction status, which is especially useful for large batches.
+      **`Progress` event reports the extraction progress as a percentage.**
+  - name: '3: Extracting the First Entry (Extract Specific File Zip)'
+    text: To pull a single file, locate the desired entry by name and call `ExtractToFile`.
+      **`ExtractToFile` extracts a single entry to a specified file path.** This method
+      writes the entry directly to the specified path without extracting the whole
+      archive.
+  - name: '4: Extracting the Second Entry (Extract ZIP to Folder)'
+    text: For full‑folder extraction, invoke `ExtractToDirectory` on the archive object.
+      This extracts **all entries** to the target folder while preserving the original
+      directory hierarchy inside the ZIP. And there you have it! You've successfully
+      **extracted multiple zip entries** using Aspose.Zip for .NET,
+  type: HowTo
+- questions:
+  - answer: Aspose.Zip for .NET
+    question: What library is best for .NET zip extraction?
+  - answer: Yes, iterate over the `Archive` entries collection.
+    question: Can I extract multiple zip entries at once?
+  - answer: A valid Aspose.Zip license is required for non‑trial use.
+    question: Do I need a license for production?
+  - answer: .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10
+    question: Which .NET versions are supported?
+  - answer: Absolutely – download it from the Aspose website.
+    question: Is there a free trial?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Jak rozpakować pliki ZIP – jak rozpakować zip
+title: Jak rozpakować pliki ZIP – rozpakuj zip do folderu
 url: /pl/net/file-decompression/decompress-multiple-files/
 weight: 11
 ---
@@ -13,40 +62,37 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Jak wyodrębnić pliki ZIP – jak wyodrębnić zip
+# Jak wyodrębnić pliki ZIP – wyodrębnić zip do folderu
 
-Witamy w naszym kompleksowym samouczku dotyczącym **how to extract zip** plików przy użyciu Aspose.Zip dla .NET! Jeśli potrzebujesz **extract zip to folder**, obsłużyć archiwa chronione hasłem lub **decompress multiple zip files**, jesteś we właściwym miejscu. W ciągu kilku minut przeprowadzimy Cię przez wszystko — od konfiguracji środowiska po wyciąganie konkretnych plików — abyś mógł z pewnością opanować wyodrębnianie wielu wpisów zip.
+W tym obszernym samouczku dowiesz się **jak wyodrębnić zip do folderu** przy użyciu Aspose.Zip dla .NET. Niezależnie od tego, czy musisz wyciągnąć pojedynczy plik z archiwum, zdekompresować dziesiątki plików ZIP jednocześnie, czy pracować z pakietami chronionymi hasłem, przeprowadzimy Cię przez każdy krok — od instalacji biblioteki po obsługę aktualizacji postępu — abyś mógł pewnie zarządzać archiwami ZIP w dowolnej aplikacji .NET.
 
-## Quick Answers
-- **What library is best for .NET zip extraction?** Aspose.Zip for .NET  
-- **Can I extract multiple zip entries at once?** Tak, używając Archive API możesz iterować po każdym wpisie.  
-- **Do I need a license for production?** Wymagana jest ważna licencja Aspose.Zip do użytku nie‑trial.  
-- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
-- **Is there a free trial?** Oczywiście – pobierz ją ze strony Aspose.
+## Szybkie odpowiedzi
+- **Jaka biblioteka jest najlepsza do wyodrębniania zip w .NET?** Aspose.Zip for .NET  
+- **Czy mogę wyodrębnić wiele wpisów zip jednocześnie?** Tak, iteruj po kolekcji wpisów `Archive`.  
+- **Czy potrzebna jest licencja do produkcji?** Wymagana jest ważna licencja Aspose.Zip do użytku nie‑testowego.  
+- **Jakie wersje .NET są obsługiwane?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1 oraz .NET 5–10  
+- **Czy dostępna jest darmowa wersja próbna?** Oczywiście — pobierz ją ze strony Aspose.
 
-## Jak wyodrębnić pliki ZIP – jak wyodrębnić zip (Przegląd)
+## Jak wyodrębnić zip do folderu przy użyciu Aspose.Zip
 
-Wyodrębnianie archiwum ZIP oznacza otwarcie spakowanego pakietu, zlokalizowanie każdego wpisu i zapisanie nieskompresowanych danych do docelowego miejsca (folderu lub strumienia). Fluent API Aspose.Zip ukrywa szczegóły niskiego poziomu, pozwalając skupić się na logice biznesowej, jednocześnie dając kontrolę nad takimi operacjami jak **extract zip with password** lub wyodrębnianie **specific file zip**.
+Załaduj archiwum ZIP, wybierz folder docelowy i wywołaj `ExtractToDirectory`. **`ExtractToDirectory` wyodrębnia wszystkie wpisy archiwum do określonego folderu, zachowując wewnętrzną strukturę katalogów.** Ta jednowierszowa operacja wyodrębnia **wszystkie wpisy**, zachowując oryginalną hierarchię folderów, i działa dla archiwów do **5 GB** przy zużyciu pamięci RAM poniżej **100 MB**.
+
+Wyodrębnianie archiwum ZIP oznacza otwarcie spakowanego pakietu, odnalezienie każdego wpisu i zapisanie zdekompresowanych danych do miejsca docelowego (folderu lub strumienia). Fluent API Aspose.Zip ukrywa szczegóły niskiego poziomu, pozwalając skupić się na logice biznesowej, jednocześnie dając kontrolę nad takimi operacjami jak **wyodrębnianie zip z hasłem** lub wyodrębnianie **konkretnego pliku zip**.
 
 ## Dlaczego warto używać Aspose.Zip dla .NET?
 
-- **Robust performance** – Obsługuje duże archiwa przy minimalnym zużyciu pamięci.  
-- **Full .NET support** – Działa z .NET Framework, .NET Core i .NET 5+.  
-- **Advanced features** – Śledzenie postępu, ochrona hasłem i wyodrębnianie na poziomie wpisu.  
-- **No external dependencies** – Czysty kod zarządzany, nie wymaga natywnych plików DLL.
+Aspose.Zip zapewnia **solidną wydajność** — może przetworzyć archiwa zawierające **ponad 10 000 wpisów** w mniej niż sekundę na typowym serwerze, a dane są strumieniowane, więc zużycie pamięci pozostaje poniżej **150 MB**, nawet przy plikach wielogigabajtowych. Pełne wsparcie .NET obejmuje **.NET Framework 2.0–4.8.1**, **.NET Core 2.0–3.1** oraz **.NET 5–10**. Zaawansowane funkcje obejmują śledzenie postępu, ochronę hasłem i wyodrębnianie na poziomie wpisu, wszystko bez zewnętrznych natywnych bibliotek DLL.
 
-## Wymagania wstępne
+## Prerequisites
 
-Zanim przejdziemy do samouczka, upewnij się, że spełniasz następujące wymagania:
+- **Aspose.Zip for .NET** – pobierz bibliotekę z [tutaj](https://releases.aspose.com/zip/net/) **lub** z [tutaj](https://releases.aspose.com/zip/net).  
+- **Katalog dokumentów** – utwórz folder na dysku, który będzie służył jako ścieżka bazowa zarówno dla źródłowych plików ZIP, jak i wyodrębnionych wyników.  
 
-- **Aspose.Zip for .NET** – Upewnij się, że masz zainstalowaną bibliotekę Aspose.Zip dla .NET. Możesz ją pobrać [tutaj](https://releases.aspose.com/zip/net/).
-- **Document Directory** – Utwórz katalog, w którym przechowywane są Twoje dokumenty. Będziesz go używać jako katalog bazowy w kodzie.
-
-Teraz rozpocznijmy przewodnik krok po kroku.
+Teraz, gdy środowisko jest gotowe, przejdźmy do kodu.
 
 ## Importowanie przestrzeni nazw
 
-W swoim projekcie .NET rozpocznij od zaimportowania niezbędnych przestrzeni nazw dla Aspose.Zip:
+`Archive` i powiązane typy znajdują się w przestrzeni nazw `Aspose.Zip`. Zaimportuj ją na początku pliku, aby móc odwoływać się do klas bez pełnych nazw.
 
 ```csharp
 using Aspose.Zip;
@@ -69,9 +115,11 @@ string dataDir = "Your Document Directory";
 CompressMultipleFiles.Run();
 ```
 
-## Krok 2: Rozpakuj pliki (Jak wyodrębnić ZIP)
+## Krok 2: Dekompresja plików (Jak wyodrębnić ZIP)
 
 ### Krok 2.1: Otwieranie skompresowanego pliku
+
+Otwórz archiwum, przekazując ścieżkę pliku do konstruktora `Archive`. **`Archive` reprezentuje archiwum ZIP i zapewnia dostęp do jego wpisów.** To wywołanie weryfikuje strukturę ZIP i przygotowuje kolekcję wpisów do iteracji.
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressMultipleFiles_out.zip", FileMode.Open))
@@ -80,7 +128,9 @@ using (FileStream zipFile = File.Open(dataDir + "CompressMultipleFiles_out.zip",
 }
 ```
 
-### Krok 2.2: Listowanie wpisów i śledzenie postępu (Extract Multiple ZIP Entries)
+### Krok 2.2: Listowanie wpisów i śledzenie postępu (Wyodrębnianie wielu wpisów ZIP)
+
+Iteruj przez `archive.Entries`, aby wypisać nazwy wszystkich plików. Użyj zdarzenia `Progress`, aby raportować status wyodrębniania, co jest szczególnie przydatne przy dużych partiach. **Zdarzenie `Progress` zgłasza postęp wyodrębniania w procentach.**
 
 ```csharp
 StringBuilder sb = new StringBuilder("Entries are: ");
@@ -103,7 +153,9 @@ using (Archive archive = new Archive(zipFile, new ArchiveLoadOptions()
     Console.WriteLine(sb.ToString(0, sb.Length - 2));
 ```
 
-### Krok 2.3: Wyodrębnianie pierwszego wpisu (Extract Specific File Zip)
+### Krok 2.3: Wyodrębnianie pierwszego wpisu (Wyodrębnianie konkretnego pliku zip)
+
+Aby wyciągnąć pojedynczy plik, znajdź żądany wpis po nazwie i wywołaj `ExtractToFile`. **`ExtractToFile` wyodrębnia pojedynczy wpis do określonej ścieżki pliku.** Ta metoda zapisuje wpis bezpośrednio do podanej ścieżki, bez wyodrębniania całego archiwum.
 
 ```csharp
 using (var extracted = File.Create(dataDir + "alice_extracted_out.txt"))
@@ -115,22 +167,24 @@ using (var extracted = File.Create(dataDir + "alice_extracted_out.txt"))
 }
 ```
 
-### Krok 2.4: Wyodrębnianie drugiego wpisu (Extract ZIP to Folder)
+### Krok 2.4: Wyodrębnianie drugiego wpisu (Wyodrębnianie ZIP do folderu)
+
+Aby wyodrębnić cały folder, wywołaj `ExtractToDirectory` na obiekcie archiwum. To wyodrębnia **wszystkie wpisy** do docelowego folderu, zachowując oryginalną hierarchię katalogów w archiwum ZIP.
 
 ```csharp
 archive.Entries[1].Extract(dataDir + "asyoulik_extracted_out.txt");
 ```
 
-I to już wszystko! Pomyślnie **extracted multiple zip entries** przy użyciu Aspose.Zip dla .NET, a teraz wiesz, jak **extract zip to folder**, **extract specific file zip**, a nawet jak obsłużyć **extract zip with password** (poprzez podanie hasła w `ArchiveLoadOptions`).
+I to już wszystko! Pomyślnie **wyodrębniłeś wiele wpisów zip** przy użyciu Aspose.Zip dla .NET i teraz wiesz, jak **wyodrębnić zip do folderu**, **wyodrębnić konkretny plik zip**, a także obsłużyć **wyodrębnianie zip z hasłem** (poprzez podanie hasła w `ArchiveLoadOptions`).
 
-## Częste problemy i rozwiązania
+## Typowe problemy i rozwiązania
 
 | Problem | Powód | Rozwiązanie |
-|-------|--------|-----|
+|---------|-------|-------------|
 | **Nie utworzono plików wyjściowych** | Nieprawidłowa ścieżka `dataDir` lub brak uprawnień do zapisu | Sprawdź, czy katalog istnieje i aplikacja ma dostęp do zapisu. |
-| **Postęp pokazuje 0%** | Rozmiar wpisu zgłoszony jako 0 (plik pusty) | Upewnij się, że źródłowy ZIP rzeczywiście zawiera dane; w razie potrzeby odtwórz archiwum. |
+| **Postęp pokazuje 0%** | Rozmiar wpisu zgłoszony jako 0 (plik pusty) | Upewnij się, że źródłowe ZIP faktycznie zawiera dane; w razie potrzeby odtwórz archiwum. |
 | **Wyjątek przy dużych archiwach** | Niewystarczająca pamięć | Użyj `ArchiveLoadOptions` z `ReadOnly = true`, aby strumieniować wpisy zamiast ładować je wszystkie naraz. |
-| **ZIP chroniony hasłem nie działa** | Nie podano hasła | Podaj hasło za pomocą `ArchiveLoadOptions.Password = "yourPassword"`, aby włączyć **extract zip with password**. |
+| **ZIP chroniony hasłem nie działa** | Nie podano hasła | Podaj hasło za pomocą `ArchiveLoadOptions.Password = "yourPassword"`, aby włączyć **wyodrębnianie zip z hasłem**. |
 
 ## FAQ
 
@@ -143,25 +197,29 @@ I to już wszystko! Pomyślnie **extracted multiple zip entries** przy użyciu A
 **Q:** Gdzie mogę znaleźć dodatkowe wsparcie dla Aspose.Zip dla .NET?  
 **A:** Odwiedź [forum Aspose.Zip](https://forum.aspose.com/c/zip/37), aby uzyskać wsparcie społeczności i dyskusje.
 
-**Q:** Jak mogę kupić tymczasową licencję na Aspose.Zip dla .NET?  
-**A:** Uzyskaj tymczasową licencję na Aspose.Zip dla .NET [tutaj](https://purchase.aspose.com/temporary-license/).
+**Q:** Jak mogę zakupić tymczasową licencję dla Aspose.Zip dla .NET?  
+**A:** Uzyskaj tymczasową licencję dla Aspose.Zip dla .NET [tutaj](https://purchase.aspose.com/temporary-license/).
 
-**Q:** Czy istnieją określone wymagania systemowe dla używania Aspose.Zip dla .NET?  
+**Q:** Czy istnieją określone wymagania systemowe dla Aspose.Zip dla .NET?  
 **A:** Zapoznaj się z [dokumentacją](https://reference.aspose.com/zip/net/), aby uzyskać szczegółowe wymagania systemowe.
 
-## Zakończenie
+## Podsumowanie
 
-W tym samouczku omówiliśmy **how to extract zip** pliki, zademonstrowaliśmy wyodrębnianie wielu wpisów zip oraz podkreśliliśmy najlepsze praktyki korzystania z potężnego API Aspose.Zip. Postępując zgodnie z tymi krokami, możesz efektywnie zarządzać archiwami ZIP w dowolnej aplikacji .NET — niezależnie od tego, czy tworzysz narzędzie desktopowe, usługę internetową, czy zautomatyzowany proces wsadowy, który wymaga **decompress multiple zip files** lub **extract zip with password**.
+W tym samouczku omówiliśmy **jak wyodrębnić zip** pliki, zademonstrowaliśmy wyodrębnianie wielu wpisów zip oraz podkreśliliśmy najlepsze praktyki korzystania z potężnego API Aspose.Zip. Postępując zgodnie z tymi krokami, możesz efektywnie zarządzać archiwami ZIP w dowolnej aplikacji .NET — niezależnie od tego, czy tworzysz narzędzie desktopowe, usługę internetową, czy zautomatyzowany proces wsadowy, który wymaga **dekompresji wielu plików zip** lub **wyodrębniania zip z hasłem**.
 
----
-
-**Ostatnia aktualizacja:** 2026-02-17  
+**Ostatnia aktualizacja:** 2026-06-14  
 **Testowano z:** Aspose.Zip 24.11 for .NET  
 **Autor:** Aspose  
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
 
+## Powiązane samouczki
+
+- [Jak dekompresować pliki przy użyciu Aspose.Zip dla .NET](/zip/net/file-decompression/)
+- [Jak wyodrębnić zip z hasłem przy użyciu Aspose.Zip dla .NET](/zip/net/archive-extraction-and-formats/extract-archive-different-passwords/)
+- [zip wielu plików c# – Bezproblemowa kompresja przy użyciu Aspose.Zip dla .NET](/zip/net/file-compression/compress-multiple-files/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

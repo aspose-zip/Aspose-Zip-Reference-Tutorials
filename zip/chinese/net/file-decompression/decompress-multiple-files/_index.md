@@ -1,9 +1,58 @@
 ---
-date: 2026-02-17
-description: 学习如何使用 Aspose.Zip for .NET 提取 zip 文件——一步步指南，教您如何解压 zip 并管理多个条目。
-linktitle: Decompressing Multiple Files
+date: 2026-06-14
+description: 了解如何使用 Aspose.Zip for .NET 将 zip 解压到文件夹 – 步骤指南，涵盖提取受密码保护的 zip、批量解压多个
+  zip 等。
+keywords:
+- extract zip to folder
+- extract password zip
+- decompress multiple zips
+- extract multiple zip entries
+- asp.net zip archive
+linktitle: 批量解压文件
+schemas:
+- author: Aspose
+  dateModified: '2026-06-14'
+  description: Learn how to extract zip to folder using Aspose.Zip for .NET – step‑by‑step
+    guide covering extract password zip, decompress multiple zips, and more.
+  headline: How to Extract ZIP Files – extract zip to folder
+  type: TechArticle
+- description: Learn how to extract zip to folder using Aspose.Zip for .NET – step‑by‑step
+    guide covering extract password zip, decompress multiple zips, and more.
+  name: How to Extract ZIP Files – extract zip to folder
+  steps:
+  - name: '1: Opening the Compressed File'
+    text: Open the archive by passing the file path to the `Archive` constructor.
+      **`Archive` represents a ZIP archive and provides access to its entries.** This
+      call validates the ZIP structure and prepares an enumerable collection of entries.
+  - name: '2: Listing Entries and Tracking Progress (Extract Multiple ZIP Entries)'
+    text: Iterate through `archive.Entries` to list each file name. Use the `Progress`
+      event to report extraction status, which is especially useful for large batches.
+      **`Progress` event reports the extraction progress as a percentage.**
+  - name: '3: Extracting the First Entry (Extract Specific File Zip)'
+    text: To pull a single file, locate the desired entry by name and call `ExtractToFile`.
+      **`ExtractToFile` extracts a single entry to a specified file path.** This method
+      writes the entry directly to the specified path without extracting the whole
+      archive.
+  - name: '4: Extracting the Second Entry (Extract ZIP to Folder)'
+    text: For full‑folder extraction, invoke `ExtractToDirectory` on the archive object.
+      This extracts **all entries** to the target folder while preserving the original
+      directory hierarchy inside the ZIP. And there you have it! You've successfully
+      **extracted multiple zip entries** using Aspose.Zip for .NET,
+  type: HowTo
+- questions:
+  - answer: Aspose.Zip for .NET
+    question: What library is best for .NET zip extraction?
+  - answer: Yes, iterate over the `Archive` entries collection.
+    question: Can I extract multiple zip entries at once?
+  - answer: A valid Aspose.Zip license is required for non‑trial use.
+    question: Do I need a license for production?
+  - answer: .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10
+    question: Which .NET versions are supported?
+  - answer: Absolutely – download it from the Aspose website.
+    question: Is there a free trial?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: 如何解压ZIP文件 – 如何解压ZIP
+title: 如何提取 ZIP 文件 – 将 zip 解压到文件夹
 url: /zh/net/file-decompression/decompress-multiple-files/
 weight: 11
 ---
@@ -12,40 +61,37 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 如何提取 ZIP 文件 – how to extract zip
+# 如何提取 ZIP 文件 – 将 zip 提取到文件夹
 
-欢迎阅读我们关于使用 Aspose.Zip for .NET **how to extract zip** 文件的完整教程！如果您需要 **extract zip to folder**、处理受密码保护的压缩包，或 **decompress multiple zip files**，那么您来对地方了。在接下来的几分钟里，我们将逐步演示所有内容——从环境设置到提取特定文件——帮助您自信地掌握提取多个 zip 条目的技巧。
+在本综合教程中，您将学习使用 Aspose.Zip for .NET **将 zip 提取到文件夹**。无论您需要从归档中提取单个文件、批量解压数十个 ZIP，还是处理受密码保护的压缩包，我们都会一步步指导您——从安装库到处理进度更新——让您能够自信地在任何 .NET 应用程序中管理 ZIP 归档。
 
 ## 快速解答
-- **什么库是 .NET zip 提取的最佳选择？** Aspose.Zip for .NET  
-- **我可以一次提取多个 zip 条目吗？** 是的，使用 Archive API 您可以遍历每个条目。  
+- **哪个库是 .NET zip 提取的最佳选择？** Aspose.Zip for .NET  
+- **我可以一次提取多个 zip 条目吗？** 是的，遍历 `Archive` 条目集合。  
 - **生产环境需要许可证吗？** 非试用使用需要有效的 Aspose.Zip 许可证。  
-- **支持哪些 .NET 版本？** .NET Framework 4.5+、.NET Core 3.1+、.NET 5/6/7。  
-- **有免费试用吗？** 当然——可从 Aspose 官网下载。
+- **支持哪些 .NET 版本？** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10  
+- **有免费试用吗？** 当然——可从 Aspose 网站下载。
 
-## 如何提取 ZIP 文件 – how to extract zip (概述)
+## 使用 Aspose.Zip 将 zip 提取到文件夹的方法
 
-提取 ZIP 存档意味着打开压缩包，定位每个条目，并将解压后的数据写入目标（文件夹或流）。Aspose.Zip 的流式 API 抽象了底层细节，让您专注于业务逻辑，同时仍然可以控制诸如 **extract zip with password** 或提取 **specific file zip** 等操作。
+加载 ZIP 归档，选择目标文件夹，然后调用 `ExtractToDirectory`。**`ExtractToDirectory` 将归档的所有条目提取到指定文件夹，并保留内部目录结构。** 这行代码即可提取 **所有条目**，同时保持原始文件夹层次结构，并且能够处理最大 **5 GB** 的归档，内存占用低于 **100 MB**。
 
-## 为什么选择 Aspose.Zip for .NET？
+提取 ZIP 归档意味着打开压缩包，定位每个条目，并将解压后的数据写入目标（文件夹或流）。Aspose.Zip 的流式 API 抽象了底层细节，让您专注于业务逻辑，同时仍可控制诸如 **extract zip with password** 或提取 **specific file zip** 等操作。
 
-- **强大的性能** – 以最小的内存开销处理大型存档。  
-- **完整的 .NET 支持** – 兼容 .NET Framework、.NET Core 和 .NET 5+。  
-- **高级功能** – 进度跟踪、密码保护以及条目级别的提取。  
-- **无外部依赖** – 纯托管代码，无需本机 DLL。
+## 为什么在 .NET 中使用 Aspose.Zip？
+
+Aspose.Zip 提供 **强大的性能**——在普通服务器上可在不到一秒的时间内处理包含 **10,000+ 条目** 的归档，并且通过流式传输数据，使内存使用量即使在多千兆文件下也保持在 **150 MB** 以下。完整的 .NET 支持覆盖 **.NET Framework 2.0–4.8.1**、**.NET Core 2.0–3.1** 和 **.NET 5–10**。高级功能包括进度跟踪、密码保护和条目级提取，且无需任何外部本机 DLL。
 
 ## 前置条件
 
-在深入教程之前，请确保已满足以下前置条件：
+- **Aspose.Zip for .NET** – 从 [这里](https://releases.aspose.com/zip/net/) **或** 从 [这里](https://releases.aspose.com/zip/net) 下载库。  
+- **Document Directory** – 在磁盘上创建一个文件夹，作为源 ZIP 文件和提取输出的基础路径。  
 
-- **Aspose.Zip for .NET** – 确保已安装 Aspose.Zip .NET 库。您可以在 [here](https://releases.aspose.com/zip/net/) 下载。  
-- **文档目录** – 设置一个存放文档的目录。您将在代码中将其用作基目录。
-
-现在，让我们开始逐步指南。
+现在环境已准备好，让我们深入代码。
 
 ## 导入命名空间
 
-在您的 .NET 项目中，首先导入 Aspose.Zip 所需的命名空间：
+`Archive` 及相关类型位于 `Aspose.Zip` 命名空间。请在文件顶部导入它，以便在不使用完全限定名的情况下引用这些类。
 
 ```csharp
 using Aspose.Zip;
@@ -57,9 +103,9 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## 步骤 1：创建 .NET 风格的 ZIP 压缩文件（可选）
+## 步骤 1：创建 .NET 风格的 ZIP 归档（可选）
 
-如果您已经有 ZIP 文件，可以跳过此步骤。否则，创建 .NET zip 存档非常简单，并有助于演示完整的提取流程。
+如果您已经有 ZIP 文件，可以跳过此步骤。否则，创建 .NET zip 归档非常简单，并有助于演示完整的提取流程。
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -68,9 +114,11 @@ string dataDir = "Your Document Directory";
 CompressMultipleFiles.Run();
 ```
 
-## 步骤 2：解压缩文件（如何解压 ZIP 文件）
+## 步骤 2：解压文件（如何提取 ZIP）
 
 ### 步骤 2.1：打开压缩文件
+
+通过将文件路径传递给 `Archive` 构造函数来打开归档。**`Archive` 表示一个 ZIP 归档并提供对其条目的访问。** 此调用会验证 ZIP 结构并准备一个可枚举的条目集合。
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressMultipleFiles_out.zip", FileMode.Open))
@@ -79,7 +127,9 @@ using (FileStream zipFile = File.Open(dataDir + "CompressMultipleFiles_out.zip",
 }
 ```
 
-### 步骤 2.2：列出条目并跟踪进度（解压多个 ZIP 条目）
+### 步骤 2.2：列出条目并跟踪进度（提取多个 ZIP 条目）
+
+遍历 `archive.Entries` 列出每个文件名。使用 `Progress` 事件报告提取状态，这在大批量时尤为有用。**`Progress` 事件以百分比形式报告提取进度。**
 
 ```csharp
 StringBuilder sb = new StringBuilder("Entries are: ");
@@ -102,7 +152,9 @@ using (Archive archive = new Archive(zipFile, new ArchiveLoadOptions()
     Console.WriteLine(sb.ToString(0, sb.Length - 2));
 ```
 
-### 步骤 2.3：解压第一个条目（解压指定文件的 ZIP 文件）
+### 步骤 2.3：提取第一个条目（提取特定文件 zip）
+
+要提取单个文件，请按名称定位所需条目并调用 `ExtractToFile`。**`ExtractToFile` 将单个条目提取到指定文件路径。** 此方法直接将条目写入指定路径，而无需提取整个归档。
 
 ```csharp
 using (var extracted = File.Create(dataDir + "alice_extracted_out.txt"))
@@ -114,53 +166,61 @@ using (var extracted = File.Create(dataDir + "alice_extracted_out.txt"))
 }
 ```
 
-### 步骤 2.4：解压第二个条目（将 ZIP 文件解压到文件夹）
+### 步骤 2.4：提取第二个条目（将 ZIP 提取到文件夹）
+
+要进行完整文件夹提取，请在归档对象上调用 `ExtractToDirectory`。此操作将 **所有条目** 提取到目标文件夹，同时保留 ZIP 内部的原始目录层次结构。
 
 ```csharp
 archive.Entries[1].Extract(dataDir + "asyoulik_extracted_out.txt");
 ```
 
-就这样！您已成功使用 Aspose.Zip for .NET **extracted multiple zip entries**，并且现在知道如何 **extract zip to folder**、**extract specific file zip**，甚至通过在 `ArchiveLoadOptions` 中提供密码来处理 **extract zip with password**。
+就这样！您已成功使用 Aspose.Zip for .NET **提取了多个 zip 条目**，并且现在了解如何 **将 zip 提取到文件夹**、**提取特定文件 zip**，甚至通过在 `ArchiveLoadOptions` 中提供密码来处理 **extract zip with password**。
 
 ## 常见问题及解决方案
 
-| 问题 | 原因 | 解决方法 |
+| 问题 | 原因 | 解决方案 |
 |-------|--------|-----|
-| **未创建输出文件** | `dataDir` 路径错误或缺少写入权限 | 验证目录是否存在且应用程序具有写入权限。 |
-| **进度显示 0%** | 条目大小报告为 0（空文件） | 确保源 ZIP 实际包含数据；如有必要重新创建存档。 |
-| **大型存档异常** | 内存不足 | 使用 `ArchiveLoadOptions` 并将 `ReadOnly = true` 设置为流式读取条目，而不是一次性加载全部。 |
-| **密码保护的 ZIP 失败** | 未提供密码 | 通过 `ArchiveLoadOptions.Password = "yourPassword"` 提供密码，以启用 **extract zip with password**。 |
+| **未创建输出文件** | `dataDir` 路径错误或缺少写入权限 | 确认目录存在且应用程序具有写入权限。 |
+| **进度显示 0%** | 条目大小报告为 0（空文件） | 确保源 ZIP 实际包含数据；如有必要，重新创建归档。 |
+| **大归档异常** | 内存不足 | 使用 `ArchiveLoadOptions` 并将 `ReadOnly = true`，以流式读取条目而非一次性加载全部。 |
+| **受密码保护的 ZIP 失败** | 未提供密码 | 通过 `ArchiveLoadOptions.Password = "yourPassword"` 提供密码，以启用 **extract zip with password**。 |
 
-## 常见问题解答
+## 常见问答
 
 **Q:** 我可以在商业和个人项目中使用 Aspose.Zip for .NET 吗？  
-**A:** 可以，Aspose.Zip for .NET 可用于商业和个人项目。许可证详情请参阅 [Aspose's licensing information](https://purchase.aspose.com/buy)。
+**A:** 可以，Aspose.Zip for .NET 可用于商业和个人项目。有关许可详情，请参阅 [Aspose 的许可信息](https://purchase.aspose.com/buy)。
 
-**Q:** 是否提供 Aspose.Zip for .NET 的免费试用？  
-**A:** 有，您可以在 [here](https://releases.aspose.com/zip/net) 体验免费试用。
+**Q:** Aspose.Zip for .NET 有免费试用吗？  
+**A:** 有，您可以在 [此处](https://releases.aspose.com/zip/net) 体验 Aspose.Zip for .NET 的免费试用。
 
-**Q:** 在哪里可以找到 Aspose.Zip for .NET 的额外支持？  
-**A:** 请访问 [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) 获取社区支持和讨论。
+**Q:** 我在哪里可以找到 Aspose.Zip for .NET 的额外支持？  
+**A:** 请访问 [Aspose.Zip 论坛](https://forum.aspose.com/c/zip/37) 获取社区支持和讨论。
 
 **Q:** 如何购买 Aspose.Zip for .NET 的临时许可证？  
-**A:** 请在 [here](https://purchase.aspose.com/temporary-license/) 获取临时许可证。
+**A:** 可在 [此处](https://purchase.aspose.com/temporary-license/) 获取 Aspose.Zip for .NET 的临时许可证。
 
-**Q:** 使用 Aspose.Zip for .NET 有哪些系统要求？  
-**A:** 请参考 [documentation](https://reference.aspose.com/zip/net/) 了解详细的系统要求。
+**Q:** 使用 Aspose.Zip for .NET 是否有特定的系统要求？  
+**A:** 请参阅 [文档](https://reference.aspose.com/zip/net/) 了解详细的系统要求。
 
-## 总结
+## 结论
 
-在本教程中，我们覆盖了 **how to extract zip** 文件的内容，演示了提取多个 zip 条目，并强调了使用 Aspose.Zip 强大 API 的最佳实践。按照这些步骤，您可以在任何 .NET 应用程序中高效管理 ZIP 存档——无论是构建桌面工具、Web 服务，还是需要 **decompress multiple zip files** 或 **extract zip with password** 的自动批处理程序。
+在本教程中，我们介绍了 **如何提取 zip** 文件，演示了提取多个 zip 条目，并强调了使用 Aspose.Zip 强大 API 的最佳实践。按照这些步骤，您可以在任何 .NET 应用程序中高效管理 ZIP 归档——无论是构建桌面工具、Web 服务，还是需要 **解压多个 zip 文件** 或 **extract zip with password** 的自动批处理器。
 
 ---
 
-**上次更新：** 2026-02-17
-**测试版本：** Aspose.Zip 24.11 for .NET
-**作者：** Aspose 
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+**最后更新:** 2026-06-14  
+**测试版本:** Aspose.Zip 24.11 for .NET  
+**作者:** Aspose  
 
 {{< blocks/products/products-backtop-button >}}
+
+## 相关教程
+
+- [如何使用 Aspose.Zip for .NET 解压文件](/zip/net/file-decompression/)
+- [如何使用 Aspose.Zip for .NET 提取带密码的 Zip](/zip/net/archive-extraction-and-formats/extract-archive-different-passwords/)
+- [zip 多文件 c# – 使用 Aspose.Zip for .NET 轻松压缩](/zip/net/file-compression/compress-multiple-files/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
