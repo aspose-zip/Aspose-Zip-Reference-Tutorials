@@ -1,9 +1,69 @@
 ---
-date: 2026-02-23
-description: Aspose.Zip for .NET を使用して ASP.NET で zip アーカイブを作成する方法を学びましょう。ディレクトリを効率的に圧縮・解凍するためのステップバイステップガイドです。
-linktitle: Create zip archive asp.net – Directory and Folder Compression
+date: 2026-07-09
+description: Aspose.Zip for .NET を使用して、ASP.NET でパスワード付き ZIP を追加する方法を学びます。ZIP フォルダーの暗号化やディレクトリ圧縮も解説。.NET
+  プロジェクト向けのステップバイステップガイドです。
+keywords:
+- add password zip
+- zip folder encryption
+- compress entire directory
+- .net zip encryption
+- zip directory .net
+lastmod: 2026-07-09
+linktitle: ASP.NETでパスワード付きZIPを追加 – ディレクトリとフォルダーの圧縮
+og_description: Aspose.Zip を使用して ASP.NET でパスワード付き ZIP を追加します。ZIP フォルダーの暗号化、ディレクトリ全体の圧縮、ZIP
+  アーカイブの効率的な管理方法を学びましょう。
+og_image_alt: 'Developer guide: add password zip in ASP.NET with Aspose.Zip'
+og_title: ASP.NETでパスワード付きZIPを追加 – ディレクトリとフォルダーの圧縮
+schemas:
+- author: Aspose
+  dateModified: '2026-07-09'
+  description: Learn how to add password zip in ASP.NET using Aspose.Zip for .NET,
+    with zip folder encryption and directory compression. Step‑by‑step guide for .NET
+    projects.
+  headline: Add Password Zip in ASP.NET – Directory & Folder Compression
+  type: TechArticle
+- description: Learn how to add password zip in ASP.NET using Aspose.Zip for .NET,
+    with zip folder encryption and directory compression. Step‑by‑step guide for .NET
+    projects.
+  name: Add Password Zip in ASP.NET – Directory & Folder Compression
+  steps:
+  - name: '**Instantiate `ZipPackage`** – this object will hold the archive you are
+      building.'
+    text: '**Instantiate `ZipPackage`** – this object will hold the archive you are
+      building.'
+  - name: '**Add the target directory** using `AddFolder`, which automatically includes
+      sub‑folders and files.'
+    text: '**Add the target directory** using `AddFolder`, which automatically includes
+      sub‑folders and files.'
+  - name: '**Configure encryption** (optional) by setting `ZipPassword` and `EncryptionAlgorithm`.'
+    text: '**Configure encryption** (optional) by setting `ZipPassword` and `EncryptionAlgorithm`.'
+  - name: '**Save the archive** to a `.zip` file.'
+    text: '**Save the archive** to a `.zip` file.'
+  type: HowTo
+- questions:
+  - answer: Yes. When saving the archive, provide a `ZipPassword` and select `EncryptionAlgorithm.Aes256`
+      to secure the file.
+    question: Can I create a password‑protected zip archive using Aspose.Zip?
+  - answer: Absolutely. You can work with `FileStream` objects, allowing you to compress
+      or extract files of any size efficiently.
+    question: Does Aspose.Zip support streaming large files without loading them entirely
+      into memory?
+  - answer: Use the `SplitArchive` method to define a maximum part size; Aspose.Zip
+      will automatically create sequential split files.
+    question: What if I need to split a large archive into multiple parts?
+  - answer: Yes. Open the archive in `Update` mode and call `AddFile` or `AddFolder`
+      to append new content.
+    question: Is it possible to add files to an existing zip archive?
+  - answer: Aspose.Zip for .NET supports .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1,
+      and .NET 5–10.
+    question: Which .NET runtimes are officially supported?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: ASP.NETでZIPアーカイブを作成 – ディレクトリとフォルダーの圧縮
+tags:
+- zip archive
+- Aspose.Zip
+- .NET compression
+title: ASP.NETでパスワード付きZIPを追加 – ディレクトリとフォルダーの圧縮
 url: /ja/net/directory-and-folder-compression/
 weight: 22
 ---
@@ -12,102 +72,98 @@ weight: 22
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# zip アーカイブ作成 asp.net – ディレクトリとフォルダーの圧縮
+# ASP.NET でパスワード付き zip を追加 – ディレクトリとフォルダーの圧縮
 
 ## はじめに
 
-モダンな .NET 開発において、**create zip archive asp.net** スタイルのファイル作成は、ストレージコストの削減、デプロイの高速化、ファイル配布の簡素化に不可欠です。このチュートリアルでは、Aspose.Zip for .NET を使用してディレクトリ全体を圧縮し、必要に応じて後で展開する方法を紹介します。CI/CD パイプラインの構築、アップデートパッケージの配布、または単にログファイルを整理する場合でも、.NET での zip アーカイブ作成をマスターすれば、プロジェクトの効率とプロフェッショナリズムが向上します。
+最新の .NET 開発において、**add password zip** 機能は機密データの保護、ストレージコストの削減、ファイル配布の簡素化に不可欠です。このチュートリアルでは、Aspose.Zip for .NET を使用してディレクトリ全体を圧縮し、zip フォルダーの暗号化を適用し、後で抽出する方法を解説します。CI/CD パイプラインの構築、アップデートパッケージの配布、または単にログファイルを整理する場合でも、パスワード保護された zip アーカイブの作成をマスターすれば、プロジェクトのセキュリティとプロフェッショナリズムが向上します。
 
 ## クイック回答
-- **どのライブラリを使用すべきですか？** Aspose.Zip for .NET は、zip アーカイブ作成のためのシンプルで高性能な API を提供します。  
-- **1 回の呼び出しでフォルダー全体を圧縮できますか？** はい – Aspose.Zip はディレクトリを再帰的に単一メソッドで圧縮できます。  
-- **パスワード保護はサポートされていますか？** もちろんです。圧縮時に暗号化を追加できます。  
-- **開発にライセンスは必要ですか？** 無料トライアルで評価は可能ですが、本番環境では商用ライセンスが必要です。  
-- **対応している .NET バージョンは？** .NET Framework 4.5 以上、.NET Core 3.1 以上、.NET 5/6/7 以降。
+- **どのライブラリがパスワード付き zip を追加しますか？** Aspose.Zip for .NET は数行のコードで高性能な zip フォルダー暗号化を提供します。  
+- **一度の呼び出しでディレクトリ全体を圧縮できますか？** はい – `AddFolder` はサブフォルダーとファイルを再帰的に含めます。  
+- **AES‑256 暗号化はサポートされていますか？** もちろんです。`ZipPassword` を設定し、`EncryptionAlgorithm.Aes256` を選択します。  
+- **本番環境でライセンスが必要ですか？** 評価には無料トライアルで問題ありませんが、本番使用には商用ライセンスが必要です。  
+- **どの .NET ランタイムがサポートされていますか？** .NET Framework 2.0–4.8.1、.NET Core 2.0–3.1、そして .NET 5–10。
 
-## 「create zip archive asp.net」とは？
-
-ASP.NET で zip アーカイブを作成することは、1 つまたは複数のファイルやフォルダーを単一の *.zip* コンテナにパッケージ化し、より効率的に保存、転送、ダウンロードできるようにすることを意味します。zip 形式は汎用性が高く、クロスプラットフォームシナリオに最適です。
+## add password zip とは何ですか？
+`add password zip` は、ZIP アーカイブを作成しながら暗号化データ（通常は AES‑256）を埋め込むプロセスで、パスワードを知っているユーザーだけがアーカイブを開くことができます。これにより、保存や転送中の機密ファイルが保護され、標準的な ZIP ユーティリティと完全に互換性があります。
 
 ## なぜ Aspose.Zip for .NET を使用するのか？
-
-- **Performance‑optimized** 圧縮アルゴリズムにより、大規模ディレクトリでもメモリ使用量を最小限に抑えて処理できます。  
-- **Rich feature set** – 暗号化、分割アーカイブ、カスタム圧縮レベル、ストリームとのシームレスな統合を提供。  
-- **Zero‑dependency** – 7‑Zip や WinRAR といった外部ツールを必要とせず、すぐに使用可能。  
-- **Consistent API** – .NET Framework、.NET Core、.NET 5+ すべてで同一の API を利用できます。
+Aspose.Zip は **30 以上のアーカイブおよび圧縮フォーマット** をサポートし、**10 GB** までのファイルをメモリ全体に読み込まずに処理でき、組み込みの Zip64、分割アーカイブ、AES‑256 暗号化を提供します。ゼロ依存設計のため、7‑Zip などの外部ツールは不要で、API は .NET Framework、.NET Core、.NET 5‑10 全体で一貫しています。
 
 ## 前提条件
-- Visual Studio 2022（または .NET 6+ をサポートする任意の IDE）  
+- Visual Studio 2022（または .NET 6+ をサポートする任意の IDE）  
 - Aspose.Zip for .NET NuGet パッケージ（`Install-Package Aspose.Zip`）  
-- C# とファイルシステム操作の基本的な知識  
+- C# のファイルシステム操作に関する基本的な知識  
 
-## Aspose.Zip を使用したフォルダーの圧縮方法 (.NET)
+## ASP.NET でパスワード付き zip を追加する方法は？
+`ZipPackage` は、メモリ内の ZIP アーカイブを表す Aspose.Zip の主要クラスです。  
+パスワード保護されたアーカイブを作成するには、まず圧縮したいフォルダーをロードし、次にメモリ内の ZIP ファイルを表す `ZipPackage` オブジェクトをインスタンス化します。`ZipPassword` プロパティに希望のパスワードを設定し、必要に応じて AES‑256 などの暗号化アルゴリズムを選択します。最後に `Save` を呼び出して、暗号化された zip をディスクに書き込みます。
 
-1. **`ZipPackage` オブジェクトをインスタンス化** – これが作成しようとしているアーカイブを表します。  
-2. **`AddFolder` メソッドで対象ディレクトリを追加** – サブフォルダーとファイルが自動的に含まれます。  
-3. **`.zip` 拡張子で希望の場所にアーカイブを保存**  
+## .NET で Aspose.Zip を使用してフォルダーを圧縮する方法
+`ZipPackage` は、メモリ内の ZIP アーカイブを表す Aspose.Zip の主要クラスです。  
+`AddFolder` はディレクトリとその内容を再帰的にアーカイブに追加します。  
+ディレクトリの圧縮は Aspose.Zip で簡単です。まず `ZipPackage` インスタンスを作成し、`AddFolder` メソッドで対象フォルダーとすべてのサブフォルダーを含めます。圧縮レベルや暗号化を設定してから、アーカイブを .zip ファイルとして保存できます。
 
-> *Note:* これらの手順の実際の C# コードは、リンクされた「Effortless Directory Compression」チュートリアルページに掲載されています。
+1. **`ZipPackage` をインスタンス化** – このオブジェクトは構築中のアーカイブを保持します。  
+2. **`AddFolder` を使用して対象ディレクトリを追加** – サブフォルダーとファイルが自動的に含まれます。  
+3. **暗号化を設定**（オプション） – `ZipPassword` と `EncryptionAlgorithm` を設定します。  
+4. **アーカイブを保存** – `.zip` ファイルとして保存します。
 
-## パスワード保護された zip .net アーカイブの追加
+> *Note:* これらの手順の実際の C# コードは、リンクされた「Effortless Directory Compression」チュートリアルページにあります。
 
-コンテンツを保護する必要がある場合は、アーカイブ保存時に `ZipPassword` を指定し、AES‑256 などの暗号化アルゴリズムを選択するだけです。これにより、**password protected zip .net** ファイルが作成され、権限のあるユーザーのみが開くことができます。
+## パスワード保護された zip .NET アーカイブの追加
+アーカイブを保存する際に `ZipPassword` を指定し、`EncryptionAlgorithm.Aes256` を選択します。これにより、**password‑protected zip .NET** ファイルが作成され、許可されたユーザーのみが開くことができます。暗号化はファイル単位で適用され、元のフォルダー構造が保持されます。
 
 ## Aspose.Zip for .NET を使用したフォルダーの解凍
-
-ディレクトリを圧縮したら、次はそれらを解凍します。Aspose.Zip for .NET では、解凍も非常にシンプルです。
-
-- `ZipPackage` を読み取りモードで開く。  
-- `ExtractAll` または `ExtractFolder` を呼び出して元の構造を復元する。  
-
-これにより、データ損失なしに元のファイルを確実に取得できます。
+`ZipPackage` を読み取りモードで開き、`ExtractAll` または `ExtractFolder` を呼び出して元の階層を復元します。Aspose.Zip はデータをストリーミングするため、マルチギガバイトのアーカイブでもメモリを使い切ることなく解凍できます。
 
 ## 一般的な落とし穴とヒント
-
-- **大きなファイル:** 2 GB を超えるファイルを扱う場合は、**Zip64** モードを有効にしてサイズ制限を回避してください。  
-- **パス長の問題:** フォルダー階層が Windows の 260 文字制限を超える場合は、`UseLongFileNames` プロパティを使用します。  
-- **パフォーマンスのヒント:** ビルドを高速化したいときは `CompressionLevel` を `Fast` に設定し、最小サイズが必要なときは `Maximum` を選択してください。  
+- **大きなファイル:** 2 GB を超えるファイルを扱う場合はサイズ制限を回避するために `Zip64` を有効にします。  
+- **パス長:** フォルダー階層が Windows の 260 文字制限を超える場合は `UseLongFileNames = true` を設定します。  
+- **パフォーマンス:** 高速ビルドには `CompressionLevel.Fast` を、最小サイズが必要な場合は `CompressionLevel.Maximum` を使用します。
 
 ## 実際のユースケース
+- **CI/CD パイプライン:** ビルド成果物を zip アーカイブにパッケージ化し、アーティファクトストアに公開する前に使用します。  
+- **ログローテーション:** 毎晩のログフォルダーを圧縮してディスク容量を節約し、パスワード保護を維持します。  
+- **ソフトウェアアップデート:** 更新ファイルを単一の暗号化アーカイブにまとめ、セキュアなダウンロードとインストールを実現します。
 
-- **CI/CD パイプライン:** ビルド成果物を zip アーカイブにパッケージ化し、NuGet フィードやアーティファクトストアに公開する前に使用。  
-- **ログローテーション:** 古いログフォルダーを毎晩圧縮してディスク容量を節約。  
-- **ソフトウェアアップデート:** 更新ファイルを単一のアーカイブにまとめ、簡単にダウンロード・インストールできるようにする。  
-
-## ディレクトリとフォルダーの圧縮チュートリアル
-
-### [Aspose.Zip for .NET を使用した簡単なディレクトリ圧縮](./compress-directory/)
-Aspose.Zip for .NET を使用してディレクトリを手軽に圧縮する方法を学び、.NET 開発におけるストレージ最適化を実現しましょう。
-
+## ディレクトリとフォルダー圧縮チュートリアル
+### [Aspose.Zip for .NET を使用した手間のかからないディレクトリ圧縮](./compress-directory/)
+Aspose.Zip for .NET を使用してディレクトリを手間なく圧縮する方法を学びます。ストレージスペースを効率的に最適化し、.NET 開発を強化しましょう。  
 ### [Aspose.Zip for .NET を使用したフォルダーの解凍](./decompress-folder/)
-Aspose.Zip for .NET でフォルダーを解凍する技術を習得し、プロジェクトの圧縮タスクをスムーズに処理できるようになります。
+Aspose.Zip for .NET を使用したフォルダーの解凍技術を習得します。プロジェクトで圧縮タスクを手間なく処理できます。  
 
 ## よくある質問
 
-**Q: Aspose.Zip を使ってパスワード保護された zip アーカイブを作成できますか？**  
-A: はい。アーカイブ保存時に `ZipPassword` を指定し、AES‑256 などの暗号化アルゴリズムを選択すれば作成できます。
+**Q: Aspose.Zip を使用してパスワード保護された zip アーカイブを作成できますか？**  
+A: はい。アーカイブを保存する際に `ZipPassword` を指定し、`EncryptionAlgorithm.Aes256` を選択してファイルを保護します。
 
-**Q: Aspose.Zip は大きなファイルをメモリに全て読み込まずにストリーミングできますか？**  
-A: もちろんです。`FileStream` オブジェクトと組み合わせることで、任意のサイズのファイルを効率的に圧縮・展開できます。
+**Q: Aspose.Zip は、ファイル全体をメモリに読み込まずに大きなファイルをストリーミングすることをサポートしていますか？**  
+A: もちろんです。`FileStream` オブジェクトを使用すれば、任意のサイズのファイルを効率的に圧縮または抽出できます。
 
-**Q: 大きなアーカイブを複数のパーツに分割したい場合はどうすればよいですか？**  
-A: `SplitArchive` メソッドで最大パーツサイズを指定すれば、Aspose.Zip が自動的に連続した分割ファイルを作成します。
+**Q: 大きなアーカイブを複数のパーツに分割する必要がある場合はどうすればよいですか？**  
+A: `SplitArchive` メソッドを使用して最大パーツサイズを定義すると、Aspose.Zip が自動的に連続した分割ファイルを作成します。
 
 **Q: 既存の zip アーカイブにファイルを追加することは可能ですか？**  
-A: はい。アーカイブを `Update` モードで開き、`AddFile` または `AddFolder` を呼び出して新しいコンテンツを追加できます。
+A: はい。アーカイブを `Update` モードで開き、`AddFile` または `AddFolder` を呼び出して新しいコンテンツを追加します。
 
 **Q: 公式にサポートされている .NET ランタイムはどれですか？**  
-A: Aspose.Zip for .NET は .NET Framework 4.5 以上、.NET Core 3.1 以上、そして .NET 5/6/7+ をサポートしています。
+A: Aspose.Zip for .NET は .NET Framework 2.0–4.8.1、.NET Core 2.0–3.1、そして .NET 5–10 をサポートしています。
 
----
-
-**最終更新日:** 2026-02-23  
-**テスト済み環境:** Aspose.Zip for .NET 24.11  
+**最終更新日:** 2026-07-09  
+**テスト環境:** Aspose.Zip for .NET 24.11  
 **作者:** Aspose  
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
 
+## 関連チュートリアル
+
+- [パスワード付き Zip の追加 – Aspose.Zip for .NET ガイド](/zip/net/password-protection-and-encryption/)
+- [Aspose.Zip を使用した AES 暗号化によるパスワード保護 ZIP ファイルの作成](/zip/net/password-protection-and-encryption/password-protect-with-aes/)
+- [Aspose.Zip for .NET を使用したフォルダーの Zip 方法](/zip/net/directory-and-folder-compression/compress-directory/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
