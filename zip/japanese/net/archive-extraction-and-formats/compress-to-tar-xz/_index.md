@@ -1,9 +1,68 @@
 ---
-date: 2026-02-23
-description: Aspose.Zip を使用して .NET でファイルを tar に追加し、tarxz アーカイブに圧縮する方法を学びましょう。効率的な保存と転送のためのステップバイステップガイドをご覧ください。
-linktitle: Compressing to TarXz
+date: 2026-07-09
+description: Aspose.Zip を使用して .NET でファイルを tar に追加し、tarxz アーカイブに圧縮する方法を学びます。効率的な保存と転送のためのステップバイステップガイドです。
+keywords:
+- add files to tar
+- compress files to tarxz
+- how to create tarxz
+- compress tar with xz
+lastmod: 2026-07-09
+linktitle: TarXz への圧縮
+og_description: Aspose.Zip を使用してファイルを tar に追加し、tarxz アーカイブを作成します。.NET で TarXz を高速に圧縮する方法を、コード不要の手順と高い圧縮効率で学びましょう。
+og_image_alt: 'Developer guide: Add files to tar and create tarxz archive using Aspose.Zip
+  .NET'
+og_title: Aspose.Zip を使用してファイルを tar に追加し、tarxz アーカイブを作成する
+schemas:
+- author: Aspose
+  dateModified: '2026-07-09'
+  description: Learn how to add files to tar and compress files to tarxz archive .NET
+    using Aspose.Zip. Follow this step‑by‑step guide for efficient storage and transmission.
+  headline: Add files to tar and create tarxz archive with Aspose.Zip
+  type: TechArticle
+- description: Learn how to add files to tar and compress files to tarxz archive .NET
+    using Aspose.Zip. Follow this step‑by‑step guide for efficient storage and transmission.
+  name: Add files to tar and create tarxz archive with Aspose.Zip
+  steps:
+  - name: Initialize a `TarArchive`
+    text: '`TarArchive` is the top‑level object that represents a tar container in
+      Aspose.Zip. It manages entries and provides methods for saving the archive.
+      > **Pro tip:** The `using` statement ensures the archive is properly disposed,
+      releasing any unmanaged resources.'
+  - name: Add Files to the Archive
+    text: Add each file you wish to include. In this example we add two text files,
+      but you can add as many entries as needed. > **Why this matters:** Adding entries
+      before compression lets Aspose.Zip build the tar container first, then apply
+      XZ compression in a single step.
+  - name: Save the Archive with XZ Compression
+    text: '`SaveXzCompressed` writes the tar archive to disk while applying XZ compression,
+      producing a `.tar.xz` file in one operation. > **Result:** You now have a fully‑compressed
+      `archive.tar.xz` file that can be transferred, stored, or unpacked on any platform
+      that supports TarXz.'
+  type: HowTo
+- questions:
+  - answer: Yes, Aspose.Zip works with .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1,
+      and .NET 5–10. See the [documentation](https://reference.aspose.com/zip/net/)
+      for details.
+    question: Is Aspose.Zip compatible with all .NET environments?
+  - answer: You can request a temporary license from the [Aspose temporary‑license
+      page](https://purchase.aspose.com/temporary-license/).
+    question: How can I obtain a temporary license for Aspose.Zip?
+  - answer: Absolutely—explore the full set of examples in the [Aspose.Zip API reference](https://reference.aspose.com/zip/net/).
+    question: Are there additional examples for other archive formats?
+  - answer: Join the conversation on the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37)
+      for community support and official answers.
+    question: Where can I get help or discuss issues?
+  - answer: Yes, a free trial is available at the [Aspose.Zip download page](https://releases.aspose.com/zip/net).
+    question: Can I try Aspose.Zip for free before buying?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Aspose.Zipでファイルをtarに追加し、tarxzアーカイブを作成する
+tags:
+- add files to tar
+- Aspose.Zip
+- .NET compression
+- tar archive
+- tarxz
+title: Aspose.Zip を使用してファイルを tar に追加し、tarxz アーカイブを作成する
 url: /ja/net/archive-extraction-and-formats/compress-to-tar-xz/
 weight: 14
 ---
@@ -16,122 +75,124 @@ weight: 14
 
 ## はじめに
 
-もし **add files to tar** してから **create a tarxz archive .net** が必要な場合、Aspose.Zip for .NET はプロセスをシンプルかつ信頼性のあるものにします。ログ、設定ファイル、またはその他の資産を保存や転送のためにパッケージ化する場合でも、TarXz 形式で圧縮すると高い圧縮率を得られ、慣れ親しんだ tar 構造を保持できます。このチュートリアルでは、コードスニペットを交えて正確な手順を順に解説するので、.NET アプリケーションに tarxz 作成機能を自信を持って組み込めます。
+If you need to **add files to tar** and then **create a tarxz archive .net**, Aspose.Zip for .NET makes the process straightforward and reliable. Whether you’re packaging logs, configuration files, or any other assets for storage or transmission, compressing to the TarXz format gives you a high compression ratio while preserving the familiar tar structure. In this tutorial we’ll walk through the exact steps—complete with code snippets—so you can integrate tarxz creation into your .NET applications with confidence. By the end you’ll understand why “add files to tar” is the first step toward a compact, cross‑platform package.
 
-## よくある質問
+## クイック回答
 - **主なクラスは何ですか？** `TarArchive` from `Aspose.Zip.Tar`
-- **tarxz を圧縮するには？** エントリを追加した後に `SaveXzCompressed` を使用
-- **サポートされている .NET バージョンは？** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6
-- **ライセンスは必要ですか？** はい、製品版には有効な Aspose.Zip ライセンスが必要です
-- **実装にかかる目安の時間は？** 約5‑10分
+- **tarxz に圧縮するにはどうすればよいですか？** Call `SaveXzCompressed` after adding entries
+- **サポートされている .NET バージョンは？** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10
+- **ライセンスは必要ですか？** Yes, a valid Aspose.Zip license is required for production use
+- **実装時間は？** Roughly 5‑10 minutes for a basic archive
 
-## TarXzアーカイブとは？
+## TarXz アーカイブとは？
 
-**TarXz archive** は従来の Unix `tar` コンテナと XZ 圧縮を組み合わせたものです。`tar` 部分は複数のファイルを単一のストリームにまとめ、XZ は強力でロスレスな圧縮を提供します。この形式はディレクトリ構造を保持し、普通の tar や zip よりも小さなファイルサイズを実現できるため、ソースコード、バックアップ、大規模データセットの配布に人気があります。
+A **TarXz archive** combines the traditional Unix `tar` container with XZ compression. The tar part bundles multiple files into a single stream, while XZ provides strong, lossless compression. This format is popular for distributing source code, backups, and large data sets because it retains directory structures and achieves smaller file sizes than plain tar or zip.
 
-## Aspose.Zipで.NETのtarXzアーカイブを作成する理由
+## なぜ Aspose.Zip で .net 用 tarxz アーカイブを作成するのか？
 
-- **高い圧縮率** – XZ は gzip より 30‑50 % 小さく圧縮されることが多いです。  
-- **クロスプラットフォーム互換性** – TarXz ファイルは Linux、macOS、Windows で開くことができます。  
-- **シンプルな API** – Aspose.Zip が低レベルの詳細を抽象化し、ビジネスロジックに集中できます。  
-- **外部ツール不要** – すべてが .NET プロセス内で実行され、クラウドや CI パイプラインに最適です。
+Creating a TarXz archive with Aspose.Zip gives you a fast, single‑step solution that eliminates external tools. You get **30‑50 % smaller files than gzip** and can handle **20+ archive formats** without leaving your .NET process. Aspose.Zip processes multi‑hundred‑page archives without loading the entire file into memory, making it ideal for cloud services and CI pipelines.
 
 ## 前提条件
 
-開始する前に以下を用意してください：
-
-- **Aspose.Zip for .NET** がインストール済み（公式の [Aspose.Zip documentation](https://reference.aspose.com/zip/net/) からダウンロード）。  
-- アーカイブしたいファイルが入っているフォルダー。下の例ではこのフォルダーを `dataDir` 変数で参照しています。  
-- 有効な Aspose.Zip ライセンス（評価版はオプション、製品版は必須）。
+- **Aspose.Zip for .NET** がインストールされていること（公式の [Aspose.Zip documentation](https://reference.aspose.com/zip/net/) からダウンロード）。
+- アーカイブしたいファイルが入っているフォルダー。以下の例では、このフォルダーは `dataDir` 変数で参照されます。
+- 有効な Aspose.Zip ライセンス（評価版はオプション、製品版では必須）。
 
 ## 名前空間のインポート
 
-TarXz 機能を利用できる名前空間をインポートします。
+First, import the namespaces that expose the TarXz functionality.
 
 ```csharp
 using System;
 using Aspose.Zip.Tar;
 ```
 
-## Aspose.Zipを使用してtarアーカイブにファイルを追加する方法
+## Aspose.Zip を使用して tar にファイルを追加する方法
 
-以下は **add files to tar** してから圧縮するまでの手順を示すステップバイステップガイドです。
+The `TarArchive` class represents a tar container and manages its entries.
 
-### ステップ1：`tarArchive`を初期化する
+Load your source files, create a `TarArchive`, and add each entry—this is the core “add files to tar” operation. The `TarArchive` class builds the tar container in memory, after which you can apply XZ compression in a single call successfully.
 
-圧縮したいファイルを保持する新しい `TarArchive` インスタンスを作成します。
+### 手順 1: `TarArchive` の初期化
+
+`TarArchive` is the top‑level object that represents a tar container in Aspose.Zip. It manages entries and provides methods for saving the archive.
 
 ```csharp
 using (TarArchive archive = new TarArchive())
 {
 ```
 
-> **Pro tip:** `using` ステートメントはアーカイブを適切に破棄し、アンマネージドリソースを解放します。
+> **プロのコツ:** The `using` statement ensures the archive is properly disposed, releasing any unmanaged resources.
 
-### ステップ2：アーカイブにファイルを追加する
+### 手順 2: アーカイブにファイルを追加する
 
-追加したい各ファイルを指定します。この例ではテキストファイルを 2 つ追加していますが、必要に応じてエントリを増やすことができます。
+Add each file you wish to include. In this example we add two text files, but you can add as many entries as needed.
 
 ```csharp
     archive.CreateEntry("alice29.txt", dataDir + "alice29.txt");
     archive.CreateEntry("lcet10.txt", dataDir + "lcet10.txt");
 ```
 
-> **Why this matters:** 圧縮前にエントリを追加することで、Aspose.Zip はまず tar コンテナを構築し、その後 XZ 圧縮を単一ステップで適用します。
+> **なぜ重要か:** Adding entries before compression lets Aspose.Zip build the tar container first, then apply XZ compression in a single step.
 
-### ステップ3：XZ圧縮でアーカイブを保存する
+### 手順 3: XZ 圧縮でアーカイブを保存する
 
-最後に XZ 圧縮を使用して tar アーカイブをディスクに書き出します。生成されるファイルは `.tar.xz` 拡張子になります。
+`SaveXzCompressed` writes the tar archive to disk while applying XZ compression, producing a `.tar.xz` file in one operation.
 
 ```csharp
     archive.SaveXzCompressed(dataDir + "archive.tar.xz");
 }
 ```
 
-> **Result:** これで完全に圧縮された `archive.tar.xz` ファイルが作成され、TarXz をサポートする任意のプラットフォームで転送、保存、または展開できます。
+> **結果:** You now have a fully‑compressed `archive.tar.xz` file that can be transferred, stored, or unpacked on any platform that supports TarXz.
 
-## Aspose.ZipでtarXzファイルを圧縮する方法
+## Aspose.Zip で tarxz ファイルを圧縮する方法
 
-上記の手順は実質的に **how to compress tarxz** ファイルの方法です：まずファイルを tar コンテナに追加（`add files to tar`）し、次に `SaveXzCompressed` を呼び出します。この単一呼び出しアプローチにより外部コマンドラインツールが不要となり、すべてが .NET コードベース内に収まります。
+Compressing to tarxz with Aspose.Zip is a two‑step process wrapped in a single method call: first you **add files to tar**, then you invoke `SaveXzCompressed`. This eliminates the need for external command‑line utilities and keeps the entire workflow inside your .NET codebase.
 
 ## よくある問題と解決策
 
-| 問題 | 原因 | 解決策 |
-|-------|-------|-----|
-| **“File not found” exception** | `dataDir` パスが正しくない | ディレクトリパスがバックスラッシュ (`\`) で終わっているか確認するか、`Path.Combine` を使用してください。 |
-| **Large memory usage** | メモリ内で非常に大きなファイルを圧縮している | `TarArchive` をストリーミングモードで使用する（`SaveXzCompressed` の `Stream` を受け取るオーバーロードを利用）。 |
-| **License not applied** | ライセンスファイルが見つからない | アプリケーション開始時にライセンスをロードします：`new Aspose.Zip.License().SetLicense("Aspose.Zip.lic");` |
+| 問題 | 原因 | 対策 |
+|------|------|------|
+| **“File not found” exception** | Incorrect `dataDir` path | Verify the directory path ends with a backslash (`\`) or use `Path.Combine`. |
+| **Large memory usage** | Very large files being compressed in memory | Use `TarArchive` in streaming mode (`SaveXzCompressed` overload that accepts a `Stream`). |
+| **License not applied** | Missing license file | Load the license at application start: `new Aspose.Zip.License().SetLicense("Aspose.Zip.lic");` |
 
 ## よくある質問
 
 **Q: Aspose.Zip はすべての .NET 環境と互換性がありますか？**  
-A: はい、Aspose.Zip は .NET Framework 4.5+、.NET Core 3.1+、および .NET 5/6+ で動作します。詳細は [documentation](https://reference.aspose.com/zip/net/) をご覧ください。
+A: Yes, Aspose.Zip works with .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10. See the [documentation](https://reference.aspose.com/zip/net/) for details.
 
-**Q: Aspose.Zip の一時ライセンスはどう取得できますか？**  
-A: [Aspose temporary‑license page](https://purchase.aspose.com/temporary-license/) から一時ライセンスをリクエストできます。
+**Q: Aspose.Zip の一時ライセンスはどうやって取得できますか？**  
+A: You can request a temporary license from the [Aspose temporary‑license page](https://purchase.aspose.com/temporary-license/).
 
-**Q: 他のアーカイブ形式のサンプルはありますか？**  
-A: もちろんです。全例は [Aspose.Zip API reference](https://reference.aspose.com/zip/net/) で確認できます。
+**Q: 他のアーカイブ形式の追加サンプルはありますか？**  
+A: Absolutely—explore the full set of examples in the [Aspose.Zip API reference](https://reference.aspose.com/zip/net/).
 
-**Q: サポートや議論の場はどこですか？**  
-A: コミュニティサポートと公式回答は [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) で行われています。
+**Q: サポートや問題の議論はどこでできますか？**  
+A: Join the conversation on the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for community support and official answers.
 
-**Q: 購入前に無料で試せますか？**  
-A: はい、[Aspose.Zip download page](https://releases.aspose.com/zip/net) で無料トライアルが利用可能です。
+**Q: 購入前に Aspose.Zip を無料で試すことはできますか？**  
+A: Yes, a free trial is available at the [Aspose.Zip download page](https://releases.aspose.com/zip/net).
 
-## まとめ
+## 結論
 
-上記の手順に従うことで、**add files to tar** と **compress tarxz** の方法、そして Aspose.Zip を使用した **create tarxz archive .net** のやり方が分かります。このアプローチにより、デスクトップユーティリティ、Web サービス、または自動化された CI/CD パイプラインなど、あらゆる .NET ワークフローにシームレスに統合できるコンパクトでポータブルなパッケージを手に入れられます。
+By following the steps above, you now know **how to add files to tar** and **compress tarxz** files, and more importantly, how to **create tarxz archive .net** using Aspose.Zip. This approach gives you a compact, portable package that can be seamlessly integrated into any .NET workflow—whether you’re building a desktop utility, a web service, or an automated CI/CD pipeline.
 
 ---
 
-**Last Updated:** 2026-02-23  
-**Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose  
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+**最終更新:** 2026-07-09  
+**テスト環境:** Aspose.Zip for .NET 24.11  
+**作者:** Aspose  
 
 {{< blocks/products/products-backtop-button >}}
+
+## 関連チュートリアル
+
+- [Aspose.Zip for .NET を使用して tar アーカイブを作成し、ファイルを tar に追加する](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
+- [Aspose.Zip for .NET を使用して tar を圧縮し、TarBz2 を作成する方法](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
+- [Aspose.Zip for .NET を使用して複数ファイルを tar 圧縮する方法](/zip/net/archive-extraction-and-formats/compress-to-tar-lz/)
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
