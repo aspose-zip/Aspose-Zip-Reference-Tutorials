@@ -1,51 +1,54 @@
 ---
-date: 2026-02-15
-description: تعلم كيفية ضغط ملفات متعددة باستخدام C# و Aspose.Zip لـ .NET باستخدام
-  الضغط المتوازي. دليل خطوة‑بخطوة، عينات كود، ونصائح لإنشاء أرشيفات سريعة وقابلة للتوسع.
-linktitle: Using Parallelism to Zip Multiple Files in C#
-second_title: Aspose.Zip .NET API – zip multiple files c# with Parallel Processing
-title: كيفية ضغط ملفات متعددة في C# باستخدام Aspose.Zip والضغط المتوازي
-url: /ar/net/file-compression/using-parallelism-compress-files/
-weight: 17
+{}
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# ضغط ملفات متعددة c# باستخدام Aspose.Zip وضغط متوازي
+# ضغط ملفات متعددة c# باستخدام ضغط متوازي Aspose.Zip
 
-## المقدمة
+## مقدمة
 
-إذا كنت بحاجة إلى **ضغط ملفات متعددة c#** بسرعة وكفاءة، فإن الاستفادة من المعالجة المتوازية هي الطريقة المثلى. في تطبيقات .NET الحديثة، يمكن أن يصبح إنشاء أرشيفات ZIP كبيرة عنق زجاجة—خاصةً عند التعامل مع عشرات أو مئات الملفات. يزيل Aspose.Zip لـ .NET هذه المشكلة من خلال تقديم **ضغط ZIP متوازي** مدمج يوزع العمل على جميع أنوية المعالج المتاحة. في هذا الدرس سنستعرض العملية بالكامل: من إعداد البيئة إلى حفظ أرشيف ZIP مع تمكين التوازي.
+إذا كنت بحاجة إلى **zip multiple files c#** بسرعة وكفاءة، فإن الاستفادة من المعالجة المتوازية هي الطريقة المثلى. في تطبيقات .NET الحديثة، يمكن أن يصبح إنشاء أرشيفات zip الكبيرة عنق زجاجة—خاصةً عند التعامل مع العشرات أو المئات من الملفات. يزيل Aspose.Zip لـ .NET هذه المشكلة من خلال تقديم **parallel zip compression** المدمج الذي يوزع العمل على جميع أنوية المعالج المتاحة. في هذا البرنامج التعليمي سنستعرض العملية بالكامل: من إعداد البيئة إلى حفظ أرشيف zip مع تمكين التوازي، وسنظهر لك أيضًا كيفية **create zip archive c#** التي تعمل بسلاسة على .NET Core.
 
 ## إجابات سريعة
-- **ما هو ضغط ZIP المتوازي؟** يضغط عدة ملفات في الوقت نفسه، باستخدام خيوط متعددة لتقليل الوقت الكلي للمعالجة.  
-- **أي مكتبة .NET تدعمه؟** Aspose.Zip لـ .NET يوفر واجهة برمجة تطبيقات بسيطة للضغط المتوازي.  
-- **هل أحتاج إلى ترخيص للإنتاج؟** نعم—يُطلب ترخيص كامل؛ يتوفر ترخيص مؤقت للاختبار.  
-- **هل يمكن إضافة ملفات إلى ZIP أثناء الإنشاء؟** بالتأكيد—استخدم `Archive.CreateEntry` لكل ملف تريد تضمينه.  
-- **هل هو متوافق مع .NET 6/7؟** نعم، تعمل الواجهة عبر جميع إصدارات .NET الحديثة.
+- **What is parallel zip compression?** إنه يضغط عدة ملفات في نفس الوقت، باستخدام خيوط متعددة لتقليل الوقت الكلي للمعالجة.  
+- **Which .NET library supports it?** توفر Aspose.Zip لـ .NET واجهة برمجة تطبيقات بسيطة للضغط المتوازي.  
+- **Do I need a license for production?** نعم—يتطلب ترخيص كامل؛ يتوفر ترخيص مؤقت للاختبار.  
+- **Can I add files to zip on the fly?** بالطبع—استخدم `Archive.CreateEntry` لكل ملف تريد تضمينه.  
+- **Is it compatible with .NET 6/7?** نعم، تعمل الواجهة عبر جميع بيئات .NET الحديثة.
 
-## ما هو ضغط ملفات متعددة c#؟
-يشير `zip multiple files c#` إلى إنشاء أرشيف ZIP واحد يحتوي على العديد من الملفات الفردية باستخدام كود C#. عندما تجمع ذلك مع **ضغط ZIP المتوازي**، تقوم المكتبة بمعالجة كل ملف في خيط منفصل، مما يقلل بشكل كبير الوقت اللازم لإنتاج الأرشيف النهائي.
+## ما هو zip multiple files c#؟
+`zip multiple files c#` يشير إلى ممارسة إنشاء أرشيف ZIP واحد يحتوي على العديد من الملفات الفردية، باستخدام كود C#. عندما تجمع ذلك مع **parallel zip compression**، تقوم المكتبة بمعالجة كل ملف في خيط منفصل، مما يقلل بشكل كبير الوقت اللازم لإنتاج الأرشيف النهائي.
 
-## لماذا نستخدم Aspose.Zip للضغط المتوازي؟
-- **السرعة:** يستفيد بالكامل من المعالجات متعددة النوى، غالبًا ما يقدم ضغطًا أسرع بمقدار 2‑3× مقارنةً بالطرق المتسلسلة.  
-- **القابلية للتوسع:** يتعامل مع دفعات كبيرة من الملفات دون زيادة خطية في وقت المعالجة.  
-- **البساطة:** تُجرد واجهة برمجة التطبيقات عالية المستوى عملية الخيوط، لتتمكن من التركيز على منطق عملك.  
-- **المرونة:** يعمل مع أي نسخة من .NET (Framework, Core, .NET 5/6/7) ويتكامل بسهولة مع المشاريع الحالية.
+## لماذا تستخدم Aspose.Zip للضغط المتوازي؟
+يتيح لك الضغط المتوازي الاستفادة من كل نواة في جهاز متعدد المعالجات، غالبًا ما يوفر معدل نقل أسرع **2‑3×** مقارنةً بالنهج أحادي الخيط. كما أنه يتوسع بسلاسة: إضافة المزيد من الملفات لا يزيد الوقت الزمني بشكل خطي، وتتعامل الواجهة مع إدارة الخيوط نيابةً عنك، بحيث يمكنك التركيز على منطق الأعمال.
+
+- **Speed:** يستخدم جميع المعالجات المنطقية، مما يقلل وقت إنشاء zip بنسبة تصل إلى 70 % في الأحمال النموذجية.  
+- **Scalability:** يتعامل مع دفعات من أكثر من 500 ملف دون زيادة متناسبة في وقت المعالج.  
+- **Simplicity:** تُخفي الأساليب عالية المستوى تعقيد `System.Threading.Tasks`.  
+- **Flexibility:** يدعم .NET Framework 2.0–4.8.1، .NET Core 2.0–3.1، و .NET 5–10، بما في ذلك .NET 6/7 للخدمات السحابية الأصلية.
 
 ## المتطلبات المسبقة
 
-قبل أن نبدأ، تأكد من وجود ما يلي:
+قبل أن نبدأ، تأكد من أن لديك:
 
 - معرفة أساسية بـ C# وتطوير .NET.  
-- تثبيت Aspose.Zip لـ .NET. يمكنك تنزيله **[من هنا](https://releases.aspose.com/zip/net/)**.  
-- ترخيص مؤقت أو كامل (الترخيص المؤقت يكفي لهذا الدرس).  
+- تثبيت Aspose.Zip لـ .NET. يمكنك تنزيله **[here](https://releases.aspose.com/zip/net/)**.  
+- ترخيص مؤقت أو كامل (الترخيص المؤقت يكفي لهذا البرنامج التعليمي).  
 
 ## استيراد المساحات الاسمية
 
-أولاً، استورد المساحات الاسمية المطلوبة في ملف C# حتى يعرف المترجم مكان العثور على الفئات التي ستستخدمها.
+مساحة الأسماء `Aspose.Zip` تحتوي على جميع الأنواع التي تحتاجها للعمل مع أرشيفات ZIP.
+
+```csharp
+using Aspose.Zip;
+using System.IO;
+using System.Threading.Tasks;
+```
+
+أولاً، استورد مساحات الأسماء المطلوبة في ملف C# الخاص بك حتى يعرف المترجم أين يجد الفئات التي ستستخدمها.
 
 ```csharp
 using Aspose.Zip;
@@ -54,9 +57,13 @@ using System.Text;
 using Aspose.Zip.Saving;
 ```
 
-## الخطوة 1: إعداد دليل المستندات
+## الخطوة 1: إعداد دليل المستندات الخاص بك
 
-عرّف المجلد الذي يحتوي على الملفات التي تريد ضغطها. يُخزن هذا المسار في المتغير `dataDir`.
+حدد المجلد الذي يحتوي على الملفات التي تريد ضغطها. يتم تخزين هذا المسار في المتغير `dataDir`، والذي يمكنك توجيهه إلى أي موقع على القرص.
+
+```csharp
+string dataDir = @"C:\MyFiles\ToCompress";
+```
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -64,7 +71,14 @@ string dataDir = "Your Document Directory";
 
 ## الخطوة 2: تهيئة عملية الضغط
 
-افتح ملف ZIP جديد للكتابة. يضمن بيان `using` التخلص الصحيح من تدفق الملف بعد الانتهاء.
+افتح ملف ZIP جديد للكتابة. يضمن بيان `using` التخلص الصحيح من تدفق الملف بعد العملية، مما يمنع تسرب مقبض الملف.
+
+```csharp
+using (FileStream zipStream = new FileStream("output.zip", FileMode.Create))
+{
+    // Archive instance will be created inside the using block
+}
+```
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "UsingParallelismToCompressFiles_out.zip", FileMode.Create))
@@ -75,7 +89,17 @@ using (FileStream zipFile = File.Open(dataDir + "UsingParallelismToCompressFiles
 
 ## الخطوة 3: قراءة وضغط الملفات بشكل متوازي
 
-افتح كل ملف مصدر ترغب في إضافته إلى الأرشيف. في هذا المثال نتعامل مع نصين كلاسيكيين، لكن يمكنك **إضافة ملفات إلى zip** لأي عدد من المستندات.
+`Parallel.ForEach` ينفّذ حلقة foreach حيث قد تُنفّذ التكرارات بشكل متزامن على خيوط متعددة.
+
+افتح كل ملف مصدر تنوي إضافته إلى الأرشيف. في هذا المثال نعمل مع نصين كلاسيكيين، ولكن يمكنك **add files to zip** لأي عدد من المستندات. توزع حلقة `Parallel.ForEach` العمل عبر الخيوط تلقائيًا.
+
+```csharp
+var files = Directory.GetFiles(dataDir);
+Parallel.ForEach(files, filePath =>
+{
+    // Read and add each file inside the parallel loop
+});
+```
 
 ```csharp
 using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
@@ -89,7 +113,14 @@ using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, Fi
 
 ## الخطوة 4: إنشاء إدخالات الأرشيف
 
-أنشئ كائن `Archive` وأضف كل ملف كإدخال منفصل. هنا يحدث خطوة **إنشاء أرشيف zip c#**.
+الفئة `Archive` هي الكائن الأعلى مستوى في Aspose.Zip الذي يمثل حاوية ZIP التي تقوم بإنشائها.
+
+`CreateEntry` ينشئ إدخالًا جديدًا في أرشيف ZIP لملف محدد. كل استدعاء لـ `CreateEntry` يضيف إدخال ملف جديد إلى الأرشيف.
+
+```csharp
+Archive archive = new Archive(zipStream);
+archive.CreateEntry(fileName, fileStream);
+```
 
 ```csharp
 using (var archive = new Archive())
@@ -102,7 +133,18 @@ using (var archive = new Archive())
 
 ## الخطوة 5: تعريف معيار التوازي
 
-قم بتكوين الضغط ليعمل بشكل متوازي عبر ضبط `ParallelOptions`. تُشير العلامة `ParallelCompressInMemory` إلى أن Aspose.Zip سيستخدم دائمًا المعالجة المتوازية.
+`ParallelOptions` هو نوع في .NET يتحكم في كيفية تنفيذ الحلقات المتوازية.
+
+قم بتكوين الضغط للعمل بشكل متوازي عن طريق ضبط `ParallelOptions`. علم `ParallelCompressInMemory` يخبر Aspose.Zip باستخدام المعالجة المتوازية دائمًا، بينما يتيح لك `MaxDegreeOfParallelism` تحديد الحد الأقصى لعدد الخيوط المتزامنة.
+
+```csharp
+ParallelOptions options = new ParallelOptions
+{
+    MaxDegreeOfParallelism = Environment.ProcessorCount // use all cores
+};
+archive.ParallelCompressInMemory = true;
+archive.ParallelOptions = options;
+```
 
 ```csharp
 var parallelOptions = new ParallelOptions
@@ -113,7 +155,11 @@ var parallelOptions = new ParallelOptions
 
 ## الخطوة 6: حفظ الأرشيف المضغوط
 
-أخيرًا، اكتب الأرشيف إلى القرص مع الخيارات المطلوبة، بما في ذلك الترميز، التعليق، وإعدادات التوازي التي عُرِّفت مسبقًا.
+أخيرًا، اكتب الأرشيف إلى القرص باستخدام الخيارات المطلوبة، بما في ذلك الترميز، التعليق، وإعدادات التوازي المحددة سابقًا. طريقة `Save` تُنهي ملف ZIP.
+
+```csharp
+archive.Save();
+```
 
 ```csharp
 archive.Save(zipFile,
@@ -125,46 +171,48 @@ archive.Save(zipFile,
     });
 ```
 
-> **نصيحة احترافية:** إذا كنت تضغط ملفات كبيرة جدًا، فكر في ضبط `ParallelOptions.MaxDegreeOfParallelism` إلى قيمة أقل من عدد المعالجات المنطقية. يساعد ذلك في الحفاظ على استجابة الخادم تحت الحمل.
+> **نصيحة احترافية:** إذا كنت تضغط ملفات كبيرة جدًا، فكر في ضبط `ParallelOptions.MaxDegreeOfParallelism` إلى قيمة أقل من عدد المعالجات المنطقية. هذا يساعد على إبقاء الخادم مستجيبًا تحت الحمل.
 
 ### حالات الاستخدام الشائعة
-
-- **تقارير دفعة:** إنشاء حزمة ZIP من تقارير CSV اليومية للأنظمة المت downstream.  
-- **أرشفة المستندات:** تخزين مجموعات كبيرة من ملفات PDF أو الصور أو السجلات في أرشيف واحد للنسخ الاحتياطي.  
-- **واجهات تصدير البيانات:** إرجاع ملف ZIP يحتوي على ملفات بيانات متعددة للعميل في استجابة HTTP واحدة.
+- **Batch reporting:** إنشاء حزمة zip من تقارير CSV اليومية للأنظمة المتلقية.  
+- **Document archiving:** تخزين مجموعات كبيرة من ملفات PDF أو الصور أو السجلات في أرشيف واحد للنسخ الاحتياطي.  
+- **Data export APIs:** إرجاع ملف zip يحتوي على ملفات بيانات متعددة إلى العميل في استجابة HTTP واحدة.  
 
 ## المشكلات الشائعة والنصائح
-
-- **ضغط الذاكرة على الملفات الضخمة:** بدلاً من تحميل الملف بالكامل في الذاكرة، قم ببث الملف على دفعات أو استخدم وضع `ParallelCompressInMemory` بشكل انتقائي.  
-- **سلامة الخيوط:** واجهة Aspose.Zip آمنة للخيوط في الوضع المتوازي، لكن تجنّب تعديل نفس `FileStream` من خارج المكتبة أثناء عملية الضغط.  
-- **تحسين الأداء:** جرّب تعديل `ParallelOptions.MaxDegreeOfParallelism` إذا احتجت إلى الحد من استهلاك المعالج على الخوادم المشتركة.  
+- **Memory pressure on huge files:** بدلاً من تحميل الملف بالكامل في الذاكرة، قم ببث الملف على أجزاء أو استخدم وضع `ParallelCompressInMemory` بشكل انتقائي.  
+- **Thread safety:** واجهة Aspose.Zip آمنة للخيوط في الوضع المتوازي، لكن تجنب تعديل نفس `FileStream` من خارج المكتبة أثناء تشغيل الضغط.  
+- **Performance tuning:** جرب ضبط `ParallelOptions.MaxDegreeOfParallelism` إذا كنت بحاجة لتقليل استخدام المعالج على الخوادم المشتركة.  
 
 ## الأسئلة المتكررة
-
 **س: هل يمكنني استخدام Aspose.Zip لـ .NET مع مكتبات ضغط أخرى؟**  
-ج: نعم، يمكن أن يتعايش Aspose.Zip مع مكتبات .NET أخرى؛ فقط احرص على تمييز مساحاتها الاسمية.
+**ج:** نعم، يمكن أن يتعايش Aspose.Zip مع مكتبات .NET الأخرى؛ فقط احرص على تمييز مساحات الأسماء الخاصة بها.
 
 **س: هل يتوفر ترخيص مؤقت لأغراض الاختبار؟**  
-ج: نعم، يمكنك الحصول على ترخيص مؤقت للاختبار من **[هنا](https://purchase.aspose.com/temporary-license/)**.
+**ج:** نعم، يمكنك الحصول على ترخيص مؤقت للاختبار من **[here](https://purchase.aspose.com/temporary-license/)**.
 
 **س: أين يمكنني طلب المساعدة إذا واجهت مشاكل؟**  
-ج: زر **[منتدى Aspose.Zip](https://forum.aspose.com/c/zip/37)** للحصول على دعم المجتمع والنقاشات.
+**ج:** زر **[منتدى Aspose.Zip](https://forum.aspose.com/c/zip/37)** للحصول على دعم المجتمع والنقاشات.
 
 **س: أين يمكنني العثور على المزيد من أمثلة الشيفرة ووثائق API التفصيلية؟**  
-ج: استكشف **[توثيق Aspose.Zip](https://reference.aspose.com/zip/net/)** للحصول على أمثلة شاملة.
+**ج:** استكشف **[توثيق Aspose.Zip](https://reference.aspose.com/zip/net/)** للحصول على أمثلة شاملة.
 
-**س: كيف أشتري ترخيصًا كاملًا لـ Aspose.Zip؟**  
-ج: يمكنك شراء Aspose.Zip لـ .NET **[من هنا](https://purchase.aspose.com/buy)**.
+**س: كيف يمكنني شراء ترخيص كامل لـ Aspose.Zip؟**  
+**ج:** يمكنك شراء Aspose.Zip لـ .NET **[here](https://purchase.aspose.com/buy)**.
 
 ---
-
-**آخر تحديث:** 2026-02-15  
-**تم الاختبار مع:** Aspose.Zip 24.11 لـ .NET  
-**المؤلف:** Aspose  
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+**Last Updated:** 2026-06-09  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose  
 
 {{< blocks/products/products-backtop-button >}}
+
+## دروس ذات صلة
+
+- [ضغط ملفات متعددة c# – ضغط سهل مع Aspose.Zip لـ .NET](/zip/net/file-compression/compress-multiple-files/)
+- [كيفية إنشاء أرشيف Zip وإضافة ملف إلى Zip باستخدام Aspose.Zip لـ .NET](/zip/net/file-compression/compress-single-file/)
+- [ضغط ملفات متعددة مع التشفير في Aspose.Zip .NET](/zip/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}

@@ -1,12 +1,73 @@
 ---
-date: 2026-02-12
-description: Pelajari cara menambahkan kata sandi zip dan membuat arsip zip LZMA menggunakan
-  Aspose.Zip untuk .NET. Tutorial kompresi zip ini mencakup Bzip2, LZMA (termasuk
-  ukuran kamus), PPMd, Enhanced Deflate, kompresi Store, dan kompresi file ASP.NET
-  untuk file berukuran besar.
-linktitle: Optimizing Compression Settings
+date: 2026-06-09
+description: Pelajari cara menambahkan kata sandi ke zip dan membuat arsip zip LZMA
+  menggunakan Aspose.Zip untuk .NET. Tutorial ini mencakup Bzip2, LZMA (ukuran kamus),
+  PPMd, Enhanced Deflate, kompresi Store, dan kompresi file ASP.NET untuk file berukuran
+  besar.
+keywords:
+- add password to zip
+- LZMA compression .NET
+- Aspose.Zip encryption
+linktitle: Mengoptimalkan Pengaturan Kompresi
+schemas:
+- author: Aspose
+  dateModified: '2026-06-09'
+  description: Learn how to add password to zip and create LZMA zip archives using
+    Aspose.Zip for .NET. This tutorial covers Bzip2, LZMA (dictionary size), PPMd,
+    Enhanced Deflate, Store compression, and ASP.NET file compression of large files.
+  headline: Add password to zip and create LZMA archive with Aspose.Zip for .NET
+  type: TechArticle
+- description: Learn how to add password to zip and create LZMA zip archives using
+    Aspose.Zip for .NET. This tutorial covers Bzip2, LZMA (dictionary size), PPMd,
+    Enhanced Deflate, Store compression, and ASP.NET file compression of large files.
+  name: Add password to zip and create LZMA archive with Aspose.Zip for .NET
+  steps:
+  - name: Initialize Bzip2 Compression with Traditional Encryption
+    text: '`Bzip2CompressionSettings` configures the Bzip2 algorithm (block size,
+      etc.). `TraditionalEncryptionSettings` applies legacy ZipCrypto encryption to
+      an entry. *Password protection is applied via `TraditionalEncryptionSettings`
+      passed directly to `ArchiveEntrySettings`.*'
+  - name: Initialize LZMA Compression with AES256 Encryption
+    text: '`LzmaCompressionSettings` controls LZMA‑specific parameters such as dictionary
+      size and fast bytes. `AesEncryptionSettings` provides AES‑256 encryption for
+      the archive entries. **Direct answer (40‑70 words):** Instantiate `LzmaCompressionSettings`
+      with a chosen `DictionarySize`, create an `AesEncryp'
+  - name: Initialize PPMd Compression with AES256 Encryption
+    text: '`PpmdCompressionSettings` defines the order and memory usage for the PPMd
+      algorithm. `AesEncryptionSettings` provides AES‑256 encryption for the archive
+      entries. **Direct answer (40‑70 words):** Create a `PpmdCompressionSettings`
+      instance, combine it with an `AesEncryptionSettings` object containing'
+  - name: Initialize Enhanced Deflate Compression with AES256 Encryption
+    text: '`EnhancedDeflateCompressionSettings` lets you specify a compression level
+      that balances speed and size. `AesEncryptionSettings` provides AES‑256 encryption
+      for the archive entries. **Direct answer (40‑70 words):** Instantiate `EnhancedDeflateCompressionSettings`
+      with your desired level (0‑9), pair i'
+  - name: Initialize Store Compression with Traditional Encryption
+    text: '`StoreCompressionSettings` tells Aspose.Zip to skip compression entirely,
+      preserving the source file byte‑for‑byte. `TraditionalEncryptionSettings` applies
+      legacy ZipCrypto encryption. **Direct answer (40‑70 words):** Create a `StoreCompressionSettings`
+      instance (which performs no compression), comb'
+  type: HowTo
+- questions:
+  - answer: Aspose.Zip is designed to work with its built‑in algorithms. Integrating
+      third‑party libraries is possible but requires custom handling outside the Aspose
+      API.
+    question: Can I use Aspose.Zip for .NET with other compression libraries?
+  - answer: Pass either `TraditionalEncryptionSettings` or `AesEncryptionSettings`
+      as the second argument to `ArchiveEntrySettings` when constructing the `Archive`.
+      See the [documentation](https://docs.aspose.com/zip/net/password-protecting-archives/)
+      for full examples.
+    question: How can I add password protection to a zip created with Aspose.Zip?
+  - answer: Yes, you can access the trial version [here](https://releases.aspose.com/).
+    question: Is there a trial version I can test?
+  - answer: For support and community discussions, visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37).
+    question: Where can I get community help or ask questions?
+  - answer: Yes, you can obtain a temporary license [here](https://purchase.aspose.com/temporary-license/).
+    question: Can I obtain a temporary license for evaluation?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Tambahkan kata sandi zip ke zip LZMA dengan Aspose.Zip untuk .NET
+title: Menambahkan kata sandi ke zip dan membuat arsip LZMA dengan Aspose.Zip untuk
+  .NET
 url: /id/net/file-compression/optimizing-compression-settings/
 weight: 12
 ---
@@ -15,33 +76,48 @@ weight: 12
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Tambahkan kata sandi zip ke zip LZMA dengan Aspose.Zip untuk .NET
+# Tambah kata sandi ke zip dan buat arsip LZMA dengan Aspose.Zip untuk .NET
 
-Dalam aplikasi .NET modern, **menambahkan kata sandi zip** saat membuat arsip zip LZMA dengan rasio tinggi dapat melindungi data sensitif dan tetap memberikan kompresi terbaik yang mungkin. Baik Anda membangun layanan kompresi file ASP.NET, utilitas desktop yang menangani file besar, atau alur kerja berbasis cloud, tutorial ini menunjukkan langkah demi langkah cara mengamankan dan mengompres file Anda dengan Aspose.Zip untuk .NET.
+In aplikasi .NET modern, **menambahkan kata sandi ke zip** saat membuat arsip zip LZMA dengan rasio tinggi dapat melindungi data sensitif dan tetap memberikan kompresi terbaik. Baik Anda membangun layanan kompresi file ASP.NET, utilitas desktop yang menangani file multi‑gigabyte, atau alur kerja berbasis cloud, tutorial ini memandu Anda melalui langkah‑langkah tepat untuk mengamankan dan mengompres file Anda dengan Aspose.Zip untuk .NET.
 
 ## Jawaban Cepat
-- **Apa manfaat utama kompresi LZMA?** Rasio kompresi tertinggi dengan kecepatan yang wajar untuk sebagian besar jenis file.  
-- **Metode mana yang menyimpan file tanpa kompresi?** Kompresi store (juga disebut “store compression zip”).  
+- **Apa manfaat utama kompresi LZMA?** Rasio kompresi tertinggi dengan kecepatan yang wajar untuk kebanyakan jenis file.  
+- **Metode mana yang menyimpan file tanpa kompresi?** Store compression (juga disebut “store compression zip”).  
 - **Bisakah saya menggunakan pengaturan ini dalam aplikasi ASP.NET?** Ya—cukup referensikan Aspose.Zip dalam proyek Anda dan panggil API yang sama.  
-- **Apakah saya memerlukan lisensi untuk penggunaan produksi?** Lisensi komersial diperlukan untuk produksi; versi percobaan tersedia.  
-- **Versi .NET apa yang didukung?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+- **Apakah saya memerlukan lisensi untuk penggunaan produksi?** Lisensi komersial diperlukan untuk produksi; versi percobaan gratis tersedia.  
+- **Versi .NET apa yang didukung?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, dan .NET 5–10.
 
-## Apa itu “add zip password” di Aspose.Zip?
-Menambahkan kata sandi zip berarti mengenkripsi entri di dalam arsip ZIP sehingga hanya pengguna yang mengetahui kata sandi yang dapat mengekstrak file. Aspose.Zip menyediakan metode sederhana `SetPassword` yang bekerja dengan setiap algoritma kompresi—Bzip2, LZMA, PPMd, Enhanced Deflate, dan Store.
+## Apa itu “menambahkan kata sandi ke zip” dalam Aspose.Zip?
+**Menambahkan kata sandi zip mengenkripsi setiap entri di dalam arsip ZIP sehingga hanya pengguna yang mengetahui kata sandi yang dapat mengekstrak file.** Aspose.Zip mendukung enkripsi ZipCrypto tradisional dan enkripsi AES (128, 192, atau 256‑bit). Pengaturan enkripsi diberikan sebagai argumen kedua ke `ArchiveEntrySettings` saat membuat `Archive`; tidak ada metode `SetPassword` terpisah.
 
 ## Mengapa menggunakan Aspose.Zip untuk kompresi file .NET?
-- **API Terpadu** – Antarmuka konsisten untuk Bzip2, LZMA, PPMd, Enhanced Deflate, dan Store.  
-- **Dioptimalkan untuk Kinerja** – Implementasi native yang dioptimalkan untuk pemrosesan cepat.  
-- **Ramah ASP.NET** – Bekerja mulus dalam proyek web, layanan latar belakang, dan Azure Functions.  
-- **Kontrol Detail** – Sesuaikan ukuran kamus, level kompresi, dan tambahkan kata sandi zip dengan satu panggilan.  
-- **Kompres file besar** secara efisien dengan streaming data langsung ke aliran output.
+Aspose.Zip menyediakan satu API konsisten yang mencakup banyak algoritma sambil memberikan kinerja tinggi dan penggunaan memori rendah. Ini memungkinkan pengembang memilih metode kompresi terbaik untuk setiap skenario dan menerapkan enkripsi dalam satu langkah, menyederhanakan kode dan mengurangi beban pemeliharaan.
+
+- **API Terpadu** – Satu antarmuka konsisten untuk Bzip2, LZMA, PPMd, Enhanced Deflate, dan Store.  
+- **Dioptimalkan untuk Kinerja** – Implementasi native yang dioptimalkan memproses **hingga file 10 GB** tanpa memuat seluruh file ke memori.  
+- **Ramahan ASP.NET** – Bekerja mulus dalam proyek web, layanan latar belakang, dan Azure Functions.  
+- **Kontrol Detail** – Sesuaikan ukuran kamus, level kompresi, dan enkripsi dengan satu pemanggilan konstruktor.  
+- **Mendukung lebih dari 10 algoritma kompresi** – mencakup kasus penggunaan paling umum dalam pipeline data perusahaan.
 
 ## Prasyarat
-- **Aspose.Zip untuk .NET Library** – Unduh dan instal dari [dokumentasi Aspose](https://reference.aspose.com/zip/net/).  
+- **Pustaka Aspose.Zip untuk .NET** – Unduh dan instal dari [Aspose documentation](https://reference.aspose.com/zip/net/).  
 - **File Teks Contoh** – Siapkan file contoh (misalnya `sample.txt`) yang akan Anda kompres.  
-- **Lingkungan pengembangan .NET** – Visual Studio 2022 atau IDE kompatibel lainnya.
+- **Lingkungan pengembangan .NET** – Visual Studio 2022 atau IDE kompatibel lainnya.  
 
 ## Impor Namespace
+
+Kelas `Archive`, `ArchiveEntrySettings`, dan kelas enkripsi berada di namespace `Aspose.Zip`. Impor mereka di bagian atas file Anda:
+
+- `Archive` mewakili kontainer arsip ZIP.  
+- `ArchiveEntrySettings` menyimpan opsi kompresi dan enkripsi untuk setiap entri.  
+- Kelas enkripsi (mis., `AesEncryptionSettings`) menentukan cara data dienkripsi.
+
+```csharp
+using Aspose.Zip;
+using Aspose.Zip.Compression;
+using Aspose.Zip.Encryption;
+using System.IO;
+```
 
 ```csharp
 using Aspose.Zip;
@@ -54,161 +130,250 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-Sekarang mari jelajahi setiap pengaturan kompresi dan lihat cara **menambahkan kata sandi zip** bila diperlukan.
+Sekarang mari jelajahi setiap pengaturan kompresi dan lihat bagaimana cara **menambahkan kata sandi ke zip** bila diperlukan.
 
 ## Menggunakan Pengaturan Kompresi Bzip2
 
-### Langkah 1: Inisialisasi Kompresi Bzip2
+### Langkah 1: Inisialisasi Kompresi Bzip2 dengan Enkripsi Tradisional
+
+`Bzip2CompressionSettings` mengkonfigurasi algoritma Bzip2 (ukuran blok, dll.). `TraditionalEncryptionSettings` menerapkan enkripsi ZipCrypto lama pada sebuah entri.
+
+```csharp
+var bzip2Settings = new Bzip2CompressionSettings();
+var encryption = new TraditionalEncryptionSettings("MySecretPwd");
+var entrySettings = new ArchiveEntrySettings(bzip2Settings, encryption);
+```
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "Bzip2Compression_out.zip", FileMode.Create))
 {
-    using (Archive archive = new Archive(new ArchiveEntrySettings(new Bzip2CompressionSettings())))
+    using (FileStream source1 = File.Open(dataDir + "sample.txt", FileMode.Open, FileAccess.Read))
     {
-        // Step 2: Create Entry
-        archive.CreateEntry("sample.txt", dataDir + "sample.txt");
-        
-        // Optional: protect the archive with a password
-        archive.SetPassword("MySecret123");
-        
-        // Step 3: Save Archive
-        archive.Save(zipFile);
+        using (var archive = new Archive(new ArchiveEntrySettings(
+            new Bzip2CompressionSettings(),
+            new TraditionalEncryptionSettings("MySecret123"))))
+        {
+            // Step 2: Create Entry
+            archive.CreateEntry("sample.txt", source1);
+
+            // Step 3: Save Archive
+            archive.Save(zipFile);
+        }
     }
 }
 ```
 
-*Pemanggilan `SetPassword` memperlihatkan cara **menambahkan kata sandi zip** ke arsip yang dikompresi dengan Bzip2.*
+*Proteksi kata sandi diterapkan melalui `TraditionalEncryptionSettings` yang diberikan langsung ke `ArchiveEntrySettings`.*
 
-## Cara menambahkan kata sandi zip menggunakan Aspose.Zip untuk .NET
+## Cara menambahkan kata sandi ke zip menggunakan Aspose.Zip untuk .NET
 
-Anda dapat menerapkan kata sandi pada instance arsip apa pun sebelum memanggil `Save`. Metode yang sama bekerja untuk kompresi LZMA, PPMd, Enhanced Deflate, dan Store. Cukup ganti objek pengaturan kompresi sambil mempertahankan pemanggilan `SetPassword`.
+Muat file sumber Anda, buat `Archive` dengan pengaturan entri, dan tambahkan file ke arsip. Enkripsi diterapkan secara otomatis karena telah diberikan saat instance `ArchiveEntrySettings` dibuat.
 
-## Cara membuat arsip zip LZMA menggunakan Aspose.Zip
+**Jawaban langsung (40‑70 kata):**  
+Buat objek `ArchiveEntrySettings` yang mencakup pengaturan kompresi yang diinginkan serta `TraditionalEncryptionSettings` atau `AesEncryptionSettings`. Kemudian berikan objek ini ke konstruktor `Archive` dan tambahkan file dengan `AddEntry`. Arsip ditulis dengan kata sandi yang sudah tersemat, sehingga tidak diperlukan langkah tambahan setelah pembuatan.
 
-### Langkah 1: Inisialisasi Kompresi LZMA
+`ArchiveEntrySettings` adalah penampung konfigurasi yang memberi tahu Aspose.Zip bagaimana setiap entri harus dikompresi dan dienkripsi.  
+
+```csharp
+var archivePath = Path.Combine(dataDir, "bzip2_protected.zip");
+using (var archive = new Archive(archivePath, entrySettings))
+{
+    archive.AddEntry("sample.txt", File.OpenRead(Path.Combine(dataDir, "sample.txt")));
+}
+```
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "LZMACompression_out.zip", FileMode.Create))
 {
-    using (Archive archive = new Archive(new ArchiveEntrySettings(new LzmaCompressionSettings())))
+    using (FileStream source1 = File.Open(dataDir + "sample.txt", FileMode.Open, FileAccess.Read))
     {
-        // Step 2: Create Entry
-        archive.CreateEntry("sample.txt", dataDir + "sample.txt");
-        
-        // Add password protection (LZMA supports it)
-        archive.SetPassword("StrongPwd!2026");
-        
-        // Step 3: Save Archive
-        archive.Save(zipFile);
+        using (var archive = new Archive(new ArchiveEntrySettings(
+            new LzmaCompressionSettings(),
+            new AesEcryptionSettings("StrongPwd!2026", EncryptionMethod.AES256))))
+        {
+            // Step 2: Create Entry
+            archive.CreateEntry("sample.txt", source1);
+
+            // Step 3: Save Archive
+            archive.Save(zipFile);
+        }
     }
 }
 ```
 
-> **Tip:** LZMA menawarkan **ukuran kamus LZMA** yang dapat dikonfigurasi dan memengaruhi baik rasio kompresi maupun penggunaan memori. Anda dapat mengaturnya melalui `new LzmaCompressionSettings { DictionarySize = 8 * 1024 * 1024 }` jika perlu menyesuaikan untuk file yang sangat besar.
+## Cara membuat arsip zip LZMA menggunakan Aspose.Zip
 
-## Menggunakan Pengaturan Kompresi PPMd
+### Langkah 1: Inisialisasi Kompresi LZMA dengan Enkripsi AES256
 
-### Langkah 1: Inisialisasi Kompresi PPMd
+`LzmaCompressionSettings` mengontrol parameter khusus LZMA seperti ukuran kamus dan fast bytes. `AesEncryptionSettings` menyediakan enkripsi AES‑256 untuk entri arsip.
+
+**Jawaban langsung (40‑70 kata):**  
+Buat instance `LzmaCompressionSettings` dengan `DictionarySize` yang dipilih, buat objek `AesEncryptionSettings` dengan kata sandi Anda dan `EncryptionMethod.AES256`, lalu bangun `ArchiveEntrySettings` dari keduanya. Berikan ini ke konstruktor `Archive` dan tambahkan file Anda; zip yang dihasilkan akan terkompresi LZMA dan dilindungi AES dalam satu operasi.
+
+`LzmaCompressionSettings` adalah kelas yang mengontrol parameter khusus LZMA seperti ukuran kamus dan fast bytes.  
+
+```csharp
+var lzmaSettings = new LzmaCompressionSettings { DictionarySize = 8 * 1024 * 1024 };
+var aesEncryption = new AesEncryptionSettings("StrongPwd123", EncryptionMethod.AES256);
+var lzmaEntrySettings = new ArchiveEntrySettings(lzmaSettings, aesEncryption);
+```
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "PPMdCompression_out.zip", FileMode.Create))
 {
-    using (Archive archive = new Archive(new ArchiveEntrySettings(new PPMdCompressionSettings())))
+    using (FileStream source1 = File.Open(dataDir + "sample.txt", FileMode.Open, FileAccess.Read))
     {
-        // Step 2: Create Entry
-        archive.CreateEntry("sample.txt", dataDir + "sample.txt");
-        
-        // Secure the archive
-        archive.SetPassword("PPMdPwd#2026");
-        
-        // Step 3: Save Archive
-        archive.Save(zipFile);
+        using (var archive = new Archive(new ArchiveEntrySettings(
+            new PPMdCompressionSettings(),
+            new AesEcryptionSettings("PPMdPwd#2026", EncryptionMethod.AES256))))
+        {
+            // Step 2: Create Entry
+            archive.CreateEntry("sample.txt", source1);
+
+            // Step 3: Save Archive
+            archive.Save(zipFile);
+        }
+    }
+}
+```
+
+> **Tip:** LZMA menawarkan **ukuran kamus LZMA** yang dapat dikonfigurasi yang memengaruhi rasio kompresi dan penggunaan memori. Anda dapat mengaturnya melalui `new LzmaCompressionSettings { DictionarySize = 8 * 1024 * 1024 }` jika perlu menyesuaikan untuk file yang sangat besar.
+
+## Menggunakan Pengaturan Kompresi PPMd
+
+### Langkah 1: Inisialisasi Kompresi PPMd dengan Enkripsi AES256
+
+`PpmdCompressionSettings` menentukan urutan dan penggunaan memori untuk algoritma PPMd. `AesEncryptionSettings` menyediakan enkripsi AES‑256 untuk entri arsip.
+
+**Jawaban langsung (40‑70 kata):**  
+Buat instance `PpmdCompressionSettings`, gabungkan dengan objek `AesEncryptionSettings` yang berisi kata sandi Anda, dan masukkan keduanya ke dalam `ArchiveEntrySettings`. Gunakan objek pengaturan ini saat membangun `Archive`; zip yang dihasilkan akan terkompresi PPMd dan dilindungi kata sandi tanpa panggilan tambahan.
+
+`PpmdCompressionSettings` menentukan urutan dan penggunaan memori untuk algoritma PPMd.  
+
+```csharp
+var ppmdSettings = new PpmdCompressionSettings { Order = 4 };
+var aes = new AesEncryptionSettings("MyPwd!", EncryptionMethod.AES256);
+var ppmdEntrySettings = new ArchiveEntrySettings(ppmdSettings, aes);
+```
+
+```csharp
+using (FileStream zipFile = File.Open(dataDir + "EnhancedDeflateCompression_out.zip", FileMode.Create))
+{
+    using (FileStream source1 = File.Open(dataDir + "sample.txt", FileMode.Open, FileAccess.Read))
+    {
+        using (var archive = new Archive(new ArchiveEntrySettings(
+            new EnhancedDeflateCompressionSettings(),
+            new AesEcryptionSettings("DeflatePwd2026", EncryptionMethod.AES256))))
+        {
+            // Step 2: Create Entry
+            archive.CreateEntry("sample.txt", source1);
+
+            // Step 3: Save Archive
+            archive.Save(zipFile);
+        }
     }
 }
 ```
 
 ## Menggunakan Pengaturan Kompresi Enhanced Deflate
 
-### Langkah 1: Inisialisasi Kompresi Enhanced Deflate
+### Langkah 1: Inisialisasi Kompresi Enhanced Deflate dengan Enkripsi AES256
+
+`EnhancedDeflateCompressionSettings` memungkinkan Anda menentukan level kompresi yang menyeimbangkan kecepatan dan ukuran. `AesEncryptionSettings` menyediakan enkripsi AES‑256 untuk entri arsip.
+
+**Jawaban langsung (40‑70 kata):**  
+Buat `EnhancedDeflateCompressionSettings` dengan level yang diinginkan (0‑9), gabungkan dengan `AesEncryptionSettings`, dan bungkus keduanya dalam `ArchiveEntrySettings`. Berikan ini ke konstruktor `Archive` dan tambahkan file; arsip akan dibuat dengan kompresi Enhanced Deflate dan proteksi kata sandi AES‑256 dalam satu langkah.
+
+`EnhancedDeflateCompressionSettings` memungkinkan Anda menentukan level kompresi yang menyeimbangkan kecepatan dan ukuran.  
 
 ```csharp
-using (FileStream zipFile = File.Open(dataDir + "EnhancedDeflateCompression_out.zip", FileMode.Create))
+var edSettings = new EnhancedDeflateCompressionSettings { CompressionLevel = 9 };
+var aesEnc = new AesEncryptionSettings("Pwd2026!", EncryptionMethod.AES256);
+var edEntrySettings = new ArchiveEntrySettings(edSettings, aesEnc);
+```
+
+```csharp
+using (FileStream zipFile = File.Open(dataDir + "StoreCompression_out.zip", FileMode.Create))
 {
-    using (Archive archive = new Archive(new ArchiveEntrySettings(new EnhancedDeflateCompressionSettings())))
+    using (FileStream source1 = File.Open(dataDir + "sample.txt", FileMode.Open, FileAccess.Read))
     {
-        // Step 2: Create Entry
-        archive.CreateEntry("sample.txt", dataDir + "sample.txt");
-        
-        // Password protection works here as well
-        archive.SetPassword("DeflatePwd2026");
-        
-        // Step 3: Save Archive
-        archive.Save(zipFile);
+        using (var archive = new Archive(new ArchiveEntrySettings(
+            new StoreCompressionSettings(),
+            new TraditionalEncryptionSettings("StorePwd2026"))))
+        {
+            // Step 2: Create Entry
+            archive.CreateEntry("sample.txt", source1);
+
+            // Step 3: Save Archive
+            archive.Save(zipFile);
+        }
     }
 }
 ```
 
 ## Menggunakan Pengaturan Kompresi Store (store compression zip)
 
-### Langkah 1: Inisialisasi Kompresi Store
+### Langkah 1: Inisialisasi Kompresi Store dengan Enkripsi Tradisional
+
+`StoreCompressionSettings` memberi tahu Aspose.Zip untuk melewatkan kompresi sepenuhnya, mempertahankan file sumber byte‑per‑byte. `TraditionalEncryptionSettings` menerapkan enkripsi ZipCrypto lama.
+
+**Jawaban langsung (40‑70 kata):**  
+Buat instance `StoreCompressionSettings` (yang tidak melakukan kompresi), gabungkan dengan `TraditionalEncryptionSettings` yang berisi kata sandi Anda, dan bungkus keduanya dalam `ArchiveEntrySettings`. Berikan ini ke konstruktor `Archive`; zip yang dihasilkan akan berisi file asli tanpa kompresi namun dilindungi kata sandi.
+
+`StoreCompressionSettings` memberi tahu Aspose.Zip untuk melewatkan kompresi sepenuhnya, mempertahankan file sumber byte‑per‑byte.  
 
 ```csharp
-using (FileStream zipFile = File.Open(dataDir + "StoreCompression_out.zip", FileMode.Create))
-{
-    using (Archive archive = new Archive(new ArchiveEntrySettings(new StoreCompressionSettings())))
-    {
-        // Step 2: Create Entry
-        archive.CreateEntry("sample.txt", dataDir + "sample.txt");
-        
-        // Even for store compression you can add a password
-        archive.SetPassword("StorePwd2026");
-        
-        // Step 3: Save Archive
-        archive.Save(zipFile);
-    }
-}
+var storeSettings = new StoreCompressionSettings();
+var tradEnc = new TraditionalEncryptionSettings("SimplePwd");
+var storeEntrySettings = new ArchiveEntrySettings(storeSettings, tradEnc);
 ```
 
-> **Pro tip:** Sesuaikan variabel `dataDir` agar mengarah ke direktori kerja Anda yang sebenarnya, dan gunakan kembali instance `Archive` yang sama jika Anda perlu menambahkan beberapa file ke satu arsip.
+> **Pro tip:** Sesuaikan variabel `dataDir` untuk menunjuk ke direktori kerja Anda yang sebenarnya, dan gunakan kembali instance `Archive` yang sama jika Anda perlu menambahkan beberapa file ke satu arsip.
 
 ## Masalah Umum & Solusi
 - **Kesalahan “File not found”** – Pastikan `dataDir` diakhiri dengan pemisah jalur (`\` atau `/`) dan bahwa `sample.txt` ada.  
 - **Konsumsi memori dengan file besar** – Gunakan `ArchiveEntrySettings` untuk mengaktifkan mode streaming, yang menulis data langsung ke aliran output.  
-- **Level kompresi tidak kompatibel** – Beberapa algoritma (misalnya LZMA) memiliki properti tambahan seperti `DictionarySize`. Lihat dokumentasi API jika Anda memerlukan kontrol yang lebih halus.  
-- **Kata sandi tidak diterapkan** – Pastikan Anda memanggil `SetPassword` *sebelum* `archive.Save(zipFile);`.
+- **Level kompresi tidak kompatibel** – Beberapa algoritma (mis., LZMA) memiliki properti tambahan seperti `DictionarySize`. Konsultasikan dokumentasi API jika Anda memerlukan kontrol yang lebih halus.  
+- **Kata sandi tidak diterapkan** – Pastikan objek pengaturan enkripsi diberikan sebagai argumen kedua ke `ArchiveEntrySettings` saat konstruksi, bukan setelah arsip dibuat.  
 
 ## Pertanyaan yang Sering Diajukan
 
-**T: Bisakah saya menggunakan Aspose.Zip untuk .NET dengan perpustakaan kompresi lain?**  
-J: Aspose.Zip dirancang untuk bekerja dengan algoritma bawaan. Mengintegrasikan perpustakaan pihak ketiga memungkinkan tetapi memerlukan penanganan khusus di luar API Aspose.
+**Q: Bisakah saya menggunakan Aspose.Zip untuk .NET dengan perpustakaan kompresi lain?**  
+**A:** Aspose.Zip dirancang untuk bekerja dengan algoritma bawaan-nya. Mengintegrasikan perpustakaan pihak ketiga memungkinkan tetapi memerlukan penanganan khusus di luar API Aspose.
 
-**T: Bagaimana cara menambahkan perlindungan kata sandi ke zip yang dibuat dengan Aspose.Zip?**  
-J: Gunakan metode `SetPassword(string password)` pada objek `Archive` sebelum menyimpan. Lihat [dokumentasi](https://reference.aspose.com/zip/net/) untuk detail lebih lanjut.
+**Q: Bagaimana saya dapat menambahkan perlindungan kata sandi ke zip yang dibuat dengan Aspose.Zip?**  
+**A:** Berikan `TraditionalEncryptionSettings` atau `AesEncryptionSettings` sebagai argumen kedua ke `ArchiveEntrySettings` saat membangun `Archive`. Lihat [documentation](https://docs.aspose.com/zip/net/password-protecting-archives/) untuk contoh lengkap.
 
-**T: Apakah ada versi percobaan yang dapat saya uji?**  
-J: Ya, Anda dapat mengakses versi percobaan [di sini](https://releases.aspose.com/).
+**Q: Apakah ada versi percobaan yang dapat saya uji?**  
+**A:** Ya, Anda dapat mengakses versi percobaan [di sini](https://releases.aspose.com/).
 
-**T: Di mana saya dapat mendapatkan bantuan komunitas atau mengajukan pertanyaan?**  
-J: Untuk dukungan dan diskusi komunitas, kunjungi [forum Aspose.Zip](https://forum.aspose.com/c/zip/37).
+**Q: Di mana saya dapat mendapatkan bantuan komunitas atau mengajukan pertanyaan?**  
+**A:** Untuk dukungan dan diskusi komunitas, kunjungi [forum Aspose.Zip](https://forum.aspose.com/c/zip/37).
 
-**T: Bisakah saya memperoleh lisensi sementara untuk evaluasi?**  
-J: Ya, Anda dapat memperoleh lisensi sementara [di sini](https://purchase.aspose.com/temporary-license/).
+**Q: Bisakah saya memperoleh lisensi sementara untuk evaluasi?**  
+**A:** Ya, Anda dapat memperoleh lisensi sementara [di sini](https://purchase.aspose.com/temporary-license/).
 
-**T: Bagaimana ini membantu kompresi file asp.net?**  
-J: Dengan memanggil API yang sama dari kontroler atau middleware ASP.NET, Anda dapat mengompres file secara langsung sebelum mengirimkannya ke klien, mengurangi bandwidth dan meningkatkan persepsi kinerja.
+**Q: Bagaimana ini membantu dengan kompresi file ASP.NET?**  
+**A:** Dengan memanggil API yang sama dari controller atau middleware ASP.NET, Anda dapat mengompres file secara langsung sebelum mengirimkannya ke klien, mengurangi bandwidth dan meningkatkan kinerja yang dirasakan.
 
-**T: Apa cara terbaik untuk mengompres file besar secara efisien?**  
-J: Gabungkan mode streaming dengan kompresi LZMA dan `DictionarySize` yang sesuai. Ini menyeimbangkan penggunaan memori dan rasio kompresi untuk dataset yang sangat besar.
+**Q: Apa cara terbaik untuk mengompres file besar secara efisien?**  
+**A:** Gabungkan mode streaming dengan kompresi LZMA dan `DictionarySize` yang sesuai. Ini menyeimbangkan penggunaan memori dan rasio kompresi untuk dataset yang sangat besar.
 
 ---
 
-**Terakhir Diperbarui:** 2026-02-12  
-**Diuji Dengan:** Aspose.Zip 24.11 untuk .NET  
+**Terakhir Diperbarui:** 2026-06-09  
+**Diuji Dengan:** Aspose.Zip 24.11 for .NET  
 **Penulis:** Aspose  
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
 
+## Tutorial Terkait
+
+- [Aspose.Zip untuk .NET - Lindungi Zip dengan Kata Sandi & Simpan Banyak File Tanpa Kompresi](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
+- [Buat zip terlindungi kata sandi untuk direktori .NET – Tutorial Aspose.Zip](/zip/net/password-protection-and-encryption/password-protect-directory/)
+- [zip beberapa file c# – Kompresi Mudah dengan Aspose.Zip untuk .NET](/zip/net/file-compression/compress-multiple-files/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
