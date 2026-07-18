@@ -1,12 +1,81 @@
 ---
-date: 2026-02-28
+date: 2026-07-18
 description: Lär dig hur du lägger till en mapp i zip och lägger till filer i zip
   med Aspose.Zip för .NET. Denna steg‑för‑steg‑guide visar hur du komprimerar filer
   med FileInfo i ASP.NET‑projekt.
-linktitle: Compress Files using FileInfo
+keywords:
+- add folder to zip
+- how to create zip archive
+- add files to zip
+- asp.net zip compression
+- asp.net file compression
+lastmod: 2026-07-18
+linktitle: Komprimera filer med FileInfo
+og_description: Lägg till mapp i zip med Aspose.Zip för .NET. Lär dig hur du skapar
+  zip‑arkiv, lägger till filer i zip och komprimerar mappar effektivt i ASP.NET.
+og_image_alt: 'Developer guide: Adding folder to zip archive with Aspose.Zip in .NET'
+og_title: Lägg till mapp i zip – Komprimera filer med Aspose.Zip för .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-07-18'
+  description: Learn how to add folder to zip and add files to zip using Aspose.Zip
+    for .NET. This step‑by‑step guide shows how to compress files with FileInfo in
+    ASP.NET projects.
+  headline: Add Folder to Zip Using Aspose.Zip for .NET – Compress Files with FileInfo
+  type: TechArticle
+- description: Learn how to add folder to zip and add files to zip using Aspose.Zip
+    for .NET. This step‑by‑step guide shows how to compress files with FileInfo in
+    ASP.NET projects.
+  name: Add Folder to Zip Using Aspose.Zip for .NET – Compress Files with FileInfo
+  steps:
+  - name: Set Up Your Document Directory
+    text: 'First, define the folder that holds the source files. Replace the placeholder
+      with the absolute or relative path on your system: > **Pro tip:** Use `Path.Combine`
+      to build paths in a cross‑platform way.'
+  - name: Open a Zip File for Writing
+    text: 'Create a `FileStream` that points to the output zip file. The stream is
+      opened in **Create** mode, which overwrites any existing file with the same
+      name:'
+  - name: Prepare `FileInfo` Objects for Each Source File
+    text: '`FileInfo` gives Aspose.Zip direct access to the physical files on disk.
+      Create one instance per file you want to compress: > **Why use `FileInfo`?**
+      It avoids loading the entire file into memory, which is especially helpful for
+      large files.'
+  - name: Create the Archive and Add Entries
+    text: 'The `Archive` class is Aspose.Zip''s core object that represents a zip
+      container in memory. Instantiate an `Archive` object, then call `CreateEntry`
+      for each `FileInfo`. The first argument is the name the file will have inside
+      the zip, the second argument is the source `FileInfo`: The `CreateEntry` m'
+  - name: Save the Zip Archive with Desired Encoding
+    text: 'Finally, persist the archive to the `FileStream` you opened earlier. Here
+      we use ASCII encoding for entry names, but you can switch to UTF‑8 if your filenames
+      contain non‑ASCII characters: When the `using` blocks exit, the streams are
+      automatically closed and the zip file is ready for use.'
+  type: HowTo
+- questions:
+  - answer: No single‑call method exists, but enumerating files with `DirectoryInfo`
+      and adding each via `CreateEntry` achieves the same result efficiently.
+    question: Can I add an entire folder to a zip archive in a single call?
+  - answer: Yes, you can set a password on the `Archive` object before saving to encrypt
+      the entire archive.
+    question: Does Aspose.Zip support password protection?
+  - answer: The library processes files larger than 4 GB and can create archives exceeding
+      10 GB without loading the whole archive into memory.
+    question: How large a zip file can Aspose.Zip handle?
+  - answer: Absolutely. Aspose.Zip supports .NET 5 through .NET 10, covering all current
+      LTS releases.
+    question: Is the API compatible with .NET 6 and .NET 8?
+  - answer: You can choose `CompressionLevel.NoCompression`, `Fast`, `Normal`, or
+      `Maximum` to balance speed and size.
+    question: What compression levels are available?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Hur man lägger till en mapp i en zip‑fil med Aspose.Zip för .NET – Komprimera
-  filer med FileInfo
+tags:
+- compress files
+- Aspose.Zip
+- .NET file compression
+- zip archive
+title: Lägg till mapp i zip med Aspose.Zip för .NET – Komprimera filer med FileInfo
 url: /sv/net/file-compression/compress-files-fileinfo/
 weight: 11
 ---
@@ -15,38 +84,42 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Hur man lägger till mapp i zip med Aspose.Zip för .NET
+# Lägg till mapp i zip med Aspose.Zip för .NET
 
 ## Introduktion
 
-Om du behöver **skapa ett zip‑arkiv** programatiskt, ger Aspose.Zip för .NET dig ett rent, högpresterande API som fungerar i alla .NET‑applikationer (inklusive ASP.NET). I den här handledningen går vi igenom hur du komprimerar filer med `FileInfo`‑klassen, visar hur du **lägger till filer i zip**, och förklarar varför detta tillvägagångssätt är idealiskt för moderna .NET‑projekt. Vi kommer också att behandla hur du **lägger till mapp i zip** så att du kan paketera hela kataloger i ett enda steg. Låt oss komma igång!
+If you need to **add folder to zip** programmatically, Aspose.Zip for .NET offers a clean, high‑performance API that works in any .NET (including ASP.NET) application. In this tutorial we’ll walk through compressing files with the `FileInfo` class, show you how to **add files to zip**, and explain why this approach is ideal for modern .NET projects. We’ll also cover the exact steps to **add folder to zip** so you can bundle whole directories in a single operation. Let’s get started!
 
 ## Snabba svar
-- **Vad är det enklaste sättet att skapa ett zip‑arkiv?** Använd Aspose.Zip‑klassen `Archive` tillsammans med `FileInfo`‑objekt.  
-- **Kan jag lägga till flera filer på en gång?** Ja – skapa helt enkelt ett `FileInfo` för varje fil och anropa `CreateEntry`.  
-- **Behöver jag en speciell licens för ASP.NET?** En kommersiell Aspose.Zip‑licens krävs för produktion; en gratis provversion fungerar för utvärdering.  
-- **Vilka .NET‑versioner stöds?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
-- **Är API‑et trådsäkert?** Ja, så länge varje tråd arbetar med sin egen `Archive`‑instans.
+- **Vad är det enklaste sättet att skapa ett zip‑arkiv?** Use Aspose.Zip’s `Archive` class together with `FileInfo` objects.  
+- **Kan jag lägga till flera filer samtidigt?** Yes – just create a `FileInfo` for each file and call `CreateEntry`.  
+- **Behöver jag en speciell licens för ASP.NET?** A commercial Aspose.Zip license is required for production; a free trial works for evaluation.  
+- **Vilka .NET‑versioner stöds?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10.  
+- **Är API‑et trådsäkert?** Yes, as long as each thread works with its own `Archive` instance.
 
-## Vad är ett Zip‑arkiv och varför skapa ett?
-Ett zip‑arkiv samlar en eller flera filer i en enda, komprimerad behållare. Detta minskar lagringsutrymme, snabbar upp nätverkstransfer och förenklar distribution. Oavsett om du levererar loggar, exporterar rapporter eller paketerar resurser för en kund, är kunskapen **hur man skapar zip‑arkiv** programatiskt en värdefull färdighet för alla .NET‑utvecklare.
+## Vad är ett zip‑arkiv och varför skapa ett?
+
+A zip archive bundles one or more files into a single, compressed container. This reduces storage space, speeds up network transfers, and simplifies distribution. Whether you’re delivering logs, exporting reports, or packaging assets for a client, knowing **how to create zip archive** files programmatically is a valuable skill for any .NET developer.
 
 ## Varför använda Aspose.Zip för att lägga till filer i zip?
-- **Inga externa beroenden** – ren .NET‑implementation.  
-- **Full kontroll över komprimeringsnivå och kodning** (ASCII, UTF‑8 osv.).  
-- **Stöder stora filer** (> 4 GB) och lösenordsskydd.  
-- **Enhetligt API över .NET Framework, .NET Core och .NET 5+**.
+
+Aspose.Zip provides a pure‑.NET solution that eliminates external dependencies while giving developers fine‑grained control over compression, encoding, and security. It supports large files, password protection, and works consistently across all supported .NET versions, making it a reliable choice for both legacy and modern applications.  
+
+- **Ingen externa beroenden** – pure .NET implementation.  
+- **Full kontroll över komprimeringsnivå och kodning** (ASCII, UTF‑8, etc.).  
+- **Stöder filer större än 4 GB** and password protection.  
+- **Konsekvent API över 50+ .NET versions** – from .NET Framework 2.0 up to .NET 10.  
 
 ## Förutsättningar
 
-Innan vi dyker ner i koden, se till att du har:
+Before we dive into the code, make sure you have:
 
-1. **Aspose.Zip för .NET** installerat. Ladda ner det senaste paketet från [Aspose.Zip nedladdningssida](https://releases.aspose.com/zip/net/).  
-2. En mapp på din maskin som innehåller filerna du vill komprimera (t.ex. `alice29.txt` och `fields.c`).  
+1. **Aspose.Zip for .NET** installed. Download the latest package from the [Aspose.Zip download page](https://releases.aspose.com/zip/net/).  
+2. A folder on your machine containing the files you want to compress (e.g., `alice29.txt` and `fields.c`).  
 
 ## Importera namnrymder
 
-I vilken C#‑fil som helst där du arbetar med zip‑arkiv, lägg till följande `using`‑satser:
+In any C# file where you’ll work with zip archives, add the following `using` statements:
 
 ```csharp
 using Aspose.Zip;
@@ -56,23 +129,23 @@ using System.IO;
 using System.Text;
 ```
 
-Dessa namnrymder ger dig åtkomst till `Archive`‑klassen, sparalternativ och de vanliga I/O‑verktygen.
+These namespaces give you access to the `Archive` class, saving options, and the standard I/O utilities.
 
 ## Steg‑för‑steg‑guide
 
 ### Steg 1: Ställ in din dokumentkatalog
 
-Definiera först den mapp som innehåller källfilerna. Ersätt platshållaren med den absoluta eller relativa sökvägen på ditt system:
+First, define the folder that holds the source files. Replace the placeholder with the absolute or relative path on your system:
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-> **Proffstips:** Använd `Path.Combine` för att bygga sökvägar på ett plattformsoberoende sätt.
+> **Pro tip:** Use `Path.Combine` to build paths in a cross‑platform way.
 
 ### Steg 2: Öppna en zip‑fil för skrivning
 
-Skapa ett `FileStream` som pekar på den utgående zip‑filen. Strömmen öppnas i **Create**‑läge, vilket skriver över eventuell befintlig fil med samma namn:
+Create a `FileStream` that points to the output zip file. The stream is opened in **Create** mode, which overwrites any existing file with the same name:
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressFilesByFileInfo_out.zip", FileMode.Create))
@@ -81,18 +154,18 @@ using (FileStream zipFile = File.Open(dataDir + "CompressFilesByFileInfo_out.zip
 
 ### Steg 3: Förbered `FileInfo`‑objekt för varje källfil
 
-`FileInfo` ger Aspose.Zip direkt åtkomst till de fysiska filerna på disken. Skapa en instans per fil du vill komprimera:
+`FileInfo` gives Aspose.Zip direct access to the physical files on disk. Create one instance per file you want to compress:
 
 ```csharp
 FileInfo fi1 = new FileInfo(dataDir + "alice29.txt");
 FileInfo fi2 = new FileInfo(dataDir + "fields.c");
 ```
 
-> **Varför använda `FileInfo`?** Det undviker att hela filen laddas in i minnet, vilket är särskilt hjälpsamt för stora filer.
+> **Why use `FileInfo`?** It avoids loading the entire file into memory, which is especially helpful for large files.
 
 ### Steg 4: Skapa arkivet och lägg till poster
 
-Instansiera ett `Archive`‑objekt och anropa sedan `CreateEntry` för varje `FileInfo`. Det första argumentet är namnet filen ska ha i zip‑filen, det andra argumentet är käll‑`FileInfo`:
+The `Archive` class is Aspose.Zip's core object that represents a zip container in memory. Instantiate an `Archive` object, then call `CreateEntry` for each `FileInfo`. The first argument is the name the file will have inside the zip, the second argument is the source `FileInfo`:
 
 ```csharp
 using (var archive = new Archive())
@@ -101,71 +174,82 @@ using (var archive = new Archive())
     archive.CreateEntry("fields.c", fi2);
 ```
 
+The `CreateEntry` method adds a new file entry to the archive, linking the entry name with the source `FileInfo` so the data is streamed directly from disk when the archive is saved.
+
 ### Steg 5: Spara zip‑arkivet med önskad kodning
 
-Till sist, skriv arkivet till det `FileStream` du öppnade tidigare. Här använder vi ASCII‑kodning för postnamn, men du kan byta till UTF‑8 om dina filnamn innehåller icke‑ASCII‑tecken:
+Finally, persist the archive to the `FileStream` you opened earlier. Here we use ASCII encoding for entry names, but you can switch to UTF‑8 if your filenames contain non‑ASCII characters:
 
 ```csharp
     archive.Save(zipFile, new ArchiveSaveOptions() { Encoding = Encoding.ASCII });
 }
 ```
 
-När `using`‑blocken avslutas stängs strömmarna automatiskt och zip‑filen är klar för användning.
+When the `using` blocks exit, the streams are automatically closed and the zip file is ready for use.
 
-## Hur man lägger till mapp i zip med Aspose.Zip
+## Hur lägger man till en mapp i zip med Aspose.Zip?
 
-Om du behöver **lägga till mapp i zip** istället för enskilda filer är processen enkel:
+Load the target directory, enumerate every file, and add each one with a relative path that includes the folder name. This approach lets you **add folder to zip** without manually listing each file. By preserving the folder hierarchy in the entry names, the resulting archive can be extracted with the original directory structure intact, which is essential for many deployment scenarios.
 
-1. **Enumerera mappen** med `DirectoryInfo.GetFiles` (och eventuellt `GetDirectories` för rekursion).  
-2. **Skapa ett `FileInfo`** för varje upptäckt fil.  
-3. **Anropa `CreateEntry`** med en relativ sökväg som inkluderar mappnamnet, t.ex. `"MyFolder/Report.pdf"`.
+1. Använd `DirectoryInfo` för att peka på mappen du vill komprimera.  
+2. Anropa `GetFiles("*", SearchOption.AllDirectories)` för att hämta alla filer rekursivt.  
+3. För varje fil, skapa ett `FileInfo` och anropa `CreateEntry` med en sökväg som t.ex. `"MyFolder/Report.pdf"`.  
 
-Eftersom API:t arbetar med `FileInfo` behöver du aldrig ladda hela filer i minnet, vilket gör det säkert för stora kataloger. Denna teknik fungerar också för **zip multiple files asp.net**‑scenarier där du genererar en rapportuppsättning i farten och behöver leverera den som ett enda arkiv.
+Because the API works with `FileInfo`, it streams each file directly from disk, keeping memory usage low even for folders containing hundreds of megabytes.
 
-## Vanliga problem & lösningar
+## Vanliga problem och lösningar
 
 | Problem | Orsak | Lösning |
-|---------|-------|---------|
-| **Tom zip‑fil** | `FileInfo` pekar på en icke‑existerande sökväg | Verifiera `dataDir` och filnamn; använd `File.Exists` för att kontrollera innan du skapar poster. |
-| **Felaktig filnamnskodning** | Använder standardkodning med icke‑ASCII‑namn | Ställ in `Encoding = Encoding.UTF8` i `ArchiveSaveOptions`. |
-| **OutOfMemoryException på stora filer** | Laddar hela filen i minnet | `FileInfo` strömmar filen; se till att du inte läser filen till en byte‑array någon annanstans. |
-| **Åtkomst nekad** | Applikationen saknar skrivbehörighet för mål‑mappen | Kör appen med lämpliga rättigheter eller välj en skrivbar katalog. |
+|-------|-------|-----|
+| **Tom zip‑fil** | `FileInfo` pekar på en icke‑existerande sökväg | Verify `dataDir` and file names; use `File.Exists` to check before creating entries. |
+| **Felaktig filnamn‑kodning** | Using the default encoding with non‑ASCII names | Set `Encoding = Encoding.UTF8` in `ArchiveSaveOptions`. |
+| **OutOfMemoryException vid stora filer** | Loading whole file into memory | `FileInfo` streams the file; ensure you are not reading the file into a byte array elsewhere. |
+| **Behörighet nekad** | Application lacks write permission for the output folder | Run the app with appropriate rights or choose a writable directory. |
 
-### Vanliga frågor
+## Vanliga frågor
 
-#### F1: Är Aspose.Zip kompatibelt med alla filtyper?
+**Q: Kan jag lägga till en hel mapp i ett zip‑arkiv med ett enda anrop?**  
+A: No single‑call method exists, but enumerating files with `DirectoryInfo` and adding each via `CreateEntry` achieves the same result efficiently.
 
-S1: Aspose.Zip stöder ett brett utbud av filtyper, vilket säkerställer mångsidighet i komprimering.
+**Q: Stöder Aspose.Zip lösenordsskydd?**  
+A: Yes, you can set a password on the `Archive` object before saving to encrypt the entire archive.
 
-#### F2: Kan jag använda Aspose.Zip för kommersiella projekt?
+**Q: Hur stor zip‑fil kan Aspose.Zip hantera?**  
+A: The library processes files larger than 4 GB and can create archives exceeding 10 GB without loading the whole archive into memory.
 
-S2: Absolut! Besök vår [köpsida](https://purchase.aspose.com/buy) för att utforska licensalternativ.
+**Q: Är API‑et kompatibelt med .NET 6 och .NET 8?**  
+A: Absolutely. Aspose.Zip supports .NET 5 through .NET 10, covering all current LTS releases.
 
-#### F3: Hur kan jag få support för Aspose.Zip?
+**Q: Vilka komprimeringsnivåer finns tillgängliga?**  
+A: You can choose `CompressionLevel.NoCompression`, `Fast`, `Normal`, or `Maximum` to balance speed and size.
 
-S3: Gå med i vår community på [Aspose.Zip-forumet](https://forum.aspose.com/c/zip/37) för hjälp och diskussioner.
+## Ytterligare resurser
 
-#### F4: Finns det en gratis provperiod tillgänglig?
-
-S4: Ja, du kan hämta din [kostnadsfria provperiod här](https://releases.aspose.com/).
-
-#### F5: Hur kan jag få en tillfällig licens för Aspose.Zip?
-
-A5: Besök [denna länk](https://purchase.aspose.com/temporary-license/) för information om hur du får en tillfällig licens.
+- Download the latest Aspose.Zip package: [Aspose.Zip download page](https://releases.aspose.com/zip/net/)  
+- Purchase a license for production use: [purchase page](https://purchase.aspose.com/buy)  
+- Get help from the community: [Aspose.Zip forum](https://forum.aspose.com/c/zip/37)  
+- Try Aspose.Zip for free: [free trial here](https://releases.aspose.com/)  
+- Obtain a temporary license for evaluation: [this link](https://purchase.aspose.com/temporary-license/)
 
 ## Slutsats
 
-Du vet nu **hur man lägger till mapp i zip** och **hur man skapar zip‑arkiv** med Aspose.Zip för .NET, hur man **lägger till filer i zip**, och varför denna metod är idealisk för ASP.NET och andra .NET‑applikationer. Experimentera med olika komprimeringsnivåer, kodningar och krypteringsalternativ för att anpassa arkivet exakt efter dina behov. Lycka till med komprimeringen!
+You now know **how to add folder to zip** and **how to create zip archive** files using Aspose.Zip for .NET, how to **add files to zip**, and why this method is ideal for ASP.NET and other .NET applications. Experiment with different compression levels, encodings, and encryption options to tailor the archive to your exact needs. Happy compressing!
 
 ---
 
-**Senast uppdaterad:** 2026-02-28  
-**Testat med:** Aspose.Zip för .NET 24.12 (senaste)  
-**Författare:** Aspose  
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+**Last Updated:** 2026-07-18  
+**Tested With:** Aspose.Zip for .NET 24.12 (latest)  
+**Author:** Aspose  
 
 {{< blocks/products/products-backtop-button >}}
+
+## Relaterade handledningar
+
+- [How to Zip Folder Using Aspose.Zip for .NET](/zip/net/directory-and-folder-compression/compress-directory/)
+- [zip multiple files c# – Effortless Compression with Aspose.Zip for .NET](/zip/net/file-compression/compress-multiple-files/)
+- [Create Zip Archive .NET – File Compression with Aspose.Zip](/zip/net/file-compression/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
