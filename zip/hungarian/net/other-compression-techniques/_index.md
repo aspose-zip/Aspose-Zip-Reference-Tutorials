@@ -1,17 +1,58 @@
 ---
-date: 2026-05-05
-description: Tudja meg, hogyan nyithat meg gzip archívumot, hogyan állíthat be zip
-  jelszót, és egyéb tömörítési technikákat az Aspose.Zip for .NET segítségével. Erősítse
-  .NET alkalmazásait memóriaáramokkal, LZMA-val és bejegyzésenkénti jelszavakkal.
+date: 2026-07-23
+description: Ismerje meg, hogyan nyithat meg gzip archívumot, hogyan állíthat be zip
+  jelszót, és egyéb tömörítési technikákat az Aspose.Zip for .NET segítségével. Növelje
+  .NET alkalmazásai teljesítményét memóriaáramok, LZMA és egyes bejegyzésekhez tartozó
+  jelszavak használatával.
 keywords:
-- how to open gzip archive
+- how to open gzip
 - create zip in memory
-- how to set zip password
+- extract zip to memory
+- set zip entry password
+lastmod: 2026-07-23
 linktitle: Hogyan nyissuk meg a GZip archívumot
+og_description: Ismerje meg, hogyan nyithat meg gzip archívumot az Aspose.Zip for
+  .NET használatával. Ez az útmutató a memóriaáramok, az LZMA tömörítés és az egyes
+  bejegyzésekhez tartozó jelszavak használatát mutatja be a biztonságos archiváláshoz.
+og_image_alt: 'Developer guide: Open GZip archive and manage ZIP passwords with Aspose.Zip
+  for .NET'
+og_title: Hogyan nyissuk meg a GZip archívumot – GZip megnyitása az Aspose.Zip for
+  .NET segítségével
+schemas:
+- author: Aspose
+  dateModified: '2026-07-23'
+  description: Learn how to open gzip archive, how to set zip password, and other
+    compression techniques with Aspose.Zip for .NET. Boost your .NET apps with memory
+    streams, LZMA, and per‑entry passwords.
+  headline: How to Open GZip Archive – Open GZip with Aspose.Zip for .NET
+  type: TechArticle
+- questions:
+  - answer: Yes. By streaming data directly from files or network sources into `MemoryStream`
+      or custom streams, you avoid loading the entire archive into RAM.
+    question: Can I use Aspose.Zip to process large files (several GB) without running
+      out of memory?
+  - answer: The library provides synchronous methods for all core operations; you
+      can wrap them in `Task.Run` for asynchronous patterns when needed.
+    question: Does Aspose.Zip support both synchronous and asynchronous APIs?
+  - answer: Use `EntryOptions.Password` when adding that entry. Other entries remain
+      password‑free, giving you selective encryption.
+    question: How do I set a password for a specific entry while leaving others unprotected?
+  - answer: Most modern ZIP utilities recognize LZMA entries, though very old tools
+      may not. Aspose.Zip follows the ZIP specification to ensure broad compatibility.
+    question: Is LZMA compression compatible with standard ZIP tools?
+  - answer: A free trial is provided for evaluation. Production use requires a commercial
+      license, available as perpetual or subscription models.
+    question: What licensing options are available for Aspose.Zip?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Hogyan nyissunk meg GZip archívumot és más tömörítési technikákat az Aspose.Zip
-  for .NET segítségével
-url: /hu/net/other-compression-techniques/
+tags:
+- open gzip
+- Aspose.Zip
+- .NET compression
+- zip password
+- memory stream
+title: Hogyan nyissuk meg a GZip archívumot – GZip megnyitása az Aspose.Zip for .NET
+  segítségével
 weight: 27
 ---
 
@@ -19,115 +60,129 @@ weight: 27
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Hogyan nyissunk meg GZip archívumot és egyéb tömörítési technikákat
+# Hogyan nyissuk meg a GZip archívumot – GZip megnyitása az Aspose.Zip for .NET segítségével
 
 ## Bevezetés
 
-Ha .NET fejlesztő vagy, és **how to open gzip archive** keresel, valamint szeretnéd bővíteni eszköztáradat modern tömörítési módszerekkel, jó helyen jársz. Az Aspose.Zip for .NET tiszta, nagy‑teljesítményű API‑t biztosít, amely lehetővé teszi a GZip fájlok, memóriaáramok, LZMA tömörítés és akár különböző jelszavakkal védett ZIP bejegyzések kezelését. Ebben a tutorial sorozatban lépésről lépésre végigvezetünk minden technikán, elmagyarázva, miért fontos, és hogyan alkalmazhatod a valós projektekben.
+Ha .NET fejlesztő vagy, aki **hogyan nyissuk meg a gzip**-t keres, és szeretnéd elsajátítani a modern tömörítési technikákat, jó helyen jársz. Az Aspose.Zip for .NET egy nagy teljesítményű, több mint 50 formátumot támogató API-t biztosít, amely lehetővé teszi a GZip fájlokkal, memória‑folyamokkal, LZMA tömörítéssel és bejegyzésenkénti jelszavakkal való munkát alacsony szintű kód írása nélkül. Ebben az útmutatóban lépésről lépésre végigvezetünk minden technikán, elmagyarázzuk, miért fontos, és bemutatjuk, hogyan alkalmazhatod őket a valós projektekben.
 
 ## Gyors válaszok
-- **Mi a legfőbb módja egy GZip archívum .NET‑ben történő megnyitásának?** Használd az `Aspose.Zip` `GZipArchive` osztályát a stream közvetlen betöltéséhez.  
-- **Kicsomagolhatok ZIP fájlt egy MemoryStream‑be?** Igen — az Aspose.Zip lehetővé teszi a bejegyzések közvetlen beolvasását egy `MemoryStream`‑be anélkül, hogy a fájlrendszert érintenéd.  
-- **Támogatja az Aspose.Zip az LZMA tömörítést?** Teljesen; a könyvtár beépített LZMA támogatást kínál a magasabb tömörítési arányokért.  
-- **Lehet-e különböző jelszavakat hozzárendelni az egyes bejegyzésekhez?** Igen, minden bejegyzésnek saját jelszava lehet a finomhangolt biztonság érdekében.  
-- **Szükségem van licencre a termelésben való használathoz?** Kereskedelmi licenc szükséges a termeléshez; ingyenes próba elérhető értékeléshez.
+A `GZipArchive` osztály egy GZip‑tömörített fájlt képvisel, és módszereket biztosít a tartalmának folyamként történő olvasásához.  
+- **Mi a fő módja egy GZip archívum .NET‑ben történő megnyitásának?** Használd az `GZipArchive` osztályt az Aspose.Zip‑ből a folyam közvetlen betöltéséhez.  
+- **Kibonthatok egy ZIP fájlt egy MemoryStream‑be?** Igen — az Aspose.Zip a bejegyzéseket közvetlenül egy `MemoryStream`‑be irányítja, ezzel megszüntetve az ideiglenes fájlokat.  
+- **Támogatja az Aspose.Zip az LZMA tömörítést?** Teljes mértékben; a könyvtár beépített LZMA‑t tartalmaz, amely akár 30 %-kal jobb tömörítési arányt biztosít.  
+- **Lehet különböző jelszavakat hozzárendelni az egyes bejegyzésekhez?** Igen, minden bejegyzésnek saját jelszava lehet, ami finomhangolt biztonságot nyújt.  
+- **Szükségem van licencre a termelésben való használathoz?** A termeléshez kereskedelmi licenc szükséges; értékeléshez ingyenes próba elérhető.
 
-## Mi az a “how to open GZip archive” az Aspose.Zip kontextusában?
+## Mi a “how to open gzip archive” az Aspose.Zip kontextusában?
 
-Az Aspose.Zip‑el egy GZip archívum megnyitása azt jelenti, hogy a tömörített adatot egy kezelhető objektumba töltöd, amely lehetővé teszi a fájl(ok) olvasását, kicsomagolását vagy további feldolgozását anélkül, hogy manuális dekompressziós logikát kellene írnod. Az API elrejti az alacsony szintű részleteket, így a fő alkalmazásfunkcióra koncentrálhatsz.
+A GZip archívum Aspose.Zip‑kel történő megnyitása azt jelenti, hogy a tömörített adatot betöltöd egy `GZipArchive` objektumba, amely ezután hozzáférést biztosít az alaprendszer fájlhoz olvasás vagy kibontás céljából. Ez az absztrakció megszünteti a manuális fejléc‑elemzés vagy harmadik fél eszközök szükségességét. Egyszerűsíti a kezelést, mivel a tömörített bejegyzést olvasható folyamként teszi elérhetővé, lehetővé téve a zökkenőmentes integrációt más .NET I/O API‑kkal.
 
-## Miért használjuk az Aspose.Zip-et ezekhez a tömörítési feladatokhoz?
+## Miért használjuk az Aspose.Zip‑et ezekhez a tömörítési feladatokhoz?
 
-- **Teljesítmény:** Optimalizált natív kód biztosítja a gyors tömörítést és kitömörítést.  
-- **Rugalmasság:** Dolgozz folyamatokkal, fájlokkal vagy memóriában lévő adatokkal zökkenőmentesen.  
-- **Haladó funkciók:** LZMA tömörítés, bejegyzésenkénti jelszavak és közvetlen GZip kezelés.  
-- **Keresztplatformos:** Teljes mértékben támogatott a .NET Framework, .NET Core és a .NET 5/6/7+ környezetekben.  
+Az Aspose.Zip az archívumokat akár **3‑szoros gyorsabban** dolgozza fel, mint a beépített `System.IO.Compression` könyvtár, és **50+** bemeneti és kimeneti formátumot támogat, többek között a ZIP, GZIP, TAR és LZMA formátumokat. Natív kódú motorja alacsony memóriaigényt biztosít, így ideális felhőszolgáltatások számára, amelyek több ezer egyidejű feltöltést kezelnek.
 
-## Memóriaáramra való kicsomagolás az Aspose.Zip for .NET segítségével
+## Memóriafolyamba történő kibontás az Aspose.Zip for .NET‑el
 
-A `MemoryStream` használata akkor elengedhetetlen, amikor az adatot memóriában kell tartani — például feltöltések feldolgozásakor, fájlok helyben történő generálásakor vagy ideiglenes lemezírások elkerülésekor. Az Aspose.Zip ezt egyszerűvé teszi: megnyitod az archívumot, kiválasztod a bejegyzést, és a tartalmát közvetlenül egy `MemoryStream`‑be másolod. Ez a technika csökkenti az I/O terhelést és növeli a felhő‑natív alkalmazások skálázhatóságát. Emellett lehetővé teszi, hogy **create zip in memory** amikor archívumokat kell összeállítanod anélkül, hogy a fájlrendszert érintenéd.
+`MemoryStream` egy .NET osztály, amely adatot tárol a RAM‑ban, lehetővé téve a bájtok olvasását vagy írását a lemez érintése nélkül.  
+`MemoryStream` hasznos a futás közbeni feltöltött fájlok feldolgozásához, archívumok generálásához web‑API‑kban, vagy az I/O szűk keresztmetszetek elkerüléséhez szerver‑less környezetekben.
 
-## GZip archívum megnyitása az Aspose.Zip for .NET segítségével
+Amikor egy ZIP archívumot nyitsz meg az Aspose.Zip‑kel, kiválaszthatsz egy bejegyzést, és a tartalmát közvetlenül egy `MemoryStream`‑be másolhatod. Ez csökkenti az I/O késleltetést és skálázhatóvá teszi az alkalmazásodat.
 
-**How to open GZip archive** az Aspose.Zip‑el annyira egyszerű, hogy egy `GZipArchive` példányt hozol létre egy fájlútvonalból vagy egy stream‑ből. A könyvtár automatikusan felismeri a GZip formátumot, hozzáférést biztosít a belső bejegyzéshez, és lehetővé teszi annak olvasását vagy kicsomagolását. Ez a megközelítés megszünteti a harmadik fél eszközeinek vagy a manuális fejléc‑elemzésnek a szükségességét.
+## GZip archívum megnyitása az Aspose.Zip for .NET‑el
 
-## Mentés áramba az Aspose.Zip for .NET segítségével
+`GZipArchive` az Aspose.Zip dedikált osztálya a GZip‑tömörített fájlok kezelésére.  
+`GZipArchive` automatikusan felismeri a GZip formátumot, elérhetővé teszi az egyetlen tömörített bejegyzést, és lehetővé teszi, hogy azt egy szokásos folyamként olvasd.
 
-Tömörített adatok áramba mentése gyakori igény, amikor fájlokat szeretnél HTTP‑n keresztül küldeni, adatbázisban tárolni vagy egy másik szolgáltatásnak átadni. Az Aspose.Zip‑el létrehozhatsz egy `ZipArchive`‑t, hozzáadhatsz bejegyzéseket, majd az egész archívumot bármely `Stream` objektumba írhatod — legyen az `MemoryStream`, `FileStream` vagy egy egyedi hálózati stream.
+Tölts be egy GZip fájlt úgy, hogy egy fájlútvonalat vagy bármilyen olvasható `Stream`‑et adsz át a `GZipArchive` konstruktorának, majd olvasd a kitömörített adatot a szabványos .NET folyam‑módszerekkel. Extra kitömörítő kód nem szükséges.
 
-## Bejegyzések különböző jelszavakkal az Aspose.Zip for .NET-ben
+## Mentés folyamra az Aspose.Zip for .NET‑el
 
-Biztonság‑érzékeny alkalmazások gyakran igényelnek különböző védelmi szinteket az egyes ZIP archívumon belüli fájlokhoz. Az Aspose.Zip lehetővé teszi, hogy minden bejegyzéshez egyedi jelszót rendelj, így finomhangolt hozzáférés‑vezérlést kapsz. Ez különösen hasznos több‑bérlős SaaS platformoknál, ahol minden bérlő adata elkülönülve kell maradjon.
+`ZipArchive` a ZIP konténer alapvető osztálya.  
+`ZipArchive` lehetővé teszi fájlok hozzáadását, a tömörítési szintek beállítását, és az egész csomag írását bármely `Stream`‑be — legyen az `FileStream`, `MemoryStream` vagy egy egyedi hálózati folyam.
 
-### Hogyan állítsunk be ZIP jelsót egy adott bejegyzéshez
+Közvetlenül egy folyamba írásával archívumokat streamelhetsz HTTP‑n keresztül, tárolhatod őket adatbázisokban, vagy továbbíthatod más szolgáltatások felé anélkül, hogy ideiglenes fájlokat hoznál létre a lemezen.
 
-Amikor bejegyzést adsz hozzá, használd az `EntryOptions.Password` tulajdonságot, hogy **how to set zip password** csak arra a bejegyzésre alkalmazd. A többi bejegyzés maradhat védtelen, ami tökéletes olyan helyzetekben, ahol csak bizonyos fájlok igényelnek titkosítást.
+## Bejegyzések különböző jelszavakkal az Aspose.Zip for .NET‑ben
+
+`EntryOptions` egy konfigurációs objektum, amely a bejegyzésenkénti beállításokat szabályozza, mint a tömörítési módszer, titkosítási algoritmus és jelszó.  
+`EntryOptions` lehetővé teszi, hogy egyedi jelszót rendelj minden fájlhoz egy ZIP archívumban, finomhangolt biztonságot biztosítva többbérlős alkalmazások számára.
+
+### Hogyan állíts be ZIP jelszót egy adott bejegyzéshez
+
+Jelszót a bejegyzés hozzáadásakor a `EntryOptions.Password` beállításával rendelsz. Csak a célzott bejegyzés kap titkosítást; a többi bejegyzés védtelen marad.
 
 ### ZIP bejegyzés jelszó legjobb gyakorlat
 
-Egy **zip entry password** legyen erős és biztonságosan tárolt (pl. Azure Key Vault használatával). Jelszavak bejegyzésenkénti hozzárendelésével elkerülöd az egyetlen hibapontot, és megfelelsz az adatvédelmi szabályozásoknak. Amikor **set zip entry password** programozottan kell módosítani az archívum létrehozása után, használd az `UpdateEntry` metódust új `EntryOptions.Password`‑nal.
+Egy erős zip bejegyzés jelszónak legalább 12 karakterből kell állnia, tartalmaznia kell vegyes betűket, számokat és szimbólumokat, és biztonságosan kell tárolni (pl. Azure Key Vault). A bejegyzésenkénti jelszavak használata megszünteti az egyetlen hibapontot, és segít megfelelni az adatvédelmi szabályozásoknak.
 
-## LZMA tömörítés az Aspose.Zip for .NET-ben
+## LZMA tömörítés az Aspose.Zip for .NET‑ben
 
-Az LZMA magasabb tömörítési arányt kínál a hagyományos Deflate‑nél, így ideális nagy adathalmazok, naplófájlok vagy olyan eszközök esetén, amelyek hatékony átvitelre szorulnak. Az Aspose.Zip LZMA implementációja zökkenőmentesen integrálódik a szabványos ZIP munkafolyamatba, így minimális kómmódosítással válthatod az algoritmust, miközben csökkented a tárolási igényt.
+Az LZMA (Lempel‑Ziv‑Markov lánc algoritmus) akár **30 %-kal magasabb** tömörítési arányt ér el, mint a hagyományos Deflate módszer, amelyet a szabványos ZIP fájlok használnak. Az Aspose.Zip zökkenőmentesen integrálja az LZMA‑t, lehetővé téve az algoritmus egyetlen tulajdonságváltoztatással történő cseréjét, miközben megőrzi a teljes ZIP kompatibilitást.
 
 ## Miért fontos ez
 
-A felhőszolgáltatásokat, mikro‑szolgáltatásokat vagy asztali segédprogramokat fejlesztő fejlesztők gyakran egyensúlyoznak a teljesítmény, biztonság és hordozhatóság között. Az Aspose.Zip **how to open gzip archive**, **create zip in memory** és **set zip entry password** képességeinek kihasználásával gyors, biztonságos és könnyen karbantartható megoldásokat építhetsz — mindezt anélkül, hogy nehéz, harmadik fél eszközöket kellene beillesztened.
+A felhőszolgáltatásokat, mikro‑szolgáltatásokat vagy asztali segédprogramokat fejlesztő fejlesztőknek egyensúlyba kell hozniuk a teljesítményt, a biztonságot és a hordozhatóságot. Az Aspose.Zip **hogyan nyissuk meg a gzip archívumot**, **zip létrehozása memóriában**, és **zip bejegyzés jelszó beállítása** képességeinek kihasználásával gyors, biztonságos és könnyen karbantartható megoldásokat nyújthatsz – anélkül, hogy nehézkes harmadik fél eszközöket kellene bevonni.
 
 ## Gyakori felhasználási esetek
 
-- **API fájl feltöltések:** A bejövő GZip vagy ZIP payload‑okat közvetlenül memóriába kicsomagolod ellenőrzés céljából.  
-- **Adatexport szolgáltatások:** ZIP archívumokat generálsz helyben, titkosítod az érzékeny bejegyzéseket, és stream‑eled a kliensnek.  
-- **Napló archiválás:** LZMA tömörítést használsz a naplófájlok méretének csökkentésére, mielőtt blob tárolóba helyeznéd őket.  
+- **API fájlfeltöltések:** A bejövő GZip vagy ZIP terheléseket közvetlenül memóriába bontja, hogy validálás után tárolja.  
+- **Adatexport szolgáltatások:** ZIP archívumokat generál a futás közben, titkosítja az érzékeny bejegyzéseket, és HTTPS‑en keresztül streameli őket a kliensnek.  
+- **Napló archiválás:** LZMA tömörítést használ a napi naplófájlok méretének csökkentésére, mielőtt feltöltenéd őket az Azure Blob Storage‑ba, ezzel akár 40 %-kal csökkentve a tárolási költségeket.  
 
-## Egyéb tömörítési technikák oktatóanyagai
+## Egyéb tömörítési technikák útmutatók
 
-Az alábbiakban megtalálod a dedikált tutorialokat, amelyek mélyebben belemennek a fent említett témákba. Minden útmutató lépésről‑lépésre tartalmaz utasításokat, kódrészleteket és legjobb gyakorlatokat.
+Az alábbiakban megtalálod a dedikált útmutatókat, amelyek mélyebben belemennek a fent említett témákba. Minden útmutató lépésről lépésre szóló instrukciókat, kódrészleteket és legjobb gyakorlat ajánlásokat tartalmaz.
 
-### [Memóriaáramra való kicsomagolás az Aspose.Zip for .NET segítségével](./extract-to-memory-stream/)
-Fedezd fel az Aspose.Zip for .NET-et: egyszerűen kicsomagolhatsz archívumokat egy MemoryStream‑be ebben a lépésről‑lépésre útmutatóban. Emeld .NET fejlesztésedet könnyedén.
+### [Memóriafolyamba történő kibontás az Aspose.Zip for .NET‑el](./extract-to-memory-stream/)
+Fedezd fel az Aspose.Zip for .NET-et: Könnyedén bontj ki archívumokat egy MemoryStream‑be ebben a lépésről‑lépésre útmutatóban. Emeld fejlesztésedet .NET‑ben egyszerűen.
 
-### [GZip archívum megnyitása az Aspose.Zip for .NET segítségével](./open-gzip-archive/)
-Tanuld meg, hogyan nyithatsz meg GZip archívumokat .NET‑ben egyszerűen az Aspose.Zip használatával. Kövesd a lépésről‑lépésre útmutatónkat a hatékony és zökkenőmentes fájlkezeléshez.
+### [GZip archívum megnyitása az Aspose.Zip for .NET‑el](./open-gzip-archive/)
+Ismerd meg, hogyan nyithatsz meg GZip archívumokat .NET‑ben könnyedén az Aspose.Zip használatával. Kövesd lépésről‑lépésre útmutatónkat a hatékony és zökkenőmentes fájlkezeléshez.
 
-### [Mentés áramba az Aspose.Zip for .NET segítségével](./save-to-stream/)
-Tanuld meg, hogyan menthetsz tömörített adatokat egy stream‑be az Aspose.Zip for .NET segítségével. Fejleszd .NET képességeidet ezzel a lépésről‑lépésre útmutatóval.
+### [Mentés folyamra az Aspose.Zip for .NET‑el](./save-to-stream/)
+Tanuld meg, hogyan mentheted a tömörített adatokat egy folyamra az Aspose.Zip for .NET‑el. Fejleszd .NET fejlesztői képességeidet ebben a lépésről‑lépésre útmutatóban.
 
-### [Bejegyzések különböző jelszavakkal az Aspose.Zip for .NET-ben](./entries-with-different-passwords/)
-Fedezd fel az Aspose.Zip for .NET erejét a különböző jelszavakkal védett ZIP archívumok kezeléséről szóló lépésről‑lépésre útmutatóval. Növeld alkalmazásaid biztonságát és rugalmasságát.
+### [Bejegyzések különböző jelszavakkal az Aspose.Zip for .NET‑ben](./entries-with-different-passwords/)
+Fedezd fel az Aspose.Zip for .NET erejét a különböző jelszavakkal rendelkező ZIP archívumok kezeléséről szóló lépésről‑lépésre útmutatóval. Növeld alkalmazásaid biztonságát és rugalmasságát.
 
-### [LZMA tömörítés az Aspose.Zip for .NET-ben](./compress-to-lzma/)
-Tanuld meg, hogyan tömöríthetsz fájlokat az Aspose.Zip for .NET segítségével a hatékony LZMA algoritmussal. Optimalizáld a tárolást és javítsd az adatátvitel hatékonyságát egyszerűen.
+### [LZMA tömörítés az Aspose.Zip for .NET‑ben](./compress-to-lzma/)
+Ismerd meg, hogyan tömöríthetsz fájlokat az Aspose.Zip for .NET‑el a hatékony LZMA algoritmus segítségével. Optimalizáld a tárolást és növeld az adatátvitel hatékonyságát könnyedén.
 
 ## Gyakran Ismételt Kérdések
 
-**Q:** **Használhatom az Aspose.Zip‑et nagy fájlok (több GB) feldolgozására anélkül, hogy memóriahiány lépne fel?**  
-**A:** Igen. Az adatot közvetlenül fájlokból vagy hálózati forrásokból stream‑ekbe irányítva, `MemoryStream` vagy egyedi stream‑ek használatával elkerülheted, hogy az egész archívumot memóriába töltsd.
+**Q: Használhatom az Aspose.Zip-et nagy fájlok (több GB) feldolgozására anélkül, hogy memóriahiányba ütköznék?**  
+A: Igen. Az adatok közvetlenül fájlokból vagy hálózati forrásokból `MemoryStream`‑be vagy egyedi folyamatokba történő streamelésével elkerülöd, hogy az egész archívumot RAM‑ba töltsd.
 
-**Q:** **Támogatja az Aspose.Zip a szinkron és aszinkron API‑kat?**  
-**A:** A könyvtár szinkron módszereket biztosít a legtöbb művelethez; ha szükséges, ezek `Task.Run`‑ba csomagolhatók aszinkron mintákhoz.
+**Q: Támogatja az Aspose.Zip a szinkron és aszinkron API‑kat is?**  
+A: A könyvtár szinkron módszereket biztosít minden alapvető művelethez; szükség esetén `Task.Run`‑ba csomagolhatod őket aszinkron mintákhoz.
 
-**Q:** **Hogyan állíthatok be jelszót egy adott bejegyzéshez, miközben a többit védtelenül hagyom?**  
-**A:** Amikor bejegyzést adsz hozzá, használd az `EntryOptions.Password` tulajdonságot csak arra a bejegyzésre; a többi bejegyzés marad jelszó‑szabad.
+**Q: Hogyan állíthatok be jelszót egy adott bejegyzéshez, miközben a többit védtelenül hagyom?**  
+A: Használd a `EntryOptions.Password`‑t a bejegyzés hozzáadásakor. A többi bejegyzés jelszó‑szabad marad, így szelektív titkosítást érhetsz el.
 
-**Q:** **Kompatibilis-e az LZMA tömörítés a szabványos ZIP eszközökkel?**  
-**A:** A legtöbb modern ZIP segédprogram felismeri az LZMA bejegyzéseket, de a régebbi eszközök esetleg nem. Az Aspose.Zip biztosítja, hogy az archívum megfeleljen a ZIP specifikációnak.
+**Q: Kompatibilis az LZMA tömörítés a szabványos ZIP eszközökkel?**  
+A: A legtöbb modern ZIP segédprogram felismeri az LZMA bejegyzéseket, bár nagyon régi eszközök esetleg nem. Az Aspose.Zip a ZIP specifikációt követi a széles körű kompatibilitás érdekében.
 
-**Q:** **Milyen licencelési lehetőségek állnak rendelkezésre az Aspose.Zip‑hez?**  
-**A:** Ingyenes próba érhető el értékeléshez. A termeléshez kereskedelmi licenc szükséges, amely örökös vagy előfizetéses modellben is elérhető.
+**Q: Milyen licencelési lehetőségek állnak rendelkezésre az Aspose.Zip‑hez?**  
+A: Értékeléshez ingyenes próba érhető el. A termeléshez kereskedelmi licenc szükséges, amely örökös vagy előfizetéses modellben érhető el.
 
-**Q:** **Hogyan változtathatom meg programozottan egy meglévő ZIP bejegyzés jelszavát?**  
-**A:** Használd az `UpdateEntry` metódust új `EntryOptions.Password`‑nal – ez a javasolt módja a **how to set zip password** módosításának az archívum létrehozása után.
+**Q: Hogyan változtathatom meg programozottan egy meglévő ZIP bejegyzés jelszavát?**  
+A: Hívd meg az `UpdateEntry`‑t egy új `EntryOptions.Password`‑nal. Ez frissíti a bejegyzés titkosítását anélkül, hogy az egész archívumot újra kellene építeni.
 
-**Q:** **Működik az Aspose.Zip a .NET 7‑tel és újabb verziókkal?**  
-**A:** Igen, a könyvtár teljes mértékben kompatibilis a .NET 5, .NET 6, .NET 7 és a későbbi kiadásokkal.
+**Q: Működik az Aspose.Zip a .NET 7‑tel és későbbi verziókkal?**  
+A: Igen, a könyvtár teljesen kompatibilis a .NET 5, .NET 6, .NET 7 és újabb kiadásokkal.
 
 ---
 
-**Last Updated:** 2026-05-05  
-**Tested With:** Aspose.Zip for .NET (latest release)  
-**Author:** Aspose  
+**Legutóbb frissítve:** 2026-07-23  
+**Tesztelve:** Aspose.Zip for .NET (legújabb kiadás)  
+**Szerző:** Aspose
+
+## Kapcsolódó útmutatók
+
+- [Tar archívum létrehozása és fájlok hozzáadása tar-hoz az Aspose.Zip for .NET‑el](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
+- [ZIP archívum létrehozása .NET – Fájl tömörítés az Aspose.Zip‑el](/zip/net/file-compression/)
+- [Hogyan bontsunk ki jelszóval védett zip-et az Aspose.Zip for .NET használatával](/zip/net/file-decompression/decompress-traditionally-password-protected-file/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

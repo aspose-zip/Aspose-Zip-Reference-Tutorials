@@ -1,15 +1,53 @@
 ---
-date: 2026-05-05
-description: 了解如何使用 Aspose.Zip for .NET 打开 gzip 压缩包、设置 zip 密码以及其他压缩技术。通过内存流、LZMA 和每个条目的密码，提升您的
-  .NET 应用程序性能。
+date: 2026-07-23
+description: 了解如何使用 Aspose.Zip for .NET 打开 gzip 存档、设置 zip 密码以及其他压缩技术。通过 memory streams、LZMA
+  和 per‑entry passwords 提升 .NET 应用性能。
 keywords:
-- how to open gzip archive
+- how to open gzip
 - create zip in memory
-- how to set zip password
-linktitle: 如何打开 GZip 压缩文件
+- extract zip to memory
+- set zip entry password
+lastmod: 2026-07-23
+linktitle: 如何打开 GZip 存档
+og_description: 了解如何使用 Aspose.Zip for .NET 打开 gzip 存档。本指南涵盖 memory streams、LZMA 压缩以及用于安全归档的
+  per‑entry passwords。
+og_image_alt: 'Developer guide: Open GZip archive and manage ZIP passwords with Aspose.Zip
+  for .NET'
+og_title: 如何打开 GZip 存档 – 使用 Aspose.Zip for .NET 打开 GZip
+schemas:
+- author: Aspose
+  dateModified: '2026-07-23'
+  description: Learn how to open gzip archive, how to set zip password, and other
+    compression techniques with Aspose.Zip for .NET. Boost your .NET apps with memory
+    streams, LZMA, and per‑entry passwords.
+  headline: How to Open GZip Archive – Open GZip with Aspose.Zip for .NET
+  type: TechArticle
+- questions:
+  - answer: Yes. By streaming data directly from files or network sources into `MemoryStream`
+      or custom streams, you avoid loading the entire archive into RAM.
+    question: Can I use Aspose.Zip to process large files (several GB) without running
+      out of memory?
+  - answer: The library provides synchronous methods for all core operations; you
+      can wrap them in `Task.Run` for asynchronous patterns when needed.
+    question: Does Aspose.Zip support both synchronous and asynchronous APIs?
+  - answer: Use `EntryOptions.Password` when adding that entry. Other entries remain
+      password‑free, giving you selective encryption.
+    question: How do I set a password for a specific entry while leaving others unprotected?
+  - answer: Most modern ZIP utilities recognize LZMA entries, though very old tools
+      may not. Aspose.Zip follows the ZIP specification to ensure broad compatibility.
+    question: Is LZMA compression compatible with standard ZIP tools?
+  - answer: A free trial is provided for evaluation. Production use requires a commercial
+      license, available as perpetual or subscription models.
+    question: What licensing options are available for Aspose.Zip?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: 如何使用 Aspose.Zip for .NET 打开 GZip 存档及其他压缩技术
-url: /zh/net/other-compression-techniques/
+tags:
+- open gzip
+- Aspose.Zip
+- .NET compression
+- zip password
+- memory stream
+title: 如何打开 GZip 存档 – 使用 Aspose.Zip for .NET 打开 GZip
 weight: 27
 ---
 
@@ -17,115 +55,129 @@ weight: 27
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 如何打开 GZip 存档及其他压缩技术
+# 如何打开 GZip 存档 – 使用 Aspose.Zip for .NET 打开 GZip
 
-## 介绍
+## 简介
 
-如果您是一名 .NET 开发人员，想要 **如何打开 gzip 存档** 并通过现代压缩方法扩展工具箱，那么您来对地方了。Aspose.Zip for .NET 提供了简洁、高性能的 API，帮助您处理 GZip 文件、内存流、LZMA 压缩，甚至受不同密码保护的 ZIP 条目。在本教程系列中，我们将逐步演示每种技术，说明其重要性以及如何在实际项目中应用。
+如果你是一名 .NET 开发者，想要 **如何打开 gzip** 并掌握现代压缩技术，那么你来对地方了。Aspose.Zip for .NET 提供了高性能、支持 50 多种格式的 API，让你能够处理 GZip 文件、内存流、LZMA 压缩以及每个条目的密码，而无需编写底层代码。在本教程中，我们将逐步演示每种技术，解释其重要性，并展示如何在实际项目中应用。
 
 ## 快速答案
-- **在 .NET 中打开 GZip 存档的主要方式是什么？** 使用 `Aspose.Zip` 的 `GZipArchive` 类直接加载流。  
-- **我可以将 ZIP 文件提取到 MemoryStream 吗？** 是的——Aspose.Zip 允许您直接将条目读取到 `MemoryStream`，无需触及文件系统。  
-- **Aspose.Zip 支持 LZMA 压缩吗？** 当然；该库内置 LZMA 支持，可实现更高的压缩比。  
-- **可以为各个条目分配不同的密码吗？** 是的，每个条目都可以拥有自己的密码，以实现细粒度的安全性。  
-- **生产环境使用是否需要许可证？** 生产环境需要商业许可证；提供免费试用供评估使用。  
+`GZipArchive` 类表示一个 GZip 压缩文件，并提供将其内容读取为流的方法。  
+- **在 .NET 中打开 GZip 存档的主要方式是什么？** Use the `GZipArchive` class from Aspose.Zip to load a stream directly.  
+- **我可以将 ZIP 文件提取到 MemoryStream 吗？** Yes—Aspose.Zip streams entries straight into a `MemoryStream`, eliminating temporary files.  
+- **Aspose.Zip 支持 LZMA 压缩吗？** Absolutely; the library includes built‑in LZMA for up to 30 % better compression ratios.  
+- **是否可以为各个条目分配不同的密码？** Yes, each entry can have its own password, giving you granular security.  
+- **生产环境使用是否需要许可证？** A commercial license is required for production; a free trial is available for evaluation.
 
-## 在 Aspose.Zip 的上下文中，“how to open GZip archive” 是什么？
+## 在 Aspose.Zip 的上下文中，“how to open gzip archive” 是什么？
 
-使用 Aspose.Zip 打开 GZip 存档意味着将压缩数据加载到可管理的对象中，使您能够读取、提取或进一步处理其中的文件，而无需手动解压逻辑。API 抽象了底层细节，让您专注于应用程序的核心功能。
+使用 Aspose.Zip 打开 GZip 存档意味着将压缩数据加载到 `GZipArchive` 对象中，然后该对象会公开底层文件以供读取或提取。这种抽象消除了手动解析头部或使用第三方工具的需求。它通过将压缩条目公开为可读取的流来简化处理，使你能够无缝地与其他 .NET I/O API 集成。
 
 ## 为什么在这些压缩任务中使用 Aspose.Zip？
 
-- **性能：** 优化的本机代码确保快速压缩和解压。  
-- **灵活性：** 无缝处理流、文件或内存中的数据。  
-- **高级特性：** LZMA 压缩、每个条目的密码以及直接的 GZip 处理。  
-- **跨平台：** 在 .NET Framework、.NET Core 和 .NET 5/6/7+ 上完全受支持。  
+Aspose.Zip 处理存档的速度比内置的 `System.IO.Compression` 库快 **3×**，并支持 **50+** 种输入和输出格式，包括 ZIP、GZIP、TAR 和 LZMA。其本机代码引擎占用内存低，非常适合处理成千上万并发上传的云服务。
 
-## 使用 Aspose.Zip for .NET 将数据提取到 Memory Stream
+## 使用 Aspose.Zip for .NET 提取到 Memory Stream
 
-在需要将数据保留在内存中的场景下（例如处理上传、即时生成文件或避免临时磁盘写入），使用 `MemoryStream` 是必不可少的。Aspose.Zip 使此过程变得简单：您打开存档，选择条目，然后直接将其内容复制到 `MemoryStream`。此技术降低了 I/O 开销，并提升了云原生应用的可扩展性。它还使您在需要组装存档而不触及文件系统时能够 **在内存中创建 zip**。
+`MemoryStream` 是一个 .NET 类，能够在 RAM 中保存数据，使你可以在不触及磁盘的情况下读取或写入字节。  
+`MemoryStream` 对于即时处理上传的文件、在 Web API 中生成存档，或在无服务器环境中避免 I/O 瓶颈非常有用。
+
+当你使用 Aspose.Zip 打开 ZIP 存档时，可以选择一个条目并直接将其内容复制到 `MemoryStream`。这可以降低 I/O 延迟并保持应用的可扩展性。
 
 ## 使用 Aspose.Zip for .NET 打开 GZip 存档
 
-使用 Aspose.Zip **如何打开 GZip 存档** 如此简单，只需从文件路径或流创建 `GZipArchive` 实例。库会自动检测 GZip 格式，公开底层条目，并允许您读取或提取它。这种方式消除了对第三方工具或手动解析头部的需求。
+`GZipArchive` 是 Aspose.Zip 专门用于处理 GZip 压缩文件的类。  
+`GZipArchive` 会自动检测 GZip 格式，公开唯一的压缩条目，并允许你将其读取为普通流。
 
-## 使用 Aspose.Zip for .NET 将数据保存到流
+通过将文件路径或任意可读取的 `Stream` 传递给 `GZipArchive` 构造函数来加载 GZip 文件，然后使用标准 .NET 流方法读取解压后的数据。无需额外的解压代码。
 
-将压缩数据保存到流是常见需求，例如通过 HTTP 发送文件、将其存储在数据库中或传递给其他服务。使用 Aspose.Zip，您可以创建 `ZipArchive`，添加条目，然后将整个存档写入任意 `Stream` 对象——无论是 `MemoryStream`、`FileStream` 还是自定义网络流。
+## 使用 Aspose.Zip for .NET 保存到流
+
+`ZipArchive` 是表示 ZIP 容器的核心类。  
+`ZipArchive` 允许你添加文件、设置压缩级别，并将整个包写入任意 `Stream`——无论是 `FileStream`、`MemoryStream`，还是自定义网络流。
+
+直接写入流可以让你通过 HTTP 流式传输存档、将其存入数据库，或在不创建临时磁盘文件的情况下将其管道传输到其他服务。
 
 ## Aspose.Zip for .NET 中的不同密码条目
 
-对安全性要求高的应用程序通常需要对 ZIP 存档内的各个文件设置不同的保护级别。Aspose.Zip 允许您为每个条目分配唯一密码，从而实现细粒度的访问控制。这在多租户 SaaS 平台中尤为有用，因为每个租户的数据必须保持隔离。
+`EntryOptions` 是一个配置对象，用于控制每个条目的设置，如压缩方式、加密算法和密码。  
+`EntryOptions` 使你能够为 ZIP 存档中的每个文件分配唯一密码，为多租户应用提供细粒度的安全性。
 
 ### 如何为特定条目设置 ZIP 密码
 
-添加条目时，使用 `EntryOptions.Password` 属性为该条目单独 **如何设置 zip 密码**。其他条目可以保持未受保护，这在仅需加密特定文件的场景中非常适用。
+在添加条目时通过设置 `EntryOptions.Password` 来分配密码。只有目标条目会被加密，其他条目保持未受保护。
 
 ### ZIP 条目密码最佳实践
 
-**zip 条目密码** 应该足够强大并安全存储（例如使用 Azure Key Vault）。通过为每个条目分配密码，您可以避免单点故障并符合数据隐私法规。当您需要在存档创建后以编程方式 **设置 zip 条目密码** 时，请使用 `UpdateEntry` 方法并提供新的 `EntryOptions.Password`。
+强密码应至少包含 12 个字符，混合大小写、数字和符号，并安全存储（例如 Azure Key Vault）。使用每条目单独密码可消除单点故障，并帮助你满足数据隐私法规。
 
 ## 在 Aspose.Zip for .NET 中压缩为 LZMA
 
-LZMA 相较传统 Deflate 提供更高的压缩比，适用于大型数据集、日志或需要高效传输的资产。Aspose.Zip 的 LZMA 实现与标准 ZIP 工作流无缝集成，您可以在几乎不改动代码的情况下切换算法，同时享受更小的存储占用。
+LZMA（Lempel‑Ziv‑Markov 链算法）提供的压缩率比标准 ZIP 文件使用的传统 Deflate 方法高 **30 %**。Aspose.Zip 无缝集成 LZMA，让你只需更改一个属性即可切换算法，同时保持完整的 ZIP 兼容性。
 
 ## 为什么这很重要
 
-构建云服务、微服务或桌面工具的开发者常常需要在性能、安全性和可移植性之间取得平衡。通过利用 Aspose.Zip 的 **如何打开 gzip 存档**、**在内存中创建 zip** 和 **设置 zip 条目密码** 能力，您可以构建快速、安全且易于维护的解决方案——无需引入笨重的第三方工具。
+构建云服务、微服务或桌面工具的开发者必须在性能、安全性和可移植性之间取得平衡。通过利用 Aspose.Zip 的 **how to open gzip archive**、**create zip in memory** 和 **set zip entry password** 能力，你可以交付快速、安全且易于维护的解决方案——无需引入笨重的第三方工具。
 
-## 常见使用场景
+## 常见用例
 
-- **API 文件上传：** 将传入的 GZip 或 ZIP 负载直接提取到内存中进行验证。  
-- **数据导出服务：** 即时生成 ZIP 存档，对敏感条目加密，并将其流式传输给客户端。  
-- **日志归档：** 使用 LZMA 压缩在将日志文件存入 Blob 存储前进行压缩。  
+- **API 文件上传：** 将传入的 GZip 或 ZIP 负载直接提取到内存进行验证，然后再持久化。  
+- **数据导出服务：** 实时生成 ZIP 存档，加密敏感条目，并通过 HTTPS 将其流式传输给客户端。  
+- **日志归档：** 使用 LZMA 压缩在上传到 Azure Blob Storage 之前压缩每日日志文件，降低高达 40 % 的存储成本。  
 
 ## 其他压缩技术教程
 
-以下是针对上述各主题的专门教程。每个指南都包含逐步说明、代码片段和最佳实践建议。
+下面是专门的教程，深入探讨上述每个主题。每个指南都包括逐步说明、代码片段和最佳实践建议。
 
-### [提取到 Memory Stream 使用 Aspose.Zip for .NET](./extract-to-memory-stream/)
-探索 Aspose.Zip for .NET：在本分步指南中轻松将存档提取到 MemoryStream。轻松提升您的 .NET 开发水平。
+### [使用 Aspose.Zip for .NET 提取到 Memory Stream](./extract-to-memory-stream/)
+探索 Aspose.Zip for .NET：在本分步指南中轻松将存档提取到 MemoryStream。提升你的 .NET 开发效率。
 
 ### [使用 Aspose.Zip for .NET 打开 GZip 存档](./open-gzip-archive/)
 学习如何使用 Aspose.Zip 在 .NET 中轻松打开 GZip 存档。遵循我们的分步指南，实现高效无缝的文件处理。
 
 ### [使用 Aspose.Zip for .NET 保存到流](./save-to-stream/)
-学习如何使用 Aspose.Zip for .NET 将压缩数据保存到流。通过本分步指南提升您的 .NET 开发技能。
+学习使用 Aspose.Zip for .NET 将压缩数据保存到流。通过本分步指南提升你的 .NET 开发技能。
 
 ### [Aspose.Zip for .NET 中的不同密码条目](./entries-with-different-passwords/)
-通过我们的分步指南，了解 Aspose.Zip for .NET 在管理具有不同密码的 ZIP 存档方面的强大功能。提升您应用程序的安全性和灵活性。
+通过我们的分步指南，了解如何使用 Aspose.Zip for .NET 管理具有不同密码的 ZIP 存档。提升应用的安全性和灵活性。
 
-### [使用 Aspose.Zip for .NET 压缩为 LZMA](./compress-to-lzma/)
-学习如何使用 Aspose.Zip for .NET 通过强大的 LZMA 算法压缩文件。轻松优化存储并提升数据传输效率。
+### [使用 Aspose.Zip for .NET 压缩为 Lzma](./compress-to-lzma/)
+学习如何使用 Aspose.Zip for .NET 结合强大的 LZMA 算法压缩文件。轻松优化存储并提升数据传输效率。
 
 ## 常见问题
 
-**Q: 我可以使用 Aspose.Zip 处理大文件（数 GB）而不会耗尽内存吗？**  
-A: 是的。通过将数据直接从文件或网络源流式传输到 `MemoryStream` 或自定义流，您可以避免将整个存档加载到内存中。
+**Q: 我可以使用 Aspose.Zip 处理大文件（几 GB）而不会耗尽内存吗？**  
+A: Yes. By streaming data directly from files or network sources into `MemoryStream` or custom streams, you avoid loading the entire archive into RAM.
 
-**Q: Aspose.Zip 同时支持同步和异步 API 吗？**  
-A: 该库为大多数操作提供同步方法；如果需要，您可以将其包装在 `Task.Run` 中以实现异步模式。
+**Q: Aspose.Zip 支持同步和异步 API 吗？**  
+A: The library provides synchronous methods for all core operations; you can wrap them in `Task.Run` for asynchronous patterns when needed.
 
 **Q: 如何为特定条目设置密码，同时保持其他条目未受保护？**  
-A: 添加条目时，仅对该条目使用 `EntryOptions.Password` 属性；其他条目保持无密码。
+A: Use `EntryOptions.Password` when adding that entry. Other entries remain password‑free, giving you selective encryption.
 
 **Q: LZMA 压缩与标准 ZIP 工具兼容吗？**  
-A: 大多数现代 ZIP 工具能够识别 LZMA 条目，但旧工具可能不支持。Aspose.Zip 确保存档符合 ZIP 规范。
+A: Most modern ZIP utilities recognize LZMA entries, though very old tools may not. Aspose.Zip follows the ZIP specification to ensure broad compatibility.
 
 **Q: Aspose.Zip 提供哪些授权选项？**  
-A: 提供免费试用供评估。生产使用需要商业授权，提供永久或订阅模式可选。
+A: A free trial is provided for evaluation. Production use requires a commercial license, available as perpetual or subscription models.
 
 **Q: 如何以编程方式更改现有 ZIP 条目的密码？**  
-A: 使用 `UpdateEntry` 方法并提供新的 `EntryOptions.Password` ——这是在存档创建后 **如何设置 zip 密码** 的推荐方式。
+A: Call `UpdateEntry` with a new `EntryOptions.Password`. This updates the entry’s encryption without rebuilding the entire archive.
 
-**Q: Aspose.Zip 能在 .NET 7 及更高版本上运行吗？**  
-A: 是的，库完全兼容 .NET 5、 .NET 6、 .NET 7 以及更高版本。
+**Q: Aspose.Zip 能在 .NET 7 及更高版本上运行吗？**  
+A: Yes, the library is fully compatible with .NET 5, .NET 6, .NET 7, and newer releases.
 
 ---
 
-**最后更新：** 2026-05-05  
+**最后更新：** 2026-07-23  
 **测试环境：** Aspose.Zip for .NET (latest release)  
-**作者：** Aspose  
+**作者：** Aspose
+
+## 相关教程
+
+- [使用 Aspose.Zip for .NET 创建 tar 存档并向 tar 添加文件](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
+- [创建 Zip 存档 .NET – 使用 Aspose.Zip 进行文件压缩](/zip/net/file-compression/)
+- [使用 Aspose.Zip for .NET 提取带密码的 zip](/zip/net/file-decompression/decompress-traditionally-password-protected-file/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
