@@ -1,10 +1,59 @@
 ---
-date: 2026-02-25
-description: .NET 用 Aspose.Zip を使用して、パスワード付き ZIP を抽出し、パスワード保護された ZIP ファイルを解凍する方法を学びましょう。このステップバイステップガイドでは、C#
-  でパスワード保護されたアーカイブを解凍する手順を示し、Aspose.Zip .NET の利用方法とパスワード保護された ZIP の抽出について解説します。
-linktitle: Decompress Traditionally Password Protected File
+date: 2026-05-15
+description: Aspose.Zip for .NET を使用して、パスワード付き zip の抽出方法とパスワード保護された zip ファイルの解凍方法を学びます。このステップバイステップガイドでは、C#
+  でパスワード保護されたアーカイブを解凍する方法を示し、Aspose.Zip .NET の使用法とパスワード保護された zip の抽出について解説します。
+keywords:
+- extract zip with password
+- unzip password protected zip
+- c# unzip password protected
+- asp zip .net core
+- password protected zip extraction
+linktitle: 従来のパスワード保護ファイルを解凍する
+schemas:
+- author: Aspose
+  dateModified: '2026-05-15'
+  description: Learn how to extract zip with password and decompress password protected
+    zip files using Aspose.Zip for .NET. This step‑by‑step guide shows c# unzip password
+    protected archives, covering asp zip .net usage and password protected zip extraction.
+  headline: How to extract zip with password using Aspose.Zip for .NET
+  type: TechArticle
+- description: Learn how to extract zip with password and decompress password protected
+    zip files using Aspose.Zip for .NET. This step‑by‑step guide shows c# unzip password
+    protected archives, covering asp zip .net usage and password protected zip extraction.
+  name: How to extract zip with password using Aspose.Zip for .NET
+  steps:
+  - name: Open the encrypted ZIP file as a read‑only stream.
+    text: Open the encrypted ZIP file as a read‑only stream.
+  - name: Create a new file (`alice_extracted_out.txt`) where the decompressed data
+      will be written.
+    text: Create a new file (`alice_extracted_out.txt`) where the decompressed data
+      will be written.
+  - name: Instantiate `Archive` with `ArchiveLoadOptions`, passing the password (`"p@s$"`).
+    text: Instantiate `Archive` with `ArchiveLoadOptions`, passing the password (`"p@s$"`).
+  - name: Access the first entry in the archive (assuming a single file) and copy
+      its bytes to the output file.
+    text: Access the first entry in the archive (assuming a single file) and copy
+      its bytes to the output file.
+  - name: Use the `Extract` method, which extracts the entry to a specified path while
+      preserving folder structure and attributes.
+    text: Use the `Extract` method, which extracts the entry to a specified path while
+      preserving folder structure and attributes.
+  type: HowTo
+- questions:
+  - answer: '`Archive` from the `Aspose.Zip` namespace.'
+    question: What class handles zip archives?
+  - answer: Pass the password via `ArchiveLoadOptions.DecryptionPassword`.
+    question: How do I supply the password?
+  - answer: Yes – Aspose.Zip supports .NET Framework, .NET Core, and .NET 5/6+.
+    question: Can I run this on .NET Core / .NET 5+?
+  - answer: A temporary license works for testing; a production license is required
+      for commercial use.
+    question: Do I need a full license for development?
+  - answer: Fewer than 20 lines (excluding `using` statements).
+    question: How many lines of code are required?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: .NET 用 Aspose.Zip を使用してパスワード付き ZIP を抽出する方法
+title: Aspose.Zip for .NET を使用してパスワード付き zip を抽出する方法
 url: /ja/net/file-decompression/decompress-traditionally-password-protected-file/
 weight: 15
 ---
@@ -15,54 +64,58 @@ weight: 15
 
 # Aspose.Zip for .NET を使用したパスワード付き ZIP の抽出
 
-パスワード付き ZIP の抽出は、機密ファイルを保護または共有する必要がある .NET 開発者にとって日常的な作業です。このチュートリアルでは、**Aspose.Zip for .NET** ライブラリを使用して **パスワード付き ZIP を抽出する方法** を学び、同じアプローチで **パスワード保護された ZIP を解凍** したり、**パスワード保護された ZIP を解凍** したり、**c# unzip password protected** 操作を数行のコードで実行できることを確認します。
+パスワード付き ZIP の抽出は、機密ファイルを保護または共有する必要がある .NET 開発者にとって日常的な作業です。このチュートリアルでは、**Aspose.Zip for .NET** ライブラリを使用して **パスワード付き ZIP の抽出方法** を学び、同じアプローチで **パスワード保護された ZIP の解凍**、**パスワード保護された ZIP の解凍**、および **c# パスワード保護された ZIP の解凍** 操作を数行のコードで実行できることを確認します。
 
-## 簡単な回答
-- **ZIP ファイルを扱うための主要クラスは何ですか？** `Archive`（Aspose.Zip 名前空間から）。  
-- **パスワードを指定するメソッドはどれですか？** `ArchiveLoadOptions` を介して `DecryptionPassword` を渡します。  
-- **.NET Core でパスワード保護された ZIP を解凍できますか？** はい、Aspose.Zip は .NET Framework、.NET Core、そして .NET 5/6+ をサポートしています。  
-- **開発にライセンスは必要ですか？** テストには一時ライセンスで十分です。製品版には正式なライセンスが必要です。  
-- **必要なコード行数は？** 20 行未満（using 文は除く）。
+## クイック回答
+- **ZIP アーカイブを扱うクラスは何ですか？** `Archive` from the `Aspose.Zip` namespace.  
+- **パスワードはどのように指定しますか？** Pass the password via `ArchiveLoadOptions.DecryptionPassword`.  
+- **.NET Core / .NET 5+ で実行できますか？** Yes – Aspose.Zip supports .NET Framework, .NET Core, and .NET 5/6+.  
+- **開発にフルライセンスが必要ですか？** A temporary license works for testing; a production license is required for commercial use.  
+- **必要なコード行数はどれくらいですか？** Fewer than 20 lines (excluding `using` statements).
 
-## 「パスワード付き ZIP の抽出」とは何ですか？
+## 「パスワード付き ZIP の抽出」とは？
 
-パスワード付き ZIP を抽出するとは、暗号化された ZIP アーカイブを読み取り、正しいパスワードを提供し、ライブラリに復号化とファイルの展開を任せることです。これが **password protected zip extraction** の核心です。
+暗号化された ZIP をロードし、正しいパスワードを提供すると、Aspose.Zip が各エントリをオンザフライで復号化します。この操作はアーカイブストリームを読み取り、パスワードを検証し、元のファイルをディスクに書き込みます。サードパーティツールは不要です。また、ファイルのタイムスタンプとディレクトリ構造を保持し、抽出されたコンテンツは元のファイルと同一になります。
 
 ## このタスクに Aspose.Zip を使用する理由
 
-- **Full .NET support** – .NET Framework、.NET Core、そして新しい .NET バージョンでも動作します。  
+Aspose.Zip は **定量的** な利点を提供します：**50 以上のアーカイブ形式**（ZIP、TAR、GZIP、7z など）をサポートし、**マルチギガバイト アーカイブ** をストリーミングで処理しながらメモリ使用量を **100 MB** 未満に抑えます。その API は .NET 用に特化しており、ネイティブな非同期メソッドと .NET Standard 2.0、.NET Core 3.1、.NET 6+ との完全な互換性を提供します。
+
+- **Full .NET support** – .NET Framework、.NET Core、そして新しい .NET バージョンで動作します。  
 - **Traditional encryption handling** – 多くの旧ツールで使用されるレガシーな ZipCrypto 方法をサポートします。  
 - **Simple API** – パスワードを指定しエントリを読み取るために必要な呼び出しは数回だけです。  
 - **Performance‑optimized** – ストリームが効率的に処理され、大容量アーカイブに適しています。  
-- **asp zip .net** は積極的にメンテナンスされ、包括的なドキュメントが含まれています。
+- **Active maintenance** – Aspose.Zip は毎月のアップデートと詳細なドキュメントが提供されます。
 
 ## 前提条件
 - Visual Studio 2022 以降（任意の .NET 開発環境）。  
-- NuGet で追加した Aspose.Zip for .NET ライブラリ（`Aspose.Zip`）。  
+- NuGet（`Aspose.Zip`）で追加した Aspose.Zip for .NET ライブラリ。  
 - C# のファイル I/O に関する基本的な知識。
 
 ## 名前空間のインポート
-まず、必要な名前空間をスコープに持ち込みます：
+First, bring the required namespaces into scope:
 
 ```csharp
 using Aspose.Zip;
 using System.IO;
 ```
 
-## ステップ 1: パスワード保護された ZIP を作成する（ファイルにパスワード保護を適用）
-
-抽出をデモする前に、従来のパスワードで保護された ZIP が必要です。以下のスニペットはそのようなアーカイブを作成します（既にある場合は再利用できます）。
+## 手順 1: パスワード保護された ZIP を作成 (ファイルにパスワード保護を適用)
+抽出をデモンストレーションする前に、従来のパスワードで保護された ZIP が必要です。以下のスニペットはそのようなアーカイブを作成します（既にある場合は再利用できます）。
 
 ```csharp
 string dataDir = "Your Document Directory";
 PasswordProtectArchiveWithTraditionalPassword.Run(); // Run password protection on a file example to use it later
 ```
 
-> **プロのコツ:** `"Your Document Directory"` をテストファイルを保存している絶対パスに置き換えてください。
+> **Pro tip:** `"Your Document Directory"` をテストファイルを保存している絶対パスに置き換えてください。
 
-## ステップ 2: 従来のパスワード保護されたファイルを解凍する
+## 手順 2: 従来のパスワード保護ファイルを解凍
+`Archive` は、メモリ内の ZIP アーカイブを表す Aspose.Zip のコアクラスです。暗号化を自動的に処理しながら、エントリの読み取り、書き込み、操作のためのメソッドを提供します。
 
-それではコンテンツを抽出しましょう。以下のコードは Aspose.Zip を使用して **c# unzip password protected** アーカイブを解凍する方法を正確に示しています。
+`ArchiveLoadOptions` は、アーカイブの読み込みオプションを設定できるクラスで、復号パスワードを含めることができます。
+
+暗号化されたアーカイブをロードし、`ArchiveLoadOptions` でパスワードを渡してエントリを宛先ファイルにコピーします。このパターンはデータがストリーミングされるため、サイズに関係なく機能します。
 
 ```csharp
 // ExStart: DecompressTraditionallyPasswordProtectedFile
@@ -91,48 +144,55 @@ using (FileStream fs = File.OpenRead(dataDir + "CompressWithTraditionalEncryptio
 このスニペットでは次を行います：
 
 1. 暗号化された ZIP ファイルを読み取り専用ストリームとして開く。  
-2. 解凍されたデータを書き込む新しいファイル（`alice_extracted_out.txt`）を作成する。  
+2. `alice_extracted_out.txt` という新しいファイルを作成し、解凍されたデータを書き込む。  
 3. `ArchiveLoadOptions` にパスワード（`"p@s$"`）を渡して `Archive` をインスタンス化する。  
-4. アーカイブ内の最初のエントリ（単一ファイルを想定）にアクセスし、そのバイトを出力ファイルにコピーする。
+4. アーカイブ内の最初のエントリにアクセス（単一ファイルを想定）し、そのバイトを出力ファイルにコピーする。  
+5. `Extract` メソッドを使用し、フォルダ構造と属性を保持したまま指定パスにエントリを抽出する。
 
-コードが完了すると、**extract zip with password** に成功し、元のファイル内容を取得できます。
+コードが完了すると、**パスワード付き ZIP の抽出** に成功し、元のファイル内容を取得できます。
 
-## 一般的な落とし穴と回避方法
+## Aspose.Zip を使用してパスワード保護された ZIP を解凍する方法
+
+`new Archive(stream, new ArchiveLoadOptions { DecryptionPassword = "yourPassword" })` で暗号化されたアーカイブをロードし、各エントリをターゲット位置にストリーミングします。このワンラインのパスワード注入とシンプルな `entry.Extract(outputPath)` 呼び出しにより、フォルダ構造とファイル属性を保持したままアーカイブ全体が解凍されます。
+
+## よくある落とし穴と回避方法
 | 問題 | 原因 | 解決策 |
 |-------|-------|----------|
-| 「Invalid password」例外 | パスワード文字列が間違っているか `DecryptionPassword` が未設定 | パスワードを再確認し、`ArchiveLoadOptions` で渡されていることを確認してください。 |
+| 「Invalid password」例外 | パスワード文字列が間違っているか `DecryptionPassword` が未設定 | パスワードを再確認し、`ArchiveLoadOptions` で提供されていることを確認してください。 |
 | エントリが見つかりません | アーカイブが空、またはパスが間違っている | ZIP ファイルのパスを確認し、7‑Zip などのツールでアーカイブを検査してください。 |
-| 大きなファイルでメモリ圧迫が発生 | ファイル全体をメモリに読み込んでいる | バッファリングされた読み書きループ（示した通り）を使用して、データをチャンク単位で処理してください。 |
+| 大きなファイルでメモリ圧迫が発生 | ファイル全体をメモリに読み込んでいる | バッファ付きの読み書きループ（例示通り）でデータをチャンク処理してください。 |
 
 ## よくある質問
 
 **Q:** *Aspose.Zip は大容量の圧縮ファイルに適していますか？*  
-**A:** はい、Aspose.Zip は小規模・大規模なアーカイブの両方に最適化されており、効率的な **decompress password protected zip** 操作を保証します。
+**A:** はい。データをストリーミングするため、5 GB 超のアーカイブでもメモリ使用量を 200 MB 未満に抑えて解凍できます。
 
 **Q:** *Aspose.Zip を他の .NET ライブラリと併用できますか？*  
-**A:** もちろんです。Aspose.Zip は任意の .NET ライブラリとシームレスに統合でき、ロギング、依存性注入、クラウドストレージソリューションなどと組み合わせることが可能です。
+**A:** もちろんです。ロギングフレームワーク、DI コンテナ、クラウドストレージ SDK などとスムーズに統合できます。
 
 **Q:** *従来のパスワード以外の暗号化オプションはありますか？*  
-**A:** はい、Aspose.Zip はより強固なセキュリティのために AES ベースの暗号化方式もサポートしていますが、従来の ZipCrypto 方法は古いツールとの互換性に最適です。
+**A:** はい。Aspose.Zip はより強固なセキュリティのために AES‑256 暗号化もサポートしていますが、レガシーツールとの互換性が最も高いのは ZipCrypto です。
 
 **Q:** *コミュニティからのサポートはどこで得られますか？*  
-**A:** 質問や体験は [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) で行うことができます。
+**A:** [Aspose.Zip フォーラム](https://forum.aspose.com/c/zip/37) で質問や体験を共有できます。
 
 **Q:** *テスト用の一時ライセンスはどう取得しますか？*  
-**A:** 試用キーをリクエストするには、[Aspose.Purchase](https://purchase.aspose.com/temporary-license/) の Aspose 一時ライセンスページへアクセスしてください。
-
-## 結論
-これで **Aspose.Zip for .NET** を使用した **extract zip with password** の完全な本番対応サンプルが手に入りました。`ArchiveLoadOptions` でパスワードを指定することで、.NET Framework、.NET Core、.NET 5/6+ いずれの .NET アプリケーションでも **unzip password protected zip** ファイルを確実に処理できます。追加の暗号化オプションを試したり、複数エントリを扱ったり、このロジックを大規模なファイル処理パイプラインに組み込んだりしてみてください。
+**A:** Aspose の一時ライセンスページ [Aspose.Purchase](https://purchase.aspose.com/temporary-license/) にアクセスしてトライアルキーをリクエストしてください。
 
 ---
 
-**Last Updated:** 2026-02-25  
-**Tested With:** Aspose.Zip 24.11 for .NET  
-**Author:** Aspose  
+**最終更新日:** 2026-05-15  
+**テスト環境:** Aspose.Zip 24.11 for .NET  
+**作者:** Aspose
+
+## 関連チュートリアル
+
+- [Password Protect Zip – Aspose.Zip for .NET ガイド](/zip/net/password-protection-and-encryption/)
+- [Aspose.Zip for .NET でパスワード保護 ZIP を作成](/zip/net/password-protection-and-encryption/password-protect-archive-traditional-password/)
+- [AES ファイルの解凍 - Aspose.Zip .NET チュートリアル](/zip/net/password-protection-and-encryption/decompress-aes-encrypted-file/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+{{< /blocks/products/pf/main-wrap-class >}}

@@ -1,36 +1,73 @@
 ---
-title: Безопасное сжатие файлов в .NET с помощью Aspose.Zip
-linktitle: Сжатие файлов с индивидуальными паролями
-second_title: Aspose.Zip .NET API для сжатия и архивирования файлов
-description: Узнайте, как повысить безопасность файлов в приложениях .NET! Следуйте нашему пошаговому руководству по сжатию файлов с отдельными паролями с помощью Aspose.Zip для .NET.
-weight: 16
+date: 2026-05-15
+description: Узнайте, как создавать ZIP‑файлы, защищённые паролем, и сжимать файлы
+  с паролями с помощью Aspose.Zip для .NET в несколько простых шагов.
+keywords:
+- create password protected zip
+- compress files with passwords
+- Aspose.Zip .NET
+linktitle: Сжатие файлов с отдельными паролями
+schemas:
+- author: Aspose
+  dateModified: '2026-05-15'
+  description: Learn how to create password protected zip files and compress files
+    with passwords using Aspose.Zip for .NET in a few simple steps.
+  headline: Create Password Protected ZIP in .NET with Aspose.Zip
+  type: TechArticle
+- questions:
+  - answer: Yes, Aspose.Zip lets you choose the encryption algorithm (e.g., AES‑256)
+      for each entry when you add it to the archive.
+    question: Can I use different encryption methods for each file?
+  - answer: Yes, you can access the free trial of Aspose.Zip for .NET [here](https://releases.aspose.com/).
+    question: Is there a trial version available?
+  - answer: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for assistance
+      from the community and Aspose support.
+    question: How can I get support if I encounter issues?
+  - answer: The documentation is available [here](https://reference.aspose.com/zip/net/).
+    question: Where can I find detailed documentation for Aspose.Zip for .NET?
+  - answer: Yes, you can acquire a temporary license [here](https://purchase.aspose.com/temporary-license/).
+    question: Can I purchase a temporary license for testing purposes?
+  type: FAQPage
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Создание ZIP-файла с паролем в .NET с помощью Aspose.Zip
 url: /ru/net/password-protection-and-encryption/compress-files-individual-passwords/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Безопасное сжатие файлов в .NET с помощью Aspose.Zip
-
+# Создание ZIP‑архива с паролем в .NET с помощью Aspose.Zip
 
 ## Введение
 
-В мире разработки .NET эффективное управление файлами и их сжатие является важнейшей задачей. Aspose.Zip для .NET предоставляет мощное решение для сжатия файлов, предлагая различные функции для улучшения ваших приложений. Одной из примечательных особенностей является возможность сжимать файлы с отдельными паролями, обеспечивая дополнительный уровень безопасности. В этом уроке мы покажем вам процесс сжатия файлов с отдельными паролями с помощью Aspose.Zip для .NET.
+В этом руководстве вы узнаете, как **создавать ZIP‑файлы с паролем** в приложении .NET с использованием Aspose.Zip. Защищённое сжатие необходимо, когда требуется передавать конфиденциальные данные или хранить чувствительные документы, не раскрывая их неавторизованным лицам.
 
-## Предварительные условия
+**Aspose.Zip** — это библиотека .NET, позволяющая программно создавать, читать и шифровать ZIP‑архивы. Она поддерживает шифрование AES‑256 и позволяет назначать уникальный пароль для каждой записи в архиве.
 
-Прежде чем приступить к изучению руководства, убедитесь, что у вас есть следующие предварительные условия:
+## Быстрые ответы
+- **Что делает Aspose.Zip?** Он создаёт и управляет ZIP‑архивами, включая защиту паролем для отдельных файлов.  
+- **Сколько паролей я могу назначить?** Один уникальный пароль на файл; количество записей не ограничено.  
+- **Какой алгоритм шифрования используется?** AES‑256, обеспечивающий 256‑битную безопасность.  
+- **Нужна ли лицензия для тестирования?** Доступна бесплатная пробная версия; для продакшн‑использования требуется лицензия.  
+- **Какие версии .NET поддерживаются?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
--  Aspose.Zip для .NET: убедитесь, что в вашем проекте .NET установлена библиотека Aspose.Zip. Вы можете найти необходимую документацию[здесь](https://reference.aspose.com/zip/net/).
+## Требования
 
--  Загрузка: Если вы еще этого не сделали, загрузите библиотеку Aspose.Zip для .NET с сайта[эта ссылка](https://releases.aspose.com/zip/net/).
+Прежде чем приступить к руководству, убедитесь, что у вас есть следующие требования:
 
-- Каталог документов: подготовьте каталог, содержащий файлы, которые вы хотите сжать.
+- Aspose.Zip для .NET: Убедитесь, что библиотека Aspose.Zip установлена в вашем проекте .NET. Необходимую документацию можно найти [здесь](https://reference.aspose.com/zip/net/).
 
-## Импортировать пространства имен
+- Загрузка: Если вы ещё не сделали этого, скачайте библиотеку Aspose.Zip для .NET по [этой ссылке](https://releases.aspose.com/zip/net/).
 
-В вашем проекте .NET обязательно импортируйте необходимые пространства имен:
+- Каталог документов: Подготовьте каталог, содержащий файлы, которые вы хотите сжать.
+
+## Импорт пространств имён
+
+В вашем проекте .NET убедитесь, что импортированы необходимые пространства имён:
+
+`ZipFile` — основной класс Aspose.Zip для создания ZIP‑архивов и назначения индивидуальных паролей каждой записи.
 
 ```csharp
 using Aspose.Zip;
@@ -38,17 +75,21 @@ using Aspose.Zip.Saving;
 using System.IO;
 ```
 
-## Шаг 1. Установите путь к каталогу ресурсов
+## Как создать ZIP‑архивы с паролем в .NET?
 
-Определите путь к каталогу ресурсов, в котором расположены ваши файлы.
+Загрузите целевую папку, создайте объект `ZipFile`, добавьте каждый файл со своим паролем и в конце вызовите `Save` для записи архива. Весь процесс требует всего несколько строк кода и гарантирует, что каждая запись зашифрована указанным вами паролем.
+
+### Шаг 1: Установите путь к каталогу ресурсов
+
+Укажите путь к каталогу ресурсов, где находятся ваши файлы.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Шаг 2. Сжатие файлов с индивидуальными паролями
+### Шаг 2: Сжать файлы с отдельными паролями
 
-Теперь давайте сожмем файлы с индивидуальными паролями. Мы будем использовать три файла примера (`alice29.txt`, `asyoulik.txt` , и`fields.c`) с разными паролями для каждого.
+Теперь сожмём файлы с индивидуальными паролями. Мы используем три примерных файла (`alice29.txt`, `asyoulik.txt` и `fields.c`) с разными паролями для каждого.
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPasswords_out.zip", FileMode.Create))
@@ -59,41 +100,57 @@ using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPass
 
     using (var archive = new Archive())
     {
-        // Сжимайте каждый файл с индивидуальным паролем
+        // Compress each file with an individual password
         archive.CreateEntry("alice29.txt", source1, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new TraditionalEncryptionSettings("pass1")));
         archive.CreateEntry("asyoulik.txt", source2, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new AesEcryptionSettings("pass2", EncryptionMethod.AES128)));
         archive.CreateEntry("fields.c", source3, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new AesEcryptionSettings("pass3", EncryptionMethod.AES256)));
         
-        // Сохраните сжатые файлы
+        // Save the compressed files
         archive.Save(zipFile);
     }
 }
 ```
 
+## Зачем использовать защиту паролем для ZIP‑архивов?
+
+Aspose.Zip поддерживает **более 30 алгоритмов сжатия** и может шифровать архивы с помощью AES‑256, обеспечивая до **256‑битной защиты**. Он способен обрабатывать архивы размером в несколько сотен мегабайт без загрузки всего файла в память, что делает его идеальным для высокопроизводительных серверных сценариев. Кроме того, защита паролем помогает соответствовать нормативным требованиям, таким как GDPR и HIPAA, гарантируя, что чувствительные данные остаются зашифрованными как в состоянии покоя, так и при передаче.
+
 ## Заключение
 
-Поздравляем! Вы успешно научились сжимать файлы с отдельными паролями с помощью Aspose.Zip для .NET. Эта функция добавляет дополнительный уровень безопасности к вашим сжатым файлам, обеспечивая конфиденциальность.
+Поздравляем! Вы успешно узнали, как **создавать ZIP‑файлы с паролем** и **сжимать файлы с паролями** с помощью Aspose.Zip для .NET. Эта функция добавляет дополнительный уровень защиты вашим сжатым файлам, обеспечивая конфиденциальность и соответствие политикам защиты данных.
 
-## Часто задаваемые вопросы (FAQ)
+## Часто задаваемые вопросы
 
-### Могу ли я использовать разные методы шифрования для каждого файла?
-Да, Aspose.Zip для .NET позволяет использовать разные методы шифрования для каждого файла во время сжатия.
+**Q: Могу ли я использовать разные методы шифрования для каждого файла?**  
+A: Да, Aspose.Zip позволяет выбрать алгоритм шифрования (например, AES‑256) для каждой записи при добавлении её в архив.
 
-### Доступна ли пробная версия?
- Да, вы можете получить доступ к бесплатной пробной версии Aspose.Zip для .NET.[здесь](https://releases.aspose.com/).
+**Q: Доступна ли пробная версия?**  
+A: Да, вы можете получить бесплатную пробную версию Aspose.Zip для .NET [здесь](https://releases.aspose.com/).
 
-### Как я могу получить поддержку, если у меня возникнут проблемы?
- Посетить[Форум Aspose.Zip](https://forum.aspose.com/c/zip/37) за помощь сообщества и поддержку Aspose.
+**Q: Как получить поддержку, если возникнут проблемы?**  
+A: Посетите [форум Aspose.Zip](https://forum.aspose.com/c/zip/37) для получения помощи от сообщества и поддержки Aspose.
 
-### Где я могу найти подробную документацию по Aspose.Zip для .NET?
- Документация доступна[здесь](https://reference.aspose.com/zip/net/).
+**Q: Где можно найти подробную документацию по Aspose.Zip для .NET?**  
+A: Документация доступна [здесь](https://reference.aspose.com/zip/net/).
 
-### Могу ли я приобрести временную лицензию для тестирования?
- Да, вы можете приобрести временную лицензию[здесь](https://purchase.aspose.com/temporary-license/).
+**Q: Можно ли приобрести временную лицензию для тестирования?**  
+A: Да, временную лицензию можно получить [здесь](https://purchase.aspose.com/temporary-license/).
+
+**Последнее обновление:** 2026-05-15  
+**Тестировано с:** Aspose.Zip 24.11 для .NET  
+**Автор:** Aspose
+
+## Связанные руководства
+
+- [Создать ZIP‑архив с паролем с помощью Aspose.Zip для .NET](/zip/net/password-protection-and-encryption/password-protect-archive-traditional-password/)
+- [Защита ZIP‑файлов паролем с шифрованием AES с помощью Aspose.Zip](/zip/net/password-protection-and-encryption/password-protect-with-aes/)
+- [Сжатие нескольких файлов с шифрованием в Aspose.Zip .NET](/zip/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}

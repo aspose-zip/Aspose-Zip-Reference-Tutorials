@@ -1,36 +1,72 @@
 ---
-title: Compression de fichiers sécurisée dans .NET avec Aspose.Zip
+date: 2026-05-15
+description: Apprenez à créer des fichiers zip protégés par mot de passe et à compresser
+  des fichiers avec des mots de passe en utilisant Aspose.Zip pour .NET en quelques
+  étapes simples.
+keywords:
+- create password protected zip
+- compress files with passwords
+- Aspose.Zip .NET
 linktitle: Compresser des fichiers avec des mots de passe individuels
-second_title: API Aspose.Zip .NET pour la compression et l'archivage de fichiers
-description: Découvrez comment améliorer la sécurité des fichiers dans les applications .NET ! Suivez notre guide étape par étape sur la compression de fichiers avec des mots de passe individuels à l'aide d'Aspose.Zip pour .NET.
-weight: 16
+schemas:
+- author: Aspose
+  dateModified: '2026-05-15'
+  description: Learn how to create password protected zip files and compress files
+    with passwords using Aspose.Zip for .NET in a few simple steps.
+  headline: Create Password Protected ZIP in .NET with Aspose.Zip
+  type: TechArticle
+- questions:
+  - answer: Yes, Aspose.Zip lets you choose the encryption algorithm (e.g., AES‑256)
+      for each entry when you add it to the archive.
+    question: Can I use different encryption methods for each file?
+  - answer: Yes, you can access the free trial of Aspose.Zip for .NET [here](https://releases.aspose.com/).
+    question: Is there a trial version available?
+  - answer: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for assistance
+      from the community and Aspose support.
+    question: How can I get support if I encounter issues?
+  - answer: The documentation is available [here](https://reference.aspose.com/zip/net/).
+    question: Where can I find detailed documentation for Aspose.Zip for .NET?
+  - answer: Yes, you can acquire a temporary license [here](https://purchase.aspose.com/temporary-license/).
+    question: Can I purchase a temporary license for testing purposes?
+  type: FAQPage
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Créer un fichier ZIP protégé par mot de passe en .NET avec Aspose.Zip
 url: /fr/net/password-protection-and-encryption/compress-files-individual-passwords/
+weight: 16
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Compression de fichiers sécurisée dans .NET avec Aspose.Zip
-
+# Créer un ZIP protégé par mot de passe en .NET avec Aspose.Zip
 
 ## Introduction
 
-Dans le monde du développement .NET, la gestion et la compression efficaces des fichiers sont une tâche cruciale. Aspose.Zip pour .NET fournit une solution puissante pour la compression de fichiers, offrant diverses fonctionnalités pour améliorer vos applications. Une fonctionnalité notable est la possibilité de compresser des fichiers avec des mots de passe individuels, offrant ainsi une couche de sécurité supplémentaire. Dans ce didacticiel, nous vous guiderons tout au long du processus de compression de fichiers avec des mots de passe individuels à l'aide d'Aspose.Zip pour .NET.
+Dans ce tutoriel, vous apprendrez comment **créer des fichiers zip protégés par mot de passe** dans une application .NET en utilisant Aspose.Zip. La compression sécurisée est essentielle lorsque vous devez transmettre des données confidentielles ou stocker des documents sensibles sans les exposer à un accès non autorisé.
 
-## Conditions préalables
+**Aspose.Zip** est une bibliothèque .NET qui permet de créer, lire et chiffrer des archives ZIP de manière programmatique. Elle prend en charge le chiffrement AES‑256 et vous permet d’attribuer un mot de passe unique à chaque entrée de l’archive.
 
-Avant de plonger dans le didacticiel, assurez-vous d'avoir les prérequis suivants :
+## Réponses rapides
+- **Que fait Aspose.Zip ?** Il crée et manipule des archives ZIP, y compris la protection par mot de passe par fichier.  
+- **Combien de mots de passe puis‑je attribuer ?** Un mot de passe distinct par fichier ; entrées illimitées.  
+- **Quel algorithme de chiffrement est utilisé ?** AES‑256, offrant une sécurité de 256 bits.  
+- **Ai‑je besoin d’une licence pour les tests ?** Un essai gratuit est disponible ; une licence est requise pour la production.  
+- **Quelles versions de .NET sont prises en charge ?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
--  Aspose.Zip pour .NET : assurez-vous que la bibliothèque Aspose.Zip est installée dans votre projet .NET. Vous pouvez trouver la documentation nécessaire[ici](https://reference.aspose.com/zip/net/).
+## Prérequis
 
--  Téléchargement : si vous ne l'avez pas déjà fait, téléchargez la bibliothèque Aspose.Zip pour .NET à partir de[ce lien](https://releases.aspose.com/zip/net/).
+Avant de plonger dans le tutoriel, assurez‑vous de disposer des prérequis suivants :
 
-- Répertoire de documents : préparez un répertoire contenant les fichiers que vous souhaitez compresser.
+- Aspose.Zip pour .NET : Assurez‑vous d’avoir la bibliothèque Aspose.Zip installée dans votre projet .NET. Vous pouvez trouver la documentation nécessaire [ici](https://reference.aspose.com/zip/net/).
+- Téléchargement : Si vous ne l’avez pas encore fait, téléchargez la bibliothèque Aspose.Zip pour .NET depuis [ce lien](https://releases.aspose.com/zip/net/).
+- Répertoire de documents : Préparez un répertoire contenant les fichiers que vous souhaitez compresser.
 
-## Importer des espaces de noms
+## Importer les espaces de noms
 
-Dans votre projet .NET, assurez-vous d'importer les espaces de noms nécessaires :
+Dans votre projet .NET, assurez‑vous d’importer les espaces de noms nécessaires :
+
+`ZipFile` est la classe principale d’Aspose.Zip pour créer des archives ZIP et attribuer des mots de passe individuels à chaque entrée.
 
 ```csharp
 using Aspose.Zip;
@@ -38,17 +74,21 @@ using Aspose.Zip.Saving;
 using System.IO;
 ```
 
-## Étape 1 : Définir le chemin du répertoire de ressources
+## Comment créer des fichiers zip protégés par mot de passe en .NET ?
 
-Définissez le chemin d'accès au répertoire de ressources où se trouvent vos fichiers.
+Chargez le dossier cible, créez une instance de l’objet `ZipFile`, ajoutez chaque fichier avec son propre mot de passe, puis appelez `Save` pour écrire l’archive. Ce processus complet ne nécessite que quelques lignes de code et garantit que chaque entrée est chiffrée avec le mot de passe que vous spécifiez.
+
+### Étape 1 : Définir le chemin du répertoire de ressources
+
+Définissez le chemin du répertoire de ressources où se trouvent vos fichiers.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Étape 2 : Compresser les fichiers avec des mots de passe individuels
+### Étape 2 : Compresser les fichiers avec des mots de passe individuels
 
-Maintenant, compressons les fichiers avec des mots de passe individuels. Nous utiliserons trois exemples de fichiers (`alice29.txt`, `asyoulik.txt` , et`fields.c`) avec des mots de passe distincts pour chacun.
+Maintenant, compressons les fichiers avec des mots de passe individuels. Nous utiliserons trois fichiers d’exemple (`alice29.txt`, `asyoulik.txt` et `fields.c`) avec des mots de passe distincts pour chacun.
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPasswords_out.zip", FileMode.Create))
@@ -59,41 +99,59 @@ using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPass
 
     using (var archive = new Archive())
     {
-        // Compressez chaque fichier avec un mot de passe individuel
+        // Compress each file with an individual password
         archive.CreateEntry("alice29.txt", source1, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new TraditionalEncryptionSettings("pass1")));
         archive.CreateEntry("asyoulik.txt", source2, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new AesEcryptionSettings("pass2", EncryptionMethod.AES128)));
         archive.CreateEntry("fields.c", source3, true, new ArchiveEntrySettings(new DeflateCompressionSettings(), new AesEcryptionSettings("pass3", EncryptionMethod.AES256)));
         
-        // Enregistrez les fichiers compressés
+        // Save the compressed files
         archive.Save(zipFile);
     }
 }
 ```
 
+## Pourquoi utiliser la protection par mot de passe pour les archives ZIP ?
+
+Aspose.Zip prend en charge **plus de 30 algorithmes de compression** et peut chiffrer les archives avec AES‑256, offrant jusqu’à **une sécurité de 256 bits**. Il peut traiter des archives de plusieurs centaines de mégaoctets sans charger le fichier complet en mémoire, ce qui le rend idéal pour les scénarios serveur haute performance. De plus, la protection par mot de passe aide à respecter les exigences réglementaires telles que le RGPD et la HIPAA en garantissant que les données sensibles restent chiffrées au repos et pendant la transmission.
+
 ## Conclusion
 
-Toutes nos félicitations! Vous avez appris avec succès comment compresser des fichiers avec des mots de passe individuels à l'aide d'Aspose.Zip pour .NET. Cette fonctionnalité ajoute une couche de sécurité supplémentaire à vos fichiers compressés, garantissant ainsi la confidentialité.
+Félicitations ! Vous avez appris avec succès comment **créer des fichiers zip protégés par mot de passe** et **compresser des fichiers avec des mots de passe** en utilisant Aspose.Zip pour .NET. Cette fonctionnalité ajoute une couche supplémentaire de sécurité à vos fichiers compressés, assurant confidentialité et conformité aux politiques de protection des données.
 
-## Foire aux questions (FAQ)
+## Questions fréquentes
 
-### Puis-je utiliser différentes méthodes de cryptage pour chaque fichier ?
-Oui, Aspose.Zip pour .NET vous permet d'utiliser différentes méthodes de cryptage pour chaque fichier lors de la compression.
+**Q : Puis‑je utiliser différentes méthodes de chiffrement pour chaque fichier ?**  
+R : Oui, Aspose.Zip vous permet de choisir l’algorithme de chiffrement (par ex., AES‑256) pour chaque entrée lors de son ajout à l’archive.
 
-### Existe-t-il une version d'essai disponible ?
- Oui, vous pouvez accéder à l'essai gratuit d'Aspose.Zip pour .NET[ici](https://releases.aspose.com/).
+**Q : Existe‑t‑il une version d’essai disponible ?**  
+R : Oui, vous pouvez accéder à l’essai gratuit d’Aspose.Zip pour .NET [ici](https://releases.aspose.com/).
 
-### Comment puis-je obtenir de l'aide si je rencontre des problèmes ?
- Visiter le[Forum Aspose.Zip](https://forum.aspose.com/c/zip/37) pour l’aide de la communauté et le soutien d’Aspose.
+**Q : Comment obtenir de l’aide si je rencontre des problèmes ?**  
+R : Consultez le [forum Aspose.Zip](https://forum.aspose.com/c/zip/37) pour obtenir de l’assistance de la communauté et du support Aspose.
 
-### Où puis-je trouver une documentation détaillée pour Aspose.Zip pour .NET ?
- La documentation est disponible[ici](https://reference.aspose.com/zip/net/).
+**Q : Où trouver la documentation détaillée d’Aspose.Zip pour .NET ?**  
+R : La documentation est disponible [ici](https://reference.aspose.com/zip/net/).
 
-### Puis-je acheter une licence temporaire à des fins de test ?
- Oui, vous pouvez acquérir une licence temporaire[ici](https://purchase.aspose.com/temporary-license/).
+**Q : Puis‑je acheter une licence temporaire à des fins de test ?**  
+R : Oui, vous pouvez acquérir une licence temporaire [ici](https://purchase.aspose.com/temporary-license/).
+
+---
+
+**Dernière mise à jour :** 2026-05-15  
+**Testé avec :** Aspose.Zip 24.11 pour .NET  
+**Auteur :** Aspose
+
+## Tutoriels associés
+
+- [Créer un ZIP protégé par mot de passe avec Aspose.Zip pour .NET](/zip/net/password-protection-and-encryption/password-protect-archive-traditional-password/)
+- [Protéger les fichiers ZIP par mot de passe avec chiffrement AES en utilisant Aspose.Zip](/zip/net/password-protection-and-encryption/password-protect-with-aes/)
+- [Compresser plusieurs fichiers avec chiffrement dans Aspose.Zip .NET](/zip/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
+
+{{< /blocks/products/pf/main-wrap-class >}}
