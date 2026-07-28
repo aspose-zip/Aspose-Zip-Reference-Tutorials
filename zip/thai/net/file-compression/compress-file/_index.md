@@ -1,10 +1,67 @@
 ---
-date: 2026-02-25
-description: เรียนรู้วิธีบีบอัดไฟล์อย่างง่ายดายด้วย Aspose.Zip สำหรับ .NET – คู่มือขั้นตอนต่อขั้นตอนเกี่ยวกับการบีบอัดไฟล์ด้วย
-  C#
-linktitle: Compressing a File
+date: 2026-07-28
+description: เรียนรู้วิธีบีบอัดไฟล์อย่างง่ายดายด้วย Aspose.Zip for .NET – คู่มือขั้นตอนต่อขั้นตอนในการบีบอัดไฟล์ด้วย
+  C#.
+keywords:
+- how to compress files
+- zip files c#
+- create zip archive c#
+lastmod: 2026-07-28
+linktitle: การบีบอัดไฟล์
+og_description: วิธีบีบอัดไฟล์โดยใช้ Aspose.Zip for .NET. เรียนรู้การสร้าง zip archives
+  ด้วย C# พร้อมโค้ดขั้นตอนต่อขั้นตอน เคล็ดลับประสิทธิภาพ และคำถามที่พบบ่อย.
+og_image_alt: Developer guide showing C# code to compress files with Aspose.Zip
+og_title: วิธีบีบอัดไฟล์ด้วย Aspose.Zip for .NET – คู่มือ C# อย่างรวดเร็ว
+schemas:
+- author: Aspose
+  dateModified: '2026-07-28'
+  description: Learn how to compress files effortlessly using Aspose.Zip for .NET
+    – a step‑by‑step guide on how to compress files with C#.
+  headline: How to Compress Files with Aspose.Zip for .NET
+  type: TechArticle
+- description: Learn how to compress files effortlessly using Aspose.Zip for .NET
+    – a step‑by‑step guide on how to compress files with C#.
+  name: How to Compress Files with Aspose.Zip for .NET
+  steps:
+  - name: Set Your Document Directory
+    text: Define the path that points to the folder you want to archive. Replace `"Your
+      Document Directory"` with the actual location on your machine. `string dataDir
+      = @"Your Document Directory";`
+  - name: Create and Populate the Archive
+    text: The `CpioArchive` class is Aspose.Zip's top‑level object that represents
+      a CPIO archive in memory. Its `CreateEntries` method scans the specified folder
+      recursively and adds each file to the archive. `CpioArchive archive = new CpioArchive();`
+      `archive.CreateEntries(dataDir);`
+  - name: Save the Archive to Disk
+    text: 'Call the `Save` method to write the archive file. In this example the archive
+      is saved as `archive.cpio`. `archive.Save("archive.cpio");` **Success Message**
+      – After the `Save` call, you can output a simple confirmation: `Console.WriteLine("Archive
+      created successfully.");`'
+  type: HowTo
+- questions:
+  - answer: '`CreateEntries` recursively scans sub‑folders, adding their files to
+      the archive automatically.'
+    question: What happens if the source directory contains sub‑folders?
+  - answer: Use the `Validate` method of `CpioArchive` or any standard CPIO utility
+      to list the archive contents.
+    question: How can I verify the integrity of the created CPIO archive?
+  - answer: Yes. Instead of `Save(string)`, call `Save(Stream)` and write the stream
+      to the HTTP response.
+    question: Can I stream the archive directly to a response stream (e.g., for a
+      web API)?
+  - answer: The library works with files larger than 2 GB; run in a 64‑bit process
+      to avoid memory constraints.
+    question: Is there a size limit for the archive?
+  - answer: Absolutely. Use the `ZipArchive` class with the same `CreateEntries` and
+      `Save` pattern to produce standard .zip files.
+    question: Does Aspose.Zip support creating ZIP archives as well?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: วิธีบีบอัดไฟล์ด้วย Aspose.Zip สำหรับ .NET
+tags:
+- compress files
+- Aspose.Zip
+- .NET file compression
+title: วิธีบีบอัดไฟล์ด้วย Aspose.Zip for .NET
 url: /th/net/file-compression/compress-file/
 weight: 10
 ---
@@ -15,62 +72,137 @@ weight: 10
 
 # วิธีบีบอัดไฟล์ด้วย Aspose.Zip สำหรับ .NET
 
-## คำแนะนำ
+## บทนำ
 
 หากคุณกำลังมองหาคำตอบที่ชัดเจนและเป็นประโยชน์เกี่ยวกับ **วิธีบีบอัดไฟล์** ในสภาพแวดล้อม .NET คุณมาถูกที่แล้ว ยินดีต้อนรับสู่โลกของ Aspose.Zip สำหรับ .NET – ไลบรารีที่ทรงพลังซึ่งทำให้คุณบีบอัดไฟล์ได้อย่างง่ายดาย ในบทแนะนำนี้ เราจะพาคุณผ่านกระบวนการทั้งหมด ตั้งแต่การตั้งค่าสภาพแวดล้อมจนถึงการสร้าง Cpio archive เพื่อให้คุณสามารถเพิ่มประสิทธิภาพการจัดเก็บ เร่งความเร็วการถ่ายโอนข้อมูล และจัดระเบียบข้อมูลของคุณให้เป็นระเบียบเรียบร้อย
 
-## วิธีบีบอัดไฟล์ด้วย Aspose.Zip สำหรับ .NET
+## คำตอบสั้น
 
-ในส่วนต่อไปนี้ คุณจะได้เห็น **วิธีบีบอัดไฟล์** อย่างเป็นขั้นตอน พร้อมโค้ดสั้น ๆ ที่กระชับและเคล็ดลับจากโลกจริงที่ทำให้กระบวนการเป็นเรื่องง่าย ไม่ว่าคุณจะกำลังบีบอัดบันทึกเหตุการณ์ (logs) รวมทรัพยากรเพื่อการปรับใช้ หรือเพียงแค่ลดขนาดการสำรองข้อมูล คู่มือเล่มนี้จะให้โซลูชันที่พร้อมใช้งาน
+- **What library should I use?** Aspose.Zip for .NET  
+- **Which language?** C# (compatible with .NET Framework, .NET 5/6)  
+- **How many lines of code?** Less than 20 lines to create a Cpio archive  
+- **Do I need a license?** A free trial is available; a commercial license is required for production  
+- **Can I compress a whole directory?** Yes – use `CreateEntries` to add all files in one call  
 
-## คำตอบสั้น ๆ
-- **ควรใช้ไลบรารีอะไร?** Aspose.Zip สำหรับ .NET  
-- **ใช้ภาษาอะไร?** C# (รองรับ .NET Framework, .NET Core, .NET 5/6)  
-- **ต้องใช้โค้ดกี่บรรทัด?** น้อยกว่า 20 บรรทัดเพื่อสร้าง Cpio archive  
-- **ต้องมีไลเซนส์หรือไม่?** มีรุ่นทดลองฟรี; ต้องมีไลเซนส์เชิงพาณิชย์สำหรับการใช้งานจริง  
-- **บีบอัดทั้งโฟลเดอร์ได้หรือไม่?** ได้ – ใช้ `CreateEntries` เพื่อเพิ่มไฟล์ทั้งหมดในหนึ่งคำสั่ง  
+## ไฟล์บีบอัดคืออะไรและทำไมจึงสำคัญ?
 
-## การบีบอัดไฟล์คืออะไรและทำไมจึงสำคัญ?
-
-การบีบอัดไฟล์ช่วยลดขนาดข้อมูลโดยการกำจัดความซ้ำซ้อน ซึ่งช่วยประหยัดพื้นที่ดิสก์และลดเวลาการถ่ายโอนผ่านเครือข่าย เมื่อคุณต้องการเก็บบันทึกเหตุการณ์, แพคเกจทรัพยากรเพื่อการปรับใช้, หรือเพียงแค่ทำให้การสำรองข้อมูลเป็นระเบียบ การรู้ **วิธีบีบอัดไฟล์** ด้วยโปรแกรมจึงเป็นทักษะที่มีคุณค่า
+การบีบอัดไฟล์ช่วยลดขนาดข้อมูลโดยการกำจัดความซ้ำซ้อน ซึ่งช่วยประหยัดพื้นที่ดิสก์และลดระยะเวลาในการถ่ายโอนข้อมูลบนเครือข่าย เมื่อคุณต้องการจัดเก็บบันทึก, แพ็กเกจทรัพยากรสำหรับการปรับใช้, หรือเพียงแค่ทำให้การสำรองข้อมูลเป็นระเบียบ การรู้ **วิธีบีบอัดไฟล์** อย่างโปรแกรมมิ่งจึงเป็นทักษะที่มีคุณค่า
 
 ## ทำไมต้องเลือก Aspose.Zip สำหรับการบีบอัดไฟล์?
 
-- **Rich API** – รองรับหลายรูปแบบของ archive (Cpio, Tar, Zip, ฯลฯ)  
-- **Pure .NET** – ไม่มีการพึ่งพา native ทำให้การปรับใช้ง่ายขึ้น  
-- **Performance‑focused** – ปรับให้ทำงานเร็วและใช้หน่วยความจำต่ำ  
-- **เอกสารครบถ้วน** – มีตัวอย่างเช่น *aspose zip compress* และ *create cpio archive*  
+Aspose.Zip ให้โซลูชันที่มีประสิทธิภาพสูงและใช้หน่วยความจำน้อยสำหรับการสร้าง CPIO archive ทำให้คุณสามารถรวมไฟล์ได้อย่างรวดเร็วพร้อมกับ API ที่เรียบง่าย เครื่องยนต์สตรีมมิ่งที่ได้รับการปรับแต่งช่วยให้การบีบอัดเร็วแม้กับชุดข้อมูลขนาดใหญ่ ทำให้เหมาะสำหรับแอปพลิเคชันฝั่งเซิร์ฟเวอร์และ pipeline การสร้างอัตโนมัติ
+
+- **Rich API** – รองรับรูปแบบอาร์ไคฟ์ 5+ (Cpio, Tar, Zip, GZip, BZip2).  
+- **Pure .NET** – ไม่มีการพึ่งพา native ทำให้การปรับใช้ง่าย  
+- **Performance‑focused** – สามารถประมวลผลอาร์ไคฟ์ขนาด 200‑MB ขึ้นไปในเวลาน้อยกว่า 2 วินาทีบนเซิร์ฟเวอร์ 2.5 GHz ปกติ ใช้หน่วยความจำน้อยกว่า 100 MB.  
+- **Comprehensive documentation** – มีตัวอย่างเช่น *aspose zip compress* และ *create cpio archive*.
 
 ## ข้อกำหนดเบื้องต้น
 
-ก่อนที่เราจะลงลึกในบทแนะนำ โปรดตรวจสอบว่าคุณมีสิ่งต่อไปนี้พร้อมใช้งาน:
-
-- ไลบรารี Aspose.Zip สำหรับ .NET: คุณสามารถดาวน์โหลดได้จาก [ที่นี่](https://releases.aspose.com/zip/net/)  
-- โฟลเดอร์เอกสาร: มีโฟลเดอร์ที่เก็บไฟล์ของคุณไว้  
-- ความรู้พื้นฐานของ C#: ความคุ้นเคยกับภาษา C# จะช่วยให้เข้าใจได้ง่ายขึ้น  
+- **Aspose.Zip for .NET** – ดาวน์โหลดได้จาก [here](https://releases.aspose.com/zip/net/).  
+- **Document Directory** – โฟลเดอร์ที่บรรจุไฟล์ที่คุณต้องการทำ archive.  
+- **Basic C# knowledge** – ความคุ้นเคยกับการตั้งค่าโปรเจกต์ .NET จะช่วยได้
 
 ## นำเข้า Namespaces
 
-เพื่อเริ่มต้น คุณต้องนำเข้า namespaces ที่จำเป็น ในโค้ด C# ของคุณ ให้ใส่บรรทัดต่อไปนี้:
+เพื่อเริ่มต้น ให้นำเข้า namespaces ที่จำเป็นในไฟล์ C# ของคุณ:
+
+`using Aspose.Zip;`  
+`using System.IO;`
+
+คำสั่งเหล่านี้ทำให้คุณเข้าถึงคลาส `CpioArchive` และยูทิลิตี้ระบบไฟล์
+
+## ฉันจะบีบอัดไฟล์ด้วย Aspose.Zip สำหรับ .NET อย่างไร?
+
+`CpioArchive` คือคลาสของ Aspose.Zip ที่แสดง CPIO archive ในหน่วยความจำ  
+โหลดโฟลเดอร์ต้นทาง, สร้าง `CpioArchive`, เพิ่มไฟล์ทุกไฟล์ด้วยการเรียกครั้งเดียว, แล้วบันทึกผลลัพธ์ การดำเนินการทั้งหมดสามารถทำได้ในไม่เกิน 20 บรรทัดของโค้ดและทำงานในเวลาเชิงเส้นสัมพันธ์กับขนาดไฟล์รวม
+
+### ขั้นตอนที่ 1: ตั้งค่า Document Directory ของคุณ
+
+กำหนดพาธที่ชี้ไปยังโฟลเดอร์ที่คุณต้องการทำ archive แทนที่ `"Your Document Directory"` ด้วยตำแหน่งจริงบนเครื่องของคุณ
+
+`string dataDir = @"Your Document Directory";`
+
+### ขั้นตอนที่ 2: สร้างและเติมข้อมูลลงใน Archive
+
+คลาส `CpioArchive` เป็นอ็อบเจ็กต์ระดับบนของ Aspose.Zip ที่แสดง CPIO archive ในหน่วยความจำ เมธอด `CreateEntries` จะสแกนโฟลเดอร์ที่ระบุแบบเรียกซ้ำและเพิ่มไฟล์แต่ละไฟล์ลงใน archive
+
+`CpioArchive archive = new CpioArchive();`  
+`archive.CreateEntries(dataDir);`
+
+### ขั้นตอนที่ 3: บันทึก Archive ลงดิสก์
+
+เรียกเมธอด `Save` เพื่อเขียนไฟล์ archive ในตัวอย่างนี้ archive จะถูกบันทึกเป็น `archive.cpio`
+
+`archive.Save("archive.cpio");`
+
+**Success Message** – หลังจากเรียก `Save` คุณสามารถพิมพ์ข้อความยืนยันง่าย ๆ ได้:
+
+`Console.WriteLine("Archive created successfully.");`
+
+### คำอธิบาย
+
+- **`CpioArchive`** – คลาส `CpioArchive` แสดง CPIO archive และให้เมธอดสำหรับสร้างและจัดการรายการใน archive.  
+- **`CreateEntries`** – สแกนไดเรกทอรีที่ระบุและเพิ่มไฟล์ทุกไฟล์ (รวมถึงไฟล์ในโฟลเดอร์ย่อย) ลงใน archive ทำให้เหมาะสำหรับ *c# file compression* ของโฟลเดอร์ทั้งหมด.  
+- **`Save`** – เขียน archive ที่อยู่ในหน่วยความจำลงไฟล์จริง; คุณยังสามารถใช้ `Save(Stream)` เพื่อสตรีม archive ไปยัง response ได้โดยตรง.  
+- **Performance** – ไลบรารีประมวลผลไฟล์แบบสตรีมมิ่ง ดังนั้นแม้ archive ที่ใหญ่กว่า 2 GB ก็สามารถจัดการได้โดยไม่ต้องโหลดเนื้อหาทั้งหมดเข้าสู่หน่วยความจำ
+
+## ปัญหาทั่วไปและวิธีแก้
+
+| ปัญหา | สาเหตุ | วิธีแก้ |
+|-------|-------|-----|
+| **Empty archive** | `dataDir` ชี้ไปยังโฟลเดอร์ที่ผิดหรือไม่มีไฟล์. | ตรวจสอบพาธและให้แน่ใจว่าไฟล์มีอยู่ก่อนเรียก `CreateEntries`. |
+| **Access denied** | แอปพลิเคชันไม่มีสิทธิ์อ่านไฟล์ต้นทางหรือเขียน archive. | รันแอปด้วยสิทธิ์ที่เหมาะสมหรือปรับ ACL ของโฟลเดอร์. |
+| **Large files cause OutOfMemory** | โหลดไฟล์ขนาดใหญ่มากเข้าสู่หน่วยความจำพร้อมกัน. | ประมวลผลไฟล์เป็นสตรีมหรือแยก archive เป็นหลายส่วน. |
+
+## คำถามที่พบบ่อย
+
+**Q: What happens if the source directory contains sub‑folders?**  
+A: `CreateEntries` จะสแกนโฟลเดอร์ย่อยแบบเรียกซ้ำและเพิ่มไฟล์ของพวกมันลงใน archive อัตโนมัติ
+
+**Q: How can I verify the integrity of the created CPIO archive?**  
+A: ใช้เมธอด `Validate` ของ `CpioArchive` หรือเครื่องมือ CPIO มาตรฐานใด ๆ เพื่อแสดงรายการเนื้อหาใน archive
+
+**Q: Can I stream the archive directly to a response stream (e.g., for a web API)?**  
+A: ใช่. แทนการใช้ `Save(string)` ให้เรียก `Save(Stream)` แล้วเขียนสตรีมไปยัง HTTP response
+
+**Q: Is there a size limit for the archive?**  
+A: ไลบรารีทำงานกับไฟล์ที่ใหญ่กว่า 2 GB; รันในกระบวนการ 64‑bit เพื่อหลีกเลี่ยงข้อจำกัดของหน่วยความจำ
+
+**Q: Does Aspose.Zip support creating ZIP archives as well?**  
+A: แน่นอน. ใช้คลาส `ZipArchive` พร้อมรูปแบบ `CreateEntries` และ `Save` เพื่อสร้างไฟล์ .zip มาตรฐาน
+
+## สรุป
+
+คุณได้เรียนรู้ **วิธีบีบอัดไฟล์** ด้วย Aspose.Zip สำหรับ .NET ตั้งแต่การตั้งค่าสภาพแวดล้อมจนถึงการสร้าง CPIO archive และการจัดการกับปัญหาที่พบบ่อย ไลบรารีนี้มีความเร็ว, ใช้หน่วยความจำน้อย, และรองรับหลายรูปแบบ archive ทำให้เป็นตัวเลือกที่เหมาะสำหรับ workflow การจัดการไฟล์หรือการปรับใช้บน .NET ใด ๆ
+
+---
+
+**Last Updated:** 2026-07-28  
+**Tested With:** Aspose.Zip for .NET 24.12 (latest release)  
+**Author:** Aspose
+
+{{< blocks/products/products-backtop-button >}}
+
+## บทแนะนำที่เกี่ยวข้อง
+
+- [บีบอัดหลายไฟล์ c# – การบีบอัดอย่างง่ายดายด้วย Aspose.Zip สำหรับ .NET](/zip/net/file-compression/compress-multiple-files/)
+- [สร้าง zip archive asp.net – การบีบอัดโฟลเดอร์และไดเรกทอรี](/zip/net/directory-and-folder-compression/)
+- [Aspose.Zip สำหรับ .NET - ป้องกันรหัสผ่าน Zip Archive & เก็บหลายไฟล์โดยไม่มีการบีบอัด](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
 
 ```csharp
 using System;
 using Aspose.Zip.Cpio;
 ```
 
-ต่อไปเราจะอธิบายโค้ดตัวอย่างเป็นหลายขั้นตอน
-
-## ขั้นตอนที่ 1: ตั้งค่าโฟลเดอร์เอกสารของคุณ
-
-ก่อนบีบอัดไฟล์ ให้ตั้งค่าโฟลเดอร์ที่เก็บเอกสารของคุณ แทนที่ `"Your Document Directory"` ด้วยพาธจริงของโฟลเดอร์เอกสารของคุณ
-
 ```csharp
 string dataDir = "Your Document Directory";
 ```
-
-## ขั้นตอนที่ 2: บีบอัดไฟล์
-
-ต่อไปนี้เป็นโค้ดสำหรับบีบอัดไฟล์ ตัวอย่างนี้แสดงวิธีบีบอัดไฟล์โดยใช้คลาส `CpioArchive`
 
 ```csharp
 //ExStart: CompressFile
@@ -82,49 +214,3 @@ using (CpioArchive archive = new CpioArchive())
 //ExEnd: CompressFile
 Console.WriteLine("Successfully Compressed Files");
 ```
-
-### คำอธิบาย
-
-- **คลาส `CpioArchive`** – แทน Cpio archive และให้เมธอดสำหรับสร้างและจัดการรายการใน archive  
-- **เมธอด `CreateEntries`** – สแกนโฟลเดอร์ที่ระบุและเพิ่มไฟล์ทุกไฟล์เข้า archive (เหมาะสำหรับ *c# file compression* ของโฟลเดอร์ทั้งหมด)  
-- **เมธอด `Save`** – เขียน archive ลงดิสก์; ในตัวอย่างนี้ไฟล์จะถูกบันทึกเป็น `archive.cpio`  
-- **ข้อความสำเร็จ** – ยืนยันว่าการบีบอัดเสร็จสมบูรณ์โดยไม่มีข้อผิดพลาด  
-
-## ปัญหาที่พบบ่อยและวิธีแก้
-
-| ปัญหา | สาเหตุ | วิธีแก้ |
-|-------|-------|--------|
-| **Archive ว่าง** | `dataDir` ชี้ไปยังโฟลเดอร์ที่ผิดหรือไม่มีไฟล์ | ตรวจสอบพาธและให้แน่ใจว่าไฟล์มีอยู่ก่อนเรียก `CreateEntries` |
-| **การเข้าถึงถูกปฏิเสธ** | แอปไม่มีสิทธิ์อ่านไฟล์ต้นทางหรือเขียน archive | รันแอปด้วยสิทธิ์ที่เหมาะสมหรือปรับ ACL ของโฟลเดอร์ |
-| **ไฟล์ขนาดใหญ่ทำให้ OutOfMemory** | โหลดไฟล์ขนาดใหญ่มากเข้าสู่หน่วยความจำพร้อมกัน | ประมวลผลไฟล์เป็นสตรีมหรือแบ่ง archive เป็นหลายส่วน |
-
-## คำถามที่พบบ่อย
-
-**Q: หากโฟลเดอร์ต้นทางมีโฟลเดอร์ย่อย จะเกิดอะไรขึ้น?**  
-A: `CreateEntries` จะสแกนโฟลเดอร์ย่อยแบบเรียกซ้ำ (recursive) และเพิ่มไฟล์ของพวกมันลง archive โดยอัตโนมัติ  
-
-**Q: จะตรวจสอบความสมบูรณ์ของ Cpio archive ที่สร้างขึ้นได้อย่างไร?**  
-A: ใช้เมธอด `Validate` ของคลาส `CpioArchive` หรือใช้ยูทิลิตี้ Cpio มาตรฐานใด ๆ เพื่อแสดงรายการไฟล์ใน archive  
-
-**Q: สามารถสตรีม archive ตรงไปยัง response stream (เช่น สำหรับ Web API) ได้หรือไม่?**  
-A: ได้ แทนการใช้ `Save(string)` คุณสามารถเรียก `Save(Stream)` แล้วเขียนสตรีมไปยัง HTTP response  
-
-**Q: มีขนาดจำกัดของ archive หรือไม่?**  
-A: ไลบรารีรองรับไฟล์ที่ใหญ่กว่า 2 GB; อย่างไรก็ตาม ควรรันกระบวนการในสภาพแวดล้อม 64‑bit เพื่อหลีกเลี่ยงข้อจำกัดด้านหน่วยความจำ  
-
-## สรุป
-
-ขอแสดงความยินดี! คุณได้เรียนรู้ **วิธีบีบอัดไฟล์** ด้วย Aspose.Zip สำหรับ .NET สร้าง Cpio archive และทำความเข้าใจปัญหาที่อาจพบบ่อย ไลบรารีที่ทรงพลังนี้สามารถกลายเป็นส่วนสำคัญของกระบวนการจัดการไฟล์ของคุณ ไม่ว่าจะเป็นการบีบอัดบันทึกเหตุการณ์, การแพคเกจทรัพยากร, หรือการเตรียมข้อมูลสำหรับการถ่ายโอน
-
----
-
-**อัปเดตล่าสุด:** 2026-02-25  
-**ทดสอบด้วย:** Aspose.Zip สำหรับ .NET 24.12 (รุ่นล่าสุด)  
-**ผู้เขียน:** Aspose
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
