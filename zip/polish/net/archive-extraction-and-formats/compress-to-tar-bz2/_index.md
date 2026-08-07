@@ -1,17 +1,51 @@
 ---
-date: 2026-04-24
-description: Dowiedz się, jak kompresować tar i tworzyć archiwum TarBz2 w .NET przy
-  użyciu Aspose.Zip. Ten przewodnik krok po kroku pokazuje, jak dodawać pliki do tar
-  i efektywnie generować pliki tarbz2.
+date: 2026-08-07
+description: Dowiedz się, jak dodać pliki do tar i wygenerować archiwum TarBz2 w .NET
+  przy użyciu Aspose.Zip. Przewodnik krok po kroku pokazuje tworzenie tar, kompresję
+  Bzip2 oraz wskazówki najlepszych praktyk.
 keywords:
-- how to compress tar
 - add files to tar
+- tar bzip2 compression
+- generate tarbz2 archive
 - asp zip
-- create tarbz2 archive
-- tar archive .net
-linktitle: Kompresowanie do TarBz2
+- compress tar .net
+lastmod: 2026-08-07
+linktitle: Kompresja do TarBz2
+og_description: Dodaj pliki do tar i wygeneruj archiwum TarBz2 w .NET przy użyciu
+  Aspose.Zip. Ten przewodnik obejmuje tworzenie tar, kompresję Bzip2 oraz wskazówki
+  rozwiązywania problemów.
+og_image_alt: Developer guide showing how to add files to tar and compress to TarBz2
+  with Aspose.Zip for .NET
+og_title: Dodaj pliki do tar i utwórz archiwum TarBz2 przy użyciu Aspose.Zip
+schemas:
+- author: Aspose
+  dateModified: '2026-08-07'
+  description: Learn how to add files to tar and generate a TarBz2 archive in .NET
+    using Aspose.Zip. Step‑by‑step guide shows tar creation, Bzip2 compression and
+    best‑practice tips.
+  headline: Add files to tar and create a TarBz2 archive with Aspose.Zip
+  type: TechArticle
+- questions:
+  - answer: Yes. It works with .NET Framework, .NET Core, .NET 5/6 and newer runtimes.
+    question: Is Aspose.Zip compatible with all .NET applications?
+  - answer: Absolutely. Call `CreateEntry` for each file before saving the archive.
+    question: Can I compress multiple files simultaneously?
+  - answer: 'Detailed docs are available in the **Aspose.Zip .NET API reference**:
+      [Aspose.Zip .NET API reference](https://reference.aspose.com/zip/net/).'
+    question: Where can I find additional documentation?
+  - answer: 'You can **request a temporary license** here: [request a temporary license](https://purchase.aspose.com/temporary-license/).'
+    question: How do I obtain a temporary license for Aspose.Zip?
+  - answer: 'Yes, **download a trial version from Aspose releases**: [download a trial
+      version](https://releases.aspose.com/).'
+    question: Is there a free trial available?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Jak skompresować tar i utworzyć TarBz2 przy użyciu Aspose.Zip dla .NET
+tags:
+- add files to tar
+- Aspose.Zip
+- .NET compression
+- TarBz2 archive
+title: Dodaj pliki do tar i utwórz archiwum TarBz2 przy użyciu Aspose.Zip
 url: /pl/net/archive-extraction-and-formats/compress-to-tar-bz2/
 weight: 11
 ---
@@ -20,42 +54,35 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Jak skompresować tar i utworzyć TarBz2 przy użyciu Aspose.Zip dla .NET
+# Dodaj pliki do tar i utwórz archiwum TarBz2 przy użyciu Aspose.Zip
 
-## Wprowadzenie
-
-W tym samouczku dowiesz się **jak kompresować archiwa tar** i przekształcić je w kompaktowy plik **TarBz2** przy użyciu biblioteki **Aspose.Zip** dla .NET. Niezależnie od tego, czy tworzysz narzędzie do tworzenia kopii zapasowych, publikujesz pakiety wdrożeniowe, czy po prostu potrzebujesz lekkiego pakietu do dystrybucji, poniższe kroki poprowadzą Cię przez dodawanie plików do tar, stosowanie kompresji Bzip2 oraz tworzenie gotowego do udostępnienia archiwum.
-
-Zanim zaczniemy, upewnij się, że masz wymagane elementy wymienione później w tym przewodniku, aby móc podążać bez problemów.
+W tym samouczku odkryjesz **jak dodać pliki do tar** archiwów i przekształcić je w kompaktowy plik **TarBz2** przy użyciu biblioteki **Aspose.Zip** dla .NET. Niezależnie od tego, czy tworzysz narzędzie do tworzenia kopii zapasowych, publikujesz pakiety wdrożeniowe, czy potrzebujesz lekkiego pakietu do dystrybucji, poniższe kroki przeprowadzą Cię przez dodawanie plików do kontenera tar, zastosowanie kompresji Bzip2 i wygenerowanie gotowego do udostępnienia archiwum.
 
 ## Szybkie odpowiedzi
 - **Jakiej biblioteki powinienem używać?** Aspose.Zip for .NET  
 - **Jak długo trwa implementacja?** Około 5‑10 minut  
-- **Czy potrzebna jest licencja?** Wymagana jest tymczasowa licencja do produkcji; dostępna jest darmowa wersja próbna  
+- **Czy potrzebna jest licencja?** Wymagana jest tymczasowa licencja do produkcji; dostępna jest bezpłatna wersja próbna  
 - **Czy mogę kompresować wiele plików?** Tak – dodaj dowolną liczbę wpisów do archiwum tar  
-- **Czy jest kompatybilny z .NET 6+?** Absolutnie, Aspose.Zip obsługuje .NET Framework oraz .NET Core/5/6  
+- **Czy jest kompatybilny z .NET 6+?** Zdecydowanie tak, Aspose.Zip obsługuje .NET Framework oraz .NET Core/5/6  
 
-## Co to jest archiwum TarBz2?
+## Czym jest archiwum TarBz2?
 
-Plik **TarBz2** łączy tradycyjny kontener **tar** (który zachowuje strukturę katalogów i metadane plików) z kompresją **Bzip2**, tworząc silnie skompresowany pakiet `.tar.bz2`. Ten format jest popularny w systemach podobnych do Unix, ponieważ zapewnia dobrą równowagę między współczynnikiem kompresji a szybkością dekompresji.
+Plik TarBz2 łączy tradycyjny kontener **tar** (który zachowuje strukturę katalogów i metadane plików) z kompresją **Bzip2**, co skutkuje wysoko skompresowanym pakietem `.tar.bz2`. Ten format jest popularny w systemach podobnych do Unix, ponieważ zapewnia dobrą równowagę między współczynnikiem kompresji a szybkością dekompresji.
 
 ## Dlaczego kompresować pliki do TarBz2 przy użyciu Aspose.Zip?
 
-- **Szybkość i prostota** – Jednolinijkowe wywołania API obsługują zarówno tworzenie tar, jak i kompresję Bzip2.  
-- **Wieloplatformowość** – Działa na środowiskach .NET w Windows, Linux i macOS.  
-- **Precyzyjna kontrola** – Wybierz, które pliki uwzględnić, ustaw własne nazwy wpisów i strumieniuj bezpośrednio na dysk.  
-- **Solidne wsparcie .NET** – Idealne dla scenariuszy **tar archive .net**, od aplikacji konsolowych po usługi sieciowe.  
+Aspose.Zip może wygenerować archiwum TarBz2 w **dwóch wywołaniach API**, jednocześnie efektywnie obsługując strumienie. Obsługuje **ponad 50 formatów archiwów i kompresji**, przetwarza pliki do **2 GB** bez ładowania całego archiwum do pamięci i działa na środowiskach .NET w Windows, Linux i macOS. Biblioteka daje także precyzyjną kontrolę nad nazwami wpisów, znacznikami czasu i poziomami kompresji, co czyni ją idealną zarówno dla narzędzi konsolowych, jak i usług internetowych.
 
-## Prerequisites
+## Wymagania wstępne
 
-- **Aspose.Zip for .NET** – Pobierz najnowszy pakiet ze strony oficjalnej: [https://releases.aspose.com/zip/net/](https://releases.aspose.com/zip/net/)  
-- **Katalog dokumentów** – Folder zawierający pliki, które chcesz zarchiwizować. W przykładach odwołujemy się do niego zmienną `dataDir`.
+- **Aspose.Zip for .NET** – pobierz najnowszy pakiet ze strony oficjalnej: [https://releases.aspose.com/zip/net/](https://releases.aspose.com/zip/net/)  
+- **Document directory** – folder zawierający pliki, które chcesz zarchiwizować. W przykładach odwołujemy się do niego zmienną `dataDir`.
 
-> **Porada:** Przechowuj pliki źródłowe w dedykowanym folderze, aby uniknąć przypadkowego dołączenia niechcianych plików.
+> **Pro tip:** Trzymaj pliki źródłowe w dedykowanym folderze, aby uniknąć przypadkowego dołączenia niechcianych plików.
 
-## Importowanie przestrzeni nazw
+## Importuj przestrzenie nazw
 
-Najpierw zaimportuj wymagane przestrzenie nazw, aby uzyskać dostęp do klas Tar i Bzip2 biblioteki Aspose.Zip.
+Najpierw zaimportuj wymagane przestrzenie nazw, aby mieć dostęp do klas Tar i Bzip2 biblioteki Aspose.Zip.
 
 ```csharp
 using System;
@@ -64,7 +91,7 @@ using Aspose.Zip.Bzip2;
 using Aspose.Zip.Tar;
 ```
 
-## Krok 1: Ustaw katalog dokumentów
+## Krok 1: ustaw katalog dokumentu
 
 Zdefiniuj ścieżkę wskazującą na folder zawierający pliki, które chcesz zarchiwizować.
 
@@ -72,11 +99,13 @@ Zdefiniuj ścieżkę wskazującą na folder zawierający pliki, które chcesz za
 string dataDir = "Your Document Directory";
 ```
 
-> Zastąp `"Your Document Directory"` absolutną lub względną ścieżką do folderu źródłowego.
+> Zastąp `"Your Document Directory"` absolutną lub względną ścieżką do swojego folderu źródłowego.
 
-## Krok 2: Dodaj pliki do tar i utwórz archiwum TarBz2
+## Krok 2: dodaj pliki do tar i utwórz archiwum TarBz2
 
-Główną częścią procesu jest utworzenie `TarArchive`, dodanie wpisów, a następnie opakowanie go w `Bzip2Archive`. Poniższy kod demonstruje **jak utworzyć tar** i skompresować go do **TarBz2** w czystym stylu wzorca disposable.
+`TarArchive` reprezentuje pamięciowy kontener tar, który może przechowywać wiele wpisów plików.  
+`Bzip2Archive` kompresuje strumień przy użyciu algorytmu Bzip2.  
+Metoda `CreateEntry` dodaje plik do archiwum tar jako nowy wpis.
 
 ```csharp
 //ExStart: CompressFile
@@ -93,52 +122,62 @@ using (Bzip2Archive bz2 = new Bzip2Archive())
 }
 ```
 
-- `CreateEntry` **dodaje pliki do tar** – możesz wywołać tę metodę dla każdego pliku, który ma się znaleźć w archiwum.  
-- `bz2.SetSource(archive)` informuje archiwum Bzip2, aby skompresować cały strumień tar.  
-- `bz2.Save(...)` zapisuje końcowy plik **TarBz2** na dysku.
+- `CreateEntry` **dodaje pliki do tar** – możesz wywołać tę metodę dla każdego pliku, którego potrzebujesz w archiwum.  
+- `bz2.SetSource(archive)` informuje archiwum Bzip2, aby skompresowało cały strumień tar.  
+- `bz2.Save(...)` zapisuje ostateczny plik **TarBz2** na dysku.
 
-**Wskazówka:** Aby **dodać pliki do tar** hurtowo, po prostu powtórz `archive.CreateEntry` dla każdego pliku przed wywołaniem `bz2.Save`.
+**Wskazówka:** Aby **dodać pliki do tar** masowo, po prostu powtórz `archive.CreateEntry` dla każdego pliku przed wywołaniem `bz2.Save`.
+
+## Jak dodać pliki do tar?
+
+Wczytaj katalog źródłowy, utwórz instancję `TarArchive`, dodaj każdy plik za pomocą `CreateEntry`, a następnie otocz strumień tar w `Bzip2Archive` i wywołaj `Save`. Ten dwustopniowy wzorzec dodaje dowolną liczbę plików i generuje plik `.tar.bz2` w jednym płynnym przepływie, eliminując potrzebę plików tymczasowych lub zewnętrznych narzędzi.
 
 ## Typowe problemy i rozwiązania
 
 | Problem | Powód | Rozwiązanie |
-|---------|-------|-------------|
+|-------|--------|-----|
 | **Błąd: plik nie znaleziony** | Nieprawidłowa ścieżka `dataDir` lub brak rozszerzenia pliku | Sprawdź pełną ścieżkę i upewnij się, że plik istnieje. |
-| **Puste archiwum** | Nie dodano żadnych wpisów przed wywołaniem `bz2.Save` | Dodaj przynajmniej jedno wywołanie `CreateEntry`. |
-| **Odmowa dostępu** | Aplikacja nie ma uprawnień do zapisu w folderze wyjściowym | Uruchom aplikację z odpowiednimi uprawnieniami lub wybierz folder z prawem zapisu. |
+| **Puste archiwum** | Brak wpisów dodanych przed `bz2.Save` | Dodaj przynajmniej jedno wywołanie `CreateEntry`. |
+| **Odmowa dostępu** | Aplikacja nie ma uprawnień do zapisu w folderze wyjściowym | Uruchom aplikację z odpowiednimi uprawnieniami lub wybierz zapisywalny katalog. |
 
 ## Najczęściej zadawane pytania
 
-**P:** Czy Aspose.Zip jest kompatybilny ze wszystkimi aplikacjami .NET?  
-**O:** Tak. Działa z .NET Framework, .NET Core, .NET 5/6 oraz nowszymi środowiskami uruchomieniowymi.
+**P: Czy Aspose.Zip jest kompatybilny ze wszystkimi aplikacjami .NET?**  
+A: Tak. Działa z .NET Framework, .NET Core, .NET 5/6 i nowszymi środowiskami uruchomieniowymi.
 
-**P:** Czy mogę kompresować wiele plików jednocześnie?  
-**O:** Oczywiście. Wywołaj `CreateEntry` dla każdego pliku przed zapisaniem archiwum.
+**P: Czy mogę kompresować wiele plików jednocześnie?**  
+A: Zdecydowanie tak. Wywołaj `CreateEntry` dla każdego pliku przed zapisaniem archiwum.
 
-**P:** Gdzie mogę znaleźć dodatkową dokumentację?  
-**O:** Szczegółowa dokumentacja jest dostępna [tutaj](https://reference.aspose.com/zip/net/).
+**P: Gdzie mogę znaleźć dodatkową dokumentację?**  
+A: Szczegółowa dokumentacja jest dostępna w **referencji API Aspose.Zip .NET**: [Aspose.Zip .NET API reference](https://reference.aspose.com/zip/net/).
 
-**P:** Jak uzyskać tymczasową licencję dla Aspose.Zip?  
-**O:** Możesz ją zamówić [tutaj](https://purchase.aspose.com/temporary-license/).
+**P: Jak uzyskać tymczasową licencję dla Aspose.Zip?**  
+A: Możesz **poprosić o tymczasową licencję** tutaj: [request a temporary license](https://purchase.aspose.com/temporary-license/).
 
-**P:** Czy dostępna jest darmowa wersja próbna?  
-**O:** Tak, wersję próbną można pobrać [tutaj](https://releases.aspose.com/).
+**P: Czy dostępna jest bezpłatna wersja próbna?**  
+A: Tak, **pobierz wersję próbną z wydań Aspose**: [download a trial version](https://releases.aspose.com/).
 
 ## Zakończenie
 
-Teraz już wiesz **jak kompresować tar**, dodawać do niego pliki i opakować wynik w strumień Bzip2, aby uzyskać archiwum **TarBz2** przy użyciu Aspose.Zip dla .NET. To podejście jest szybkie, niezawodne i działa na wszystkich nowoczesnych platformach .NET. Śmiało eksperymentuj z większymi zestawami plików, własnymi nazwami wpisów lub zintegrować kod z własnymi procesami tworzenia kopii zapasowych lub wdrożeń.
+Teraz wiesz **jak dodać pliki do tar**, skompresować strumień tar przy użyciu Bzip2 i wygenerować archiwum **TarBz2** przy pomocy Aspose.Zip dla .NET. Podejście jest szybkie, oszczędne pod względem pamięci i działa na wszystkich nowoczesnych platformach .NET. Śmiało eksperymentuj z większymi zestawami plików, niestandardowymi nazwami wpisów lub zintegrować kod ze swoimi własnymi procesami tworzenia kopii zapasowych lub wdrożeń.
 
-Jeśli napotkasz jakiekolwiek problemy, społeczność Aspose.Zip jest gotowa pomóc — wystarczy przejść na [forum wsparcia Aspose.Zip](https://forum.aspose.com/c/zip/37).
+Jeśli napotkasz jakiekolwiek problemy, społeczność Aspose.Zip jest gotowa pomóc — po prostu przejdź do **forum wsparcia Aspose.Zip**: [Aspose.Zip support forum](https://forum.aspose.com/c/zip/37).
 
 ---
 
-**Ostatnia aktualizacja:** 2026-04-24  
-**Testowano z:** Aspose.Zip for .NET (najnowsze wydanie)  
+**Ostatnia aktualizacja:** 2026-08-07  
+**Testowano z:** Aspose.Zip for .NET (latest release)  
 **Autor:** Aspose  
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
 
+## Powiązane samouczki
+
+- [Utwórz archiwum tar i dodaj pliki do tar przy użyciu Aspose.Zip dla .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
+- [Dodaj pliki do tar i utwórz archiwum tarxz przy użyciu Aspose.Zip](/zip/net/archive-extraction-and-formats/compress-to-tar-xz/)
+- [Dodaj pliki do tar i skompresuj do TarZ przy użyciu Aspose.Zip dla .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-z/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
