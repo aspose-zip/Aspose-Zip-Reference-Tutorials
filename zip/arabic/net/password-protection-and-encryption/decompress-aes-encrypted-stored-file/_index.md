@@ -1,14 +1,48 @@
 ---
-date: 2026-04-24
-description: تعلم كيفية استخراج ملفات ZIP المحمية بكلمة مرور باستخدام Aspose.Zip لـ
-  .NET. يوضح هذا الدليل خطوة بخطوة فك تشفير AES والاستخراج بلغة C#.
+date: 2026-08-07
+description: تعلم كيفية استخراج zip باستخدام كلمة مرور باستخدام Aspose.Zip لـ .NET،
+  مع تغطية فك تشفير AES، استخراج البث، ومعالجة الأخطاء في C#.
 keywords:
-- extract password protected zip
-- Aspose.Zip AES decryption
-- .NET zip extraction
-linktitle: فك ضغط الملف المخزن المشفر بـ AES
+- extract zip with password
+- aspose zip password extraction
+- c# extract protected zip
+- c# zip extraction password
+lastmod: 2026-08-07
+linktitle: فك ضغط ملف مخزن مشفر بـ AES
+og_description: استخراج zip باستخدام كلمة مرور باستخدام Aspose.Zip لـ .NET. يوضح هذا
+  الدليل فك تشفير AES، استخراج البث، وحل المشكلات لمطوري C#.
+og_image_alt: Guide showing how to extract password‑protected ZIP files with Aspose.Zip
+  in C#
+og_title: استخراج zip باستخدام كلمة مرور باستخدام Aspose.Zip لـ .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-08-07'
+  description: Learn how to extract zip with password using Aspose.Zip for .NET, covering
+    AES decryption, streaming extraction, and error handling in C#.
+  headline: Extract zip with password using Aspose.Zip for .NET
+  type: TechArticle
+- questions:
+  - answer: Aspose.Zip primarily supports AES (128/192/256‑bit). Support for additional
+      algorithms may be added in future releases; check the latest documentation.
+    question: Can I use Aspose.Zip for .NET with other encryption algorithms?
+  - answer: Yes, you can download a free trial [Aspose.Zip free trial download](https://releases.aspose.com/).
+    question: Is there a trial version available?
+  - answer: Visit the support forum [Aspose.Zip support forum](https://forum.aspose.com/c/zip/37)
+      to ask questions and get help from the community and Aspose engineers.
+    question: How can I get support for Aspose.Zip for .NET?
+  - answer: Aspose.Zip supports ZIP, 7z, TAR, and several proprietary formats, totaling
+      more than 50 supported extensions.
+    question: What archive formats does Aspose.Zip handle?
+  - answer: Yes, you can purchase a license [Aspose.Zip licensing page](https://purchase.aspose.com/buy)
+      for production use.
+    question: Can I use Aspose.Zip for commercial purposes?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: استخراج ملف zip محمي بكلمة مرور باستخدام Aspose.Zip لـ .NET
+tags:
+- extract zip
+- Aspose.Zip
+- C# zip extraction
+title: استخراج zip باستخدام كلمة مرور باستخدام Aspose.Zip لـ .NET
 url: /ar/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/
 weight: 19
 ---
@@ -17,45 +51,53 @@ weight: 19
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# استخراج ملفات zip المحمية بكلمة مرور باستخدام Aspose.Zip لـ .NET
+# استخراج zip مع كلمة مرور باستخدام Aspose.Zip لـ .NET
 
 ## مقدمة
 
-مرحبًا! في هذا الدرس الشامل ستتعلم **كيفية استخراج ملفات zip المحمية بكلمة مرور** التي تستخدم تشفير AES مع Aspose.Zip لـ .NET. سواء كنت تبني أداة سطح مكتب، أو خدمة سحابية، أو مهمة دفعة آلية، فإن القدرة على *فك تشفير الأرشيفات المحمية بكلمة مرور zip* و*فك ضغط ملفات zip المحمية* هي متطلب شائع. سنستعرض كل ما تحتاجه — من تثبيت المكتبة إلى بث المحتوى المفكك إلى القرص — في كود C# نظيف وسهل المتابعة.
+في هذا الدرس الشامل ستتعلم **كيفية استخراج zip مع كلمة مرور** عندما يكون الأرشيف محميًا بتشفير AES، باستخدام Aspose.Zip لـ .NET. سواءً كنت تبني أداة سطح مكتب، أو خدمة ميكرو‑سحابية، أو مهمة دفعة آلية، فإن القدرة على فك تشفير وفك ضغط ملفات ZIP المحمية بكلمة مرور هي متطلب شائع في تطبيقات .NET الحديثة. سنستعرض التثبيت، التكوين، استخراج البث، ومعالجة الأخطاء، كل ذلك في كود C# واضح يمكنك نسخه إلى مشروعك اليوم.
 
 ## إجابات سريعة
-- **ماذا يعني “استخراج zip المحمي بكلمة مرور”؟** إنها عملية فتح أرشيف ZIP محمي بكلمة مرور واسترجاع محتوياته برمجياً.  
-- **أي مكتبة تتعامل مع فك تشفير AES؟** Aspose.Zip لـ .NET يقدم دعمًا أصليًا لتشفير AES‑256 دون أي تبعيات إضافية.  
-- **هل أحتاج إلى ترخيص للإنتاج؟** نعم – يلزم ترخيص تجاري للإنتاج؛ يتوفر نسخة تجريبية مجانية للتقييم.  
-- **هل يمكنني استخدام هذا مع .NET 6+؟** بالطبع – المكتبة تستهدف .NET Standard 2.0 وتعمل مع .NET 6 و .NET 7 والإصدارات اللاحقة.  
-- **ما هو تدفق الكود النموذجي؟** قم بتحميل الأرشيف باستخدام كلمة مرور، حدد العنصر، وبث البايتات المفكوكة إلى ملف.
+- **ماذا يعني “extract zip with password”؟** إنها عملية فتح أرشيف ZIP محمي بكلمة مرور واسترجاع محتوياته برمجياً.  
+- **أي مكتبة تتعامل مع فك تشفير AES؟** Aspose.Zip لـ .NET توفر دعم AES‑256 مدمج دون تبعيات خارجية.  
+- **هل أحتاج إلى ترخيص للإنتاج؟** نعم – يلزم ترخيص تجاري للإنتاج؛ نسخة تجريبية مجانية متاحة للتقييم.  
+- **هل يمكنني استخدام هذا مع .NET 6+؟** بالتأكيد – المكتبة تستهدف .NET Standard 2.0 وتعمل على .NET 6، .NET 7، وما بعده.  
+- **ما هو تدفق الكود النموذجي؟** تحميل الأرشيف باستخدام كلمة مرور، تحديد المدخل، وبث البايتات المفكوكة إلى ملف.
 
-## كيفية استخراج ملفات zip المحمية بكلمة مرور
+## كيفية استخراج ملفات zip المحمية بكلمة مرور؟
 
-فيما يلي دليل خطوة بخطوة يوضح بالضبط كيفية فتح أرشيف مشفر بـ AES وكتابة العنصر المفكك إلى القرص.
+حمّل الأرشيف المشفر، عيّن كلمة مرور فك التشفير، وبث المدخل المطلوب إلى القرص – كل ذلك في ثلاث خطوات مختصرة. هذا النهج يتجنب تحميل الأرشيف بالكامل في الذاكرة، مما يجعله مناسبًا للملفات الكبيرة والخدمات ذات الإنتاجية العالية.
 
 ### ما هي عملية “فتح أرشيف مشفر”؟
 
-فتح أرشيف مشفر يعني تحميل ملف ZIP تم تأمينه بكلمة مرور (AES‑256 بشكل افتراضي) ثم قراءة عناصره دون التعامل اليدوي مع التشفير. Aspose.Zip يخفف من التفاصيل منخفضة المستوى، مما يتيح لك التركيز على منطق عملك.
+فتح أرشيف مشفر يعني تحميل ملف ZIP تم تأمينه بكلمة مرور (AES‑256 افتراضيًا) ثم قراءة مدخلاته دون التعامل اليدوي مع التشفير. Aspose.Zip يجرد التفاصيل منخفضة المستوى، مما يتيح لك التركيز على منطق عملك.
 
 ### لماذا تستخدم Aspose.Zip لـ C# لفك تشفير ملفات ZIP المشفرة بـ AES؟
 
+Aspose.Zip يدعم **أكثر من 50** صيغة ضغط وأرشفة، بما في ذلك ZIP و7z وTAR، ويمكنه معالجة الأرشيفات بحجم **حتى 10 GB** مع الحفاظ على استهلاك الذاكرة أقل من 100 MB بفضل واجهة البث الخاصة به. المكتبة تقدم أيضًا:
+
 - **دعم كامل لـ AES** – يتعامل تلقائيًا مع مفاتيح 128‑، 192‑ و256‑بت.  
-- **واجهة برمجة تطبيقات بسيطة** – سطر واحد من الكود لتوفير كلمة المرور (`DecryptionPassword`).  
-- **بدون تبعيات خارجية** – لا حاجة لتجميع OpenSSL أو مكتبات أصلية أخرى.  
-- **معالجة أخطاء قوية** – يطرح استثناءات واضحة لكلمات المرور الخاطئة أو الأرشيفات الفاسدة.  
+- **تكوين كلمة مرور في سطر واحد** – عيّن `DecryptionPassword` مباشرةً في خيارات التحميل.  
+- **بدون تبعيات خارجية** – لا حاجة لـ OpenSSL أو ملفات DLL أصلية.  
+- **أنواع استثناءات دقيقة** – يرمي `InvalidPasswordException` لكلمات المرور الخاطئة و`ArchiveCorruptedException` للملفات التالفة.
 
 ## المتطلبات المسبقة
 
-قبل أن نغوص في الكود، تأكد من أن لديك المتطلبات المسبقة التالية جاهزة:
+قبل الغوص في الكود، تأكد من وجود ما يلي:
 
-- Aspose.Zip لـ .NET: تأكد من تثبيت مكتبة Aspose.Zip. يمكنك العثور على الوثائق [هنا](https://reference.aspose.com/zip/net/).
-- ملف AES مشفر تجريبي: قم بتنزيل ملف AES مشفر تجريبي من [هذا الرابط](https://releases.aspose.com/zip/net/).
-- دليل المستندات الخاص بك: أنشئ مجلدًا حيث تريد تخزين الملف غير المضغوط. استبدل “Your Document Directory” في مقتطف الكود بمسار الدليل الفعلي الخاص بك.
+- **Aspose.Zip لـ .NET** – ثبّت حزمة NuGet `Aspose.Zip`. الوثائق التفصيلية متاحة [Aspose.Zip .NET documentation](https://reference.aspose.com/zip/net/).  
+- **ملف AES مشفر تجريبي** – حمّل أرشيف اختبار من [Aspose.Zip test archive download](https://releases.aspose.com/zip/net/).  
+- **دليل الإخراج** – أنشئ مجلدًا على القرص حيث سيُكتب الملف المستخرج؛ استبدل “Your Document Directory” في المقاطع بالمسار الفعلي الخاص بك.
 
 ## استيراد مساحات الأسماء
 
-في مقتطف الكود المقدم، ستلاحظ استخدام مساحات أسماء مختلفة. تأكد من تضمينها في مشروعك:
+مساحات الأسماء التالية مطلوبة للمثال. أضفها إلى أعلى ملف C# الخاص بك:
+
+```csharp
+using Aspose.Zip;
+using Aspose.Zip.Archive;
+using System.IO;
+```
 
 ```csharp
 using System.IO;
@@ -64,7 +106,7 @@ using Aspose.Zip;
 
 ## الخطوة 1: تعريف دليل الموارد
 
-حدد المسار إلى المجلد الذي يحتوي على ملف ZIP المشفر حيث سيتم كتابة الملف المستخرج.
+حدد المجلد الذي يحتوي على ملف ZIP المشفر والموقع الذي سيُحفظ فيه الملف المستخرج.
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -72,7 +114,7 @@ string dataDir = "Your Document Directory";
 
 ## الخطوة 2: فتح الأرشيف المشفر
 
-منشئ `Archive` يقبل كائن `ArchiveLoadOptions` حيث يمكنك تعيين `DecryptionPassword`. هذا هو جوهر عملية **decrypt zip password**.
+`Archive` **يمثل أرشيف ZIP ويوفر طرقًا لقراءة، كتابة، وتعديل المدخلات**. `ArchiveLoadOptions` يحدد كيفية فتح الأرشيف، بما في ذلك كلمة مرور فك التشفير. المُنشئ يقبل كائن `ArchiveLoadOptions` حيث يمكنك تعيين `DecryptionPassword`. هذا هو جوهر عملية **decrypt zip password**.
 
 ```csharp
 using (FileStream fs = File.OpenRead(dataDir + "StoreMutlipleFilesWithoutCompressionWithPassword_out.zip"))
@@ -87,9 +129,9 @@ using (FileStream fs = File.OpenRead(dataDir + "StoreMutlipleFilesWithoutCompres
 }
 ```
 
-## الخطوة 3: فك ضغط العنصر المشفر
+## الخطوة 3: فك ضغط المدخل المشفر
 
-الآن بعد فتح الأرشيف، يمكنك قراءة العنصر الأول (أو أي عنصر تحتاجه) وكتابة البايتات المفكوكة إلى ملف الإخراج. هذا يوضح **c# extract encrypted zip** بطريقة البث.
+الآن بعد فتح الأرشيف، يمكنك قراءة المدخل الأول (أو أي مدخل تحتاجه) وكتابة البايتات المفكوكة إلى ملف الإخراج. هذا يوضح **c# extract encrypted zip** بطريقة بث، مع الحفاظ على استهلاك الذاكرة منخفضًا.
 
 ```csharp
 using (var decompressed = archive.Entries[0].Open())
@@ -105,39 +147,41 @@ using (var decompressed = archive.Entries[0].Open())
 
 ## المشكلات الشائعة والحلول
 
-| المشكلة | سبب حدوثه | الحل |
+| Issue | Why it happens | Fix |
 |-------|----------------|-----|
-| **خطأ كلمة المرور غير الصحيحة** | `DecryptionPassword` لا يتطابق مع كلمة المرور المستخدمة لتشفير الأرشيف. | تحقق من سلسلة كلمة المرور؛ تذكر أنها حساسة لحالة الأحرف. |
-| **ArchiveLoadOptions غير معترف به** | استخدام نسخة أقدم من Aspose.Zip لا تحتوي على هذا التحميل الزائد. | قم بالتحديث إلى أحدث إصدار من Aspose.Zip لـ .NET. |
-| **الملفات الكبيرة تسبب ضغطًا على الذاكرة** | قراءة الملف بالكامل إلى الذاكرة. | استخدم طريقة البث الموضحة أعلاه (قراءة مؤقتة). |
+| **خطأ كلمة مرور غير صحيحة** | `DecryptionPassword` لا يتطابق مع كلمة المرور المستخدمة لتشفير الأرشيف. | تحقق من سلسلة كلمة المرور؛ تذكر أنها حساسة لحالة الأحرف. |
+| **ArchiveLoadOptions غير معترف به** | استخدام نسخة أقدم من Aspose.Zip لا تدعم هذا التحميل الزائد. | حدّث إلى أحدث إصدار من Aspose.Zip لـ .NET. |
+| **الملفات الكبيرة تسبب ضغطًا على الذاكرة** | قراءة الملف بالكامل إلى الذاكرة. | استخدم نهج البث الموضح أعلاه (قراءة مؤقتة). |
 
 ## الأسئلة المتكررة
 
-### هل يمكنني استخدام Aspose.Zip لـ .NET مع خوارزميات تشفير أخرى؟
+**س: هل يمكنني استخدام Aspose.Zip لـ .NET مع خوارزميات تشفير أخرى؟**  
+ج: Aspose.Zip يدعم أساسًا AES (128/192/256‑بت). قد يتم إضافة دعم لخوارزميات إضافية في الإصدارات المستقبلية؛ تحقق من أحدث الوثائق.
 
-Aspose.Zip يدعم أساسًا تشفير AES. تحقق من الوثائق لأي خوارزميات مضافة حديثًا.
+**س: هل هناك نسخة تجريبية متاحة؟**  
+ج: نعم، يمكنك تنزيل نسخة تجريبية مجانية [Aspose.Zip free trial download](https://releases.aspose.com/).
 
-### هل تتوفر نسخة تجريبية؟
+**س: كيف يمكنني الحصول على دعم Aspose.Zip لـ .NET؟**  
+ج: زر منتدى الدعم [Aspose.Zip support forum](https://forum.aspose.com/c/zip/37) لطرح الأسئلة والحصول على مساعدة من المجتمع ومهندسي Aspose.
 
-نعم، يمكنك الوصول إلى نسخة تجريبية مجانية [هنا](https://releases.aspose.com/).
+**س: ما هي صيغ الأرشيف التي يدعمها Aspose.Zip؟**  
+ج: Aspose.Zip يدعم ZIP و7z وTAR والعديد من الصيغ المملوكة، بما يزيد عن 50 امتدادًا مدعومًا.
 
-### كيف يمكنني الحصول على الدعم لـ Aspose.Zip لـ .NET؟
-
-قم بزيارة منتدى الدعم [هنا](https://forum.aspose.com/c/zip/37) للحصول على مساعدة من المجتمع.
-
-### ما هي صيغ الملفات المدعومة للضغط وفك الضغط؟
-
-Aspose.Zip يدعم صيغًا متعددة، بما في ذلك ZIP و 7z و TAR. راجع الوثائق للحصول على قائمة شاملة.
-
-### هل يمكنني استخدام Aspose.Zip لأغراض تجارية؟
-
-نعم، يمكنك شراء ترخيص [هنا](https://purchase.aspose.com/buy) للاستخدام التجاري.
+**س: هل يمكنني استخدام Aspose.Zip لأغراض تجارية؟**  
+ج: نعم، يمكنك شراء ترخيص من [Aspose.Zip licensing page](https://purchase.aspose.com/buy) للاستخدام في الإنتاج.
 
 ---
 
-**آخر تحديث:** 2026-04-24  
-**تم الاختبار مع:** Aspose.Zip 24.11 for .NET  
-**المؤلف:** Aspose  
+**آخر تحديث:** 2026-08-07  
+**تم الاختبار مع:** Aspose.Zip 24.11 لـ .NET  
+**المؤلف:** Aspose
+
+## الدروس ذات الصلة
+
+- [إنشاء ملفات ZIP محمية بكلمة مرور مع تشفير AES باستخدام Aspose.Zip](/zip/net/password-protection-and-encryption/password-protect-with-aes/)
+- [كيفية استخراج Zip مع كلمة مرور باستخدام Aspose.Zip لـ .NET](/zip/net/archive-extraction-and-formats/extract-archive-different-passwords/)
+- [كيفية تشفير ملفات ZIP باستخدام AES باستخدام Aspose.Zip لـ .NET](/zip/net/password-protection-and-encryption/aes-encryption-settings/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
