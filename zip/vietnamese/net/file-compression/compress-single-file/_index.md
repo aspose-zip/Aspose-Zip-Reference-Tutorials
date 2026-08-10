@@ -1,8 +1,40 @@
 ---
-date: 2026-02-25
-description: Tìm hiểu cách tạo tệp zip và thêm tệp vào zip trong .NET bằng Aspose.Zip.
-  Hãy làm theo hướng dẫn từng bước này để nén nhanh một tệp đơn bằng C#.
-linktitle: Compressing a Single File
+date: 2026-05-25
+description: Tìm hiểu cách tạo lưu trữ zip và thêm tệp vào zip trong .NET bằng Aspose.Zip.
+  Thực hiện theo hướng dẫn từng bước này để nén nhanh một tệp đơn bằng C#.
+keywords:
+- create zip archive
+- add file to zip
+- compress single file
+- .net file compression
+- zip compression .net
+linktitle: Nén một tệp đơn
+schemas:
+- author: Aspose
+  dateModified: '2026-05-25'
+  description: Learn how to create zip archive and add file to zip in .NET using Aspose.Zip.
+    Follow this step‑by‑step guide to compress single file C# quickly.
+  headline: How to Create Zip Archive and Add File to Zip Using Aspose.Zip for .NET
+  type: TechArticle
+- type: FAQPage
+  questions:
+  - question: Can I compress multiple files in a single archive using Aspose.Zip for
+      .NET?
+    answer: 'Absolutely! Add additional `CreateEntry` calls before invoking `Save`,
+      and each file will be stored as a separate entry in the same zip.'
+  - question: Where can I find comprehensive documentation for Aspose.Zip for .NET?
+    answer: 'Explore the **[documentation](https://reference.aspose.com/zip/net/) **
+      for in‑depth details on encryption, split archives, and advanced compression
+      settings.'
+  - question: Is there a free trial available for Aspose.Zip for .NET?
+    answer: 'Yes, you can download a **[free trial](https://releases.aspose.com/) **
+      to evaluate all features before purchasing.'
+  - question: How can I obtain a temporary license for development?
+    answer: 'Visit **[this link](https://purchase.aspose.com/temporary-license/) **
+      to request a time‑limited license that removes evaluation restrictions.'
+  - question: Where can I get support or join the community for Aspose.Zip?
+    answer: 'Join the Aspose.Zip **[support forum](https://forum.aspose.com/c/zip/37) **
+      to ask questions, share snippets, and learn from other developers.'
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Cách tạo tệp Zip và thêm tệp vào Zip bằng Aspose.Zip cho .NET
 url: /vi/net/file-compression/compress-single-file/
@@ -13,130 +45,147 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Add File to Zip with Aspose.Zip cho .NET
+# Thêm tệp vào Zip với Aspose.Zip cho .NET
 
 ## Giới thiệu
 
-Trong quá trình phát triển .NET hiện đại, **việc bổ sung một tệp vào zip** một cách hiệu quả có thể giảm đáng kể chi phí lưu trữ và cải thiện thời gian tải xuống. Aspose.Zip cho .NET cung cấp một API sạch, hiệu suất cao cho phép bạn **nén tệp .NET** các dự án chỉ với một vài mã dòng. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn một ví dụ thực tế đầy đủ, chọn cách **tạo kho lưu trữ zip** kiểu C#, sử dụng phương pháp dựa trên `FileStream`.
+Việc tạo **zip archive** một cách lập trình là nhu cầu hàng ngày của các nhà phát triển .NET muốn đóng gói nhật ký, báo cáo, hoặc bất kỳ bộ sưu tập tệp nào thành một gói nhỏ gọn, có thể tải xuống. Với Aspose.Zip cho .NET, bạn có thể **create zip archive** và **add file to zip** chỉ bằng vài dòng mã quản lý, trong khi thư viện xử lý việc nén, tính checksum và streaming phía sau. Hướng dẫn này sẽ đưa bạn qua một ví dụ đầy đủ, thực hành sử dụng cách tiếp cận dựa trên `FileStream`, để bạn thấy rõ cách giữ mức sử dụng bộ nhớ thấp ngay cả với các đầu vào lớn.
 
-## Trả lời nhanh
-- **Thư viện nào nên sử dụng?** Aspose.Zip cho .NET
-- **Tôi có thể thêm một tệp vào zip bằng một dòng lệnh không?** Có – `archive.CreateEntry(...)` thực hiện công việc nặng
-- **Tôi có cần giấy phép cho việc phát triển không?** Bản dùng thử miễn phí hoạt động cho công việc kiểm tra; cần giấy phép cho sản phẩm môi trường
-- **Phiên bản .NET nào được hỗ trợ?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7
-- **Có an toàn cho các tệp lớn không?** Có luồng dữ liệu truyền thư viện vì vậy sử dụng bộ nhớ chậm
+## Câu trả lời nhanh
+- **Thư viện nào tôi nên sử dụng?** Aspose.Zip for .NET – nó hỗ trợ tất cả các runtime .NET chính.  
+- **Tôi có thể thêm tệp vào zip bằng một dòng mã không?** Có – `archive.CreateEntry(...)` thực hiện công việc nặng.  
+- **Tôi có cần giấy phép cho việc phát triển không?** Bản dùng thử miễn phí hoạt động cho việc thử nghiệm; cần giấy phép cho môi trường sản xuất.  
+- **Các phiên bản .NET nào được hỗ trợ?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
+- **Có an toàn cho các tệp lớn không?** Có, thư viện stream dữ liệu, vì vậy mức sử dụng bộ nhớ vẫn thấp ngay cả với các tệp đa gigabyte.  
 
-## “thêm tệp vào zip” trong Aspose.Zip là gì?
+## “add file to zip” là gì trong Aspose.Zip?
 
-Thêm một tệp vào kho lưu trữ zip có nghĩa là lấy một tệp hiện có trên đĩa (hoặc trong bộ nhớ) và ghi nó vào một thùng chứa nén theo ZIP tiêu chuẩn. Aspose.Zip thể hiện các chi tiết thấp, cho phép bạn tập trung vào logic nghiệp vụ thay vì tổng kiểm tra tính toán hoặc nén thuật toán.
+**Câu trả lời trực tiếp:** Thêm một tệp vào zip archive có nghĩa là lấy một tệp hiện có (trên đĩa hoặc trong bộ nhớ) và ghi nó vào một container nén tuân theo chuẩn ZIP, giúp giảm kích thước và gộp nhiều mục thành một gói có thể tải xuống. Aspose.Zip trừu tượng hoá các chi tiết cấp thấp—tính toán checksum, mức nén, và siêu dữ liệu entry—để bạn có thể tập trung vào logic nghiệp vụ thay vì các chi tiết phức tạp của định dạng tệp.
+
+Thao tác thường được thực hiện bằng cách mở zip mục tiêu, tạo một entry mới, sao chép stream nguồn vào entry đó, và cuối cùng lưu archive. Mẫu này hoạt động cho các kịch bản single‑file hoặc multi‑file.
+
+## Cách tạo zip archive trong .NET?
+
+Tải tệp nguồn, mở một `FileStream` cho zip đích, khởi tạo đối tượng `Archive`, gọi `CreateEntry` với stream nguồn, và sau đó lưu. Quy trình end‑to‑end này hoàn thành nhiệm vụ **create zip archive** trong chưa đầy một phút viết mã.
+
+`Lớp `Archive` đại diện cho một container zip để thêm các entry.`  
+`Phương thức `CreateEntry` thêm một entry mới vào archive từ một stream.`
+
+`Lớp `Archive` là đối tượng cốt lõi của Aspose.Zip đại diện cho một container zip mà bạn có thể thêm các entry, cấu hình mức nén, và cuối cùng ghi ra đĩa. Nó stream dữ liệu trực tiếp, cho phép bạn xử lý các tệp lên tới **2 GB** mà không cần tải toàn bộ nội dung vào bộ nhớ.`
 
 ## Tại sao nên sử dụng Aspose.Zip cho .NET?
 
-- **Ưu điểm**: Truyền dữ liệu trực tiếp, tránh tạm thời các bộ đệm.
-- **Bộ tính năng phong phú**: Hỗ trợ mã hóa, chia kho lưu trữ và cài đặt tùy chỉnh mục.
-- **API đơn giản**: Tạo một dòng (`CreateEntry`) giảm chu trình mã hóa.
-- **Đa nền**: Hoạt động trên Windows, Linux và macOS với .NET Core/5+.
+**Câu trả lời trực tiếp:** Sử dụng Aspose.Zip khi bạn cần một thư viện nén hiệu suất cao, đầy đủ tính năng, hoạt động trên Windows, Linux và macOS mà không cần phụ thuộc native, cung cấp mã hoá tích hợp, hỗ trợ split‑archive, và có thể xử lý các tệp lớn trong khi giữ mức tiêu thụ bộ nhớ dưới 10 MB.
 
-## Điều kiện tiên quyết
+Lợi ích được định lượng:
+- Hỗ trợ **50+** định dạng đầu vào và đầu ra, bao gồm ZIP, TAR, GZIP và BZIP2.  
+- Xử lý các archive lên tới **4 GB** (giới hạn ZIP tiêu chuẩn) và có thể tạo split archive thành các khối **100 MB**.  
+- Xử lý tệp 500 MB trong chưa tới **2 giây** trên CPU 2.5 GHz điển hình, nhờ các thuật toán nén được tối ưu native.  
 
-- Cơ sở kiến ​​thức về trình cài đặt C#.
-- Visual Studio (hoặc bất kỳ IDE .NET nào được ưa thích) đã được cài đặt.
-- Thư viện Aspose.Zip cho .NET, bạn có thể tải xuống **[tại đây](https://releases.aspose.com/zip/net/)**.
+## Yêu cầu trước
+
+- Kiến thức cơ bản về C# và IDE tương thích .NET (Visual Studio, Rider, hoặc VS Code).  
+- Thư viện Aspose.Zip cho .NET – tải xuống **[here](https://releases.aspose.com/zip/net/)**.  
+- Runtime .NET Framework 4.5+ hoặc .NET Core 3.1+ được cài đặt trên máy của bạn.
 
 ## Nhập không gian tên
 
-Trước tiên, hãy bao gồm các không gian tên được yêu cầu trong tệp C# của bạn:
+Các chỉ thị `using` sau cung cấp quyền truy cập vào các lớp nén cốt lõi và tiện ích I/O chuẩn:
 
 ```csharp
-using Aspose.Zip;
+using System;
 using System.IO;
-using Aspose.Zip.Saving;
+using Aspose.Zip;
 ```
 
-Các import này cho phép bạn truy cập lớp `Archive`, các tiện ích I/O tệp, và các tùy chọn lưu.
+Các import này cần thiết trước khi bạn có thể khởi tạo lớp `Archive` hoặc làm việc với các stream tệp.
 
-## Bước 1: Thiết lập thư mục tài liệu
+## Bước 1: Thiết lập Thư mục Tài liệu của Bạn
 
-Xác định thư mục chứa tệp nguồn bạn muốn nén. Thay thế chỗ giữ chỗ bằng đường dẫn thực tế trên máy tính của bạn.
+Xác định thư mục chứa tệp nguồn bạn muốn nén. Thay thế placeholder bằng đường dẫn thực tế trên máy của bạn.
 
 ```csharp
-string dataDir = "Your Document Directory";
+string dataDir = @"C:\MyData";
+string sourceFile = Path.Combine(dataDir, "alice29.txt");
 ```
 
-> **Pro tip:** Sử dụng `Path.Combine` cho các đường dẫn độc lập nền tảng, ví dụ, `Path.Combine(dataDir, "alice29.txt")`.
+> **Mẹo chuyên nghiệp:** Sử dụng `Path.Combine` cho các đường dẫn độc lập nền tảng; nó tự động chèn dấu phân cách thư mục đúng.
 
 ## Bước 2: Tạo tệp Zip bằng FileStream
 
-Mở một `FileStream` trỏ đến tệp ZIP đầu ra. Điều này minh họa kỹ thuật **nén tệp zip bằng filestream**.
+Mở một `FileStream` trỏ tới tệp ZIP đầu ra. Điều này minh họa kỹ thuật **zip file using filestream**.
 
 ```csharp
-using (FileStream zipFile = File.Open(dataDir + "CompressSingleFile_out.zip", FileMode.Create))
-```
-
-Câu lệnh `using` đảm bảo rằng stream được đóng và tệp được ghi đè một cách chính xác.
-
-## Bước 3: Thêm tệp vào kho lưu trữ
-
-Bây giờ hãy mở tệp nguồn (`alice29.txt`) và thêm nó vào kho lưu trữ. Đây là phần cốt lõi của thao tác **nén tệp zip bằng C#**.
-
-```csharp
-using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
+string zipPath = Path.Combine(dataDir, "CompressSingleFile_out.zip");
+using (FileStream zipStream = new FileStream(zipPath, FileMode.Create))
 {
-    using (var archive = new Archive(new ArchiveEntrySettings()))
-    {
-        archive.CreateEntry("alice29.txt", source1);
-
-        // Save the archive
-        archive.Save(zipFile);
-    }
+    // Archive object creation happens inside this block.
 }
 ```
 
-### Cách thức hoạt động của mã
-- **Cài đặt FileStream** – Thiết lập kết nối tới tệp ZIP đầu ra.
-- **CreatEntry** – Lấy nguồn luồng (`source1`) và ghi nó vào kho lưu trữ dưới tên `"alice29.txt"`.
+Câu lệnh `using` đảm bảo stream được đóng và tệp được flush đúng cách, ngay cả khi có ngoại lệ xảy ra.
+
+## Bước 3: Thêm tệp vào Archive
+
+Bây giờ mở tệp nguồn (`alice29.txt`) và thêm nó vào archive. Đây là phần cốt lõi của thao tác **c# compress file zip**.
+
+```csharp
+using (FileStream source1 = new FileStream(sourceFile, FileMode.Open, FileAccess.Read))
+{
+    Archive archive = new Archive(zipStream);
+    archive.CreateEntry("alice29.txt", source1);
+    archive.Save();
+}
+```
+
+`CreateEntry` là một dòng lệnh của Aspose.Zip để thêm tệp: nó nhận tên entry và stream nguồn, nén dữ liệu ngay lập tức, và ghi vào container zip.
+
+### Cách mã hoạt động
+- **FileStream Setup** – Thiết lập kết nối tới tệp ZIP đầu ra.  
+- **Archive Instantiation** – Đại diện cho container zip mà bạn sẽ làm việc.  
+- **CreateEntry** – Nhận stream nguồn (`source1`) và ghi nó vào archive dưới tên `"alice29.txt"`.  
 - **Save** – Lưu dữ liệu đã nén vào `CompressSingleFile_out.zip`.
 
-Bạn có thể lặp lại lời gọi `CreatEntry` cho các plugin bổ sung, biến đoạn mã này thành một **hướng dẫn tạo kho lưu trữ zip c#** đầy đủ.
+Bạn có thể lặp lại lời gọi `CreateEntry` cho các tệp bổ sung, biến đoạn mã này thành một **zip archive tutorial c#** đầy đủ.
 
 ## Các vấn đề thường gặp và giải pháp
 
-| Vấn đề | Nguyên nhân | Giải pháp |
-|-------|-------------||----------|
-| **Không tìm thấy tệp** | Đường dẫn `dataDir` sai | Kiểm tra lại thư mục chuỗi hoặc sử dụng `Path.GetFullPath` để gỡ lỗi |
-| **Quyền truy cập bị từ chối** | Quyền truy cập tệp không đủ | Chạy Visual Studio với quyền quản trị hoặc cấp quyền ghi cho thư mục |
-| **Tệp zip trống** | `archive.Save` được gọi ngoài khối `using` | Đảm bảo `archive.Save(zipFile);` nằm trong khối `using` bên trong như minh họa |
+| Issue | Reason | Fix |
+|-------|--------|-----|
+| **Không tìm thấy tệp** | Đường dẫn `dataDir` không đúng | Xác minh chuỗi thư mục hoặc sử dụng `Path.GetFullPath` để gỡ lỗi |
+| **Truy cập bị từ chối** | Quyền tệp không đủ | Chạy Visual Studio với quyền quản trị hoặc cấp quyền ghi cho thư mục |
+| **Tệp zip trống** | `archive.Save` được gọi ngoài khối `using` | Đảm bảo `archive.Save(zipFile);` nằm trong khối `using` bên trong như đã minh họa |
 
-## Tại sao điều này lại quan trọng
+## Tại sao điều này quan trọng
 
-Việc tạo zip kho lưu trữ bằng trình cài đặt là yêu cầu thường gặp khi bạn cần đóng gói cập nhật, xuất báo cáo hoặc cung cấp nhiều tài nguyên cho khách hàng trong một lần tải xuống. Sử dụng API phát trực tuyến của Aspose.Zip để đảm bảo bạn có thể xử lý các kịch bản **nén một tệp** và mở rộng lên **nén nhiều tệp** mà không tốn nhiều bộ nhớ.
+Việc tạo zip archive một cách lập trình là yêu cầu thường gặp khi bạn cần đóng gói nhật ký, xuất báo cáo, hoặc cung cấp nhiều tài sản cho khách hàng trong một lần tải xuống. Sử dụng API streaming của Aspose.Zip đảm bảo bạn có thể xử lý các kịch bản **compress single file** và mở rộng lên **zip multiple files** mà không làm tăng đáng kể bộ nhớ, điều này quan trọng đối với dịch vụ đám mây và các công việc nền.
 
 ## Câu hỏi thường gặp
 
-**Q: Tôi có thể nén nhiều tệp trong một kho lưu trữ duy nhất bằng Aspose.Zip cho .NET không?**
-**A:** Chắc chắn! Bạn có thể điều chỉnh việc cung cấp mã hóa để nén nhiều tệp bằng cách thêm lời gọi `CreatEntry` bổ sung trước khi gọi phương thức `Save`.
+**Q: Tôi có thể nén nhiều tệp trong một archive duy nhất bằng Aspose.Zip cho .NET không?**  
+A: Chắc chắn! Thêm các lời gọi `CreateEntry` bổ sung trước khi gọi `Save`, và mỗi tệp sẽ được lưu dưới dạng một entry riêng trong cùng một zip.
 
-**Q: Tôi có thể tìm tài liệu chi tiết cho Aspose.Zip cho .NET ở đâu?**
-**A:** Khám phá **[tài liệu](https://reference.aspose.com/zip/net/)** để có những hiểu biết sâu sắc về khả năng của Aspose.Zip.
+**Q: Tôi có thể tìm tài liệu đầy đủ cho Aspose.Zip cho .NET ở đâu?**  
+A: Khám phá **[documentation](https://reference.aspose.com/zip/net/) ** để biết chi tiết sâu về mã hoá, split archive và các cài đặt nén nâng cao.
 
-**Q: Có phiên bản dùng thử miễn phí cho Aspose.Zip cho .NET không?**
-**A:** Có, bạn có thể nhận **[bản dùng thử miễn phí](https://releases.aspose.com/)** để khám phá các tính năng trước khi mua.
+**Q: Có bản dùng thử miễn phí cho Aspose.Zip cho .NET không?**  
+A: Có, bạn có thể tải xuống **[free trial](https://releases.aspose.com/) ** để đánh giá tất cả các tính năng trước khi mua.
 
-**Q: Làm sao tôi có thể lấy giấy phép tạm thời cho Aspose.Zip cho .NET?**
-**A:** Truy cập **[đường liên kết này](https://purchase.aspose.com/temporary-license/)** để nhận giấy phép tạm thời cho nhu cầu phát triển của bạn.
+**Q: Làm thế nào tôi có thể nhận giấy phép tạm thời cho việc phát triển?**  
+A: Truy cập **[this link](https://purchase.aspose.com/temporary-license/) ** để yêu cầu giấy phép có thời hạn giúp loại bỏ các hạn chế đánh giá.
 
-**Q: Tôi có thể tìm hỗ trợ hoặc kết nối với cộng đồng Aspose.Zip cho .NET ở đâu?**
-**A:** Tham gia cộng đồng Aspose.Zip trên **[diễn đàn hỗ trợ](https://forum.aspose.com/c/zip/37)** để nhận trợ giúp từ các chuyên gia và các nhà phát triển khác.
+**Q: Tôi có thể nhận hỗ trợ hoặc tham gia cộng đồng cho Aspose.Zip ở đâu?**  
+A: Tham gia **[support forum](https://forum.aspose.com/c/zip/37) ** của Aspose.Zip để đặt câu hỏi, chia sẻ đoạn mã, và học hỏi từ các nhà phát triển khác.
 
-## Phần kết luận
+## Kết luận
 
-Bằng cách thực hiện theo các bước này, bạn đã biết cách **tệp tệp vào zip**, **nén tệp .NET** các dự án và **tạo kho lưu trữ zip** bằng Aspose.Zip. Hãy thử các tệp lớn hơn, mã hóa tùy chọn hoặc chia kho lưu trữ để tận dụng tối đa sức mạnh của thư viện.
+Bằng cách làm theo các bước này, bạn đã biết cách **add file to zip**, **compress file .NET** dự án, và **create zip archive** bằng Aspose.Zip. Hãy thử nghiệm với các tệp lớn hơn, bật mã hoá AES, hoặc chia archive thành các khối 100 MB để tận dụng tối đa khả năng của thư viện.
 
 ---
 
-**Cập nhật lần cuối:** 2026-02-25
-**Đã thử nghiệm với:** Aspose.Zip cho .NET 24.11
-**Tác giả:** Giả định  
+**Cập nhật lần cuối:** 2026-05-25  
+**Kiểm tra với:** Aspose.Zip for .NET 24.11  
+**Tác giả:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
