@@ -17,25 +17,25 @@ schemas:
     Follow this step‑by‑step guide to compress single file C# quickly.
   headline: How to Create Zip Archive and Add File to Zip Using Aspose.Zip for .NET
   type: TechArticle
-- questions:
-  - answer: Absolutely! Add additional `CreateEntry` calls before invoking `Save`,
-      and each file will be stored as a separate entry in the same zip.
-    question: Can I compress multiple files in a single archive using Aspose.Zip for
+- type: FAQPage
+  questions:
+  - question: Can I compress multiple files in a single archive using Aspose.Zip for
       .NET?
-  - answer: Explore the **[documentation](https://reference.aspose.com/zip/net/)**
+    answer: 'Absolutely! Add additional `CreateEntry` calls before invoking `Save`,
+      and each file will be stored as a separate entry in the same zip.'
+  - question: Where can I find comprehensive documentation for Aspose.Zip for .NET?
+    answer: 'Explore the **[documentation](https://reference.aspose.com/zip/net/) **
       for in‑depth details on encryption, split archives, and advanced compression
-      settings.
-    question: Where can I find comprehensive documentation for Aspose.Zip for .NET?
-  - answer: Yes, you can download a **[free trial](https://releases.aspose.com/)**
-      to evaluate all features before purchasing.
-    question: Is there a free trial available for Aspose.Zip for .NET?
-  - answer: Visit **[this link](https://purchase.aspose.com/temporary-license/)**
-      to request a time‑limited license that removes evaluation restrictions.
-    question: How can I obtain a temporary license for development?
-  - answer: Join the Aspose.Zip **[support forum](https://forum.aspose.com/c/zip/37)**
-      to ask questions, share snippets, and learn from other developers.
-    question: Where can I get support or join the community for Aspose.Zip?
-  type: FAQPage
+      settings.'
+  - question: Is there a free trial available for Aspose.Zip for .NET?
+    answer: 'Yes, you can download a **[free trial](https://releases.aspose.com/) **
+      to evaluate all features before purchasing.'
+  - question: How can I obtain a temporary license for development?
+    answer: 'Visit **[this link](https://purchase.aspose.com/temporary-license/) **
+      to request a time‑limited license that removes evaluation restrictions.'
+  - question: Where can I get support or join the community for Aspose.Zip?
+    answer: 'Join the Aspose.Zip **[support forum](https://forum.aspose.com/c/zip/37) **
+      to ask questions, share snippets, and learn from other developers.'
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Cara Membuat Arsip Zip dan Menambahkan File ke Zip Menggunakan Aspose.Zip untuk
   .NET
@@ -168,16 +168,16 @@ Membuat arsip zip secara programatis adalah kebutuhan yang sering muncul ketika 
 J: Tentu saja! Tambahkan pemanggilan `CreateEntry` tambahan sebelum memanggil `Save`, dan setiap file akan disimpan sebagai entri terpisah dalam zip yang sama.
 
 **T: Di mana saya dapat menemukan dokumentasi lengkap untuk Aspose.Zip untuk .NET?**  
-J: Jelajahi **[documentation](https://reference.aspose.com/zip/net/)** untuk detail mendalam tentang enkripsi, arsip terpisah, dan pengaturan kompresi lanjutan.
+J: Jelajahi **[documentation](https://reference.aspose.com/zip/net/) ** untuk detail mendalam tentang enkripsi, arsip terpisah, dan pengaturan kompresi lanjutan.
 
 **T: Apakah tersedia versi percobaan gratis untuk Aspose.Zip untuk .NET?**  
-J: Ya, Anda dapat mengunduh **[free trial](https://releases.aspose.com/)** untuk mengevaluasi semua fitur sebelum membeli.
+J: Ya, Anda dapat mengunduh **[free trial](https://releases.aspose.com/) ** untuk mengevaluasi semua fitur sebelum membeli.
 
 **T: Bagaimana cara mendapatkan lisensi sementara untuk pengembangan?**  
-J: Kunjungi **[tautan ini](https://purchase.aspose.com/temporary-license/)** untuk meminta lisensi terbatas waktu yang menghapus pembatasan evaluasi.
+J: Kunjungi **[tautan ini](https://purchase.aspose.com/temporary-license/) ** untuk meminta lisensi terbatas waktu yang menghapus pembatasan evaluasi.
 
 **T: Di mana saya dapat mendapatkan dukungan atau bergabung dengan komunitas Aspose.Zip?**  
-J: Bergabunglah dengan **[forum dukungan](https://forum.aspose.com/c/zip/37)** Aspose.Zip untuk mengajukan pertanyaan, berbagi potongan kode, dan belajar dari pengembang lain.
+J: Bergabunglah dengan **[forum dukungan](https://forum.aspose.com/c/zip/37) ** Aspose.Zip untuk mengajukan pertanyaan, berbagi potongan kode, dan belajar dari pengembang lain.
 
 ## Kesimpulan
 
@@ -188,40 +188,6 @@ Dengan mengikuti langkah‑langkah ini Anda kini tahu cara **add file to zip**, 
 **Terakhir Diperbarui:** 2026-05-25  
 **Diuji Dengan:** Aspose.Zip for .NET 24.11  
 **Penulis:** Aspose
-
-```csharp
-using Aspose.Zip;
-using System.IO;
-using Aspose.Zip.Saving;
-```
-
-```csharp
-string dataDir = "Your Document Directory";
-```
-
-```csharp
-using (FileStream zipFile = File.Open(dataDir + "CompressSingleFile_out.zip", FileMode.Create))
-```
-
-```csharp
-using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
-{
-    using (var archive = new Archive(new ArchiveEntrySettings()))
-    {
-        archive.CreateEntry("alice29.txt", source1);
-
-        // Save the archive
-        archive.Save(zipFile);
-    }
-}
-```
-
-## Tutorial Terkait
-
-- [zip multiple files c# – Kompresi Mudah dengan Aspose.Zip untuk .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Create zip archive asp.net – Kompresi Direktori dan Folder](/zip/net/directory-and-folder-compression/)
-- [Aspose.Zip untuk .NET - Lindungi Zip Archive dengan Password & Simpan Banyak File Tanpa Kompresi](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
-
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
