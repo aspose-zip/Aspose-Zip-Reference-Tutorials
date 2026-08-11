@@ -161,12 +161,6 @@ A: बिल्कुल। API को सरल ड्रॉप‑इन उप
 **Tested With:** Aspose.Zip for .NET (लेखन के समय का नवीनतम संस्करण)  
 **लेखक:** Aspose
 
-## संबंधित ट्यूटोरियल
-
-- [Create Zip Archive .NET – Aspose.Zip के साथ फ़ाइल संपीड़न](/zip/net/file-compression/)
-- [zip multiple files c# – Aspose.Zip for .NET के साथ आसान संपीड़न](/zip/net/file-compression/compress-multiple-files/)
-- [बिना संपीड़न के Zip बनाएं और फ़ाइलें डिकम्प्रेस करें – Aspose.Zip](/zip/net/file-decompression/decompress-stored-file/)
-
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

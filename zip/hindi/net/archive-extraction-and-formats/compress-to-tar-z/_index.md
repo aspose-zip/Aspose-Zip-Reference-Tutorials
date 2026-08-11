@@ -22,7 +22,7 @@ schemas:
   - answer: Yes, you can explore the capabilities of Aspose.Zip for .NET by downloading
       the free trial [here](https://releases.aspose.com/).
     question: Is there a trial version available for Aspose.Zip for .NET?
-  - answer: The documentation is available [here](https://reference.aspose.com/zip/net/),
+  - answer: The documentation is available [here](https://reference.aspose.com/zip/net/) ,
       providing detailed insights into the library's features and usage.
     question: Where can I find comprehensive documentation for Aspose.Zip for .NET?
   - answer: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) to seek
@@ -186,14 +186,8 @@ A: हाँ, यदि आपको अस्थायी लाइसेंस
 **परीक्षण किया गया:** Aspose.Zip for .NET 24.11  
 **लेखक:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## संबंधित ट्यूटोरियल
-
-- [Aspose.Zip for .NET के साथ टार अभिलेख बनाएं और फ़ाइलें टार में जोड़ें](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
-- [Aspose.Zip for .NET के साथ टार को संपीड़ित करें और TarBz2 बनाएं](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
-- [Aspose.Zip for .NET के साथ कई फ़ाइलों को टार में संपीड़ित करें](/zip/net/archive-extraction-and-formats/compress-to-tar-lz/)
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -180,15 +180,8 @@ Nyní máte kompletní, připravený vzor pro **jak zkomprimovat složku** pomoc
 **Testováno s:** Aspose.Zip 24.11 pro .NET  
 **Autor:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## Související tutoriály
-
-- [zip multiple files c# – Snadná komprese s Aspose.Zip pro .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Aspose.Zip pro .NET – Ochrana ZIP archivu heslem a uložení více souborů bez komprese](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
-- [Jak zkomprimovat složku – Komprese adresáře s Aspose.Zip](/zip/net/directory-and-folder-compression/decompress-folder/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

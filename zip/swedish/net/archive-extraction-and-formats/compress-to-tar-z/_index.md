@@ -180,15 +180,8 @@ Du har nu lärt dig hur du **add files to tar** och komprimerar resultatet till 
 **Testad med:** Aspose.Zip for .NET 24.11  
 **Författare:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## Relaterade handledningar
-
-- [Skapa tar‑arkiv och lägg till filer i tar med Aspose.Zip för .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
-- [Hur man komprimerar tar och skapar TarBz2 med Aspose.Zip för .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
-- [Hur man komprimerar flera filer tar med Aspose.Zip för .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-lz/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

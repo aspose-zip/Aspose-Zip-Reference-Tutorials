@@ -42,13 +42,13 @@ schemas:
   - answer: Aspose.Zip is optimized for .NET, but Aspose offers equivalent libraries
       for Java, C++, and Python that follow the same API concepts.
     question: Can I use Aspose.Zip for .NET with other programming languages?
-  - answer: Yes, you can access the free trial **[here](https://releases.aspose.com/)**.
+  - answer: Yes, you can access the free trial **[here](https://releases.aspose.com/) **.
     question: Is there a free trial available for Aspose.Zip for .NET?
-  - answer: For support and discussions, visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)**.
+  - answer: For support and discussions, visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37) **.
     question: How do I get support for Aspose.Zip for .NET?
-  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/)**.
+  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/) **.
     question: Can I purchase a temporary license for Aspose.Zip for .NET?
-  - answer: The documentation is available **[here](https://reference.aspose.com/zip/net/)**.
+  - answer: The documentation is available **[here](https://reference.aspose.com/zip/net/) **.
     question: Where can I find the documentation for Aspose.Zip for .NET?
   type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -208,31 +208,25 @@ Dengan mengikuti lima langkah ini Anda telah **compress files C#** menjadi arsip
 A: Aspose.Zip dioptimalkan untuk .NET, tetapi Aspose menawarkan perpustakaan setara untuk Java, C++, dan Python yang mengikuti konsep API yang sama.
 
 **Q: Apakah tersedia percobaan gratis untuk Aspose.Zip untuk .NET?**  
-A: Ya, Anda dapat mengakses percobaan gratis **[di sini](https://releases.aspose.com/)**.
+A: Ya, Anda dapat mengakses percobaan gratis **[di sini](https://releases.aspose.com/) **.
 
 **Q: Bagaimana cara mendapatkan dukungan untuk Aspose.Zip untuk .NET?**  
-A: Untuk dukungan dan diskusi, kunjungi **[forum Aspose.Zip](https://forum.aspose.com/c/zip/37)**.
+A: Untuk dukungan dan diskusi, kunjungi **[forum Aspose.Zip](https://forum.aspose.com/c/zip/37) **.
 
 **Q: Bisakah saya membeli lisensi sementara untuk Aspose.Zip untuk .NET?**  
-A: Ya, Anda dapat memperoleh lisensi sementara **[di sini](https://purchase.aspose.com/temporary-license/)**.
+A: Ya, Anda dapat memperoleh lisensi sementara **[di sini](https://purchase.aspose.com/temporary-license/) **.
 
 **Q: Di mana saya dapat menemukan dokumentasi untuk Aspose.Zip untuk .NET?**  
-A: Dokumentasi tersedia **[di sini](https://reference.aspose.com/zip/net/)**.
-
-## Tutorial Terkait
-
-- [Cara Membuat Arsip Zip dan Menambahkan File ke Zip Menggunakan Aspose.Zip untuk .NET](/zip/net/file-compression/compress-single-file/)
-- [zip multiple files c# – Kompresi Mudah dengan Aspose.Zip untuk .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Cara mengompres file dengan password dan mengenkripsi entri ZIP dengan password berbeda menggunakan Aspose.Zip untuk .NET](/zip/net/other-compression-techniques/entries-with-different-passwords/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< blocks/products/products-backtop-button >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+A: Dokumentasi tersedia **[di sini](https://reference.aspose.com/zip/net/) **.
 
 ---
 
 **Last Updated:** 2026-05-30  
 **Tested With:** Aspose.Zip 24.12 for .NET  
 **Author:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

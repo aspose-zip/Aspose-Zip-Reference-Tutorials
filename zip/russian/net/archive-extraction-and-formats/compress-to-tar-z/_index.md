@@ -190,15 +190,8 @@ archive.SaveZCompressed(dataDir + "archive.tar.z");
 **Тестировано с:** Aspose.Zip для .NET 24.11  
 **Автор:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## Похожие руководства
-
-- [Создание tar‑архива и добавление файлов в tar с Aspose.Zip для .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
-- [Как сжать tar и создать TarBz2 с Aspose.Zip для .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
-- [Как сжать несколько файлов tar с Aspose.Zip для .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-lz/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

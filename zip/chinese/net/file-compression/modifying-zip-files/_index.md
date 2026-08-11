@@ -41,13 +41,13 @@ schemas:
   - answer: Aspose.Zip is optimized for .NET, but Aspose offers equivalent libraries
       for Java, C++, and Python that follow the same API concepts.
     question: Can I use Aspose.Zip for .NET with other programming languages?
-  - answer: Yes, you can access the free trial **[here](https://releases.aspose.com/)**.
+  - answer: Yes, you can access the free trial **[here](https://releases.aspose.com/) **.
     question: Is there a free trial available for Aspose.Zip for .NET?
-  - answer: For support and discussions, visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)**.
+  - answer: For support and discussions, visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37) **.
     question: How do I get support for Aspose.Zip for .NET?
-  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/)**.
+  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/) **.
     question: Can I purchase a temporary license for Aspose.Zip for .NET?
-  - answer: The documentation is available **[here](https://reference.aspose.com/zip/net/)**.
+  - answer: The documentation is available **[here](https://reference.aspose.com/zip/net/) **.
     question: Where can I find the documentation for Aspose.Zip for .NET?
   type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -209,30 +209,26 @@ outer.Save(dataDir + "flatten.zip");
 答：Aspose.Zip 针对 .NET 进行优化，但 Aspose 也提供针对 Java、C++ 和 Python 的等效库，遵循相同的 API 概念。
 
 **问：Aspose.Zip for .NET 是否提供免费试用？**  
-答：是的，您可以在 **[此处](https://releases.aspose.com/)** 获取免费试用。
+答：是的，您可以在 **[此处](https://releases.aspose.com/) ** 获取免费试用。
 
 **问：如何获取 Aspose.Zip for .NET 的支持？**  
-答：获取支持和讨论，请访问 **[Aspose.Zip 论坛](https://forum.aspose.com/c/zip/37)**。
+答：获取支持和讨论，请访问 **[Aspose.Zip 论坛](https://forum.aspose.com/c/zip/37) **。
 
 **问：我可以购买 Aspose.Zip for .NET 的临时许可证吗？**  
-答：是的，您可以在 **[此处](https://purchase.aspose.com/temporary-license/)** 获取临时许可证。
+答：是的，您可以在 **[此处](https://purchase.aspose.com/temporary-license/) ** 获取临时许可证。
 
 **问：在哪里可以找到 Aspose.Zip for .NET 的文档？**  
-答：文档可在 **[此处](https://reference.aspose.com/zip/net/)** 查看。
+答：文档可在 **[此处](https://reference.aspose.com/zip/net/) ** 查看。
 
-## 相关教程
-
-- [如何使用 Aspose.Zip for .NET 创建 Zip 归档并向 Zip 添加文件](/zip/net/file-compression/compress-single-file/)
-- [zip 多个文件 c# – 使用 Aspose.Zip for .NET 轻松压缩](/zip/net/file-compression/compress-multiple-files/)
-- [如何使用密码压缩文件并使用不同密码加密 ZIP 条目，使用 Aspose.Zip for .NET](/zip/net/other-compression-techniques/entries-with-different-passwords/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< blocks/products/products-backtop-button >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
 
 ---
 
 **最后更新：** 2026-05-30  
 **已测试：** Aspose.Zip 24.12 for .NET  
 **作者：** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

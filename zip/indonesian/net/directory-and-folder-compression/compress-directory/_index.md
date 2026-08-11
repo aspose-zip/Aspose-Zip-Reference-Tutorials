@@ -181,15 +181,9 @@ Anda kini memiliki pola lengkap yang siap produksi untuk **cara mengompres folde
 **Tested With:** Aspose.Zip 24.11 for .NET  
 **Author:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## Tutorial Terkait
-
-- [zip multiple files c# – Kompresi Mudah dengan Aspose.Zip untuk .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Aspose.Zip untuk .NET - Lindungi Arsip Zip dengan Kata Sandi & Simpan Banyak File Tanpa Kompresi](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
-- [Cara Mengompres Folder – Kompres Direktori dengan Aspose.Zip](/zip/net/directory-and-folder-compression/decompress-folder/)
-
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

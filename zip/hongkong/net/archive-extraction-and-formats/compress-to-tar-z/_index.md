@@ -179,15 +179,8 @@ A: 可以，若需要臨時授權，請於[此處](https://purchase.aspose.com/t
 **Tested With:** Aspose.Zip for .NET 24.11  
 **Author:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## 相關教學
-
-- [使用 Aspose.Zip for .NET 建立 tar 壓縮檔並加入檔案](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
-- [如何使用 Aspose.Zip for .NET 壓縮 tar 並建立 TarBz2](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
-- [如何使用 Aspose.Zip for .NET 壓縮多個檔案為 tar](/zip/net/archive-extraction-and-formats/compress-to-tar-lz/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

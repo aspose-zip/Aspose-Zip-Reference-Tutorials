@@ -161,13 +161,6 @@ A: Tentu. API dirancang untuk penggunaan drop‑in yang sederhana. Lihat [docume
 **Diuji Dengan:** Aspose.Zip for .NET (latest version at time of writing)  
 **Penulis:** Aspose
 
-## Tutorial Terkait
-
-- [Buat Arsip Zip .NET – Kompresi File dengan Aspose.Zip](/zip/net/file-compression/)
-- [zip multiple files c# – Kompresi Mudah dengan Aspose.Zip untuk .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Buat Zip Tanpa Kompresi & Ekstrak File – Aspose.Zip](/zip/net/file-decompression/decompress-stored-file/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

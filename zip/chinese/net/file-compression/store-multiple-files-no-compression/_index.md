@@ -157,12 +157,6 @@ using (FileStream zipFile = File.Open(dataDir + "StoreMultipleFilesWithoutCompre
 **测试环境：** Aspose.Zip for .NET（撰写时的最新版本）  
 **作者：** Aspose
 
-## 相关教程
-
-- [创建 Zip 存档 .NET – 使用 Aspose.Zip 进行文件压缩](/zip/net/file-compression/)
-- [zip 多文件 c# – 使用 Aspose.Zip for .NET 轻松压缩](/zip/net/file-compression/compress-multiple-files/)
-- [创建无压缩 Zip 并解压文件 – Aspose.Zip](/zip/net/file-decompression/decompress-stored-file/)
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

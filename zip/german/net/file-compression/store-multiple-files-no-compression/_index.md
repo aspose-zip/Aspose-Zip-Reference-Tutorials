@@ -161,12 +161,6 @@ A: Auf jeden Fall. Die API ist für eine einfache Drop‑In‑Nutzung konzipiert
 **Getestet mit:** Aspose.Zip für .NET (neueste Version zum Zeitpunkt der Erstellung)  
 **Autor:** Aspose
 
-## Verwandte Tutorials
-
-- [ZIP‑Archiv in .NET erstellen – Dateikompression mit Aspose.Zip](/zip/net/file-compression/)
-- [Mehrere Dateien zippen C# – Mühelose Kompression mit Aspose.Zip für .NET](/zip/net/file-compression/compress-multiple-files/)
-- [ZIP ohne Kompression erstellen & Dateien dekomprimieren – Aspose.Zip](/zip/net/file-decompression/decompress-stored-file/)
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

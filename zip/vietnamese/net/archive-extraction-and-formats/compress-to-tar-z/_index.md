@@ -186,15 +186,8 @@ Bây giờ bạn đã biết cách **add files to tar** và nén kết quả th�
 **Kiểm tra với:** Aspose.Zip for .NET 24.11  
 **Tác giả:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## Hướng dẫn liên quan
-
-- [Tạo tar archive và add files to tar với Aspose.Zip cho .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
-- [Cách nén tar và tạo TarBz2 với Aspose.Zip cho .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
-- [Cách nén nhiều tệp tar với Aspose.Zip cho .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-lz/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

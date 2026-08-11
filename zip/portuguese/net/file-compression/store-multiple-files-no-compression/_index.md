@@ -161,13 +161,6 @@ A: Definitivamente. A API foi projetada para uso simples de “arrastar‑e‑so
 **Testado com:** Aspose.Zip for .NET (última versão na data de escrita)  
 **Autor:** Aspose
 
-## Tutoriais relacionados
-
-- [Criar arquivo Zip .NET – Compressão de arquivos com Aspose.Zip](/zip/net/file-compression/)
-- [zip múltiplos arquivos c# – Compressão sem esforço com Aspose.Zip para .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Criar Zip sem compressão & Descompactar arquivos – Aspose.Zip](/zip/net/file-decompression/decompress-stored-file/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

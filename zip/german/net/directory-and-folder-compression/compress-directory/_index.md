@@ -180,15 +180,8 @@ Sie haben nun ein vollständiges, produktionsreifes Muster für **how to zip fol
 **Getestet mit:** Aspose.Zip 24.11 für .NET  
 **Autor:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## Verwandte Tutorials
-
-- [Mehrere Dateien zippen c# – Mühelose Kompression mit Aspose.Zip für .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Aspose.Zip für .NET – ZIP-Archiv mit Passwort schützen & mehrere Dateien ohne Kompression speichern](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
-- [Wie man Ordner zippt – Verzeichnis mit Aspose.Zip komprimieren](/zip/net/directory-and-folder-compression/decompress-folder/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

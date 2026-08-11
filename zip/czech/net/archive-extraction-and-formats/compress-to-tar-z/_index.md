@@ -22,7 +22,7 @@ schemas:
   - answer: Yes, you can explore the capabilities of Aspose.Zip for .NET by downloading
       the free trial [here](https://releases.aspose.com/).
     question: Is there a trial version available for Aspose.Zip for .NET?
-  - answer: The documentation is available [here](https://reference.aspose.com/zip/net/),
+  - answer: The documentation is available [here](https://reference.aspose.com/zip/net/) ,
       providing detailed insights into the library's features and usage.
     question: Where can I find comprehensive documentation for Aspose.Zip for .NET?
   - answer: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) to seek
@@ -180,15 +180,9 @@ Nyní jste se naučili, jak **add files to tar** a komprimovat výsledek do TarZ
 **Testováno s:** Aspose.Zip for .NET 24.11  
 **Autor:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## Související tutoriály
-
-- [Vytvořit tar archiv a přidat soubory do tar pomocí Aspose.Zip pro .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
-- [Jak komprimovat tar a vytvořit TarBz2 pomocí Aspose.Zip pro .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
-- [Jak komprimovat více souborů tar pomocí Aspose.Zip pro .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-lz/)
-
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

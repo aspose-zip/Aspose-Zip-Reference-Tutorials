@@ -185,15 +185,8 @@ Ora hai imparato come **add files to tar** e comprimere il risultato in un archi
 **Testato con:** Aspose.Zip for .NET 24.11  
 **Autore:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## Tutorial correlati
-
-- [Crea archivio tar e aggiungi file a tar con Aspose.Zip per .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
-- [Come comprimere tar e creare TarBz2 con Aspose.Zip per .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
-- [Come comprimere più file tar con Aspose.Zip per .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-lz/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -42,13 +42,13 @@ schemas:
   - answer: Aspose.Zip is optimized for .NET, but Aspose offers equivalent libraries
       for Java, C++, and Python that follow the same API concepts.
     question: Can I use Aspose.Zip for .NET with other programming languages?
-  - answer: Yes, you can access the free trial **[here](https://releases.aspose.com/)**.
+  - answer: Yes, you can access the free trial **[here](https://releases.aspose.com/) **.
     question: Is there a free trial available for Aspose.Zip for .NET?
-  - answer: For support and discussions, visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)**.
+  - answer: For support and discussions, visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37) **.
     question: How do I get support for Aspose.Zip for .NET?
-  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/)**.
+  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/) **.
     question: Can I purchase a temporary license for Aspose.Zip for .NET?
-  - answer: The documentation is available **[here](https://reference.aspose.com/zip/net/)**.
+  - answer: The documentation is available **[here](https://reference.aspose.com/zip/net/) **.
     question: Where can I find the documentation for Aspose.Zip for .NET?
   type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -210,31 +210,25 @@ Bằng cách thực hiện năm bước này, bạn đã **nén tệp C#** thàn
 Đ: Aspose.Zip được tối ưu cho .NET, nhưng Aspose cung cấp các thư viện tương đương cho Java, C++, và Python với cùng một mô hình API.
 
 **H: Có bản dùng thử miễn phí cho Aspose.Zip cho .NET không?**  
-Đ: Có, bạn có thể truy cập bản dùng thử **[tại đây](https://releases.aspose.com/)**.
+Đ: Có, bạn có thể truy cập bản dùng thử **[tại đây](https://releases.aspose.com/) **.
 
 **H: Làm sao để nhận hỗ trợ cho Aspose.Zip cho .NET?**  
-Đ: Để được hỗ trợ và thảo luận, hãy truy cập **[diễn đàn Aspose.Zip](https://forum.aspose.com/c/zip/37)**.
+Đ: Để được hỗ trợ và thảo luận, hãy truy cập **[diễn đàn Aspose.Zip](https://forum.aspose.com/c/zip/37) **.
 
 **H: Tôi có thể mua giấy phép tạm thời cho Aspose.Zip cho .NET không?**  
-Đ: Có, bạn có thể mua giấy phép tạm thời **[tại đây](https://purchase.aspose.com/temporary-license/)**.
+Đ: Có, bạn có thể mua giấy phép tạm thời **[tại đây](https://purchase.aspose.com/temporary-license/) **.
 
 **H: Tôi có thể tìm tài liệu cho Aspose.Zip cho .NET ở đâu?**  
-Đ: Tài liệu có sẵn **[tại đây](https://reference.aspose.com/zip/net/)**.
-
-## Các hướng dẫn liên quan
-
-- [Cách tạo Zip Archive và thêm tệp vào Zip bằng Aspose.Zip cho .NET](/zip/net/file-compression/compress-single-file/)
-- [Nén nhiều tệp c# – Nén nhanh chóng với Aspose.Zip cho .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Cách nén tệp có mật khẩu và mã hoá các mục ZIP bằng các mật khẩu khác nhau bằng Aspose.Zip cho .NET](/zip/net/other-compression-techniques/entries-with-different-passwords/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< blocks/products/products-backtop-button >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+Đ: Tài liệu có sẵn **[tại đây](https://reference.aspose.com/zip/net/) **.
 
 ---
 
 **Cập nhật lần cuối:** 2026-05-30  
 **Đã kiểm tra với:** Aspose.Zip 24.12 cho .NET  
 **Tác giả:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

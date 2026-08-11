@@ -180,15 +180,8 @@ using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", Fil
 **परीक्षण किया गया:** Aspose.Zip 24.11 for .NET  
 **लेखक:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## संबंधित ट्यूटोरियल
-
-- [zip multiple files c# – Aspose.Zip for .NET के साथ आसान संकुचन](/zip/net/file-compression/compress-multiple-files/)
-- [Aspose.Zip for .NET - पासवर्ड प्रोटेक्टेड ZIP आर्काइव & बिना संकुचन के कई फ़ाइलें स्टोर करना](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
-- [फ़ोल्डर को ज़िप कैसे करें – Aspose.Zip के साथ डायरेक्टरी संकुचित करें](/zip/net/directory-and-folder-compression/decompress-folder/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

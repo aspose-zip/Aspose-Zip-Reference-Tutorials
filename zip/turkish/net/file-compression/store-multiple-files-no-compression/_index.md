@@ -159,13 +159,6 @@ A: Kesinlikle. API, basit bir drop‑in kullanım için tasarlanmıştır. Geçi
 **Test Edilen:** Aspose.Zip for .NET (latest version at time of writing)  
 **Yazar:** Aspose
 
-## İlgili Öğreticiler
-
-- [ZIP Arşivi Oluştur .NET – Aspose.Zip ile Dosya Sıkıştırma](/zip/net/file-compression/)
-- [c# ile birden fazla dosyayı ziple – Aspose.Zip for .NET ile Sorunsuz Sıkıştırma](/zip/net/file-compression/compress-multiple-files/)
-- [Sıkıştırma Olmadan Zip Oluştur & Dosyaları Aç – Aspose.Zip](/zip/net/file-decompression/decompress-stored-file/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

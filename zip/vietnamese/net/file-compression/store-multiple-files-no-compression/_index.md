@@ -161,13 +161,6 @@ A: Chắc chắn. API được thiết kế để sử dụng ngay lập tức. 
 **Đã kiểm tra với:** Aspose.Zip for .NET (phiên bản mới nhất tại thời điểm viết)  
 **Tác giả:** Aspose
 
-## Hướng dẫn liên quan
-
-- [Tạo Zip Archive .NET – Nén tệp với Aspose.Zip](/zip/net/file-compression/)
-- [zip nhiều tệp c# – Nén dễ dàng với Aspose.Zip cho .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Tạo Zip Không Nén & Giải Nén Tệp – Aspose.Zip](/zip/net/file-decompression/decompress-stored-file/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

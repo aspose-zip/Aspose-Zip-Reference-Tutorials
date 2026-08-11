@@ -180,15 +180,9 @@ Masz teraz kompletny, gotowy do produkcji wzorzec **jak spakować folder** przy 
 **Testowano z:** Aspose.Zip 24.11 for .NET  
 **Autor:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## Powiązane samouczki
-
-- [zip multiple files c# – Bezproblemowa kompresja z Aspose.Zip dla .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Aspose.Zip dla .NET - Ochrona hasłem archiwum ZIP i przechowywanie wielu plików bez kompresji](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
-- [Jak spakować folder – Kompresja katalogu przy użyciu Aspose.Zip](/zip/net/directory-and-folder-compression/decompress-folder/)
-
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

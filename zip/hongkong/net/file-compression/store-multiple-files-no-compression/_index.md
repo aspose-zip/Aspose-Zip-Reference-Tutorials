@@ -158,13 +158,6 @@ A: 當然可以。API 設計為簡易即插即用。請參考官方[文件](http
 **測試環境：** Aspose.Zip for .NET（撰寫時的最新版本）  
 **作者：** Aspose
 
-## 相關教學
-
-- [在 .NET 中建立 Zip 壓縮檔 – 使用 Aspose.Zip 進行檔案壓縮](/zip/net/file-compression/)
-- [zip 多個檔案 c# – 使用 Aspose.Zip for .NET 輕鬆壓縮](/zip/net/file-compression/compress-multiple-files/)
-- [建立無壓縮的 Zip 並解壓縮檔案 – Aspose.Zip](/zip/net/file-decompression/decompress-stored-file/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

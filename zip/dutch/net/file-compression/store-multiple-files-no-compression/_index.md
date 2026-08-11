@@ -160,12 +160,6 @@ A: Zeker. De API is ontworpen voor eenvoudige drop‑in gebruik. Raadpleeg de of
 **Getest met:** Aspose.Zip for .NET (latest version at time of writing)  
 **Auteur:** Aspose
 
-## Gerelateerde tutorials
-
-- [Maak Zip‑archief .NET – Bestandscompressie met Aspose.Zip](/zip/net/file-compression/)
-- [zip meerdere bestanden c# – Moeiteloze compressie met Aspose.Zip voor .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Maak Zip zonder compressie & Pak bestanden uit – Aspose.Zip](/zip/net/file-decompression/decompress-stored-file/)
-
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

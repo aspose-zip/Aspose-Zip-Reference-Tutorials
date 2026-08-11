@@ -180,14 +180,8 @@ A5: もちろん、[here](https://purchase.aspose.com/buy) から購入できま
 **テスト環境:** Aspose.Zip 24.11 for .NET  
 **作者:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## 関連チュートリアル
-
-- [複数ファイルの zip c# – Aspose.Zip for .NET で手軽に圧縮](/zip/net/file-compression/compress-multiple-files/)
-- [Aspose.Zip for .NET - パスワードで ZIP アーカイブを保護 & 圧縮せずに複数ファイルを保存](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
-- [フォルダーの zip 方法 – Aspose.Zip でディレクトリを圧縮](/zip/net/directory-and-folder-compression/decompress-folder/)
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

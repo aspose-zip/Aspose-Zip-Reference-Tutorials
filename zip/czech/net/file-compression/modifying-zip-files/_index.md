@@ -42,13 +42,13 @@ schemas:
   - answer: Aspose.Zip is optimized for .NET, but Aspose offers equivalent libraries
       for Java, C++, and Python that follow the same API concepts.
     question: Can I use Aspose.Zip for .NET with other programming languages?
-  - answer: Yes, you can access the free trial **[here](https://releases.aspose.com/)**.
+  - answer: Yes, you can access the free trial **[here](https://releases.aspose.com/) **.
     question: Is there a free trial available for Aspose.Zip for .NET?
-  - answer: For support and discussions, visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)**.
+  - answer: For support and discussions, visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37) **.
     question: How do I get support for Aspose.Zip for .NET?
-  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/)**.
+  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/) **.
     question: Can I purchase a temporary license for Aspose.Zip for .NET?
-  - answer: The documentation is available **[here](https://reference.aspose.com/zip/net/)**.
+  - answer: The documentation is available **[here](https://reference.aspose.com/zip/net/) **.
     question: Where can I find the documentation for Aspose.Zip for .NET?
   type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -210,31 +210,25 @@ Dodržením těchto pěti kroků jste **compress files C#** vytvořili úhledný
 A: Aspose.Zip je optimalizován pro .NET, ale Aspose nabízí ekvivalentní knihovny pro Java, C++ a Python, které používají stejné API koncepty.
 
 **Q: Je k dispozici bezplatná zkušební verze pro Aspose.Zip pro .NET?**  
-A: Ano, bezplatnou zkušební verzi můžete získat **[zde](https://releases.aspose.com/)**.
+A: Ano, bezplatnou zkušební verzi můžete získat **[zde](https://releases.aspose.com/) **.
 
 **Q: Jak získám podporu pro Aspose.Zip pro .NET?**  
-A: Pro podporu a diskuze navštivte **[Aspose.Zip fórum](https://forum.aspose.com/c/zip/37)**.
+A: Pro podporu a diskuze navštivte **[Aspose.Zip fórum](https://forum.aspose.com/c/zip/37) **.
 
 **Q: Mohu zakoupit dočasnou licenci pro Aspose.Zip pro .NET?**  
-A: Ano, dočasnou licenci můžete získat **[zde](https://purchase.aspose.com/temporary-license/)**.
+A: Ano, dočasnou licenci můžete získat **[zde](https://purchase.aspose.com/temporary-license/) **.
 
 **Q: Kde najdu dokumentaci pro Aspose.Zip pro .NET?**  
-A: Dokumentace je dostupná **[zde](https://reference.aspose.com/zip/net/)**.
-
-## Související tutoriály
-
-- [Jak vytvořit zip archiv a přidat soubor do zipu pomocí Aspose.Zip pro .NET](/zip/net/file-compression/compress-single-file/)
-- [zip více souborů c# – Snadná komprese s Aspose.Zip pro .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Jak komprimovat soubory s heslem a šifrovat ZIP položky různými hesly pomocí Aspose.Zip pro .NET](/zip/net/other-compression-techniques/entries-with-different-passwords/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< blocks/products/products-backtop-button >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+A: Dokumentace je dostupná **[zde](https://reference.aspose.com/zip/net/) **.
 
 ---
 
 **Poslední aktualizace:** 2026-05-30  
 **Testováno s:** Aspose.Zip 24.12 pro .NET  
 **Autor:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -161,13 +161,6 @@ A: Určitě. API je navrženo pro jednoduché vložení. Viz oficiální [dokume
 **Testováno s:** Aspose.Zip pro .NET (nejnovější verze v době psaní)  
 **Autor:** Aspose
 
-## Související tutoriály
-
-- [Create Zip Archive .NET – File Compression with Aspose.Zip](/zip/net/file-compression/)
-- [zip multiple files c# – Effortless Compression with Aspose.Zip for .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Create Zip Without Compression & Decompress Files – Aspose.Zip](/zip/net/file-decompression/decompress-stored-file/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

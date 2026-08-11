@@ -180,15 +180,8 @@ Du har nu ett komplett, produktionsklart mönster för **hur man zippar en mapp*
 **Testat med:** Aspose.Zip 24.11 for .NET  
 **Författare:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## Relaterade handledningar
-
-- [zip flera filer c# – Enkel komprimering med Aspose.Zip för .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Aspose.Zip för .NET – Lösenordsskydda ZIP‑arkiv & lagra flera filer utan komprimering](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
-- [Hur man zippar en mapp – Komprimera katalog med Aspose.Zip](/zip/net/directory-and-folder-compression/decompress-folder/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

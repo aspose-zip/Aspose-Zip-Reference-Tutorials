@@ -180,15 +180,8 @@ Agora você tem um padrão completo e pronto para produção de **como compactar
 **Testado com:** Aspose.Zip 24.11 para .NET  
 **Autor:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## Tutoriais Relacionados
-
-- [compactar vários arquivos c# – Compressão sem esforço com Aspose.Zip para .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Aspose.Zip para .NET - Proteger Arquivo Zip com Senha & Armazenar Vários Arquivos Sem Compressão](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
-- [Como Compactar Pasta – Compactar Diretório com Aspose.Zip](/zip/net/directory-and-folder-compression/decompress-folder/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

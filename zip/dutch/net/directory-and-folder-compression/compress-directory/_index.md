@@ -180,15 +180,9 @@ Je hebt nu een volledig, productie‑klaar patroon voor **hoe je een map zipt** 
 **Tested With:** Aspose.Zip 24.11 for .NET  
 **Author:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## Gerelateerde tutorials
-
-- [zip meerdere bestanden c# – moeiteloze compressie met Aspose.Zip voor .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Aspose.Zip voor .NET - ZIP‑archief beveiligen met wachtwoord & meerdere bestanden opslaan zonder compressie](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
-- [Hoe een map zippen – map comprimeren met Aspose.Zip](/zip/net/directory-and-folder-compression/decompress-folder/)
-
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

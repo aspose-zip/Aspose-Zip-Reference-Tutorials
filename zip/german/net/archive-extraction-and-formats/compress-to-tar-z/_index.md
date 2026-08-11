@@ -23,7 +23,7 @@ schemas:
   - answer: Yes, you can explore the capabilities of Aspose.Zip for .NET by downloading
       the free trial [here](https://releases.aspose.com/).
     question: Is there a trial version available for Aspose.Zip for .NET?
-  - answer: The documentation is available [here](https://reference.aspose.com/zip/net/),
+  - answer: The documentation is available [here](https://reference.aspose.com/zip/net/) ,
       providing detailed insights into the library's features and usage.
     question: Where can I find comprehensive documentation for Aspose.Zip for .NET?
   - answer: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) to seek
@@ -181,14 +181,8 @@ Sie haben nun gelernt, wie Sie **add files to tar** durchführen und das Ergebni
 **Getestet mit:** Aspose.Zip for .NET 24.11  
 **Autor:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## Verwandte Tutorials
-
-- [Tar‑Archiv erstellen und Dateien zu tar hinzufügen mit Aspose.Zip für .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
-- [Wie man tar komprimiert und TarBz2 erstellt mit Aspose.Zip für .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
-- [Wie man mehrere Dateien zu tar komprimiert mit Aspose.Zip für .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-lz/)
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

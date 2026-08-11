@@ -181,15 +181,8 @@ Agora você aprendeu como **add files to tar** e compactar o resultado em um arq
 **Testado com:** Aspose.Zip for .NET 24.11  
 **Autor:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## Tutoriais Relacionados
-
-- [Criar arquivo tar e adicionar arquivos a tar com Aspose.Zip para .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
-- [Como compactar tar e criar TarBz2 com Aspose.Zip para .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
-- [Como compactar vários arquivos tar com Aspose.Zip para .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-lz/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

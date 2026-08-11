@@ -175,14 +175,8 @@ A5: 물론입니다. 구매는 [여기](https://purchase.aspose.com/buy)에서 �
 **테스트 환경:** Aspose.Zip 24.11 for .NET  
 **작성자:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## 관련 튜토리얼
-
-- [여러 파일 zip c# – Aspose.Zip for .NET으로 손쉬운 압축](/zip/net/file-compression/compress-multiple-files/)
-- [Aspose.Zip for .NET - 비밀번호로 ZIP 아카이브 보호 및 압축 없이 여러 파일 저장](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
-- [폴더 압축 방법 – Aspose.Zip으로 디렉터리 압축](/zip/net/directory-and-folder-compression/decompress-folder/)
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

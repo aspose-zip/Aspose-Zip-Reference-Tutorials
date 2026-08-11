@@ -42,13 +42,13 @@ schemas:
   - answer: Aspose.Zip is optimized for .NET, but Aspose offers equivalent libraries
       for Java, C++, and Python that follow the same API concepts.
     question: Can I use Aspose.Zip for .NET with other programming languages?
-  - answer: Yes, you can access the free trial **[here](https://releases.aspose.com/)**.
+  - answer: Yes, you can access the free trial **[here](https://releases.aspose.com/) **.
     question: Is there a free trial available for Aspose.Zip for .NET?
-  - answer: For support and discussions, visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)**.
+  - answer: For support and discussions, visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37) **.
     question: How do I get support for Aspose.Zip for .NET?
-  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/)**.
+  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/) **.
     question: Can I purchase a temporary license for Aspose.Zip for .NET?
-  - answer: The documentation is available **[here](https://reference.aspose.com/zip/net/)**.
+  - answer: The documentation is available **[here](https://reference.aspose.com/zip/net/) **.
     question: Where can I find the documentation for Aspose.Zip for .NET?
   type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -210,31 +210,26 @@ outer.Save(dataDir + "flatten.zip");
 A: Aspose.Zip は .NET 向けに最適化されていますが、Java、C++、Python 用の同等ライブラリも提供されており、同様の API コンセプトを共有しています。
 
 **Q: Aspose.Zip for .NET の無料トライアルはありますか？**  
-A: はい、無料トライアルは **[こちら](https://releases.aspose.com/)** から入手できます。
+A: はい、無料トライアルは **[こちら](https://releases.aspose.com/) ** から入手できます。
 
 **Q: Aspose.Zip for .NET のサポートはどこで受けられますか？**  
-A: サポートやディスカッションは **[Aspose.Zip フォーラム](https://forum.aspose.com/c/zip/37)** で行われています。
+A: サポートやディスカッションは **[Aspose.Zip フォーラム](https://forum.aspose.com/c/zip/37) ** で行われています。
 
 **Q: Aspose.Zip for .NET の一時ライセンスは購入できますか？**  
-A: はい、一時ライセンスは **[こちら](https://purchase.aspose.com/temporary-license/)** から取得可能です。
+A: はい、一時ライセンスは **[こちら](https://purchase.aspose.com/temporary-license/) ** から取得可能です。
 
 **Q: Aspose.Zip for .NET のドキュメントはどこにありますか？**  
-A: ドキュメントは **[こちら](https://reference.aspose.com/zip/net/)** にあります。
+A: ドキュメントは **[こちら](https://reference.aspose.com/zip/net/) ** にあります。
 
-## 関連チュートリアル
-
-- [How to Create Zip Archive and Add File to Zip Using Aspose.Zip for .NET](/zip/net/file-compression/compress-single-file/)
-- [zip multiple files c# – Effortless Compression with Aspose.Zip for .NET](/zip/net/file-compression/compress-multiple-files/)
-- [How to compress files with password and encrypt ZIP entries with different passwords using Aspose.Zip for .NET](/zip/net/other-compression-techniques/entries-with-different-passwords/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< blocks/products/products-backtop-button >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
 
 ---
 
 **Last Updated:** 2026-05-30  
 **Tested With:** Aspose.Zip 24.12 for .NET  
 **Author:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

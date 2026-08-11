@@ -159,13 +159,6 @@ O: Zdecydowanie. API jest zaprojektowane do prostego wstawiania. Odwołaj się d
 **Testowano z:** Aspose.Zip for .NET (najnowsza wersja w momencie pisania)  
 **Autor:** Aspose
 
-## Powiązane samouczki
-
-- [Utwórz archiwum Zip .NET – Kompresja plików przy użyciu Aspose.Zip](/zip/net/file-compression/)
-- [zipowanie wielu plików c# – Łatwa kompresja z Aspose.Zip dla .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Utwórz Zip bez kompresji i dekompresuj pliki – Aspose.Zip](/zip/net/file-decompression/decompress-stored-file/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}

@@ -181,15 +181,8 @@ Ahora dispone de un patrón completo y listo para producción para **comprimir u
 **Probado con:** Aspose.Zip 24.11 for .NET  
 **Autor:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## Tutoriales relacionados
-
-- [comprimir varios archivos c# – Compresión sin esfuerzo con Aspose.Zip para .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Aspose.Zip para .NET - Proteger con contraseña el archivo ZIP y almacenar varios archivos sin compresión](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
-- [Cómo comprimir una carpeta – Comprimir directorio con Aspose.Zip](/zip/net/directory-and-folder-compression/decompress-folder/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

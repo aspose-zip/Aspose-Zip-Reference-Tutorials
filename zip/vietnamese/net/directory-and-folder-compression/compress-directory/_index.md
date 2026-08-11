@@ -180,15 +180,8 @@ Bạn đã có một mẫu hoàn chỉnh, sẵn sàng cho môi trường sản x
 **Tested With:** Aspose.Zip 24.11 for .NET  
 **Author:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## Hướng dẫn liên quan
-
-- [nén nhiều tệp c# – Nén không tốn công sức với Aspose.Zip cho .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Aspose.Zip cho .NET - Bảo vệ ZIP bằng mật khẩu & Lưu nhiều tệp mà không nén](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
-- [Cách Nén Thư Mục – Nén Thư Mục với Aspose.Zip](/zip/net/directory-and-folder-compression/decompress-folder/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -180,15 +180,9 @@ A5: แน่นอน, คุณสามารถทำการซื้อ�
 **Tested With:** Aspose.Zip 24.11 for .NET  
 **Author:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## บทเรียนที่เกี่ยวข้อง
-
-- [บีบอัดหลายไฟล์ c# – การบีบอัดที่ง่ายดายด้วย Aspose.Zip สำหรับ .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Aspose.Zip สำหรับ .NET - ป้องกันไฟล์ ZIP ด้วยรหัสผ่านและจัดเก็บหลายไฟล์โดยไม่มีการบีบอัด](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
-- [วิธีบีบอัดโฟลเดอร์ – บีบอัดไดเรกทอรีด้วย Aspose.Zip](/zip/net/directory-and-folder-compression/decompress-folder/)
-
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

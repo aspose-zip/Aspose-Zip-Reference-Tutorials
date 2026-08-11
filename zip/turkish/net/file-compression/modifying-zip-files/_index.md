@@ -43,13 +43,13 @@ schemas:
   - answer: Aspose.Zip is optimized for .NET, but Aspose offers equivalent libraries
       for Java, C++, and Python that follow the same API concepts.
     question: Can I use Aspose.Zip for .NET with other programming languages?
-  - answer: Yes, you can access the free trial **[here](https://releases.aspose.com/)**.
+  - answer: Yes, you can access the free trial **[here](https://releases.aspose.com/)  **.
     question: Is there a free trial available for Aspose.Zip for .NET?
-  - answer: For support and discussions, visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)**.
+  - answer: For support and discussions, visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)  **.
     question: How do I get support for Aspose.Zip for .NET?
-  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/)**.
+  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/)  **.
     question: Can I purchase a temporary license for Aspose.Zip for .NET?
-  - answer: The documentation is available **[here](https://reference.aspose.com/zip/net/)**.
+  - answer: The documentation is available **[here](https://reference.aspose.com/zip/net/)  **.
     question: Where can I find the documentation for Aspose.Zip for .NET?
   type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -211,16 +211,16 @@ Bu beş adımı izleyerek **compress files C#** işlemini gerçekleştirdiniz ve
 C: Aspose.Zip .NET için optimize edilmiştir, ancak Aspose aynı API kavramlarını izleyen Java, C++ ve Python için eşdeğer kütüphaneler sunar.
 
 **S: Aspose.Zip for .NET için ücretsiz deneme mevcut mu?**  
-C: Evet, ücretsiz denemeye **[buradan](https://releases.aspose.com/)** erişebilirsiniz.
+C: Evet, ücretsiz denemeye **[buradan](https://releases.aspose.com/) ** erişebilirsiniz.
 
 **S: Aspose.Zip for .NET için desteği nasıl alabilirim?**  
-C: Destek ve tartışmalar için **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)** adresini ziyaret edin.
+C: Destek ve tartışmalar için **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37) ** adresini ziyaret edin.
 
 **S: Aspose.Zip for .NET için geçici bir lisans satın alabilir miyim?**  
-C: Evet, geçici lisansı **[buradan](https://purchase.aspose.com/temporary-license/)** alabilirsiniz.
+C: Evet, geçici lisansı **[buradan](https://purchase.aspose.com/temporary-license/) ** alabilirsiniz.
 
 **S: Aspose.Zip for .NET dokümantasyonunu nerede bulabilirim?**  
-C: Dokümantasyon **[buradan](https://reference.aspose.com/zip/net/)** mevcuttur.
+C: Dokümantasyon **[buradan](https://reference.aspose.com/zip/net/) ** mevcuttur.
 
 ## İlgili Öğreticiler
 
@@ -228,14 +228,14 @@ C: Dokümantasyon **[buradan](https://reference.aspose.com/zip/net/)** mevcuttur
 - [c# ile birden fazla dosyayı zipleme – Aspose.Zip for .NET ile Sorunsuz Sıkıştırma](/zip/net/file-compression/compress-multiple-files/)
 - [Aspose.Zip for .NET ile şifreli dosya sıkıştırma ve ZIP girdilerini farklı şifrelerle şifreleme](/zip/net/other-compression-techniques/entries-with-different-passwords/)
 
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< blocks/products/products-backtop-button >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
 ---
 
 **Son Güncelleme:** 2026-05-30  
 **Test Edilen Versiyon:** Aspose.Zip 24.12 for .NET  
 **Yazar:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

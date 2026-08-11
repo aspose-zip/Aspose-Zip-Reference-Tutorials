@@ -180,15 +180,9 @@ A5: Φυσικά, μπορείτε να κάνετε αγορά [εδώ](https:/
 **Tested With:** Aspose.Zip 24.11 for .NET  
 **Author:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## Σχετικοί Οδηγοί
-
-- [συμπίεση πολλαπλών αρχείων c# – Απρόσκοπτη Συμπίεση με το Aspose.Zip για .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Aspose.Zip για .NET - Προστασία ZIP Αρχείου με Κωδικό & Αποθήκευση Πολλαπλών Αρχείων Χωρίς Συμπίεση](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
-- [Πώς να Συμπιέσετε Φάκελο – Συμπίεση Καταλόγου με το Aspose.Zip](/zip/net/directory-and-folder-compression/decompress-folder/)
-
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

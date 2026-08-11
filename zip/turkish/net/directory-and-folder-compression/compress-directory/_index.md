@@ -166,15 +166,8 @@ Artık Aspose.Zip for .NET kullanarak **klasörü nasıl sıkıştıracağınız
 **Test Edildiği Sürüm:** Aspose.Zip 24.11 for .NET  
 **Yazar:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## İlgili Öğreticiler
-
-- [c# ile birden fazla dosyayı ziple – Aspose.Zip for .NET ile Sorunsuz Sıkıştırma](/zip/net/file-compression/compress-multiple-files/)
-- [Aspose.Zip for .NET - Şifreyle Zip Arşivi Koruma ve Sıkıştırma Olmadan Birden Fazla Dosya Depolama](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
-- [Klasörü Ziple – Aspose.Zip ile Dizini Sıkıştırma](/zip/net/directory-and-folder-compression/decompress-folder/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

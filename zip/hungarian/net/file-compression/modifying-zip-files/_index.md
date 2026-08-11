@@ -43,13 +43,13 @@ schemas:
   - answer: Aspose.Zip is optimized for .NET, but Aspose offers equivalent libraries
       for Java, C++, and Python that follow the same API concepts.
     question: Can I use Aspose.Zip for .NET with other programming languages?
-  - answer: Yes, you can access the free trial **[here](https://releases.aspose.com/)**.
+  - answer: Yes, you can access the free trial **[here](https://releases.aspose.com/)  **.
     question: Is there a free trial available for Aspose.Zip for .NET?
-  - answer: For support and discussions, visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)**.
+  - answer: For support and discussions, visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)  **.
     question: How do I get support for Aspose.Zip for .NET?
-  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/)**.
+  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/)  **.
     question: Can I purchase a temporary license for Aspose.Zip for .NET?
-  - answer: The documentation is available **[here](https://reference.aspose.com/zip/net/)**.
+  - answer: The documentation is available **[here](https://reference.aspose.com/zip/net/)  **.
     question: Where can I find the documentation for Aspose.Zip for .NET?
   type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -211,31 +211,25 @@ Ezeket az öt lépést követve **compress files C#** egy rendezett, lapos arch�
 A: Az Aspose.Zip .NET-re van optimalizálva, de az Aspose ekvivalens könyvtárakat kínál Java, C++ és Python számára, amelyek ugyanazokat az API koncepciókat követik.
 
 **Q: Van ingyenes próba a Aspose.Zip for .NET-hez?**  
-A: Igen, az ingyenes próbát **[itt](https://releases.aspose.com/)** érheted el.
+A: Igen, az ingyenes próbát **[itt](https://releases.aspose.com/) ** érheted el.
 
 **Q: Hogyan kaphatok támogatást az Aspose.Zip for .NET-hez?**  
-A: Támogatásért és megbeszélésekért látogasd meg az **[Aspose.Zip fórumot](https://forum.aspose.com/c/zip/37)**.
+A: Támogatásért és megbeszélésekért látogasd meg az **[Aspose.Zip fórumot](https://forum.aspose.com/c/zip/37) **.
 
 **Q: Vásárolhatok ideiglenes licencet az Aspose.Zip for .NET-hez?**  
-A: Igen, ideiglenes licencet **[itt](https://purchase.aspose.com/temporary-license/)** szerezhetsz.
+A: Igen, ideiglenes licencet **[itt](https://purchase.aspose.com/temporary-license/) ** szerezhetsz.
 
 **Q: Hol találom az Aspose.Zip for .NET dokumentációját?**  
-A: A dokumentáció **[itt](https://reference.aspose.com/zip/net/)** érhető el.
-
-## Kapcsolódó oktatóanyagok
-
-- [Hogyan hozzunk létre zip archívumot és adjunk hozzá fájlt a zip-hez az Aspose.Zip for .NET használatával](/zip/net/file-compression/compress-single-file/)
-- [több fájl zip-elése c# – Könnyed tömörítés az Aspose.Zip for .NET használatával](/zip/net/file-compression/compress-multiple-files/)
-- [Hogyan tömörítsünk fájlokat jelszóval és titkosítsuk a ZIP bejegyzéseket különböző jelszavakkal az Aspose.Zip for .NET használatával](/zip/net/other-compression-techniques/entries-with-different-passwords/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< blocks/products/products-backtop-button >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+A: A dokumentáció **[itt](https://reference.aspose.com/zip/net/) ** érhető el.
 
 ---
 
 **Legutóbb frissítve:** 2026-05-30  
 **Tesztelt verzió:** Aspose.Zip 24.12 for .NET  
 **Szerző:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

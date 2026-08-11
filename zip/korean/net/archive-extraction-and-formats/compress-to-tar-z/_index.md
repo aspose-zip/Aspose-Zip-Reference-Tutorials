@@ -180,14 +180,8 @@ A: 예, 임시 라이선스가 필요하면 [here](https://purchase.aspose.com/t
 **Tested With:** Aspose.Zip for .NET 24.11  
 **Author:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## 관련 튜토리얼
-
-- [Aspose.Zip for .NET을 사용하여 tar 아카이브 생성 및 파일 추가](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
-- [Aspose.Zip for .NET을 사용하여 tar를 압축하고 TarBz2 생성](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
-- [Aspose.Zip for .NET을 사용하여 여러 파일을 tar로 압축](/zip/net/archive-extraction-and-formats/compress-to-tar-lz/)
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

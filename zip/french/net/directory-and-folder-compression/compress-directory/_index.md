@@ -181,15 +181,8 @@ Vous disposez maintenant d’un modèle complet, prêt pour la production, pour 
 **Testé avec :** Aspose.Zip 24.11 pour .NET  
 **Auteur :** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## Tutoriels associés
-
-- [zip multiple files c# – Compression sans effort avec Aspose.Zip pour .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Aspose.Zip pour .NET - Protection par mot de passe d’une archive ZIP & stockage de plusieurs fichiers sans compression](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
-- [Comment zipper un dossier – Compresser un répertoire avec Aspose.Zip](/zip/net/directory-and-folder-compression/decompress-folder/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

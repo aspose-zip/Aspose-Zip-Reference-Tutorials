@@ -179,15 +179,8 @@ A: ได้, หากคุณต้องการไลเซนส์ชั
 **Tested With:** Aspose.Zip for .NET 24.11  
 **Author:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## บทแนะนำที่เกี่ยวข้อง
-
-- [สร้าง tar archive และเพิ่มไฟล์ลงใน tar ด้วย Aspose.Zip สำหรับ .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
-- [วิธีบีบอัด tar และสร้าง TarBz2 ด้วย Aspose.Zip สำหรับ .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
-- [วิธีบีบอัดหลายไฟล์เป็น tar ด้วย Aspose.Zip สำหรับ .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-lz/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -23,7 +23,7 @@ schemas:
   - answer: Yes, you can explore the capabilities of Aspose.Zip for .NET by downloading
       the free trial [here](https://releases.aspose.com/).
     question: Is there a trial version available for Aspose.Zip for .NET?
-  - answer: The documentation is available [here](https://reference.aspose.com/zip/net/),
+  - answer: The documentation is available [here](https://reference.aspose.com/zip/net/) ,
       providing detailed insights into the library's features and usage.
     question: Where can I find comprehensive documentation for Aspose.Zip for .NET?
   - answer: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) to seek
@@ -183,14 +183,8 @@ Most már megtanultad, hogyan **add files to tar**, majd a végeredményt TarZ a
 **Tesztelve a következővel:** Aspose.Zip for .NET 24.11  
 **Szerző:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## Kapcsolódó oktatóanyagok
-
-- [Tar archívum létrehozása és fájlok hozzáadása a tar-hoz az Aspose.Zip for .NET használatával](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
-- [Hogyan tömörítsünk tar-t és hozzunk létre TarBz2-t az Aspose.Zip for .NET használatával](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
-- [Hogyan tömörítsünk több fájlt tar-rel az Aspose.Zip for .NET használatával](/zip/net/archive-extraction-and-formats/compress-to-tar-lz/)
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -161,12 +161,6 @@ A: แน่นอน. API ถูกออกแบบให้ใช้งา�
 **ทดสอบด้วย:** Aspose.Zip for .NET (เวอร์ชันล่าสุด ณ เวลาที่เขียน)  
 **ผู้เขียน:** Aspose
 
-## บทเรียนที่เกี่ยวข้อง
-
-- [สร้าง Zip Archive .NET – การบีบอัดไฟล์ด้วย Aspose.Zip](/zip/net/file-compression/)
-- [zip หลายไฟล์ c# – การบีบอัดที่ง่ายดายด้วย Aspose.Zip สำหรับ .NET](/zip/net/file-compression/compress-multiple-files/)
-- [สร้าง Zip โดยไม่มีการบีบอัด & แยกไฟล์ – Aspose.Zip](/zip/net/file-decompression/decompress-stored-file/)
-
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

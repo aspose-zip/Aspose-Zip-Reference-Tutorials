@@ -183,15 +183,8 @@ A: 可以，如果您需要临时许可证，可在[此处](https://purchase.asp
 **测试环境：** Aspose.Zip for .NET 24.11  
 **作者：** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## 相关教程
-
-- [使用 Aspose.Zip for .NET 创建 tar 归档并添加文件到 tar](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
-- [如何使用 Aspose.Zip for .NET 压缩 tar 并创建 TarBz2](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
-- [如何使用 Aspose.Zip for .NET 压缩多个文件为 tar](/zip/net/archive-extraction-and-formats/compress-to-tar-lz/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

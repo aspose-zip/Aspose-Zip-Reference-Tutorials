@@ -180,15 +180,8 @@ Artık **dosyaları tar'a ekleyip** sonucu Aspose.Zip for .NET kullanarak bir Ta
 **Test Edilen Versiyon:** Aspose.Zip for .NET 24.11  
 **Yazar:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
-
-## İlgili Eğitimler
-
-- [Aspose.Zip for .NET ile tar arşivi oluşturun ve dosyaları tar'a ekleyin](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
-- [Aspose.Zip for .NET ile tar'ı sıkıştırın ve TarBz2 oluşturun](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
-- [Aspose.Zip for .NET ile birden fazla dosyayı tar ile sıkıştırın](/zip/net/archive-extraction-and-formats/compress-to-tar-lz/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

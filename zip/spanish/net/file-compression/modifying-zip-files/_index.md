@@ -42,13 +42,13 @@ schemas:
   - answer: Aspose.Zip is optimized for .NET, but Aspose offers equivalent libraries
       for Java, C++, and Python that follow the same API concepts.
     question: Can I use Aspose.Zip for .NET with other programming languages?
-  - answer: Yes, you can access the free trial **[here](https://releases.aspose.com/)**.
+  - answer: Yes, you can access the free trial **[here](https://releases.aspose.com/) **.
     question: Is there a free trial available for Aspose.Zip for .NET?
-  - answer: For support and discussions, visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)**.
+  - answer: For support and discussions, visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37) **.
     question: How do I get support for Aspose.Zip for .NET?
-  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/)**.
+  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/) **.
     question: Can I purchase a temporary license for Aspose.Zip for .NET?
-  - answer: The documentation is available **[here](https://reference.aspose.com/zip/net/)**.
+  - answer: The documentation is available **[here](https://reference.aspose.com/zip/net/) **.
     question: Where can I find the documentation for Aspose.Zip for .NET?
   type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
@@ -210,30 +210,24 @@ Al seguir estos cinco pasos, has **compress files C#** en un archivo ordenado y 
 R: Aspose.Zip está optimizado para .NET, pero Aspose ofrece bibliotecas equivalentes para Java, C++ y Python que siguen los mismos conceptos de API.
 
 **P: ¿Hay una prueba gratuita disponible para Aspose.Zip para .NET?**  
-R: Sí, puedes acceder a la prueba gratuita **[aquí](https://releases.aspose.com/)**.
+R: Sí, puedes acceder a la prueba gratuita **[aquí](https://releases.aspose.com/) **.
 
 **P: ¿Cómo obtengo soporte para Aspose.Zip para .NET?**  
-R: Para soporte y discusiones, visita el **[foro Aspose.Zip](https://forum.aspose.com/c/zip/37)**.
+R: Para soporte y discusiones, visita el **[foro Aspose.Zip](https://forum.aspose.com/c/zip/37) **.
 
 **P: ¿Puedo comprar una licencia temporal para Aspose.Zip para .NET?**  
-R: Sí, puedes obtener una licencia temporal **[aquí](https://purchase.aspose.com/temporary-license/)**.
+R: Sí, puedes obtener una licencia temporal **[aquí](https://purchase.aspose.com/temporary-license/) **.
 
 **P: ¿Dónde puedo encontrar la documentación de Aspose.Zip para .NET?**  
-R: La documentación está disponible **[aquí](https://reference.aspose.com/zip/net/)**.
-
-## Tutoriales relacionados
-
-- [Cómo crear un archivo zip y añadir un archivo al zip usando Aspose.Zip para .NET](/zip/net/file-compression/compress-single-file/)
-- [zip multiple files c# – Compresión sin esfuerzo con Aspose.Zip para .NET](/zip/net/file-compression/compress-multiple-files/)
-- [Cómo comprimir archivos con contraseña y cifrar entradas ZIP con diferentes contraseñas usando Aspose.Zip para .NET](/zip/net/other-compression-techniques/entries-with-different-passwords/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< blocks/products/products-backtop-button >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+R: La documentación está disponible **[aquí](https://reference.aspose.com/zip/net/) **.
 
 ---
 
 **Última actualización:** 2026-05-30  
 **Probado con:** Aspose.Zip 24.12 for .NET  
 **Autor:** Aspose
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
