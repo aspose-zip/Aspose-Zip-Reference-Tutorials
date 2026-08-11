@@ -1,9 +1,57 @@
 ---
-date: 2026-02-15
-description: Tanulja meg, hogyan tömöríthet fájlokat C#-ban az Aspose.Zip for .NET
-  segítségével, módosíthatja a zip fájlt C#-ban, kibonthatja a belső zip bejegyzéseket,
-  és létrehozhat lapos archívumokat egy lépésről‑lépésre útmutatóban.
-linktitle: Modifying Zip Files
+date: 2026-05-30
+description: Ismerje meg, hogyan lehet C#-ban fájlokat tömöríteni az Aspose.Zip for
+  .NET segítségével, módosítani zip fájlt C#-ban, kinyerni a belső zip bejegyzéseket,
+  és memóriaalapú lapos archívumokat létrehozni.
+keywords:
+- compress files c#
+- create zip archive c#
+- modify zip file c#
+- aspose.zip .net
+- zip archive in memory c#
+linktitle: Zip fájlok módosítása
+schemas:
+- author: Aspose
+  dateModified: '2026-05-30'
+  description: Learn how to compress files C# with Aspose.Zip for .NET, modify zip
+    file C#, extract inner zip entries, and create flat archives in memory.
+  headline: Compress files C# using Aspose.Zip – Create & Modify Zip
+  type: TechArticle
+- description: Learn how to compress files C# with Aspose.Zip for .NET, modify zip
+    file C#, extract inner zip entries, and create flat archives in memory.
+  name: Compress files C# using Aspose.Zip – Create & Modify Zip
+  steps:
+  - name: Open the Outer Zip File
+    text: We start by opening the existing archive (`outer.zip`). The `using` statement
+      ensures the file is closed automatically.
+  - name: Identify Inner Zip Entries
+    text: Next, we scan the outer archive for entries that end with `.zip`. Those
+      are the **inner zip files** we want to extract.
+  - name: Extract Inner Entries
+    text: Now we treat each inner zip as its own `Archive`. This is where we **extract
+      inner zip files** and collect their content in memory.
+  - name: Delete Inner Archive Entries
+    text: Having captured the data we need, we remove the original inner zip entries
+      from the outer archive. This step is essentially **delete zip entry C#** logic.
+  - name: Add Modified Entries to Outer Zip
+    text: Finally, we re‑insert the extracted files back into the outer archive, effectively
+      flattening the structure, and save the result as `flatten.zip`. By following
+      these five steps you’ve **compress files C#** into a tidy, flat archive that
+      no longer contains nested zip layers.
+  type: HowTo
+- questions:
+  - answer: Aspose.Zip is optimized for .NET, but Aspose offers equivalent libraries
+      for Java, C++, and Python that follow the same API concepts.
+    question: Can I use Aspose.Zip for .NET with other programming languages?
+  - answer: Yes, you can access the free trial **[here](https://releases.aspose.com/)  **.
+    question: Is there a free trial available for Aspose.Zip for .NET?
+  - answer: For support and discussions, visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)  **.
+    question: How do I get support for Aspose.Zip for .NET?
+  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/)  **.
+    question: Can I purchase a temporary license for Aspose.Zip for .NET?
+  - answer: The documentation is available **[here](https://reference.aspose.com/zip/net/)  **.
+    question: Where can I find the documentation for Aspose.Zip for .NET?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Fájlok tömörítése C#-ban az Aspose.Zip használatával – Zip létrehozása és módosítása
 url: /hu/net/file-compression/modifying-zip-files/
@@ -14,54 +62,43 @@ weight: 15
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Zip archívum létrehozása C#-ban az Aspose.Zip for .NET segítségével
+# Fájlok tömörítése C#-ban az Aspose.Zip segítségével – Létrehozás és módosítás
 
 ## Bevezetés
 
-Fájlok tömörítése C#-ban gyakori követelmény, amikor adatokat kell szállítani, mentéseket készíteni vagy csökkenteni a tárolási költségeket. Az Aspose.Zip for .NET eltávolítja az alacsony szintű részleteket, és lehetővé teszi, hogy a **arra** koncentrálj, amit el akarsz érni – legyen szó egy vadonatúj archívum létrehozásáról, beágyazott zip fájlok laposításáról vagy egy csomag frissítéséről.
+A fájlok C#-ban történő tömörítése gyakori igény, amikor adatot kell szállítani, naplókat menteni, vagy csökkenteni a tárolási költségeket. Az Aspose.Zip for .NET segítségével **Compress files C#** elkerülheted az alacsony szintű részleteket, és a üzleti célra koncentrálhatsz – legyen szó egy vadonatúj archívum építéséről, beágyazott zip fájlok laposításáról vagy egy meglévő csomag helyben történő frissítéséről. Ez az oktatóanyag végigvezet a **modify zip file C#** folyamaton, a belső zip bejegyzések kinyerésén, a nem kívánt elemek törlésén, és végül a **compress files C#** egy tiszta, lapos archívumba, amely bármely .NET környezetben működik.
 
-Ebben az útmutatóban megtanulod, hogyan **modify a zip file C#**, hogyan extrahálj belső zip bejegyzéseket, hogyan törölj nem kívánt elemeket, és végül hogyan **compress files C#** egy tiszta, lapos archívumba. A megközelítés tökéletesen működik fájlfeldolgozó szolgáltatásoknál, automatizált telepítési csővezetékeknél vagy bármilyen esetben, ahol programozottan kell zip archívumokat kezelni.
+## Az `Archive` osztály
+
+Az `Archive` osztály egy zip archívumot képvisel, és módszereket biztosít annak létrehozására, olvasására és bejegyzéseinek módosítására.
 
 ## Gyors válaszok
-- **Létrehozhat az Aspose.Zip zip-archívumot C#?** Igen – az Archívum osztály lehetővé teszi, hogy zip fájlokat készítsen és szerkesszen közvetlenül C#-ban.
-- **Hogyan bonthatom ki a belső zip fájlokat?** Nyissa meg a külső bejegyzést adatfolyamként, hozzon létre egy második "archívumot" az adatfolyamból, majd sorolja fel a bejegyzéseit.
-- **Szükségem van licencre a fejlesztéshez?** Ingyenes próbaverzió működik az értékeléshez; gyártásához kereskedelmi engedély szükséges.
-- **Támogatott .NET verziók?** .NET Framework 4.6+, .NET Core 3.1+, .NET 5/6/7.
+- **Az Aspose.Zip képes zip archívumot létrehozni C#-ban?** Igen – az `Archive` osztály lehetővé teszi zip fájlok építését és szerkesztését közvetlenül C#-ban.
+- **Hogyan nyerhetem ki a belső zip fájlokat?** Nyisd meg a külső bejegyzést streamként, hozz létre egy második `Archive`-t ebből a streamből, majd sorold fel a bejegyzéseit.
+- **Szükségem van licencre fejlesztéshez?** Egy ingyenes próbaalkalmazás elegendő értékeléshez; a termeléshez kereskedelmi licenc szükséges.
+- **Támogatott .NET verziók?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, és .NET 5–10
 - **A minta tipikus futási ideje?** Kevesebb, mint egy másodperc néhány megabájt adat esetén.
 
-## Hogyan tömörítsünk fájlokat C#-ban az Aspose.Zip segítségével
+## Mi az a „compress files C#”?
 
-Mielőtt belemerülnénk a kódba, tisztázzuk, miért érdemes az Aspose.Zip-et választani más könyvtárak helyett:
+A zip archívum létrehozása C#-ban azt jelenti, hogy programozottan generálsz egy `.zip` fájlt, amely tetszőleges számú fájlt vagy mappát tartalmazhat, opcionálisan alkalmazva tömörítési szinteket, titkosítást vagy egyedi metaadatokat. Az Aspose.Zip elrejti a zip specifikációt, így a saját alkalmazásod számára fontos logikára koncentrálhatsz.
 
-- **Tiszta .NET implementáció** – nincsenek natív DLL-ek, így a felhőszolgáltatásokba való telepítés egyszerű.
-- **Teljes kontroll a bejegyzések felett** – menet közben hozzáadhat, törölhet, átnevezhet vagy cserélhet fájlokat, ami elengedhetetlen, ha **C#-ban programozottan kell módosítania egy zip fájlt**.
-- **Stream-központú API** – közvetlenül működik a `MemoryStream` objektumokkal, ideális memórián belüli feldolgozáshoz vagy szerver nélküli funkciókhoz.
-- **Beágyazott archívum támogatás** – belső zip fájlok kibontása ideiglenes fájlok lemezre írása nélkül.
+## Miért használjuk az Aspose.Zip-et .NET-hez?
 
-## Mi a „zip archívum létrehozása C#-ban”?
-
-A zip archívum létrehozása C#-ban azt jelenti, hogy programozottan generálunk egy `.zip` fájlt, amely tetszőleges számú fájlt vagy mappát tartalmazhat, opcionálisan tömörítési szinteket, titkosítást vagy egyéni metaadatokat alkalmazva. Az Aspose.Zip elvonja a bonyolultságot, lehetővé téve, hogy az üzleti logikára koncentrálhassunk, ne pedig magára a zip fájlformátumra.
-
-## Miért érdemes az Aspose.Zip-et használni .NET-hez?
-
-- **Nincsenek külső függőségek** – tiszta .NET könyvtár, nincsenek natív DLL-ek.
-- **Teljes kontroll a bejegyzések felett** – fájlok hozzáadása, törlése, átnevezése vagy cseréje menet közben.
-- **Stream-központú API** – működik `MemoryStream` objektumokkal, tökéletes felhőalapú vagy memórián belüli forgatókönyvekhez.
-- **Beágyazott archívumok robusztus kezelése** – könnyen **kinyerhetők a belső zip fájlok** ideiglenes fájlok nélkül a lemezen.
+Az Aspose.Zip **50+ bemeneti és kimeneti formátumot** támogat – beleértve a ZIP, TAR, GZIP, BZIP2 és 7z formátumokat – és képes **több száz megabájtnyi** archívumot feldolgozni anélkül, hogy a teljes fájlt a memóriába töltené. A tisztán managed megvalósítás eltávolítja a natív DLL függőségeket, így az Azure Functions, AWS Lambda vagy Docker konténerekbe való telepítés zökkenőmentes.
 
 ## Előfeltételek
 
-Mielőtt elkezdené, győződjön meg arról, hogy:
+Mielőtt elkezdenéd, győződj meg róla, hogy a következők rendelkezésre állnak:
 
-1. Az **Aspose.Zip .NET-hez** telepítve van a projektben. Letöltheted **[innen](https://releases.aspose.com/zip/net/)**.
-
-2. Egy mappa, amely a forrásként szolgáló zip fájlokat tartalmazza, amelyekkel dolgozni fogsz. A kódrészletekben a „Your Document Directory” (Saját dokumentumkönyvtár) részt cseréld ki a gépeden található tényleges elérési úttal.
-
-3. Egy .NET fejlesztői környezet (Visual Studio, VS Code vagy Rider), amely a .NET Framework 4.6+ vagy a .NET Core 3.1+ verziókat célozza meg.
+1. **Aspose.Zip for .NET** telepítve a projektedben. Letöltheted **[itt](https://releases.aspose.com/zip/net/)**.  
+   Az összes Aspose terméket a fő kiadási oldalon is böngészheted **[itt](https://releases.aspose.com/)**.  
+2. Egy mappa, amely a forrás zip fájlokat tartalmazza, amelyekkel dolgozni fogsz. Cseréld le a kódrészletekben a `"Your Document Directory"`-t a géped tényleges útvonalára.  
+3. Egy .NET fejlesztői környezet (Visual Studio, VS Code vagy Rider), amely a .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1 vagy .NET 5–10 célplatformra van beállítva.
 
 ## Névterek importálása
 
-Először is, vedd be a szükséges névtereket a hatókörbe:
+Először hozd be a szükséges névtereket a láthatóságba:
 
 ```csharp
 using Aspose.Zip;
@@ -73,13 +110,19 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
+`MemoryStream` egy .NET stream, amely adatokat tárol a memóriában, lehetővé téve, hogy fájlokkal dolgozz anélkül, hogy lemez I/O-t használnál.
+
+## Hogyan tömörítsünk fájlokat C#-ban az Aspose.Zip használatával
+
+Töltsd be a külső archívumot, laposítsd le a beágyazott zip bejegyzéseket, és mentsd el az eredményt memóriában – mindezt néhány tömör lépésben. Ez a megközelítés teljes ellenőrzést ad minden bejegyzés felett, lehetővé teszi a teljes memóriában történő munkát, és elkerüli az ideiglenes lemezfájlok használatát.
+
 ## Hogyan módosítsunk zip fájlt C#-ban az Aspose.Zip segítségével
 
-Az alábbiakban egy lépésről lépésre bemutatott útmutató található, amely végigvezet egy meglévő archívum megnyitásán, a belső zip bejegyzések kibontásán, a struktúra lapításán és végül egy új archívum mentésén.
+Nyisd meg a meglévő archívumot, vedd ki a belső zip fájlokat, töröld az eredetieket, és illeszd vissza a kinyert tartalmat lapos struktúraként. A folyamat teljesen stream‑központú, ami azt jelenti, hogy szerver nélküli környezetekben is futtatható anélkül, hogy a fájlrendszert érintenéd.
 
-### 1. lépés: Nyissuk meg a külső zip fájlt
+### 1. lépés: A külső zip fájl megnyitása  
 
-Először is megnyitjuk a meglévő archívumot (`outer.zip`). A `using` utasítás biztosítja a fájl automatikus bezárását.
+Először megnyitjuk a meglévő archívumot (`outer.zip`). A `using` utasítás biztosítja, hogy a fájl automatikusan bezáródjon.
 
 ```csharp
 using (Archive outer = new Archive(dataDir + "outer.zip"))
@@ -88,9 +131,9 @@ using (Archive outer = new Archive(dataDir + "outer.zip"))
 }
 ```
 
-### 2. lépés: Belső zip bejegyzések azonosítása
+### 2. lépés: Belső zip bejegyzések azonosítása  
 
-Ezután átvizsgáljuk a külső archívumot, és olyan bejegyzéseket keresünk, amelyek `.zip` végződésűek. Ezek azok a **belső zip fájlok**, amelyeket ki szeretnénk bontani.
+Ezután átvizsgáljuk a külső archívumot a `.zip`-re végződő bejegyzések után. Ezek a **belső zip fájlok**, amelyeket ki szeretnénk nyerni.
 
 ```csharp
 List<ArchiveEntry> entriesToDelete = new List<ArchiveEntry>();
@@ -110,9 +153,9 @@ foreach (ArchiveEntry entry in outer.Entries)
 }
 ```
 
-### 3. lépés: Belső bejegyzések kibontása
+### 3. lépés: Belső bejegyzések kinyerése  
 
-Most minden belső zip fájlt külön `archívumként` kezelünk. Itt **bontjuk ki a belső zip fájlokat**, és gyűjtjük össze a tartalmukat a memóriában.
+Most minden egyes belső zip fájlt saját `Archive`-ként kezelünk. Itt történik a **belső zip fájlok kinyerése**, és a tartalom memóriában való összegyűjtése.
 
 ```csharp
 using (Archive inner = new Archive(innerCompressed))
@@ -128,9 +171,9 @@ using (Archive inner = new Archive(innerCompressed))
 }
 ```
 
-### 4. lépés: Belső archívum bejegyzések törlése
+### 4. lépés: Belső archívum bejegyzések törlése  
 
-Miután rögzítettük a szükséges adatokat, eltávolítjuk az eredeti belső zip bejegyzéseket a külső archívumból. Ez a lépés lényegében a **zip bejegyzés törlése C#** logikáját követi.
+Miután megszereztük a szükséges adatokat, eltávolítjuk az eredeti belső zip bejegyzéseket a külső archívumból. Ez a lépés lényegében a **delete zip entry C#** logikát valósítja meg.
 
 ```csharp
 foreach (ArchiveEntry e in entriesToDelete)
@@ -139,9 +182,9 @@ foreach (ArchiveEntry e in entriesToDelete)
 }
 ```
 
-### 5. lépés: Módosított bejegyzések hozzáadása a külső zip fájlhoz
+### 5. lépés: Módosított bejegyzések hozzáadása a külső zip-hez  
 
-Végül visszahelyezzük a kibontott fájlokat a külső archívumba, gyakorlatilag laposítva a struktúrát, és az eredményt `flatten.zip` néven mentjük.
+Végül visszaillesztjük a kinyert fájlokat a külső archívumba, ezzel hatékonyan laposítva a struktúrát, és elmentjük az eredményt `flatten.zip` néven.
 
 ```csharp
 for (int i = 0; i < namesToInsert.Count; i++)
@@ -152,46 +195,40 @@ for (int i = 0; i < namesToInsert.Count; i++)
 outer.Save(dataDir + "flatten.zip");
 ```
 
-Ennek az öt lépésnek a követésével **létrehozott egy zip-archívumot C#**, amely ugyanazokat a fájlokat tartalmazza, mint az eredeti, de a beágyazott zip-rétegek nélkül.
+Ezeket az öt lépést követve **compress files C#** egy rendezett, lapos archívummá alakítottad, amely már nem tartalmaz beágyazott zip rétegeket.
 
 ## Gyakori problémák és megoldások
 
-| Probléma | Miért fordul elő | Megoldás |
-|----------|-------------------------------|
-| `ArgumentNullException` a belső archívum megnyitásakor | `innerCompressed` stream pozíciója a végén van | Hívja meg a `innerCompressed.Position = 0;` parancsot a `Archív` létrehozása előtt |
-| Nagy fájlok magas memóriahasználatot okoznak | Minden belső bejegyzés `MemoryStream` objektumban van tárolva | Nagyon nagy archívumok esetén használjon ideiglenes fájlokat a lemezen (`Path.GetTempFileName()`) |
-| Hiányzó bejegyzések a laposítás után | Elfelejtettük hozzáadni a kinyert tartalmat a `contentToInsert` listához | G egészt meg róla, hogy a `contentToIns.Add(con);` hívás megtörténik a belső ciklusban |
+| Probléma | Miért fordul elő | Javítás |
+|----------|------------------|---------|
+| `ArgumentNullException` a belső archívum megnyitásakor | `innerCompressed` stream pozíciója a végén van | Hívd meg a `innerCompressed.Position = 0;`-t az `Archive` létrehozása előtt |
+| Nagy fájlok magas memóriahasználatot okoznak | Minden belső bejegyzés `MemoryStream` objektumban van tárolva | Használj ideiglenes fájlokat a lemezen (`Path.GetTempFileName()`) nagyon nagy archívumok esetén |
+| Hiányzó bejegyzések a laposítás után | Elfelejtettük hozzáadni a kinyert tartalmat a `contentToInsert` listához | Győződj meg róla, hogy a `contentToInsert.Add(content);` a belső ciklusban van meghívva |
 
 ## Gyakran Ismételt Kérdések
 
-### 1. kérdés: Használhatom az Aspose.Zip for .NET programot más programozási nyelvekkel?
+**Q: Használhatom az Aspose.Zip-et .NET-hez más programozási nyelvekkel?**  
+A: Az Aspose.Zip .NET-re van optimalizálva, de az Aspose ekvivalens könyvtárakat kínál Java, C++ és Python számára, amelyek ugyanazokat az API koncepciókat követik.
 
-1. válasz: Az Aspose.Zip elsősorban .NET-alkalmazásokhoz készült. Az Aspose azonban különféle programozási nyelvekhez biztosít könyvtárakat, amelyek mindegyike a környezetéhez igazodik.
+**Q: Van ingyenes próba a Aspose.Zip for .NET-hez?**  
+A: Igen, az ingyenes próbát **[itt](https://releases.aspose.com/) ** érheted el.
 
-### 2. kérdés: Elérhető ingyenes próbaverzió az Aspose.Zip for .NET számára?
+**Q: Hogyan kaphatok támogatást az Aspose.Zip for .NET-hez?**  
+A: Támogatásért és megbeszélésekért látogasd meg az **[Aspose.Zip fórumot](https://forum.aspose.com/c/zip/37) **.
 
-2. válasz: Igen, **[itt](https://releases.aspose.com/)** hozzáférhet az ingyenes próbaverzióhoz.
+**Q: Vásárolhatok ideiglenes licencet az Aspose.Zip for .NET-hez?**  
+A: Igen, ideiglenes licencet **[itt](https://purchase.aspose.com/temporary-license/) ** szerezhetsz.
 
-### 3. kérdés: Hogyan kaphatok támogatást az Aspose.Zip for .NET-hez?
-
-3. válasz: Támogatásért és beszélgetésekért látogassa meg az **[Aspose.Zip fórumot](https://forum.aspose.com/c/zip/37)**.
-
-### 4. kérdés: Vásárolhatok ideiglenes licencet az Aspose.Zip for .NET-hez?
-
-4. válasz: Igen, beszerezhet ideiglenes licencet **[itt](https://purchase.aspose.com/temporary-license/)**.
-
-### 5. kérdés: Hol találom az Aspose.Zip for .NET dokumentációját?
-
-5. válasz: A dokumentáció **[itt](https://reference.aspose.com/zip/net/)** érhető el.
+**Q: Hol találom az Aspose.Zip for .NET dokumentációját?**  
+A: A dokumentáció **[itt](https://reference.aspose.com/zip/net/) ** érhető el.
 
 ---
 
-**Utolsó frissítés:** 2026-02-15
-**Tesztelve:** Aspose.Zip 24.12 for .NET
-**Szerző:** Aspose 
+**Legutóbb frissítve:** 2026-05-30  
+**Tesztelt verzió:** Aspose.Zip 24.12 for .NET  
+**Szerző:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
