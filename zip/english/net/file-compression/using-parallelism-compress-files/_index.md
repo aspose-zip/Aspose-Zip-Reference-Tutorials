@@ -1,4 +1,4 @@
-﻿---
+---
 title: How to zip multiple files c# using Aspose.Zip Parallel Compression
 linktitle: Using Parallelism to Zip Multiple Files in C#
 second_title: Aspose.Zip .NET API – zip multiple files c# with Parallel Processing
@@ -45,7 +45,7 @@ Parallel compression lets you tap into every core of a multi‑processor machine
 Before we dive in, make sure you have:
 
 - Basic knowledge of C# and .NET development.  
-- Aspose.Zip for .NET installed. You can download it **[here](https://releases.aspose.com/zip/net/)**.  
+- Aspose.Zip for .NET installed. You can download it **[from the official release page](https://releases.aspose.com/zip/net/)**.  
 - A temporary or full license (the temporary license is sufficient for this tutorial).  
 
 ## Import Namespaces
@@ -67,7 +67,7 @@ using System.Text;
 using Aspose.Zip.Saving;
 ```
 
-## Step 1: Set Up Your Document Directory
+## Step 1: set up your document directory
 
 Define the folder that contains the files you want to compress. This path is stored in the `dataDir` variable, which you can point to any location on disk.
 
@@ -79,7 +79,7 @@ string dataDir = @"C:\MyFiles\ToCompress";
 string dataDir = "Your Document Directory";
 ```
 
-## Step 2: Initialize the Compression Process
+## Step 2: initialize the compression process
 
 Open a new ZIP file for writing. The `using` statement ensures the file stream is properly disposed after the operation, preventing file‑handle leaks.
 
@@ -97,7 +97,7 @@ using (FileStream zipFile = File.Open(dataDir + "UsingParallelismToCompressFiles
 }
 ```
 
-## Step 3: Read and Compress Files in Parallel
+## Step 3: read and compress files in parallel
 
 `Parallel.ForEach` executes a foreach loop in which iterations may run concurrently on multiple threads.  
 
@@ -121,7 +121,7 @@ using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, Fi
 }
 ```
 
-## Step 4: Create Archive Entries
+## Step 4: create archive entries
 
 The `Archive` class is Aspose.Zip's top‑level object that represents the ZIP container you are building.  
 
@@ -141,7 +141,7 @@ using (var archive = new Archive())
 }
 ```
 
-## Step 5: Define Parallelism Criterion
+## Step 5: define parallelism criterion
 
 `ParallelOptions` is a .NET type that controls how parallel loops are executed.  
 
@@ -163,7 +163,7 @@ var parallelOptions = new ParallelOptions
 };
 ```
 
-## Step 6: Save the Compressed Archive
+## Step 6: save the compressed archive
 
 Finally, write the archive to disk with the desired options, including encoding, a comment, and the parallel settings defined earlier. The `Save` method finalises the ZIP file.
 
@@ -183,25 +183,25 @@ archive.Save(zipFile,
 
 > **Pro tip:** If you are compressing very large files, consider setting `ParallelOptions.MaxDegreeOfParallelism` to a value lower than the number of logical processors. This helps keep your server responsive under load.
 
-### Common Use Cases
+### Common use cases
 
 - **Batch reporting:** Generate a zip bundle of daily CSV reports for downstream systems.  
 - **Document archiving:** Store large collections of PDFs, images, or logs in a single archive for backup.  
 - **Data export APIs:** Return a zip file containing multiple data files to a client in a single HTTP response.  
 
-## Common Issues & Tips
+## Common issues & tips
 
 - **Memory pressure on huge files:** Instead of loading an entire file into memory, stream the file in chunks or use the `ParallelCompressInMemory` mode selectively.  
 - **Thread safety:** The Aspose.Zip API is thread‑safe for parallel mode, but avoid modifying the same `FileStream` from outside the library while compression is running.  
 - **Performance tuning:** Experiment with `ParallelOptions.MaxDegreeOfParallelism` if you need to limit CPU usage on shared servers.  
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Q: Can I use Aspose.Zip for .NET together with other compression libraries?**  
 A: Yes, Aspose.Zip can coexist with other .NET libraries; just keep their namespaces distinct.
 
 **Q: Is a temporary license available for testing purposes?**  
-A: Yes, you can obtain a temporary license for testing from **[here](https://purchase.aspose.com/temporary-license/)**.
+A: Yes, you can obtain a temporary license for testing from **[the temporary license page](https://purchase.aspose.com/temporary-license/)**.
 
 **Q: Where can I ask for help if I run into problems?**  
 A: Visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)** for community support and discussions.
@@ -210,7 +210,7 @@ A: Visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)** for commu
 A: Explore the **[Aspose.Zip documentation](https://reference.aspose.com/zip/net/)** for comprehensive examples.
 
 **Q: How do I purchase a full license for Aspose.Zip?**  
-A: You can purchase Aspose.Zip for .NET **[here](https://purchase.aspose.com/buy)**.
+A: You can purchase Aspose.Zip for .NET **[from the Aspose.Zip purchase page](https://purchase.aspose.com/buy)**.
 
 ---
 

@@ -128,9 +128,9 @@ using System.Threading.Tasks;
 
 Now let's explore each compression setting and see how to **add password to zip** where appropriate.
 
-## Using Bzip2 Compression Settings
+## Using bzip2 compression settings
 
-### Step 1: Initialize Bzip2 Compression with Traditional Encryption
+### Step 1: initialize bzip2 compression with traditional encryption
 
 `Bzip2CompressionSettings` configures the Bzip2 algorithm (block size, etc.).  
 `TraditionalEncryptionSettings` applies legacy ZipCrypto encryption to an entry.
@@ -200,7 +200,7 @@ using (FileStream zipFile = File.Open(dataDir + "LZMACompression_out.zip", FileM
 
 ## How to create LZMA zip archive using Aspose.Zip
 
-### Step 1: Initialize LZMA Compression with AES256 Encryption
+### Step 1: initialize LZMA compression with AES256 encryption
 
 `LzmaCompressionSettings` controls LZMA‑specific parameters such as dictionary size and fast bytes.  
 `AesEncryptionSettings` provides AES‑256 encryption for the archive entries.
@@ -237,9 +237,9 @@ using (FileStream zipFile = File.Open(dataDir + "PPMdCompression_out.zip", FileM
 
 > **Tip:** LZMA offers a configurable **LZMA dictionary size** that influences both compression ratio and memory usage. You can set it via `new LzmaCompressionSettings { DictionarySize = 8 * 1024 * 1024 }` if you need to fine‑tune for very large files.
 
-## Using PPMd Compression Settings
+## Using pPMd compression settings
 
-### Step 1: Initialize PPMd Compression with AES256 Encryption
+### Step 1: initialize pPMd compression with AES256 encryption
 
 `PpmdCompressionSettings` defines the order and memory usage for the PPMd algorithm.  
 `AesEncryptionSettings` provides AES‑256 encryption for the archive entries.
@@ -274,9 +274,9 @@ using (FileStream zipFile = File.Open(dataDir + "EnhancedDeflateCompression_out.
 }
 ```
 
-## Using Enhanced Deflate Compression Settings
+## Using enhanced deflate compression settings
 
-### Step 1: Initialize Enhanced Deflate Compression with AES256 Encryption
+### Step 1: initialize enhanced deflate compression with AES256 encryption
 
 `EnhancedDeflateCompressionSettings` lets you specify a compression level that balances speed and size.  
 `AesEncryptionSettings` provides AES‑256 encryption for the archive entries.
@@ -313,7 +313,7 @@ using (FileStream zipFile = File.Open(dataDir + "StoreCompression_out.zip", File
 
 ## Using Store Compression Settings (store compression zip)
 
-### Step 1: Initialize Store Compression with Traditional Encryption
+### Step 1: initialize store compression with traditional encryption
 
 `StoreCompressionSettings` tells Aspose.Zip to skip compression entirely, preserving the source file byte‑for‑byte.  
 `TraditionalEncryptionSettings` applies legacy ZipCrypto encryption.
@@ -331,13 +331,13 @@ var storeEntrySettings = new ArchiveEntrySettings(storeSettings, tradEnc);
 
 > **Pro tip:** Adjust the `dataDir` variable to point to your actual working directory, and reuse the same `Archive` instance if you need to add multiple files to a single archive.
 
-## Common Issues & Solutions
+## Common issues & solutions
 - **"File not found" errors** – Verify that `dataDir` ends with a path separator (`\` or `/`) and that `sample.txt` exists.  
 - **Memory consumption with large files** – Use `ArchiveEntrySettings` to enable streaming mode, which writes data directly to the output stream.  
 - **Incompatible compression level** – Some algorithms (e.g., LZMA) expose additional properties like `DictionarySize`. Consult the API docs if you need finer control.  
 - **Password not applied** – Ensure the encryption settings object is passed as the second argument to `ArchiveEntrySettings` at construction time, not after the archive is created.  
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Q: Can I use Aspose.Zip for .NET with other compression libraries?**  
 A: Aspose.Zip is designed to work with its built‑in algorithms. Integrating third‑party libraries is possible but requires custom handling outside the Aspose API.
@@ -370,7 +370,7 @@ A: Combine streaming mode with LZMA compression and an appropriate `DictionarySi
 
 ## Related Tutorials
 
-- [Aspose.Zip for .NET - Password Protect Zip Archive & Store Multiple Files Without Compression](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
+- [Aspose.Zip for .NET - Password Protect Zip Archive & Store Multiple Files Without Compression Password](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
 - [Create password protected zip for .NET directories – Aspose.Zip Tutorial](/zip/net/password-protection-and-encryption/password-protect-directory/)
 - [zip multiple files c# – Effortless Compression with Aspose.Zip for .NET](/zip/net/file-compression/compress-multiple-files/)
 

@@ -121,7 +121,7 @@ Efficient file management becomes a breeze with Aspose.Zip for .NET. In [Decompr
 
 Explore the power of Aspose.Zip for .NET in [Decompressing a Stored File using Aspose.Zip for .NET](./decompress-stored-file/). This tutorial offers a step‑by‑step guide on efficiently decompressing stored files, empowering you with a robust solution for effective file handling in your projects.
 
-## File Decompression Tutorials
+## File decompression tutorials
 ### [Decompressing a File with Aspose.Zip for .NET](./decompress-file/)
 Explore the world of file compression in .NET with Aspose.Zip. Learn the art of decompressing files effortlessly.
 
@@ -146,23 +146,23 @@ Explore the step‑by‑step guide on decompressing Wim archives using Aspose.Zi
 ### [Decompress Xar to Folder in Aspose.Zip for .NET](./decompress-xar-folder/)
 Explore the power of Aspose.Zip for .NET! Effortlessly decompress Xar archives with this user‑friendly tutorial. Enhance your .NET development experience.
 
-## Decompressing Zip Folder and Password‑Protected Archives
+## Decompressing zip folder and password‑Protected archives
 
 If you need to **decompress zip folder** contents or work with a **decompress password protected zip** archive, Aspose.Zip handles both scenarios seamlessly. Simply pass the destination path and, when required, the password string to the extraction method. This eliminates the need for external tools and keeps your codebase clean.
 
-## Common Use Cases
+## Common use cases
 
 - **Batch processing** of log archives received from remote servers.  
 - **Automated deployment** scripts that unpack resource bundles before installation.  
 - **Data migration** where legacy zip files must be read and their contents stored in a database.  
 
-## Tips & Best Practices
+## Tips & best practices
 
 - **Use streaming** when extracting very large files to keep memory usage low.  
 - **Validate file paths** after extraction to avoid directory‑traversal vulnerabilities.  
 - **Handle exceptions** such as `InvalidPasswordException` to provide clear user feedback.  
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Q: Can I extract a zip archive directly to a memory stream?**  
 A: Yes, Aspose.Zip lets you read an entry into a `MemoryStream` without writing to disk (`extract zip archive c#`).
@@ -195,10 +195,9 @@ A: The library uses lazy loading and streaming, so only the current entry is loa
 
 ## Related Tutorials
 
-- [Extract password protected zip with Aspose.Zip for .NET](/zip/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/)
-- [Create Zip Archive .NET – File Compression with Aspose.Zip](/zip/net/file-compression/)
-- [How to extract zip to folder with Aspose.Zip for .NET](/zip/net/file-decompression/decompress-compressed-folder-directory/)
-
+- [Extract password protected zip with Aspose.Zip for .NET]({{< relref "zip/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file.md" >}})
+- [Create Zip Archive .NET – File Compression with Aspose.Zip]({{< relref "zip/net/file-compression.md" >}})
+- [How to extract zip to folder with Aspose.Zip for .NET]({{< relref "zip/net/file-decompression/decompress-compressed-folder-directory.md" >}})
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
