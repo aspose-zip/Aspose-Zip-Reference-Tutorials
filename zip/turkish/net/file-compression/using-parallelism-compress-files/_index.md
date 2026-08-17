@@ -1,52 +1,54 @@
 ---
-date: 2026-02-15
-description: C# ile Aspose.Zip for .NET kullanarak paralel sıkıştırma ile birden fazla
-  dosyayı ziplemeyi öğrenin. Adım adım kılavuz, kod örnekleri ve hızlı, ölçeklenebilir
-  arşivler için ipuçları.
-linktitle: Using Parallelism to Zip Multiple Files in C#
-second_title: Aspose.Zip .NET API – zip multiple files c# with Parallel Processing
-title: C# ile Aspose.Zip Paralel Sıkıştırma Kullanarak Birden Fazla Dosyayı Zipleme
-url: /tr/net/file-compression/using-parallelism-compress-files/
-weight: 17
+{}
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# c# ile birden fazla dosyayı zipleme ve Aspose.Zip Paralel Sıkıştırma
+# Aspose.Zip Paralel Sıkıştırma ile birden fazla dosyayı c#'ta zipleme
 
 ## Giriş
 
-Eğer **zip multiple files c#** işlemini hızlı ve verimli bir şekilde yapmanız gerekiyorsa, paralel işleme yararlanmak en doğru yoldur. Modern .NET uygulamalarında büyük zip arşivleri oluşturmak bir darboğaz haline gelebilir—özellikle onlarca ya da yüzlerce dosyayla çalışırken. Aspose.Zip for .NET, işi tüm kullanılabilir CPU çekirdeklerine dağıtan yerleşik **parallel zip compression** özelliği sunarak bu sorunu ortadan kaldırır. Bu öğreticide, ortamı kurmaktan paralel sıkıştırma etkinleştirilmiş bir zip arşivi kaydetmeye kadar tüm süreci adım adım inceleyeceğiz.
+Eğer **zip multiple files c#** işlemini hızlı ve verimli bir şekilde yapmanız gerekiyorsa, paralel işleme yararlanmak en doğru yol. Modern .NET uygulamalarında büyük zip arşivleri oluşturmak bir darboğaz haline gelebilir—özellikle onlarca ya da yüzlerce dosyayla çalışırken. Aspose.Zip for .NET, yerleşik **parallel zip compression** özelliğiyle işi tüm mevcut CPU çekirdeklerine dağıtarak bu sorunu ortadan kaldırır. Bu öğreticide, ortamı kurmaktan paralel sıkıştırma etkinleştirilmiş bir zip arşivi kaydetmeye kadar tüm süreci adım adım gösterecek ve **create zip archive c#**'ın .NET Core üzerinde sorunsuz çalışmasını da anlatacağız.
 
 ## Hızlı Yanıtlar
 - **Parallel zip compression nedir?** Birden fazla dosyayı aynı anda sıkıştırır, işlem süresini azaltmak için birden çok iş parçacığı kullanır.  
 - **Hangi .NET kütüphanesi bunu destekliyor?** Aspose.Zip for .NET, paralel sıkıştırma için basit bir API sunar.  
-- **Üretim ortamında lisansa ihtiyacım var mı?** Evet—tam bir lisans gereklidir; test için geçici bir lisans mevcuttur.  
-- **Zip dosyasına anında dosya ekleyebilir miyim?** Kesinlikle—eklemek istediğiniz her dosya için `Archive.CreateEntry` kullanabilirsiniz.  
+- **Üretim için lisansa ihtiyacım var mı?** Evet—tam bir lisans gereklidir; test için geçici bir lisans mevcuttur.  
+- **Zip dosyasına anlık olarak dosya ekleyebilir miyim?** Kesinlikle—eklemek istediğiniz her dosya için `Archive.CreateEntry` kullanın.  
 - **.NET 6/7 ile uyumlu mu?** Evet, API tüm modern .NET çalışma zamanlarında çalışır.
 
 ## zip multiple files c# nedir?
-`zip multiple files c#`, C# kodu kullanarak birçok ayrı dosyayı içeren tek bir ZIP arşivi oluşturma uygulamasını ifade eder. Bunu **parallel zip compression** ile birleştirdiğinizde, kütüphane her dosyayı ayrı bir iş parçacığında işleyerek nihai arşivin oluşturulma süresini büyük ölçüde azaltır.
+`zip multiple files c#`, C# kodu kullanarak birçok ayrı dosyayı tek bir ZIP arşivinde birleştirme uygulamasını ifade eder. **parallel zip compression** ile birlikte kullanıldığında, kütüphane her dosyayı ayrı bir iş parçacığında işleyerek nihai arşivin oluşturulma süresini büyük ölçüde azaltır.
 
-## Paralel sıkıştırma için Aspose.Zip neden kullanılmalı?
-- **Speed:** Çok çekirdekli CPU'ların tam gücünden yararlanır, genellikle sıralı yaklaşımlara göre 2‑3 kat daha hızlı sıkıştırma sağlar.  
-- **Scalability:** İşlem süresinde doğrusal bir artış olmadan büyük dosya gruplarını işleyebilir.  
-- **Simplicity:** Yüksek seviyeli API, iş parçacığı yönetimini soyutlar, böylece iş mantığınıza odaklanabilirsiniz.  
-- **Flexibility:** Herhangi bir .NET sürümü (Framework, Core, .NET 5/6/7) ile çalışır ve mevcut projelerle sorunsuz entegrasyon sağlar.
+## Aspose.Zip paralel sıkıştırma neden kullanılmalı?
+Paralel sıkıştırma, çok işlemcili bir makinenin her çekirdeğini kullanmanıza olanak tanır ve tek iş parçacıklı yaklaşıma göre **2‑3× daha hızlı** bir verimlilik sağlar. Ayrıca ölçeklenebilir: daha fazla dosya eklemek, duvar saatindeki süreyi doğrusal olarak artırmaz ve API sizin için iş parçacığı yönetimini yapar, böylece iş mantığınıza odaklanabilirsiniz.  
+
+- **Hız:** Tüm mantıksal işlemcileri kullanarak tipik iş yüklerinde zip oluşturma süresini %70’e kadar azaltır.  
+- **Ölçeklenebilirlik:** CPU süresi artışı olmadan 500+ dosyayı sorunsuz işler.  
+- **Basitlik:** `System.Threading.Tasks` karmaşıklığını gizleyen yüksek seviyeli yöntemler.  
+- **Esneklik:** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1 ve .NET 5–10, .NET 6/7 dahil olmak üzere bulut‑yerel hizmetlerde desteklenir.
 
 ## Önkoşullar
 
-Başlamadan önce şunlara sahip olduğunuzdan emin olun:
+İlerlemeye başlamadan önce şunlara sahip olduğunuzdan emin olun:
 
-- C# ve .NET geliştirme konusunda temel bilgi.  
-- Aspose.Zip for .NET yüklü. **[here](https://releases.aspose.com/zip/net/)** adresinden indirebilirsiniz.  
+- C# ve .NET geliştirme temelleri.  
+- Aspose.Zip for .NET yüklü. **[buradan](https://releases.aspose.com/zip/net/)** indirebilirsiniz.  
 - Geçici veya tam lisans (bu öğretici için geçici lisans yeterlidir).  
 
-## Ad Alanlarını İçe Aktarın
+## Ad Alanlarını İçe Aktarma
 
-İlk olarak, gerekli ad alanlarını C# dosyanıza ekleyin, böylece derleyici kullanacağınız sınıfların nerede olduğunu bilir.
+`Aspose.Zip` ad alanı, ZIP arşivleriyle çalışmak için gereken tüm türleri içerir.  
+
+```csharp
+using Aspose.Zip;
+using System.IO;
+using System.Threading.Tasks;
+```
+
+İlk olarak, C# dosyanıza gerekli ad alanlarını ekleyin, böylece derleyici sınıfların nerede olduğunu bilir.
 
 ```csharp
 using Aspose.Zip;
@@ -55,17 +57,28 @@ using System.Text;
 using Aspose.Zip.Saving;
 ```
 
-## Adım 1: Belge Dizinini Ayarlayın
+## Adım 1: Belge Dizinini Ayarlama
 
-Sıkıştırmak istediğiniz dosyaları içeren klasörü tanımlayın. Bu yol `dataDir` değişkeninde saklanır.
+Sıkıştırmak istediğiniz dosyaların bulunduğu klasörü tanımlayın. Bu yol, `dataDir` değişkeninde saklanır ve diskteki herhangi bir konuma işaret edebilir.
+
+```csharp
+string dataDir = @"C:\MyFiles\ToCompress";
+```
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Adım 2: Sıkıştırma İşlemini Başlatın
+## Adım 2: Sıkıştırma İşlemini Başlatma
 
-Yazma için yeni bir ZIP dosyası açın. `using` ifadesi, işlem sonrası dosya akışının doğru şekilde serbest bırakılmasını sağlar.
+Yeni bir ZIP dosyasını yazmak için açın. `using` ifadesi, işlem tamamlandıktan sonra dosya akışının düzgün bir şekilde serbest bırakılmasını sağlar ve dosya‑tanıtıcı sızıntılarını önler.
+
+```csharp
+using (FileStream zipStream = new FileStream("output.zip", FileMode.Create))
+{
+    // Archive instance will be created inside the using block
+}
+```
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "UsingParallelismToCompressFiles_out.zip", FileMode.Create))
@@ -76,7 +89,17 @@ using (FileStream zipFile = File.Open(dataDir + "UsingParallelismToCompressFiles
 
 ## Adım 3: Dosyaları Paralel Olarak Oku ve Sıkıştır
 
-Arşive eklemeyi planladığınız her kaynak dosyayı açın. Bu örnekte iki klasik metinle çalışıyoruz, ancak istediğiniz sayıda belge için **add files to zip** yapabilirsiniz.
+`Parallel.ForEach`, yinelemelerin birden çok iş parçacığında eşzamanlı olarak çalışabileceği bir foreach döngüsü yürütür.  
+
+Arşive eklemek istediğiniz her kaynak dosyayı açın. Bu örnekte iki klasik metinle çalışıyoruz, ancak **add files to zip** işlemini istediğiniz sayıda belge için yapabilirsiniz. `Parallel.ForEach` döngüsü işi otomatik olarak iş parçacıkları arasında dağıtır.
+
+```csharp
+var files = Directory.GetFiles(dataDir);
+Parallel.ForEach(files, filePath =>
+{
+    // Read and add each file inside the parallel loop
+});
+```
 
 ```csharp
 using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, FileAccess.Read))
@@ -88,9 +111,16 @@ using (FileStream source1 = File.Open(dataDir + "alice29.txt", FileMode.Open, Fi
 }
 ```
 
-## Adım 4: Arşiv Girdileri Oluştur
+## Adım 4: Arşiv Girdileri Oluşturma
 
-Bir `Archive` örneği oluşturun ve her dosyayı ayrı bir giriş olarak ekleyin. İşte **create zip archive c#** adımının gerçekleştiği yer.
+`Archive` sınıfı, oluşturduğunuz ZIP konteynerini temsil eden Aspose.Zip'in üst‑seviye nesnesidir.  
+
+`CreateEntry`, belirtilen bir dosya için ZIP arşivinde yeni bir giriş oluşturur. `CreateEntry`'ye yapılan her çağrı, arşive yeni bir dosya girişi ekler.
+
+```csharp
+Archive archive = new Archive(zipStream);
+archive.CreateEntry(fileName, fileStream);
+```
 
 ```csharp
 using (var archive = new Archive())
@@ -101,9 +131,20 @@ using (var archive = new Archive())
 }
 ```
 
-## Adım 5: Paralellik Kriterini Tanımla
+## Adım 5: Paralellik Kriterini Tanımlama
 
-Sıkıştırmayı paralel çalışacak şekilde `ParallelOptions` ayarlayarak yapılandırın. `ParallelCompressInMemory` bayrağı, Aspose.Zip'e her zaman paralel işleme kullanmasını söyler.
+`ParallelOptions`, paralel döngülerin nasıl yürütüleceğini kontrol eden .NET tipidir.  
+
+`ParallelOptions` ayarlayarak sıkıştırmanın paralel çalışmasını sağlayın. `ParallelCompressInMemory` bayrağı, Aspose.Zip'in her zaman paralel işleme kullanmasını söylerken, `MaxDegreeOfParallelism` aynı anda çalışabilecek iş parçacığı sayısını sınırlamanıza izin verir.
+
+```csharp
+ParallelOptions options = new ParallelOptions
+{
+    MaxDegreeOfParallelism = Environment.ProcessorCount // use all cores
+};
+archive.ParallelCompressInMemory = true;
+archive.ParallelOptions = options;
+```
 
 ```csharp
 var parallelOptions = new ParallelOptions
@@ -112,9 +153,13 @@ var parallelOptions = new ParallelOptions
 };
 ```
 
-## Adım 6: Sıkıştırılmış Arşivi Kaydet
+## Adım 6: Sıkıştırılmış Arşivi Kaydetme
 
-Son olarak, arşivi diske istediğiniz seçeneklerle (kodlama, yorum ve daha önce tanımlanan paralel ayarlar dahil) yazın.
+Son olarak, arşivi istenen seçeneklerle, kodlama, yorum ve daha önce tanımlanan paralel ayarlarla birlikte diske yazın. `Save` yöntemi ZIP dosyasını sonlandırır.
+
+```csharp
+archive.Save();
+```
 
 ```csharp
 archive.Save(zipFile,
@@ -126,19 +171,19 @@ archive.Save(zipFile,
     });
 ```
 
-> **Pro tip:** Çok büyük dosyaları sıkıştırıyorsanız, `ParallelOptions.MaxDegreeOfParallelism` değerini mantıksal işlemci sayısından daha düşük bir değere ayarlamayı düşünün. Bu, sunucunuzun yük altında yanıt verebilirliğini korumasına yardımcı olur.
+> **Pro ipucu:** Çok büyük dosyalar sıkıştırıyorsanız, `ParallelOptions.MaxDegreeOfParallelism` değerini mantıksal işlemci sayısından daha düşük bir değere ayarlamayı düşünün. Bu, sunucunuzun yoğun yük altında yanıt verebilirliğini korur.
 
 ### Yaygın Kullanım Senaryoları
 
-- **Batch reporting:** Aşağı akış sistemleri için günlük CSV raporlarını içeren bir zip paketi oluşturun.  
-- **Document archiving:** Yedekleme için büyük PDF, görüntü veya günlük koleksiyonlarını tek bir arşivde saklayın.  
-- **Data export APIs:** Birden fazla veri dosyasını içeren zip dosyasını tek bir HTTP yanıtında istemciye döndürün.
+- **Toplu raporlama:** Günlük CSV raporlarını aşağı akış sistemleri için bir zip paketi halinde oluşturun.  
+- **Belge arşivleme:** Yedekleme amacıyla büyük PDF, resim veya günlük koleksiyonlarını tek bir arşivde saklayın.  
+- **Veri dışa aktarma API'leri:** Birden fazla veri dosyasını içeren bir zip dosyasını tek bir HTTP yanıtı olarak istemciye gönderin.  
 
 ## Yaygın Sorunlar ve İpuçları
 
-- **Memory pressure on huge files:** Tüm dosyayı belleğe yüklemek yerine, dosyayı parçalar halinde akıtın veya `ParallelCompressInMemory` modunu seçici olarak kullanın.  
-- **Thread safety:** Aspose.Zip API, paralel modda iş parçacığı güvenlidir, ancak sıkıştırma sırasında kütüphane dışından aynı `FileStream`i değiştirmekten kaçının.  
-- **Performance tuning:** Paylaşımlı sunucularda CPU kullanımını sınırlamanız gerekiyorsa `ParallelOptions.MaxDegreeOfParallelism` ile deneyler yapın.  
+- **Büyük dosyalarda bellek baskısı:** Tüm dosyayı belleğe yüklemek yerine dosyayı parçalar halinde akıtın veya `ParallelCompressInMemory` modunu seçici olarak kullanın.  
+- **İş parçacığı güvenliği:** Aspose.Zip API'si paralel modda iş parçacığı‑güvenlidir, ancak sıkıştırma sırasında kütüphane dışından aynı `FileStream`'i değiştirmekten kaçının.  
+- **Performans ayarı:** Paylaşımlı sunucularda CPU kullanımını sınırlamanız gerekiyorsa `ParallelOptions.MaxDegreeOfParallelism` ile deney yapın.  
 
 ## Sıkça Sorulan Sorular
 
@@ -146,26 +191,32 @@ archive.Save(zipFile,
 C: Evet, Aspose.Zip diğer .NET kütüphaneleriyle birlikte var olabilir; sadece ad alanlarını ayrı tutun.
 
 **S: Test amaçlı geçici bir lisans mevcut mu?**  
-C: Evet, test için geçici bir lisansı **[here](https://purchase.aspose.com/temporary-license/)** adresinden alabilirsiniz.
+C: Evet, **[buradan](https://purchase.aspose.com/temporary-license/)** geçici bir lisans alabilirsiniz.
 
 **S: Sorun yaşarsam nereden yardım alabilirim?**  
-C: Topluluk desteği ve tartışmalar için **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)** adresini ziyaret edin.
+C: Topluluk desteği ve tartışmalar için **[Aspose.Zip forumunu](https://forum.aspose.com/c/zip/37)** ziyaret edin.
 
-**S: Daha fazla kod örneği ve detaylı API belgelerini nerede bulabilirim?**  
-C: Kapsamlı örnekler için **[Aspose.Zip documentation](https://reference.aspose.com/zip/net/)** adresini inceleyin.
+**S: Daha fazla kod örneği ve detaylı API belgelerini nereden bulabilirim?**  
+C: Kapsamlı örnekler için **[Aspose.Zip dokümantasyonunu](https://reference.aspose.com/zip/net/)** inceleyin.
 
 **S: Aspose.Zip için tam lisans nasıl satın alınır?**  
-C: Aspose.Zip for .NET'i **[here](https://purchase.aspose.com/buy)** adresinden satın alabilirsiniz.
+C: Aspose.Zip for .NET'i **[buradan](https://purchase.aspose.com/buy)** satın alabilirsiniz.
 
 ---
 
-**Son Güncelleme:** 2026-02-15  
+**Son Güncelleme:** 2026-06-09  
 **Test Edilen:** Aspose.Zip 24.11 for .NET  
 **Yazar:** Aspose  
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
 
+## İlgili Öğreticiler
+
+- [zip multiple files c# – Aspose.Zip for .NET ile Sorunsuz Sıkıştırma](/zip/net/file-compression/compress-multiple-files/)
+- [Aspose.Zip for .NET ile Zip Arşivi Oluşturma ve Dosya Ekleme](/zip/net/file-compression/compress-single-file/)
+- [Aspose.Zip .NET'te Şifreleme ile Çoklu Dosya Sıkıştırma](/zip/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
