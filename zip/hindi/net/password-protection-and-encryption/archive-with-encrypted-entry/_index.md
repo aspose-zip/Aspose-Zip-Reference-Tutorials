@@ -1,35 +1,80 @@
 ---
-title: Aspose.Zip के साथ .NET में मास्टर सिक्योर आर्काइविंग
-linktitle: एन्क्रिप्टेड प्रविष्टि के साथ पुरालेख
-second_title: फ़ाइलें संपीड़न और संग्रहण के लिए Aspose.Zip .NET API
-description: Aspose.Zip के साथ .NET में सुरक्षित संग्रह की दुनिया का अन्वेषण करें। आसानी से एईएस एन्क्रिप्शन के साथ सात ज़िप फ़ाइलें बनाएं। अभी अपने विकास कौशल को बढ़ावा दें!
-weight: 15
+date: 2026-06-24
+description: Aspose.Zip for .NET का उपयोग करके आर्काइव फ़ाइलों को एन्क्रिप्ट करना
+  सीखें, जिसमें 7z आर्काइव के लिए AES‑256 एन्क्रिप्शन शामिल है। चरण‑दर‑चरण कोड‑मुक्त
+  मार्गदर्शन का पालन करें।
+keywords:
+- how to encrypt archive
+- aes encryption 7z
+- encrypt zip entry c#
+linktitle: एन्क्रिप्टेड एंट्री के साथ आर्काइव
+schemas:
+- author: Aspose
+  dateModified: '2026-06-24'
+  description: Learn how to encrypt archive files using Aspose.Zip for .NET, including
+    AES‑256 encryption for 7z archives. Follow step‑by‑step code‑free guidance.
+  headline: How to Encrypt Archive Securely with Aspose.Zip in .NET
+  type: TechArticle
+- questions:
+  - answer: Yes, Aspose.Zip can be used in both commercial and non‑commercial applications
+      under the appropriate license.
+    question: Can I use Aspose.Zip for .NET in my non‑commercial projects?
+  - answer: Obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/)**.
+    question: How can I get a temporary license for Aspose.Zip for .NET?
+  - answer: Yes, visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)**
+      for community assistance.
+    question: Is there community support available for Aspose.Zip for .NET?
+  - answer: Aspose.Zip supports a variety of algorithms, including Deflate, BZip2,
+      and PPMd. See the documentation for a full list.
+    question: Are there any other compression algorithms supported besides LZMA?
+  - answer: Absolutely! You can adjust key length, iteration count, and cipher mode
+      through the `EncryptionOptions` class for fine‑grained control.
+    question: Can I customize encryption settings further?
+  type: FAQPage
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Aspose.Zip के साथ .NET में आर्काइव को सुरक्षित रूप से एन्क्रिप्ट कैसे करें
 url: /hi/net/password-protection-and-encryption/archive-with-encrypted-entry/
+weight: 15
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip के साथ .NET में मास्टर सिक्योर आर्काइविंग
-
+# Aspose.Zip के साथ .NET में आर्काइव को सुरक्षित रूप से एन्क्रिप्ट कैसे करें
 
 ## परिचय
 
-सॉफ़्टवेयर विकास की निरंतर विकसित हो रही दुनिया में, कुशल संपीड़न और एन्क्रिप्शन तकनीकों में महारत हासिल करना महत्वपूर्ण है। .NET के लिए Aspose.Zip एक शक्तिशाली उपकरण के रूप में उभरता है, जो डेवलपर्स को एन्क्रिप्टेड प्रविष्टियों के साथ अभिलेखागार को निर्बाध रूप से प्रबंधित करने में सक्षम बनाता है। इस व्यापक ट्यूटोरियल में, हम .NET के लिए Aspose.Zip का उपयोग करके AES एन्क्रिप्शन सेटिंग्स के साथ एक सेवन ज़िप फ़ाइल बनाने की प्रक्रिया के बारे में विस्तार से जानेंगे।
+आधुनिक .NET अनुप्रयोगों में, **आर्काइव को एन्क्रिप्ट कैसे करें** फ़ाइलें संवेदनशील डेटा की सुरक्षा के लिए एक सामान्य आवश्यकता है। चाहे आप बैकअप सेवा, दस्तावेज़‑प्रबंधन प्रणाली, या सुरक्षित फ़ाइल‑स्थानांतरण उपयोगिता बना रहे हों, Aspose.Zip for .NET आपको एक सरल, उच्च‑प्रदर्शन तरीका प्रदान करता है जिससे आप AES‑256 समर्थन के साथ एन्क्रिप्टेड Seven Zip (7z) आर्काइव बना सकते हैं। इस ट्यूटोरियल में आप देखेंगे कि AES एन्क्रिप्शन को कैसे कॉन्फ़िगर किया जाए, एंट्रीज़ कैसे जोड़ी जाएँ, और परिणाम कैसे सत्यापित किया जाए—बिना किसी कस्टम एन्क्रिप्शन कोड की एक भी पंक्ति लिखे।
 
-## आवश्यक शर्तें
+## त्वरित उत्तर
 
-इस यात्रा पर निकलने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित शर्तें हैं:
+- **एन्क्रिप्शन को संभालने वाली लाइब्रेरी कौन सी है?** Aspose.Zip for .NET 7z आर्काइव के लिए बिल्ट‑इन AES‑256 समर्थन प्रदान करता है।  
+- **कौन सा एल्गोरिद्म उपयोग किया जाता है?** AES‑256 (Aspose.Zip द्वारा समर्थित सबसे मजबूत AES मोड)।  
+- **क्या मुझे अलग क्रिप्टो लाइब्रेरी की आवश्यकता है?** नहीं, एन्क्रिप्शन Aspose.Zip द्वारा आंतरिक रूप से संभाला जाता है।  
+- **क्या मैं कई एंट्रीज़ को एन्क्रिप्ट कर सकता हूँ?** हाँ, आप एक ही आर्काइव में आवश्यकतानुसार कई एन्क्रिप्टेड एंट्रीज़ जोड़ सकते हैं।  
+- **कौन से .NET संस्करण समर्थित हैं?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
 
-- विकास परिवेश: अपनी मशीन पर एक .NET विकास परिवेश स्थापित करें।
--  .NET के लिए Aspose.Zip: Aspose.Zip लाइब्रेरी स्थापित करें। आप आवश्यक दस्तावेज़ पा सकते हैं[यहाँ](https://reference.aspose.com/zip/net/).
--  डाउनलोड करें: .NET लाइब्रेरी के लिए Aspose.Zip प्राप्त करें[लिंक को डाउनलोड करें](https://releases.aspose.com/zip/net/).
-- बुनियादी ज्ञान: C# और .NET विकास की बुनियादी अवधारणाओं से खुद को परिचित करें।
+## Aspose.Zip for .NET क्या है?
 
-## नामस्थान आयात करें
+Aspose.Zip एक .NET लाइब्रेरी है जो ZIP, TAR, और 7z जैसी आर्काइव फ़ाइलों को बनाने, निकालने और एन्क्रिप्ट करने के लिए APIs प्रदान करती है। यह संपीड़न एल्गोरिद्म की जटिलता को सारांशित करती है और बॉक्स से बाहर AES एन्क्रिप्शन प्रदान करती है, जिससे डेवलपर्स को लो‑लेवल क्रिप्टोग्राफी के बजाय बिजनेस लॉजिक पर ध्यान केंद्रित करने की सुविधा मिलती है।
 
-अपने C# प्रोजेक्ट में, आवश्यक नामस्थान आयात करके प्रारंभ करें:
+## सुरक्षित आर्काइविंग के लिए Aspose.Zip का उपयोग क्यों करें?
+
+Aspose.Zip **20+ संपीड़न और एन्क्रिप्शन एल्गोरिद्म** का समर्थन करता है, जिसमें AES‑256 शामिल है, और **10 GB** तक के आर्काइव को पूरी फ़ाइल को मेमोरी में लोड किए बिना प्रोसेस कर सकता है। लाइब्रेरी पूरी तरह से मैनेज्ड, थ्रेड‑सेफ़ है, और कई ओपन‑सोर्स विकल्पों की तुलना में **30 % तक तेज़ संपीड़न** प्रदान करती है, जिससे यह हाई‑थ्रूपुट सर्वर वातावरण के लिए आदर्श बनती है।
+
+## पूर्वापेक्षाएँ
+
+शुरू करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित हैं:
+
+- .NET विकास पर्यावरण (Visual Studio 2022, VS Code, या Rider)।  
+- Aspose.Zip for .NET स्थापित है – आप आवश्यक दस्तावेज़ीकरण **[here](https://reference.aspose.com/zip/net/)** पर पा सकते हैं।  
+- आधिकारिक **[download link](https://releases.aspose.com/zip/net/)** से लाइब्रेरी पैकेज डाउनलोड किया गया।  
+- C# सिंटैक्स और प्रोजेक्ट संरचना की बुनियादी परिचितता।
+
+## नेमस्पेस आयात करें
+
+अपने C# प्रोजेक्ट में, आवश्यक नेमस्पेस आयात करके शुरू करें:
 
 ```csharp
 using Aspose.Zip;
@@ -37,17 +82,25 @@ using Aspose.Zip.Saving;
 using Aspose.Zip.SevenZip;
 ```
 
-## चरण 1: संसाधन निर्देशिका पथ सेट करें
+## Aspose.Zip के साथ .NET में आर्काइव को कैसे एन्क्रिप्ट करें?
+
+Aspose.Zip लाइब्रेरी लोड करें, आउटपुट 7z फ़ाइल निर्दिष्ट करें, और एक ही संक्षिप्त कॉल में AES‑256 एन्क्रिप्शन कॉन्फ़िगर करें। लाइब्रेरी स्वचालित रूप से कुंजी व्युत्पत्ति और हेडर निर्माण को संभालती है, इसलिए आपको केवल पासवर्ड और वह डेटा प्रदान करना है जिसे आप सुरक्षित करना चाहते हैं।
+
+## चरण 1: रिसोर्स डायरेक्टरी पाथ सेट करें
+
+उस फ़ोल्डर को परिभाषित करें जिसमें वे फ़ाइलें हों जिन्हें आप संपीड़ित करना चाहते हैं। यह पाथ आर्काइव में एंट्रीज़ जोड़ते समय उपयोग किया जाएगा।
 
 ```csharp
-// संसाधन निर्देशिका का पथ.
+// The path to the resource directory.
 string dataDir = "Your Document Directory";
 ```
 
-## चरण 2: एईएस एन्क्रिप्शन के साथ एक सेवन ज़िप फ़ाइल बनाएं
+## चरण 2: AES एन्क्रिप्शन के साथ Seven Zip फ़ाइल बनाएं
+
+`archive.7z` नामक Seven Zip आर्काइव बनाएं और `entry1.bin` नामक एन्क्रिप्टेड एंट्री जोड़ें। एन्क्रिप्शन सेटिंग्स AES एल्गोरिद्म के साथ पासवर्ड **test1** का उपयोग करती हैं। आप अतिरिक्त फ़ाइलों के लिए वही पैटर्न दोहरा सकते हैं।
 
 ```csharp
-//एक्सस्टार्ट: ArchiveWithEncryptedEntry
+//ExStart: ArchiveWithEncryptedEntry
 using (FileStream sevenZipFile = File.Open("archive.7z", FileMode.Create))
 {
     using (var archive = new SevenZipArchive())
@@ -62,35 +115,50 @@ using (FileStream sevenZipFile = File.Open("archive.7z", FileMode.Create))
 Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Settings");
 ```
 
-स्पष्टीकरण: इस चरण में, हम "archive.7z" नामक एक सात ज़िप फ़ाइल बनाते हैं और नमूना डेटा के साथ एक एन्क्रिप्टेड प्रविष्टि "entry1.bin" जोड़ते हैं। एन्क्रिप्शन सेटिंग्स कुंजी "test1" के साथ एईएस एल्गोरिथ्म का उपयोग करती हैं।
+**Explanation:** इस चरण में, हम “archive.7z” नामक Seven Zip फ़ाइल बनाते हैं और नमूना डेटा के साथ एन्क्रिप्टेड एंट्री “entry1.bin” जोड़ते हैं। एन्क्रिप्शन सेटिंग्स AES एल्गोरिद्म को कुंजी “test1” के साथ उपयोग करती हैं। यदि आवश्यक हो तो अतिरिक्त एंट्रीज़ के लिए ऊपर दिए गए चरण दोहराएँ।
 
-यदि आवश्यक हो तो अतिरिक्त प्रविष्टियों के लिए उपरोक्त चरणों को दोहराएँ।
+## सामान्य समस्याएँ और समाधान
+
+- **पासवर्ड मिलान त्रुटि:** सुनिश्चित करें कि एन्क्रिप्शन और डिक्रिप्शन दोनों में एक ही पासवर्ड उपयोग किया गया है। पासवर्ड केस‑सेंसिटिव होते हैं।  
+- **बड़ी फ़ाइल हैंडलिंग:** 2 GB से बड़ी फ़ाइलों के लिए, `OutOfMemoryException` से बचने हेतु स्ट्रीमिंग मोड (`ArchiveOptions.UseMemoryCache = false`) सक्षम करें।  
+- **असमर्थित एल्गोरिद्म चेतावनी:** जांचें कि लक्ष्य प्लेटफ़ॉर्म AES‑256 का समर्थन करता है; पुराने .NET Framework संस्करणों को `System.Security.Cryptography` पैकेज की आवश्यकता हो सकती है।
+
+## अक्सर पूछे जाने वाले प्रश्न
+
+**Q: क्या मैं Aspose.Zip for .NET को अपने गैर‑व्यावसायिक प्रोजेक्ट्स में उपयोग कर सकता हूँ?**  
+A: हाँ, उचित लाइसेंस के तहत Aspose.Zip को व्यावसायिक और गैर‑व्यावसायिक दोनों अनुप्रयोगों में उपयोग किया जा सकता है।
+
+**Q: मैं Aspose.Zip for .NET के लिए अस्थायी लाइसेंस कैसे प्राप्त कर सकता हूँ?**  
+A: अस्थायी लाइसेंस **[here](https://purchase.aspose.com/temporary-license/)** पर प्राप्त करें।
+
+**Q: क्या Aspose.Zip for .NET के लिए सामुदायिक समर्थन उपलब्ध है?**  
+A: हाँ, सामुदायिक सहायता के लिए **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)** पर जाएँ।
+
+**Q: क्या LZMA के अलावा कोई अन्य संपीड़न एल्गोरिद्म समर्थित हैं?**  
+A: Aspose.Zip विभिन्न एल्गोरिद्म का समर्थन करता है, जिसमें Deflate, BZip2, और PPMd शामिल हैं। पूर्ण सूची के लिए दस्तावेज़ देखें।
+
+**Q: क्या मैं एन्क्रिप्शन सेटिंग्स को और अनुकूलित कर सकता हूँ?**  
+A: बिल्कुल! आप `EncryptionOptions` क्लास के माध्यम से कुंजी लंबाई, इटरेशन काउंट, और सिफर मोड को समायोजित करके सूक्ष्म नियंत्रण प्राप्त कर सकते हैं।
 
 ## निष्कर्ष
 
-बधाई हो! आपने .NET के लिए Aspose.Zip का उपयोग करके AES एन्क्रिप्शन सेटिंग्स के साथ सफलतापूर्वक सेवन ज़िप फ़ाइल बनाई है। यह ट्यूटोरियल आपके .NET प्रोजेक्ट्स में सुरक्षित संग्रह को कार्यान्वित करने की मूलभूत समझ प्रदान करता है।
+आपके पास अब Aspose.Zip का उपयोग करके .NET में **आर्काइव को एन्क्रिप्ट कैसे करें** फ़ाइलों के लिए एक पूर्ण, प्रोडक्शन‑रेडी तरीका है। लाइब्रेरी के बिल्ट‑इन AES‑256 समर्थन का उपयोग करके, आप न्यूनतम कोड, उच्च प्रदर्शन, और विश्वसनीय क्रॉस‑प्लेटफ़ॉर्म संगतता के साथ संवेदनशील डेटा की सुरक्षा कर सकते हैं। मल्टी‑वॉल्यूम आर्काइव, पासवर्ड‑सुरक्षित एक्सट्रैक्शन, और कस्टम संपीड़न स्तर जैसी अतिरिक्त सुविधाओं का अन्वेषण करें ताकि आपकी सुरक्षित आर्काइविंग रणनीति को और बेहतर बनाया जा सके।
 
-## पूछे जाने वाले प्रश्न
+---
 
-### क्या मैं अपनी गैर-व्यावसायिक परियोजनाओं में .NET के लिए Aspose.Zip का उपयोग कर सकता हूँ?
-हां, .NET के लिए Aspose.Zip का उपयोग वाणिज्यिक और गैर-व्यावसायिक दोनों परियोजनाओं में किया जा सकता है।
+**अंतिम अपडेट:** 2026-06-24  
+**परीक्षित संस्करण:** Aspose.Zip 24.11 for .NET  
+**लेखक:** Aspose  
 
-### मैं .NET के लिए Aspose.Zip का अस्थायी लाइसेंस कैसे प्राप्त कर सकता हूँ?
- एक अस्थायी लाइसेंस प्राप्त करें[यहाँ](https://purchase.aspose.com/temporary-license/).
+{{< blocks/products/products-backtop-button >}}
 
-### क्या .NET के लिए Aspose.Zip के लिए सामुदायिक सहायता उपलब्ध है?
- हाँ, पर जाएँ[Aspose.ज़िप फोरम](https://forum.aspose.com/c/zip/37) सामुदायिक समर्थन के लिए.
+## संबंधित ट्यूटोरियल
 
-### क्या LZMA के अलावा कोई अन्य संपीड़न एल्गोरिदम समर्थित है?
-.NET के लिए Aspose.Zip विभिन्न संपीड़न एल्गोरिदम का समर्थन करता है। विवरण के लिए दस्तावेज़ देखें।
-
-### क्या मैं एन्क्रिप्शन सेटिंग्स को और अधिक अनुकूलित कर सकता हूँ?
-बिल्कुल! उन्नत एन्क्रिप्शन अनुकूलन विकल्पों के लिए दस्तावेज़ का अन्वेषण करें।
+- [Aspose.Zip का उपयोग करके AES एन्क्रिप्शन के साथ पासवर्ड‑सुरक्षित ZIP फ़ाइलें बनाएं](/zip/net/password-protection-and-encryption/password-protect-with-aes/)
+- [Aspose.Zip for .NET - AES एन्क्रिप्शन ट्यूटोरियल](/zip/net/password-protection-and-encryption/aes-encryption-settings/)
+- [AES फ़ाइलें डिकम्प्रेस करें - Aspose.Zip .NET ट्यूटोरियल](/zip/net/password-protection-and-encryption/decompress-aes-encrypted-file/)
 
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

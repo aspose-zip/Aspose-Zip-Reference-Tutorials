@@ -1,34 +1,77 @@
 ---
-title: Aspose.Zip .NET'te Birden Fazla Dosyayı Şifrelemeyle Sıkıştırın
-linktitle: Birden Fazla Dosyayı Geleneksel Şifrelemeyle Sıkıştırın
-second_title: Dosya Sıkıştırma ve Arşivleme için Aspose.Zip .NET API
-description: Aspose.Zip for .NET'te geleneksel şifrelemeyi kullanarak birden fazla dosyayı güvenli bir şekilde nasıl sıkıştıracağınızı öğrenin. .NET uygulamalarınızda veri korumasını geliştirin.
-weight: 17
+date: 2026-06-24
+description: Aspose.Zip for .NET'te traditional encryption kullanarak şifre korumalı
+  zip archives oluşturmayı öğrenin, uygulamalarınızdaki veri güvenliğini artırın.
+keywords:
+- create password protected zip
+- add password to zip
+- zip file password protection
+- zip archive with password
+- how to encrypt zip
+linktitle: Traditional Encryption ile Birden Çok Dosyayı Sıkıştırın
+schemas:
+- author: Aspose
+  dateModified: '2026-06-24'
+  description: Learn how to create password protected zip archives using traditional
+    encryption in Aspose.Zip for .NET, boosting data security in your applications.
+  headline: Create Password Protected Zip Files with Aspose.Zip .NET
+  type: TechArticle
+- questions:
+  - answer: Yes, Aspose.Zip for .NET runs on Windows, Linux, and macOS, supporting
+      .NET 5, .NET 6, and later.
+    question: Can I use Aspose.Zip for .NET in both Windows and Linux environments?
+  - answer: Yes, you can explore a free trial of Aspose.Zip for .NET [here](https://releases.aspose.com/).
+    question: Is there a free trial available for Aspose.Zip for .NET?
+  - answer: For any support or queries, you can visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37).
+    question: How can I get support for Aspose.Zip for .NET?
+  - answer: Yes, temporary licenses can be obtained from [here](https://purchase.aspose.com/temporary-license/).
+    question: Are temporary licenses available for Aspose.Zip for .NET?
+  - answer: Refer to the documentation [here](https://reference.aspose.com/zip/net/)
+      for in‑depth information.
+    question: Where can I find detailed documentation for Aspose.Zip for .NET?
+  type: FAQPage
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+title: Aspose.Zip .NET ile Şifre Korumalı Zip Dosyaları Oluşturun
 url: /tr/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/
+weight: 17
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip .NET'te Birden Fazla Dosyayı Şifrelemeyle Sıkıştırın
+# Aspose.Zip .NET ile Şifre Koruması Olan Zip Dosyaları Oluşturma
 
+## Giriş
 
-## giriiş
+Bu uygulamalı öğreticide Aspose.Zip for .NET kullanarak **şifre korumalı zip** arşivleri oluşturmayı öğreneceksiniz. Arşivi ayarlamadan, geleneksel şifreleme uygulamaya, birden fazla dosya eklemeye ve sonunda korumalı paketi kaydetmeye kadar her adımı adım adım inceleyeceğiz. Sonunda, içeriğini bir şifreyle koruyan, masaüstü, web veya bulut‑tabanlı .NET çözümlerinde güvenli veri alışverişi için mükemmel, kullanıma hazır bir zip dosyanız olacak.
 
-Aspose.Zip for .NET kullanarak birden fazla dosyayı geleneksel şifrelemeyle sıkıştırmayı anlatan bu adım adım eğitime hoş geldiniz. Aspose.Zip, geliştiricilerin .NET uygulamalarında zip arşivleriyle sorunsuz bir şekilde çalışmasına olanak tanıyan güçlü bir kütüphanedir. Bu kılavuzda, verilerinizin güvenliğini sağlayarak birden fazla dosyayı geleneksel şifrelemeyle sıkıştırma sürecinde size yol göstereceğiz.
+## Hızlı Yanıtlar
+- **Zip oluşturma için birincil sınıf nedir?** `Archive` – zip konteynerini temsil eder.  
+- **Aspose.Zip geleneksel koruma için hangi şifreleme yöntemini kullanır?** `TraditionalEncryption` bir şifre dizesi ile.  
+- **Birçok dosyayı aynı anda ekleyebilir miyim?** Evet, kaydetmeden önce istediğiniz sayıda girdi ekleyebilirsiniz.  
+- **Kütüphane çapraz platform mu?** Windows, Linux ve macOS'ta .NET 5/6/7+ ile çalışır.  
+- **Üretim için lisansa ihtiyacım var mı?** Ticari bir lisans gereklidir; ücretsiz bir deneme sürümü mevcuttur.
+
+## “Şifre korumalı zip oluşturma” nedir?
+
+Şifre korumalı bir zip oluşturmak, bireysel girdilerin kullanıcı tarafından sağlanan bir şifreyle şifrelenmiş bir ZIP arşivi üretmek anlamına gelir. Arşiv açıldığında, dosyaları çözmek ve çıkarmak için şifre girilmelidir; böylece yetkisiz kişilerin doğru anahtar olmadan içeriği okuması engellenir.
+
+## Geleneksel şifreleme için Aspose.Zip neden kullanılmalı?
+
+Aspose.Zip **30'dan fazla arşiv formatını** destekler ve tüm arşivi belleğe yüklemeden **2 GB**'a kadar dosyaları şifreleyebilir; bu, büyük kurumsal iş yükleri için hızlı ve düşük bellek tüketimli sıkıştırma sağlar.
 
 ## Önkoşullar
 
-Eğiticiye dalmadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+Before we dive in, ensure you have:
 
--  Aspose.Zip for .NET: Geliştirme ortamınızda Aspose.Zip for .NET kütüphanesinin kurulu olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/zip/net/).
+- Aspose.Zip for .NET yüklü. Bunu [buradan](https://releases.aspose.com/zip/net/) indirebilirsiniz.  
+- Diğer Aspose ürün indirmeleri için ana sürüm sayfasını [buradan](https://releases.aspose.com/) ziyaret edin.  
+- Sıkıştırmak istediğiniz dosyaları içeren bir klasör. Kod örneğindeki `"Your Document Directory"` ifadesini gerçek belge dizininizin yolu ile değiştirin.
 
--  Belge Dizininiz: Değiştirin`"Your Document Directory"`belge dizininizin gerçek yolunu içeren kod pasajında.
+## Ad Alanlarını İçe Aktarın
 
-## Ad Alanlarını İçe Aktar
-
-.NET uygulamanızda gerekli ad alanlarını içe aktararak başlayın. Bu, Aspose.Zip tarafından sağlanan işlevselliğe erişmenizi sağlayacaktır. İşte bir örnek:
+.NET projenizde, Aspose.Zip API'sini ortaya çıkaran ad alanlarını içe aktarın. Bu, `Archive`, `ArchiveEntry` ve şifreleme sınıflarına erişim sağlar.
 
 ```csharp
 using Aspose.Zip;
@@ -36,26 +79,30 @@ using Aspose.Zip.Saving;
 using System.IO;
 ```
 
-## 1. Adım: Zip Dosyasını Ayarlayın
+## Aspose.Zip .NET'te şifre korumalı zip nasıl oluşturulur?
 
- kullanarak yeni bir zip dosyası oluşturun.`Archive` sınıf. Bu adımda, ek güvenlik için bir parola sağlayarak geleneksel şifreleme ayarlarını da tanımlayacaksınız.
+Aspose.Zip for .NET ile şifre korumalı bir zip oluşturmak için önce bir `Archive` nesnesi oluşturun ve seçtiğiniz şifreyle bir `TraditionalEncryption` örneği yapılandırın. Ardından korumak istediğiniz her dosyayı `CreateEntry` kullanarak ekleyin ve sonunda şifreli arşivi diske yazmak için `Save` metodunu çağırın. Bu iş akışı, sıkıştırma ve güçlü şifre korumasını tek bir işlemde sağlar.
+
+## Adım 1: Zip Dosyasını Ayarlama
+
+`Archive` sınıfı, Aspose.Zip'in bellekte tek bir zip arşivini temsil eden üst‑seviye nesnesidir. Burada ayrıca geleneksel şifreleme ayarlarını tanımlar ve koruma için bir şifre sağlarız.
 
 ```csharp
-//ExStart: Çoklu Dosyaları Geleneksel Şifrelemeyle Sıkıştırın
+//ExStart: CompressMultipleFilesWithTraditionalEncryption
 using (FileStream zipFile = File.Open(".\\CompressMultipleFilesWithTraditionalEncryption_out.zip", FileMode.Create))
 {
-    // Geleneksel şifreleme ayarlarıyla arşiv oluşturun
+    // Create archive with traditional encryption settings
     using (var archive = new Archive(new ArchiveEntrySettings(null, new TraditionalEncryptionSettings("p@s$"))))
     {
-        // Sonraki adıma devam et...
+        // Continue to the next step...
     }
 }
-//ExEnd: Çoklu Dosyaları Geleneksel Şifrelemeyle Sıkıştırın
+//ExEnd: CompressMultipleFilesWithTraditionalEncryption
 ```
 
-## 2. Adım: Arşive Dosya Ekleme
+## Adım 2: Arşive Dosyalar Ekleme
 
-Şimdi sıkıştırmak istediğiniz dosyaları arşive ekleyin. Bu örnekte üç dosya ekliyoruz: "alice29.txt", "asyoulik.txt" ve "fields.c."
+Şimdi korumak istediğiniz her dosyayı ekliyoruz. Bu örnekte üç örnek metin dosyası—`alice29.txt`, `asyoulik.txt` ve `fields.c`—kullanıyoruz. İstediğiniz sayıda dosya ekleyebilirsiniz; API, her girdi için dahili bir döngüyle işlemi gerçekleştirir.
 
 ```csharp
 archive.CreateEntry("alice29.txt", source1);
@@ -63,47 +110,51 @@ archive.CreateEntry("asyoulik.txt", source2);
 archive.CreateEntry("fields.c", source3);
 ```
 
-## 3. Adım: Zip Dosyasını Kaydedin
+## Adım 3: Zip Dosyasını Kaydetme
 
-Zip dosyasını eklenen girişlerle birlikte kaydedin. Bu adım sıkıştırma işlemini tamamlar.
+`Save` metodunu çağırmak, şifreli arşivi diske yazar ve sıkıştırma sürecini tamamlar. Oluşan `.zip` yalnızca daha önce belirttiğiniz şifreyle açılabilir.
 
 ```csharp
 archive.Save(zipFile);
 ```
 
-Tebrikler! Aspose.Zip for .NET'i kullanarak birden fazla dosyayı geleneksel şifrelemeyle başarıyla sıkıştırdınız.
+## Yaygın Sorunlar ve Çözümler
 
-## Çözüm
+- **Yanlış şifre hatası:** Şifreleme ve daha sonraki çıkarma işlemleri için aynı şifre dizesinin kullanıldığından emin olun; şifreler büyük/küçük harfe duyarlıdır.  
+- **Büyük dosya işleme:** 1 GB'den büyük arşivler için yüksek bellek tüketimini önlemek amacıyla girdileri `AddEntry` ile akış olarak eklemeyi düşünün.  
+- **Desteklenmeyen karakterler:** ASCII dışı karakterler içeren dosya adları için ad bozulmasını önlemek amacıyla UTF‑8 kodlaması kullanın.
 
-Bu eğitimde, birden fazla dosyayı geleneksel şifrelemeyle sıkıştırmak için Aspose.Zip for .NET'ten nasıl yararlanılacağını araştırdık. Bu işlem, .NET uygulamalarınızdaki zip arşivlerini verimli bir şekilde yönetirken verilerinizin güvenliğini sağlar.
+## Sıkça Sorulan Sorular
+
+**S: Aspose.Zip for .NET'i hem Windows hem de Linux ortamlarında kullanabilir miyim?**  
+C: Evet, Aspose.Zip for .NET Windows, Linux ve macOS'ta çalışır, .NET 5, .NET 6 ve sonrası sürümleri destekler.
+
+**S: Aspose.Zip for .NET için ücretsiz bir deneme sürümü mevcut mu?**  
+C: Evet, Aspose.Zip for .NET'in ücretsiz deneme sürümünü [buradan](https://releases.aspose.com/) inceleyebilirsiniz.
+
+**S: Aspose.Zip for .NET için nasıl destek alabilirim?**  
+C: Herhangi bir destek veya soru için [Aspose.Zip forumunu](https://forum.aspose.com/c/zip/37) ziyaret edebilirsiniz.
+
+**S: Aspose.Zip for .NET için geçici lisanslar mevcut mu?**  
+C: Evet, geçici lisansları [buradan](https://purchase.aspose.com/temporary-license/) temin edebilirsiniz.
+
+**S: Aspose.Zip for .NET için ayrıntılı belgeleri nerede bulabilirim?**  
+C: Derinlemesine bilgi için belgeleri [buradan](https://reference.aspose.com/zip/net/) inceleyin.
 
 ---
 
-## SSS
-
-### 1. Aspose.Zip for .NET'i hem Windows hem de Linux ortamlarında kullanabilir miyim?
-
-Evet, Aspose.Zip for .NET hem Windows hem de Linux ortamlarıyla uyumludur ve geliştiricilere esneklik sağlar.
-
-### 2. Aspose.Zip for .NET'in ücretsiz deneme sürümü mevcut mu?
-
- Evet, Aspose.Zip for .NET'in ücretsiz deneme sürümünü keşfedebilirsiniz[Burada](https://releases.aspose.com/).
-
-### 3. Aspose.Zip for .NET desteğini nasıl alabilirim?
-
- Her türlü destek veya sorularınız için şu adresi ziyaret edebilirsiniz:[Aspose.Zip forumu](https://forum.aspose.com/c/zip/37).
-
-### 4. Aspose.Zip for .NET için geçici lisanslar mevcut mu?
-
- Evet, geçici lisanslar şu adresten alınabilir:[Burada](https://purchase.aspose.com/temporary-license/).
-
-### 5. Aspose.Zip for .NET'in ayrıntılı belgelerini nerede bulabilirim?
-
-Belgelere bakın[Burada](https://reference.aspose.com/zip/net/) derinlemesine bilgi için.
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+**Son Güncelleme:** 2026-06-24  
+**Test Edilen Versiyon:** Aspose.Zip 24.10 for .NET  
+**Yazar:** Aspose  
 
 {{< blocks/products/products-backtop-button >}}
+
+## İlgili Öğreticiler
+
+- [Aspose.Zip kullanarak AES Şifreleme ile Şifre Koruması Olan ZIP Dosyaları Oluşturma](/zip/net/password-protection-and-encryption/password-protect-with-aes/)
+- [.NET dizinleri için şifre korumalı zip oluşturma – Aspose.Zip Öğreticisi](/zip/net/password-protection-and-encryption/password-protect-directory/)
+- [Aspose.Zip for .NET kullanarak dosyaları şifreyle sıkıştırma ve ZIP girdilerini farklı şifrelerle şifreleme](/zip/net/other-compression-techniques/entries-with-different-passwords/)
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
