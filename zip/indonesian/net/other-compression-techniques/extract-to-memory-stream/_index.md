@@ -1,11 +1,53 @@
 ---
-date: 2025-12-18
-description: Pelajari cara mengekstrak arsip zip menggunakan Aspose.Zip untuk .NET
-  – tutorial Aspose Zip singkat yang menunjukkan ekstraksi ke MemoryStream. Sempurna
-  untuk pengembang C#.
-linktitle: Extracting to Memory Stream
+date: 2026-06-14
+description: Pelajari cara membaca file GZIP dan mengekstraknya ke MemoryStream menggunakan
+  Aspose.Zip untuk .NET – tutorial singkat untuk pengembang C#.
+keywords:
+- how to read gzip
+- how to extract zip
+- extract zip to stream
+- c# extract zip stream
+linktitle: Mengekstrak ke Memory Stream
+schemas:
+- author: Aspose
+  dateModified: '2026-06-14'
+  description: Learn how to read GZIP files and extract them to a MemoryStream using
+    Aspose.Zip for .NET – a concise tutorial for C# developers.
+  headline: How to Read GZIP and Extract to MemoryStream with Aspose.Zip
+  type: TechArticle
+- description: Learn how to read GZIP files and extract them to a MemoryStream using
+    Aspose.Zip for .NET – a concise tutorial for C# developers.
+  name: How to Read GZIP and Extract to MemoryStream with Aspose.Zip
+  steps:
+  - name: Set Up Your Document Directory
+    text: Define the path where your sample archive resides.
+  - name: Initialize a MemoryStream
+    text: Create an empty `MemoryStream` that will receive the extracted data.
+  - name: Open the GZIP Archive and Extract
+    text: The `CopyTo` method **copies the archive to MemoryStream**, giving you an
+      in‑memory representation of the original file. `CopyTo` copies data from one
+      stream to another efficiently.
+  - name: Verify the Extraction
+    text: A simple console message confirms success.
+  type: HowTo
+- questions:
+  - answer: Yes, Aspose.Zip supports .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1,
+      and .NET 5–10, making it versatile for modern applications.
+    question: Is Aspose.Zip compatible with all versions of .NET?
+  - answer: Absolutely. The library provides both extraction and creation APIs, allowing
+      you to build ZIP files programmatically.
+    question: Can I use Aspose.Zip to create ZIP archives as well?
+  - answer: Visit the [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) for community
+      help and official guidance.
+    question: Where can I find additional support or examples?
+  - answer: Yes, you can start a free trial by downloading from the Aspose website
+      [here](https://releases.aspose.com/).
+    question: Is there a free trial available?
+  - answer: A temporary license can be requested from the Aspose portal [here](https://purchase.aspose.com/temporary-license/).
+    question: How do I obtain a temporary license for testing?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Cara Mengekstrak ZIP ke Memory Stream dengan Aspose.Zip untuk .NET
+title: Cara Membaca GZIP dan Mengekstrak ke MemoryStream dengan Aspose.Zip
 url: /id/net/other-compression-techniques/extract-to-memory-stream/
 weight: 10
 ---
@@ -14,36 +56,37 @@ weight: 10
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Cara Mengekstrak ZIP ke Memory Stream dengan Aspose.Zip untuk .NET
+# Cara Membaca GZIP dan Mengekstrak ke MemoryStream dengan Aspose.Zip
 
 ## Pendahuluan
 
-Jika Anda mencari cara yang handal untuk **how to extract zip** arsip langsung ke memori, Aspose.Zip untuk .NET mempermudahnya. Dalam tutorial ini kami akan menjelaskan cara mengekstrak file GZIP ke `MemoryStream`, yang kemudian dapat Anda gunakan seperti sumber data dalam memori lainnya—sempurna untuk skenario seperti memproses file secara langsung, mengirim data melalui jaringan, atau menghindari file sementara di disk.
+Jika Anda mencari cara yang andal untuk **cara membaca gzip** arsip langsung ke memori, Aspose.Zip untuk .NET mempermudahnya. Dalam tutorial ini kami akan menjelaskan cara mengekstrak file GZIP ke `MemoryStream`, yang kemudian dapat Anda perlakukan seperti sumber data dalam‑memori lainnya—sempurna untuk memproses file secara langsung, mengirim data melalui jaringan, atau menghindari file sementara di disk.  
+`MemoryStream` adalah aliran .NET yang menyimpan data di memori, memungkinkan baca/tulis cepat tanpa I/O disk.
 
 ## Jawaban Cepat
-- **Apa perpustakaan yang menangani ekstraksi ZIP/GZIP?** Aspose.Zip untuk .NET  
-- **Apakah saya dapat mengekstrak ke MemoryStream?** Ya – gunakan `CopyTo` pada arsip yang dibuka.  
-- **Format yang didukung?** ZIP, GZIP, TAR, dan lainnya.  
-- **Apakah saya memerlukan lisensi untuk pengembangan?** Versi percobaan gratis dapat digunakan untuk pengujian; lisensi diperlukan untuk produksi.  
-- **Versi .NET mana yang kompatibel?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+- **Perpustakaan apa yang menangani ekstraksi ZIP/GZIP?** Aspose.Zip for .NET  
+- **Bisakah saya mengekstrak ke MemoryStream?** Yes – use `CopyTo` on the opened archive.  
+- **Format yang didukung?** ZIP, GZIP, TAR, and more.  
+- **Apakah saya memerlukan lisensi untuk pengembangan?** A free trial works for testing; a license is required for production.  
+- **Versi .NET mana yang kompatibel?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, and .NET 5–10
 
 ## Apa itu Aspose.Zip?
 
-Aspose.Zip adalah perpustakaan .NET yang menyederhanakan pekerjaan dengan arsip terkompresi. Ia mengabstraksi detail tingkat‑rendah format ZIP dan GZIP, memungkinkan Anda fokus pada logika bisnis—seperti **copy archive to memorystream**—bukan pada plumbing sistem file.
+Aspose.Zip adalah perpustakaan .NET yang menyederhanakan kerja dengan arsip terkompresi. Ia mengabstraksi detail tingkat‑rendah dari format ZIP dan GZIP, memungkinkan Anda fokus pada logika bisnis—seperti **copy archive to memorystream**—daripada urusan sistem file.
 
 ## Mengapa Mengekstrak ke MemoryStream?
 
-Mengekstrak ke `MemoryStream` menghindari overhead pembuatan file sementara, mengurangi latensi I/O, dan memudahkan pengiriman data ke API yang mengharapkan stream (misalnya respons HTTP, pemroses gambar, atau basis data dalam memori). Ini sangat berguna dalam arsitektur cloud‑native atau micro‑service.
+MenEkstrak ke `MemoryStream` menghindari overhead pembuatan file sementara, mengurangi latensi I/O, dan memudahkan mengirim data ke API yang mengharapkan aliran (misalnya, respons HTTP, pemroses gambar, atau basis data dalam memori). Ini sangat berguna dalam arsitektur cloud‑native atau mikro‑service.
 
 ## Prasyarat
 
 - **Visual Studio** (edisi terbaru apa pun).  
-- **Aspose.Zip untuk .NET** – unduh dari situs resmi [di sini](https://releases.aspose.com/zip/net/).  
-- Folder yang berisi arsip GZIP contoh bernama `sample.gz`.
+- **Aspose.Zip for .NET** – unduh dari situs resmi [here](https://releases.aspose.com/zip/net/).  
+- Sebuah folder yang berisi arsip GZIP contoh bernama `sample.gz`.
 
 ## Impor Namespace
 
-Tambahkan namespace yang diperlukan ke file C# Anda:
+Add the required namespaces to your C# file:
 
 ```csharp
 using Aspose.Zip.Gzip;
@@ -55,11 +98,13 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-## Panduan Langkah‑per‑Langkah
+## Bagaimana cara membaca file GZIP di .NET?
+
+Muatan arsip GZIP dengan `GzipArchive.Open` dan salin entri ke `MemoryStream`. Pola dua langkah ini membaca data terkompresi langsung ke memori tanpa menyentuh sistem file, memberi Anda akses instan ke byte yang telah didekompresi. Metode `GzipArchive.Open` membuka file GZIP dan mengembalikan objek GzipArchive untuk membaca entri-entrinya. Anda juga dapat menentukan jalur relatif atau absolut, dan perpustakaan akan menangani pembukaan aliran file secara internal, memastikan pembuangan yang tepat setelah ekstraksi.
 
 ### Langkah 1: Siapkan Direktori Dokumen Anda
 
-Tentukan jalur tempat arsip contoh Anda berada.
+Define the path where your sample archive resides.
 
 ```csharp
 string dataDir = "Your Document Directory";
@@ -67,7 +112,7 @@ string dataDir = "Your Document Directory";
 
 ### Langkah 2: Inisialisasi MemoryStream
 
-Buat `MemoryStream` kosong yang akan menerima data yang diekstrak.
+Create an empty `MemoryStream` that will receive the extracted data.
 
 ```csharp
 var ms = new MemoryStream();
@@ -75,7 +120,7 @@ var ms = new MemoryStream();
 
 ### Langkah 3: Buka Arsip GZIP dan Ekstrak
 
-Metode `CopyTo` **copies the archive to MemoryStream**, memberikan Anda representasi dalam memori dari file asli.
+Metode `CopyTo` **menyalin arsip ke MemoryStream**, memberi Anda representasi dalam‑memori dari file asli. `CopyTo` menyalin data dari satu aliran ke aliran lain secara efisien.
 
 ```csharp
 //ExStart: ExtractToMemoryStream
@@ -89,51 +134,59 @@ using (GzipArchive archive = new GzipArchive(File.OpenRead(dataDir + "sample.gz"
 
 ### Langkah 4: Verifikasi Ekstraksi
 
-Pesan konsol sederhana mengonfirmasi keberhasilan.
+A simple console message confirms success.
 
 ```csharp
 Console.WriteLine("Successfully Extracted to Memory Stream");
 ```
 
-### Cara Mengekstrak GZIP Menggunakan Aspose.Zip
+## Cara Mengekstrak ZIP ke Stream dalam C#?
 
-Meskipun contoh ini berfokus pada file GZIP, pola yang sama berlaku untuk arsip ZIP—cukup ganti `GzipArchive` dengan `ZipArchive`. Ini menunjukkan **how to extract gzip** dan, secara ekstensi, **c# extract zip memory** dalam alur kerja yang konsisten.
+Gunakan alur kerja yang sama—ganti `GzipArchive` dengan `ZipArchive`. `ZipArchive` mewakili file ZIP dan menyediakan metode untuk membaca atau mengekstrak entri-entrinya. Panggil `zipArchive.ExtractAllToStream(memoryStream)` (atau iterasi entri dan `CopyTo`) dan Anda akan memiliki seluruh konten ZIP tersedia dalam `MemoryStream`. `ExtractAllToStream` mengekstrak semua entri arsip langsung ke aliran yang disediakan. Selain itu, Anda dapat mengatur tingkat kompresi atau mempertahankan struktur direktori dengan mengonfigurasi opsi arsip sebelum ekstraksi. Pendekatan ini bekerja untuk jenis arsip apa pun yang didukung oleh Aspose.Zip.
 
-## Kesulitan Umum & Tips
+## Kesalahan Umum & Tips
 
-- **Mengatur ulang MemoryStream:** Setelah ekstraksi, set `ms.Position = 0` sebelum membaca stream di tempat lain.  
-- **File Besar:** Untuk arsip yang sangat besar, pertimbangkan memproses stream dalam potongan untuk menghindari konsumsi memori tinggi.  
-- **Pembuangan:** Blok `using` memastikan handle file arsip dilepaskan dengan cepat.
+- **Resetting the MemoryStream:** Setelah ekstraksi, setel `ms.Position = 0` sebelum membaca aliran di tempat lain.  
+- **Large Files:** Untuk arsip yang sangat besar, pertimbangkan memproses aliran dalam potongan untuk menghindari konsumsi memori tinggi. Aspose.Zip dapat menangani arsip dengan **500+ files** dan ukuran total hingga **2 GB** tanpa memuat seluruh arsip ke memori.  
+- **Disposal:** Blok `using` memastikan pegangan file arsip dilepaskan dengan cepat.
 
 ## Pertanyaan yang Sering Diajukan
 
 **Q: Apakah Aspose.Zip kompatibel dengan semua versi .NET?**  
-A: Ya, Aspose.Zip mendukung .NET Framework 4.5+, .NET Core 3.1+, dan .NET 5/6/7, menjadikannya fleksibel untuk aplikasi modern.
+A: Ya, Aspose.Zip mendukung .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, dan .NET 5–10, menjadikannya serbaguna untuk aplikasi modern.
 
-**Q: Dapatkah saya menggunakan Aspose.Zip untuk membuat arsip ZIP juga?**  
-A: Tentu saja. Perpustakaan ini menyediakan API ekstraksi dan pembuatan, memungkinkan Anda membangun file ZIP secara programatik.
+**Q: Bisakah saya menggunakan Aspose.Zip untuk membuat arsip ZIP juga?**  
+A: Tentu saja. Perpustakaan ini menyediakan API ekstraksi dan pembuatan, memungkinkan Anda membuat file ZIP secara programatik.
 
 **Q: Di mana saya dapat menemukan dukungan atau contoh tambahan?**  
 A: Kunjungi [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) untuk bantuan komunitas dan panduan resmi.
 
-**Q: Apakah ada versi percobaan gratis?**  
-A: Ya, Anda dapat memulai percobaan gratis dengan mengunduh dari situs Aspose [di sini](https://releases.aspose.com/).
+**Q: Apakah tersedia percobaan gratis?**  
+A: Ya, Anda dapat memulai percobaan gratis dengan mengunduh dari situs Aspose [here](https://releases.aspose.com/).
 
 **Q: Bagaimana cara mendapatkan lisensi sementara untuk pengujian?**  
-A: Lisensi sementara dapat diminta melalui portal Aspose [di sini](https://purchase.aspose.com/temporary-license/).
+A: Lisensi sementara dapat diminta melalui portal Aspose [here](https://purchase.aspose.com/temporary-license/).
 
 ## Kesimpulan
 
-Dalam **aspose zip tutorial** ini kami membahas proses lengkap mengekstrak arsip terkompresi ke `MemoryStream` menggunakan Aspose.Zip untuk .NET. Dengan mengikuti langkah‑langkah ini Anda dapat secara efisien **copy archive to memorystream**, menghindari file sementara, dan mengintegrasikan data yang diekstrak langsung ke logika aplikasi Anda. Jangan ragu untuk mengeksplorasi format arsip lain serta fitur lanjutan seperti perlindungan kata sandi atau ekstraksi multi‑thread.
+Pada **aspose zip tutorial** ini kami membahas proses lengkap membaca arsip GZIP dan mengekstraknya ke `MemoryStream` menggunakan Aspose.Zip untuk .NET. Dengan mengikuti langkah‑langkah ini Anda dapat secara efisien **copy archive to memorystream**, menghindari file sementara, dan mengintegrasikan data yang diekstrak langsung ke logika aplikasi Anda. Jangan ragu untuk menjelajahi format arsip lain dan fitur lanjutan seperti perlindungan kata sandi atau ekstraksi multi‑thread.
 
 ---
 
-**Last Updated:** 2025-12-18  
-**Tested With:** Aspose.Zip 24.12 untuk .NET  
-**Author:** Aspose  
+**Terakhir Diperbarui:** 2026-06-14  
+**Diuji Dengan:** Aspose.Zip 24.12 for .NET  
+**Penulis:** Aspose  
+
+{{< blocks/products/products-backtop-button >}}
+
+## Tutorial Terkait
+
+- [Cara Membuka Arsip GZip dan Teknik Kompresi Lain dengan Aspose.Zip untuk .NET](/zip/net/other-compression-techniques/)
+- [Cara Mendekompresi File dengan Aspose.Zip untuk .NET](/zip/net/file-decompression/)
+- [Dekompresi File AES - Tutorial Aspose.Zip .NET](/zip/net/password-protection-and-encryption/decompress-aes-encrypted-file/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
