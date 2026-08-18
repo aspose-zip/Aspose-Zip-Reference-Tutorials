@@ -2,7 +2,7 @@
 title: How to compress multiple files tar with Aspose.Zip for .NET
 linktitle: Compressing to TarLz 
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-description: Learn how to compress multiple files tar using Aspose.Zip for .NET and create tar.lz archives efficiently.
+description: Learn how to compress multiple files into a tar.lz archive using the Aspose.Zip for .NET API, covering single‑file and multi‑file scenarios with clear code examples.
 weight: 13
 url: /net/archive-extraction-and-formats/compress-to-tar-lz/
 date: 2026-07-04
@@ -78,7 +78,7 @@ Aspose.Zip provides a pure‑managed, cross‑platform solution that creates TAR
 ## Prerequisites
 Before you start, make sure you have:
 
-- **Aspose.Zip for .NET** library – download it from [here](https://releases.aspose.com/zip/net/).  
+- **Aspose.Zip for .NET** library – download it from [Aspose.Zip .NET download page](https://releases.aspose.com/zip/net/).  
 - A folder that contains the files you want to archive. The path to this folder will be stored in the `dataDir` variable (you’ll set it in Step 3).
 
 ## Import Namespaces
@@ -151,7 +151,7 @@ string dataDir = "Your Document Directory";
 ## Conclusion
 You now know **how to compress tar.lz** files using Aspose.Zip for .NET, whether you’re dealing with a single document or a collection of files. This **tar.lz compression example** demonstrates a clean, production‑ready way to **create tar lz archive** files that can be easily transferred or stored. You can compress files to tar.lz using the same API by calling `SaveLzipped` after adding all desired entries.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Q:** Can I compress files of any size using Aspose.Zip for .NET?  
 **A:** Yes, the library handles both small and very large files; just ensure you have sufficient memory and disk space for the temporary TAR structure.

@@ -2,7 +2,7 @@
 title: How to Extract Zip with Password Using Aspose.Zip for .NET
 linktitle: Extracting Archive Entries with Different Passwords
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-description: Learn how to extract zip with password using Aspose.Zip for .NET, an Aspose.Zip example that handles multiple password‑protected entries efficiently.
+description: Learn how to extract zip with password using Aspose.Zip for .NET, an Aspose.Zip example that handles multiple password‑protected entries efficiently and demonstrates per‑entry password handling.
 weight: 10
 date: 2026-07-04
 url: /net/archive-extraction-and-formats/extract-archive-different-passwords/
@@ -71,7 +71,7 @@ In modern .NET applications, protecting sensitive data inside ZIP archives is a 
 ## What is “how to extract zip”?
 Extracting a ZIP archive means reading the compressed container and writing its contents to the file system. When the archive is password‑protected, you must also supply the correct password for each entry before the data can be decompressed. The process involves opening the archive, locating each entry, and streaming the uncompressed data to the desired location on disk.
 
-## Why Use Aspose.Zip for Password‑Protected Extraction?
+## Why use Aspose.Zip for password‑Protected extraction?
 Aspose.Zip offers a robust solution for extracting password‑protected ZIP files because it supports per‑entry passwords, multiple encryption algorithms, and high‑performance in‑memory processing. It eliminates the need for external tools, works across platforms, and integrates seamlessly with .NET applications, making it ideal for secure data handling scenarios.
 
 ### Quantified Benefits
@@ -81,7 +81,7 @@ Aspose.Zip supports **30+ archive formats** and can handle files up to **2 GB*
 
 Before we dive in, make sure you have:
 
-- **Aspose.Zip for .NET** installed in your project. You can find the official documentation [here](https://reference.aspose.com/zip/net/).  
+- **Aspose.Zip for .NET** installed in your project. You can find the official documentation [Aspose.Zip .NET API reference](https://reference.aspose.com/zip/net/).  
 - A .NET development environment (Visual Studio, Rider, or VS Code) targeting .NET 5 or later.  
 - A ZIP file that contains entries encrypted with **different passwords** (the sample used here is `different_password.zip`).
 
@@ -110,7 +110,7 @@ string dataDir = "Your Document Directory";
 
 Load the ZIP file with `new Archive(fileStream)` and call `entry.Extract(outputStream, password)` for each entry—this one‑line pattern extracts a password‑protected entry without touching other files. By iterating over `archive.Entries` you can apply a distinct password to every file, achieving fine‑grained security while keeping the code concise.
 
-### Step 1: Open the Zip File
+### Step 1: open the zip file
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "\\different_password.zip", FileMode.Open))
@@ -158,7 +158,7 @@ Provide the correct password to the `Extract` method for each encrypted entry, a
 
 `Archive` is Aspose.Zip's core class that models a ZIP container and exposes methods for reading, extracting, and modifying its entries. The `Extract` overload that accepts a password enables **password protected zip extraction** on a per‑entry basis. It automatically detects the encryption type and handles the decryption internally, allowing developers to focus on business logic rather than cryptographic details.
 
-## Common Issues & Solutions
+## Common issues & solutions
 
 | Issue | Reason | Fix |
 |-------|--------|-----|
@@ -166,7 +166,7 @@ Provide the correct password to the `Extract` method for each encrypted entry, a
 | *File not found* | `dataDir` path is incorrect. | Use `Path.Combine(dataDir, "different_password.zip")` and double‑check the folder. |
 | *Large archives cause high memory usage* | All entries are loaded into memory by default. | Stream each entry individually or use `Archive.ExtractToDirectory` with a password callback (if supported). |
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Q1: Can I use Aspose.Zip in both .NET Core and .NET Framework projects?**  
 A1: Yes, Aspose.Zip supports .NET Framework, .NET Core, and .NET 5/6+, giving you flexibility across platforms.
@@ -175,10 +175,10 @@ A1: Yes, Aspose.Zip supports .NET Framework, .NET Core, and .NET 5/6+, giv
 A2: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) to engage with the community, ask questions, and share experiences.
 
 **Q3: Is there a free trial available for Aspose.Zip?**  
-A3: Yes, you can access the free trial of Aspose.Zip [here](https://releases.aspose.com/).
+A3: Yes, you can access the free trial of Aspose.Zip [Aspose.Zip free trial download](https://releases.aspose.com/).
 
 **Q4: How can I obtain a temporary license for Aspose.Zip?**  
-A4: For a temporary license, visit [this link](https://purchase.aspose.com/temporary-license/).
+A4: For a temporary license, visit the [temporary license request page](https://purchase.aspose.com/temporary-license/).
 
 **Q5: Where can I purchase Aspose.Zip?**  
 A5: To purchase Aspose.Zip, visit the [purchase page](https://purchase.aspose.com/buy).
