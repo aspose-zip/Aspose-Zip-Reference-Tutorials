@@ -28,16 +28,16 @@ schemas:
       both formats, allowing you to handle multiple archive types with the same code
       base.
     question: Can I use Aspose.Zip for .NET with other archive formats?
-  - answer: Yes, you can grab a free trial **[here](https://releases.aspose.com/)**
+  - answer: Yes, you can grab a free trial **[Aspose.Zip free trial download](https://releases.aspose.com/)**
       for evaluation before purchasing a license.
     question: Is there a trial version available?
   - answer: Visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)** for
       peer‑to‑peer help, sample snippets, and troubleshooting tips.
     question: How can I get community support?
-  - answer: Absolutely—just purchase a license **[here](https://purchase.aspose.com/buy)**
+  - answer: Absolutely—just purchase a license **[Aspose.Zip purchase page](https://purchase.aspose.com/buy)**
       and you’re good to go.
     question: Can I use Aspose.Zip for .NET in a commercial project?
-  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/)**
+  - answer: Yes, you can obtain a temporary license **[Aspose.Zip temporary license page](https://purchase.aspose.com/temporary-license/)**
       for short‑term evaluation or CI pipelines.
     question: Are temporary licenses available?
   type: FAQPage
@@ -92,10 +92,10 @@ These quantified claims illustrate why developers choose Aspose.Zip over legacy 
 Before we start coding, verify that you have the following ready:
 
 - **Visual Studio** – Any recent edition (Community, Professional, or Enterprise).  
-- **Aspose.Zip for .NET** – Download the latest package from the official site **[here](https://releases.aspose.com/zip/net/)**.  
+- **Aspose.Zip for .NET** – Download the latest package from the official site **[Aspose.Zip .NET download page](https://releases.aspose.com/zip/net/)**.  
 - **Resource Directory** – Create a folder on your machine that will hold the RAR file and the extraction output. We’ll refer to this as **Your Document Directory** in the snippets.  
 - **A RAR archive** – Use any `.rar` file you have, or create one with WinRAR/7‑Zip for testing.  
-- **Trial version** – You can grab a free trial **[here](https://releases.aspose.com/)** for evaluation before purchasing a license.
+- **Trial version** – You can grab a free trial **[Aspose.Zip free trial download](https://releases.aspose.com/)** for evaluation before purchasing a license.
 
 ## Import Namespaces
 
@@ -147,7 +147,7 @@ archive.ExtractToDirectory(dataDir + "DecompressRar_out");
 
 In just three concise steps, you've successfully **extract rar archive** contents to a folder you control. Adjust the file names and paths to match your project layout.
 
-## Common Pitfalls & Tips
+## Common pitfalls & tips
 
 `Path.Combine` combines multiple strings into a single path using the appropriate directory separator for the operating system.  
 `archive.Entries` provides a collection of all entries (files and folders) contained in the opened RAR archive.  
@@ -157,22 +157,22 @@ In just three concise steps, you've successfully **extract rar archive** content
 - **Large archives** – If you need progress reporting, iterate over `archive.Entries` and call `ExtractToFile` on each entry individually.  
 - **Password‑protected RARs** – Aspose.Zip supports encrypted archives; supply the password when constructing `RarArchive` (e.g., `new RarArchive(stream, password)`).
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Q: Can I use Aspose.Zip for .NET with other archive formats?**  
 A: Yes, the library also supports ZIP files and provides a unified API for both formats, allowing you to handle multiple archive types with the same code base.
 
 **Q: Is there a trial version available?**  
-A: Yes, you can grab a free trial **[here](https://releases.aspose.com/)** for evaluation before purchasing a license.
+A: Yes, you can grab a free trial **[Aspose.Zip free trial download](https://releases.aspose.com/)** for evaluation before purchasing a license.
 
 **Q: How can I get community support?**  
 A: Visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)** for peer‑to‑peer help, sample snippets, and troubleshooting tips.
 
 **Q: Can I use Aspose.Zip for .NET in a commercial project?**  
-A: Absolutely—just purchase a license **[here](https://purchase.aspose.com/buy)** and you’re good to go.
+A: Absolutely—just purchase a license **[Aspose.Zip purchase page](https://purchase.aspose.com/buy)** and you’re good to go.
 
 **Q: Are temporary licenses available?**  
-A: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/)** for short‑term evaluation or CI pipelines.
+A: Yes, you can obtain a temporary license **[Aspose.Zip temporary license page](https://purchase.aspose.com/temporary-license/)** for short‑term evaluation or CI pipelines.
 
 **Q: What if I need to extract only specific files?**  
 A: Iterate over `archive.Entries` and call `ExtractToFile` on the entries you need, skipping the rest.
@@ -192,8 +192,9 @@ A: Yes, Aspose.Zip for .NET runs on .NET Core and .NET 5+ across Windows, Linu
 - [Extract RAR to Folder with Aspose.Zip for .NET](/zip/net/rar-archive/decrypt-rar-archive/)
 - [How to decompress rar entry .net using Aspose.Zip for .NET](/zip/net/rar-archive/decompress-rar-entry/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
-{{< blocks/products/products-backtop-button >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

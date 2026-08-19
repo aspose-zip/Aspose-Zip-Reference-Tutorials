@@ -100,7 +100,7 @@ Aspose.Zip provides a high‑performance, memory‑efficient solution for creati
 
 ## Prerequisites
 
-- **Aspose.Zip for .NET** – download it [here](https://releases.aspose.com/zip/net/).  
+- **Aspose.Zip for .NET** – download it [Aspose.Zip for .NET release page](https://releases.aspose.com/zip/net/).  
 - **Document Directory** – a folder that contains the files you want to archive.  
 - **Basic C# knowledge** – familiarity with .NET project setup will help.
 
@@ -118,20 +118,20 @@ These statements give you access to the `CpioArchive` class and file‑system ut
 `CpioArchive` is the Aspose.Zip class that represents a CPIO archive in memory.  
 Load the source folder, create a `CpioArchive`, add every file with a single call, and save the result. The entire operation can be performed in fewer than 20 lines of code and runs in linear time relative to the total file size.
 
-### Step 1: Set Your Document Directory
+### Step 1: set your document directory
 
 Define the path that points to the folder you want to archive. Replace `"Your Document Directory"` with the actual location on your machine.
 
 `string dataDir = @"Your Document Directory";`
 
-### Step 2: Create and Populate the Archive
+### Step 2: create and populate the archive
 
 The `CpioArchive` class is Aspose.Zip's top‑level object that represents a CPIO archive in memory. Its `CreateEntries` method scans the specified folder recursively and adds each file to the archive.
 
 `CpioArchive archive = new CpioArchive();`  
 `archive.CreateEntries(dataDir);`
 
-### Step 3: Save the Archive to Disk
+### Step 3: save the archive to disk
 
 Call the `Save` method to write the archive file. In this example the archive is saved as `archive.cpio`.
 
@@ -148,7 +148,7 @@ Call the `Save` method to write the archive file. In this example the archive is
 - **`Save`** – Writes the in‑memory archive to a physical file; you can also use `Save(Stream)` to stream the archive directly to a response.  
 - **Performance** – The library processes files in a streaming fashion, so even archives larger than 2 GB are handled without loading the entire content into memory.
 
-## Common Issues and Solutions
+## Common issues and solutions
 
 | Issue | Cause | Fix |
 |-------|-------|-----|
@@ -156,7 +156,7 @@ Call the `Save` method to write the archive file. In this example the archive is
 | **Access denied** | Application lacks permission to read source files or write the archive. | Run the app with appropriate privileges or adjust folder ACLs. |
 | **Large files cause OutOfMemory** | Loading very large files into memory at once. | Process files in streams or split the archive into multiple parts. |
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Q: What happens if the source directory contains sub‑folders?**  
 A: `CreateEntries` recursively scans sub‑folders, adding their files to the archive automatically.
@@ -183,7 +183,7 @@ You now know **how to compress files** using Aspose.Zip for .NET, from setting u
 **Tested With:** Aspose.Zip for .NET 24.12 (latest release)  
 **Author:** Aspose
 
-{{< blocks/products/products-backtop-button >}}
+
 
 ## Related Tutorials
 
@@ -192,9 +192,9 @@ You now know **how to compress files** using Aspose.Zip for .NET, from setting u
 - [Aspose.Zip for .NET - Password Protect Zip Archive & Store Multiple Files Without Compression](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
 
 
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+
+
+
 
 ```csharp
 using System;
@@ -215,3 +215,10 @@ using (CpioArchive archive = new CpioArchive())
 //ExEnd: CompressFile
 Console.WriteLine("Successfully Compressed Files");
 ```
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
