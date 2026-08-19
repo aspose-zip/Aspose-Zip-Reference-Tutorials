@@ -1,9 +1,68 @@
 ---
-date: 2026-02-23
-description: 学习如何使用 Aspose.Zip for .NET 在 ASP.NET 中创建 ZIP 压缩包。一步步指南，帮助您在 .NET 项目中高效压缩和解压目录。
-linktitle: Create zip archive asp.net – Directory and Folder Compression
+date: 2026-07-09
+description: 了解如何在 ASP.NET 中使用 Aspose.Zip for .NET 添加密码 Zip，进行 zip 文件夹加密和目录压缩。针对 .NET
+  项目的分步指南。
+keywords:
+- add password zip
+- zip folder encryption
+- compress entire directory
+- .net zip encryption
+- zip directory .net
+lastmod: 2026-07-09
+linktitle: 在 ASP.NET 中添加密码 Zip – 目录和文件夹压缩
+og_description: 在 ASP.NET 中使用 Aspose.Zip 添加密码 Zip。了解 zip 文件夹加密、压缩整个目录以及高效管理 zip 存档。
+og_image_alt: 'Developer guide: add password zip in ASP.NET with Aspose.Zip'
+og_title: 在 ASP.NET 中添加密码 Zip – 目录和文件夹压缩
+schemas:
+- author: Aspose
+  dateModified: '2026-07-09'
+  description: Learn how to add password zip in ASP.NET using Aspose.Zip for .NET,
+    with zip folder encryption and directory compression. Step‑by‑step guide for .NET
+    projects.
+  headline: Add Password Zip in ASP.NET – Directory & Folder Compression
+  type: TechArticle
+- description: Learn how to add password zip in ASP.NET using Aspose.Zip for .NET,
+    with zip folder encryption and directory compression. Step‑by‑step guide for .NET
+    projects.
+  name: Add Password Zip in ASP.NET – Directory & Folder Compression
+  steps:
+  - name: '**Instantiate `ZipPackage`** – this object will hold the archive you are
+      building.'
+    text: '**Instantiate `ZipPackage`** – this object will hold the archive you are
+      building.'
+  - name: '**Add the target directory** using `AddFolder`, which automatically includes
+      sub‑folders and files.'
+    text: '**Add the target directory** using `AddFolder`, which automatically includes
+      sub‑folders and files.'
+  - name: '**Configure encryption** (optional) by setting `ZipPassword` and `EncryptionAlgorithm`.'
+    text: '**Configure encryption** (optional) by setting `ZipPassword` and `EncryptionAlgorithm`.'
+  - name: '**Save the archive** to a `.zip` file.'
+    text: '**Save the archive** to a `.zip` file.'
+  type: HowTo
+- questions:
+  - answer: Yes. When saving the archive, provide a `ZipPassword` and select `EncryptionAlgorithm.Aes256`
+      to secure the file.
+    question: Can I create a password‑protected zip archive using Aspose.Zip?
+  - answer: Absolutely. You can work with `FileStream` objects, allowing you to compress
+      or extract files of any size efficiently.
+    question: Does Aspose.Zip support streaming large files without loading them entirely
+      into memory?
+  - answer: Use the `SplitArchive` method to define a maximum part size; Aspose.Zip
+      will automatically create sequential split files.
+    question: What if I need to split a large archive into multiple parts?
+  - answer: Yes. Open the archive in `Update` mode and call `AddFile` or `AddFolder`
+      to append new content.
+    question: Is it possible to add files to an existing zip archive?
+  - answer: Aspose.Zip for .NET supports .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1,
+      and .NET 5–10.
+    question: Which .NET runtimes are officially supported?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: 创建 zip 存档 asp.net – 目录和文件夹压缩
+tags:
+- zip archive
+- Aspose.Zip
+- .NET compression
+title: 在 ASP.NET 中添加密码 Zip – 目录和文件夹压缩
 url: /zh/net/directory-and-folder-compression/
 weight: 22
 ---
@@ -12,94 +71,101 @@ weight: 22
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 创建 zip archive asp.net – 目录和文件夹压缩
+# 在 ASP.NET 中添加密码 zip – 目录与文件夹压缩
 
-## 简介
+## 介绍
 
-在现代 .NET 开发中，**create zip archive asp.net**‑style 文件对于降低存储成本、加快部署速度以及简化文件分发至关重要。本教程展示如何使用 Aspose.Zip for .NET 压缩整个目录，并在需要时进行解压。无论是构建 CI/CD 流水线、交付更新包，还是仅仅整理日志文件，掌握 .NET 中的 zip archive 创建都能让您的项目更高效、更专业。
+在现代 .NET 开发中，**add password zip** 功能对于保护敏感数据、降低存储成本以及简化文件分发至关重要。本教程将指导您使用 Aspose.Zip for .NET 对整个目录进行压缩、应用 zip 文件夹加密，并在以后进行解压。无论您是在构建 CI/CD 流水线、交付更新包，还是仅仅整理日志文件，掌握带密码保护的 zip 归档创建都能让您的项目更安全、更专业。
 
-## 快速解答
-- **我应该使用哪个库？** Aspose.Zip for .NET 提供了一个简单、高性能的 API 用于 zip archive 创建。  
-- **我可以用一次调用压缩整个文件夹吗？** 是的 – Aspose.Zip 可以在单个方法中递归压缩目录。  
-- **是否支持密码保护？** 当然；在创建 zip archive 时可以添加加密。  
-- **开发是否需要许可证？** 免费试用可用于评估；生产环境需要商业许可证。  
-- **兼容哪些 .NET 版本？** .NET Framework 4.5+、.NET Core 3.1+、.NET 5/6/7 及更高版本。
+## 快速答复
+- **哪个库可以添加密码 zip？** Aspose.Zip for .NET 只需几行代码即可实现高性能的 zip 文件夹加密。  
+- **我可以一次调用压缩整个目录吗？** 是的 — `AddFolder` 会递归包含子文件夹和文件。  
+- **支持 AES‑256 加密吗？** 当然；设置 `ZipPassword` 并选择 `EncryptionAlgorithm.Aes256`。  
+- **生产环境需要许可证吗？** 免费试用可用于评估；生产使用需购买商业许可证。  
+- **支持哪些 .NET 运行时？** .NET Framework 2.0–4.8.1、.NET Core 2.0–3.1 和 .NET 5–10。
 
-## 什么是“创建 ASP.NET ZIP 压缩包”？
-在 ASP.NET 中创建 zip archive 指的是将一个或多个文件和文件夹打包成单个 *.zip* 容器，以便更高效地存储、传输或下载。zip 格式被普遍支持，使其在跨平台场景下非常理想。
+## 什么是 add password zip？
+`add password zip` 是在创建 ZIP 归档的同时嵌入加密数据（通常为 AES‑256）的过程，只有知道密码的用户才能打开该归档。这可在存储或传输过程中保护机密文件，并且与任何标准 ZIP 工具完全兼容。
 
-## 为什么选择 Aspose.Zip for .NET？
-- **性能优化** 的压缩算法，能够以最小的内存开销处理大型目录。  
-- **丰富的功能集** – 加密、分卷压缩、自定义压缩级别以及与流的无缝集成。  
-- **零依赖** – 开箱即用，无需外部工具如 7‑Zip 或 WinRAR。  
-- **一致的 API** 跨 .NET Framework、.NET Core 和 .NET 5+。
+## 为什么使用 Aspose.Zip for .NET？
+Aspose.Zip 支持 **30 多种归档和压缩格式**，能够处理高达 **10 GB** 的文件而无需将整个文件加载到内存中，并提供内置的 Zip64、分卷归档和 AES‑256 加密。其零依赖设计意味着您无需使用 7‑Zip 等外部工具，且 API 在 .NET Framework、.NET Core 和 .NET 5‑10 上保持一致。
 
-## 前提条件
-- Visual Studio 2022（或任何支持 .NET 6+ 的 IDE）  
+## 前置条件
+- Visual Studio 2022（或任何支持 .NET 6+ 的 IDE）  
 - Aspose.Zip for .NET NuGet 包 (`Install-Package Aspose.Zip`)  
-- 对 C# 和文件系统操作有基本了解  
+- 基本了解 C# 文件系统操作  
 
-## 如何使用 Aspose.Zip 压缩 .NET 文件夹
-1. **实例化 `ZipPackage` 对象** – 这代表您即将创建的压缩包。  
-2. **使用 `AddFolder` 方法添加目标目录**，它会自动包含子文件夹和文件。  
-3. **保存压缩包** 到指定位置，使用 `.zip` 扩展名。
+## 如何在 ASP.NET 中添加密码 zip？
+`ZipPackage` 是 Aspose.Zip 的主要类，用于在内存中表示 ZIP 归档。  
+要创建受密码保护的归档，首先加载要压缩的文件夹，然后实例化一个表示内存中 ZIP 文件的 `ZipPackage` 对象。将 `ZipPassword` 属性设置为所需密码，并可选择如 AES‑256 等加密算法。最后，调用 `Save` 将加密的 zip 写入磁盘。
 
-> *注意：* 这些步骤的实际 C# 代码已在链接的 “Effortless Directory Compression” 教程页面中提供。
+## 如何使用 Aspose.Zip 在 .NET 中压缩文件夹
+`ZipPackage` 是 Aspose.Zip 的主要类，用于在内存中表示 ZIP 归档。  
+`AddFolder` 将目录及其内容递归添加到归档中。  
+使用 Aspose.Zip 压缩目录非常简单。首先创建一个 `ZipPackage` 实例，然后使用其 `AddFolder` 方法将目标文件夹及所有子文件夹包含进去。您可以在保存为 .zip 文件之前配置压缩级别和加密。
 
-## 添加密码保护的 .NET ZIP 压缩包
-如果需要保护内容，只需在保存压缩包时提供 `ZipPassword` 并选择如 AES‑256 的加密算法。这将创建一个 **password protected zip .net** 文件，只有授权用户才能打开。
+1. **实例化 `ZipPackage`** – 该对象将保存您正在构建的归档。  
+2. **添加目标目录** 使用 `AddFolder`，它会自动包含子文件夹和文件。  
+3. **配置加密**（可选），通过设置 `ZipPassword` 和 `EncryptionAlgorithm`。  
+4. **保存归档** 为 `.zip` 文件。
 
-## 使用 Aspose.Zip for .NET 解压缩文件夹
-当目录已压缩后，接下来的自然步骤是解压它们。Aspose.Zip for .NET 使提取同样简单：
+> *注意:* 实际的 C# 代码请参见链接的 “Effortless Directory Compression” 教程页面。
 
-- 使用 `ZipPackage` 以读取模式打开 zip 文件。  
-- 调用 `ExtractAll` 或 `ExtractFolder` 以恢复原始结构。  
+## 添加密码保护的 .NET zip 归档
+在保存归档时提供 `ZipPassword` 并选择 `EncryptionAlgorithm.Aes256`。这将创建一个 **password‑protected zip .NET** 文件，只有授权用户才能打开。加密是按文件逐个应用的，保留原始文件夹结构。
 
-这确保您能够可靠地检索原始文件而不会丢失数据。
+## 使用 Aspose.Zip for .NET 解压文件夹
+使用 `ZipPackage` 以读取模式打开 zip 文件，然后调用 `ExtractAll` 或 `ExtractFolder` 以恢复原始层次结构。Aspose.Zip 以流式方式处理数据，即使是多千兆字节的归档也能在不耗尽内存的情况下解压。
 
-## 常见问题及技巧
-- **大文件：** 处理大于 2 GB 的文件时，启用 **Zip64** 模式以避免大小限制。  
-- **路径长度问题：** 如果文件夹层级超过 Windows 的 260 字符限制，使用 `UseLongFileNames` 属性。  
-- **性能提示：** 将 `CompressionLevel` 设置为 `Fast` 以快速构建，或在需要最小体积时设置为 `Maximum`。
+## 常见陷阱与技巧
+- **大文件：** 当处理大于 2 GB 的文件时，启用 `Zip64` 以避免大小限制。  
+- **路径长度：** 如果文件夹层次结构超过 Windows 的 260 字符限制，请设置 `UseLongFileNames = true`。  
+- **性能：** 使用 `CompressionLevel.Fast` 进行快速构建，或在需要最小归档大小时使用 `CompressionLevel.Maximum`。
 
-## 实际应用案例
-- **CI/CD 流水线：** 将构建产物打包成 zip archive，然后发布到 NuGet 源或制品库。  
-- **日志轮转：** 每晚压缩旧日志文件夹以节省磁盘空间。  
-- **软件更新：** 将更新文件打包成单个压缩包，便于下载和安装。
+## 实际使用案例
+- **CI/CD 流水线：** 在发布到制品库之前，将构建产物打包成 zip 归档。  
+- **日志轮转：** 压缩每晚的日志文件夹以节省磁盘空间，同时保持密码保护。  
+- **软件更新：** 将更新文件打包成单个加密归档，以实现安全下载和安装。
 
 ## 目录和文件夹压缩教程
-### [Effortless Directory Compression with Aspose.Zip for .NET](./compress-directory/)
-学习使用 Aspose.Zip for .NET 轻松压缩目录。通过高效优化存储空间提升您的 .NET 开发。
+### [使用 Aspose.Zip for .NET 轻松压缩目录](./compress-directory/)
+学习使用 Aspose.Zip for .NET 轻松压缩目录。通过高效优化存储空间，提升您的 .NET 开发。
 
-### [Decompressing a Folder with Aspose.Zip for .NET](./decompress-folder/)
+### [使用 Aspose.Zip for .NET 解压文件夹](./decompress-folder/)
 掌握使用 Aspose.Zip for .NET 解压文件夹的技巧。在项目中轻松处理压缩任务。
 
-## 常见问题解答
+## 常见问题
 
-**Q: 我可以使用 Aspose.Zip 创建受密码保护的 zip archive 吗？**  
-A: 是的。保存压缩包时，您可以提供 `ZipPassword` 并选择如 AES‑256 的加密算法。
+**Q: 我可以使用 Aspose.Zip 创建密码保护的 zip 归档吗？**  
+A: 是的。保存归档时，提供 `ZipPassword` 并选择 `EncryptionAlgorithm.Aes256` 以保护文件。
 
-**Q: Aspose.Zip 是否支持在不将大型文件完全加载到内存的情况下进行流式处理？**  
-A: 当然。您可以使用 `FileStream` 对象，高效地压缩或提取任意大小的文件。
+**Q: Aspose.Zip 是否支持在不将文件完整加载到内存中的情况下流式处理大文件？**  
+A: 当然。您可以使用 `FileStream` 对象，高效地压缩或解压任意大小的文件。
 
-**Q: 如果需要将大型压缩包拆分为多个部分怎么办？**  
-A: 使用 `SplitArchive` 方法定义最大分卷大小；Aspose.Zip 会自动创建顺序分卷文件。
+**Q: 如果需要将大归档拆分为多个部分怎么办？**  
+A: 使用 `SplitArchive` 方法定义最大分卷大小；Aspose.Zip 将自动创建顺序分卷文件。
 
-**Q: 是否可以向已有的 zip archive 添加文件？**  
-A: 可以。以 `Update` 模式打开压缩包，然后调用 `AddFile` 或 `AddFolder` 添加新内容。
+**Q: 是否可以向现有 zip 归档添加文件？**  
+A: 可以。以 `Update` 模式打开归档，然后调用 `AddFile` 或 `AddFolder` 追加新内容。
 
 **Q: 官方支持哪些 .NET 运行时？**  
-A: Aspose.Zip for .NET 支持 .NET Framework 4.5+、 .NET Core 3.1+ 和 .NET 5/6/7+。
+A: Aspose.Zip for .NET 支持 .NET Framework 2.0–4.8.1、.NET Core 2.0–3.1 和 .NET 5–10。
 
 ---
 
-**最后更新：** 2026-02-23  
+**最后更新：** 2026-07-09  
 **测试环境：** Aspose.Zip for .NET 24.11  
 **作者：** Aspose  
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
 
+## 相关教程
+
+- [为 Zip 添加密码 – Aspose.Zip for .NET 指南](/zip/net/password-protection-and-encryption/)
+- [使用 Aspose.Zip 创建带 AES 加密的密码保护 ZIP 文件](/zip/net/password-protection-and-encryption/password-protect-with-aes/)
+- [如何使用 Aspose.Zip for .NET 压缩文件夹](/zip/net/directory-and-folder-compression/compress-directory/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
