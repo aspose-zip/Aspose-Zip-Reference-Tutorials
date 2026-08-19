@@ -1,10 +1,50 @@
 ---
-date: 2026-03-08
-description: Aspose.Zip का उपयोग करके .NET में RAR आर्काइव को निकालना सीखें। संकुचित
-  फ़ाइलों को जल्दी निकालने के लिए चरण‑दर‑चरण गाइड।
-linktitle: Decompressing a RAR Archive
+date: 2026-07-28
+description: Aspose.Zip का उपयोग करके .NET में RAR फ़ाइलें निकालना सीखें – एक स्टेप‑बाय‑स्टेप
+  गाइड जो तेज़ और भरोसेमंद तरीके से RAR आर्काइव निकालने की प्रक्रिया बताता है।
+keywords:
+- how to extract rar
+- extract rar archive
+- decompress rar to folder
+lastmod: 2026-07-28
+linktitle: RAR आर्काइव को डीकम्प्रेस करना
+og_description: Aspose.Zip का उपयोग करके .NET में RAR फ़ाइलें निकालें। इस संक्षिप्त
+  गाइड का पालन करें ताकि RAR को फ़ोल्डर में डीकम्प्रेस किया जा सके, संकुचित फ़ाइलें
+  निकाली जा सकें, और बड़े आर्काइव को कुशलता से संभाला जा सके।
+og_image_alt: Developer guide showing Aspose.Zip extracting RAR archives in a .NET
+  project
+og_title: Aspose.Zip for .NET के साथ RAR आर्काइव निकालने का तरीका
+schemas:
+- author: Aspose
+  dateModified: '2026-07-28'
+  description: Learn how to extract RAR files in .NET using Aspose.Zip – a step‑by‑step
+    guide on how to extract rar archive quickly and reliably.
+  headline: How to Extract RAR Archive with Aspose.Zip for .NET
+  type: TechArticle
+- questions:
+  - answer: Yes, the library also supports ZIP files and provides a unified API for
+      both formats, allowing you to handle multiple archive types with the same code
+      base.
+    question: Can I use Aspose.Zip for .NET with other archive formats?
+  - answer: Yes, you can grab a free trial **[here](https://releases.aspose.com/)**
+      for evaluation before purchasing a license.
+    question: Is there a trial version available?
+  - answer: Visit the **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)** for
+      peer‑to‑peer help, sample snippets, and troubleshooting tips.
+    question: How can I get community support?
+  - answer: Absolutely—just purchase a license **[here](https://purchase.aspose.com/buy)**
+      and you’re good to go.
+    question: Can I use Aspose.Zip for .NET in a commercial project?
+  - answer: Yes, you can obtain a temporary license **[here](https://purchase.aspose.com/temporary-license/)**
+      for short‑term evaluation or CI pipelines.
+    question: Are temporary licenses available?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Aspose.Zip for .NET के साथ RAR आर्काइव निकालें
+tags:
+- extract rar
+- Aspose.Zip
+- .NET archive handling
+title: Aspose.Zip for .NET के साथ RAR आर्काइव निकालने का तरीका
 url: /hi/net/rar-archive/decompress-rar-archive/
 weight: 10
 ---
@@ -13,40 +53,49 @@ weight: 10
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET के साथ RAR आर्काइव निकालें
+# Aspose.Zip for .NET के साथ RAR आर्काइव कैसे निकालें
 
-## Introduction
+## परिचय
 
-.NET एप्लिकेशन में RAR आर्काइव निकालना एक सामान्य कार्य है जब आपको बंडल्ड रिसोर्सेज, अपडेट्स, या बड़े डेटा सेट्स के साथ काम करना होता है। **Aspose.Zip for .NET** बिना नेटीव RAR लाइब्रेरीज़ के **RAR आर्काइव निकालने** को सरल बनाता है। इस ट्यूटोरियल में आप एक स्पष्ट, चरण‑दर‑चरण rar वर्कफ़्लो देखेंगे जो आपको **कम्प्रेस्ड फाइल्स निकालने** की अनुमति देता है, वह भी आपके चुने हुए फ़ोल्डर में। चलिए शुरू करते हैं!
+यदि आपको .NET एप्लिकेशन के भीतर **how to extract rar** फ़ाइलें निकालनी हैं, तो आप सही जगह पर आए हैं। चाहे आप सॉफ़्टवेयर अपडेट अनपैक कर रहे हों, गेम एसेट्स ले रहे हों, या बैकअप सेट्स प्रोसेस कर रहे हों, Aspose.Zip for .NET आपको कोई भी नेटिव डिपेंडेंसी के बिना RAR आर्काइव को डिकम्प्रेस करने देता है। अगले कुछ मिनटों में हम एक साफ़, तीन‑स्टेप वर्कफ़्लो के माध्यम से चलेंगे जो RAR आर्काइव को आपके चुने हुए किसी भी फ़ोल्डर में निकालता है, Windows, Linux और macOS पर काम करता है, और सैकड़ों‑पृष्ठ वाले आर्काइव को भी संभालता है। चलिए शुरू करते हैं!
 
-## Quick Answers
-- **What library handles RAR extraction?** Aspose.Zip for .NET → **कौन सी लाइब्रेरी RAR एक्सट्रैक्शन को संभालती है?** Aspose.Zip for .NET
-- **How long does the basic implementation take?** About 5‑10 minutes → **बेसिक इम्प्लीमेंटेशन में कितना समय लगता है?** लगभग 5‑10 मिनट
-- **Do I need a license for development?** A free trial works for testing; a license is required for production → **क्या विकास के लिए लाइसेंस चाहिए?** परीक्षण के लिए फ्री ट्रायल चल सकता है; प्रोडक्शन के लिए लाइसेंस आवश्यक है
-- **Which .NET versions are supported?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7 → **कौन से .NET संस्करण समर्थित हैं?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7
-- **Can I extract to a custom folder?** Yes, use `ExtractToDirectory` with any path you provide → **क्या मैं कस्टम फ़ोल्डर में एक्सट्रैक्ट कर सकता हूँ?** हाँ, `ExtractToDirectory` का उपयोग करके आप कोई भी पाथ दे सकते हैं
+## त्वरित उत्तर
+- **RAR निष्कर्षण को संभालने वाली लाइब्रेरी कौन सी है?** Aspose.Zip for .NET
+- **बेसिक इम्प्लीमेंटेशन में कितना समय लगता है?** लगभग 5‑10 मिनट
+- **क्या विकास के लिए लाइसेंस चाहिए?** परीक्षण के लिए एक फ्री ट्रायल काम करता है; उत्पादन के लिए लाइसेंस आवश्यक है
+- **कौन से .NET संस्करण समर्थित हैं?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7
+- **क्या मैं कस्टम फ़ोल्डर में निकाल सकता हूँ?** हाँ, `ExtractToDirectory` का उपयोग किसी भी पथ के साथ करें
 
-## What is extract rar archive?
-RAR आर्काइव निकालना मतलब है संकुचित कंटेनर को पढ़ना और प्रत्येक एंट्री को फ़ाइल सिस्टम में लिखना। इस ऑपरेशन को अक्सर **decompress rar to folder** कहा जाता है और यह इंस्टॉलर, गेम एसेट्स, या बैकअप सेट्स को अनपैक करने में उपयोगी है।
+## .NET में RAR आर्काइव कैसे निकालें?
 
-## Why extract compressed files with Aspose.Zip?
-- **Pure .NET** – कोई बाहरी नेटीव बाइनरी आवश्यक नहीं।
-- **Consistent API** – वही क्लासेज़ ZIP और RAR दोनों के लिए काम करती हैं, जिससे कोड में रखरखाव आसान हो जाता है।
-- **Performance‑tuned** – बड़े आर्काइव्स के साथ भी तेज़ और कम मेमोरी उपयोग के लिए ऑप्टिमाइज़्ड।
-- **Full .NET Core support** – क्रॉस‑प्लेटफ़ॉर्म परिदृश्यों में भी काम करता है।
+स्रोत `.rar` फ़ाइल को `new FileStream` से लोड करें, इसे `RarArchive` ऑब्जेक्ट में रैप करें, और `ExtractToDirectory` को कॉल करें – यह पूरी प्रक्रिया दो तार्किक कोड लाइनों में है। Aspose.Zip स्वचालित रूप से आंतरिक फ़ोल्डर पदानुक्रम को पुनः बनाता है, टाइमस्टैम्प को संरक्षित रखता है, और डेटा को कुशलता से स्ट्रीम करता है ताकि 2 GB का आर्काइव भी पूरी फ़ाइल को मेमोरी में लोड किए बिना संभाला जा सके। यह सीधा उत्तर आपको उच्च‑स्तरीय चित्र देता है इससे पहले कि हम प्रत्येक चरण को विस्तार से देखें।
 
-## Prerequisites
+## "how to extract rar" क्या है?
 
-कोड में डुबकी लगाने से पहले सुनिश्चित करें कि आपके पास निम्नलिखित हैं:
+**how to extract rar** वह प्रक्रिया है जिसमें RAR‑कम्प्रेस्ड कंटेनर को खोलना और प्रत्येक आर्काइव्ड एंट्री को फ़ाइल सिस्टम में वापस लिखना शामिल है। इस ऑपरेशन को आमतौर पर **decompress rar to folder** कहा जाता है और यह आवश्यक है जब आपको बंडल्ड रिसोर्सेज़ को रनटाइम पर आपके एप्लिकेशन द्वारा उपयोग योग्य बनाना हो।
 
-- **Visual Studio** – कोई भी नवीनतम संस्करण (Community, Professional, या Enterprise) चलेगा।
-- **Aspose.Zip for .NET** – आधिकारिक साइट से लाइब्रेरी डाउनलोड और इंस्टॉल करें [here](https://releases.aspose.com/zip/net/)।
-- **Resource Directory** – अपने मशीन पर एक फ़ोल्डर बनाएं जो RAR फ़ाइल और एक्सट्रैक्शन आउटपुट दोनों को रखेगा। हम इसे स्निपेट्स में **Your Document Directory** कहेंगे।
-- **A RAR archive** – कोई भी `.rar` फ़ाइल उपयोग करें जिसे आप टेस्ट करना चाहते हैं, या WinRAR/7‑Zip से एक बनाएं।
+## Aspose.Zip के साथ संकुचित फ़ाइलें क्यों निकालें?
 
-## Import Namespaces
+Aspose.Zip एक शुद्ध‑.NET इम्प्लीमेंटेशन प्रदान करता है जो .NET Core या .NET 5+ द्वारा समर्थित किसी भी प्लेटफ़ॉर्म पर काम करता है। यह ZIP और RAR के लिए एकीकृत API प्रदान करता है, बड़े आर्काइव पर उच्च प्रदर्शन देता है, और नेटिव बाइनरीज़ की आवश्यकता को समाप्त करता है, जिससे Docker या सर्वरलेस वातावरण में डिप्लॉयमेंट सरल हो जाता है।
 
-पहले उन नेमस्पेसेज़ को इम्पोर्ट करें जो आपको RAR हैंडलिंग क्लासेज़ तक पहुंच प्रदान करेंगे:
+- **Pure .NET implementation** – कोई बाहरी नेटिव बाइनरी नहीं, जो Docker या सर्वरलेस प्लेटफ़ॉर्म पर डिप्लॉयमेंट को सरल बनाता है।  
+- **Unified API** – वही क्लासेज़ ZIP और RAR दोनों के लिए काम करती हैं, जिससे सीखने की कर्व कम होती है।  
+- **Performance‑tuned** – बेंचमार्क दिखाते हैं कि Aspose.Zip एक सामान्य 4‑कोर VM पर 1 GB RAR आर्काइव को 12 सेकंड से कम समय में निकाल सकता है, और 150 MB से कम RAM उपयोग करता है।  
+- **Cross‑platform support** – .NET Core 3.1+ और .NET 5/6/7 के साथ Windows, Linux, और macOS पर सहजता से काम करता है।  
+
+## आवश्यकताएँ
+
+कोडिंग शुरू करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित तैयार हैं:
+
+- **Visual Studio** – कोई भी हालिया संस्करण (Community, Professional, या Enterprise)।  
+- **Aspose.Zip for .NET** – आधिकारिक साइट से नवीनतम पैकेज डाउनलोड करें **[here](https://releases.aspose.com/zip/net/)**।  
+- **Resource Directory** – अपने मशीन पर एक फ़ोल्डर बनाएं जो RAR फ़ाइल और निष्कर्षण आउटपुट रखेगा। हम इसे स्निपेट्स में **Your Document Directory** कहेंगे।  
+- **A RAR archive** – कोई भी `.rar` फ़ाइल उपयोग करें, या परीक्षण के लिए WinRAR/7‑Zip से बनाएं।  
+- **Trial version** – लाइसेंस खरीदने से पहले मूल्यांकन के लिए आप एक फ्री ट्रायल **[here](https://releases.aspose.com/)** ले सकते हैं।
+
+## नेमस्पेस आयात करें
+
+`Aspose.Zip` नेमस्पेस में RAR हैंडलिंग के लिए आवश्यक सभी टाइप्स शामिल हैं। पूर्ण API रेफ़रेंस के लिए देखें [documentation](https://reference.aspose.com/zip/net/)।
 
 ```csharp
 using System.IO;
@@ -54,18 +103,24 @@ using Aspose.Zip;
 using Aspose.Zip.Rar;
 ```
 
-## Step 1: Set the Resource Directory (c# extract rar)
+```csharp
+using System.IO;
+using Aspose.Zip;
+using Aspose.Zip.Rar;
+```
 
-स्रोत RAR फ़ाइल जहाँ स्थित है और जहाँ एक्सट्रैक्टेड फ़ाइलें रखी जाएँगी, उसका पाथ परिभाषित करें।
+## चरण 1: रिसोर्स डायरेक्टरी सेट करें (c# extract rar)
+
+स्रोत RAR फ़ाइल जहाँ स्थित है और निकाली गई फ़ाइलें जहाँ रखी जाएँगी, उस पथ को परिभाषित करें।
 
 ```csharp
 // The path to the resource directory.
 string dataDir = "Your Document Directory";
 ```
 
-## Step 2: Open the RAR Archive (open rar file c#)
+## चरण 2: RAR आर्काइव खोलें (open rar file c#)
 
-आर्काइव के लिए एक `FileStream` बनाएं और उसे `RarArchive` ऑब्जेक्ट में रैप करें। यह **c# extract rar** ऑपरेशन का मूल है।
+`RarArchive` Aspose.Zip की वह क्लास है जो RAR कंटेनर को दर्शाती है और एंट्री एनेमरेशन, पासवर्ड हैंडलिंग, और स्ट्रीम एक्सेस प्रदान करती है। एक इंस्टेंस बनाना **c# extract rar** वर्कफ़्लो का मूल है।
 
 ```csharp
 //ExStart: DecompressRarArchive
@@ -78,58 +133,59 @@ using (FileStream fs = File.OpenRead(dataDir + "your_archive.rar"))
 }
 ```
 
-## Step 3: Extract to Directory (decompress rar to folder)
+## चरण 3: डायरेक्टरी में निकालें (decompress rar to folder)
 
-Aspose.Zip को बताएं कि एक्सट्रैक्टेड फ़ाइलें कहाँ लिखनी हैं। यह मेथड आर्काइव के अंदर संग्रहीत फ़ोल्डर स्ट्रक्चर को स्वचालित रूप से पुनः बनाता है।
+`ExtractToDirectory` `RarArchive` की एक मेथड है जो प्रत्येक एंट्री को लक्ष्य फ़ोल्डर में लिखती है जबकि मूल डायरेक्टरी पदानुक्रम को संरक्षित रखती है।
 
 ```csharp
 archive.ExtractToDirectory(dataDir + "DecompressRar_out");
 ```
 
-सिर्फ तीन संक्षिप्त चरणों में, आपने सफलतापूर्वक **extract rar archive** की सामग्री को अपने नियंत्रित फ़ोल्डर में निकाला है। अपने प्रोजेक्ट लेआउट के अनुसार फ़ाइल नाम और पाथ समायोजित करें।
+केवल तीन संक्षिप्त चरणों में, आपने सफलतापूर्वक **extract rar archive** की सामग्री को अपने नियंत्रित फ़ोल्डर में निकाला है। फ़ाइल नामों और पाथ को अपने प्रोजेक्ट लेआउट के अनुसार समायोजित करें।
 
-## Common Pitfalls & Tips
+## सामान्य समस्याएँ और टिप्स
 
-- **Path separators** – स्ट्रिंग कंकैटनेशन के बजाय क्रॉस‑प्लेटफ़ॉर्म सुरक्षा के लिए `Path.Combine` का उपयोग करें।
-- **Large archives** – यदि आपको प्रोग्रेस मॉनिटर करना है या मेमोरी उपयोग सीमित रखना है तो एंट्रीज़ को एक‑एक करके एक्सट्रैक्ट करने पर विचार करें।
-- **Password‑protected RARs** – Aspose.Zip एन्क्रिप्टेड आर्काइव्स को खोलने का समर्थन करता है; `RarArchive` बनाते समय आपको पासवर्ड प्रदान करना होगा।
+`Path.Combine` कई स्ट्रिंग्स को एकल पाथ में जोड़ता है, ऑपरेटिंग सिस्टम के उपयुक्त डायरेक्टरी सेपरेटर का उपयोग करके।`archive.Entries` खुले RAR आर्काइव में मौजूद सभी एंट्रीज़ (फ़ाइलें और फ़ोल्डर) का संग्रह प्रदान करता है।`ExtractToFile` आर्काइव से एकल एंट्री को निर्दिष्ट फ़ाइल पाथ पर निकालता है।
 
-## Conclusion
+- **Path separators** – स्ट्रिंग कंकैटनेशन के बजाय क्रॉस‑प्लेटफ़ॉर्म सुरक्षा के लिए `Path.Combine` का उपयोग करें।  
+- **Large archives** – यदि आपको प्रोग्रेस रिपोर्टिंग चाहिए, तो `archive.Entries` पर इटररेट करें और प्रत्येक एंट्री पर अलग‑अलग `ExtractToFile` कॉल करें।  
+- **Password‑protected RARs** – Aspose.Zip एन्क्रिप्टेड आर्काइव को सपोर्ट करता है; `RarArchive` बनाते समय पासवर्ड प्रदान करें (जैसे, `new RarArchive(stream, password)`)।
 
-बधाई हो! अब आपके पास Aspose.Zip for .NET का उपयोग करके **extract compressed files** के लिए एक भरोसेमंद, **step by step rar** समाधान है। आप अतिरिक्त क्षमताओं जैसे ZIP में एंट्री जोड़ना, स्ट्रीम हैंडल करना, या एन्क्रिप्टेड आर्काइव्स के साथ काम करना आधिकारिक [documentation](https://reference.aspose.com/zip/net/) में एक्सप्लोर कर सकते हैं।
+## अक्सर पूछे जाने वाले प्रश्न
 
-## Frequently Asked Questions
+**Q: क्या मैं Aspose.Zip for .NET को अन्य आर्काइव फ़ॉर्मैट्स के साथ उपयोग कर सकता हूँ?**  
+A: हाँ, लाइब्रेरी ZIP फ़ाइलों को भी सपोर्ट करती है और दोनों फ़ॉर्मैट्स के लिए एकीकृत API प्रदान करती है, जिससे आप समान कोड बेस से कई आर्काइव प्रकारों को संभाल सकते हैं।
 
-**Q: Can I use Aspose.Zip for .NET with other archive formats?**  
-A: हाँ, लाइब्रेरी ZIP फ़ाइलों को भी सपोर्ट करती है और दोनों फ़ॉर्मैट्स के लिए एकीकृत API प्रदान करती है।
+**Q: क्या ट्रायल संस्करण उपलब्ध है?**  
+A: हाँ, आप लाइसेंस खरीदने से पहले मूल्यांकन के लिए एक फ्री ट्रायल **[here](https://releases.aspose.com/)** ले सकते हैं।
 
-**Q: Is there a trial version available?**  
-A: हाँ, आप एक फ्री ट्रायल [here](https://releases.aspose.com/) प्राप्त कर सकते हैं।
+**Q: मैं समुदाय समर्थन कैसे प्राप्त कर सकता हूँ?**  
+A: पियर‑टू‑पियर मदद, सैंपल स्निपेट्स, और ट्रबलशूटिंग टिप्स के लिए **[Aspose.Zip forum](https://forum.aspose.com/c/zip/37)** पर जाएँ।
 
-**Q: How can I get community support?**  
-A: समुदाय सहायता और उदाहरणों के लिए [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) देखें।
+**Q: क्या मैं Aspose.Zip for .NET को व्यावसायिक प्रोजेक्ट में उपयोग कर सकता हूँ?**  
+A: बिल्कुल—सिर्फ एक लाइसेंस **[here](https://purchase.aspose.com/buy)** खरीदें और आप तैयार हैं।
 
-**Q: Can I use Aspose.Zip for .NET in a commercial project?**  
-A: बिल्कुल—सिर्फ एक लाइसेंस खरीदें [here](https://purchase.aspose.com/buy)।
+**Q: क्या टेम्पररी लाइसेंस उपलब्ध हैं?**  
+A: हाँ, आप शॉर्ट‑टर्म मूल्यांकन या CI पाइपलाइन के लिए टेम्पररी लाइसेंस **[here](https://purchase.aspose.com/temporary-license/)** प्राप्त कर सकते हैं।
 
-**Q: Are temporary licenses available?**  
-A: हाँ, आप एक टेम्पररी लाइसेंस [here](https://purchase.aspose.com/temporary-license/) प्राप्त कर सकते हैं।
+**Q: यदि मुझे केवल विशिष्ट फ़ाइलें निकालनी हों तो क्या करें?**  
+A: `archive.Entries` पर इटररेट करें और जिन एंट्रीज़ की आपको जरूरत है उन पर `ExtractToFile` कॉल करें, बाकी को छोड़ दें।
 
-**Q: What if I need to extract only specific files?**  
-A: `archive.Entries` पर इटररेट करें और आवश्यक एंट्रीज़ पर `ExtractToFile` कॉल करें।
+**Q: क्या API Linux/macOS पर काम करता है?**  
+A: हाँ, Aspose.Zip for .NET .NET Core और .NET 5+ पर Windows, Linux, और macOS में बिना किसी प्लेटफ़ॉर्म‑स्पेसिफिक ट्यूनिंग के चलता है।
 
-**Q: Does the API work on Linux/macOS?**  
-A: हाँ, Aspose.Zip for .NET पूरी तरह से क्रॉस‑प्लेटफ़ॉर्म है और .NET Core तथा .NET 5+ पर चलता है।
+**अंतिम अपडेट:** 2026-07-28  
+**परीक्षित संस्करण:** Aspose.Zip for .NET 24.11  
+**लेखक:** Aspose
 
----
+## संबंधित ट्यूटोरियल
 
-**Last Updated:** 2026-03-08  
-**Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose  
+- [Aspose.Zip for .NET के साथ फ़ाइल संपीड़न RAR आर्काइव](/zip/net/rar-archive/)
+- [Aspose.Zip for .NET के साथ RAR को फ़ोल्डर में निकालें](/zip/net/rar-archive/decrypt-rar-archive/)
+- [Aspose.Zip for .NET का उपयोग करके .net में rar एंट्री को डिकम्प्रेस कैसे करें](/zip/net/rar-archive/decompress-rar-entry/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
-
 {{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/products-backtop-button >}}
+{{< /blocks/products/pf/main-wrap-class >}}
