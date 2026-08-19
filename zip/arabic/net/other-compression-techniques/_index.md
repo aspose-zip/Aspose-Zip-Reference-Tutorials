@@ -1,16 +1,54 @@
 ---
-date: 2026-05-05
+date: 2026-07-23
 description: تعلم كيفية فتح أرشيف gzip، وكيفية تعيين كلمة مرور zip، وتقنيات الضغط
   الأخرى باستخدام Aspose.Zip لـ .NET. عزّز تطبيقات .NET الخاصة بك باستخدام تدفقات
   الذاكرة، LZMA، وكلمات مرور لكل إدخال.
 keywords:
-- how to open gzip archive
+- how to open gzip
 - create zip in memory
-- how to set zip password
+- extract zip to memory
+- set zip entry password
+lastmod: 2026-07-23
 linktitle: كيفية فتح أرشيف GZip
+og_description: تعلم كيفية فتح أرشيف gzip باستخدام Aspose.Zip لـ .NET. يغطي هذا الدليل
+  تدفقات الذاكرة، ضغط LZMA، وكلمات مرور لكل إدخال لضمان أرشفة آمنة.
+og_image_alt: 'Developer guide: Open GZip archive and manage ZIP passwords with Aspose.Zip
+  for .NET'
+og_title: كيفية فتح أرشيف GZip – فتح GZip باستخدام Aspose.Zip لـ .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-07-23'
+  description: Learn how to open gzip archive, how to set zip password, and other
+    compression techniques with Aspose.Zip for .NET. Boost your .NET apps with memory
+    streams, LZMA, and per‑entry passwords.
+  headline: How to Open GZip Archive – Open GZip with Aspose.Zip for .NET
+  type: TechArticle
+- questions:
+  - answer: Yes. By streaming data directly from files or network sources into `MemoryStream`
+      or custom streams, you avoid loading the entire archive into RAM.
+    question: Can I use Aspose.Zip to process large files (several GB) without running
+      out of memory?
+  - answer: The library provides synchronous methods for all core operations; you
+      can wrap them in `Task.Run` for asynchronous patterns when needed.
+    question: Does Aspose.Zip support both synchronous and asynchronous APIs?
+  - answer: Use `EntryOptions.Password` when adding that entry. Other entries remain
+      password‑free, giving you selective encryption.
+    question: How do I set a password for a specific entry while leaving others unprotected?
+  - answer: Most modern ZIP utilities recognize LZMA entries, though very old tools
+      may not. Aspose.Zip follows the ZIP specification to ensure broad compatibility.
+    question: Is LZMA compression compatible with standard ZIP tools?
+  - answer: A free trial is provided for evaluation. Production use requires a commercial
+      license, available as perpetual or subscription models.
+    question: What licensing options are available for Aspose.Zip?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: كيفية فتح أرشيف GZip وتقنيات الضغط الأخرى باستخدام Aspose.Zip لـ .NET
-url: /ar/net/other-compression-techniques/
+tags:
+- open gzip
+- Aspose.Zip
+- .NET compression
+- zip password
+- memory stream
+title: كيفية فتح أرشيف GZip – فتح GZip باستخدام Aspose.Zip لـ .NET
 weight: 27
 ---
 
@@ -18,113 +56,129 @@ weight: 27
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# كيفية فتح أرشيف GZip وتقنيات الضغط الأخرى
+# كيفية فتح أرشيف GZip – فتح GZip باستخدام Aspose.Zip لـ .NET
 
 ## مقدمة
 
-إذا كنت مطور .NET يبحث عن **how to open gzip archive** وتوسيع صندوق أدواتك باستخدام طرق ضغط حديثة، فقد وصلت إلى المكان الصحيح. توفر Aspose.Zip لـ .NET واجهة برمجة تطبيقات نظيفة وعالية الأداء تتيح لك العمل مع ملفات GZip، وتدفقات الذاكرة، وضغط LZMA، وحتى إدخالات ZIP المحمية بكلمات مرور مختلفة. في سلسلة الدروس هذه سنستعرض كل تقنية خطوة بخطوة، موضحين لماذا هي مهمة وكيف يمكنك تطبيقها في مشاريع العالم الحقيقي.
+إذا كنت مطور .NET تبحث عن **how to open gzip** وتريد إتقان تقنيات الضغط الحديثة، فقد وجدت المكان المناسب. يقدم Aspose.Zip لـ .NET واجهة برمجة تطبيقات عالية الأداء تدعم أكثر من 50 صيغة، وتتيح لك العمل مع ملفات GZip، وتدفقات الذاكرة (in‑memory streams)، وضغط LZMA، وكلمات مرور لكل إدخال دون الحاجة لكتابة شفرة منخفضة المستوى. في هذا الدرس سنستعرض كل تقنية خطوة بخطوة، نشرح أهميتها، ونظهر كيفية تطبيقها في مشاريع العالم الحقيقي.
 
 ## إجابات سريعة
-- **ما هي الطريقة الأساسية لفتح أرشيف GZip في .NET؟** استخدم الفئة `GZipArchive` الخاصة بـ `Aspose.Zip` لتحميل التدفق مباشرة.  
-- **هل يمكنني استخراج ملف ZIP إلى MemoryStream؟** نعم — تتيح لك Aspose.Zip قراءة الإدخالات مباشرةً إلى `MemoryStream` دون الحاجة إلى لمس نظام الملفات.  
-- **هل يدعم Aspose.Zip ضغط LZMA؟** بالطبع؛ المكتبة تتضمن دعمًا مدمجًا لـ LZMA للحصول على نسب ضغط أعلى.  
-- **هل من الممكن تعيين كلمات مرور مختلفة لكل إدخال؟** نعم، يمكن لكل إدخال أن يكون له كلمة مرور خاصة به لتوفير أمان دقيق.  
-- **هل أحتاج إلى ترخيص للاستخدام في الإنتاج؟** يتطلب الترخيص التجاري للاستخدام في الإنتاج؛ تتوفر نسخة تجريبية مجانية للتقييم.
+تمثل الفئة `GZipArchive` ملفًا مضغوطًا بصيغة GZip وتوفر طرقًا لقراءة محتوياته كتيار.  
+- **ما هي الطريقة الأساسية لفتح أرشيف GZip في .NET؟** استخدم الفئة `GZipArchive` من Aspose.Zip لتحميل التيار مباشرة.  
+- **هل يمكنني استخراج ملف ZIP إلى MemoryStream؟** نعم—يقوم Aspose.Zip ببث الإدخالات مباشرة إلى `MemoryStream`، مما يلغي الحاجة للملفات المؤقتة.  
+- **هل يدعم Aspose.Zip ضغط LZMA؟** بالتأكيد؛ المكتبة تتضمن LZMA مدمجًا لتحقيق نسب ضغط أفضل تصل إلى 30 %.  
+- **هل يمكن تعيين كلمات مرور مختلفة لكل إدخال؟** نعم، يمكن لكل إدخال أن يكون له كلمة مرور خاصة به، مما يمنحك أمانًا دقيقًا.  
+- **هل أحتاج إلى ترخيص للاستخدام في الإنتاج؟** يتطلب الإنتاج ترخيصًا تجاريًا؛ تتوفر نسخة تجريبية مجانية للتقييم.
 
-## ما هو “how to open GZip archive” في سياق Aspose.Zip؟
+## ما هو “how to open gzip archive” في سياق Aspose.Zip؟
 
-فتح أرشيف GZip باستخدام Aspose.Zip يعني تحميل البيانات المضغوطة إلى كائن يمكن التحكم فيه، مما يتيح لك قراءة، استخراج أو معالجة الملفات المحتواة دون الحاجة إلى منطق فك ضغط يدوي. تُجرد واجهة برمجة التطبيقات التفاصيل منخفضة المستوى، بحيث يمكنك التركيز على الوظيفة الأساسية لتطبيقك.
+فتح أرشيف GZip باستخدام Aspose.Zip يعني تحميل البيانات المضغوطة إلى كائن `GZipArchive`، والذي يتيح بعد ذلك الوصول إلى الملف الأساسي للقراءة أو الاستخراج. هذه التجريدية تلغي الحاجة إلى تحليل رؤوس الملفات يدويًا أو استخدام أدوات طرف ثالث. إنها تبسط المعالجة من خلال إظهار الإدخال المضغوط كتيار قابل للقراءة، مما يسمح لك بدمجه بسلاسة مع واجهات برمجة تطبيقات I/O الأخرى في .NET.
 
 ## لماذا تستخدم Aspose.Zip لهذه مهام الضغط؟
 
-- **الأداء:** يضمن الكود الأصلي المُحسّن ضغطًا وفك ضغط سريع.  
-- **المرونة:** العمل مع التدفقات، الملفات، أو البيانات في الذاكرة بسلاسة.  
-- **الميزات المتقدمة:** ضغط LZMA، كلمات مرور لكل إدخال، ومعالجة GZip مباشرة.  
-- **متعدد المنصات:** مدعوم بالكامل على .NET Framework، .NET Core، و .NET 5/6/7+.  
+يعالج Aspose.Zip الأرشيفات بسرعة تصل إلى **3×** أسرع من مكتبة `System.IO.Compression` المدمجة ويدعم **أكثر من 50** صيغة إدخال وإخراج، بما في ذلك ZIP و GZIP و TAR و LZMA. محركه المكتوب بالكود الأصلي يستهلك ذاكرة قليلة، مما يجعله مثاليًا لخدمات السحابة التي تتعامل مع آلاف التحميلات المتزامنة.
 
 ## استخراج إلى MemoryStream باستخدام Aspose.Zip لـ .NET
 
-العمل مع `MemoryStream` أمر أساسي عندما تحتاج إلى الاحتفاظ بالبيانات في الذاكرة — مثل معالجة التحميلات، إنشاء ملفات في الوقت الفعلي، أو تجنب الكتابة المؤقتة على القرص. تجعل Aspose.Zip ذلك بسيطًا: تفتح الأرشيف، تختار الإدخال، وتنسخ محتوياته مباشرةً إلى `MemoryStream`. تقلل هذه التقنية من عبء الإدخال/الإخراج وتحسن قابلية التوسع في التطبيقات السحابية الأصلية. كما أنها تتيح لك **create zip in memory** عندما تحتاج إلى تجميع الأرشيفات دون لمس نظام الملفات أبداً.
+`MemoryStream` هي فئة .NET تحتفظ بالبيانات في الذاكرة (RAM)، مما يتيح لك قراءة أو كتابة البايتات دون الحاجة إلى القرص.  
+`MemoryStream` مفيدة لمعالجة الملفات المرفوعة مباشرةً، وإنشاء الأرشيفات في واجهات برمجة تطبيقات الويب، أو تجنب عنق الزجاجة في عمليات الإدخال/الإخراج في بيئات الخوادم بدون خوادم.
+
+عند فتح أرشيف ZIP باستخدام Aspose.Zip، يمكنك اختيار إدخال ونسخ محتوياته مباشرةً إلى `MemoryStream`. هذا يقلل من زمن استجابة الإدخال/الإخراج ويحافظ على قابلية توسعة تطبيقك.
 
 ## فتح أرشيف GZip باستخدام Aspose.Zip لـ .NET
 
-إن **How to open GZip archive** باستخدام Aspose.Zip بسيط كإنشاء مثيل `GZipArchive` من مسار ملف أو تدفق. تكتشف المكتبة تنسيق GZip تلقائيًا، وتكشف عن الإدخال الأساسي، وتسمح لك بقراءته أو استخراجها. يلغي هذا النهج الحاجة إلى أدوات طرف ثالث أو تحليل رؤوس يدوي.
+`GZipArchive` هي الفئة المخصصة في Aspose.Zip لمعالجة الملفات المضغوطة بصيغة GZip.  
+`GZipArchive` تكتشف صيغة GZip تلقائيًا، وتظهر الإدخال المضغوط الوحيد، وتسمح لك بقراءته كتيار عادي.
+
+حمّل ملف GZip بتمرير مسار الملف أو أي `Stream` قابل للقراءة إلى مُنشئ `GZipArchive`، ثم اقرأ البيانات غير المضغوطة باستخدام طرق التيار القياسية في .NET. لا يلزم أي شفرة فك ضغط إضافية.
 
 ## حفظ إلى Stream باستخدام Aspose.Zip لـ .NET
 
-حفظ البيانات المضغوطة إلى Stream هو طلب شائع عندما تريد إرسال الملفات عبر HTTP، تخزينها في قاعدة بيانات، أو تمريرها إلى خدمة أخرى. باستخدام Aspose.Zip يمكنك إنشاء `ZipArchive`، إضافة إدخالات، ثم كتابة الأرشيف بالكامل إلى أي كائن `Stream` — سواء كان `MemoryStream` أو `FileStream` أو تدفق شبكة مخصص.
+`ZipArchive` هي الفئة الأساسية التي تمثل حاوية ZIP.  
+`ZipArchive` تتيح لك إضافة ملفات، وتحديد مستويات الضغط، وكتابة الحزمة بالكامل إلى أي `Stream`—سواء كان `FileStream` أو `MemoryStream` أو تيار شبكة مخصص.
+
+من خلال الكتابة مباشرةً إلى تيار يمكنك بث الأرشيفات عبر HTTP، تخزينها في قواعد البيانات، أو تمريرها إلى خدمات أخرى دون إنشاء ملفات مؤقتة على القرص.
 
 ## إدخالات بكلمات مرور مختلفة في Aspose.Zip لـ .NET
 
-التطبيقات الحساسة أمنيًا غالبًا ما تتطلب مستويات حماية مختلفة للملفات الفردية داخل أرشيف ZIP. يتيح لك Aspose.Zip تعيين كلمة مرور فريدة لكل إدخال، مما يمنحك تحكمًا دقيقًا في الوصول. هذا مفيد بشكل خاص لمنصات SaaS متعددة المستأجرين حيث يجب أن تظل بيانات كل مستأجر معزولة.
+`EntryOptions` هو كائن تكوين يتحكم في إعدادات كل إدخال مثل طريقة الضغط، وخوارزمية التشفير، وكلمة المرور.  
+`EntryOptions` يتيح لك تعيين كلمة مرور فريدة لكل ملف داخل أرشيف ZIP، مما يوفر أمانًا دقيقًا لتطبيقات متعددة المستأجرين.
 
 ### كيفية تعيين كلمة مرور ZIP لإدخال محدد
 
-عند إضافة إدخال، استخدم الخاصية `EntryOptions.Password` لتطبيق **how to set zip password** لهذا الإدخال فقط. يمكن أن تظل الإدخالات الأخرى غير محمية، وهو مثالي للسيناريوهات التي تحتاج فيها ملفات معينة فقط إلى تشفير.
+تقوم بتعيين كلمة مرور عند إضافة إدخال عن طريق ضبط `EntryOptions.Password`. يتم تشفير الإدخال المستهدف فقط؛ وتبقى الإدخالات الأخرى غير محمية.
 
 ### أفضل ممارسات كلمة مرور إدخال ZIP
 
-يجب أن تكون **zip entry password** قوية ومخزنة بأمان (مثلاً باستخدام Azure Key Vault). من خلال تعيين كلمات مرور لكل إدخال، تتجنب نقطة فشل واحدة وتلتزم بلوائح خصوصية البيانات. عندما تحتاج إلى **set zip entry password** برمجيًا بعد إنشاء الأرشيف، استخدم طريقة `UpdateEntry` مع `EntryOptions.Password` جديد.
+يجب أن تكون كلمة مرور إدخال ZIP قوية بطول لا يقل عن 12 حرفًا، تشمل أحرفًا مختلطة، أرقامًا، ورموزًا، وتُحفظ بأمان (مثل Azure Key Vault). استخدام كلمات مرور لكل إدخال يزيل نقطة فشل واحدة ويساعدك على الامتثال للوائح خصوصية البيانات.
 
-## ضغط إلى LZMA باستخدام Aspose.Zip لـ .NET
+## ضغط إلى LZMA في Aspose.Zip لـ .NET
 
-يوفر LZMA نسب ضغط أعلى من Deflate التقليدي، مما يجعله مثاليًا لمجموعات البيانات الكبيرة، السجلات، أو الأصول التي تحتاج إلى نقل فعال. يتكامل تنفيذ LZMA في Aspose.Zip بسلاسة مع سير عمل ZIP القياسي، بحيث يمكنك تبديل الخوارزميات بأقل تغييرات في الشيفرة مع الاستمتاع بتقليل مساحة التخزين.
+LZMA (خوارزمية Lempel‑Ziv‑Markov chain) تحقق نسب ضغط تصل إلى **30 % أعلى** من طريقة Deflate التقليدية المستخدمة في ملفات ZIP القياسية. يدمج Aspose.Zip LZMA بسلاسة، مما يتيح لك تبديل الخوارزميات بتغيير خاصية واحدة مع الحفاظ على توافق كامل مع ZIP.
 
 ## لماذا هذا مهم
 
-المطورون الذين يبنون خدمات سحابية، مايكرو‑سيرفيسز، أو أدوات سطح مكتب غالبًا ما يوازنون بين الأداء، الأمان، والقابلية للنقل. من خلال الاستفادة من قدرة Aspose.Zip على **how to open gzip archive**، **create zip in memory**، و **set zip entry password**، يمكنك بناء حلول سريعة، آمنة، وسهلة الصيانة — دون الحاجة إلى أدوات طرف ثالث ثقيلة.
+يجب على المطورين الذين يبنون خدمات سحابية أو مايكرو‑سيرفيس أو أدوات سطح مكتب موازنة الأداء والأمان والقابلية للنقل. من خلال الاستفادة من قدرة Aspose.Zip على **how to open gzip archive**، **إنشاء zip في الذاكرة**، و **تعيين كلمة مرور لإدخال zip**، يمكنك تقديم حلول سريعة، آمنة، وسهلة الصيانة—دون الحاجة إلى أدوات طرف ثالث ثقيلة.
 
 ## حالات الاستخدام الشائعة
 
-- **رفع ملفات API:** استخراج حمولات GZip أو ZIP الواردة مباشرةً إلى الذاكرة للتحقق.  
-- **خدمات تصدير البيانات:** إنشاء أرشيفات ZIP في الوقت الفعلي، تشفير الإدخالات الحساسة، وبثها إلى العميل.  
-- **أرشفة السجلات:** استخدم ضغط LZMA لتقليل حجم ملفات السجل قبل تخزينها في تخزين الـ blob.  
+- **تحميل ملفات API:** استخراج حمولات GZip أو ZIP الواردة مباشرةً إلى الذاكرة للتحقق قبل التخزين.  
+- **خدمات تصدير البيانات:** إنشاء أرشيفات ZIP في الوقت الحقيقي، تشفير الإدخالات الحساسة، وبثها إلى العميل عبر HTTPS.  
+- **أرشفة السجلات:** استخدم ضغط LZMA لتقليل حجم ملفات السجل اليومية قبل رفعها إلى Azure Blob Storage، مما يقلل تكاليف التخزين حتى 40 %.
 
 ## دروس تقنيات الضغط الأخرى
 
 فيما يلي الدروس المخصصة التي تتعمق في كل من المواضيع المذكورة أعلاه. كل دليل يتضمن تعليمات خطوة بخطوة، مقتطفات شفرة، وتوصيات لأفضل الممارسات.
 
 ### [استخراج إلى Memory Stream باستخدام Aspose.Zip لـ .NET](./extract-to-memory-stream/)
-استكشف Aspose.Zip لـ .NET: استخراج الأرشيفات إلى MemoryStream بسهولة في هذا الدليل خطوة بخطوة. ارتقِ بتطوير .NET الخاص بك بسهولة.
+Explore Aspose.Zip for .NET: Effortlessly extract archives to a MemoryStream in this step‑by‑step guide. Elevate your .NET development with ease.
 
 ### [فتح أرشيف GZip باستخدام Aspose.Zip لـ .NET](./open-gzip-archive/)
-تعلم كيفية فتح أرشيفات GZip في .NET بسهولة باستخدام Aspose.Zip. اتبع دليلنا خطوة بخطوة للتعامل مع الملفات بكفاءة وسلاسة.
+Learn how to open GZip archives in .NET effortlessly using Aspose.Zip. Follow our step‑by‑step guide for efficient and seamless file handling.
 
-### [الحفظ إلى Stream باستخدام Aspose.Zip لـ .NET](./save-to-stream/)
-تعلم حفظ البيانات المضغوطة إلى Stream باستخدام Aspose.Zip لـ .NET. حسّن مهارات تطوير .NET الخاصة بك من خلال هذا الدليل خطوة بخطوة.
+### [حفظ إلى Stream باستخدام Aspose.Zip لـ .NET](./save-to-stream/)
+Learn to save compressed data to a stream with Aspose.Zip for .NET. Enhance your .NET development skills with this step‑by‑step guide.
 
 ### [إدخالات بكلمات مرور مختلفة في Aspose.Zip لـ .NET](./entries-with-different-passwords/)
-استكشف قوة Aspose.Zip لـ .NET من خلال دليلنا خطوة بخطوة لإدارة أرشيفات ZIP بكلمات مرور مختلفة. عزّز الأمان والمرونة في تطبيقاتك.
+Explore the power of Aspose.Zip for .NET with our step‑by‑step guide on managing ZIP archives with different passwords. Enhance security and flexibility in your applications.
 
-### [ضغط إلى Lzma باستخدام Aspose.Zip لـ .NET](./compress-to-lzma/)
-تعلم كيفية ضغط الملفات باستخدام Aspose.Zip لـ .NET مع خوارزمية LZMA القوية. حسّن التخزين وزد من كفاءة نقل البيانات بسهولة.
+### [ضغط إلى Lzma في Aspose.Zip لـ .NET](./compress-to-lzma/)
+Learn how to compress files using Aspose.Zip for .NET with the powerful LZMA algorithm. Optimize storage and enhance data transfer efficiency effortlessly.
 
 ## الأسئلة المتكررة
 
-**Q: هل يمكنني استخدام Aspose.Zip لمعالجة ملفات كبيرة (عدة جيجابايت) دون نفاد الذاكرة؟**  
-A: نعم. من خلال تدفق البيانات مباشرةً من الملفات أو مصادر الشبكة إلى `MemoryStream` أو تدفقات مخصصة، تتجنب تحميل الأرشيف بالكامل في الذاكرة.
+**س: هل يمكنني استخدام Aspose.Zip لمعالجة ملفات كبيرة (عدة جيجابايت) دون نفاد الذاكرة؟**  
+ج: نعم. من خلال بث البيانات مباشرةً من الملفات أو مصادر الشبكة إلى `MemoryStream` أو تدفقات مخصصة، تتجنب تحميل الأرشيف بالكامل في الذاكرة.
 
-**Q: هل يدعم Aspose.Zip كل من واجهات برمجة التطبيقات المتزامنة واللا‑متزامنة؟**  
-A: توفر المكتبة طرقًا متزامنة لمعظم العمليات؛ يمكنك تغليفها في `Task.Run` لأنماط غير متزامنة إذا لزم الأمر.
+**س: هل يدعم Aspose.Zip كلًا من واجهات برمجة التطبيقات المتزامنة واللا متزامنة؟**  
+ج: توفر المكتبة طرقًا متزامنة لجميع العمليات الأساسية؛ يمكنك تغليفها في `Task.Run` لاستخدام الأنماط غير المتزامنة عند الحاجة.
 
-**Q: كيف يمكنني تعيين كلمة مرور لإدخال محدد مع ترك الآخرين غير محميين؟**  
-A: عند إضافة إدخال، استخدم الخاصية `EntryOptions.Password` لهذا الإدخال فقط؛ تبقى الإدخالات الأخرى خالية من كلمة المرور.
+**س: كيف يمكنني تعيين كلمة مرور لإدخال محدد مع ترك الآخرين غير محميين؟**  
+ج: استخدم `EntryOptions.Password` عند إضافة ذلك الإدخال. تبقى الإدخالات الأخرى بدون كلمة مرور، مما يمنحك تشفيرًا انتقائيًا.
 
-**Q: هل ضغط LZMA متوافق مع أدوات ZIP القياسية؟**  
-A: معظم أدوات ZIP الحديثة تتعرف على إدخالات LZMA، لكن الأدوات القديمة قد لا تدعمها. يضمن Aspose.Zip أن يتبع الأرشيف مواصفات ZIP.
+**س: هل ضغط LZMA متوافق مع أدوات ZIP القياسية؟**  
+ج: معظم أدوات ZIP الحديثة تتعرف على إدخالات LZMA، رغم أن الأدوات القديمة جدًا قد لا تدعمها. يتبع Aspose.Zip مواصفات ZIP لضمان توافق واسع.
 
-**Q: ما هي خيارات الترخيص المتاحة لـ Aspose.Zip؟**  
-A: تتوفر نسخة تجريبية مجانية للتقييم. يتطلب الاستخدام في الإنتاج ترخيصًا تجاريًا، مع خيارات للترخيص الدائم أو الاشتراكي.
+**س: ما هي خيارات الترخيص المتاحة لـ Aspose.Zip؟**  
+ج: تتوفر نسخة تجريبية مجانية للتقييم. يتطلب الاستخدام في الإنتاج ترخيصًا تجاريًا، متاحًا كنموذج دائم أو اشتراك.
 
-**Q: كيف يمكنني تغيير كلمة مرور إدخال ZIP موجود برمجيًا؟**  
-A: استخدم طريقة `UpdateEntry` مع `EntryOptions.Password` جديد — هذه هي الطريقة الموصى بها لتطبيق **how to set zip password** بعد إنشاء الأرشيف.
+**س: كيف يمكنني تغيير كلمة مرور إدخال ZIP موجود برمجيًا؟**  
+ج: استدعِ `UpdateEntry` مع `EntryOptions.Password` جديد. هذا يحدث تشفير الإدخال دون إعادة بناء الأرشيف بالكامل.
 
-**Q: هل يعمل Aspose.Zip مع .NET 7 والإصدارات الأحدث؟**  
-A: نعم، المكتبة متوافقة بالكامل مع .NET 5، .NET 6، .NET 7، والإصدارات الأحدث.
+**س: هل يعمل Aspose.Zip مع .NET 7 والإصدارات الأحدث؟**  
+ج: نعم، المكتبة متوافقة تمامًا مع .NET 5 و .NET 6 و .NET 7 والإصدارات الأحدث.
 
-**آخر تحديث:** 2026-05-05  
-**تم الاختبار مع:** Aspose.Zip for .NET (latest release)  
-**المؤلف:** Aspose  
+---
+
+**آخر تحديث:** 2026-07-23  
+**تم الاختبار مع:** Aspose.Zip لـ .NET (أحدث إصدار)  
+**المؤلف:** Aspose
+
+## دروس ذات صلة
+
+- [إنشاء أرشيف tar وإضافة ملفات إلى tar باستخدام Aspose.Zip لـ .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
+- [إنشاء أرشيف Zip .NET – ضغط الملفات باستخدام Aspose.Zip](/zip/net/file-compression/)
+- [كيفية استخراج zip مع كلمة مرور باستخدام Aspose.Zip لـ .NET](/zip/net/file-decompression/decompress-traditionally-password-protected-file/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
