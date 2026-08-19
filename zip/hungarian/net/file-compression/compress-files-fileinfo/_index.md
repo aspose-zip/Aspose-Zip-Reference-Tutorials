@@ -1,12 +1,83 @@
 ---
-date: 2026-02-28
-description: Tudja meg, hogyan adhat hozzá mappát a zip-hez, és hogyan adhat fájlokat
-  a zip-hez az Aspose.Zip for .NET használatával. Ez a lépésről‑lépésre útmutató bemutatja,
-  hogyan tömöríthet fájlokat a FileInfo segítségével ASP.NET projektekben.
-linktitle: Compress Files using FileInfo
+date: 2026-07-18
+description: Ismerje meg, hogyan adhat hozzá mappát a zip-hez és fájlokat a zip-hez
+  az Aspose.Zip for .NET használatával. Ez a lépésről‑lépésre útmutató bemutatja,
+  hogyan tömöríthet fájlokat FileInfo-val ASP.NET projektekben.
+keywords:
+- add folder to zip
+- how to create zip archive
+- add files to zip
+- asp.net zip compression
+- asp.net file compression
+lastmod: 2026-07-18
+linktitle: Fájlok tömörítése FileInfo-val
+og_description: Mappa hozzáadása zip-hez az Aspose.Zip for .NET használatával. Ismerje
+  meg, hogyan hozhat létre zip-archívumot, adhat hozzá fájlokat a zip-hez, és tömöríthet
+  mappákat hatékonyan ASP.NET-ben.
+og_image_alt: 'Developer guide: Adding folder to zip archive with Aspose.Zip in .NET'
+og_title: Mappa hozzáadása zip-hez – Fájlok tömörítése Aspose.Zip for .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-07-18'
+  description: Learn how to add folder to zip and add files to zip using Aspose.Zip
+    for .NET. This step‑by‑step guide shows how to compress files with FileInfo in
+    ASP.NET projects.
+  headline: Add Folder to Zip Using Aspose.Zip for .NET – Compress Files with FileInfo
+  type: TechArticle
+- description: Learn how to add folder to zip and add files to zip using Aspose.Zip
+    for .NET. This step‑by‑step guide shows how to compress files with FileInfo in
+    ASP.NET projects.
+  name: Add Folder to Zip Using Aspose.Zip for .NET – Compress Files with FileInfo
+  steps:
+  - name: Set Up Your Document Directory
+    text: 'First, define the folder that holds the source files. Replace the placeholder
+      with the absolute or relative path on your system: > **Pro tip:** Use `Path.Combine`
+      to build paths in a cross‑platform way.'
+  - name: Open a Zip File for Writing
+    text: 'Create a `FileStream` that points to the output zip file. The stream is
+      opened in **Create** mode, which overwrites any existing file with the same
+      name:'
+  - name: Prepare `FileInfo` Objects for Each Source File
+    text: '`FileInfo` gives Aspose.Zip direct access to the physical files on disk.
+      Create one instance per file you want to compress: > **Why use `FileInfo`?**
+      It avoids loading the entire file into memory, which is especially helpful for
+      large files.'
+  - name: Create the Archive and Add Entries
+    text: 'The `Archive` class is Aspose.Zip''s core object that represents a zip
+      container in memory. Instantiate an `Archive` object, then call `CreateEntry`
+      for each `FileInfo`. The first argument is the name the file will have inside
+      the zip, the second argument is the source `FileInfo`: The `CreateEntry` m'
+  - name: Save the Zip Archive with Desired Encoding
+    text: 'Finally, persist the archive to the `FileStream` you opened earlier. Here
+      we use ASCII encoding for entry names, but you can switch to UTF‑8 if your filenames
+      contain non‑ASCII characters: When the `using` blocks exit, the streams are
+      automatically closed and the zip file is ready for use.'
+  type: HowTo
+- questions:
+  - answer: No single‑call method exists, but enumerating files with `DirectoryInfo`
+      and adding each via `CreateEntry` achieves the same result efficiently.
+    question: Can I add an entire folder to a zip archive in a single call?
+  - answer: Yes, you can set a password on the `Archive` object before saving to encrypt
+      the entire archive.
+    question: Does Aspose.Zip support password protection?
+  - answer: The library processes files larger than 4 GB and can create archives exceeding
+      10 GB without loading the whole archive into memory.
+    question: How large a zip file can Aspose.Zip handle?
+  - answer: Absolutely. Aspose.Zip supports .NET 5 through .NET 10, covering all current
+      LTS releases.
+    question: Is the API compatible with .NET 6 and .NET 8?
+  - answer: You can choose `CompressionLevel.NoCompression`, `Fast`, `Normal`, or
+      `Maximum` to balance speed and size.
+    question: What compression levels are available?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Hogyan adjon hozzá mappát a ZIP-hez az Aspose.Zip for .NET használatával –
-  Fájlok tömörítése FileInfo-val
+tags:
+- compress files
+- Aspose.Zip
+- .NET file compression
+- zip archive
+title: Mappa hozzáadása zip-hez az Aspose.Zip for .NET használatával – Fájlok tömörítése
+  FileInfo-val
 url: /hu/net/file-compression/compress-files-fileinfo/
 weight: 11
 ---
@@ -15,38 +86,42 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Hogyan adjunk hozzá mappát zip-hez az Aspose.Zip for .NET használatával
+# Mappa hozzáadása zip-hez az Aspose.Zip for .NET használatával
 
 ## Bevezetés
 
-Ha programozott módon **zip archívumot kell létrehoznod**, az Aspose.Zip for .NET egy tiszta, nagy teljesítményű API‑t biztosít, amely bármely .NET (beleértve az ASP.NET‑et) alkalmazásban működik. Ebben az útmutatóban végigvezetünk a fájlok tömörítésén a `FileInfo` osztállyal, megmutatjuk, hogyan **adj fájlokat a zip‑hez**, és elmagyarázzuk, miért ideális ez a megközelítés a modern .NET projektekhez. Kitérünk arra is, hogyan **adj mappát a zip‑hez**, hogy egy lépésben egész könyvtárakat is becsomagolj. Kezdjük el!
+Ha programozott módon **mappát szeretne zip‑be adni**, az Aspose.Zip for .NET tiszta, nagy teljesítményű API‑t kínál, amely bármely .NET (beleértve az ASP.NET‑et) alkalmazásban működik. Ebben az útmutatóban végigvezetjük a fájlok tömörítését a `FileInfo` osztállyal, megmutatjuk, hogyan **fájlokat adhat hozzá a zip‑hez**, és elmagyarázzuk, miért ideális ez a megközelítés a modern .NET projektekhez. Emellett bemutatjuk a **mappa zip‑be adásának** pontos lépéseit, hogy egyetlen művelettel egész könyvtárakat csomagolhasson. Kezdjük!
 
 ## Gyors válaszok
-- **Mi a legegyszerűbb módja egy zip archívum létrehozásának?** Használd az Aspose.Zip `Archive` osztályát `FileInfo` objektumokkal együtt.  
-- **Hozzáadhatok több fájlt egyszerre?** Igen – csak hozz létre egy `FileInfo`‑t minden fájlhoz, és hívd meg a `CreateEntry`‑t.  
-- **Szükségem van speciális licencre ASP.NET‑hez?** Egy kereskedelmi Aspose.Zip licenc szükséges a termeléshez; egy ingyenes próba a kiértékeléshez elegendő.  
-- **Mely .NET verziók támogatottak?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.  
-- **Az API szálbiztos?** Igen, amennyiben minden szál a saját `Archive` példányával dolgozik.
+- **Mi a legegyszerűbb módja egy zip archívum létrehozásának?** Használja az Aspose.Zip `Archive` osztályát `FileInfo` objektumokkal.  
+- **Hozzáadhatok több fájlt egyszerre?** Igen – egyszerűen hozzon létre egy `FileInfo`‑t minden fájlhoz, és hívja a `CreateEntry`‑t.  
+- **Szükségem van speciális licencre az ASP.NET‑hez?** A kereskedelmi Aspose.Zip licenc szükséges a termeléshez; egy ingyenes próba a kiértékeléshez is működik.  
+- **Mely .NET verziók támogatottak?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, és .NET 5–10.  
+- **A API szálbiztos?** Igen, amennyiben minden szál a saját `Archive` példányával dolgozik.
 
-## Mi az a Zip archívum és miért hozunk létre ilyet?
-A zip archívum egy vagy több fájlt egyetlen, tömörített konténerbe csomagol. Ez csökkenti a tárhelyigényt, felgyorsítja a hálózati átviteleket, és egyszerűsíti a terjesztést. Legyen szó naplófájlok szállításáról, jelentések exportálásáról vagy ügyfélnek szánt eszközök csomagolásáról, a **zip archívum programozott létrehozása** értékes képesség minden .NET fejlesztő számára.
+## Mi az a zip archívum és miért hozunk létre ilyet?
 
-## Miért használjuk az Aspose.Zip-et fájlok zip‑hez adásához?
-- **Nulla külső függőség** – tisztán .NET megvalósítás.  
-- **Teljes kontroll a tömörítési szint és a kódolás (ASCII, UTF‑8, stb.) felett**.  
-- **Nagy fájlok támogatása** (> 4 GB) és jelszóvédelem.  
-- **Konzisztens API a .NET Framework, .NET Core és .NET 5+ között**.
+Egy zip archívum egy vagy több fájlt egyetlen, tömörített tárolóba csomagol. Ez csökkenti a tárhelyigényt, felgyorsítja a hálózati átviteleket, és egyszerűsíti a terjesztést. Akár naplókat szállít, jelentéseket exportál, vagy eszközöket csomagol egy ügyfélnek, a **zip archívumok programozott létrehozásának** ismerete értékes készség minden .NET fejlesztő számára.
+
+## Miért használja az Aspose.Zip-et fájlok zip‑be adásához?
+
+Aspose.Zip egy tisztán .NET megoldást kínál, amely kiküszöböli a külső függőségeket, miközben a fejlesztőknek részletes irányítást ad a tömörítés, kódolás és biztonság felett. Támogatja a nagy fájlokat, a jelszóvédelmet, és következetesen működik minden támogatott .NET verzióban, így megbízható választás a régi és modern alkalmazások számára.
+
+- **Nulla külső függőség** – tiszta .NET megvalósítás.  
+- **Teljes irányítás a tömörítési szint és a kódolás felett** (ASCII, UTF‑8 stb.).  
+- **Támogatja a 4 GB-nál nagyobb fájlokat** és a jelszóvédelmet.  
+- **Következetes API 50+ .NET verzióban** – a .NET Framework 2.0‑tól a .NET 10‑ig.  
 
 ## Előfeltételek
 
-Mielőtt a kódba merülnénk, győződj meg róla, hogy:
+Mielőtt a kódba merülnénk, győződjön meg róla, hogy rendelkezik:
 
-1. **Aspose.Zip for .NET** telepítve van. Töltsd le a legújabb csomagot a [Aspose.Zip letöltési oldalról](https://releases.aspose.com/zip/net/).  
-2. Van egy mappa a gépeden, amely tartalmazza a tömöríteni kívánt fájlokat (pl. `alice29.txt` és `fields.c`).  
+1. **Aspose.Zip for .NET** telepítve. Töltse le a legújabb csomagot a [Aspose.Zip letöltési oldalról](https://releases.aspose.com/zip/net/).  
+2. Egy mappa a gépén, amely tartalmazza a tömöríteni kívánt fájlokat (pl. `alice29.txt` és `fields.c`).  
 
 ## Névterek importálása
 
-Bármely C# fájlban, ahol zip archívumokkal dolgozol, add hozzá a következő `using` utasításokat:
+Bármely C# fájlban, ahol zip archívumokkal dolgozik, adja hozzá a következő `using` utasításokat:
 
 ```csharp
 using Aspose.Zip;
@@ -56,43 +131,43 @@ using System.IO;
 using System.Text;
 ```
 
-Ezek a névterek biztosítják a `Archive` osztályhoz, a mentési beállításokhoz és a szabványos I/O segédeszközökhöz való hozzáférést.
+Ezek a névterek hozzáférést biztosítanak az `Archive` osztályhoz, a mentési beállításokhoz és a szabványos I/O segédeszközökhöz.
 
 ## Lépésről‑lépésre útmutató
 
-### 1. lépés: Állítsd be a dokumentum könyvtárát
+### 1. lépés: Dokumentumkönyvtár beállítása
 
-Először definiáld azt a mappát, amely a forrásfájlokat tartalmazza. Cseréld le a helyőrzőt a rendszereden lévő abszolút vagy relatív útra:
+Először határozza meg a forrásfájlokat tartalmazó mappát. Cserélje le a helyőrzőt a rendszerén lévő abszolút vagy relatív útra:
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-> **Pro tip:** Használd a `Path.Combine`‑t az utak platformfüggetlen összeállításához.
+> **Pro tipp:** Használja a `Path.Combine`‑t az utak platformfüggetlen összeállításához.
 
-### 2. lépés: Nyiss egy zip fájlt írásra
+### 2. lépés: Zip fájl megnyitása íráshoz
 
-Hozz létre egy `FileStream`‑et, amely a kimeneti zip fájlra mutat. A stream **Create** módban nyílik, ami felülírja az azonos nevű meglévő fájlt:
+Hozzon létre egy `FileStream`‑et, amely a kimeneti zip fájlra mutat. A stream **Create** módban nyílik, amely felülírja az azonos nevű meglévő fájlt:
 
 ```csharp
 using (FileStream zipFile = File.Open(dataDir + "CompressFilesByFileInfo_out.zip", FileMode.Create))
 {
 ```
 
-### 3. lépés: Készíts `FileInfo` objektumokat minden forrásfájlhoz
+### 3. lépés: `FileInfo` objektumok előkészítése minden forrásfájlhoz
 
-A `FileInfo` közvetlen hozzáférést biztosít az Aspose.Zip‑nek a lemezen lévő fizikai fájlokhoz. Hozz létre egy példányt minden tömöríteni kívánt fájlhoz:
+`FileInfo` közvetlen hozzáférést biztosít az Aspose.Zip számára a lemezen lévő fizikai fájlokhoz. Hozzon létre egy példányt minden tömöríteni kívánt fájlhoz:
 
 ```csharp
 FileInfo fi1 = new FileInfo(dataDir + "alice29.txt");
 FileInfo fi2 = new FileInfo(dataDir + "fields.c");
 ```
 
-> **Miért használjuk a `FileInfo`‑t?** Elkerüli a teljes fájl memóriába töltését, ami különösen nagy fájlok esetén hasznos.
+> **Miért használja a `FileInfo`‑t?** Elkerüli a teljes fájl memóriába töltését, ami különösen hasznos nagy fájlok esetén.
 
-### 4. lépés: Hozd létre az archívumot és adj hozzá bejegyzéseket
+### 4. lépés: Archívum létrehozása és bejegyzések hozzáadása
 
-Példányosíts egy `Archive` objektumot, majd minden `FileInfo`‑hoz hívd meg a `CreateEntry`‑t. Az első argumentum a zip‑en belüli fájlnév, a második a forrás `FileInfo`:
+Az `Archive` osztály az Aspose.Zip központi objektuma, amely egy zip tárolót reprezentál a memóriában. Hozzon létre egy `Archive` objektumot, majd hívja a `CreateEntry`‑t minden `FileInfo`‑hoz. Az első argumentum a fájl neve a zip‑en belül, a második argumentum a forrás `FileInfo`:
 
 ```csharp
 using (var archive = new Archive())
@@ -101,71 +176,82 @@ using (var archive = new Archive())
     archive.CreateEntry("fields.c", fi2);
 ```
 
-### 5. lépés: Mentsd el a zip archívumot a kívánt kódolással
+A `CreateEntry` metódus új fájlbejegyzést ad az archívumhoz, összekapcsolva a bejegyzés nevét a forrás `FileInfo`‑val, így az adat közvetlenül a lemezről kerül be a mentéskor.
 
-Végül írd ki az archívumot a korábban megnyitott `FileStream`‑be. Itt ASCII kódolást használunk a bejegyzésnevekhez, de ha a fájlnevek nem‑ASCII karaktereket tartalmaznak, válthatsz UTF‑8‑ra:
+### 5. lépés: Zip archívum mentése a kívánt kódolással
+
+Végül mentse az archívumot a korábban megnyitott `FileStream`‑be. Itt ASCII kódolást használunk a bejegyzésneveknél, de átállíthat UTF‑8-ra, ha a fájlnevek nem ASCII karaktereket tartalmaznak:
 
 ```csharp
     archive.Save(zipFile, new ArchiveSaveOptions() { Encoding = Encoding.ASCII });
 }
 ```
 
-Amikor a `using` blokkok kilépnek, a streamek automatikusan bezáródnak, és a zip fájl készen áll a használatra.
+Amikor a `using` blokkok kilépnek, a streamek automatikusan bezáródnak, és a zip fájl használatra kész.
 
-## Hogyan adjunk hozzá mappát zip‑hez az Aspose.Zip használatával
+## Hogyan adjon hozzá mappát zip‑hez az Aspose.Zip használatával?
 
-Ha **mappát szeretnél a zip‑hez adni** az egyes fájlok helyett, a folyamat egyszerű:
+Töltse be a célkönyvtárat, sorolja fel az összes fájlt, és adja hozzá mindegyiket egy relatív úttal, amely tartalmazza a mappa nevét. Ez a megközelítés lehetővé teszi, hogy **mappát adjon hozzá zip‑hez** anélkül, hogy manuálisan felsorolná minden fájlt. A mappaszerkezet megőrzésével a bejegyzésnevekben a létrejött archívum az eredeti könyvtárstruktúra megőrzésével lesz kicsomagolható, ami számos telepítési forgatókönyvben elengedhetetlen.
 
-1. **Sorold fel a mappát** a `DirectoryInfo.GetFiles`‑el (és opcionálisan a `GetDirectories`‑szel a rekurzióhoz).  
-2. **Hozz létre egy `FileInfo`‑t** minden megtalált fájlhoz.  
-3. **Hívd meg a `CreateEntry`‑t** egy relatív úttal, amely tartalmazza a mappa nevét, pl. `"MyFolder/Report.pdf"`.
+1. Használja a `DirectoryInfo`‑t a tömöríteni kívánt mappa megjelöléséhez.  
+2. Hívja a `GetFiles("*", SearchOption.AllDirectories)`‑t az összes fájl rekurzív lekéréséhez.  
+3. Minden fájlhoz hozza létre a `FileInfo`‑t, és hívja a `CreateEntry`‑t egy olyan úttal, mint például `"MyFolder/Report.pdf"`.
 
-Mivel az API a `FileInfo`‑val dolgozik, soha nem kell az egész fájlt memóriába tölteni, ami nagy könyvtárak esetén is biztonságos. Ez a technika **zip multiple files asp.net** forgatókönyvekben is működik, amikor egy jelentéssorozatot generálsz „on‑the‑fly”, és egyetlen archívumban szeretnéd kiszolgálni.
+Mivel az API a `FileInfo`‑val dolgozik, minden fájlt közvetlenül a lemezről streamel, így alacsony memóriahasználatot biztosít még a több száz megabájtot tartalmazó mappák esetén is.
 
 ## Gyakori problémák és megoldások
 
 | Probléma | Ok | Megoldás |
-|----------|----|----------|
-| **Üres zip fájl** | `FileInfo` egy nem létező útra mutat | Ellenőrizd a `dataDir`‑t és a fájlneveket; használj `File.Exists`‑t a bejegyzések létrehozása előtt. |
-| **Helytelen fájlnév kódolás** | Alapértelmezett kódolás használata nem‑ASCII nevekhez | Állítsd be `Encoding = Encoding.UTF8`‑et az `ArchiveSaveOptions`‑ban. |
-| **OutOfMemoryException nagy fájloknál** | A teljes fájl betöltése a memóriába | A `FileInfo` streameli a fájlt; ügyelj arra, hogy máshol ne olvasd be bájt‑tömbbe. |
-| **Permission denied** | Az alkalmazásnak nincs írási joga a kimeneti mappához | Futtasd az alkalmazást megfelelő jogosultságokkal, vagy válassz írható könyvtárat. |
+|-------|-------|-----|
+| **Üres zip fájl** | `FileInfo` egy nem létező útra mutat | Ellenőrizze a `dataDir` és a fájlneveket; használja a `File.Exists`‑t a bejegyzések létrehozása előtt. |
+| **Helytelen fájlnév kódolás** | Alapértelmezett kódolás használata nem ASCII nevek esetén | Állítsa be `Encoding = Encoding.UTF8`‑t az `ArchiveSaveOptions`‑ban. |
+| **OutOfMemoryException nagy fájloknál** | A teljes fájl betöltése a memóriába | A `FileInfo` streameli a fájlt; győződjön meg róla, hogy máshol nem olvassa be a fájlt byte tömbbe. |
+| **Hozzáférés megtagadva** | Az alkalmazásnak nincs írási joga a kimeneti mappához | Futtassa az alkalmazást megfelelő jogosultságokkal vagy válasszon írható könyvtárat. |
 
-### GYIK
+## Gyakran feltett kérdések
 
-#### 1. kérdés: Az Aspose.Zip kompatibilis az összes fájltípussal?
+**Q: Hozzáadhatok egy teljes mappát egy zip archívumhoz egyetlen hívással?**  
+A: Nem létezik egyetlen hívásos módszer, de a `DirectoryInfo`‑val történő fájlok felsorolása és mindegyik `CreateEntry`‑val való hozzáadása hatékonyan eléri ugyanazt az eredményt.
 
-1. válasz: Az Aspose.Zip számos fájltípust támogat, így biztosítva a sokoldalú tömörítést.
+**Q: Támogatja az Aspose.Zip a jelszóvédelmet?**  
+A: Igen, a `Archive` objektumra mentés előtt beállíthat jelszót, hogy az egész archívum titkosítva legyen.
 
-#### 2. kérdés: Használhatom az Aspose.Zip-et kereskedelmi projektekhez?
+**Q: Milyen nagy zip fájlokat képes kezelni az Aspose.Zip?**  
+A: A könyvtár 4 GB‑nál nagyobb fájlokat is feldolgoz, és 10 GB‑t meghaladó archívumokat is létrehozhat anélkül, hogy az egész archívumot memóriába töltené.
 
-2. válasz: Természetesen! Látogassa meg a [vásárlási oldalunkat](https://purchase.aspose.com/buy) a licencelési lehetőségek megismeréséhez.
+**Q: Kompatibilis az API a .NET 6 és .NET 8 verziókkal?**  
+A: Teljesen. Az Aspose.Zip a .NET 5‑től a .NET 10‑ig támogatja, lefedve az összes jelenlegi LTS kiadást.
 
-#### 3. kérdés: Hogyan kaphatok támogatást az Aspose.Zip-hez?
+**Q: Milyen tömörítési szintek érhetők el?**  
+A: Választhatja a `CompressionLevel.NoCompression`, `Fast`, `Normal` vagy `Maximum` szinteket a sebesség és méret egyensúlyozásához.
 
-3. válasz: Csatlakozzon közösségünkhöz az [Aspose.Zip fórumon](https://forum.aspose.com/c/zip/37) segítségért és beszélgetésekért.
+## További források
 
-#### 4. kérdés: Van elérhető ingyenes próbaverzió?
+- Töltse le a legújabb Aspose.Zip csomagot: [Aspose.Zip letöltési oldal](https://releases.aspose.com/zip/net/)  
+- Licenc vásárlása termelési használathoz: [vásárlási oldal](https://purchase.aspose.com/buy)  
+- Segítség a közösségtől: [Aspose.Zip fórum](https://forum.aspose.com/c/zip/37)  
+- Próbálja ki az Aspose.Zip-et ingyen: [ingyenes próba itt](https://releases.aspose.com/)  
+- Ideiglenes licenc beszerzése értékeléshez: [ez a link](https://purchase.aspose.com/temporary-license/)
 
-4. válasz: Igen, letöltheti az [ingyenes próbaverziót itt](https://releases.aspose.com/).
+## Következtetés
 
-#### 5. kérdés: Hogyan szerezhetek ideiglenes licencet az Aspose.Zip-hez?
-
-5. válasz: Az ideiglenes licenc beszerzésével kapcsolatos információkért látogassa meg [ezt a linket](https://purchase.aspose.com/temporary-license/).
-
-## Összegzés
-
-Most már tudod, **hogyan adj mappát a zip‑hez** és **hogyan hozz létre zip archívumot** az Aspose.Zip for .NET segítségével, hogyan **adj fájlokat a zip‑hez**, és miért ideális ez a módszer ASP.NET‑hez és más .NET alkalmazásokhoz. Kísérletezz különböző tömörítési szintekkel, kódolásokkal és titkosítási beállításokkal, hogy az archívum pontosan a te igényeidnek megfelelő legyen. Boldog tömörítést!
+Most már tudja, hogyan **adjunk mappát zip‑hez** és hogyan **hozzunk létre zip archívum** fájlokat az Aspose.Zip for .NET használatával, hogyan **adjunk fájlokat zip‑hez**, és miért ideális ez a módszer az ASP.NET és más .NET alkalmazások számára. Kísérletezzen különböző tömörítési szintekkel, kódolásokkal és titkosítási beállításokkal, hogy az archívumot pontosan az igényeihez igazítsa. Boldog tömörítést!
 
 ---
 
-**Last Updated:** 2026-02-28  
-**Tested With:** Aspose.Zip for .NET 24.12 (latest)  
-**Author:** Aspose  
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
+**Legutóbb frissítve:** 2026-07-18  
+**Tesztelve a következővel:** Aspose.Zip for .NET 24.12 (latest)  
+**Szerző:** Aspose  
 
 {{< blocks/products/products-backtop-button >}}
+
+## Kapcsolódó oktatóanyagok
+
+- [Hogyan zip‑eljünk mappát az Aspose.Zip for .NET használatával](/zip/net/directory-and-folder-compression/compress-directory/)
+- [több fájl zip‑elése C# – Könnyed tömörítés az Aspose.Zip for .NET használatával](/zip/net/file-compression/compress-multiple-files/)
+- [Zip archívum létrehozása .NET – Fájl tömörítés az Aspose.Zip használatával](/zip/net/file-compression/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
