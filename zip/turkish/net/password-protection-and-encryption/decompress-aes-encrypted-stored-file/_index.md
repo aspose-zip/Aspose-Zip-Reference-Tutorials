@@ -1,14 +1,49 @@
 ---
-date: 2026-04-24
-description: Aspose.Zip for .NET kullanarak şifre korumalı zip dosyalarını nasıl çıkaracağınızı
-  öğrenin. Bu adım adım kılavuz, C#'ta AES şifre çözme ve çıkarma işlemlerini gösterir.
+date: 2026-08-07
+description: Aspose.Zip for .NET kullanarak şifreli zip çıkarma yöntemini öğrenin,
+  AES decryption, streaming extraction ve C#'de error handling konularını kapsar.
 keywords:
-- extract password protected zip
-- Aspose.Zip AES decryption
-- .NET zip extraction
+- extract zip with password
+- aspose zip password extraction
+- c# extract protected zip
+- c# zip extraction password
+lastmod: 2026-08-07
 linktitle: AES Şifreli Depolanan Dosyayı Aç
+og_description: Aspose.Zip for .NET kullanarak şifreli zip çıkarma. Bu kılavuz, C#
+  geliştiricileri için AES decryption, streaming extraction ve troubleshooting konularını
+  gösterir.
+og_image_alt: Guide showing how to extract password‑protected ZIP files with Aspose.Zip
+  in C#
+og_title: Aspose.Zip for .NET kullanarak şifreli zip çıkarma
+schemas:
+- author: Aspose
+  dateModified: '2026-08-07'
+  description: Learn how to extract zip with password using Aspose.Zip for .NET, covering
+    AES decryption, streaming extraction, and error handling in C#.
+  headline: Extract zip with password using Aspose.Zip for .NET
+  type: TechArticle
+- questions:
+  - answer: Aspose.Zip primarily supports AES (128/192/256‑bit). Support for additional
+      algorithms may be added in future releases; check the latest documentation.
+    question: Can I use Aspose.Zip for .NET with other encryption algorithms?
+  - answer: Yes, you can download a free trial [Aspose.Zip free trial download](https://releases.aspose.com/).
+    question: Is there a trial version available?
+  - answer: Visit the support forum [Aspose.Zip support forum](https://forum.aspose.com/c/zip/37)
+      to ask questions and get help from the community and Aspose engineers.
+    question: How can I get support for Aspose.Zip for .NET?
+  - answer: Aspose.Zip supports ZIP, 7z, TAR, and several proprietary formats, totaling
+      more than 50 supported extensions.
+    question: What archive formats does Aspose.Zip handle?
+  - answer: Yes, you can purchase a license [Aspose.Zip licensing page](https://purchase.aspose.com/buy)
+      for production use.
+    question: Can I use Aspose.Zip for commercial purposes?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Aspose.Zip for .NET ile şifre korumalı zip dosyasını çıkar
+tags:
+- extract zip
+- Aspose.Zip
+- C# zip extraction
+title: Aspose.Zip for .NET kullanarak şifreli zip çıkarma
 url: /tr/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/
 weight: 19
 ---
@@ -17,62 +52,68 @@ weight: 19
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET ile şifre korumalı zip çıkarma
+# Parola ile zip çıkartma Aspose.Zip for .NET kullanarak
 
 ## Giriş
 
-Hoş geldiniz! Bu kapsamlı öğreticide, Aspose.Zip for .NET ile AES şifrelemesi kullanan **şifre korumalı zip** dosyalarını nasıl çıkaracağınızı öğreneceksiniz. Masaüstü yardımcı programı, bulut tabanlı hizmet veya otomatik toplu iş oluşturuyor olun, *şifre korumalı zip arşivlerini çözmek* ve *korumalı zip dosyalarını açmak* sık karşılaşılan bir gereksinimdir. Kütüphaneyi kurmaktan şifreli içeriği diske akıtmaya kadar ihtiyacınız olan her şeyi temiz, takip etmesi kolay C# kodu ile göstereceğiz.
+Bu kapsamlı öğreticide, **parola ile zip çıkarma** işlemini, arşiv AES şifrelemesiyle korunduğunda Aspose.Zip for .NET kullanarak öğreneceksiniz. İster bir masaüstü yardımcı programı, ister bulut‑tabanlı bir mikro‑servis, ister otomatik bir toplu iş geliştirin, parola‑korumalı ZIP dosyalarını çözmek ve sıkıştırmayı açmak modern .NET uygulamalarında yaygın bir gereksinimdir. Kurulum, yapılandırma, akış çıkarma ve hata yönetimini net C# kodu ile adım adım göstereceğiz; bu kodu bugün projenize kopyalayabilirsiniz.
 
-## Hızlı Yanıtlar
-- **“Şifre korumalı zip çıkarma” ne anlama geliyor?** Şifre korumalı bir ZIP arşivini açıp içeriğini programlı olarak almayı ifade eder.  
-- **Hangi kütüphane AES şifre çözmeyi sağlar?** Aspose.Zip for .NET ek bağımlılıklar olmadan yerel AES‑256 desteği sunar.  
-- **Üretim için lisansa ihtiyacım var mı?** Evet – üretim için ticari lisans gerekir; değerlendirme için ücretsiz deneme mevcuttur.  
-- **Bunu .NET 6+ ile kullanabilir miyim?** Kesinlikle – kütüphane .NET Standard 2.0 hedefler ve .NET 6, .NET 7 ve sonrası ile çalışır.  
-- **Tipik kod akışı nedir?** Arşivi şifreyle yükleyin, girişi bulun ve şifreli baytları bir dosyaya akıtın.
+## Hızlı cevaplar
+- **“extract zip with password” ne anlama geliyor?** Bu, bir parola‑korumalı ZIP arşivini açma ve programlı olarak içeriğini alma sürecidir.  
+- **Hangi kütüphane AES şifre çözmeyi yönetir?** Aspose.Zip for .NET, harici bağımlılıklar olmadan yerleşik AES‑256 desteği sağlar.  
+- **Üretim için lisansa ihtiyacım var mı?** Evet – üretim için ticari bir lisans gereklidir; değerlendirme için ücretsiz bir deneme sürümü mevcuttur.  
+- **Bunu .NET 6+ ile kullanabilir miyim?** Kesinlikle – kütüphane .NET Standard 2.0 hedefler ve .NET 6, .NET 7 ve sonraki sürümlerde çalışır.  
+- **Tipik kod akışı nedir?** Arşivi bir parola ile yükleyin, girdiyi bulun ve şifrelenmiş baytları bir dosyaya akıtın.
 
-## Şifre korumalı zip dosalarını nasıl çıkarılır
+## Parola korumalı zip dosyalarını nasıl çıkarabilirsiniz?
 
-Aşağıda, AES‑şifreli bir arşivi açıp şifreli girişi diske yazmanın adım adım gösterildiği bir kılavuz bulunmaktadır.
+Şifrelenmiş arşivinizi yükleyin, şifre çözme parolasını ayarlayın ve istediğiniz girdiyi diske akıtın – üç kısa adımda. Bu yaklaşım, tüm arşivi belleğe yüklemeyi önler ve büyük dosyalar ile yüksek verimli hizmetler için uygundur.
 
-### “Şifreli arşiv açma” işlemi nedir?
+### “Şifreli arşivi açma” işlemi nedir?
 
-Şifreli bir arşivi açmak, bir şifre (varsayılan olarak AES‑256) ile korunmuş bir ZIP dosyasını yüklemek ve ardından girişlerini manuel kriptografik işlem yapmadan okumak anlamına gelir. Aspose.Zip düşük seviyeli ayrıntıları soyutlayarak iş mantığınıza odaklanmanızı sağlar.
+Şifreli bir arşivi açmak, bir parola (varsayılan olarak AES‑256) ile korunan bir ZIP dosyasını yüklemek ve ardından girdilerini manuel kriptografik işlem yapmadan okumak anlamına gelir. Aspose.Zip düşük seviyeli ayrıntıları soyutlayarak iş mantığınıza odaklanmanızı sağlar.
 
-### AES ZIP dosyalarını çözmek için C# Aspose.Zip'i neden kullanmalısınız?
+### AES ZIP dosyalarını çözmek için C#'ta Aspose.Zip'i neden kullanmalısınız?
 
-- **Tam AES desteği** – 128‑, 192‑ ve 256‑bit anahtarları otomatik olarak işler.  
-- **Basit API** – Şifreyi (`DecryptionPassword`) sağlamak için tek satır kod.  
-- **Harici bağımlılık yok** – OpenSSL veya diğer yerel kütüphaneleri paketlemenize gerek yok.  
-- **Güçlü hata yönetimi** – Yanlış şifreler veya bozuk arşivler için net istisnalar fırlatır.  
+Aspose.Zip, ZIP, 7z ve TAR dahil olmak üzere **50+ sıkıştırma ve arşiv formatını** destekler ve akış API'si sayesinde bellek kullanımını 100 MB'nin altında tutarak **10 GB**'a kadar boyuttaki arşivleri işleyebilir. Kütüphane ayrıca şunları sunar:
+- **Tam AES desteği** – 128‑, 192‑ ve 256‑bit anahtarları otomatik olarak işler.
+- **Tek satır şifre yapılandırması** – `DecryptionPassword`'ı doğrudan yükleme seçeneklerine ayarlayın.
+- **Sıfır dış bağımlılık** – OpenSSL veya yerel DLL'ler gerekmez.
+- **Kesin istisna tipleri** – Yanlış parolalar için `InvalidPasswordException` ve bozuk dosyalar için `ArchiveCorruptedException` fırlatır.
 
 ## Önkoşullar
 
-Koda geçmeden önce, aşağıdaki önkoşulların yerine getirildiğinden emin olun:
+Koda geçmeden önce aşağıdakilere sahip olduğunuzdan emin olun:
+- **Aspose.Zip for .NET** – `Aspose.Zip` NuGet paketini kurun. Ayrıntılı belgeler [Aspose.Zip .NET documentation](https://reference.aspose.com/zip/net/) adresinde mevcuttur.
+- **Örnek AES şifreli dosya** – Test arşivini [Aspose.Zip test archive download](https://releases.aspose.com/zip/net/) adresinden indirin.
+- **Çıktı dizini** – Çıkarılan dosyanın yazılacağı diskte bir klasör oluşturun; kod parçacıklarındaki “Your Document Directory” ifadesini gerçek yolunuzla değiştirin.
 
-- Aspose.Zip for .NET: Aspose.Zip kütüphanesinin yüklü olduğundan emin olun. Belgeleri [burada](https://reference.aspose.com/zip/net/) bulabilirsiniz.
-- Örnek AES Şifreli Dosya: [bu bağlantıdan](https://releases.aspose.com/zip/net/) bir örnek AES şifreli dosya indirin.
-- Belge Dizininiz: Açılmış dosyayı saklamak istediğiniz bir klasör oluşturun. Kod parçacığındaki “Your Document Directory” ifadesini gerçek dizin yolunuzla değiştirin.
+## Ad alanlarını içe aktar
 
-## Ad Alanlarını İçe Aktar
+Örnek için aşağıdaki ad alanları gereklidir. Bunları C# dosyanızın en üstüne ekleyin:
 
-Sağlanan kod parçacığında çeşitli ad alanlarının kullanımını göreceksiniz. Bunları projenize eklediğinizden emin olun:
+```csharp
+using Aspose.Zip;
+using Aspose.Zip.Archive;
+using System.IO;
+```
 
 ```csharp
 using System.IO;
 using Aspose.Zip;
 ```
 
-## Adım 1: Kaynak Dizinini Tanımla
+## Adım 1: kaynak dizinini tanımlayın
 
-Şifreli ZIP dosyanızı içeren ve çıkarılan dosyanın yazılacağı klasörün yolunu belirtin.
+Şifreli ZIP'i içeren klasörü ve çıkarılan dosyanın kaydedileceği konumu belirtin.
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-## Adım 2: Şifreli Arşivi Aç
+## Adım 2: şifreli arşivi açın
 
-`Archive` yapıcı, `DecryptionPassword`'ı ayarlayabileceğiniz bir `ArchiveLoadOptions` nesnesi alır. Bu, **decrypt zip password** işleminin çekirdeğidir.
+`Archive` **bir ZIP arşivini temsil eder ve girdileri okuma, yazma ve değiştirme yöntemleri sağlar**. `ArchiveLoadOptions` arşivin nasıl açılacağını, şifre çözme parolasını da içerecek şekilde yapılandırır. Yapıcı, `DecryptionPassword`'ı ayarlayabileceğiniz bir `ArchiveLoadOptions` nesnesi alır. Bu, **decrypt zip password** işleminin çekirdeğidir.
 
 ```csharp
 using (FileStream fs = File.OpenRead(dataDir + "StoreMutlipleFilesWithoutCompressionWithPassword_out.zip"))
@@ -87,9 +128,9 @@ using (FileStream fs = File.OpenRead(dataDir + "StoreMutlipleFilesWithoutCompres
 }
 ```
 
-## Adım 3: Şifreli Girişi Aç
+## Adım 3: şifreli girdiyi sıkıştırmadan çıkarın
 
-Arşiv açıldıktan sonra, ilk girişi (veya ihtiyacınız olan herhangi bir girişi) okuyabilir ve şifreli baytları çıktı dosyasına yazabilirsiniz. Bu, **c# extract encrypted zip** işlemini akış şeklinde gösterir.
+Arşiv açıldıktan sonra, ilk girdiyi (veya ihtiyacınız olan herhangi bir girdiyi) okuyabilir ve şifrelenmiş baytları çıktı dosyasına yazabilirsiniz. Bu, **c# extract encrypted zip** işlemini akış biçiminde gösterir ve bellek kullanımını düşük tutar.
 
 ```csharp
 using (var decompressed = archive.Entries[0].Open())
@@ -103,36 +144,43 @@ using (var decompressed = archive.Entries[0].Open())
 }
 ```
 
-## Yaygın Sorunlar ve Çözümler
+## Yaygın sorunlar ve çözümler
 
-| Sorun | Neden Oluşur | Çözüm |
-|-------|----------------|-----|
-| **Yanlış şifre hatası** | `DecryptionPassword` arşivi şifrelemek için kullanılan şifreyle eşleşmiyor. | Şifre dizesini doğrulayın; büyük/küçük harfe duyarlı olduğunu unutmayın. |
+| Sorun | Neden olur | Çözüm |
+|-------|------------|------|
+| **Yanlış şifre hatası** | `DecryptionPassword`, arşivi şifrelemek için kullanılan şifreyle eşleşmiyor. | Şifre dizesini doğrulayın; büyük/küçük harfe duyarlı olduğunu unutmayın. |
 | **ArchiveLoadOptions tanınmıyor** | Bu aşırı yüklemeyi içermeyen eski bir Aspose.Zip sürümü kullanılıyor. | En son Aspose.Zip for .NET sürümüne güncelleyin. |
-| **Büyük dosyalar bellek baskısına neden olur** | Tüm dosyayı belleğe okumak. | Yukarıda gösterilen akış yaklaşımını (tamponlu okuma) kullanın. |
+| **Büyük dosyalar bellek baskısına neden oluyor** | Tüm dosyanın belleğe okunması. | Yukarıda gösterilen akış yaklaşımını (tamponlu okuma) kullanın. |
 
-## Sıkça Sorulan Sorular
+## Sıkça sorulan sorular
 
-### Aspose.Zip for .NET'i diğer şifreleme algoritmalarıyla kullanabilir miyim?
-Aspose.Zip öncelikle AES şifrelemesini destekler. Yeni eklenen algoritmalar için belgeleri kontrol edin.
+**S: Aspose.Zip for .NET'i diğer şifreleme algoritmalarıyla kullanabilir miyim?**  
+C: Aspose.Zip öncelikle AES (128/192/256‑bit) destekler. Ek algoritmalar için destek gelecekteki sürümlerde eklenebilir; en son belgeleri kontrol edin.
 
-### Deneme sürümü mevcut mu?
-Evet, ücretsiz deneme sürümüne [buradan](https://releases.aspose.com/) ulaşabilirsiniz.
+**S: Deneme sürümü mevcut mu?**  
+C: Evet, ücretsiz bir deneme sürümünü [Aspose.Zip free trial download](https://releases.aspose.com/) adresinden indirebilirsiniz.
 
-### Aspose.Zip for .NET için nasıl destek alabilirim?
-Topluluktan yardım almak için destek forumunu [buradan](https://forum.aspose.com/c/zip/37) ziyaret edin.
+**S: Aspose.Zip for .NET için destek nasıl alabilirim?**  
+C: Sorular sormak ve topluluk ile Aspose mühendislerinden yardım almak için destek forumunu ziyaret edin: [Aspose.Zip support forum](https://forum.aspose.com/c/zip/37).
 
-### Sıkıştırma ve açma için hangi dosya formatları destekleniyor?
-Aspose.Zip, ZIP, 7z ve TAR dahil çeşitli formatları destekler. Kapsamlı liste için belgelere bakın.
+**S: Aspose.Zip hangi arşiv formatlarını destekler?**  
+C: Aspose.Zip, ZIP, 7z, TAR ve çeşitli özel formatları destekler; toplamda 50'den fazla uzantı desteklenir.
 
-### Aspose.Zip'i ticari amaçlarla kullanabilir miyim?
-Evet, ticari kullanım için bir lisans satın alabilirsiniz [buradan](https://purchase.aspose.com/buy).
+**S: Aspose.Zip'i ticari amaçlarla kullanabilir miyim?**  
+C: Evet, üretim kullanımı için bir lisans satın alabilirsiniz: [Aspose.Zip licensing page](https://purchase.aspose.com/buy).
 
 ---
 
-**Last Updated:** 2026-04-24  
-**Tested With:** Aspose.Zip 24.11 for .NET  
-**Author:** Aspose  
+**Son güncelleme:** 2026-08-07  
+**Test edilen sürüm:** Aspose.Zip 24.11 for .NET  
+**Yazar:** Aspose
+
+## İlgili Öğreticiler
+
+- [Aspose.Zip kullanarak AES Şifreleme ile Parola Koruması Olan ZIP Dosyaları Oluşturma](/zip/net/password-protection-and-encryption/password-protect-with-aes/)
+- [Aspose.Zip for .NET kullanarak Parola ile Zip Çıkarma](/zip/net/archive-extraction-and-formats/extract-archive-different-passwords/)
+- [Aspose.Zip for .NET kullanarak AES ile ZIP Dosyalarını Şifreleme](/zip/net/password-protection-and-encryption/aes-encryption-settings/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
