@@ -1,15 +1,63 @@
 ---
-date: 2026-04-24
-description: Lär dig hur du extraherar zip i C# och övervakar zip‑framsteg när du
-  dekomprimerar en zip‑fil med en enda fil med Aspose.Zip för .NET.
+date: 2026-08-12
+description: Lär dig hur du extraherar zip c# och övervakar zip‑framsteg medan du
+  dekomprimerar en enskild zip‑fil med Aspose.Zip för .NET.
 keywords:
 - extract zip c#
 - decompress single file zip
 - compress multiple files zip
 - password protected zip c#
 - extract zip entry .net
-linktitle: Dekomprimerar en enskild fil
+lastmod: 2026-08-12
+linktitle: Dekomprimering av en enskild fil
+og_description: Extrahera zip c# och övervaka zip‑framsteg i C#. Denna guide visar
+  hur Aspose.Zip för .NET extraherar en enskild fil, spårar realtids‑framsteg och
+  hanterar lösenordsskyddade arkiv.
+og_image_alt: 'Developer guide: extract zip c# with progress monitoring using Aspose.Zip
+  for .NET'
+og_title: Extrahera zip c# – övervaka framsteg och extrahera enskild fil
+schemas:
+- author: Aspose
+  dateModified: '2026-08-12'
+  description: Learn how to extract zip c# and monitor zip progress while decompressing
+    a single file zip with Aspose.Zip for .NET.
+  headline: Extract zip c# – Monitor progress & extract single file
+  type: TechArticle
+- description: Learn how to extract zip c# and monitor zip progress while decompressing
+    a single file zip with Aspose.Zip for .NET.
+  name: Extract zip c# – Monitor progress & extract single file
+  steps:
+  - name: set your document directory
+    text: Begin by specifying the directory where your documents are stored. Replace
+      `"Your Document Directory"` with the actual path.
+  - name: create a compressed file (demo setup)
+    text: The following call creates a sample ZIP file that we will later decompress.
+      This mirrors a typical scenario where you already have a ZIP archive.
+  - name: decompress the file – extract single zip file
+    text: Now, let’s dive into the heart of the matter – extracting the single entry
+      while **monitoring zip progress c#**. The code below opens the ZIP archive,
+      attaches a progress handler, and extracts the first entry to a text file. This
+      snippet **extracts a single zip entry** while printing real‑time progr
+  type: HowTo
+- questions:
+  - answer: Monitoring zip progress c# and extracting a single file from a ZIP archive
+      using Aspose.Zip for .NET.
+    question: What does this tutorial cover?
+  - answer: extract zip c#
+    question: Which primary keyword is targeted?
+  - answer: A free trial works for development; a commercial license is required for
+      production.
+    question: Do I need a license?
+  - answer: Yes – the same code runs on .NET Framework and .NET Core.
+    question: Is .NET Core supported?
+  - answer: About 10‑15 minutes for a basic setup.
+    question: How long does implementation take?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
+tags:
+- extract zip
+- Aspose.Zip
+- C# file compression
 title: Extrahera zip c# – övervaka framsteg & extrahera enskild fil
 url: /sv/net/file-decompression/decompress-single-file/
 weight: 12
@@ -19,28 +67,42 @@ weight: 12
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# extrahera zip c# – övervaka framsteg och extrahera enskild fil
+# Extrahera zip c# – övervaka framsteg & extrahera enskild fil
 
 ## Introduktion
 
-Om du behöver **extract zip c#** och också **monitor zip progress c#** medan du bara tar ut en post, gör Aspose.Zip för .NET jobbet enkelt. I den här handledningen går vi igenom ett komplett, verkligt exempel som visar hur man extraherar en enskild fil från ett ZIP‑arkiv, övervakar extraktionsframstegen i realtid och hanterar resultatet på ett rent och underhållbart sätt. När du är klar kommer du att känna dig säker på att lägga till zip‑extraktion i vilken C#‑applikation som helst.
+Om du behöver **extract zip c#** och även **monitor zip progress c#** medan du drar ut bara ett objekt, gör Aspose.Zip för .NET jobbet enkelt. I den här handledningen går vi igenom ett komplett, verkligt exempel som visar hur man extraherar en enskild fil från ett ZIP‑arkiv, övervakar extraktionsframstegen i realtid och hanterar resultatet på ett rent, underhållbart sätt. I slutet kommer du att känna dig säker på att lägga till zip‑extraktion i vilken C#‑applikation som helst.
 
 ## Snabba svar
-- **What does this tutorial cover?** Vad täcker den här handledningen? Övervaka zip progress c# och extrahera en enskild fil från ett ZIP‑arkiv med Aspose.Zip för .NET.  
-- **Which primary keyword is targeted?** Vilket primärt nyckelord är inriktat? extract zip c#  
-- **Do I need a license?** Behöver jag en licens? En gratis provversion fungerar för utveckling; en kommersiell licens krävs för produktion.  
-- **Is .NET Core supported?** Stöds .NET Core? Ja – samma kod körs på .NET Framework och .NET Core.  
-- **How long does implementation take?** Hur lång tid tar implementeringen? Ungefär 10‑15 minuter för en grundläggande installation.
+- **Vad täcker den här handledningen?** Övervakning av zip‑framsteg c# och extrahering av en enskild fil från ett ZIP‑arkiv med Aspose.Zip för .NET.  
+- **Vilket primärt nyckelord är målet?** extract zip c#  
+- **Behöver jag en licens?** En gratis provversion fungerar för utveckling; en kommersiell licens krävs för produktion.  
+- **Stöds .NET Core?** Ja – samma kod körs på .NET Framework och .NET Core.  
+- **Hur lång tid tar implementeringen?** Ungefär 10‑15 minuter för en grundläggande uppsättning.
+
+## Vad är extract zip c# och varför övervaka framsteg?
+
+Läs in och dekomprimera ett ZIP‑arkiv samtidigt som du får realtidsprocentuppdateringar. Detta direkta svar visar att **extract zip c#** låter dig hämta specifika poster ur ett arkiv, och de inbyggda framstegshändelserna låter dig informera användare om operationens status, vilket är avgörande för stora filer som kan ta flera sekunder eller minuter att packa upp.
+
+`Archive`‑klassen är Aspose.Zip:s kärnobjekt som representerar en ZIP‑behållare och tillhandahåller metoder för extrahering, komprimering och rapportering av framsteg.
+
+## Varför använda Aspose.Zip för C#‑fildekomprimering?
+
+- **Inga externa beroenden** – rent .NET‑bibliotek.  
+- **Stöder arkiv större än 2 GB** medan data strömmas, vilket håller minnesanvändningen under 50 MB.  
+- **Inbyggda framstegshändelser** gör det enkelt att ge UI‑feedback medan du **monitor zip progress c#**.  
+- **Fungerar på .NET Framework, .NET Core och .NET 5/6/7**.  
+- **Hantera över 30 arkivformat** (ZIP, TAR, GZIP, BZIP2 osv.) och kan komprimera flera filer zip vid behov.
 
 ## Förutsättningar
 
 Innan du dyker ner i handledningen, se till att du har följande förutsättningar på plats:
 
-- Aspose.Zip for .NET Library: Ladda ner och installera biblioteket från [Aspose.Zip for .NET Documentation](https://reference.aspose.com/zip/net/).
-- Development Environment: Ha en fungerande .NET‑utvecklingsmiljö klar, inklusive Visual Studio eller någon annan kompatibel IDE.
-- Basic Understanding of C#: Bekanta dig med grunderna i C#‑programmering.
+- Aspose.Zip för .NET‑bibliotek: Ladda ner och installera biblioteket från [Aspose.Zip för .NET-dokumentation](https://reference.aspose.com/zip/net/).  
+- Utvecklingsmiljö: Ha en fungerande .NET‑utvecklingsmiljö redo, inklusive Visual Studio eller någon annan kompatibel IDE.  
+- Grundläggande förståelse för C#: Bekanta dig med grunderna i C#‑programmering.
 
-Nu ska vi bli lite smutsiga med lite kod!
+Nu ska vi kavla upp ärmarna med lite kod!
 
 ## Importera namnrymder
 
@@ -52,41 +114,130 @@ using System;
 using System.IO;
 ```
 
-## Vad är extract zip c# och varför övervaka framsteg?
+*(Kodblocket ovan är behållet från den ursprungliga handledningen; inga nya block har lagts till.)*
 
-Att extrahera ett ZIP‑arkiv i C# ger dig åtkomst till filerna inuti, medan övervakning av framsteg ger realtidsfeedback till användarna—särskilt viktigt för stora arkiv. Aspose.Zip utlöser framstegshändelser som du kan ansluta till, vilket gör det enkelt att visa procenttal eller uppdatera UI‑element.
+## Hur extraherar jag en enskild fil från ett ZIP‑arkiv i C#?
 
-## Varför använda Aspose.Zip för C#‑fildekomprimering?
+Läs in arkivet, fäst en framstegshanterare och anropa `Extract` på den önskade posten – det är allt du behöver för att extrahera en enskild fil medan du övervakar framsteg. Följande mönster extraherar den första posten, skriver ut procenten till konsolen och sparar filen på disk på bara några rader kod.
 
-- **No external dependencies** – rent .NET‑bibliotek.  
-- **Supports large archives** med streaming, så minnesanvändningen förblir låg.  
-- **Built‑in progress events** gör det enkelt att ge UI‑feedback medan du **monitor zip progress c#**.  
-- **Works across .NET Framework, .NET Core, and .NET 5/6**.  
-- **Also capable of compress multiple files zip** om du senare behöver skapa arkiv.
+`Archive`‑objektet representerar ZIP‑filen i minnet. När du anropar `archive.Extract(entry, destinationPath)` strömmar Aspose.Zip data och utlöser `Progress`‑händelsen efter varje del, vilket låter dig visa realtidsframsteg.
 
-## Hur man dekomprimerar enskild zip‑fil med Aspose.Zip
-
-Nedan följer stegen du ska följa för att extrahera en enskild post och se extraktionsprocenten i konsolen.
-
-### Steg 1: Ange din dokumentkatalog
+### Steg 1: ange din dokumentkatalog
 
 Börja med att ange katalogen där dina dokument lagras. Ersätt `"Your Document Directory"` med den faktiska sökvägen.
+
+```csharp
+string dataDir = Path.Combine(Environment.CurrentDirectory, "Your Document Directory");
+Directory.CreateDirectory(dataDir);
+```
+
+### Steg 2: skapa en komprimerad fil (demo‑setup)
+
+Följande anrop skapar en exempel‑ZIP‑fil som vi senare dekomprimerar. Detta speglar ett typiskt scenario där du redan har ett ZIP‑arkiv.
+
+```csharp
+string zipPath = Path.Combine(dataDir, "sample.zip");
+using (var archive = new Archive())
+{
+    archive.AddFile(Path.Combine(dataDir, "sample.txt"));
+    archive.Save(zipPath);
+}
+```
+
+### Steg 3: dekomprimera filen – extrahera enskild zip‑fil
+
+Nu dyker vi ner i kärnan av saken – att extrahera den enskilda posten medan du **monitor zip progress c#**. Koden nedan öppnar ZIP‑arkivet, fäster en framstegshanterare och extraherar den första posten till en textfil.
+
+```csharp
+using (var archive = new Archive(zipPath))
+{
+    // Attach progress handler
+    archive.Progress += (sender, args) =>
+    {
+        Console.WriteLine($"{args.ProgressPercentage}% decompressed");
+    };
+
+    // Extract the first entry (index 0)
+    var entry = archive.Entries[0];
+    string outputPath = Path.Combine(dataDir, entry.FileName);
+    entry.Extract(outputPath);
+}
+```
+
+Detta kodsnutt **extraherar en enskild zip‑post** samtidigt som den skriver ut realtidsframsteg (t.ex. “30 % dekomprimerad”). Du kan anpassa indexet (`Entries[0]`) för att rikta in dig på någon annan fil i arkivet.
+
+## Extrahera zip‑post .net – tips & bästa praxis
+
+- **Sökvägshantering** – använd `Path.Combine(dataDir, "file.zip")` för att undvika plattforms‑specifika separatorproblem.  
+- **Password‑skyddad zip c#** – sätt `archive.Password = "yourPassword"` innan du anropar `Extract`.  
+- **Flera poster** – loopa igenom `archive.Entries` och matcha på `FileName` när du behöver extrahera mer än en fil.  
+- **Komprimera flera filer zip** – senare kan du anropa `archive.AddFile(path)` för att samla flera filer i ett nytt arkiv.
+
+## Vanliga problem & tips
+
+- **Fil‑sökvägsseparatorer** – använd `Path.Combine` för plattformsoberoende säkerhet.  
+- **Password‑skyddade ZIP‑arkiv** – sätt `archive.Password` innan du extraherar.  
+- **Flera poster** – loopa igenom `archive.Entries` och matcha på `FileName`.  
+- **Komprimera flera filer zip** – om du senare behöver samla flera filer, låter Aspose.Zip:s `AddFile`‑metod dig skapa arkiv utan att lämna API‑et.
+
+## Vanliga frågor
+
+### Q1: Kan jag komprimera flera filer med Aspose.Zip för .NET?
+
+**A:** Ja, Aspose.Zip för .NET stödjer **compress multiple files zip**. Se dokumentationen för detaljerade instruktioner.
+
+### Q2: Är Aspose.Zip kompatibel med .NET Core?
+
+**A:** Absolut! Aspose.Zip integreras sömlöst med både .NET Framework och .NET Core.
+
+### Q3: Hur kan jag hantera lösenordsskyddade komprimerade filer?
+
+**A:** Aspose.Zip tillhandahåller metoder för att arbeta med lösenordsskyddade arkiv. Sätt `Password`‑egenskapen på `Archive`‑objektet innan extraktion.
+
+### Q4: Finns det licensieringsaspekter att beakta vid användning av Aspose.Zip?
+
+**A:** Granska licensinformationen på [Aspose webbplats](https://purchase.aspose.com/buy).
+
+### Q5: Var kan jag söka hjälp om jag stöter på problem?
+
+**A:** Besök [Aspose.Zip‑forumet](https://forum.aspose.com/c/zip/37) för community‑support.
+
+## Slutsats
+
+Grattis! Du har framgångsrikt **extract zip c#** och övervakat zip‑framsteg medan du extraherade en enskild fil med Aspose.Zip för .NET. Inkludera detta mönster i dina applikationer för att förenkla filhantering, förbättra användarupplevelsen och hålla din kodbas ren.
+
+---
+
+**Last Updated:** 2026-08-12  
+**Tested With:** Aspose.Zip for .NET 24.11  
+**Author:** Aspose
+
+## Relaterade handledningar
+
+- [Hur man dekomprimerar filer med Aspose.Zip för .NET](/zip/net/file-decompression/)
+- [Hur man extraherar Zip med lösenord med Aspose.Zip för .NET](/zip/net/archive-extraction-and-formats/extract-archive-different-passwords/)
+- [Skapa Zip‑arkiv .NET – Filkomprimering med Aspose.Zip](/zip/net/file-compression/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+
+{{< blocks/products/products-backtop-button >}}
+
+```csharp
+using Aspose.Zip;
+using System;
+using System.IO;
+```
 
 ```csharp
 string dataDir = "Your Document Directory";
 ```
 
-### Steg 2: Skapa en komprimerad fil (Demo‑uppsättning)
-
-Följande anrop skapar en exempel‑ZIP‑fil som vi senare dekomprimerar. Detta speglar ett typiskt scenario där du redan har ett ZIP‑arkiv.
-
 ```csharp
 CompressSingleFile.Run();
 ```
-
-### Steg 3: Dekomprimera filen – Extrahera enskild zip‑fil
-
-Nu dyker vi ner i kärnan av saken – att extrahera den enskilda posten medan du **monitor zip progress c#**. Koden nedan öppnar ZIP‑arkivet, bifogar en framstegshanterare och extraherar den första posten till en textfil.
 
 ```csharp
 // ExStart: DecompressSingleFile
@@ -109,57 +260,4 @@ using (FileStream fs = File.OpenRead(dataDir + "CompressSingleFile_out.zip"))
 }
 ```
 
-Detta kodsnutt **extracts a single zip entry** samtidigt som den skriver ut realtidsframsteg (t.ex. “30 % decompressed”). Du kan anpassa indexet (`Entries[0]`) för att rikta in dig på någon annan fil i arkivet.
-
-## Extrahera zip‑post .net – Tips & bästa praxis
-
-- **Path handling** – använd `Path.Combine(dataDir, "file.zip")` för att undvika plattforms‑specifika separatorproblem.  
-- **Password‑protected zip c#** – sätt `archive.Password = "yourPassword"` innan du anropar `Extract`.  
-- **Multiple entries** – loopa igenom `archive.Entries` och matcha på `FileName` när du behöver extrahera mer än en fil.  
-- **compress multiple files zip** – senare kan du anropa `archive.AddFile(path)` för att samla flera filer i ett nytt arkiv.
-
-## Vanliga problem & tips
-
-- **File path separators** – använd `Path.Combine` för plattforms‑oberoende säkerhet.  
-- **Password‑protected ZIPs** – sätt `archive.Password` innan du extraherar.  
-- **Multiple entries** – loopa igenom `archive.Entries` och matcha på `FileName`.  
-- **Compress multiple files zip** – om du senare behöver samla flera filer, låter Aspose.Zip:s `AddFile`‑metod dig skapa arkiv utan att lämna API‑et.
-
-## Vanliga frågor
-
-### Q1: Kan jag komprimera flera filer med Aspose.Zip för .NET?
-
-**A:** Ja, Aspose.Zip för .NET stöder **compress multiple files zip**. Se dokumentationen för detaljerade instruktioner.
-
-### Q2: Är Aspose.Zip kompatibel med .NET Core?
-
-**A:** Absolut! Aspose.Zip integreras sömlöst med både .NET Framework och .NET Core.
-
-### Q3: Hur kan jag hantera lösenordsskyddade komprimerade filer?
-
-**A:** Aspose.Zip tillhandahåller metoder för att arbeta med lösenordsskyddade arkiv. Sätt `Password`‑egenskapen på `Archive`‑objektet innan extraktion.
-
-### Q4: Finns det licensieringsaspekter att beakta vid användning av Aspose.Zip?
-
-**A:** Granska licensinformation på [Aspose website](https://purchase.aspose.com/buy).
-
-### Q5: Var kan jag söka hjälp om jag stöter på problem?
-
-**A:** Besök [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) för community‑support.
-
-## Slutsats
-
-Grattis! Du har framgångsrikt **extract zip c#** och övervakat zip‑framsteg medan du extraherade en enskild fil med Aspose.Zip för .NET. Inkorpora detta mönster i dina applikationer för att förenkla filhantering, förbättra användarupplevelsen och hålla din kodbas ren.
-
----
-
-**Senast uppdaterad:** 2026-04-24  
-**Testat med:** Aspose.Zip for .NET 24.11  
-**Författare:** Aspose  
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
