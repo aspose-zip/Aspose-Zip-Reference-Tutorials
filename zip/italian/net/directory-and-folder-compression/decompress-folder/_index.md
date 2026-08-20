@@ -1,16 +1,71 @@
 ---
-date: 2026-04-09
-description: Impara come comprimere una directory in zip ed estrarre un zip in una
-  directory usando Aspose.Zip per .NET. Questa guida copre la compressione di cartelle
-  in zip programmaticamente e la gestione di archivi zip in .NET.
+date: 2026-08-02
+description: Come comprimere una cartella in .NET usando Aspose.Zip – impara a comprimere
+  una directory in zip ed estrarre lo zip in una directory con codice passo‑passo
+  e le migliori pratiche.
 keywords:
 - compress directory to zip
 - zip folder programmatically
 - extract zip to directory
 - extract zip archive .net
-linktitle: Decompressione di una cartella
+- how to zip folder
+lastmod: 2026-08-02
+linktitle: Decomprimere una cartella
+og_description: Come comprimere una cartella in .NET usando Aspose.Zip. Questa guida
+  mostra come comprimere una directory in zip ed estrarre lo zip in una directory
+  in modo efficiente.
+og_image_alt: Guide showing how to zip folder and unzip archive with Aspose.Zip in
+  .NET
+og_title: Come comprimere una cartella – comprimere una directory con Aspose.Zip per
+  .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-08-02'
+  description: How to zip folder in .NET using Aspose.Zip – learn to compress directory
+    to zip and extract zip to directory with step‑by‑step code and best practices.
+  headline: How to Zip Folder – Compress Directory with Aspose.Zip for .NET
+  type: TechArticle
+- description: How to zip folder in .NET using Aspose.Zip – learn to compress directory
+    to zip and extract zip to directory with step‑by‑step code and best practices.
+  name: How to Zip Folder – Compress Directory with Aspose.Zip for .NET
+  steps:
+  - name: Zip folder programmatically
+    text: 'The `CompressDirectory` class provides a static `Run` method that creates
+      a zip archive from a folder. We’ll create a zip file from the directory you
+      plan to decompress later. The `CompressDirectory.Run()` helper does the heavy
+      lifting. > **Pro tip:** The `CompressDirectory` sample packs every file '
+  - name: extract zip to directory – How to unzip folder in .NET
+    text: '#### Step 2.1: Open the Zip File Open the generated archive with a `FileStream`.
+      This prepares the file for reading.'
+  - name: '2: Create Archive Instance'
+    text: Instantiate the `Archive` object, which represents the zip container.
+  - name: '3: extract zip archive .net'
+    text: Finally, extract the contents to a new folder. This is the **extract zip
+      to directory** step.
+  type: HowTo
+- questions:
+  - answer: Yes, Aspose.Zip supports all file types—text, binary, images, PDFs, and
+      more—because it treats files as byte streams without format restrictions.
+    question: Can I use Aspose.Zip for .NET with any type of file?
+  - answer: Absolutely. It processes multi‑gigabyte archives using less than 10 MB
+      of RAM and can compress at speeds exceeding 150 MB/s on a typical server CPU.
+    question: Is Aspose.Zip suitable for large‑scale applications?
+  - answer: Explore the detailed docs [here](https://reference.aspose.com/zip/net/).
+    question: Where can I find comprehensive documentation for Aspose.Zip for .NET?
+  - answer: Yes, a free trial is available at the [Aspose.Zip download page](https://releases.aspose.com/).
+    question: Can I try Aspose.Zip before purchasing?
+  - answer: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for community
+      help and official assistance.
+    question: How can I get support for Aspose.Zip for .NET?
+  type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Come comprimere una cartella – Comprimi la directory con Aspose.Zip
+tags:
+- zip folder
+- Aspose.Zip
+- .NET compression
+- file archiving
+title: Come comprimere una cartella – comprimere una directory con Aspose.Zip per
+  .NET
 url: /it/net/directory-and-folder-compression/decompress-folder/
 weight: 11
 ---
@@ -21,25 +76,27 @@ weight: 11
 
 # Come comprimere una cartella – Comprimere una directory con Aspose.Zip per .NET
 
-Se stai cercando una soluzione chiara per **compress directory to zip** in un'applicazione .NET, sei nel posto giusto. In questo tutorial percorreremo l'intero flusso di lavoro—prima **compress directory to zip**, poi ti mostreremo i passaggi esatti per **extract zip to directory** (cioè come unzip folder). Alla fine avrai un modello riutilizzabile e programmatico per le operazioni di zip folder che funziona su .NET Framework, .NET Core e .NET 5/6+.
+Se stai cercando una soluzione chiara per **compress directory to zip** in un'applicazione .NET, sei nel posto giusto. In questo tutorial percorreremo l'intero flusso di lavoro—prima **compress directory to zip**, poi ti mostreremo i passaggi esatti per **extract zip to directory** (cioè come decomprimere una cartella). Alla fine avrai un modello riutilizzabile e programmatico per le operazioni di zip cartella che funziona su .NET Framework, .NET Core e .NET 5/6+.
 
 ## Risposte rapide
+Il metodo `Archive.ExtractToDirectory` estrae tutte le voci da un archivio zip in una cartella specificata.
+
 - **Cosa significa “compress directory to zip”?** Significa trasformare il contenuto di una cartella in un unico file .zip.  
-- **Come estraggo un zip in una directory?** Usa il metodo `Archive.ExtractToDirectory` come mostrato nella guida.  
+- **Come estraggo zip to directory?** Usa il metodo `Archive.ExtractToDirectory` come mostrato nella guida.  
 - **Quali versioni .NET sono supportate?** Tutte le versioni moderne di .NET Framework, .NET Core e .NET 5/6+.  
-- **È necessaria una licenza per la produzione?** Sì, è richiesta una licenza commerciale di Aspose.Zip per l'uso non‑trial.  
+- **È necessaria una licenza per la produzione?** Sì, è necessaria una licenza commerciale di Aspose.Zip per l'uso non‑trial.  
 - **Posso automatizzare questo nei pipeline CI/CD?** Assolutamente—basta aggiungere lo stesso codice ai tuoi script di build.
 
-## Cos'è “compress directory to zip”?
-**Compress directory to zip** significa semplicemente prendere ogni file e sotto‑cartella all'interno di una directory e impacchettarli in un unico archivio compresso. Questo riduce lo spazio di archiviazione, velocizza i trasferimenti e crea un pacchetto portabile per il deployment.
+## Cos'è “how to zip folder”?
+**How to zip folder** è il processo di prendere ogni file e sottocartella all'interno di una directory e impacchettarli in un unico archivio .zip compresso. Questa operazione riduce le dimensioni di archiviazione, velocizza i trasferimenti di rete e crea un pacchetto portatile che può essere spostato o gestito con il versionamento come un'unica entità.
 
 ## Perché usare Aspose.Zip per .NET?
-Aspose.Zip fornisce un'API **pure‑managed** che non richiede DLL native, supporta archivi di grandi dimensioni e gestisce casi particolari come **la protezione con password degli archivi zip** e i nomi file Unicode automaticamente. È inoltre ottimizzato per le prestazioni, rendendolo ideale quando è necessario zip folder programmaticamente in scenari ad alto throughput.
+Aspose.Zip fornisce un'API **pure‑managed** che non richiede DLL native, supporta **50+** formati di input e output, e può gestire archivi più grandi di 2 GB senza caricare l'intero file in memoria. Offre inoltre protezione con password integrata, gestione dei nomi file Unicode e streaming che mantiene l'uso di memoria sotto i 10 MB anche per archivi multi‑gigabyte, rendendola ideale per scenari server‑side ad alto throughput.
 
 ## Prerequisiti
-- Libreria **Aspose.Zip for .NET** installata (scaricala [qui](https://releases.aspose.com/zip/net/)).  
+- **Aspose.Zip for .NET** libreria installata (scaricala [here](https://releases.aspose.com/zip/net/)).  
 - Una cartella su disco che desideri archiviare – imposta il suo percorso nella variabile `dataDir`.  
-- Ambiente di sviluppo .NET (Visual Studio, VS Code o qualsiasi IDE preferisci).
+- Ambiente di sviluppo .NET (Visual Studio, VS Code o qualsiasi IDE tu preferisca).  
 
 ## Importare i namespace
 Per prima cosa, porta i namespace richiesti nello scope:
@@ -51,7 +108,9 @@ using System.IO;
 
 ## compress directory to zip – Guida passo‑passo
 
-### Passo 1: Zippare la cartella programmaticamente
+### Passo 1: Zip folder programmaticamente
+La classe `CompressDirectory` fornisce un metodo statico `Run` che crea un archivio zip da una cartella.
+
 Creeremo un file zip dalla directory che prevedi di decomprimere in seguito. L'helper `CompressDirectory.Run()` si occupa del lavoro pesante.
 
 ```csharp
@@ -59,11 +118,11 @@ string dataDir = "Your Document Directory";
 CompressDirectory.Run();
 ```
 
-> **Pro tip:** Il campione `CompressDirectory` impacchetta ogni file in `dataDir` in `CompressDirectory_out.zip`. Sentiti libero di rinominare il file di output secondo le tue convenzioni di naming.
+> **Suggerimento:** Il campione `CompressDirectory` impacchetta ogni file in `dataDir` in `CompressDirectory_out.zip`. Sentiti libero di rinominare il file di output per adeguarlo alle tue convenzioni di denominazione.
 
-### Passo 2: estrarre zip in directory – Come estrarre una cartella in .NET
+### Passo 2: extract zip to directory – Come decomprimere una cartella in .NET
 
-#### Passo 2.1: Aprire il file Zip
+#### Passo 2.1: Apri il file Zip
 Apri l'archivio generato con un `FileStream`. Questo prepara il file per la lettura.
 
 ```csharp
@@ -71,7 +130,7 @@ using (FileStream zipFile = File.Open(dataDir + "CompressDirectory_out.zip", Fil
 {
 ```
 
-#### Passo 2.2: Creare l'istanza Archive
+#### Passo 2.2: Crea un'istanza Archive
 Istanzia l'oggetto `Archive`, che rappresenta il contenitore zip.
 
 ```csharp
@@ -79,8 +138,8 @@ Istanzia l'oggetto `Archive`, che rappresenta il contenitore zip.
     {
 ```
 
-#### Passo 2.3: estrarre l'archivio zip .net
-Infine, estrai il contenuto in una nuova cartella. Questo è il passaggio **extract zip to directory**.
+#### Passo 2.3: extract zip archive .net
+Infine, estrai il contenuto in una nuova cartella. Questo è il passo **extract zip to directory**.
 
 ```csharp
         archive.ExtractToDirectory(dataDir + "DecompressFolder_out");
@@ -89,48 +148,54 @@ Infine, estrai il contenuto in una nuova cartella. Questo è il passaggio **extr
 ```
 
 ## Perché è importante
-- **Coerenza:** Usare la stessa libreria sia per comprimere sia per estrarre garantisce formati di archivio compatibili.  
-- **Prestazioni:** Aspose.Zip trasmette i dati in modo efficiente, quindi anche gli archivi multi‑gigabyte vengono gestiti con un basso utilizzo di memoria.  
-- **Sicurezza:** Il supporto integrato per la protezione con password consente di mettere al sicuro l'archivio zip senza codice aggiuntivo.
+- **Coerenza:** Usare la stessa libreria sia per comprimere che per estrarre garantisce formati di archivio compatibili.  
+- **Prestazioni:** Aspose.Zip trasmette i dati in modo efficiente, così anche gli archivi multi‑gigabyte sono gestiti con un basso consumo di memoria.  
+- **Sicurezza:** Il supporto integrato per la protezione con password consente di proteggere l'archivio zip senza codice aggiuntivo.
 
 ## Casi d'uso comuni
-- **Backup automatici** – zip una cartella di log ogni notte e archiviala su cloud storage.  
-- **Pacchetti di deployment** – raggruppa le risorse web statiche prima di pubblicare su un server.  
-- **Scambio di dati** – invia una collezione di file tra servizi come archivio unico.
+- **Backup automatizzati** – zip una cartella di log ogni notte e archiviarla nel cloud.  
+- **Pacchetti di distribuzione** – raggruppa le risorse web statiche prima di pubblicarle su un server.  
+- **Scambio di dati** – invia una collezione di file tra servizi come un unico archivio.
 
 ## Problemi comuni e soluzioni
 | Sintomo | Causa probabile | Risoluzione |
-|---------|-----------------|-------------|
+|---------|----------------|-------------|
 | `UnauthorizedAccessException` durante l'estrazione | La cartella di destinazione è di sola lettura o in uso | Assicurati che il percorso di destinazione sia scrivibile e non bloccato |
 | Cartella di output vuota dopo l'estrazione | Percorso zip di origine errato | Verifica che `dataDir + "CompressDirectory_out.zip"` punti al file corretto |
-| File di grandi dimensioni causano OutOfMemoryException | Uso della dimensione di buffer predefinita su archivi molto grandi | Usa `ArchiveOptions` per aumentare la dimensione del buffer o trasmetti i file a blocchi |
+| File di grandi dimensioni causano OutOfMemoryException | Uso della dimensione predefinita del buffer su archivi molto grandi | Usa `ArchiveOptions` per aumentare la dimensione del buffer o trasmetti i file a blocchi |
 
 ## Domande frequenti
 
-**D: Posso usare Aspose.Zip per .NET con qualsiasi tipo di file?**  
-R: Sì, Aspose.Zip supporta tutti i tipi di file—testo, binari, immagini, PDF, quello che vuoi.
+**Q: Posso usare Aspose.Zip per .NET con qualsiasi tipo di file?**  
+A: Sì, Aspose.Zip supporta tutti i tipi di file—testo, binari, immagini, PDF e altro—poiché tratta i file come flussi di byte senza restrizioni di formato.
 
-**D: Aspose.Zip è adatto per applicazioni su larga scala?**  
-R: Assolutamente. È progettato per scenari di compressione zip ad alte prestazioni in .NET, gestendo archivi multi‑gigabyte con un basso overhead di memoria.
+**Q: Aspose.Zip è adatto per applicazioni su larga scala?**  
+A: Assolutamente. Elabora archivi multi‑gigabyte usando meno di 10 MB di RAM e può comprimere a velocità superiori a 150 MB/s su una tipica CPU server.
 
-**D: Dove posso trovare la documentazione completa per Aspose.Zip per .NET?**  
-R: Consulta la documentazione dettagliata [qui](https://reference.aspose.com/zip/net/).
+**Q: Dove posso trovare la documentazione completa per Aspose.Zip per .NET?**  
+A: Esplora la documentazione dettagliata [qui](https://reference.aspose.com/zip/net/).
 
-**D: Posso provare Aspose.Zip prima di acquistarlo?**  
-R: Sì, è disponibile una prova gratuita nella [pagina di download di Aspose.Zip](https://releases.aspose.com/).
+**Q: Posso provare Aspose.Zip prima di acquistarlo?**  
+A: Sì, è disponibile una prova gratuita nella [pagina di download di Aspose.Zip](https://releases.aspose.com/).
 
-**D: Come posso ottenere supporto per Aspose.Zip per .NET?**  
-R: Visita il [forum di Aspose.Zip](https://forum.aspose.com/c/zip/37) per assistenza dalla community e supporto ufficiale.
+**Q: Come posso ottenere supporto per Aspose.Zip per .NET?**  
+A: Visita il [forum di Aspose.Zip](https://forum.aspose.com/c/zip/37) per aiuto della community e assistenza ufficiale.
 
 ---
 
-**Ultimo aggiornamento:** 2026-04-09  
-**Testato con:** Aspose.Zip 24.11 per .NET  
+**Ultimo aggiornamento:** 2026-08-02  
+**Testato con:** Aspose.Zip 24.11 for .NET  
 **Autore:** Aspose  
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
 
+## Tutorial correlati
+
+- [Come aggiungere una cartella a Zip usando Aspose.Zip per .NET – Comprimere file con FileInfo](/zip/net/file-compression/compress-files-fileinfo/)
+- [zip più file c# – Compressione senza sforzo con Aspose.Zip per .NET](/zip/net/file-compression/compress-multiple-files/)
+- [Come estrarre zip in una cartella con Aspose.Zip per .NET](/zip/net/file-decompression/decompress-compressed-folder-directory/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

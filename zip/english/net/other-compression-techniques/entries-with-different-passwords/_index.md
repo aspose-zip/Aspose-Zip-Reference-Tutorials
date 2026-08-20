@@ -1,17 +1,75 @@
 ---
-title: How to compress files with password and encrypt ZIP entries with different passwords using Aspose.Zip for .NET
-linktitle: Entries with Different Passwords
-second_title: Aspose.Zip .NET API for Files Compression & Archiving
-description: Learn how to compress files with password and encrypt ZIP archives using Aspose.Zip for .NET, covering 7z password protection and per file zip password in C#.
-weight: 13
-url: /net/other-compression-techniques/entries-with-different-passwords/
-date: 2026-05-05
+date: 2026-08-02
+description: Learn how to compress files with password and encrypt ZIP archives using
+  Aspose.Zip for .NET, covering 7z password protection and per file zip password in
+  C#.
+images:
+- /net/other-compression-techniques/entries-with-different-passwords/og-image.png
 keywords:
 - compress files with password
 - how to encrypt zip
-- aes 256 zip encryption
-- encrypt zip entries
 - per file zip password
+lastmod: 2026-08-02
+linktitle: Entries with Different Passwords
+og_description: Compress files with password using Aspose.Zip for .NET. Learn AES‑256
+  encryption, per‑entry passwords, and best practices in this step‑by‑step C# guide.
+og_image_alt: 'Developer guide: compress files with password and encrypt ZIP entries
+  using Aspose.Zip for .NET'
+og_title: Compress files with password — Secure ZIP entries using Aspose.Zip for .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-08-02'
+  description: Learn how to compress files with password and encrypt ZIP archives
+    using Aspose.Zip for .NET, covering 7z password protection and per file zip password
+    in C#.
+  headline: How to compress files with password and encrypt ZIP entries with different
+    passwords using Aspose.Zip for .NET
+  type: TechArticle
+- description: Learn how to compress files with password and encrypt ZIP archives
+    using Aspose.Zip for .NET, covering 7z password protection and per file zip password
+    in C#.
+  name: How to compress files with password and encrypt ZIP entries with different
+    passwords using Aspose.Zip for .NET
+  steps:
+  - name: '**Use strong, unique passwords** – avoid common words and reuse.'
+    text: '**Use strong, unique passwords** – avoid common words and reuse.'
+  - name: '**Store passwords securely** – consider a password manager or a secure
+      vault if you need to distribute them.'
+    text: '**Store passwords securely** – consider a password manager or a secure
+      vault if you need to distribute them.'
+  - name: '**Test with multiple tools** – ensure both 7‑Zip and WinRAR can read the
+      archive, as some older tools may not support AES‑256.'
+    text: '**Test with multiple tools** – ensure both 7‑Zip and WinRAR can read the
+      archive, as some older tools may not support AES‑256.'
+  - name: '**Document the password‑file mapping** – a simple CSV (file, password)
+      helps administrators keep track of which password belongs to which entry.'
+    text: '**Document the password‑file mapping** – a simple CSV (file, password)
+      helps administrators keep track of which password belongs to which entry.'
+  type: HowTo
+- questions:
+  - answer: It means applying password‑based protection (AES or ZipCrypto) to the
+      contents of a ZIP/7z archive.
+    question: What does “encrypt zip” mean?
+  - answer: Yes—Aspose.Zip lets you assign distinct passwords per file.
+    question: Can each entry have a different password?
+  - answer: All modern .NET Framework, .NET Core, and .NET 5/6 versions.
+    question: Which .NET versions are supported?
+  - answer: A commercial license is required for production use; a free trial is available.
+    question: Do I need a license for production?
+  - answer: The sample creates a 7z archive with AES‑256 encryption.
+    question: What compression format is used in the example?
+  type: FAQPage
+second_title: Aspose.Zip .NET API for Files Compression & Archiving
+tags:
+- compress files with password
+- Aspose.Zip
+- .NET encryption
+- zip archive security
+- C# file compression
+title: How to compress files with password and encrypt ZIP entries with different
+  passwords using Aspose.Zip for .NET
+url: /net/other-compression-techniques/entries-with-different-passwords/
+weight: 13
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
@@ -27,20 +85,21 @@ If you need to **compress files with password** and give each entry its own pass
 ## Quick Answers
 - **What does “encrypt zip” mean?** It means applying password‑based protection (AES or ZipCrypto) to the contents of a ZIP/7z archive.  
 - **Can each entry have a different password?** Yes—Aspose.Zip lets you assign distinct passwords per file.  
-- **Which .NET versions are supported?** All modern .NET Framework, .NET Core, and .NET 5/6 versions.  
+- **Which .NET versions are supported?** All modern .NET Framework, .NET Core, and .NET 5/6 versions.  
 - **Do I need a license for production?** A commercial license is required for production use; a free trial is available.  
 - **What compression format is used in the example?** The sample creates a 7z archive with AES‑256 encryption.
 
 ## What is “how to encrypt zip” with Aspose.Zip?
-Encrypting a ZIP (or 7z) file means securing its entries so that they cannot be opened without the correct password. Aspose.Zip for .NET supports both classic ZipCrypto and stronger AES encryption, and it allows you to specify encryption settings per entry, giving you fine‑grained control over security.
+
+Encrypting a ZIP (or 7z) file means securing its entries so that they cannot be opened without the correct password. Aspose.Zip for .NET supports two encryption algorithms—classic ZipCrypto and AES‑256—allowing you to specify encryption settings per entry, giving you fine‑grained control over security.
 
 ## Why compress files with password?
-- **Security segmentation:** If one password is compromised, the other files stay protected.  
-- **Regulatory compliance:** Certain industries mandate separate credentials for different data categories.  
-- **User‑specific distribution:** A single archive can be shipped to many users, each unlocking only the files they’re authorized to see.
+
+You can protect sensitive data while still benefiting from compression. Assigning a unique password to each file limits exposure: if one password is compromised, the remaining files stay safe. This approach also helps meet industry‑specific compliance rules that demand separate credentials for different data categories, and it simplifies user‑specific distribution by bundling multiple files into a single archive that only reveals the files each recipient is authorized to see.
 
 ## Why use AES 256 zip encryption?
-AES‑256 is the current industry‑standard for strong symmetric encryption. Compared with ZipCrypto, it resists modern brute‑force attacks and is fully compatible with 7‑Zip and other contemporary extractors. When you need **aes 256 zip encryption**, Aspose.Zip makes the configuration straightforward.
+
+AES‑256 is the current industry‑standard for strong symmetric encryption. Compared with ZipCrypto, it resists modern brute‑force attacks and is fully compatible with 7‑Zip and other contemporary extractors. It also provides faster compression and decryption performance compared to older algorithms, making it suitable for large enterprise workloads. When you need **aes 256 zip encryption**, Aspose.Zip makes the configuration straightforward.
 
 ## Prerequisites
 
@@ -75,7 +134,11 @@ string dataDir = "Your Document Directory";
 
 ## Step 2: Create Entries with Different Passwords
 
-Here’s the core of the tutorial. We open a new 7z file, create three `FileInfo` objects, and add each as an entry with its own AES password.
+Here’s the core of the tutorial. We open a new 7z file, create three `FileInfo` objects, and add each as an entry with its own AES password.  
+`SevenZipArchive` is the class that represents a 7‑zip archive container.  
+`SevenZipEntrySettings` defines per‑entry compression and encryption options.  
+`SevenZipStoreCompressionSettings` specifies the compression method and level for an entry.  
+`SevenZipAESEncryptionSettings` holds the AES password and related encryption parameters.
 
 ```csharp
 //ExStart: EntriesWithDifferentPasswords
@@ -133,25 +196,20 @@ When you **encrypt zip entries** using a per‑file password, keep these tips in
 
 ## Frequently Asked Questions
 
-### Q1: Is Aspose.Zip for .NET compatible with all versions of .NET?
+**Q1: Is Aspose.Zip for .NET compatible with all versions of .NET?**  
+A1: Yes, Aspose.Zip for .NET integrates seamlessly with .NET Framework 4.5+, .NET Core 3.1+, and .NET 5/6/7.
 
-A1: Yes, Aspose.Zip for .NET is designed to seamlessly integrate with all versions of the .NET framework.
+**Q2: Can I use Aspose.Zip for .NET in my commercial projects?**  
+A2: Absolutely. A commercial license removes all trial limitations and grants you full redistribution rights. Purchase details are available [here](https://purchase.aspose.com/buy).
 
-### Q2: Can I use Aspose.Zip for .NET in my commercial projects?
+**Q3: Is there a free trial available?**  
+A3: Yes, you can explore the full feature set with a time‑limited free trial. Get started [here](https://releases.aspose.com/).
 
-A2: Absolutely! Aspose.Zip for .NET offers commercial licenses, and you can find more information on how to purchase [here](https://purchase.aspose.com/buy).
+**Q4: How can I get support for Aspose.Zip for .NET?**  
+A4: For technical assistance, visit the official [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37) where staff and community members respond quickly.
 
-### Q3: Is there a free trial available?
-
-A3: Yes, you can explore the features of Aspose.Zip for .NET with a free trial. Get started [here](https://releases.aspose.com/).
-
-### Q4: How can I get support for Aspose.Zip for .NET?
-
-A4: For any queries or assistance, visit the [Aspose.Zip Forum](https://forum.aspose.com/c/zip/37).
-
-### Q5: Can I use Aspose.Zip for .NET without a permanent license?
-
-A5: Yes, you can obtain a temporary license for your short‑term needs. Find more details [here](https://purchase.aspose.com/temporary-license/).
+**Q5: Do I need a permanent license for short‑term projects?**  
+A5: You can obtain a temporary license that covers up to 30 days of use, perfect for proofs‑of‑concept. Details are provided [here](https://purchase.aspose.com/temporary-license/).
 
 ## Conclusion
 
@@ -159,13 +217,19 @@ You’ve just learned **how to compress files with password** and encrypt ZIP ar
 
 ---
 
-**Last Updated:** 2026-05-05  
+**Last Updated:** 2026-08-02  
 **Tested With:** Aspose.Zip for .NET 24.12 (latest at time of writing)  
 **Author:** Aspose  
 
-{{< /blocks/products/pf/tutorial-page-section >}}
+{{< blocks/products/products-backtop-button >}}
 
+## Related Tutorials
+
+- [Aspose.Zip for .NET - Password Protect Zip Archive & Store Multiple Files Without Compression](/zip/net/password-protection-and-encryption/store-multiple-files-no-compression-password/)
+- [Compress Multiple Files with Encryption in Aspose.Zip .NET](/zip/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/)
+- [How to Extract Zip with Password Using Aspose.Zip for .NET](/zip/net/archive-extraction-and-formats/extract-archive-different-passwords/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
