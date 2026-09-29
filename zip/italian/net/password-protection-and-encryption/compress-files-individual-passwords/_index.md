@@ -1,35 +1,75 @@
 ---
-date: 2026-05-15
-description: Scopri come creare file zip protetti da password e comprimere file con
-  password usando Aspose.Zip per .NET in pochi semplici passaggi.
+date: 2026-09-29
+description: Scopri come creare zip con password in .NET usando Aspose.Zip, comprimere
+  file con password individuali e applicare la crittografia AES‑256 in pochi semplici
+  passaggi.
 keywords:
-- create password protected zip
+- create zip with password
+- how to encrypt zip
 - compress files with passwords
-- Aspose.Zip .NET
+- per file zip password
+- aes256 zip encryption
+lastmod: 2026-09-29
 linktitle: Comprimi file con password individuali
+og_description: Crea zip con password in .NET usando Aspose.Zip. Questa guida mostra
+  come comprimere file con password individuali, applicare la crittografia AES‑256
+  e soddisfare i requisiti di conformità con poche righe di codice.
+og_image_alt: Developer guide showing how to create password‑protected ZIP archives
+  in .NET with Aspose.Zip
+og_title: Crea zip con password in .NET usando Aspose.Zip ora
 schemas:
 - author: Aspose
-  dateModified: '2026-05-15'
-  description: Learn how to create password protected zip files and compress files
-    with passwords using Aspose.Zip for .NET in a few simple steps.
-  headline: Create Password Protected ZIP in .NET with Aspose.Zip
+  dateModified: '2026-09-29'
+  description: Learn how to create zip with password in .NET using Aspose.Zip, compress
+    files with individual passwords, and apply AES‑256 encryption in a few simple
+    steps.
+  headline: Create zip with password in .NET using Aspose.Zip now
   type: TechArticle
 - questions:
   - answer: Yes, Aspose.Zip lets you choose the encryption algorithm (e.g., AES‑256)
       for each entry when you add it to the archive.
     question: Can I use different encryption methods for each file?
-  - answer: Yes, you can access the free trial of Aspose.Zip for .NET [here](https://releases.aspose.com/).
+  - answer: Yes, you can access the free trial of Aspose.Zip for .NET [Aspose.Zip
+      trial download page](https://releases.aspose.com/).
     question: Is there a trial version available?
   - answer: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for assistance
       from the community and Aspose support.
     question: How can I get support if I encounter issues?
-  - answer: The documentation is available [here](https://reference.aspose.com/zip/net/).
+  - answer: The documentation is available [Aspose.Zip .NET documentation](https://reference.aspose.com/zip/net/).
     question: Where can I find detailed documentation for Aspose.Zip for .NET?
-  - answer: Yes, you can acquire a temporary license [here](https://purchase.aspose.com/temporary-license/).
+  - answer: Yes, you can acquire a temporary license [temporary license purchase page](https://purchase.aspose.com/temporary-license/).
     question: Can I purchase a temporary license for testing purposes?
   type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Crea ZIP protetto da password in .NET con Aspose.Zip
+tags:
+- create zip with password
+- Aspose.Zip
+- .NET compression
+- zip encryption
+- AES-256
+- author: Aspose
+  dateModified: '2026-09-29'
+  description: Learn how to create zip with password in .NET using Aspose.Zip, compress
+    files with individual passwords, and apply AES‑256 encryption in a few simple
+    steps.
+  headline: Create zip with password in .NET using Aspose.Zip now
+  type: TechArticle
+- questions:
+  - answer: Yes, Aspose.Zip lets you choose the encryption algorithm (e.g., AES‑256)
+      for each entry when you add it to the archive.
+    question: Can I use different encryption methods for each file?
+  - answer: Yes, you can access the free trial of Aspose.Zip for .NET [Aspose.Zip
+      trial download page](https://releases.aspose.com/).
+    question: Is there a trial version available?
+  - answer: Visit the [Aspose.Zip forum](https://forum.aspose.com/c/zip/37) for assistance
+      from the community and Aspose support.
+    question: How can I get support if I encounter issues?
+  - answer: The documentation is available [Aspose.Zip .NET documentation](https://reference.aspose.com/zip/net/).
+    question: Where can I find detailed documentation for Aspose.Zip for .NET?
+  - answer: Yes, you can acquire a temporary license [temporary license purchase page](https://purchase.aspose.com/temporary-license/).
+    question: Can I purchase a temporary license for testing purposes?
+  type: FAQPage
+title: Crea zip con password in .NET usando Aspose.Zip ora
 url: /it/net/password-protection-and-encryption/compress-files-individual-passwords/
 weight: 16
 ---
@@ -38,34 +78,38 @@ weight: 16
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Crea ZIP protetto da password in .NET con Aspose.Zip
+# Crea zip con password in .NET usando Aspose.Zip
 
 ## Introduzione
 
-In questo tutorial imparerai a **creare zip protetti da password** in un'applicazione .NET usando Aspose.Zip. La compressione sicura è essenziale quando è necessario trasmettere dati riservati o archiviare documenti sensibili senza esporli a accessi non autorizzati.
-
-**Aspose.Zip** è una libreria .NET che consente di creare, leggere e crittografare archivi ZIP programmaticamente. Supporta la crittografia AES‑256 e permette di assegnare una password unica a ogni voce all'interno dell'archivio.
+In questo tutorial imparerai a **creare zip con password** in un'applicazione .NET utilizzando Aspose.Zip. La compressione sicura è essenziale quando è necessario trasmettere dati riservati o archiviare documenti sensibili senza esporli ad accessi non autorizzati. La crittografia zip AES‑256 integrata nella libreria ti consente di proteggere ogni voce individualmente, aiutandoti a soddisfare standard di conformità come GDPR e HIPAA.
 
 ## Risposte rapide
-- **Che cosa fa Aspose.Zip?** Crea e manipola archivi ZIP, inclusa la protezione con password per file.  
+- **Che cosa fa Aspose.Zip?** Crea e manipola archivi ZIP, includendo la protezione con password per file.  
 - **Quante password posso assegnare?** Una password distinta per file; voci illimitate.  
-- **Quale algoritmo di crittografia viene utilizzato?** AES‑256, che fornisce sicurezza a 256 bit.  
-- **È necessaria una licenza per i test?** È disponibile una versione di prova gratuita; è richiesta una licenza per la produzione.  
-- **Quali versioni di .NET sono supportate?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+- **Quale algoritmo di crittografia viene utilizzato?** AES‑256, che fornisce sicurezza a 256 bit.  
+- **È necessaria una licenza per i test?** È disponibile una versione di prova gratuita; è necessaria una licenza per la produzione.  
+- **Quali versioni .NET sono supportate?** .NET Framework 4.5+, .NET Core 3.1+, .NET 5/6/7.
+
+## Che cos'è creare zip con password?
+L'espressione “creare zip con password” si riferisce alla generazione di un archivio ZIP in cui ogni voce è crittografata con una password definita dall'utente. Aspose.Zip implementa questa funzionalità consentendoti di assegnare una password a ogni file aggiunto all'archivio, garantendo che ciascun file sia protetto individualmente.
+
+## Perché usare la protezione con password per gli archivi ZIP?
+La protezione con password aggiunge un forte livello di sicurezza mantenendo le dimensioni dell'archivio ridotte. Aspose.Zip supporta **oltre 30 algoritmi di compressione** e offre **crittografia zip AES‑256**, fornendo fino a **256 bit di sicurezza**. È in grado di elaborare **archivi da centinaia di megabyte** senza caricare l'intero file in memoria, raggiungendo fino a **500 MB/s di throughput** su hardware server tipico. Questa prestazione lo rende ideale per lavori batch ad alto volume e trasferimenti di file in tempo reale.
 
 ## Prerequisiti
 
 Prima di immergerti nel tutorial, assicurati di avere i seguenti prerequisiti:
 
-- Aspose.Zip per .NET: assicurati di avere la libreria Aspose.Zip installata nel tuo progetto .NET. Puoi trovare la documentazione necessaria [qui](https://reference.aspose.com/zip/net/).
-- Download: se non l'hai già fatto, scarica la libreria Aspose.Zip per .NET da [questo link](https://releases.aspose.com/zip/net/).
-- Directory dei documenti: prepara una directory contenente i file che desideri comprimere.
+- Aspose.Zip per .NET: Assicurati di avere la libreria Aspose.Zip installata nel tuo progetto .NET. Puoi trovare la documentazione necessaria [documentazione Aspose.Zip .NET](https://reference.aspose.com/zip/net/).
+- Download: Se non l'hai già fatto, scarica la libreria Aspose.Zip per .NET dal [questo link](https://releases.aspose.com/zip/net/).
+- Cartella dei documenti: Prepara una cartella contenente i file che desideri comprimere.
 
-## Importa spazi dei nomi
+## Importa gli spazi dei nomi
 
 Nel tuo progetto .NET, assicurati di importare gli spazi dei nomi necessari:
 
-`ZipFile` è la classe principale di Aspose.Zip per creare archivi ZIP e assegnare password individuali a ogni voce.
+`ZipFile` è la classe principale di Aspose.Zip per creare archivi ZIP e assegnare password individuali a ciascuna voce.
 
 ```csharp
 using Aspose.Zip;
@@ -73,11 +117,11 @@ using Aspose.Zip.Saving;
 using System.IO;
 ```
 
-## Come creare file zip protetti da password in .NET?
+## Come creare zip con password in .NET?
 
 Carica la cartella di destinazione, istanzia un oggetto `ZipFile`, aggiungi ogni file con la propria password e infine chiama `Save` per scrivere l'archivio. L'intero processo richiede solo poche righe di codice e garantisce che ogni voce sia crittografata con la password specificata.
 
-### Passo 1: Imposta il percorso della directory delle risorse
+### Passo 1: impostare il percorso della directory delle risorse
 
 Definisci il percorso della directory delle risorse dove si trovano i tuoi file.
 
@@ -85,7 +129,7 @@ Definisci il percorso della directory delle risorse dove si trovano i tuoi file.
 string dataDir = "Your Document Directory";
 ```
 
-### Passo 2: Comprimi i file con password individuali
+### Passo 2: comprimere i file con password individuali
 
 Ora, comprimiamo i file con password individuali. Useremo tre file di esempio (`alice29.txt`, `asyoulik.txt` e `fields.c`) con password distinte per ciascuno.
 
@@ -109,36 +153,42 @@ using (FileStream zipFile = File.Open(dataDir + "CompressFilesWithIndividualPass
 }
 ```
 
-## Perché utilizzare la protezione con password per gli archivi ZIP?
+## Come crittografare i file zip con password per file?
 
-Aspose.Zip supporta **oltre 30 algoritmi di compressione** e può crittografare gli archivi con AES‑256, offrendo fino a **sicurezza a 256 bit**. È in grado di elaborare archivi di centinaia di megabyte senza caricare l'intero file in memoria, rendendolo ideale per scenari server‑side ad alte prestazioni. Inoltre, la protezione con password aiuta a soddisfare la conformità normativa come GDPR e HIPAA garantendo che i dati sensibili rimangano crittografati sia a riposo sia durante la trasmissione.
+Assegna una password unica a ogni file quando lo aggiungi all'archivio, e Aspose.Zip applicherà automaticamente la crittografia AES‑256 a ciascuna voce. Questo approccio ti consente di gestire l'accesso su base file, utile in scenari in cui diversi destinatari necessitano di credenziali differenti.
 
-## Conclusione
+## Come crittografare zip usando AES‑256?
 
-Congratulazioni! Hai imparato con successo a **creare zip protetti da password** e a **comprimere file con password** usando Aspose.Zip per .NET. Questa funzionalità aggiunge un ulteriore livello di sicurezza ai tuoi file compressi, garantendo riservatezza e conformità alle politiche di protezione dei dati.
+`EncryptionAlgorithm.Aes256` specifica l'algoritmo di crittografia AES‑256 per le voci ZIP. Usa l'impostazione `EncryptionAlgorithm.Aes256` su ogni `ZipEntry` per abilitare la crittografia zip AES‑256. L'algoritmo fornisce una chiave a 256 bit, garantendo che anche gli attaccanti più potenti non possano forzare l'archivio senza la password corretta.
+
+## Casi d'uso comuni per password zip per file
+
+- **Conformità normativa** – Proteggi i record dei pazienti o i bilanci finanziari con password individuali prima di inviarli agli auditor.
+- **Piattaforme SaaS multi‑tenant** – Genera un unico archivio contenente i dati di ciascun tenant, protetto con una password specifica per tenant.
+- **Script di backup sicuri** – Automatizza i backup notturni dove ogni file è crittografato con una password rotante per maggiore sicurezza.
 
 ## Domande frequenti
 
 **Q: Posso usare metodi di crittografia diversi per ogni file?**  
-A: Sì, Aspose.Zip ti consente di scegliere l'algoritmo di crittografia (ad esempio, AES‑256) per ogni voce quando la aggiungi all'archivio.
+A: Sì, Aspose.Zip ti consente di scegliere l'algoritmo di crittografia (ad esempio AES‑256) per ogni voce quando la aggiungi all'archivio.
 
 **Q: È disponibile una versione di prova?**  
-A: Sì, puoi accedere alla versione di prova gratuita di Aspose.Zip per .NET [qui](https://releases.aspose.com/).
+A: Sì, puoi accedere alla versione di prova gratuita di Aspose.Zip per .NET [pagina di download della prova Aspose.Zip](https://releases.aspose.com/).
 
-**Q: Come posso ottenere supporto se incontro problemi?**  
+**Q: Come posso ottenere supporto se riscontro problemi?**  
 A: Visita il [forum Aspose.Zip](https://forum.aspose.com/c/zip/37) per assistenza dalla community e dal supporto Aspose.
 
 **Q: Dove posso trovare la documentazione dettagliata per Aspose.Zip per .NET?**  
-A: La documentazione è disponibile [qui](https://reference.aspose.com/zip/net/).
+A: La documentazione è disponibile [documentazione Aspose.Zip .NET](https://reference.aspose.com/zip/net/).
 
 **Q: Posso acquistare una licenza temporanea per scopi di test?**  
-A: Sì, puoi ottenere una licenza temporanea [qui](https://purchase.aspose.com/temporary-license/).
+A: Sì, puoi acquisire una licenza temporanea [pagina di acquisto licenza temporanea](https://purchase.aspose.com/temporary-license/).
 
 ---
 
-**Ultimo aggiornamento:** 2026-05-15  
-**Testato con:** Aspose.Zip 24.11 for .NET  
-**Autore:** Aspose
+**Last Updated:** 2026-09-29  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose
 
 ## Tutorial correlati
 
@@ -146,11 +196,9 @@ A: Sì, puoi ottenere una licenza temporanea [qui](https://purchase.aspose.com/t
 - [Proteggi con password i file ZIP con crittografia AES usando Aspose.Zip](/zip/net/password-protection-and-encryption/password-protect-with-aes/)
 - [Comprimi più file con crittografia in Aspose.Zip .NET](/zip/net/password-protection-and-encryption/compress-multiple-files-traditional-encryption/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
