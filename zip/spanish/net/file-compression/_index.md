@@ -2,9 +2,12 @@
 {}
 ---
 
+{{< blocks/products/pf/main-wrap-class >}}
 {{< blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/tutorial-page-section >}}
 {{< blocks/products/pf/tutorial-page-section >}}
+
+
+
 
 # Crear archivo Zip sin compresión en .NET con Aspose.Zip
 
@@ -112,10 +115,9 @@ A: Sí. Puede trabajar con streams para evitar cargar archivos completos en memo
 - [Crear Zip sin compresión y descomprimir archivos – Aspose.Zip](/zip/net/file-decompression/decompress-stored-file/)
 - [Cómo crear archivo Zip y agregar archivo al Zip usando Aspose.Zip para .NET](/zip/net/file-compression/compress-single-file/)
 
+{{< /blocks/products/pf/tutorial-page-section >}}
 
+{{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< blocks/products/pf/main-wrap-class >}}
