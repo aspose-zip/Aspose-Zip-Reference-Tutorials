@@ -35,7 +35,7 @@ schemas:
       to request a time‑limited license that removes evaluation restrictions.'
   - question: Where can I get support or join the community for Aspose.Zip?
     answer: 'Join the Aspose.Zip **[support forum](https://forum.aspose.com/c/zip/37) **
-      to ask questions, share snippets, and learn from other developers.'ge
+      to ask questions, share snippets, and learn from other developers.'
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
 title: Jak vytvořit zip archiv a přidat soubor do zipu pomocí Aspose.Zip pro .NET
 url: /cs/net/file-compression/compress-single-file/
