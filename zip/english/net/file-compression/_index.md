@@ -63,19 +63,19 @@ using (var archive = new ZipArchive())
 Aspose.Zip processes archives up to **10 GB** without loading the entire file into memory, and it supports **30+ compression methods** (including Store, Deflate, Bzip2, LZMA, PPMd, and Enhanced Deflate). The library delivers **up to 2× faster** archiving compared with native .NET `System.IO.Compression` when handling large batches, while also providing built‑in encryption and Unicode filename support.
 
 ## Compressing Files with Aspose.Zip for .NET
-Compressing files is a fundamental aspect of file management. With Aspose.Zip for .NET, this task becomes not only efficient but also highly customizable. Follow our comprehensive tutorial on [Compressing a File with Aspose.Zip for .NET]({{< relref "compress-file/_index.md" >}}) to learn the step‑by‑step process. Whether you're a seasoned developer or a beginner, our guide will ensure you grasp the nuances of effective file compression effortlessly.
+Compressing files is a fundamental aspect of file management. With Aspose.Zip for .NET, this task becomes not only efficient but also highly customizable. Follow our comprehensive tutorial on [Compressing a File with Aspose.Zip for .NET]({{< relref "/net/file-compression/compress-file/" >}}) to learn the step‑by‑step process. Whether you're a seasoned developer or a beginner, our guide will ensure you grasp the nuances of effective file compression effortlessly.
 
 ## Compressing multiple files effortlessly
-In real‑world scenarios, dealing with multiple files is common. Aspose.Zip for .NET simplifies this process with its [Effortless Multiple File Compression tutorial]({{< relref "compress-multiple-files/_index.md" >}}). Optimize storage and enhance your file management capabilities by following our step‑by‑step guide. From the basics to advanced techniques, we've got you covered.
+In real‑world scenarios, dealing with multiple files is common. Aspose.Zip for .NET simplifies this process with its [Effortless Multiple File Compression tutorial]({{< relref "/net/file-compression/compress-multiple-files/" >}}). Optimize storage and enhance your file management capabilities by following our step‑by‑step guide. From the basics to advanced techniques, we've got you covered.
 
 ## Optimizing compression settings for superior performance
-Aspose.Zip for .NET provides a plethora of compression methods like Bzip2, LZMA, PPMd, Enhanced Deflate, and Store. Understanding how to leverage these methods is key to achieving optimal file compression. Dive into our guide on [Optimizing Compression Settings with Aspose.Zip for .NET]({{< relref "optimizing-compression-settings/_index.md" >}}) to explore and implement these settings effectively.
+Aspose.Zip for .NET provides a plethora of compression methods like Bzip2, LZMA, PPMd, Enhanced Deflate, and Store. Understanding how to leverage these methods is key to achieving optimal file compression. Dive into our guide on [Optimizing Compression Settings with Aspose.Zip for .NET]({{< relref "/net/file-compression/optimizing-compression-settings/" >}}) to explore and implement these settings effectively.
 
 ## Modifying zip files seamlessly
-Beyond compression, Aspose.Zip for .NET allows you to modify zip files seamlessly using C#. Learn the intricacies of this process with our [Modifying Zip Files with Aspose.Zip for .NET]({{< relref "modifying-zip-files/_index.md" >}}) comprehensive tutorial. Whether you're a developer working on a specific project or a curious enthusiast, this guide is designed to cater to your needs.
+Beyond compression, Aspose.Zip for .NET allows you to modify zip files seamlessly using C#. Learn the intricacies of this process with our [Modifying Zip Files with Aspose.Zip for .NET]({{< relref "/net/file-compression/modifying-zip-files/" >}}) comprehensive tutorial. Whether you're a developer working on a specific project or a curious enthusiast, this guide is designed to cater to your needs.
 
 ## Storage without compression
-Sometimes, storage without compression is the requirement. Aspose.Zip for .NET addresses this need with [Storing Multiple Files Without Compression]({{< relref "store-multiple-files-no-compression/_index.md" >}}). Explore the seamless storage of multiple files and optimise your .NET applications for efficient file management with our detailed step‑by‑step guide.
+Sometimes, storage without compression is the requirement. Aspose.Zip for .NET addresses this need with [Storing Multiple Files Without Compression]({{< relref "/net/file-compression/store-multiple-files-no-compression/" >}}). Explore the seamless storage of multiple files and optimise your .NET applications for efficient file management with our detailed step‑by‑step guide.
 
 ## Why Use Aspose.Zip to Create Zip Archives in .NET?
 Aspose.Zip delivers **performance** (up to 2× faster than native APIs), **flexibility** (30+ compression and encryption options), **ease of use** (intuitive API for compress files .net and add files zip .net), and **reliability** (handles archive corruption, Unicode filenames, and stream‑based operations). These quantified benefits make it the go‑to choice for professional .NET developers.
@@ -87,28 +87,28 @@ Aspose.Zip delivers **performance** (up to 2× faster than native APIs), **flexi
 - **Data Archiving:** Preserve historical data in a compact, searchable format.  
 
 ## File compression tutorials
-### [Compressing a File with Aspose.Zip for .NET]({{< relref "compress-file/_index.md" >}})
+### [Compressing a File with Aspose.Zip for .NET]({{< relref "/net/file-compression/compress-file/" >}})
 Learn how to compress files effortlessly using Aspose.Zip for .NET. Follow our step‑by‑step tutorial for efficient file management.
 
-### [Compress Files using FileInfo in Aspose.Zip for .NET]({{< relref "compress-files-fileinfo/_index.md" >}})
+### [Compress Files using FileInfo in Aspose.Zip for .NET]({{< relref "/net/file-compression/compress-files-fileinfo/" >}})
 Learn to compress files using fileinfo with Aspose.Zip for .NET. Follow our step‑by‑step guide for efficient file management.
 
-### [Optimizing Compression Settings with Aspose.Zip for .NET]({{< relref "optimizing-compression-settings/_index.md" >}})
+### [Optimizing Compression Settings with Aspose.Zip for .NET]({{< relref "/net/file-compression/optimizing-compression-settings/" >}})
 Explore the power of Aspose.Zip for .NET! Learn to optimize compression settings step by step using Bzip2, LZMA, PPMd, Enhanced Deflate, and Store methods. Enhance your .NET applications with efficient file compression.
 
-### [Effortless Multiple File Compression with Aspose.Zip for .NET]({{< relref "compress-multiple-files/_index.md" >}})
+### [Effortless Multiple File Compression with Aspose.Zip for .NET]({{< relref "/net/file-compression/compress-multiple-files/" >}})
 Learn how to compress multiple files effortlessly using Aspose.Zip for .NET. Optimize storage and enhance file management with this comprehensive guide.
 
-### [Compressing a Single File in Aspose.Zip for .NET]({{< relref "compress-single-file/_index.md" >}})
+### [Compressing a Single File in Aspose.Zip for .NET]({{< relref "/net/file-compression/compress-single-file/" >}})
 Compress a single files effortlessly in .NET with Aspose.Zip. Follow our step‑by‑step guide for efficient file management.
 
-### [Modifying Zip Files with Aspose.Zip for .NET]({{< relref "modifying-zip-files/_index.md" >}})
+### [Modifying Zip Files with Aspose.Zip for .NET]({{< relref "/net/file-compression/modifying-zip-files/" >}})
 Explore the power of Aspose.Zip for .NET in this comprehensive tutorial. Learn to modify zip files seamlessly using C#.
 
-### [Storing Multiple Files Without Compression in Aspose.Zip for .NET]({{< relref "store-multiple-files-no-compression/_index.md" >}})
+### [Storing Multiple Files Without Compression in Aspose.Zip for .NET]({{< relref "/net/file-compression/store-multiple-files-no-compression/" >}})
 Explore the seamless storage of multiple files without compression in Aspose.Zip for .NET. Optimize your .NET applications for efficient file management with this step‑by‑step guide.
 
-### [Using Parallelism to Compress Files in Aspose.Zip for .NET]({{< relref "using-parallelism-compress-files/_index.md" >}})
+### [Using Parallelism to Compress Files in Aspose.Zip for .NET]({{< relref "/net/file-compression/using-parallelism-compress-files/" >}})
 Learn to compress files efficiently in .NET using Aspose.Zip. Harness the power of parallelism with our step‑by‑step tutorial.
 
 ## Frequently asked questions

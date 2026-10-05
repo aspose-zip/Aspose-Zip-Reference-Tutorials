@@ -195,9 +195,9 @@ A: The library uses lazy loading and streaming, so only the current entry is loa
 
 ## Related Tutorials
 
-- [Extract password protected zip with Aspose.Zip for .NET]({{< relref "zip/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file.md" >}})
-- [Create Zip Archive .NET – File Compression with Aspose.Zip]({{< relref "zip/net/file-compression.md" >}})
-- [How to extract zip to folder with Aspose.Zip for .NET]({{< relref "zip/net/file-decompression/decompress-compressed-folder-directory.md" >}})
+- [Extract password protected zip with Aspose.Zip for .NET]({{< relref "/net/password-protection-and-encryption/decompress-aes-encrypted-stored-file/" >}})
+- [Create Zip Archive .NET – File Compression with Aspose.Zip]({{< relref "/net/file-compression/" >}})
+- [How to extract zip to folder with Aspose.Zip for .NET]({{< relref "/net/file-decompression/decompress-compressed-folder-directory/" >}})
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 {{< /blocks/products/pf/main-container >}}
