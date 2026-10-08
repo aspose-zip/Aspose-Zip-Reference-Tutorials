@@ -144,4 +144,10 @@ In this snippet we:
 4. Access the first entry in the archive (assuming a single file) and copy its bytes to the output file.  
 5. Use the `Extract` method, which extracts the entry to a specified path while preserving folder structure and attributes.
 
-When the code finishes, you’ll have successfully **extract zip with password** and obtain the original
+When the code finishes, you’ll have successfully **extract zip with password** and obtain the original decompressed file, ready for further processing in your application.
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
