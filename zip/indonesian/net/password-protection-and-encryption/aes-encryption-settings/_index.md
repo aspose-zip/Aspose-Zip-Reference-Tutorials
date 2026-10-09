@@ -1,23 +1,25 @@
 ---
-date: 2026-05-20
-description: Pelajari cara mengenkripsi file ZIP dengan AES menggunakan Aspose.Zip
-  untuk .NET – solusi cepat dan aman untuk enkripsi AES sevenzip serta melindungi
-  data Anda.
+date: 2026-10-09
+description: Proteksi kata sandi file Zip dengan AES menggunakan Aspose.Zip untuk
+  .NET memungkinkan Anda mengamankan arsip ZIP dengan cepat, mendukung enkripsi AES‑256
+  dan streaming file besar secara efisien.
 keywords:
+- zip file password protection
 - how to encrypt zip
-- sevenzip aes encryption
-- secure zip files c#
-linktitle: Pengaturan Enkripsi AES
-schemas:
+- create encrypted zip archive
+- compress files with encryption
+- aes256 zip compression
 - author: Aspose
-  dateModified: '2026-05-20'
-  description: Learn how to encrypt ZIP files with AES using Aspose.Zip for .NET –
-    the fast, secure solution for sevenzip AES encryption and protecting your data.
-  headline: How to Encrypt ZIP Files with AES using Aspose.Zip for .NET
+  dateModified: '2026-10-09'
+  description: Zip file password protection with AES using Aspose.Zip for .NET lets
+    you secure ZIP archives quickly, supporting AES‑256 encryption and streaming large
+    files efficiently.
+  headline: Zip file password protection with AES in Aspose.Zip for .NET
   type: TechArticle
-- description: Learn how to encrypt ZIP files with AES using Aspose.Zip for .NET –
-    the fast, secure solution for sevenzip AES encryption and protecting your data.
-  name: How to Encrypt ZIP Files with AES using Aspose.Zip for .NET
+- description: Zip file password protection with AES using Aspose.Zip for .NET lets
+    you secure ZIP archives quickly, supporting AES‑256 encryption and streaming large
+    files efficiently.
+  name: Zip file password protection with AES in Aspose.Zip for .NET
   steps:
   - name: Set the Resource Directory Path
     text: 'Define the absolute or relative path where your source files reside:'
@@ -30,19 +32,46 @@ schemas:
       these steps for each batch of files you need to protect.'
   type: HowTo
 - questions:
-  - answer: The documentation is available [here](https://reference.aspose.com/zip/net/).
+  - answer: The documentation is available [Aspose.Zip .NET documentation](https://reference.aspose.com/zip/net/).
     question: Where can I find the Aspose.Zip for .NET documentation?
-  - answer: You can download it [here](https://releases.aspose.com/zip/net/).
+  - answer: You can download it [download Aspose.Zip for .NET](https://releases.aspose.com/zip/net/).
     question: How do I download Aspose.Zip for .NET?
-  - answer: You can buy it [here](https://purchase.aspose.com/buy).
+  - answer: You can buy it [purchase Aspose.Zip for .NET](https://purchase.aspose.com/buy).
     question: Where can I purchase Aspose.Zip for .NET?
-  - answer: Yes, you can get a free trial [here](https://releases.aspose.com/).
+  - answer: Yes, you can get a free trial [free trial download](https://releases.aspose.com/).
     question: Is there a free trial available?
-  - answer: Yes, you can obtain a temporary license [here](https://purchase.aspose.com/temporary-license/).
+  - answer: Yes, you can obtain a temporary license [temporary license request](https://purchase.aspose.com/temporary-license/).
+    question: Can I get temporary licenses for testing?
+  type: FAQPage
+lastmod: 2026-10-09
+linktitle: Pengaturan Enkripsi AES
+og_description: Proteksi kata sandi file Zip dengan AES menggunakan Aspose.Zip untuk
+  .NET memungkinkan Anda mengamankan arsip ZIP dengan cepat, mendukung enkripsi AES‑256
+  dan streaming file besar secara efisien.
+og_image_alt: 'Developer guide: encrypt ZIP files with AES using Aspose.Zip for .NET'
+og_title: Proteksi kata sandi file Zip dengan AES di Aspose.Zip untuk .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-10-09'
+  description: Zip file password protection with AES using Aspose.Zip for .NET lets
+    you secure ZIP archives quickly, supporting AES‑256 encryption and streaming large
+    files efficiently.
+  headline: Zip file password protection with AES in Aspose.Zip for .NET
+  type: TechArticle
+- questions:
+  - answer: The documentation is available [Aspose.Zip .NET documentation](https://reference.aspose.com/zip/net/).
+    question: Where can I find the Aspose.Zip for .NET documentation?
+  - answer: You can download it [download Aspose.Zip for .NET](https://releases.aspose.com/zip/net/).
+    question: How do I download Aspose.Zip for .NET?
+  - answer: You can buy it [purchase Aspose.Zip for .NET](https://purchase.aspose.com/buy).
+    question: Where can I purchase Aspose.Zip for .NET?
+  - answer: Yes, you can get a free trial [free trial download](https://releases.aspose.com/).
+    question: Is there a free trial available?
+  - answer: Yes, you can obtain a temporary license [temporary license request](https://purchase.aspose.com/temporary-license/).
     question: Can I get temporary licenses for testing?
   type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Cara Mengenkripsi File ZIP dengan AES menggunakan Aspose.Zip untuk .NET
+title: Proteksi kata sandi file Zip dengan AES di Aspose.Zip untuk .NET
 url: /id/net/password-protection-and-encryption/aes-encryption-settings/
 weight: 14
 ---
@@ -51,39 +80,41 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Cara Mengenkripsi File ZIP dengan AES menggunakan Aspose.Zip untuk .NET
+# Perlindungan kata sandi file zip dengan AES di Aspose.Zip untuk .NET
 
 ## Pendahuluan
 
-Dalam tutorial ini Anda akan menemukan **how to encrypt zip** arsip dengan enkripsi AES menggunakan Aspose.Zip untuk .NET. Baik Anda membangun utilitas desktop atau layanan sisi‑server, melindungi data terkompresi sangat penting. Kami akan membahas pengaturan yang diperlukan, menunjukkan panggilan API yang tepat, dan menjelaskan mengapa AES‑256 menjadi standar industri untuk file zip yang aman di C#.
+Dalam tutorial ini Anda akan mempelajari **perlindungan kata sandi file zip** menggunakan enkripsi AES‑256 melalui Aspose.Zip untuk .NET. Baik Anda membangun utilitas desktop, layanan berbasis cloud, atau skrip pencadangan otomatis, melindungi data terkompresi adalah langkah keamanan yang wajib. Anda akan melihat panggilan API yang tepat, memahami mengapa AES‑256 menjadi standar industri, dan mendapatkan tips untuk menangani arsip besar secara efisien.
 
 ## Jawaban Cepat
-- **Apa yang dilakukan enkripsi AES untuk file ZIP?** Enkripsi arsip dengan kunci 256‑bit, membuatnya tidak dapat dibaca tanpa kata sandi.  
-- **Kelas mana yang menangani AES di Aspose.Zip?** `SevenZipArchive` dengan pengaturan `EncryptionAlgorithm.Aes256`.  
-- **Apakah saya memerlukan lisensi untuk pengembangan?** Versi percobaan gratis dapat digunakan untuk pengujian; lisensi komersial diperlukan untuk produksi.  
-- **Bisakah saya mengenkripsi arsip besar (lebih dari 1 GB)?** Ya – Aspose.Zip melakukan streaming data, sehingga penggunaan memori tetap rendah.  
+- **Apa yang dilakukan enkripsi AES untuk file ZIP?** Enkripsi setiap entri dengan kunci 256‑bit, membuat arsip tidak dapat dibaca tanpa kata sandi yang benar.  
+- **Kelas mana yang menangani AES di Aspose.Zip?** `SevenZipArchive` dikombinasikan dengan `SevenZipAESEncryptionSettings`.  
+- **Apakah saya memerlukan lisensi untuk pengembangan?** Versi percobaan gratis dapat digunakan untuk pengujian; lisensi komersial diperlukan untuk penyebaran produksi.  
+- **Bisakah saya mengenkripsi arsip besar (lebih dari 1 GB)?** Ya – Aspose.Zip melakukan streaming data, menjaga penggunaan memori tetap rendah bahkan untuk arsip multi‑gigabyte.  
 - **Apakah API kompatibel dengan .NET 6+?** Tentu saja, mendukung .NET Framework 4.5+, .NET Core 3.1+, dan .NET 5/6.
 
-## Apa itu “how to encrypt zip”?
-**how to encrypt zip** mengacu pada proses penerapan perlindungan kriptografi pada arsip ZIP sehingga entri‑entriannya tidak dapat diekstrak tanpa kata sandi yang benar. Menggunakan enkripsi AES‑256 memenuhi standar keamanan modern dan sepenuhnya didukung oleh Aspose.Zip.
+## Apa itu perlindungan kata sandi file zip?
+
+Perlindungan kata sandi file zip adalah proses menerapkan enkripsi AES‑256 pada arsip ZIP sehingga isinya tidak dapat diekstrak tanpa memasukkan kata sandi yang benar. Metode ini memenuhi standar keamanan modern dan sepenuhnya didukung oleh Aspose.Zip. Ini memastikan setiap file di dalam arsip dienkripsi secara terpisah, mencegah akses tidak sah bahkan jika arsip disadap.
 
 ## Mengapa menggunakan Aspose.Zip untuk enkripsi AES?
-Aspose.Zip mendukung **50+ format input dan output** dan dapat membuat arsip hingga **2 GB** tanpa memuat seluruh file ke memori, berkat arsitektur streamingnya. Perpustakaan ini juga menyediakan enkripsi AES sevenzip bawaan, menghilangkan kebutuhan alat pihak ketiga dan mengurangi waktu pengembangan hingga **70 %**.
+
+Aspose.Zip memungkinkan **perlindungan kata sandi file zip** sambil menangani arsip hingga **2 GB** tanpa memuat seluruh file ke memori, berkat arsitektur streaming‑nya. Perpustakaan ini mendukung **lebih dari 50 format input dan output** dan dapat mengenkripsi batch besar hingga **500 GB** ketika ZIP64 diperlukan, mengurangi upaya pengembangan hingga **70 %** dibandingkan solusi Open‑Source manual.
 
 ## Prasyarat
 
-Sebelum menyelam ke kode, pastikan Anda memiliki:
+Sebelum memulai, pastikan Anda memiliki:
 
-- Pemahaman yang kuat tentang C# dan runtime .NET.  
-- Perpustakaan Aspose.Zip untuk .NET terpasang. Anda dapat mengunduhnya [di sini](https://releases.aspose.com/zip/net/).  
-- Folder di mesin Anda yang berisi file yang ingin Anda kompres dan lindungi.
+- Lingkungan pengembangan .NET yang berfungsi (Visual Studio 2022 atau IDE pilihan Anda).  
+- Perpustakaan Aspose.Zip untuk .NET terpasang. Anda dapat mengunduhnya [unduh Aspose.Zip untuk .NET](https://releases.aspose.com/zip/net/).  
+- Sebuah folder yang berisi file‑file yang ingin Anda kompres dan lindungi.
 
-## Impor Namespace
+## Impor namespace
 
 `using Aspose.Zip;`  
 `using Aspose.Zip.SevenZip;`  
 
-Kelas `SevenZipArchive` mewakili arsip 7z dan menyediakan metode untuk menambahkan entri serta menyimpan arsip.  
+Kelas `SevenZipArchive` adalah objek tingkat atas yang mewakili arsip 7z dalam memori. Ia menyediakan metode untuk menambahkan entri, mengatur opsi enkripsi, dan menyimpan file akhir.
 
 ```csharp
 using Aspose.Zip.Saving;
@@ -92,13 +123,13 @@ using System;
 using System.IO;
 ```
 
-Sekarang namespace sudah siap, mari kita jalani implementasi langkah demi langkah.
+Sekarang namespace sudah siap, mari kita jalankan implementasinya langkah demi langkah.
 
 ## Cara mengenkripsi file zip menggunakan AES?
 
-Muat file yang ingin Anda lindungi, buat instance `SevenZipArchive`, tentukan algoritma AES‑256, atur kata sandi yang kuat, dan simpan arsip. Seluruh operasi dapat dilakukan dalam beberapa baris singkat, dan Aspose.Zip menangani streaming data secara efisien.
+Muat file yang ingin Anda lindungi, buat instance `SevenZipArchive`, konfigurasikan enkripsi AES‑256, tetapkan kata sandi yang kuat, dan simpan arsip. Semua operasi dilakukan secara streaming, sehingga bahkan arsip multi‑gigabyte diproses dengan overhead memori yang minimal.
 
-### Langkah 1: Atur Jalur Direktori Sumber Daya
+## Langkah 1: tetapkan jalur direktori sumber daya
 
 Tentukan jalur absolut atau relatif tempat file sumber Anda berada:
 
@@ -107,10 +138,10 @@ Tentukan jalur absolut atau relatif tempat file sumber Anda berada:
 string dataDir = "Your Document Directory";
 ```
 
-### Langkah 2: Inisialisasi Arsip dengan Pengaturan Enkripsi AES
+## Langkah 2: inisialisasi arsip dengan pengaturan enkripsi AES
 
 Kelas `SevenZipAESEncryptionSettings` menyimpan kata sandi dan mengonfigurasi enkripsi AES‑256 untuk arsip.  
-Kelas `SevenZipEntrySettings` mengonfigurasi opsi entri individual seperti enkripsi dan kompresi.  
+Kelas `SevenZipEntrySettings` mengatur opsi entri individual seperti enkripsi dan kompresi.  
 
 ```csharp
 //ExStart: AESEncryptionSettings
@@ -122,57 +153,56 @@ using (var archive = new SevenZipArchive(new SevenZipEntrySettings(null, new Sev
 //ExEnd: AESEncryptionSettings
 ```
 
-### Langkah 3: Tampilkan Pesan Sukses
+## Langkah 3: tampilkan pesan keberhasilan
 
-Setelah arsip ditulis, konfirmasikan operasi kepada pengguna:
+Setelah arsip selesai ditulis, konfirmasikan operasi kepada pengguna:
 
 ```csharp
 Console.WriteLine("Successfully Created a Seven Zip File with AES Encryption Settings");
 ```
 
-Ulangi langkah-langkah ini untuk setiap batch file yang perlu Anda lindungi.
+Ulangi langkah‑langkah ini untuk setiap batch file yang perlu Anda lindungi.
 
-## Kesalahan Umum dan Cara Menghindarinya
+## Kesalahan umum dan cara menghindarinya
 
-- **Kompleksitas kata sandi:** Selalu gunakan kata sandi minimal 12 karakter, mencampur huruf besar, huruf kecil, angka, dan simbol. Kata sandi lemah dapat dipecahkan dalam hitungan menit.  
-- **Batas ukuran file:** Meskipun Aspose.Zip melakukan streaming data, file yang sangat besar (> 4 GB) mungkin memerlukan ekstensi ZIP64, yang secara otomatis diaktifkan bila diperlukan.  
-- **Pemilihan algoritma yang salah:** Menggunakan `EncryptionAlgorithm.None` akan menghasilkan arsip yang tidak terlindungi; selalu pastikan `EncryptionAlgorithm.Aes256` diatur sebelum memanggil `Save`.
+- **Kompleksitas kata sandi:** Gunakan setidaknya 12 karakter, campurkan huruf besar, huruf kecil, angka, dan simbol. Kata sandi lemah dapat dipecahkan dalam hitungan menit.  
+- **Batas ukuran file:** Meskipun Aspose.Zip melakukan streaming data, arsip yang lebih besar dari **4 GB** secara otomatis memicu ekstensi ZIP64, yang diaktifkan perpustakaan tanpa kode tambahan.  
+- **Pemilihan algoritma yang salah:** `EncryptionAlgorithm.Aes256` menentukan algoritma enkripsi AES‑256 untuk arsip. Pastikan `EncryptionAlgorithm.Aes256` sudah diatur sebelum memanggil `Save`; jika tidak, arsip akan dibuat tanpa perlindungan.  
 
-## Pertanyaan yang Sering Diajukan
+## Pertanyaan yang sering diajukan
 
-**Q: Di mana saya dapat menemukan dokumentasi Aspose.Zip untuk .NET?**  
-A: Dokumentasi tersedia [di sini](https://reference.aspose.com/zip/net/).
+**T: Di mana saya dapat menemukan dokumentasi Aspose.Zip untuk .NET?**  
+J: Dokumentasi tersedia di [Dokumentasi Aspose.Zip .NET](https://reference.aspose.com/zip/net/).
 
-**Q: Bagaimana cara mengunduh Aspose.Zip untuk .NET?**  
-A: Anda dapat mengunduhnya [di sini](https://releases.aspose.com/zip/net/).
+**T: Bagaimana cara mengunduh Aspose.Zip untuk .NET?**  
+J: Anda dapat mengunduhnya [unduh Aspose.Zip untuk .NET](https://releases.aspose.com/zip/net/).
 
-**Q: Di mana saya dapat membeli Aspose.Zip untuk .NET?**  
-A: Anda dapat membelinya [di sini](https://purchase.aspose.com/buy).
+**T: Di mana saya dapat membeli Aspose.Zip untuk .NET?**  
+J: Anda dapat membelinya [beli Aspose.Zip untuk .NET](https://purchase.aspose.com/buy).
 
-**Q: Apakah tersedia percobaan gratis?**  
-A: Ya, Anda dapat mendapatkan percobaan gratis [di sini](https://releases.aspose.com/).
+**T: Apakah ada versi percobaan gratis?**  
+J: Ya, Anda dapat mendapatkan percobaan gratis [unduh percobaan gratis](https://releases.aspose.com/).
 
-**Q: Bisakah saya mendapatkan lisensi sementara untuk pengujian?**  
-A: Ya, Anda dapat memperoleh lisensi sementara [di sini](https://purchase.aspose.com/temporary-license/).
+**T: Bisakah saya mendapatkan lisensi sementara untuk pengujian?**  
+J: Ya, Anda dapat memperoleh lisensi sementara [permintaan lisensi sementara](https://purchase.aspose.com/temporary-license/).
 
-**Q: Apakah enkripsi AES bekerja dengan .NET Core?**  
-A: Tentu – API sepenuhnya kompatibel dengan .NET Core 3.1+, .NET 5, dan .NET 6.
+**T: Apakah enkripsi AES bekerja dengan .NET Core?**  
+J: Tentu – API sepenuhnya kompatibel dengan .NET Core 3.1+, .NET 5, dan .NET 6.
 
-**Q: Bagaimana saya dapat memverifikasi bahwa ZIP saya terenkripsi?**  
-A: Coba buka arsip dengan alat unzip standar; akan meminta kata sandi. Tanpa kata sandi yang benar, konten tetap tidak dapat diakses.
+**T: Bagaimana cara memverifikasi bahwa ZIP saya terenkripsi?**  
+J: Buka arsip dengan alat unzip standar; akan diminta memasukkan kata sandi. Tanpa kata sandi yang benar, isi tetap tidak dapat diakses.
 
 ---
 
-**Terakhir Diperbarui:** 2026-05-20  
+**Terakhir Diperbarui:** 2026-10-09  
 **Diuji Dengan:** Aspose.Zip 24.11 untuk .NET  
 **Penulis:** Aspose
 
-## Tutorial Terkait
+## Tutorial terkait
 
-- [Lindungi ZIP dengan Kata Sandi dan Enkripsi AES menggunakan Aspose.Zip](/zip/net/password-protection-and-encryption/password-protect-with-aes/)
-- [Decompress File AES - Tutorial Aspose.Zip .NET](/zip/net/password-protection-and-encryption/decompress-aes-encrypted-file/)
-- [Menguasai Pengarsipan Aman di .NET dengan Aspose.Zip](/zip/net/password-protection-and-encryption/archive-with-encrypted-entry/)
-
+- [Lindungi File ZIP dengan Kata Sandi menggunakan Enkripsi AES dengan Aspose.Zip](/zip/net/password-protection-and-encryption/password-protect-with-aes/)
+- [Decompress AES Files - Tutorial Aspose.Zip .NET](/zip/net/password-protection-and-encryption/decompress-aes-encrypted-file/)
+- [Kuasi Arsip Aman di .NET dengan Aspose.Zip](/zip/net/password-protection-and-encryption/archive-with-encrypted-entry/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

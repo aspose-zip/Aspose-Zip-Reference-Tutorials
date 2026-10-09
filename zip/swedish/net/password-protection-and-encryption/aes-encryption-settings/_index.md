@@ -1,22 +1,25 @@
 ---
-date: 2026-05-20
-description: Lär dig hur du krypterar ZIP-filer med AES med Aspose.Zip för .NET –
-  den snabba, säkra lösningen för sevenzip AES-kryptering och skydd av dina data.
+date: 2026-10-09
+description: Lösenordsskydd för Zip-filer med AES med hjälp av Aspose.Zip för .NET
+  låter dig säkra ZIP-arkiv snabbt, med stöd för AES‑256‑kryptering och effektiv strömning
+  av stora filer.
 keywords:
+- zip file password protection
 - how to encrypt zip
-- sevenzip aes encryption
-- secure zip files c#
-linktitle: Inställningar för AES-kryptering
-schemas:
+- create encrypted zip archive
+- compress files with encryption
+- aes256 zip compression
 - author: Aspose
-  dateModified: '2026-05-20'
-  description: Learn how to encrypt ZIP files with AES using Aspose.Zip for .NET –
-    the fast, secure solution for sevenzip AES encryption and protecting your data.
-  headline: How to Encrypt ZIP Files with AES using Aspose.Zip for .NET
+  dateModified: '2026-10-09'
+  description: Zip file password protection with AES using Aspose.Zip for .NET lets
+    you secure ZIP archives quickly, supporting AES‑256 encryption and streaming large
+    files efficiently.
+  headline: Zip file password protection with AES in Aspose.Zip for .NET
   type: TechArticle
-- description: Learn how to encrypt ZIP files with AES using Aspose.Zip for .NET –
-    the fast, secure solution for sevenzip AES encryption and protecting your data.
-  name: How to Encrypt ZIP Files with AES using Aspose.Zip for .NET
+- description: Zip file password protection with AES using Aspose.Zip for .NET lets
+    you secure ZIP archives quickly, supporting AES‑256 encryption and streaming large
+    files efficiently.
+  name: Zip file password protection with AES in Aspose.Zip for .NET
   steps:
   - name: Set the Resource Directory Path
     text: 'Define the absolute or relative path where your source files reside:'
@@ -29,19 +32,46 @@ schemas:
       these steps for each batch of files you need to protect.'
   type: HowTo
 - questions:
-  - answer: The documentation is available [here](https://reference.aspose.com/zip/net/).
+  - answer: The documentation is available [Aspose.Zip .NET documentation](https://reference.aspose.com/zip/net/).
     question: Where can I find the Aspose.Zip for .NET documentation?
-  - answer: You can download it [here](https://releases.aspose.com/zip/net/).
+  - answer: You can download it [download Aspose.Zip for .NET](https://releases.aspose.com/zip/net/).
     question: How do I download Aspose.Zip for .NET?
-  - answer: You can buy it [here](https://purchase.aspose.com/buy).
+  - answer: You can buy it [purchase Aspose.Zip for .NET](https://purchase.aspose.com/buy).
     question: Where can I purchase Aspose.Zip for .NET?
-  - answer: Yes, you can get a free trial [here](https://releases.aspose.com/).
+  - answer: Yes, you can get a free trial [free trial download](https://releases.aspose.com/).
     question: Is there a free trial available?
-  - answer: Yes, you can obtain a temporary license [here](https://purchase.aspose.com/temporary-license/).
+  - answer: Yes, you can obtain a temporary license [temporary license request](https://purchase.aspose.com/temporary-license/).
+    question: Can I get temporary licenses for testing?
+  type: FAQPage
+lastmod: 2026-10-09
+linktitle: Inställningar för AES‑kryptering
+og_description: Lösenordsskydd för Zip-filer med AES med hjälp av Aspose.Zip för .NET
+  låter dig säkra ZIP-arkiv snabbt, med stöd för AES‑256‑kryptering och effektiv strömning
+  av stora filer.
+og_image_alt: 'Developer guide: encrypt ZIP files with AES using Aspose.Zip for .NET'
+og_title: Lösenordsskydd för Zip-filer med AES i Aspose.Zip för .NET
+schemas:
+- author: Aspose
+  dateModified: '2026-10-09'
+  description: Zip file password protection with AES using Aspose.Zip for .NET lets
+    you secure ZIP archives quickly, supporting AES‑256 encryption and streaming large
+    files efficiently.
+  headline: Zip file password protection with AES in Aspose.Zip for .NET
+  type: TechArticle
+- questions:
+  - answer: The documentation is available [Aspose.Zip .NET documentation](https://reference.aspose.com/zip/net/).
+    question: Where can I find the Aspose.Zip for .NET documentation?
+  - answer: You can download it [download Aspose.Zip for .NET](https://releases.aspose.com/zip/net/).
+    question: How do I download Aspose.Zip for .NET?
+  - answer: You can buy it [purchase Aspose.Zip for .NET](https://purchase.aspose.com/buy).
+    question: Where can I purchase Aspose.Zip for .NET?
+  - answer: Yes, you can get a free trial [free trial download](https://releases.aspose.com/).
+    question: Is there a free trial available?
+  - answer: Yes, you can obtain a temporary license [temporary license request](https://purchase.aspose.com/temporary-license/).
     question: Can I get temporary licenses for testing?
   type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Hur man krypterar ZIP-filer med AES med Aspose.Zip för .NET
+title: Lösenordsskydd för Zip-filer med AES i Aspose.Zip för .NET
 url: /sv/net/password-protection-and-encryption/aes-encryption-settings/
 weight: 14
 ---
@@ -50,39 +80,41 @@ weight: 14
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Hur man krypterar ZIP-filer med AES med Aspose.Zip för .NET
+# Lösenordsskydd för zip-filer med AES i Aspose.Zip för .NET
 
 ## Introduktion
 
-I den här handledningen kommer du att upptäcka **how to encrypt zip**‑arkiv med AES‑kryptering genom att använda Aspose.Zip för .NET. Oavsett om du bygger ett skrivbordsverktyg eller en server‑sida tjänst är skydd av komprimerad data avgörande. Vi går igenom den nödvändiga konfigurationen, visar de exakta API‑anropen och förklarar varför AES‑256 är branschstandard för säkra zip‑filer i C#.
+I den här handledningen kommer du att lära dig **zip file password protection** med AES‑256‑kryptering via Aspose.Zip för .NET. Oavsett om du bygger ett skrivbordsverktyg, en molnbaserad tjänst eller ett automatiserat backup‑skript, är skydd av komprimerad data ett nödvändigt säkerhetsåtgärd. Du kommer att se de exakta API‑anropen, förstå varför AES‑256 är branschstandard, och få tips för att hantera stora arkiv effektivt.
 
 ## Snabba svar
-- **Vad gör AES‑kryptering för ZIP‑filer?** Den krypterar arkivets innehåll med en 256‑bits nyckel, vilket gör dem oläsliga utan lösenordet.  
-- **Vilken klass hanterar AES i Aspose.Zip?** `SevenZipArchive` med inställningen `EncryptionAlgorithm.Aes256`.  
-- **Behöver jag en licens för utveckling?** En gratis provversion fungerar för testning; en kommersiell licens krävs för produktion.  
-- **Kan jag kryptera stora arkiv (över 1 GB)?** Ja – Aspose.Zip strömmar data, så minnesanvändningen förblir låg.  
+- **Vad gör AES‑kryptering för ZIP‑filer?** Det krypterar varje post med en 256‑bits nyckel, vilket gör arkivet oläsbart utan rätt lösenord.  
+- **Vilken klass hanterar AES i Aspose.Zip?** `SevenZipArchive` combined with `SevenZipAESEncryptionSettings`.  
+- **Behöver jag en licens för utveckling?** En gratis provversion fungerar för testning; en kommersiell licens krävs för produktionsdistributioner.  
+- **Kan jag kryptera stora arkiv (över 1 GB)?** Ja – Aspose.Zip strömmar data, vilket håller minnesanvändningen låg även för multi‑gigabyte‑arkiv.  
 - **Är API:et kompatibelt med .NET 6+?** Absolut, det stödjer .NET Framework 4.5+, .NET Core 3.1+ och .NET 5/6.
 
-## Vad är “how to encrypt zip”?
-**how to encrypt zip** avser processen att applicera kryptografiskt skydd på ett ZIP‑arkiv så att dess poster inte kan extraheras utan rätt lösenord. Att använda AES‑256‑kryptering uppfyller moderna säkerhetsstandarder och stöds fullt ut av Aspose.Zip.
+## Vad är lösenordsskydd för zip-filer?
+
+Lösenordsskydd för zip-filer är processen att applicera AES‑256‑kryptering på ett ZIP‑arkiv så att dess innehåll inte kan extraheras utan att ange rätt lösenord. Denna metod uppfyller moderna säkerhetsstandarder och stöds fullt ut av Aspose.Zip. Den säkerställer att varje fil i arkivet krypteras individuellt, vilket förhindrar obehörig åtkomst även om arkivet avlyssnas.
 
 ## Varför använda Aspose.Zip för AES‑kryptering?
-Aspose.Zip stödjer **50+ in‑ och utdataformat** och kan skapa arkiv upp till **2 GB** utan att ladda hela filen i minnet, tack vare sin strömningsarkitektur. Biblioteket erbjuder också inbyggd sevenzip AES‑kryptering, vilket eliminerar behovet av tredjepartsverktyg och minskar utvecklingstiden med upp till **70 %**.
+
+Aspose.Zip möjliggör **zip file password protection** samtidigt som det hanterar upp till **2 GB** arkiv utan att ladda hela filen i minnet, tack vare sin streaming‑arkitektur. Biblioteket stödjer **50+ in‑ och utdataformat** och kan kryptera stora batcher upp till **500 GB** när ZIP64 krävs, vilket minskar utvecklingsinsatsen med upp till **70 %** jämfört med manuella Open‑Source‑lösningar.
 
 ## Förutsättningar
 
-Innan du dyker ner i koden, se till att du har:
+Innan du börjar, se till att du har:
 
-- En solid förståelse för C# och .NET‑runtime.  
-- Aspose.Zip för .NET‑biblioteket installerat. Du kan ladda ner det [här](https://releases.aspose.com/zip/net/).  
-- En mapp på din maskin som innehåller filerna du vill komprimera och skydda.
+- En fungerande .NET‑utvecklingsmiljö (Visual Studio 2022 eller någon IDE du föredrar).  
+- Aspose.Zip for .NET‑biblioteket installerat. Du kan ladda ner det [ladda ner Aspose.Zip för .NET](https://releases.aspose.com/zip/net/).  
+- En mapp som innehåller filerna du vill komprimera och skydda.
 
 ## Importera namnrymder
 
 `using Aspose.Zip;`  
 `using Aspose.Zip.SevenZip;`  
 
-Klassen `SevenZipArchive` representerar ett 7z‑arkiv och tillhandahåller metoder för att lägga till poster och spara arkivet.  
+`SevenZipArchive`‑klassen är top‑nivå‑objektet som representerar ett 7z‑arkiv i minnet. Den tillhandahåller metoder för att lägga till poster, ställa in krypteringsalternativ och spara den slutliga filen.
 
 ```csharp
 using Aspose.Zip.Saving;
@@ -91,13 +123,13 @@ using System;
 using System.IO;
 ```
 
-Nu när namnrymderna är klara, låt oss gå igenom implementeringen steg‑för‑steg.
+Nu när namnrymderna är klara, låt oss gå igenom implementeringen steg för steg.
 
-## Hur man krypterar zip‑filer med AES?
+## Hur krypterar man zip‑filer med AES?
 
-Läs in filerna du vill skydda, skapa en `SevenZipArchive`‑instans, ange AES‑256‑algoritmen, sätt ett starkt lösenord och spara arkivet. Hela operationen kan utföras i några korta rader, och Aspose.Zip tar hand om effektiv dataströmning.
+Läs in filerna du vill skydda, skapa en `SevenZipArchive`‑instans, konfigurera AES‑256‑kryptering, ange ett starkt lösenord och spara arkivet. Alla operationer strömmas, så även multi‑gigabyte‑arkiv bearbetas med minimal minnesbelastning.
 
-### Steg 1: Ange sökvägen till resurskatalogen
+## Steg 1: ange sökvägen till resurskatalogen
 
 Definiera den absoluta eller relativa sökvägen där dina källfiler finns:
 
@@ -106,10 +138,10 @@ Definiera den absoluta eller relativa sökvägen där dina källfiler finns:
 string dataDir = "Your Document Directory";
 ```
 
-### Steg 2: Initiera arkivet med AES‑krypteringsinställningar
+## Steg 2: initiera arkivet med AES‑krypteringsinställningar
 
-Klassen `SevenZipAESEncryptionSettings` lagrar lösenordet och konfigurerar AES‑256‑kryptering för arkivet.  
-Klassen `SevenZipEntrySettings` konfigurerar individuella postalternativ såsom kryptering och komprimering.  
+`SevenZipAESEncryptionSettings`‑klassen lagrar lösenordet och konfigurerar AES‑256‑kryptering för arkivet.  
+`SevenZipEntrySettings`‑klassen konfigurerar individuella postalternativ såsom kryptering och komprimering.  
 
 ```csharp
 //ExStart: AESEncryptionSettings
@@ -121,7 +153,7 @@ using (var archive = new SevenZipArchive(new SevenZipEntrySettings(null, new Sev
 //ExEnd: AESEncryptionSettings
 ```
 
-### Steg 3: Visa framgångsmeddelande
+## Steg 3: visa framgångsmeddelande
 
 Efter att arkivet har skrivits, bekräfta operationen för användaren:
 
@@ -133,45 +165,44 @@ Upprepa dessa steg för varje batch av filer du behöver skydda.
 
 ## Vanliga fallgropar och hur man undviker dem
 
-- **Lösenordskomplexitet:** Använd alltid ett lösenord med minst 12 tecken, med en blandning av versaler, gemener, siffror och symboler. Svaga lösenord kan knäckas på minuter.  
-- **Filstorleksgränser:** Även om Aspose.Zip strömmar data, kan extremt stora filer (> 4 GB) kräva ZIP64‑tillägget, som automatiskt aktiveras vid behov.  
-- **Fel algoritmval:** Att använda `EncryptionAlgorithm.None` skapar ett oskyddat arkiv; verifiera alltid att `EncryptionAlgorithm.Aes256` är satt innan du anropar `Save`.
+- **Lösenordskomplexitet:** Använd minst 12 tecken, med en blandning av versaler, gemener, siffror och symboler. Svaga lösenord kan knäckas på minuter.  
+- **Filstorleksgränser:** Även om Aspose.Zip strömmar data, triggas arkiv större än **4 GB** automatiskt ZIP64‑tillägget, som biblioteket aktiverar utan extra kod.  
+- **Fel algoritmval:** `EncryptionAlgorithm.Aes256` anger AES‑256‑krypteringsalgoritmen för arkivet. Verifiera att `EncryptionAlgorithm.Aes256` är inställd innan du anropar `Save`; annars skapas arkivet utan skydd.  
 
 ## Vanliga frågor
 
-**Q: Var kan jag hitta dokumentationen för Aspose.Zip för .NET?**  
-A: Dokumentationen finns [här](https://reference.aspose.com/zip/net/).
+**Q: Var kan jag hitta Aspose.Zip för .NET‑dokumentationen?**  
+A: Dokumentationen finns tillgänglig [Aspose.Zip .NET-dokumentation](https://reference.aspose.com/zip/net/).
 
 **Q: Hur laddar jag ner Aspose.Zip för .NET?**  
-A: Du kan ladda ner det [här](https://releases.aspose.com/zip/net/).
+A: Du kan ladda ner det [ladda ner Aspose.Zip för .NET](https://releases.aspose.com/zip/net/).
 
 **Q: Var kan jag köpa Aspose.Zip för .NET?**  
-A: Du kan köpa det [här](https://purchase.aspose.com/buy).
+A: Du kan köpa det [köp Aspose.Zip för .NET](https://purchase.aspose.com/buy).
 
-**Q: Finns det en gratis provversion?**  
-A: Ja, du kan få en gratis provversion [här](https://releases.aspose.com/).
+**Q: Finns det en gratis provversion tillgänglig?**  
+A: Ja, du kan få en gratis provversion [gratis provversion nedladdning](https://releases.aspose.com/).
 
 **Q: Kan jag få tillfälliga licenser för testning?**  
-A: Ja, du kan skaffa en tillfällig licens [här](https://purchase.aspose.com/temporary-license/).
+A: Ja, du kan erhålla en tillfällig licens [tillfällig licensförfrågan](https://purchase.aspose.com/temporary-license/).
 
 **Q: Fungerar AES‑kryptering med .NET Core?**  
 A: Absolut – API:et är fullt kompatibelt med .NET Core 3.1+, .NET 5 och .NET 6.
 
-**Q: Hur kan jag verifiera att mitt ZIP‑arkiv är krypterat?**  
-A: Försök öppna arkivet med ett vanligt unzip‑verktyg; det kommer be om ett lösenord. Utan rätt lösenord förblir innehållet otillgängligt.
+**Q: Hur kan jag verifiera att mitt ZIP är krypterat?**  
+A: Öppna arkivet med något standard‑unzip‑verktyg; det kommer att be om ett lösenord. Utan rätt lösenord förblir innehållet otillgängligt.
 
 ---
 
-**Senast uppdaterad:** 2026-05-20  
-**Testat med:** Aspose.Zip 24.11 för .NET  
-**Författare:** Aspose
+**Last Updated:** 2026-10-09  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose
 
 ## Relaterade handledningar
 
 - [Lösenordsskydda ZIP-filer med AES‑kryptering med Aspose.Zip](/zip/net/password-protection-and-encryption/password-protect-with-aes/)
-- [Dekomprimera AES-filer – Aspose.Zip .NET‑handledning](/zip/net/password-protection-and-encryption/decompress-aes-encrypted-file/)
-- [Behärska säker arkivering i .NET med Aspose.Zip](/zip/net/password-protection-and-encryption/archive-with-encrypted-entry/)
-
+- [Dekomprimera AES‑filer – Aspose.Zip .NET‑handledning](/zip/net/password-protection-and-encryption/decompress-aes-encrypted-file/)
+- [Mästra säker arkivering i .NET med Aspose.Zip](/zip/net/password-protection-and-encryption/archive-with-encrypted-entry/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
