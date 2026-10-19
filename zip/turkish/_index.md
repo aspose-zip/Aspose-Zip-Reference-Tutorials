@@ -1,6 +1,6 @@
 ---
 additionalTitle: Aspose API References
-date: 2026-06-19
+date: 2026-10-19
 description: Aspose.Zip for .NET ile zip dosyalarını nasıl çıkaracağınızı öğrenin,
   şifre korumalı zip arşivlerini yönetin ve birden fazla dosyayı verimli bir şekilde
   sıkıştırın.
@@ -8,10 +8,18 @@ keywords:
 - extract zip files with Aspose.Zip
 - password protected zip
 - compress multiple files .net
+- Aspose.Zip .NET
+- zip archive extraction
+lastmod: 2026-10-19
 linktitle: Aspose.Zip Eğitimleri
+og_description: .NET'te Aspose.Zip ile zip dosyalarını hızlıca çıkarın. Şifre korumalı
+  zip işlemlerini, çoklu dosya sıkıştırmayı ve en iyi uygulamaları bu ayrıntılı rehberde
+  öğrenin.
+og_image_alt: Developer guide showing Aspose.Zip extraction code in .NET
+og_title: Aspose.Zip ile zip dosyalarını çıkarma – eksiksiz .NET rehberi
 schemas:
 - author: Aspose
-  dateModified: '2026-06-19'
+  dateModified: '2026-10-19'
   description: Learn how to extract zip files with Aspose.Zip for .NET, handle password
     protected zip archives, and compress multiple files efficiently.
   headline: Extract Zip Files with Aspose.Zip – Complete .NET Guide
@@ -36,7 +44,12 @@ schemas:
       evaluation license is available for testing.
     question: What licensing is required for commercial use?
   type: FAQPage
-title: Aspose.Zip ile Zip Dosyalarını Çıkarın – Tam .NET Kılavuzu
+tags:
+- extract zip
+- Aspose.Zip
+- .NET compression
+- zip archive handling
+title: Aspose.Zip ile zip dosyalarını çıkarma – eksiksiz .NET rehberi
 url: /tr/
 weight: 11
 ---
@@ -45,98 +58,96 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip ile Zip Dosyalarını Çıkartma – Tam .NET Kılavuzu
+# Aspose.Zip ile zip dosyalarını çıkartma – eksiksiz .NET rehberi
 
-Aspose.Zip dünyasına hoş geldiniz, **extract zip files with Aspose.Zip** yüksek performanslı sıkıştırma ile buluşuyor! İster deneyimli bir .NET geliştiricisi olun, ister yeni başlıyor olun, bu eğitim serisi size **zip dosyalarını çıkartma**, **şifre korumalı zip** arşivleriyle çalışma ve gerektiğinde **zip arşivini şifreleme** konularında pratik bilgi sağlar. Sonunda karmaşık zip senaryolarını yönetmeye hazır olacaksınız—birden çok dosyayı sıkıştırma, arşiv inceliklerini yönetme ve bu yetenekleri herhangi bir .NET uygulamasına sorunsuz bir şekilde entegre etme.
+Bu rehberde, basit bir arşivle mi yoksa anında yeniden şifrelenmesi gereken bir şifre korumalı zip ile mi çalışıyor olursanız olun, herhangi bir .NET uygulamasında **Aspose.Zip ile zip dosyalarını nasıl çıkartacağınızı** öğreneceksiniz. Aynı kütüphanenin **.NET geliştiricilerinin göndermesi gereken birden fazla dosyayı sıkıştırmasını** da göreceksiniz; bu da tüm arşiv iş akışlarınız için tek durak çözüm sunar.
 
-## Hızlı Yanıtlar
-- **Aspose.Zip'in temel amacı nedir?** .NET içinde zip arşivlerini verimli bir şekilde oluşturmak, sıkıştırmak ve çıkartmak.  
-- **Aspose.Zip bir zip dosyasını şifreyle çıkartabilir mi?** Evet—şifre korumalı zip çıkartma için yerleşik destek bulunur.  
-- **Çıkartma sırasında bir zip arşivi şifrelenebilir mi?** Şifreli arşivleri çıkartma sırasında çözüp anında yeniden şifreleyebilirsiniz.  
-- **Hangi .NET sürümleri destekleniyor?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1 ve .NET 5–10.  
-- **Üretim kullanımı için lisansa ihtiyacım var mı?** Üretim dağıtımları için ticari bir lisans gereklidir; ücretsiz deneme sürümü mevcuttur.
+## Hızlı cevaplar
+- **Aspose.Zip ne yapar?** Harici araçlar kullanmadan saf .NET kodunda ZIP arşivleri oluşturur, sıkıştırır ve çıkarır.  
+- **Şifre korumalı bir zip'i çıkarabilir miyim?** Evet – `ExtractAll` metodunu çağırmadan önce `Password` özelliğini ayarlamanız yeterlidir.  
+- **Aspose.Zip ne kadar büyük bir arşivi işleyebilir?** Tüm dosyayı belleğe yüklemeden 5 GB'a kadar işlenebilir.  
+- **Kütüphane .NET 5/6/7'yi destekliyor mu?** .NET Framework 2.0‑4.8.1, .NET Core 2.0‑3.1 ve .NET 5‑10'da tam destek sağlar.  
+- **Üretim için lisans gerekli mi?** Ticari bir lisans gereklidir; test için ücretsiz bir değerlendirme lisansı mevcuttur.
 
-## “extract zip files with Aspose.Zip” nedir?
-**Extract zip files with Aspose.Zip**, bir `.zip` arşivini orijinal klasör ve dosya yapısına geri açmak anlamına gelir ve bu işlem Aspose.Zip API'si kullanılarak tamamen yönetilen .NET kodu içinde gerçekleştirilir. Böylece harici araçlara veya yerel DLL'lere ihtiyaç duyulmaz.
+## “Aspose.Zip ile zip dosyalarını çıkartma” nedir?
+Aspose.Zip ile zip dosyalarını çıkartmak, bir `.zip` arşivini Aspose.Zip API'si kullanarak orijinal klasör ve dosya yapısına geri açmak anlamına gelir. İşlem tamamen yönetilen .NET kodunda çalışır, yerel DLL'lere veya harici araçlara olan ihtiyacı ortadan kaldırır ve bellek kullanımını düşük tutmak için akış (streaming) çıkartmayı destekler; aynı zamanda dosya zaman damgalarını ve özniteliklerini korur.
 
-## .NET için Aspose.Zip neden kullanılmalı?
-Aspose.Zip, **5 GB'a kadar arşivleri** bütün dosyayı belleğe yüklemeden işleyebilmenizi sağlar ve **30+ sıkıştırma seviyesi** ile hız ve boyut arasında ince ayar yapmanıza imkan tanır. Kütüphane, zip girişlerindeki **50+ dosya türü çeşitliliğini** (metin, resim, ikili) yönetir ve yerleşik CRC kontrolleri sayesinde **%100 veri bütünlüğü** garantiler. Bu ölçülebilir yetenekler, yüksek verimli sunucu tarafı iş akışları için güvenilir bir seçim olmasını sağlar.
+## .NET için Aspose.Zip'i neden kullanmalısınız?
+Aspose.Zip, akış mimarisi sayesinde bellek kullanımını 100 MB'nin altında tutarak **5 GB'a kadar arşivleri işleyebilir**. **30'dan fazla sıkıştırma seviyesi** destekler, bu da hız ve boyut arasında ince ayar yapmanıza olanak tanır. Kütüphane ayrıca **%100 veri bütünlüğü** için CRC kontrollerini doğrular ve zip girişleri içinde **50'den fazla dosya tipi** (metin, görüntü, ikili) ile çalışır; bu da yüksek verimli sunucu tarafı iş yükleri için kanıtlanmış bir seçim olmasını sağlar.
 
 ## Önkoşullar
-- Visual Studio 2022 (veya daha yeni) ve .NET 6+ yüklü.  
+- .NET 6+ yüklü Visual Studio 2022 (veya daha yeni bir sürüm).  
 - Aspose.Zip for .NET NuGet paketi (`Install-Package Aspose.Zip`).  
 - (İsteğe bağlı) Üretim kullanımı için geçerli bir Aspose.Zip lisansı.
 
 {{% alert color="primary" %}}
-Aspose.Zip for .NET üzerine özenle hazırlanmış eğitimlerimizle derinlemesine bir keşfe çıkın. Hem yeni başlayanlar hem de deneyimli geliştiriciler için tasarlanmış bu eğitimler, Aspose.Zip'in .NET çerçevesindeki yeteneklerini kapsamlı bir şekilde ele alır. Dosyaları verimli bir şekilde sıkıştırıp açmayı, gelişmiş sıkıştırma tekniklerini keşfetmeyi ve .NET uygulamalarınıza sorunsuz dosya yönetimi entegrasyonu sağlamayı öğrenin. Açık ve adım‑adım talimatlar ile pratik örnekler sayesinde Aspose.Zip for .NET'in tam potansiyelini güvenle ve hassasiyetle kullanabileceksiniz.
+Özenle hazırlanmış eğitimlerimizle .NET için Aspose.Zip dünyasına dalın. Hem yeni başlayanlar hem de deneyimli geliştiriciler için tasarlanmış bu eğitimler, Aspose.Zip'in .NET çerçevesindeki yeteneklerini kapsamlı bir şekilde keşfetmenizi sağlar. Dosyaları verimli bir şekilde sıkıştırıp açmayı, gelişmiş sıkıştırma tekniklerini incelemeyi ve .NET uygulamalarınıza sorunsuz dosya işleme entegrasyonu yapmayı öğrenin. Açık, adım adım talimatlar ve pratik örneklerle, .NET için Aspose.Zip'in tam potansiyelini kullanarak dosya manipülasyon süreçlerinizi güvenle ve hassasiyetle optimize edebilirsiniz.
 {{% /alert %}}
 
-Bunlar bazı faydalı kaynaklara bağlantılardır:
-
+These are links to some useful resources:
+ 
 - [Dosya Sıkıştırma](./net/file-compression/)
 - [Dosya Açma](./net/file-decompression/)
 - [Dizin ve Klasör Sıkıştırma](./net/directory-and-folder-compression/)
-- [Arşiv Çıkarma ve Biçimler](./net/archive-extraction-and-formats/)
+- [Arşiv Çıkarma ve Formatları](./net/archive-extraction-and-formats/)
 - [RAR Arşivi](./net/rar-archive/)
 - [SevenZip Sıkıştırma](./net/sevenzip-compression/)
 - [Şifre Koruması ve Şifreleme](./net/password-protection-and-encryption/)
 - [Diğer Sıkıştırma Teknikleri](./net/other-compression-techniques/)
 
-## Aspose.Zip ile Zip Dosyalarını Nasıl Çıkartılır
+## Aspose.Zip ile zip dosyalarını nasıl çıkartılır
+`ZipFile`, Aspose.Zip içinde bir ZIP arşivini temsil eden birincil sınıftır. ZIP'i çıkartmak için, arşiv dosyasına işaret eden bir `ZipFile` örneği oluşturun, şifreli arşivler için isteğe bağlı olarak `Password` özelliğini ayarlayın ve ardından `ExtractAll("outputFolder")` metodunu çağırın. Metod, orijinal klasör hiyerarşisini yeniden oluşturur, her girişi doğrular ve başarı ya da başarısızlık durumunu gösteren bir durum bayrağı döndürür.
 
-`new ZipFile("archive.zip")` ile zip arşivinizi yükleyin ve `zip.ExtractAll("outputFolder")` metodunu çağırın — bu tek satır tam bir çıkartma gerçekleştirir, orijinal dizin hiyerarşisini otomatik olarak yeniden oluşturur ve gömülü şifreleri yönetir. `ExtractAll` tüm girişleri bir klasöre çıkarır, orijinal dizin yapısını yeniden oluşturur. API ayrıca bir durum bayrağı döndürür, böylece istisna yakalamadan başarıyı doğrulayabilirsiniz.
+### Şifre korumalı zip dosyalarını işleme
+Arşiv korunuyorsa, çıkartmadan önce şifreyi atayın.  
+**Doğrudan cevap:** `zip.Password = "yourPassword"` şeklinde ayarlayın ve ardından `zip.ExtractAll(...)` metodunu çağırın. Aspose.Zip, her girişi anında çözer; böylece şifrelenmemiş veriyi diskte saklamanıza gerek kalmaz.
 
-## .NET için Aspose.Zip ile Zip Dosyalarını Nasıl Çıkartılır
+### Çıkartırken zip arşivini şifrele (yeniden şifreleme)
+Güvenli ortamlarda içeriği çıkartıp hemen yeniden şifrelemeniz gerekebilir.  
+**Doğrudan cevap:** Bir girişi bir akısa (stream) çıkarttıktan sonra yeni bir `ZipFile` örneği oluşturun, akışı yeni bir giriş olarak ekleyin ve yeni arşivi kaydetmeden önce `EncryptionAlgorithm` ve `Password` özelliklerini ayarlayın. Bu, veri bütün sürecinde şifreli kalmasını sağlar.
 
-`ZipFile` sınıfı, Aspose.Zip'in bellekte bir ZIP arşivini temsil eden çekirdek nesnesidir. `ZipFile`, arşiv girişlerini yükleme, çıkartma ve manipüle etme yöntemleri sunar. Bir örnek oluşturduktan sonra çıkartma yöntemlerini çağırabilir, şifreleri ayarlayabilir ve üzerine yazma davranışını kontrol edebilirsiniz. Çıkartmak için `ZipFile` nesnesini örnekleyin, isteğe bağlı olarak `Password` özelliğiyle şifreyi ayarlayın ve seçmeli çıkartma için `ExtractAll` ya da `ExtractEntry` metodunu kullanın. Bu yaklaşım hem standart hem de şifre korumalı arşivlerde çalışır ve eksik klasörleri otomatik olarak oluşturur.
+### Birden fazla dosyayı sıkıştırma – hızlı özet
+Bu eğitim çıkartmaya odaklansa da, Aspose.Zip **.net birden fazla dosyayı sıkıştırma** konusunda da mükemmeldir. Tek bir çağrı ile onlarca dosya ekleyebilir, 30'dan fazla sıkıştırma seviyesinden birini seçebilir ve hatta arşivleri daha kolay taşıma için bölümlere ayırabilirsiniz.
 
-### Şifre Koruması Olan Zip Dosyalarının İşlenmesi
-Arşiv bir şifreyle korunuyorsa, şifre dizesini `ExtractAll` metoduna geçirin. Aspose.Zip, içeriği anında çözer ve dosyalarla sanki şifre koruması yokmuş gibi çalışmanıza izin verir.
+## Yaygın sorunlar ve çözümler
+- **“Invalid password” hatasıyla çıkartma başarısız oluyor.** Sıkıştırma sırasında kullanılan tam şifreyi doğrulayın; şifreler büyük/küçük harfe duyarlıdır.  
+- **Büyük arşivlerde OutOfMemoryException.** Tüm arşivi belleğe yüklemek yerine girişleri tek tek işlemek için akış API'sine (`ExtractToStream`) geçin.  
+- **Dosya adı çakışmaları.** `OverwriteExistingFiles` bayrağını etkinleştirin veya çakışan dosyaları otomatik olarak yeniden adlandırmak için `FileExists` olayını işleyin.
 
-### Çıkarma Sırasında Zip Arşivini Şifrele (Yeniden Şifreleme)
-Bir zip dosyasını çıkartıp hemen içeriğini yeniden şifrelemeniz gereken durumlarda (örneğin, veriyi güvenli bölgeler arasında taşırken) çıkartma işlemini `CreateEncryptedArchive` yardımcı metodu ile birleştirebilirsiniz. Bu yaklaşım, verinin hiçbir zaman şifrelenmemiş bir şekilde diske yazılmamasını garanti eder.
+## Sıkça sorulan sorular
 
-### Birden Çok Dosyayı Sıkıştırma – Kısa Bir Özet
-Bu kılavuz çıkartmaya odaklansa da, Aspose.Zip'in **compress files .net** konusunda da mükemmel olduğunu unutmayın. Tek bir çağrı ile birçok dosyayı tek bir arşive ekleyebilir, sıkıştırma seviyelerini belirleyebilir ve büyük arşivleri hacimlere bölerek yönetebilirsiniz.
-
-## Yaygın Sorunlar ve Çözümler
-- **“Invalid password” hatasıyla çıkartma başarısız oluyor** – Sağladığınız şifrenin sıkıştırma sırasında kullanılan şifreyle aynı olduğundan emin olun; şifreler büyük/küçük harfe duyarlıdır.  
-- **Büyük arşivler OutOfMemoryException hatası veriyor** – Belleğe tüm arşivi yüklemek yerine dosyaları sıralı işlemek için akış API'si (`ExtractToStream`) kullanın. `ExtractToStream` tek bir girişi bir akıma çıkarır, düşük bellekli işleme olanak tanır.  
-- **Dosya adı çakışmaları** – Mevcut dosyaların üzerine yazılıp yazılmayacağını kontrol etmek için `OverwriteExistingFiles` bayrağını ayarlayın.
-
-## Sıkça Sorulan Sorular
-
-**S: Şifresini bilmeden bir zip dosyasını çıkartabilir miyim?**  
+**S: Şifreyi bilmeden bir zip dosyasını çıkartabilir miyim?**  
 C: Hayır, Aspose.Zip şifre korumalı bir arşivi çözmek için doğru şifreyi gerektirir. Yanlış şifreleri nazikçe ele almak için `InvalidPasswordException` yakalayabilirsiniz.
 
 **S: Aspose.Zip RAR veya 7z gibi diğer arşiv formatlarını destekliyor mu?**  
-C: Doğrudan destek sadece ZIP ile sınırlıdır, ancak bu formatlar için üçüncü‑taraf kütüphanelerle Aspose.Zip'i birleştirebilir veya “Arşiv Çıkarma ve Biçimler” eğitimine başvurabilirsiniz.
+C: Doğrudan destek yalnızca ZIP ile sınırlıdır, ancak bu formatlar için üçüncü taraf kütüphanelerle Aspose.Zip'i birleştirebilir veya “Archive Extraction and Formats” eğitiminden yararlanabilirsiniz.
 
 **S: Büyük bir arşivden sadece belirli dosyaları nasıl çıkartırım?**  
-C: Tek tek girişleri isimle hedeflemek için `ExtractEntry` metodunu kullanın, böylece tüm arşivi çıkartmaya gerek kalmaz.
+C: Tek tek girişleri isimle hedeflemek için `ExtractEntry` metodunu kullanın; böylece tüm arşivi çıkartmaya gerek kalmaz.
 
 **S: Çıkartma ilerlemesini izlemek mümkün mü?**  
-C: Evet—`ZipFile` nesnesindeki `ProgressChanged` olayına abone olarak gerçek‑zamanlı güncellemeler alabilirsiniz. `ProgressChanged` periyodik olarak çıkartma ilerleme bilgisiyle tetiklenir.
+C: Evet—`ZipFile` nesnesindeki `ProgressChanged` olayına abone olarak gerçek zamanlı güncellemeler alabilirsiniz. `ProgressChanged`, çıkartma ilerleme bilgileriyle periyodik olarak tetiklenir.
 
 **S: Ticari kullanım için hangi lisans gereklidir?**  
-C: Üretim dağıtımları için ücretli bir Aspose.Zip lisansı gerekir; test amaçlı ücretsiz bir değerlendirme lisansı mevcuttur.
+C: Üretim dağıtımları için ücretli bir Aspose.Zip lisansı gerekir; test için ücretsiz bir değerlendirme lisansı mevcuttur.
 
-## Ek İpuçları ve En İyi Uygulamalar
-- **Pro tip:** Çok büyük zip dosyalarıyla çalışırken bellek kullanımını düşük tutmak için `ExtractToStream` metodunu tercih edin.  
-- **İpucu:** Çıkartmadan önce `ValidateArchive` ile arşivin bütünlüğünü her zaman doğrulayın, böylece bozuk dosyaları erken yakalayabilirsiniz.  
+## Ek ipuçları ve en iyi uygulamalar
+- **Pro ipucu:** Çok büyük zip dosyalarıyla çalışırken bellek kullanımını düşük tutmak için `ExtractToStream` metodunu tercih edin.  
+- **İpucu:** Çıkartmadan önce `ValidateArchive` ile arşivin bütünlüğünü her zaman doğrulayın; böylece bozuk dosyaları erken yakalayabilirsiniz.  
 - **Uyarı:** Şifreleri asla düz metin olarak saklamayın; güvenli yapılandırma sağlayıcıları veya Azure Key Vault kullanın.
 
 ## Sonuç
-Artık **extract zip files with Aspose.Zip** için herhangi bir .NET ortamında sağlam bir temele sahipsiniz. Şifre korumalı arşivleri yönetmekten veriyi anında yeniden şifrelemeye kadar, Aspose.Zip gerçek dünya dosya yönetimi görevleri için ihtiyaç duyduğunuz esneklik ve performansı sunar. Yukarıdaki diğer eğitimleri keşfederek sıkıştırma, dizin arşivleme ve gelişmiş şifreleme tekniklerinde uzmanlaşın.
+Artık herhangi bir .NET ortamında **Aspose.Zip ile zip dosyalarını çıkartma** konusunda sağlam bir temele sahipsiniz. Şifre korumalı arşivleri yönetmekten veriyi anında yeniden şifrelemeye kadar, Aspose.Zip gerçek dünya dosya yönetimi görevleri için ihtiyaç duyduğunuz esneklik ve performansı sunar. Sıkıştırma, dizin arşivleme ve gelişmiş şifreleme tekniklerini ustalaşmak için yukarıda bağlantılı diğer eğitimleri keşfedin.
 
 ---
 
-**Son Güncelleme:** 2026-06-19  
-**Test Edilen Sürüm:** Aspose.Zip 24.11 for .NET  
-**Yazar:** Aspose  
-
-{{< blocks/products/products-backtop-button >}}
+**Son Güncelleme:** 2026-10-19  
+**Test Edilen:** Aspose.Zip 24.11 for .NET  
+**Yazar:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
