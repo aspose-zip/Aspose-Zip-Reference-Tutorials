@@ -1,16 +1,25 @@
 ---
 additionalTitle: Aspose API References
-date: 2026-06-19
+date: 2026-10-19
 description: Dowiedz się, jak rozpakowywać pliki zip przy użyciu Aspose.Zip dla .NET,
-  obsługiwać chronione hasłem archiwa zip oraz efektywnie kompresować wiele plików.
+  obsługiwać archiwa zip chronione hasłem oraz efektywnie kompresować wiele plików.
 keywords:
 - extract zip files with Aspose.Zip
 - password protected zip
 - compress multiple files .net
-linktitle: Poradniki Aspose.Zip
+- Aspose.Zip .NET
+- zip archive extraction
+lastmod: 2026-10-19
+linktitle: Samouczki Aspose.Zip
+og_description: Szybko rozpakowuj pliki zip przy użyciu Aspose.Zip w .NET. Dowiedz
+  się, jak obsługiwać zip chroniony hasłem, kompresować wiele plików oraz poznaj najlepsze
+  praktyki w tym szczegółowym przewodniku.
+og_image_alt: Developer guide showing Aspose.Zip extraction code in .NET
+og_title: Rozpakowywanie plików zip przy użyciu Aspose.Zip – kompletny przewodnik
+  .NET
 schemas:
 - author: Aspose
-  dateModified: '2026-06-19'
+  dateModified: '2026-10-19'
   description: Learn how to extract zip files with Aspose.Zip for .NET, handle password
     protected zip archives, and compress multiple files efficiently.
   headline: Extract Zip Files with Aspose.Zip – Complete .NET Guide
@@ -35,7 +44,12 @@ schemas:
       evaluation license is available for testing.
     question: What licensing is required for commercial use?
   type: FAQPage
-title: Rozpakowywanie plików Zip przy użyciu Aspose.Zip – Kompletny przewodnik .NET
+tags:
+- extract zip
+- Aspose.Zip
+- .NET compression
+- zip archive handling
+title: Rozpakowywanie plików zip przy użyciu Aspose.Zip – kompletny przewodnik .NET
 url: /pl/
 weight: 11
 ---
@@ -44,98 +58,96 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Wyodrębnianie plików Zip przy użyciu Aspose.Zip – Kompletny przewodnik .NET
+# Rozpakowywanie plików zip przy użyciu Aspose.Zip – kompletny przewodnik .NET
 
-Witamy w świecie **Aspose.Zip**, gdzie **extract zip files with Aspose.Zip** spotyka się z wysokowydajną kompresją! Niezależnie od tego, czy jesteś doświadczonym programistą .NET, czy dopiero zaczynasz, ta seria samouczków dostarczy Ci praktycznej wiedzy, jak **extract zip files**, pracować z archiwami **password protected zip** oraz nawet **encrypt zip archive** w razie potrzeby. Po zakończeniu będziesz gotowy, aby radzić sobie z złożonymi scenariuszami zip — kompresować wiele plików, zarządzać zawiłościami archiwów i płynnie integrować te możliwości w dowolnej aplikacji .NET.
+W tym przewodniku dowiesz się **jak rozpakowywać pliki zip przy użyciu Aspose.Zip** w dowolnej aplikacji .NET, niezależnie od tego, czy masz do czynienia z prostym archiwum, czy z zipem chronionym hasłem, który musi być ponownie szyfrowany w locie. Zobaczysz także, jak ta sama biblioteka może **kompresować wiele plików .NET**, które programiści muszą dostarczyć, co czyni ją rozwiązaniem „wszystko w jednym” dla wszystkich Twoich przepływów pracy z archiwami.
 
 ## Szybkie odpowiedzi
-- **Jaki jest główny cel Aspose.Zip?** Aby tworzyć, kompresować i wyodrębniać archiwa zip efektywnie w .NET.  
-- **Czy Aspose.Zip może wyodrębniać pliki zip z hasłem?** Tak — wbudowane wsparcie dla wyodrębniania zip chronionych hasłem.  
-- **Czy możliwe jest szyfrowanie archiwum zip podczas wyodrębniania?** Możesz odszyfrować zaszyfrowane archiwa podczas wyodrębniania i ponownie je zaszyfrować w locie.  
-- **Jakie wersje .NET są obsługiwane?** .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1 oraz .NET 5–10.  
-- **Czy potrzebuję licencji do użytku produkcyjnego?** Wymagana jest licencja komercyjna do wdrożeń produkcyjnych; dostępna jest darmowa wersja próbna.
+- **Co robi Aspose.Zip?** Tworzy, kompresuje i rozpakowuje archiwa ZIP w czystym kodzie .NET bez użycia zewnętrznych narzędzi.  
+- **Czy mogę rozpakować zip chroniony hasłem?** Tak – wystarczy ustawić właściwość `Password` przed wywołaniem `ExtractAll`.  
+- **Jak duże archiwum może obsłużyć Aspose.Zip?** Do 5 GB może być przetworzone bez wczytywania całego pliku do pamięci.  
+- **Czy biblioteka obsługuje .NET 5/6/7?** Pełne wsparcie dla .NET Framework 2.0‑4.8.1, .NET Core 2.0‑3.1 oraz .NET 5‑10.  
+- **Czy potrzebna jest licencja do produkcji?** Wymagana jest licencja komercyjna; dostępna jest darmowa licencja ewaluacyjna do testów.
 
-## Co to jest „extract zip files with Aspose.Zip”?
-**Extract zip files with Aspose.Zip** oznacza dekompresję archiwum `.zip` z powrotem do jego pierwotnej struktury folderów i plików przy użyciu API Aspose.Zip. Operacja ta jest wykonywana w całości w zarządzanym kodzie .NET, eliminując potrzebę używania zewnętrznych narzędzi lub natywnych bibliotek DLL.
+## Co oznacza „rozpakowywanie plików zip przy użyciu Aspose.Zip”?
+Rozpakowywanie plików zip przy użyciu Aspose.Zip oznacza dekompresję archiwum `.zip` z powrotem do jego pierwotnej struktury folderów i plików przy użyciu API Aspose.Zip. Operacja odbywa się w całości w zarządzanym kodzie .NET, eliminując potrzebę natywnych DLL‑ów czy zewnętrznych narzędzi, i wspiera strumieniowe rozpakowywanie, aby utrzymać niskie zużycie pamięci przy jednoczesnym zachowaniu znaczników czasu i atrybutów plików.
 
 ## Dlaczego warto używać Aspose.Zip dla .NET?
-Aspose.Zip pozwala **process archives up to 5 GB** bez ładowania całego pliku do pamięci i obsługuje **30+ compression levels**, aby precyzyjnie dostosować szybkość do rozmiaru. Biblioteka obsługuje **50+ file‑type variations** w wpisach zip (tekst, obrazy, pliki binarne) i gwarantuje **100 % data integrity** dzięki wbudowanym kontrolom CRC. Te wymierne możliwości czynią ją niezawodnym wyborem dla wysokowydajnych przepływów pracy po stronie serwera.
+Aspose.Zip może **przetwarzać archiwa do 5 GB**, jednocześnie utrzymując zużycie pamięci poniżej 100 MB dzięki architekturze strumieniowej. Obsługuje **ponad 30 poziomów kompresji**, dając precyzyjną kontrolę nad szybkością a wielkością pliku. Biblioteka dodatkowo weryfikuje sumy kontrolne CRC, zapewniając **100 % integralności danych**, i współpracuje z **ponad 50 typami plików** (tekst, obrazy, binaria) w wpisach zip, **co czyni ją sprawdzonym wyborem dla obciążeń serwerowych o wysokiej przepustowości**.
 
 ## Wymagania wstępne
-- Visual Studio 2022 (lub nowsza) z zainstalowanym .NET 6+.  
+- Visual Studio 2022 (lub nowsze) z zainstalowanym .NET 6+.  
 - Pakiet NuGet Aspose.Zip dla .NET (`Install-Package Aspose.Zip`).  
 - (Opcjonalnie) Ważna licencja Aspose.Zip do użytku produkcyjnego.
 
 {{% alert color="primary" %}}
-Zanurz się w świecie Aspose.Zip dla .NET dzięki naszym starannie przygotowanym samouczkom. Zaprojektowane tak, aby zaspokoić potrzeby zarówno początkujących, jak i doświadczonych programistów, te samouczki oferują kompleksową eksplorację możliwości Aspose.Zip w ramach platformy .NET. Dowiedz się, jak efektywnie kompresować i dekompresować pliki, poznaj zaawansowane techniki kompresji oraz zintegrować płynne zarządzanie plikami w swoich aplikacjach .NET. Dzięki przejrzystym, krok po kroku instrukcjom i praktycznym przykładom, nasze samouczki umożliwiają pełne wykorzystanie potencjału Aspose.Zip dla .NET, zapewniając optymalizację procesów manipulacji plikami z pewnością i precyzją.
+Zanurz się w świecie Aspose.Zip dla .NET dzięki naszym starannie przygotowanym samouczkom. Zaprojektowane zarówno dla początkujących, jak i doświadczonych programistów, te samouczki oferują kompleksową eksplorację możliwości Aspose.Zip w ramach platformy .NET. Naucz się efektywnie kompresować i dekompresować pliki, poznaj zaawansowane techniki kompresji oraz integruj płynne zarządzanie plikami w swoich aplikacjach .NET. Dzięki przejrzystym, krok po kroku instrukcjom i praktycznym przykładom, nasze samouczki umożliwiają pełne wykorzystanie potencjału Aspose.Zip dla .NET, zapewniając optymalizację procesów manipulacji plikami z pewnością i precyzją.
 {{% /alert %}}
 
-Oto linki do przydatnych zasobów:
+These are links to some useful resources:
  
-- [Kompresja plików](./net/file-compression/)
-- [Dekompresja plików](./net/file-decompression/)
-- [Kompresja katalogów i folderów](./net/directory-and-folder-compression/)
-- [Wyodrębnianie archiwów i formaty](./net/archive-extraction-and-formats/)
-- [Archiwum RAR](./net/rar-archive/)
-- [Kompresja SevenZip](./net/sevenzip-compression/)
-- [Ochrona hasłem i szyfrowanie](./net/password-protection-and-encryption/)
-- [Inne techniki kompresji](./net/other-compression-techniques/)
+- [File Compression](./net/file-compression/)
+- [File Decompression](./net/file-decompression/)
+- [Directory and Folder Compression](./net/directory-and-folder-compression/)
+- [Archive Extraction and Formats](./net/archive-extraction-and-formats/)
+- [RAR Archive](./net/rar-archive/)
+- [SevenZip Compression](./net/sevenzip-compression/)
+- [Password Protection and Encryption](./net/password-protection-and-encryption/)
+- [Other Compression Techniques](./net/other-compression-techniques/)
 
-## Jak wyodrębnić pliki Zip przy użyciu Aspose.Zip
+## Jak rozpakować pliki zip przy użyciu Aspose.Zip
+`ZipFile` jest główną klasą reprezentującą archiwum ZIP w Aspose.Zip. Aby rozpakować ZIP, utwórz instancję `ZipFile` wskazującą na plik archiwum, opcjonalnie ustaw jej właściwość `Password` dla zaszyfrowanych archiwów, a następnie wywołaj `ExtractAll("outputFolder")`. Metoda odtwarza pierwotną hierarchię folderów, weryfikuje każdy wpis i zwraca flagę statusu wskazującą sukces lub niepowodzenie.
 
-Załaduj swoje archiwum zip przy użyciu `new ZipFile("archive.zip")` i wywołaj `zip.ExtractAll("outputFolder")` — ta pojedyncza linia wykonuje pełne wyodrębnianie, automatycznie odtwarzając pierwotną hierarchię katalogów i obsługując wszelkie wbudowane hasła. `ExtractAll` wyodrębnia wszystkie wpisy do folderu, odtwarzając pierwotną strukturę katalogów. API zwraca również flagę statusu, dzięki czemu możesz zweryfikować sukces bez analizowania wyjątków.
+### Obsługa zipów chronionych hasłem
+Jeśli archiwum jest zabezpieczone, przypisz hasło przed rozpakowaniem.  
+**Bezpośrednia odpowiedź:** Ustaw `zip.Password = "yourPassword"` i następnie wywołaj `zip.ExtractAll(...)`. Aspose.Zip odszyfrowuje każdy wpis w locie, więc nigdy nie musisz przechowywać niezaszyfrowanych danych na dysku.
 
-## Jak wyodrębnić pliki Zip przy użyciu Aspose.Zip dla .NET
-
-`Klasa `ZipFile` jest podstawowym obiektem Aspose.Zip, który reprezentuje archiwum ZIP w pamięci. `ZipFile` udostępnia metody do ładowania, wyodrębniania i manipulacji wpisami archiwum. Po utworzeniu instancji możesz wywołać jej metody wyodrębniania, ustawić hasła i kontrolować zachowanie przy nadpisywaniu. Aby wyodrębnić, utwórz instancję `ZipFile`, opcjonalnie ustaw hasło za pomocą właściwości `Password` i wywołaj `ExtractAll` lub `ExtractEntry` w celu selektywnego wyodrębniania. To podejście działa zarówno dla standardowych, jak i chronionych hasłem archiwów oraz automatycznie tworzy brakujące foldery.
-
-### Obsługa plików Zip chronionych hasłem
-Jeśli archiwum jest zabezpieczone hasłem, przekaż ciąg hasła do metody `ExtractAll`. Aspose.Zip odszyfruje zawartość w locie, umożliwiając pracę z plikami tak, jakby nie były chronione.
-
-### Szyfrowanie archiwum Zip podczas wyodrębniania (Ponowne szyfrowanie)
-W sytuacjach, gdy musisz wyodrębnić plik zip i natychmiast ponownie zaszyfrować jego zawartość (na przykład przenosząc dane między strefami zabezpieczonymi), możesz połączyć wyodrębnianie z metodą pomocniczą `CreateEncryptedArchive`. To podejście zapewnia, że dane nigdy nie znajdują się na dysku w stanie niezaszyfrowanym.
+### Szyfrowanie archiwum zip podczas rozpakowywania (ponowne szyfrowanie)
+W bezpiecznych środowiskach może być konieczne rozpakowanie i natychmiastowe ponowne zaszyfrowanie zawartości.  
+**Bezpośrednia odpowiedź:** Po rozpakowaniu wpisu do strumienia, utwórz nową instancję `ZipFile`, dodaj strumień jako nowy wpis i ustaw właściwości `EncryptionAlgorithm` oraz `Password` przed zapisaniem nowego archiwum. Dzięki temu dane pozostają zaszyfrowane przez cały proces.
 
 ### Kompresowanie wielu plików – szybkie podsumowanie
-Choć ten przewodnik koncentruje się na wyodrębnianiu, pamiętaj, że Aspose.Zip doskonale radzi sobie z **compress files .net**. Możesz dodać wiele plików do jednego archiwum jednym wywołaniem, określić poziomy kompresji, a nawet podzielić duże archiwa na wolumeny.
+Chociaż ten samouczek koncentruje się na rozpakowywaniu, Aspose.Zip doskonale radzi sobie także z **kompresowaniem wielu plików .net**. Możesz dodać dziesiątki plików jednym wywołaniem, wybrać dowolny z ponad 30 poziomów kompresji oraz podzielić archiwa na wolumeny w celu łatwiejszego transportu.
 
-## Częste problemy i rozwiązania
-- **Extraction fails with “Invalid password”** – Weryfikuj, czy podane hasło jest zgodne z tym użytym podczas kompresji; hasła są rozróżniane pod względem wielkości liter.  
-- **Large archives cause OutOfMemoryException** – Użyj API strumieniowego (`ExtractToStream`) do przetwarzania plików kolejno, zamiast ładować całe archiwum do pamięci. `ExtractToStream` wyodrębnia pojedynczy wpis do strumienia, umożliwiając przetwarzanie przy niskim zużyciu pamięci.  
-- **File name collisions** – Ustaw flagę `OverwriteExistingFiles`, aby kontrolować, czy istniejące pliki mają być zastąpione czy przemianowane.
+## Typowe problemy i rozwiązania
+- **Rozpakowywanie nie powiodło się z komunikatem „Invalid password”.** Sprawdź dokładne hasło użyte podczas kompresji; hasła są rozróżniane pod względem wielkości liter.  
+- **OutOfMemoryException przy dużych archiwach.** Przejdź na API strumieniowe (`ExtractToStream`), aby przetwarzać wpisy pojedynczo zamiast ładować całe archiwum.  
+- **Kolizje nazw plików.** Włącz flagę `OverwriteExistingFiles` lub obsłuż zdarzenie `FileExists`, aby automatycznie zmieniać nazwy kolidujących plików.
 
 ## Najczęściej zadawane pytania
 
-**Q: Czy mogę wyodrębnić plik zip bez znajomości jego hasła?**  
+**Q: Czy mogę rozpakować plik zip nie znając jego hasła?**  
 A: Nie, Aspose.Zip wymaga poprawnego hasła do odszyfrowania archiwum chronionego hasłem. Możesz przechwycić `InvalidPasswordException`, aby elegancko obsłużyć nieprawidłowe hasła.
 
 **Q: Czy Aspose.Zip obsługuje inne formaty archiwów, takie jak RAR lub 7z?**  
 A: Bezpośrednie wsparcie ogranicza się do ZIP, ale możesz połączyć Aspose.Zip z bibliotekami firm trzecich dla tych formatów lub skorzystać z samouczka „Archive Extraction and Formats” w celu uzyskania wskazówek.
 
-**Q: Jak wyodrębnić tylko określone pliki z dużego archiwum?**  
-A: Użyj metody `ExtractEntry`, aby celować w poszczególne wpisy po nazwie, unikając konieczności wyodrębniania całego archiwum.
+**Q: Jak rozpakować tylko wybrane pliki z dużego archiwum?**  
+A: Użyj metody `ExtractEntry`, aby wybrać konkretne wpisy po nazwie, unikając konieczności rozpakowywania całego archiwum.
 
-**Q: Czy istnieje sposób monitorowania postępu wyodrębniania?**  
-A: Tak — subskrybuj zdarzenie `ProgressChanged` na obiekcie `ZipFile`, aby otrzymywać aktualizacje w czasie rzeczywistym. `ProgressChanged` wywołuje się okresowo, dostarczając informacje o postępie wyodrębniania.
+**Q: Czy istnieje sposób monitorowania postępu rozpakowywania?**  
+A: Tak – subskrybuj zdarzenie `ProgressChanged` na obiekcie `ZipFile`, aby otrzymywać aktualizacje w czasie rzeczywistym. `ProgressChanged` jest wywoływane okresowo z informacjami o postępie rozpakowywania.
 
 **Q: Jakie licencjonowanie jest wymagane do użytku komercyjnego?**  
-A: Wymagana jest płatna licencja Aspose.Zip do wdrożeń produkcyjnych; dostępna jest darmowa licencja ewaluacyjna do testów.
+A: Do wdrożeń produkcyjnych wymagana jest płatna licencja Aspose.Zip; dostępna jest darmowa licencja ewaluacyjna do testów.
 
 ## Dodatkowe wskazówki i najlepsze praktyki
-- **Pro tip:** Pracując z bardzo dużymi plikami zip, preferuj metodę `ExtractToStream`, aby utrzymać niskie zużycie pamięci.  
-- **Tip:** Zawsze weryfikuj integralność archiwum przy użyciu `ValidateArchive` przed wyodrębnianiem, aby wcześnie wykrywać uszkodzone pliki.  
-- **Warning:** Nigdy nie przechowuj haseł w postaci zwykłego tekstu; używaj bezpiecznych dostawców konfiguracji lub Azure Key Vault.
+- **Pro tip:** Przy pracy z bardzo dużymi plikami zip, preferuj metodę `ExtractToStream`, aby utrzymać niskie zużycie pamięci.  
+- **Tip:** Zawsze weryfikuj integralność archiwum przy pomocy `ValidateArchive` przed rozpakowaniem, aby wcześnie wykryć uszkodzone pliki.  
+- **Ostrzeżenie:** Nigdy nie przechowuj haseł w postaci czystego tekstu; używaj bezpiecznych dostawców konfiguracji lub Azure Key Vault.
 
 ## Zakończenie
-Masz teraz solidne podstawy do **extract zip files with Aspose.Zip** w dowolnym środowisku .NET. Od obsługi archiwów chronionych hasłem po ponowne szyfrowanie danych w locie, Aspose.Zip zapewnia elastyczność i wydajność niezbędną do rzeczywistych zadań zarządzania plikami. Przeglądaj pozostałe samouczki zamieszczone powyżej, aby opanować kompresję, archiwizację katalogów i zaawansowane techniki szyfrowania.
+Masz teraz solidne podstawy do **rozpakowywania plików zip przy użyciu Aspose.Zip** w dowolnym środowisku .NET. Od obsługi archiwów chronionych hasłem po ponowne szyfrowanie danych w locie, Aspose.Zip zapewnia elastyczność i wydajność niezbędną do rzeczywistych zadań zarządzania plikami. Zapoznaj się z innymi samouczkami podanymi powyżej, aby opanować kompresję, archiwizację katalogów i zaawansowane techniki szyfrowania.
 
 ---
 
-**Ostatnia aktualizacja:** 2026-06-19  
-**Testowano z:** Aspose.Zip 24.11 for .NET  
-**Autor:** Aspose  
-
-{{< blocks/products/products-backtop-button >}}
+**Last Updated:** 2026-10-19  
+**Tested With:** Aspose.Zip 24.11 for .NET  
+**Author:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -1,15 +1,23 @@
 ---
 additionalTitle: Aspose API References
-date: 2026-06-19
-description: 了解如何使用 Aspose.Zip for .NET 提取 zip 文件，处理受密码保护的 zip 存档，并高效压缩多个文件。
+date: 2026-10-19
+description: 了解如何使用 Aspose.Zip for .NET 提取 zip 文件，处理 password‑protected zip 存档，并高效进行
+  multi‑file compression。
 keywords:
 - extract zip files with Aspose.Zip
 - password protected zip
 - compress multiple files .net
+- Aspose.Zip .NET
+- zip archive extraction
+lastmod: 2026-10-19
 linktitle: Aspose.Zip 教程
+og_description: 在 .NET 中快速使用 Aspose.Zip 提取 zip 文件。学习 password‑protected zip 处理、multi‑file
+  compression，以及本详细指南中的 best practices。
+og_image_alt: Developer guide showing Aspose.Zip extraction code in .NET
+og_title: 使用 Aspose.Zip 提取 zip 文件 – 完整的 .NET 指南
 schemas:
 - author: Aspose
-  dateModified: '2026-06-19'
+  dateModified: '2026-10-19'
   description: Learn how to extract zip files with Aspose.Zip for .NET, handle password
     protected zip archives, and compress multiple files efficiently.
   headline: Extract Zip Files with Aspose.Zip – Complete .NET Guide
@@ -34,7 +42,12 @@ schemas:
       evaluation license is available for testing.
     question: What licensing is required for commercial use?
   type: FAQPage
-title: 使用 Aspose.Zip 提取 Zip 文件 – 完整的 .NET 指南
+tags:
+- extract zip
+- Aspose.Zip
+- .NET compression
+- zip archive handling
+title: 使用 Aspose.Zip 提取 zip 文件 – 完整的 .NET 指南
 url: /zh/
 weight: 11
 ---
@@ -43,98 +56,94 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 使用 Aspose.Zip 提取 Zip 文件 – 完整 .NET 指南
-
-欢迎来到 **Aspose.Zip** 的世界，在这里 **extract zip files with Aspose.Zip** 与高性能压缩相结合！无论您是经验丰富的 .NET 开发者还是刚入门，本教程系列将为您提供实用的 **extract zip files** 知识，帮助您处理 **password protected zip** 存档，甚至在需要时 **encrypt zip archive** 内容。完成后，您将能够应对复杂的 zip 场景——压缩多个文件、管理存档细节，并将这些功能无缝集成到任何 .NET 应用程序中。
+# 提取 zip 文件使用 Aspose.Zip – 完整 .NET 指南
 
 ## 快速答案
-- **Aspose.Zip 的主要用途是什么？** 在 .NET 中高效地创建、压缩和提取 zip 存档。  
-- **Aspose.Zip 能够提取带密码的 zip 文件吗？** 是的——内置对 password‑protected zip 提取的支持。  
-- **在提取时是否可以加密 zip 存档？** 您可以在提取过程中解密加密的存档，并即时重新加密。  
-- **支持哪些 .NET 版本？** .NET Framework 2.0–4.8.1、.NET Core 2.0–3.1 和 .NET 5–10。  
-- **生产环境是否需要许可证？** 生产部署需要商业许可证；提供免费试用版。
+- **Aspose.Zip 的作用是什么？** 它在纯 .NET 代码中创建、压缩和解压 ZIP 存档，无需外部工具。  
+- **我可以解压受密码保护的 zip 吗？** 可以——只需在调用 `ExtractAll` 之前设置 `Password` 属性。  
+- **Aspose.Zip 能处理多大的存档？** 最多可处理 5 GB，且无需将整个文件加载到内存中。  
+- **该库支持 .NET 5/6/7 吗？** 完全支持 .NET Framework 2.0‑4.8.1、.NET Core 2.0‑3.1 和 .NET 5‑10。  
+- **生产环境需要许可证吗？** 需要商业许可证；可免费获取评估许可证用于测试。
 
-## 什么是 “extract zip files with Aspose.Zip”？
-**Extract zip files with Aspose.Zip** 指使用 Aspose.Zip API 将 `.zip` 存档解压回其原始文件夹和文件结构。此操作完全在托管的 .NET 代码中执行，省去了外部工具或本机 DLL 的需求。
+## 什么是 “使用 Aspose.Zip 提取 zip 文件”？
+使用 Aspose.Zip 提取 zip 文件是指通过 Aspose.Zip API 将 `.zip` 存档解压回其原始的文件夹和文件结构。此操作完全在托管的 .NET 代码中运行，无需本机 DLL 或外部工具，并支持流式解压以降低内存使用，同时保留文件时间戳和属性。
 
 ## 为什么在 .NET 中使用 Aspose.Zip？
-Aspose.Zip 让您 **process archives up to 5 GB** 而无需将整个文件加载到内存中，并支持 **30+ compression levels** 以微调速度与体积。该库能够处理 zip 条目中的 **50+ file‑type variations**（文本、图像、二进制等），并通过内置 CRC 检查确保 **100 % data integrity**。这些量化的能力使其成为高吞吐量服务器端工作流的可靠选择。
+Aspose.Zip 能 **处理高达 5 GB 的存档**，并通过流式架构将内存使用保持在 100 MB 以下。它支持 **30 多种压缩级别**，让您在速度与体积之间实现细粒度控制。库还会对 **100 % 数据完整性** 进行 CRC 校验，并兼容 **50 多种文件类型**（文本、图像、二进制）在 zip 条目中使用，是高吞吐量服务器端工作负载的可靠选择。
 
-## 前提条件
-- Visual Studio 2022（或更高版本），已安装 .NET 6+。  
+## 前置条件
+- Visual Studio 2022（或更高版本），并已安装 .NET 6+。  
 - Aspose.Zip for .NET NuGet 包（`Install-Package Aspose.Zip`）。  
-- (可选) 用于生产的有效 Aspose.Zip 许可证。
+- （可选）用于生产的有效 Aspose.Zip 许可证。
 
 {{% alert color="primary" %}}
-深入了解 Aspose.Zip 在 .NET 中的领域，通过我们精心编写的教程。该教程面向初学者和经验丰富的开发者，全面探讨 Aspose.Zip 在 .NET 框架中的功能。学习如何高效压缩和解压文件，探索高级压缩技术，并将无缝的文件处理集成到您的 .NET 应用程序中。通过清晰的逐步说明和实用示例，我们的教程使您能够充分发挥 Aspose.Zip for .NET 的潜力，确保您能够自信而精准地优化文件操作流程。
+深入了解 Aspose.Zip for .NET，通过我们精心编写的教程进入其世界。教程面向初学者和资深开发者，全面探索 Aspose.Zip 在 .NET 框架中的功能。学习如何高效压缩和解压文件，探索高级压缩技术，并将无缝的文件处理集成到您的 .NET 应用程序中。凭借清晰的逐步指引和实用示例，我们的教程帮助您充分发挥 Aspose.Zip for .NET 的潜力，确保您能够自信且精准地优化文件操作流程。
 {{% /alert %}}
 
-以下是一些有用资源的链接：
-
+这些是一些有用资源的链接：
+ 
 - [文件压缩](./net/file-compression/)
 - [文件解压](./net/file-decompression/)
 - [目录和文件夹压缩](./net/directory-and-folder-compression/)
-- [存档提取和格式](./net/archive-extraction-and-formats/)
+- [存档提取与格式](./net/archive-extraction-and-formats/)
 - [RAR 存档](./net/rar-archive/)
 - [SevenZip 压缩](./net/sevenzip-compression/)
-- [密码保护和加密](./net/password-protection-and-encryption/)
+- [密码保护与加密](./net/password-protection-and-encryption/)
 - [其他压缩技术](./net/other-compression-techniques/)
 
-## 如何使用 Aspose.Zip 提取 Zip 文件
+## 如何使用 Aspose.Zip 提取 zip 文件
+`ZipFile` 是 Aspose.Zip 中表示 ZIP 存档的主要类。要提取 ZIP，创建指向存档文件的 `ZipFile` 实例，可选地为加密存档设置其 `Password` 属性，然后调用 `ExtractAll("outputFolder")`。该方法会重新创建原始文件夹层次结构，验证每个条目，并返回表示成功或失败的状态标志。
 
-使用 `new ZipFile("archive.zip")` 加载 zip 存档，然后调用 `zip.ExtractAll("outputFolder")` —— 这一行代码即可完成完整的提取，自动重新创建原始目录层次并处理任何嵌入的密码。`ExtractAll` 将所有条目提取到指定文件夹，重新构建原始目录结构。API 还返回状态标志，您可以在不捕获异常的情况下验证成功。
+### 处理受密码保护的 zip 文件
+如果存档受密码保护，请在解压前分配密码。  
+**直接答案：** 设置 `zip.Password = "yourPassword"` 然后调用 `zip.ExtractAll(...)`。Aspose.Zip 会在提取时即时解密每个条目，您无需将未加密的数据写入磁盘。
 
-## 在 .NET 中如何使用 Aspose.Zip 提取 Zip 文件
-
-`ZipFile` 类是 Aspose.Zip 的核心对象，表示内存中的 ZIP 存档。`ZipFile` 提供用于加载、提取和操作存档条目的方法。创建实例后，您可以调用其提取方法、设置密码并控制覆盖行为。要进行提取，实例化 `ZipFile`，可选地通过 `Password` 属性设置密码，然后调用 `ExtractAll` 或 `ExtractEntry` 进行选择性提取。此方法适用于标准和 password‑protected 存档，并会自动创建任何缺失的文件夹。
-
-### 处理受密码保护的 Zip 文件
-如果存档受密码保护，请将密码字符串传递给 `ExtractAll` 方法。Aspose.Zip 将在提取时即时解密内容，使您能够像处理未受保护的文件一样使用这些文件。
-
-### 在提取时加密 Zip 存档（重新加密）
-在需要提取 zip 文件并立即重新加密其内容的场景（例如，在安全区域之间移动数据），您可以将提取与 `CreateEncryptedArchive` 辅助方法结合使用。此方法确保数据在磁盘上永不以未加密状态存在。
+### 在提取时加密 zip 存档（重新加密）
+在安全环境中，您可能需要在提取后立即重新加密内容。  
+**直接答案：** 将条目提取到流后，创建新的 `ZipFile` 实例，将该流作为新条目添加，并在保存新存档前设置 `EncryptionAlgorithm` 和 `Password` 属性。这可确保数据在整个过程中保持加密状态。
 
 ### 压缩多个文件 – 快速回顾
-虽然本指南侧重于提取，但请记住 Aspose.Zip 也擅长 **compress files .net**。您可以一次调用将多个文件添加到单个存档，指定压缩级别，甚至将大型存档拆分为多个卷。
+虽然本教程侧重于提取，但 Aspose.Zip 也擅长 **压缩多个文件 .net**。您可以一次性添加数十个文件，选择任意 30+ 压缩级别，甚至将存档拆分为多个卷以便更易传输。
 
 ## 常见问题与解决方案
-- **Extraction fails with “Invalid password”** – 请确认您提供的密码与压缩时使用的密码匹配；密码区分大小写。  
-- **Large archives cause OutOfMemoryException** – 使用流式 API（`ExtractToStream`）逐个处理文件，而不是将整个存档加载到内存中。`ExtractToStream` 将单个条目提取到流中，从而实现低内存处理。  
-- **File name collisions** – 设置 `OverwriteExistingFiles` 标志，以控制是替换现有文件还是重命名。
+- **解压时出现 “Invalid password”。** 请确认压缩时使用的确切密码；密码区分大小写。  
+- **大存档导致 OutOfMemoryException。** 切换到流式 API（`ExtractToStream`），一次处理一个条目，而不是一次性加载整个存档。  
+- **文件名冲突。** 启用 `OverwriteExistingFiles` 标志或处理 `FileExists` 事件以自动重命名冲突文件。
 
 ## 常见问答
 
-**Q: Can I extract a zip file without knowing its password?**  
-A: 不可以，Aspose.Zip 需要正确的密码才能解密 password‑protected 存档。您可以捕获 `InvalidPasswordException` 来优雅地处理密码错误。
+**Q: 我可以在不知道密码的情况下解压 zip 文件吗？**  
+A: 不行，Aspose.Zip 需要正确的密码才能解密受密码保护的存档。您可以捕获 `InvalidPasswordException` 来优雅地处理密码错误。
 
-**Q: Does Aspose.Zip support other archive formats like RAR or 7z?**  
-A: 直接支持仅限于 ZIP，但您可以将 Aspose.Zip 与第三方库结合使用以处理这些格式，或参考 “Archive Extraction and Formats” 教程获取指导。
+**Q: Aspose.Zip 是否支持 RAR 或 7z 等其他存档格式？**  
+A: 直接支持仅限于 ZIP，但您可以将 Aspose.Zip 与第三方库结合使用这些格式，或参考 “存档提取与格式” 教程获取指导。
 
-**Q: How do I extract only specific files from a large archive?**  
-A: 使用 `ExtractEntry` 方法按名称定位单个条目，从而避免提取整个存档。
+**Q: 如何只从大型存档中提取特定文件？**  
+A: 使用 `ExtractEntry` 方法按名称定位单个条目，避免提取整个存档。
 
-**Q: Is there a way to monitor extraction progress?**  
-A: 是的——订阅 `ZipFile` 对象的 `ProgressChanged` 事件即可获取实时更新。`ProgressChanged` 会定期触发，提供提取进度信息。
+**Q: 有办法监控解压进度吗？**  
+A: 有——订阅 `ZipFile` 对象的 `ProgressChanged` 事件即可实时获取进度信息。`ProgressChanged` 会定期触发并提供解压进度数据。
 
-**Q: What licensing is required for commercial use?**  
-A: 生产部署需要付费的 Aspose.Zip 许可证；提供免费评估许可证供测试使用。
+**Q: 商业使用需要什么许可证？**  
+A: 生产部署需要付费的 Aspose.Zip 许可证；可免费获取用于测试的评估许可证。
 
-## 附加提示与最佳实践
-- **Pro tip:** 处理非常大的 zip 文件时，建议使用 `ExtractToStream` 方法以降低内存使用。  
-- **Tip:** 在提取前始终使用 `ValidateArchive` 验证存档完整性，以便及早发现损坏的文件。  
-- **Warning:** 切勿以明文形式存储密码；请使用安全的配置提供程序或 Azure Key Vault。
+## 其他提示与最佳实践
+- **专业提示：** 处理超大 zip 文件时，优先使用 `ExtractToStream` 方法以保持低内存占用。  
+- **提示：** 在解压前使用 `ValidateArchive` 验证存档完整性，以提前捕获损坏文件。  
+- **警告：** 切勿以明文形式存储密码；请使用安全的配置提供程序或 Azure Key Vault。
 
 ## 结论
-您现在已经具备在任何 .NET 环境中使用 **extract zip files with Aspose.Zip** 的坚实基础。从处理 password‑protected 存档到即时重新加密数据，Aspose.Zip 为实际文件管理任务提供了所需的灵活性和性能。浏览上方链接的其他教程，掌握压缩、目录存档和高级加密技术。
+现在，您已经掌握了在任何 .NET 环境中 **使用 Aspose.Zip 提取 zip 文件** 的坚实基础。从处理受密码保护的存档到即时重新加密数据，Aspose.Zip 为实际文件管理任务提供了所需的灵活性和性能。浏览上方链接的其他教程，进一步精通压缩、目录归档和高级加密技术。
 
 ---
 
-**最后更新：** 2026-06-19  
-**测试环境：** Aspose.Zip 24.11 for .NET  
-**作者：** Aspose  
-
-{{< blocks/products/products-backtop-button >}}
+**最后更新：** 2026-10-19  
+**测试版本：** Aspose.Zip 24.11 for .NET  
+**作者：** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
