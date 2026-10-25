@@ -1,30 +1,36 @@
 ---
-date: 2026-06-19
-description: Aspose.Zip for .NET を使用して tar ファイルを圧縮し、targz アーカイブを作成し、パスワード保護された zip
-  ファイルを抽出する方法を学び、ストレージ効率とセキュリティを向上させます。
+date: 2026-10-25
+description: Aspose.Zip for .NET を使用して zip パスワードを抽出し、tar ファイルを圧縮する際に compression algorithm
+  を設定する方法を学び、storage efficiency と security を向上させます。
 keywords:
-- how to compress tar
-- extract password zip
+- extract zip password
+- set compression algorithm
+- add folder archive
+- tarbz2 vs targz
 - aspose zip compress
-- aspose zip extract
-- create targz archive
-linktitle: アーカイブの抽出とフォーマット
+lastmod: 2026-10-25
+linktitle: アーカイブ抽出とフォーマット
+og_description: Aspose.Zip for .NET を使用して zip パスワードを抽出し、tar ファイルを圧縮する際に compression
+  algorithm を設定する方法を学び、storage efficiency と security を向上させます。
+og_image_alt: 'Developer guide: extract zip password and compress tar archives using
+  Aspose.Zip for .NET'
+og_title: Aspose.Zip を使用して zip パスワードを抽出し、tar ファイルを圧縮
 schemas:
 - author: Aspose
-  dateModified: '2026-06-19'
-  description: Learn how to compress tar files, create targz archives, and extract
-    password‑protected zip files using Aspose.Zip for .NET – boosting storage efficiency
-    and security.
-  headline: How to Compress Tar Files with Aspose.Zip for .NET
+  dateModified: '2026-10-25'
+  description: Learn how to extract zip password and set compression algorithm when
+    compressing tar files with Aspose.Zip for .NET, boosting storage efficiency and
+    security.
+  headline: Extract zip password and compress tar files with Aspose.Zip
   type: TechArticle
-- description: Learn how to compress tar files, create targz archives, and extract
-    password‑protected zip files using Aspose.Zip for .NET – boosting storage efficiency
-    and security.
-  name: How to Compress Tar Files with Aspose.Zip for .NET
+- description: Learn how to extract zip password and set compression algorithm when
+    compressing tar files with Aspose.Zip for .NET, boosting storage efficiency and
+    security.
+  name: Extract zip password and compress tar files with Aspose.Zip
   steps:
   - name: Choose the archive format you need
     text: 'Decide which tar‑based format best matches your compression‑speed trade‑off:
-      - **TarBz2** – Highest compression ratio (≈30 % smaller than TarGz) but slower.
+      - **TarBz2** – Highest compression ratio (≈30 % smaller than TarGz) but slower.
       - **TarGz** – Good balance of speed and size; ideal for most cloud‑storage scenarios.
       - **TarLz / TarXz** – Very high compression with moderate'
   - name: Create a new `Archive` instance
@@ -66,12 +72,16 @@ schemas:
   - answer: TarBz2 typically yields the smallest size, followed by TarLz and TarXz.
       TarGz offers a faster, still‑effective alternative.
     question: Which format gives the best compression?
-  - answer: Practically none, but extremely large archives (>10 GB) may benefit from
+  - answer: Practically none, but extremely large archives (>10 GB) may benefit from
       splitting into multiple parts for easier handling.
     question: Is there a limit to the number of files I can add to a TAR archive?
   type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Aspose.Zip for .NET を使用した Tar ファイルの圧縮方法
+tags:
+- compress tar
+- Aspose.Zip
+- .NET archive handling
+title: Aspose.Zip を使用して zip パスワードを抽出し、tar ファイルを圧縮
 url: /ja/net/archive-extraction-and-formats/
 weight: 23
 ---
@@ -80,125 +90,131 @@ weight: 23
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Zip for .NET を使用した Tar ファイルの圧縮方法
+# Zip パスワードの抽出と Aspose.Zip を使用した tar ファイルの圧縮
 
 ## はじめに
 
-このガイドでは、Aspose.Zip for .NET を使用して **tar** ファイルを圧縮する方法を学び、TarGz アーカイブの作成方法やパスワード保護された zip アーカイブの抽出方法を確認します。効率的なアーカイブ処理は、最新の .NET 開発者にとって重要なスキルです—バックアップサービス、クラウドストレージクライアント、データ処理パイプラインの構築に関わらず、これらの形式をマスターすることでストレージコストを削減し、転送速度を向上させ、機密データを安全に保護できます。
+このガイドでは **extract zip password** の手法を紹介し、tar ベースのアーカイブを作成する際の圧縮アルゴリズムの設定方法を学び、Aspose.Zip for .NET を使って TarGz、TarBz2、その他の形式を構築する方法を示します。バックアップサービス、クラウドストレージクライアント、データ処理パイプラインの構築に関わる方は、これらの操作をマスターすることでストレージコストを削減し、転送速度を向上させ、機密ファイルを保護できます。
 
 ## クイック回答
-- **TarBz2 とは何ですか？** TAR パッケージングと BZIP2 圧縮を組み合わせた高圧縮率のアーカイブです。  
-- **なぜ Aspose.Zip for .NET を選ぶのですか？** 外部依存関係なしで多数のアーカイブ形式の作成と抽出ができる、シンプルで流暢な API を提供します。  
-- **TarGz アーカイブを作成できますか？** はい – Aspose.Zip は TarGz、TarLz、TarXz、TarZ などをサポートしています。  
-- **パスワード保護された zip アーカイブを抽出するには？** 抽出時に `ArchiveEntry` オブジェクトの `Password` プロパティを使用します。  
-- **本番環境で使用するにはライセンスが必要ですか？** 本番利用には商用ライセンスが必要です。評価用に無料トライアルが利用可能です。
+- **TarBz2 とは？** TAR パッケージに BZIP2 圧縮を組み合わせた高圧縮率のアーカイブです。  
+- **なぜ Aspose.Zip for .NET を選ぶのか？** 50 以上のアーカイブ・圧縮形式に対応し、Windows、Linux、macOS で動作し、数百メガバイト規模のアーカイブでもメモリ使用量を 10 MB 未満に抑えます。  
+- **TarGz アーカイブは作成できるか？** はい – Aspose.Zip は TarGz、TarLz、TarXz、TarZ などを提供しています。  
+- **パスワード保護された zip アーカイブを抽出するには？** `Extract` を呼び出す前に各 `ArchiveEntry` の `Password` プロパティを設定します。  
+- **本番利用にライセンスは必要か？** 本番環境では商用ライセンスが必要です。評価用の無料トライアルも利用可能です。
 
-## Tar 圧縮とは何ですか？
+## tar 圧縮とは？
 
-Tar（Tape Archive）は、�数のファイルやディレクトリを圧縮なしで単一のストリームにまとめるコンテナ形式です。BZIP2、GZip、LZMA、XZ などの圧縮アルゴリズムを適用すると、`.tar.bz2`、`.tar.gz`、`.tar.lz` などの **tar ベースのアーカイブ** が生成されます。これらの形式は Linux、macOS、Windows で広くサポートされており、クロスプラットフォームのデータ交換に最適です。
+tar 圧縮は TAR コンテナに BZIP2、GZIP、LZMA、XZ などの圧縮アルゴリズムを組み合わせたものです。結果として単一ファイル（例: `.tar.gz`、`.tar.bz2`）が生成され、Linux、macOS、Windows で展開できます。元のディレクトリ階層を保持し、ランダムアクセス抽出を可能にし、コマンドラインツールやプログラミングライブラリで広くサポートされているため、クロスプラットフォーム配布やアーカイブ保存に最適です。
 
-## これらの形式を扱うために Aspose.Zip for .NET を使用する理由
+## .NET でこれらの形式を扱うために Aspose.Zip を使う理由
 
-Aspose.Zip は **統一された依存関係のない API** を提供し、TarBz2、TarGz、TarLz、TarXz、TarZ を含む 50 以上のアーカイブおよび圧縮形式をサポートします。Windows、Linux、macOS 上で動作し、ストリームベースのアーキテクチャにより、数百メガバイト規模のアーカイブでもメモリ使用量を 10 MB 未満に抑えます。パスワード保護が組み込まれており、追加ライブラリなしでエントリ単位の暗号化が可能です。
+Aspose.Zip は統一された依存関係のない API を提供し、**50+** のアーカイブ・圧縮形式に対応しています。主要な tar 系形式すべてをサポートし、ストリーミングアーキテクチャにより 10 GB を超えるアーカイブでも RAM 使用量を 10 MB 未満に抑えて処理できます。  
+
+**直接的な回答:** Aspose.Zip を使用すれば、外部ツールを必要とせず、単一のフルエント API で tar 系アーカイブやパスワード保護 zip の作成・圧縮・抽出が可能で、メモリ効率の高いストリーミングモードでマルチギガバイトのアーカイブも扱えます。
 
 ## 前提条件
-- .NET Framework 2.0–4.8.1、.NET Core 2.0–3.1、または .NET 5–10。  
-- Aspose.Zip for .NET の NuGet パッケージがインストールされていること (`Install-Package Aspose.Zip`)。  
-- C# のファイル I/O と .NET プロジェクトシステムの基本的な知識があること。
+- .NET Framework 2.0–4.8.1、.NET Core 2.0–3.1、または .NET 5–10。  
+- Aspose.Zip for .NET NuGet パッケージ (`Install-Package Aspose.Zip`)。  
+- C# のファイル I/O と .NET プロジェクトシステムに関する基本的な知識。
 
 ## ステップバイステップ ガイド
 
-### Tar ファイルの圧縮方法 – 直接回答
-`Archive` はアーカイブファイルを表し、エントリの追加や保存のメソッドを提供します。  
-`Archive` インスタンスを作成し、バンドルしたいファイルを追加し、`CompressionType.BZip2` を設定し、`ArchiveFormat.TarBz2` で `Save` を呼び出します。ライブラリは TAR コンテナを書き込み、単一のストリーミングパスで圧縮するため、アーカイブ全体をメモリにロードすることはありません。
+### tar ファイルの圧縮方法 – 直接的な回答
+`Archive` インスタンスを作成し、バンドルしたいファイルを追加、`CompressionType.BZip2`（または他のアルゴリズム）を設定し、`ArchiveFormat.TarBz2` を指定して `Save` を呼び出します。ライブラリは TAR コンテナを書き込み、ストリーミングで圧縮を行うため、アーカイブ全体をメモリに読み込むことはありません。
 
 ### 手順 1: 必要なアーカイブ形式を選択
-圧縮率と速度のトレードオフに最適な tar ベースの形式を決定します：
-- **TarBz2** – 最高の圧縮率（TarGz より約30 % 小さい）ですが、速度は遅めです。  
-- **TarGz** – 速度とサイズのバランスが良く、ほとんどのクラウドストレージシナリオに最適です。  
-- **TarLz / TarXz** – 非常に高い圧縮率と中程度の速度で、アーカイブ保存に有用です。  
-- **TarZ** – 古い Unix ツールとの互換性のためのレガシーフォーマットです。
+圧縮率と速度のトレードオフに合わせて、以下の tar 系形式から選びます：
+
+- **TarBz2** – 最高の圧縮率（TarGz より約30 % 小さく）ですが速度は遅め。  
+- **TarGz** – 速度とサイズのバランスが良く、ほとんどのクラウドストレージシナリオに最適。  
+- **TarLz / TarXz** – 圧縮率は非常に高く、速度は中程度。アーカイブ保存に有用。  
+- **TarZ** – 旧式の Unix ツールとの互換性のためのレガシーフォーマット。
 
 ### 手順 2: 新しい `Archive` インスタンスを作成
-`Archive` はメモリ内の単一アーカイブファイルを表すトップレベルオブジェクトです。  
-`Archive` クラスはパッキングと圧縮のワークフローを管理し、エントリの追加や最終ファイルの書き込みメソッドを提供します。
+`Archive` は単一のアーカイブファイルを表し、エントリの追加や保存メソッドを提供します。  
+
+`Archive` クラスはパッキングと圧縮のワークフローを管理し、エントリ追加や最終ファイル書き込みのメソッドを公開します。
 
 ### 手順 3: ファイルとフォルダーを追加
-`AddAll` でディレクトリツリー全体を追加したり、`AddFile` で個別のファイルを追加できます。元のフォルダー階層を保持するには、ベースディレクトリパスを渡すだけです。
+`AddAll` でディレクトリツリー全体を追加したり、`AddFile` で個別ファイルを追加したりできます。  
 
-### 手順 4: 希望する圧縮タイプを設定
-`CompressionType` はサポートされているアルゴリズムを列挙します。  
-`CompressionType` は保存時に TAR ストリームに適用されるアルゴリズム（BZip2、GZip、LZMA、XZ など）を定義します。
+`AddAll` はディレクトリツリー全体をアーカイブに追加し、構造を保持します。  
+`AddFile` は単一ファイルをアーカイブに追加します。元のフォルダー階層はベースディレクトリパスを渡すだけで保持されます。
+
+### 手順 4: 圧縮タイプを設定
+`CompressionType` 列挙体は TAR ストリームに適用する圧縮アルゴリズムを指定します。  
+
+`CompressionType` には BZip2、GZip、LZMA、XZ など、サポートされているアルゴリズムが列挙されています。
 
 ### 手順 5: アーカイブを保存
-`ArchiveFormat` は列挙型セット（例: `TarBz2`、`TarGz`）で、ライターに使用するコンテナと圧縮方式を指示します。  
-`Save` を呼び出すと、選択した形式でアーカイブがディスクに書き込まれます。
+`ArchiveFormat` 列挙体で出力ファイルのコンテナと圧縮の組み合わせを選択します。  
+
+`Save` を呼び出すと、選択した形式でディスクにアーカイブが書き込まれます。
 
 ### 手順 6: パスワード付きアーカイブの抽出
-`ArchiveEntry` はアーカイブ内の単一のファイルまたはディレクトリエントリを表します。  
-パスワード保護された zip を抽出するには、アーカイブを開き、各 `ArchiveEntry` を見つけ、その `Password` プロパティを設定してから `Extract` を呼び出します。このエントリ単位のパスワードモデルにより、単一の zip 内の個別ファイルを保護できます。
+`ArchiveEntry` はアーカイブ内の単一ファイルまたはディレクトリエントリを表します。  
+
+パスワード保護された zip を抽出するには、アーカイブを開き各 `ArchiveEntry` を取得し、`Password` プロパティにパスワードを設定してから `Extract` を呼び出します。`Password` プロパティは zip エントリの復号パスワードを設定します。このエントリ単位のパスワードモデルにより、単一 zip 内の個別ファイルを保護できます。
 
 ### 手順 7: 結果を検証
-抽出後、ファイルサイズと SHA‑256 チェックサムを比較し、アーカイブの往復でデータの完全性が保たれたことを確認します。
+抽出後、ファイルサイズと SHA‑256 チェックサムを比較し、アーカイブの往復でデータ整合性が保たれたことを確認します。
 
-## 一般的な使用例
-- **バックアップユーティリティ** – 毎日のバックアップを `.tar.bz2` として保存し、ストレージコストを最大 30 % 削減します。  
-- **クロスプラットフォームデータ交換** – Tar ベースの形式は Linux、macOS、Windows のツールでネイティブにサポートされています。  
-- **安全な配布** – 機密エントリにパスワードを割り当て、追加の暗号化ツールなしでコンプライアンス要件を満たします。
+## 主なユースケース
+- **バックアップユーティリティ** – `.tar.bz2` で日次バックアップを保存し、最大 30 % のストレージコスト削減を実現。  
+- **クロスプラットフォームデータ交換** – Tar 系形式は Linux、macOS、Windows のツールでネイティブに扱える。  
+- **安全な配布** – 敏感なエントリにパスワードを設定し、追加の暗号化ツールなしでコンプライアンス要件を満たす。
 
 ## トラブルシューティングとヒント
-- **大規模アーカイブ** – メモリ使用量を抑えるためにストリーミング API（`Archive.CreateEntryFromFile`）を使用してください。  
-- **パスワード不一致** – 各 `ArchiveEntry` に設定されたパスワードは完全に一致する必要があり、そうでない場合は `InvalidPasswordException` がスローされます。  
-- **圧縮レベル** – BZIP2 はカスタムレベルを提供しません。より細かい制御が必要な場合は、LZMA（`CompressionType.LZMA`）または XZ（`CompressionType.XZ`）に切り替えてください。  
+- **大容量アーカイブ** – ストリーミング API (`Archive.CreateEntryFromFile`) を使用してメモリ使用量を抑える。  
+- **パスワード不一致** – 各 `ArchiveEntry` に設定したパスワードは完全に一致する必要があり、違うと `InvalidPasswordException` がスローされます。  
+- **圧縮レベル** – BZIP2 はカスタムレベルを公開していません。より細かい制御が必要な場合は LZMA (`CompressionType.LZMA`) または XZ (`CompressionType.XZ`) に切り替えてください。
 
 ## よくある質問
 
 **Q: TarGz アーカイブはどうやって作成しますか？**  
-A: `CompressionType.GZip` を設定し、`Save` 呼び出し時に `ArchiveFormat.TarGz` を使用します。これにより、単一ステップで `.tar.gz` ファイルが生成されます。
+A: `CompressionType.GZip` を設定し、`Save` 呼び出し時に `ArchiveFormat.TarGz` を指定します。これだけで `.tar.gz` ファイルが生成されます。
 
-**Q: パスワードを知らずにパスワード保護されたアーカイブを抽出できますか？**  
-A: できません。各エントリに正しいパスワードを提供する必要があり、そうでない場合は `InvalidPasswordException` が発生して抽出に失敗します。
+**Q: パスワード保護されたアーカイブをパスワードなしで抽出できますか？**  
+A: できません。各エントリに正しいパスワードを提供する必要があり、そうでなければ `InvalidPasswordException` が発生します。
 
-**Q: Aspose.Zip はエントリごとに異なるパスワードでアーカイブを抽出することをサポートしていますか？**  
-A: はい。`Extract` を呼び出す前に、各 `ArchiveEntry` に個別にパスワードを割り当てます。
+**Q: Aspose.Zip はエントリごとに異なるパスワードでの抽出をサポートしていますか？**  
+A: はい。`Extract` を呼び出す前に各 `ArchiveEntry` に個別にパスワードを割り当てます。
 
 **Q: どの形式が最も高い圧縮率を提供しますか？**  
-A: 通常、TarBz2 が最小サイズを実現し、次に TarLz と TarXz が続きます。TarGz はより高速で、依然として効果的な代替手段です。
+A: 通常、TarBz2 が最小サイズを実現し、次に TarLz と TarXz が続きます。TarGz は高速でありながら十分な圧縮率を提供します。
 
-**Q: TAR アーカイブに追加できるファイル数に制限はありますか？**  
-A: 実質的に制限はありませんが、非常に大きなアーカイブ（>10 GB）は、取り扱いを容易にするために複数のパーツに分割した方が良い場合があります。
+**Q: TAR アーカイブに追加できるファイル数に上限はありますか？**  
+A: 実質的な上限はありませんが、極めて大きなアーカイブ（>10 GB）では取り扱いを容易にするために複数パートに分割することを検討してください。
 
 ## アーカイブ抽出と形式のチュートリアル
-
-### [Aspose.Zip for .NET を使用した TarBz2 へのファイル圧縮](./compress-to-tar-bz2/)
-Aspose.Zip を使用して .NET でファイルを TarBz2 形式に圧縮する方法を学びます。効率的なファイル圧縮のためのステップバイステップガイドに従ってください。
-
-### [Aspose.Zip for .NET を使用した TarGz への圧縮](./compress-to-tar-gz/)
-Aspose.Zip を使用して .NET で効率的なファイル圧縮を体験してください。簡単に TarGz に圧縮できます。
-
-### [Aspose.Zip for .NET を使用した TarLz への圧縮](./compress-to-tar-lz/)
-Aspose.Zip を使用して .NET でファイルを簡単に圧縮し、ステップバイステップで TarLz アーカイブの作成方法を学びます。
-
-### [Aspose.Zip for .NET を使用した TarXz への圧縮](./compress-to-tar-xz/)
-Aspose.Zip を使用して .NET でファイルを TarXz 形式に圧縮する方法を学びます。効率的な保存と転送のためのガイドに従ってください。
-
-### [Aspose.Zip for .NET を使用した TarZ への圧縮](./compress-to-tar-z/)
-Aspose.Zip for .NET を使用した TarZ へのステップバイステップ圧縮を探求してください。 .NET プロジェクトの効率的なファイル処理に役立ちます。
-
-### [Aspose.Zip for .NET でエントリごとに異なるパスワードでアーカイブを抽出](./extract-archive-different-passwords/)
-Aspose.Zip for .NET でエントリごとに異なるパスワードでアーカイブを抽出する方法を学び、アプリケーションのセキュリティと柔軟性を向上させます。
-
-**Last Updated:** 2026-06-19  
-**Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose
+### [File Compressing to TarBz2 with Aspose.Zip for .NET](./compress-to-tar-bz2/)
+Aspose.Zip を使用して .NET でファイルを TarBz2 形式に圧縮する方法を学びます。効率的なファイル圧縮のステップバイステップガイドです。  
+### [Compressing to TarGz with Aspose.Zip for .NET](./compress-to-tar-gz/)
+Aspose.Zip で .NET のファイルを TarGz に圧縮する方法を探ります。手軽に TarGz 圧縮が可能です。  
+### [Compressing to TarLz with Aspose.Zip for .NET](./compress-to-tar-lz/)
+Aspose.Zip を使用して .NET でファイルを TarLz アーカイブに圧縮する手順を学びます。  
+### [Compressing to TarXz with Aspose.Zip for .NET](./compress-to-tar-xz/)
+Aspose.Zip を利用して .NET でファイルを TarXz 形式に圧縮する方法を紹介します。効率的な保存と転送のためのガイドです。  
+### [Compressing to TarZ with Aspose.Zip for .NET](./compress-to-tar-z/)
+Aspose.Zip for .NET を使った TarZ 圧縮のステップバイステップチュートリアルです。 .NET プロジェクトでの効率的なファイル処理を実現します。  
+### [Extracting archive entries with different passwords in Aspose.Zip for .NET](./extract-archive-different-passwords/)
+Aspose.Zip for .NET でエントリごとに異なるパスワードを持つアーカイブを抽出する方法を学びます。アプリケーションのセキュリティと柔軟性を向上させます。
 
 ## 関連チュートリアル
 
-- [Aspose.Zip for .NET を使用して tar アーカイブを作成し、ファイルを tar に追加](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
-- [Aspose.Zip for .NET を使用して tar を圧縮し、TarBz2 を作成する方法](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
-- [Aspose.Zip を使用してファイルを tar に追加し、tarxz アーカイブを作成](/zip/net/archive-extraction-and-formats/compress-to-tar-xz/)
+- [Create tar archive and add files to tar with Aspose.Zip for .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
+- [How to compress tar and create TarBz2 with Aspose.Zip for .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
+- [Add files to tar and create tarxz archive with Aspose.Zip](/zip/net/archive-extraction-and-formats/compress-to-tar-xz/)
+
+---
+
+**最終更新日:** 2026-10-25  
+**テスト環境:** Aspose.Zip for .NET 24.11  
+**作者:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 

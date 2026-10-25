@@ -1,30 +1,36 @@
 ---
-date: 2026-06-19
-description: تعلم كيفية ضغط ملفات tar، وإنشاء أرشيفات targz، واستخراج ملفات zip المحمية
-  بكلمة مرور باستخدام Aspose.Zip for .NET – مما يعزز كفاءة التخزين والأمان.
+date: 2026-10-25
+description: تعلم كيفية استخراج كلمة مرور zip وتعيين خوارزمية الضغط عند ضغط ملفات
+  tar باستخدام Aspose.Zip لـ .NET، مما يعزز كفاءة التخزين والأمان.
 keywords:
-- how to compress tar
-- extract password zip
+- extract zip password
+- set compression algorithm
+- add folder archive
+- tarbz2 vs targz
 - aspose zip compress
-- aspose zip extract
-- create targz archive
-linktitle: استخراج الأرشيفات والصيغ
+lastmod: 2026-10-25
+linktitle: استخراج الأرشيف والصيغ
+og_description: تعلم كيفية استخراج كلمة مرور zip وتعيين خوارزمية الضغط عند ضغط ملفات
+  tar باستخدام Aspose.Zip لـ .NET، مما يعزز كفاءة التخزين والأمان.
+og_image_alt: 'Developer guide: extract zip password and compress tar archives using
+  Aspose.Zip for .NET'
+og_title: استخراج كلمة مرور zip وضغط ملفات tar باستخدام Aspose.Zip
 schemas:
 - author: Aspose
-  dateModified: '2026-06-19'
-  description: Learn how to compress tar files, create targz archives, and extract
-    password‑protected zip files using Aspose.Zip for .NET – boosting storage efficiency
-    and security.
-  headline: How to Compress Tar Files with Aspose.Zip for .NET
+  dateModified: '2026-10-25'
+  description: Learn how to extract zip password and set compression algorithm when
+    compressing tar files with Aspose.Zip for .NET, boosting storage efficiency and
+    security.
+  headline: Extract zip password and compress tar files with Aspose.Zip
   type: TechArticle
-- description: Learn how to compress tar files, create targz archives, and extract
-    password‑protected zip files using Aspose.Zip for .NET – boosting storage efficiency
-    and security.
-  name: How to Compress Tar Files with Aspose.Zip for .NET
+- description: Learn how to extract zip password and set compression algorithm when
+    compressing tar files with Aspose.Zip for .NET, boosting storage efficiency and
+    security.
+  name: Extract zip password and compress tar files with Aspose.Zip
   steps:
   - name: Choose the archive format you need
     text: 'Decide which tar‑based format best matches your compression‑speed trade‑off:
-      - **TarBz2** – Highest compression ratio (≈30 % smaller than TarGz) but slower.
+      - **TarBz2** – Highest compression ratio (≈30 % smaller than TarGz) but slower.
       - **TarGz** – Good balance of speed and size; ideal for most cloud‑storage scenarios.
       - **TarLz / TarXz** – Very high compression with moderate'
   - name: Create a new `Archive` instance
@@ -66,12 +72,16 @@ schemas:
   - answer: TarBz2 typically yields the smallest size, followed by TarLz and TarXz.
       TarGz offers a faster, still‑effective alternative.
     question: Which format gives the best compression?
-  - answer: Practically none, but extremely large archives (>10 GB) may benefit from
+  - answer: Practically none, but extremely large archives (>10 GB) may benefit from
       splitting into multiple parts for easier handling.
     question: Is there a limit to the number of files I can add to a TAR archive?
   type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: كيفية ضغط ملفات Tar باستخدام Aspose.Zip for .NET
+tags:
+- compress tar
+- Aspose.Zip
+- .NET archive handling
+title: استخراج كلمة مرور zip وضغط ملفات tar باستخدام Aspose.Zip
 url: /ar/net/archive-extraction-and-formats/
 weight: 23
 ---
@@ -80,130 +90,136 @@ weight: 23
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# كيفية ضغط ملفات Tar باستخدام Aspose.Zip لـ .NET
+# استخراج كلمة مرور zip وضغط ملفات tar باستخدام Aspose.Zip
 
 ## مقدمة
 
-في هذا الدليل ستكتشف **كيفية ضغط tar** باستخدام Aspose.Zip لـ .NET، وتتعلم إنشاء أرشيفات TarGz، وترى كيفية استخراج أرشيفات zip المحمية بكلمة مرور. التعامل الفعال مع الأرشيفات مهارة أساسية للمطورين الحديثين في .NET—سواءً كنت تبني خدمة نسخ احتياطي، أو عميل تخزين سحابي، أو خط أنابيب لمعالجة البيانات، فإن إتقان هذه الصيغ يقلل من تكاليف التخزين، ويسرّع النقل، ويحافظ على أمان البيانات الحساسة.
+في هذا الدليل ستكتشف تقنيات **extract zip password**، وتتعلم كيفية تعيين خوارزمية الضغط عند إنشاء أرشيفات تعتمد على tar، وترى كيفية إنشاء TarGz وTarBz2 وغيرها من الصيغ باستخدام Aspose.Zip for .NET. سواءً كنت تبني خدمة نسخ احتياطي، أو عميل تخزين سحابي، أو خط أنابيب لمعالجة البيانات، فإن إتقان هذه العمليات يقلل من تكاليف التخزين، ويسرّع النقل، ويحافظ على أمان الملفات الحساسة.
 
 ## إجابات سريعة
-- **ما هو TarBz2؟** أرشيف مضغوط يجمع بين حزم TAR وضغط BZIP2 للحصول على نسب ضغط عالية.  
-- **لماذا تختار Aspose.Zip لـ .NET؟** يقدم واجهة برمجة تطبيقات واحدة وسلسة لإنشاء واستخراج العديد من صيغ الأرشيف دون تبعيات خارجية.  
-- **هل يمكنني إنشاء أرشيف TarGz؟** نعم – يدعم Aspose.Zip صيغ TarGz وTarLz وTarXz وTarZ وغيرها.  
-- **كيف يمكن استخراج أرشيف zip محمي بكلمة مرور؟** استخدم خاصية `Password` في كائن `ArchiveEntry` عند الاستخراج.  
-- **هل أحتاج إلى ترخيص للاستخدام في الإنتاج؟** يتطلب الترخيص التجاري للاستخدام في الإنتاج؛ يتوفر نسخة تجريبية مجانية للتقييم.
+- **What is TarBz2?** أرشيف مضغوط يجمع بين حزم TAR وضغط BZIP2 للحصول على نسب ضغط عالية.  
+- **Why choose Aspose.Zip for .NET?** يدعم أكثر من 50 صيغة أرشيف وضغط، يعمل على Windows وLinux وmacOS، ويحافظ على استهلاك الذاكرة أقل من 10 MB للأرشيفات متعددة المئات من الميجابايت.  
+- **Can I create a TarGz archive?** نعم – يقدم Aspose.Zip صيغ TarGz وTarLz وTarXz وTarZ وغيرها.  
+- **How do I extract a password‑protected zip archive?** قم بتعيين خاصية `Password` على كل `ArchiveEntry` قبل استدعاء `Extract`.  
+- **Do I need a license for production use?** يلزم الحصول على ترخيص تجاري للاستخدام في الإنتاج؛ يتوفر نسخة تجريبية مجانية للتقييم.
 
-## ما هو ضغط Tar؟
-Tar (Tape Archive) هو تنسيق حاوية يجمع ملفات ودلائل متعددة في تدفق واحد دون ضغط. عندما تطبق خوارزمية ضغط مثل BZIP2 أو GZip أو LZMA أو XZ، تكون النتيجة **أرشيفًا قائمًا على tar** مثل `.tar.bz2`، `.tar.gz`، `.tar.lz`، إلخ. هذه الصيغ مدعومة على نطاق واسع عبر Linux وmacOS وWindows، مما يجعلها مثالية لتبادل البيانات عبر الأنظمة.
+## ما هو ضغط tar؟
 
-## لماذا تستخدم Aspose.Zip لـ .NET للتعامل مع هذه الصيغ؟
-يوفر Aspose.Zip **واجهة برمجة تطبيقات موحدة وخالية من التبعيات** تدعم أكثر من 50 صيغة أرشيف وضغط، بما في ذلك TarBz2 وTarGz وTarLz وTarXz وTarZ. يعمل على Windows وLinux وmacOS، وتبقي هندسته القائمة على التدفق استهلاك الذاكرة تحت 10 ميغابايت حتى للأرشيفات التي تتجاوز مئات الميغابايت. الحماية بكلمة مرور مدمجة، مما يسمح بتشفير كل إدخال دون مكتبات إضافية.
+يجمع ضغط tar بين حاوية TAR وخوارزمية ضغط مثل BZIP2 أو GZIP أو LZMA أو XZ. النتيجة هي ملف واحد (مثل `.tar.gz`، `.tar.bz2`) يمكن فك ضغطه على Linux وmacOS وWindows. يحافظ على هيكل الدليل الأصلي، يتيح استخراجًا عشوائيًا، ويحظى بدعم واسع من أدوات سطر الأوامر والمكتبات البرمجية، مما يجعله مثاليًا للتوزيع عبر الأنظمة وتخزين الأرشيفات.
+
+## لماذا تستخدم Aspose.Zip for .NET للتعامل مع هذه الصيغ؟
+
+يوفر Aspose.Zip واجهة برمجة تطبيقات موحدة وخالية من الاعتمادات تدعم **50+** صيغة أرشيف وضغط، بما في ذلك جميع الأنواع الرئيسية القائمة على tar. تُعالج بنية البث الخاصة به الأرشيفات التي تتجاوز 10 GB مع الحفاظ على استهلاك الذاكرة أقل من 10 MB، مما يجعلها مثالية لأعباء العمل الخادمية عالية الإنتاجية.  
+
+**Direct answer:** تستخدم Aspose.Zip لأنه يتيح لك إنشاء وضغط واستخراج الأرشيفات القائمة على tar وملفات zip المحمية بكلمة مرور باستخدام واجهة API واحدة سلسة، دون أدوات خارجية، مع معالجة الأرشيفات متعددة الجيجابايت بطريقة بث فعّالة في الذاكرة.
 
 ## المتطلبات المسبقة
-- .NET Framework 2.0–4.8.1، .NET Core 2.0–3.1، أو .NET 5–10.  
-- حزمة NuGet الخاصة بـ Aspose.Zip لـ .NET مثبتة (`Install-Package Aspose.Zip`).  
+- .NET Framework 2.0–4.8.1، .NET Core 2.0–3.1، أو .NET 5–10.  
+- حزمة NuGet الخاصة بـ Aspose.Zip for .NET (`Install-Package Aspose.Zip`).  
 - إلمام أساسي بـ I/O للملفات في C# ونظام مشاريع .NET.
 
 ## دليل خطوة بخطوة
 
-### كيفية ضغط ملفات Tar – إجابة مباشرة
-`Archive` يمثل ملف أرشيف ويوفر طرقًا لإضافة الإدخالات وحفظه.  
-أنشئ مثيلًا من `Archive`، أضف الملفات التي تريد تجميعها، اضبط `CompressionType.BZip2`، واستدعِ `Save` مع `ArchiveFormat.TarBz2`. تقوم المكتبة بكتابة حاوية TAR وضغطها في تمريرة تدفق واحدة، لذا لا تقوم بتحميل الأرشيف بالكامل في الذاكرة.
+### كيفية ضغط ملفات tar – إجابة مباشرة
+أنشئ كائن `Archive`، أضف الملفات التي تريد تجميعها، عيّن `CompressionType.BZip2` (أو خوارزمية أخرى)، واستدعِ `Save` مع `ArchiveFormat.TarBz2`. تقوم المكتبة بكتابة حاوية TAR وضغطها في تمريرة بث واحدة، لذا لا تحتاج إلى تحميل الأرشيف بالكامل في الذاكرة.
 
 ### الخطوة 1: اختر صيغة الأرشيف التي تحتاجها
-قرر أي صيغة تعتمد على tar تتناسب مع موازنة السرعة مقابل الضغط:
-
-- **TarBz2** – أعلى نسبة ضغط (≈30 % أصغر من TarGz) لكنه أبطأ.  
+حدد أي صيغة قائمة على tar تتناسب أفضل مع موازنة الضغط والسرعة لديك:
+- **TarBz2** – أعلى نسبة ضغط (≈30 % أصغر من TarGz) لكن أبطأ.  
 - **TarGz** – توازن جيد بين السرعة والحجم؛ مثالي لمعظم سيناريوهات التخزين السحابي.  
-- **TarLz / TarXz** – ضغط عالي جدًا مع سرعة معتدلة، مفيد للتخزين الأرشيفي.  
+- **TarLz / TarXz** – ضغط عالي جدًا مع سرعة معتدلة، مفيد لتخزين الأرشيفات.  
 - **TarZ** – صيغة قديمة للتوافق مع أدوات Unix القديمة.
 
-### الخطوة 2: إنشاء مثيل جديد من `Archive`
-`Archive` هو الكائن الأعلى مستوى الذي يمثل ملف أرشيف واحد في الذاكرة.  
+### الخطوة 2: إنشاء كائن `Archive` جديد
+`Archive` تمثل ملف أرشيف واحد وتوفر طرقًا لإضافة الإدخالات وحفظ الأرشيف.  
 
-تدير فئة `Archive` سير عمل التعبئة والضغط، وتوفر طرقًا لإضافة الإدخالات وكتابة الملف النهائي.
+فئة `Archive` تدير سير عمل التعبئة والضغط، وتعرض طرقًا لإضافة الإدخالات وكتابة الملف النهائي.
 
 ### الخطوة 3: إضافة ملفات ومجلدات
-يمكنك إضافة شجرة دليل كاملة باستخدام `AddAll` أو إضافة ملفات فردية باستخدام `AddFile`. الحفاظ على هيكل المجلد الأصلي بسيط كتمرير مسار الدليل الأساسي.
+يمكنك إضافة شجرة دليل كاملة باستخدام `AddAll` أو إضافة ملفات فردية باستخدام `AddFile`.  
 
-### الخطوة 4: ضبط نوع الضغط المطلوب
-`CompressionType` يعدد الخوارزميات المدعومة.  
+`AddAll` يضيف شجرة دليل كاملة إلى الأرشيف، مع الحفاظ على هيكله.  
+`AddFile` يضيف ملفًا واحدًا إلى الأرشيف. الحفاظ على هيكل المجلد الأصلي بسيط كتمرير مسار الدليل الأساسي.
 
-`CompressionType` يحدد الخوارزمية (BZip2، GZip، LZMA، XZ، إلخ) التي سيتم تطبيقها على تدفق TAR أثناء الحفظ.
+### الخطوة 4: تعيين نوع الضغط المطلوب
+`CompressionType` هو تعداد يحدد خوارزمية الضغط المطبقة على تدفق TAR.  
+
+`CompressionType` يسرد الخوارزميات المدعومة (BZip2، GZip، LZMA، XZ، إلخ) التي سيتم تطبيقها أثناء الحفظ.
 
 ### الخطوة 5: حفظ الأرشيف
-`ArchiveFormat` هو مجموعة تعداد (مثل `TarBz2`، `TarGz`) تخبر الكاتب أي حاوية وضغط يستخدم.  
+`ArchiveFormat` هو تعداد يختار الحاوية وتركيبة الضغط لملف الإخراج.  
 
-استدعاء `Save` يكتب الأرشيف إلى القرص باستخدام الصيغة المحددة.
+استدعاء `Save` يكتب الأرشيف إلى القرص باستخدام الصيغة المختارة.
 
 ### الخطوة 6: استخراج الأرشيفات باستخدام كلمات مرور
 `ArchiveEntry` يمثل ملفًا أو دليلًا واحدًا داخل الأرشيف.  
 
-لاستخراج zip محمي بكلمة مرور، افتح الأرشيف، حدد كل `ArchiveEntry`، عيّن خاصية `Password` الخاصة به، واستدعِ `Extract`. يتيح لك نموذج كلمة المرور لكل إدخال حماية ملفات فردية داخل zip واحد.
+لاستخراج zip محمي بكلمة مرور، افتح الأرشيف، حدد كل `ArchiveEntry`، عيّن خاصية `Password` الخاصة به، واستدعِ `Extract`. خاصية `Password` تحدد كلمة مرور فك التشفير لمدخل zip. يتيح لك نموذج كلمة المرور لكل مدخل حماية ملفات فردية داخل zip واحد.
 
 ### الخطوة 7: التحقق من النتيجة
 بعد الاستخراج، قارن أحجام الملفات وتحقق من مجموعات SHA‑256 للتأكد من أن عملية المرور عبر الأرشيف حافظت على سلامة البيانات.
 
 ## حالات الاستخدام الشائعة
-- **Backup utilities** – احفظ النسخ الاحتياطية اليومية كـ `.tar.bz2` لتقليل تكاليف التخزين حتى 30 %.  
+- **Backup utilities** – احفظ النسخ الاحتياطية اليومية كملفات `.tar.bz2` لتقليل تكاليف التخزين حتى 30 %.  
 - **Cross‑platform data exchange** – صيغ Tar مفهومة أصلاً من قبل أدوات Linux وmacOS وWindows.  
 - **Secure distribution** – عيّن كلمات مرور للمدخلات الحساسة، لتلبية متطلبات الامتثال دون أدوات تشفير إضافية.
 
-## استكشاف الأخطاء والنصائح
-- **Large archives** – يفضَّل استخدام واجهة برمجة التطبيقات المتدفقة (`Archive.CreateEntryFromFile`) للحفاظ على انخفاض استهلاك الذاكرة.  
-- **Password mismatches** – يجب أن تتطابق كلمة المرور المحددة لكل `ArchiveEntry` تمامًا؛ وإلا سيتم رمي `InvalidPasswordException`.  
+## استكشاف الأخطاء وإصلاحها ونصائح
+- **Large archives** – استخدم API البث (`Archive.CreateEntryFromFile`) للحفاظ على استهلاك الذاكرة منخفضًا.  
+- **Password mismatches** – يجب أن تتطابق كلمة المرور المعينة لكل `ArchiveEntry` تمامًا؛ وإلا سيتم رمي `InvalidPasswordException`.  
 - **Compression level** – لا يتيح BZIP2 مستويات مخصصة؛ إذا كنت تحتاج إلى تحكم أدق، انتقل إلى LZMA (`CompressionType.LZMA`) أو XZ (`CompressionType.XZ`).  
 
 ## الأسئلة المتكررة
 
-**س: كيف يمكنني إنشاء أرشيف TarGz؟**  
-A: قم بتعيين `CompressionType.GZip` واستخدم `ArchiveFormat.TarGz` عند استدعاء `Save`. ينتج ذلك ملف `.tar.gz` في خطوة واحدة.
+**Q: How do I create a TarGz archive?**  
+A: عيّن `CompressionType.GZip` واستخدم `ArchiveFormat.TarGz` عند استدعاء `Save`. ينتج ذلك ملف `.tar.gz` في خطوة واحدة.
 
-**س: هل يمكن استخراج أرشيف محمي بكلمة مرور دون معرفة كلمة المرور؟**  
-A: لا. يجب تزويد كل إدخال بكلمة المرور الصحيحة؛ وإلا سيفشل الاستخراج مع `InvalidPasswordException`.
+**Q: Can I extract a password‑protected archive without knowing the password?**  
+A: لا. يجب تزويد كل مدخل بكلمة المرور الصحيحة؛ وإلا سيفشل الاستخراج مع `InvalidPasswordException`.
 
-**س: هل يدعم Aspose.Zip استخراج الأرشيفات بكلمات مرور مختلفة لكل إدخال؟**  
+**Q: Does Aspose.Zip support extracting archives with different passwords per entry?**  
 A: نعم. عيّن كلمة مرور لكل `ArchiveEntry` على حدة قبل استدعاء `Extract`.
 
-**س: أي صيغة توفر أفضل ضغط؟**  
-A: عادةً ما ينتج TarBz2 أصغر حجم، يليه TarLz وTarXz. يوفر TarGz بديلًا أسرع ولا يزال فعالًا.
+**Q: Which format gives the best compression?**  
+A: عادةً ما ينتج TarBz2 أصغر حجم، يليه TarLz وTarXz. TarGz يقدم بديلًا أسرع ولا يزال فعالًا.
 
-**س: هل هناك حد لعدد الملفات التي يمكنني إضافتها إلى أرشيف TAR؟**  
+**Q: Is there a limit to the number of files I can add to a TAR archive?**  
 A: عمليًا لا يوجد حد، لكن الأرشيفات الضخمة جدًا (>10 GB) قد تستفيد من تقسيمها إلى أجزاء متعددة لتسهيل التعامل.
 
 ## دروس استخراج الأرشيفات والصيغ
 
-### [ضغط الملفات إلى TarBz2 باستخدام Aspose.Zip لـ .NET](./compress-to-tar-bz2/)
+### [ضغط ملفات إلى TarBz2 باستخدام Aspose.Zip for .NET](./compress-to-tar-bz2/)
 تعلم كيفية ضغط الملفات إلى صيغة TarBz2 في .NET باستخدام Aspose.Zip. اتبع دليلنا خطوة بخطوة لضغط ملفات فعال.
 
-### [الضغط إلى TarGz باستخدام Aspose.Zip لـ .NET](./compress-to-tar-gz/)
+### [ضغط إلى TarGz باستخدام Aspose.Zip for .NET](./compress-to-tar-gz/)
 استكشف ضغط ملفات فعال في .NET باستخدام Aspose.Zip. اضغط إلى TarGz بسهولة.
 
-### [الضغط إلى TarLz باستخدام Aspose.Zip لـ .NET](./compress-to-tar-lz/)
+### [ضغط إلى TarLz باستخدام Aspose.Zip for .NET](./compress-to-tar-lz/)
 ضغط الملفات بسهولة في .NET باستخدام Aspose.Zip. تعلم إنشاء أرشيفات TarLz خطوة بخطوة.
 
-### [الضغط إلى TarXz باستخدام Aspose.Zip لـ .NET](./compress-to-tar-xz/)
+### [ضغط إلى TarXz باستخدام Aspose.Zip for .NET](./compress-to-tar-xz/)
 تعلم ضغط الملفات إلى صيغة TarXz في .NET باستخدام Aspose.Zip. اتبع دليلنا لتخزين ونقل فعال.
 
-### [الضغط إلى TarZ باستخدام Aspose.Zip لـ .NET](./compress-to-tar-z/)
-استكشف ضغط TarZ خطوة بخطوة باستخدام Aspose.Zip لـ .NET. معالجة ملفات فعالة لمشاريع .NET الخاصة بك.
+### [ضغط إلى TarZ باستخدام Aspose.Zip for .NET](./compress-to-tar-z/)
+استكشف ضغط إلى TarZ خطوة بخطوة باستخدام Aspose.Zip for .NET. معالجة ملفات فعالة لمشاريع .NET الخاصة بك.
 
-### [استخراج مدخلات الأرشيف بكلمات مرور مختلفة في Aspose.Zip لـ .NET](./extract-archive-different-passwords/)
-تعلم كيفية استخراج مدخلات الأرشيف بكلمات مرور مختلفة في Aspose.Zip لـ .NET. عزز الأمان والمرونة في تطبيقاتك.
-
----
-
-**آخر تحديث:** 2026-06-19  
-**تم الاختبار مع:** Aspose.Zip for .NET 24.11  
-**المؤلف:** Aspose
+### [استخراج مدخلات الأرشيف بكلمات مرور مختلفة في Aspose.Zip for .NET](./extract-archive-different-passwords/)
+تعلم كيفية استخراج مدخلات الأرشيف بكلمات مرور مختلفة في Aspose.Zip for .NET. عزز الأمان والمرونة في تطبيقاتك.
 
 ## دروس ذات صلة
 
-- [إنشاء أرشيف tar وإضافة ملفات إلى tar باستخدام Aspose.Zip لـ .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
-- [كيفية ضغط tar وإنشاء TarBz2 باستخدام Aspose.Zip لـ .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
+- [إنشاء أرشيف tar وإضافة ملفات إلى tar باستخدام Aspose.Zip for .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
+- [كيفية ضغط tar وإنشاء TarBz2 باستخدام Aspose.Zip for .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
 - [إضافة ملفات إلى tar وإنشاء أرشيف tarxz باستخدام Aspose.Zip](/zip/net/archive-extraction-and-formats/compress-to-tar-xz/)
 
+---
+
+**Last Updated:** 2026-10-25  
+**Tested With:** Aspose.Zip for .NET 24.11  
+**Author:** Aspose
+
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 

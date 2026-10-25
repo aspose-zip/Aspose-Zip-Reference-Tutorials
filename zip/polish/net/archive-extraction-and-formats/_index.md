@@ -1,31 +1,38 @@
 ---
-date: 2026-06-19
-description: Dowiedz się, jak kompresować pliki tar, tworzyć archiwa targz i wyodrębniać
-  chronione hasłem pliki zip przy użyciu Aspose.Zip dla .NET – zwiększając wydajność
-  przechowywania i bezpieczeństwo.
+date: 2026-10-25
+description: Dowiedz się, jak wyodrębnić hasło zip i ustawić compression algorithm
+  podczas kompresji plików tar przy użyciu Aspose.Zip dla .NET, zwiększając storage
+  efficiency i security.
 keywords:
-- how to compress tar
-- extract password zip
+- extract zip password
+- set compression algorithm
+- add folder archive
+- tarbz2 vs targz
 - aspose zip compress
-- aspose zip extract
-- create targz archive
+lastmod: 2026-10-25
 linktitle: Ekstrakcja archiwów i formaty
+og_description: Dowiedz się, jak wyodrębnić hasło zip i ustawić compression algorithm
+  podczas kompresji plików tar przy użyciu Aspose.Zip dla .NET, zwiększając storage
+  efficiency i security.
+og_image_alt: 'Developer guide: extract zip password and compress tar archives using
+  Aspose.Zip for .NET'
+og_title: Wyodrębnij hasło zip i kompresuj pliki tar przy użyciu Aspose.Zip
 schemas:
 - author: Aspose
-  dateModified: '2026-06-19'
-  description: Learn how to compress tar files, create targz archives, and extract
-    password‑protected zip files using Aspose.Zip for .NET – boosting storage efficiency
-    and security.
-  headline: How to Compress Tar Files with Aspose.Zip for .NET
+  dateModified: '2026-10-25'
+  description: Learn how to extract zip password and set compression algorithm when
+    compressing tar files with Aspose.Zip for .NET, boosting storage efficiency and
+    security.
+  headline: Extract zip password and compress tar files with Aspose.Zip
   type: TechArticle
-- description: Learn how to compress tar files, create targz archives, and extract
-    password‑protected zip files using Aspose.Zip for .NET – boosting storage efficiency
-    and security.
-  name: How to Compress Tar Files with Aspose.Zip for .NET
+- description: Learn how to extract zip password and set compression algorithm when
+    compressing tar files with Aspose.Zip for .NET, boosting storage efficiency and
+    security.
+  name: Extract zip password and compress tar files with Aspose.Zip
   steps:
   - name: Choose the archive format you need
     text: 'Decide which tar‑based format best matches your compression‑speed trade‑off:
-      - **TarBz2** – Highest compression ratio (≈30 % smaller than TarGz) but slower.
+      - **TarBz2** – Highest compression ratio (≈30 % smaller than TarGz) but slower.
       - **TarGz** – Good balance of speed and size; ideal for most cloud‑storage scenarios.
       - **TarLz / TarXz** – Very high compression with moderate'
   - name: Create a new `Archive` instance
@@ -67,12 +74,16 @@ schemas:
   - answer: TarBz2 typically yields the smallest size, followed by TarLz and TarXz.
       TarGz offers a faster, still‑effective alternative.
     question: Which format gives the best compression?
-  - answer: Practically none, but extremely large archives (>10 GB) may benefit from
+  - answer: Practically none, but extremely large archives (>10 GB) may benefit from
       splitting into multiple parts for easier handling.
     question: Is there a limit to the number of files I can add to a TAR archive?
   type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Jak kompresować pliki Tar przy użyciu Aspose.Zip dla .NET
+tags:
+- compress tar
+- Aspose.Zip
+- .NET archive handling
+title: Wyodrębnij hasło zip i kompresuj pliki tar przy użyciu Aspose.Zip
 url: /pl/net/archive-extraction-and-formats/
 weight: 23
 ---
@@ -81,103 +92,102 @@ weight: 23
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Jak kompresować pliki Tar przy użyciu Aspose.Zip dla .NET
+# Wyodrębnianie hasła zip i kompresowanie plików tar przy użyciu Aspose.Zip
 
 ## Wprowadzenie
 
-W tym przewodniku odkryjesz **jak kompresować tar** przy użyciu Aspose.Zip dla .NET, nauczysz się tworzyć archiwa TarGz oraz zobaczysz, jak rozpakowywać chronione hasłem archiwa zip. Efektywna obsługa archiwów to podstawowa umiejętność współczesnych programistów .NET — niezależnie od tego, czy tworzysz usługę tworzenia kopii zapasowych, klienta przechowywania w chmurze, czy potok przetwarzania danych, opanowanie tych formatów obniża koszty przechowywania, przyspiesza transfery i chroni wrażliwe dane.
+W tym przewodniku odkryjesz techniki **extract zip password**, dowiesz się, jak ustawić algorytm kompresji przy tworzeniu archiwów opartych na tar, oraz zobaczysz, jak budować formaty TarGz, TarBz2 i inne przy użyciu Aspose.Zip dla .NET. Niezależnie od tego, czy tworzysz usługę tworzenia kopii zapasowych, klienta przechowywania w chmurze, czy potok przetwarzania danych, opanowanie tych operacji zmniejsza koszty przechowywania, przyspiesza transfery i zabezpiecza wrażliwe pliki.
 
 ## Szybkie odpowiedzi
-- **Co to jest TarBz2?** Skompresowany archiwum, które łączy pakowanie TAR z kompresją BZIP2 dla wysokich współczynników kompresji.  
-- **Dlaczego wybrać Aspose.Zip dla .NET?** Oferuje jednorodne, płynne API do tworzenia i rozpakowywania wielu formatów archiwów bez zewnętrznych zależności.  
-- **Czy mogę utworzyć archiwum TarGz?** Tak – Aspose.Zip obsługuje TarGz, TarLz, TarXz, TarZ i inne.  
-- **Jak rozpakować chronione hasłem archiwum zip?** Użyj właściwości `Password` w obiekcie `ArchiveEntry` podczas rozpakowywania.  
-- **Czy potrzebna jest licencja do użytku produkcyjnego?** Wymagana jest licencja komercyjna do produkcji; dostępna jest bezpłatna wersja próbna do oceny.
+- **Czym jest TarBz2?** Skompresowane archiwum, które łączy pakowanie TAR z kompresją BZIP2, zapewniając wysokie współczynniki kompresji.  
+- **Dlaczego wybrać Aspose.Zip dla .NET?** Obsługuje ponad 50 formatów archiwów i kompresji, działa na Windows, Linux i macOS oraz utrzymuje zużycie pamięci poniżej 10 MB dla archiwów wielokrotnie setek megabajtów.  
+- **Czy mogę utworzyć archiwum TarGz?** Tak – Aspose.Zip oferuje TarGz, TarLz, TarXz, TarZ i inne.  
+- **Jak wyodrębnić chronione hasłem archiwum zip?** Ustaw właściwość `Password` dla każdego `ArchiveEntry` przed wywołaniem `Extract`.  
+- **Czy potrzebna jest licencja do użytku produkcyjnego?** Licencja komercyjna jest wymagana w środowisku produkcyjnym; dostępna jest bezpłatna wersja próbna do oceny.
 
-## Co to jest kompresja Tar?
-Tar (Tape Archive) jest formatem kontenera, który grupuje wiele plików i katalogów w jeden strumień bez kompresji. Gdy zastosujesz algorytm kompresji, taki jak BZIP2, GZip, LZMA lub XZ, otrzymujesz **archiwum oparte na tar**, np. `.tar.bz2`, `.tar.gz`, `.tar.lz` itp. Formaty te są szeroko wspierane w systemach Linux, macOS i Windows, co czyni je idealnymi do wymiany danych między platformami.
+## Czym jest kompresja tar?
+
+Kompresja tar łączy kontener TAR z algorytmem kompresji, takim jak BZIP2, GZIP, LZMA lub XZ. Wynikiem jest pojedynczy plik (np. `.tar.gz`, `.tar.bz2`), który można rozpakować na Linux, macOS i Windows. Zachowuje on oryginalną hierarchię katalogów, umożliwia losowy dostęp do wyodrębniania i jest szeroko wspierany przez narzędzia wiersza poleceń oraz biblioteki programistyczne, co czyni go idealnym do wieloplatformowej dystrybucji i archiwizacji.
 
 ## Dlaczego używać Aspose.Zip dla .NET do obsługi tych formatów?
-Aspose.Zip zapewnia **zunifikowane, wolne od zależności API**, które obsługuje ponad 50 formatów archiwów i kompresji, w tym TarBz2, TarGz, TarLz, TarXz i TarZ. Działa na Windows, Linux i macOS, a jego architektura oparta na strumieniach utrzymuje zużycie pamięci poniżej 10 MB nawet przy archiwach wielokrotnie przekraczających setki megabajtów. Ochrona hasłem jest wbudowana, umożliwiając szyfrowanie poszczególnych wpisów bez dodatkowych bibliotek.
 
-## Prerequisites
-- .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, or .NET 5–10.  
-- Aspose.Zip for .NET NuGet package installed (`Install-Package Aspose.Zip`).  
+Aspose.Zip zapewnia jednolite, niezależne od zależności API, które obsługuje **ponad 50** formatów archiwów i kompresji, w tym wszystkie główne typy oparte na tar. Jego architektura strumieniowa przetwarza archiwa większe niż 10 GB, utrzymując zużycie RAM poniżej 10 MB, co czyni go idealnym dla obciążeń serwerowych o wysokiej przepustowości.  
+
+**Bezpośrednia odpowiedź:** Używasz Aspose.Zip, ponieważ pozwala tworzyć, kompresować i wyodrębniać archiwa oparte na tar oraz chronione hasłem pliki zip przy użyciu jednej płynnej API, bez zewnętrznych narzędzi, obsługując jednocześnie archiwa wielogigabajtowe w trybie pamięciooszczędnym.
+
+## Wymagania wstępne
+- .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1 lub .NET 5–10.  
+- Pakiet NuGet Aspose.Zip dla .NET (`Install-Package Aspose.Zip`).  
 - Podstawowa znajomość operacji I/O w C# oraz systemu projektów .NET.
 
 ## Przewodnik krok po kroku
 
-### Jak kompresować pliki Tar – Bezpośrednia odpowiedź
-`Archive` reprezentuje plik archiwum i udostępnia metody do dodawania wpisów oraz zapisywania.  
-Utwórz instancję `Archive`, dodaj pliki, które chcesz spakować, ustaw `CompressionType.BZip2` i wywołaj `Save` z `ArchiveFormat.TarBz2`. Biblioteka zapisuje kontener TAR i kompresuje go w jednym przebiegu strumieniowym, więc nigdy nie musisz ładować całego archiwum do pamięci.
-
-```csharp
-Archive archive = new Archive();
-archive.AddAll(@"C:\MyFolder");
-archive.CompressionType = CompressionType.BZip2;
-archive.Save("output.tar.bz2", ArchiveFormat.TarBz2);
-```
+### Jak kompresować pliki tar – bezpośrednia odpowiedź
+Utwórz instancję `Archive`, dodaj pliki, które chcesz spakować, ustaw `CompressionType.BZip2` (lub inny algorytm) i wywołaj `Save` z `ArchiveFormat.TarBz2`. Biblioteka zapisuje kontener TAR i kompresuje go w jednym przebiegu strumieniowym, więc nigdy nie ładujesz całego archiwum do pamięci.
 
 ### Krok 1: Wybierz potrzebny format archiwum
 Zdecyduj, który format oparty na tar najlepiej odpowiada Twoim wymaganiom dotyczącym stosunku kompresji do szybkości:
 
 - **TarBz2** – Najwyższy współczynnik kompresji (≈30 % mniejszy niż TarGz), ale wolniejszy.  
-- **TarGz** – Dobre połączenie szybkości i rozmiaru; idealny dla większości scenariuszy przechowywania w chmurze.  
+- **TarGz** – Dobry kompromis między szybkością a rozmiarem; idealny dla większości scenariuszy przechowywania w chmurze.  
 - **TarLz / TarXz** – Bardzo wysoka kompresja przy umiarkowanej szybkości, przydatna do archiwizacji.  
 - **TarZ** – Starszy format zapewniający kompatybilność ze starszymi narzędziami Unix.
 
 ### Krok 2: Utwórz nową instancję `Archive`
-`Archive` jest obiektem najwyższego poziomu, który reprezentuje pojedynczy plik archiwum w pamięci.  
+`Archive` reprezentuje pojedynczy plik archiwum i udostępnia metody do dodawania wpisów oraz zapisywania archiwum.  
 
 Klasa `Archive` zarządza procesem pakowania i kompresji, udostępniając metody do dodawania wpisów i zapisu finalnego pliku.
 
 ### Krok 3: Dodaj pliki i foldery
-Możesz dodać cały drzewo katalogów przy pomocy `AddAll` lub pojedyncze pliki przy pomocy `AddFile`. Zachowanie oryginalnej struktury katalogów jest tak proste, jak podanie ścieżki bazowego katalogu.
+Możesz dodać cały drzewo katalogów za pomocą `AddAll` lub pojedyncze pliki przy pomocy `AddFile`.  
+
+`AddAll` dodaje całe drzewo katalogów do archiwum, zachowując jego strukturę.  
+`AddFile` dodaje pojedynczy plik do archiwum. Zachowanie oryginalnej hierarchii folderów jest tak proste, jak podanie ścieżki bazowego katalogu.
 
 ### Krok 4: Ustaw żądany typ kompresji
-`CompressionType` wylicza obsługiwane algorytmy.  
+Enum `CompressionType` określa algorytm kompresji stosowany do strumienia TAR.  
 
-`CompressionType` definiuje algorytm (BZip2, GZip, LZMA, XZ itp.), który zostanie zastosowany do strumienia TAR podczas zapisu.
+`CompressionType` wymienia obsługiwane algorytmy (BZip2, GZip, LZMA, XZ itp.), które zostaną zastosowane podczas zapisu.
 
 ### Krok 5: Zapisz archiwum
-`ArchiveFormat` to zestaw wyliczeń (np. `TarBz2`, `TarGz`), który informuje pisarz, jaki kontener i kompresję użyć.  
+Enum `ArchiveFormat` wybiera kontener i kombinację kompresji dla pliku wyjściowego.  
 
-Wywołanie `Save` zapisuje archiwum na dysku w wybranym formacie.
+Wywołanie `Save` zapisuje archiwum na dysku przy użyciu wybranego formatu.
 
 ### Krok 6: Rozpakowywanie archiwów z hasłami
 `ArchiveEntry` reprezentuje pojedynczy plik lub katalog w archiwum.  
 
-Aby rozpakować chronione hasłem zip, otwórz archiwum, znajdź każdy `ArchiveEntry`, przypisz jego właściwość `Password` i wywołaj `Extract`. Ten model haseł per‑entry pozwala chronić poszczególne pliki w jednym zipie.
+Aby wyodrębnić chronione hasłem zip, otwórz archiwum, znajdź każdy `ArchiveEntry`, przypisz mu właściwość `Password` i wywołaj `Extract`. Właściwość `Password` ustawia hasło deszyfrujące dla wpisu zip. Ten model hasła per wpis pozwala chronić poszczególne pliki w jednym archiwum zip.
 
 ### Krok 7: Zweryfikuj wynik
-Po rozpakowaniu porównaj rozmiary plików i sumy kontrolne SHA‑256, aby potwierdzić, że archiwum zachowało integralność danych po pełnym cyklu.
+Po wyodrębnieniu porównaj rozmiary plików i sumy kontrolne SHA‑256, aby potwierdzić, że operacja archiwizacji i odtworzenia zachowała integralność danych.
 
 ## Typowe przypadki użycia
-- **Narzędzia do tworzenia kopii zapasowych** – Przechowuj codzienne kopie jako `.tar.bz2`, aby zmniejszyć koszty przechowywania nawet o 30 %.  
-- **Wymiana danych między platformami** – Formaty oparte na Tar są natywnie obsługiwane przez narzędzia Linux, macOS i Windows.  
-- **Bezpieczna dystrybucja** – Przypisz hasła do wrażliwych wpisów, spełniając wymagania zgodności bez dodatkowych narzędzi szyfrujących.
+- **Narzędzia backupowe** – Przechowuj codzienne kopie zapasowe jako `.tar.bz2`, aby obniżyć koszty przechowywania nawet o 30 %.  
+- **Wymiana danych między platformami** – Formaty oparte na tar są natywnie rozumiane przez narzędzia Linux, macOS i Windows.  
+- **Bezpieczna dystrybucja** – Przypisuj hasła do wrażliwych wpisów, spełniając wymogi zgodności bez dodatkowych narzędzi szyfrujących.
 
 ## Rozwiązywanie problemów i wskazówki
-- **Duże archiwa** – Preferuj API strumieniowe (`Archive.CreateEntryFromFile`), aby utrzymać niskie zużycie pamięci.  
-- **Niezgodności haseł** – Hasło ustawione dla każdego `ArchiveEntry` musi dokładnie pasować; w przeciwnym razie zostanie rzucony `InvalidPasswordException`.  
-- **Poziom kompresji** – BZIP2 nie udostępnia własnych poziomów; jeśli potrzebna jest większa kontrola, przełącz się na LZMA (`CompressionType.LZMA`) lub XZ (`CompressionType.XZ`).  
+- **Duże archiwa** – Używaj API strumieniowego (`Archive.CreateEntryFromFile`), aby utrzymać niskie zużycie pamięci.  
+- **Niezgodność haseł** – Hasło ustawione dla każdego `ArchiveEntry` musi być dokładnie takie samo; w przeciwnym razie zostanie zgłoszony `InvalidPasswordException`.  
+- **Poziom kompresji** – BZIP2 nie udostępnia poziomów niestandardowych; jeśli potrzebna jest większa kontrola, przełącz się na LZMA (`CompressionType.LZMA`) lub XZ (`CompressionType.XZ`).  
 
 ## Najczęściej zadawane pytania
 
-**Q: Jak utworzyć archiwum TarGz?**  
-A: Ustaw `CompressionType.GZip` i użyj `ArchiveFormat.TarGz` przy wywołaniu `Save`. To spowoduje utworzenie pliku `.tar.gz` w jednym kroku.
+**P: Jak utworzyć archiwum TarGz?**  
+O: Ustaw `CompressionType.GZip` i użyj `ArchiveFormat.TarGz` podczas wywoływania `Save`. To spowoduje utworzenie pliku `.tar.gz` w jednym kroku.
 
-**Q: Czy mogę rozpakować chronione hasłem archiwum bez znajomości hasła?**  
-A: Nie. Każdy wpis musi otrzymać prawidłowe hasło; w przeciwnym razie rozpakowywanie zakończy się `InvalidPasswordException`.
+**P: Czy mogę wyodrębnić archiwum chronione hasłem bez znajomości hasła?**  
+O: Nie. Każdy wpis musi otrzymać prawidłowe hasło; w przeciwnym razie wyodrębnianie zakończy się `InvalidPasswordException`.
 
-**Q: Czy Aspose.Zip obsługuje rozpakowywanie archiwów z różnymi hasłami per entry?**  
-A: Tak. Przypisz hasło do każdego `ArchiveEntry` indywidualnie przed wywołaniem `Extract`.
+**P: Czy Aspose.Zip obsługuje wyodrębnianie archiwów z różnymi hasłami per wpis?**  
+O: Tak. Przypisz hasło do każdego `ArchiveEntry` indywidualnie przed wywołaniem `Extract`.
 
-**Q: Który format zapewnia najlepszą kompresję?**  
-A: TarBz2 zazwyczaj daje najmniejszy rozmiar, następnie TarLz i TarXz. TarGz oferuje szybszą, wciąż skuteczną alternatywę.
+**P: Który format zapewnia najlepszą kompresję?**  
+O: TarBz2 zazwyczaj daje najmniejszy rozmiar, następnie TarLz i TarXz. TarGz oferuje szybszą, wciąż skuteczną alternatywę.
 
-**Q: Czy istnieje limit liczby plików, które mogę dodać do archiwum TAR?**  
-A: Praktycznie brak, ale bardzo duże archiwa (>10 GB) mogą skorzystać z podziału na części, co ułatwia ich obsługę.
+**P: Czy istnieje limit liczby plików, które można dodać do archiwum TAR?**  
+O: Praktycznie brak, ale bardzo duże archiwa (>10 GB) mogą skorzystać z podziału na części w celu łatwiejszej obsługi.
 
 ## Samouczki dotyczące rozpakowywania archiwów i formatów
 ### [Kompresowanie plików do TarBz2 przy użyciu Aspose.Zip dla .NET](./compress-to-tar-bz2/)
@@ -185,28 +195,28 @@ Dowiedz się, jak kompresować pliki do formatu TarBz2 w .NET przy użyciu Aspos
 ### [Kompresowanie do TarGz przy użyciu Aspose.Zip dla .NET](./compress-to-tar-gz/)
 Poznaj efektywną kompresję plików w .NET z Aspose.Zip. Kompresuj do TarGz bez wysiłku.  
 ### [Kompresowanie do TarLz przy użyciu Aspose.Zip dla .NET](./compress-to-tar-lz/)
-Łatwo kompresuj pliki w .NET z Aspose.Zip. Naucz się tworzyć archiwa TarLz krok po kroku.  
+Łatwo kompresuj pliki w .NET przy użyciu Aspose.Zip. Naucz się tworzyć archiwa TarLz krok po kroku.  
 ### [Kompresowanie do TarXz przy użyciu Aspose.Zip dla .NET](./compress-to-tar-xz/)
-Dowiedz się, jak kompresować pliki do formatu TarXz w .NET przy użyciu Aspose.Zip. Skorzystaj z naszego przewodnika, aby efektywnie przechowywać i przesyłać dane.  
+Dowiedz się, jak kompresować pliki do formatu TarXz w .NET przy użyciu Aspose.Zip. Skorzystaj z naszego przewodnika, aby zoptymalizować przechowywanie i transmisję.  
 ### [Kompresowanie do TarZ przy użyciu Aspose.Zip dla .NET](./compress-to-tar-z/)
-Poznaj krok po kroku kompresję do TarZ przy użyciu Aspose.Zip dla .NET. Efektywna obsługa plików dla Twoich projektów .NET.  
-### [Rozpakowywanie wpisów archiwum z różnymi hasłami w Aspose.Zip dla .NET](./extract-archive-different-passwords/)
-Dowiedz się, jak rozpakowywać wpisy archiwum z różnymi hasłami w Aspose.Zip dla .NET. Zwiększ bezpieczeństwo i elastyczność w swoich aplikacjach.
-
----
-
-**Ostatnia aktualizacja:** 2026-06-19  
-**Testowano z:** Aspose.Zip for .NET 24.11  
-**Autor:** Aspose
+Odkryj krok po kroku kompresję do TarZ przy użyciu Aspose.Zip dla .NET. Efektywna obsługa plików dla Twoich projektów .NET.  
+### [Wyodrębnianie wpisów archiwum z różnymi hasłami w Aspose.Zip dla .NET](./extract-archive-different-passwords/)
+Naucz się wyodrębniać wpisy archiwum z różnymi hasłami w Aspose.Zip dla .NET. Zwiększ bezpieczeństwo i elastyczność w swoich aplikacjach.
 
 ## Powiązane samouczki
 
 - [Utwórz archiwum tar i dodaj pliki do tar przy użyciu Aspose.Zip dla .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
-- [Jak kompresować tar i tworzyć TarBz2 przy użyciu Aspose.Zip dla .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
+- [Jak skompresować tar i utworzyć TarBz2 przy użyciu Aspose.Zip dla .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
 - [Dodaj pliki do tar i utwórz archiwum tarxz przy użyciu Aspose.Zip](/zip/net/archive-extraction-and-formats/compress-to-tar-xz/)
 
+---
+
+**Ostatnia aktualizacja:** 2026-10-25  
+**Testowano z:** Aspose.Zip dla .NET 24.11  
+**Autor:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
