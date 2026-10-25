@@ -1,31 +1,38 @@
 ---
-date: 2026-06-19
-description: Pelajari cara mengompres tar files, membuat targz archives, dan mengekstrak
-  password‑protected zip files menggunakan Aspose.Zip untuk .NET – meningkatkan efisiensi
-  penyimpanan dan keamanan.
+date: 2026-10-25
+description: Pelajari cara mengekstrak kata sandi zip dan mengatur algoritma kompresi
+  saat mengompres file tar dengan Aspose.Zip untuk .NET, meningkatkan efisiensi penyimpanan
+  dan keamanan.
 keywords:
-- how to compress tar
-- extract password zip
+- extract zip password
+- set compression algorithm
+- add folder archive
+- tarbz2 vs targz
 - aspose zip compress
-- aspose zip extract
-- create targz archive
+lastmod: 2026-10-25
 linktitle: Ekstraksi Arsip dan Format
+og_description: Pelajari cara mengekstrak kata sandi zip dan mengatur algoritma kompresi
+  saat mengompres file tar dengan Aspose.Zip untuk .NET, meningkatkan efisiensi penyimpanan
+  dan keamanan.
+og_image_alt: 'Developer guide: extract zip password and compress tar archives using
+  Aspose.Zip for .NET'
+og_title: Ekstrak kata sandi zip dan kompres file tar dengan Aspose.Zip
 schemas:
 - author: Aspose
-  dateModified: '2026-06-19'
-  description: Learn how to compress tar files, create targz archives, and extract
-    password‑protected zip files using Aspose.Zip for .NET – boosting storage efficiency
-    and security.
-  headline: How to Compress Tar Files with Aspose.Zip for .NET
+  dateModified: '2026-10-25'
+  description: Learn how to extract zip password and set compression algorithm when
+    compressing tar files with Aspose.Zip for .NET, boosting storage efficiency and
+    security.
+  headline: Extract zip password and compress tar files with Aspose.Zip
   type: TechArticle
-- description: Learn how to compress tar files, create targz archives, and extract
-    password‑protected zip files using Aspose.Zip for .NET – boosting storage efficiency
-    and security.
-  name: How to Compress Tar Files with Aspose.Zip for .NET
+- description: Learn how to extract zip password and set compression algorithm when
+    compressing tar files with Aspose.Zip for .NET, boosting storage efficiency and
+    security.
+  name: Extract zip password and compress tar files with Aspose.Zip
   steps:
   - name: Choose the archive format you need
     text: 'Decide which tar‑based format best matches your compression‑speed trade‑off:
-      - **TarBz2** – Highest compression ratio (≈30 % smaller than TarGz) but slower.
+      - **TarBz2** – Highest compression ratio (≈30 % smaller than TarGz) but slower.
       - **TarGz** – Good balance of speed and size; ideal for most cloud‑storage scenarios.
       - **TarLz / TarXz** – Very high compression with moderate'
   - name: Create a new `Archive` instance
@@ -67,12 +74,16 @@ schemas:
   - answer: TarBz2 typically yields the smallest size, followed by TarLz and TarXz.
       TarGz offers a faster, still‑effective alternative.
     question: Which format gives the best compression?
-  - answer: Practically none, but extremely large archives (>10 GB) may benefit from
+  - answer: Practically none, but extremely large archives (>10 GB) may benefit from
       splitting into multiple parts for easier handling.
     question: Is there a limit to the number of files I can add to a TAR archive?
   type: FAQPage
 second_title: Aspose.Zip .NET API for Files Compression & Archiving
-title: Cara Mengompres tar files dengan Aspose.Zip untuk .NET
+tags:
+- compress tar
+- Aspose.Zip
+- .NET archive handling
+title: Ekstrak kata sandi zip dan kompres file tar dengan Aspose.Zip
 url: /id/net/archive-extraction-and-formats/
 weight: 23
 ---
@@ -81,126 +92,137 @@ weight: 23
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Cara Mengompres File Tar dengan Aspose.Zip untuk .NET
+# Ekstrak kata sandi zip dan kompres file tar dengan Aspose.Zip
 
 ## Pendahuluan
 
-Dalam panduan ini Anda akan menemukan **cara mengompres tar** file menggunakan Aspose.Zip untuk .NET, belajar membuat arsip TarGz, dan melihat cara mengekstrak arsip zip yang dilindungi kata sandi. Penanganan arsip yang efisien adalah keterampilan inti bagi pengembang .NET modern—baik Anda membangun layanan pencadangan, klien penyimpanan cloud, atau pipeline pemrosesan data, menguasai format ini mengurangi biaya penyimpanan, mempercepat transfer, dan menjaga data sensitif tetap aman.
+Dalam panduan ini Anda akan menemukan teknik **ekstrak zip password**, mempelajari cara mengatur algoritma kompresi saat membuat arsip berbasis tar, dan melihat cara membangun TarGz, TarBz2, serta format lainnya dengan Aspose.Zip untuk .NET. Baik Anda membangun layanan backup, klien cloud‑storage, atau pipeline pemrosesan data, menguasai operasi ini mengurangi biaya penyimpanan, mempercepat transfer, dan mengamankan file sensitif.
 
 ## Jawaban Cepat
 - **Apa itu TarBz2?** Arsip terkompresi yang menggabungkan paket TAR dengan kompresi BZIP2 untuk rasio kompresi tinggi.  
-- **Mengapa memilih Aspose.Zip untuk .NET?** Menawarkan API tunggal yang fluently untuk membuat dan mengekstrak banyak format arsip tanpa dependensi eksternal.  
-- **Bisakah saya membuat arsip TarGz?** Ya – Aspose.Zip mendukung TarGz, TarLz, TarXz, TarZ, dan lainnya.  
-- **Bagaimana cara mengekstrak arsip zip yang dilindungi kata sandi?** Gunakan properti `Password` pada objek `ArchiveEntry` saat mengekstrak.  
-- **Apakah saya memerlukan lisensi untuk penggunaan produksi?** Lisensi komersial diperlukan untuk produksi; percobaan gratis tersedia untuk evaluasi.
+- **Mengapa memilih Aspose.Zip untuk .NET?** Mendukung lebih dari 50 format arsip dan kompresi, berjalan di Windows, Linux, dan macOS, serta menjaga penggunaan memori di bawah 10 MB untuk arsip berukuran ratusan megabyte.  
+- **Apakah saya dapat membuat arsip TarGz?** Ya – Aspose.Zip menawarkan TarGz, TarLz, TarXz, TarZ, dan lainnya.  
+- **Bagaimana cara mengekstrak arsip zip yang dilindungi kata sandi?** Atur properti `Password` pada setiap `ArchiveEntry` sebelum memanggil `Extract`.  
+- **Apakah saya memerlukan lisensi untuk penggunaan produksi?** Lisensi komersial diperlukan untuk produksi; versi percobaan gratis tersedia untuk evaluasi.
 
-## Apa itu Kompresi Tar?
-Tar (Tape Archive) adalah format kontainer yang menggabungkan banyak file dan direktori menjadi satu aliran tanpa kompresi. Ketika Anda menerapkan algoritma kompresi seperti BZIP2, GZip, LZMA, atau XZ, hasilnya adalah **arsip berbasis tar** seperti `.tar.bz2`, `.tar.gz`, `.tar.lz`, dll. Format ini didukung secara luas di Linux, macOS, dan Windows, menjadikannya ideal untuk pertukaran data lintas‑platform.
+## Apa itu kompresi tar?
 
-## Mengapa Menggunakan Aspose.Zip untuk .NET dalam Menangani Format Ini?
-Aspose.Zip menyediakan **API terpadu yang bebas dependensi** yang mendukung lebih dari 50 format arsip dan kompresi, termasuk TarBz2, TarGz, TarLz, TarXz, dan TarZ. Ia berjalan di Windows, Linux, dan macOS, dan arsitektur berbasis aliran menjaga penggunaan memori di bawah 10 MB bahkan untuk arsip berukuran ratusan megabyte. Perlindungan kata sandi sudah terintegrasi, memungkinkan enkripsi per‑entri tanpa perpustakaan tambahan.
+Kompresi tar menggabungkan kontainer TAR dengan algoritma kompresi seperti BZIP2, GZIP, LZMA, atau XZ. Hasilnya adalah satu file (misalnya `.tar.gz`, `.tar.bz2`) yang dapat dibongkar di Linux, macOS, dan Windows. Ini mempertahankan hierarki direktori asli, memungkinkan ekstraksi akses acak, dan didukung secara luas oleh alat baris perintah serta perpustakaan pemrograman, menjadikannya ideal untuk distribusi lintas‑platform dan penyimpanan arsip.
+
+## Mengapa menggunakan Aspose.Zip untuk .NET dalam menangani format ini?
+
+Aspose.Zip menyediakan API terpadu tanpa ketergantungan yang mendukung **50+** format arsip dan kompresi, termasuk semua tipe berbasis tar utama. Arsitektur streaming‑nya memproses arsip lebih besar dari 10 GB sambil menjaga penggunaan RAM di bawah 10 MB, menjadikannya ideal untuk beban kerja server berkecepatan tinggi.  
+
+**Jawaban langsung:** Anda menggunakan Aspose.Zip karena memungkinkan Anda membuat, mengompres, dan mengekstrak arsip berbasis tar serta file zip yang dilindungi kata sandi dengan satu API fluens, tanpa alat eksternal, sambil menangani arsip multi‑gigabyte dalam mode streaming yang efisien memori.
 
 ## Prasyarat
-- .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, atau .NET 5–10.  
-- Paket NuGet Aspose.Zip untuk .NET terpasang (`Install-Package Aspose.Zip`).  
-- Pemahaman dasar tentang I/O file C# dan sistem proyek .NET.
+- .NET Framework 2.0–4.8.1, .NET Core 2.0–3.1, atau .NET 5–10.  
+- Paket NuGet Aspose.Zip untuk .NET (`Install-Package Aspose.Zip`).  
+- Familiaritas dasar dengan I/O file C# dan sistem proyek .NET.
 
-## Panduan Langkah‑per‑Langkah
+## Panduan langkah demi langkah
 
-### Cara Mengompres File Tar – Jawaban Langsung
-`Archive` mewakili file arsip dan menyediakan metode untuk menambahkan entri serta menyimpannya.  
-Buat instance `Archive`, tambahkan file yang ingin Anda bundel, setel `CompressionType.BZip2`, dan panggil `Save` dengan `ArchiveFormat.TarBz2`. Perpustakaan menulis kontainer TAR dan mengompresnya dalam satu pass streaming, sehingga Anda tidak pernah memuat seluruh arsip ke memori.
+### Cara mengompres file tar – jawaban langsung
+Buat instance `Archive`, tambahkan file yang ingin Anda bundel, atur `CompressionType.BZip2` (atau algoritma lain), dan panggil `Save` dengan `ArchiveFormat.TarBz2`. Perpustakaan menulis kontainer TAR dan mengompresnya dalam satu pass streaming, sehingga Anda tidak pernah memuat seluruh arsip ke memori.
 
 ### Langkah 1: Pilih format arsip yang Anda butuhkan
-Tentukan format berbasis tar mana yang paling cocok dengan kompromi kecepatan‑kompresi Anda:
+Tentukan format berbasis tar yang paling cocok dengan trade‑off kecepatan‑kompresi Anda:
 
 - **TarBz2** – Rasio kompresi tertinggi (≈30 % lebih kecil daripada TarGz) tetapi lebih lambat.  
-- **TarGz** – Keseimbangan yang baik antara kecepatan dan ukuran; ideal untuk kebanyakan skenario penyimpanan cloud.  
+- **TarGz** – Keseimbangan baik antara kecepatan dan ukuran; ideal untuk kebanyakan skenario cloud‑storage.  
 - **TarLz / TarXz** – Kompresi sangat tinggi dengan kecepatan sedang, berguna untuk penyimpanan arsip.  
-- **TarZ** – Format warisan untuk kompatibilitas dengan alat Unix lama.
+- **TarZ** – Format legacy untuk kompatibilitas dengan alat Unix lama.
 
 ### Langkah 2: Buat instance `Archive` baru
-`Archive` adalah objek tingkat atas yang mewakili satu file arsip dalam memori.  
+`Archive` mewakili satu file arsip dan menyediakan metode untuk menambahkan entri serta menyimpan arsip.  
 
-Kelas `Archive` mengelola alur kerja pengepakan dan kompresi, menyediakan metode untuk menambahkan entri dan menulis file akhir.
+Kelas `Archive` mengelola alur kerja pengepakan dan kompresi, mengekspor metode untuk menambah entri dan menulis file akhir.
 
 ### Langkah 3: Tambahkan file dan folder
-Anda dapat menambahkan seluruh pohon direktori dengan `AddAll` atau menambahkan file individual dengan `AddFile`. Mempertahankan hierarki folder asli semudah memberikan jalur direktori dasar.
+Anda dapat menambahkan seluruh pohon direktori dengan `AddAll` atau menambahkan file individual dengan `AddFile`.  
 
-### Langkah 4: Atur jenis kompresi yang diinginkan
-`CompressionType` mengenumerasikan algoritma yang didukung.  
+`AddAll` menambahkan seluruh pohon direktori ke arsip, mempertahankan strukturnya.  
+`AddFile` menambahkan satu file ke arsip. Mempertahankan hierarki folder asli semudah memberikan jalur direktori dasar.
 
-`CompressionType` menentukan algoritma (BZip2, GZip, LZMA, XZ, dll.) yang akan diterapkan pada aliran TAR selama penyimpanan.
+### Langkah 4: Atur tipe kompresi yang diinginkan
+Enum `CompressionType` menentukan algoritma kompresi yang diterapkan pada aliran TAR.  
+
+`CompressionType` mencakup algoritma yang didukung (BZip2, GZip, LZMA, XZ, dll.) yang akan diterapkan saat penyimpanan.
 
 ### Langkah 5: Simpan arsip
-`ArchiveFormat` adalah sekumpulan enum (misalnya `TarBz2`, `TarGz`) yang memberi tahu penulis kontainer dan kompresi mana yang akan digunakan.  
+Enum `ArchiveFormat` memilih kombinasi kontainer dan kompresi untuk file output.  
 
 Memanggil `Save` menulis arsip ke disk menggunakan format yang dipilih.
 
 ### Langkah 6: Mengekstrak arsip dengan kata sandi
 `ArchiveEntry` mewakili satu file atau entri direktori di dalam arsip.  
 
-Untuk mengekstrak zip yang dilindungi kata sandi, buka arsip, temukan setiap `ArchiveEntry`, tetapkan properti `Password`‑nya, dan panggil `Extract`. Model kata sandi per‑entri ini memungkinkan Anda melindungi file individual di dalam satu zip.
+Untuk mengekstrak zip yang dilindungi kata sandi, buka arsip, temukan setiap `ArchiveEntry`, tetapkan properti `Password`‑nya, dan panggil `Extract`. Properti `Password` menetapkan kata sandi dekripsi untuk entri zip. Model kata sandi per‑entri ini memungkinkan Anda melindungi file individual di dalam satu zip.
 
 ### Langkah 7: Verifikasi hasil
-Setelah ekstraksi, bandingkan ukuran file dan checksum SHA‑256 untuk memastikan bahwa proses putar‑balik arsip mempertahankan integritas data.
+Setelah ekstraksi, bandingkan ukuran file dan checksum SHA‑256 untuk memastikan bahwa perjalanan arsip mempertahankan integritas data.
 
-## Kasus Penggunaan Umum
-- **Utilitas pencadangan** – Simpan cadangan harian sebagai `.tar.bz2` untuk mengurangi biaya penyimpanan hingga 30 %.  
-- **Pertukaran data lintas‑platform** – Format berbasis Tar dipahami secara native oleh alat Linux, macOS, dan Windows.  
+## Kasus penggunaan umum
+- **Utilitas backup** – Simpan backup harian sebagai `.tar.bz2` untuk mengurangi biaya penyimpanan hingga 30 %.  
+- **Pertukaran data lintas‑platform** – Format berbasis tar dipahami secara native oleh alat Linux, macOS, dan Windows.  
 - **Distribusi aman** – Tetapkan kata sandi pada entri sensitif, memenuhi persyaratan kepatuhan tanpa alat enkripsi tambahan.
 
-## Pemecahan Masalah & Tips
-- **Arsip besar** – Pilih API streaming (`Archive.CreateEntryFromFile`) untuk menjaga penggunaan memori tetap rendah.  
-- **Kecocokan kata sandi** – Kata sandi yang ditetapkan pada setiap `ArchiveEntry` harus cocok persis; jika tidak, `InvalidPasswordException` akan dilempar.  
-- **Tingkat kompresi** – BZIP2 tidak menyediakan tingkat kustom; jika Anda memerlukan kontrol lebih halus, beralih ke LZMA (`CompressionType.LZMA`) atau XZ (`CompressionType.XZ`).  
+## Pemecahan masalah & tips
+- **Arsip besar** – Gunakan API streaming (`Archive.CreateEntryFromFile`) untuk menjaga penggunaan memori tetap rendah.  
+- **Kecocokan kata sandi** – Kata sandi yang ditetapkan pada setiap `ArchiveEntry` harus persis cocok; jika tidak, `InvalidPasswordException` akan dilempar.  
+- **Level kompresi** – BZIP2 tidak menyediakan level khusus; jika Anda memerlukan kontrol lebih halus, beralihlah ke LZMA (`CompressionType.LZMA`) atau XZ (`CompressionType.XZ`).  
 
-## Pertanyaan yang Sering Diajukan
+## Pertanyaan yang sering diajukan
 
-**Q: Bagaimana cara membuat arsip TarGz?**  
-A: Setel `CompressionType.GZip` dan gunakan `ArchiveFormat.TarGz` saat memanggil `Save`. Ini menghasilkan file `.tar.gz` dalam satu langkah.
+**T: Bagaimana cara membuat arsip TarGz?**  
+J: Atur `CompressionType.GZip` dan gunakan `ArchiveFormat.TarGz` saat memanggil `Save`. Ini menghasilkan file `.tar.gz` dalam satu langkah.
 
-**Q: Bisakah saya mengekstrak arsip yang dilindungi kata sandi tanpa mengetahui kata sandinya?**  
-A: Tidak. Setiap entri harus diberikan kata sandi yang benar; ekstraksi gagal dengan `InvalidPasswordException` jika tidak.
+**T: Bisakah saya mengekstrak arsip yang dilindungi kata sandi tanpa mengetahui kata sandinya?**  
+J: Tidak. Setiap entri harus diberikan kata sandi yang benar; ekstraksi akan gagal dengan `InvalidPasswordException` jika tidak.
 
-**Q: Apakah Aspose.Zip mendukung mengekstrak arsip dengan kata sandi berbeda per entri?**  
-A: Ya. Tetapkan kata sandi pada setiap `ArchiveEntry` secara individual sebelum memanggil `Extract`.
+**T: Apakah Aspose.Zip mendukung mengekstrak arsip dengan kata sandi berbeda per entri?**  
+J: Ya. Tetapkan kata sandi pada masing‑masing `ArchiveEntry` sebelum memanggil `Extract`.
 
-**Q: Format mana yang memberikan kompresi terbaik?**  
-A: TarBz2 biasanya menghasilkan ukuran terkecil, diikuti oleh TarLz dan TarXz. TarGz menawarkan alternatif yang lebih cepat namun tetap efektif.
+**T: Format mana yang memberikan kompresi terbaik?**  
+J: TarBz2 biasanya menghasilkan ukuran terkecil, diikuti oleh TarLz dan TarXz. TarGz menawarkan alternatif yang lebih cepat namun tetap efektif.
 
-**Q: Apakah ada batas jumlah file yang dapat saya tambahkan ke arsip TAR?**  
-A: Praktis tidak ada, tetapi arsip yang sangat besar (>10 GB) mungkin lebih mudah ditangani jika dibagi menjadi beberapa bagian.
+**T: Apakah ada batas jumlah file yang dapat saya tambahkan ke arsip TAR?**  
+J: Secara praktis tidak ada, tetapi arsip yang sangat besar (>10 GB) mungkin lebih mudah ditangani jika dibagi menjadi beberapa bagian.
 
-## Tutorial Ekstraksi Arsip dan Format
+## Tutorial ekstraksi arsip dan format
 
 ### [Mengompres File ke TarBz2 dengan Aspose.Zip untuk .NET](./compress-to-tar-bz2/)
-Pelajari cara mengompres file ke format TarBz2 di .NET menggunakan Aspose.Zip. Ikuti panduan langkah‑per‑langkah kami untuk kompresi file yang efisien.  
+Pelajari cara mengompres file ke format TarBz2 di .NET menggunakan Aspose.Zip. Ikuti panduan langkah demi langkah untuk kompresi file yang efisien.  
+
 ### [Mengompres ke TarGz dengan Aspose.Zip untuk .NET](./compress-to-tar-gz/)
 Jelajahi kompresi file yang efisien di .NET dengan Aspose.Zip. Kompres ke TarGz dengan mudah.  
+
 ### [Mengompres ke TarLz dengan Aspose.Zip untuk .NET](./compress-to-tar-lz/)
-Kompres file di .NET dengan Aspose.Zip secara mudah. Pelajari cara membuat arsip TarLz langkah‑per‑langkah.  
+Kompress file di .NET dengan Aspose.Zip secara mudah. Pelajari cara membuat arsip TarLz langkah demi langkah.  
+
 ### [Mengompres ke TarXz dengan Aspose.Zip untuk .NET](./compress-to-tar-xz/)
 Pelajari cara mengompres file ke format TarXz di .NET menggunakan Aspose.Zip. Ikuti panduan kami untuk penyimpanan dan transmisi yang efisien.  
+
 ### [Mengompres ke TarZ dengan Aspose.Zip untuk .NET](./compress-to-tar-z/)
-Jelajahi kompresi langkah‑per‑langkah ke TarZ menggunakan Aspose.Zip untuk .NET. Penanganan file yang efisien untuk proyek .NET Anda.  
-### [Mengekstrak Entri Arsip dengan Kata Sandi Berbeda di Aspose.Zip untuk .NET](./extract-archive-different-passwords/)
+Jelajahi kompresi langkah demi langkah ke TarZ menggunakan Aspose.Zip untuk .NET. Penanganan file yang efisien untuk proyek .NET Anda.  
+
+### [Mengekstrak entri arsip dengan kata sandi berbeda di Aspose.Zip untuk .NET](./extract-archive-different-passwords/)
 Pelajari cara mengekstrak entri arsip dengan kata sandi berbeda di Aspose.Zip untuk .NET. Tingkatkan keamanan dan fleksibilitas dalam aplikasi Anda.
 
----
-
-**Last Updated:** 2026-06-19  
-**Tested With:** Aspose.Zip for .NET 24.11  
-**Author:** Aspose
-
-## Tutorial Terkait
+## Tutorial terkait
 
 - [Buat arsip tar dan tambahkan file ke tar dengan Aspose.Zip untuk .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
 - [Cara mengompres tar dan membuat TarBz2 dengan Aspose.Zip untuk .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-bz2/)
 - [Tambahkan file ke tar dan buat arsip tarxz dengan Aspose.Zip](/zip/net/archive-extraction-and-formats/compress-to-tar-xz/)
 
+---
+
+**Terakhir Diperbarui:** 2026-10-25  
+**Diuji Dengan:** Aspose.Zip for .NET 24.11  
+**Penulis:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
 
