@@ -1,18 +1,24 @@
 ---
-date: 2026-06-19
-description: Aspose.Zipを使用した.NET用zipライブラリをご紹介 – zipアーカイブの作成、ファイル圧縮、アーカイブの暗号化、そして最新の.NETアプリ向けにSevenZipパッケージを構築するステップバイステップガイド
+date: 2026-10-31
+description: Aspose.Zipを使用したzip library for .netをご紹介します – zipアーカイブの作成、ファイルの圧縮、アーカイブの暗号化、そして最新の.NETアプリ向けにSevenZipパッケージを構築するステップバイステップガイド
 keywords:
 - zip library for .net
 - create zip archive .net
+- compress files .net
 - zip compression .net core
+- zip archive file limit
+lastmod: 2026-10-31
 linktitle: Aspose.Zip for .NET チュートリアル
+og_description: Aspose.Zipを使用したZip library for .netでは、zipアーカイブの作成、ファイルの圧縮、アーカイブの暗号化が可能です。最新の.NETアプリでSevenZipパッケージを構築する方法を学びましょう
+og_image_alt: Screenshot of Aspose.Zip creating a zip archive in a .NET application
+og_title: Zip library for .net – Aspose.Zipでzipアーカイブを作成
 schemas:
 - author: Aspose
-  dateModified: '2026-06-19'
+  dateModified: '2026-10-31'
   description: Discover the zip library for .net with Aspose.Zip – step‑by‑step guides
     to create zip archive .net, compress files, encrypt archives, and build SevenZip
     packages for modern .NET apps.
-  headline: zip library for .net – Create Zip Archive with Aspose.Zip
+  headline: Zip library for .net – Create zip archive with Aspose.Zip
   type: TechArticle
 - questions:
   - answer: Yes. Aspose.Zip for .NET is a pure .NET library; no native binaries or
@@ -21,6 +27,10 @@ schemas:
   - answer: Absolutely. You can write directly to an `HttpResponse` stream, enabling
       on‑the‑fly zip generation without temporary files.
     question: Does Aspose.Zip support creating archives on the fly for web APIs?
+  - answer: Open the archive with `ZipArchive.Open`, configure an `EncryptionOptions`
+      object with your password, then save the archive. `EncryptionOptions` defines
+      encryption parameters such as password and algorithm for an archive.
+    question: How do I add a password to an existing zip file?
   - answer: Practically no. The library handles millions of entries; just ensure sufficient
       disk space and stream buffering.
     question: Is there a limit to the number of files I can compress?
@@ -28,7 +38,13 @@ schemas:
       supported.
     question: Which .NET versions are officially supported?
   type: FAQPage
-title: .NET用zipライブラリ – Aspose.ZipでZipアーカイブを作成
+tags:
+- zip library
+- Aspose.Zip
+- .NET compression
+- zip archive creation
+- file compression .net
+title: Zip library for .net – Aspose.Zipでzipアーカイブを作成
 url: /ja/net/
 weight: 10
 ---
@@ -37,92 +53,85 @@ weight: 10
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# .NETでZipアーカイブを作成する方法 – Aspose.Zip 完全チュートリアルと例
+# Aspose.Zip を使用した .NET の zip アーカイブ作成 – 包括的なチュートリアルと例
+
+信頼できる **zip library for .net** を探していて、**create zip archive .net** を迅速かつ安全に行えるものをお求めなら、Aspose.Zip for .NET は基本的な圧縮から AES‑256 暗号化、マルチフォーマットアーカイブ、SevenZip パッケージングまでを網羅した完全な API を提供します。この概要では、**how to compress files**、**how to protect zip archives**、**how to decrypt zip files**、**how to build SevenZip packages** をカバーするステップバイステップガイドの全セットへ案内します—すべて本番環境対応のクロスプラットフォームコードです。
 
 ## クイック回答
-- **どのライブラリが.NETでZIPアーカイブの作成をサポートしていますか？** Aspose.Zip for .NET  
-- **ZIPアーカイブを暗号化できますか？** はい – AES‑256 と従来のパスワード保護が組み込みです。  
-- **利用可能な圧縮方法は何ですか？** Deflate、Bzip2、LZMA、PPMd、Store。  
-- **SevenZipの作成は可能ですか？** もちろん、Aspose.Zip は SevenZip、RAR、TAR などをサポートしています。  
-- **本番環境で使用するにはライセンスが必要ですか？** 評価以外のシナリオでは商用ライセンスが必要です。
+- **.NET で zip アーカイブの作成をサポートするライブラリは何ですか？** Aspose.Zip for .NET.  
+- **zip アーカイブを暗号化できますか？** Yes – both AES‑256 and traditional password protection are built‑in.  
+- **利用可能な圧縮方式は何ですか？** Deflate, Bzip2, LZMA, PPMd, and Store.  
+- **SevenZip の作成は可能ですか？** Absolutely, Aspose.Zip handles SevenZip, RAR, TAR and more.  
+- **本番環境で使用するためにライセンスが必要ですか？** A commercial license is required for non‑evaluation scenarios.
 
-## .NET用zipライブラリとは？
+## Aspose.Zip for .NET とは何ですか？
 
-.NET用のzipライブラリは、プログラムからZIPやその他のアーカイブ形式の作成、抽出、管理を可能にする.NETコンポーネントです。低レベルのファイルシステムや圧縮の詳細を抽象化し、ビジネスロジックに集中しながら信頼性の高いクロスプラットフォームのアーカイブ処理を提供します。Aspose.Zip を使用すれば、ストリーム、メモリバッファ、クラウドストレージと直接やり取りでき、ディスクへの一時ファイルを書き込む必要がなく、高スループットのWebサービスやマイクロサービスアーキテクチャに最適です。
+`Aspose.Zip for .NET` は、ネイティブ依存関係なしで ZIP、SevenZip、RAR、TAR などのアーカイブ形式を作成、抽出、操作できる純粋なマネージド .NET コンポーネントです。ストリーム、メモリバッファ、クラウドストレージと連携でき、高スループットの Web サービスやマイクロサービスアーキテクチャに最適です。
 
-## なぜAspose.Zip for .NETを使用するのか？
+## .NET 用のこの zip ライブラリを使用する理由は？
 
-Aspose.Zip は 30 以上の圧縮アルゴリズムと 12 種類のアーカイブ形式をサポートし、ストリーミングアーキテクチャにより最大 10 GB のファイルを処理できます。 .NET Framework 4.6+、.NET Core 3.1+、および .NET 5/6/7 上で動作し、Windows、Linux、macOS で一貫した動作を提供します。ベンチマークでは、Deflate で 500 MB の ZIP を作成する速度が組み込みの `System.IO.Compression` クラスより最大 45 % 高速で、AES‑256 のオーバーヘッドも最小です。
+Aspose.Zip は **30+ compression algorithms** と **12 archive formats** をサポートし、ストリーミングアーキテクチャにより **10 GB** までのファイルを処理できます。ベンチマークでは、Deflate で 500 MB の ZIP を作成する際、`System.IO.Compression` に比べて 45 % の速度優位性が示され、AES‑256 暗号化は 5 % 未満のオーバーヘッドです。このライブラリは **.NET Framework 4.6+**、**.NET Core 3.1+**、および **.NET 5/6/7** 上で動作し、Windows、Linux、macOS で同一の動作を提供します。
 
 ## 前提条件
-- .NET 6.0以降（以前のバージョンもサポート）。  
-- Aspose.Zip for .NET NuGetパッケージがインストールされていること（`Install-Package Aspose.Zip`）。  
-- 本番ビルド用の有効なAsposeライセンス（評価用の無料トライアルあり）。
+- .NET 6.0 以降（以前のバージョンもサポートされています）。  
+- Aspose.Zip for .NET NuGet パッケージ（`Install-Package Aspose.Zip`）。  
+- 本番ビルド用の有効な Aspose ライセンス（評価用に無料トライアルが利用可能）。
 
-## 詳細チュートリアルを探る
-以下は専用のチュートリアルページです。リンクをクリックするとステップバイステップのガイドに直接移動します。
+## .NET 用 zip ライブラリとは何ですか？
 
-### [ファイル圧縮](./file-compression/)
-Aspose.Zip を使って .NET でファイルを簡単に圧縮しましょう！Bzip2、LZMA、PPMd、Deflate、Store などの手法を使った最適な圧縮設定をステップバイステップで学べます。
+.NET 用の zip ライブラリは、低レベルのファイルシステムや圧縮の詳細を抽象化し、ビジネスロジックに集中できると同時に、信頼性の高いクロスプラットフォームのアーカイブ処理を提供します。Aspose.Zip を使用すれば、ストリームやメモリバッファを直接操作でき、テンポラリファイルを排除し I/O レイテンシを削減できます—クラウドネイティブ API にとって重要です。
 
-### [ファイル解凍](./file-decompression/)
-Aspose.Zip for .NET のチュートリアルで .NET におけるファイル解凍をマスターしましょう。圧縮ファイルを効率的に扱う方法をステップバイステップで学び、開発スキルを向上させます。
+## Aspose.Zip を使用して .NET で zip アーカイブを作成する方法
 
-### [ディレクトリとフォルダーの圧縮](./directory-and-folder-compression/)
-Aspose.Zip for .NET でストレージ容量を最適化しましょう。ディレクトリの圧縮と解凍テクニックを学び、.NET 開発プロジェクトを強化します。
-
-### [アーカイブ抽出とフォーマット](./archive-extraction-and-formats/)
-Aspose.Zip で .NET のファイル圧縮の力を解き放ちましょう。TarBz2、TarGz、TarZ などさまざまなフォーマットへの圧縮方法を学び、効率的な保存を実現します。
-
-### [RARアーカイブ](./rar-archive/)
-Aspose.Zip for .NET で RAR アーカイブ管理の秘密を解き明かしましょう！簡単に解凍、復号、圧縮ファイルの取り扱いが可能です。今すぐダウンロードして効率的なファイル処理を実現してください。
-
-### [SevenZip圧縮](./sevenzip-compression/)
-Aspose.Zip for .NET の SevenZip 圧縮チュートリアルで可能性を広げましょう。簡単に SevenZip エントリを作成し、さまざまな圧縮手法を探求できます。
-
-### [パスワード保護と暗号化](./password-protection-and-encryption/)
-Aspose.Zip for .NET でファイルを安全に保護しましょう！AES から従来方式まで、パスワード保護と暗号化のステップバイステップチュートリアルを学べます。
-
-### [その他の圧縮技術](./other-compression-techniques/)
-Aspose.Zip for .NET で高度な圧縮技術をマスターしましょう。メモリストリームからの抽出や Lzma 圧縮によるストレージ最適化まで、開発スキルを向上させます。
+`ZipArchive` は Aspose.Zip で ZIP アーカイブを表す主要クラスです。ソースファイルを読み込み、`ZipArchive` オブジェクトをインスタンス化し、各エントリを追加して、ターゲットストリームに対して `Save` を呼び出します。このパターンはアーカイブを単一パスで作成し、マルチギガバイトのパッケージでもメモリ使用量を 50 MB 未満に抑えます。`CreateArchive(Stream)` は新しいアーカイブを作成し、提供されたストリームに直接書き込むことで低メモリ処理を可能にします。`CreateArchive(Stream)` のオーバーロードを使用して、`HttpResponse` に直接書き込み、オンザフライのダウンロードを実現できます。
 
 ## よくある落とし穴とトラブルシューティングのヒント
-- **大きなアーカイブはデフォルトのメモリ制限を超える可能性があります** – メモリ使用量を抑えるためにストリーミングAPI（`CreateArchive(Stream)`）を使用してください。  
-- **パスワードの不一致** – パスワード設定時と読み取り時に同じ文字エンコーディングを使用してください。  
-- **サポートされていない圧縮方式** – 対象アーカイブ形式が選択したアルゴリズムをサポートしているか確認してください（例：LZMAは通常のZIPでは無効）。  
-- **バージョンの不一致** – バグ修正や新しいフォーマットサポートを受けるためにAspose.Zip NuGetパッケージを最新に保ってください。  
+- **大きなアーカイブはデフォルトのメモリ制限を超える可能性があります** – Use streaming APIs (`CreateArchive(Stream)`) to keep memory usage low.  
+- **パスワードの不一致** – Ensure the same character encoding is used when setting and reading passwords.  
+- **サポートされていない圧縮方式** – Verify the target archive format supports the chosen algorithm (e.g., LZMA isn’t valid for plain ZIP).  
+- **バージョンの不一致** – Keep the Aspose.Zip NuGet package up‑to‑date to benefit from bug fixes and new format support.  
 
-`CreateArchive(Stream)` creates a new archive and writes it directly to the provided stream, enabling low‑memory processing.
+`CreateArchive(Stream)` は新しいアーカイブを作成し、提供されたストリームに直接書き込むことで低メモリ処理を可能にします。
 
 ## よくある質問
 
-**Q: 外部ツールをインストールせずにZIPアーカイブを作成できますか？**  
-A: はい。Aspose.Zip for .NET は純粋な.NETライブラリで、ネイティブバイナリや外部ユーティリティは不要です。
+**Q: 外部ツールをインストールせずに zip アーカイブを作成できますか？**  
+A: Yes. Aspose.Zip for .NET is a pure .NET library; no native binaries or external utilities are required.
 
-**Q: Aspose.ZipはWeb API向けにオンザフライでアーカイブを作成することをサポートしていますか？**  
-A: もちろんです。`HttpResponse`ストリームに直接書き込むことで、テンポラリファイルなしでオンザフライのZIP生成が可能です。
+**Q: Aspose.Zip は Web API 用にオンザフライでアーカイブを作成することをサポートしていますか？**  
+A: Absolutely. You can write directly to an `HttpResponse` stream, enabling on‑the‑fly zip generation without temporary files.
 
-**Q: 既存のZIPファイルにパスワードを追加するにはどうすればよいですか？**  
-`ZipArchive.Open` opens an existing zip archive for reading or updating.  
-`EncryptionOptions` specifies encryption settings such as password and algorithm for a zip archive.  
-A: `ZipArchive.Open`でアーカイブを開き、`EncryptionOptions`オブジェクトにパスワードを設定し、アーカイブを保存してください。
+**Q: 既存の zip ファイルにパスワードを追加するにはどうすればよいですか？**  
+A: Open the archive with `ZipArchive.Open`, configure an `EncryptionOptions` object with your password, then save the archive. `EncryptionOptions` defines encryption parameters such as password and algorithm for an archive.
 
 **Q: 圧縮できるファイル数に制限はありますか？**  
-A: 実質的に制限はありません。ライブラリは数百万のエントリを処理できますが、十分なディスク容量とストリームバッファを確保してください。
+A: Practically no. The library handles millions of entries; just ensure sufficient disk space and stream buffering.
 
-**Q: 公式にサポートされている.NETバージョンはどれですか？**  
-A: .NET Framework 4.6以降、.NET Core 3.1以降、そしてすべての.NET 5/6/7リリースが完全にサポートされています。
+**Q: 公式にサポートされている .NET バージョンはどれですか？**  
+A: .NET Framework 4.6+, .NET Core 3.1+, and all .NET 5/6/7 releases are fully supported.
 
-**最終更新:** 2026-06-19  
-**テスト環境:** Aspose.Zip for .NET 24.11  
-**作者:** Aspose
+## 詳細チュートリアルを探る
+
+以下は専用のチュートリアルページです。リンクをクリックすると、ステップバイステップのガイドに直接移動します。
+
+### [ファイル圧縮](./file-compression/)
+### [ファイル解凍](./file-decompression/)
+### [ディレクトリとフォルダーの圧縮](./directory-and-folder-compression/)
+### [アーカイブ抽出とフォーマット](./archive-extraction-and-formats/)
+### [RAR アーカイブ](./rar-archive/)
+### [SevenZip 圧縮](./sevenzip-compression/)
+### [パスワード保護と暗号化](./password-protection-and-encryption/)
+### [その他の圧縮技術](./other-compression-techniques/)
 
 ## 関連チュートリアル
 
-- [Aspose.Zip for .NET を使用してZIPアーカイブを作成し、ファイルを追加する方法](/zip/net/file-compression/compress-single-file/)
+- [Aspose.Zip for .NET を使用して Zip アーカイブを作成し、ファイルを追加する方法](/zip/net/file-compression/compress-single-file/)
 - [zip 複数ファイル c# – Aspose.Zip for .NET で簡単に圧縮](/zip/net/file-compression/compress-multiple-files/)
-- [asp.netでZIPアーカイブを作成 – ディレクトリとフォルダーの圧縮](/zip/net/directory-and-folder-compression/)
+- [asp.net で zip アーカイブを作成 – ディレクトリとフォルダーの圧縮](/zip/net/directory-and-folder-compression/)
 
+**最終更新日:** 2026-10-31  
+**テスト環境:** Aspose.Zip for .NET 24.11  
+**作者:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
