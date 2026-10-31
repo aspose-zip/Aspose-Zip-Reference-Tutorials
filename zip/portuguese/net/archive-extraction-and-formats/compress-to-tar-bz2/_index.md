@@ -1,29 +1,31 @@
 ---
-date: 2026-08-07
-description: Aprenda como adicionar arquivos ao tar e gerar um arquivo TarBz2 em .NET
-  usando Aspose.Zip. Guia passo a passo mostra a criação de tar, compressão Bzip2
+date: 2026-10-31
+description: Aprenda a criar um arquivo tar e compactá‑lo em um arquivo TarBz2 no
+  .NET usando Aspose.Zip. Guia passo a passo mostra a criação de tar, compressão Bzip2
   e dicas de boas práticas.
+images:
+- /net/archive-extraction-and-formats/compress-to-tar-bz2/og-image.png
 keywords:
+- create tar archive
 - add files to tar
+- compress multiple files
 - tar bzip2 compression
-- generate tarbz2 archive
-- asp zip
-- compress tar .net
-lastmod: 2026-08-07
+- add files tar
+lastmod: 2026-10-31
 linktitle: Compactando para TarBz2
-og_description: Adicionar arquivos ao tar e gerar um arquivo TarBz2 em .NET usando
-  Aspose.Zip. Este guia cobre a criação de tar, compressão Bzip2 e dicas de solução
-  de problemas.
-og_image_alt: Developer guide showing how to add files to tar and compress to TarBz2
-  with Aspose.Zip for .NET
-og_title: Adicionar arquivos ao tar e criar um arquivo TarBz2 com Aspose.Zip
+og_description: Aprenda a criar um arquivo tar e compactá‑lo em um arquivo TarBz2
+  usando Aspose.Zip para .NET. Guia passo a passo cobre a criação de tar, compressão
+  Bzip2 e dicas de boas práticas.
+og_image_alt: Developer guide showing how to create tar archive and compress to TarBz2
+  using Aspose.Zip for .NET
+og_title: Como criar um arquivo tar e compactar para TarBz2 com .NET
 schemas:
 - author: Aspose
-  dateModified: '2026-08-07'
-  description: Learn how to add files to tar and generate a TarBz2 archive in .NET
-    using Aspose.Zip. Step‑by‑step guide shows tar creation, Bzip2 compression and
-    best‑practice tips.
-  headline: Add files to tar and create a TarBz2 archive with Aspose.Zip
+  dateModified: '2026-10-31'
+  description: Learn how to create tar archive and compress it to a TarBz2 file in
+    .NET using Aspose.Zip. Step‑by‑step guide shows tar creation, Bzip2 compression
+    and best‑practice tips.
+  headline: Create tar archive and compress to TarBz2 with .NET
   type: TechArticle
 - questions:
   - answer: Yes. It works with .NET Framework, .NET Core, .NET 5/6 and newer runtimes.
@@ -45,7 +47,7 @@ tags:
 - Aspose.Zip
 - .NET compression
 - TarBz2 archive
-title: Adicionar arquivos ao tar e criar um arquivo TarBz2 com Aspose.Zip
+title: Como criar um arquivo tar e compactar para TarBz2 com .NET
 url: /pt/net/archive-extraction-and-formats/compress-to-tar-bz2/
 weight: 11
 ---
@@ -54,35 +56,35 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Adicionar arquivos a tar e criar um arquivo TarBz2 com Aspose.Zip
+# Como criar um arquivo tar e compactar para TarBz2 com .NET
 
-Neste tutorial você descobrirá **como adicionar arquivos a tar** em arquivos e transformá-los em um compacto arquivo **TarBz2** usando a biblioteca **Aspose.Zip** para .NET. Seja construindo uma ferramenta de backup, publicando pacotes de implantação ou precisando de um pacote leve para distribuição, os passos abaixo o guiarão na adição de arquivos a um contêiner tar, na aplicação da compressão Bzip2 e na produção de um arquivo pronto‑para‑compartilhar.
+Neste tutorial você aprenderá **como criar arquivos de arquivo tar** e, em seguida, compactá‑los em um pacote **TarBz2** compacto usando a biblioteca **Aspose.Zip** para .NET. Seja você quem está construindo uma ferramenta de backup, preparando pacotes de implantação ou precisa de um formato de distribuição leve, os passos abaixo mostram como adicionar arquivos a um contêiner tar, aplicar compressão Bzip2 e gravar o arquivo final `.tar.bz2`.
 
 ## Respostas rápidas
-- **Qual biblioteca devo usar?** Aspose.Zip for .NET  
-- **Quanto tempo leva a implementação?** About 5‑10 minutes  
-- **Preciso de uma licença?** A temporary license is required for production; a free trial is available  
-- **Posso compactar vários arquivos?** Yes – add as many entries as you like to the tar archive  
-- **É compatível com .NET 6+?** Absolutely, Aspose.Zip supports .NET Framework and .NET Core/5/6  
+- **Qual biblioteca devo usar?** Aspose.Zip para .NET  
+- **Quanto tempo leva a implementação?** Cerca de 5‑10 minutos  
+- **Preciso de licença?** Uma licença temporária é necessária para produção; há uma versão de avaliação gratuita  
+- **Posso compactar vários arquivos?** Sim – adicione quantas entradas quiser ao arquivo tar  
+- **É compatível com .NET 6+?** Absolutamente, o Aspose.Zip suporta .NET Framework e .NET Core/5/6  
 
 ## O que é um arquivo TarBz2?
 
-Um arquivo TarBz2 combina o contêiner tradicional **tar** (que preserva a estrutura de diretórios e os metadados dos arquivos) com a compressão **Bzip2**, resultando em um pacote altamente compactado `.tar.bz2`. Esse formato é popular em sistemas semelhantes ao Unix porque oferece um bom equilíbrio entre taxa de compressão e velocidade de descompressão.
+Um arquivo TarBz2 combina o contêiner tradicional **tar** (que preserva a estrutura de diretórios e metadados dos arquivos) com compressão **Bzip2**, resultando em um pacote `.tar.bz2` altamente compactado. Esse formato é popular em sistemas tipo Unix porque oferece um bom equilíbrio entre taxa de compressão e velocidade de descompressão.
 
-## Por que compactar arquivos em TarBz2 com Aspose.Zip?
+## Por que compactar arquivos para TarBz2 com Aspose.Zip?
 
-Aspose.Zip pode gerar um arquivo TarBz2 em **duas chamadas de API** enquanto manipula streams de forma eficiente. Ele suporta **mais de 50 formatos de arquivo e compressão**, processa arquivos de até **2 GB** sem carregar todo o arquivo para a memória, e funciona em runtimes .NET para Windows, Linux e macOS. A biblioteca também oferece controle granular sobre nomes de entradas, timestamps e níveis de compressão, tornando-a ideal tanto para utilitários de console quanto para serviços web.
+O Aspose.Zip pode gerar um arquivo TarBz2 em **duas chamadas de API** enquanto manipula streams de forma eficiente. Ele suporta **mais de 50 formatos de arquivo e compressão**, processa arquivos de até **2 GB** sem carregar todo o arquivo na memória e funciona nos runtimes .NET para Windows, Linux e macOS. A biblioteca também oferece controle granular sobre nomes de entradas, timestamps e níveis de compressão, tornando‑a ideal tanto para utilitários de console quanto para serviços web.
 
-## Pré-requisitos
+## Pré‑requisitos
 
-- **Aspose.Zip for .NET** – faça o download do pacote mais recente no site oficial: [https://releases.aspose.com/zip/net/](https://releases.aspose.com/zip/net/)  
-- **Document directory** – uma pasta que contém os arquivos que você deseja arquivar. Nos exemplos, referenciamos com a variável `dataDir`.
+- **Aspose.Zip para .NET** – baixe o pacote mais recente no site oficial: [https://releases.aspose.com/zip/net/](https://releases.aspose.com/zip/net/)  
+- **Diretório de documentos** – uma pasta que contém os arquivos que você deseja arquivar. Nos exemplos, referenciamos isso com a variável `dataDir`.
 
-> **Pro tip:** Mantenha seus arquivos de origem em uma pasta dedicada para evitar a inclusão acidental de arquivos indesejados.
+> **Dica profissional:** Mantenha seus arquivos fonte em uma pasta dedicada para evitar a inclusão acidental de arquivos indesejados.
 
 ## Importar namespaces
 
-Primeiro, importe os namespaces necessários para que você possa acessar as classes Tar e Bzip2 do Aspose.Zip.
+Primeiro, importe os namespaces necessários para acessar as classes Tar e Bzip2 do Aspose.Zip.
 
 ```csharp
 using System;
@@ -101,11 +103,10 @@ string dataDir = "Your Document Directory";
 
 > Substitua `"Your Document Directory"` pelo caminho absoluto ou relativo da sua pasta de origem.
 
-## Etapa 2: adicionar arquivos a tar e criar um arquivo TarBz2
+## Etapa 2: adicionar arquivos ao tar e criar um arquivo TarBz2
 
-`TarArchive` representa um contêiner tar em memória que pode conter múltiplas entradas de arquivos.  
-`Bzip2Archive` compacta um stream usando o algoritmo Bzip2.  
-O método `CreateEntry` adiciona um arquivo ao arquivo tar como uma nova entrada.
+A classe `TarArchive` representa um contêiner tar em memória, enquanto `Bzip2Archive` compacta streams usando o algoritmo Bzip2.  
+O método `CreateEntry` adiciona uma nova entrada de arquivo ao arquivo tar.
 
 ```csharp
 //ExStart: CompressFile
@@ -122,61 +123,64 @@ using (Bzip2Archive bz2 = new Bzip2Archive())
 }
 ```
 
-- `CreateEntry` **adds files to tar** – você pode chamar este método para cada arquivo que precisar no arquivo.  
+- `CreateEntry` **adiciona arquivos ao tar** – você pode chamar esse método para cada arquivo que precisar no arquivo.  
 - `bz2.SetSource(archive)` indica ao arquivo Bzip2 para compactar todo o stream tar.  
 - `bz2.Save(...)` grava o arquivo final **TarBz2** no disco.
 
-**Dica:** Para **adicionar arquivos a tar** em massa, basta repetir `archive.CreateEntry` para cada arquivo antes de chamar `bz2.Save`.
+**Dica:** Para **adicionar arquivos ao tar** em lote, basta repetir `archive.CreateEntry` para cada arquivo antes de chamar `bz2.Save`.
 
-## Como adicionar arquivos a tar?
+## Como adicionar arquivos ao tar?
 
 Carregue o diretório de origem, crie uma instância `TarArchive`, adicione cada arquivo com `CreateEntry`, então envolva o stream tar em um `Bzip2Archive` e chame `Save`. Esse padrão de duas etapas adiciona qualquer número de arquivos e produz um arquivo `.tar.bz2` em um fluxo fluente único, eliminando a necessidade de arquivos temporários ou ferramentas externas.
 
 ## Problemas comuns & soluções
 
-| Problema | Motivo | Correção |
-|----------|--------|----------|
-| **Erro de arquivo não encontrado** | Caminho `dataDir` incorreto ou extensão de arquivo ausente | Verifique o caminho completo e assegure que o arquivo exista. |
+| Problema | Motivo | Solução |
+|----------|--------|---------|
+| **Erro “File not found”** | Caminho `dataDir` incorreto ou extensão de arquivo ausente | Verifique o caminho completo e assegure‑se de que o arquivo exista. |
 | **Arquivo vazio** | Nenhuma entrada adicionada antes de `bz2.Save` | Adicione ao menos uma chamada `CreateEntry`. |
-| **Permissão negada** | Aplicação não tem permissão de escrita na pasta de saída | Execute o aplicativo com direitos apropriados ou escolha um diretório gravável. |
+| **Permissão negada** | Aplicação não tem permissão de gravação na pasta de saída | Execute o aplicativo com direitos adequados ou escolha um diretório gravável. |
 
 ## Perguntas frequentes
 
-**Q: O Aspose.Zip é compatível com todas as aplicações .NET?**  
-A: Sim. Funciona com .NET Framework, .NET Core, .NET 5/6 e runtimes mais recentes.
+**P: O Aspose.Zip é compatível com todos os aplicativos .NET?**  
+R: Sim. Funciona com .NET Framework, .NET Core, .NET 5/6 e runtimes mais recentes.
 
-**Q: Posso compactar vários arquivos simultaneamente?**  
-A: Absolutamente. Chame `CreateEntry` para cada arquivo antes de salvar o arquivo.
+**P: Posso compactar vários arquivos simultaneamente?**  
+R: Absolutamente. Chame `CreateEntry` para cada arquivo antes de salvar o arquivo.
 
-**Q: Onde posso encontrar documentação adicional?**  
-A: Documentação detalhada está disponível na **referência da API Aspose.Zip .NET**: [Aspose.Zip .NET API reference](https://reference.aspose.com/zip/net/).
+**P: Onde posso encontrar documentação adicional?**  
+R: Documentação detalhada está disponível na **referência da API Aspose.Zip .NET**: [Aspose.Zip .NET API reference](https://reference.aspose.com/zip/net/).
 
-**Q: Como obtenho uma licença temporária para Aspose.Zip?**  
-A: Você pode **solicitar uma licença temporária** aqui: [request a temporary license](https://purchase.aspose.com/temporary-license/).
+**P: Como obtenho uma licença temporária para o Aspose.Zip?**  
+R: Você pode **solicitar uma licença temporária** aqui: [request a temporary license](https://purchase.aspose.com/temporary-license/).
 
-**Q: Existe uma versão de avaliação gratuita disponível?**  
-A: Sim, **baixe uma versão de avaliação nos lançamentos da Aspose**: [download a trial version](https://releases.aspose.com/).
+**P: Existe uma versão de avaliação gratuita?**  
+R: Sim, **baixe uma versão de avaliação dos lançamentos Aspose**: [download a trial version](https://releases.aspose.com/).
+
+Você também pode [download a      trial version](https://releases.aspose.com/).
 
 ## Conclusão
 
-Agora você sabe **como adicionar arquivos a tar**, compactar o stream tar com Bzip2 e gerar um arquivo **TarBz2** usando Aspose.Zip para .NET. A abordagem é rápida, eficiente em memória e funciona em todas as plataformas .NET modernas. Sinta-se à vontade para experimentar conjuntos de arquivos maiores, nomes de entradas personalizados ou integrar o código em seus próprios pipelines de backup ou implantação.
+Agora você sabe **como criar um arquivo tar**, compactar o stream tar com Bzip2 e gerar um **arquivo TarBz2** usando Aspose.Zip para .NET. A abordagem é rápida, eficiente em memória e funciona em todas as plataformas .NET modernas. Sinta‑se à vontade para experimentar conjuntos de arquivos maiores, nomes de entrada personalizados ou integrar o código em seus próprios pipelines de backup ou implantação.
 
-Se você encontrar algum desafio, a comunidade Aspose.Zip está pronta para ajudar—basta acessar o **fórum de suporte do Aspose.Zip**: [Aspose.Zip support forum](https://forum.aspose.com/c/zip/37).
+Se encontrar algum desafio, a comunidade Aspose.Zip está pronta para ajudar — basta acessar o **fórum de suporte Aspose.Zip**: [Aspose.Zip support forum](https://forum.aspose.com/c/zip/37).
 
 ---
 
-**Última atualização:** 2026-08-07  
-**Testado com:** Aspose.Zip for .NET (latest release)  
+**Última atualização:** 2026-10-31  
+**Testado com:** Aspose.Zip para .NET (última versão)  
 **Autor:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
+## Tutoriais relacionados
 
-## Tutoriais Relacionados
-
-- [Criar arquivo tar e adicionar arquivos a tar com Aspose.Zip para .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
-- [Adicionar arquivos a tar e criar arquivo tarxz com Aspose.Zip](/zip/net/archive-extraction-and-formats/compress-to-tar-xz/)
-- [Adicionar arquivos a tar e compactar para TarZ com Aspose.Zip para .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-z/)
+- [Create tar archive and add files to tar with Aspose.Zip for .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
+- [Add files to tar and create tarxz archive with Aspose.Zip](/zip/net/archive-extraction-and-formats/compress-to-tar-xz/)
+- [Add files to tar and compress to TarZ with Aspose.Zip for .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-z/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

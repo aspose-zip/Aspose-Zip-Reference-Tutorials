@@ -1,30 +1,31 @@
 ---
-date: 2026-08-07
-description: Learn how to add files to tar and generate a TarBz2 archive in .NET using
-  Aspose.Zip. Step‑by‑step guide shows tar creation, Bzip2 compression and best‑practice
+date: 2026-10-31
+description: Learn how to create tar archive and compress it to a TarBz2 file in .NET
+  using Aspose.Zip. Step‑by‑step guide shows tar creation, Bzip2 compression and best‑practice
   tips.
 images:
 - /net/archive-extraction-and-formats/compress-to-tar-bz2/og-image.png
 keywords:
+- create tar archive
 - add files to tar
+- compress multiple files
 - tar bzip2 compression
-- generate tarbz2 archive
-- asp zip
-- compress tar .net
-lastmod: 2026-08-07
+- add files tar
+lastmod: 2026-10-31
 linktitle: Compressing to TarBz2
-og_description: Add files to tar and generate a TarBz2 archive in .NET using Aspose.Zip.
-  This guide covers tar creation, Bzip2 compression and troubleshooting tips.
-og_image_alt: Developer guide showing how to add files to tar and compress to TarBz2
-  with Aspose.Zip for .NET
-og_title: Add files to tar and create a TarBz2 archive with Aspose.Zip
+og_description: Learn how to create tar archive and compress it to a TarBz2 file using
+  Aspose.Zip for .NET. Step‑by‑step guide covers tar creation, Bzip2 compression,
+  and best‑practice tips.
+og_image_alt: Developer guide showing how to create tar archive and compress to TarBz2
+  using Aspose.Zip for .NET
+og_title: Create tar archive and compress to TarBz2 with .NET
 schemas:
 - author: Aspose
-  dateModified: '2026-08-07'
-  description: Learn how to add files to tar and generate a TarBz2 archive in .NET
-    using Aspose.Zip. Step‑by‑step guide shows tar creation, Bzip2 compression and
-    best‑practice tips.
-  headline: Add files to tar and create a TarBz2 archive with Aspose.Zip
+  dateModified: '2026-10-31'
+  description: Learn how to create tar archive and compress it to a TarBz2 file in
+    .NET using Aspose.Zip. Step‑by‑step guide shows tar creation, Bzip2 compression
+    and best‑practice tips.
+  headline: Create tar archive and compress to TarBz2 with .NET
   type: TechArticle
 - questions:
   - answer: Yes. It works with .NET Framework, .NET Core, .NET 5/6 and newer runtimes.
@@ -46,7 +47,7 @@ tags:
 - Aspose.Zip
 - .NET compression
 - TarBz2 archive
-title: Add files to tar and create a TarBz2 archive with Aspose.Zip
+title: How to create tar archive and compress to TarBz2 with .NET
 url: /net/archive-extraction-and-formats/compress-to-tar-bz2/
 weight: 11
 ---
@@ -55,9 +56,9 @@ weight: 11
 {{< blocks/products/pf/main-container >}}
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Add files to tar and create a TarBz2 archive with Aspose.Zip
+# How to create tar archive and compress to TarBz2 with .NET
 
-In this tutorial you’ll discover **how to add files to tar** archives and turn them into a compact **TarBz2** file using the **Aspose.Zip** library for .NET. Whether you’re building a backup utility, publishing deployment packages, or need a lightweight bundle for distribution, the steps below walk you through adding files to a tar container, applying Bzip2 compression, and producing a ready‑to‑share archive.
+In this tutorial you’ll learn **how to create tar archive** files and then compress them into a compact **TarBz2** package using the **Aspose.Zip** library for .NET. Whether you are building a backup utility, preparing deployment bundles, or need a lightweight distribution format, the steps below walk you through adding files to a tar container, applying Bzip2 compression, and writing the final `.tar.bz2` file.
 
 ## Quick answers
 - **What library should I use?** Aspose.Zip for .NET  
@@ -104,9 +105,8 @@ string dataDir = "Your Document Directory";
 
 ## Step 2: add files to tar and create a TarBz2 archive
 
-`TarArchive` represents an in‑memory tar container that can hold multiple file entries.  
-`Bzip2Archive` compresses a stream using the Bzip2 algorithm.  
-The `CreateEntry` method adds a file to the tar archive as a new entry.
+The `TarArchive` class represents an in‑memory tar container, while `Bzip2Archive` compresses streams using the Bzip2 algorithm.  
+The `CreateEntry` method adds a new file entry to the tar archive.
 
 ```csharp
 //ExStart: CompressFile
@@ -158,27 +158,31 @@ A: You can **request a temporary license** here: [request a temporary license](h
 **Q: Is there a free trial available?**  
 A: Yes, **download a trial version from Aspose releases**: [download a trial version](https://releases.aspose.com/).
 
+You can also [download a      trial version](https://releases.aspose.com/).
+
 ## Conclusion
 
-You now know **how to add files to tar**, compress the tar stream with Bzip2, and generate a **TarBz2** archive using Aspose.Zip for .NET. The approach is fast, memory‑efficient and works across all modern .NET platforms. Feel free to experiment with larger file sets, custom entry names, or integrate the code into your own backup or deployment pipelines.
+You now know **how to create tar archive**, compress the tar stream with Bzip2, and generate a **TarBz2** archive using Aspose.Zip for .NET. The approach is fast, memory‑efficient and works across all modern .NET platforms. Feel free to experiment with larger file sets, custom entry names, or integrate the code into your own backup or deployment pipelines.
 
 If you run into any challenges, the Aspose.Zip community is ready to help—just head over to the **Aspose.Zip support forum**: [Aspose.Zip support forum](https://forum.aspose.com/c/zip/37).
 
 ---
 
-**Last Updated:** 2026-08-07  
+**Last Updated:** 2026-10-31  
 **Tested With:** Aspose.Zip for .NET (latest release)  
 **Author:** Aspose  
 
-{{< blocks/products/products-backtop-button >}}
 
-## Related Tutorials
+
+## Related tutorials
 
 - [Create tar archive and add files to tar with Aspose.Zip for .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-gz/)
 - [Add files to tar and create tarxz archive with Aspose.Zip](/zip/net/archive-extraction-and-formats/compress-to-tar-xz/)
 - [Add files to tar and compress to TarZ with Aspose.Zip for .NET](/zip/net/archive-extraction-and-formats/compress-to-tar-z/)
 
-
 {{< /blocks/products/pf/tutorial-page-section >}}
+
 {{< /blocks/products/pf/main-container >}}
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
