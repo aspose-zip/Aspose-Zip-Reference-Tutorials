@@ -1,7 +1,6 @@
 ---
 date: 2026-11-18
-description: Learn how to add files to tar and compress files to tarxz archive .NET
-  using Aspose.Zip. Follow this step‑by‑step guide for efficient storage and transmission.
+description: Learn how to add files to tar and compress files to a tarxz archive in .NET. Follow this step‑by‑step guide for efficient storage and transmission.
 images:
 - /net/archive-extraction-and-formats/compress-to-tar-xz/og-image.png
 keywords:
@@ -12,21 +11,16 @@ keywords:
 - generate tarxz file
 lastmod: 2026-11-18
 linktitle: Compressing to TarXz
-og_description: Add files to tar and create tarxz archive with Aspose.Zip. Learn how
-  to compress files to TarXz in .NET quickly, with high compression efficiency and
-  cross‑platform compatibility.
-og_image_alt: 'Developer guide: Add files to tar and create tarxz archive using Aspose.Zip
-  .NET'
+og_description: Add files to tar and create a tarxz archive in .NET. Learn how to compress files to TarXz quickly, with high compression efficiency and cross‑platform compatibility.
+og_image_alt: 'Developer guide: Add files to tar and create tarxz archive using Aspose.Zip .NET'
 og_title: Add files to tar and create tarxz archive with Aspose.Zip
 schemas:
 - author: Aspose
   dateModified: '2026-11-18'
-  description: Learn how to add files to tar and compress files to tarxz archive .NET
-    using Aspose.Zip. Follow this step‑by‑step guide for efficient storage and transmission.
+  description: Learn how to add files to tar and compress files to a tarxz archive in .NET. Follow this step‑by‑step guide for efficient storage and transmission.
   headline: Add files to tar and create tarxz archive with Aspose.Zip
   type: TechArticle
-- description: Learn how to add files to tar and compress files to tarxz archive .NET
-    using Aspose.Zip. Follow this step‑by‑step guide for efficient storage and transmission.
+- description: Learn how to add files to tar and compress files to a tarxz archive in .NET. Follow this step‑by‑step guide for efficient storage and transmission.
   name: Add files to tar and create tarxz archive with Aspose.Zip
   steps:
   - name: Initialize a `TarArchive`
